@@ -1,0 +1,73 @@
+#mobrix-ui-toggle {
+  display: flex;
+  flex-direction: column;
+}
+
+#mobrix-ui-toggle .container {
+  width: 65px;
+  height: 30px;
+}
+
+#mobrix-ui-toggle.styled .container {
+  background-image: var(--mobrix-ui-background);
+  border-radius: 14px;
+  border-width: 0;
+}
+
+#mobrix-ui-toggle.styled .container.off {
+  background-image: linear-gradient(to right, rgb(219, 217, 217), #b9b9b9);
+}
+
+#mobrix-ui-toggle.styled.dark .container.off {
+  background-image: linear-gradient(to right, #1e2531, #1d232e);
+}
+
+#mobrix-ui-toggle .container .toggle-icon {
+  overflow: hidden;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+}
+
+#mobrix-ui-toggle .container .toggle-icon.flip-back {
+  transform: translate(0%);
+
+  --svginternalcolor: white;
+  --svgexternalcolor: #7a7878;
+}
+
+#mobrix-ui-toggle .toggle-icon.flip {
+  transform: translate(35px);
+
+  --svginternalcolor: #a5a5a5;
+  --svgexternalcolor: #7a7878;
+}
+
+#mobrix-ui-toggle.dark .container .toggle-icon.flip-back {
+  --svginternalcolor: white;
+  --svgexternalcolor: #a7a3a3;
+}
+
+#mobrix-ui-toggle.dark .container .toggle-icon.flip {
+  --svginternalcolor: #636363;
+  --svgexternalcolor: #a7a3a3;
+}
+
+#mobrix-ui-toggle .container .toggle-icon .wrapper {
+  opacity: 0.2;
+}
+
+#mobrix-ui-toggle .container .toggle-icon .external {
+  background-color: var(--svgexternalcolor);
+  fill: var(--svgexternalcolor);
+}
+
+#mobrix-ui-toggle .container .toggle-icon .internal {
+  fill: var(--svgexternalcolor);
+  stroke: var(--svginternalcolor);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}

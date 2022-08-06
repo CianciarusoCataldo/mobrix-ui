@@ -1,0 +1,12 @@
+#mobrix-ui-spinner,
+#mobrix-ui-spinner svg {
+  background: transparent;
+}
+
+#mobrix-ui-spinner .rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}

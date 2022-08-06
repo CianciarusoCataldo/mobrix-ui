@@ -1,0 +1,22 @@
+#mobrix-ui-checkbox .container {
+  height: 30px;
+  width: 30px;
+}
+
+#mobrix-ui-checkbox.styled .container {
+  border-width: 1px;
+  border-color: #423c5e;
+  text-align: center;
+  padding: 0.2rem;
+  background-color: var(--mobrix-ui-background-color);
+  display: flex;
+  flex-direction: column;
+}
+
+#mobrix-ui-checkbox.styled .container:hover {
+  background-color: #f5f5f5;
+}
+
+#mobrix-ui-checkbox.styled.dark .container:hover {
+  background-color: #3a3552;
+}

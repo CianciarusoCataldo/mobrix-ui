@@ -1,0 +1,15 @@
+body.light .left-arrow {
+  fill: black;
+}
+
+body.dark .left-arrow {
+  fill: white;
+}
+
+body .left-arrow:hover {
+  fill: #ff9f51;
+}
+
+body .left-arrow:active {
+  fill: #fb7a10;
+}

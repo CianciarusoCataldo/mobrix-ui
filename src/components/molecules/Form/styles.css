@@ -1,0 +1,49 @@
+#mobrix-ui-form > .box-component > .container {
+  border-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.7rem;
+  background-image: var(--mobrix-ui-background);
+}
+
+#mobrix-ui-form .title {
+  text-align: center;
+  margin-bottom: 0.9rem;
+  font-size: 1.35rem;
+  line-height: 1.75rem;
+  color: var(--mobrix-ui-text-color);
+}
+
+#mobrix-ui-form .field {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+#mobrix-ui-form .field .header {
+  color: var(--mobrix-ui-text-color-light);
+}
+
+#mobrix-ui-form.dark .field .header {
+  color: var(--mobrix-ui-text-color-dark);
+}
+
+#mobrix-ui-form .field .form-input {
+  border-radius: 0.375rem;
+  margin-bottom: 1.25rem;
+  border-width: 1px;
+  border-color: var(--mobrix-ui-text-color);
+}
+
+#mobrix-ui-form .field .form-input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+#mobrix-ui-form .submit-button {
+  margin-top: 0.9rem;
+  color: var(--mobrix-ui-text-color);
+}

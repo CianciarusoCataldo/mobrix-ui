@@ -1,0 +1,7 @@
+#mobrix-ui-counterbox.styled .input-box {
+  border-radius: 5px;
+  padding: 0.5rem;
+  outline: none;
+  background-color: var(--mobrix-ui-background-color);
+  color: var(--mobrix-ui-text-color);
+}

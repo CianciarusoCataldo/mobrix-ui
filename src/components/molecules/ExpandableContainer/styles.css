@@ -1,0 +1,27 @@
+.arrow {
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  transition: all 0.2s;
+}
+
+.arrow:active {
+  fill: rgb(95, 95, 95);
+}
+
+.arrow.up {
+  transform: rotate(0deg);
+}
+
+.arrow.down {
+  transform: rotate(180deg);
+}
+
+.arrow.dark {
+  fill: white;
+}
+
+@media (hover) {
+  .arrow:hover {
+    fill: gray;
+  }
+}

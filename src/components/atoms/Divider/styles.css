@@ -1,0 +1,8 @@
+#mobrix-ui-divider {
+  height: 1px;
+  width: 100%;
+}
+
+#mobrix-ui-divider.styled {
+  background-color: var(--mobrix-ui-text-color);
+}

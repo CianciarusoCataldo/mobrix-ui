@@ -1,0 +1,44 @@
+#mobrix-ui-button .unstyled {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+}
+
+#mobrix-ui-button,
+#mobrix-ui-button button:focus,
+#mobrix-ui-button button:hover {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+#mobrix-ui-button button.enabled {
+  transition-duration: 0.1s;
+  transition-property: transform;
+}
+
+#mobrix-ui-button button.disabled {
+  opacity: 0.5;
+}
+
+#mobrix-ui-button.styled button.enabled:hover {
+  position: relative;
+  transform: scaleX(1.15) scaleY(1.1);
+  background: linear-gradient(to right, #c9cacc, #e1e1e4, #c8c9ca);
+}
+
+#mobrix-ui-button.dark.styled button.enabled:hover {
+  background: rgb(61, 61, 75);
+}
+
+#mobrix-ui-button.styled button {
+  background: var(--mobrix-ui-background);
+  color: var(--mobrix-ui-text-color);
+  text-align: center;
+  font-weight: 800;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}

@@ -1,0 +1,68 @@
+#mobrix-ui-carousel,
+#mobrix-ui-carousel > .box-component > .container {
+  color: var(--mobrix-ui-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mobrix-ui-carousel.styled > .box-component > .container {
+  background-image: var(--mobrix-ui-background);
+  padding: 0.4rem;
+}
+
+#mobrix-ui-carousel > .box-component > .container .from-left {
+  --mobrix-ui-carousel-animation: slideLeft 0.3s forwards;
+}
+
+#mobrix-ui-carousel > .box-component > .container .from-right {
+  --mobrix-ui-carousel-animation: slideRight 0.3s forwards;
+}
+
+#mobrix-ui-carousel > .box-component > .container .element {
+  position: relative;
+  -webkit-animation: var(--mobrix-ui-carousel-animation);
+  animation: var(--mobrix-ui-carousel-animation);
+  -moz-animation: var(--mobrix-ui-carousel-animation);
+  -ms-animation: var(--mobrix-ui-carousel-animation);
+  -o-animation: var(--mobrix-ui-carousel-animation);
+}
+
+#mobrix-ui-carousel > .box-component > .container .arrow svg {
+  fill: var(--mobrix-ui-text-color);
+}
+
+#mobrix-ui-carousel.styled > .box-component > .container .arrow:hover svg {
+  fill: rgb(231, 152, 6);
+}
+
+#mobrix-ui-carousel > .box-component > .container .prev {
+  margin-right: 0.6rem;
+}
+
+#mobrix-ui-carousel > .box-component > .container .next {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin-left: 0.6rem;
+}
+
+#mobrix-ui-carousel > .box-component > .container .elements,
+#mobrix-ui-carousel > .box-component > .container .dots {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+#mobrix-ui-carousel > .box-component > .container .dots .dot {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+@media (hover: none) {
+  #mobrix-ui-carousel.styled > .box-component > .container .arrow:hover svg {
+    fill: var(--mobrix-ui-text-color);
+  }
+}

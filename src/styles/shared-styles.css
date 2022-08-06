@@ -1,0 +1,90 @@
+[id^="mobrix-ui-"] {
+  --mobrix-ui-background-color-light: #f5f5f5;
+  --mobrix-ui-background-color-dark: #1d232e;
+  --mobrix-ui-text-color-light: #1b1b1b;
+  --mobrix-ui-text-color-dark: white;
+  --mobrix-ui-background-dark: linear-gradient(to right, #2d3748, #1d232e);
+  --mobrix-ui-background-light: linear-gradient(to right, #fff, #eaebec);
+}
+
+[id^="mobrix-ui-"],
+[id^="mobrix-ui-"]:hover,
+[id^="mobrix-ui-"]:active {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+
+[id^="mobrix-ui-"]:not(.dark) {
+  --mobrix-ui-background-color: var(
+    --mobrix-ui-custom-background-color-light,
+    var(--mobrix-ui-background-color-light)
+  );
+  --mobrix-ui-background: var(
+    --mobrix-ui-custom-background-light,
+    var(--mobrix-ui-background-light)
+  );
+  --mobrix-ui-text-color: var(
+    --mobrix-ui-custom-text-color-light,
+    var(--mobrix-ui-text-color-light)
+  );
+  --mobrix-ui-link-color: rgb(37, 99, 235);
+}
+
+[id^="mobrix-ui-"].dark {
+  --mobrix-ui-background-color: var(
+    --mobrix-ui-custom-background-color-dark,
+    var(--mobrix-ui-background-color-dark)
+  );
+  --mobrix-ui-background: var(
+    --mobrix-ui-custom-background-dark,
+    var(--mobrix-ui-background-dark)
+  );
+  --mobrix-ui-text-color: var(
+    --mobrix-ui-custom-text-color-dark,
+    var(--mobrix-ui-text-color-dark)
+  );
+  --mobrix-ui-link-color: white;
+}
+
+[id^="mobrix-ui-"]:not(.dark):hover {
+  --mobrix-ui-link-color: rgb(33, 89, 211);
+}
+
+[id^="mobrix-ui-"].dark:hover {
+  --mobrix-ui-link-color: rgb(219, 221, 224);
+}
+
+[id^="mobrix-ui-"] .component-hidden,
+[id^="mobrix-ui-"].component-hidden {
+  display: none !important;
+}
+
+[id^="mobrix-ui-"].shadowed,
+[id^="mobrix-ui-"] .shadowed {
+  -webkit-box-shadow: 0 5px 13px -1px #464545;
+  -moz-box-shadow: 0 5px 13px -1px #464545;
+  -o-box-shadow: 0 5px 13px -1px #464545;
+  box-shadow: 0 5px 13px -1px #464545;
+}
+
+[id^="mobrix-ui-"] .box-label {
+  padding: 0.4rem;
+  display: flex;
+  text-align: start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+[id^="mobrix-ui-"].styled .box-component .box-label {
+  color: var(--mobrix-ui-text-color);
+}
+
+[id^="mobrix-ui-"] .box-component {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0.1rem;
+}
+

@@ -1,0 +1,6 @@
+node_modules
+dist
+playground/src/mobrix-ui-preview
+build
+coverage
+stats.html

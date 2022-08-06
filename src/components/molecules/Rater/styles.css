@@ -1,0 +1,23 @@
+#mobrix-ui-ratebox .container {
+  display: flex;
+  align-items: center;
+}
+
+#mobrix-ui-ratebox.styled .container {
+  background: var(--mobrix-ui-background);
+  border-radius: 8px;
+  padding: 0.4rem;
+}
+
+#mobrix-ui-ratebox .container.horizontal {
+  flex-direction: row;
+}
+
+#mobrix-ui-ratebox .container.vertical {
+  flex-direction: column;
+}
+
+#mobrix-ui-ratebox .icon {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}

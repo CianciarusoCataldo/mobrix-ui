@@ -1,0 +1,22 @@
+task:
+  container:
+    image: node:latest #
+
+  node_modules_cache: #
+    folder: node_modules
+    fingerprint_script: cat package-lock.json
+    populate_script: npm install
+
+  matrix: #
+    - name: Build
+      container:
+        matrix: #
+          - image: node:latest
+          - image: node:lts
+      build_script: npm run build
+    - name: Test
+      container:
+        matrix: #
+          - image: node:latest
+          - image: node:lts
+      test_script: npm run test

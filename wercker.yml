@@ -1,0 +1,15 @@
+box: node
+build:
+  steps:
+    - script:
+        name: mobrix-ui lib build
+        code: |
+          npm i
+          npm run build
+test:
+  steps:
+    - script:
+        name: mobrix-ui lib tests
+        code: |
+          npm i
+          npm run test
