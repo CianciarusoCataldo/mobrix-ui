@@ -1,0 +1,7 @@
+{
+  "title": "Overview",
+  "description": "Vuoi realizzare una robusta web-app senza preoccuparti di mantenere una codebase dedicata per ogni suo componente? MoBrix-ui è ciò che stai cercando. Installa questa libreria sulla tua app in un minuto, e importa i componenti che desideri utilizzare, senza codice aggiuntivo, ma con un controllo completo su ognuno di essi (sono completamente personalizzabili, specialmente se usati con #LINK https://tailwindcss.com/#Tailwind #LINK). Questa libreria è usata da #LINK https://github.com/CianciarusoCataldo/mobrix-app#MoBrix-app #LINK, dai un'occhiata per saperne di più !",
+  "componentsList_header": "MoBrix-ui comprende una collezione di vari componenti, adattabili a qualsiasi uso. Clicca sul nome di un componente per vederne i dettagli",
+  "installation_title": "Installazione",
+  "installation_body": "Per prima cosa, posizionati nella root del tuo progetto ed installa MoBrix-ui: #CODEnpm i mobrix-ui#CODE Dopo l'installazione, importa i componenti della libreria direttamente nella tua app, ad esempio: #CODE#LANGjavascript#LANGimport { Button, Page } from 'mobrix-ui';#CODE"
+}

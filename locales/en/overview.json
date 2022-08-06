@@ -1,0 +1,7 @@
+{
+  "title": "Overview",
+  "description": "Want to build a powerful web app without developing and maintaining a codebase for every single component? MoBrix-ui is what you are looking for. Just install it and import what you need, without any additional code, but with full control on every component (all of them are completely customizable, expecially when used with #LINK https://tailwindcss.com/#Tailwind #LINK class names). This library is used by #LINK https://github.com/CianciarusoCataldo/mobrix-app#MoBrix-app #LINK, check it out to know more !",
+  "componentsList_header": "MoBrix-ui is a collection of various components, adaptable for every use. Click on every component to see its details",
+  "installation_title": "Installation",
+  "installation_body": "To use these components in your app, install MoBrix-ui library: #CODEnpm i mobrix-ui#CODE After installation, just import every component from the library, for example: #CODE#LANGjavascript#LANGimport { Button, Page } from 'mobrix-ui';#CODE"
+}

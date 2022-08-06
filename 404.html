@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MoBrix-ui</title>
+    <script>
+      let pathname = window.location.href.replace(
+        "https://cianciarusocataldo.github.io/mobrix-ui",
+        ""
+      );
+      if (!pathname.startsWith("/")) {
+        pathname = "/" + pathname;
+      }
+      window.location.href =
+        "https://cianciarusocataldo.github.io/mobrix-ui?to=" + pathname;
+    </script>
+  </head>
+  <body></body>
+</html>

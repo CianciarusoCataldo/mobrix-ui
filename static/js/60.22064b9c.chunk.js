@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmobrix_ui_app=self.webpackChunkmobrix_ui_app||[]).push([[60],{7507:function(e,p,i){e.exports=i.p+"static/media/elem0.35639ed930462bfcd544.png"}}]);
