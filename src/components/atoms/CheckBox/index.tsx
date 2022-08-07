@@ -14,7 +14,7 @@ import { buildBoxComponent } from "../../../utils";
  * @param {boolean} value Checkbox initial value (checked / unchecked)
  * @param {(newValue: boolean) => void} onChange onChange callback called when Checkbox is clicked
  * @param {JSX.Element | Element} icon custom tick icon (if not set, the default one will be used)
- * @param {string} label `common MoBrix-ui prop` - component top label
+ * @param {JSX.Element | string} label `common MoBrix-ui prop` - Component top label
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)

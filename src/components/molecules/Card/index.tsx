@@ -17,7 +17,7 @@ import Divider from "../../atoms/Divider";
  * @param {JSX.Element | Element | string} header Card header content
  * @param {JSX.Element | Element | string} body Card body content
  * @param {JSX.Element | Element | string} footer Card footer content
- * @param {JSX.Element | Element | string} label Component label, showed at the top
+ * @param {JSX.Element | string} label `common MoBrix-ui prop` - Component top label
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)

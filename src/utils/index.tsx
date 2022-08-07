@@ -56,7 +56,7 @@ export const buildComponent = ({
  *
  * @param value actual component value
  * @param defaultValue default value (used when no value is set)
- * @param {string} label component top label
+ * @param {JSX.Element | string} label Component top label
  * @param callback a function that returns an Object containing Component Builder props, properly formatted
  *
  * @returns built component, ready to be rendered, enhanced with some functionalities (like the top label)

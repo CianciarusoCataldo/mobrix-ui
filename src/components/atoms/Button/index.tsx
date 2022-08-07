@@ -27,7 +27,7 @@ import { buildComponent } from "../../../utils";
  *
  * @example <caption>Example Button usage</caption>
  * import { render } from "react-dom";
- * import { Button } from '@cianciarusocataldo/mobrix-ui';
+ * import { Button } from 'mobrix-ui';
  *
  * render(<Button onClick={()=>alert("Click !")}>
  *            Example button

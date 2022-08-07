@@ -19,6 +19,7 @@ import Container from "../Container";
  *
  * @param {number} value actual selected element (as index). If not set, default value (0) will be used.
  * @param {{ name: string; icon?: JSX.Element }[]} content Dropdown content elements
+ * @param {JSX.Element | string} label `common MoBrix-ui prop` - Component top label
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)

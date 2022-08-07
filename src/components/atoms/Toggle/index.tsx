@@ -44,6 +44,7 @@ const DEFAULT_ICON = (
  * @param {JSX.Element} onIcon custom toggle "on" icon (`value` === `true`)
  * @param {JSX.Element} offIcon custom toggle "off" icon (`value` === `false`)
  * @param {(newValue:boolean)=>void} onChange calllback triggered when changing Toggle status
+ * @param {JSX.Element | string} label `common MoBrix-ui prop` - Component top label
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -53,7 +54,7 @@ const DEFAULT_ICON = (
  *
  * @example <caption>Example Toggle usage</caption>
  * import { render } from "react-dom";
- * import { Toggle } from '@cianciarusocataldo/modular-ui';
+ * import { Toggle } from 'mobrix-ui';
  *
  * render(<Toggle value={true} />, document.getElementById("root"));
  *

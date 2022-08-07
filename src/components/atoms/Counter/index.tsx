@@ -13,7 +13,7 @@ import { buildBoxComponent } from "../../../utils";
  *
  * @param {number} value numeric input value
  * @param {(newValue:number)=>void} onChange callback triggered when numeric input changes
- * @param {string} label `common MoBrix-ui prop` - component top label
+ * @param {JSX.Element | string} label `common MoBrix-ui prop` - Component top label
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
