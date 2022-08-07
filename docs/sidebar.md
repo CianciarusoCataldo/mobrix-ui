@@ -3,6 +3,6 @@
 -   **Links**
 -   [Github](https://github.com/cianciarusocataldo/mobrix-ui)
 -   [NPM](https://www.npmjs.com/package/mobrix-ui)
--   **Modular ecosystem**
+-   **MoBrix ecosystem**
 -   [MoBrix-designer](https://github.com/cianciarusocataldo/mobrix-designer)
 -   [MoBrix-engine](https://github.com/cianciarusocataldo/mobrix-engine)
