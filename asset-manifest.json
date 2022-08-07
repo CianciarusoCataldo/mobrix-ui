@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://cianciarusocataldo.github.io/MoBrix-ui/static/css/main.7d47c954.css",
-    "main.js": "https://cianciarusocataldo.github.io/MoBrix-ui/static/js/main.41697642.js",
+    "main.js": "https://cianciarusocataldo.github.io/MoBrix-ui/static/js/main.68f412c4.js",
     "static/js/110.d876d855.chunk.js": "https://cianciarusocataldo.github.io/MoBrix-ui/static/js/110.d876d855.chunk.js",
     "static/js/319.955668d9.chunk.js": "https://cianciarusocataldo.github.io/MoBrix-ui/static/js/319.955668d9.chunk.js",
     "static/js/730.27c7b21c.chunk.js": "https://cianciarusocataldo.github.io/MoBrix-ui/static/js/730.27c7b21c.chunk.js",
@@ -83,6 +83,6 @@
   },
   "entrypoints": [
     "static/css/main.7d47c954.css",
-    "static/js/main.41697642.js"
+    "static/js/main.68f412c4.js"
   ]
 }
