@@ -69,7 +69,7 @@ Some components are designed with a specific structure, to better control and cu
 - `defaultValue`, the default value to use when `value` is not given or is `undefined`
 
 <div align="center">
-<img width="380px" alt="" src="https://user-images.githubusercontent.com/47371276/153539556-be82468f-b7c1-4753-8fe6-c832c35b7027.png" />
+<img width="380px" alt="" src="https://user-images.githubusercontent.com/47371276/185260384-880a0542-20df-44ab-b1fb-3763e064f41e.png" />
 </div>
 
 <br>
