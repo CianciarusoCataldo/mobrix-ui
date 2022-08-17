@@ -6,7 +6,7 @@ import {
   themerPlugin,
   uiPlugin,
   urlCheckerPlugin,
-} from "modular-plugins";
+} from "mobrix-engine-plugins";
 
 const engineConfig = {
   appName: "MoBrix-ui",

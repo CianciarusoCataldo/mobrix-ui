@@ -15,7 +15,7 @@ if ("serviceWorker" in navigator && process.env.NODE_ENV === "production") {
   console.log("Service workers are not supported.");
 }
 
-let ModularApp: any = null;
+let MoBrixDesignerApp: any = null;
 let engineParams: any = null;
 
 import("mobrix-engine").then(({ initEngine }) => {
@@ -26,7 +26,7 @@ import("mobrix-engine").then(({ initEngine }) => {
 
 import("mobrix-designer").then(({ initMoBrixDesigner }) => {
   import("./app.config").then(({ default: creatorConfig }) => {
-    ModularApp = (args: any) =>
+    MoBrixDesignerApp = (args: any) =>
       initMoBrixDesigner({
         ...args,
         creatorConfig: creatorConfig,
@@ -35,10 +35,10 @@ import("mobrix-designer").then(({ initMoBrixDesigner }) => {
 });
 
 const check = () => {
-  if (engineParams != null && ModularApp != null) {
+  if (engineParams != null && MoBrixDesignerApp != null) {
     import("react-dom").then(({ render }) => {
       render(
-        ModularApp({
+        MoBrixDesignerApp({
           store: engineParams.store,
           engineConfig: engineParams.config,
         }),

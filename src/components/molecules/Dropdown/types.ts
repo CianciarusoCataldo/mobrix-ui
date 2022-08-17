@@ -6,9 +6,9 @@ import {
 } from "../../../utils/global";
 
 /**
- * [Modular-ui]({@link https://cianciarusocataldo.github.io/modular.ui}) Dropdown component props
+ * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} Dropdown component props
  *
- * @see https://cianciarusocataldo.github.io/modular-ui/components/molecules/Dropdown
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Dropdown
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -20,9 +20,9 @@ export interface DropdownElement {
 }
 
 /**
- * [Modular-ui]({@link https://cianciarusocataldo.github.io/modular.ui}) Dropdown component props
+ * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} Dropdown component props
  *
- * @see https://cianciarusocataldo.github.io/modular-ui/components/molecules/Dropdown
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Dropdown
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

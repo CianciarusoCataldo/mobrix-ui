@@ -6,7 +6,7 @@ import { buildComponent } from "../../../utils";
 import classNames from "classnames";
 
 /**
- * A simple but smart container, enhanced with modular-ui common props and animations (if enabled)
+ * A simple but smart container, enhanced with MoBrix-ui common props and animations (if enabled)
  *
  * @since 1.0.0
  *

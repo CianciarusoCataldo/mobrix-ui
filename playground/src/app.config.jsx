@@ -4,7 +4,7 @@ import {
   drawerPlugin,
   formsPlugin,
   pageRouterPlugin,
-} from "modular-creator-plugins";
+} from "mobrix-designer-plugins";
 
 import { DrawerContent } from "contents/drawer";
 import footer from "contents/footer";

@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 
 import { useHomePageTranslation } from "hooks/localization";
 
-import { closeDrawer, getRoutes, goTo } from "modular-plugins";
+import { closeDrawer, getRoutes, goTo } from "mobrix-engine-plugins";
 
 import {
   Button,

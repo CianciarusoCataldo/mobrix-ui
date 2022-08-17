@@ -18,7 +18,7 @@ describeTest("advanced features", () => {
     let wrapper = mount(
       <CodeBox
         environment="javascript"
-        value='import { Card, Dropdown } from "@cianciarusocataldo/modular-ui"'
+        value='import { Card, Dropdown } from "@cianciarusocataldo/mobrix-ui"'
         enhanced
       />,
       {
@@ -31,7 +31,7 @@ describeTest("advanced features", () => {
     wrapper = mount(
       <CodeBox
         environment="terminal"
-        value='sdsdsdsdsdsdsd { Card, Dropdown } from "@cianciarusocataldo/modular-ui"'
+        value='sdsdsdsdsdsdsd { Card, Dropdown } from "@cianciarusocataldo/mobrix-ui"'
         enhanced
       />,
       {
