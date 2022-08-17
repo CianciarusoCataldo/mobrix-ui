@@ -9,7 +9,7 @@ import {
   getRoutes,
   goTo,
   isInDarkMode,
-} from "modular-plugins";
+} from "mobrix-engine-plugins";
 
 import { Button, Divider } from "mobrix-ui-preview";
 

@@ -18,16 +18,16 @@ if ("serviceWorker" in navigator && process.env.NODE_ENV === "production") {
 let ModularApp: any = null;
 let engineParams: any = null;
 
-import("modular-engine").then(({ initEngine }) => {
+import("mobrix-engine").then(({ initEngine }) => {
   import("./engine.config").then(({ default: engineConfig }) => {
     engineParams = initEngine(engineConfig);
   });
 });
 
-import("modular-creator").then(({ initModularCreator }) => {
+import("mobrix-designer").then(({ initMoBrixDesigner }) => {
   import("./app.config").then(({ default: creatorConfig }) => {
     ModularApp = (args: any) =>
-      initModularCreator({
+      initMoBrixDesigner({
         ...args,
         creatorConfig: creatorConfig,
       }).App;

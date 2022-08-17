@@ -1,5 +1,5 @@
 import { Container } from "mobrix-ui-preview";
-import { isInDarkMode } from "modular-plugins";
+import { isInDarkMode } from "mobrix-engine-plugins";
 import { useSelector } from "react-redux";
 
 const FooterContent = () => {

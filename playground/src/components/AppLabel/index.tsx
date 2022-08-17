@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { isInDarkMode } from "modular-plugins";
+import { isInDarkMode } from "mobrix-engine-plugins";
 
 import { Label, LabelProps } from "mobrix-ui-preview";
 

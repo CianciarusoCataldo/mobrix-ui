@@ -20,10 +20,10 @@ import {
   goTo,
   setDarkMode,
   openDrawer,
-} from "modular-plugins";
+} from "mobrix-engine-plugins";
 
 import { useTranslation } from "react-i18next";
-import { getAppName } from "modular-engine-tools";
+import { getAppName } from "mobrix-engine-tools";
 
 import { Button, ExpandableContainer, Dropdown, Link, Toggle } from "mobrix-ui-preview";
 
