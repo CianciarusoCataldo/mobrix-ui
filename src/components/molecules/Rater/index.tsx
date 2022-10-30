@@ -17,6 +17,7 @@ import Button from "../../atoms/Button";
  *
  * @param {number} value actual vote
  * @param {number} max max vote (max number of icons showed)
+ * @param {boolean} readonly if true, the rate can't be changed by clicking on the icons
  * @param {"star"|"circle"} type vote icons type
  * @param {(newVote:number)=>void} onChange callback triggered when user select a vote
  * @param {JSX.Element | string} label `common MoBrix-ui prop` - Component top label
@@ -47,6 +48,7 @@ const Rater: RaterComponent = ({
   className,
   vertical,
   label,
+  readonly,
   ...commonProps
 }) => {
   const voteType = type || "star";
@@ -75,20 +77,35 @@ const Rater: RaterComponent = ({
         }
 
         iconArray.push(
-          <Button
-            unstyled
-            onClick={() => {
-              let newVote: number = i + 1;
-              setValue(newVote);
-              onChange && onChange(i + 1);
-            }}
-            onMouseEnter={() => setHover(i)}
-            onMouseLeave={() => setHover(null)}
-            id={`vote_${i}`}
-            key={`vote_${i}`}
-          >
-            {ICONS[voteType][iconToShow]}
-          </Button>
+          <div key={`vote_${i}`}>
+            {readonly ? (
+              <div
+                style={{
+                  paddingBottom: "0.37rem",
+                }}
+              >
+                {ICONS[voteType][iconToShow]}
+              </div>
+            ) : (
+              <Button
+                unstyled
+                onClick={() => {
+                  let newVote: number = i + 1;
+                  setValue(newVote);
+                  onChange && onChange(i + 1);
+                }}
+                onMouseEnter={() => {
+                  setHover(i);
+                }}
+                onMouseLeave={() => {
+                  setHover(null);
+                }}
+                id={`vote_${i}`}
+              >
+                {ICONS[voteType][iconToShow]}
+              </Button>
+            )}
+          </div>
         );
       }
 

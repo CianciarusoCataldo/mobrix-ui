@@ -22,6 +22,7 @@ const RaterPage = () => (
           max: NumberProp(6),
           value: NumberProp(2),
           vertical: BooleanProp(false),
+          readonly: BooleanProp(false),
           type: SelectProp({
             star: "star",
             circle: "circle",
@@ -30,7 +31,7 @@ const RaterPage = () => (
         }}
         rows={[
           ["value", "max", "type", "vertical"],
-          ["label", "className", "dark"],
+          ["readonly", "label", "className", "dark"],
           ["shadow", "unstyled", "hide"],
         ]}
       >

@@ -17,8 +17,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "files": [
-    "src/plugins/**/types.ts"
-  ],
   "include": ["src/**/*.ts", "src/**/*.tsx"]
 }

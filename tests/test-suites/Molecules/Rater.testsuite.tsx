@@ -9,6 +9,7 @@ renderingTest(Rater, {
   value: 3,
   max: 6,
   onChange: () => {},
+  readonly: true,
 });
 
 describeTest("click test", () => {

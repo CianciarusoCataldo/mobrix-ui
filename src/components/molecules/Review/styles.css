@@ -1,0 +1,54 @@
+#mobrix-ui-review img,
+#mobrix-ui-review .photo {
+  border-radius: 9999px;
+}
+
+#mobrix-ui-review .external-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0.6rem;
+}
+
+#mobrix-ui-review .url-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#mobrix-ui-review .info-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.4rem;
+}
+
+#mobrix-ui-review .user-info {
+  display: flex;
+  flex-direction: row;
+}
+
+#mobrix-ui-review .user-info .username {
+  margin-left: 0.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#mobrix-ui-review .info-box .description {
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  overflow-wrap: break-word;
+}
+
+#mobrix-ui-review .default-icon,
+#mobrix-ui-review .github-icon {
+  fill: grey;
+}
+
+#mobrix-ui-review.dark .default-icon,
+#mobrix-ui-review.dark .github-icon {
+  fill: white;
+}
