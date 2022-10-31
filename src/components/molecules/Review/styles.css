@@ -3,11 +3,10 @@
   border-radius: 9999px;
 }
 
-#mobrix-ui-review>.box-component>.container {
+#mobrix-ui-review >.box-component >.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   padding: 0.6rem;
   background-image: var(--mobrix-ui-background);
   color: var(--mobrix-ui-text-color);

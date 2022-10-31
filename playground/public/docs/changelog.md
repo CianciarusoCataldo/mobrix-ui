@@ -17,6 +17,7 @@
 
 - `readonly` support for `Rater` component
 - `Review` components
+- Clean-up
 
 <br>
 

@@ -55,7 +55,6 @@ const RaterPage = () => (
     name="Review"
     render={(_, componentLabel) => (
       <Demo
-        className="rounded-full"
         label={componentLabel}
         props={{
           label: StringProp("Review label"),
