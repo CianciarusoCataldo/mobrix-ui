@@ -63,7 +63,7 @@ const RaterPage = () => (
           description: StringProp("MoBrix-ui is an awesome library !"),
           user: StringProp("Random user"),
           max: NumberProp(5),
-          value: NumberProp(5),
+          rate: NumberProp(5),
           url: StringProp("https://www.example.com/"),
           logo: SelectProp({
             "Not set": undefined,
@@ -82,7 +82,7 @@ const RaterPage = () => (
           ...DEMO_COMMON_PROPS,
         }}
         rows={[
-          ["value", "description", "user"],
+          ["description", "user", "rate"],
           ["max", "url", "logo", "rateType"],
           ["icon", "label", "dark", "shadow"],
           ["unstyled", "hide", "className"],

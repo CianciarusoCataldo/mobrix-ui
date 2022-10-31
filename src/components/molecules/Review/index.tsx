@@ -1,16 +1,15 @@
-import React from "react";
-
-import Container from "../Container";
-import Link from "../../atoms/Link";
-import Rater from "../Rater";
-
 import "./styles.css";
 
-import { ReviewComponent, ReviewProps } from "./types";
+import React from "react";
+
+import { ReviewComponent } from "./types";
 
 import { icons } from "./icons";
+
 import { buildBoxComponent } from "../../../utils";
-import classNames from "classnames";
+
+import Link from "../../atoms/Link";
+import Rater from "../Rater";
 
 /**
  * A smart review container, useful to show reviews on your website with custom data inside. Optionally, an external link can be set to redirect
@@ -18,12 +17,13 @@ import classNames from "classnames";
  *
  * @since 1.1.0
  *
- * @param {MobrixReviewProps["user"]} user username showed above the review description, at the right of the icon
- * @param {MobrixReviewProps["description"]} description review description showed below the review username, at
- * @param {MobrixReviewProps["url"]} url review external url. If set, an icon will be showed at the top right of the review
- * @param {MobrixReviewProps["rate"]} rate review vote, showed at the bottom of the review
- * @param {MobrixReviewProps["maxRate"]} maxRate max vote (max number of icons showed)
- * @param {MobrixReviewProps["type"]} logo Social icon, showed at the top right of the container. Supported icons (right now, but will be increased time by time) are Facebook, Twitter, LinkedIn, Github and Google.
+ * @param {string} user username showed above the review description, at the right of the icon
+ * @param {string} description review description showed below the review username, at the top of the rate
+ * @param {string} url review external url. If set, an icon will be showed at the top right of the review
+ * @param {number} rate review vote, showed at the bottom of the review
+ * @param {number} rate review vote icon type, to choose which icon will be used to show the review rate (allowed icons type are `stars` and `circle`)
+ * @param {number} max max vote (max number of rate icons showed)
+ * @param {"default" | "facebook" | "twitter" | "google" | "linkedin" | "github"} logo Social icon type, showed at the top right of the container. Supports popular web services like Facebook, Twitter, Google and so on. Proviced icon list will grow up time by time and will be updated with the latest web services, to keep it usable for the future.
  * @param {JSX.Element | string} label `common MoBrix-ui prop` - Component top label
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
@@ -37,10 +37,10 @@ import classNames from "classnames";
  * import { Review } from 'mobrix-ui';
  *
  * render(<Review
- *          type="facebook"
- *          value={3}
- *          user="Test user"
- *          description="Test description"
+ *          logo="facebook"
+ *          rate={3}
+ *          user="Example user"
+ *          description="Example review description"
  *        />, document.getElementById("root"));
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Review
@@ -52,57 +52,47 @@ import classNames from "classnames";
 const Review: ReviewComponent = ({
   user,
   description,
-  value,
+  rate,
   max,
   icon,
   url,
   logo,
   label,
-  className,
-  shadow,
   rateType,
   ...commonProps
 }) => {
-  return buildBoxComponent<number>({
-    value,
+  return buildBoxComponent({
     label,
-    callBack: (value) => ({
+    callBack: () => ({
       name: "mobrix-ui-review",
       commonProps,
-      Component: (
-        <Container
-          unstyled={commonProps.unstyled}
-          dark={commonProps.dark}
-          shadow={shadow}
-          className={classNames("external-container", className)}
-        >
-          <div className="url-container">
-            {url ? (
-              <Link newTab to={url}>
-                {icons[logo || "default"]}
-              </Link>
-            ) : (
-              logo && icons[logo]
-            )}
+      Component: [
+        <div key="url" className="url-container">
+          {url ? (
+            <Link newTab to={url}>
+              {icons[logo || "default"]}
+            </Link>
+          ) : (
+            logo && icons[logo]
+          )}
+        </div>,
+        <div className="info-box" key="info">
+          <div className="user-info">
+            <div className="photo">{icon}</div>
+            {user && <span className="username">{user}</span>}
           </div>
-
-          <div className="info-box">
-            <div className="user-info">
-              <div className="photo">{icon}</div>
-              {user && <span className="username">{user}</span>}
-            </div>
-            {description && <span className="description">{description}</span>}
-          </div>
-          <Rater
-            hide={!value}
-            type={rateType}
-            unstyled
-            readonly
-            value={value}
-            max={max}
-          />
-        </Container>
-      ),
+          {description && <span className="description">{description}</span>}
+        </div>,
+        <Rater
+          key="rate"
+          hide={!rate}
+          type={rateType}
+          unstyled
+          readonly
+          value={rate}
+          max={max}
+        />,
+      ],
     }),
   });
 };

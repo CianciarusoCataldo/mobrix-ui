@@ -5,6 +5,7 @@ export const icons: Record<ReviewLogo, JSX.Element> = {
   default: (
     <svg
       height="30px"
+      data-id="default-logo"
       viewBox="0 0 457.03 457.03"
       width="30px"
       xmlns="http://www.w3.org/2000/svg"
@@ -16,6 +17,7 @@ export const icons: Record<ReviewLogo, JSX.Element> = {
   ),
   facebook: (
     <svg
+      data-id="facebook-logo"
       height="30px"
       width="30px"
       viewBox="0 0 14222 14222"
@@ -29,7 +31,12 @@ export const icons: Record<ReviewLogo, JSX.Element> = {
     </svg>
   ),
   google: (
-    <svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      data-id="google-logo"
+      height="30px"
+      width="30px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="m23.7 12.3-.1-2.3H12.3v4.5h6.4a5.6 5.6 0 0 1-2.4 3.6v3h3.9a12 12 0 0 0 3.5-8.8Z"
         fill="#4285F4"
@@ -50,6 +57,7 @@ export const icons: Record<ReviewLogo, JSX.Element> = {
   ),
   twitter: (
     <svg
+      data-id="twitter-logo"
       height="30px"
       width="30px"
       viewBox="126.4 2.3 589 589"
@@ -64,6 +72,7 @@ export const icons: Record<ReviewLogo, JSX.Element> = {
   ),
   linkedin: (
     <svg
+      data-id="linkedin-logo"
       height="30px"
       width="30px"
       viewBox="0 0 72 72"
@@ -80,6 +89,7 @@ export const icons: Record<ReviewLogo, JSX.Element> = {
   ),
   github: (
     <svg
+      data-id="github-logo"
       height="30px"
       width="30px"
       viewBox="0 0 1024 1024"

@@ -3,12 +3,14 @@
   border-radius: 9999px;
 }
 
-#mobrix-ui-review .external-container {
+#mobrix-ui-review>.box-component>.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   padding: 0.6rem;
+  background-image: var(--mobrix-ui-background);
+  color: var(--mobrix-ui-text-color);
 }
 
 #mobrix-ui-review .url-container {

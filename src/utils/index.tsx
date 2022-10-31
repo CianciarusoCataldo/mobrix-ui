@@ -94,8 +94,13 @@ export const buildBoxComponent = <T extends any>({
     commonProps: { ...commonProps, shadow: false, className: undefined },
     Component: (
       <div className="box-component">
-        {label && <div className="box-label">{label}</div>}
+        {label && (
+          <div className="box-label" key="mobrix-box-label">
+            {label}
+          </div>
+        )}
         <div
+          key="mobrix-box-container"
           className={classNames(
             commonProps!.className,
             {

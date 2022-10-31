@@ -17,14 +17,14 @@ renderingTest(Review, {
 
 describeTest("External link icon test", () => {
   test("If logo prop is set, the icon is showed also when no url is provided", () => {
-    const wrapper = mount(<Review value={3} max={6} logo="github" />);
-    expect(wrapper);
+    const wrapper = mount(<Review rate={3} max={6} logo="github" />);
+    expect(wrapper.find('svg[data-id="github-logo"]'));
   });
 
   test("If url is provided but logo is not set, the default icon is used", () => {
     const wrapper = mount(
-      <Review value={3} max={6} url="www.mobrix-test.com" />
+      <Review rate={3} max={6} url="https://www.example.com/" />
     );
-    expect(wrapper);
+    expect(wrapper.find('svg[data-id="default-logo"]'));
   });
 });
