@@ -67,7 +67,8 @@ const Card: CardComponent = ({
       </div>
     );
 
-  children && components.push(children);
+  children &&
+    components.push(<div key="mobrix_ui_card_children">{children}</div>);
 
   footer &&
     components.push(

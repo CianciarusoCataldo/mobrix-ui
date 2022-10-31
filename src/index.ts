@@ -88,6 +88,12 @@ export { RaterComponent, RaterProps } from "./components/molecules/Rater/types";
 export { default as Rater } from "./components/molecules/Rater";
 
 export {
+  ReviewComponent,
+  ReviewProps,
+} from "./components/molecules/Review/types";
+export { default as Review } from "./components/molecules/Review";
+
+export {
   SpinnerComponent,
   SpinnerProps,
 } from "./components/molecules/Spinner/types";

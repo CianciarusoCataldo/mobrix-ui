@@ -31,6 +31,9 @@ export type RaterProps = CommonProps &
 
     /** vote icons type */
     type?: "star" | "circle";
+
+    /** if true, the rate can't be changed by clicking on the icons */
+    readonly?: boolean;
   };
 
 /**

@@ -46,6 +46,7 @@ const engineConfig = {
       List: "/components/atoms/List",
       Modal: "/components/atoms/Modal",
       Rater: "/components/molecules/Rater",
+      Review: "/components/molecules/Review",
       Spinner: "/components/molecules/Spinner",
       Table: "/components/molecules/Table",
       Toggle: "/components/atoms/Toggle",
