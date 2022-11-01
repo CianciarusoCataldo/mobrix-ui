@@ -39,6 +39,7 @@ const engineConfig = {
       Drawer: "/components/molecules/Drawer",
       Dropdown: "/components/molecules/Dropdown",
       ExpandableContainer: "/components/molecules/ExpandableContainer",
+      FacebookButtons: "/components/atoms/FacebookButtons",
       Form: "/components/molecules/Form",
       Input: "/components/atoms/Input",
       Label: "/components/atoms/Label",

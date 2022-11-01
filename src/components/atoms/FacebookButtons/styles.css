@@ -1,0 +1,5 @@
+#mobrix-ui-facebook-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

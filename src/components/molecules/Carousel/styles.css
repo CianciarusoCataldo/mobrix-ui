@@ -36,6 +36,15 @@
   fill: rgb(231, 152, 6);
 }
 
+#mobrix-ui-carousel.styled > .box-component > .container .arrow.disabled svg,
+#mobrix-ui-carousel.styled
+  > .box-component
+  > .container
+  .arrow.disabled:hover
+  svg {
+  fill: none;
+}
+
 #mobrix-ui-carousel > .box-component > .container .prev {
   margin-right: 0.6rem;
 }

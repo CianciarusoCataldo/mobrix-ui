@@ -104,7 +104,9 @@ const Carousel: CarouselComponent = ({
             <Button
               dark={commonProps.dark}
               id="left_arrow"
-              className="arrow prev"
+              className={classNames("arrow prev", {
+                disabled: item === 0,
+              })}
               unstyled
               disabled={item === 0}
               onClick={() => {
@@ -118,7 +120,9 @@ const Carousel: CarouselComponent = ({
             <Button
               dark={commonProps.dark}
               unstyled
-              className="arrow next"
+              className={classNames("arrow next", {
+                disabled: item === elements.length - 1,
+              })}
               id="right_arrow"
               disabled={item === elements.length - 1}
               onClick={() => {
