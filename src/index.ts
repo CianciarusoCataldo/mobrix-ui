@@ -28,6 +28,8 @@ export {
 } from "./components/atoms/Divider/types";
 export { default as Divider } from "./components/atoms/Divider";
 
+export { default as FacebookButtons } from "./components/atoms/FacebookButtons";
+
 export { InputComponent, InputProps } from "./components/atoms/Input/types";
 export { default as Input } from "./components/atoms/Input";
 
