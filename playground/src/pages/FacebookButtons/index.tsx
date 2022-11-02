@@ -23,6 +23,12 @@ const FacebookButtonsPage = () => (
             small: BooleanProp(false),
             ...DEMO_COMMON_PROPS,
           }}
+          rows={[
+            ["pageId", "share", "small"],
+            ["With custom width", "width"],
+            ["className", "dark"],
+            ["shadow", "unstyled", "hide"],
+          ]}
         >
           {(props: any) => {
             let newProps = { ...props };
