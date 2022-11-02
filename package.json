@@ -75,6 +75,7 @@
     "build-playground": "cd playground && npm run build",
     "predeploy": "sh ./scripts/pre-deploy.sh",
     "deploy": "sh ./scripts/deploy.sh",
-    "test": "sh ./scripts/start-tests.sh"
+    "test": "sh ./scripts/start-tests.sh",
+    "update:docs": "sh ./scripts/update-docs.sh"
   }
 }
