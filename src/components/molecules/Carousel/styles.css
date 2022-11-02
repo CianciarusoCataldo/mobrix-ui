@@ -37,11 +37,7 @@
 }
 
 #mobrix-ui-carousel.styled > .box-component > .container .arrow.disabled svg,
-#mobrix-ui-carousel.styled
-  > .box-component
-  > .container
-  .arrow.disabled:hover
-  svg {
+#mobrix-ui-carousel.styled > .box-component > .container .arrow.disabled:hover svg {
   fill: none;
 }
 
