@@ -29,6 +29,7 @@ const engineConfig = {
     routes: {
       Home: "/",
       Button: "/components/atoms/Button",
+      Calendar: "/components/organisms/Card",
       Card: "/components/molecules/Card",
       Carousel: "/components/molecules/Carousel",
       CheckBox: "/components/atoms/CheckBox",

@@ -1,7 +1,10 @@
+#mobrix-ui-dropdown .container {
+  position: relative;
+}
+
 #mobrix-ui-dropdown.styled .container {
   border-radius: 0.375rem;
   color: var(--mobrix-ui-text-color);
-  position: relative;
   background-image: var(--mobrix-ui-background);
 }
 

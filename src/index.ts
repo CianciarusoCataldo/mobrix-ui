@@ -104,6 +104,13 @@ export { default as Spinner } from "./components/molecules/Spinner";
 export { TableComponent, TableProps } from "./components/molecules/Table/types";
 export { default as Table } from "./components/molecules/Table";
 
+/** Organisms */
+export {
+  CalendarComponent,
+  CalendarProps,
+} from "./components/organisms/Calendar/types";
+export { default as Calendar } from "./components/organisms/Calendar";
+
 /** Shared types */
 export { Wrappers } from "./utils/global";
 export {
