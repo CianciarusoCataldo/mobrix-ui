@@ -5,7 +5,7 @@ import { SpinnerComponent } from "./types";
 
 import DEFAULT_ICONS from "./icons";
 
-import { buildBoxComponent } from "../../../utils";
+import { withMobrixUiValue } from "../../../utils";
 
 import Container from "../Container";
 
@@ -15,7 +15,6 @@ import Container from "../Container";
  * @since 1.0.0
  *
  * @param {number} value Spinner status
- * @param {JSX.Element | string} label `common MoBrix-ui prop` - Component top label
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -37,16 +36,16 @@ import Container from "../Container";
  * @copyright 2022 Cataldo Cianciaruso
  */
 const Spinner: SpinnerComponent = ({
-  value,
-  label,
+  value: inputValue,
   statuses,
   ...commonProps
 }) => {
-  return buildBoxComponent({
-    label,
-    value,
+  return withMobrixUiValue({
+    name: "mobrix-ui-spinner",
+    inputValue,
     defaultValue: "loading",
-    callBack: (value, setValue) => {
+    commonProps,
+    props: (value, setValue) => {
       const ICONS = statuses || DEFAULT_ICONS;
       const StatusIcon = () => (
         <Container unstyled animated>
@@ -55,13 +54,11 @@ const Spinner: SpinnerComponent = ({
       );
 
       return {
-        commonProps,
         Component: (
           <Container unstyled animated>
             <StatusIcon />
           </Container>
         ),
-        name: "mobrix-ui-spinner",
       };
     },
   });

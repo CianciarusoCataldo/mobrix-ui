@@ -1,6 +1,6 @@
 import {
-  BoxComponent,
   CommonProps,
+  ComponentWithIcon,
   MoBrixUiComponent,
 } from "../../../utils/global";
 import { RaterProps } from "../Rater/types";
@@ -32,7 +32,7 @@ export type ReviewLogo =
  * @copyright 2022 Cataldo Cianciaruso
  */
 export type ReviewProps = CommonProps &
-  Omit<BoxComponent, "value"> & {
+  ComponentWithIcon & {
     /** username showed above the review description, at the right of the icon */
     user?: string;
 

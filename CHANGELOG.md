@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [2.0.0](#200)
 - [1.2.0](#120)
 - [1.1.0](#110)
 - [1.0.0](#100)
@@ -11,6 +12,18 @@
 ---
 
 ## Changes
+
+<br>
+
+### 2.0.0
+
+- `Calendar` component
+- `DatePicker` component
+- `Popup` component
+- Box components removed globally, now every component is built only with `buildComponent` function
+- Huge cleanup
+- Deep refactoring
+- Minor fixes
 
 <br>
 

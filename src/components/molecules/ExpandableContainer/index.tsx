@@ -64,6 +64,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
           onClick={() => setCompact(!compact)}
           id="arrow_button"
           className="expandable-container-arrow-button"
+          key="arrow_button"
         >
           <svg
             className={classNames("arrow", {

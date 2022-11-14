@@ -1,10 +1,8 @@
 import "./styles.css";
 
-import React from "react";
-
 import { CounterComponent } from "./types";
 
-import { buildComponent, withMobrixUiValue } from "../../../utils";
+import { withMobrixUiValue } from "../../../utils";
 
 /**
  * A flexible numeric input element

@@ -4,7 +4,7 @@ import React from "react";
 
 import { FormComponent } from "./types";
 
-import { buildBoxComponent } from "../../../utils";
+import { buildComponent } from "../../../utils";
 
 import Button from "../../atoms/Button";
 import CheckBox from "../../atoms/CheckBox";
@@ -74,92 +74,89 @@ const Form: FormComponent = ({
   const [values, setValues] =
     React.useState<Record<string, string | boolean | number>>(dropdownFields);
 
-  return buildBoxComponent({
-    callBack: () => ({
-      name: "mobrix-ui-form",
-      Component: [
-        <p key="mobrix_ui_form_title" className="title">
-          {title}
-        </p>,
-        ...Object.keys(dropdownFields).map((field, index) => {
-          const name = field;
-          const { type, header } = fields![field];
+  return buildComponent({
+    name: "mobrix-ui-form",
+    Component: [
+      <p key="mobrix_ui_form_title" className="title">
+        {title}
+      </p>,
+      ...Object.keys(dropdownFields).map((field, index) => {
+        const name = field;
+        const { type, header } = fields![field];
 
-          let FieldElement: (props: any) => JSX.Element = Input;
+        let FieldElement: (props: any) => JSX.Element = Input;
 
-          let fieldProps: Record<string, any> = {
-            //label: <span className="header">{header}</span>,
-            value: String(values[field]),
-            id: `form-field-${index}`,
-            onChange: (newValue: string) => {
-              let tmpValues = { ...values };
-              let value = String(newValue);
-              if (value.length < 1) {
-                tmpValues[name] = "";
-              } else {
-                tmpValues[name] = value;
-              }
-
-              setValues(tmpValues);
-            },
-            className: "form-input",
-          };
-
-          if (type) {
-            switch (type) {
-              case "boolean":
-                {
-                  FieldElement = CheckBox;
-                  fieldProps = {
-                    ...fieldProps,
-                    className: "",
-                    value: values[field] as boolean,
-                    onChange: (value: boolean) => {
-                      let tmpValues = { ...values };
-                      tmpValues[field] = value;
-                      setValues(tmpValues);
-                    },
-                  };
-                }
-                break;
-              case "numeric":
-                {
-                  FieldElement = Counter;
-                  fieldProps = {
-                    ...fieldProps,
-                    value: values[field] as number,
-                    onChange: (value: number) => {
-                      let tmpValues = { ...values };
-                      tmpValues[field] = value;
-                      setValues(tmpValues);
-                    },
-                  };
-                }
-                break;
+        let fieldProps: Record<string, any> = {
+          value: String(values[field]),
+          id: `form-field-${index}`,
+          onChange: (newValue: string) => {
+            let tmpValues = { ...values };
+            let value = String(newValue);
+            if (value.length < 1) {
+              tmpValues[name] = "";
+            } else {
+              tmpValues[name] = value;
             }
-          }
 
-          return (
-            <div className="field" key={`form_field_${index}`}>
-              {<FieldElement {...fieldProps} />}
-            </div>
-          );
-        }),
-        <div key="mobrix_ui_form_submit_button" className="submit-button">
-          <Button
-            dark={!commonProps.dark}
-            id="form-submit-button"
-            onClick={() => {
-              onSubmit && onSubmit(values);
-            }}
-          >
-            {submitLabel}
-          </Button>
-        </div>,
-      ],
-      commonProps,
-    }),
-    label,
+            setValues(tmpValues);
+          },
+          className: "form-input",
+        };
+
+        if (type) {
+          switch (type) {
+            case "boolean":
+              {
+                FieldElement = CheckBox;
+                fieldProps = {
+                  ...fieldProps,
+                  className: "",
+                  value: values[field] as boolean,
+                  onChange: (value: boolean) => {
+                    let tmpValues = { ...values };
+                    tmpValues[field] = value;
+                    setValues(tmpValues);
+                  },
+                };
+              }
+              break;
+            case "numeric":
+              {
+                FieldElement = Counter;
+                fieldProps = {
+                  ...fieldProps,
+                  value: values[field] as number,
+                  onChange: (value: number) => {
+                    let tmpValues = { ...values };
+                    tmpValues[field] = value;
+                    setValues(tmpValues);
+                  },
+                };
+              }
+              break;
+          }
+        }
+
+        return (
+          <div className="field" key={`form_field_${index}`}>
+            <span className="header">{header}</span>
+            {<FieldElement {...fieldProps} />}
+          </div>
+        );
+      }),
+      <div key="mobrix_ui_form_submit_button" className="submit-button">
+        <Button
+          dark={!commonProps.dark}
+          id="form-submit-button"
+          onClick={() => {
+            onSubmit && onSubmit(values);
+          }}
+        >
+          {submitLabel}
+        </Button>
+      </div>,
+    ],
+    commonProps,
   });
 };
 

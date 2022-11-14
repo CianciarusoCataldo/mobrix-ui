@@ -57,7 +57,6 @@ const RaterPage = () => (
       <Demo
         label={componentLabel}
         props={{
-          label: StringProp("Review label"),
           icon: BooleanProp(true),
           description: StringProp("MoBrix-ui is an awesome library !"),
           user: StringProp("Random user"),
@@ -83,7 +82,7 @@ const RaterPage = () => (
         rows={[
           ["description", "user", "rate"],
           ["max", "url", "logo", "rateType"],
-          ["icon", "label", "dark", "shadow"],
+          ["icon", "dark", "shadow"],
           ["unstyled", "hide", "className"],
         ]}
       >

@@ -97,9 +97,9 @@ const HomePage = () => {
       <div key="homepage_container" className="flex flex-col lg:flex-row">
         <div>
           <Card shadow body={description} />
+          <AppLabel className="text-2xl mt-10" value={t("installation", { context: "title" })} />
           <Card
             shadow
-            label={<AppLabel value={t("installation", { context: "title" })} />}
             body={installationGuide}
           />
         </div>

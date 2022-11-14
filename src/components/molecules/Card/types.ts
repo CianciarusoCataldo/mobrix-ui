@@ -1,8 +1,8 @@
 import {
-  BoxComponent,
   BuilderComponent,
   CommonProps,
   ComponentWithChildren,
+  ComponentWithIcon,
   MoBrixUiComponent,
 } from "../../../utils/global";
 
@@ -17,7 +17,7 @@ import {
  */
 export type CardProps = CommonProps &
   ComponentWithChildren &
-  Omit<BoxComponent, "value"> & {
+  ComponentWithIcon & {
     /** Card header content */
     header?: BuilderComponent;
 

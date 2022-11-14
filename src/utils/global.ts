@@ -30,19 +30,6 @@ export interface CommonProps {
   unstyled?: boolean;
 }
 
-/**
- * A standard {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} box component
- *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=box-components
- */
-export type BoxComponent<T = any, K = JSX.Element> = ComponentWithValue<T> & {
-  /** Custom component icon */
-  icon?: K;
-
-  /** Box component label */
-  label?: string | JSX.Element;
-};
-
 export interface ComponentWithValue<T = any> {
   /** Actual component value */
   value?: T;

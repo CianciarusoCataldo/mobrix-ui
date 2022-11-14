@@ -50,7 +50,7 @@ const HeaderContent = () => {
       className="pb-3"
       dark={dark}
       expanded={
-        <div className="flex flex-row mt-6">
+        <div className="flex flex-row mt-6" key="expanded_header">
           <div className="my-auto">
             <Button
               aria-label="drawer button"
@@ -105,7 +105,7 @@ const HeaderContent = () => {
         </div>
       }
     >
-      <div className="flex flex-col pb-4">
+      <div className="flex flex-col pb-4" key="header_content">
         <div className="flex" style={{ justifyContent: "flex-end" }}>
           <div className="flex flex-row">
             <div className="flex flex-row pr-4">

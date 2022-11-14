@@ -2,6 +2,7 @@ import {
   BoxComponent,
   BuilderComponent,
   CommonProps,
+  ComponentWithValue,
   MoBrixUiComponent,
 } from "../../../utils/global";
 
@@ -15,7 +16,7 @@ import {
  * @copyright 2022 Cataldo Cianciaruso
  */
 export type SpinnerProps<T extends string = string> = CommonProps &
-  Omit<BoxComponent<T>, "icon"> & {
+  ComponentWithValue<T> & {
     statuses?: Record<T, BuilderComponent>;
   };
 

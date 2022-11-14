@@ -10,12 +10,7 @@
   color: var(--mobrix-ui-text-color);
 }
 
-#mobrix-ui-card .container {
-  margin-top: 0.75rem;
-  border-radius: 0.125rem;
-}
-
-#mobrix-ui-card.styled .container {
+#mobrix-ui-card.styled {
   background-image: var(--mobrix-ui-background);
 }
 

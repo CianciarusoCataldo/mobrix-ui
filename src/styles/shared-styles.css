@@ -62,11 +62,11 @@
 }
 
 [id^="mobrix-ui-"].animated {
-  -webkit-animation: fadein 1s;
-  -moz-animation: fadein 1s;
-  -ms-animation: fadein 1s;
-  -o-animation: fadein 1s;
-  animation: fadein 1s;
+  -webkit-animation: fadein 0.7s;
+  -moz-animation: fadein 0.7s;
+  -ms-animation: fadein 0.7s;
+  -o-animation: fadein 0.7s;
+  animation: fadein 0.7s;
 }
 
 [id^="mobrix-ui-"].shadowed,

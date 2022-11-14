@@ -13,16 +13,15 @@ const CardPage = () => (
         className="m-0 p-0"
         label={componentLabel}
         props={{
-          label: StringProp("label"),
           header: StringProp("header"),
           body: StringProp("body"),
           footer: StringProp("footer"),
           ...DEMO_COMMON_PROPS,
         }}
         rows={[
-          ["label", "header"],
-          ["body", "footer"],
-          ["className", "shadow", "dark", "hide", "unstyled"],
+          ["footer", "header"],
+          ["body", "className"],
+          ["shadow", "dark", "hide", "unstyled"],
         ]}
         startColor="#999"
       >

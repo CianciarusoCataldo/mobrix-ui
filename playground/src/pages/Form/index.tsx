@@ -19,9 +19,13 @@ const FormPage = () => (
           props={{
             title: StringProp("title"),
             submitLabel: StringProp("submit label"),
-            label: StringProp("label"),
             ...DEMO_COMMON_PROPS,
           }}
+          rows={[
+            ["title", "submitLabel"],
+            ["className", "dark", "shadow"],
+            ["unstyled", "hide"],
+          ]}
         >
           {(props: any) => (
             <div className="flex flex-col items-center">

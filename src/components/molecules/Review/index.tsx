@@ -6,7 +6,7 @@ import { ReviewComponent } from "./types";
 
 import { icons } from "./icons";
 
-import { buildBoxComponent } from "../../../utils";
+import { buildComponent } from "../../../utils";
 
 import Link from "../../atoms/Link";
 import Rater from "../Rater";
@@ -57,43 +57,39 @@ const Review: ReviewComponent = ({
   icon,
   url,
   logo,
-  label,
   rateType,
   ...commonProps
 }) => {
-  return buildBoxComponent({
-    label,
-    callBack: () => ({
-      name: "mobrix-ui-review",
-      commonProps,
-      Component: [
-        <div key="url" className="url-container">
-          {url ? (
-            <Link newTab to={url}>
-              {icons[logo || "default"]}
-            </Link>
-          ) : (
-            logo && icons[logo]
-          )}
-        </div>,
-        <div className="info-box" key="info">
-          <div className="user-info">
-            <div className="photo">{icon}</div>
-            {user && <span className="username">{user}</span>}
-          </div>
-          {description && <span className="description">{description}</span>}
-        </div>,
-        <Rater
-          key="rate"
-          hide={!rate}
-          type={rateType}
-          unstyled
-          readonly
-          value={rate}
-          max={max}
-        />,
-      ],
-    }),
+  return buildComponent({
+    name: "mobrix-ui-review",
+    commonProps,
+    Component: [
+      <div key="url" className="url-container">
+        {url ? (
+          <Link newTab to={url}>
+            {icons[logo || "default"]}
+          </Link>
+        ) : (
+          logo && icons[logo]
+        )}
+      </div>,
+      <div className="info-box" key="info">
+        <div className="user-info">
+          <div className="photo">{icon}</div>
+          {user && <span className="username">{user}</span>}
+        </div>
+        {description && <span className="description">{description}</span>}
+      </div>,
+      <Rater
+        key="rate"
+        hide={!rate}
+        type={rateType}
+        unstyled
+        readonly
+        value={rate}
+        max={max}
+      />,
+    ],
   });
 };
 

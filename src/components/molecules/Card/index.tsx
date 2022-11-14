@@ -4,7 +4,7 @@ import React from "react";
 
 import { CardComponent } from "./types";
 
-import { buildBoxComponent } from "../../../utils";
+import { buildComponent } from "../../../utils";
 
 import Divider from "../../atoms/Divider";
 
@@ -44,7 +44,6 @@ const Card: CardComponent = ({
   footer,
   children,
   className,
-  label,
   ...commonProps
 }) => {
   let components: JSX.Element[] = [];
@@ -78,16 +77,10 @@ const Card: CardComponent = ({
       </div>
     );
 
-  return buildBoxComponent({
-    callBack: () => ({
-      name: "mobrix-ui-card",
-      Component: components,
-      commonProps: {
-        ...commonProps,
-      },
-    }),
-    defaultValue: "",
-    label,
+  return buildComponent({
+    name: "mobrix-ui-card",
+    Component: components,
+    commonProps,
   });
 };
 

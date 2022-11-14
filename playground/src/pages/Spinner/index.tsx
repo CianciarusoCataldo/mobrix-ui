@@ -36,6 +36,11 @@ const SpinnerPage = () => (
             ...DEMO_COMMON_PROPS,
             shadow: BooleanProp(false),
           }}
+          rows={[
+            ["value", customStatesLabel, customValueLabel],
+            ["className", "dark"],
+            ["shadow", "unstyled", "hide"],
+          ]}
         >
           {(props: any) => {
             let componentProps = { ...props };
@@ -63,13 +68,7 @@ const SpinnerPage = () => (
             }
 
             return (
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                }}
-              >
+              <div className="flex flex-col items-center">
                 <Spinner
                   {...componentProps}
                   className={

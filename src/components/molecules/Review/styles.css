@@ -1,15 +1,15 @@
-#mobrix-ui-review img,
-#mobrix-ui-review .photo {
-  border-radius: 9999px;
-}
-
-#mobrix-ui-review >.box-component >.container {
+#mobrix-ui-review {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0.6rem;
   background-image: var(--mobrix-ui-background);
   color: var(--mobrix-ui-text-color);
+}
+
+#mobrix-ui-review img,
+#mobrix-ui-review .photo {
+  border-radius: 9999px;
 }
 
 #mobrix-ui-review .url-container {
