@@ -1,10 +1,13 @@
-import classNames from "classnames";
-import React from "react";
-import Button from "../../atoms/Button";
-import Container from "../Container";
 import "./styles.css";
 
+import React from "react";
+
 import { ExpandableContainerComponent } from "./types";
+
+import classNames from "classnames";
+import { withMobrixUiValue } from "../../../utils";
+
+import Button from "../../atoms/Button";
 
 /**
  * An exapandable container, to hide/show some content on demand.
@@ -41,47 +44,47 @@ const ExpandableContainer: ExpandableContainerComponent = ({
   expanded,
   compact: startCompact,
   children,
-  ...containerProps
+  animated,
+  wrapper,
+  ...commonProps
 }) => {
-  const [compact, setCompact] = React.useState(startCompact);
+  return withMobrixUiValue({
+    name: "mobrix-ui-expandable-container",
+    defaultValue: false,
+    commonProps,
+    animated,
+    wrapper,
+    props: (compact, setCompact) => {
+      let components: JSX.Element[] = [children];
 
-  React.useEffect(() => {
-    if (startCompact !== undefined && startCompact !== null) {
-      setCompact(startCompact);
-    }
-  }, [startCompact]);
-
-  return (
-    <Container {...containerProps}>
-      {children}
-      {!compact && expanded}
-      <Button
-        unstyled
-        onClick={() => setCompact(!compact)}
-        id="arrow_button"
-        className="expandable-container-arrow"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          margin: "auto",
-        }}
-      >
-        <svg
-          className={classNames("arrow", {
-            down: compact,
-            up: !compact,
-            dark: containerProps.dark,
-          })}
-          width="1.5rem"
-          fillRule="evenodd"
-          viewBox="0 0 512 319.24"
-          xmlns="http://www.w3.org/2000/svg"
+      !compact && expanded && components.push(expanded);
+      components.push(
+        <Button
+          unstyled
+          onClick={() => setCompact(!compact)}
+          id="arrow_button"
+          className="expandable-container-arrow-button"
         >
-          <path d="m5.9 270.28 43.07 43.07c7.86 7.86 20.73 7.84 28.56 0l178.48-178.48L434.5 313.35c7.86 7.86 20.74 7.82 28.56 0l43.07-43.07c7.83-7.84 7.83-20.72 0-28.56L313.72 49.32l-.36-.37-43.07-43.07c-7.83-7.82-20.7-7.86-28.56 0l-43.07 43.07-.36.37L5.9 241.72c-7.87 7.86-7.87 20.7 0 28.56z" />
-        </svg>
-      </Button>
-    </Container>
-  );
+          <svg
+            className={classNames("arrow", {
+              down: compact,
+              up: !compact,
+              dark: commonProps.dark,
+            })}
+            width="1.5rem"
+            fillRule="evenodd"
+            viewBox="0 0 512 319.24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="m5.9 270.28 43.07 43.07c7.86 7.86 20.73 7.84 28.56 0l178.48-178.48L434.5 313.35c7.86 7.86 20.74 7.82 28.56 0l43.07-43.07c7.83-7.84 7.83-20.72 0-28.56L313.72 49.32l-.36-.37-43.07-43.07c-7.83-7.82-20.7-7.86-28.56 0l-43.07 43.07-.36.37L5.9 241.72c-7.87 7.86-7.87 20.7 0 28.56z" />
+          </svg>
+        </Button>
+      );
+      return {
+        Component: components,
+      };
+    },
+  });
 };
 
 export default ExpandableContainer;

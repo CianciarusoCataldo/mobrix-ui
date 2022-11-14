@@ -4,7 +4,7 @@ import Elem2 from "./elem2.png";
 
 import { DEMO_COMMON_PROPS } from "constants/demo-props";
 
-import { Demo, StringProp } from "@cianciarusocataldo/demo-ui";
+import { Demo, NumberProp } from "@cianciarusocataldo/demo-ui";
 
 import { Carousel } from "mobrix-ui-preview";
 import { ComponentPage } from "../../components/ComponentPage";
@@ -16,20 +16,22 @@ const CarouselPage = () => (
       <Demo
         label={componentLabel}
         props={{
-          label: StringProp("label"),
+          value: NumberProp(0),
           ...DEMO_COMMON_PROPS,
         }}
       >
         {(props: any) => {
           return (
-            <Carousel
-              elements={[
-                <img alt="" src={Elem0} width="250px" height="250px" />,
-                <img alt="" src={Elem1} width="250px" height="250px" />,
-                <img alt="" src={Elem2} width="250px" height="250px" />,
-              ]}
-              {...props}
-            />
+            <div className="flex flex-col items-center">
+              <Carousel
+                elements={[
+                  <img alt="" src={Elem0} width="250px" height="250px" />,
+                  <img alt="" src={Elem1} width="250px" height="250px" />,
+                  <img alt="" src={Elem2} width="250px" height="250px" />,
+                ]}
+                {...props}
+              />
+            </div>
           );
         }}
       </Demo>

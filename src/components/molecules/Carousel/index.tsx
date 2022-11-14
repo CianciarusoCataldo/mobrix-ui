@@ -7,7 +7,7 @@ import { CarouselComponent } from "./types";
 
 import { ICONS } from "../Rater/icons";
 
-import { buildBoxComponent } from "../../../utils";
+import { withMobrixUiValue } from "../../../utils";
 
 import Button from "../../atoms/Button";
 import { arrowIcon } from "./icons";
@@ -18,7 +18,6 @@ import { arrowIcon } from "./icons";
  * @since 1.0.0
  *
  * @param {(string | JSX.Element | Element)[]} elements carousel elements
- * @param {JSX.Element | string} label `common MoBrix-ui prop` - Component top label
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -40,20 +39,24 @@ import { arrowIcon } from "./icons";
  */
 const Carousel: CarouselComponent = ({
   elements: actualElements,
-  label,
   onChange,
   value,
   ...commonProps
 }) => {
-
   const [activeClassName, setActiveClassname] = React.useState("");
   const [hoveredDot, setHoveredDot] = React.useState<number | null>(null);
 
-  return buildBoxComponent<number>({
-    callBack: (item, setItem) => {
+  return withMobrixUiValue<number>({
+    name: "mobrix-ui-carousel",
+    commonProps,
+    defaultValue: 0,
+    inputValue: value,
+    props: (selectedItem, setItem) => {
       let dots: JSX.Element[] = [];
       let elementsArray: JSX.Element[] = [];
       const elements = actualElements || [];
+      const item =
+        Number(selectedItem) < elements.length ? Number(selectedItem) : 0;
       const updateItem = (newItem: number) => {
         onChange && onChange(newItem);
         setItem(newItem);
@@ -94,7 +97,6 @@ const Carousel: CarouselComponent = ({
         });
       }
       return {
-        name: "mobrix-ui-carousel",
         Component: [
           <div className="elements" key="mobrix_ui_carousel_elements">
             <Button
@@ -133,11 +135,8 @@ const Carousel: CarouselComponent = ({
             <div className="dots">{dots}</div>
           </div>,
         ],
-        commonProps,
       };
     },
-    label,
-    defaultValue: 0,
   });
 };
 

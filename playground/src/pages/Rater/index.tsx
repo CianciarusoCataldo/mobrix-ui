@@ -5,7 +5,6 @@ import {
   Demo,
   NumberProp,
   SelectProp,
-  StringProp,
 } from "@cianciarusocataldo/demo-ui";
 
 import { Rater } from "mobrix-ui-preview";
@@ -18,7 +17,6 @@ const RaterPage = () => (
       <Demo
         label={componentLabel}
         props={{
-          label: StringProp("label"),
           max: NumberProp(6),
           value: NumberProp(2),
           vertical: BooleanProp(false),
@@ -31,7 +29,7 @@ const RaterPage = () => (
         }}
         rows={[
           ["value", "max", "type", "vertical"],
-          ["readonly", "label", "className", "dark"],
+          ["readonly", "className", "dark"],
           ["shadow", "unstyled", "hide"],
         ]}
       >

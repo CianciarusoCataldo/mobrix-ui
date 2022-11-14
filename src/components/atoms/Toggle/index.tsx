@@ -3,7 +3,7 @@ import { ToggleComponent } from "./types";
 import React from "react";
 import classNames from "classnames";
 
-import { buildBoxComponent } from "../../../utils";
+import { withMobrixUiValue } from "../../../utils";
 
 const DEFAULT_ICON = (
   <svg
@@ -44,7 +44,6 @@ const DEFAULT_ICON = (
  * @param {JSX.Element} onIcon custom toggle "on" icon (`value` === `true`)
  * @param {JSX.Element} offIcon custom toggle "off" icon (`value` === `false`)
  * @param {(newValue:boolean)=>void} onChange calllback triggered when changing Toggle status
- * @param {JSX.Element | string} label `common MoBrix-ui prop` - Component top label
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -70,7 +69,6 @@ const Toggle: ToggleComponent = ({
   onChange,
   className,
   shadow,
-  label,
   offIcon,
   onIcon,
   ...commonProps
@@ -78,11 +76,10 @@ const Toggle: ToggleComponent = ({
   const toggleIcon = icon || DEFAULT_ICON;
   const iconOn = onIcon || toggleIcon;
   const iconOff = offIcon || toggleIcon;
-  const iconToShow = value === true ? iconOn : iconOff;
 
-  return buildBoxComponent<boolean>({
-    callBack: (status, setStatus) => ({
-      name: "mobrix-ui-toggle",
+  return withMobrixUiValue<boolean>({
+    name: "mobrix-ui-toggle",
+    props: (status, setStatus) => ({
       Component: (
         <div
           className={classNames("toggle-icon", {
@@ -90,24 +87,25 @@ const Toggle: ToggleComponent = ({
             "flip-back": status,
           })}
         >
-          {iconToShow}
+          {value === true ? iconOn : iconOff}
         </div>
       ),
-      commonProps,
-      additionalProps: {
-        onClick: () => {
-          onChange && onChange(!status);
-          setStatus(status);
-        },
+      commonProps: {
+        ...commonProps,
         className: classNames("container", className, {
           off: !status,
           shadowed: shadow,
         }),
       },
+      additionalProps: {
+        onClick: () => {
+          onChange && onChange(!status);
+          setStatus(status);
+        },
+      },
     }),
     defaultValue: true,
-    value,
-    label,
+    inputValue: value,
   });
 };
 

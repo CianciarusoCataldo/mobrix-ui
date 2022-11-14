@@ -48,7 +48,7 @@ export interface ComponentWithValue<T = any> {
   value?: T;
 }
 
-export interface ComponentWithIcon<T=JSX.Element> {
+export interface ComponentWithIcon<T = JSX.Element> {
   /** Icon showed inside the component */
   icon?: T;
 }
@@ -166,6 +166,8 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
 
   /** Component wrapper (like `div` or `button`, for example) */
   wrapper?: Wrappers;
+
+  animated?: boolean;
 };
 
 /**

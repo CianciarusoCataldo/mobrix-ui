@@ -1,8 +1,9 @@
 import {
-  BoxComponent,
   BuilderComponent,
   CommonProps,
   ComponentWithCallback,
+  ComponentWithIcon,
+  ComponentWithValue,
   MoBrixUiComponent,
 } from "../../../utils/global";
 
@@ -16,7 +17,8 @@ import {
  * @copyright 2022 Cataldo Cianciaruso
  */
 export type ToggleProps = CommonProps &
-  BoxComponent<boolean> &
+  ComponentWithValue<boolean> &
+  ComponentWithIcon &
   ComponentWithCallback<boolean> & {
     offIcon?: BuilderComponent;
     onIcon?: BuilderComponent;

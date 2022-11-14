@@ -4,7 +4,7 @@ import React from "react";
 
 import { CodeBoxComponent } from "./types";
 
-import { buildBoxComponent } from "../../../utils";
+import { withMobrixUiValue } from "../../../utils";
 import { parseCode } from "./parser";
 
 import Button from "../Button";
@@ -41,18 +41,16 @@ const CodeBox: CodeBoxComponent = ({
   value,
   enhanced,
   environment,
-  label,
   ...commonProps
-}) =>
-  buildBoxComponent<string>({
-    defaultValue: "",
-    value,
-    label,
-    callBack: (code, _) => {
-      const selectedLanguage = environment || "terminal";
+}) => {
+  const selectedLanguage = environment || "terminal";
 
+  return withMobrixUiValue<string>({
+    name: "mobrix-ui-codebox",
+    defaultValue: "",
+    inputValue: value,
+    props: (code, _) => {
       return {
-        name: "mobrix-ui-codebox",
         Component: (
           <div>
             {enhanced && (
@@ -123,5 +121,6 @@ const CodeBox: CodeBoxComponent = ({
       };
     },
   });
+};
 
 export default CodeBox;

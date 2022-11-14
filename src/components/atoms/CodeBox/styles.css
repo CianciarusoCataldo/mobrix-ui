@@ -1,4 +1,4 @@
-#mobrix-ui-codebox .container {
+#mobrix-ui-codebox {
   overflow: hidden;
   margin: 0.25rem;
   padding: 0.5rem;
@@ -6,24 +6,24 @@
   flex-direction: column;
 }
 
-#mobrix-ui-codebox.styled .container {
+#mobrix-ui-codebox.styled {
   color: var(--mobrix-ui-text-color);
   background-color: var(--mobrix-ui-background-color);
 }
 
-#mobrix-ui-codebox .container .copy-icon {
+#mobrix-ui-codebox .copy-icon {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-#mobrix-ui-codebox .container .code {
+#mobrix-ui-codebox .code {
   margin-top: 0.7rem;
   padding: 1rem;
 }
 
 @media (max-width: 1024px) {
-  #mobrix-ui-codebox .container .code {
+  #mobrix-ui-codebox .code {
     overflow: auto;
     font-size: 0.75rem;
     line-height: 1rem;
@@ -31,7 +31,7 @@
 }
 
 @media (min-width: 1024px) {
-  #mobrix-ui-codebox .container .code {
+  #mobrix-ui-codebox .code {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }

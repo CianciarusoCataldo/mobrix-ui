@@ -1,6 +1,6 @@
 import {
-  BoxComponent,
   CommonProps,
+  ComponentWithValue,
   MoBrixUiComponent,
 } from "../../../utils/global";
 
@@ -42,7 +42,7 @@ export interface CodeBlock<T = string | null> {
  * @copyright 2022 Cataldo Cianciaruso
  */
 export type CodeBoxProps = CommonProps &
-  Omit<BoxComponent<string>, "icon"> & {
+  ComponentWithValue<string> & {
     /** Enable/disable advanced mode, to access extra features, like the integrated copy button and text highlight */
     enhanced?: boolean;
 

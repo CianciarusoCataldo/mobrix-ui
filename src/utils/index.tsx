@@ -35,6 +35,7 @@ export const buildComponent = ({
   commonProps,
   additionalProps,
   wrapper,
+  animated
 }: BuilderProps) => {
   const SelectedWrapper = wrapper || "div";
 
@@ -44,6 +45,7 @@ export const buildComponent = ({
     key: commonProps?.key,
     className: classNames(commonProps!.className, {
       dark: commonProps!.dark,
+      animated: animated,
       "component-hidden": commonProps!.hide,
       shadowed: commonProps!.shadow,
       styled: !commonProps!.unstyled,
@@ -59,7 +61,7 @@ export const buildComponent = ({
   }
 };
 
-export const withMobrixUiValue = <T=any>({
+export const withMobrixUiValue = <T = any,>({
   name,
   additionalProps,
   wrapper,

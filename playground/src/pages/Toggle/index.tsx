@@ -3,7 +3,7 @@ import { DEMO_COMMON_PROPS } from "constants/demo-props";
 import OnIcon from "./on.svg";
 import OffIcon from "./off.svg";
 
-import { BooleanProp, Demo, StringProp } from "@cianciarusocataldo/demo-ui";
+import { BooleanProp, Demo } from "@cianciarusocataldo/demo-ui";
 
 import { Toggle } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
@@ -22,11 +22,10 @@ const TogglePage = () => (
           props={{
             value: BooleanProp(true),
             [iconLabel]: BooleanProp(false),
-            label: StringProp("label"),
             ...DEMO_COMMON_PROPS,
           }}
           rows={[
-            ["value", "Custom icons", "label", "dark"],
+            ["value", iconLabel, "dark"],
             ["className", "shadow", "unstyled", "hide"],
           ]}
         >

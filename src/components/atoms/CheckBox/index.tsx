@@ -47,7 +47,6 @@ const Checkbox: CheckBoxComponent = ({
       Component: actualValue ? icon || DefaultCheckIcon : <div />,
       additionalProps: {
         onClick: () => {
-          console.log(actualValue)
           onChange && onChange(!actualValue);
           setValue(!actualValue);
         },

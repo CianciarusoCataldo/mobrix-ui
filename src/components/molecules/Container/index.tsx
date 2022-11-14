@@ -41,12 +41,8 @@ const Container: ContainerComponent = ({
   buildComponent({
     name: "mobrix-ui-container",
     Component: children,
-    commonProps: {
-      ...commonProps,
-      className: classNames(commonProps.className, {
-        animated: animated && !commonProps.hide,
-      }),
-    },
+    animated,
+    commonProps,
     wrapper,
   });
 

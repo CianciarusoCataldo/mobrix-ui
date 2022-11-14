@@ -22,7 +22,6 @@ const CodeBoxPage = () => (
           label={componentLabel}
           props={{
             value: StringProp("npm i mobrix-ui"),
-            label: StringProp("label"),
             enhanced: BooleanProp(true),
             environment: SelectProp({
               [terminalText]: "terminal",
@@ -34,7 +33,7 @@ const CodeBoxPage = () => (
           rows={[
             ["value", "enhanced", "environment"],
             ["className", "dark", "shadow"],
-            ["hide", "unstyled", "label"],
+            ["hide", "unstyled"],
           ]}
         >
           {(props: any) => {

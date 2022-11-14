@@ -47,6 +47,7 @@ const HeaderContent = () => {
 
   return (
     <ExpandableContainer
+      className="pb-3"
       dark={dark}
       expanded={
         <div className="flex flex-row mt-6">

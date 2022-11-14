@@ -5,7 +5,7 @@ import classnames from "classnames";
 
 import { DropdownComponent } from "./types";
 
-import { buildComponent } from "../../../utils";
+import { buildComponent, withMobrixUiValue } from "../../../utils";
 
 import Button from "../../atoms/Button";
 import Popup from "../Popup";
@@ -46,80 +46,79 @@ const Dropdown: DropdownComponent = ({
   ...commonProps
 }) => {
   const [isVisible, setVisible] = React.useState(false);
-  const [value, setValue] = React.useState(inputValue || 0);
 
-  React.useEffect(() => {
-    if (inputValue !== undefined && inputValue !== null) {
-      setValue(inputValue);
-    }
-  }, [inputValue]);
-
-  const selectedItem = content[value] || {
-    name: "",
-    icon: <div />,
-  };
-  return buildComponent({
+  return withMobrixUiValue({
     name: "mobrix-ui-dropdown",
-    Component: [
-      <Button
-        unstyled
-        onClick={() => {
-          setVisible(!isVisible);
-        }}
-        dark={commonProps.dark}
-        className="button"
-        id="options-menu"
-        key="options-menu"
-      >
-        <div key="label" className="label">
-          <div className="label">{selectedItem.icon}</div>
-          <div className="label">{selectedItem.name}</div>
-        </div>
-        <div
-          key="icon"
-          className={classnames("icon", {
-            rotate: isVisible,
-            "rotate-back": !isVisible,
-            "component-hidden": hideArrow,
-          })}
-        >
-          <p>
-            <i className="arrow-icon"></i>
-          </p>
-        </div>
-      </Button>,
-      <Popup
-        key="options"
-        shadow={commonProps.shadow}
-        dark={commonProps.dark}
-        hide={!isVisible}
-        className="options"
-      >
-        {content.map((item, index) => (
-          <div key={`dropdown_option_${index}`} className="option">
-            <Button
-              unstyled
-              id={`dropdown_option_${index}`}
-              onClick={() => {
-                onChange && onChange(index);
-                setValue(index);
-                setVisible(false);
-              }}
-              key={`item_${index}`}
-              className={classnames("regular", {
-                first: index === 0,
-                last: index === content.length - 1,
+    defaultValue: 0,
+    inputValue,
+    props: (value, setValue) => {
+      const selectedItem = content[value] || {
+        name: "",
+        icon: <div />,
+      };
+      return {
+        Component: [
+          <Button
+            unstyled
+            onClick={() => {
+              setVisible(!isVisible);
+            }}
+            dark={commonProps.dark}
+            className="button"
+            id="options-menu"
+            key="options-menu"
+          >
+            <div key="label" className="label">
+              <div className="label">{selectedItem.icon}</div>
+              <div className="label">{selectedItem.name}</div>
+            </div>
+            <div
+              key="icon"
+              className={classnames("icon", {
+                rotate: isVisible,
+                "rotate-back": !isVisible,
+                "component-hidden": hideArrow,
               })}
             >
-              <div className="content">
-                {item.icon}
-                <div className="label">{item.name}</div>
+              <p>
+                <i className="arrow-icon"></i>
+              </p>
+            </div>
+          </Button>,
+          <Popup
+            key="options"
+            shadow={commonProps.shadow}
+            dark={commonProps.dark}
+            hide={!isVisible}
+            className="options"
+          >
+            {content.map((item, index) => (
+              <div key={`dropdown_option_${index}`} className="option">
+                <Button
+                  unstyled
+                  id={`dropdown_option_${index}`}
+                  onClick={() => {
+                    onChange && onChange(index);
+                    setValue(index);
+                    setVisible(false);
+                  }}
+                  key={`item_${index}`}
+                  className={classnames("regular", {
+                    first: index === 0,
+                    last: index === content.length - 1,
+                  })}
+                >
+                  <div className="content">
+                    {item.icon}
+                    <div className="label">{item.name}</div>
+                  </div>
+                </Button>
               </div>
-            </Button>
-          </div>
-        ))}
-      </Popup>,
-    ],
+            ))}
+          </Popup>,
+        ],
+      };
+    },
     commonProps,
   });
 };
