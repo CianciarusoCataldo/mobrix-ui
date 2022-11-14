@@ -21,6 +21,7 @@ const ExpandableContainerPage = () => (
           label={componentLabel}
           props={{
             children: StringProp(childrenText),
+            compact: BooleanProp(true),
             animated: BooleanProp(false),
             expanded: HiddenProp(<div>Expanded area</div>),
             ...DEMO_COMMON_PROPS,

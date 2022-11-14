@@ -4,7 +4,7 @@ import React from "react";
 
 import { CounterComponent } from "./types";
 
-import { buildBoxComponent } from "../../../utils";
+import { buildComponent, withMobrixUiValue } from "../../../utils";
 
 /**
  * A flexible numeric input element
@@ -36,39 +36,40 @@ import { buildBoxComponent } from "../../../utils";
  */
 const Counter: CounterComponent = ({
   onChange,
-  value,
+  value: inputValue,
   placeholder,
   readOnly,
-  label,
+  max,
+  min,
   ...commonProps
-}) =>
-  buildBoxComponent<number>({
-    callBack: (value, setValue) => ({
-      name: "mobrix-ui-counterbox",
-      Component: (
-        <input
-          type="number"
-          value={value}
-          placeholder={placeholder}
-          className="input-box"
-          readOnly={readOnly}
-          onChange={(e) => {
-            if (!readOnly) {
-              const changedValue = e.target.value
-                ? Number.parseInt(e.target.value)
-                : 0;
+}) => {
+  return withMobrixUiValue({
+    wrapper: "input",
+    name: "mobrix-ui-counterbox",
+    inputValue,
+    defaultValue: 0,
+    props: (value, setValue) => ({
+      additionalProps: {
+        type: "number",
+        value: value,
+        placeholder,
+        readOnly,
+        max,
+        min,
+        onChange: (e) => {
+          if (!readOnly) {
+            const changedValue = e.target.value
+              ? Number.parseInt(e.target.value)
+              : 0;
 
-              onChange && onChange(changedValue);
-              setValue(changedValue);
-            }
-          }}
-        />
-      ),
-      commonProps,
+            onChange && onChange(changedValue);
+            setValue(changedValue);
+          }
+        },
+      },
     }),
-    defaultValue: value || 0,
-    value,
-    label,
+    commonProps,
   });
+};
 
 export default Counter;

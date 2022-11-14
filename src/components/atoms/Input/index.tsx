@@ -1,10 +1,8 @@
 import "./styles.css";
 
-import React from "react";
-
 import { InputComponent } from "./types";
 
-import { buildBoxComponent } from "../../../utils";
+import { withMobrixUiValue } from "../../../utils";
 
 /**
  * A flexible text input element
@@ -13,7 +11,6 @@ import { buildBoxComponent } from "../../../utils";
  *
  * @param {string} value text input value
  * @param {(newValue:string)=>void} onChange callback triggered when numeric input changes
- * @param {JSX.Element | string} label `common MoBrix-ui prop` - Component top label
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -38,33 +35,29 @@ const Input: InputComponent = ({
   value,
   placeholder,
   readOnly,
-  label,
   ...commonProps
 }) =>
-  buildBoxComponent({
-    callBack: (value, setValue) => ({
-      name: "mobrix-ui-inputbox",
-      Component: (
-        <input
-          type="text"
-          value={value}
-          placeholder={placeholder}
-          className="input-box"
-          readOnly={readOnly}
-          onChange={(e) => {
-            if (!readOnly) {
-              const newValue = e.target.value ? e.target.value : "";
-              onChange(newValue);
-              setValue(newValue);
-            }
-          }}
-        />
-      ),
-      commonProps,
+  withMobrixUiValue({
+    commonProps,
+    name: "mobrix-ui-inputbox",
+    wrapper: "input",
+    props: (value, setValue) => ({
+      additionalProps: {
+        type: "text",
+        value,
+        placeholder,
+        readOnly,
+        onChange: (e) => {
+          if (!readOnly) {
+            const newValue = e.target.value ? e.target.value : "";
+            onChange(newValue);
+            setValue(newValue);
+          }
+        },
+      },
     }),
-    defaultValue: value || "",
-    value,
-    label,
+    inputValue: value,
+    defaultValue: "",
   });
 
 export default Input;

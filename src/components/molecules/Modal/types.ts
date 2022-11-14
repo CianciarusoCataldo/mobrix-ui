@@ -16,13 +16,14 @@ import {
  * @copyright 2022 Cataldo Cianciaruso
  */
 export type ModalProps = CommonProps &
-  ComponentWithChildren<BuilderComponent | BuilderComponent[]> &
-  Omit<BoxComponent, "value" | "icon" | "label"> & {
+  ComponentWithChildren<BuilderComponent | BuilderComponent[]> & {
     /** Modal title */
     title?: string;
 
     /** Callback triggered when modal is closed */
     onClose?: () => void;
+
+    overlayClassName?: string;
   };
 
 /**

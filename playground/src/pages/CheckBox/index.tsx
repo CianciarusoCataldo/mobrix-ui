@@ -1,9 +1,4 @@
-import {
-  BooleanProp,
-  Demo,
-  SelectProp,
-  StringProp,
-} from "@cianciarusocataldo/demo-ui";
+import { BooleanProp, Demo, SelectProp } from "@cianciarusocataldo/demo-ui";
 
 import { DEMO_COMMON_PROPS } from "constants/demo-props";
 
@@ -22,7 +17,6 @@ const CheckBoxPage = () => (
         <Demo
           label={componentLabel}
           props={{
-            label: StringProp("label"),
             value: BooleanProp(false),
             icon: SelectProp({
               [defaultIconText]: undefined,
@@ -63,6 +57,10 @@ const CheckBoxPage = () => (
             }),
             ...DEMO_COMMON_PROPS,
           }}
+          rows={[
+            ["value", "icon", "dark", "shadow"],
+            ["className", "hide", "unstyled"],
+          ]}
         >
           {(props: any) => (
             <div className="flex flex-col items-center">

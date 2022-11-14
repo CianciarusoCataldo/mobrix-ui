@@ -43,29 +43,28 @@ const Button: ButtonComponent = ({
   disabled,
   children,
   onClick,
-  className: parentClassName,
+  className,
   onMouseEnter,
   onMouseLeave,
   ...commonProps
 }) =>
   buildComponent({
     name: "mobrix-ui-button",
-    Component: (
-      <button
-        data-id={commonProps.id}
-        disabled={disabled}
-        onClick={onClick}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
-        className={classNames(parentClassName, {
-          disabled: disabled,
-          enabled: !disabled,
-        })}
-      >
-        {children}
-      </button>
-    ),
-    commonProps,
+    wrapper: "button",
+    additionalProps: {
+      disabled: disabled,
+      onClick: onClick,
+      onMouseEnter: onMouseEnter,
+      onMouseLeave: onMouseLeave,
+    },
+    Component: children,
+    commonProps: {
+      ...commonProps,
+      className: classNames(className, {
+        disabled: disabled,
+        enabled: !disabled,
+      }),
+    },
   });
 
 export default Button;

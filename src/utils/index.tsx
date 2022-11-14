@@ -5,7 +5,12 @@ import "../styles/shared-styles.css";
 import classNames from "classnames";
 import React from "react";
 
-import { BoxComponent, BuilderProps } from "./global";
+import {
+  BoxComponent,
+  BuilderComponent,
+  BuilderProps,
+  DeepPartial,
+} from "./global";
 
 /**
  * Build a standard {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component, providing shared functionalities and props, to optimize the process.
@@ -33,22 +38,66 @@ export const buildComponent = ({
 }: BuilderProps) => {
   const SelectedWrapper = wrapper || "div";
 
-  return (
-    <SelectedWrapper
-      data-id={commonProps!.id}
-      id={name}
-      className={classNames(commonProps!.className, {
-        dark: commonProps!.dark,
-        "component-hidden": commonProps!.hide,
-        shadowed: commonProps!.shadow,
-        styled: !commonProps!.unstyled,
-      })}
-      style={commonProps!.style}
-      {...additionalProps}
-    >
-      {Component}
-    </SelectedWrapper>
-  );
+  const props = {
+    "data-id": commonProps!.id,
+    id: name,
+    key: commonProps?.key,
+    className: classNames(commonProps!.className, {
+      dark: commonProps!.dark,
+      "component-hidden": commonProps!.hide,
+      shadowed: commonProps!.shadow,
+      styled: !commonProps!.unstyled,
+    }),
+    style: commonProps!.style,
+    ...additionalProps,
+  };
+
+  if (SelectedWrapper === "input") {
+    return <SelectedWrapper {...props} />;
+  } else {
+    return <SelectedWrapper {...props}>{Component}</SelectedWrapper>;
+  }
+};
+
+export const withMobrixUiValue = <T=any>({
+  name,
+  additionalProps,
+  wrapper,
+  commonProps,
+  defaultValue,
+  inputValue,
+  render,
+  props,
+}: BuilderProps & {
+  inputValue?: T;
+  defaultValue: T;
+  render?: (
+    value: T,
+    setValue: React.Dispatch<React.SetStateAction<T>>
+  ) => BuilderProps["Component"];
+  props?: (
+    value: T,
+    setValue: React.Dispatch<React.SetStateAction<T>>
+  ) => DeepPartial<BuilderProps>;
+}) => {
+  const [value, setValue] = React.useState<T>(inputValue || defaultValue);
+
+  const processedProps = props ? props(value, setValue) : {};
+
+  React.useEffect(() => {
+    if (inputValue !== undefined && inputValue !== null) {
+      setValue(inputValue);
+    }
+  }, [inputValue]);
+
+  return buildComponent({
+    name,
+    additionalProps,
+    commonProps,
+    Component: render && render(value, setValue),
+    wrapper,
+    ...processedProps,
+  });
 };
 
 /**

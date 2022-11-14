@@ -36,6 +36,7 @@ const engineConfig = {
       CodeBox: "/components/atoms/CodeBox",
       Container: "/components/molecules/Container",
       Counter: "/components/molecules/Counter",
+      DatePicker: "/components/organisms/DatePicker",
       Divider: "/components/atoms/Divider",
       Drawer: "/components/molecules/Drawer",
       Dropdown: "/components/molecules/Dropdown",

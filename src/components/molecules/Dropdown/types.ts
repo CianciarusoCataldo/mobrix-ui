@@ -1,7 +1,7 @@
 import {
-  BoxComponent,
   CommonProps,
   ComponentWithCallback,
+  ComponentWithValue,
   MoBrixUiComponent,
 } from "../../../utils/global";
 
@@ -29,10 +29,12 @@ export interface DropdownElement {
  * @copyright 2022 Cataldo Cianciaruso
  */
 export type DropdownProps = CommonProps &
-  Omit<BoxComponent<number>, "icon"> &
+  ComponentWithValue<number> &
   ComponentWithCallback<number> & {
     /** Dropdown content elements */
     content?: DropdownElement[];
+
+    hideArrow?: boolean;
   };
 
 export type DropdownComponent = MoBrixUiComponent<DropdownProps>;

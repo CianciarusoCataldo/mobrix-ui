@@ -14,9 +14,7 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type ContainerProps = ComponentWithChildren<
-  BuilderComponent | BuilderComponent[]
-> &
+export type ContainerProps = ComponentWithChildren<any> &
   CommonProps & {
     wrapper?: "div" | "header" | "footer";
     animated?: boolean;

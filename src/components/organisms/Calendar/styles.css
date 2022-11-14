@@ -1,11 +1,11 @@
-#mobrix-ui-calendar,
-#mobrix-ui-calendar .label-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#mobrix-ui-calendar .actual-date {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 100%;
 }
 
-#mobrix-ui-calendar .selector-element,
+#mobrix-ui-calendar.styled .selector-element,
 #mobrix-ui-calendar .arrow svg {
   margin-top: auto;
   margin-bottom: auto;
@@ -13,80 +13,84 @@
   display: inline-block;
 }
 
-#mobrix-ui-calendar .date-element {
+#mobrix-ui-calendar.styled .date-element {
   color: var(--mobrix-ui-text-color);
-  width: 100%;
 }
 
-#mobrix-ui-calendar .date-element .today {
+#mobrix-ui-calendar.styled .date-element .today {
   color: red;
   font-weight: 600;
 }
 
 #mobrix-ui-calendar #mobrix-ui-table .element {
   padding: 0;
+  margin: 0;
 }
 
-#mobrix-ui-calendar .date-element {
-  padding: 0.35rem;
+#mobrix-ui-calendar #mobrix-ui-table .header {
+  padding: 0.5rem;
+  margin: 0;
+  font-size: 1.4rem;
 }
 
-#mobrix-ui-calendar .date-element.selected {
+@media (max-width: 700px) {
+  #mobrix-ui-calendar #mobrix-ui-table .header {
+    font-size: 1.2rem;
+    padding: 0.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #mobrix-ui-calendar #mobrix-ui-table .header {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    padding: 0.2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  #mobrix-ui-calendar #mobrix-ui-table .header {
+    padding: 0;
+    margin: 0;
+    font-size: 0.7rem;
+  }
+}
+
+#mobrix-ui-calendar.styled .date-element.selected {
   background: var(--mobrix-ui-background-dark);
+  padding: 0.1rem;
 }
 
-#mobrix-ui-calendar .date-element.selected .date-label {
-  color: white;
-  font-size: 1.2rem;
-}
-
-#mobrix-ui-calendar .dates-box {
+#mobrix-ui-calendar .dates-box,
+#mobrix-ui-calendar .top-selector {
   display: flex;
   flex-direction: row;
 }
 
-#mobrix-ui-calendar .dates-selector {
-  display: flex;
-  flex-direction: row;
-  vertical-align: middle;
+#mobrix-ui-calendar.styled .top-selector {
+  margin: auto;
 }
 
-#mobrix-ui-calendar .right {
+#mobrix-ui-calendar .arrow.right {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-#mobrix-ui-calendar .arrow svg {
+#mobrix-ui-calendar.styled .date-element.selected .date-label {
+  color: white;
+}
+
+#mobrix-ui-calendar.styled .arrow svg {
   fill: var(--mobrix-ui-text-color);
 }
 
-#mobrix-ui-calendar .day-label {
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
+#mobrix-ui-calendar.styled .arrow:hover svg {
+  fill: orange;
 }
 
-#mobrix-ui-calendar .date-label {
-  font-size: 1rem;
-  font-weight: 500;
-  text-align: center;
-}
-
-#mobrix-ui-calendar .selector-label {
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-align: center;
-}
-
-#mobrix-ui-calendar .selector-button {
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
-  padding-top: 0.1rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  display: inline-flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
-  font-weight: 500;
+@media (hover: none) {
+  #mobrix-ui-calendar.styled .arrow:hover svg {
+    fill: var(--mobrix-ui-text-color);
+  }
 }

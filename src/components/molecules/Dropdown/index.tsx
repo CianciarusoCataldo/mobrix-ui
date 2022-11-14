@@ -5,10 +5,10 @@ import classnames from "classnames";
 
 import { DropdownComponent } from "./types";
 
-import { buildBoxComponent } from "../../../utils";
+import { buildComponent } from "../../../utils";
 
 import Button from "../../atoms/Button";
-import Container from "../Container";
+import Popup from "../Popup";
 
 /**
  * Show a list of elements in a dropdown menu (by default, with fade-in and out effects).
@@ -19,7 +19,6 @@ import Container from "../Container";
  *
  * @param {number} value actual selected element (as index). If not set, default value (0) will be used.
  * @param {{ name: string; icon?: JSX.Element }[]} content Dropdown content elements
- * @param {JSX.Element | string} label `common MoBrix-ui prop` - Component top label
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -42,87 +41,86 @@ import Container from "../Container";
 const Dropdown: DropdownComponent = ({
   content = [],
   onChange,
-  value,
-  label,
+  value: inputValue,
+  hideArrow,
   ...commonProps
 }) => {
   const [isVisible, setVisible] = React.useState(false);
+  const [value, setValue] = React.useState(inputValue || 0);
 
-  return buildBoxComponent<number>({
-    defaultValue: 0,
-    value,
-    label,
-    callBack: (value, setValue) => {
-      const selectedItem = content[value] || {
-        name: "",
-        icon: <div />,
-      };
+  React.useEffect(() => {
+    if (inputValue !== undefined && inputValue !== null) {
+      setValue(inputValue);
+    }
+  }, [inputValue]);
 
-      return {
-        name: "mobrix-ui-dropdown",
-        Component: [
-          <Button
-            unstyled
-            onClick={() => {
-              setVisible(!isVisible);
-            }}
-            dark={commonProps.dark}
-            className="button"
-            id="options-menu"
-            key="options-menu"
-          >
-            <div key="label" className="label">
-              <div className="label">{selectedItem.icon}</div>
-              <div className="label">{selectedItem.name}</div>
-            </div>
-            <div
-              key="icon"
-              className={classnames("icon", {
-                rotate: isVisible,
-                "rotate-back": !isVisible,
+  const selectedItem = content[value] || {
+    name: "",
+    icon: <div />,
+  };
+  return buildComponent({
+    name: "mobrix-ui-dropdown",
+    Component: [
+      <Button
+        unstyled
+        onClick={() => {
+          setVisible(!isVisible);
+        }}
+        dark={commonProps.dark}
+        className="button"
+        id="options-menu"
+        key="options-menu"
+      >
+        <div key="label" className="label">
+          <div className="label">{selectedItem.icon}</div>
+          <div className="label">{selectedItem.name}</div>
+        </div>
+        <div
+          key="icon"
+          className={classnames("icon", {
+            rotate: isVisible,
+            "rotate-back": !isVisible,
+            "component-hidden": hideArrow,
+          })}
+        >
+          <p>
+            <i className="arrow-icon"></i>
+          </p>
+        </div>
+      </Button>,
+      <Popup
+        key="options"
+        shadow={commonProps.shadow}
+        dark={commonProps.dark}
+        hide={!isVisible}
+        className="options"
+      >
+        {content.map((item, index) => (
+          <div key={`dropdown_option_${index}`} className="option">
+            <Button
+              unstyled
+              id={`dropdown_option_${index}`}
+              onClick={() => {
+                onChange && onChange(index);
+                setValue(index);
+                setVisible(false);
+              }}
+              key={`item_${index}`}
+              className={classnames("regular", {
+                first: index === 0,
+                last: index === content.length - 1,
               })}
             >
-              <p>
-                <i className="arrow-icon"></i>
-              </p>
-            </div>
-          </Button>,
-          <Container
-            key="options"
-            animated
-            shadow={commonProps.shadow}
-            dark={commonProps.dark}
-            hide={!isVisible}
-            className="options"
-          >
-            {content.map((item, index) => (
-              <div key={`dropdown_option_${index}`} className="option">
-                <Button
-                  unstyled
-                  id={`dropdown_option_${index}`}
-                  onClick={() => {
-                    onChange && onChange(index);
-                    setValue(index);
-                    setVisible(false);
-                  }}
-                  key={`item_${index}`}
-                  className={classnames("regular", {
-                    first: index === 0,
-                    last: index === content.length - 1,
-                  })}
-                >
-                  <div className="content">
-                    {item.icon}
-                    <div className="label">{item.name}</div>
-                  </div>
-                </Button>
+              <div className="content">
+                {item.icon}
+                <div className="label">{item.name}</div>
               </div>
-            ))}
-          </Container>,
-        ],
-        commonProps,
-      };
-    },
+            </Button>
+          </div>
+        ))}
+      </Popup>,
+    ],
+    commonProps,
   });
 };
 

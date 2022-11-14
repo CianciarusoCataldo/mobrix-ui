@@ -25,7 +25,7 @@ const CounterPage = () => (
         }}
         rows={[
           ["value", "readOnly", "placeholder"],
-          ["unstyled", "className", "label"],
+          ["unstyled", "className"],
           ["shadow", "dark", "hide"],
         ]}
       >

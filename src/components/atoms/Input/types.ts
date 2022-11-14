@@ -1,7 +1,7 @@
 import {
-  BoxComponent,
   CommonProps,
   ComponentWithCallback,
+  ComponentWithValue,
   GenericInputComponent,
   MoBrixUiComponent,
 } from "../../../utils/global";
@@ -15,9 +15,9 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type InputProps<T = any> = CommonProps &
+export type InputProps = CommonProps &
   GenericInputComponent &
-  Omit<BoxComponent<string>, "icon"> &
+  ComponentWithValue<string> &
   ComponentWithCallback;
 
 /**

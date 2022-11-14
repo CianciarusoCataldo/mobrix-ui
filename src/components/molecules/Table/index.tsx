@@ -4,7 +4,7 @@ import { TableComponent } from "./types";
 import React from "react";
 
 import classNames from "classnames";
-import { buildBoxComponent } from "../../../utils";
+import { buildComponent } from "../../../utils";
 
 /**
  * A standard Table component. It follows a CSV-like format for its content.
@@ -34,7 +34,7 @@ import { buildBoxComponent } from "../../../utils";
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-const Table: TableComponent = ({ label, headers, rows, ...commonProps }) => {
+const Table: TableComponent = ({ headers, rows, ...commonProps }) => {
   let gridTemplateRows = "";
   let gridTemplateColumns = "";
 
@@ -64,23 +64,20 @@ const Table: TableComponent = ({ label, headers, rows, ...commonProps }) => {
     }
   }
 
-  return buildBoxComponent({
-    callBack: () => ({
-      name: "mobrix-ui-table",
-      Component: (
-        <div
-          className="rows"
-          style={{
-            gridTemplateRows,
-            gridTemplateColumns,
-          }}
-        >
-          {elements}
-        </div>
-      ),
-      commonProps,
-    }),
-    label,
+  return buildComponent({
+    name: "mobrix-ui-table",
+    Component: (
+      <div
+        className="rows"
+        style={{
+          gridTemplateRows,
+          gridTemplateColumns,
+        }}
+      >
+        {elements}
+      </div>
+    ),
+    commonProps,
   });
 };
 

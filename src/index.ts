@@ -111,6 +111,12 @@ export {
 } from "./components/organisms/Calendar/types";
 export { default as Calendar } from "./components/organisms/Calendar";
 
+export {
+  DatePickerComponent,
+  DatePickerProps,
+} from "./components/organisms/DatePicker/types";
+export { default as DatePicker } from "./components/organisms/DatePicker";
+
 /** Shared types */
 export { Wrappers } from "./utils/global";
 export {

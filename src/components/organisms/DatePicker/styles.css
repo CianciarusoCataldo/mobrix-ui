@@ -1,0 +1,106 @@
+#mobrix-ui-date-picker {
+  display: flex;
+  flex-direction: column;
+}
+
+#mobrix-ui-date-picker .date-picker-box {
+  display: flex;
+  justify-content: center;
+}
+
+#mobrix-ui-date-picker .date-picker-calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+}
+
+#mobrix-ui-date-picker .date-picker-modal .content {
+  max-height: 75%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  vertical-align: middle;
+  flex-direction: column;
+  -webkit-animation: fadein 0.3s;
+  -moz-animation: fadein 0.3s;
+  -ms-animation: fadein 0.3s;
+  -o-animation: fadein 0.3s;
+  animation: fadein 0.3s;
+}
+
+#mobrix-ui-date-picker .date-picker-box > .buttons,
+#mobrix-ui-date-picker .date-picker-box > .buttons .date-selectors {
+  display: flex;
+  flex-direction: row;
+}
+
+#mobrix-ui-date-picker #mobrix-ui-calendar.date-picker-calendar .actual-date {
+  color: white;
+}
+
+#mobrix-ui-date-picker #mobrix-ui-calendar.date-picker-calendar .arrow svg,
+#mobrix-ui-date-picker .date-picker-close-button path {
+  fill: white;
+}
+
+#mobrix-ui-date-picker .date-picker-close-button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#mobrix-ui-date-picker .date-picker-box > .buttons {
+  border-radius: 0.375rem;
+  color: var(--mobrix-ui-text-color);
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+#mobrix-ui-date-picker .calendar-icon {
+  margin-left: 0.6rem;
+}
+
+#mobrix-ui-date-picker .date-picker-box > .buttons .element {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#mobrix-ui-date-picker .popup-close-button {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0.3rem;
+}
+
+#mobrix-ui-date-picker.styled #mobrix-ui-counterbox {
+  background-color: transparent;
+  font-size: 1.125rem;
+  font-weight: 500;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (max-width: 300px) {
+  #mobrix-ui-date-picker .date-picker-box > .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #mobrix-ui-date-picker.styled #mobrix-ui-counterbox.days {
+    font-size: 1.05rem;
+    width: 2em;
+  }
+
+  #mobrix-ui-date-picker .calendar-icon {
+    margin-top: 0.6rem;
+  }
+}
+
+@media (max-width: 260px) {
+  #mobrix-ui-date-picker .date-picker-box .buttons .date-selectors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

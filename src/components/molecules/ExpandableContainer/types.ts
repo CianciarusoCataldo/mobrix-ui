@@ -11,6 +11,7 @@ import { ContainerProps } from "../Container/types";
  * @copyright 2022 Cataldo Cianciaruso
  */
 export type ExpandableContainerProps = ContainerProps & {
+  compact?: boolean;
   expanded?: JSX.Element;
 };
 

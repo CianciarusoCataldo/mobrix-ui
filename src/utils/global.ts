@@ -6,6 +6,8 @@ import { CSSProperties } from "react";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-components-properties
  * */
 export interface CommonProps {
+  key?: string;
+
   /** custom className applied on main container */
   className?: string;
 
@@ -33,15 +35,22 @@ export interface CommonProps {
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=box-components
  */
-export interface BoxComponent<T = any, K = JSX.Element> {
-  /** Actual component value */
-  value?: T;
-
+export type BoxComponent<T = any, K = JSX.Element> = ComponentWithValue<T> & {
   /** Custom component icon */
   icon?: K;
 
   /** Box component label */
   label?: string | JSX.Element;
+};
+
+export interface ComponentWithValue<T = any> {
+  /** Actual component value */
+  value?: T;
+}
+
+export interface ComponentWithIcon<T=JSX.Element> {
+  /** Icon showed inside the component */
+  icon?: T;
 }
 
 /**
@@ -61,6 +70,11 @@ export interface GenericInputComponent<T = string> {
   placeholder?: T;
 }
 
+export type NumericInputContent = GenericInputComponent<number> & {
+  min?: number;
+  max?: number;
+};
+
 /**
  * A {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component that provide a callback to handle its content changes
  *
@@ -77,6 +91,21 @@ export interface ComponentWithCallback<T = string> {
 }
 
 /**
+ * A {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component that provide a callback to handle its click event
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/
+ *
+ * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
+ *
+ * @copyright 2022 Cataldo Cianciaruso
+ *
+ */
+export interface ClickableComponent {
+  /** Callback triggered when component is clicked */
+  onClick?: () => void;
+}
+
+/**
  * A {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component with children element
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/
@@ -85,7 +114,9 @@ export interface ComponentWithCallback<T = string> {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export interface ComponentWithChildren<T = JSX.Element> {
+export interface ComponentWithChildren<
+  T = JSX.Element | JSX.Element[] | undefined
+> {
   /** Component children */
   children?: T;
 }
@@ -102,7 +133,14 @@ export interface ComponentWithChildren<T = JSX.Element> {
 export type BuilderComponent = JSX.Element | string;
 
 /** Supported components wrappers */
-export type Wrappers = "div" | "a" | "header" | "button" | "footer" | "p";
+export type Wrappers =
+  | "div"
+  | "a"
+  | "header"
+  | "button"
+  | "footer"
+  | "p"
+  | "input";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} components builder props
@@ -140,3 +178,7 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
  * @copyright 2022 Cataldo Cianciaruso
  */
 export type MoBrixUiComponent<T = any, K = JSX.Element> = (props: T) => K;
+
+export type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};

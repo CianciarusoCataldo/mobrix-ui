@@ -88,7 +88,7 @@ const Form: FormComponent = ({
           let FieldElement: (props: any) => JSX.Element = Input;
 
           let fieldProps: Record<string, any> = {
-            label: <span className="header">{header}</span>,
+            //label: <span className="header">{header}</span>,
             value: String(values[field]),
             id: `form-field-${index}`,
             onChange: (newValue: string) => {

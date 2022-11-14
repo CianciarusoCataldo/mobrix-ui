@@ -15,15 +15,14 @@ const InputPage = () => (
         startColor="#C3BBBB"
         props={{
           value: StringProp(""),
-          label: StringProp("label"),
           placeholder: StringProp("placeholder"),
           readOnly: BooleanProp(false),
           ...DEMO_COMMON_PROPS,
         }}
         rows={[
           ["value", "readOnly", "placeholder"],
-          ["unstyled", "className", "label"],
-          ["shadow", "dark", "hide"],
+          ["unstyled", "className", "dark"],
+          ["shadow", "hide"],
         ]}
       >
         {(props: any) => (

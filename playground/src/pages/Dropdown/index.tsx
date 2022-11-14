@@ -1,4 +1,4 @@
-import { BooleanProp, Demo, StringProp } from "@cianciarusocataldo/demo-ui";
+import { BooleanProp, Demo } from "@cianciarusocataldo/demo-ui";
 
 import { Dropdown } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
@@ -19,7 +19,6 @@ const DropdownPage = () => (
           label={componentLabel}
           props={{
             [iconsLabel]: BooleanProp(false),
-            label: StringProp('label'),
             ...DEMO_COMMON_PROPS,
           }}
           startColor="#ebe5e2"
@@ -64,7 +63,6 @@ const DropdownPage = () => (
                   dark={props.dark}
                   shadow={props.shadow}
                   unstyled={props.unstyled}
-                  label={props.label}
                   content={elements}
                 />
               </div>
