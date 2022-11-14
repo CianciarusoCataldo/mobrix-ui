@@ -21,6 +21,7 @@
 - `DatePicker` component
 - `Popup` component
 - Box components removed globally, now every component is built only with `buildComponent` function
+- Better overall performance 
 - Huge cleanup
 - Deep refactoring
 - Minor fixes
