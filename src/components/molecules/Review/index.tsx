@@ -24,7 +24,6 @@ import Rater from "../Rater";
  * @param {number} rate review vote icon type, to choose which icon will be used to show the review rate (allowed icons type are `stars` and `circle`)
  * @param {number} max max vote (max number of rate icons showed)
  * @param {"default" | "facebook" | "twitter" | "google" | "linkedin" | "github"} logo Social icon type, showed at the top right of the container. Supports popular web services like Facebook, Twitter, Google and so on. Proviced icon list will grow up time by time and will be updated with the latest web services, to keep it usable for the future.
- * @param {JSX.Element | string} label `common MoBrix-ui prop` - Component top label
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -64,7 +63,7 @@ const Review: ReviewComponent = ({
     name: "mobrix-ui-review",
     commonProps,
     Component: [
-      <div key="url" className="url-container">
+      <div key="url" className="review-url-container">
         {url ? (
           <Link newTab to={url}>
             {icons[logo || "default"]}
@@ -73,12 +72,14 @@ const Review: ReviewComponent = ({
           logo && icons[logo]
         )}
       </div>,
-      <div className="info-box" key="info">
-        <div className="user-info">
-          <div className="photo">{icon}</div>
-          {user && <span className="username">{user}</span>}
+      <div className="review-info-box" key="info">
+        <div className="review-user-info">
+          <div className="review-photo">{icon}</div>
+          {user && <span className="review-username">{user}</span>}
         </div>
-        {description && <span className="description">{description}</span>}
+        {description && (
+          <span className="review-description">{description}</span>
+        )}
       </div>,
       <Rater
         key="rate"

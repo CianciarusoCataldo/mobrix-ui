@@ -1,9 +1,10 @@
-import { BooleanProp, Demo, SelectProp } from "@cianciarusocataldo/demo-ui";
+import { BooleanProp, SelectProp } from "@cianciarusocataldo/demo-ui";
 
 import { DEMO_COMMON_PROPS } from "constants/demo-props";
 
 import { CheckBox } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
+import DemoComponent from "components/DemoComponent";
 
 const CheckBoxPage = () => (
   <ComponentPage
@@ -14,7 +15,7 @@ const CheckBoxPage = () => (
       const defaultIconText = t("props_icon_default");
 
       return (
-        <Demo
+        <DemoComponent
           label={componentLabel}
           props={{
             value: BooleanProp(false),
@@ -62,12 +63,8 @@ const CheckBoxPage = () => (
             ["className", "hide", "unstyled"],
           ]}
         >
-          {(props: any) => (
-            <div className="flex flex-col items-center">
-              <CheckBox {...props} />
-            </div>
-          )}
-        </Demo>
+          {CheckBox}
+        </DemoComponent>
       );
     }}
   />

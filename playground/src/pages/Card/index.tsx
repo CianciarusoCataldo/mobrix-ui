@@ -1,4 +1,4 @@
-import { Demo, StringProp } from "@cianciarusocataldo/demo-ui";
+import { BooleanProp, Demo, StringProp } from "@cianciarusocataldo/demo-ui";
 
 import { DEMO_COMMON_PROPS } from "constants/demo-props";
 
@@ -13,6 +13,7 @@ const CardPage = () => (
         className="m-0 p-0"
         label={componentLabel}
         props={{
+          dismissable: BooleanProp(false),
           header: StringProp("header"),
           body: StringProp("body"),
           footer: StringProp("footer"),
@@ -20,8 +21,9 @@ const CardPage = () => (
         }}
         rows={[
           ["footer", "header"],
-          ["body", "className"],
-          ["shadow", "dark", "hide", "unstyled"],
+          ["body", "dismissable"],
+          ["className", "shadow"],
+          ["dark", "hide", "unstyled"],
         ]}
         startColor="#999"
       >

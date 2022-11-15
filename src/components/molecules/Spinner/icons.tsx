@@ -1,8 +1,6 @@
 import React from "react";
 
-import { SpinnerProps } from "./types";
-
-const DEFAULT_ICONS: Record<SpinnerProps["value"], JSX.Element> = {
+const DEFAULT_ICONS: Record<string, JSX.Element> = {
   loading: (
     <svg
       data-id="loading-icon"

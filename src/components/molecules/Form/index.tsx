@@ -28,7 +28,6 @@ import Input from "../../atoms/Input";
  * A field object can be empty, in this case default values will be used (`input` type with empty header)
  * @param {(values: Record<string, string>) => void} onSubmit callback triggered on Form submit
  * @param {string} submitLabel custom submit button label
- * @param {JSX.Element | string} label `common MoBrix-ui prop` - Component top label
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -53,7 +52,6 @@ const Form: FormComponent = ({
   fields,
   onSubmit,
   submitLabel,
-  label,
   ...commonProps
 }) => {
   const dropdownFields: Record<string, string | boolean | number> = fields

@@ -8,7 +8,7 @@ import { CalendarComponent, CalendarDate } from "./types";
 import { defaultDays, defaultMonths } from "./constants";
 
 import { getDateMatrix, getMonthsDuration, today } from "./utils";
-import { buildComponent, withMobrixUiValue } from "../../../utils";
+import { withMobrixUiValue } from "../../../utils";
 
 import { arrowIcon } from "../../molecules/Carousel/icons";
 import Button from "../../atoms/Button";
@@ -16,6 +16,35 @@ import Label from "../../atoms/Label";
 import Table from "../../molecules/Table";
 import { DeepPartial } from "../../../utils/global";
 
+/**
+ * A Calendar.
+ *
+ * @since 2.0.0
+ *
+ * @param onChange
+ * @param onViewChange 
+ * @param {boolean} hideArrow show/hide arrow buttons
+ * @param {boolean} fromToday if true, 
+ * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
+ * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
+ * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
+ * @param {boolean} dark `common MoBrix-ui prop` - Enable/disable dark mode
+ * @param {boolean} hide `common MoBrix-ui prop` - Hide/show component
+ * @param {boolean} shadow `common MoBrix-ui prop` - Enable/disable shadow behind component (to better customize it)
+ *
+ * @example <caption>Example Table usage</caption>
+ *
+ * import { render } from "react-dom";
+ * import { Calendar } from 'mobrix-ui';
+ *
+ * render(<Calendar value={{ year:1993, month:2, day:19 }} />, document.getElementById("root"));
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Table
+ *
+ * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
+ *
+ * @copyright 2022 Cataldo Cianciaruso
+ */
 const Calendar: CalendarComponent = ({
   value: inputValue,
   shadow,

@@ -1,5 +1,4 @@
 import {
-  BoxComponent,
   BuilderComponent,
   CommonProps,
   ComponentWithChildren,

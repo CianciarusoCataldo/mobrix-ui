@@ -1,7 +1,8 @@
 import { Button } from "mobrix-ui-preview";
-import { BooleanProp, Demo, StringProp } from "@cianciarusocataldo/demo-ui";
+import { BooleanProp, StringProp } from "@cianciarusocataldo/demo-ui";
 import { ComponentPage } from "components/ComponentPage";
 import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import DemoComponent from "components/DemoComponent";
 
 const ButtonPage = () => (
   <ComponentPage
@@ -12,20 +13,27 @@ const ButtonPage = () => (
       const clickMessage = t("common_click");
 
       return (
-        <Demo
+        <DemoComponent
           label={componentLabel}
+          startColor="#BFBABA"
           props={{
             children: StringProp(contentLabel),
             disabled: BooleanProp(false),
+            animated: BooleanProp(false),
             ...DEMO_COMMON_PROPS,
           }}
+          rows={[
+            ["children", "disabled", "animated"],
+            ["className", "shadow"],
+            ["dark", "hide", "unstyled"],
+          ]}
+          parseProps={(props, setProps) => ({
+            ...props,
+            onClick: () => alert(clickMessage),
+          })}
         >
-          {(props: any) => (
-            <div className="flex flex-col items-center">
-              <Button onClick={() => alert(clickMessage)} {...props} />
-            </div>
-          )}
-        </Demo>
+          {Button}
+        </DemoComponent>
       );
     }}
   />

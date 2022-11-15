@@ -1,5 +1,4 @@
 import {
-  BoxComponent,
   CommonProps,
   ComponentWithCallback,
   ComponentWithValue,

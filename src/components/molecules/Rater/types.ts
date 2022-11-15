@@ -1,7 +1,6 @@
 import {
   CommonProps,
   ComponentWithCallback,
-  ComponentWithIcon,
   ComponentWithValue,
   MoBrixUiComponent,
 } from "../../../utils/global";

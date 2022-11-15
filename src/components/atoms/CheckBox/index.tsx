@@ -5,6 +5,7 @@ import React from "react";
 import { CheckBoxComponent } from "./types";
 
 import { withMobrixUiValue } from "../../../utils";
+
 import { DefaultCheckIcon } from "./icons";
 
 /**

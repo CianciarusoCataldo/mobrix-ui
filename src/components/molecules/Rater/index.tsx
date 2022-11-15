@@ -76,35 +76,28 @@ const Rater: RaterComponent = ({
         }
 
         iconArray.push(
-          <div key={`vote_${i}`}>
-            {readonly ? (
-              <div
-                style={{
-                  paddingBottom: "0.37rem",
-                }}
-              >
-                {ICONS[voteType][iconToShow]}
-              </div>
-            ) : (
-              <Button
-                unstyled
-                onClick={() => {
-                  let newVote: number = i + 1;
-                  setValue(newVote);
-                  onChange && onChange(i + 1);
-                }}
-                onMouseEnter={() => {
-                  setHover(i);
-                }}
-                onMouseLeave={() => {
-                  setHover(null);
-                }}
-                id={`vote_${i}`}
-              >
-                {ICONS[voteType][iconToShow]}
-              </Button>
-            )}
-          </div>
+          readonly ? (
+            <div key={`vote_${i}`}>{ICONS[voteType][iconToShow]}</div>
+          ) : (
+            <Button
+              key={`vote_${i}`}
+              unstyled
+              onClick={() => {
+                let newVote: number = i + 1;
+                setValue(newVote);
+                onChange && onChange(i + 1);
+              }}
+              onMouseEnter={() => {
+                setHover(i);
+              }}
+              onMouseLeave={() => {
+                setHover(null);
+              }}
+              id={`vote_${i}`}
+            >
+              {ICONS[voteType][iconToShow]}
+            </Button>
+          )
         );
       }
 

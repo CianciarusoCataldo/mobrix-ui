@@ -4,6 +4,7 @@ import {
   MoBrixUiComponent,
   ComponentWithValue,
   ComponentWithIcon,
+  AnimatedComponent,
 } from "../../../utils/global";
 
 /**
@@ -18,6 +19,7 @@ import {
 export type CheckBoxProps = CommonProps &
   ComponentWithValue<boolean> &
   ComponentWithIcon &
+  AnimatedComponent &
   ComponentWithCallback<boolean>;
 
 /**

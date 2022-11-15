@@ -1,4 +1,5 @@
 import {
+  AnimatedComponent,
   BuilderComponent,
   ClickableComponent,
   CommonProps,
@@ -18,6 +19,7 @@ import {
 export type ButtonProps = ComponentWithChildren<
   BuilderComponent | BuilderComponent[]
 > &
+  AnimatedComponent &
   CommonProps &
   ClickableComponent & {
     /**callback triggered when the cursor enter the component */

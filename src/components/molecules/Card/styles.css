@@ -14,12 +14,6 @@
   background-image: var(--mobrix-ui-background);
 }
 
-#mobrix-ui-card.styled .box-label {
-  margin: 0.5rem;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 #mobrix-ui-card .header {
   margin: auto;
   font-size: 1.125rem;
@@ -29,7 +23,7 @@
   padding: 0.75rem;
 }
 
-#mobrix-ui-card .container-header {
+#mobrix-ui-card .header-container {
   display: flex;
   flex-direction: row;
   padding: 0.25rem;
@@ -45,5 +39,6 @@
 #mobrix-ui-card .footer {
   padding: 0.25rem;
   margin: 0.5rem;
+  font-size: 1rem;
   text-align: center;
 }

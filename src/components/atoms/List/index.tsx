@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./styles.css";
+
 import { ListComponent } from "./types";
 
 import { buildComponent } from "../../../utils";
@@ -36,7 +37,7 @@ const List: ListComponent = ({ elements: inputElements, ...commonProps }) => {
     name: "mobrix-ui-list",
     Component: elements.map((element, index) => {
       return (
-        <div className="element" key={`element_${index}`}>
+        <div className="internal-list-element" key={`element_${index}`}>
           {!commonProps.unstyled && (
             <svg viewBox="0 0 9 9" className="dot">
               <circle cx={4.5} cy={4.5} r={3.5} />

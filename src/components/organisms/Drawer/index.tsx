@@ -69,8 +69,9 @@ const Drawer: DrawerComponent = ({
       ),
     },
     Component: (
-      <div className="container-internal">
-        <div className="buttons-panel">
+      <div className="drawer-container-internal">
+        <div className="content">{children}</div>
+        <div className="drawer-buttons-panel">
           <Button
             dark={commonProps.dark}
             unstyled
@@ -78,7 +79,7 @@ const Drawer: DrawerComponent = ({
             onClick={() => {
               onClose && onClose();
             }}
-            className="close-button"
+            className="drawer-close-button"
           >
             {
               <svg
@@ -93,7 +94,6 @@ const Drawer: DrawerComponent = ({
             }
           </Button>
         </div>
-        <div className="elements">{children}</div>
       </div>
     ),
   });

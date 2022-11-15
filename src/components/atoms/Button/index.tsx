@@ -13,11 +13,12 @@ import { buildComponent } from "../../../utils";
  *
  * @since 1.0.0
  *
- * @param {boolean} disabled enable or disable the button functionalities (UI will reflect it too)
+ * @param {boolean} disabled enable/disable the button click functionality (UI will reflect it too)
  * @param children button content
  * @param {()=>void} onClick callback triggered when the button is clicked
  * @param {()=>void} onMouseEnter callback triggered when the cursor enter the component
  * @param {()=>void} onMouseLeave callback triggered when the cursor exit the component
+ * @param {boolean} animated enable/disable button animations
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -29,7 +30,7 @@ import { buildComponent } from "../../../utils";
  * import { render } from "react-dom";
  * import { Button } from 'mobrix-ui';
  *
- * render(<Button onClick={()=>alert("Click !")}>
+ * render(<Button animated shadow onClick={()=>alert("Click !")}>
  *            Example button
  *        </Button>, document.getElementById("root"));
  *
@@ -46,6 +47,7 @@ const Button: ButtonComponent = ({
   className,
   onMouseEnter,
   onMouseLeave,
+  animated,
   ...commonProps
 }) =>
   buildComponent({
@@ -63,6 +65,7 @@ const Button: ButtonComponent = ({
       className: classNames(className, {
         disabled: disabled,
         enabled: !disabled,
+        effect: animated,
       }),
     },
   });

@@ -4,7 +4,7 @@ import { DEMO_COMMON_PROPS } from "constants/demo-props";
 
 import { Demo, SelectProp } from "@cianciarusocataldo/demo-ui";
 
-import { Button, Drawer } from "mobrix-ui-preview";
+import { Button, Drawer, List } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
 
 const DrawerPage = () => {
@@ -47,6 +47,14 @@ const DrawerPage = () => {
                   <Drawer
                     hide={!isVisible}
                     onClose={() => setVisible(false)}
+                    children={
+                      <List
+                        dark={props.dark}
+                        elements={new Array(6)
+                          .fill("Element ")
+                          .map((el, index) => el + index)}
+                      />
+                    }
                     {...props}
                   />
                 </div>

@@ -108,6 +108,11 @@ export interface ComponentWithChildren<
   children?: T;
 }
 
+export interface AnimatedComponent {
+  /** Enable/disable component animations */
+  animated?: boolean;
+}
+
 /**
  *  Allowed {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component type for component builder
  *

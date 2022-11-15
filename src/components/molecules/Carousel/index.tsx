@@ -9,8 +9,8 @@ import { ICONS } from "../Rater/icons";
 
 import { withMobrixUiValue } from "../../../utils";
 
-import Button from "../../atoms/Button";
 import { arrowIcon } from "./icons";
+import Button from "../../atoms/Button";
 
 /**
  * A compact carousel, to show any component (or image) into a slide, with dots and arrow button to go next/previous

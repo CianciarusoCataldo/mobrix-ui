@@ -29,13 +29,12 @@ import { buildComponent } from "../../../utils";
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-const Label: LabelComponent = ({ value, ...commonProps }) => {
-  return buildComponent({
+const Label: LabelComponent = ({ value, ...commonProps }) =>
+  buildComponent({
     name: "mobrix-ui-label",
     Component: value,
     wrapper: "p",
     commonProps,
   });
-};
 
 export default Label;

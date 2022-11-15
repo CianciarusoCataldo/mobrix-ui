@@ -94,42 +94,47 @@ const HomePage = () => {
         value={t("title")}
       />
 
-      <div key="homepage_container" className="flex flex-col lg:flex-row">
-        <div>
+      <div
+        key="homepage_container"
+        className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row"
+      >
+        <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 3xl:w-1/2 4xl:w-1/2">
           <Card shadow body={description} />
-          <AppLabel className="text-2xl mt-10" value={t("installation", { context: "title" })} />
+          <AppLabel
+            className="text-2xl mt-10"
+            value={t("installation", { context: "title" })}
+          />
+          <Card shadow body={installationGuide} />
+        </div>
+        <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 3xl:w-1/2 4xl:w-1/2">
           <Card
             shadow
-            body={installationGuide}
+            header={t("componentsList_header")}
+            body={
+              <List
+                elements={Object.keys(PATHS)
+                  .filter((path) => path !== "Home")
+                  .sort()
+                  .map((routeKey, index) => {
+                    return (
+                      <div key={`link_${index}`}>
+                        <Button
+                          unstyled
+                          onClick={() => {
+                            dispatch(goTo(PATHS[routeKey]));
+                            dispatch(closeDrawer());
+                          }}
+                          className="text-gray-700 hover:text-blue-700 py-1 text-lg"
+                        >
+                          {routeKey}
+                        </Button>
+                      </div>
+                    );
+                  })}
+              ></List>
+            }
           />
         </div>
-        <Card
-          shadow
-          header={t("componentsList_header")}
-          body={
-            <List
-              elements={Object.keys(PATHS)
-                .filter((path) => path !== "Home")
-                .sort()
-                .map((routeKey, index) => {
-                  return (
-                    <div key={`link_${index}`}>
-                      <Button
-                        unstyled
-                        onClick={() => {
-                          dispatch(goTo(PATHS[routeKey]));
-                          dispatch(closeDrawer());
-                        }}
-                        className="text-gray-700 hover:text-blue-700 py-1 text-lg"
-                      >
-                        {routeKey}
-                      </Button>
-                    </div>
-                  );
-                })}
-            ></List>
-          }
-        />
       </div>
     </AppPage>
   );

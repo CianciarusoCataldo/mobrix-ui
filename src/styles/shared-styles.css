@@ -76,22 +76,3 @@
   -o-box-shadow: 0 5px 13px -1px #464545;
   box-shadow: 0 5px 13px -1px #464545;
 }
-
-[id^="mobrix-ui-"] .box-label {
-  padding: 0.4rem;
-  display: flex;
-  text-align: start;
-  align-items: flex-start;
-  width: 100%;
-}
-
-[id^="mobrix-ui-"].styled .box-component .box-label {
-  color: var(--mobrix-ui-text-color);
-}
-
-[id^="mobrix-ui-"] .box-component {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0.1rem;
-}

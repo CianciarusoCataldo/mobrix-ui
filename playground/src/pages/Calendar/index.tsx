@@ -24,7 +24,8 @@ const CalendarPage = () => (
           ...DEMO_COMMON_PROPS,
         }}
         rows={[
-          ["fromToday", "Start year", "year", "Start month", "month"],
+          ["fromToday", "Start year", "year"],
+          ["Start month", "month"],
           ["Custom days", "Custom months", "hideArrows"],
           ["className", "shadow"],
           ["dark", "hide", "unstyled"],

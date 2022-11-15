@@ -1,7 +1,21 @@
-#mobrix-ui-button.unstyled {
+#mobrix-ui-button.styled {
+  background: var(--mobrix-ui-background);
+  color: var(--mobrix-ui-text-color);
+  text-align: center;
+  font-weight: 800;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  align-items: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  text-align: center;
+}
+
+@media (hover: none) {
+  #mobrix-ui-button.styled.enabled:hover {
+    background: var(--mobrix-ui-background);
+    color: var(--mobrix-ui-text-color);
+  }
 }
 
 #mobrix-ui-button,
@@ -21,8 +35,6 @@
 }
 
 #mobrix-ui-button.styled.enabled:hover {
-  position: relative;
-  transform: scaleX(1.15) scaleY(1.1);
   background: linear-gradient(to right, #c9cacc, #e1e1e4, #c8c9ca);
 }
 
@@ -30,15 +42,7 @@
   background: rgb(61, 61, 75);
 }
 
-#mobrix-ui-button.styled {
-  background: var(--mobrix-ui-background);
-  color: var(--mobrix-ui-text-color);
-  text-align: center;
-  font-weight: 800;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  display: inline-flex;
-  align-items: center;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+#mobrix-ui-button.styled.enabled.effect:hover {
+  position: relative;
+  transform: scaleX(1.15) scaleY(1.1);
 }

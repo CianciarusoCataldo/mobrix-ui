@@ -7,6 +7,8 @@ import { CardComponent } from "./types";
 import { buildComponent } from "../../../utils";
 
 import Divider from "../../atoms/Divider";
+import { xIcon } from "../Modal/icons";
+import Button from "../../atoms/Button";
 
 /**
  * A Card component. Its UI depends on given parameters (header, body and footer)
@@ -44,16 +46,30 @@ const Card: CardComponent = ({
   footer,
   children,
   className,
+  dismissable,
+  onClick,
   ...commonProps
 }) => {
+  const [isVisible, setVisible] = React.useState(true);
+
   let components: JSX.Element[] = [];
 
   header &&
     components.push(
       <div key="mobrix_ui_card_header">
-        <div className="container-header">
+        <div className="header-container">
           {icon}
           <div className="header">{header}</div>
+          <Button
+            unstyled
+            hide={!dismissable}
+            onClick={() => {
+              onClick && onClick();
+              setVisible(false);
+            }}
+          >
+            {xIcon}
+          </Button>
         </div>
         <Divider />
       </div>
@@ -80,7 +96,7 @@ const Card: CardComponent = ({
   return buildComponent({
     name: "mobrix-ui-card",
     Component: components,
-    commonProps,
+    commonProps: { ...commonProps, hide: commonProps.hide || !isVisible },
   });
 };
 

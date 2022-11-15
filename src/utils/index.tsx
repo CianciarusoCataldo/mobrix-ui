@@ -77,7 +77,7 @@ export const withMobrixUiValue = <T=any>({
   inputValue,
   render,
   props,
-}: BuilderProps & {
+}: Omit<BuilderProps, "Component"> & {
   inputValue?: T;
   defaultValue: T;
   render?: (

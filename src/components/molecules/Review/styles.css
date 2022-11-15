@@ -7,29 +7,29 @@
   color: var(--mobrix-ui-text-color);
 }
 
-#mobrix-ui-review img,
-#mobrix-ui-review .photo {
+#mobrix-ui-review .review-photo,
+#mobrix-ui-review .review-photo img {
   border-radius: 9999px;
 }
 
-#mobrix-ui-review .url-container {
+#mobrix-ui-review .review-url-container {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-#mobrix-ui-review .info-box {
+#mobrix-ui-review .review-info-box {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.4rem;
 }
 
-#mobrix-ui-review .user-info {
+#mobrix-ui-review .review-user-info {
   display: flex;
   flex-direction: row;
 }
 
-#mobrix-ui-review .user-info .username {
+#mobrix-ui-review .review-user-info .review-username {
   margin-left: 0.5rem;
   font-weight: 600;
   font-size: 1.125rem;
@@ -38,18 +38,18 @@
   margin-bottom: auto;
 }
 
-#mobrix-ui-review .info-box .description {
+#mobrix-ui-review .review-info-box .review-description {
   margin-left: 0.5rem;
   margin-top: 1rem;
   overflow-wrap: break-word;
 }
 
-#mobrix-ui-review .default-icon,
-#mobrix-ui-review .github-icon {
+#mobrix-ui-review .review-url-container .default-icon,
+#mobrix-ui-review .review-url-container .github-icon {
   fill: grey;
 }
 
-#mobrix-ui-review.dark .default-icon,
-#mobrix-ui-review.dark .github-icon {
+#mobrix-ui-review.dark .review-url-container .default-icon,
+#mobrix-ui-review.dark .review-url-container .github-icon {
   fill: white;
 }

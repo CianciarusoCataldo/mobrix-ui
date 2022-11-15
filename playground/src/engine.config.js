@@ -38,7 +38,7 @@ const engineConfig = {
       Counter: "/components/molecules/Counter",
       DatePicker: "/components/organisms/DatePicker",
       Divider: "/components/atoms/Divider",
-      Drawer: "/components/molecules/Drawer",
+      Drawer: "/components/organisms/Drawer",
       Dropdown: "/components/molecules/Dropdown",
       ExpandableContainer: "/components/molecules/ExpandableContainer",
       FacebookButtons: "/components/atoms/FacebookButtons",

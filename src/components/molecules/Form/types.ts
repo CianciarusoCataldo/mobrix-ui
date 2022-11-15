@@ -1,8 +1,4 @@
-import {
-  BoxComponent,
-  CommonProps,
-  MoBrixUiComponent,
-} from "../../../utils/global";
+import { CommonProps, MoBrixUiComponent } from "../../../utils/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Form component field
@@ -27,20 +23,19 @@ export interface FormField {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type FormProps = CommonProps &
-  Omit<BoxComponent, "value" | "icon"> & {
-    /** Form title */
-    title?: string;
+export type FormProps = CommonProps & {
+  /** Form title */
+  title?: string;
 
-    /** Form fields array */
-    fields?: Record<string, FormField>;
+  /** Form fields array */
+  fields?: Record<string, FormField>;
 
-    /** Custom submit button label */
-    submitLabel?: string;
+  /** Custom submit button label */
+  submitLabel?: string;
 
-    /** Callback on Form submit */
-    onSubmit?: (values: Record<string, string | boolean | number>) => void;
-  };
+  /** Callback on Form submit */
+  onSubmit?: (values: Record<string, string | boolean | number>) => void;
+};
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Form component

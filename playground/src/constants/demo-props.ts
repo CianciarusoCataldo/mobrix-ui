@@ -4,6 +4,6 @@ export const DEMO_COMMON_PROPS = {
   className: StringProp(""),
   hide: BooleanProp(false),
   dark: BooleanProp(false),
-  shadow: BooleanProp(true),
+  shadow: BooleanProp(false),
   unstyled: BooleanProp(false),
 };

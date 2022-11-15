@@ -62,12 +62,6 @@ export {
 export { default as Container } from "./components/molecules/Container";
 
 export {
-  DrawerComponent,
-  DrawerProps,
-} from "./components/molecules/Drawer/types";
-export { default as Drawer } from "./components/molecules/Drawer";
-
-export {
   DropdownComponent,
   DropdownElement,
   DropdownProps,
@@ -116,6 +110,12 @@ export {
   DatePickerProps,
 } from "./components/organisms/DatePicker/types";
 export { default as DatePicker } from "./components/organisms/DatePicker";
+
+export {
+  DrawerComponent,
+  DrawerProps,
+} from "./components/organisms/Drawer/types";
+export { default as Drawer } from "./components/organisms/Drawer";
 
 /** Shared types */
 export { Wrappers } from "./utils/global";

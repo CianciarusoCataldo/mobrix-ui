@@ -1,5 +1,6 @@
 import {
   BuilderComponent,
+  ClickableComponent,
   CommonProps,
   ComponentWithChildren,
   ComponentWithIcon,
@@ -17,7 +18,8 @@ import {
  */
 export type CardProps = CommonProps &
   ComponentWithChildren &
-  ComponentWithIcon & {
+  ComponentWithIcon &
+  ClickableComponent & {
     /** Card header content */
     header?: BuilderComponent;
 
@@ -26,6 +28,10 @@ export type CardProps = CommonProps &
 
     /** Card footer content */
     footer?: BuilderComponent;
+
+    /** If true, the card can be dismissed by clicking the x icon and the card will disappear
+     * (at least until the page is reloaded, use `hide` parameter for a fixed visibility) */
+    dismissable?: boolean;
   };
 
 /**

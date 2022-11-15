@@ -5,16 +5,16 @@
   padding: 0.6rem;
 }
 
-#mobrix-ui-list .element {
+#mobrix-ui-list .internal-list-element {
   display: flex;
   flex-direction: row;
 }
 
-#mobrix-ui-list.styled .element {
+#mobrix-ui-list.styled .internal-list-element {
   color: var(--mobrix-ui-text-color);
 }
 
-#mobrix-ui-list .element .dot {
+#mobrix-ui-list .internal-list-element .dot {
   width: 6px;
   height: 6px;
   fill: var(--mobrix-ui-text-color);

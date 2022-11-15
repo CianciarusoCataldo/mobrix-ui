@@ -1,0 +1,187 @@
+#mobrix-ui-drawer {
+  position: fixed;
+  z-index: 10;
+  padding: 0;
+  overflow: auto;
+  color: var(--mobrix-ui-text-color);
+  animation: var(--mobrix-ui-drawer-animation);
+  -moz-animation: var(--mobrix-ui-drawer-animation);
+  -ms-animation: var(--mobrix-ui-drawer-animation);
+  -o-animation: var(--mobrix-ui-drawer-animation);
+  background: transparent;
+}
+
+#mobrix-ui-drawer.left,
+#mobrix-ui-drawer.right {
+  top: 0;
+  bottom: 0;
+}
+
+#mobrix-ui-drawer.top,
+#mobrix-ui-drawer.bottom {
+  left: 0;
+  right: 0;
+}
+
+#mobrix-ui-drawer.top,
+#mobrix-ui-drawer.top-left,
+#mobrix-ui-drawer.top-right {
+  --mobrix-ui-drawer-animation-in: slideTop 0.3s forwards;
+  --mobrix-ui-drawer-animation-out: slideOutTop 0.3s forwards;
+  bottom: auto;
+  top: 0;
+}
+
+#mobrix-ui-drawer[class^="bottom"] {
+  --mobrix-ui-drawer-animation-in: slideBottom 0.3s forwards;
+  --mobrix-ui-drawer-animation-out: slideOutBottom 0.3s forwards;
+  top: auto;
+  bottom: 0;
+}
+
+#mobrix-ui-drawer[class^="left"] {
+  right: auto;
+  left: 0;
+}
+
+#mobrix-ui-drawer[class^="right"] {
+  left: auto;
+  right: 0;
+}
+
+#mobrix-ui-drawer.left {
+  --mobrix-ui-drawer-animation-in: slideLeft 0.3s forwards;
+  --mobrix-ui-drawer-animation-out: slideOutLeft 0.3s forwards;
+}
+
+#mobrix-ui-drawer.right {
+  --mobrix-ui-drawer-animation-in: slideRight 0.3s forwards;
+  --mobrix-ui-drawer-animation-out: slideOutRight 0.3s forwards;
+}
+
+#mobrix-ui-drawer.ease-in {
+  --mobrix-ui-drawer-animation: var(--mobrix-ui-drawer-animation-in);
+}
+
+#mobrix-ui-drawer.ease-out {
+  --mobrix-ui-drawer-animation: var(--mobrix-ui-drawer-animation-out);
+}
+
+#mobrix-ui-drawer .drawer-close-button {
+  outline: 0 solid transparent;
+  outline-offset: 2px;
+  margin: auto;
+  background-image: var(--mobrix-ui-background);
+}
+
+#mobrix-ui-drawer.right .drawer-close-button,
+#mobrix-ui-drawer.left .drawer-close-button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#mobrix-ui-drawer.right .drawer-close-button {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  padding-left: 0.1rem;
+}
+
+#mobrix-ui-drawer.left .drawer-close-button {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding-right: 0.1rem;
+}
+
+#mobrix-ui-drawer[class^="bottom"] .drawer-close-button {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 0.1rem;
+}
+
+#mobrix-ui-drawer[class^="top"] .drawer-close-button {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.1rem;
+}
+
+#mobrix-ui-drawer[class^="top"] .drawer-close-button svg {
+  transform: rotate(90deg);
+}
+
+#mobrix-ui-drawer[class^="bottom"] .drawer-close-button svg {
+  transform: rotate(-90deg);
+}
+
+#mobrix-ui-drawer.right .drawer-close-button svg {
+  transform: rotate(180deg);
+}
+
+#mobrix-ui-drawer .drawer-close-button:focus {
+  outline: 0 solid transparent;
+  outline-offset: 2px;
+}
+
+#mobrix-ui-drawer .drawer-buttons-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+#mobrix-ui-drawer .drawer-container-internal .content {
+  background-image: var(--mobrix-ui-background);
+}
+
+#mobrix-ui-drawer.top-left .drawer-container-internal,
+#mobrix-ui-drawer.bottom-left .drawer-container-internal,
+#mobrix-ui-drawer.left .drawer-container-internal,
+#mobrix-ui-drawer.top-right .drawer-container-internal,
+#mobrix-ui-drawer.bottom-right .drawer-container-internal,
+#mobrix-ui-drawer.right .drawer-container-internal {
+  height: 100%;
+}
+
+#mobrix-ui-drawer.top .drawer-container-internal,
+#mobrix-ui-drawer.bottom .drawer-container-internal {
+  width: 100%;
+}
+
+#mobrix-ui-drawer .drawer-container-internal {
+  display: flex;
+}
+
+#mobrix-ui-drawer.styled .drawer-container-internal {
+  padding: 0.1rem;
+}
+
+#mobrix-ui-drawer.left .drawer-container-internal {
+  flex-direction: row;
+}
+
+#mobrix-ui-drawer.right .drawer-container-internal {
+  flex-direction: row-reverse;
+}
+
+#mobrix-ui-drawer[class^="top"] .drawer-container-internal {
+  flex-direction: column;
+}
+
+#mobrix-ui-drawer[class^="bottom"] .drawer-container-internal {
+  flex-direction: column-reverse;
+}
+
+#mobrix-ui-drawer .drawer-close-button svg {
+  fill: var(--mobrix-ui-text-color);
+}
+
+#mobrix-ui-drawer .drawer-close-button svg:hover {
+  fill: rgba(217, 119, 6, 1);
+}
+
+@media (hover: none) {
+  #mobrix-ui-drawer .drawer-close-button:hover svg {
+    fill: var(--mobrix-ui-text-color);
+  }
+}
