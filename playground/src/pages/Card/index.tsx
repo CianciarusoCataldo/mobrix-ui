@@ -14,9 +14,9 @@ const CardPage = () => (
         label={componentLabel}
         props={{
           dismissable: BooleanProp(false),
-          header: StringProp("header"),
-          body: StringProp("body"),
-          footer: StringProp("footer"),
+          header: StringProp("Header"),
+          body: StringProp("Body"),
+          footer: StringProp("Footer"),
           ...DEMO_COMMON_PROPS,
         }}
         rows={[

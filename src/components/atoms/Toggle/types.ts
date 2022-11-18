@@ -1,6 +1,5 @@
 import {
   BuilderComponent,
-  CommonProps,
   ComponentWithCallback,
   ComponentWithIcon,
   ComponentWithValue,
@@ -16,8 +15,7 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type ToggleProps = CommonProps &
-  ComponentWithValue<boolean> &
+export type ToggleProps = ComponentWithValue<boolean> &
   ComponentWithIcon &
   ComponentWithCallback<boolean> & {
     offIcon?: BuilderComponent;

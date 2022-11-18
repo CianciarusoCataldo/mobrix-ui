@@ -1,7 +1,5 @@
 import "./styles.css";
 
-import React from "react";
-
 import { CheckBoxComponent } from "./types";
 
 import { withMobrixUiValue } from "../../../utils";
@@ -45,7 +43,7 @@ const Checkbox: CheckBoxComponent = ({
     name: "mobrix-ui-checkbox",
     commonProps,
     props: (actualValue, setValue) => ({
-      Component: actualValue ? icon || DefaultCheckIcon : <div />,
+      Component: actualValue ? icon || DefaultCheckIcon : "",
       additionalProps: {
         onClick: () => {
           onChange && onChange(!actualValue);

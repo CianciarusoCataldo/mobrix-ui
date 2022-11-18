@@ -1,6 +1,5 @@
 #mobrix-ui-codebox {
   overflow: hidden;
-  margin: 0.25rem;
   padding: 0.3rem;
   display: flex;
   flex-direction: column;
@@ -21,19 +20,18 @@
 #mobrix-ui-codebox .codebox-code {
   margin-top: 0.7rem;
   padding: 1rem;
+  line-height: 1.50rem;
+  overflow: auto;
 }
 
 @media (max-width: 1024px) {
   #mobrix-ui-codebox .codebox-code {
-    overflow: auto;
-    font-size: 0.75rem;
-    line-height: 1rem;
+    font-size: 1rem;
   }
 }
 
 @media (min-width: 1024px) {
   #mobrix-ui-codebox .codebox-code {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-size: 0.9rem;
   }
 }

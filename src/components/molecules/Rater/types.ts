@@ -1,5 +1,4 @@
 import {
-  CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
@@ -14,8 +13,7 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type RaterProps = CommonProps &
-  ComponentWithValue<number> &
+export type RaterProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {
     /** If true, vote icons will be showed vertically (instead of default setting, horizontal) */
     vertical?: boolean;

@@ -1,8 +1,4 @@
-import {
-  BuilderComponent,
-  CommonProps,
-  MoBrixUiComponent,
-} from "../../../utils/global";
+import { BuilderComponent, MoBrixUiComponent } from "../../../utils/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} List component props
@@ -13,7 +9,7 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type ListProps = CommonProps & {
+export type ListProps = {
   /** List elements (if unstyled == `false`, every element will include a dot at its start) */
   elements?: BuilderComponent[];
 };

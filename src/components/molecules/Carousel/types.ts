@@ -15,8 +15,7 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type CarouselProps = CommonProps &
-  ComponentWithValue<number> &
+export type CarouselProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {
     /** Carousel elements */
     elements?: BuilderComponent[];

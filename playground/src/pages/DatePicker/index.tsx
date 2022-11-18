@@ -21,11 +21,13 @@ const CalendarPage = () => (
           "Custom months": BooleanProp(false),
           hideArrows: BooleanProp(false),
           dayLabel: BooleanProp(true),
+          fromToday: BooleanProp(true),
           ...DEMO_COMMON_PROPS,
         }}
         rows={[
-          ["Custom year", "year", "Custom month", "month"],
-          ["Custom days", "Custom months"],
+          ["Custom year", "year"],
+          ["Custom month", "month"],
+          ["Custom days", "Custom months", "fromToday"],
           ["className", "shadow"],
           ["dark", "hide", "unstyled"],
         ]}

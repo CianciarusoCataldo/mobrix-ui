@@ -24,62 +24,13 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-#mobrix-ui-modal .header {
-  display: none;
-}
-
-#mobrix-ui-modal.styled .header {
-  display: flex;
+  align-items: center;
 }
 
 #mobrix-ui-modal > .modal-window > .content {
-  display: flex;
-  flex-direction: column;
   margin: auto;
 }
 
 #mobrix-ui-modal.styled .modal-window > .content {
   padding: 1rem;
-}
-
-#mobrix-ui-modal.styled .modal-window > .content {
-  border-radius: 0.375rem;
-  background-image: var(--mobrix-ui-background);
-  color: var(--mobrix-ui-text-color);
-}
-
-#mobrix-ui-modal.styled .modal-window > .content .header {
-  flex-direction: row;
-  margin: 0.25rem 0.5rem;
-}
-
-#mobrix-ui-modal.styled .modal-window > .content .header .title {
-  margin: auto;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  padding: 0.25rem 0.9rem;
-  font-weight: 700;
-}
-
-#mobrix-ui-modal.styled .modal-window > .content .header .close-button {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-#mobrix-ui-modal.styled
-  .modal-window
-  > .content
-  .header
-  .close-button:hover
-  svg
-  path {
-  fill: rgba(185, 28, 28, 1);
-}
-
-#mobrix-ui-modal.styled .modal-window > .content .header .close-button,
-#mobrix-ui-modal.styled .modal-window > .content .header .close-button:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }

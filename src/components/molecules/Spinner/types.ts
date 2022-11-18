@@ -1,6 +1,5 @@
 import {
   BuilderComponent,
-  CommonProps,
   ComponentWithValue,
   MoBrixUiComponent,
 } from "../../../utils/global";
@@ -14,10 +13,9 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type SpinnerProps<T extends string = string> = CommonProps &
-  ComponentWithValue<T> & {
-    statuses?: Record<T, BuilderComponent>;
-  };
+export type SpinnerProps<T extends string = string> = ComponentWithValue<T> & {
+  statuses?: Record<T, BuilderComponent>;
+};
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Spinner component

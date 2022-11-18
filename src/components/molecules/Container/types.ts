@@ -1,5 +1,4 @@
 import {
-  CommonProps,
   ComponentWithChildren,
   MoBrixUiComponent,
 } from "../../../utils/global";
@@ -13,11 +12,10 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type ContainerProps = ComponentWithChildren<any> &
-  CommonProps & {
-    wrapper?: "div" | "header" | "footer";
-    animated?: boolean;
-  };
+export type ContainerProps = ComponentWithChildren<any> & {
+  wrapper?: "div" | "header" | "footer";
+  animated?: boolean;
+};
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Container component props

@@ -1,6 +1,5 @@
 import {
-  CommonProps,
-  ComponentWithValue,
+  ComponentWithChildren,
   MoBrixUiComponent,
 } from "../../../utils/global";
 
@@ -13,7 +12,7 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type LabelProps = ComponentWithValue<string | string[]> & CommonProps;
+export type LabelProps = ComponentWithChildren<string | string[]>;
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Label component

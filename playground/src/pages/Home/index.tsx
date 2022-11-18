@@ -88,22 +88,18 @@ const HomePage = () => {
 
   return (
     <AppPage>
-      <AppLabel
-        key="homepage_header"
-        className="text-4xl mt-12 mb-5 ml-3"
-        value={t("title")}
-      />
-
+      <AppLabel key="homepage_header" className="text-4xl mt-12 mb-5 ml-3">
+        {t("title")}
+      </AppLabel>
       <div
         key="homepage_container"
         className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row"
       >
         <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 3xl:w-1/2 4xl:w-1/2">
           <Card shadow body={description} />
-          <AppLabel
-            className="text-2xl mt-10"
-            value={t("installation", { context: "title" })}
-          />
+          <AppLabel className="text-2xl mt-10">
+            {t("installation", { context: "title" })}
+          </AppLabel>
           <Card shadow body={installationGuide} />
         </div>
         <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 3xl:w-1/2 4xl:w-1/2">

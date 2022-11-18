@@ -9,7 +9,7 @@ import { defaultDays, defaultMonths } from "../Calendar/constants";
 import { buildComponent } from "../../../utils";
 import { getMonthsDuration, today } from "../Calendar/utils";
 
-import { xIcon } from "../../molecules/Modal/icons";
+import { xIcon } from "../../molecules/Card/icons";
 
 import Button from "../../atoms/Button";
 import Calendar from "../Calendar";
@@ -24,6 +24,12 @@ const DatePicker: DatePickerComponent = ({
   months: customMonths = defaultMonths,
   shadow,
   days: customDays = defaultDays,
+  startMonth,
+  startYear,
+  hideArrows,
+  fromToday,
+  dayLabel,
+  onViewChange,
   ...commonProps
 }) => {
   const todayDate = today();
@@ -61,10 +67,13 @@ const DatePicker: DatePickerComponent = ({
     .fill(" ")
     .map((el, index) => ({ name: String(index + 1) }));
 
-  const years = new Array(70)
+  const years = new Array(50)
     .fill(" ")
-    .map((el, index) => Number(year - 70 + index))
-    .concat(new Array(70).fill("").map((el, index) => Number(index + year)));
+    .map((el, index) => Number(todayDate.year - 50 + index))
+    .concat(new Array(30).fill("").map((el, index) => Number(index + todayDate.year)));
+
+  console.log(years.indexOf(year));
+  console.log(year);
 
   return buildComponent({
     name: "mobrix-ui-date-picker",
@@ -150,6 +159,12 @@ const DatePicker: DatePickerComponent = ({
             className="date-picker-calendar"
             days={customDays}
             months={customMonths}
+            startMonth={startMonth}
+            startYear={startYear}
+            hideArrows={hideArrows}
+            fromToday={fromToday}
+            onViewChange={onViewChange}
+            dayLabel={dayLabel}
             value={{ day, month, year }}
             onChange={(date) => {
               onChange && onChange(date);

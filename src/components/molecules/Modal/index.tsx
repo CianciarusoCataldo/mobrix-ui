@@ -7,8 +7,9 @@ import { ModalComponent } from "./types";
 import { buildComponent } from "../../../utils";
 
 import Button from "../../atoms/Button";
-import { xIcon } from "./icons";
+import { xIcon } from "../Card/icons";
 import Container from "../Container";
+import Card from "../Card";
 
 /**
  * A light Modal component. Can be totally customized (the overlay too, through `overlayClassName` parameter)
@@ -51,20 +52,20 @@ const Modal: ModalComponent = ({
     name: "mobrix-ui-modal",
     Component: (
       <div className="modal-window">
-        <Container
-          animated
-          className={"content " + className}
-          dark={commonProps.dark}
-          unstyled={commonProps.unstyled}
-        >
-          <div className="header">
-            <p className="title">{title}</p>
-            <Button onClick={onClose} unstyled className="close-button">
-              {xIcon}
-            </Button>
-          </div>
-          {children}
-        </Container>
+        {commonProps.unstyled ? (
+          children
+        ) : (
+          <Card
+            className={"content " + className}
+            dark={commonProps.dark}
+            unstyled={commonProps.unstyled}
+            onClick={onClose}
+            body={children}
+            dismissable
+            header={title}
+            hide={commonProps.hide}
+          />
+        )}
       </div>
     ),
     commonProps: { ...commonProps, className: overlayClassName },

@@ -1,4 +1,4 @@
 import { Label } from "../../../src";
 import { renderingTest } from "../../core/utils/helpers";
 
-renderingTest(Label, { value: "Testing label" });
+renderingTest(Label, { children: "Testing label" });

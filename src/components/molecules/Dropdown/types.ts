@@ -1,5 +1,4 @@
 import {
-  CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
@@ -28,8 +27,7 @@ export interface DropdownElement {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type DropdownProps = CommonProps &
-  ComponentWithValue<number> &
+export type DropdownProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {
     /** Dropdown content elements */
     content?: DropdownElement[];

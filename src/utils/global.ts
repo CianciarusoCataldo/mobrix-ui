@@ -87,9 +87,9 @@ export interface ComponentWithCallback<T = string> {
  * @copyright 2022 Cataldo Cianciaruso
  *
  */
-export interface ClickableComponent {
+export interface ClickableComponent<T = () => void> {
   /** Callback triggered when component is clicked */
-  onClick?: () => void;
+  onClick?: T;
 }
 
 /**
@@ -171,8 +171,20 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type MoBrixUiComponent<T = any, K = JSX.Element> = (props: T) => K;
+export type MoBrixUiComponent<T = any, K = JSX.Element> = (
+  props: MobrixUiProps<T>
+) => K;
 
 export type DeepPartial<T> = {
   [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
 };
+
+export type MobrixUiProps<T = any> = T & CommonProps;
+
+export type MobrixUiReactiveComponent<T = any, K = any> = (
+  props: CommonProps &
+    K & {
+      value: T;
+      setValue: React.Dispatch<React.SetStateAction<T>>;
+    }
+) => Omit<BuilderProps, "name">;

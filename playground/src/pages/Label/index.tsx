@@ -15,7 +15,7 @@ const LabelPage = () => (
         <Demo
           label={componentLabel}
           props={{
-            value: StringProp(labelContent),
+            children: StringProp(labelContent),
             ...DEMO_COMMON_PROPS,
             shadow: BooleanProp(false),
           }}

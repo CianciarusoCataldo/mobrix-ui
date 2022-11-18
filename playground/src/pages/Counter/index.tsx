@@ -18,7 +18,6 @@ const CounterPage = () => (
         startColor="#C3BBBB"
         props={{
           value: NumberProp(0),
-          label: StringProp("label"),
           placeholder: StringProp("placeholder"),
           readOnly: BooleanProp(false),
           ...DEMO_COMMON_PROPS,

@@ -1,4 +1,8 @@
-import { CommonProps, MoBrixUiComponent } from "../../../utils/global";
+import {
+  ClickableComponent,
+  ComponentWithChildren,
+  MoBrixUiComponent,
+} from "../../../utils/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Form component field
@@ -12,6 +16,7 @@ import { CommonProps, MoBrixUiComponent } from "../../../utils/global";
 export interface FormField {
   header?: string;
   type?: "boolean" | "text" | "numeric";
+  placeholder?: string;
 }
 
 /**
@@ -23,19 +28,20 @@ export interface FormField {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type FormProps = CommonProps & {
-  /** Form title */
-  title?: string;
+export type FormProps = ComponentWithChildren<JSX.Element> &
+  ClickableComponent<(values: Record<string, any>) => void> & {
+    /** Form title */
+    title?: string;
 
-  /** Form fields array */
-  fields?: Record<string, FormField>;
+    /** Form fields array */
+    fields?: Record<string, FormField>;
 
-  /** Custom submit button label */
-  submitLabel?: string;
+    /** Custom submit button label */
+    buttonContent?: JSX.Element | string;
 
-  /** Callback on Form submit */
-  onSubmit?: (values: Record<string, string | boolean | number>) => void;
-};
+    /** Custom className applied on every single field component */
+    fieldClassName?: string;
+  };
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Form component

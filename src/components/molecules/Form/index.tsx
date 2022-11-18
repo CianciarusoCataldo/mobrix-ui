@@ -10,6 +10,7 @@ import Button from "../../atoms/Button";
 import CheckBox from "../../atoms/CheckBox";
 import Counter from "../../atoms/Counter";
 import Input from "../../atoms/Input";
+import { fieldFormatters } from "./utils";
 
 /**
  * A totally configurable Form, with a submit button to let the user submit data from your web-app
@@ -24,10 +25,12 @@ import Input from "../../atoms/Input";
  * allowed types are:
  *     - `boolean` (rendered as a {@link CheckBox})
  *     - `numeric` (rendered as a {@link Counter})
+ *     - `text` (rendered as a {@link Input})
  *
  * A field object can be empty, in this case default values will be used (`input` type with empty header)
- * @param {(values: Record<string, string>) => void} onSubmit callback triggered on Form submit
- * @param {string} submitLabel custom submit button label
+ * @param {(values: Record<string, string>) => void} onClick callback triggered on Form submit
+ * @param {string} fieldClassName Custom className applied on every single field component
+ * @param {JSX.Element | string} buttonContent custom submit button content
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -37,9 +40,9 @@ import Input from "../../atoms/Input";
  *
  * @example <caption>Example Form usage</caption>
  * import { render } from "react-dom";
- * import { Field } from 'mobrix-ui';
+ * import { Form } from 'mobrix-ui';
  *
- * render(<Form fields={{ "Field 0": { header:"Field 0 header" } }} onSubmit={()=>alert('Submitted !')} />, document.getElementById("root"));
+ * render(<Form fields={{ "Field 0": { header:"Field 0 header" } }} buttonContent="Submit" onClick={()=>alert('Submitted !')} />, document.getElementById("root"));
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Form
  *
@@ -50,20 +53,17 @@ import Input from "../../atoms/Input";
 const Form: FormComponent = ({
   title,
   fields,
-  onSubmit,
-  submitLabel,
+  onClick,
+  buttonContent,
+  children,
+  fieldClassName = "",
   ...commonProps
 }) => {
   const dropdownFields: Record<string, string | boolean | number> = fields
     ? Object.keys(fields).reduce(
         (o, key) => ({
           ...o,
-          [key]:
-            fields[key].type === "boolean"
-              ? false
-              : fields[key].type === "numeric"
-              ? 0
-              : "",
+          [key]: null,
         }),
         {}
       )
@@ -72,88 +72,68 @@ const Form: FormComponent = ({
   const [values, setValues] =
     React.useState<Record<string, string | boolean | number>>(dropdownFields);
 
+  const components = [
+    <p key="mobrix_ui_form_title" className="title">
+      {title}
+    </p>,
+    ...Object.keys(dropdownFields).map((field, index) => {
+      const fieldSettings = fields && fields[field] ? fields[field] : {};
+
+      const type = fieldSettings.type || "text";
+
+      let FieldElement: (props: any) => JSX.Element =
+        fieldFormatters[type].component;
+
+      const callBack = (newValue: any) => {
+        let formattedValue = fieldFormatters[type].format(newValue);
+        setValues({ ...values, [field]: formattedValue });
+      };
+
+      const value =
+        values[field] !== null
+          ? fieldFormatters[type].format(values[field])
+          : undefined;
+
+      return (
+        <div className={"field " + fieldClassName} key={`form_field_${index}`}>
+          {fieldSettings.header && (
+            <span className="header" key={`form_field_${index}_header`}>
+              {fieldSettings.header}
+            </span>
+          )}
+          <FieldElement
+            value={value}
+            id={`form-field-${index}`}
+            key={`form_field_${index}_element`}
+            className="form-input"
+            placeholder={fieldSettings.placeholder}
+            onChange={callBack}
+            autocomplete="off"
+          />
+        </div>
+      );
+    }),
+  ];
+
+  children && components.push(children);
+
+  components.push(
+    <Button
+      key="mobrix_ui_form_submit_button"
+      className="submit-button"
+      dark={!commonProps.dark}
+      id="form-submit-button"
+      onClick={() => {
+        onClick && onClick(values);
+      }}
+    >
+      {buttonContent}
+    </Button>
+  );
+
   return buildComponent({
     name: "mobrix-ui-form",
-    Component: [
-      <p key="mobrix_ui_form_title" className="title">
-        {title}
-      </p>,
-      ...Object.keys(dropdownFields).map((field, index) => {
-        const name = field;
-        const { type, header } = fields![field];
-
-        let FieldElement: (props: any) => JSX.Element = Input;
-
-        let fieldProps: Record<string, any> = {
-          value: String(values[field]),
-          id: `form-field-${index}`,
-          onChange: (newValue: string) => {
-            let tmpValues = { ...values };
-            let value = String(newValue);
-            if (value.length < 1) {
-              tmpValues[name] = "";
-            } else {
-              tmpValues[name] = value;
-            }
-
-            setValues(tmpValues);
-          },
-          className: "form-input",
-        };
-
-        if (type) {
-          switch (type) {
-            case "boolean":
-              {
-                FieldElement = CheckBox;
-                fieldProps = {
-                  ...fieldProps,
-                  className: "",
-                  value: values[field] as boolean,
-                  onChange: (value: boolean) => {
-                    let tmpValues = { ...values };
-                    tmpValues[field] = value;
-                    setValues(tmpValues);
-                  },
-                };
-              }
-              break;
-            case "numeric":
-              {
-                FieldElement = Counter;
-                fieldProps = {
-                  ...fieldProps,
-                  value: values[field] as number,
-                  onChange: (value: number) => {
-                    let tmpValues = { ...values };
-                    tmpValues[field] = value;
-                    setValues(tmpValues);
-                  },
-                };
-              }
-              break;
-          }
-        }
-
-        return (
-          <div className="field" key={`form_field_${index}`}>
-            <span className="header">{header}</span>
-            {<FieldElement {...fieldProps} />}
-          </div>
-        );
-      }),
-      <div key="mobrix_ui_form_submit_button" className="submit-button">
-        <Button
-          dark={!commonProps.dark}
-          id="form-submit-button"
-          onClick={() => {
-            onSubmit && onSubmit(values);
-          }}
-        >
-          {submitLabel}
-        </Button>
-      </div>,
-    ],
+    Component: components,
     commonProps,
   });
 };

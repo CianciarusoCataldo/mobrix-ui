@@ -1,5 +1,4 @@
 import {
-  CommonProps,
   ComponentWithCallback,
   MoBrixUiComponent,
   ComponentWithValue,
@@ -16,8 +15,7 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type CheckBoxProps = CommonProps &
-  ComponentWithValue<boolean> &
+export type CheckBoxProps = ComponentWithValue<boolean> &
   ComponentWithIcon &
   AnimatedComponent &
   ComponentWithCallback<boolean>;

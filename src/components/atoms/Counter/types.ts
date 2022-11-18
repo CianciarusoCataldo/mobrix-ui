@@ -1,5 +1,4 @@
 import {
-  CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
@@ -15,8 +14,7 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type CounterProps = CommonProps &
-  NumericInputContent &
+export type CounterProps = NumericInputContent &
   ComponentWithValue<number> &
   ComponentWithCallback<number>;
 

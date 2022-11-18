@@ -1,11 +1,9 @@
-import {
-  CommonProps,
-  ComponentWithValue,
-  MoBrixUiComponent,
-} from "../../../utils/global";
+import { ComponentWithValue, MoBrixUiComponent } from "../../../utils/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Codebox supported environments
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/CodeBox
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -19,6 +17,8 @@ export type SupportedEnvironment =
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Codebox partial code block
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/CodeBox
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -41,14 +41,13 @@ export interface CodeBlock<T = string | null> {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type CodeBoxProps = CommonProps &
-  ComponentWithValue<string> & {
-    /** Enable/disable advanced mode, to access extra features, like the integrated copy button and text highlight */
-    enhanced?: boolean;
+export type CodeBoxProps = ComponentWithValue<string> & {
+  /** Enable/disable advanced mode, to access extra features, like the integrated copy button and text highlight */
+  enhanced?: boolean;
 
-    /** Environment for text highlight feature, default to "terminal" (only enabled into enhanced mode) */
-    environment?: SupportedEnvironment | undefined;
-  };
+  /** Environment for text highlight feature, default to "terminal" (only enabled into enhanced mode) */
+  environment?: SupportedEnvironment | undefined;
+};
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} CodeBox component

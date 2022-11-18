@@ -1,6 +1,5 @@
 import "./styles.css";
 
-import React from "react";
 import classNames from "classnames";
 
 import { ButtonComponent } from "./types";

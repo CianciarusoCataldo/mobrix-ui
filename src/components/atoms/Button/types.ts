@@ -2,7 +2,6 @@ import {
   AnimatedComponent,
   BuilderComponent,
   ClickableComponent,
-  CommonProps,
   ComponentWithChildren,
   MoBrixUiComponent,
 } from "../../../utils/global";
@@ -20,7 +19,6 @@ export type ButtonProps = ComponentWithChildren<
   BuilderComponent | BuilderComponent[]
 > &
   AnimatedComponent &
-  CommonProps &
   ClickableComponent & {
     /**callback triggered when the cursor enter the component */
     onMouseEnter?: () => void;

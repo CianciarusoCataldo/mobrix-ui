@@ -16,7 +16,7 @@ const FacebookButtonsPage = () => (
         <Demo
           label={componentLabel}
           props={{
-            pageId: StringProp("critelliTour80"),
+            pageId: StringProp("facebook"),
             "With custom width": BooleanProp(false),
             width: NumberProp(180),
             share: BooleanProp(true),

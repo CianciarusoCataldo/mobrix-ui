@@ -1,6 +1,6 @@
-import { CommonProps, MoBrixUiComponent } from "../../../utils/global";
+import { MoBrixUiComponent } from "../../../utils/global";
 
-export type FacebookButtonsProps = CommonProps & {
+export type FacebookButtonsProps = {
   pageId: string;
   share?: boolean;
   small?: boolean;

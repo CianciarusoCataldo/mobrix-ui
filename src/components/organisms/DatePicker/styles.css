@@ -39,15 +39,34 @@
   color: white;
 }
 
+#mobrix-ui-date-picker .date-picker-close-button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 #mobrix-ui-date-picker #mobrix-ui-calendar.date-picker-calendar .arrow svg,
 #mobrix-ui-date-picker .date-picker-close-button path {
   fill: white;
 }
 
-#mobrix-ui-date-picker .date-picker-close-button {
-  display: flex;
-  flex-direction: row-reverse;
+#mobrix-ui-date-picker
+  #mobrix-ui-calendar.date-picker-calendar
+  .arrow:hover
+  svg {
+  fill: orange;
 }
+
+#mobrix-ui-date-picker.styled .date-picker-close-button:hover svg path {
+  fill: rgba(185, 28, 28, 1);
+}
+
+@media (hover: none) {
+  #mobrix-ui-date-picker #mobrix-ui-calendar.date-picker-calendar .arrow svg,
+  #mobrix-ui-date-picker .date-picker-close-button path {
+    fill: white;
+  }
+}
+
 #mobrix-ui-date-picker .date-picker-box > .buttons {
   border-radius: 0.375rem;
   color: var(--mobrix-ui-text-color);

@@ -1,5 +1,4 @@
 import {
-  CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
   GenericInputComponent,
@@ -15,8 +14,7 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type InputProps = CommonProps &
-  GenericInputComponent &
+export type InputProps = GenericInputComponent &
   ComponentWithValue<string> &
   ComponentWithCallback;
 

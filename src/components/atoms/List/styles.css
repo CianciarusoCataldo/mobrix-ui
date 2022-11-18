@@ -1,7 +1,10 @@
-#mobrix-ui-list.styled {
+#mobrix-ui-list {
   display: flex;
   flex-direction: column;
   background: transparent;
+}
+
+#mobrix-ui-list.styled {
   padding: 0.6rem;
 }
 
@@ -14,11 +17,16 @@
   color: var(--mobrix-ui-text-color);
 }
 
-#mobrix-ui-list .internal-list-element .dot {
+#mobrix-ui-list.styled .internal-list-element .dot {
   width: 6px;
   height: 6px;
   fill: var(--mobrix-ui-text-color);
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 0.3rem;
+  display: block;
+}
+
+#mobrix-ui-list .internal-list-element .dot {
+  display: none;
 }

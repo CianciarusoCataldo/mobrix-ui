@@ -22,9 +22,9 @@ import { DeepPartial } from "../../../utils/global";
  * @since 2.0.0
  *
  * @param onChange
- * @param onViewChange 
+ * @param onViewChange
  * @param {boolean} hideArrow show/hide arrow buttons
- * @param {boolean} fromToday if true, 
+ * @param {boolean} fromToday if true,
  * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -135,6 +135,7 @@ const Calendar: CalendarComponent = ({
               >
                 <Label
                   key="date_label"
+                  dark={commonProps.dark}
                   className={classNames("date-label", {
                     today:
                       fromToday &&
@@ -142,9 +143,9 @@ const Calendar: CalendarComponent = ({
                       onScreenDate.month === todayDate.month &&
                       onScreenDate.year === todayDate.year,
                   })}
-                  value={day > 0 ? String(day) : " "}
-                  dark={commonProps.dark}
-                />
+                >
+                  {day > 0 ? String(day) : " "}
+                </Label>
               </Button>
             );
           });
@@ -190,11 +191,9 @@ const Calendar: CalendarComponent = ({
       return [
         <div className="top-selector" key="date_top_selector">
           {getArrowButton("left")}
-          <Label
-            className="actual-date"
-            value={`${customMonths[onScreenDate.month]} ${onScreenDate.year}`}
-            dark={commonProps.dark}
-          />
+          <Label className="actual-date" dark={commonProps.dark}>{`${
+            customMonths[onScreenDate.month]
+          } ${onScreenDate.year}`}</Label>
           {getArrowButton("right")}
         </div>,
         <Table

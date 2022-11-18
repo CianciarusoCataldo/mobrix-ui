@@ -40,11 +40,11 @@ const Counter: CounterComponent = ({
   min,
   ...commonProps
 }) => {
-  return withMobrixUiValue({
+  return withMobrixUiValue<number | undefined>({
     wrapper: "input",
     name: "mobrix-ui-counterbox",
     inputValue,
-    defaultValue: 0,
+    defaultValue: undefined,
     props: (value, setValue) => ({
       additionalProps: {
         type: "number",
@@ -55,11 +55,8 @@ const Counter: CounterComponent = ({
         min,
         onChange: (e) => {
           if (!readOnly) {
-            const changedValue = e.target.value
-              ? Number.parseInt(e.target.value)
-              : 0;
-
-            onChange && onChange(changedValue);
+            const changedValue = e.target.value;
+            onChange && onChange(e.target.value);
             setValue(changedValue);
           }
         },

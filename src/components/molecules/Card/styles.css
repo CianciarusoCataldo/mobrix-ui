@@ -26,7 +26,6 @@
 #mobrix-ui-card .header-container {
   display: flex;
   flex-direction: row;
-  padding: 0.25rem;
 }
 
 #mobrix-ui-card .body {
@@ -41,4 +40,19 @@
   margin: 0.5rem;
   font-size: 1rem;
   text-align: center;
+}
+
+#mobrix-ui-card.styled .card-dismiss-button {
+  position: relative;
+  right: 0;
+}
+
+#mobrix-ui-card.styled .card-dismiss-button:hover svg path {
+  fill: rgba(185, 28, 28, 1);
+}
+
+@media (hover: none) {
+  #mobrix-ui-card.styled .card-dismiss-button:hover svg path {
+    fill: var(--mobrix-ui-text-color);
+  }
 }

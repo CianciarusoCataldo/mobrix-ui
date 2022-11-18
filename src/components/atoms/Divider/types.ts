@@ -1,6 +1,6 @@
-import { CommonProps, MoBrixUiComponent } from "../../../utils/global";
+import { MoBrixUiComponent } from "../../../utils/global";
 
-/** 
+/**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Divider component props
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Divider
@@ -9,9 +9,9 @@ import { CommonProps, MoBrixUiComponent } from "../../../utils/global";
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type DividerProps = CommonProps;
+export type DividerProps = {};
 
-/** 
+/**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Divider component
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Divider

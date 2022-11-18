@@ -16,8 +16,7 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type CardProps = CommonProps &
-  ComponentWithChildren &
+export type CardProps = ComponentWithChildren &
   ComponentWithIcon &
   ClickableComponent & {
     /** Card header content */

@@ -61,7 +61,7 @@
     "prebuild:dev": "cross-env NODE_ENV=development npm run build:styles",
     "build:dev": "cross-env NODE_ENV=development GENERATE_SOURCEMAP=true react-scripts build",
     "build:styles": "postcss --config config/postcss.config.js src/assets/styles/styles.css -o src/assets/styles/styles.output.css  --verbose",
-    "watch:styles": "chokidar 'src/**/*.css' --ignore src/assets/styles/styles.output.css -c 'npm run build:styles'",
+    "watch:styles": "chokidar 'src/**/*.css' 'src/**/*.tsx' 'src/**/*.ts' --ignore src/assets/styles/styles.output.css -c 'npm run build:styles'",
     "watch": "chokidar \"src/**/*.css\" \"src/**/*.tsx\" \"src/**/*.ts\" -c \"npm run build:styles\"",
     "prebuild": "cross-env NODE_ENV=production npm run build:styles",
     "build": "cross-env NODE_ENV=production GENERATE_SOURCEMAP=false react-scripts build",

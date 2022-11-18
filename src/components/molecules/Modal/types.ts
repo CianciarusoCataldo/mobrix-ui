@@ -1,6 +1,5 @@
 import {
   BuilderComponent,
-  CommonProps,
   ComponentWithChildren,
   MoBrixUiComponent,
 } from "../../../utils/global";
@@ -14,16 +13,15 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type ModalProps = CommonProps &
-  ComponentWithChildren<BuilderComponent | BuilderComponent[]> & {
-    /** Modal title */
-    title?: string;
+export type ModalProps = ComponentWithChildren<BuilderComponent> & {
+  /** Modal title */
+  title?: string;
 
-    /** Callback triggered when modal is closed */
-    onClose?: () => void;
+  /** Callback triggered when modal is closed */
+  onClose?: () => void;
 
-    overlayClassName?: string;
-  };
+  overlayClassName?: string;
+};
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Modal component
