@@ -1,7 +1,9 @@
 import "./styles.css";
-import React from "react";
+
 import { buildComponent } from "../../../utils";
 import { PopupComponent } from "./types";
+
+import popupComponent from "./component";
 
 /**
  * A Popup container, showed upon every other component, overlayed.
@@ -33,7 +35,7 @@ const Popup: PopupComponent = ({ children, className = "", ...commonProps }) =>
   buildComponent({
     name: "mobrix-ui-popup",
     commonProps,
-    Component: <div className={"popup-content " + className}>{children}</div>,
+    Component: popupComponent({ className, children }),
   });
 
 export default Popup;

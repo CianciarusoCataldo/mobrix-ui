@@ -52,14 +52,15 @@ const ExpandableContainer: ExpandableContainerComponent = ({
     animated,
     wrapper,
     inputValue: startCompact,
-    props: (compact, setCompact) =>
-      expandableContainerComponent({
+    props: (compact, setCompact) => ({
+      Component: expandableContainerComponent({
         value: compact,
         setValue: setCompact,
         expanded,
         children,
         ...commonProps,
       }),
+    }),
   });
 };
 

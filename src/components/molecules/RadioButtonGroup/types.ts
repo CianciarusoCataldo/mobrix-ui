@@ -1,8 +1,4 @@
-import {
-  CommonProps,
-  ComponentWithValue,
-  MoBrixUiComponent,
-} from "../../../utils/global";
+import { ComponentWithValue, MoBrixUiComponent } from "../../../utils/global";
 
 export type RadioElement = {
   text?: string;
@@ -15,6 +11,5 @@ export type RadioButtonGroupProps = ComponentWithValue<number> & {
   elementClassName?: string;
 };
 
-export type RadioButtonGroupComponent = MoBrixUiComponent<
-  RadioButtonGroupProps & CommonProps
->;
+export type RadioButtonGroupComponent =
+  MoBrixUiComponent<RadioButtonGroupProps>;

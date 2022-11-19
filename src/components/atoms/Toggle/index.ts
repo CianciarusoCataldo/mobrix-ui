@@ -4,7 +4,7 @@ import { ToggleComponent } from "./types";
 
 import { withMobrixUiValue } from "../../../utils";
 
-import component from "./component";
+import toggleComponentBuilder from "./builder";
 
 /**
  * A compact Toggle switcher, customized to reflect its actual status
@@ -47,8 +47,8 @@ const Toggle: ToggleComponent = ({
 }) =>
   withMobrixUiValue<boolean>({
     name: "mobrix-ui-toggle",
-    props: (status, setStatus) =>
-      component({
+    props: (status, setStatus) => ({
+      ...toggleComponentBuilder({
         setValue: setStatus,
         value: status,
         onChange,
@@ -58,6 +58,13 @@ const Toggle: ToggleComponent = ({
         shadow,
         ...commonProps,
       }),
+      additionalProps: {
+        onClick: () => {
+          onChange && onChange(!status);
+          setStatus(!status);
+        },
+      },
+    }),
     defaultValue: true,
     inputValue,
   });

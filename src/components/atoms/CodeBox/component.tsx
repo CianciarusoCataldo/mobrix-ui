@@ -1,13 +1,15 @@
 import React from "react";
-import { BuilderComponent } from "../../../utils/global";
-import Button from "../Button";
-import { CopyIcon } from "./icons";
-import { parseCode } from "./parser";
+
 import { CodeBoxProps } from "./types";
 
-const components: (
-  props: CodeBoxProps
-) => BuilderComponent | BuilderComponent[] = ({
+import { BuilderComponent, MoBrixUiComponent } from "../../../utils/global";
+
+import { parseCode } from "./parser";
+
+import { CopyIcon } from "./icons";
+import Button from "../Button";
+
+const components: MoBrixUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   value: code,
   enhanced,
   environment: selectedLanguage = "terminal",

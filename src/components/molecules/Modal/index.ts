@@ -1,15 +1,10 @@
 import "./styles.css";
 
-import React from "react";
-
 import { ModalComponent } from "./types";
 
 import { buildComponent } from "../../../utils";
 
-import Button from "../../atoms/Button";
-import { xIcon } from "../Card/icons";
-import Container from "../Container";
-import Card from "../Card";
+import modalComponent from "./component";
 
 /**
  * A light Modal component. Can be totally customized (the overlay too, through `overlayClassName` parameter)
@@ -50,24 +45,13 @@ const Modal: ModalComponent = ({
 }) =>
   buildComponent({
     name: "mobrix-ui-modal",
-    Component: (
-      <div className="modal-window">
-        {commonProps.unstyled ? (
-          children
-        ) : (
-          <Card
-            className={"content " + className}
-            dark={commonProps.dark}
-            unstyled={commonProps.unstyled}
-            onClick={onClose}
-            body={children}
-            dismissable
-            header={title}
-            hide={commonProps.hide}
-          />
-        )}
-      </div>
-    ),
+    Component: modalComponent({
+      children,
+      className,
+      title,
+      onClose,
+      ...commonProps,
+    }),
     commonProps: { ...commonProps, className: overlayClassName },
   });
 

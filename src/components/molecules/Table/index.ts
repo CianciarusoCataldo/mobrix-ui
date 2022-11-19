@@ -1,10 +1,10 @@
 import "./styles.css";
+
 import { TableComponent } from "./types";
 
-import React from "react";
-
-import classNames from "classnames";
 import { buildComponent } from "../../../utils";
+
+import tableComponent from "./component";
 
 /**
  * A standard Table component. It follows a CSV-like format for its content.
@@ -33,51 +33,11 @@ import { buildComponent } from "../../../utils";
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-const Table: TableComponent = ({ headers, rows, ...commonProps }) => {
-  let gridTemplateRows = "";
-  let gridTemplateColumns = "";
-
-  let tableRows = rows || [];
-
-  let elements: (JSX.Element | string)[][] = tableRows.map((row, rowIndex) =>
-    row.map((element, index) => (
-      <div
-        key={`element_${rowIndex}_${index}`}
-        className={classNames({
-          header: headers && rowIndex === 0,
-          element: !headers || rowIndex > 0,
-        })}
-      >
-        {element}
-      </div>
-    ))
-  );
-
-  if (tableRows.length > 0) {
-    for (let i = 0; i < tableRows.length; i++) {
-      gridTemplateRows += " auto";
-    }
-
-    for (let i = 0; i < tableRows[0].length; i++) {
-      gridTemplateColumns += " auto";
-    }
-  }
-
-  return buildComponent({
+const Table: TableComponent = ({ headers, rows, ...commonProps }) =>
+  buildComponent({
     name: "mobrix-ui-table",
-    Component: (
-      <div
-        className="rows"
-        style={{
-          gridTemplateRows,
-          gridTemplateColumns,
-        }}
-      >
-        {elements}
-      </div>
-    ),
+    Component: tableComponent({ headers, rows }),
     commonProps,
   });
-};
 
 export default Table;

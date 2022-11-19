@@ -7,7 +7,11 @@ import { RadioButton } from "mobrix-ui-preview";
 const RadioButtonsPage = () => (
   <ComponentPage name="RadioButton">
     <DemoComponent
-      props={{ value: BooleanProp(false), ...DEMO_COMMON_PROPS }}
+      props={{
+        value: BooleanProp(false),
+        deselectable: BooleanProp(true),
+        ...DEMO_COMMON_PROPS,
+      }}
       children={RadioButton}
     />
   </ComponentPage>

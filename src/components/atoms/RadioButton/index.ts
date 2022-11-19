@@ -10,6 +10,7 @@ const RadioButton: RadioButtonComponent = ({
   value: inputValue,
   onChange,
   onClick,
+  deselectable = true,
   ...commonProps
 }) => {
   return withMobrixUiValue<boolean>({
@@ -20,9 +21,11 @@ const RadioButton: RadioButtonComponent = ({
     props: (value, setValue) => ({
       additionalProps: {
         onClick: () => {
-          onChange && onChange(!value);
-          onClick && onClick();
-          setValue(!value);
+          if (!value || deselectable) {
+            onChange && onChange(!value);
+            onClick && onClick();
+            setValue(!value);
+          }
         },
       },
       Component: value ? component : "",

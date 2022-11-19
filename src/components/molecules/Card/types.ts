@@ -1,7 +1,6 @@
 import {
   BuilderComponent,
   ClickableComponent,
-  CommonProps,
   ComponentWithChildren,
   ComponentWithIcon,
   MoBrixUiComponent,

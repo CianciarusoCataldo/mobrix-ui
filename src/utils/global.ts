@@ -181,10 +181,20 @@ export type DeepPartial<T> = {
 
 export type MobrixUiProps<T = any> = T & CommonProps;
 
-export type MobrixUiReactiveComponent<T = any, K = any> = (
-  props: CommonProps &
-    K & {
-      value: T;
-      setValue: React.Dispatch<React.SetStateAction<T>>;
-    }
-) => Omit<BuilderProps, "name">;
+export type MobrixUiReactiveComponentProps<T = any, K = any> = {
+  value: T;
+  setValue: React.Dispatch<React.SetStateAction<T>>;
+} & K;
+
+export type MobrixUiReactiveComponentBuilder<
+  T = any,
+  K = any
+> = MoBrixUiComponent<
+  MobrixUiReactiveComponentProps<T, K>,
+  Omit<BuilderProps, "name">
+>;
+
+export type MobrixUiReactiveComponent<T = any, K = any> = MoBrixUiComponent<
+  MobrixUiReactiveComponentProps<T, K>,
+  BuilderComponent | BuilderComponent[]
+>;

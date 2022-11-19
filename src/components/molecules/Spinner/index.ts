@@ -1,13 +1,10 @@
 import "./styles.css";
-import React from "react";
 
 import { SpinnerComponent } from "./types";
 
-import DEFAULT_ICONS from "./icons";
-
 import { withMobrixUiValue } from "../../../utils";
 
-import Container from "../Container";
+import spinnerComponent from "./component";
 
 /**
  * A smart status indicator, optionally with custom images showed for every state (defaults are `loading`,`success` and `error`)
@@ -45,22 +42,8 @@ const Spinner: SpinnerComponent = ({
     inputValue,
     defaultValue: "loading",
     commonProps,
-    props: (value, setValue) => {
-      const ICONS = statuses || DEFAULT_ICONS;
-      const StatusIcon = () => (
-        <Container unstyled animated>
-          {value && ICONS[value] ? ICONS[value] : ICONS.loading}
-        </Container>
-      );
-
-      return {
-        Component: (
-          <Container unstyled animated>
-            <StatusIcon />
-          </Container>
-        ),
-      };
-    },
+    render: (value, setValue) =>
+      spinnerComponent({ value, statuses, setValue }),
   });
 };
 

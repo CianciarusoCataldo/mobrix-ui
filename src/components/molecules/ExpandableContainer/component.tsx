@@ -38,9 +38,7 @@ const expandableContainerComponent: MobrixUiReactiveComponent<
       </svg>
     </Button>
   );
-  return {
-    Component: components,
-  };
+  return components;
 };
 
 export default expandableContainerComponent;

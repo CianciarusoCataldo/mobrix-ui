@@ -1,14 +1,10 @@
 import "./styles.css";
 
-import React from "react";
-
 import { CardComponent } from "./types";
 
 import { withMobrixUiValue } from "../../../utils";
 
-import Divider from "../../atoms/Divider";
-import { xIcon } from "./icons";
-import Button from "../../atoms/Button";
+import cardComponent from "./component";
 
 /**
  * A Card component. Its UI depends on given parameters (header, body and footer)
@@ -52,51 +48,20 @@ const Card: CardComponent = ({
   return withMobrixUiValue({
     name: "mobrix-ui-card",
     props: (value, setValue) => {
-      let components: JSX.Element[] = [];
-
-      header &&
-        components.push(
-          <div key="mobrix_ui_card_header">
-            <div className="header-container">
-              {icon}
-              <div className="header">{header}</div>
-              <Button
-                unstyled
-                hide={!dismissable}
-                dark={commonProps.dark}
-                className="card-dismiss-button"
-                onClick={() => {
-                  onClick && onClick();
-                  setValue(true);
-                }}
-              >
-                {xIcon}
-              </Button>
-            </div>
-            <Divider dark={commonProps.dark} />
-          </div>
-        );
-
-      body &&
-        components.push(
-          <div className="body" key="mobrix_ui_card_body">
-            {body}
-          </div>
-        );
-
-      children &&
-        components.push(<div key="mobrix_ui_card_children">{children}</div>);
-
-      footer &&
-        components.push(
-          <div key="mobrix_ui_card_footer">
-            <Divider dark={commonProps.dark} />
-            <div className="footer">{footer}</div>
-          </div>
-        );
       return {
         commonProps: { ...commonProps, hide: value },
-        Component: components,
+        Component: cardComponent({
+          header,
+          dismissable,
+          icon,
+          body,
+          value,
+          onClick,
+          setValue,
+          children,
+          footer,
+          dark: commonProps.dark,
+        }),
       };
     },
     defaultValue: false,

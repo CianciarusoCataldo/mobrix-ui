@@ -7,6 +7,8 @@ import {
 
 export type RadioButtonProps = ComponentWithValue<boolean> &
   ComponentWithCallback<boolean> &
-  ClickableComponent & {};
+  ClickableComponent & {
+    deselectable?: boolean;
+  };
 
 export type RadioButtonComponent = MoBrixUiComponent<RadioButtonProps>;

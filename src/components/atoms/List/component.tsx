@@ -1,8 +1,12 @@
 import React from "react";
 
+import { BuilderComponent, MoBrixUiComponent } from "../../../utils/global";
+
 import { ListProps } from "./types";
 
-const component = ({ elements = [] }: ListProps) =>
+const component: MoBrixUiComponent<ListProps, BuilderComponent[]> = ({
+  elements = [],
+}) =>
   elements.map((element, index) => {
     return (
       <div className="internal-list-element" key={`element_${index}`}>
