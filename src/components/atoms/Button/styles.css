@@ -18,13 +18,6 @@
   }
 }
 
-#mobrix-ui-button,
-#mobrix-ui-button:focus,
-#mobrix-ui-button:hover {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
 #mobrix-ui-button.enabled {
   transition-duration: 0.1s;
   transition-property: transform;
@@ -42,7 +35,7 @@
   background: rgb(61, 61, 75);
 }
 
-#mobrix-ui-button.styled.enabled.effect:hover {
+#mobrix-ui-button.styled.enabled.animated:hover {
   position: relative;
   transform: scaleX(1.15) scaleY(1.1);
 }

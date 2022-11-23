@@ -13,6 +13,14 @@ React components for every app, easy to use and customize
 
 <br>
 
+## Note for MoBrix-ui v1 user
+
+MoBrix-ui v2 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 1.X.X, please read the [dedicated guide](), or upgrade it to v2.X.X!
+
+<br>
+
+---
+
 ## Summary
 
 - [MoBrix-ui philosophy](#mobrix-ui-components-philosophy)

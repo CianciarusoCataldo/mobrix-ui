@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.8);
-  animation: fadeIn 0.2s ease-in forwards;
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
@@ -17,6 +16,14 @@
     -webkit-backdrop-filter: blur(2em);
     backdrop-filter: blur(2em);
   }
+}
+
+#mobrix-ui-modal.animated .modal-window {
+  -webkit-animation: fadein 0.7s;
+  -moz-animation: fadein 0.7s;
+  -ms-animation: fadein 0.7s;
+  -o-animation: fadein 0.7s;
+  animation: fadein 0.7s;
 }
 
 #mobrix-ui-modal > .modal-window {

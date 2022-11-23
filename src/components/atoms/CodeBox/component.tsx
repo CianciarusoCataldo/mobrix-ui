@@ -9,7 +9,7 @@ import { parseCode } from "./parser";
 import { CopyIcon } from "./icons";
 import Button from "../Button";
 
-const components: MoBrixUiComponent<CodeBoxProps, BuilderComponent[]> = ({
+const codeboxComponent: MoBrixUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   value: code,
   enhanced,
   environment: selectedLanguage = "terminal",
@@ -39,4 +39,4 @@ const components: MoBrixUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   </code>,
 ];
 
-export default components;
+export default codeboxComponent;

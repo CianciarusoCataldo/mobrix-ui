@@ -1,36 +1,29 @@
-import { BooleanProp, Demo, StringProp } from "@cianciarusocataldo/demo-ui";
+import { BooleanProp, StringProp } from "@cianciarusocataldo/demo-ui";
 
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
 
 import { ComponentPage } from "components/ComponentPage";
 
 import { Input } from "mobrix-ui-preview";
+import DemoComponent from "components/DemoComponent";
 
 const InputPage = () => (
   <ComponentPage
     name="Input"
     render={(_, componentLabel) => (
-      <Demo
+      <DemoComponent
         label={componentLabel}
         startColor="#C3BBBB"
         props={{
           value: StringProp(""),
           placeholder: StringProp("placeholder"),
           readOnly: BooleanProp(false),
-          ...DEMO_COMMON_PROPS,
+          ...demoProps,
         }}
-        rows={[
-          ["value", "readOnly", "placeholder"],
-          ["unstyled", "className", "dark"],
-          ["shadow", "hide"],
-        ]}
+        rows={[["value", "readOnly", "placeholder"], ...demoRows]}
       >
-        {(props: any) => (
-          <div className="flex flex-col items-center">
-            <Input {...props} />
-          </div>
-        )}
-      </Demo>
+        {Input}
+      </DemoComponent>
     )}
   />
 );

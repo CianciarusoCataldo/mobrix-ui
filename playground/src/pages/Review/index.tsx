@@ -1,8 +1,7 @@
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
 
 import {
   BooleanProp,
-  Demo,
   NumberProp,
   SelectProp,
   StringProp,
@@ -10,6 +9,7 @@ import {
 
 import { Review } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
+import DemoComponent from "components/DemoComponent";
 
 const userIcon = (
   <svg height="40" width="40" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +54,7 @@ const RaterPage = () => (
   <ComponentPage
     name="Review"
     render={(_, componentLabel) => (
-      <Demo
+      <DemoComponent
         label={componentLabel}
         props={{
           icon: BooleanProp(true),
@@ -77,28 +77,24 @@ const RaterPage = () => (
             star: "star",
             circle: "circle",
           }),
-          ...DEMO_COMMON_PROPS,
+          ...demoProps,
         }}
-        rows={[
-          ["description", "user", "rate"],
-          ["max", "url", "logo", "rateType"],
-          ["icon", "dark", "shadow"],
-          ["unstyled", "hide", "className"],
-        ]}
-      >
-        {(props: any) => {
+        parseProps={(props) => {
           let newProps = { ...props };
           delete newProps.icon;
           if (props.icon) {
             newProps.icon = userIcon;
           }
-          return (
-            <div className="flex flex-col items-center">
-              <Review {...newProps} />
-            </div>
-          );
+          return newProps;
         }}
-      </Demo>
+        rows={[
+          ["description", "user", "rate"],
+          ["max", "url", "logo", "rateType"],
+          ...demoRows,
+        ]}
+      >
+        {Review}
+      </DemoComponent>
     )}
   />
 );

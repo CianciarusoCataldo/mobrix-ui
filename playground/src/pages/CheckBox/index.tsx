@@ -1,6 +1,6 @@
 import { BooleanProp, SelectProp } from "@cianciarusocataldo/demo-ui";
 
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
 
 import { CheckBox } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
@@ -56,12 +56,9 @@ const CheckBoxPage = () => (
                 </svg>
               ),
             }),
-            ...DEMO_COMMON_PROPS,
+            ...demoProps,
           }}
-          rows={[
-            ["value", "icon", "dark", "shadow"],
-            ["className", "hide", "unstyled"],
-          ]}
+          rows={[["value", "icon"], ...demoRows]}
         >
           {CheckBox}
         </DemoComponent>

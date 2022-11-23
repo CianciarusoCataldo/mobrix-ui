@@ -1,5 +1,4 @@
 import {
-  AnimatedComponent,
   BuilderComponent,
   ClickableComponent,
   ComponentWithChildren,
@@ -18,7 +17,6 @@ import {
 export type ButtonProps = ComponentWithChildren<
   BuilderComponent | BuilderComponent[]
 > &
-  AnimatedComponent &
   ClickableComponent & {
     /**callback triggered when the cursor enter the component */
     onMouseEnter?: () => void;

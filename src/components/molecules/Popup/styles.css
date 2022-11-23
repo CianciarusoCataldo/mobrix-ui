@@ -21,6 +21,3 @@
   -o-animation: fadein 0.3s;
   animation: fadein 0.3s;
 }
-
-@media (max-width: 400px) {
-}

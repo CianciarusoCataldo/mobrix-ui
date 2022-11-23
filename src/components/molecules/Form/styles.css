@@ -43,7 +43,6 @@
 }
 
 @media (max-width: 330px) {
-
   #mobrix-ui-form {
     max-width: 75%;
     min-width: 3%;
@@ -55,7 +54,6 @@
 }
 
 @media (max-width: 250px) {
-
   #mobrix-ui-form {
     max-width: 55%;
     min-width: 3%;
@@ -64,11 +62,6 @@
   #mobrix-ui-form .field {
     max-width: 65%;
   }
-}
-
-#mobrix-ui-form .field .form-input:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }
 
 #mobrix-ui-form .submit-button {

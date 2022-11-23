@@ -1,21 +1,21 @@
-import { Demo } from "@cianciarusocataldo/demo-ui";
-
 import { Divider } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
+import DemoComponent from "components/DemoComponent";
 
 const DividerPage = () => (
   <ComponentPage
     name="Divider"
     render={(_, componentLabel) => (
-      <Demo
+      <DemoComponent
         label={componentLabel}
         props={{
-          ...DEMO_COMMON_PROPS,
+          ...demoProps,
         }}
+        rows={demoRows}
       >
-        {(props: any) => <Divider {...props} />}
-      </Demo>
+        {Divider}
+      </DemoComponent>
     )}
   />
 );

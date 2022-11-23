@@ -7,7 +7,7 @@ import {
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Drawer component props
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Drawer
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Drawer
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -34,7 +34,7 @@ export type DrawerProps = ComponentWithChildren<
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Drawer component
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Drawer
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Drawer
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

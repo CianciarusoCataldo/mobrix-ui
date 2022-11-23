@@ -1,15 +1,10 @@
 import "./styles.css";
 
-import React from "react";
-
 import { ReviewComponent } from "./types";
 
-import { icons } from "./icons";
+import { buildMobrixUiStandardComponent } from "../../../utils";
 
-import { buildComponent } from "../../../utils";
-
-import Link from "../../atoms/Link";
-import Rater from "../Rater";
+import reviewComponent from "./component";
 
 /**
  * A smart review container, useful to show reviews on your website with custom data inside. Optionally, an external link can be set to redirect
@@ -24,12 +19,17 @@ import Rater from "../Rater";
  * @param {number} rate review vote icon type, to choose which icon will be used to show the review rate (allowed icons type are `stars` and `circle`)
  * @param {number} max max vote (max number of rate icons showed)
  * @param {"default" | "facebook" | "twitter" | "google" | "linkedin" | "github"} logo Social icon type, showed at the top right of the container. Supports popular web services like Facebook, Twitter, Google and so on. Proviced icon list will grow up time by time and will be updated with the latest web services, to keep it usable for the future.
- * @param {string} className `common MoBrix-ui prop` - custom className (to better customize it)
- * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component (to better customize it)
+ * @param {string} className `common MoBrix-ui prop` - custom className
+ * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
  * @param {boolean} dark `common MoBrix-ui prop` - Enable/disable dark mode
  * @param {boolean} hide `common MoBrix-ui prop` - Hide/show component
- * @param {boolean} shadow `common MoBrix-ui prop` - Enable/disable shadow behind component (to better customize it)
+ * @param {boolean} shadow `common MoBrix-ui prop` - Enable/disable shadow behind component
+ * @param {boolean} animated `common MoBrix-ui prop` enable/disable component animations
+ * @param {string} key `common MoBrix-ui prop` custom component React key (the standard {@link https://reactjs.org/docs/lists-and-keys.html key parameter})
+ * @param {boolean} a11y `common MoBrix-ui prop` enable/disable accessibility features
+ * @param {boolean} a11yDark `common MoBrix-ui prop` if the `a11y` parameter is `true`, override standard focus color style with/without dark mode (normally, the color changes accordingly to the `dark` parameter)
+ * @param {string} a11yLabel `common MoBrix-ui prop` if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label}
  *
  * @example <caption>Example Review usage</caption>
  * import { render } from "react-dom";
@@ -58,40 +58,20 @@ const Review: ReviewComponent = ({
   logo,
   rateType,
   ...commonProps
-}) => {
-  return buildComponent({
+}) =>
+  buildMobrixUiStandardComponent({
     name: "mobrix-ui-review",
     commonProps,
-    Component: [
-      <div key="url" className="review-url-container">
-        {url ? (
-          <Link newTab to={url}>
-            {icons[logo || "default"]}
-          </Link>
-        ) : (
-          logo && icons[logo]
-        )}
-      </div>,
-      <div className="review-info-box" key="info">
-        <div className="review-user-info">
-          <div className="review-photo">{icon}</div>
-          {user && <span className="review-username">{user}</span>}
-        </div>
-        {description && (
-          <span className="review-description">{description}</span>
-        )}
-      </div>,
-      <Rater
-        key="rate"
-        hide={!rate}
-        type={rateType}
-        unstyled
-        readonly
-        value={rate}
-        max={max}
-      />,
-    ],
+    Component: reviewComponent({
+      user,
+      description,
+      rate,
+      max,
+      icon,
+      url,
+      logo,
+      rateType,
+    }),
   });
-};
 
 export default Review;

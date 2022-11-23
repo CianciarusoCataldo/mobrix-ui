@@ -5,7 +5,7 @@ import {
 } from "@cianciarusocataldo/demo-ui";
 import { ComponentPage } from "components/ComponentPage";
 import DemoComponent from "components/DemoComponent";
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
 import { RadioButtonGroup } from "mobrix-ui-preview";
 
 const RadioButtonsPage = () => (
@@ -20,8 +20,9 @@ const RadioButtonsPage = () => (
           { text: "textPosition = right", textPosition: "right" },
           { text: "textPosition = bottom", textPosition: "bottom" },
         ]),
-        ...DEMO_COMMON_PROPS,
+        ...demoProps,
       }}
+      rows={[["value", "elementClassName"], ...demoRows]}
       children={RadioButtonGroup}
     />
   </ComponentPage>

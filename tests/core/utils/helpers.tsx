@@ -32,6 +32,7 @@ export const renderingTest = (
       test("with parameters", () => {
         const wrapper = method(
           <TestComponent
+            animated
             hide
             dark
             unstyled

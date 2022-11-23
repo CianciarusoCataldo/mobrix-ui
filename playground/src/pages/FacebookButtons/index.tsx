@@ -1,19 +1,20 @@
 import { FacebookButtons } from "mobrix-ui-preview";
 import {
   BooleanProp,
-  Demo,
   NumberProp,
   StringProp,
 } from "@cianciarusocataldo/demo-ui";
 import { ComponentPage } from "components/ComponentPage";
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
+import DemoComponent from "components/DemoComponent";
+import { FacebookButtonsProps } from "mobrix-ui-preview/components/atoms/FacebookButtons/types";
 
 const FacebookButtonsPage = () => (
   <ComponentPage
     name="FacebookButtons"
     render={(t, componentLabel) => {
       return (
-        <Demo
+        <DemoComponent<FacebookButtonsProps>
           label={componentLabel}
           props={{
             pageId: StringProp("facebook"),
@@ -21,16 +22,14 @@ const FacebookButtonsPage = () => (
             width: NumberProp(180),
             share: BooleanProp(true),
             small: BooleanProp(false),
-            ...DEMO_COMMON_PROPS,
+            ...demoProps,
           }}
           rows={[
             ["pageId", "share", "small"],
             ["With custom width", "width"],
-            ["className", "dark"],
-            ["shadow", "unstyled", "hide"],
+            ...demoRows,
           ]}
-        >
-          {(props: any) => {
+          parseProps={(props) => {
             let newProps = { ...props };
 
             delete newProps["With custom width"];
@@ -38,14 +37,11 @@ const FacebookButtonsPage = () => (
             if (!props["With custom width"]) {
               newProps["width"] = undefined;
             }
-
-            return (
-              <div className="flex flex-col items-center">
-                <FacebookButtons {...newProps} />
-              </div>
-            );
+            return newProps;
           }}
-        </Demo>
+        >
+          {FacebookButtons}
+        </DemoComponent>
       );
     }}
   />

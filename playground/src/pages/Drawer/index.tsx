@@ -1,17 +1,18 @@
 import React from "react";
 
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
 
-import { Demo, SelectProp } from "@cianciarusocataldo/demo-ui";
+import { SelectProp } from "@cianciarusocataldo/demo-ui";
 
 import { Button, Drawer, List } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
+import DemoComponent from "components/DemoComponent";
 
 const DrawerPage = () => {
   const [isVisible, setVisible] = React.useState(false);
 
-  let demoProps = { ...DEMO_COMMON_PROPS };
-  delete demoProps.hide;
+  let customDemoProps = { ...demoProps };
+  delete customDemoProps.hide;
 
   return (
     <ComponentPage
@@ -21,7 +22,7 @@ const DrawerPage = () => {
         const buttonText = t(isVisible ? "common_close" : "common_open");
 
         return (
-          <Demo
+          <DemoComponent
             label={componentLabel}
             startColor="#C3BBBB"
             props={{
@@ -35,12 +36,34 @@ const DrawerPage = () => {
                 left: "left",
                 right: "right",
               }),
-              ...demoProps,
+              ...customDemoProps,
+            }}
+            rows={[
+              ["position"],
+              demoRows[0],
+              demoRows[1],
+              demoRows[2].splice(1),
+            ]}
+            parseProps={(props) => {
+              return {
+                ...props,
+                onClose: () => setVisible(false),
+                hide: !isVisible,
+                children: (
+                  <List
+                    dark={props.dark}
+                    className="p-4"
+                    elements={new Array(6)
+                      .fill("Element ")
+                      .map((el, index) => el + index)}
+                  />
+                ),
+              };
             }}
           >
             {(props: any) => {
               return (
-                <div className="flex flex-col items-center">
+                <div className="">
                   <Button onClick={() => setVisible(!isVisible)}>
                     {buttonText}
                   </Button>
@@ -61,7 +84,7 @@ const DrawerPage = () => {
                 </div>
               );
             }}
-          </Demo>
+          </DemoComponent>
         );
       }}
     />

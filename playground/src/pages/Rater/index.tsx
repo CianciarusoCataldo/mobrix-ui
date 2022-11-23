@@ -1,20 +1,20 @@
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
 
 import {
   BooleanProp,
-  Demo,
   NumberProp,
   SelectProp,
 } from "@cianciarusocataldo/demo-ui";
 
 import { Rater } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
+import DemoComponent from "components/DemoComponent";
 
 const RaterPage = () => (
   <ComponentPage
     name="Rater"
     render={(_, componentLabel) => (
-      <Demo
+      <DemoComponent
         label={componentLabel}
         props={{
           max: NumberProp(6),
@@ -25,20 +25,12 @@ const RaterPage = () => (
             star: "star",
             circle: "circle",
           }),
-          ...DEMO_COMMON_PROPS,
+          ...demoProps,
         }}
-        rows={[
-          ["value", "max", "type", "vertical"],
-          ["readonly", "className", "dark"],
-          ["shadow", "unstyled", "hide"],
-        ]}
+        rows={[["value", "max", "type", "vertical"], ...demoRows]}
       >
-        {(props: any) => (
-          <div className="flex flex-col items-center">
-            <Rater {...props} />
-          </div>
-        )}
-      </Demo>
+        {Rater}
+      </DemoComponent>
     )}
   />
 );

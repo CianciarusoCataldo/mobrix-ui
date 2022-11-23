@@ -5,7 +5,7 @@ import {
 } from "@cianciarusocataldo/demo-ui";
 import { ComponentPage } from "components/ComponentPage";
 import DemoComponent from "components/DemoComponent";
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
 import { Slider } from "mobrix-ui-preview";
 
 const SliderPage = () => (
@@ -21,7 +21,7 @@ const SliderPage = () => (
             max: NumberProp(50),
             "Custom thumb": BooleanProp(false),
             thumbColor: ColorProp(),
-            ...DEMO_COMMON_PROPS,
+            ...demoProps,
           }}
           parseProps={(props, setProps) => {
             let newProps = { ...props };
@@ -38,8 +38,7 @@ const SliderPage = () => (
           rows={[
             ["value", "min", "max"],
             ["Custom thumb", "thumbColor"],
-            ["dark", "shadow"],
-            ["className", "hide", "unstyled"],
+            ...demoRows,
           ]}
           children={Slider}
         />

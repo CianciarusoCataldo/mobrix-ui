@@ -1,39 +1,31 @@
 import {
   BooleanProp,
-  Demo,
   NumberProp,
   StringProp,
 } from "@cianciarusocataldo/demo-ui";
 
 import { Counter } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
+import DemoComponent from "components/DemoComponent";
 
 const CounterPage = () => (
   <ComponentPage
     name="Counter"
     render={(_, componentLabel) => (
-      <Demo
+      <DemoComponent
         label={componentLabel}
         startColor="#C3BBBB"
         props={{
           value: NumberProp(0),
           placeholder: StringProp("placeholder"),
           readOnly: BooleanProp(false),
-          ...DEMO_COMMON_PROPS,
+          ...demoProps,
         }}
-        rows={[
-          ["value", "readOnly", "placeholder"],
-          ["unstyled", "className"],
-          ["shadow", "dark", "hide"],
-        ]}
+        rows={[["value", "readOnly", "placeholder"], ...demoRows]}
       >
-        {(props: any) => (
-          <div className="flex flex-col items-center">
-            <Counter {...props} />
-          </div>
-        )}
-      </Demo>
+        {Counter}
+      </DemoComponent>
     )}
   />
 );

@@ -68,8 +68,6 @@
 }
 
 #mobrix-ui-drawer .drawer-close-button {
-  outline: 0 solid transparent;
-  outline-offset: 2px;
   margin: auto;
   background-image: var(--mobrix-ui-background);
 }
@@ -120,55 +118,41 @@
   transform: rotate(180deg);
 }
 
-#mobrix-ui-drawer .drawer-close-button:focus {
-  outline: 0 solid transparent;
-  outline-offset: 2px;
-}
-
-#mobrix-ui-drawer .drawer-buttons-panel {
-  display: flex;
-  flex-direction: column;
-}
-
-#mobrix-ui-drawer .drawer-container-internal .content {
-  background-image: var(--mobrix-ui-background);
-}
-
-#mobrix-ui-drawer.top-left .drawer-container-internal,
-#mobrix-ui-drawer.bottom-left .drawer-container-internal,
-#mobrix-ui-drawer.left .drawer-container-internal,
-#mobrix-ui-drawer.top-right .drawer-container-internal,
-#mobrix-ui-drawer.bottom-right .drawer-container-internal,
-#mobrix-ui-drawer.right .drawer-container-internal {
+#mobrix-ui-drawer.top-left,
+#mobrix-ui-drawer.bottom-left,
+#mobrix-ui-drawer.left,
+#mobrix-ui-drawer.top-right,
+#mobrix-ui-drawer.bottom-right,
+#mobrix-ui-drawer.right {
   height: 100%;
 }
 
-#mobrix-ui-drawer.top .drawer-container-internal,
-#mobrix-ui-drawer.bottom .drawer-container-internal {
+#mobrix-ui-drawer.top,
+#mobrix-ui-drawer.bottom {
   width: 100%;
 }
 
-#mobrix-ui-drawer .drawer-container-internal {
+#mobrix-ui-drawer {
   display: flex;
 }
 
-#mobrix-ui-drawer.styled .drawer-container-internal {
+#mobrix-ui-drawer.styled {
   padding: 0.1rem;
 }
 
-#mobrix-ui-drawer.left .drawer-container-internal {
+#mobrix-ui-drawer.left {
   flex-direction: row;
 }
 
-#mobrix-ui-drawer.right .drawer-container-internal {
+#mobrix-ui-drawer.right {
   flex-direction: row-reverse;
 }
 
-#mobrix-ui-drawer[class^="top"] .drawer-container-internal {
+#mobrix-ui-drawer[class^="top"] {
   flex-direction: column;
 }
 
-#mobrix-ui-drawer[class^="bottom"] .drawer-container-internal {
+#mobrix-ui-drawer[class^="bottom"] {
   flex-direction: column-reverse;
 }
 
@@ -176,7 +160,16 @@
   fill: var(--mobrix-ui-text-color);
 }
 
-#mobrix-ui-drawer .drawer-close-button svg:hover {
+#mobrix-ui-drawer .drawer-close-button:focus-visible {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+#mobrix-ui-drawer:focus-visible,
+#mobrix-ui-drawer .drawer-close-button svg:hover,
+#mobrix-ui-drawer .drawer-close-button:focus-visible svg {
   fill: rgba(217, 119, 6, 1);
 }
 

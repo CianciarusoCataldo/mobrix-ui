@@ -1,4 +1,3 @@
-import React from "react";
 import {
   BooleanProp,
   Demo,
@@ -8,7 +7,7 @@ import {
 
 import { Button, Modal } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoProps } from "constants/demo-props";
 
 export const ModalPage = () => {
   return (
@@ -27,7 +26,7 @@ export const ModalPage = () => {
               title: StringProp("title"),
               children: StringProp("children"),
               [closeButtonLabel]: BooleanProp(true),
-              ...DEMO_COMMON_PROPS,
+              ...demoProps,
               hide: HiddenProp(true),
             }}
           >

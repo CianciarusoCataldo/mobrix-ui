@@ -1,5 +1,5 @@
 import React from "react";
 
-const component = <div className="icon" />;
+const radioButtonComponent = <div className="icon" />;
 
-export default component;
+export default radioButtonComponent;

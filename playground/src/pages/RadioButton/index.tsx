@@ -1,7 +1,7 @@
 import { BooleanProp } from "@cianciarusocataldo/demo-ui";
 import { ComponentPage } from "components/ComponentPage";
 import DemoComponent from "components/DemoComponent";
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
 import { RadioButton } from "mobrix-ui-preview";
 
 const RadioButtonsPage = () => (
@@ -10,8 +10,9 @@ const RadioButtonsPage = () => (
       props={{
         value: BooleanProp(false),
         deselectable: BooleanProp(true),
-        ...DEMO_COMMON_PROPS,
+        ...demoProps,
       }}
+      rows={[["value", "deselectable"], ...demoRows]}
       children={RadioButton}
     />
   </ComponentPage>

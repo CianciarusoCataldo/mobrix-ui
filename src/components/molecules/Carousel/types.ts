@@ -1,6 +1,5 @@
 import {
   BuilderComponent,
-  CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,

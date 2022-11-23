@@ -24,26 +24,32 @@ import { BuilderProps, DeepPartial } from "./global";
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export const buildComponent = ({
+export const buildMobrixUiStandardComponent = ({
   name,
   Component,
-  commonProps,
-  additionalProps,
-  wrapper,
-  animated,
+  commonProps = {},
+  additionalProps = {},
+  wrapper: SelectedWrapper = "div",
 }: BuilderProps) => {
-  const SelectedWrapper = wrapper || "div";
-
-  const props = {
+  let a11y = commonProps.a11y !== undefined ? commonProps.a11y : true;
+  let props = {
     "data-id": commonProps!.id,
     id: name,
+    "aria-label": a11y ? commonProps.a11yLabel : "",
+    tabIndex: a11y ? "0" : "-1",
     key: commonProps?.key,
-    className: classNames(commonProps!.className, {
-      dark: commonProps!.dark,
-      animated: animated,
-      "component-hidden": commonProps!.hide,
-      shadowed: commonProps!.shadow,
-      styled: !commonProps!.unstyled,
+    className: classNames(commonProps.className, {
+      dark: commonProps.dark,
+      animated: commonProps.animated,
+      "component-hidden": commonProps.hide,
+      shadowed: commonProps.shadow,
+      styled: !commonProps.unstyled,
+      a11y: a11y,
+      "a11y-dark":
+        a11y &&
+        (commonProps.a11yDark !== undefined
+          ? commonProps.a11yDark
+          : commonProps.dark),
     }),
     style: commonProps!.style,
     ...additionalProps,
@@ -68,7 +74,7 @@ export const buildComponent = ({
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export const withMobrixUiValue = <T=any>({
+export const buildMobrixUiReactiveComponent = <T = any,>({
   name,
   additionalProps,
   wrapper,
@@ -99,7 +105,7 @@ export const withMobrixUiValue = <T=any>({
     }
   }, [inputValue]);
 
-  return buildComponent({
+  return buildMobrixUiStandardComponent({
     name,
     additionalProps,
     commonProps,

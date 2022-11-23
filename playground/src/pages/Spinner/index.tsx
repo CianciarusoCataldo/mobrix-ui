@@ -1,12 +1,13 @@
-import { BooleanProp, Demo, SelectProp } from "@cianciarusocataldo/demo-ui";
+import { BooleanProp, SelectProp } from "@cianciarusocataldo/demo-ui";
 
 import ReactImage from "./react.svg";
 import ReduxImage from "./redux.svg";
 
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoProps, demoRows } from "constants/demo-props";
 
 import { Spinner } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
+import DemoComponent from "components/DemoComponent";
 
 const SpinnerPage = () => (
   <ComponentPage
@@ -18,7 +19,7 @@ const SpinnerPage = () => (
       const customStatesLabel = t("props_statuses_custom");
 
       return (
-        <Demo
+        <DemoComponent
           label={componentLabel}
           props={{
             value: SelectProp({
@@ -33,16 +34,10 @@ const SpinnerPage = () => (
               react: "react",
               redux: "redux",
             }),
-            ...DEMO_COMMON_PROPS,
-            shadow: BooleanProp(false),
+            ...demoProps,
           }}
-          rows={[
-            ["value", customStatesLabel, customValueLabel],
-            ["className", "dark"],
-            ["shadow", "unstyled", "hide"],
-          ]}
-        >
-          {(props: any) => {
+          rows={[["value", customStatesLabel, customValueLabel], ...demoRows]}
+          parseProps={(props: any) => {
             let componentProps = { ...props };
 
             delete componentProps[customStatesLabel];
@@ -67,18 +62,11 @@ const SpinnerPage = () => (
               componentProps.value = props.value;
             }
 
-            return (
-              <div className="flex flex-col items-center">
-                <Spinner
-                  {...componentProps}
-                  className={
-                    props.className.length > 0 ? props.className : "w-32"
-                  }
-                />
-              </div>
-            );
+            return componentProps;
           }}
-        </Demo>
+        >
+          {Spinner}
+        </DemoComponent>
       );
     }}
   />

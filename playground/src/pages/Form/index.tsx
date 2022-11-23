@@ -1,6 +1,6 @@
 import { Demo, StringProp } from "@cianciarusocataldo/demo-ui";
 
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoProps } from "constants/demo-props";
 
 import { Form } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
@@ -10,7 +10,7 @@ const FormPage = () => (
     name="Form"
     translations
     render={(t, componentLabel) => {
-      let props: Record<string, any> = { ...DEMO_COMMON_PROPS };
+      let props: Record<string, any> = { ...demoProps };
       ["title", "children", "buttonContent"].forEach(
         (el) => (props[el] = StringProp(t("props", { context: el })))
       );

@@ -1,13 +1,11 @@
 import {
-  CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
 } from "../../../utils/global";
-import { CalendarDate, CalendarProps, CalendarSharedProps } from "../Calendar/types";
+import { CalendarDate, CalendarProps } from "../Calendar/types";
 
-export type DatePickerProps = CommonProps &
-  ComponentWithCallback<CalendarDate> &
+export type DatePickerProps = ComponentWithCallback<CalendarDate> &
   ComponentWithValue<CalendarDate> &
   CalendarProps;
 

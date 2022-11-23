@@ -1,15 +1,16 @@
-import { BooleanProp, Demo, NumberProp } from "@cianciarusocataldo/demo-ui";
+import { BooleanProp, NumberProp } from "@cianciarusocataldo/demo-ui";
 
 import { DatePicker } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
+import DemoComponent from "components/DemoComponent";
 
-const CalendarPage = () => (
+const DatePickerPage = () => (
   <ComponentPage
     translations
     name="DatePicker"
     render={(t, componentLabel) => (
-      <Demo
+      <DemoComponent
         label={componentLabel}
         startColor="#C3BBBB"
         props={{
@@ -22,17 +23,15 @@ const CalendarPage = () => (
           hideArrows: BooleanProp(false),
           dayLabel: BooleanProp(true),
           fromToday: BooleanProp(true),
-          ...DEMO_COMMON_PROPS,
+          ...demoProps,
         }}
         rows={[
-          ["Custom year", "year"],
+          ["fromToday", "Custom year", "year"],
           ["Custom month", "month"],
-          ["Custom days", "Custom months", "fromToday"],
-          ["className", "shadow"],
-          ["dark", "hide", "unstyled"],
+          ["Custom days", "Custom months"],
+          ...demoRows,
         ]}
-      >
-        {(props: any) => {
+        parseProps={(props: any) => {
           let newProps = { ...props };
 
           delete newProps["Custom days"];
@@ -56,11 +55,13 @@ const CalendarPage = () => (
             newProps.months = t("months").split("-");
           }
 
-          return <DatePicker {...newProps} />;
+          return newProps;
         }}
-      </Demo>
+      >
+        {DatePicker}
+      </DemoComponent>
     )}
   />
 );
 
-export default CalendarPage;
+export default DatePickerPage;

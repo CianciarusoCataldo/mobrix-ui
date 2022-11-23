@@ -3,12 +3,12 @@ import {
   ComponentWithValue,
   GenericInputComponent,
   MoBrixUiComponent,
-  NumericInputContent,
+  NumericInputComponent,
 } from "../../../utils/global";
 
 export type SliderProps = ComponentWithValue<number> &
   ComponentWithCallback<number> &
   GenericInputComponent<number> &
-  NumericInputContent & { thumbColor?: string };
+  NumericInputComponent & { thumbColor?: string };
 
 export type SliderComponent = MoBrixUiComponent<SliderProps>;

@@ -58,6 +58,8 @@ const HeaderContent = () => {
                 dispatch(openDrawer());
               }}
               unstyled
+              a11yDark={true}
+              a11y
               className="outline-none"
             >
               <div className="p-1 sm:p-2 md:p-2">{BurgerIcon}</div>
@@ -70,6 +72,8 @@ const HeaderContent = () => {
                 dispatch(goTo(HOME));
               }}
               unstyled
+              a11yDark={true}
+              a11y
               className="overflow-auto ml-1 outline-none"
               hide={hideHomeButton}
             >
@@ -92,6 +96,8 @@ const HeaderContent = () => {
             <div className="mr-2 my-auto"> {LogoIcon}</div>
             <div className="flex flex-col my-auto">
               <Link
+                a11yDark={true}
+                a11y
                 dark={dark}
                 newTab
                 to="https://github.com/CianciarusoCataldo/mobrix-ui"
@@ -110,6 +116,8 @@ const HeaderContent = () => {
           <div className="flex flex-row">
             <div className="flex flex-row pr-4">
               <Link
+                a11yDark={true}
+                a11y
                 to="https://cianciarusocataldo.github.io/mobrix-ui/docs"
                 className="m-auto"
                 newTab
@@ -127,6 +135,8 @@ const HeaderContent = () => {
               </div>
             </div>
             <Dropdown
+              a11yDark={true}
+              a11y
               className="p-0"
               dark={false}
               value={LANGUAGES.findIndex((lang) => lang === language)}
@@ -140,6 +150,8 @@ const HeaderContent = () => {
               }))}
             />
             <Toggle
+              a11yDark={true}
+              a11y
               onIcon={LightModeIcon}
               offIcon={DarkModeIcon}
               shadow

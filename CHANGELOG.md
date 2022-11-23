@@ -20,7 +20,10 @@
 - `Calendar` component
 - `DatePicker` component
 - `Popup` component
-- Box components removed globally, now every component is built only with `buildComponent` function
+- `RadioButton` component
+- `RadioButtonGroup` component
+- `RadioButton` component
+- Box components removed globally, now every component is built only with `buildMobrixUiStandardComponent` function
 - Better overall performance 
 - Huge cleanup
 - Deep refactoring

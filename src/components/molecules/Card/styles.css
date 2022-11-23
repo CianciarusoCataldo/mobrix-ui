@@ -8,9 +8,6 @@
 
 #mobrix-ui-card.styled {
   color: var(--mobrix-ui-text-color);
-}
-
-#mobrix-ui-card.styled {
   background-image: var(--mobrix-ui-background);
 }
 

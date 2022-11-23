@@ -1,4 +1,4 @@
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
 
 import { BooleanProp, Demo, NumberProp } from "@cianciarusocataldo/demo-ui";
 
@@ -19,8 +19,9 @@ const TablePage = () => (
           props={{
             Rows: NumberProp(2),
             headers: BooleanProp(true),
-            ...DEMO_COMMON_PROPS,
+            ...demoProps,
           }}
+          rows={[["Rows", "headers"], ...demoRows]}
         >
           {({ Rows: numberOfRows, ...props }: any) => {
             let rows = [];

@@ -1,8 +1,9 @@
-import { BooleanProp, Demo } from "@cianciarusocataldo/demo-ui";
+import { BooleanProp, NumberProp } from "@cianciarusocataldo/demo-ui";
 
 import { Dropdown } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
+import DemoComponent from "components/DemoComponent";
 
 const DropdownPage = () => (
   <ComponentPage
@@ -15,16 +16,18 @@ const DropdownPage = () => (
       });
 
       return (
-        <Demo
+        <DemoComponent
           label={componentLabel}
           props={{
+            value: NumberProp(0),
             [iconsLabel]: BooleanProp(false),
-            ...DEMO_COMMON_PROPS,
+            ...demoProps,
           }}
+          rows={[["value", iconsLabel], ...demoRows]}
           startColor="#ebe5e2"
-        >
-          {(props: any) => {
-            const icon = props[iconsLabel] ? (
+          parseProps={(props) => {
+            let newProps: Record<string, any> = { ...props };
+            newProps.icon = props[iconsLabel] ? (
               <div
                 style={{
                   marginTop: "auto",
@@ -44,31 +47,23 @@ const DropdownPage = () => (
               </div>
             ) : undefined;
 
-            const elements = [
+            newProps.content = [
               {
                 name: elementLabel.replace("<INDEX>", "1"),
-                icon: icon,
+                icon: newProps.icon,
               },
               {
                 name: elementLabel.replace("<INDEX>", "2"),
-                icon: icon,
+                icon: newProps.icon,
               },
             ];
 
-            return (
-              <div className="flex flex-col items-center bg-transparent ">
-                <Dropdown
-                  className={props.className}
-                  hide={props.hide}
-                  dark={props.dark}
-                  shadow={props.shadow}
-                  unstyled={props.unstyled}
-                  content={elements}
-                />
-              </div>
-            );
+            delete newProps[iconsLabel];
+            return newProps;
           }}
-        </Demo>
+        >
+          {Dropdown}
+        </DemoComponent>
       );
     }}
   />

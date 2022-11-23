@@ -39,9 +39,6 @@ export { default as Label } from "./components/atoms/Label";
 export { LinkComponent, LinkProps } from "./components/atoms/Link/types";
 export { default as Link } from "./components/atoms/Link";
 
-export { ListComponent, ListProps } from "./components/atoms/List/types";
-export { default as List } from "./components/atoms/List";
-
 export {
   RadioButtonComponent,
   RadioButtonProps,
@@ -56,6 +53,12 @@ export { default as Selector } from "./components/atoms/Selector";
 
 export { SliderComponent, SliderProps } from "./components/atoms/Slider/types";
 export { default as Slider } from "./components/atoms/Slider";
+
+export {
+  SpinnerComponent,
+  SpinnerProps,
+} from "./components/atoms/Spinner/types";
+export { default as Spinner } from "./components/atoms/Spinner";
 
 export { ToggleComponent, ToggleProps } from "./components/atoms/Toggle/types";
 export { default as Toggle } from "./components/atoms/Toggle";
@@ -92,6 +95,9 @@ export { default as ExpandableContainer } from "./components/molecules/Expandabl
 export { FormComponent, FormProps } from "./components/molecules/Form/types";
 export { default as Form } from "./components/molecules/Form";
 
+export { ListComponent, ListProps } from "./components/molecules/List/types";
+export { default as List } from "./components/molecules/List";
+
 export { ModalComponent, ModalProps } from "./components/molecules/Modal/types";
 export { default as Modal } from "./components/molecules/Modal";
 
@@ -109,12 +115,6 @@ export {
   ReviewProps,
 } from "./components/molecules/Review/types";
 export { default as Review } from "./components/molecules/Review";
-
-export {
-  SpinnerComponent,
-  SpinnerProps,
-} from "./components/molecules/Spinner/types";
-export { default as Spinner } from "./components/molecules/Spinner";
 
 export { TableComponent, TableProps } from "./components/molecules/Table/types";
 export { default as Table } from "./components/molecules/Table";

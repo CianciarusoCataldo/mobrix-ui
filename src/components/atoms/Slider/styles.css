@@ -1,6 +1,5 @@
 #mobrix-ui-slider {
   --mobrix-ui-slider-thumb-color: var(--mobrix-ui-background-dark);
-  outline: none;
   -webkit-appearance: none;
   width: 100%;
   background: transparent;
@@ -15,10 +14,6 @@
 
 #mobrix-ui-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-}
-
-#mobrix-ui-slider:focus {
-  outline: none;
 }
 
 #mobrix-ui-slider::-ms-track {

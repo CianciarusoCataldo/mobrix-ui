@@ -1,15 +1,16 @@
-import { BooleanProp, Demo, NumberProp } from "@cianciarusocataldo/demo-ui";
+import { BooleanProp, NumberProp } from "@cianciarusocataldo/demo-ui";
 
 import { Calendar } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
+import DemoComponent from "components/DemoComponent";
 
 const CalendarPage = () => (
   <ComponentPage
     translations
     name="Calendar"
     render={(t, componentLabel) => (
-      <Demo
+      <DemoComponent
         label={componentLabel}
         startColor="#C3BBBB"
         props={{
@@ -21,17 +22,15 @@ const CalendarPage = () => (
           "Custom months": BooleanProp(false),
           hideArrows: BooleanProp(false),
           fromToday: BooleanProp(true),
-          ...DEMO_COMMON_PROPS,
+          ...demoProps,
         }}
         rows={[
           ["fromToday", "Start year", "year"],
           ["Start month", "month"],
           ["Custom days", "Custom months", "hideArrows"],
-          ["className", "shadow"],
-          ["dark", "hide", "unstyled"],
+          ...demoRows,
         ]}
-      >
-        {(props: any) => {
+        parseProps={(props: any) => {
           let newProps = { ...props };
 
           delete newProps["Custom days"];
@@ -53,16 +52,11 @@ const CalendarPage = () => (
             newProps.months = t("months").split("-");
           }
 
-          return (
-            <div className="flex flex-col items-center">
-              <Calendar
-                {...newProps}
-                value={{ year: 2023, month: 2, day: 4 }}
-              />
-            </div>
-          );
+          return newProps;
         }}
-      </Demo>
+      >
+        {Calendar}
+      </DemoComponent>
     )}
   />
 );

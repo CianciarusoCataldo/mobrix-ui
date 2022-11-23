@@ -2,7 +2,7 @@ import {
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
-  NumericInputContent,
+  NumericInputComponent,
 } from "../../../utils/global";
 
 /**
@@ -14,7 +14,7 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type CounterProps = NumericInputContent &
+export type CounterProps = NumericInputComponent &
   ComponentWithValue<number> &
   ComponentWithCallback<number>;
 

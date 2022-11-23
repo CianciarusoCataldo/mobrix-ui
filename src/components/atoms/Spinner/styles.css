@@ -1,6 +1,7 @@
 #mobrix-ui-spinner,
 #mobrix-ui-spinner svg {
   background: transparent;
+  min-width: 4rem;
 }
 
 #mobrix-ui-spinner .rotating {
