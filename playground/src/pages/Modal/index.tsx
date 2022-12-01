@@ -7,7 +7,7 @@ import {
 
 import { Button, Modal } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
-import { demoProps } from "constants/demo-props";
+import { demoProps, demoRows } from "constants/demo-props";
 
 export const ModalPage = () => {
   return (
@@ -26,9 +26,14 @@ export const ModalPage = () => {
               title: StringProp("title"),
               children: StringProp("children"),
               [closeButtonLabel]: BooleanProp(true),
+              closeOutside: BooleanProp(true),
               ...demoProps,
               hide: HiddenProp(true),
             }}
+            rows={[
+              ["title", "children", "closeOutside", closeButtonLabel],
+              ...demoRows,
+            ]}
           >
             {(props: any, setProps: (props: any) => any) => {
               let modalProps = { ...props };

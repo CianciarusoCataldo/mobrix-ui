@@ -26,13 +26,12 @@ const facebookButtonsComponent: MoBrixUiComponent<FacebookButtonsProps> = ({
   return (
     <iframe
       width={`${width || widths[size][buttons]}px`}
-      title="page"
+      title={pageId + " page"}
+      className="facebook-buttons-iframe"
       src={`https://www.facebook.com/plugins/like.php?href=https://www.facebook.com/${pageId}&width=126&layout=button&action=like&size=${size}&share=${
         buttons === "share"
       }&height=46&appId`}
       style={{
-        border: "none",
-        overflow: "hidden",
         height: `${heights[size]}px`,
       }}
       scrolling="no"

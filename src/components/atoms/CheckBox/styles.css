@@ -13,10 +13,12 @@
   flex-direction: column;
 }
 
-#mobrix-ui-checkbox.styled:hover {
-  background-color: #d4e6fa;
-}
+@media (hover) {
+  #mobrix-ui-checkbox.styled:hover {
+    background-color: #d4e6fa;
+  }
 
-#mobrix-ui-checkbox.styled.dark:hover {
-  background-color: #3a3552;
+  #mobrix-ui-checkbox.styled.dark:hover {
+    background-color: #3a3552;
+  }
 }

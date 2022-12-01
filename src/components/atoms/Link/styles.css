@@ -1,13 +1,25 @@
 #mobrix-ui-link {
-  display: inline;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-#mobrix-ui-link.styled {
+#mobrix-ui-link.styled:focus-visible {
   color: var(--mobrix-ui-link-color);
+}
+
+#mobrix-ui-link.styled.a11y:focus-visible {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
 }
 
 #mobrix-ui-link:active {
   font-weight: 700;
+}
+
+@media (hover) {
+  #mobrix-ui-link.styled:hover {
+    color: var(--mobrix-ui-link-color);
+  }
 }

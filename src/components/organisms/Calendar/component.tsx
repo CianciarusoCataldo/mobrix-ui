@@ -54,59 +54,61 @@ const calendarComponent: MobrixUiReactiveComponent<
 
   const months = getMonthsDuration(onScreenDate.year);
 
-  const dateMatrix = getDateMatrix({ ...onScreenDate, day: 1 }, months).map(
-    (week, indexWeek) => {
-      return week.map((day, indexDay) => {
-        const isDisabled =
-          fromToday &&
-          (onScreenDate.year < todayDate.year ||
-            (onScreenDate.year === todayDate.year &&
-              onScreenDate.month < todayDate.month) ||
-            (onScreenDate.year === todayDate.year &&
-              onScreenDate.month === todayDate.month &&
-              day < todayDate.dayOfTheMonth));
+  const basicMatrix = getDateMatrix({ ...onScreenDate, day: 1 }, months);
 
-        return (
-          <Button
-            key={"date-button-" + day + "-" + month + "-" + year}
-            id={"date-button-" + day + "-" + month + "-" + year}
-            unstyled
-            style={{ width: "100%" }}
-            className={classNames("date-element", {
-              selected:
-                value?.year === onScreenDate.year &&
-                value.month === onScreenDate.month &&
-                value.day === day,
+  const dateMatrix = basicMatrix.map((week, indexWeek) => {
+    return week.map((day, indexDay) => {
+      const isDisabled =
+        fromToday &&
+        (onScreenDate.year < todayDate.year ||
+          (onScreenDate.year === todayDate.year &&
+            onScreenDate.month < todayDate.month) ||
+          (onScreenDate.year === todayDate.year &&
+            onScreenDate.month === todayDate.month &&
+            day < todayDate.dayOfTheMonth));
+
+      return (
+        <Button
+          key={"date-button-" + day + "-" + month + "-" + year}
+          id={"date-button-" + day + "-" + month + "-" + year}
+          unstyled
+          style={{ width: "100%" }}
+          className={classNames("date-element", {
+            selected:
+              value?.year === onScreenDate.year &&
+              value.month === onScreenDate.month &&
+              value.day === day,
+          })}
+          disabled={isDisabled}
+          hide={day <= 0}
+          a11y={false}
+          onClick={() => {
+            onChange && onChange({ ...onScreenDate, day });
+            setValue({
+              month: onScreenDate.month,
+              year: onScreenDate.year,
+              day,
+            });
+          }}
+        >
+          <Label
+            a11y={day > 0}
+            key="date_label"
+            dark={commonProps.dark}
+            className={classNames("date-label", {
+              today:
+                fromToday &&
+                day === todayDate.dayOfTheMonth &&
+                onScreenDate.month === todayDate.month &&
+                onScreenDate.year === todayDate.year,
             })}
-            disabled={isDisabled}
-            hide={day < 0}
-            onClick={() => {
-              onChange && onChange({ ...onScreenDate, day });
-              setValue({
-                month: onScreenDate.month,
-                year: onScreenDate.year,
-                day,
-              });
-            }}
           >
-            <Label
-              key="date_label"
-              dark={commonProps.dark}
-              className={classNames("date-label", {
-                today:
-                  fromToday &&
-                  day === todayDate.dayOfTheMonth &&
-                  onScreenDate.month === todayDate.month &&
-                  onScreenDate.year === todayDate.year,
-              })}
-            >
-              {day > 0 ? String(day) : " "}
-            </Label>
-          </Button>
-        );
-      });
-    }
-  );
+            {day > 0 ? String(day) : " "}
+          </Label>
+        </Button>
+      );
+    });
+  });
 
   const arrowActions: Record<"left" | "right", () => void> = {
     left: () =>
@@ -155,6 +157,9 @@ const calendarComponent: MobrixUiReactiveComponent<
     <Table
       key="calendar_table"
       id="calendar-table"
+      onKeyDown={(e) => {
+        console.log(e.code);
+      }}
       unstyled={commonProps.unstyled}
       shadow={shadow}
       dark={commonProps.dark}

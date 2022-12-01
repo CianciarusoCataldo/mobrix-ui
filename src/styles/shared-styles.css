@@ -5,8 +5,8 @@
   --mobrix-ui-text-color-dark: white;
   --mobrix-ui-background-dark: linear-gradient(to right, #2d3748, #1d232e);
   --mobrix-ui-background-light: linear-gradient(to right, #fff, #eaebec);
-  --mobrix-ui-focus-color-light: #464545;
-  --mobrix-ui-focus-color-dark: #aaaaaa;
+  --mobrix-ui-focus-color-light: #7785ff;
+  --mobrix-ui-focus-color-dark: #fb7a10;
 }
 
 [id^="mobrix-ui-"]:focus {
@@ -59,7 +59,7 @@
 }
 
 [id^="mobrix-ui-"].dark:hover {
-  --mobrix-ui-link-color: rgb(219, 221, 224);
+  --mobrix-ui-link-color: rgb(165, 174, 187);
 }
 
 [id^="mobrix-ui-"].a11y:not(.a11y-dark) {
@@ -83,6 +83,14 @@
   );
 }
 
+[id^="mobrix-ui-"].a11y:focus-visible {
+  --mobrix-ui-link-color: rgb(37, 99, 235);
+}
+
+[id^="mobrix-ui-"].a11y.a11y-dark:focus-visible {
+  --mobrix-ui-link-color: orange;
+}
+
 [id^="mobrix-ui-"] .component-hidden,
 [id^="mobrix-ui-"].component-hidden {
   display: none !important;
@@ -90,11 +98,11 @@
 
 [id^="mobrix-ui-"].animated,
 [id^="mobrix-ui-"].animated .mobrix-ui-animated-component {
-  -webkit-animation: fadein 0.7s;
-  -moz-animation: fadein 0.7s;
-  -ms-animation: fadein 0.7s;
-  -o-animation: fadein 0.7s;
-  animation: fadein 0.7s;
+  -webkit-animation: fadein 0.4s;
+  -moz-animation: fadein 0.4s;
+  -ms-animation: fadein 0.4s;
+  -o-animation: fadein 0.4s;
+  animation: fadein 0.4s;
 }
 
 [id^="mobrix-ui-"].shadowed,

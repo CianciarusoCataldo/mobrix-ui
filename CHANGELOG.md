@@ -20,11 +20,12 @@
 - `Calendar` component
 - `DatePicker` component
 - `Popup` component
-- `RadioButton` component
+- `Selector` component
+- `Slider` component
 - `RadioButtonGroup` component
 - `RadioButton` component
-- Box components removed globally, now every component is built only with `buildMobrixUiStandardComponent` function
-- Better overall performance 
+- `Reactive components` replace old `Box Components`, mantaining only the automatic input value sync with actual value set
+- Better overall performance
 - Huge cleanup
 - Deep refactoring
 - Minor fixes

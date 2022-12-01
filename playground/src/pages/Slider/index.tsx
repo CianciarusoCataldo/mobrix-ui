@@ -19,6 +19,7 @@ const SliderPage = () => (
             value: NumberProp(25),
             min: NumberProp(0),
             max: NumberProp(50),
+            readOnly: BooleanProp(false),
             "Custom thumb": BooleanProp(false),
             thumbColor: ColorProp(),
             ...demoProps,
@@ -36,7 +37,8 @@ const SliderPage = () => (
             return newProps;
           }}
           rows={[
-            ["value", "min", "max"],
+            ["value", "readOnly"],
+            ["min", "max"],
             ["Custom thumb", "thumbColor"],
             ...demoRows,
           ]}

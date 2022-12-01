@@ -14,7 +14,6 @@ const toggleComponentBuilder: MobrixUiReactiveComponentBuilder<
   icon,
   offIcon,
   onIcon,
-  shadow,
   className,
   onChange,
   ...commonProps

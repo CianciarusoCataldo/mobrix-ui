@@ -11,13 +11,6 @@
   line-height: 1.25rem;
 }
 
-@media (hover: none) {
-  #mobrix-ui-button.styled.enabled:hover {
-    background: var(--mobrix-ui-background);
-    color: var(--mobrix-ui-text-color);
-  }
-}
-
 #mobrix-ui-button.enabled {
   transition-duration: 0.1s;
   transition-property: transform;
@@ -27,15 +20,24 @@
   opacity: 0.5;
 }
 
-#mobrix-ui-button.styled.enabled:hover {
-  background: linear-gradient(to right, #c9cacc, #e1e1e4, #c8c9ca);
+@media (hover) {
+  #mobrix-ui-button.styled.enabled:hover {
+    background: linear-gradient(to right, #c9cacc, #e1e1e4, #c8c9ca);
+  }
+
+  #mobrix-ui-button.dark.styled.enabled:hover {
+    background: rgb(61, 61, 75);
+  }
+
+  #mobrix-ui-button.styled.enabled.animated:hover {
+    position: relative;
+    transform: scaleX(1.15) scaleY(1.1);
+  }
 }
 
-#mobrix-ui-button.dark.styled.enabled:hover {
-  background: rgb(61, 61, 75);
-}
-
-#mobrix-ui-button.styled.enabled.animated:hover {
-  position: relative;
-  transform: scaleX(1.15) scaleY(1.1);
+@media (hover: none) {
+  #mobrix-ui-button.styled.enabled:hover {
+    background: var(--mobrix-ui-background);
+    color: var(--mobrix-ui-text-color);
+  }
 }

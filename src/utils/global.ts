@@ -41,6 +41,15 @@ export interface CommonProps {
 
   /** if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label} */
   a11yLabel?: string;
+
+  /** callback called when component is focused */
+  onFocus?: () => void;
+
+  /** callback called when component focus is lost */
+  onFocusLost?: () => void;
+
+  /** callback called when a key is pressed when inside the component */
+  onKeyDown?: (e: any) => void;
 }
 
 /**
@@ -55,20 +64,6 @@ export interface CommonProps {
 export interface ComponentWithValue<T = any> {
   /** Actual component value */
   value?: T;
-}
-
-/**
- * A {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component that trigger a callback when focused ad when losing focus
- *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/
- *
- * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
- *
- * @copyright 2022 Cataldo Cianciaruso
- */
-export interface ComponentWithFocusCallback {
-  onBlur?: () => void;
-  onFocus?: () => void;
 }
 
 /**
@@ -163,6 +158,20 @@ export interface ComponentWithChildren<
 }
 
 /**
+ * A {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component with onClose callback
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/
+ *
+ * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
+ *
+ * @copyright 2022 Cataldo Cianciaruso
+ */
+export interface ClosableComponent {
+  /** Callback called when component is closed */
+  onClose?: () => void;
+}
+
+/**
  *  Allowed {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component type for component builder
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/
@@ -223,10 +232,6 @@ export type MoBrixUiComponent<T = any, K = JSX.Element> = (
   props: MobrixUiProps<T>
 ) => K;
 
-export type DeepPartial<T> = {
-  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
-};
-
 /**
  * Standard {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component props
  *
@@ -282,3 +287,7 @@ export type MobrixUiReactiveComponent<T = any, K = any> = MoBrixUiComponent<
   MobrixUiReactiveComponentProps<T, K>,
   BuilderComponent | BuilderComponent[]
 >;
+
+export type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};

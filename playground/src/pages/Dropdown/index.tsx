@@ -1,4 +1,4 @@
-import { BooleanProp, NumberProp } from "@cianciarusocataldo/demo-ui";
+import { NumberProp } from "@cianciarusocataldo/demo-ui";
 
 import { Dropdown } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
@@ -10,7 +10,6 @@ const DropdownPage = () => (
     name="Dropdown"
     translations
     render={(t, componentLabel) => {
-      const iconsLabel = t("props_icons");
       const elementLabel = t("props_element", {
         index: "<INDEX>",
       });
@@ -20,14 +19,12 @@ const DropdownPage = () => (
           label={componentLabel}
           props={{
             value: NumberProp(0),
-            [iconsLabel]: BooleanProp(false),
             ...demoProps,
           }}
-          rows={[["value", iconsLabel], ...demoRows]}
+          rows={[["value"], ...demoRows]}
           startColor="#ebe5e2"
           parseProps={(props) => {
-            let newProps: Record<string, any> = { ...props };
-            newProps.icon = props[iconsLabel] ? (
+            const icon = (
               <div
                 style={{
                   marginTop: "auto",
@@ -45,21 +42,22 @@ const DropdownPage = () => (
                   }}
                 ></i>
               </div>
-            ) : undefined;
+            );
 
-            newProps.content = [
-              {
-                name: elementLabel.replace("<INDEX>", "1"),
-                icon: newProps.icon,
-              },
-              {
-                name: elementLabel.replace("<INDEX>", "2"),
-                icon: newProps.icon,
-              },
-            ];
-
-            delete newProps[iconsLabel];
-            return newProps;
+            return {
+              ...props,
+              content: [
+                {
+                  name: elementLabel.replace("<INDEX>", "1"),
+                  icon,
+                },
+                elementLabel.replace("<INDEX>", "2") + " - string",
+                {
+                  name: elementLabel.replace("<INDEX>", "3"),
+                  icon,
+                },
+              ],
+            };
           }}
         >
           {Dropdown}

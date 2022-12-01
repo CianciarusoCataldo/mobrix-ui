@@ -15,8 +15,28 @@
   margin-top: 0.2rem;
 }
 
+#mobrix-ui-dropdown .options {
+  scrollbar-width: thin;
+  scrollbar-color: #c0c0c0;
+}
+
+#mobrix-ui-dropdown .options::-webkit-scrollbar {
+  width: 12px;
+}
+
+#mobrix-ui-dropdown .options::-webkit-scrollbar-track {
+  background: var(--mobrix-ui-background);
+}
+
+#mobrix-ui-dropdown .options::-webkit-scrollbar-thumb {
+  background-color: var(--mobrix-ui-text-color);
+  border-radius: 20px;
+  border: 3px solid transparent;
+}
+
 #mobrix-ui-dropdown .button {
   padding: 0;
+  outline: none;
   font-size: 1.125rem;
   line-height: 1.75rem;
   display: inline-flex;
@@ -30,6 +50,7 @@
 #mobrix-ui-dropdown.styled .button {
   padding-left: 0.4rem;
   padding-right: 0.4rem;
+  outline: none;
 }
 
 #mobrix-ui-dropdown.styled .options .option {
@@ -37,14 +58,17 @@
   color: var(--mobrix-ui-text-color);
 }
 
-#mobrix-ui-dropdown .label {
+#mobrix-ui-dropdown .dropdown-selected-element {
   padding-right: 0.25rem;
   display: flex;
   flex-direction: row;
+  outline: none;
+  margin: auto;
 }
 
 #mobrix-ui-dropdown .icon {
   margin: auto 0.25rem;
+  outline: none;
 }
 
 #mobrix-ui-dropdown .arrow-icon {
@@ -52,6 +76,7 @@
   border-width: 0 3px 3px 0;
   display: block;
   padding: 3px;
+  outline: none;
   transition-duration: 0.2s;
   transition-property: transform;
   transform: rotate(45deg);
@@ -84,7 +109,7 @@
   flex-direction: column;
 }
 
-#mobrix-ui-dropdown .regular .content {
+#mobrix-ui-dropdown .regular .dropdown-element {
   display: flex;
   flex-direction: row;
   margin-top: auto;
@@ -96,8 +121,11 @@
 }
 
 #mobrix-ui-dropdown .regular:hover,
-#mobrix-ui-dropdown .regular:focus-visible {
+#mobrix-ui-dropdown .regular.selected {
   background-color: rgba(166, 204, 250, 0.7);
+}
+
+#mobrix-ui-dropdown .regular:focus-visible {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
@@ -138,23 +166,4 @@
   #mobrix-ui-dropdown .icon:hover {
     animation: none;
   }
-}
-
-#mobrix-ui-dropdown .options {
-  scrollbar-width: thin;
-  scrollbar-color: #c0c0c0;
-}
-
-#mobrix-ui-dropdown .options::-webkit-scrollbar {
-  width: 12px;
-}
-
-#mobrix-ui-dropdown .options::-webkit-scrollbar-track {
-  background: var(--mobrix-ui-background);
-}
-
-#mobrix-ui-dropdown .options::-webkit-scrollbar-thumb {
-  background-color: var(--mobrix-ui-text-color);
-  border-radius: 20px;
-  border: 3px solid transparent;
 }

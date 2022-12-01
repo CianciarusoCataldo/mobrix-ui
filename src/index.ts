@@ -81,7 +81,8 @@ export { default as Container } from "./components/molecules/Container";
 
 export {
   DropdownComponent,
-  DropdownElement,
+  DropdownGenericElement,
+  DropdownStandardElement,
   DropdownProps,
 } from "./components/molecules/Dropdown/types";
 export { default as Dropdown } from "./components/molecules/Dropdown";

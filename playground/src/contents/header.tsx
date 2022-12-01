@@ -51,47 +51,43 @@ const HeaderContent = () => {
       dark={dark}
       expanded={
         <div className="flex flex-row mt-6" key="expanded_header">
-          <div className="my-auto">
-            <Button
-              aria-label="drawer button"
-              onClick={() => {
-                dispatch(openDrawer());
-              }}
-              unstyled
-              a11yDark={true}
-              a11y
-              className="outline-none"
+          <Button
+            aria-label="drawer button"
+            onClick={() => {
+              dispatch(openDrawer());
+            }}
+            unstyled
+            dark={dark}
+            a11y
+            className="rounded-full my-auto"
+          >
+            {BurgerIcon}
+          </Button>
+          <Button
+            aria-label="back button"
+            onClick={() => {
+              dispatch(goTo(HOME));
+            }}
+            unstyled
+            a11y={false}
+            className="my-auto overflow-auto ml-1"
+            hide={hideHomeButton}
+          >
+            <svg
+              tabIndex={0}
+              className={classNames(
+                {
+                  "fill-[white]": dark,
+                  "fill-[black]": !dark,
+                },
+                "w-8 h-8 hover:fill-[#ff9f51] active:fill-[#fb7a10] focus-visible:fill-[#fb7a10] xsm:w-12 xsm:h-12"
+              )}
+              viewBox="0 0 11 18"
             >
-              <div className="p-1 sm:p-2 md:p-2">{BurgerIcon}</div>
-            </Button>
-          </div>
-          <div className="my-auto">
-            <Button
-              aria-label="back button"
-              onClick={() => {
-                dispatch(goTo(HOME));
-              }}
-              unstyled
-              a11yDark={true}
-              a11y
-              className="overflow-auto ml-1 outline-none"
-              hide={hideHomeButton}
-            >
-              <svg
-                className={classNames(
-                  {
-                    "fill-[white]": dark,
-                    "fill-[black]": !dark,
-                  },
-                  "w-8 h-8 hover:fill-[#ff9f51] active:fill-[#fb7a10] xsm:w-12 xsm:h-12"
-                )}
-                viewBox="0 0 11 18"
-              >
-                <path d="M8.681.196l2.121 2.12-8.484 8.487-2.12-2.12z" />
-                <path d="M10.803 15.047l-2.121 2.121L.197 8.683l2.121-2.121z" />
-              </svg>
-            </Button>
-          </div>
+              <path d="M8.681.196l2.121 2.12-8.484 8.487-2.12-2.12z" />
+              <path d="M10.803 15.047l-2.121 2.121L.197 8.683l2.121-2.121z" />
+            </svg>
+          </Button>
           <div className="m-auto flex flex-row p-2">
             <div className="mr-2 my-auto"> {LogoIcon}</div>
             <div className="flex flex-col my-auto">
@@ -116,26 +112,25 @@ const HeaderContent = () => {
           <div className="flex flex-row">
             <div className="flex flex-row pr-4">
               <Link
-                a11yDark={true}
-                a11y
+                dark={dark}
+                unstyled
                 to="https://cianciarusocataldo.github.io/mobrix-ui/docs"
                 className="m-auto"
                 newTab
               >
                 {DocsIcon}
               </Link>
-              <div className="m-auto hidden sm:block">
-                <Link
-                  dark={dark}
-                  to="https://cianciarusocataldo.github.io/mobrix-ui/docs"
-                  newTab
-                >
-                  {t("docs")}
-                </Link>
-              </div>
+              <Link
+                dark={dark}
+                className="m-auto hidden md:block"
+                to="https://cianciarusocataldo.github.io/mobrix-ui/docs"
+                newTab
+              >
+                {t("docs")}
+              </Link>
             </div>
             <Dropdown
-              a11yDark={true}
+              a11yDark={dark}
               a11y
               className="p-0"
               dark={false}
@@ -150,8 +145,6 @@ const HeaderContent = () => {
               }))}
             />
             <Toggle
-              a11yDark={true}
-              a11y
               onIcon={LightModeIcon}
               offIcon={DarkModeIcon}
               shadow

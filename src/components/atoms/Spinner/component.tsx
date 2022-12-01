@@ -3,15 +3,15 @@ import React from "react";
 import { MobrixUiReactiveComponent } from "../../../utils/global";
 import { SpinnerProps } from "./types";
 
-import DEFAULT_ICONS from "./icons";
+import defaultIcons from "./icons";
 
 const spinnerComponent: MobrixUiReactiveComponent<string, SpinnerProps> = ({
   statuses,
   value,
 }) => {
-  const ICONS = statuses || DEFAULT_ICONS;
+  const icons = statuses || defaultIcons;
 
-  return value && ICONS[value] ? ICONS[value] : ICONS.loading;
+  return value && icons[value] ? icons[value] : icons.loading;
 };
 
 export default spinnerComponent;

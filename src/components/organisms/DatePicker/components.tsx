@@ -102,6 +102,7 @@ const datePickerComponent: MobrixUiReactiveComponent<
             }
           />
           <Dropdown
+            shadow={shadow}
             dark={commonProps.dark}
             unstyled
             hideArrow
@@ -120,6 +121,7 @@ const datePickerComponent: MobrixUiReactiveComponent<
         </div>
         <Button
           unstyled
+          dark={commonProps.dark}
           onClick={() => setVisible(!isVisible)}
           key="date_picker_calendar_button"
           className="element"
@@ -158,6 +160,7 @@ const datePickerComponent: MobrixUiReactiveComponent<
             onChange && onChange(date);
             setValue(date);
           }}
+          onFocusLost={() => setVisible(false)}
           dark={commonProps.dark}
         />
       </div>

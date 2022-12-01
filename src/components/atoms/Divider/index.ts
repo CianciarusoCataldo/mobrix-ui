@@ -16,10 +16,13 @@ import { buildMobrixUiStandardComponent } from "../../../utils";
  * @param {boolean} hide `common MoBrix-ui prop` - Hide/show component
  * @param {boolean} shadow `common MoBrix-ui prop` - Enable/disable shadow behind component
  * @param {boolean} animated `common MoBrix-ui prop` enable/disable component animations
- * @param {string} key `common MoBrix-ui prop` custom component React key (the standard {@link https://reactjs.org/docs/lists-and-keys.html key parameter})
- * @param {boolean} a11y `common MoBrix-ui prop` enable/disable accessibility features
- * @param {boolean} a11yDark `common MoBrix-ui prop` if the `a11y` parameter is `true`, override standard focus color style with/without dark mode (normally, the color changes accordingly to the `dark` parameter)
- * @param {string} a11yLabel `common MoBrix-ui prop` if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label}
+ * @param {string} key `common MoBrix-ui prop` - custom component React key (the standard {@link https://reactjs.org/docs/lists-and-keys.html key parameter})
+ * @param {boolean} a11y `common MoBrix-ui prop` - enable/disable accessibility features
+ * @param {boolean} a11yDark `common MoBrix-ui prop` - if the `a11y` parameter is `true`, override standard focus color style with/without dark mode (normally, the color changes accordingly to the `dark` parameter)
+ * @param {string} a11yLabel `common MoBrix-ui prop` - if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label}
+ * @param {() => void} onFocus `common MoBrix-ui prop` - callback called when component is focused
+ * @param {()=>{}} onFocusLost `common MoBrix-ui prop` - callback called when component focus is lost
+ * @param {(e: any) => void} onKeyDown `common MoBrix-ui prop` - callback called when a key is pressed when inside the component
  *
  * @example <caption>Example Divider usage</caption>
  * import { render } from "react-dom";
@@ -35,7 +38,7 @@ import { buildMobrixUiStandardComponent } from "../../../utils";
  */
 const Divider: DividerComponent = (props) =>
   buildMobrixUiStandardComponent({
-    name: "mobrix-ui-divider",
+    name: "divider",
     commonProps: { ...props, a11y: false },
   });
 

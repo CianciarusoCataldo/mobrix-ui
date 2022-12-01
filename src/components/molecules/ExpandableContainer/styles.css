@@ -13,6 +13,21 @@
   margin-bottom: 0.3rem;
   padding-top: 0.2rem;
   transition: all 0.2s;
+  outline: none;
+}
+
+#mobrix-ui-expandable-container.a11y
+  .expandable-container-arrow-button:focus-visible {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+#mobrix-ui-expandable-container.a11y
+  .expandable-container-arrow-button:focus-visible
+  svg {
+  fill: var(--mobrix-ui-focus-color);
 }
 
 #mobrix-ui-expandable-container .arrow:active {

@@ -1,6 +1,5 @@
 import {
   ComponentWithChildren,
-  ComponentWithFocusCallback,
   MoBrixUiComponent,
 } from "../../../utils/global";
 
@@ -13,11 +12,10 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type ContainerProps = ComponentWithChildren<any> &
-  ComponentWithFocusCallback & {
-    ref?: any;
-    wrapper?: "div" | "header" | "footer";
-  };
+export type ContainerProps = ComponentWithChildren<any> & {
+  ref?: any;
+  wrapper?: "div" | "header" | "footer";
+};
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Container component props

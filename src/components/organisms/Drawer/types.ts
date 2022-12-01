@@ -1,5 +1,6 @@
 import {
   BuilderComponent,
+  ClosableComponent,
   ComponentWithChildren,
   MoBrixUiComponent,
 } from "../../../utils/global";
@@ -15,21 +16,19 @@ import {
  */
 export type DrawerProps = ComponentWithChildren<
   BuilderComponent | BuilderComponent[]
-> & {
-  /** Callback triggered on Drawer close */
-  onClose?: () => void;
-
-  /** Drawer position, relative to entire window */
-  position?:
-    | "right"
-    | "left"
-    | "top"
-    | "bottom"
-    | "top-left"
-    | "top-right"
-    | "bottom-left"
-    | "bottom-right";
-};
+> &
+  ClosableComponent & {
+    /** Drawer position, relative to the entire window */
+    position?:
+      | "right"
+      | "left"
+      | "top"
+      | "bottom"
+      | "top-left"
+      | "top-right"
+      | "bottom-left"
+      | "bottom-right";
+  };
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Drawer component

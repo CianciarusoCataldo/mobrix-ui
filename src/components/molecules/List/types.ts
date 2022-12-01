@@ -1,4 +1,8 @@
-import { BuilderComponent, MoBrixUiComponent } from "../../../utils/global";
+import {
+  BuilderComponent,
+  ComponentWithCallback,
+  MoBrixUiComponent,
+} from "../../../utils/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} List component props
@@ -9,7 +13,7 @@ import { BuilderComponent, MoBrixUiComponent } from "../../../utils/global";
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type ListProps = {
+export type ListProps = ComponentWithCallback<number> & {
   /** List elements (if unstyled == `false`, every element will include a dot at its start) */
   elements?: BuilderComponent[];
 };

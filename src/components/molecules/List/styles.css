@@ -8,6 +8,14 @@
   padding: 0.6rem;
 }
 
+#mobrix-ui-list.styled.a11y .internal-list-element:focus-visible {
+  color: var(--mobrix-ui-focus-color);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
 #mobrix-ui-list .internal-list-element {
   display: flex;
   flex-direction: row;
@@ -15,6 +23,18 @@
 
 #mobrix-ui-list.styled .internal-list-element {
   color: var(--mobrix-ui-text-color);
+  outline: none;
+  margin-top: 0.2rem;
+}
+
+@media (hover) {
+  #mobrix-ui-list.styled .internal-list-element.clickable-list-element:hover {
+    color: var(--mobrix-ui-focus-color);
+  }
+}
+
+#mobrix-ui-list .internal-list-element .dot {
+  display: none;
 }
 
 #mobrix-ui-list.styled .internal-list-element .dot {
@@ -25,8 +45,4 @@
   margin-bottom: auto;
   margin-right: 0.3rem;
   display: block;
-}
-
-#mobrix-ui-list .internal-list-element .dot {
-  display: none;
 }

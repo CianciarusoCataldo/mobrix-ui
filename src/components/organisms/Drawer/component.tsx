@@ -15,9 +15,6 @@ const drawerComponent: MoBrixUiComponent<DrawerProps, BuilderComponent[]> = ({
     <Container
       className="content"
       key="drawer_content"
-      onBlur={() => {
-        //onClose && onClose();
-      }}
       dark={dark}
       a11yLabel="drawer-content"
     >
@@ -29,7 +26,7 @@ const drawerComponent: MoBrixUiComponent<DrawerProps, BuilderComponent[]> = ({
       unstyled
       id="drawer_close_button"
       onClick={() => {
-        onClose && onClose();
+        onClose!();
       }}
       className="drawer-close-button"
       a11yLabel="drawer-close-button"

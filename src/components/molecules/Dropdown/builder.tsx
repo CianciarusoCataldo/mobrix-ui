@@ -1,7 +1,7 @@
 import React from "react";
 
 import { MobrixUiReactiveComponentBuilder } from "../../../utils/global";
-import { DropdownProps } from "./types";
+import { DropdownProps, DropdownStandardElement } from "./types";
 
 import classnames from "classnames";
 
@@ -11,30 +11,113 @@ import Popup from "../Popup";
 const dropdownComponent: MobrixUiReactiveComponentBuilder<
   number,
   DropdownProps
-> = ({ content = [], onChange, value, hideArrow, dark, setValue, shadow }) => {
-  const [isVisible, setVisible] = React.useState(false);
+> = ({
+  content = [],
+  onChange,
+  value,
+  hideArrow,
+  dark,
+  setValue,
+  shadow,
+  onFocusLost = () => {},
+  ...commonProps
+}) => {
+  const dropdownContent: DropdownStandardElement[] = content.map((el) => {
+    let icon = <div />;
+    let name: string | JSX.Element = "";
 
-  const selectedItem = content[value] || {
+    if (typeof el === "string") {
+      name = el;
+    } else {
+      name = el.name;
+      icon = el.icon || <div />;
+    }
+    return {
+      name,
+      icon,
+    };
+  });
+  const [isVisible, setVisible] = React.useState(false);
+  const [selected, selectItem] = React.useState<number>(-2);
+  const selectedItem = dropdownContent[value] || {
     name: "",
     icon: <div />,
   };
 
+  const keyDownCallback = (visibility = false) => {
+    isVisible !== visibility && setVisible(visibility);
+    selectItem(-1);
+  };
+
   return {
-    additionalProps: {
-      onKeyDown: (e) => {
-        if (e.code === "Enter") {
-          setVisible(!isVisible);
-        }
+    commonProps: {
+      ...commonProps,
+      dark,
+      shadow,
+      onFocusLost: () => {
+        onFocusLost();
+        keyDownCallback();
       },
-      onBlur: () => {
-        setVisible(false);
+      onKeyDown: (e) => {
+        let actualSelected = selected;
+        switch (e.code) {
+          case "Tab": {
+            if (
+              (e.shiftKey && actualSelected === 0) ||
+              actualSelected === content.length - 1
+            ) {
+              keyDownCallback();
+            }
+            break;
+          }
+          case "Enter": {
+            if (selected > -1) {
+              onChange && onChange(selected);
+              setValue(selected);
+              keyDownCallback();
+              return;
+            } else {
+              setVisible(!isVisible);
+            }
+            e.preventDefault();
+            break;
+          }
+
+          case "Escape": {
+            keyDownCallback();
+            return;
+          }
+
+          case "ArrowUp": {
+            if (actualSelected === 0) {
+              keyDownCallback();
+              return;
+            }
+            actualSelected -= 1;
+            break;
+          }
+
+          case "ArrowDown": {
+            if (actualSelected === content.length - 1) {
+              keyDownCallback();
+              return;
+            }
+            if (!isVisible) {
+              setVisible(true);
+            }
+            actualSelected += 1;
+            break;
+          }
+        }
+
+        actualSelected !== selected && selectItem(actualSelected);
       },
     },
     Component: [
       <Button
         unstyled
         onClick={() => {
-          setVisible(!isVisible);
+          keyDownCallback(!isVisible);
         }}
         dark={dark}
         className="button"
@@ -42,13 +125,19 @@ const dropdownComponent: MobrixUiReactiveComponentBuilder<
         key="options-menu"
         a11y={false}
       >
-        <div tabIndex={-1} key="label" className="label">
-          <div tabIndex={-1} className="label">
-            {selectedItem.icon}
-          </div>
-          <div tabIndex={-1} className="label">
-            {selectedItem.name}
-          </div>
+        <div
+          tabIndex={-1}
+          key="dropdown_selected_element_icon"
+          className="dropdown-selected-element"
+        >
+          {selectedItem.icon}
+        </div>
+        <div
+          tabIndex={-1}
+          key="dropdown_selected_element_label"
+          className="dropdown-selected-element"
+        >
+          {selectedItem.name}
         </div>
         <div
           key="icon"
@@ -69,27 +158,31 @@ const dropdownComponent: MobrixUiReactiveComponentBuilder<
         shadow={shadow}
         dark={dark}
         hide={!isVisible}
-        className="options"
         a11y={false}
+        className="options"
       >
-        {content.map((item, index) => (
+        {dropdownContent.map((item, index) => (
           <Button
             unstyled
+            onFocus={() => {
+              selectItem(index);
+            }}
             id={`dropdown_option_${index}`}
             onClick={() => {
               onChange && onChange(index);
               setValue(index);
-              setVisible(false);
+              keyDownCallback();
             }}
             key={`item_${index}`}
             className={classnames("regular", {
               first: index === 0,
               last: index === content.length - 1,
+              selected: selected === index,
             })}
           >
-            <div className="content">
-              {item.icon}
-              <div className="label">{item.name}</div>
+            <div className="dropdown-element">
+              <div className="dropdown-selected-element">{item.icon}</div>
+              {item.name}
             </div>
           </Button>
         ))}

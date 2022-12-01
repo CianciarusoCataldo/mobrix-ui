@@ -20,7 +20,11 @@ export type ModalProps = ComponentWithChildren<BuilderComponent> & {
   /** Callback triggered when modal is closed */
   onClose?: () => void;
 
+  /** A custom className applied on the Modal overlay container */
   overlayClassName?: string;
+
+  /** if `true`, and if `unstyled`===`false`, the modal can be closed by clicking outside it */
+  closeOutside?: boolean;
 };
 
 /**

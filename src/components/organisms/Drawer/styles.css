@@ -2,7 +2,6 @@
   position: fixed;
   z-index: 10;
   padding: 0;
-  overflow: auto;
   color: var(--mobrix-ui-text-color);
   animation: var(--mobrix-ui-drawer-animation);
   -moz-animation: var(--mobrix-ui-drawer-animation);
@@ -65,6 +64,10 @@
 
 #mobrix-ui-drawer.ease-out {
   --mobrix-ui-drawer-animation: var(--mobrix-ui-drawer-animation-out);
+}
+
+#mobrix-ui-drawer .content {
+  overflow: auto;
 }
 
 #mobrix-ui-drawer .drawer-close-button {

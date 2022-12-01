@@ -93,17 +93,9 @@ If you don't set these variables, the default values will be used.
 
 <br>
 
-### Box components
+### Reactive components
 
-Some components are designed with a specific structure, to better control and customize their look and feel. This type of components is called `Box Component`, for their particular structure. In addition to the [shared properties](#shared-components-properties), as they are part of MoBrix-ui, they accept 3 additional (and optional) properties:
-
-- `label`, a string or a component rendered above the final component
-- `value`, a specific property that drive the component UI, its type vary depends on component itself (for example, for the CheckBox component, it is the check status, as a `boolean` )
-- `defaultValue`, the default value to use when `value` is not given or is `undefined`
-
-<div align="center">
-<img width="380px" alt="" src="https://user-images.githubusercontent.com/47371276/185260384-880a0542-20df-44ab-b1fb-3763e064f41e.png" />
-</div>
+Some components are designed with a specific structure
 
 <br>
 

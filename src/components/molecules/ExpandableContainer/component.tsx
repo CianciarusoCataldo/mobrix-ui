@@ -22,6 +22,7 @@ const expandableContainerComponent: MobrixUiReactiveComponent<
       id="arrow_button"
       className="expandable-container-arrow-button"
       key="arrow_button"
+      dark={dark}
     >
       <svg
         className={classNames("arrow", {
@@ -29,6 +30,7 @@ const expandableContainerComponent: MobrixUiReactiveComponent<
           up: !compact,
           dark: dark,
         })}
+        tabIndex={0}
         width="1.5rem"
         fillRule="evenodd"
         viewBox="0 0 512 319.24"

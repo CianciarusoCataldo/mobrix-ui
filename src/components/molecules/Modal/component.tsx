@@ -13,23 +13,31 @@ const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
   title,
   hide,
   onClose,
-}) => (
-  <div className="modal-window">
-    {unstyled ? (
-      children
-    ) : (
-      <Card
-        className={"content " + className}
-        dark={dark}
-        unstyled={unstyled}
-        onClick={onClose}
-        body={children}
-        dismissable
-        header={title}
-        hide={hide}
-      />
-    )}
-  </div>
-);
+  closeOutside,
+  onFocusLost = () => {},
+}) => {
+  return (
+    <div className="modal-window">
+      {unstyled ? (
+        children
+      ) : (
+        <Card
+          className={"content " + className}
+          dark={dark}
+          unstyled={unstyled}
+          onClick={onClose}
+          body={children}
+          dismissable
+          header={title}
+          hide={hide}
+          onFocusLost={() => {
+            onFocusLost();
+            closeOutside && onClose && onClose();
+          }}
+        />
+      )}
+    </div>
+  );
+};
 
 export default modalComponent;
