@@ -15,6 +15,8 @@ import dropdownComponentBuilder from "./builder";
  *
  * @param {number} value actual selected element (as index). If not set, default value (0) will be used.
  * @param {{ name: string; icon?: JSX.Element }[]} content Dropdown content elements
+ * @param {boolean} hideArrow Show/hide arrow icon near selected element
+ * @param {(index:number)=>void} onChange calllback triggered when selecting new element from dropdown
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)

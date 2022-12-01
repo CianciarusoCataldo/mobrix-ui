@@ -17,9 +17,9 @@ import formComponent from "./component";
  *     - `type` - the field type (will determine a specific type when returned, and also the UI component associated)
  *
  * allowed types are:
- *     - `boolean` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/CheckBox})
- *     - `numeric` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Counter})
- *     - `text` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input})
+ * `boolean` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/CheckBox CheckBox})
+ * `numeric` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Counter Counter})
+ * `text` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input Input})
  *
  * A field object can be empty, in this case default values will be used (`input` type with empty header)
  * @param {(values: Record<string, string>) => void} onClick callback triggered on Form submit

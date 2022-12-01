@@ -43,6 +43,7 @@ export type DropdownProps = ComponentWithValue<number> &
     /** Dropdown content elements */
     content?: DropdownGenericElement[];
 
+    /** Show/hide arrow icon near selected element */
     hideArrow?: boolean;
   };
 

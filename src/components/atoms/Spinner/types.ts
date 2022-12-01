@@ -14,6 +14,7 @@ import {
  * @copyright 2022 Cataldo Cianciaruso
  */
 export type SpinnerProps<T extends string = string> = ComponentWithValue<T> & {
+  /** custom statuses, to map every icon in a custom way */
   statuses?: Record<T, BuilderComponent>;
 };
 

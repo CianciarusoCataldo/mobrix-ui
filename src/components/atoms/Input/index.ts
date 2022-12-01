@@ -10,7 +10,9 @@ import { buildMobrixUiReactiveComponent } from "../../../utils";
  * @since 1.0.0
  *
  * @param {string} value text input value
- * @param {(newValue:string)=>void} onChange callback triggered when numeric input changes
+ * @param {(newValue:string)=>void} onChange callback triggered when input change
+ * @param {string} placeholder label showed when no value is set
+ * @param {boolean} readonly if true, component value can only be set with `value` parameter
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)

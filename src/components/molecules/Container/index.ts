@@ -5,11 +5,11 @@ import { ContainerComponent } from "./types";
 import { buildMobrixUiStandardComponent } from "../../../utils";
 
 /**
- * A simple but smart container, enhanced with MoBrix-ui common props and animations (if enabled)
+ * A simple but smart container, enhanced with MoBrix-ui common props
  *
  * @since 1.0.0
  *
- * @param wrapper component type. The Container component can wrap a content inside different components (by now, )
+ * @param {"div" | "header" | "footer"} wrapper component wrapper type ("div" | "header" | "footer")
  * @param children content to render inside Container
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles

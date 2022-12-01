@@ -15,8 +15,8 @@ import {
  * @copyright 2022 Cataldo Cianciaruso
  */
 export type RadioButtonProps = ComponentWithValue<boolean> &
-  ComponentWithCallback<boolean> &
-  ClickableComponent & {
+  ComponentWithCallback<boolean> & {
+    /** if `false`, the button can be selected only once (the value can't change then) */
     deselectable?: boolean;
   };
 

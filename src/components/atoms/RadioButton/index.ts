@@ -9,8 +9,9 @@ import component from "./component";
 /**
  * A single radio button component. Optionally, can prevent user to deselect it
  *
- * @param {boolean} value
- * @param {boolean} deselectable
+ * @param {boolean} value actual radio button value (icon visiblity)
+ * @param {(newValue:boolean)=>void} onChange callback triggered when input change
+ * @param {boolean} deselectable if `false`, the button can be selected only once (the value can't change then)
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -41,7 +42,6 @@ import component from "./component";
 const RadioButton: RadioButtonComponent = ({
   value: inputValue,
   onChange = () => {},
-  onClick = () => {},
   deselectable = true,
   onKeyDown = () => {},
   ...commonProps
@@ -54,7 +54,6 @@ const RadioButton: RadioButtonComponent = ({
       const callBack = () => {
         if (!value || deselectable) {
           onChange(!value);
-          onClick();
           setValue(!value);
         }
       };

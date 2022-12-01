@@ -16,7 +16,7 @@ import reviewComponent from "./component";
  * @param {string} description review description showed below the review username, at the top of the rate
  * @param {string} url review external url. If set, an icon will be showed at the top right of the review
  * @param {number} rate review vote, showed at the bottom of the review
- * @param {number} rate review vote icon type, to choose which icon will be used to show the review rate (allowed icons type are `stars` and `circle`)
+ * @param {number} rateType review vote icon type, to choose which icon will be used to show the review rate (allowed icons type are `stars` and `circle`)
  * @param {number} max max vote (max number of rate icons showed)
  * @param {"default" | "facebook" | "twitter" | "google" | "linkedin" | "github"} logo Social icon type, showed at the top right of the container. Supports popular web services like Facebook, Twitter, Google and so on. Proviced icon list will grow up time by time and will be updated with the latest web services, to keep it usable for the future.
  * @param {string} className `common MoBrix-ui prop` - custom className

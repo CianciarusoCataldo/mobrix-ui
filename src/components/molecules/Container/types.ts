@@ -13,7 +13,7 @@ import {
  * @copyright 2022 Cataldo Cianciaruso
  */
 export type ContainerProps = ComponentWithChildren<any> & {
-  ref?: any;
+  /** component wrapper type ("div" | "header" | "footer") */
   wrapper?: "div" | "header" | "footer";
 };
 

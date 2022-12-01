@@ -18,7 +18,10 @@ import {
 export type ToggleProps = ComponentWithValue<boolean> &
   ComponentWithIcon &
   ComponentWithCallback<boolean> & {
+    /** custom toggle "off" icon (`value` === `false`) */
     offIcon?: BuilderComponent;
+
+    /** custom toggle "on" icon (`value` === `true`) */
     onIcon?: BuilderComponent;
   };
 

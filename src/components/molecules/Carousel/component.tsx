@@ -11,7 +11,7 @@ import Button from "../../atoms/Button";
 const carouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
   value: selectedItem,
   setValue: setItem,
-  onChange,
+  onChange = () => {},
   elements: actualElements,
   dark,
 }) => {
@@ -24,7 +24,7 @@ const carouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
   const item =
     Number(selectedItem) < elements.length ? Number(selectedItem) : 0;
   const updateItem = (newItem: number) => {
-    onChange && onChange(newItem);
+    onChange(newItem);
     setItem(newItem);
   };
 

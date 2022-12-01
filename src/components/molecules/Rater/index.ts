@@ -15,6 +15,7 @@ import raterComponentBuilder from "./builder";
  * @param {number} max max vote (max number of icons showed)
  * @param {boolean} readonly if true, the rate can't be changed by clicking on the icons
  * @param {"star"|"circle"} type vote icons type
+ * @param {boolean} vertical if true, rate icons will be showed vertically (default `false` - `horizontal`)
  * @param {(newVote:number)=>void} onChange callback triggered when user select a vote
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles

@@ -11,6 +11,12 @@ import radioButtonGroupComponent from "./component";
  *
  * @since 2.0.0
  *
+ * @param buttons Radio elements array. Every element UI can be driven with attributes.
+ * A radio element can contain 3 fields:
+ * - `component`: custom component rendered before radio button
+ * - `text`: custom radio text showed near the radio button
+ * - `textPosition`: custom text position
+ * @param {string} elementClassName Classname applied on every radio element
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -26,6 +32,19 @@ import radioButtonGroupComponent from "./component";
  * @param {()=>{}} onFocusLost `common MoBrix-ui prop` - callback called when component focus is lost
  * @param {(e: any) => void} onKeyDown `common MoBrix-ui prop` - callback called when a key is pressed when inside the component
  *
+ *
+ * @example <caption>Example RadioButtonGroup usage</caption>
+ * import { render } from "react-dom";
+ * import { RadioButton } from 'mobrix-ui';
+ *
+ * const buttons = [
+ * {textPosition: 'top', text: 'Example field 1'},
+ * {textPosition: 'bottom', component: (<p>Custom component</p>) }
+ * ];
+ *
+ * render(<RadioButtonGroup animated buttons={buttons} />, document.getElementById("root"));
+ *
+ *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/RadioButtonGroup
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
@@ -39,7 +58,7 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent<number>({
-    name:"radio-button-group",
+    name: "radio-button-group",
     defaultValue: -1,
     inputValue,
     commonProps,
