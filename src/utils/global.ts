@@ -49,7 +49,7 @@ export interface CommonProps {
   onFocusLost?: () => void;
 
   /** callback called when a key is pressed when inside the component */
-  onKeyDown?: (e: any) => void;
+  onKeyDown?: (keyEvent: any) => void;
 }
 
 /**

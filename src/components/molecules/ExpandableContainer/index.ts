@@ -25,8 +25,8 @@ import expandableContainerComponent from "./component";
  * @param {boolean} a11yDark `common MoBrix-ui prop` - if the `a11y` parameter is `true`, override standard focus color style with/without dark mode (normally, the color changes accordingly to the `dark` parameter)
  * @param {string} a11yLabel `common MoBrix-ui prop` - if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label}
  * @param {() => void} onFocus `common MoBrix-ui prop` - callback called when component is focused
- * @param {()=>{}} onFocusLost `common MoBrix-ui prop` - callback called when component focus is lost
- * @param {(e: any) => void} onKeyDown `common MoBrix-ui prop` - callback called when a key is pressed when inside the component
+ * @param {() => void} onFocusLost `common MoBrix-ui prop` - callback called when component focus is lost
+ * @param {(keyEvent: any) => void} onKeyDown `common MoBrix-ui prop` - callback called when a key is pressed when inside the component
  *
  * @example <caption>Example Container usage</caption>
  * import { render } from "react-dom";

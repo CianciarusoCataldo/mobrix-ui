@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
 import {

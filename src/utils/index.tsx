@@ -46,6 +46,7 @@ export const buildMobrixUiStandardComponent = ({
   wrapper: SelectedWrapper = "div",
 }: BuilderProps) => {
   let a11y = commonProps.a11y !== undefined ? commonProps.a11y : true;
+
   let props = {
     "data-id": commonProps.id,
     id: `mobrix-ui-${name}`,
@@ -70,10 +71,13 @@ export const buildMobrixUiStandardComponent = ({
     ...additionalProps,
   };
   const wrapperRef = React.useRef(null);
-  commonProps.onFocusLost && useOutsideAlerter(wrapperRef, commonProps.onFocusLost);
+  commonProps.onFocusLost &&
+    useOutsideAlerter(wrapperRef, commonProps.onFocusLost);
 
   if (SelectedWrapper === "input") {
-    return <SelectedWrapper ref={wrapperRef} {...props} />;
+    return (
+      <SelectedWrapper ref={wrapperRef} {...props} key={commonProps.key} />
+    );
   } else {
     return (
       <SelectedWrapper ref={wrapperRef} {...props} key={commonProps.key}>
@@ -121,8 +125,6 @@ export const buildMobrixUiReactiveComponent = <T=any>({
   const processedProps = props ? props(value, setValue) : {};
 
   React.useEffect(() => {
-    console.log("useEffect");
-
     if (
       inputValue !== undefined &&
       inputValue !== null &&

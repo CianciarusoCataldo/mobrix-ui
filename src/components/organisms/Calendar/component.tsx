@@ -157,9 +157,6 @@ const calendarComponent: MobrixUiReactiveComponent<
     <Table
       key="calendar_table"
       id="calendar-table"
-      onKeyDown={(e) => {
-        console.log(e.code);
-      }}
       unstyled={commonProps.unstyled}
       shadow={shadow}
       dark={commonProps.dark}
