@@ -59,20 +59,22 @@ const Drawer: DrawerComponent = ({
   hide,
   className,
   position,
+  /* istanbul ignore next */
   onFocusLost = () => {},
   ...commonProps
 }) => {
   const drawerLocation =
     position && ALLOWED_POSITIONS.includes(position) ? position : "left";
-
+  /* istanbul ignore next */
+  const onFocusLostCallback = () => {
+    onFocusLost();
+    onClose();
+  };
   return buildMobrixUiStandardComponent({
     name: "drawer",
     commonProps: {
       ...commonProps,
-      onFocusLost: () => {
-        onFocusLost();
-        onClose();
-      },
+      onFocusLost: onFocusLostCallback,
       animated: false,
       className: classNames(
         drawerLocation,

@@ -19,8 +19,8 @@ const calendarComponent: MobrixUiReactiveComponent<
   hideArrows,
   days = defaultDays,
   months: customMonths = defaultMonths,
-  onViewChange,
-  onChange,
+  onViewChange = () => {},
+  onChange = () => {},
   startYear,
   startMonth,
   fromToday = true,
@@ -69,13 +69,13 @@ const calendarComponent: MobrixUiReactiveComponent<
 
       return (
         <Button
-          key={"date-button-" + day + "-" + month + "-" + year}
-          id={"date-button-" + day + "-" + month + "-" + year}
+          key={"date-button-" + indexDay}
+          id={isDisabled ? "disabled_date_button" : "date_button_" + day}
           unstyled
           style={{ width: "100%" }}
           className={classNames("date-element", {
             selected:
-              value?.year === onScreenDate.year &&
+              value.year === onScreenDate.year &&
               value.month === onScreenDate.month &&
               value.day === day,
           })}
@@ -83,7 +83,7 @@ const calendarComponent: MobrixUiReactiveComponent<
           hide={day <= 0}
           a11y={false}
           onClick={() => {
-            onChange && onChange({ ...onScreenDate, day });
+            onChange({ ...onScreenDate, day });
             setValue({
               month: onScreenDate.month,
               year: onScreenDate.year,
@@ -132,13 +132,13 @@ const calendarComponent: MobrixUiReactiveComponent<
       <Button
         onClick={() => {
           arrowActions[direction]();
-          onViewChange && onViewChange({ ...onScreenDate, day: 1 });
+          onViewChange({ ...onScreenDate, day: 1 });
         }}
         hide={hideArrows}
         dark={commonProps.dark}
         unstyled
-        key={"arrow-" + direction}
-        id={"arrow-" + direction}
+        key={"arrow_" + direction}
+        id={"arrow_" + direction}
         className={"arrow " + direction}
       >
         {arrowIcon}

@@ -1,7 +1,6 @@
 import {
   ComponentWithCallback,
   ComponentWithValue,
-  GenericInputComponent,
   MoBrixUiComponent,
   NumericInputComponent,
 } from "../../../utils/global";
@@ -17,7 +16,6 @@ import {
  */
 export type SliderProps = ComponentWithValue<number> &
   ComponentWithCallback<number> &
-  GenericInputComponent<number> &
   NumericInputComponent & {
     /** Slider thumb custom color (exadecimal). If set, the standard style is overwritten */
     thumbColor?: string;

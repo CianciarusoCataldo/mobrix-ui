@@ -15,9 +15,12 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type CardProps = ComponentWithChildren &
-  ComponentWithIcon &
-  ClickableComponent & {
+export type CardProps = ComponentWithChildren<
+  JSX.Element | JSX.Element[] | string
+> &
+  ComponentWithIcon & {
+    onClose?: () => void;
+
     /** Card header content */
     header?: BuilderComponent;
 

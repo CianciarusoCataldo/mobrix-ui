@@ -39,17 +39,11 @@ import listComponent from "./component";
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-const List: ListComponent = ({
-  elements: inputElements,
-  onChange,
-  ...commonProps
-}) => {
-  const elements = inputElements || [];
-  return buildMobrixUiStandardComponent({
+const List: ListComponent = ({ elements, onChange, ...commonProps }) =>
+  buildMobrixUiStandardComponent({
     name: "list",
     Component: listComponent({ elements, onChange, ...commonProps }),
     commonProps,
   });
-};
 
 export default List;

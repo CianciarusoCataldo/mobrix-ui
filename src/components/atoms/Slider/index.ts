@@ -57,7 +57,6 @@ const Slider: SliderComponent = ({
   let extraProps: Record<string, any> = {};
 
   if (thumbColor) {
-    console.log(thumbColor, "yes");
     extraProps.style = {
       "--mobrix-ui-slider-thumb-color": thumbColor,
     };

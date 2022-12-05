@@ -89,12 +89,12 @@ export interface ComponentWithIcon<T = JSX.Element> {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export interface GenericInputComponent<T = string> {
+export interface GenericInputComponent {
   /** if true, the input content won't be editable */
   readOnly?: boolean;
 
   /** A label showed when no input is given */
-  placeholder?: T;
+  placeholder?: string;
 }
 
 /**
@@ -106,7 +106,7 @@ export interface GenericInputComponent<T = string> {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type NumericInputComponent = GenericInputComponent<number> & {
+export type NumericInputComponent = GenericInputComponent & {
   min?: number;
   max?: number;
 };

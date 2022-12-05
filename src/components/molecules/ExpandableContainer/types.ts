@@ -1,4 +1,7 @@
-import { MoBrixUiComponent } from "../../../utils/global";
+import {
+  ComponentWithCallback,
+  MoBrixUiComponent,
+} from "../../../utils/global";
 import { ContainerProps } from "../Container/types";
 
 /**
@@ -10,10 +13,11 @@ import { ContainerProps } from "../Container/types";
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type ExpandableContainerProps = ContainerProps & {
-  compact?: boolean;
-  expanded?: JSX.Element;
-};
+export type ExpandableContainerProps = ContainerProps &
+  ComponentWithCallback<boolean> & {
+    compact?: boolean;
+    expanded?: JSX.Element;
+  };
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Expandable Container component

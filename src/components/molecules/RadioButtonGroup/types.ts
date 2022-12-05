@@ -1,4 +1,8 @@
-import { ComponentWithValue, MoBrixUiComponent } from "../../../utils/global";
+import {
+  ComponentWithCallback,
+  ComponentWithValue,
+  MoBrixUiComponent,
+} from "../../../utils/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} RadioButtonGroup single element
@@ -29,18 +33,19 @@ export type RadioElement = {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type RadioButtonGroupProps = ComponentWithValue<number> & {
-  /** Radio elements array. Every element UI can be driven with attributes.
-   * A radio element can contain 3 fields:
-   * - `component`: custom component rendered before radio button
-   * - `text`: custom radio text showed near the radio button
-   * - `textPosition`: custom text position
-   *    * */
-  buttons?: RadioElement[];
+export type RadioButtonGroupProps = ComponentWithCallback<number> &
+  ComponentWithValue<number> & {
+    /** Radio elements array. Every element UI can be driven with attributes.
+     * A radio element can contain 3 fields:
+     * - `component`: custom component rendered before radio button
+     * - `text`: custom radio text showed near the radio button
+     * - `textPosition`: custom text position
+     *    * */
+    buttons?: RadioElement[];
 
-  /** Classname applied on every radio element */
-  elementClassName?: string;
-};
+    /** Classname applied on every radio element */
+    elementClassName?: string;
+  };
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} RadioButtonGroup component

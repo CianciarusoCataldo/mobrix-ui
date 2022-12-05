@@ -67,8 +67,8 @@ const Counter: CounterComponent = ({
         min,
         onChange: (e) => {
           if (!readOnly) {
-            onChange && onChange(e.target.value);
-            setValue(e.target.value);
+            onChange && onChange(Number(e.target.value));
+            setValue(Number(e.target.value));
           }
         },
       },

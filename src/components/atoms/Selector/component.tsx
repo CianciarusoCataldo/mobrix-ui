@@ -6,7 +6,7 @@ import { SelectorProps } from "./types";
 const selectorComponent: MobrixUiReactiveComponent<
   number | undefined,
   SelectorProps
-> = ({ elements = [], animated, value, setValue }) =>
+> = ({ elements = [] }) =>
   elements.map((el, index) => (
     <option key={"selector_option_" + index} value={index}>
       {el}

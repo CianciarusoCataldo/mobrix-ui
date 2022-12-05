@@ -11,7 +11,14 @@ import RadioButton from "../../atoms/RadioButton";
 const radioButtonGroupComponent: MobrixUiReactiveComponent<
   number,
   RadioButtonGroupProps
-> = ({ value, setValue, buttons = [], elementClassName, dark }) =>
+> = ({
+  value,
+  setValue,
+  buttons = [],
+  elementClassName,
+  dark,
+  onChange = () => {},
+}) =>
   buttons.map((element, index) => {
     return (
       <div
@@ -30,10 +37,14 @@ const radioButtonGroupComponent: MobrixUiReactiveComponent<
         {element.component}
         <RadioButton
           deselectable={false}
+          id={"radio_component_" + index}
           key="radio_component"
           className="radio-component"
           value={value === index}
-          onChange={() => setValue(index)}
+          onChange={() => {
+            onChange(index);
+            setValue(index);
+          }}
         />
       </div>
     );

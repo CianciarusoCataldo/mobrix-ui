@@ -7,6 +7,7 @@ import React from "react";
 
 import { BuilderProps } from "./global";
 
+/* istanbul ignore next */
 const useOutsideAlerter = (ref: any, callback: () => void) => {
   React.useEffect(() => {
     const handleClickOutside = (event) => {
@@ -41,6 +42,7 @@ const useOutsideAlerter = (ref: any, callback: () => void) => {
 export const buildMobrixUiStandardComponent = ({
   name,
   Component,
+  /* istanbul ignore next */
   commonProps = {},
   additionalProps = {},
   wrapper: SelectedWrapper = "div",
@@ -99,7 +101,7 @@ export const buildMobrixUiStandardComponent = ({
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export const buildMobrixUiReactiveComponent = <T=any>({
+export const buildMobrixUiReactiveComponent = <T = any,>({
   name,
   additionalProps,
   wrapper,

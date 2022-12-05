@@ -12,7 +12,7 @@ const carouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
   value: selectedItem,
   setValue: setItem,
   onChange = () => {},
-  elements: actualElements,
+  elements = [],
   dark,
 }) => {
   const [activeClassName, setActiveClassname] = React.useState("");
@@ -20,7 +20,6 @@ const carouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
 
   let dots: JSX.Element[] = [];
   let elementsArray: JSX.Element[] = [];
-  const elements = actualElements || [];
   const item =
     Number(selectedItem) < elements.length ? Number(selectedItem) : 0;
   const updateItem = (newItem: number) => {
@@ -28,7 +27,7 @@ const carouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
     setItem(newItem);
   };
 
-  if (elements && elements.length > 0) {
+  if (elements.length > 0) {
     elements.forEach((element, index) => {
       elementsArray.push(
         <div

@@ -65,6 +65,9 @@ const datePickerComponent: MobrixUiReactiveComponent<
       new Array(30).fill("").map((el, index) => Number(index + todayDate.year))
     );
 
+  /* istanbul ignore next */
+  const calendarFocusCallback = () => setVisible(false);
+
   return [
     <div key="date_picker_box" className="date-picker-box">
       <Container shadow={shadow} dark={commonProps.dark} className="buttons">
@@ -83,6 +86,7 @@ const datePickerComponent: MobrixUiReactiveComponent<
             }
             content={days}
             key="date_picker_day_selector"
+            id="date_picker_day_selector"
             className="element days"
           />
           <Dropdown
@@ -92,6 +96,7 @@ const datePickerComponent: MobrixUiReactiveComponent<
             hideArrow
             content={months}
             key="date_picker_month_selector"
+            id="date_picker_month_selector"
             className="element months"
             onChange={(selectedMonth) =>
               setValue({
@@ -116,6 +121,7 @@ const datePickerComponent: MobrixUiReactiveComponent<
             content={years.map((el, index) => ({ name: String(el) }))}
             value={years.indexOf(year)}
             key="date_picker_year_selector"
+            id="date_picker_year_selector"
             className="element years"
           />
         </div>
@@ -124,6 +130,7 @@ const datePickerComponent: MobrixUiReactiveComponent<
           dark={commonProps.dark}
           onClick={() => setVisible(!isVisible)}
           key="date_picker_calendar_button"
+          id="date_picker_calendar_button"
           className="element"
         >
           {CalendarIcon}
@@ -139,6 +146,7 @@ const datePickerComponent: MobrixUiReactiveComponent<
     >
       <div className="date-picker-calendar-container">
         <Button
+          id="date_picker_close_button"
           className="date-picker-close-button"
           unstyled
           onClick={() => setVisible(!isVisible)}
@@ -160,7 +168,7 @@ const datePickerComponent: MobrixUiReactiveComponent<
             onChange && onChange(date);
             setValue(date);
           }}
-          onFocusLost={() => setVisible(false)}
+          onFocusLost={calendarFocusCallback}
           dark={commonProps.dark}
         />
       </div>

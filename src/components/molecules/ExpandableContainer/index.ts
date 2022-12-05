@@ -13,6 +13,7 @@ import expandableContainerComponent from "./component";
  *
  * @param wrapper component type. The Container component can wrap a content inside different components (by now, )
  * @param children content to render inside Container
+ * @param {(isCompact:boolean)=>void} onChange callback triggered when expanded content is showed/hidden
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -49,6 +50,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
   compact: startCompact,
   children,
   wrapper,
+  onChange,
   ...commonProps
 }) => {
   return buildMobrixUiReactiveComponent({
@@ -63,6 +65,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
         setValue: setCompact,
         expanded,
         children,
+        onChange,
         ...commonProps,
       }),
     }),

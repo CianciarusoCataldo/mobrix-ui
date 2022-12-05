@@ -102,6 +102,9 @@ export { default as List } from "./components/molecules/List";
 export { ModalComponent, ModalProps } from "./components/molecules/Modal/types";
 export { default as Modal } from "./components/molecules/Modal";
 
+export { PopupComponent, PopupProps } from "./components/molecules/Popup/types";
+export { default as Popup } from "./components/molecules/Popup";
+
 export {
   RadioButtonGroupComponent,
   RadioButtonGroupProps,

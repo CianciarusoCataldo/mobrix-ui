@@ -49,7 +49,7 @@ const Card: CardComponent = ({
   footer,
   children,
   dismissable,
-  onClick,
+  onClose,
   hide,
   ...commonProps
 }) => {
@@ -64,7 +64,7 @@ const Card: CardComponent = ({
           icon,
           body,
           value,
-          onClick,
+          onClose,
           setValue,
           children,
           footer,

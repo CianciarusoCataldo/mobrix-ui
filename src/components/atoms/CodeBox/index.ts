@@ -52,7 +52,7 @@ const CodeBox: CodeBoxComponent = ({
     commonProps,
     Component: codeboxComponent({
       enhanced,
-      environment: environment || "terminal",
+      environment,
       value,
     }),
   });

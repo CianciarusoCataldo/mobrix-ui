@@ -2,6 +2,7 @@ import CheckBox from "../../atoms/CheckBox";
 import Counter from "../../atoms/Counter";
 import Input from "../../atoms/Input";
 
+/* istanbul ignore next */
 export const fieldFormatters = {
   text: {
     component: Input,

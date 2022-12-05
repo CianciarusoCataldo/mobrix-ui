@@ -12,10 +12,17 @@ const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
   dark,
   title,
   hide,
-  onClose,
+  onClose = () => {},
   closeOutside,
+  /* istanbul ignore next */
   onFocusLost = () => {},
 }) => {
+  /* istanbul ignore next */
+  const onFocusLostCallback = () => {
+    onFocusLost();
+    closeOutside && onClose();
+  };
+
   return (
     <div className="modal-window">
       {unstyled ? (
@@ -25,15 +32,12 @@ const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
           className={"content " + className}
           dark={dark}
           unstyled={unstyled}
-          onClick={onClose}
+          onClose={onClose}
           body={children}
           dismissable
           header={title}
           hide={hide}
-          onFocusLost={() => {
-            onFocusLost();
-            closeOutside && onClose && onClose();
-          }}
+          onFocusLost={onFocusLostCallback}
         />
       )}
     </div>

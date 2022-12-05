@@ -41,13 +41,14 @@ import { buildMobrixUiReactiveComponent } from "../../../utils";
  * @copyright 2022 Cataldo Cianciaruso
  */
 const Input: InputComponent = ({
-  onChange = () => {},
+  onChange,
   value,
   placeholder,
   readOnly,
   ...commonProps
-}) =>
-  buildMobrixUiReactiveComponent<string | undefined>({
+}) => {
+  const onChangeCallback = onChange || (() => {});
+  return buildMobrixUiReactiveComponent<string | undefined>({
     commonProps,
     name: "inputbox",
     wrapper: "input",
@@ -60,7 +61,7 @@ const Input: InputComponent = ({
         onChange: (e) => {
           if (!readOnly) {
             const newValue = e.target.value ? e.target.value : "";
-            onChange(newValue);
+            onChangeCallback(newValue);
             setValue(newValue);
           }
         },
@@ -69,5 +70,6 @@ const Input: InputComponent = ({
     inputValue: value,
     defaultValue: "",
   });
+};
 
 export default Input;

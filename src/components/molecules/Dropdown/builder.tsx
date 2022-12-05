@@ -13,12 +13,13 @@ const dropdownComponent: MobrixUiReactiveComponentBuilder<
   DropdownProps
 > = ({
   content = [],
-  onChange,
+  onChange = () => {},
   value,
   hideArrow,
   dark,
   setValue,
   shadow,
+  /* istanbul ignore next */
   onFocusLost = () => {},
   ...commonProps
 }) => {
@@ -44,9 +45,15 @@ const dropdownComponent: MobrixUiReactiveComponentBuilder<
     icon: <div />,
   };
 
-  const keyDownCallback = (visibility = false) => {
+  const keyDownCallback = (visibility: boolean) => {
     isVisible !== visibility && setVisible(visibility);
     selectItem(-1);
+  };
+
+  /* istanbul ignore next */
+  const onFocusLostCallback = () => {
+    onFocusLost();
+    keyDownCallback(false);
   };
 
   return {
@@ -54,27 +61,25 @@ const dropdownComponent: MobrixUiReactiveComponentBuilder<
       ...commonProps,
       dark,
       shadow,
-      onFocusLost: () => {
-        onFocusLost();
-        keyDownCallback();
-      },
+      onFocusLost: onFocusLostCallback,
       onKeyDown: (e) => {
         let actualSelected = selected;
         switch (e.code) {
+          /* istanbul ignore next */
           case "Tab": {
             if (
               (e.shiftKey && actualSelected === 0) ||
               actualSelected === content.length - 1
             ) {
-              keyDownCallback();
+              keyDownCallback(false);
             }
             break;
           }
           case "Enter": {
             if (selected > -1) {
-              onChange && onChange(selected);
+              onChange(selected);
               setValue(selected);
-              keyDownCallback();
+              keyDownCallback(false);
               return;
             } else {
               setVisible(!isVisible);
@@ -84,13 +89,13 @@ const dropdownComponent: MobrixUiReactiveComponentBuilder<
           }
 
           case "Escape": {
-            keyDownCallback();
+            keyDownCallback(false);
             return;
           }
 
           case "ArrowUp": {
             if (actualSelected === 0) {
-              keyDownCallback();
+              keyDownCallback(false);
               return;
             }
             actualSelected -= 1;
@@ -99,7 +104,7 @@ const dropdownComponent: MobrixUiReactiveComponentBuilder<
 
           case "ArrowDown": {
             if (actualSelected === content.length - 1) {
-              keyDownCallback();
+              keyDownCallback(false);
               return;
             }
             if (!isVisible) {
@@ -121,7 +126,7 @@ const dropdownComponent: MobrixUiReactiveComponentBuilder<
         }}
         dark={dark}
         className="button"
-        id="options-menu"
+        id="options_menu"
         key="options-menu"
         a11y={false}
       >
@@ -169,9 +174,9 @@ const dropdownComponent: MobrixUiReactiveComponentBuilder<
             }}
             id={`dropdown_option_${index}`}
             onClick={() => {
-              onChange && onChange(index);
+              onChange(index);
               setValue(index);
-              keyDownCallback();
+              keyDownCallback(false);
             }}
             key={`item_${index}`}
             className={classnames("regular", {

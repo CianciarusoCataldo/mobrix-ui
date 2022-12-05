@@ -16,6 +16,7 @@ import radioButtonGroupComponent from "./component";
  * - `component`: custom component rendered before radio button
  * - `text`: custom radio text showed near the radio button
  * - `textPosition`: custom text position
+ * @param {(index:number)=>void} onChange callback triggered when a radio button is selected, passing its index
  * @param {string} elementClassName Classname applied on every radio element
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
@@ -55,6 +56,7 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
   value: inputValue,
   buttons,
   elementClassName,
+  onChange,
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent<number>({
@@ -65,6 +67,7 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
     render: (value, setValue) =>
       radioButtonGroupComponent({
         value,
+        onChange,
         setValue,
         buttons,
         elementClassName,

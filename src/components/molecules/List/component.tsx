@@ -20,6 +20,7 @@ const listComponent: MoBrixUiComponent<ListProps, BuilderComponent[]> = ({
       <Button
         className="internal-list-element clickable-list-element"
         unstyled
+        id={"list_element_" + index}
         onClick={() => onChange(Number(index))}
       >
         {children}

@@ -55,15 +55,17 @@ const Selector: SelectorComponent = ({
     defaultValue: undefined,
     inputValue,
     commonProps,
-    props: (value, setValue) => ({
-      additionalProps: {
-        value,
-        onChange: (e) => {
-          onChange(e.target.value);
-          setValue(e.target.value);
+    props: (value, setValue) => {
+      return {
+        additionalProps: {
+          value,
+          onChange: (e) => {
+            onChange(e.target.value);
+            setValue(e.target.value);
+          },
         },
-      },
-    }),
+      };
+    },
     render: (value, setValue) =>
       selectorComponent({ elements, value, setValue }),
   });

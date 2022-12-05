@@ -11,15 +11,25 @@ import Button from "../../atoms/Button";
 const expandableContainerComponent: MobrixUiReactiveComponent<
   boolean,
   ExpandableContainerProps
-> = ({ value: compact, setValue: setCompact, children, expanded, dark }) => {
+> = ({
+  value: compact,
+  setValue: setCompact,
+  children,
+  expanded,
+  dark,
+  onChange = () => {},
+}) => {
   let components: JSX.Element[] = [children];
 
   !compact && expanded && components.push(expanded);
   components.push(
     <Button
       unstyled
-      onClick={() => setCompact(!compact)}
-      id="arrow_button"
+      onClick={() => {
+        onChange(!compact);
+        setCompact(!compact);
+      }}
+      id="expandable_container_arrow_button"
       className="expandable-container-arrow-button"
       key="arrow_button"
       dark={dark}

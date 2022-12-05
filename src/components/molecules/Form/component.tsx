@@ -34,7 +34,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
       {title}
     </p>,
     ...Object.keys(dropdownFields).map((field, index) => {
-      const fieldSettings = fields && fields[field] ? fields[field] : {};
+      const fieldSettings = fields![field];
 
       const type = fieldSettings.type || "text";
 
@@ -60,7 +60,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
           )}
           <FieldElement
             value={value}
-            id={`form-field-${index}`}
+            id={`form_field_${field}`}
             key={`form_field_${index}_element`}
             className="form-input"
             placeholder={fieldSettings.placeholder}
@@ -79,7 +79,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
       key="mobrix_ui_form_submit_button"
       className="submit-button"
       dark={!commonProps.dark}
-      id="form-submit-button"
+      id="form_submit_button"
       onClick={() => {
         onClick && onClick(values);
       }}
@@ -91,4 +91,4 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
   return components;
 };
 
-export default formComponent
+export default formComponent;
