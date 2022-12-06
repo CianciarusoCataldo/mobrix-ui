@@ -1,36 +1,4 @@
-#mobrix-ui-button .unstyled {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  text-align: center;
-}
-
-#mobrix-ui-button,
-#mobrix-ui-button button:focus,
-#mobrix-ui-button button:hover {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-#mobrix-ui-button button.enabled {
-  transition-duration: 0.1s;
-  transition-property: transform;
-}
-
-#mobrix-ui-button button.disabled {
-  opacity: 0.5;
-}
-
-#mobrix-ui-button.styled button.enabled:hover {
-  position: relative;
-  transform: scaleX(1.15) scaleY(1.1);
-  background: linear-gradient(to right, #c9cacc, #e1e1e4, #c8c9ca);
-}
-
-#mobrix-ui-button.dark.styled button.enabled:hover {
-  background: rgb(61, 61, 75);
-}
-
-#mobrix-ui-button.styled button {
+#mobrix-ui-button.styled {
   background: var(--mobrix-ui-background);
   color: var(--mobrix-ui-text-color);
   text-align: center;
@@ -41,4 +9,35 @@
   align-items: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+#mobrix-ui-button.enabled {
+  transition-duration: 0.1s;
+  transition-property: transform;
+}
+
+#mobrix-ui-button.disabled {
+  opacity: 0.5;
+}
+
+@media (hover) {
+  #mobrix-ui-button.styled.enabled:hover {
+    background: linear-gradient(to right, #c9cacc, #e1e1e4, #c8c9ca);
+  }
+
+  #mobrix-ui-button.dark.styled.enabled:hover {
+    background: rgb(61, 61, 75);
+  }
+
+  #mobrix-ui-button.styled.enabled.animated:hover {
+    position: relative;
+    transform: scaleX(1.15) scaleY(1.1);
+  }
+}
+
+@media (hover: none) {
+  #mobrix-ui-button.styled.enabled:hover {
+    background: var(--mobrix-ui-background);
+    color: var(--mobrix-ui-text-color);
+  }
 }

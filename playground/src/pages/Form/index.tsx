@@ -1,6 +1,6 @@
 import { Demo, StringProp } from "@cianciarusocataldo/demo-ui";
 
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoProps } from "constants/demo-props";
 
 import { Form } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
@@ -10,37 +10,46 @@ const FormPage = () => (
     name="Form"
     translations
     render={(t, componentLabel) => {
-      const fieldText = t("props_field", { index: "<INDEX>" });
+      let props: Record<string, any> = { ...demoProps };
+      ["title", "children", "buttonContent"].forEach(
+        (el) => (props[el] = StringProp(t("props", { context: el })))
+      );
+
+      props["fieldClassName"] = StringProp("");
 
       return (
         <Demo
           label={componentLabel}
           startColor="#A19B9B"
-          props={{
-            title: StringProp("title"),
-            submitLabel: StringProp("submit label"),
-            label: StringProp("label"),
-            ...DEMO_COMMON_PROPS,
-          }}
+          props={props}
+          rows={[
+            ["title", "buttonContent"],
+            ["children", "fieldClassName"],
+            ["className", "dark", "shadow"],
+            ["unstyled", "hide"],
+          ]}
         >
           {(props: any) => (
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center justify-center">
               <Form
                 {...props}
                 fields={{
                   field1: {
-                    header: fieldText.replace("<INDEX>", "1"),
+                    placeholder: "placeholder",
+                    header: t("props_field", { context: "text" }),
                   },
                   field2: {
+                    placeholder: "placeholder",
                     type: "boolean",
-                    header: fieldText.replace("<INDEX>", "2"),
+                    header: t("props_field", { context: "boolean" }),
                   },
                   field3: {
+                    placeholder: "placeholder",
                     type: "numeric",
-                    header: fieldText.replace("<INDEX>", "3"),
+                    header: t("props_field", { context: "numeric" }),
                   },
                 }}
-                onSubmit={(values: any) => console.log(values)}
+                onClick={(values: any) => console.log(values)}
               />
             </div>
           )}

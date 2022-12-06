@@ -1,6 +1,5 @@
 import {
   BuilderComponent,
-  CommonProps,
   ComponentWithChildren,
   MoBrixUiComponent,
 } from "../../../utils/global";
@@ -14,14 +13,13 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type LinkProps = CommonProps &
-  ComponentWithChildren<BuilderComponent> & {
-    /** Link URL */
-    to: string;
+export type LinkProps = ComponentWithChildren<BuilderComponent> & {
+  /** Link URL */
+  to: string;
 
-    /**if true, the link will be opened in a new tab */
-    newTab?: boolean;
-  };
+  /**if true, the link will be opened in a new tab */
+  newTab?: boolean;
+};
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Link component

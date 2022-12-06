@@ -1,27 +1,53 @@
-.arrow {
+#mobrix-ui-expandable-container.styled {
+  background-image: var(--mobrix-ui-background);
+  color: var(--mobrix-ui-text-color);
+}
+
+#mobrix-ui-expandable-container .expandable-container-arrow-button {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+#mobrix-ui-expandable-container .arrow {
   margin-bottom: 0.3rem;
   padding-top: 0.2rem;
   transition: all 0.2s;
+  outline: none;
 }
 
-.arrow:active {
+#mobrix-ui-expandable-container.a11y
+  .expandable-container-arrow-button:focus-visible {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+#mobrix-ui-expandable-container.a11y
+  .expandable-container-arrow-button:focus-visible
+  svg {
+  fill: var(--mobrix-ui-focus-color);
+}
+
+#mobrix-ui-expandable-container .arrow:active {
   fill: rgb(95, 95, 95);
 }
 
-.arrow.up {
+#mobrix-ui-expandable-container .arrow.up {
   transform: rotate(0deg);
 }
 
-.arrow.down {
+#mobrix-ui-expandable-container .arrow.down {
   transform: rotate(180deg);
 }
 
-.arrow.dark {
+#mobrix-ui-expandable-container .arrow.dark {
   fill: white;
 }
 
 @media (hover) {
-  .arrow:hover {
+  #mobrix-ui-expandable-container .arrow:hover {
     fill: gray;
   }
 }

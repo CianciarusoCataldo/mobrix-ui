@@ -1,11 +1,6 @@
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
 
-import {
-  BooleanProp,
-  Demo,
-  NumberProp,
-  StringProp,
-} from "@cianciarusocataldo/demo-ui";
+import { BooleanProp, Demo, NumberProp } from "@cianciarusocataldo/demo-ui";
 
 import { Table } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
@@ -22,11 +17,11 @@ const TablePage = () => (
         <Demo
           label={componentLabel}
           props={{
-            label: StringProp("label"),
             Rows: NumberProp(2),
             headers: BooleanProp(true),
-            ...DEMO_COMMON_PROPS,
+            ...demoProps,
           }}
+          rows={[["Rows", "headers"], ...demoRows]}
         >
           {({ Rows: numberOfRows, ...props }: any) => {
             let rows = [];

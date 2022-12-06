@@ -25,7 +25,7 @@ module.exports = {
   testPathIgnorePatterns: ["src/tests/test-suites/", "/tests/core/utils/"],
   transformIgnorePatterns: ["node_modules/"],
   testEnvironment: "jsdom",
-  testMatch: ["**/tests/core/main.test.tsx"],
+  testMatch: ["**/tests/main.test.tsx"],
   modulePathIgnorePatterns: ["/tests/test-suites/", "/tests/core/utils/"],
   coveragePathIgnorePatterns: ["/tests/test-suites/", "/tests/core/utils/"],
   collectCoverage: true,

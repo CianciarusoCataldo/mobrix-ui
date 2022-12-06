@@ -1,23 +1,23 @@
-#mobrix-ui-ratebox .container {
+#mobrix-ui-ratebox {
   display: flex;
   align-items: center;
 }
 
-#mobrix-ui-ratebox.styled .container {
+#mobrix-ui-ratebox.styled {
   background: var(--mobrix-ui-background);
   border-radius: 8px;
   padding: 0.4rem;
 }
 
-#mobrix-ui-ratebox .container.horizontal {
+#mobrix-ui-ratebox.horizontal {
   flex-direction: row;
 }
 
-#mobrix-ui-ratebox .container.vertical {
+#mobrix-ui-ratebox.vertical {
   flex-direction: column;
 }
 
-#mobrix-ui-ratebox .icon {
+#mobrix-ui-ratebox .ratebox-icon {
   margin-left: 0.2rem;
   margin-right: 0.2rem;
 }

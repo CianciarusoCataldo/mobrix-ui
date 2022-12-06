@@ -1,41 +1,53 @@
-#mobrix-ui-dropdown.styled .container {
+#mobrix-ui-dropdown.styled {
   border-radius: 0.375rem;
   color: var(--mobrix-ui-text-color);
-  position: relative;
   background-image: var(--mobrix-ui-background);
 }
 
-#mobrix-ui-dropdown,
-#mobrix-ui-dropdown .options,
-#mobrix-ui-dropdown .options .option {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
 #mobrix-ui-dropdown .options {
-  position: absolute;
-  animation-duration: 0.2s;
-  padding: 0.25rem;
-  margin-top: 0.1rem;
-  z-index: 2;
   font-size: 1rem;
   line-height: 1.5rem;
-  border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
+  max-height: 12rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 0.2rem;
+  scrollbar-width: thin;
+  scrollbar-color: #c0c0c0;
+}
+
+#mobrix-ui-dropdown .options::-webkit-scrollbar {
+  width: 12px;
+}
+
+#mobrix-ui-dropdown .options::-webkit-scrollbar-track {
+  background: var(--mobrix-ui-background);
+}
+
+#mobrix-ui-dropdown .options::-webkit-scrollbar-thumb {
+  background-color: var(--mobrix-ui-text-color);
+  border-radius: 20px;
+  border: 3px solid transparent;
 }
 
 #mobrix-ui-dropdown .button {
   padding: 0;
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
+  outline: none;
   font-size: 1.125rem;
   line-height: 1.75rem;
   display: inline-flex;
   flex-direction: row;
+  vertical-align: middle;
   width: 100%;
   height: 100%;
   font-weight: 500;
+}
+
+#mobrix-ui-dropdown.styled .button {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  outline: none;
 }
 
 #mobrix-ui-dropdown.styled .options .option {
@@ -43,19 +55,17 @@
   color: var(--mobrix-ui-text-color);
 }
 
-#mobrix-ui-dropdown .button:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-#mobrix-ui-dropdown .label {
+#mobrix-ui-dropdown .dropdown-selected-element {
   padding-right: 0.25rem;
   display: flex;
   flex-direction: row;
+  outline: none;
+  margin: auto;
 }
 
 #mobrix-ui-dropdown .icon {
   margin: auto 0.25rem;
+  outline: none;
 }
 
 #mobrix-ui-dropdown .arrow-icon {
@@ -63,69 +73,71 @@
   border-width: 0 3px 3px 0;
   display: block;
   padding: 3px;
+  outline: none;
   transition-duration: 0.2s;
   transition-property: transform;
   transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
   border-color: var(--mobrix-ui-text-color);
+  -webkit-transform: rotate(45deg);
 }
 
 #mobrix-ui-dropdown .icon.rotate {
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  -ms-transition: -ms-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transform: rotate(180deg);
+
   -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  -ms-transition: -ms-transform 0.3s ease-in-out;
 }
 
 #mobrix-ui-dropdown .icon.rotate-back {
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  -ms-transition: -ms-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  -ms-transition: -ms-transform 0.3s ease-in-out;
   -ms-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
 }
 
-#mobrix-ui-dropdown .option .regular {
+#mobrix-ui-dropdown .regular {
   width: 100%;
   padding: 0.25rem;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
   display: flex;
   flex-direction: column;
+  background-color: transparent;
 }
 
-#mobrix-ui-dropdown .option .regular .content {
+#mobrix-ui-dropdown .regular .dropdown-element {
   display: flex;
   flex-direction: row;
   margin-top: auto;
   margin-bottom: auto;
 }
 
-#mobrix-ui-dropdown .option .regular:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+#mobrix-ui-dropdown .regular:hover,
+#mobrix-ui-dropdown .regular.selected {
+  background-color: rgba(166, 204, 250, 0.7);
 }
 
-#mobrix-ui-dropdown .option:hover {
-  background-color: rgba(191, 219, 254, 0.7);
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+#mobrix-ui-dropdown .regular:focus-visible {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
 }
 
-#mobrix-ui-dropdown .option .last {
+#mobrix-ui-dropdown .last {
   border-bottom-right-radius: 0.375rem;
   border-bottom-left-radius: 0.375rem;
 }
 
-#mobrix-ui-dropdown .option .first {
+#mobrix-ui-dropdown .first {
   border-top-right-radius: 0.375rem;
   border-top-left-radius: 0.375rem;
 }
 
-#mobrix-ui-dropdown .option .label {
+#mobrix-ui-dropdown .label {
   margin-left: 0.25rem;
 }
 

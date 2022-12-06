@@ -2,11 +2,19 @@
 
 <br>
 
-UI web components for every use, easy to customize and to integrate into every app.
+React components for every app, easy to use and customize
 
 <br>
 
-## mobrix-ui philosophy
+## Note for MoBrix-ui v1 user
+
+MoBrix-ui v2 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 1.X.X, please read the [dedicated guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/#/v1_guide), or upgrade it to v2.X.X!
+
+<br>
+
+---
+
+## MoBrix-ui philosophy
 
 This library is built upon few (but important) concepts:
 
@@ -22,28 +30,40 @@ The same concepts are also the base of another project I maintain, [MoBrix-engin
 ## Components building process
 
 This library use a standardized process to build every component. As result, every component has a shared initial logic, shared CSS styles and shared properties.
+Some properties are shared between all components, for a smoother dev experience. In addition, this makes every single component easily re-usable.
 
 <br>
 
-### Shared components properties
+### UI properties
 
-Some properties are shared between all components, for a smoother dev experience. In addition, this makes every single component easily re-usable. Let's see them in details:
-
-| Property    | Description                                                                                                        |
-| ----------- | ------------------------------------------------------------------------------------------------------------------ |
-| `className` | custom className applied on main container                                                                         |
-| `dark`      | Enable/disable dark mode                                                                                           |
-| `hide`      | Hide/show component                                                                                                |
-| `id`        | `data-id` parameter (for testing purpose, to easily find the component into the DOM)                               |
-| `shadow`    | Enable/disable shadow behind component                                                                             |
-| `style`     | [Css inline properties](https://www.w3schools.com/html/html_css.asp) applied on main container                     |
-| `unstyled`  | If `true`, no standard mobrix-ui styles will be applied on the components (useful for example, with image buttons) |
-
-With these shared properties is possible to drive every component behaviour and UI with an external state management system
+| Property    | Type                 | Description                                                                                                        | Default value |
+| ----------- | -------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------- |
+| `className` | `string`             | custom className applied on main container                                                                         | `""`          |
+| `dark`      | `boolean`            | Enable/disable dark mode                                                                                           | `false`       |
+| `hide`      | `boolean`            | Hide/show component                                                                                                | `false`       |
+| `id`        | `string`             | `data-id` parameter (for testing purpose, to easily find the component into the DOM)                               | `""`          |
+| `shadow`    | `boolean`            | Enable/disable shadow behind component                                                                             | `false`       |
+| `style`     | `Record<string,any>` | [Css inline properties](https://www.w3schools.com/html/html_css.asp) applied on main container                     | `/`           |
+| `unstyled`  | `boolean`            | If `true`, no standard mobrix-ui styles will be applied on the components (useful for example, with image buttons) | `false`       |
 
 <br>
 
-### Customizable UI
+### Accessibility properties
+
+Some accessibility properties are shared between all components, for a better and smoother user experience, in any scenario:
+
+| Property      | Type                         | Description                                                                                                                             | Default value             |
+| ------------- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| `onFocus`     | ( ) => `void`                | custom callback triggered when the component get the focus (for example, through tab key)                                               | `/`                       |
+| `onFocusLost` | ( ) => `void`                | custom callback triggered when the component lose the focus (for example, when user clicks outside it)                                  | `/`                       |
+| `a11y`        | `boolean`                    | Enable/disable accessibility features.                                                                                                  | `true`                    |
+| `a11yLabel`   | `string`                     | [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) accessibility parameter             | `""`                      |
+| `a11yDark`    | `boolean`                    | Enable/disable dark mode for a11y styles. If not set, will be used the `dark` UI parameter                                              | same as `dark` or `false` |
+| `onKeyDown`   | (keyEvent : `any`) => `void` | custom callback triggered when a key is pressed while using the component (for example, when writing text inside an `Input` component). | `/`                       |
+
+<br>
+
+### CSS variables
 
 MoBrix-ui-components components UI is globally configurable, with CSS variables. By defining some specific custom CSS variables into your app css, you'll change the UI of all components:
 
@@ -56,21 +76,14 @@ MoBrix-ui-components components UI is globally configurable, with CSS variables.
 | `--mobrix-ui-custom-background-color-light` | Components background color, when not in dark-mode ([dark](#shared-components-properties) is set to false). | `#f5f5f5`                                     | `background-color`    |
 | `--mobrix-ui-custom-text-color-light`       | Components text color, when not in dark-mode ([dark](#shared-components-properties) is set to false).       | `#1b1b1b`                                     | `text-color`          |
 
-If you don't set these variables, the default values will be used.
-
 <br>
 
-### Box components
+### Reactive components
 
-Some components are designed with a specific structure, to better control and customize their look and feel. This type of components is called `Box Component`, for their particular structure. In addition to the [shared properties](#shared-components-properties), as they are part of MoBrix-ui, they accept 3 additional (and optional) properties:
-
-- `label`, a string or a component rendered above the final component
-- `value`, a specific property that drive the component UI, its type vary depends on component itself (for example, for the CheckBox component, it is the check status, as a `boolean` )
-- `defaultValue`, the default value to use when `value` is not given or is `undefined`
-
-<div align="center">
-<img width="380px" alt="" src="https://user-images.githubusercontent.com/47371276/185260384-880a0542-20df-44ab-b1fb-3763e064f41e.png" />
-</div>
+Some components are designed with a specific structure, to sync their internal state with an external input value.
+This kind of component handle internally its actual value, using the `value` parameter as initial value. If you change the component value
+using the component(without changing the `value` parameter), it will be updated internally. If you change the passed `value` parameter, the component will sync its value with the given one.
+A clear example is the [Input](https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input) component. When changing the `value` parameter, the component will reset its actual value.
 
 <br>
 
@@ -100,7 +113,7 @@ render(
   <Container animated>
     <Card
       dark={true}
-      body={<p>This page is entirely made with mobrix-ui components !</p>}
+      body={<p>This page is entirely made with MoBrix-ui components !</p>}
       footer={
         <Link to="https://cianciarusocataldo.github.io/mobrix-ui">
           MoBrix-ui page

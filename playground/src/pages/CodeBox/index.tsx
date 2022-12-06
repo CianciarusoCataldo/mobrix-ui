@@ -1,14 +1,14 @@
 import {
   BooleanProp,
-  Demo,
   SelectProp,
   StringProp,
 } from "@cianciarusocataldo/demo-ui";
 
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
 
 import { CodeBox } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
+import DemoComponent from "components/DemoComponent";
 
 const CodeBoxPage = () => (
   <ComponentPage
@@ -18,29 +18,22 @@ const CodeBoxPage = () => (
       const terminalText = t("props_environment", { context: "default" });
 
       return (
-        <Demo
+        <DemoComponent
           label={componentLabel}
           props={{
             value: StringProp("npm i mobrix-ui"),
-            label: StringProp("label"),
             enhanced: BooleanProp(true),
             environment: SelectProp({
               [terminalText]: "terminal",
               Javascript: "javascript",
               Python: "python",
             }),
-            ...DEMO_COMMON_PROPS,
+            ...demoProps,
           }}
-          rows={[
-            ["value", "enhanced", "environment"],
-            ["className", "dark", "shadow"],
-            ["hide", "unstyled", "label"],
-          ]}
+          rows={[["value", "enhanced", "environment"], ...demoRows]}
         >
-          {(props: any) => {
-            return <CodeBox {...props} />;
-          }}
-        </Demo>
+          {CodeBox}
+        </DemoComponent>
       );
     }}
   />

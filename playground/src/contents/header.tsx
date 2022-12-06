@@ -25,7 +25,13 @@ import {
 import { useTranslation } from "react-i18next";
 import { getAppName } from "mobrix-engine-tools";
 
-import { Button, ExpandableContainer, Dropdown, Link, Toggle } from "mobrix-ui-preview";
+import {
+  Button,
+  ExpandableContainer,
+  Dropdown,
+  Link,
+  Toggle,
+} from "mobrix-ui-preview";
 
 const HeaderContent = () => {
   const dispatch = useDispatch();
@@ -40,81 +46,92 @@ const HeaderContent = () => {
   const t = useTranslation("common").t;
 
   return (
-    <ExpandableContainer dark={dark} expanded={<div className="flex flex-row mt-6">
-    <div className="my-auto">
-      <Button
-        aria-label="drawer button"
-        onClick={() => {
-          dispatch(openDrawer());
-        }}
-        unstyled
-        className="outline-none"
-      >
-        <div className="p-1 sm:p-2 md:p-2">{BurgerIcon}</div>
-      </Button>
-    </div>
-    <div className="my-auto">
-      <Button
-        aria-label="back button"
-        onClick={() => {
-          dispatch(goTo(HOME));
-        }}
-        unstyled
-        className="overflow-auto ml-1 outline-none"
-        hide={hideHomeButton}
-      >
-        <svg
-          className={classNames(
-            {
-              "fill-[white]": dark,
-              "fill-[black]": !dark,
-            },
-            "w-8 h-8 hover:fill-[#ff9f51] active:fill-[#fb7a10] xsm:w-12 xsm:h-12"
-          )}
-          viewBox="0 0 11 18"
-        >
-          <path d="M8.681.196l2.121 2.12-8.484 8.487-2.12-2.12z" />
-          <path d="M10.803 15.047l-2.121 2.121L.197 8.683l2.121-2.121z" />
-        </svg>
-      </Button>
-    </div>
-    <div className="m-auto flex flex-row p-2">
-      <div className="mr-2 my-auto"> {LogoIcon}</div>
-      <div className="flex flex-col my-auto">
-        <Link
-          dark={dark}
-          newTab
-          to="https://github.com/CianciarusoCataldo/mobrix-ui"
-        >
-          <p className="break-words text-lg sm:text-xl md:text-2xl lg:text-4xl">
-            {APP_NAME}
-          </p>
-        </Link>
-      </div>
-    </div>
-  </div>}>
-      <div className="flex flex-col pb-4">
+    <ExpandableContainer
+      className="pb-3"
+      dark={dark}
+      expanded={
+        <div className="flex flex-row mt-6" key="expanded_header">
+          <Button
+            aria-label="drawer button"
+            onClick={() => {
+              dispatch(openDrawer());
+            }}
+            unstyled
+            dark={dark}
+            a11y
+            className="rounded-full my-auto"
+          >
+            {BurgerIcon}
+          </Button>
+          <Button
+            aria-label="back button"
+            onClick={() => {
+              dispatch(goTo(HOME));
+            }}
+            unstyled
+            a11y={false}
+            className="my-auto overflow-auto ml-1"
+            hide={hideHomeButton}
+          >
+            <svg
+              tabIndex={0}
+              className={classNames(
+                {
+                  "fill-[white]": dark,
+                  "fill-[black]": !dark,
+                },
+                "w-8 h-8 hover:fill-[#ff9f51] active:fill-[#fb7a10] focus-visible:fill-[#fb7a10] xsm:w-12 xsm:h-12"
+              )}
+              viewBox="0 0 11 18"
+            >
+              <path d="M8.681.196l2.121 2.12-8.484 8.487-2.12-2.12z" />
+              <path d="M10.803 15.047l-2.121 2.121L.197 8.683l2.121-2.121z" />
+            </svg>
+          </Button>
+          <div className="m-auto flex flex-row p-2">
+            <div className="mr-2 my-auto"> {LogoIcon}</div>
+            <div className="flex flex-col my-auto">
+              <Link
+                a11yDark={true}
+                a11y
+                dark={dark}
+                newTab
+                to="https://github.com/CianciarusoCataldo/mobrix-ui"
+              >
+                <p className="break-words text-lg sm:text-xl md:text-2xl lg:text-4xl">
+                  {APP_NAME}
+                </p>
+              </Link>
+            </div>
+          </div>
+        </div>
+      }
+    >
+      <div className="flex flex-col pb-4" key="header_content">
         <div className="flex" style={{ justifyContent: "flex-end" }}>
           <div className="flex flex-row">
             <div className="flex flex-row pr-4">
               <Link
+                dark={dark}
+                unstyled
                 to="https://cianciarusocataldo.github.io/mobrix-ui/docs"
                 className="m-auto"
                 newTab
               >
                 {DocsIcon}
               </Link>
-              <div className="m-auto hidden sm:block">
-                <Link
-                  dark={dark}
-                  to="https://cianciarusocataldo.github.io/mobrix-ui/docs"
-                  newTab
-                >
-                  {t("docs")}
-                </Link>
-              </div>
+              <Link
+                dark={dark}
+                className="m-auto hidden md:block"
+                to="https://cianciarusocataldo.github.io/mobrix-ui/docs"
+                newTab
+              >
+                {t("docs")}
+              </Link>
             </div>
             <Dropdown
+              a11yDark={dark}
+              a11y
               className="p-0"
               dark={false}
               value={LANGUAGES.findIndex((lang) => lang === language)}

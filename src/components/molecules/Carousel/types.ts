@@ -1,8 +1,7 @@
 import {
-  BoxComponent,
   BuilderComponent,
-  CommonProps,
   ComponentWithCallback,
+  ComponentWithValue,
   MoBrixUiComponent,
 } from "../../../utils/global";
 
@@ -15,8 +14,7 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type CarouselProps = CommonProps &
-  Omit<BoxComponent<number>, "icon"> &
+export type CarouselProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {
     /** Carousel elements */
     elements?: BuilderComponent[];

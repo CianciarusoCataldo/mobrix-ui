@@ -1,7 +1,6 @@
 import {
-  BoxComponent,
-  CommonProps,
   ComponentWithCallback,
+  ComponentWithValue,
   MoBrixUiComponent,
 } from "../../../utils/global";
 
@@ -14,16 +13,9 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type RaterProps = CommonProps &
-  Omit<
-    BoxComponent<
-      number,
-      { FULL: JSX.Element | Element; EMPTY: JSX.Element | Element }
-    >,
-    "icon"
-  > &
+export type RaterProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {
-    /** If true, vote icons will be showed vertically (instead of default setting, horizontal) */
+    /** if true, rate icons will be showed vertically (default `false` - `horizontal`) */
     vertical?: boolean;
 
     /** max vote (max number of icons showed) */

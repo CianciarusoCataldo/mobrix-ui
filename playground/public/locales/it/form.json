@@ -1,3 +1,9 @@
 {
-  "props_field": "Campo {{index}} - header"
+  "props_field_numeric": "Campo numerico",
+  "props_field_boolean": "Campo booleano",
+  "props_field_text": "Campo testuale",
+  "props_field_custom": "Campo personalizzato",
+  "props_buttonContent": "Contenuto del pulsante",
+  "props_title": "Titolo",
+  "props_children": "Contenuto personalizzato"
 }

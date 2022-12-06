@@ -3,3 +3,8 @@
   flex-direction: column;
   align-items: center;
 }
+
+#mobrix-ui-facebook-buttons #facebook-buttons-iframe {
+  border: none;
+  overflow: hidden;
+}

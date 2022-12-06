@@ -1,37 +1,34 @@
-import { Demo, StringProp } from "@cianciarusocataldo/demo-ui";
+import { BooleanProp, StringProp } from "@cianciarusocataldo/demo-ui";
 
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
 
 import { Card } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
+import DemoComponent from "components/DemoComponent";
 
 const CardPage = () => (
   <ComponentPage
     name="Card"
     render={(_, componentLabel) => (
-      <Demo
-        className="m-0 p-0"
+      <DemoComponent
         label={componentLabel}
         props={{
-          label: StringProp("label"),
-          header: StringProp("header"),
-          body: StringProp("body"),
-          footer: StringProp("footer"),
-          ...DEMO_COMMON_PROPS,
+          dismissable: BooleanProp(false),
+          header: StringProp("Header"),
+          body: StringProp("Body"),
+          footer: StringProp("Footer"),
+          ...demoProps,
         }}
-        rows={[
-          ["label", "header"],
-          ["body", "footer"],
-          ["className", "shadow", "dark", "hide", "unstyled"],
-        ]}
+        parseProps={(props) => {
+          if (props["dismissable"]) {
+            return { ...props, onClose: () => {} };
+          } else return props;
+        }}
+        rows={[["footer", "header"], ["body", "dismissable"], ...demoRows]}
         startColor="#999"
       >
-        {(props: any) => (
-          <div className="flex flex-col items-center">
-            <Card {...props} />
-          </div>
-        )}
-      </Demo>
+        {Card}
+      </DemoComponent>
     )}
   />
 );

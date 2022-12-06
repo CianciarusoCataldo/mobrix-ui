@@ -1,8 +1,4 @@
-import {
-  BoxComponent,
-  CommonProps,
-  MoBrixUiComponent,
-} from "../../../utils/global";
+import { ComponentWithIcon, MoBrixUiComponent } from "../../../utils/global";
 import { RaterProps } from "../Rater/types";
 
 /**
@@ -31,29 +27,28 @@ export type ReviewLogo =
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type ReviewProps = CommonProps &
-  Omit<BoxComponent, "value"> & {
-    /** username showed above the review description, at the right of the icon */
-    user?: string;
+export type ReviewProps = ComponentWithIcon & {
+  /** username showed above the review description, at the right of the icon */
+  user?: string;
 
-    /** review description showed below the review username, at the top of the rate */
-    description?: string;
+  /** review description showed below the review username, at the top of the rate */
+  description?: string;
 
-    /** max max vote (max number of rate icons showed) */
-    max?: number;
+  /** max max vote (max number of rate icons showed) */
+  max?: number;
 
-    /** review external url. If set, an icon will be showed at the top right of the review */
-    url?: string;
+  /** review external url. If set, an icon will be showed at the top right of the review */
+  url?: string;
 
-    /** Social icon type, showed at the top right of the container. Supports popular web services like Facebook, Twitter, Google and so on. Proviced icon list will grow up time by time and will be updated with the latest web services, to keep it usable for the future. */
-    logo?: ReviewLogo;
+  /** Social icon type, showed at the top right of the container. Supports popular web services like Facebook, Twitter, Google and so on. Proviced icon list will grow up time by time and will be updated with the latest web services, to keep it usable for the future. */
+  logo?: ReviewLogo;
 
-    /** review vote, showed at the bottom of the review */
-    rate?: number;
+  /** review vote, showed at the bottom of the review */
+  rate?: number;
 
-    /** review vote icon type, to choose which icon will be used to show the review rate (allowed icons type are `stars` and `circle`) */
-    rateType?: RaterProps["type"];
-  };
+  /** review vote icon type, to choose which icon will be used to show the review rate (allowed icons type are `stars` and `circle`) */
+  rateType?: RaterProps["type"];
+};
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Review component

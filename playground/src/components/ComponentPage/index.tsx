@@ -1,4 +1,3 @@
-
 import { TFunction, useTranslation } from "react-i18next";
 
 import { useCommonTranslation } from "hooks/localization";
@@ -31,7 +30,7 @@ export const ComponentPage = ({
 
   return (
     <AppPage>
-      <AppLabel className="text-4xl mt-12 mb-5 ml-3" value={headerLabel} />
+      <AppLabel className="text-4xl mt-12 mb-5 ml-3">{headerLabel}</AppLabel>
       <div className="flex flex-col p-3 items-center">
         {children}
         {render && render(tComponent, headerLabel)}

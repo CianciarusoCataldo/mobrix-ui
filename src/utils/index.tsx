@@ -5,7 +5,22 @@ import "../styles/shared-styles.css";
 import classNames from "classnames";
 import React from "react";
 
-import { BoxComponent, BuilderProps } from "./global";
+import { BuilderProps } from "./global";
+
+/* istanbul ignore next */
+const useOutsideAlerter = (ref: any, callback: () => void) => {
+  React.useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        callback();
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  });
+};
 
 /**
  * Build a standard {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component, providing shared functionalities and props, to optimize the process.
@@ -24,95 +39,109 @@ import { BoxComponent, BuilderProps } from "./global";
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export const buildComponent = ({
+export const buildMobrixUiStandardComponent = ({
   name,
   Component,
-  commonProps,
-  additionalProps,
-  wrapper,
+  /* istanbul ignore next */
+  commonProps = {},
+  additionalProps = {},
+  wrapper: SelectedWrapper = "div",
 }: BuilderProps) => {
-  const SelectedWrapper = wrapper || "div";
+  let a11y = commonProps.a11y !== undefined ? commonProps.a11y : true;
 
-  return (
-    <SelectedWrapper
-      data-id={commonProps!.id}
-      id={name}
-      className={classNames(commonProps!.className, {
-        dark: commonProps!.dark,
-        "component-hidden": commonProps!.hide,
-        shadowed: commonProps!.shadow,
-        styled: !commonProps!.unstyled,
-      })}
-      style={commonProps!.style}
-      {...additionalProps}
-    >
-      {Component}
-    </SelectedWrapper>
-  );
+  let props = {
+    "data-id": commonProps.id,
+    id: `mobrix-ui-${name}`,
+    "aria-label": a11y ? commonProps.a11yLabel : "",
+    tabIndex: a11y ? "0" : "-1",
+    className: classNames(commonProps.className, {
+      dark: commonProps.dark,
+      animated: commonProps.animated,
+      "component-hidden": commonProps.hide,
+      shadowed: commonProps.shadow,
+      styled: !commonProps.unstyled,
+      a11y: a11y,
+      "a11y-dark":
+        a11y &&
+        (commonProps.a11yDark !== undefined
+          ? commonProps.a11yDark
+          : commonProps.dark),
+    }),
+    style: commonProps.style,
+    onFocus: commonProps.onFocus,
+    onKeyDown: commonProps.onKeyDown,
+    ...additionalProps,
+  };
+  const wrapperRef = React.useRef(null);
+  commonProps.onFocusLost &&
+    useOutsideAlerter(wrapperRef, commonProps.onFocusLost);
+
+  if (SelectedWrapper === "input") {
+    return (
+      <SelectedWrapper ref={wrapperRef} {...props} key={commonProps.key} />
+    );
+  } else {
+    return (
+      <SelectedWrapper ref={wrapperRef} {...props} key={commonProps.key}>
+        {Component}
+      </SelectedWrapper>
+    );
+  }
 };
 
 /**
- * Build a standard {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component, decorating it with some functionalitis (like top label or dynamic value update).
+ * Build a reactive {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component, with some extra functionalities.
  *
- * @param value actual component value
- * @param defaultValue default value (used when no value is set)
- * @param {JSX.Element | string} label Component top label
- * @param callback a function that returns an Object containing Component Builder props, properly formatted
+ * @returns built component, ready to be rendered, enhanced with some functionalities
  *
- * @returns built component, ready to be rendered, enhanced with some functionalities (like the top label)
- *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=box-components
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=reactive-components
  * @see https://cianciarusocataldo.github.io/mobrix-ui/
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export const buildBoxComponent = <T extends any>({
-  value: actualValue,
+export const buildMobrixUiReactiveComponent = <T = any,>({
+  name,
+  additionalProps,
+  wrapper,
+  commonProps,
   defaultValue,
-  label,
-  callBack,
-}: BoxComponent<T> & {
-  defaultValue?: T;
-  callBack: (value: T, setValue: (newValue: T) => void) => BuilderProps;
+  inputValue,
+  render,
+  props,
+}: Omit<BuilderProps, "Component"> & {
+  inputValue?: T;
+  defaultValue: T;
+  render?: (
+    value: T,
+    setValue: React.Dispatch<React.SetStateAction<T>>
+  ) => BuilderProps["Component"];
+  props?: (
+    value: T,
+    setValue: React.Dispatch<React.SetStateAction<T>>
+  ) => Omit<BuilderProps, "name">;
 }) => {
-  const startValue = actualValue || defaultValue;
+  const [value, setValue] = React.useState<T>(inputValue || defaultValue);
 
-  const [value, setValue] = React.useState<T>(startValue!);
+  const processedProps = props ? props(value, setValue) : {};
 
   React.useEffect(() => {
-    if (actualValue !== undefined && actualValue !== null) {
-      setValue(actualValue);
+    if (
+      inputValue !== undefined &&
+      inputValue !== null &&
+      value !== inputValue
+    ) {
+      setValue(inputValue);
     }
-  }, [actualValue]);
+  }, [JSON.stringify(inputValue)]);
 
-  let { commonProps, additionalProps, ...props } = callBack(value, setValue);
-
-  return buildComponent({
-    ...props,
-    commonProps: { ...commonProps, shadow: false, className: undefined },
-    Component: (
-      <div className="box-component">
-        {label && (
-          <div className="box-label" key="mobrix-box-label">
-            {label}
-          </div>
-        )}
-        <div
-          key="mobrix-box-container"
-          className={classNames(
-            commonProps!.className,
-            {
-              shadowed: commonProps!.shadow,
-            },
-            "container"
-          )}
-          {...additionalProps}
-        >
-          {props.Component}
-        </div>
-      </div>
-    ),
+  return buildMobrixUiStandardComponent({
+    name,
+    additionalProps,
+    commonProps,
+    Component: render && render(value, setValue),
+    wrapper,
+    ...processedProps,
   });
 };

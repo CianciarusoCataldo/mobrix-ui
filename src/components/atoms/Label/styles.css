@@ -2,3 +2,11 @@
   color: var(--mobrix-ui-text-color);
   background: transparent;
 }
+
+#mobrix-ui-label.styled.a11y:focus-visible {
+  color: orange;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
