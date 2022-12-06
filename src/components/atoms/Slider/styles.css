@@ -1,11 +1,11 @@
 #mobrix-ui-slider {
-  --mobrix-ui-slider-thumb-color: radial-gradient(#0e123d, #0412ad);
   appearance: none;
-
-  -webkit-appearance: none;
   width: 100%;
   border-radius: 12px;
   background: var(--mobrix-ui-background);
+
+  --mobrix-ui-slider-thumb-color: radial-gradient(#0e123d, #0412ad);
+  -webkit-appearance: none;
 }
 
 #mobrix-ui-slider.dark {
@@ -14,6 +14,7 @@
 
 #mobrix-ui-slider::-webkit-slider-thumb {
   appearance: none;
+
   -webkit-appearance: none;
 }
 
@@ -26,7 +27,6 @@
 }
 
 #mobrix-ui-slider.styled::-moz-range-thumb {
-  cursor: pointer;
   border-color: transparent;
   color: transparent;
   border-radius: 50%;
@@ -43,8 +43,9 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
-  -webkit-appearance: none;
   background: var(--mobrix-ui-slider-thumb-color);
+
+  -webkit-appearance: none;
 }
 
 #mobrix-ui-slider.styled.shadowed::-webkit-slider-thumb {

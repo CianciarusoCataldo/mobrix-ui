@@ -37,11 +37,5 @@
 }
 
 #mobrix-ui-radio-button.dark .icon {
-  background: radial-gradient(
-    closest-corner,
-    #e2dfdf,
-    #e2dfdf,
-    #bebcbc,
-    #999
-  );
+  background: radial-gradient(closest-corner, #e2dfdf, #e2dfdf, #bebcbc, #999);
 }
