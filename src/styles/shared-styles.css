@@ -74,6 +74,7 @@
   -webkit-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
   -moz-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
   -o-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
+
   --mobrix-ui-link-color: rgb(37, 99, 235);
 }
 

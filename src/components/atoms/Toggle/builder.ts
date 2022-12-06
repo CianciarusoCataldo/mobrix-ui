@@ -15,10 +15,22 @@ const toggleComponentBuilder: MobrixUiReactiveComponentBuilder<
   offIcon,
   onIcon,
   className,
-  onChange,
+  onChange = () => {},
   ...commonProps
 }) => {
   return {
+    additionalProps: {
+      onClick: () => {
+        onChange(!status);
+        setStatus(!status);
+      },
+      onKeyDown: (e) => {
+        if (e.code === "Enter") {
+          onChange(!status);
+          setStatus(!status);
+        }
+      },
+    },
     Component: toggleComponent({
       value: status,
       setValue: setStatus,
