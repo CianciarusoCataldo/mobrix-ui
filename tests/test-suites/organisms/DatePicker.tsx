@@ -14,9 +14,9 @@ const datePickerTest = () => {
       wrapper = mount(
         <DatePicker a11yDark={true} months={defaultMonths} days={defaultDays} />
       );
-      expect(wrapper);
+      expect(wrapper.props().months).toBe(defaultMonths);
       wrapper = mount(<DatePicker value={{ month: -1, year: -1, day: -1 }} />);
-      expect(wrapper);
+      expect(wrapper.props().value.day).toBe(-1);
     });
 
     test("Selecting a day trigger the onChange callback", () => {
