@@ -11,11 +11,8 @@
   display: flex;
 }
 
-#mobrix-ui-drawer.styled {
-  padding: 0.1rem;
-}
-
 #mobrix-ui-drawer[class^="bottom"] {
+  flex-direction: column-reverse;
   --mobrix-ui-drawer-animation-in: slideBottom 0.3s forwards;
   --mobrix-ui-drawer-animation-out: slideOutBottom 0.3s forwards;
   top: auto;
@@ -34,10 +31,6 @@
 
 #mobrix-ui-drawer[class^="top"] {
   flex-direction: column;
-}
-
-#mobrix-ui-drawer[class^="bottom"] {
-  flex-direction: column-reverse;
 }
 
 #mobrix-ui-drawer.left,
@@ -95,6 +88,11 @@
   overflow: auto;
 }
 
+#mobrix-ui-drawer .drawer-close-button {
+  margin: auto;
+  background-image: var(--mobrix-ui-background);
+}
+
 #mobrix-ui-drawer[class^="bottom"] .drawer-close-button {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -109,11 +107,6 @@
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   padding-bottom: 0.1rem;
-}
-
-#mobrix-ui-drawer .drawer-close-button {
-  margin: auto;
-  background-image: var(--mobrix-ui-background);
 }
 
 #mobrix-ui-drawer.right .drawer-close-button,
@@ -141,6 +134,10 @@
   box-shadow: none;
 }
 
+#mobrix-ui-drawer .drawer-close-button svg {
+  fill: var(--mobrix-ui-text-color);
+}
+
 #mobrix-ui-drawer[class^="top"] .drawer-close-button svg {
   transform: rotate(90deg);
 }
@@ -151,10 +148,6 @@
 
 #mobrix-ui-drawer.right .drawer-close-button svg {
   transform: rotate(180deg);
-}
-
-#mobrix-ui-drawer .drawer-close-button svg {
-  fill: var(--mobrix-ui-text-color);
 }
 
 #mobrix-ui-drawer:focus-visible,
