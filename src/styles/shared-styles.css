@@ -9,18 +9,17 @@
   --mobrix-ui-background-light: linear-gradient(to right, #fff, #eaebec);
 }
 
-[id^="mobrix-ui-"]:focus {
-  outline: none;
-}
-
 [id^="mobrix-ui-"],
 [id^="mobrix-ui-"]:hover,
 [id^="mobrix-ui-"]:active {
   transition: all 0.2s;
-
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
+}
+
+[id^="mobrix-ui-"]:focus {
+  outline: none;
 }
 
 [id^="mobrix-ui-"]:not(.dark) {
@@ -72,7 +71,6 @@
 
 [id^="mobrix-ui-"].a11y:focus-visible {
   box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
-
   -webkit-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
   -moz-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
   -o-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
@@ -97,26 +95,26 @@
 
 [id^="mobrix-ui-"].animated,
 [id^="mobrix-ui-"].animated .mobrix-ui-animated-component {
+  animation: fadein 0.4s;
   -webkit-animation: fadein 0.4s;
   -moz-animation: fadein 0.4s;
   -ms-animation: fadein 0.4s;
   -o-animation: fadein 0.4s;
-  animation: fadein 0.4s;
 }
 
 [id^="mobrix-ui-"].animated.fade-out,
 [id^="mobrix-ui-"].animated .mobrix-ui-animated-component.fade-out {
+  animation: fadeOut 0.3s;
   -webkit-animation: fadeOut 0.3s;
   -moz-animation: fadeOut 0.3s;
   -ms-animation: fadeOut 0.3s;
   -o-animation: fadeOut 0.3s;
-  animation: fadeOut 0.3s;
 }
 
 [id^="mobrix-ui-"].shadowed,
 [id^="mobrix-ui-"] .shadowed {
+  box-shadow: 0 5px 13px -1px #464545;
   -webkit-box-shadow: 0 5px 13px -1px #464545;
   -moz-box-shadow: 0 5px 13px -1px #464545;
   -o-box-shadow: 0 5px 13px -1px #464545;
-  box-shadow: 0 5px 13px -1px #464545;
 }

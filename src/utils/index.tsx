@@ -101,7 +101,7 @@ export const buildMobrixUiStandardComponent = ({
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export const buildMobrixUiReactiveComponent = <T = any,>({
+export const buildMobrixUiReactiveComponent = <T=any>({
   name,
   additionalProps,
   wrapper,
