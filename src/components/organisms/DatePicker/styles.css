@@ -15,18 +15,12 @@
   margin: auto;
 }
 
-#mobrix-ui-date-picker .date-picker-modal .content {
-  max-height: 75%;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  vertical-align: middle;
-  flex-direction: column;
-  -webkit-animation: fadein 0.3s;
-  -moz-animation: fadein 0.3s;
-  -ms-animation: fadein 0.3s;
-  -o-animation: fadein 0.3s;
-  animation: fadein 0.3s;
+#mobrix-ui-date-picker .date-picker-modal {
+  background: transparent;
+}
+
+#mobrix-ui-date-picker .date-picker-modal #mobrix-ui-divider {
+  display: none;
 }
 
 #mobrix-ui-date-picker .date-picker-box > .buttons,
@@ -39,13 +33,7 @@
   color: white;
 }
 
-#mobrix-ui-date-picker .date-picker-close-button {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-#mobrix-ui-date-picker #mobrix-ui-calendar.date-picker-calendar .arrow svg,
-#mobrix-ui-date-picker .date-picker-close-button path {
+#mobrix-ui-date-picker #mobrix-ui-calendar.date-picker-calendar .arrow svg {
   fill: white;
 }
 
@@ -55,10 +43,6 @@
     .arrow:hover
     svg {
     fill: orange;
-  }
-
-  #mobrix-ui-date-picker.styled .date-picker-close-button:hover svg path {
-    fill: rgba(185, 28, 28, 1);
   }
 
   #mobrix-ui-date-picker .element:hover {

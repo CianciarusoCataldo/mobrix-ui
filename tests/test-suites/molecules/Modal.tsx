@@ -6,7 +6,7 @@ const modalTest = () => {
   describe("Modal", () => {
     test("Rendering test", () => {
       let wrapper = mount(
-        <Modal>
+        <Modal unstyled>
           <p>Modal content</p>
         </Modal>
       );
@@ -17,13 +17,12 @@ const modalTest = () => {
           <p>Modal content</p>
         </Modal>
       );
-      wrapper.find('[data-id="card_dismiss_button"]').simulate("click");
       expect(wrapper);
     });
 
     test("Clicking on the X icon trigger the onClose callback", () => {
       const onCloseStub = jest.fn();
-      let wrapper = mount(
+      const wrapper = mount(
         <Modal overlayClassName="test-classname" onClose={onCloseStub}>
           <p>Modal content</p>
         </Modal>

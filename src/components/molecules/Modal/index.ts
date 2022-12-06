@@ -4,7 +4,7 @@ import { ModalComponent } from "./types";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 
-import modalComponent from "./component";
+import modalBuilder from "./builder";
 
 /**
  * A light Modal component. Can be totally customized (the overlay too, through `overlayClassName` parameter)
@@ -44,29 +44,10 @@ import modalComponent from "./component";
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-const Modal: ModalComponent = ({
-  children,
-  onClose,
-  title,
-  className = "",
-  overlayClassName = "",
-  closeOutside,
-  ...commonProps
-}) =>
+const Modal: ModalComponent = (props) =>
   buildMobrixUiStandardComponent({
     name: "modal",
-    Component: modalComponent({
-      children,
-      className,
-      title,
-      onClose,
-      closeOutside,
-      ...commonProps,
-    }),
-    commonProps: {
-      ...commonProps,
-      className: overlayClassName,
-    },
+    ...modalBuilder(props),
   });
 
 export default Modal;

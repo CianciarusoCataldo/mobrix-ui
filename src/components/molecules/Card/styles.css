@@ -21,8 +21,9 @@
 }
 
 #mobrix-ui-card .header-container {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 
 #mobrix-ui-card .body {

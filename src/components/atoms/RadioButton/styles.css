@@ -33,7 +33,13 @@
   margin: auto;
   width: 18px;
   height: 18px;
-  background: radial-gradient(#797979, #323233, #121224, #1d232e);
+  background: radial-gradient(
+    closest-corner,
+    #797979,
+    #323233,
+    #121224,
+    #1d232e
+  );
 }
 
 #mobrix-ui-radio-button.dark .icon {

@@ -37,6 +37,7 @@ const radioButtonGroupComponent: MobrixUiReactiveComponent<
         {element.component}
         <RadioButton
           deselectable={false}
+          dark={dark}
           id={"radio_component_" + index}
           key="radio_component"
           className="radio-component"

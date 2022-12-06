@@ -1,5 +1,7 @@
 import { CSSProperties } from "react";
 
+export type MobBrixAnimation = "fadeIn" | "fadeOut" | "slideIn" | "slideOut";
+
 /**
  * Props shared between all {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} components
  *

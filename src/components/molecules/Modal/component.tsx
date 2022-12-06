@@ -4,6 +4,7 @@ import { BuilderComponent, MoBrixUiComponent } from "../../../utils/global";
 import { ModalProps } from "./types";
 
 import Card from "../Card";
+import Container from "../Container";
 
 const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
   children,
@@ -12,31 +13,40 @@ const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
   dark,
   title,
   hide,
-  onClose = () => {},
+  onClose,
   closeOutside,
   /* istanbul ignore next */
   onFocusLost = () => {},
 }) => {
   /* istanbul ignore next */
+  const onCloseCallback = onClose ? onClose : () => {};
+
+  /* istanbul ignore next */
   const onFocusLostCallback = () => {
-    onFocusLost();
-    closeOutside && onClose();
+    if (!hide) {
+      onFocusLost();
+      closeOutside && onCloseCallback();
+    }
   };
 
   return (
     <div className="modal-window">
       {unstyled ? (
-        children
+        <Container
+          unstyled
+          style={{ width: "100%", height: "100%" }}
+          onFocusLost={onFocusLostCallback}
+        >
+          {children}
+        </Container>
       ) : (
         <Card
           className={"content " + className}
           dark={dark}
-          unstyled={unstyled}
+          hide={false}
           onClose={onClose}
           body={children}
-          dismissable
           header={title}
-          hide={hide}
           onFocusLost={onFocusLostCallback}
         />
       )}

@@ -3,8 +3,6 @@ import "./styles.css";
 import { CalendarDate } from "../Calendar/types";
 import { DatePickerComponent } from "./types";
 
-import { defaultDays, defaultMonths } from "../Calendar/constants";
-
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 import { today } from "../Calendar/utils";
 
@@ -57,7 +55,6 @@ const DatePicker: DatePickerComponent = ({
   onChange,
   value: inputValue,
   months,
-  shadow,
   days,
   startMonth,
   startYear,
@@ -79,7 +76,6 @@ const DatePicker: DatePickerComponent = ({
         setValue,
         value,
         months,
-        shadow,
         days,
         startMonth,
         startYear,
@@ -87,7 +83,6 @@ const DatePicker: DatePickerComponent = ({
         fromToday,
         dayLabel,
         onViewChange,
-        animated: commonProps.animated,
         ...commonProps,
       }),
     inputValue,

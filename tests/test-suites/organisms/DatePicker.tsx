@@ -62,7 +62,10 @@ const datePickerTest = () => {
         .find('[data-id="date_button_4"]')
         .simulate("click");
 
-      wrapper.find('[data-id="date_picker_close_button"]').simulate("click");
+      wrapper
+        .find("#mobrix-ui-card")
+        .find('[data-id="card_dismiss_button"]')
+        .simulate("click");
 
       expect(onChangeStub).toBeCalled;
     });

@@ -106,11 +106,11 @@
 
 [id^="mobrix-ui-"].animated.fade-out,
 [id^="mobrix-ui-"].animated .mobrix-ui-animated-component.fade-out {
-  -webkit-animation: fadeOut 0.4s;
-  -moz-animation: fadeOut 0.4s;
-  -ms-animation: fadeOut 0.4s;
-  -o-animation: fadeOut 0.4s;
-  animation: fadeOut 0.4s;
+  -webkit-animation: fadeOut 0.3s;
+  -moz-animation: fadeOut 0.3s;
+  -ms-animation: fadeOut 0.3s;
+  -o-animation: fadeOut 0.3s;
+  animation: fadeOut 0.3s;
 }
 
 [id^="mobrix-ui-"].shadowed,

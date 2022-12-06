@@ -11,7 +11,6 @@ import { getMonthsDuration } from "../Calendar/utils";
 
 import { CalendarIcon } from "./icons";
 
-import { xIcon } from "../../molecules/Card/icons";
 import Container from "../../molecules/Container";
 import Dropdown from "../../molecules/Dropdown";
 import Modal from "../../molecules/Modal";
@@ -27,7 +26,6 @@ const datePickerComponent: MobrixUiReactiveComponent<
   today: todayDate,
   value,
   months: customMonths = defaultMonths,
-  shadow,
   days: customDays = defaultDays,
   startMonth,
   startYear,
@@ -39,6 +37,7 @@ const datePickerComponent: MobrixUiReactiveComponent<
   ...commonProps
 }) => {
   const [isVisible, setVisible] = React.useState<boolean>(false);
+
   const year = value.year && value.year > 0 ? value.year : todayDate.year;
   const month =
     value.month !== undefined && value.month >= 0 && value.month <= 11
@@ -66,11 +65,11 @@ const datePickerComponent: MobrixUiReactiveComponent<
     );
 
   /* istanbul ignore next */
-  const calendarFocusCallback = () => setVisible(false);
+  const calendarFocusCallback = () => !commonProps.hide && setVisible(false);
 
   return [
     <div key="date_picker_box" className="date-picker-box">
-      <Container shadow={shadow} dark={commonProps.dark} className="buttons">
+      <Container dark={commonProps.dark} className="buttons">
         <div className="date-selectors">
           <Dropdown
             value={day - 1}
@@ -107,7 +106,6 @@ const datePickerComponent: MobrixUiReactiveComponent<
             }
           />
           <Dropdown
-            shadow={shadow}
             dark={commonProps.dark}
             unstyled
             hideArrow
@@ -138,40 +136,32 @@ const datePickerComponent: MobrixUiReactiveComponent<
       </Container>
     </div>,
     <Modal
-      unstyled
       hide={!isVisible}
       className="date-picker-modal"
       key="date_picker_modal"
       animated={animated}
+      onClose={() => setVisible(false)}
+      dark={true}
     >
-      <div className="date-picker-calendar-container">
-        <Button
-          id="date_picker_close_button"
-          className="date-picker-close-button"
-          unstyled
-          onClick={() => setVisible(!isVisible)}
-        >
-          {xIcon}
-        </Button>
-        <Calendar
-          className="date-picker-calendar"
-          days={customDays}
-          months={customMonths}
-          startMonth={startMonth}
-          startYear={startYear}
-          hideArrows={hideArrows}
-          fromToday={fromToday}
-          onViewChange={onViewChange}
-          dayLabel={dayLabel}
-          value={{ day, month, year }}
-          onChange={(date) => {
-            onChange && onChange(date);
-            setValue(date);
-          }}
-          onFocusLost={calendarFocusCallback}
-          dark={commonProps.dark}
-        />
-      </div>
+      <Calendar
+        animated={animated}
+        className="date-picker-calendar"
+        days={customDays}
+        months={customMonths}
+        startMonth={startMonth}
+        startYear={startYear}
+        hideArrows={hideArrows}
+        fromToday={fromToday}
+        onViewChange={onViewChange}
+        dayLabel={dayLabel}
+        value={{ day, month, year }}
+        onChange={(date) => {
+          onChange && onChange(date);
+          setValue(date);
+        }}
+        onFocusLost={calendarFocusCallback}
+        dark={commonProps.dark}
+      />
     </Modal>,
   ];
 };

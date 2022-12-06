@@ -19,6 +19,11 @@ const CardPage = () => (
           footer: StringProp("Footer"),
           ...demoProps,
         }}
+        parseProps={(props) => {
+          if (props["dismissable"]) {
+            return { ...props, onClose: () => {} };
+          } else return props;
+        }}
         rows={[["footer", "header"], ["body", "dismissable"], ...demoRows]}
         startColor="#999"
       >

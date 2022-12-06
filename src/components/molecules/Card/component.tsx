@@ -12,7 +12,7 @@ const cardComponent: MobrixUiReactiveComponent<boolean, CardProps> = ({
   dismissable,
   icon,
   body,
-  onClose = () => {},
+  onClose,
   setValue,
   children,
   footer,
@@ -20,13 +20,11 @@ const cardComponent: MobrixUiReactiveComponent<boolean, CardProps> = ({
 }) => {
   let components: JSX.Element[] = [];
 
-  (header || dismissable) &&
+  (header || onClose) &&
     components.push(
       <div key="mobrix_ui_card_header">
         <div className="header-container">
-          {icon}
-          {header && <div className="header">{header}</div>}
-          {dismissable && (
+          {onClose && (
             <Button
               unstyled
               dark={dark}
@@ -34,12 +32,14 @@ const cardComponent: MobrixUiReactiveComponent<boolean, CardProps> = ({
               className="card-dismiss-button"
               onClick={() => {
                 onClose();
-                setValue(true);
+                dismissable && setValue(true);
               }}
             >
               {xIcon}
             </Button>
           )}
+          {header && <div className="header">{header}</div>}
+          {icon}
         </div>
         <Divider dark={dark} />
       </div>
