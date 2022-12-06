@@ -1,27 +1,21 @@
-import React from "react";
+import { demoRows, demoProps } from "constants/demo-props";
 
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { HiddenProp, SelectProp } from "@cianciarusocataldo/demo-ui";
 
-import { Demo, SelectProp } from "@cianciarusocataldo/demo-ui";
-
-import { Button, Drawer } from "mobrix-ui-preview";
+import { Button, Drawer, List } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
+import DemoComponent from "components/DemoComponent";
 
 const DrawerPage = () => {
-  const [isVisible, setVisible] = React.useState(false);
-
-  let demoProps = { ...DEMO_COMMON_PROPS };
-  delete demoProps.hide;
-
+  let customDemoProps = { ...demoProps };
+  customDemoProps.hide = HiddenProp(true);
   return (
     <ComponentPage
       name="Drawer"
       translations
       render={(t, componentLabel) => {
-        const buttonText = t(isVisible ? "common_close" : "common_open");
-
         return (
-          <Demo
+          <DemoComponent
             label={componentLabel}
             startColor="#C3BBBB"
             props={{
@@ -35,24 +29,43 @@ const DrawerPage = () => {
                 left: "left",
                 right: "right",
               }),
-              ...demoProps,
+              ...customDemoProps,
+            }}
+            rows={[
+              ["position"],
+              demoRows[0],
+              demoRows[1],
+              demoRows[2].splice(1),
+            ]}
+            parseProps={(props, setProps) => {
+              return {
+                ...props,
+                onClose: () => setProps({ ...props, hide: true }),
+                children: (
+                  <List
+                    dark={props.dark}
+                    className="p-4"
+                    elements={new Array(6)
+                      .fill("Element ")
+                      .map((el, index) => el + index)}
+                  />
+                ),
+              };
             }}
           >
-            {(props: any) => {
+            {(props: any, setProps: any) => {
+              const buttonText = t("common_open");
+
               return (
-                <div className="flex flex-col items-center">
-                  <Button onClick={() => setVisible(!isVisible)}>
+                <div>
+                  <Button onClick={() => setProps({ ...props, hide: false })}>
                     {buttonText}
                   </Button>
-                  <Drawer
-                    hide={!isVisible}
-                    onClose={() => setVisible(false)}
-                    {...props}
-                  />
+                  <Drawer {...props} />
                 </div>
               );
             }}
-          </Demo>
+          </DemoComponent>
         );
       }}
     />

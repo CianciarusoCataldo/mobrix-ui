@@ -1,31 +1,30 @@
-import { BooleanProp, Demo, StringProp } from "@cianciarusocataldo/demo-ui";
+import { NumberProp } from "@cianciarusocataldo/demo-ui";
 
 import { Dropdown } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
+import DemoComponent from "components/DemoComponent";
 
 const DropdownPage = () => (
   <ComponentPage
     name="Dropdown"
     translations
     render={(t, componentLabel) => {
-      const iconsLabel = t("props_icons");
       const elementLabel = t("props_element", {
         index: "<INDEX>",
       });
 
       return (
-        <Demo
+        <DemoComponent
           label={componentLabel}
           props={{
-            [iconsLabel]: BooleanProp(false),
-            label: StringProp('label'),
-            ...DEMO_COMMON_PROPS,
+            value: NumberProp(0),
+            ...demoProps,
           }}
+          rows={[["value"], ...demoRows]}
           startColor="#ebe5e2"
-        >
-          {(props: any) => {
-            const icon = props[iconsLabel] ? (
+          parseProps={(props) => {
+            const icon = (
               <div
                 style={{
                   marginTop: "auto",
@@ -43,34 +42,26 @@ const DropdownPage = () => (
                   }}
                 ></i>
               </div>
-            ) : undefined;
-
-            const elements = [
-              {
-                name: elementLabel.replace("<INDEX>", "1"),
-                icon: icon,
-              },
-              {
-                name: elementLabel.replace("<INDEX>", "2"),
-                icon: icon,
-              },
-            ];
-
-            return (
-              <div className="flex flex-col items-center bg-transparent ">
-                <Dropdown
-                  className={props.className}
-                  hide={props.hide}
-                  dark={props.dark}
-                  shadow={props.shadow}
-                  unstyled={props.unstyled}
-                  label={props.label}
-                  content={elements}
-                />
-              </div>
             );
+
+            return {
+              ...props,
+              content: [
+                {
+                  name: elementLabel.replace("<INDEX>", "1"),
+                  icon,
+                },
+                elementLabel.replace("<INDEX>", "2") + " - string",
+                {
+                  name: elementLabel.replace("<INDEX>", "3"),
+                  icon,
+                },
+              ],
+            };
           }}
-        </Demo>
+        >
+          {Dropdown}
+        </DemoComponent>
       );
     }}
   />

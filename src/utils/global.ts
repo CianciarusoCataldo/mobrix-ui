@@ -1,11 +1,16 @@
 import { CSSProperties } from "react";
 
+export type MobBrixAnimation = "fadeIn" | "fadeOut" | "slideIn" | "slideOut";
+
 /**
  * Props shared between all {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} components
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-components-properties
  * */
 export interface CommonProps {
+  /** Custom component React key (the standard {@link https://reactjs.org/docs/lists-and-keys.html key parameter}) */
+  key?: string;
+
   /** custom className applied on main container */
   className?: string;
 
@@ -26,22 +31,55 @@ export interface CommonProps {
 
   /** If true, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons) */
   unstyled?: boolean;
+
+  /** Enable/disable component animations */
+  animated?: boolean;
+
+  /** If true, the component is selectable by navigating with tab key (default `true`) */
+  a11y?: boolean;
+
+  /** if the `a11y` parameter is `true`, override standard focus color style with/without dark mode (normally, the color changes accordingly to the `dark` parameter) */
+  a11yDark?: boolean;
+
+  /** if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label} */
+  a11yLabel?: string;
+
+  /** callback called when component is focused */
+  onFocus?: () => void;
+
+  /** callback called when component focus is lost */
+  onFocusLost?: () => void;
+
+  /** callback called when a key is pressed when inside the component */
+  onKeyDown?: (keyEvent: any) => void;
 }
 
 /**
- * A standard {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} box component
+ * A MoBrix-ui component driven by an input value
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=box-components
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/
+ *
+ * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
+ *
+ * @copyright 2022 Cataldo Cianciaruso
  */
-export interface BoxComponent<T = any, K = JSX.Element> {
+export interface ComponentWithValue<T = any> {
   /** Actual component value */
   value?: T;
+}
 
-  /** Custom component icon */
-  icon?: K;
-
-  /** Box component label */
-  label?: string | JSX.Element;
+/**
+ * A {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component with a custom icon
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/
+ *
+ * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
+ *
+ * @copyright 2022 Cataldo Cianciaruso
+ */
+export interface ComponentWithIcon<T = JSX.Element> {
+  /** Icon showed inside the component */
+  icon?: T;
 }
 
 /**
@@ -53,13 +91,27 @@ export interface BoxComponent<T = any, K = JSX.Element> {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export interface GenericInputComponent<T = string> {
+export interface GenericInputComponent {
   /** if true, the input content won't be editable */
   readOnly?: boolean;
 
   /** A label showed when no input is given */
-  placeholder?: T;
+  placeholder?: string;
 }
+
+/**
+ * A numeric {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} input component, to handle numbers
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/
+ *
+ * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
+ *
+ * @copyright 2022 Cataldo Cianciaruso
+ */
+export type NumericInputComponent = GenericInputComponent & {
+  min?: number;
+  max?: number;
+};
 
 /**
  * A {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component that provide a callback to handle its content changes
@@ -77,6 +129,21 @@ export interface ComponentWithCallback<T = string> {
 }
 
 /**
+ * A {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component that provide a callback to handle its click event
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/
+ *
+ * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
+ *
+ * @copyright 2022 Cataldo Cianciaruso
+ *
+ */
+export interface ClickableComponent<T = () => void> {
+  /** Callback triggered when component is clicked */
+  onClick?: T;
+}
+
+/**
  * A {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component with children element
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/
@@ -85,9 +152,25 @@ export interface ComponentWithCallback<T = string> {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export interface ComponentWithChildren<T = JSX.Element> {
+export interface ComponentWithChildren<
+  T = JSX.Element | JSX.Element[] | undefined
+> {
   /** Component children */
   children?: T;
+}
+
+/**
+ * A {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component with onClose callback
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/
+ *
+ * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
+ *
+ * @copyright 2022 Cataldo Cianciaruso
+ */
+export interface ClosableComponent {
+  /** Callback called when component is closed */
+  onClose?: () => void;
 }
 
 /**
@@ -102,7 +185,15 @@ export interface ComponentWithChildren<T = JSX.Element> {
 export type BuilderComponent = JSX.Element | string;
 
 /** Supported components wrappers */
-export type Wrappers = "div" | "a" | "header" | "button" | "footer" | "p";
+export type Wrappers =
+  | "div"
+  | "a"
+  | "header"
+  | "button"
+  | "footer"
+  | "p"
+  | "input"
+  | "select";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} components builder props
@@ -123,10 +214,10 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
   /** Shared props */
   commonProps?: CommonProps;
 
-  /** Additional props applied on main container */
+  /** Additional props applied on main container (default `{}`) */
   additionalProps?: any;
 
-  /** Component wrapper (like `div` or `button`, for example) */
+  /** Component wrapper (default `div`) */
   wrapper?: Wrappers;
 };
 
@@ -139,4 +230,66 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type MoBrixUiComponent<T = any, K = JSX.Element> = (props: T) => K;
+export type MoBrixUiComponent<T = any, K = JSX.Element> = (
+  props: MobrixUiProps<T>
+) => K;
+
+/**
+ * Standard {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component props
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/
+ *
+ * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
+ *
+ * @copyright 2022 Cataldo Cianciaruso
+ */
+export type MobrixUiProps<T = any> = T & CommonProps;
+
+/**
+ * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} reactive component props
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/
+ *
+ * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
+ *
+ * @copyright 2022 Cataldo Cianciaruso
+ */
+export type MobrixUiReactiveComponentProps<T = any, K = any> = {
+  value: T;
+  setValue: React.Dispatch<React.SetStateAction<T>>;
+} & K;
+
+/**
+ * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} reactive component builder
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/
+ *
+ * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
+ *
+ * @copyright 2022 Cataldo Cianciaruso
+ */
+export type MobrixUiReactiveComponentBuilder<
+  T = any,
+  K = any
+> = MoBrixUiComponent<
+  MobrixUiReactiveComponentProps<T, K>,
+  Omit<BuilderProps, "name">
+>;
+
+/**
+ * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} reactive component
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/
+ *
+ * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
+ *
+ * @copyright 2022 Cataldo Cianciaruso
+ */
+export type MobrixUiReactiveComponent<T = any, K = any> = MoBrixUiComponent<
+  MobrixUiReactiveComponentProps<T, K>,
+  BuilderComponent | BuilderComponent[]
+>;
+
+export type DeepPartial<T> = {
+  [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
+};

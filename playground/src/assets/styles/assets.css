@@ -13,3 +13,21 @@ body .left-arrow:hover {
 body .left-arrow:active {
   fill: #fb7a10;
 }
+
+body .demo-row {
+  align-items: center;
+}
+
+body .demo-row .box-container .box {
+  max-width: 8rem;
+}
+
+body #preview {
+  margin: 0.6rem;
+}
+
+@media (max-width: 400px) {
+  body .previewer-container {
+    margin: 0.3rem;
+  }
+}

@@ -1,6 +1,6 @@
 import {
-  BoxComponent,
-  CommonProps,
+  ClickableComponent,
+  ComponentWithChildren,
   MoBrixUiComponent,
 } from "../../../utils/global";
 
@@ -14,8 +14,19 @@ import {
  * @copyright 2022 Cataldo Cianciaruso
  */
 export interface FormField {
+  /** Text showed above the field itself */
   header?: string;
+
+  /**
+   * The field type (will determine a specific type when returned, and also the UI component associated)
+   *
+   * allowed types are:
+   * `boolean` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/CheckBox CheckBox})
+   * `numeric` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Counter Counter})
+   * `text` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input Input})
+   */
   type?: "boolean" | "text" | "numeric";
+  placeholder?: string;
 }
 
 /**
@@ -27,19 +38,30 @@ export interface FormField {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type FormProps = CommonProps &
-  Omit<BoxComponent, "value" | "icon"> & {
+export type FormProps = ComponentWithChildren<JSX.Element> &
+  ClickableComponent<(values: Record<string, any>) => void> & {
     /** Form title */
     title?: string;
 
-    /** Form fields array */
+    /**
+     * Form fields array. Every field must be an object with optionally 2 properties:
+     *     - `header` - the text showed upon the field component)
+     *     - `type` - the field type (will determine a specific type when returned, and also the UI component associated)
+     *
+     * allowed types are:
+     *     - `boolean` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/CheckBox})
+     *     - `numeric` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Counter})
+     *     - `text` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input})
+     *
+     * A field object can be empty, in this case default values will be used (`input` type with empty header)
+     */
     fields?: Record<string, FormField>;
 
     /** Custom submit button label */
-    submitLabel?: string;
+    buttonContent?: JSX.Element | string;
 
-    /** Callback on Form submit */
-    onSubmit?: (values: Record<string, string | boolean | number>) => void;
+    /** Custom className applied on every single field component */
+    fieldClassName?: string;
   };
 
 /**

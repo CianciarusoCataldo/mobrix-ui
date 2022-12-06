@@ -1,8 +1,7 @@
 import {
-  BoxComponent,
   BuilderComponent,
-  CommonProps,
   ComponentWithChildren,
+  ComponentWithIcon,
   MoBrixUiComponent,
 } from "../../../utils/global";
 
@@ -15,9 +14,12 @@ import {
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-export type CardProps = CommonProps &
-  ComponentWithChildren &
-  Omit<BoxComponent, "value"> & {
+export type CardProps = ComponentWithChildren<
+  JSX.Element | JSX.Element[] | string
+> &
+  ComponentWithIcon & {
+    onClose?: () => void;
+
     /** Card header content */
     header?: BuilderComponent;
 
@@ -26,6 +28,10 @@ export type CardProps = CommonProps &
 
     /** Card footer content */
     footer?: BuilderComponent;
+
+    /** If true, the card can be dismissed by clicking the x icon and the card will disappear
+     * (at least until the page is reloaded, use `hide` parameter for a fixed visibility) */
+    dismissable?: boolean;
   };
 
 /**

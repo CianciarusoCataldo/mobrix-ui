@@ -1,8 +1,6 @@
-#mobrix-ui-inputbox.styled .input-box {
+#mobrix-ui-inputbox.styled {
   border-radius: 5px;
   padding: 0.5rem;
-  outline: none;
   background-color: var(--mobrix-ui-background-color);
   color: var(--mobrix-ui-text-color);
-  width: 100%;
 }

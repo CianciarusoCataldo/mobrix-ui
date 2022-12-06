@@ -1,0 +1,11 @@
+#mobrix-ui-selector.styled {
+  padding: 0.2rem;
+  background: var(--mobrix-ui-background);
+  color: var(--mobrix-ui-text-color);
+  border-radius: 6px;
+}
+
+#mobrix-ui-selector.styled option {
+  background-color: var(--mobrix-ui-background-color);
+  color: var(--mobrix-ui-text-color);
+}

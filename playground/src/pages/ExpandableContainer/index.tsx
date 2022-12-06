@@ -1,13 +1,13 @@
 import {
   BooleanProp,
-  Demo,
   HiddenProp,
   StringProp,
 } from "@cianciarusocataldo/demo-ui";
 
 import { ExpandableContainer } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
+import DemoComponent from "components/DemoComponent";
 
 const ExpandableContainerPage = () => (
   <ComponentPage
@@ -17,21 +17,18 @@ const ExpandableContainerPage = () => (
       const childrenText = t("props_children");
 
       return (
-        <Demo
+        <DemoComponent
           label={componentLabel}
           props={{
             children: StringProp(childrenText),
-            animated: BooleanProp(false),
+            compact: BooleanProp(true),
             expanded: HiddenProp(<div>Expanded area</div>),
-            ...DEMO_COMMON_PROPS,
+            ...demoProps,
           }}
+          rows={[["children", "compact", "expanded"], ...demoRows]}
         >
-          {(props: any) => (
-            <div className="flex flex-col items-center">
-              <ExpandableContainer {...props} />
-            </div>
-          )}
-        </Demo>
+          {ExpandableContainer}
+        </DemoComponent>
       );
     }}
   />

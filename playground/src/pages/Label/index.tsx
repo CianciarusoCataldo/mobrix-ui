@@ -1,8 +1,9 @@
-import { BooleanProp, Demo, StringProp } from "@cianciarusocataldo/demo-ui";
+import { StringProp } from "@cianciarusocataldo/demo-ui";
 
-import { Label, LabelProps } from "mobrix-ui-preview";
+import { Label } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
-import { DEMO_COMMON_PROPS } from "constants/demo-props";
+import { demoRows, demoProps } from "constants/demo-props";
+import DemoComponent from "components/DemoComponent";
 
 const LabelPage = () => (
   <ComponentPage
@@ -12,22 +13,16 @@ const LabelPage = () => (
       const labelContent = t("props_value");
 
       return (
-        <Demo
+        <DemoComponent
           label={componentLabel}
           props={{
-            value: StringProp(labelContent),
-            ...DEMO_COMMON_PROPS,
-            shadow: BooleanProp(false),
+            children: StringProp(labelContent),
+            ...demoProps,
           }}
-          rows={[
-            ["value", "dark", "shadow"],
-            ["className", "hide", "unstyled"],
-          ]}
+          rows={[["children"], ...demoRows]}
         >
-          {(props: LabelProps) => {
-            return <Label {...props} />;
-          }}
-        </Demo>
+          {Label}
+        </DemoComponent>
       );
     }}
   />
