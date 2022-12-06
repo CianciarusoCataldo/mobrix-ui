@@ -151,6 +151,7 @@ render(
 );
 ```
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b71e50de99ce4ae2b3af87470011ea6c)](https://app.codacy.com/gh/CianciarusoCataldo/mobrix-ui?utm_source=github.com&utm_medium=referral&utm_content=CianciarusoCataldo/mobrix-ui&utm_campaign=Badge_Grade_Settings)
 [![Edit MoBrix-ui playground](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mobrix-ui-playground-gfpbb?file=/src/index.tsx?fontsize=14&hidenavigation=1&theme=dark&view=preview)
 
 <br>
