@@ -3,9 +3,9 @@
   width: 100%;
   border-radius: 12px;
   background: var(--mobrix-ui-background);
+  -webkit-appearance: none;
 
   --mobrix-ui-slider-thumb-color: radial-gradient(#0e123d, #0412ad);
-  -webkit-appearance: none;
 }
 
 #mobrix-ui-slider.dark {

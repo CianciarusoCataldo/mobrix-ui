@@ -6,7 +6,6 @@
   animation: var(--mobrix-ui-drawer-animation);
   background: transparent;
   display: flex;
-
   -moz-animation: var(--mobrix-ui-drawer-animation);
   -ms-animation: var(--mobrix-ui-drawer-animation);
   -o-animation: var(--mobrix-ui-drawer-animation);
@@ -134,7 +133,6 @@
 
 #mobrix-ui-drawer .drawer-close-button:focus-visible {
   box-shadow: none;
-
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;

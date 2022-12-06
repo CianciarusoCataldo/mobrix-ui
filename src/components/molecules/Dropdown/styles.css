@@ -78,7 +78,6 @@
   transition-property: transform;
   transform: rotate(45deg);
   border-color: var(--mobrix-ui-text-color);
-
   -webkit-transform: rotate(45deg);
 }
 
@@ -95,7 +94,6 @@
 #mobrix-ui-dropdown .icon.rotate-back {
   transition: transform 0.3s ease-in-out;
   transform: rotate(360deg);
-
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   -ms-transition: -ms-transform 0.3s ease-in-out;
   -ms-transform: rotate(360deg);
@@ -124,7 +122,6 @@
 
 #mobrix-ui-dropdown .regular:focus-visible {
   box-shadow: none;
-
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
