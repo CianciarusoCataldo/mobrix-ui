@@ -13,9 +13,6 @@
   overflow-y: auto;
   overflow-x: hidden;
   margin-top: 0.2rem;
-}
-
-#mobrix-ui-dropdown .options {
   scrollbar-width: thin;
   scrollbar-color: #c0c0c0;
 }
@@ -107,6 +104,7 @@
   padding: 0.25rem;
   display: flex;
   flex-direction: column;
+  background-color: transparent;
 }
 
 #mobrix-ui-dropdown .regular .dropdown-element {
@@ -114,10 +112,6 @@
   flex-direction: row;
   margin-top: auto;
   margin-bottom: auto;
-}
-
-#mobrix-ui-dropdown .regular {
-  background-color: transparent;
 }
 
 #mobrix-ui-dropdown .regular:hover,

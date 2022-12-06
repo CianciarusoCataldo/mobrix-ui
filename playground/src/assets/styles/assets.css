@@ -14,7 +14,6 @@ body .left-arrow:active {
   fill: #fb7a10;
 }
 
-
 body .demo-row {
   align-items: center;
 }
@@ -27,8 +26,8 @@ body #preview {
   margin: 0.6rem;
 }
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
   body .previewer-container {
     margin: 0.3rem;
-  } 
+  }
 }

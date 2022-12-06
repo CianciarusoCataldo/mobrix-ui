@@ -1,4 +1,5 @@
 import {
+  BuilderComponent,
   ComponentWithCallback,
   MoBrixUiComponent,
 } from "../../../utils/global";
@@ -15,8 +16,9 @@ import { ContainerProps } from "../Container/types";
  */
 export type ExpandableContainerProps = ContainerProps &
   ComponentWithCallback<boolean> & {
+    /** if true, the full container is showed (if false, the expanded area is hidden) */
     compact?: boolean;
-    expanded?: JSX.Element;
+    expanded?: BuilderComponent;
   };
 
 /**

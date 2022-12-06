@@ -18,7 +18,7 @@
   }
 }
 
-#mobrix-ui-modal.animated .modal-window {
+#mobrix-ui-modal.animated > .modal-window {
   -webkit-animation: fadein 0.7s;
   -moz-animation: fadein 0.7s;
   -ms-animation: fadein 0.7s;
@@ -38,6 +38,6 @@
   margin: auto;
 }
 
-#mobrix-ui-modal.styled .modal-window > .content {
+#mobrix-ui-modal.styled > .modal-window > .content {
   padding: 1rem;
 }

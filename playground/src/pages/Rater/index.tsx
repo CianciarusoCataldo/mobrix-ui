@@ -27,7 +27,7 @@ const RaterPage = () => (
           }),
           ...demoProps,
         }}
-        rows={[["value", "max", "type", "vertical"], ...demoRows]}
+        rows={[["value", "max", "type"], ["readonly", "vertical"], ...demoRows]}
       >
         {Rater}
       </DemoComponent>

@@ -1,5 +1,4 @@
 import {
-  ClickableComponent,
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,

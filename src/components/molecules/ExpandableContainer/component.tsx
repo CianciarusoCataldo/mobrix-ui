@@ -19,7 +19,7 @@ const expandableContainerComponent: MobrixUiReactiveComponent<
   dark,
   onChange = () => {},
 }) => {
-  let components: JSX.Element[] = [children];
+  let components = [children];
 
   !compact && expanded && components.push(expanded);
   components.push(

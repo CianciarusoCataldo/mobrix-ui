@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-#mobrix-ui-carousel.styled  {
+#mobrix-ui-carousel.styled {
   background-image: var(--mobrix-ui-background);
   padding: 0.4rem;
 }

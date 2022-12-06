@@ -12,7 +12,9 @@ import expandableContainerComponent from "./component";
  * @since 1.0.0
  *
  * @param wrapper component type. The Container component can wrap a content inside different components (by now, )
- * @param children content to render inside Container
+ * @param children content to render inside Container (always, also when it is not expanded)
+ * @param expanded Extra content showed only when container is expanded (`compact` === `true`)
+ * @param {boolean} compact if true, the full container is showed (if false, the expanded area is hidden)
  * @param {(isCompact:boolean)=>void} onChange callback triggered when expanded content is showed/hidden
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles

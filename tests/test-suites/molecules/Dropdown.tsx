@@ -112,7 +112,7 @@ const dropdownTest = () => {
         expect(onChangeStub).not.toBeCalled;
       });
 
-      test("Arrow down", () => {
+      test("Arrow down and Arrow up", () => {
         const onChangeStub = jest.fn();
         let wrapper = mount(
           <Dropdown

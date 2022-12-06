@@ -2,22 +2,46 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 9999px;
+  border-radius: 50%;
   width: 30px;
   height: 30px;
-  background: transparent;
+  background: radial-gradient(
+    #f1f1f1 20%,
+    #e4e4e4 30%,
+    #bebebe 55%,
+    #f0f0f0 20%
+  );
+}
+
+#mobrix-ui-radio-button.styled {
   padding: 0.2rem;
-  background: var(--mobrix-ui-background);
+  border-color: #dadada;
+  border-width: 1px;
+}
+
+#mobrix-ui-radio-button.dark {
+  background: radial-gradient(
+    #1c0083 20%,
+    #2e306d 30%,
+    #1b1658 55%,
+    #1c0083 20%
+  );
 }
 
 #mobrix-ui-radio-button .icon {
-  border-radius: 9999px;
+  border-radius: 50%;
   margin: auto;
-  background: var(--mobrix-ui-background-dark);
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
+  background: radial-gradient(#797979, #323233, #121224, #1d232e);
 }
 
 #mobrix-ui-radio-button.dark .icon {
-  background: var(--mobrix-ui-background-light);
+  background: radial-gradient(
+    closest-corner,
+    #e2dfdf,
+    #e2dfdf,
+    #bebcbc,
+    #999999
+  );
 }
