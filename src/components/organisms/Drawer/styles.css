@@ -4,23 +4,21 @@
   padding: 0;
   color: var(--mobrix-ui-text-color);
   animation: var(--mobrix-ui-drawer-animation);
+  background: transparent;
+  display: flex;
 
   -moz-animation: var(--mobrix-ui-drawer-animation);
   -ms-animation: var(--mobrix-ui-drawer-animation);
   -o-animation: var(--mobrix-ui-drawer-animation);
-
-  background: transparent;
-  display: flex;
 }
 
 #mobrix-ui-drawer[class^="bottom"] {
   flex-direction: column-reverse;
+  top: auto;
+  bottom: 0;
 
   --mobrix-ui-drawer-animation-in: slideBottom 0.3s forwards;
   --mobrix-ui-drawer-animation-out: slideOutBottom 0.3s forwards;
-
-  top: auto;
-  bottom: 0;
 }
 
 #mobrix-ui-drawer[class^="left"] {
@@ -53,11 +51,11 @@
 #mobrix-ui-drawer.top,
 #mobrix-ui-drawer.top-left,
 #mobrix-ui-drawer.top-right {
-  --mobrix-ui-drawer-animation-in: slideTop 0.3s forwards;
-  --mobrix-ui-drawer-animation-out: slideOutTop 0.3s forwards;
-
   bottom: auto;
   top: 0;
+
+  --mobrix-ui-drawer-animation-in: slideTop 0.3s forwards;
+  --mobrix-ui-drawer-animation-out: slideOutTop 0.3s forwards;
 }
 
 #mobrix-ui-drawer.top-left,
@@ -135,11 +133,11 @@
 }
 
 #mobrix-ui-drawer .drawer-close-button:focus-visible {
+  box-shadow: none;
+
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
-
-  box-shadow: none;
 }
 
 #mobrix-ui-drawer .drawer-close-button svg {

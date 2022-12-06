@@ -3,10 +3,10 @@
   --mobrix-ui-background-color-dark: #1d232e;
   --mobrix-ui-text-color-light: #1b1b1b;
   --mobrix-ui-text-color-dark: white;
-  --mobrix-ui-background-dark: linear-gradient(to right, #2d3748, #1d232e);
-  --mobrix-ui-background-light: linear-gradient(to right, #fff, #eaebec);
   --mobrix-ui-focus-color-light: #7785ff;
   --mobrix-ui-focus-color-dark: #fb7a10;
+  --mobrix-ui-background-dark: linear-gradient(to right, #2d3748, #1d232e);
+  --mobrix-ui-background-light: linear-gradient(to right, #fff, #eaebec);
 }
 
 [id^="mobrix-ui-"]:focus {
@@ -16,8 +16,9 @@
 [id^="mobrix-ui-"],
 [id^="mobrix-ui-"]:hover,
 [id^="mobrix-ui-"]:active {
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
+
+  -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
 }
@@ -70,10 +71,11 @@
 }
 
 [id^="mobrix-ui-"].a11y:focus-visible {
+  box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
+
   -webkit-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
   -moz-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
   -o-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
-  box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
   --mobrix-ui-link-color: rgb(37, 99, 235);
 }
 
