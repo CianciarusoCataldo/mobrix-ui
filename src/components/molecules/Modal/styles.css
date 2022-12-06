@@ -26,14 +26,6 @@
   align-items: center;
 }
 
-#mobrix-ui-modal.animated > .modal-window {
-  -webkit-animation: fadein 0.7s;
-  -moz-animation: fadein 0.7s;
-  -ms-animation: fadein 0.7s;
-  -o-animation: fadein 0.7s;
-  animation: fadein 0.7s;
-}
-
 #mobrix-ui-modal > .modal-window > .content {
   margin: auto;
 }
