@@ -1,26 +1,19 @@
-import React from "react";
-
 import { demoRows, demoProps } from "constants/demo-props";
 
-import { SelectProp } from "@cianciarusocataldo/demo-ui";
+import { HiddenProp, SelectProp } from "@cianciarusocataldo/demo-ui";
 
 import { Button, Drawer, List } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
 import DemoComponent from "components/DemoComponent";
 
 const DrawerPage = () => {
-  const [isVisible, setVisible] = React.useState(false);
-
   let customDemoProps = { ...demoProps };
-  delete customDemoProps.hide;
-
+  customDemoProps.hide = HiddenProp(true);
   return (
     <ComponentPage
       name="Drawer"
       translations
       render={(t, componentLabel) => {
-        const buttonText = t(isVisible ? "common_close" : "common_open");
-
         return (
           <DemoComponent
             label={componentLabel}
@@ -44,11 +37,10 @@ const DrawerPage = () => {
               demoRows[1],
               demoRows[2].splice(1),
             ]}
-            parseProps={(props) => {
+            parseProps={(props, setProps) => {
               return {
                 ...props,
-                onClose: () => setVisible(false),
-                hide: !isVisible,
+                onClose: () => setProps({ ...props, hide: true }),
                 children: (
                   <List
                     dark={props.dark}
@@ -61,26 +53,15 @@ const DrawerPage = () => {
               };
             }}
           >
-            {(props: any) => {
+            {(props: any, setProps: any) => {
+              const buttonText = t("common_open");
+
               return (
-                <div className="">
-                  <Button onClick={() => setVisible(!isVisible)}>
+                <div>
+                  <Button onClick={() => setProps({ ...props, hide: false })}>
                     {buttonText}
                   </Button>
-                  <Drawer
-                    hide={!isVisible}
-                    onClose={() => setVisible(false)}
-                    children={
-                      <List
-                        dark={props.dark}
-                        className="p-4"
-                        elements={new Array(6)
-                          .fill("Element ")
-                          .map((el, index) => el + index)}
-                      />
-                    }
-                    {...props}
-                  />
+                  <Drawer {...props} />
                 </div>
               );
             }}

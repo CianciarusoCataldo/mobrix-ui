@@ -11,8 +11,9 @@
   -o-animation: var(--mobrix-ui-drawer-animation);
 }
 
-#mobrix-ui-drawer[class^="bottom"] {
-  flex-direction: column-reverse;
+#mobrix-ui-drawer.bottom,
+#mobrix-ui-drawer.bottom-left,
+#mobrix-ui-drawer.bottom-right {
   top: auto;
   bottom: 0;
 
@@ -20,31 +21,31 @@
   --mobrix-ui-drawer-animation-out: slideOutBottom 0.3s forwards;
 }
 
-#mobrix-ui-drawer[class^="left"] {
+#mobrix-ui-drawer.left,
+#mobrix-ui-drawer.top-left,
+#mobrix-ui-drawer.bottom-left {
   right: auto;
   left: 0;
 }
 
-#mobrix-ui-drawer[class^="right"] {
+#mobrix-ui-drawer.right,
+#mobrix-ui-drawer.top-right,
+#mobrix-ui-drawer.bottom-right {
   left: auto;
   right: 0;
-}
-
-#mobrix-ui-drawer[class^="top"] {
-  flex-direction: column;
 }
 
 #mobrix-ui-drawer.left,
 #mobrix-ui-drawer.right {
   top: 0;
   bottom: 0;
+  height: 100%;
 }
 
 #mobrix-ui-drawer.top,
 #mobrix-ui-drawer.bottom {
   left: 0;
   right: 0;
-  width: 100%;
 }
 
 #mobrix-ui-drawer.top,
@@ -57,25 +58,12 @@
   --mobrix-ui-drawer-animation-out: slideOutTop 0.3s forwards;
 }
 
-#mobrix-ui-drawer.top-left,
-#mobrix-ui-drawer.bottom-left,
-#mobrix-ui-drawer.left,
-#mobrix-ui-drawer.top-right,
-#mobrix-ui-drawer.bottom-right,
-#mobrix-ui-drawer.right {
-  height: 100%;
-}
-
 #mobrix-ui-drawer.left {
-  flex-direction: row;
-
   --mobrix-ui-drawer-animation-in: slideLeft 0.3s forwards;
   --mobrix-ui-drawer-animation-out: slideOutLeft 0.3s forwards;
 }
 
 #mobrix-ui-drawer.right {
-  flex-direction: row-reverse;
-
   --mobrix-ui-drawer-animation-in: slideRight 0.3s forwards;
   --mobrix-ui-drawer-animation-out: slideOutRight 0.3s forwards;
 }
@@ -89,12 +77,34 @@
 }
 
 #mobrix-ui-drawer .content {
-  overflow: auto;
+  display: flex;
+}
+
+#mobrix-ui-drawer[class^="bottom"] .content {
+  flex-direction: column-reverse;
+}
+
+#mobrix-ui-drawer[class^="top"] .content {
+  flex-direction: column;
+}
+
+#mobrix-ui-drawer.bottom .content,
+#mobrix-ui-drawer.top .content {
+  width: 100%;
+}
+
+#mobrix-ui-drawer.left .content {
+  flex-direction: row;
+  height: 100%;
+}
+
+#mobrix-ui-drawer.right .content {
+  flex-direction: row-reverse;
+  height: 100%;
 }
 
 #mobrix-ui-drawer .drawer-close-button {
-  margin: auto;
-  background-image: var(--mobrix-ui-background);
+  margin: 0;
 }
 
 #mobrix-ui-drawer[class^="bottom"] .drawer-close-button {
@@ -103,6 +113,7 @@
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   padding-top: 0.1rem;
+  width: 100%;
 }
 
 #mobrix-ui-drawer[class^="top"] .drawer-close-button {
@@ -111,12 +122,14 @@
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   padding-bottom: 0.1rem;
+  width: 100%;
 }
 
 #mobrix-ui-drawer.right .drawer-close-button,
 #mobrix-ui-drawer.left .drawer-close-button {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  height: 100%;
 }
 
 #mobrix-ui-drawer.right .drawer-close-button {
@@ -140,6 +153,7 @@
 
 #mobrix-ui-drawer .drawer-close-button svg {
   fill: var(--mobrix-ui-text-color);
+  margin: auto;
 }
 
 #mobrix-ui-drawer[class^="top"] .drawer-close-button svg {

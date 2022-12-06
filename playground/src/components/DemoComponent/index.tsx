@@ -9,7 +9,7 @@ const DemoComponent = <T extends Record<string, any> = {}>({
   startColor,
 }: {
   label?: string;
-  children: (props: Record<string, any> & T) => JSX.Element;
+  children: (props: Record<string, any> & T, setProps: any) => JSX.Element;
   rows?: string[][];
   props: Record<string, any> & T;
   startColor?: string;
@@ -27,7 +27,9 @@ const DemoComponent = <T extends Record<string, any> = {}>({
         }
 
         return (
-          <div className="flex flex-col items-center">{children(newProps)}</div>
+          <div className="flex flex-col items-center">
+            {children(newProps, setProps)}
+          </div>
         );
       }}
     </Demo>

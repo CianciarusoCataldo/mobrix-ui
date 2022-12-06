@@ -1,23 +1,10 @@
 import "./styles.css";
 
-import classNames from "classnames";
-
 import { DrawerComponent } from "./types";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 
-import drawerComponent from "./component";
-
-const ALLOWED_POSITIONS = [
-  "right",
-  "left",
-  "top",
-  "bottom",
-  "top-left",
-  "top-right",
-  "bottom-left",
-  "bottom-right",
-];
+import drawerBuilder from "./builder";
 
 /**
  * A modern drawer, easy to integrate and to customize.
@@ -53,44 +40,10 @@ const ALLOWED_POSITIONS = [
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-const Drawer: DrawerComponent = ({
-  children,
-  onClose = () => {},
-  hide,
-  className,
-  position,
-  /* istanbul ignore next */
-  onFocusLost = () => {},
-  ...commonProps
-}) => {
-  const drawerLocation =
-    position && ALLOWED_POSITIONS.includes(position) ? position : "left";
-  /* istanbul ignore next */
-  const onFocusLostCallback = () => {
-    onFocusLost();
-    onClose();
-  };
+const Drawer: DrawerComponent = (props) => {
   return buildMobrixUiStandardComponent({
     name: "drawer",
-    commonProps: {
-      ...commonProps,
-      onFocusLost: onFocusLostCallback,
-      animated: false,
-      className: classNames(
-        drawerLocation,
-        {
-          "ease-in": !hide,
-          "ease-out": hide,
-        },
-        className
-      ),
-    },
-    Component: drawerComponent({
-      onClose,
-      children,
-      dark: commonProps.dark,
-      hide,
-    }),
+    ...drawerBuilder(props),
   });
 };
 

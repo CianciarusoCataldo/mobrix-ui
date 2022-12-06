@@ -30,6 +30,7 @@ export const DrawerComponent = ({
       hide={!drawerVisible}
       onClose={() => store?.dispatch(closeDrawer())}
       dark={dark}
+      animated
     >
       <DrawerContent store={store} />
     </Drawer>
@@ -44,7 +45,7 @@ export const DrawerContent = ({ store }: { store?: MoBrixEngineStore }) => {
   const { t } = useTranslation(i18n.titlesNamespace || i18n.defaultNamespace);
 
   return (
-    <div className="p-4">
+    <div className="p-4 overflow-auto">
       {Object.keys(PATHS).map((route, index) => {
         return (
           <div className="mt-1 mb-3" key={`drawer_app_element_${index}`}>

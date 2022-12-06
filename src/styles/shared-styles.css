@@ -104,6 +104,15 @@
   animation: fadein 0.4s;
 }
 
+[id^="mobrix-ui-"].animated.fade-out,
+[id^="mobrix-ui-"].animated .mobrix-ui-animated-component.fade-out {
+  -webkit-animation: fadeOut 0.4s;
+  -moz-animation: fadeOut 0.4s;
+  -ms-animation: fadeOut 0.4s;
+  -o-animation: fadeOut 0.4s;
+  animation: fadeOut 0.4s;
+}
+
 [id^="mobrix-ui-"].shadowed,
 [id^="mobrix-ui-"] .shadowed {
   -webkit-box-shadow: 0 5px 13px -1px #464545;
