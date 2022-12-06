@@ -84,7 +84,6 @@
 #mobrix-ui-dropdown .icon.rotate {
   transition: transform 0.3s ease-in-out;
   transform: rotate(180deg);
-
   -ms-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;

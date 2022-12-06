@@ -8,7 +8,7 @@ import classnames from "classnames";
 import Button from "../../atoms/Button";
 import Popup from "../Popup";
 
-const dropdownComponent: MobrixUiReactiveComponentBuilder<
+const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
   number,
   DropdownProps
 > = ({
@@ -196,4 +196,4 @@ const dropdownComponent: MobrixUiReactiveComponentBuilder<
   };
 };
 
-export default dropdownComponent;
+export default DropdownInternalComponent;

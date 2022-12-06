@@ -47,7 +47,6 @@ const FacebookButtons: FacebookButtonsComponent = ({
   share,
   small,
   width,
-  shadow,
   ...commonProps
 }) =>
   buildMobrixUiStandardComponent({

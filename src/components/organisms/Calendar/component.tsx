@@ -9,7 +9,7 @@ import { defaultDays, defaultMonths } from "./constants";
 import { CalendarDate, CalendarProps } from "./types";
 import { getMonthsDuration, getDateMatrix } from "./utils";
 
-const calendarComponent: MobrixUiReactiveComponent<
+const CalendarComponent: MobrixUiReactiveComponent<
   DeepPartial<CalendarDate>,
   CalendarProps & { today: CalendarDate & { dayOfTheMonth: number } }
 > = ({
@@ -166,4 +166,4 @@ const calendarComponent: MobrixUiReactiveComponent<
   ];
 };
 
-export default calendarComponent;
+export default CalendarComponent;

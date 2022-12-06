@@ -17,7 +17,7 @@ import Modal from "../../molecules/Modal";
 import Calendar from "../Calendar";
 import Button from "../../atoms/Button";
 
-const datePickerComponent: MobrixUiReactiveComponent<
+const DatePickerInternalComponent: MobrixUiReactiveComponent<
   CalendarDate,
   DatePickerProps & { today: CalendarDate & { dayOfTheMonth: number } }
 > = ({
@@ -166,4 +166,4 @@ const datePickerComponent: MobrixUiReactiveComponent<
   ];
 };
 
-export default datePickerComponent;
+export default DatePickerInternalComponent;

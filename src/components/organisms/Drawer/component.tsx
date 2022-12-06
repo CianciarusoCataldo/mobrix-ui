@@ -7,7 +7,7 @@ import Button from "../../atoms/Button";
 import Container from "../../molecules/Container";
 import classNames from "classnames";
 
-const drawerComponent: MoBrixUiComponent<DrawerProps, BuilderComponent[]> = ({
+const DrawerInternalComponent: MoBrixUiComponent<DrawerProps, BuilderComponent[]> = ({
   onClose,
   children,
   dark,
@@ -66,4 +66,4 @@ const drawerComponent: MoBrixUiComponent<DrawerProps, BuilderComponent[]> = ({
   ];
 };
 
-export default drawerComponent;
+export default DrawerInternalComponent;
