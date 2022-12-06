@@ -8,27 +8,11 @@
   -ms-animation: var(--mobrix-ui-drawer-animation);
   -o-animation: var(--mobrix-ui-drawer-animation);
   background: transparent;
+  display: flex;
 }
 
-#mobrix-ui-drawer.left,
-#mobrix-ui-drawer.right {
-  top: 0;
-  bottom: 0;
-}
-
-#mobrix-ui-drawer.top,
-#mobrix-ui-drawer.bottom {
-  left: 0;
-  right: 0;
-}
-
-#mobrix-ui-drawer.top,
-#mobrix-ui-drawer.top-left,
-#mobrix-ui-drawer.top-right {
-  --mobrix-ui-drawer-animation-in: slideTop 0.3s forwards;
-  --mobrix-ui-drawer-animation-out: slideOutTop 0.3s forwards;
-  bottom: auto;
-  top: 0;
+#mobrix-ui-drawer.styled {
+  padding: 0.1rem;
 }
 
 #mobrix-ui-drawer[class^="bottom"] {
@@ -48,12 +32,53 @@
   right: 0;
 }
 
+#mobrix-ui-drawer[class^="top"] {
+  flex-direction: column;
+}
+
+#mobrix-ui-drawer[class^="bottom"] {
+  flex-direction: column-reverse;
+}
+
+#mobrix-ui-drawer.left,
+#mobrix-ui-drawer.right {
+  top: 0;
+  bottom: 0;
+}
+
+#mobrix-ui-drawer.top,
+#mobrix-ui-drawer.bottom {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#mobrix-ui-drawer.top,
+#mobrix-ui-drawer.top-left,
+#mobrix-ui-drawer.top-right {
+  --mobrix-ui-drawer-animation-in: slideTop 0.3s forwards;
+  --mobrix-ui-drawer-animation-out: slideOutTop 0.3s forwards;
+  bottom: auto;
+  top: 0;
+}
+
+#mobrix-ui-drawer.top-left,
+#mobrix-ui-drawer.bottom-left,
+#mobrix-ui-drawer.left,
+#mobrix-ui-drawer.top-right,
+#mobrix-ui-drawer.bottom-right,
+#mobrix-ui-drawer.right {
+  height: 100%;
+}
+
 #mobrix-ui-drawer.left {
+  flex-direction: row;
   --mobrix-ui-drawer-animation-in: slideLeft 0.3s forwards;
   --mobrix-ui-drawer-animation-out: slideOutLeft 0.3s forwards;
 }
 
 #mobrix-ui-drawer.right {
+  flex-direction: row-reverse;
   --mobrix-ui-drawer-animation-in: slideRight 0.3s forwards;
   --mobrix-ui-drawer-animation-out: slideOutRight 0.3s forwards;
 }
@@ -68,6 +93,22 @@
 
 #mobrix-ui-drawer .content {
   overflow: auto;
+}
+
+#mobrix-ui-drawer[class^="bottom"] .drawer-close-button {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 0.1rem;
+}
+
+#mobrix-ui-drawer[class^="top"] .drawer-close-button {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.1rem;
 }
 
 #mobrix-ui-drawer .drawer-close-button {
@@ -93,20 +134,11 @@
   padding-right: 0.1rem;
 }
 
-#mobrix-ui-drawer[class^="bottom"] .drawer-close-button {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  padding-top: 0.1rem;
-}
-
-#mobrix-ui-drawer[class^="top"] .drawer-close-button {
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  padding-bottom: 0.1rem;
+#mobrix-ui-drawer .drawer-close-button:focus-visible {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
 }
 
 #mobrix-ui-drawer[class^="top"] .drawer-close-button svg {
@@ -121,53 +153,8 @@
   transform: rotate(180deg);
 }
 
-#mobrix-ui-drawer.top-left,
-#mobrix-ui-drawer.bottom-left,
-#mobrix-ui-drawer.left,
-#mobrix-ui-drawer.top-right,
-#mobrix-ui-drawer.bottom-right,
-#mobrix-ui-drawer.right {
-  height: 100%;
-}
-
-#mobrix-ui-drawer.top,
-#mobrix-ui-drawer.bottom {
-  width: 100%;
-}
-
-#mobrix-ui-drawer {
-  display: flex;
-}
-
-#mobrix-ui-drawer.styled {
-  padding: 0.1rem;
-}
-
-#mobrix-ui-drawer.left {
-  flex-direction: row;
-}
-
-#mobrix-ui-drawer.right {
-  flex-direction: row-reverse;
-}
-
-#mobrix-ui-drawer[class^="top"] {
-  flex-direction: column;
-}
-
-#mobrix-ui-drawer[class^="bottom"] {
-  flex-direction: column-reverse;
-}
-
 #mobrix-ui-drawer .drawer-close-button svg {
   fill: var(--mobrix-ui-text-color);
-}
-
-#mobrix-ui-drawer .drawer-close-button:focus-visible {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
 }
 
 #mobrix-ui-drawer:focus-visible,

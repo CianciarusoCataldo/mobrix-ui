@@ -74,6 +74,7 @@
   -moz-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
   -o-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
   box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
+  --mobrix-ui-link-color: rgb(37, 99, 235);
 }
 
 [id^="mobrix-ui-"].a11y.a11y-dark {
@@ -81,10 +82,6 @@
     --mobrix-ui-custom-focus-color-dark,
     var(--mobrix-ui-focus-color-dark)
   );
-}
-
-[id^="mobrix-ui-"].a11y:focus-visible {
-  --mobrix-ui-link-color: rgb(37, 99, 235);
 }
 
 [id^="mobrix-ui-"].a11y.a11y-dark:focus-visible {

@@ -76,6 +76,14 @@
   margin-left: 0.6rem;
 }
 
+#mobrix-ui-date-picker .element:focus-visible {
+  color: var(--mobrix-ui-focus-color);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
 #mobrix-ui-date-picker .date-picker-box > .buttons .element {
   vertical-align: middle;
   display: inline-block;
@@ -104,15 +112,4 @@
     flex-direction: column;
     align-items: center;
   }
-}
-
-#mobrix-ui-date-picker .element:focus-visible {
-  color: var(--mobrix-ui-focus-color);
-}
-
-#mobrix-ui-date-picker .element:focus-visible {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
 }
