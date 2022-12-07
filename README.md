@@ -3,10 +3,23 @@
 ![NPM](https://img.shields.io/npm/l/mobrix-ui?label=License&style=for-the-badge)
 ![npm (scoped)](https://img.shields.io/npm/v/mobrix-ui?color=orange%20&label=Latest%20version&style=for-the-badge&logo=npm)
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/mobrix-ui?label=Package%20size&style=for-the-badge&logo=npm)
-![Codacy grade](https://img.shields.io/codacy/grade/b71e50de99ce4ae2b3af87470011ea6c?logo=codacy&style=for-the-badge)
-![Codacy coverage](https://img.shields.io/codacy/coverage/b71e50de99ce4ae2b3af87470011ea6c?logo=codacy&style=for-the-badge)
 ![Maintenance](https://img.shields.io/maintenance/yes/2025?label=Maintained&style=for-the-badge)
 
+<br>
+
+---
+
+
+## Status
+
+<br>
+
+![Codacy grade](https://img.shields.io/codacy/grade/b71e50de99ce4ae2b3af87470011ea6c?logo=codacy&style=for-the-badge)
+![Codacy coverage](https://img.shields.io/codacy/coverage/b71e50de99ce4ae2b3af87470011ea6c?logo=codacy&style=for-the-badge)
+![Code Climate coverage](https://img.shields.io/codeclimate/coverage/CianciarusoCataldo/mobrix-ui?label=Coverage&logo=codeclimate&style=for-the-badge)
+![Coveralls](https://img.shields.io/coverallsCoverage/github/CianciarusoCataldo/mobrix-ui?logo=coveralls&style=for-the-badge)
+
+---
 ---
 
 <br>
