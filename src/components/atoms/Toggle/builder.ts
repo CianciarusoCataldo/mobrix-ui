@@ -1,8 +1,9 @@
 import { MobrixUiReactiveComponentBuilder } from "../../../utils/global";
 
+import { ToggleProps } from "./types";
+
 import classNames from "classnames";
 
-import { ToggleProps } from "./types";
 import toggleComponent from "./component";
 
 const toggleComponentBuilder: MobrixUiReactiveComponentBuilder<

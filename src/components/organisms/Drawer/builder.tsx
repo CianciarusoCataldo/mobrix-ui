@@ -1,8 +1,11 @@
 import React from "react";
+
+import { DrawerProps } from "./types";
+
 import classNames from "classnames";
 import { BuilderProps, MoBrixUiComponent } from "../../../utils/global";
+
 import drawerComponent from "./component";
-import { DrawerProps } from "./types";
 
 const ALLOWED_POSITIONS = [
   "right",
