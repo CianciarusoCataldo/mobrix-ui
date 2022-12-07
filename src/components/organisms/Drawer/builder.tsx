@@ -15,7 +15,7 @@ const ALLOWED_POSITIONS = [
   "bottom-right",
 ];
 
-const drawerBuilder: MoBrixUiComponent<
+const DrawerBuilder: MoBrixUiComponent<
   DrawerProps,
   Omit<BuilderProps, "name">
 > = ({
@@ -56,4 +56,4 @@ const drawerBuilder: MoBrixUiComponent<
   };
 };
 
-export default drawerBuilder;
+export default DrawerBuilder;

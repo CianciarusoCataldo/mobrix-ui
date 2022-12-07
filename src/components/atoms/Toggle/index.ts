@@ -43,41 +43,15 @@ import toggleComponentBuilder from "./builder";
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-const Toggle: ToggleComponent = ({
-  value: inputValue,
-  icon,
-  onChange,
-  className,
-  shadow,
-  offIcon,
-  onIcon,
-  ...commonProps
-}) =>
+const Toggle: ToggleComponent = ({ value: inputValue, ...props }) =>
   buildMobrixUiReactiveComponent<boolean>({
     name: "toggle",
     props: (status, setStatus) => ({
       ...toggleComponentBuilder({
         setValue: setStatus,
         value: status,
-        onChange,
-        className,
-        offIcon,
-        onIcon,
-        shadow,
-        ...commonProps,
+        ...props,
       }),
-      additionalProps: {
-        onClick: () => {
-          onChange && onChange(!status);
-          setStatus(!status);
-        },
-        onKeyDown: (e) => {
-          if (e.code === "Enter") {
-            onChange && onChange(!status);
-            setStatus(!status);
-          }
-        },
-      },
     }),
     defaultValue: true,
     inputValue,

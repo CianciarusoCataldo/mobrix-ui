@@ -7,7 +7,7 @@ import { MobrixUiReactiveComponent } from "../../../utils/global";
 import { ICONS } from "./icons";
 import Button from "../../atoms/Button";
 
-const raterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
+const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
   type,
   max,
   readonly,
@@ -67,4 +67,4 @@ const raterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
   return iconArray;
 };
 
-export default raterComponent;
+export default RaterComponent;

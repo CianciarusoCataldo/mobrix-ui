@@ -46,7 +46,7 @@ import selectorComponent from "./component";
 const Selector: SelectorComponent = ({
   elements,
   value: inputValue,
-  onChange = (_) => {},
+  onChange = () => {},
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent<number | undefined>({

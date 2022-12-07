@@ -44,26 +44,14 @@ import raterComponentBuilder from "./builder";
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-const Rater: RaterComponent = ({
-  value: inputValue,
-  max,
-  type,
-  onChange,
-  vertical,
-  readonly,
-  ...commonProps
-}) =>
+const Rater: RaterComponent = ({ value: inputValue, ...props }) =>
   buildMobrixUiReactiveComponent<number>({
     name: "ratebox",
     props: (value, setValue) =>
       raterComponentBuilder({
         value,
         setValue,
-        max,
-        onChange,
-        vertical,
-        readonly,
-        ...commonProps,
+        ...props,
       }),
     inputValue,
     defaultValue: 0,

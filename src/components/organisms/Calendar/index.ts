@@ -3,8 +3,6 @@ import "./styles.css";
 import { DeepPartial } from "../../../utils/global";
 import { CalendarComponent, CalendarDate } from "./types";
 
-import { defaultDays, defaultMonths } from "./constants";
-
 import { today } from "./utils";
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 
