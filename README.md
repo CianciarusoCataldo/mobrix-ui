@@ -9,18 +9,21 @@
 
 ---
 
-
 ## Status
 
 <br>
 
 ![Codacy grade](https://img.shields.io/codacy/grade/b71e50de99ce4ae2b3af87470011ea6c?logo=codacy&style=for-the-badge)
 ![Codacy coverage](https://img.shields.io/codacy/coverage/b71e50de99ce4ae2b3af87470011ea6c?logo=codacy&style=for-the-badge)
+![Code Climate technical debt](https://img.shields.io/codeclimate/tech-debt/CianciarusoCataldo/mobrix-ui?logo=codeclimate&style=for-the-badge)
+![Code Climate issues](https://img.shields.io/codeclimate/issues/CianciarusoCataldo/mobrix-ui?logo=codeclimate&style=for-the-badge)
 ![Code Climate coverage](https://img.shields.io/codeclimate/coverage/CianciarusoCataldo/mobrix-ui?label=Coverage&logo=codeclimate&style=for-the-badge)
 ![Coveralls](https://img.shields.io/coverallsCoverage/github/CianciarusoCataldo/mobrix-ui?logo=coveralls&style=for-the-badge)
 ![Codecov](https://img.shields.io/codecov/c/github/CianciarusoCataldo/mobrix-ui?logo=codecov&style=for-the-badge)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/cianciarusocataldo/mobrix-ui?logo=snyk&style=for-the-badge)
 
 ---
+
 ---
 
 <br>
