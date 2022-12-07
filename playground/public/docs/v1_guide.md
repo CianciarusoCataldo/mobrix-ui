@@ -1,8 +1,5 @@
 # MoBrix-ui - V1
 
-![NPM](https://img.shields.io/npm/l/mobrix-ui?label=License&style=for-the-badge)
-![npm (scoped)](https://img.shields.io/npm/v/mobrix-ui?color=orange%20&label=Latest%20version&style=for-the-badge&logo=npm)
-![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/mobrix-ui?label=Package%20size&style=for-the-badge&logo=npm)
 ![Maintenance](https://img.shields.io/maintenance/yes/2025?label=Maintained&style=for-the-badge)
 
 ---
@@ -10,22 +7,6 @@
 <br>
 
 React components for every app, easy to use and customize
-
-<br>
-
-## Summary
-
-- [MoBrix-ui philosophy](#mobrix-ui-components-philosophy)
-- [Components building process](#components-building-process)
-  - [Shared components properties](#shared-components-properties)
-  - [Customizable UI](#customizable-ui)
-  - [Box components](#box-components)
-- [Getting started](#getting-started)
-  - [Installation](#installation)
-  - [Usage](#usage)
-- [Tests](#tests)
-- [Authors](#authors)
-- [License](#license)
 
 <br>
 
