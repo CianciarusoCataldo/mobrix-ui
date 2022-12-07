@@ -16,7 +16,7 @@ import {
  */
 export type SliderProps = ComponentWithValue<number> &
   ComponentWithCallback<number> &
-  NumericInputComponent & {
+  Omit<NumericInputComponent, "placeholder"> & {
     /** Slider thumb custom color (exadecimal). If set, the standard style is overwritten */
     thumbColor?: string;
   };

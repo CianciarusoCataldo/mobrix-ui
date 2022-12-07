@@ -47,7 +47,6 @@ const Slider: SliderComponent = ({
   value: inputValue,
   min,
   max,
-  placeholder,
   readOnly,
   thumbColor,
   ...commonProps
