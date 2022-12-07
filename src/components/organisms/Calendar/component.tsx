@@ -1,13 +1,18 @@
 import classNames from "classnames";
 import React from "react";
+
 import { DeepPartial, MobrixUiReactiveComponent } from "../../../utils/global";
+import { CalendarDate, CalendarProps } from "./types";
+
+import { defaultDays, defaultMonths } from "./constants";
+
+import { getMonthsDuration, getDateMatrix } from "./utils";
+
+import { arrowIcon } from "../../molecules/Carousel/icons";
+
 import Button from "../../atoms/Button";
 import Label from "../../atoms/Label";
-import { arrowIcon } from "../../molecules/Carousel/icons";
 import Table from "../../molecules/Table";
-import { defaultDays, defaultMonths } from "./constants";
-import { CalendarDate, CalendarProps } from "./types";
-import { getMonthsDuration, getDateMatrix } from "./utils";
 
 const CalendarComponent: MobrixUiReactiveComponent<
   DeepPartial<CalendarDate>,
@@ -110,21 +115,25 @@ const CalendarComponent: MobrixUiReactiveComponent<
     });
   });
 
+  const changeDisplayedDate = (
+    newValue: number,
+    type: "year" | "month" | "day"
+  ) => {
+    displayDate({
+      ...onScreenDate,
+      [type]: newValue,
+    });
+  };
+
   const arrowActions: Record<"left" | "right", () => void> = {
     left: () =>
       onScreenDate.month > 0
-        ? displayDate({
-            ...onScreenDate,
-            month: onScreenDate.month - 1,
-          })
-        : displayDate({ year: onScreenDate.year - 1, month: 11 }),
+        ? changeDisplayedDate(onScreenDate.month - 1, "month")
+        : changeDisplayedDate(onScreenDate.year - 1, "year"),
     right: () =>
       onScreenDate.month < 11
-        ? displayDate({
-            ...onScreenDate,
-            month: onScreenDate.month + 1,
-          })
-        : displayDate({ year: onScreenDate.year + 1, month: 0 }),
+        ? changeDisplayedDate(onScreenDate.month + 1, "month")
+        : changeDisplayedDate(onScreenDate.year + 1, "year"),
   };
 
   const getArrowButton = (direction: "left" | "right") => (
