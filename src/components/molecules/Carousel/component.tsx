@@ -8,7 +8,7 @@ import { ICONS } from "../Rater/icons";
 import { arrowIcon } from "./icons";
 import Button from "../../atoms/Button";
 
-const carouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
+const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
   value: selectedItem,
   setValue: setItem,
   onChange = () => {},
@@ -102,4 +102,4 @@ const carouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
   ];
 };
 
-export default carouselComponent;
+export default CarouselComponent;

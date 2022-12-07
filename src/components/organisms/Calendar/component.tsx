@@ -24,7 +24,7 @@ const CalendarComponent: MobrixUiReactiveComponent<
   startYear,
   startMonth,
   fromToday = true,
-  dayLabel,
+  dayLabel = true,
   setValue,
   ...commonProps
 }) => {
@@ -146,14 +146,20 @@ const CalendarComponent: MobrixUiReactiveComponent<
     </div>
   );
 
-  return [
-    <div className="top-selector" key="date_top_selector">
-      {getArrowButton("left")}
-      <Label className="actual-date" dark={commonProps.dark}>{`${
-        customMonths[onScreenDate.month]
-      } ${onScreenDate.year}`}</Label>
-      {getArrowButton("right")}
-    </div>,
+  let components: JSX.Element[] = [];
+
+  dayLabel &&
+    components.push(
+      <div className="top-selector" key="date_top_selector">
+        {getArrowButton("left")}
+        <Label className="actual-date" dark={commonProps.dark}>{`${
+          customMonths[onScreenDate.month]
+        } ${onScreenDate.year}`}</Label>
+        {getArrowButton("right")}
+      </div>
+    );
+
+  components.push(
     <Table
       key="calendar_table"
       id="calendar-table"
@@ -162,8 +168,10 @@ const CalendarComponent: MobrixUiReactiveComponent<
       dark={commonProps.dark}
       headers
       rows={[days.map((dayName) => dayName.slice(0, 3)), ...dateMatrix]}
-    />,
-  ];
+    />
+  );
+
+  return components;
 };
 
 export default CalendarComponent;

@@ -43,7 +43,7 @@ import { buildMobrixUiReactiveComponent } from "../../../utils";
  * @copyright 2022 Cataldo Cianciaruso
  */
 const Slider: SliderComponent = ({
-  onChange,
+  onChange = () => {},
   value: inputValue,
   min,
   max,
@@ -51,8 +51,6 @@ const Slider: SliderComponent = ({
   thumbColor,
   ...commonProps
 }) => {
-  const callback = onChange || ((_: any) => {});
-
   let extraProps: Record<string, any> = {};
 
   if (thumbColor) {
@@ -75,13 +73,13 @@ const Slider: SliderComponent = ({
         value: String(value),
         onChange: (e) => {
           if (!readOnly) {
-            callback(e.target.value);
+            onChange(e.target.value);
             setValue(e.target.value);
           }
         },
         onInput: (e) => {
           if (!readOnly) {
-            callback(e.target.value);
+            onChange(e.target.value);
             setValue(e.target.value);
           }
         },
