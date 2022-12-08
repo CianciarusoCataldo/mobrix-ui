@@ -1,9 +1,9 @@
 import React from "react";
 
 import { DrawerProps } from "./types";
+import { BuilderProps, MoBrixUiComponent } from "../../../utils/global";
 
 import classNames from "classnames";
-import { BuilderProps, MoBrixUiComponent } from "../../../utils/global";
 
 import drawerComponent from "./component";
 

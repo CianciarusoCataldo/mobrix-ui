@@ -6,6 +6,7 @@ const toggleTest = () => {
   describe("Toggle", () => {
     test("Rendering test", () => {
       let wrapper = mount(<Toggle />);
+      wrapper.find("#mobrix-ui-toggle").simulate("click");
       expect(wrapper);
     });
 
