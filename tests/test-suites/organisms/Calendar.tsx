@@ -10,7 +10,8 @@ import { today } from "../../../src/components/organisms/Calendar/utils";
 const calendarTest = () => {
   describe("Calendar", () => {
     test("Rendering test", () => {
-      let wrapper = mount(<Calendar />);
+      let wrapper = mount(<Calendar           dayLabel={false}
+        />);
       expect(wrapper);
       const todayDate = today();
       wrapper = mount(

@@ -1,13 +1,19 @@
-import classNames from "classnames";
 import React from "react";
+
+import classNames from "classnames";
+
 import { DeepPartial, MobrixUiReactiveComponent } from "../../../utils/global";
+import { CalendarDate, CalendarProps } from "./types";
+
+import { defaultDays, defaultMonths } from "./constants";
+
+import { getMonthsDuration, getDateMatrix } from "./utils";
+
+import { arrowIcon } from "../../molecules/Carousel/icons";
+
+import Table from "../../molecules/Table";
 import Button from "../../atoms/Button";
 import Label from "../../atoms/Label";
-import { arrowIcon } from "../../molecules/Carousel/icons";
-import Table from "../../molecules/Table";
-import { defaultDays, defaultMonths } from "./constants";
-import { CalendarDate, CalendarProps } from "./types";
-import { getMonthsDuration, getDateMatrix } from "./utils";
 
 const CalendarComponent: MobrixUiReactiveComponent<
   DeepPartial<CalendarDate>,

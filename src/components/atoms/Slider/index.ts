@@ -1,6 +1,7 @@
 import "./styles.css";
 
 import { SliderComponent } from "./types";
+
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 
 /**
@@ -64,28 +65,27 @@ const Slider: SliderComponent = ({
     inputValue,
     defaultValue: 0,
     wrapper: "input",
-    props: (value, setValue) => ({
-      additionalProps: {
-        type: "range",
-        min,
-        max,
-        readOnly,
-        value: String(value),
-        onChange: (e) => {
-          if (!readOnly) {
-            onChange(e.target.value);
-            setValue(e.target.value);
-          }
+    props: (value, setValue) => {
+      const callback = (e: any) => {
+        if (!readOnly) {
+          onChange(e.target.value);
+          setValue(e.target.value);
+        }
+      };
+
+      return {
+        additionalProps: {
+          type: "range",
+          min,
+          max,
+          readOnly,
+          value: String(value),
+          onChange: callback,
+          onInput: callback,
+          ...extraProps,
         },
-        onInput: (e) => {
-          if (!readOnly) {
-            onChange(e.target.value);
-            setValue(e.target.value);
-          }
-        },
-        ...extraProps,
-      },
-    }),
+      };
+    },
   });
 };
 

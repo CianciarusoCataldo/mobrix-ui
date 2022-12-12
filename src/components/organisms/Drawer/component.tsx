@@ -3,11 +3,15 @@ import React from "react";
 import { BuilderComponent, MoBrixUiComponent } from "../../../utils/global";
 import { DrawerProps } from "./types";
 
-import Button from "../../atoms/Button";
-import Container from "../../molecules/Container";
 import classNames from "classnames";
 
-const DrawerInternalComponent: MoBrixUiComponent<DrawerProps, BuilderComponent[]> = ({
+import Button from "../../atoms/Button";
+import Container from "../../molecules/Container";
+
+const DrawerInternalComponent: MoBrixUiComponent<
+  DrawerProps,
+  BuilderComponent[]
+> = ({
   onClose,
   children,
   dark,
