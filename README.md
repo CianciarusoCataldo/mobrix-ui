@@ -28,7 +28,7 @@
 
 <br>
 
-React components for every app, easy to use and customize
+React components for every app, easy to use and customize.
 
 <br>
 
