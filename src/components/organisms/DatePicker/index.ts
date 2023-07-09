@@ -1,7 +1,9 @@
 import "./styles.css";
 
-import { CalendarDate } from "../../../types/components/organisms/Calendar";
-import { DatePickerComponent } from "../../../types/components/organisms/DatePicker";
+import {
+  CalendarDate,
+  DatePickerComponent,
+} from "../../../types/components/organisms";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 import { today } from "../Calendar/utils";

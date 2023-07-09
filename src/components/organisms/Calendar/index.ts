@@ -1,7 +1,7 @@
 import "./styles.css";
 
 import { DeepPartial } from "../../../types/global";
-import { CalendarComponent, CalendarDate } from "../../../types/components/organisms/Calendar";
+import { CalendarComponent, CalendarDate } from "../../../types/components/organisms";
 
 import { today } from "./utils";
 import { buildMobrixUiReactiveComponent } from "../../../utils";
