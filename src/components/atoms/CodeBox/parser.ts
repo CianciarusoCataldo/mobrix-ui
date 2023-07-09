@@ -1,5 +1,5 @@
 import { CODE_LANGUAGES } from "./languages";
-import { CodeBlock, SupportedEnvironment } from "./types";
+import { CodeBlock, SupportedEnvironment } from "../../../types/components/atoms";
 
 /** Basic code parsers */
 const BASIC_PARSER = (

@@ -1,8 +1,8 @@
 import React from "react";
 
-import { ListProps } from "./types";
+import { ListProps } from "../../../types/components/molecules/List";
 
-import { BuilderComponent, MoBrixUiComponent } from "../../../utils/global";
+import { BuilderComponent, MoBrixUiComponent } from "../../../types/global";
 import Button from "../../atoms/Button";
 
 const listComponent: MoBrixUiComponent<ListProps, BuilderComponent[]> = ({
@@ -27,15 +27,13 @@ const listComponent: MoBrixUiComponent<ListProps, BuilderComponent[]> = ({
       </Button>
     );
   }
-  return elements.map((element, index) => {
-    return (
-      <Wrapper key={`element_${index}`} index={index}>
-        <svg viewBox="0 0 9 9" key="list_dot" className="dot">
-          <circle cx={4.5} cy={4.5} r={3.5} />
-        </svg>
-        <div key={"list_element_" + index}>{element}</div>
-      </Wrapper>
-    );
-  });
+  return elements.map((element, index) => (
+    <Wrapper key={`element_${index}`} index={index}>
+      <svg viewBox="0 0 9 9" key="list_dot" className="dot">
+        <circle cx={4.5} cy={4.5} r={3.5} />
+      </svg>
+      <div key={"list_element_" + index}>{element}</div>
+    </Wrapper>
+  ));
 };
 export default listComponent;

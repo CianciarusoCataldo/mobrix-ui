@@ -2,8 +2,8 @@ import React from "react";
 
 import classNames from "classnames";
 
-import { DeepPartial, MobrixUiReactiveComponent } from "../../../utils/global";
-import { CalendarDate, CalendarProps } from "./types";
+import { DeepPartial, MobrixUiReactiveComponent } from "../../../types/global";
+import { CalendarDate, CalendarProps } from "../../../types/components/organisms/Calendar";
 
 import { defaultDays, defaultMonths } from "./constants";
 

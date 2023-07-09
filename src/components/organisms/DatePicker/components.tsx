@@ -1,9 +1,9 @@
 import React from "react";
 
-import { MobrixUiReactiveComponent } from "../../../utils/global";
+import { MobrixUiReactiveComponent } from "../../../types/global";
 
-import { CalendarDate } from "../Calendar/types";
-import { DatePickerProps } from "./types";
+import { CalendarDate } from "../../../types/components/organisms/Calendar";
+import { DatePickerProps } from "../../../types/components/organisms/DatePicker";
 
 import { defaultDays, defaultMonths } from "../Calendar/constants";
 

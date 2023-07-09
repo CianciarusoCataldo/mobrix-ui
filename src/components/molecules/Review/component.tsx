@@ -1,7 +1,7 @@
 import React from "react";
 
-import { BuilderComponent, MoBrixUiComponent } from "../../../utils/global";
-import { ReviewProps } from "./types";
+import { BuilderComponent, MoBrixUiComponent } from "../../../types/global";
+import { ReviewProps } from "../../../types/components/molecules/Review";
 
 import { icons } from "./icons";
 import Link from "../../atoms/Link";

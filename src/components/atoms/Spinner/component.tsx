@@ -1,7 +1,7 @@
 import React from "react";
 
-import { MobrixUiReactiveComponent } from "../../../utils/global";
-import { SpinnerProps } from "./types";
+import { MobrixUiReactiveComponent } from "../../../types/global";
+import { SpinnerProps } from "../../../types/components/atoms";
 
 import defaultIcons from "./icons";
 

@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { InputComponent } from "./types";
+import { InputComponent } from "../../../types/components/atoms";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 

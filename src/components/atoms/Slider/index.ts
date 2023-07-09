@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { SliderComponent } from "./types";
+import { SliderComponent } from "../../../types/components/atoms";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 

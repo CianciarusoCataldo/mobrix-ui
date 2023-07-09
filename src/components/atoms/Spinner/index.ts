@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { SpinnerComponent } from "./types";
+import { SpinnerComponent } from "../../../types/components/atoms";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 

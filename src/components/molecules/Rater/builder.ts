@@ -1,8 +1,8 @@
-import { RaterProps } from "./types";
+import { RaterProps } from "./Rater";
 
 import classNames from "classnames";
 
-import { MobrixUiReactiveComponentBuilder } from "../../../utils/global";
+import { MobrixUiReactiveComponentBuilder } from "../../../types/global";
 
 import raterComponent from "./component";
 
