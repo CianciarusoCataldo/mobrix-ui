@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { ReviewComponent } from "../../../types/components/molecules/Review";
+import { ReviewComponent } from "../../../types/components/molecules";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 

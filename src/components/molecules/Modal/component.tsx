@@ -1,7 +1,7 @@
 import React from "react";
 
 import { BuilderComponent, MoBrixUiComponent } from "../../../types/global";
-import { ModalProps } from "../../../types/components/molecules/Modal";
+import { ModalProps } from "../../../types/components/molecules";
 
 import Card from "../Card";
 

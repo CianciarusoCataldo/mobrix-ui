@@ -1,7 +1,7 @@
 import "./styles.css";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
-import { PopupComponent } from "../../../types/components/molecules/Popup";
+import { PopupComponent } from "../../../types/components/molecules";
 
 import popupComponent from "./component";
 
@@ -39,11 +39,7 @@ import popupComponent from "./component";
  *
  * @copyright 2022 Cataldo Cianciaruso
  */
-const Popup: PopupComponent = ({
-  children,
-  className = "",
-  ...commonProps
-}) =>
+const Popup: PopupComponent = ({ children, className = "", ...commonProps }) =>
   buildMobrixUiStandardComponent({
     name: "popup",
     commonProps,

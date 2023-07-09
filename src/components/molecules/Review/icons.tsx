@@ -1,5 +1,5 @@
 import React from "react";
-import { ReviewLogo } from "../../../types/components/molecules/Review";
+import { ReviewLogo } from "../../../types/components/molecules";
 
 export const icons: Record<ReviewLogo, JSX.Element> = {
   default: (

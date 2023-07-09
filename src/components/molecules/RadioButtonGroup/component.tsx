@@ -1,7 +1,7 @@
 import React from "react";
 
 import { MobrixUiReactiveComponent } from "../../../types/global";
-import { RadioButtonGroupProps } from "../../../types/components/molecules/RadioButtonGroup";
+import { RadioButtonGroupProps } from "../../../types/components/molecules";
 
 import classNames from "classnames";
 

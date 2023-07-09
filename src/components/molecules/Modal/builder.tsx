@@ -1,8 +1,9 @@
 import classNames from "classnames";
 import React from "react";
 import { BuilderProps, MoBrixUiComponent } from "../../../types/global";
+import { ModalProps } from "../../../types/components/molecules";
+
 import modalComponent from "./component";
-import { ModalProps } from "../../../types/components/molecules/Modal";
 
 const modalBuilder: MoBrixUiComponent<
   ModalProps,

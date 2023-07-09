@@ -143,8 +143,8 @@ export {
 export { default as Drawer } from "./components/organisms/Drawer";
 
 /** Shared types */
-export { Wrappers } from "./types/global";
 export {
+  Wrappers,
   BuilderComponent as AllowedComponent,
   MoBrixUiComponent,
 } from "./types/global";

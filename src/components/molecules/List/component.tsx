@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ListProps } from "../../../types/components/molecules/List";
+import { ListProps } from "../../../types/components/molecules";
 
 import { BuilderComponent, MoBrixUiComponent } from "../../../types/global";
 import Button from "../../atoms/Button";

@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { FormComponent } from "../../../types/components/molecules/Form";
+import { FormComponent } from "../../../types/components/molecules";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 

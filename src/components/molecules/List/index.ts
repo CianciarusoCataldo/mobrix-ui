@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { ListComponent } from "../../../types/components/molecules/List";
+import { ListComponent } from "../../../types/components/molecules";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 

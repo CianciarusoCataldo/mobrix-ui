@@ -2,7 +2,7 @@ import React from "react";
 
 import classNames from "classnames";
 
-import { ExpandableContainerProps } from "../../../types/components/molecules/ExpandableContainer";
+import { ExpandableContainerProps } from "../../../types/components/molecules";
 
 import { MobrixUiReactiveComponent } from "../../../types/global";
 
