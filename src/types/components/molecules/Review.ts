@@ -1,5 +1,5 @@
 import { ComponentWithIcon, MoBrixUiComponent } from "../../global";
-import { RaterProps } from "../../../components/molecules/Rater/Rater";
+import { RaterProps } from "./Rater";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Review component logo types

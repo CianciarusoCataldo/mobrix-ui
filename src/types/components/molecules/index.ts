@@ -20,5 +20,6 @@ export {
   RadioButtonGroupProps,
   RadioElement,
 } from "./RadioButtonGroup";
+export { RaterComponent, RaterProps } from "./Rater";
 export { ReviewComponent, ReviewLogo, ReviewProps } from "./Review";
 export { TableComponent, TableProps } from "./Table";

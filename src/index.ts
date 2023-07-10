@@ -111,7 +111,7 @@ export {
 } from "./types/components/molecules/RadioButtonGroup";
 export { default as RadioButtonGroup } from "./components/molecules/RadioButtonGroup";
 
-export { RaterComponent, RaterProps } from "./components/molecules/Rater/Rater";
+export { RaterComponent, RaterProps } from "./types/components/molecules/Rater";
 export { default as Rater } from "./components/molecules/Rater";
 
 export {

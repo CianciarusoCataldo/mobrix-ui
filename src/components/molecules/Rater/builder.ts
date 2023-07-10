@@ -1,4 +1,4 @@
-import { RaterProps } from "./Rater";
+import { RaterProps } from "../../../types";
 
 import classNames from "classnames";
 

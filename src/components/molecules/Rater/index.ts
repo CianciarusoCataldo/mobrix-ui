@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { RaterComponent } from "./Rater";
+import { RaterComponent } from "../../../types/components/molecules/Rater";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 

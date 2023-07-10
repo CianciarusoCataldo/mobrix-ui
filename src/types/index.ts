@@ -69,6 +69,8 @@ export {
   RadioButtonGroupComponent,
   RadioButtonGroupProps,
   RadioElement,
+  RaterComponent,
+  RaterProps,
   ReviewComponent,
   ReviewLogo,
   ReviewProps,

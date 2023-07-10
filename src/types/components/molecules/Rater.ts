@@ -2,7 +2,7 @@ import {
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
-} from "../../../types";
+} from "../../global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Rater component props
