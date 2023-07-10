@@ -2,7 +2,7 @@ import { RaterProps } from "./Rater";
 
 import classNames from "classnames";
 
-import { MobrixUiReactiveComponentBuilder } from "../../../types/global";
+import { MobrixUiReactiveComponentBuilder } from "../../../types";
 
 import raterComponent from "./component";
 

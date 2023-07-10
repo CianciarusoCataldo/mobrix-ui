@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { CarouselComponent } from "../../../types/components/molecules";
+import { CarouselComponent } from "../../../types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 

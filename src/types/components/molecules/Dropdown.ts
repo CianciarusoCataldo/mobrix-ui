@@ -2,7 +2,7 @@ import {
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
-} from "../../../types/global";
+} from "../../../types";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} generic Dropdown element

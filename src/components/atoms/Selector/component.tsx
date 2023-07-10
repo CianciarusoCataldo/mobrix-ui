@@ -1,7 +1,6 @@
 import React from "react";
 
-import { MobrixUiReactiveComponent } from "../../../types/global";
-import { SelectorProps } from "../../../types/components/atoms";
+import { MobrixUiReactiveComponent, SelectorProps } from "../../../types";
 
 const selectorComponent: MobrixUiReactiveComponent<
   number | undefined,

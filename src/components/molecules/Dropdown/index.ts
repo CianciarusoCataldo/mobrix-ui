@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { DropdownComponent } from "../../../types/components/molecules";
+import { DropdownComponent } from "../../../types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 

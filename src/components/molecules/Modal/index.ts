@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { ModalComponent } from "../../../types/components/molecules";
+import { ModalComponent } from "../../../types";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 

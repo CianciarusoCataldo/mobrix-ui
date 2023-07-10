@@ -2,7 +2,7 @@ import {
   ClickableComponent,
   ComponentWithChildren,
   MoBrixUiComponent,
-} from "../../../types/global";
+} from "../../../types";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Form component field

@@ -1,7 +1,10 @@
 import React from "react";
 
-import { BuilderComponent, MoBrixUiComponent } from "../../../types/global";
-import { ReviewProps } from "../../../types/components/molecules";
+import {
+  BuilderComponent,
+  MoBrixUiComponent,
+  ReviewProps,
+} from "../../../types";
 
 import { icons } from "./icons";
 import Link from "../../atoms/Link";

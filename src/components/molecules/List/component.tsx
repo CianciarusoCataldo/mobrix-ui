@@ -1,8 +1,7 @@
 import React from "react";
 
-import { ListProps } from "../../../types/components/molecules";
+import { BuilderComponent, ListProps, MoBrixUiComponent } from "../../../types";
 
-import { BuilderComponent, MoBrixUiComponent } from "../../../types/global";
 import Button from "../../atoms/Button";
 
 const listComponent: MoBrixUiComponent<ListProps, BuilderComponent[]> = ({

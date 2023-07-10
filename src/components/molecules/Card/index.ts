@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { CardComponent } from "../../../types/components/molecules";
+import { CardComponent } from "../../../types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 

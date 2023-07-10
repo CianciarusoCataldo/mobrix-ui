@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { CheckBoxComponent } from "../../../types/components/atoms";
+import { CheckBoxComponent } from "../../../types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 

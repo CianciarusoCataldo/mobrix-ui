@@ -1,7 +1,6 @@
 import React from "react";
 
-import { DrawerProps } from "../../../types/components/organisms";
-import { BuilderProps, MoBrixUiComponent } from "../../../types/global";
+import { BuilderProps, DrawerProps, MoBrixUiComponent } from "../../../types";
 
 import classNames from "classnames";
 

@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { LabelComponent } from "../../../types/components/atoms";
+import { LabelComponent } from "../../../types";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 

@@ -5,8 +5,9 @@ import classNames from "classnames";
 import {
   CalendarDate,
   CalendarProps,
-} from "../../../types/components/organisms";
-import { DeepPartial, MobrixUiReactiveComponent } from "../../../types/global";
+  DeepPartial,
+  MobrixUiReactiveComponent,
+} from "../../../types";
 
 import { defaultDays, defaultMonths } from "./constants";
 

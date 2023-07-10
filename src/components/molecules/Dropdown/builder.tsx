@@ -1,7 +1,10 @@
 import React from "react";
 
-import { MobrixUiReactiveComponentBuilder } from "../../../types/global";
-import { DropdownProps, DropdownStandardElement } from "../../../types/components/molecules";
+import {
+  DropdownProps,
+  DropdownStandardElement,
+  MobrixUiReactiveComponentBuilder,
+} from "../../../types";
 
 import classnames from "classnames";
 

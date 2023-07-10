@@ -1,6 +1,5 @@
 import React from "react";
-import { MobrixUiReactiveComponent } from "../../../types/global";
-import { CarouselProps } from "../../../types/components/molecules";
+import { CarouselProps, MobrixUiReactiveComponent } from "../../../types";
 
 import classNames from "classnames";
 

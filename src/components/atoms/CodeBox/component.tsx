@@ -1,8 +1,10 @@
 import React from "react";
 
-import { CodeBoxProps } from "../../../types/components/atoms";
-
-import { BuilderComponent, MoBrixUiComponent } from "../../../types/global";
+import {
+  BuilderComponent,
+  CodeBoxProps,
+  MoBrixUiComponent,
+} from "../../../types";
 
 import { parseCode } from "./parser";
 

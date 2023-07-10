@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { CounterComponent } from "../../../types/components/atoms";
+import { CounterComponent } from "../../../types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 

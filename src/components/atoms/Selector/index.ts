@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { SelectorComponent } from "../../../types/components/atoms";
+import { SelectorComponent } from "../../../types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 

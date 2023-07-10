@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { LinkComponent } from "../../../types/components/atoms";
+import { LinkComponent } from "../../../types";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 

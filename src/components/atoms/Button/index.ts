@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { ButtonComponent } from "../../../types/components/atoms";
+import { ButtonComponent } from "../../../types";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 

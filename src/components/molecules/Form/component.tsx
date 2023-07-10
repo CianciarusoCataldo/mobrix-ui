@@ -1,7 +1,6 @@
 import React from "react";
 
-import { BuilderComponent, MoBrixUiComponent } from "../../../types/global";
-import { FormProps } from "../../../types/components/molecules";
+import { BuilderComponent, FormProps, MoBrixUiComponent } from "../../../types";
 
 import { fieldFormatters } from "./utils";
 

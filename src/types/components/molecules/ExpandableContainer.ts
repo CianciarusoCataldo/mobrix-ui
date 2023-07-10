@@ -1,9 +1,9 @@
 import {
   BuilderComponent,
   ComponentWithCallback,
+  ContainerProps,
   MoBrixUiComponent,
-} from "../../../types/global";
-import { ContainerProps } from "../../../types/components/molecules";
+} from "../../../types";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Expandable Container component props

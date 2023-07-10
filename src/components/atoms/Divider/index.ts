@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { DividerComponent } from "../../../types/components/atoms";
+import { DividerComponent } from "../../../types";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 

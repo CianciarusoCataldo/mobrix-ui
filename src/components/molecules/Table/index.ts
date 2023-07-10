@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { TableComponent } from "../../../types/components/molecules";
+import { TableComponent } from "../../../types";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 
