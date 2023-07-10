@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { CounterComponent } from "./types";
+import { CounterComponent } from "../../../types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 
@@ -51,8 +51,8 @@ const Counter: CounterComponent = ({
   max,
   min,
   ...commonProps
-}) => {
-  return buildMobrixUiReactiveComponent<number | undefined>({
+}) =>
+  buildMobrixUiReactiveComponent<number | undefined>({
     wrapper: "input",
     name: "counterbox",
     inputValue,
@@ -75,6 +75,5 @@ const Counter: CounterComponent = ({
     }),
     commonProps,
   });
-};
 
 export default Counter;

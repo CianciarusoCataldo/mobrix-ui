@@ -20,7 +20,7 @@ const toggleTest = () => {
     test("Pressing Enter key trigger the onChange callback", () => {
       const onChangeStub = jest.fn();
       let wrapper = mount(
-        <Toggle onChange={onChangeStub} onKeyDown={() => {}} />
+        <Toggle icon={<div/>} onChange={onChangeStub} onKeyDown={() => {}} />
       );
 
       wrapper

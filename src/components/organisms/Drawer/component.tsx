@@ -1,7 +1,10 @@
 import React from "react";
 
-import { BuilderComponent, MoBrixUiComponent } from "../../../utils/global";
-import { DrawerProps } from "./types";
+import {
+  BuilderComponent,
+  DrawerProps,
+  MoBrixUiComponent,
+} from "../../../types";
 
 import classNames from "classnames";
 

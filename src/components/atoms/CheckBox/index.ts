@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { CheckBoxComponent } from "./types";
+import { CheckBoxComponent } from "../../../types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 
@@ -43,25 +43,20 @@ import { DefaultCheckIcon } from "./icons";
  */
 const Checkbox: CheckBoxComponent = ({
   value,
-  onChange,
+  onChange = () => {},
   icon,
-  onKeyDown,
+  onKeyDown = () => {},
   ...commonProps
-}) => {
-  const callbacks = {
-    onKeyDown: onKeyDown || (() => {}),
-    onChange: onChange || (() => {}),
-  };
-
-  return buildMobrixUiReactiveComponent<boolean>({
+}) =>
+  buildMobrixUiReactiveComponent<boolean>({
     name: "checkbox",
     props: (actualValue, setValue) => ({
       commonProps: {
         ...commonProps,
         onKeyDown: (e) => {
-          callbacks.onKeyDown(e);
+          onKeyDown(e);
           if (e.code === "Enter" || e.code === "Space") {
-            callbacks.onChange(!actualValue);
+            onChange(!actualValue);
             setValue(!actualValue);
           }
         },
@@ -69,7 +64,7 @@ const Checkbox: CheckBoxComponent = ({
       Component: actualValue ? icon || DefaultCheckIcon : "",
       additionalProps: {
         onClick: () => {
-          callbacks.onChange(!actualValue);
+          onChange(!actualValue);
           setValue(!actualValue);
         },
       },
@@ -77,6 +72,5 @@ const Checkbox: CheckBoxComponent = ({
     inputValue: value,
     defaultValue: false,
   });
-};
 
 export default Checkbox;

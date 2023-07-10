@@ -1,8 +1,8 @@
 import React from "react";
 
-import { RaterProps } from "./types";
+import { RaterProps } from "./Rater";
 
-import { MobrixUiReactiveComponent } from "../../../utils/global";
+import { MobrixUiReactiveComponent } from "../../../types";
 
 import { ICONS } from "./icons";
 import Button from "../../atoms/Button";

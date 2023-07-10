@@ -5,7 +5,7 @@ import "../styles/shared-styles.css";
 import classNames from "classnames";
 import React from "react";
 
-import { BuilderProps } from "./global";
+import { BuilderProps } from "../types/global";
 
 /* istanbul ignore next */
 const useOutsideAlerter = (ref: any, callback: () => void) => {

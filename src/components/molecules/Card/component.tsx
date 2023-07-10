@@ -1,7 +1,6 @@
 import React from "react";
 
-import { MobrixUiReactiveComponent } from "../../../utils/global";
-import { CardProps } from "./types";
+import { CardProps, MobrixUiReactiveComponent } from "../../../types";
 
 import { xIcon } from "./icons";
 import Button from "../../atoms/Button";

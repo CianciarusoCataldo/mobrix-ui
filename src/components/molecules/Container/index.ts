@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { ContainerComponent } from "./types";
+import { ContainerComponent } from "../../../types";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 

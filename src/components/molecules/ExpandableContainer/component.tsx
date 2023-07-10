@@ -2,9 +2,10 @@ import React from "react";
 
 import classNames from "classnames";
 
-import { ExpandableContainerProps } from "./types";
-
-import { MobrixUiReactiveComponent } from "../../../utils/global";
+import {
+  ExpandableContainerProps,
+  MobrixUiReactiveComponent,
+} from "../../../types";
 
 import Button from "../../atoms/Button";
 

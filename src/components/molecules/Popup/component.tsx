@@ -1,7 +1,10 @@
 import React from "react";
 
-import { BuilderComponent, MoBrixUiComponent } from "../../../utils/global";
-import { PopupProps } from "./types";
+import {
+  BuilderComponent,
+  MoBrixUiComponent,
+  PopupProps,
+} from "../../../types";
 
 const popupComponent: MoBrixUiComponent<PopupProps, BuilderComponent> = ({
   className,

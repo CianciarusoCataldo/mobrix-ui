@@ -1,21 +1,20 @@
 import React from "react";
 
-import { MobrixUiReactiveComponent } from "../../../utils/global";
+import { MobrixUiReactiveComponent, ToggleProps } from "../../../types";
 
 import classNames from "classnames";
 
 import { defaultIcon } from "./icons";
-import { ToggleProps } from "./types";
 
 const toggleComponent: MobrixUiReactiveComponent<boolean, ToggleProps> = ({
   value: status,
-  icon,
+  icon = defaultIcon,
   offIcon,
   onIcon,
 }) => {
-  const toggleIcon = icon || defaultIcon;
-  const iconOn = onIcon || toggleIcon;
-  const iconOff = offIcon || toggleIcon;
+  const iconOn = onIcon || icon;
+  const iconOff = offIcon || icon;
+
   return (
     <div
       className={classNames("toggle-icon", {

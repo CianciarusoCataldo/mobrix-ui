@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { DrawerComponent } from "./types";
+import { DrawerComponent } from "../../../types";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 
