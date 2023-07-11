@@ -1,11 +1,11 @@
 /** Atoms */
-export { ButtonComponent, ButtonProps } from "./types/components/atoms/Button";
+export { ButtonComponent, ButtonProps } from "./types/components/atoms/button";
 export { default as Button } from "./components/atoms/Button";
 
 export {
   CheckBoxComponent,
   CheckBoxProps,
-} from "./types/components/atoms/CheckBox";
+} from "./types/components/atoms/check-box";
 export { default as CheckBox } from "./components/atoms/CheckBox";
 
 export {
@@ -13,70 +13,70 @@ export {
   CodeBoxComponent,
   CodeBoxProps,
   SupportedEnvironment,
-} from "./types/components/atoms/CodeBox";
+} from "./types/components/atoms/code-box";
 export { default as CodeBox } from "./components/atoms/CodeBox";
 
 export {
   CounterComponent,
   CounterProps,
-} from "./types/components/atoms/Counter";
+} from "./types/components/atoms/counter";
 export { default as Counter } from "./components/atoms/Counter";
 
 export {
   DividerComponent,
   DividerProps,
-} from "./types/components/atoms/Divider";
+} from "./types/components/atoms/divider";
 export { default as Divider } from "./components/atoms/Divider";
 
 export { default as FacebookButtons } from "./components/atoms/FacebookButtons";
 
-export { InputComponent, InputProps } from "./types/components/atoms/Input";
+export { InputComponent, InputProps } from "./types/components/atoms/input";
 export { default as Input } from "./components/atoms/Input";
 
-export { LabelComponent, LabelProps } from "./types/components/atoms/Label";
+export { LabelComponent, LabelProps } from "./types/components/atoms/label";
 export { default as Label } from "./components/atoms/Label";
 
-export { LinkComponent, LinkProps } from "./types/components/atoms/Link";
+export { LinkComponent, LinkProps } from "./types/components/atoms/link";
 export { default as Link } from "./components/atoms/Link";
 
 export {
   RadioButtonComponent,
   RadioButtonProps,
-} from "./types/components/atoms/RadioButton";
+} from "./types/components/atoms/radio-button";
 export { default as RadioButton } from "./components/atoms/RadioButton";
 
 export {
   SelectorComponent,
   SelectorProps,
-} from "./types/components/atoms/Selector";
+} from "./types/components/atoms/selector";
 export { default as Selector } from "./components/atoms/Selector";
 
-export { SliderComponent, SliderProps } from "./types/components/atoms/Slider";
+export { SliderComponent, SliderProps } from "./types/components/atoms/slider";
 export { default as Slider } from "./components/atoms/Slider";
 
 export {
   SpinnerComponent,
   SpinnerProps,
-} from "./types/components/atoms/Spinner";
+} from "./types/components/atoms/spinner";
 export { default as Spinner } from "./components/atoms/Spinner";
 
-export { ToggleComponent, ToggleProps } from "./types/components/atoms/Toggle";
+export { ToggleComponent, ToggleProps } from "./types/components/atoms/toggle";
 export { default as Toggle } from "./components/atoms/Toggle";
 
 /** Molecules */
-export { CardComponent, CardProps } from "./types/components/molecules/Card";
+export { CardComponent, CardProps } from "./types/components/molecules/card";
 export { default as Card } from "./components/molecules/Card";
 
 export {
   CarouselComponent,
   CarouselProps,
-} from "./types/components/molecules/Carousel";
+} from "./types/components/molecules/carousel";
 export { default as Carousel } from "./components/molecules/Carousel";
 
 export {
   ContainerComponent,
   ContainerProps,
-} from "./types/components/molecules/Container";
+} from "./types/components/molecules/container";
 export { default as Container } from "./components/molecules/Container";
 
 export {
@@ -84,62 +84,62 @@ export {
   DropdownGenericElement,
   DropdownStandardElement,
   DropdownProps,
-} from "./types/components/molecules/Dropdown";
+} from "./types/components/molecules/dropdown";
 export { default as Dropdown } from "./components/molecules/Dropdown";
 
 export {
   ExpandableContainerComponent,
   ExpandableContainerProps,
-} from "./types/components/molecules/ExpandableContainer";
+} from "./types/components/molecules/expandable-container";
 export { default as ExpandableContainer } from "./components/molecules/ExpandableContainer";
 
-export { FormComponent, FormProps } from "./types/components/molecules/Form";
+export { FormComponent, FormProps } from "./types/components/molecules/form";
 export { default as Form } from "./components/molecules/Form";
 
-export { ListComponent, ListProps } from "./types/components/molecules/List";
+export { ListComponent, ListProps } from "./types/components/molecules/list";
 export { default as List } from "./components/molecules/List";
 
-export { ModalComponent, ModalProps } from "./types/components/molecules/Modal";
+export { ModalComponent, ModalProps } from "./types/components/molecules/modal";
 export { default as Modal } from "./components/molecules/Modal";
 
-export { PopupComponent, PopupProps } from "./types/components/molecules/Popup";
+export { PopupComponent, PopupProps } from "./types/components/molecules/popup";
 export { default as Popup } from "./components/molecules/Popup";
 
 export {
   RadioButtonGroupComponent,
   RadioButtonGroupProps,
-} from "./types/components/molecules/RadioButtonGroup";
+} from "./types/components/molecules/radio-button-group";
 export { default as RadioButtonGroup } from "./components/molecules/RadioButtonGroup";
 
-export { RaterComponent, RaterProps } from "./types/components/molecules/Rater";
+export { RaterComponent, RaterProps } from "./types/components/molecules/rater";
 export { default as Rater } from "./components/molecules/Rater";
 
 export {
   ReviewComponent,
   ReviewProps,
-} from "./types/components/molecules/Review";
+} from "./types/components/molecules/review";
 export { default as Review } from "./components/molecules/Review";
 
-export { TableComponent, TableProps } from "./types/components/molecules/Table";
+export { TableComponent, TableProps } from "./types/components/molecules/table";
 export { default as Table } from "./components/molecules/Table";
 
 /** Organisms */
 export {
   CalendarComponent,
   CalendarProps,
-} from "./types/components/organisms/Calendar";
+} from "./types/components/organisms/calendar";
 export { default as Calendar } from "./components/organisms/Calendar";
 
 export {
   DatePickerComponent,
   DatePickerProps,
-} from "./types/components/organisms/DatePicker";
+} from "./types/components/organisms/date-picker";
 export { default as DatePicker } from "./components/organisms/DatePicker";
 
 export {
   DrawerComponent,
   DrawerProps,
-} from "./types/components/organisms/Drawer";
+} from "./types/components/organisms/drawer";
 export { default as Drawer } from "./components/organisms/Drawer";
 
 /** Shared types */

@@ -2,7 +2,7 @@ import {
   BuilderComponent,
   ComponentWithCallback,
   MoBrixUiComponent,
-} from "../../../types";
+} from "../..";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} List component props

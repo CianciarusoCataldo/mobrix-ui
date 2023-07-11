@@ -3,7 +3,7 @@ import {
   ComponentWithValue,
   MoBrixUiComponent,
 } from "../../global";
-import { CalendarDate, CalendarProps } from "./Calendar";
+import { CalendarDate, CalendarProps } from "./calendar";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} DatePicker props

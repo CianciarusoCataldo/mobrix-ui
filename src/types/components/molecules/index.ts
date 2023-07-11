@@ -1,25 +1,25 @@
-export { CardComponent, CardProps } from "./Card";
-export { CarouselComponent, CarouselProps } from "./Carousel";
-export { ContainerComponent, ContainerProps } from "./Container";
+export { CardComponent, CardProps } from "./card";
+export { CarouselComponent, CarouselProps } from "./carousel";
+export { ContainerComponent, ContainerProps } from "./container";
 export {
   DropdownComponent,
   DropdownGenericElement,
   DropdownProps,
   DropdownStandardElement,
-} from "./Dropdown";
+} from "./dropdown";
 export {
   ExpandableContainerComponent,
   ExpandableContainerProps,
-} from "./ExpandableContainer";
-export { FormComponent, FormField, FormProps } from "./Form";
-export { ListComponent, ListProps } from "./List";
-export { ModalComponent, ModalProps } from "./Modal";
-export { PopupComponent, PopupProps } from "./Popup";
+} from "./expandable-container";
+export { FormComponent, FormField, FormProps } from "./form";
+export { ListComponent, ListProps } from "./list";
+export { ModalComponent, ModalProps } from "./modal";
+export { PopupComponent, PopupProps } from "./popup";
 export {
   RadioButtonGroupComponent,
   RadioButtonGroupProps,
   RadioElement,
-} from "./RadioButtonGroup";
-export { RaterComponent, RaterProps } from "./Rater";
-export { ReviewComponent, ReviewLogo, ReviewProps } from "./Review";
-export { TableComponent, TableProps } from "./Table";
+} from "./radio-button-group";
+export { RaterComponent, RaterProps } from "./rater";
+export { ReviewComponent, ReviewLogo, ReviewProps } from "./review";
+export { TableComponent, TableProps } from "./table";

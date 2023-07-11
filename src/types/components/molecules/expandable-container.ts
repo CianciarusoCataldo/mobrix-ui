@@ -3,7 +3,7 @@ import {
   ComponentWithCallback,
   ContainerProps,
   MoBrixUiComponent,
-} from "../../../types";
+} from "../..";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Expandable Container component props
