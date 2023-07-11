@@ -1,3 +1,4 @@
+/** Shared types */
 export {
   BuilderComponent,
   BuilderProps,
@@ -12,6 +13,7 @@ export {
   Wrappers,
 } from "./global";
 
+/** Atom components types */
 export {
   ButtonComponent,
   ButtonProps,
@@ -44,6 +46,8 @@ export {
   ToggleComponent,
   ToggleProps,
 } from "./components/atoms";
+
+/** Molecules components types */
 export {
   CardComponent,
   CardProps,
@@ -77,6 +81,8 @@ export {
   TableComponent,
   TableProps,
 } from "./components/molecules";
+
+/** Organisms components types */
 export {
   CalendarComponent,
   CalendarDate,
