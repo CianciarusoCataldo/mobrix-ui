@@ -1,4 +1,4 @@
-import { BuilderComponent, MoBrixUiComponent } from "../../../types";
+import { BuilderComponent, MoBrixUiComponent } from "../..";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Table component props

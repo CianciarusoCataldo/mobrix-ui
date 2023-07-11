@@ -3,6 +3,6 @@ export {
   CalendarDate,
   CalendarProps,
   CalendarSharedProps,
-} from "./Calendar";
-export { DatePickerComponent, DatePickerProps } from "./DatePicker";
-export { DrawerComponent, DrawerProps } from "./Drawer";
+} from "./calendar";
+export { DatePickerComponent, DatePickerProps } from "./date-picker";
+export { DrawerComponent, DrawerProps } from "./drawer";

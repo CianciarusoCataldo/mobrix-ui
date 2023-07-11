@@ -1,22 +1,22 @@
-export { ButtonComponent, ButtonProps } from "./Button";
-export { CheckBoxComponent, CheckBoxProps } from "./CheckBox";
+export { ButtonComponent, ButtonProps } from "./button";
+export { CheckBoxComponent, CheckBoxProps } from "./check-box";
 export {
   CodeBlock,
   CodeBoxComponent,
   CodeBoxProps,
   SupportedEnvironment,
-} from "./CodeBox";
-export { CounterComponent, CounterProps } from "./Counter";
-export { DividerComponent, DividerProps } from "./Divider";
+} from "./code-box";
+export { CounterComponent, CounterProps } from "./counter";
+export { DividerComponent, DividerProps } from "./divider";
 export {
   FacebookButtonsComponent,
   FacebookButtonsProps,
-} from "./FacebookButtons";
-export { InputComponent, InputProps } from "./Input";
-export { LabelComponent, LabelProps } from "./Label";
-export { LinkComponent, LinkProps } from "./Link";
-export { RadioButtonComponent, RadioButtonProps } from "./RadioButton";
-export { SelectorComponent, SelectorProps } from "./Selector";
-export { SliderComponent, SliderProps } from "./Slider";
-export { SpinnerComponent, SpinnerProps } from "./Spinner";
-export { ToggleComponent, ToggleProps } from "./Toggle";
+} from "./facebook-buttons";
+export { InputComponent, InputProps } from "./input";
+export { LabelComponent, LabelProps } from "./label";
+export { LinkComponent, LinkProps } from "./link";
+export { RadioButtonComponent, RadioButtonProps } from "./radio-button";
+export { SelectorComponent, SelectorProps } from "./selector";
+export { SliderComponent, SliderProps } from "./slider";
+export { SpinnerComponent, SpinnerProps } from "./spinner";
+export { ToggleComponent, ToggleProps } from "./toggle";
