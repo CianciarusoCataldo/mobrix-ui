@@ -42,7 +42,7 @@ MoBrix-ui v2 introduces some breaking changes that makes it not compatible with 
 
 ## Summary
 
-- [MoBrix-ui philosophy](#mobrix-ui-components-philosophy)
+- [MoBrix-ui philosophy](#mobrix-ui-philosophy)
 - [Components building process](#components-building-process)
   - [UI properties](#ui-properties)
   - [Accessibility properties](#accessibility-properties)
