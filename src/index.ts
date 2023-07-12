@@ -149,4 +149,7 @@ export {
   DatePickerProps,
   DrawerComponent,
   DrawerProps,
+  TabPanelComponent,
+  TabPanelProps,
+  Tab,
 } from "./types";

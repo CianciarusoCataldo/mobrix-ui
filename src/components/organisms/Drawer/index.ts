@@ -13,7 +13,7 @@ import drawerBuilder from "./builder";
  *
  * @param position drawer position (relative to the entire window). Possible values are `bottom`, `top`, `right`, `left`, `bottom-left`, `bottom-right`, `top-left` and `top-right`
  * @param {()=>void} onClose Callback triggered on Drawer close
- * @param {JSX.Element | JSX.Element[] | string| string[]} children Callback triggered on Drawer close
+ * @param {JSX.Element | JSX.Element[] | string| string[]} children drawer custom content
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
