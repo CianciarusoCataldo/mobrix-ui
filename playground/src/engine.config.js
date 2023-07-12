@@ -56,6 +56,7 @@ const engineConfig = {
       Slider: "/components/atoms/Slider",
       Spinner: "/components/atoms/Spinner",
       Table: "/components/molecules/Table",
+      TabPanel: "/components/organisms/TabPanel",
       Toggle: "/components/atoms/Toggle",
     },
   },

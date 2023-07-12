@@ -41,7 +41,7 @@ import { buildMobrixUiStandardComponent } from "../../../utils";
  */
 const TabPanel: TabPanelComponent = ({ tabs = [], ...commonProps }) => {
   return buildMobrixUiStandardComponent({
-    name: "tabpanel",
+    name: "tab-panel",
     commonProps,
   });
 };
