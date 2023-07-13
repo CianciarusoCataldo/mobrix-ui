@@ -19,6 +19,9 @@ const tabViewerComponent: MobrixUiReactiveComponent<number, TabViewerProps> = ({
   value,
 }) => {
   let tabMap: Record<string, JSX.Element> = {};
+  const content =
+    tabs.length > 0 && tabs.length > value ? tabs[value].content : <div />;
+
   tabs.forEach((tab) => {
     if (tab.label) {
       tabMap[tab.label] = tab.content;
@@ -54,7 +57,7 @@ const tabViewerComponent: MobrixUiReactiveComponent<number, TabViewerProps> = ({
       dark={dark}
       className={classNames(tabViewClassName, { "tab-view": !unstyled })}
     >
-      {tabs.length > 0 && tabs[value].content}
+      {content}
     </Container>,
   ];
 };
