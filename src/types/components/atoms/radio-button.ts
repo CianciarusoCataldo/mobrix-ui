@@ -11,7 +11,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type RadioButtonProps = ComponentWithValue<boolean> &
   ComponentWithCallback<boolean> & {
@@ -26,6 +26,6 @@ export type RadioButtonProps = ComponentWithValue<boolean> &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type RadioButtonComponent = MoBrixUiComponent<RadioButtonProps>;

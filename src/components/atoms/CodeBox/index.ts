@@ -39,7 +39,7 @@ import codeboxComponent from "./component";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 const CodeBox: CodeBoxComponent = ({
   value,

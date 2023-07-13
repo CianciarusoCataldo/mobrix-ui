@@ -34,7 +34,7 @@ import { buildMobrixUiStandardComponent } from "../../../utils";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 const Divider: DividerComponent = (props) =>
   buildMobrixUiStandardComponent({

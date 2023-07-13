@@ -18,7 +18,7 @@
 
 ### 2.1.0
 
-- `TabPanel` component
+- `TabViewer` component
 - Minor fixes
 
 <br>

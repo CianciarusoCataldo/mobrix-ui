@@ -93,6 +93,6 @@ export {
   DrawerComponent,
   DrawerProps,
   Tab,
-  TabPanelComponent,
-  TabPanelProps,
+  TabViewerComponent,
+  TabViewerProps,
 } from "./components/organisms";

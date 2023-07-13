@@ -11,7 +11,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export interface FormField {
   /** Text showed above the field itself */
@@ -36,7 +36,7 @@ export interface FormField {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type FormProps = ComponentWithChildren<JSX.Element> &
   ClickableComponent<(values: Record<string, any>) => void> & {
@@ -71,6 +71,6 @@ export type FormProps = ComponentWithChildren<JSX.Element> &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type FormComponent = MoBrixUiComponent<FormProps>;

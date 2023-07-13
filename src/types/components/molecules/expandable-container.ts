@@ -12,7 +12,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type ExpandableContainerProps = ContainerProps &
   ComponentWithCallback<boolean> & {
@@ -28,7 +28,7 @@ export type ExpandableContainerProps = ContainerProps &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type ExpandableContainerComponent =
   MoBrixUiComponent<ExpandableContainerProps>;

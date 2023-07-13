@@ -61,6 +61,9 @@ export { default as DatePicker } from "./components/organisms/DatePicker";
 
 export { default as Drawer } from "./components/organisms/Drawer";
 
+export { default as TabViewer } from "./components/organisms/TabViewer";
+
+/** Type definitions */
 export {
   /** Shared types */
   BuilderComponent,
@@ -149,7 +152,7 @@ export {
   DatePickerProps,
   DrawerComponent,
   DrawerProps,
-  TabPanelComponent,
-  TabPanelProps,
   Tab,
+  TabViewerComponent,
+  TabViewerProps,
 } from "./types";

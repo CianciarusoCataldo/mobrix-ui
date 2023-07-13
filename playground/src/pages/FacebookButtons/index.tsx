@@ -7,7 +7,7 @@ import {
 import { ComponentPage } from "components/ComponentPage";
 import { demoRows, demoProps } from "constants/demo-props";
 import DemoComponent from "components/DemoComponent";
-import { FacebookButtonsProps } from "mobrix-ui-preview/components/atoms/FacebookButtons/types";
+import { FacebookButtonsProps } from "mobrix-ui-preview";
 
 const FacebookButtonsPage = () => (
   <ComponentPage

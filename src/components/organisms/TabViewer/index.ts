@@ -1,13 +1,15 @@
 import "./styles.css";
 
-import { TabPanelComponent } from "../../../types";
+import { TabViewerComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "../../../utils";
+import { buildMobrixUiReactiveComponent } from "../../../utils";
+
+import tabViewerComponent from "./component";
 
 /**
- * A tabs manager, to let the user switch to different views by simply clicks on a different tab
+ * A tabs manager, to let the user switch to different views by simply click on a different tab
  *
- * @since 2.0.0
+ * @since 2.1.0
  *
  * @param {Tab[]} tabs Tabs array
  * @param {()=>void} onChange Callback triggered when a tab is clicked
@@ -27,23 +29,47 @@ import { buildMobrixUiStandardComponent } from "../../../utils";
  * @param {() => void} onFocusLost `common MoBrix-ui prop` - callback called when component focus is lost
  * @param {(keyEvent: any) => void} onKeyDown `common MoBrix-ui prop` - callback called when a key is pressed when inside the component
  *
- * @example <caption>Example Drawer usage</caption>
+ * @example <caption>Example TabViewer usage</caption>
  * import { render } from "react-dom";
- * import { Drawer } from 'mobrix-ui';
+ * import { TabViewer } from 'mobrix-ui';
  *
- * render(<Drawer children={<div>Drawer content</div>} position="top-left" />, document.getElementById("root"));
+ * render(<TabViewer />, document.getElementById("root"));
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Drawer
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/TabViewer
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
-const TabPanel: TabPanelComponent = ({ tabs = [], ...commonProps }) => {
-  return buildMobrixUiStandardComponent({
-    name: "tab-panel",
+const TabViewer: TabViewerComponent = ({
+  tabs = [],
+  onChange,
+  value,
+  tabClassName,
+  tabSelectedClassName,
+  tabUnselectedClassName,
+  tabViewClassName,
+  ...commonProps
+}) => {
+  return buildMobrixUiReactiveComponent({
+    name: "tab-viewer",
     commonProps,
+    inputValue: value,
+    defaultValue: 0,
+    props: (value, setValue) => ({
+      Component: tabViewerComponent({
+        value,
+        setValue,
+        tabs,
+        onChange,
+        tabClassName,
+        tabSelectedClassName,
+        tabUnselectedClassName,
+        tabViewClassName,
+        ...commonProps,
+      }),
+    }),
   });
 };
 
-export default TabPanel;
+export default TabViewer;

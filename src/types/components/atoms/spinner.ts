@@ -11,7 +11,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type SpinnerProps<T extends string = string> = ComponentWithValue<T> & {
   /** custom statuses, to map every icon in a custom way */
@@ -25,7 +25,7 @@ export type SpinnerProps<T extends string = string> = ComponentWithValue<T> & {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type SpinnerComponent<T extends string = string> = MoBrixUiComponent<
   SpinnerProps<T>
