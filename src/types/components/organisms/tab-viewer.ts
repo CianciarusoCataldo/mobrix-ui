@@ -33,8 +33,8 @@ export type TabViewerProps = {
   tabViewClassName?: string;
   tabSelectedClassName?: string;
   tabUnselectedClassName?: string;
-} & ComponentWithCallback<number> &
-  ComponentWithValue<number>;
+  selected?: number;
+} & ComponentWithCallback<number>;
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} TabViewer component

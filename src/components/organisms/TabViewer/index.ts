@@ -12,6 +12,11 @@ import tabViewerComponent from "./component";
  * @since 2.1.0
  *
  * @param {Tab[]} tabs Tabs array
+ * @param {number} selected initially selected tab (as an array index, default to `0`)
+ * @param {string} tabClassName - custom className applied on every tab
+ * @param {string} tabSelectedClassName - custom className applied on selected tab
+ * @param {string} tabUnselectedClassName - custom className applied on every unselected tab
+ * @param {string} tabViewClassName - custom className applied on the tab view container (where the selected tab content is showed)
  * @param {()=>void} onChange Callback triggered when a tab is clicked
  * @param {JSX.Element | JSX.Element[] | string| string[]} children Callback triggered on Drawer close
  * @param {string} className `common MoBrix-ui prop` - custom className
@@ -33,7 +38,15 @@ import tabViewerComponent from "./component";
  * import { render } from "react-dom";
  * import { TabViewer } from 'mobrix-ui';
  *
- * render(<TabViewer />, document.getElementById("root"));
+ * render(<TabViewer tabs={[
+ * { label: 'Tab 1', 
+ *   content: (<div>Tab 1 content</div>)
+ * },
+ * {
+ *   label: 'Tab 2', 
+ *   content: (<div>Tab 1 content</div>)
+ * }
+ * ]}/>, document.getElementById("root"));
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/TabViewer
  *
@@ -42,9 +55,9 @@ import tabViewerComponent from "./component";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const TabViewer: TabViewerComponent = ({
-  tabs = [],
   onChange,
-  value,
+  selected,
+  tabs = [],
   tabClassName,
   tabSelectedClassName,
   tabUnselectedClassName,
@@ -52,20 +65,20 @@ const TabViewer: TabViewerComponent = ({
   ...commonProps
 }) => {
   return buildMobrixUiReactiveComponent({
-    name: "tab-viewer",
     commonProps,
-    inputValue: value,
     defaultValue: 0,
+    inputValue: selected,
+    name: "tab-viewer",
     props: (value, setValue) => ({
       Component: tabViewerComponent({
-        value,
+        onChange,
         setValue,
         tabs,
-        onChange,
         tabClassName,
         tabSelectedClassName,
         tabUnselectedClassName,
         tabViewClassName,
+        value,
         ...commonProps,
       }),
     }),

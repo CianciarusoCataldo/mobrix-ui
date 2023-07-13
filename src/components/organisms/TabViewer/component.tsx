@@ -1,20 +1,22 @@
 import React from "react";
-import { MobrixUiReactiveComponent, TabViewerProps } from "../../../types";
-import Container from "../../molecules/Container";
 import classNames from "classnames";
+
+import { MobrixUiReactiveComponent, TabViewerProps } from "../../../types";
+
+import Container from "../../molecules/Container";
 import Button from "../../atoms/Button";
 
 const tabViewerComponent: MobrixUiReactiveComponent<number, TabViewerProps> = ({
-  tabs,
   onChange = () => {},
   dark,
-  value,
   setValue,
-  unstyled,
+  tabs,
   tabClassName,
   tabSelectedClassName,
   tabUnselectedClassName,
   tabViewClassName,
+  unstyled,
+  value,
 }) => {
   let tabMap: Record<string, JSX.Element> = {};
   tabs.forEach((tab) => {

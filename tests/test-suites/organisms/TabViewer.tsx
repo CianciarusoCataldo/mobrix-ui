@@ -22,7 +22,7 @@ const drawerTest = () => {
 
       wrapper = mount(
         <TabViewer
-          value={0}
+          selected={0}
           tabClassName=" "
           tabSelectedClassName=" "
           tabUnselectedClassName=" "
