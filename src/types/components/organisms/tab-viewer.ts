@@ -1,8 +1,4 @@
-import {
-  ComponentWithCallback,
-  ComponentWithValue,
-  MoBrixUiComponent,
-} from "../../global";
+import { ComponentWithCallback, MoBrixUiComponent } from "../../global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/TabViewer MoBrix-ui TabViewer} single Tab
@@ -28,11 +24,22 @@ export type Tab = {
  * @copyright 2023 Cataldo Cianciaruso
  */
 export type TabViewerProps = {
+  /** Tabs array. When a tab is selected, its index (position into array) is passed to the `onChange` callback */
   tabs?: Tab[];
+
+  /** Custom className applied on every tab */
   tabClassName?: string;
+
+  /** Custom className applied on the tab view container (where the selected tab content is showed) */
   tabViewClassName?: string;
+
+  /** Custom className applied only on selected tab */
   tabSelectedClassName?: string;
+
+  /** Custom className applied on every unselected tab */
   tabUnselectedClassName?: string;
+
+  /** Initially selected tab (as an array index, default to `0`) */
   selected?: number;
 } & ComponentWithCallback<number>;
 

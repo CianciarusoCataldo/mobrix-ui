@@ -1,5 +1,9 @@
 import { Card, Form, TabViewer } from "mobrix-ui-preview";
-import { HiddenProp, StringProp } from "@cianciarusocataldo/demo-ui";
+import {
+  HiddenProp,
+  NumberProp,
+  StringProp,
+} from "@cianciarusocataldo/demo-ui";
 import { ComponentPage } from "components/ComponentPage";
 import { demoRows, demoProps } from "constants/demo-props";
 import DemoComponent from "components/DemoComponent";
@@ -18,7 +22,7 @@ const TabViewerPage = () => (
             tabSelectedClassName: StringProp(""),
             tabUnselectedClassName: StringProp(""),
             tabViewClassName: StringProp(""),
-            selected: HiddenProp(0),
+            selected: NumberProp(0),
             tabs: HiddenProp([
               {
                 label: "Tab 1",
@@ -58,7 +62,7 @@ const TabViewerPage = () => (
             ...demoProps,
           }}
           rows={[
-            ["tabClassName", "tabSelectedClassName"],
+            ["selected", "tabClassName", "tabSelectedClassName"],
             ["tabUnselectedClassName", "tabViewClassName"],
             ...demoRows,
           ]}

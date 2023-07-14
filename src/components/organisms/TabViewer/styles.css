@@ -15,7 +15,7 @@
   color:var(--mobrix-ui-text-color)
 }
 
-#mobrix-ui-tab-viewer .tabs-list .tab.selected {
+#mobrix-ui-tab-viewer.styled .tabs-list .tab.selected {
   background-image: var(--mobrix-ui-background);
 }
 
