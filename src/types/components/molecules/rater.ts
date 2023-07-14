@@ -11,7 +11,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type RaterProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {
@@ -35,6 +35,6 @@ export type RaterProps = ComponentWithValue<number> &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type RaterComponent = MoBrixUiComponent<RaterProps>;

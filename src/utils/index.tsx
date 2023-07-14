@@ -37,7 +37,7 @@ const useOutsideAlerter = (ref: any, callback: () => void) => {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export const buildMobrixUiStandardComponent = ({
   name,
@@ -99,7 +99,7 @@ export const buildMobrixUiStandardComponent = ({
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export const buildMobrixUiReactiveComponent = <T=any>({
   name,

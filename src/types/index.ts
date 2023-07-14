@@ -92,4 +92,7 @@ export {
   DatePickerProps,
   DrawerComponent,
   DrawerProps,
+  Tab,
+  TabViewerComponent,
+  TabViewerProps,
 } from "./components/organisms";

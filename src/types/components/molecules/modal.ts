@@ -11,7 +11,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type ModalProps = ComponentWithChildren<BuilderComponent> & {
   /** Modal title */
@@ -34,6 +34,6 @@ export type ModalProps = ComponentWithChildren<BuilderComponent> & {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type ModalComponent = MoBrixUiComponent<ModalProps>;

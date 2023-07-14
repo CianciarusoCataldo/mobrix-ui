@@ -7,7 +7,7 @@ import { BuilderComponent, MoBrixUiComponent } from "../..";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type TableProps = {
   /** if true, the first row will be used as headers (and not generic data) */
@@ -24,6 +24,6 @@ export type TableProps = {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type TableComponent = MoBrixUiComponent<TableProps>;

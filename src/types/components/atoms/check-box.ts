@@ -12,7 +12,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type CheckBoxProps = ComponentWithValue<boolean> &
   ComponentWithIcon &
@@ -25,6 +25,6 @@ export type CheckBoxProps = ComponentWithValue<boolean> &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type CheckBoxComponent = MoBrixUiComponent<CheckBoxProps>;

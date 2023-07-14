@@ -10,7 +10,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type ContainerProps = ComponentWithChildren<any> & {
   /** component wrapper type ("div" | "header" | "footer") */
@@ -24,6 +24,6 @@ export type ContainerProps = ComponentWithChildren<any> & {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type ContainerComponent = MoBrixUiComponent<ContainerProps>;

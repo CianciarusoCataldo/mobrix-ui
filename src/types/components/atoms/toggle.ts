@@ -13,7 +13,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type ToggleProps = ComponentWithValue<boolean> &
   ComponentWithIcon &
@@ -32,6 +32,6 @@ export type ToggleProps = ComponentWithValue<boolean> &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type ToggleComponent = MoBrixUiComponent<ToggleProps>;

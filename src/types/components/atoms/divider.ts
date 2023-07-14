@@ -7,7 +7,7 @@ import { MoBrixUiComponent } from "../../global";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type DividerProps = {};
 
@@ -18,6 +18,6 @@ export type DividerProps = {};
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type DividerComponent = MoBrixUiComponent<DividerProps>;

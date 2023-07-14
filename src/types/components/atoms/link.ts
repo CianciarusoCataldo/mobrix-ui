@@ -11,7 +11,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type LinkProps = ComponentWithChildren<BuilderComponent> & {
   /** Link URL */
@@ -28,6 +28,6 @@ export type LinkProps = ComponentWithChildren<BuilderComponent> & {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type LinkComponent = MoBrixUiComponent<LinkProps>;

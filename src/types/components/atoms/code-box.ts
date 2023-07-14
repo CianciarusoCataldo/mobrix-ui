@@ -7,7 +7,7 @@ import { ComponentWithValue, MoBrixUiComponent } from "../../global";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type SupportedEnvironment =
   | "javascript"
@@ -22,7 +22,7 @@ export type SupportedEnvironment =
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export interface CodeBlock<T = string | null> {
   /** Highlight color */
@@ -39,7 +39,7 @@ export interface CodeBlock<T = string | null> {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type CodeBoxProps = ComponentWithValue<string> & {
   /** Enable/disable advanced mode, to access extra features, like the integrated copy button and text highlight */
@@ -56,6 +56,6 @@ export type CodeBoxProps = ComponentWithValue<string> & {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type CodeBoxComponent = MoBrixUiComponent<CodeBoxProps>;

@@ -2,7 +2,7 @@ import { TFunction, useTranslation } from "react-i18next";
 
 import { useCommonTranslation } from "hooks/localization";
 
-import { AllowedComponent, Table } from "mobrix-ui-preview";
+import { BuilderComponent, Table } from "mobrix-ui-preview";
 import AppLabel from "../AppLabel";
 import AppPage from "../AppPage";
 
@@ -13,11 +13,11 @@ export const ComponentPage = ({
   props,
   translations,
 }: {
-  children?: AllowedComponent | AllowedComponent[];
+  children?: BuilderComponent | BuilderComponent[];
   render?: (
     t: TFunction,
     label?: string
-  ) => AllowedComponent | AllowedComponent[];
+  ) => BuilderComponent | BuilderComponent[];
   name: string;
   props?: string[][];
   translations?: boolean;

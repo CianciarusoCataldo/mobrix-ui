@@ -11,7 +11,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type DropdownGenericElement = DropdownStandardElement | string;
 
@@ -22,7 +22,7 @@ export type DropdownGenericElement = DropdownStandardElement | string;
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type DropdownStandardElement = {
   name: string | JSX.Element;
@@ -36,7 +36,7 @@ export type DropdownStandardElement = {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type DropdownProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {

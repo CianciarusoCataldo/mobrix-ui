@@ -13,7 +13,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export interface CalendarDate {
   /** Calendar date month (0-11) */
@@ -33,7 +33,7 @@ export interface CalendarDate {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export interface CalendarSharedProps {
   /** custom months labels (default use english months) */
@@ -50,7 +50,7 @@ export interface CalendarSharedProps {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type CalendarProps = CommonProps &
   ComponentWithValue<DeepPartial<CalendarDate>> &
@@ -82,6 +82,6 @@ export type CalendarProps = CommonProps &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type CalendarComponent = MoBrixUiComponent<CalendarProps>;

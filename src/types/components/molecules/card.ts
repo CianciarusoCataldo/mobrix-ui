@@ -12,7 +12,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type CardProps = ComponentWithChildren<
   JSX.Element | JSX.Element[] | string
@@ -41,6 +41,6 @@ export type CardProps = ComponentWithChildren<
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type CardComponent = MoBrixUiComponent<CardProps>;

@@ -12,7 +12,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type DrawerProps = ComponentWithChildren<
   BuilderComponent | BuilderComponent[]
@@ -37,6 +37,6 @@ export type DrawerProps = ComponentWithChildren<
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type DrawerComponent = MoBrixUiComponent<DrawerProps>;

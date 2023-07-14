@@ -7,7 +7,7 @@ import { MoBrixUiComponent } from "../../global";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type FacebookButtonsProps = {
   /** facebook page-id */
@@ -30,6 +30,6 @@ export type FacebookButtonsProps = {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2022 Cataldo Cianciaruso
+ * @copyright 2023 Cataldo Cianciaruso
  */
 export type FacebookButtonsComponent = MoBrixUiComponent<FacebookButtonsProps>;
