@@ -72,11 +72,11 @@ const TabViewer: TabViewerComponent = ({
       Component: tabViewerComponent({
         onChange,
         setValue,
-        tabs,
         tabClassName,
         tabSelectedClassName,
         tabUnselectedClassName,
         tabViewClassName,
+        tabs,
         value: Number(value),
         ...commonProps,
       }),

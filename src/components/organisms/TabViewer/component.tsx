@@ -10,42 +10,42 @@ const tabViewerComponent: MobrixUiReactiveComponent<number, TabViewerProps> = ({
   dark,
   onChange = () => {},
   setValue,
-  tabs = [],
   tabClassName = "",
   tabSelectedClassName = "",
   tabUnselectedClassName = "",
   tabViewClassName = "",
+  tabs = [],
   unstyled,
   value,
 }) => [
   <div className="tabs-list" key="tabs_list">
     {tabs.map((tab, index) => (
       <Button
-        id={`tab_${index}`}
-        key={`tab_${index}`}
-        dark={dark}
         className={classNames(tabClassName, {
           tab: !unstyled,
           selected: index === value,
           [tabSelectedClassName]: index === value,
           [tabUnselectedClassName]: index !== value,
         })}
-        unstyled
+        dark={dark}
+        id={`tab_${index}`}
+        key={`tab_${index}`}
         onClick={() => {
           setValue(index);
           onChange(index);
         }}
+        unstyled
       >
         {tab.label}
       </Button>
     ))}
   </div>,
   <Container
+    className={classNames(tabViewClassName, { "tab-view": !unstyled })}
+    dark={dark}
     key="tabs_view"
     id="tabs_view"
     unstyled={unstyled}
-    dark={dark}
-    className={classNames(tabViewClassName, { "tab-view": !unstyled })}
   >
     {tabs.length > 0 && tabs.length > value ? tabs[value].content : <div />}
   </Container>,
