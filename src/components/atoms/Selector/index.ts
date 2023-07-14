@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { SelectorComponent } from "../../../types";
+import { SelectorComponent } from "mobrix-ui-types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 
@@ -46,7 +46,7 @@ import selectorComponent from "./component";
 const Selector: SelectorComponent = ({
   elements,
   value: inputValue,
-  onChange = () => {},
+  onChange = (e) => {},
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent<number | undefined>({

@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { RadioButtonComponent } from "../../../types";
+import { RadioButtonComponent } from "mobrix-ui-types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 
@@ -41,9 +41,9 @@ import component from "./component";
  */
 const RadioButton: RadioButtonComponent = ({
   value: inputValue,
-  onChange = () => {},
+  onChange = (e) => {},
   deselectable = true,
-  onKeyDown = () => {},
+  onKeyDown = (e) => {},
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent<boolean>({

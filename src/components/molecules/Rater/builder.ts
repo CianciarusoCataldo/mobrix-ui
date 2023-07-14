@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-import { MobrixUiReactiveComponentBuilder, RaterProps } from "../../../types";
+import { MobrixUiReactiveComponentBuilder, RaterProps } from "mobrix-ui-types";
 
 import raterComponent from "./component";
 

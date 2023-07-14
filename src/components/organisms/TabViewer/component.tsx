@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-import { MobrixUiReactiveComponent, TabViewerProps } from "../../../types";
+import { MobrixUiReactiveComponent, TabViewerProps } from "mobrix-ui-types";
 
 import Container from "../../molecules/Container";
 import Button from "../../atoms/Button";

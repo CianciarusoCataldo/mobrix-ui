@@ -4,7 +4,7 @@ import {
   CalendarDate,
   DatePickerProps,
   MobrixUiReactiveComponent,
-} from "../../../types";
+} from "mobrix-ui-types";
 
 import { defaultDays, defaultMonths } from "../Calendar/constants";
 

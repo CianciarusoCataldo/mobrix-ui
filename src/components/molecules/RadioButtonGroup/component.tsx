@@ -4,7 +4,7 @@ import classNames from "classnames";
 import {
   MobrixUiReactiveComponent,
   RadioButtonGroupProps,
-} from "../../../types";
+} from "mobrix-ui-types";
 
 import Label from "../../atoms/Label";
 import RadioButton from "../../atoms/RadioButton";

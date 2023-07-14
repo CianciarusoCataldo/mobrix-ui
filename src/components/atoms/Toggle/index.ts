@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { ToggleComponent } from "../../../types";
+import { ToggleComponent } from "mobrix-ui-types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 

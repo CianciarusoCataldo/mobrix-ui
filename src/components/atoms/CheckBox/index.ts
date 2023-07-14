@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { CheckBoxComponent } from "../../../types";
+import { CheckBoxComponent } from "mobrix-ui-types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 
@@ -43,9 +43,9 @@ import { DefaultCheckIcon } from "./icons";
  */
 const Checkbox: CheckBoxComponent = ({
   value,
-  onChange = () => {},
+  onChange = (e) => {},
   icon,
-  onKeyDown = () => {},
+  onKeyDown = (e) => {},
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent<boolean>({

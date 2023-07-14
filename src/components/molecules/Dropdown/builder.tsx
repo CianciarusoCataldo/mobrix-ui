@@ -4,7 +4,7 @@ import {
   DropdownProps,
   DropdownStandardElement,
   MobrixUiReactiveComponentBuilder,
-} from "../../../types";
+} from "mobrix-ui-types";
 
 import classnames from "classnames";
 

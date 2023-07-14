@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { PopupComponent } from "../../../types";
+import { PopupComponent } from "mobrix-ui-types";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 

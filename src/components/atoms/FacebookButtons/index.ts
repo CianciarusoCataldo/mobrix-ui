@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { FacebookButtonsComponent } from "../../../types";
+import { FacebookButtonsComponent } from "mobrix-ui-types";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 

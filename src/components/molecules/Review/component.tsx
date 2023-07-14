@@ -4,7 +4,7 @@ import {
   BuilderComponent,
   MoBrixUiComponent,
   ReviewProps,
-} from "../../../types";
+} from "mobrix-ui-types";
 
 import { icons } from "./icons";
 import Link from "../../atoms/Link";

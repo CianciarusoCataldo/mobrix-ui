@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FacebookButtonsProps, MoBrixUiComponent } from "../../../types";
+import { FacebookButtonsProps, MoBrixUiComponent } from "mobrix-ui-types";
 
 const widths = {
   small: { share: 140, noshare: 70 },

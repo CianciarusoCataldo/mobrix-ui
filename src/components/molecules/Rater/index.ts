@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { RaterComponent } from "../../../types";
+import { RaterComponent } from "mobrix-ui-types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 

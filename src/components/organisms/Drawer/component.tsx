@@ -4,7 +4,7 @@ import {
   BuilderComponent,
   DrawerProps,
   MoBrixUiComponent,
-} from "../../../types";
+} from "mobrix-ui-types";
 
 import classNames from "classnames";
 

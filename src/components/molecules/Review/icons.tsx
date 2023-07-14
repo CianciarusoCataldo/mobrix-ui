@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ReviewLogo } from "../../../types";
+import { ReviewLogo } from "mobrix-ui-types";
 
 export const icons: Record<ReviewLogo, JSX.Element> = {
   default: (

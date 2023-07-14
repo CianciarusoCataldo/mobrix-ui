@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { SliderComponent } from "../../../types";
+import { SliderComponent } from "mobrix-ui-types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 
@@ -44,7 +44,7 @@ import { buildMobrixUiReactiveComponent } from "../../../utils";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Slider: SliderComponent = ({
-  onChange = () => {},
+  onChange = (e) => {},
   value: inputValue,
   min,
   max,

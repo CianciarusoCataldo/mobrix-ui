@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BuilderComponent, ListProps, MoBrixUiComponent } from "../../../types";
+import { BuilderComponent, ListProps, MoBrixUiComponent } from "mobrix-ui-types";
 
 import Button from "../../atoms/Button";
 

@@ -7,7 +7,7 @@ import {
   CalendarProps,
   DeepPartial,
   MobrixUiReactiveComponent,
-} from "../../../types";
+} from "mobrix-ui-types";
 
 import { defaultDays, defaultMonths } from "./constants";
 

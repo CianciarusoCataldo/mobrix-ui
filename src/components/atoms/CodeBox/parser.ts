@@ -1,4 +1,4 @@
-import { CodeBlock, SupportedEnvironment } from "../../../types";
+import { CodeBlock, SupportedEnvironment } from "mobrix-ui-types";
 
 import { CODE_LANGUAGES } from "./languages";
 

@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { CalendarDate, DatePickerComponent } from "../../../types";
+import { CalendarDate, DatePickerComponent } from "mobrix-ui-types";
 
 import { buildMobrixUiReactiveComponent } from "../../../utils";
 import { today } from "../Calendar/utils";

@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { CodeBoxComponent } from "../../../types";
+import { CodeBoxComponent } from "mobrix-ui-types";
 
 import { buildMobrixUiStandardComponent } from "../../../utils";
 

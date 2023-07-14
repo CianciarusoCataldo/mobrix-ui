@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import { CalendarComponent, CalendarDate, DeepPartial } from "../../../types";
+import { CalendarComponent, CalendarDate, DeepPartial } from "mobrix-ui-types";
 
 import { today } from "./utils";
 import { buildMobrixUiReactiveComponent } from "../../../utils";

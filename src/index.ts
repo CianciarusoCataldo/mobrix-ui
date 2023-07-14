@@ -155,4 +155,4 @@ export {
   Tab,
   TabViewerComponent,
   TabViewerProps,
-} from "./types";
+} from "mobrix-ui-types";

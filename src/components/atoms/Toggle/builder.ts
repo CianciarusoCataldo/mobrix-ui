@@ -1,4 +1,4 @@
-import { MobrixUiReactiveComponentBuilder, ToggleProps } from "../../../types";
+import { MobrixUiReactiveComponentBuilder, ToggleProps } from "mobrix-ui-types";
 
 import classNames from "classnames";
 

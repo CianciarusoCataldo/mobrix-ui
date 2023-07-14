@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-import { MoBrixUiComponent, TableProps } from "../../../types";
+import { MoBrixUiComponent, TableProps } from "mobrix-ui-types";
 
 const tableComponent: MoBrixUiComponent<TableProps> = ({ headers, rows }) => {
   let gridTemplateRows = "";
