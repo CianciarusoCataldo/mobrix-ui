@@ -38,7 +38,7 @@ export const DrawerComponent = ({
 };
 
 export const DrawerContent = ({ store }: { store?: MoBrixEngineStore }) => {
-  const PATHS = useSelector(getRoutes);
+  const PATHS: Record<string,any> = useSelector(getRoutes);
   const i18n = useSelector(getLocalizationConfig);
   const dark = useSelector(isInDarkMode);
 

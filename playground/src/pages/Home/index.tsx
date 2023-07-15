@@ -18,7 +18,7 @@ import AppPage from "components/AppPage";
 const HomePage = () => {
   const t = useHomePageTranslation();
   const dispatch = useDispatch();
-  const PATHS = useSelector(getRoutes);
+  const PATHS: Record<string,any> = useSelector(getRoutes);
 
   const PARSERS = {
     description: (localizedString: string) => {

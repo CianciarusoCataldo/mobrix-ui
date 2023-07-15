@@ -35,10 +35,10 @@ import {
 
 const HeaderContent = () => {
   const dispatch = useDispatch();
-  const APP_NAME = useSelector(getAppName);
+  const APP_NAME: string = useSelector(getAppName);
   const hideHomeButton = useSelector(isHomePage);
   const HOME = useSelector(getHomePage);
-  const dark = useSelector(isInDarkMode);
+  const dark: boolean = useSelector(isInDarkMode);
 
   const language = useSelector(getLanguage);
   const LANGUAGES = Object.keys(LANGUAGES_ICONS);
