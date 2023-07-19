@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { ContainerComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiStandardComponent } from "../../../utils";
+import { buildMobrixUiStandardComponent } from "mobrix-ui-tools-test";
 
 /**
  * A simple but smart container, enhanced with MoBrix-ui common props
@@ -42,8 +42,7 @@ const Container: ContainerComponent = ({
   children,
   wrapper,
   ...commonProps
-}) =>
-  buildMobrixUiStandardComponent({
+}) => buildMobrixUiStandardComponent({
     name: "container",
     Component: children,
     commonProps,

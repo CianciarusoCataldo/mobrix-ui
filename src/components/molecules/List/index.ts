@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { ListComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiStandardComponent } from "../../../utils";
+import { buildMobrixUiStandardComponent } from "mobrix-ui-tools-test";
 
 import listComponent from "./component";
 

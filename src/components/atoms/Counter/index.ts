@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { CounterComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiReactiveComponent } from "../../../utils";
+import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools-test";
 
 /**
  * A flexible numeric input element

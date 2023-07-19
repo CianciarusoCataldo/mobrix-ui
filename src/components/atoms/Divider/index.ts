@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { DividerComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiStandardComponent } from "../../../utils";
+import { buildMobrixUiStandardComponent } from "mobrix-ui-tools-test";
 
 /**
  * A simple divider, useful to separate sections and paragraphs

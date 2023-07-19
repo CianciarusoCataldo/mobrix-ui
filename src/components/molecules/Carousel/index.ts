@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { CarouselComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiReactiveComponent } from "../../../utils";
+import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools-test";
 
 import carouselComponent from "./component";
 

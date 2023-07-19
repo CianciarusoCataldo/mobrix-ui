@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { CodeBoxComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiStandardComponent } from "../../../utils";
+import { buildMobrixUiStandardComponent } from "mobrix-ui-tools-test";
 
 import codeboxComponent from "./component";
 

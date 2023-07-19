@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { CardComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiReactiveComponent } from "../../../utils";
+import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools-test";
 
 import cardComponent from "./component";
 
