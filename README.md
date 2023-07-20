@@ -4,6 +4,7 @@
 ![npm (scoped)](https://img.shields.io/npm/v/mobrix-ui?color=orange%20&label=Latest%20version&style=for-the-badge&logo=npm)
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/mobrix-ui?label=Package%20size&style=for-the-badge&logo=npm)
 ![Maintenance](https://img.shields.io/maintenance/yes/2025?label=Maintained&style=for-the-badge)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg?logo=jest&style=for-the-badge)](https://github.com/facebook/jest)
 
 <br>
 

@@ -36,7 +36,7 @@ import {
 const HeaderContent = () => {
   const dispatch = useDispatch();
   const APP_NAME: string = useSelector(getAppName);
-  const hideHomeButton = useSelector(isHomePage);
+  const hideHomeButton: boolean = useSelector(isHomePage);
   const HOME = useSelector(getHomePage);
   const dark: boolean = useSelector(isInDarkMode);
 

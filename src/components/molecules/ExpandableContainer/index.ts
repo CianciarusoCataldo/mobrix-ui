@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { ExpandableContainerComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools-test";
+import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
 
 import expandableContainerComponent from "./component";
 

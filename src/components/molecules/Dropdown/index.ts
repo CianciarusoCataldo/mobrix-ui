@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { DropdownComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools-test";
+import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
 
 import dropdownComponentBuilder from "./builder";
 

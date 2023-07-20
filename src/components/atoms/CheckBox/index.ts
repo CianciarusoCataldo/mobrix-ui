@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { CheckBoxComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools-test";
+import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
 
 import { DefaultCheckIcon } from "./icons";
 

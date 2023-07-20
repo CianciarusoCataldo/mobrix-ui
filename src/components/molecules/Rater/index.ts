@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { RaterComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools-test";
+import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
 
 import raterComponentBuilder from "./builder";
 

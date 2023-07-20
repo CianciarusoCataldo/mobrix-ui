@@ -9,13 +9,14 @@
     "mobrix-designer-plugin-router": "^1.0.2",
     "mobrix-engine": "^1.0.0",
     "mobrix-engine-plugins": "^1.0.1",
-    "mobrix-ui-tools-test": "^0.1.1",
+    "mobrix-ui-tools": "^0.1.0",
     "mobrix-ui-types": "^1.3.2",
     "npm-run-all": "^4.1.5",
-    "react": ">=16",
-    "react-dom": ">=16"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@cianciarusocataldo/demo-ui": "^3.1.0",
     "@types/jest": "^27.4.0",
     "@types/mocha": "^9.0.0",

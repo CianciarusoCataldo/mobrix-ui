@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { CalendarDate, DatePickerComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools-test";
+import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
 import { today } from "../Calendar/utils";
 
 import datePickerComponent from "./components";

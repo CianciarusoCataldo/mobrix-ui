@@ -22,7 +22,7 @@ export const DrawerComponent = ({
   store?: MoBrixEngineStore;
   creatorConfig?: any;
 }) => {
-  const dark = useSelector(isInDarkMode);
+  const dark: boolean = useSelector(isInDarkMode);
   const drawerVisible = useSelector(isDrawerOpen);
 
   return (
@@ -40,7 +40,7 @@ export const DrawerComponent = ({
 export const DrawerContent = ({ store }: { store?: MoBrixEngineStore }) => {
   const PATHS: Record<string,any> = useSelector(getRoutes);
   const i18n = useSelector(getLocalizationConfig);
-  const dark = useSelector(isInDarkMode);
+  const dark: boolean = useSelector(isInDarkMode);
 
   const { t } = useTranslation(i18n.titlesNamespace || i18n.defaultNamespace);
 

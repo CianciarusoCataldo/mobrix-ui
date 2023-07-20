@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { TableComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiStandardComponent } from "mobrix-ui-tools-test";
+import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
 
 import tableComponent from "./component";
 

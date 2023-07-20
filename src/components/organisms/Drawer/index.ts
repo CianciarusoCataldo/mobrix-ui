@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { DrawerComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiStandardComponent } from "mobrix-ui-tools-test";
+import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
 
 import drawerBuilder from "./builder";
 

@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { TabViewerComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools-test";
+import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
 
 import tabViewerComponent from "./component";
 

@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { SliderComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools-test";
+import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
 
 /**
  * A modern `range` input component, to control a value using a simple slider.

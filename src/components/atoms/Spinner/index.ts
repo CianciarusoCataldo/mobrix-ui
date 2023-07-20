@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { SpinnerComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools-test";
+import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
 
 import defaultIcons from "./icons";
 

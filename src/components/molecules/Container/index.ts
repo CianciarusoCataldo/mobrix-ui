@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { ContainerComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiStandardComponent } from "mobrix-ui-tools-test";
+import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
 
 /**
  * A simple but smart container, enhanced with MoBrix-ui common props

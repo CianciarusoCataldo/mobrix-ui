@@ -1,7 +1,7 @@
 import typescript from "rollup-plugin-typescript2";
 import del from "rollup-plugin-delete";
 import postcss from "rollup-plugin-postcss";
-import { terser } from "rollup-plugin-terser";
+import terser from "@rollup/plugin-terser";
 
 import pkg from "../package.json";
 
