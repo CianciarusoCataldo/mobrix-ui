@@ -42,6 +42,9 @@
   max-width: 75%;
 }
 
+#mobrix-ui-form .field .form-input.radio{
+  border: 0;
+}
 @media (max-width: 330px) {
   #mobrix-ui-form {
     max-width: 75%;

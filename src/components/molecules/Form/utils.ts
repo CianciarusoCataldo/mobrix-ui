@@ -1,6 +1,7 @@
 import CheckBox from "../../atoms/CheckBox";
 import Counter from "../../atoms/Counter";
 import Input from "../../atoms/Input";
+import RadioButton from "../../atoms/RadioButton";
 
 /* istanbul ignore next */
 export const fieldFormatters = {
@@ -23,4 +24,12 @@ export const fieldFormatters = {
     component: CheckBox,
     format: (value: any) => value as boolean,
   },
+  checkbox: {
+    component: CheckBox,
+    format: (value: any) => value as boolean,
+  },
+  radio: {
+    component: RadioButton,
+    format: (value: any) => value as boolean,
+  }
 };

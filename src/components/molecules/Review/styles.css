@@ -5,6 +5,7 @@
   padding: 0.6rem;
   background-image: var(--mobrix-ui-background);
   color: var(--mobrix-ui-text-color);
+  border-radius: 3px;
 }
 
 #mobrix-ui-review .review-photo,

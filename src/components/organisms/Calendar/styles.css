@@ -17,6 +17,22 @@
   color: var(--mobrix-ui-text-color);
 }
 
+#mobrix-ui-calendar.styled .date-element:not(.selected):hover {
+  background-image: linear-gradient(to right, #2d3748, #1d232e);
+}
+
+#mobrix-ui-calendar.styled.dark .date-element:not(.selected):hover {
+  background-image: linear-gradient(to right, #c0c0c0, #bec0c2);
+}
+
+#mobrix-ui-calendar.styled .date-element:not(.selected) .date-label:hover {
+  color: #c0c0c0;
+}
+
+#mobrix-ui-calendar.styled.dark .date-element:not(.selected) .date-label:hover {
+  color: #2d3748;
+}
+
 #mobrix-ui-calendar.styled .date-element .today {
   color: red;
   font-weight: 600;

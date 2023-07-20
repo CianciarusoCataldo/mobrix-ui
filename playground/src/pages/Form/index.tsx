@@ -48,6 +48,11 @@ const FormPage = () => (
                     type: "numeric",
                     header: t("props_field", { context: "numeric" }),
                   },
+                  field4: {
+                    placeholder: "placeholder",
+                    type: "radio",
+                    header: t("props_field", { context: "radio" }),
+                  },
                 }}
                 onClick={(values: any) => console.log(values)}
               />

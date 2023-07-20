@@ -5,6 +5,7 @@
   border: rgba(75, 85, 99, 1) solid 4px;
   color: var(--mobrix-ui-text-color);
   background: var(--mobrix-ui-background);
+  border-radius: 3px;
 }
 
 #mobrix-ui-table .headers {

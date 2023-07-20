@@ -1,6 +1,8 @@
 {
   "props_field_numeric": "Numeric field",
-  "props_field_boolean": "Boolean field",
+  "props_field_boolean": "Boolean/Check-box field",
+  "props_field_radio": "Radio field",
+  "props_field_checkbox": "Boolean/Check-box field",
   "props_field_text": "Text field",
   "props_field_custom": "Custom field",
   "props_buttonContent": "Button content",
