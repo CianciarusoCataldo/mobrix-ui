@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.0.0](#300)
 - [2.1.0](#210)
 - [2.0.0](#200)
 - [1.2.0](#120)
@@ -13,6 +14,16 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.0.0
+
+- All types are now imported from [mobrix-ui-types lib](https://github.com/CianciarusoCataldo/mobrix-ui-types)
+- Building functions are now imported from [mobrix-ui-tools lib](https://github.com/CianciarusoCataldo/mobrix-ui-tools)
+- Dependencies updated
+- `Form` component updated, new fields type, `radio` (rendered as a `RadioButton`) is now supported (`checkbox` and `boolean` fields are both rendered as a `CheckBox`) 
+- `Table` component updated
 
 <br>
 
