@@ -11,6 +11,11 @@
   line-height: 1.25rem;
 }
 
+#mobrix-ui-button:not(.styled){
+  border: 0;
+  background: transparent;
+}
+
 #mobrix-ui-button.enabled {
   transition-duration: 0.1s;
   transition-property: transform;

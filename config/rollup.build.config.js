@@ -21,6 +21,17 @@ export default [
         banner: "/* eslint-disable */ import './styles.css';",
       },
       {
+        file: "test-app/src/mobrix-ui-preview/index.cjs",
+        format: "cjs",
+        banner: "require('./styles.css')",
+        plugins: [terser()],
+      },
+      {
+        file: "test-app/src/mobrix-ui-preview/index.mjs",
+        format: "esm",
+        banner: "/* eslint-disable */ import './styles.css';",
+      },
+      {
         file: pkg.main,
         format: "cjs",
         plugins: [terser()],
