@@ -1,24 +1,24 @@
-#mobrix-ui-carousel {
+[data-mobrix-ui-id="carousel"] {
   color: var(--mobrix-ui-text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#mobrix-ui-carousel.styled {
+[data-mobrix-ui-id="carousel"][data-mobrix-ui-styled="true"] {
   background-image: var(--mobrix-ui-background);
   padding: 0.4rem;
 }
 
-#mobrix-ui-carousel .from-left {
+[data-mobrix-ui-id="carousel"] .from-left {
   --mobrix-ui-carousel-animation: slideLeft 0.3s forwards;
 }
 
-#mobrix-ui-carousel .from-right {
+[data-mobrix-ui-id="carousel"] .from-right {
   --mobrix-ui-carousel-animation: slideRight 0.3s forwards;
 }
 
-#mobrix-ui-carousel .element {
+[data-mobrix-ui-id="carousel"] .element {
   position: relative;
   -webkit-animation: var(--mobrix-ui-carousel-animation);
   animation: var(--mobrix-ui-carousel-animation);
@@ -27,31 +27,31 @@
   -o-animation: var(--mobrix-ui-carousel-animation);
 }
 
-#mobrix-ui-carousel .arrow svg {
+[data-mobrix-ui-id="carousel"] .arrow svg {
   fill: var(--mobrix-ui-text-color);
 }
 
-#mobrix-ui-carousel.styled .arrow:hover svg {
+[data-mobrix-ui-id="carousel"][data-mobrix-ui-styled="true"] .arrow:hover svg {
   fill: rgb(231, 152, 6);
 }
 
-#mobrix-ui-carousel.styled .arrow.disabled svg,
-#mobrix-ui-carousel.styled .arrow.disabled:hover svg {
+[data-mobrix-ui-id="carousel"][data-mobrix-ui-styled="true"] .arrow.disabled svg,
+[data-mobrix-ui-id="carousel"][data-mobrix-ui-styled="true"] .arrow.disabled:hover svg {
   fill: none;
 }
 
-#mobrix-ui-carousel .prev {
+[data-mobrix-ui-id="carousel"] .prev {
   margin-right: 0.6rem;
 }
 
-#mobrix-ui-carousel .next {
+[data-mobrix-ui-id="carousel"] .next {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   margin-left: 0.6rem;
 }
 
-#mobrix-ui-carousel .elements,
-#mobrix-ui-carousel .dots {
+[data-mobrix-ui-id="carousel"] .elements,
+[data-mobrix-ui-id="carousel"] .dots {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -60,13 +60,13 @@
   width: 100%;
 }
 
-#mobrix-ui-carousel .dots .dot {
+[data-mobrix-ui-id="carousel"] .dots .dot {
   margin-left: 0.3rem;
   margin-right: 0.3rem;
 }
 
 @media (hover: none) {
-  #mobrix-ui-carousel.styled .arrow:hover svg {
+  [data-mobrix-ui-id="carousel"][data-mobrix-ui-styled="true"] .arrow:hover svg {
     fill: var(--mobrix-ui-text-color);
   }
 }

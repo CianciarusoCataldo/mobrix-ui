@@ -1,9 +1,9 @@
-#mobrix-ui-label.styled {
+[data-mobrix-ui-id="label"][data-mobrix-ui-styled="true"] {
   color: var(--mobrix-ui-text-color);
   background: transparent;
 }
 
-#mobrix-ui-label.styled.a11y:focus-visible {
+[data-mobrix-ui-id="label"][data-mobrix-ui-styled="true"][data-mobrix-ui-a11y="true"]:focus-visible {
   color: orange;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;

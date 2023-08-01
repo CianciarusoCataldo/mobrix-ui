@@ -1,16 +1,20 @@
 import React from "react";
 
-import { BuilderComponent, FormProps, MoBrixUiComponent } from "mobrix-ui-types";
+import {
+  BuilderComponent,
+  FormProps,
+  MoBrixUiComponent,
+} from "mobrix-ui-types";
 
-import { fieldFormatters } from "./utils";
+import { fieldFormatters } from "../FormField/utils";
 
 import Button from "../../atoms/Button";
 
 const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
   title,
   fields,
-  onClick,
-  buttonContent,
+  onSubmit,
+  submitLabel,
   children,
   fieldClassName = "",
   ...commonProps
@@ -59,9 +63,8 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
           )}
           <FieldElement
             value={value}
-            id={`form_field_${field}`}
             key={`form_field_${index}_element`}
-            className={"form-input "+type}
+            className={"form-input " + type}
             placeholder={fieldSettings.placeholder}
             onChange={callBack}
             autocomplete="off"
@@ -80,10 +83,10 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
       dark={!commonProps.dark}
       id="form_submit_button"
       onClick={() => {
-        onClick && onClick(values);
+        onSubmit && onSubmit(values);
       }}
     >
-      {buttonContent}
+      {submitLabel}
     </Button>
   );
 

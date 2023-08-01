@@ -1,70 +1,70 @@
-#mobrix-ui-calendar .actual-date {
+[data-mobrix-ui-id="calendar"] .actual-date {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
   width: 100%;
 }
 
-#mobrix-ui-calendar.styled .selector-element,
-#mobrix-ui-calendar .arrow svg {
+[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"] .selector-element,
+[data-mobrix-ui-id="calendar"] .arrow svg {
   margin-top: auto;
   margin-bottom: auto;
   vertical-align: middle;
   display: inline-block;
 }
 
-#mobrix-ui-calendar.styled .date-element {
+[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"] .date-element {
   color: var(--mobrix-ui-text-color);
 }
 
-#mobrix-ui-calendar.styled .date-element:not(.selected):hover {
+[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"] .date-element:not(.selected):hover {
   background-image: linear-gradient(to right, #2d3748, #1d232e);
 }
 
-#mobrix-ui-calendar.styled.dark .date-element:not(.selected):hover {
+[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"][data-mobrix-ui-dark="true"] .date-element:not(.selected):hover {
   background-image: linear-gradient(to right, #c0c0c0, #bec0c2);
 }
 
-#mobrix-ui-calendar.styled .date-element:not(.selected) .date-label:hover {
+[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"] .date-element:not(.selected) .date-label:hover {
   color: #c0c0c0;
 }
 
-#mobrix-ui-calendar.styled.dark .date-element:not(.selected) .date-label:hover {
+[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"][data-mobrix-ui-dark="true"] .date-element:not(.selected) .date-label:hover {
   color: #2d3748;
 }
 
-#mobrix-ui-calendar.styled .date-element .today {
+[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"] .date-element .today {
   color: red;
   font-weight: 600;
 }
 
-#mobrix-ui-calendar #mobrix-ui-table .element {
+[data-mobrix-ui-id="calendar"] [data-mobrix-ui-id="table"] .element {
   padding: 0;
   margin: 0;
 }
 
-#mobrix-ui-calendar #mobrix-ui-table .header {
+[data-mobrix-ui-id="calendar"] [data-mobrix-ui-id="table"] .header {
   padding: 0.5rem;
   margin: 0;
   font-size: 1.4rem;
 }
 
 @media (max-width: 700px) {
-  #mobrix-ui-calendar #mobrix-ui-table .header {
+  [data-mobrix-ui-id="calendar"] [data-mobrix-ui-id="table"] .header {
     font-size: 1.2rem;
     padding: 0.2rem;
   }
 }
 
 @media (max-width: 600px) {
-  #mobrix-ui-calendar #mobrix-ui-table .header {
+  [data-mobrix-ui-id="calendar"] [data-mobrix-ui-id="table"] .header {
     font-size: 1.1rem;
     padding: 0.2rem;
   }
 }
 
 @media (max-width: 500px) {
-  #mobrix-ui-calendar #mobrix-ui-table .header {
+  [data-mobrix-ui-id="calendar"] [data-mobrix-ui-id="table"] .header {
     margin: 0;
     font-size: 1rem;
     padding: 0.1rem;
@@ -72,7 +72,7 @@
 }
 
 @media (max-width: 400px) {
-  #mobrix-ui-calendar #mobrix-ui-table .header {
+  [data-mobrix-ui-id="calendar"] [data-mobrix-ui-id="table"] .header {
     margin: 0;
     font-size: 0.9rem;
     padding: 0.1rem;
@@ -80,47 +80,47 @@
 }
 
 @media (max-width: 320px) {
-  #mobrix-ui-calendar #mobrix-ui-table .header {
+  [data-mobrix-ui-id="calendar"] [data-mobrix-ui-id="table"] .header {
     padding: 0;
     margin: 0;
     font-size: 0.7rem;
   }
 }
 
-#mobrix-ui-calendar.styled .date-element.selected {
+[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"] .date-element.selected {
   background: var(--mobrix-ui-background-dark);
   padding: 0.1rem;
 }
 
-#mobrix-ui-calendar .dates-box,
-#mobrix-ui-calendar .top-selector {
+[data-mobrix-ui-id="calendar"] .dates-box,
+[data-mobrix-ui-id="calendar"] .top-selector {
   display: flex;
   flex-direction: row;
 }
 
-#mobrix-ui-calendar.styled .top-selector {
+[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"] .top-selector {
   margin: auto;
 }
 
-#mobrix-ui-calendar .arrow.right {
+[data-mobrix-ui-id="calendar"] .arrow.right {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-#mobrix-ui-calendar.styled .date-element.selected .date-label {
+[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"] .date-element.selected .date-label {
   color: white;
 }
 
-#mobrix-ui-calendar.styled .arrow svg {
+[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"] .arrow svg {
   fill: var(--mobrix-ui-text-color);
 }
 
-#mobrix-ui-calendar.styled .arrow:hover svg {
+[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"] .arrow:hover svg {
   fill: orange;
 }
 
 @media (hover: none) {
-  #mobrix-ui-calendar.styled .arrow:hover svg {
+  [data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"] .arrow:hover svg {
     fill: var(--mobrix-ui-text-color);
   }
 }

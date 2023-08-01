@@ -1,4 +1,4 @@
-#mobrix-ui-inputbox.styled {
+[data-mobrix-ui-id="inputbox"][data-mobrix-ui-styled="true"] {
   border-radius: 5px;
   padding: 0.5rem;
   background-color: var(--mobrix-ui-background-color);

@@ -48,6 +48,7 @@ const RadioButton: RadioButtonComponent = ({
 }) =>
   buildMobrixUiReactiveComponent<boolean>({
     name: "radio-button",
+    Component: ({ value, setValue }) => (value ? component : ""),
     defaultValue: false,
     inputValue,
     props: (value, setValue) => {
@@ -71,7 +72,6 @@ const RadioButton: RadioButtonComponent = ({
         additionalProps: {
           onClick: callBack,
         },
-        Component: value ? component : "",
       };
     },
   });

@@ -7,13 +7,13 @@ import {
 } from "mobrix-ui-types";
 
 import Card from "../Card";
+import Container from "../Container";
 
 const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
   children,
   unstyled,
   className,
   dark,
-  title,
   hide,
   onClose,
   closeOutside,
@@ -34,17 +34,14 @@ const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
 
   return (
     <div className="modal-window">
-      <Card
+      <Container
         className={"content " + className}
         dark={dark}
         hide={false}
-        onClose={onClose}
-        body={children}
-        header={title}
         onFocusLost={onFocusLostCallback}
         unstyled={unstyled}
         animated={animated}
-      />
+      >{children}</Container>
     </div>
   );
 };

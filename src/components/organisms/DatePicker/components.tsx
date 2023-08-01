@@ -47,8 +47,6 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
 
   const monthsDuration = getMonthsDuration(year);
 
-  const months = customMonths.map((el, index) => ({ name: el }));
-
   const day =
     value.day && value.day > 0 && value.day <= monthsDuration[month]
       ? value.day
@@ -56,7 +54,7 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
 
   const days = new Array(monthsDuration[month])
     .fill(" ")
-    .map((el, index) => ({ name: String(index + 1) }));
+    .map((el, index) => String(index + 1));
 
   const years = new Array(50)
     .fill(" ")
@@ -84,7 +82,7 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
                 day: selectedDay + 1,
               })
             }
-            content={days}
+            elements={days}
             key="date_picker_day_selector"
             id="date_picker_day_selector"
             className="element days"
@@ -94,7 +92,7 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
             unstyled
             value={month}
             hideArrow
-            content={months}
+            elements={customMonths}
             key="date_picker_month_selector"
             id="date_picker_month_selector"
             className="element months"
@@ -117,7 +115,7 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
                 year: Number(years[selectedYear]),
               })
             }
-            content={years.map((el, index) => ({ name: String(el) }))}
+            elements={years.map((el, index) => String(el))}
             value={years.indexOf(year)}
             key="date_picker_year_selector"
             id="date_picker_year_selector"

@@ -10,7 +10,6 @@ const modalBuilder: MoBrixUiComponent<
 > = ({
   children,
   className,
-  title,
   onClose,
   closeOutside,
   overlayClassName,
@@ -24,7 +23,6 @@ const modalBuilder: MoBrixUiComponent<
     Component: modalComponent({
       children,
       className,
-      title,
       onClose:
         onClose &&
         (() => {

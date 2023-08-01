@@ -54,6 +54,7 @@ const DrawerInternalComponent: MoBrixUiComponent<
         }}
         className={classNames("drawer-close-button", {
           "fade-out": hide,
+          dark: dark,
         })}
         a11yLabel="drawer-close-button"
       >

@@ -30,13 +30,6 @@ const toggleComponentBuilder: MobrixUiReactiveComponentBuilder<
         }
       },
     },
-    Component: toggleComponent({
-      value: status,
-      setValue: setStatus,
-      icon,
-      offIcon,
-      onIcon,
-    }),
     commonProps: {
       ...commonProps,
       className: classNames("container", className, {

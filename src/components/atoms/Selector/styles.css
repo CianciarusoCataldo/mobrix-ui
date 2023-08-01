@@ -1,11 +1,16 @@
-#mobrix-ui-selector.styled {
+[data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"] {
   padding: 0.2rem;
   background: var(--mobrix-ui-background);
   color: var(--mobrix-ui-text-color);
   border-radius: 6px;
 }
 
-#mobrix-ui-selector.styled option {
+[data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"] option {
   background-color: var(--mobrix-ui-background-color);
   color: var(--mobrix-ui-text-color);
+  padding: 1rem;
+}
+
+[data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"] option:hover {
+  box-shadow: 0 0 10px 100px #6b6a75 inset;
 }

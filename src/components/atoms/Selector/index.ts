@@ -66,7 +66,7 @@ const Selector: SelectorComponent = ({
         },
       };
     },
-    render: (value, setValue) =>
+    Component: ({ value, setValue }) =>
       selectorComponent({ elements, value, setValue }),
   });
 

@@ -55,8 +55,8 @@ import formComponent from "./component";
 const Form: FormComponent = ({
   title,
   fields,
-  onClick,
-  buttonContent,
+  onSubmit,
+  submitLabel,
   children,
   fieldClassName,
   ...commonProps
@@ -66,8 +66,8 @@ const Form: FormComponent = ({
     Component: formComponent({
       title,
       fields,
-      onClick,
-      buttonContent,
+      onSubmit,
+      submitLabel,
       children,
       fieldClassName,
       ...commonProps,

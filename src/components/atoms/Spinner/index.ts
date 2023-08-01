@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { SpinnerComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
 
 import defaultIcons from "./icons";
 
@@ -42,20 +42,16 @@ import defaultIcons from "./icons";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Spinner: SpinnerComponent = ({
-  value: inputValue,
-  statuses,
+  value,
+  statuses = defaultIcons,
   ...commonProps
 }) =>
-  buildMobrixUiReactiveComponent({
+  buildMobrixUiStandardComponent({
     name: "spinner",
-    inputValue,
-    defaultValue: "loading",
     commonProps,
-    render: (value, setValue) => {
-      const icons = statuses || defaultIcons;
-
-      return value && icons[value] ? icons[value] : icons.loading;
-    },
+    Component: value && statuses[value]
+      ? statuses[value]
+      : statuses.loading || defaultIcons.loading,
   });
 
 export default Spinner;

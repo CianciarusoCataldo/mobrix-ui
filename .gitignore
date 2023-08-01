@@ -5,3 +5,4 @@ test-app/src/mobrix-ui-preview
 build
 coverage
 stats.html
+.vscode

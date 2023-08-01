@@ -68,8 +68,8 @@ const TabViewer: TabViewerComponent = ({
     defaultValue: 0,
     inputValue: selected,
     name: "tab-viewer",
-    props: (value, setValue) => ({
-      Component: tabViewerComponent({
+    Component: ({ value, setValue }) =>
+      tabViewerComponent({
         onChange,
         setValue,
         tabClassName,
@@ -80,7 +80,6 @@ const TabViewer: TabViewerComponent = ({
         value: Number(value),
         ...commonProps,
       }),
-    }),
   });
 
 export default TabViewer;

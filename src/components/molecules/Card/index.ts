@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { CardComponent } from "mobrix-ui-types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
 
 import cardComponent from "./component";
 
@@ -48,32 +48,26 @@ const Card: CardComponent = ({
   body,
   footer,
   children,
-  dismissable,
-  onClose,
   hide,
+  noDividers,
+  noFooterDivider,
+  noHeaderDivider,
   ...commonProps
 }) => {
-  return buildMobrixUiReactiveComponent({
+  return buildMobrixUiStandardComponent({
     name: "card",
-    props: (value, setValue) => {
-      return {
-        commonProps: { ...commonProps, hide: value },
-        Component: cardComponent({
-          header,
-          dismissable,
-          icon,
-          body,
-          value,
-          onClose,
-          setValue,
-          children,
-          footer,
-          dark: commonProps.dark,
-        }),
-      };
-    },
-    defaultValue: false,
-    inputValue: hide,
+    Component: cardComponent({
+      header,
+      icon,
+      body,
+      children,
+      footer,
+      dark: commonProps.dark,
+      noDividers,
+      noFooterDivider,
+      noHeaderDivider,
+    }),
+    commonProps,
   });
 };
 

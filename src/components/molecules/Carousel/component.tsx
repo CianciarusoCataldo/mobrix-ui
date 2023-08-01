@@ -3,9 +3,10 @@ import { CarouselProps, MobrixUiReactiveComponent } from "mobrix-ui-types";
 
 import classNames from "classnames";
 
-import { ICONS } from "../Rater/icons";
+import { ICONS } from "../../atoms/Rater/icons";
 import { arrowIcon } from "./icons";
-import Button from "../../atoms/Button";
+
+import { Button } from "../../atoms";
 
 const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
   value: selectedItem,

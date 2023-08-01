@@ -1,10 +1,11 @@
 import "./styles.css";
 
+import classnames from "classnames";
 import { RaterComponent } from "mobrix-ui-types";
 
 import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
 
-import raterComponentBuilder from "./builder";
+import raterComponent from "./component";
 
 /**
  * A vote manager component, really useful to let the user leave a review
@@ -44,17 +45,36 @@ import raterComponentBuilder from "./builder";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Rater: RaterComponent = ({ value: inputValue, ...props }) =>
+const Rater: RaterComponent = ({
+  value: inputValue,
+  type,
+  max,
+  readonly,
+  onChange,
+  value,
+  vertical,
+  ...commonProps
+}) =>
   buildMobrixUiReactiveComponent<number>({
-    name: "ratebox",
-    props: (value, setValue) =>
-      raterComponentBuilder({
-        value,
-        setValue,
-        ...props,
-      }),
+    name: "rater",
     inputValue,
     defaultValue: 0,
+    Component: ({ value, setValue }) =>
+      raterComponent({
+        type,
+        max,
+        readonly,
+        onChange,
+        value,
+        setValue,
+      }),
+    commonProps: {
+      ...commonProps,
+      className: classnames(commonProps.className, {
+        vertical: vertical,
+        horizontal: !vertical,
+      }),
+    },
   });
 
 export default Rater;

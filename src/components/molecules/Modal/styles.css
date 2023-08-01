@@ -1,4 +1,4 @@
-#mobrix-ui-modal {
+[data-mobrix-ui-id="modal"] {
   position: fixed;
   z-index: 50;
   top: 0;
@@ -11,14 +11,14 @@
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  #mobrix-ui-modal {
+  [data-mobrix-ui-id="modal"] {
     background-color: rgba(0, 0, 0, 0.6);
     -webkit-backdrop-filter: blur(2em);
     backdrop-filter: blur(2em);
   }
 }
 
-#mobrix-ui-modal > .modal-window {
+[data-mobrix-ui-id="modal"] > .modal-window {
   width: 100%;
   height: 100%;
   display: flex;
@@ -26,10 +26,10 @@
   align-items: center;
 }
 
-#mobrix-ui-modal > .modal-window > .content {
+[data-mobrix-ui-id="modal"] > .modal-window > .content {
   margin: auto;
 }
 
-#mobrix-ui-modal.styled > .modal-window > .content {
+[data-mobrix-ui-id="modal"][data-mobrix-ui-styled="true"] > .modal-window > .content {
   padding: 1rem;
 }

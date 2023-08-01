@@ -5,6 +5,7 @@ import { ToggleComponent } from "mobrix-ui-types";
 import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
 
 import toggleComponentBuilder from "./builder";
+import toggleComponent from "./component";
 
 /**
  * A compact Toggle switcher, customized to reflect its actual status
@@ -43,16 +44,32 @@ import toggleComponentBuilder from "./builder";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Toggle: ToggleComponent = ({ value: inputValue, ...props }) =>
+const Toggle: ToggleComponent = ({
+  value: inputValue,
+  icon,
+  offIcon,
+  onIcon,
+  ...commonProps
+}) =>
   buildMobrixUiReactiveComponent<boolean>({
     name: "toggle",
-    props: (status, setStatus) => ({
-      ...toggleComponentBuilder({
+    props: (status, setStatus) =>
+      toggleComponentBuilder({
         setValue: setStatus,
         value: status,
-        ...props,
+        icon,
+        offIcon,
+        onIcon,
+        ...commonProps,
       }),
-    }),
+    Component: ({ value, setValue }) =>
+      toggleComponent({
+        value,
+        setValue,
+        icon,
+        offIcon,
+        onIcon,
+      }),
     defaultValue: true,
     inputValue,
   });

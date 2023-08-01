@@ -50,6 +50,7 @@ const Checkbox: CheckBoxComponent = ({
 }) =>
   buildMobrixUiReactiveComponent<boolean>({
     name: "checkbox",
+    Component: ({ value, setValue }) => (value ? icon || DefaultCheckIcon : ""),
     props: (actualValue, setValue) => ({
       commonProps: {
         ...commonProps,
@@ -61,7 +62,6 @@ const Checkbox: CheckBoxComponent = ({
           }
         },
       },
-      Component: actualValue ? icon || DefaultCheckIcon : "",
       additionalProps: {
         onClick: () => {
           onChange(!actualValue);

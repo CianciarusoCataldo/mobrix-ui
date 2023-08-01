@@ -1,19 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import { Drawer } from "./mobrix-ui-preview";
-
-let visible = true;
+import AtomsPage from "./pages/atoms";
+import MoleculesPage from "./pages/molecules";
+import OrganismsPage from "./pages/organisms";
+import { Drawer, TabViewer } from "./mobrix-ui-preview";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 
+const Atoms = <AtomsPage />;
+const Molecules = <MoleculesPage />;
+const Organisms = <OrganismsPage />;
+
 root.render(
   <>
-    <Drawer dark={true} hide={true} animated onClose={() => {}}>
+    <Drawer dark hide={true} animated onClose={() => {}}>
       <div
         style={{
           padding: "1rem",
@@ -26,11 +29,23 @@ root.render(
         ))}
       </div>
     </Drawer>
-    <App />
+    <TabViewer
+      dark
+      selected={1}
+      tabs={[
+        {
+          label: "Atoms",
+          content: Atoms,
+        },
+        {
+          label: "Molecules",
+          content: Molecules,
+        },
+        {
+          label: "Organisms",
+          content: Organisms,
+        },
+      ]}
+    />
   </>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

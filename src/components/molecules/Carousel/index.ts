@@ -51,15 +51,14 @@ const Carousel: CarouselComponent = ({
     commonProps,
     defaultValue: 0,
     inputValue: value,
-    props: (selectedItem, setItem) => ({
-      Component: carouselComponent({
-        value: selectedItem,
-        setValue: setItem,
+    Component: ({ value, setValue }) =>
+      carouselComponent({
+        value,
+        setValue,
         onChange,
         elements: actualElements,
         dark: commonProps.dark,
       }),
-    }),
   });
 };
 

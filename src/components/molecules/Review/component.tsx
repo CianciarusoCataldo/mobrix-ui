@@ -8,7 +8,7 @@ import {
 
 import { icons } from "./icons";
 import Link from "../../atoms/Link";
-import Rater from "../Rater";
+import Rater from "../../atoms/Rater";
 
 const allowedLogoTypes = Object.keys(icons);
 

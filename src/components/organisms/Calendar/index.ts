@@ -76,7 +76,7 @@ const Calendar: CalendarComponent = ({
       month: todayDate.month,
       day: todayDate.dayOfTheMonth,
     },
-    render: (value, setValue) =>
+    Component: ({ value, setValue }) =>
       calendarComponent({
         today: todayDate,
         value,

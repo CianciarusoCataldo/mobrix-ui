@@ -64,7 +64,7 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
     defaultValue: -1,
     inputValue,
     commonProps,
-    render: (value, setValue) =>
+    Component: ({ value, setValue }) =>
       radioButtonGroupComponent({
         value,
         onChange,

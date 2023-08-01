@@ -61,16 +61,15 @@ const ExpandableContainer: ExpandableContainerComponent = ({
     commonProps,
     wrapper,
     inputValue: startCompact,
-    props: (compact, setCompact) => ({
-      Component: expandableContainerComponent({
-        value: compact,
-        setValue: setCompact,
+    Component: ({ value, setValue }) =>
+      expandableContainerComponent({
+        value,
+        setValue,
         expanded,
         children,
         onChange,
         ...commonProps,
       }),
-    }),
   });
 };
 

@@ -1,23 +1,23 @@
-#mobrix-ui-ratebox {
+[data-mobrix-ui-id="rater"] {
   display: flex;
   align-items: center;
 }
 
-#mobrix-ui-ratebox.styled {
+[data-mobrix-ui-id="rater"][data-mobrix-ui-styled="true"] {
   background: var(--mobrix-ui-background);
   border-radius: 8px;
   padding: 0.4rem;
 }
 
-#mobrix-ui-ratebox.horizontal {
+[data-mobrix-ui-id="rater"].horizontal {
   flex-direction: row;
 }
 
-#mobrix-ui-ratebox.vertical {
+[data-mobrix-ui-id="rater"].vertical {
   flex-direction: column;
 }
 
-#mobrix-ui-ratebox .ratebox-icon {
+[data-mobrix-ui-id="rater"] .rater-icon {
   margin-left: 0.2rem;
   margin-right: 0.2rem;
 }

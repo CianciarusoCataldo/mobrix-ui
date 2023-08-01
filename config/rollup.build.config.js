@@ -1,11 +1,11 @@
-import typescript from "rollup-plugin-typescript2";
-import del from "rollup-plugin-delete";
-import postcss from "rollup-plugin-postcss";
-import terser from "@rollup/plugin-terser";
+const typescript = require("rollup-plugin-typescript2");
+const del = require("rollup-plugin-delete");
+const postcss = require("rollup-plugin-postcss");
+const terser = require("@rollup/plugin-terser");
 
-import pkg from "../package.json";
+const pkg = require("../package.json");
 
-export default [
+module.exports = [
   {
     input: "src/index.ts",
     output: [
@@ -55,6 +55,6 @@ export default [
         clean: true,
       }),
     ],
-    external: Object.keys(pkg.peerDependencies || {}),
+    external: Object.keys(pkg.peerDependencies || []),
   },
 ];

@@ -7,12 +7,12 @@ import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
 import codeboxComponent from "./component";
 
 /**
- * A smart code box, to display code text as a compiler. Optionally, can highlight code text, with a selectable environment
+ * A smart code box, to display code text as a compiler.
  *
  * @since 1.0.0
  *
  * @param {string} value code to display
- * @param {boolean} enhanced enable/disable advanced mode, to access extra features, like the integrated copy button and text highlight
+ * @param {boolean} enhanced enable/disable advanced mode, to access extra features, like the integrated copy button
  * @param environment environment for text highlight feature, default to "terminal" (only enabled into enhanced mode)
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
@@ -43,17 +43,19 @@ import codeboxComponent from "./component";
  */
 const CodeBox: CodeBoxComponent = ({
   value,
-  enhanced,
+  highlight,
   environment,
+  noCopyButton,
   ...commonProps
 }) =>
   buildMobrixUiStandardComponent({
     name: "codebox",
     commonProps,
     Component: codeboxComponent({
-      enhanced,
+      highlight,
       environment,
       value,
+      noCopyButton
     }),
   });
 

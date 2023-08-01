@@ -1,20 +1,26 @@
 import "./styles.css";
 
-import { FacebookButtonsComponent } from "mobrix-ui-types";
+import {
+  BuilderComponent,
+  FormFieldProps,
+  FormFieldComponent,
+  MobrixUiProps,
+} from "mobrix-ui-types";
 
-import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
+import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
 
-import facebookButtonsComponent from "./component";
+import FormFieldInternalComponent from "./component";
 
 /**
- * Facebook embeded social buttons, to easily like or share a facebook page
+ * A smart Form field, that render different components based on its type, to be better integrated into every scenario (for example, a Login form)
  *
- * @since 1.2.0
+ * @since 3.0.0
  *
- * @param {string} pageId facebook page-id
- * @param {boolean} share show/hide share button
- * @param {boolean} small show small/big sized component
- * @param {number} width custom component width
+ * @param {JSX.Element | string} header Form field header
+ * @param {JSX.Element | string} errorLabel custom submit button content
+  * @param {boolean} required 
+ * @param {(value: any)=>boolean} validate 
+ * @param {(value:any) => void} onChange callback triggered when input value changes
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -30,34 +36,52 @@ import facebookButtonsComponent from "./component";
  * @param {() => void} onFocusLost `common MoBrix-ui prop` - callback called when component focus is lost
  * @param {(keyEvent: any) => void} onKeyDown `common MoBrix-ui prop` - callback called when a key is pressed when inside the component
  *
- * @example <caption>Example Divider usage</caption>
+ * @example <caption>Example Form usage</caption>
  * import { render } from "react-dom";
- * import { Divider } from 'mobrix-ui';
+ * import { Form } from 'mobrix-ui';
  *
- * render(<FacebookButtons pageId="facebook" share small />, document.getElementById("root"));
+ * render(<Form fields={{ "Field 0": { header:"Field 0 header" } }} buttonContent="Submit" onClick={()=>alert('Submitted !')} />, document.getElementById("root"));
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Divider
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Form
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const FacebookButtons: FacebookButtonsComponent = ({
-  pageId,
-  share,
-  small,
-  width,
-  ...commonProps
-}) =>
-  buildMobrixUiStandardComponent({
-    commonProps,
-    name: "facebook-buttons",
-    Component: facebookButtonsComponent({
-      pageId,
-      share,
-      small,
-      width,
-    }),
+const FormField: FormFieldComponent = ({
+  type,
+  onChange,
+  placeholder,
+  required,
+  validate,
+  header,
+  className,
+  value: inputValue,
+  shadow,
+  ...sharedProps
+}: MobrixUiProps<
+  FormFieldProps & { value?: any; errorLabel?: BuilderComponent }
+>) => {
+  return buildMobrixUiReactiveComponent({
+    name: "form-field",
+    commonProps: sharedProps,
+    Component: ({ value, setValue }) =>
+      FormFieldInternalComponent({
+        value,
+        setValue,
+        type,
+        onChange,
+        placeholder,
+        required,
+        validate,
+        header,
+        className,
+        shadow,
+        ...sharedProps,
+      }),
+    inputValue,
+    defaultValue: null,
   });
+};
 
-export default FacebookButtons;
+export default FormField;

@@ -1,4 +1,4 @@
-#mobrix-ui-radio-button {
+[data-mobrix-ui-id="radio-button"] {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,22 +13,17 @@
   );
 }
 
-#mobrix-ui-radio-button.styled {
+[data-mobrix-ui-id="radio-button"][data-mobrix-ui-styled="true"] {
   padding: 0.2rem;
   border-color: #dadada;
   border-width: 1px;
 }
 
-#mobrix-ui-radio-button.dark {
-  background: radial-gradient(
-    #1c0083 20%,
-    #2e306d 30%,
-    #1b1658 55%,
-    #1c0083 20%
-  );
+[data-mobrix-ui-id="radio-button"][data-mobrix-ui-styled="true"][data-mobrix-ui-dark="true"] {
+  background: radial-gradient(#1c0083 20%, #1d1f44 50%, #1d1f44 55%);
 }
 
-#mobrix-ui-radio-button .icon {
+[data-mobrix-ui-id="radio-button"] .icon {
   border-radius: 50%;
   margin: auto;
   width: 18px;
@@ -42,6 +37,6 @@
   );
 }
 
-#mobrix-ui-radio-button.dark .icon {
+[data-mobrix-ui-id="radio-button"][data-mobrix-ui-dark="true"] .icon {
   background: radial-gradient(closest-corner, #e2dfdf, #e2dfdf, #bebcbc, #999);
 }

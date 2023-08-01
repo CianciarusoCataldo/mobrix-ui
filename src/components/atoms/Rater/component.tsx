@@ -3,7 +3,7 @@ import React from "react";
 import { MobrixUiReactiveComponent, RaterProps } from "mobrix-ui-types";
 
 import { ICONS } from "./icons";
-import Button from "../../atoms/Button";
+import Button from "../Button";
 
 const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
   type,

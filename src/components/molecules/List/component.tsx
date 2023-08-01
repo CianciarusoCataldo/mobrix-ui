@@ -6,7 +6,7 @@ import Button from "../../atoms/Button";
 
 const listComponent: MoBrixUiComponent<ListProps, BuilderComponent[]> = ({
   elements = [],
-  onChange,
+  onClick,
 }) => {
   let Wrapper: ({ children }: any) => JSX.Element = ({ children }) => (
     <div className="internal-list-element" tabIndex={0}>
@@ -14,13 +14,13 @@ const listComponent: MoBrixUiComponent<ListProps, BuilderComponent[]> = ({
     </div>
   );
 
-  if (onChange) {
+  if (onClick) {
     Wrapper = ({ children, index }) => (
       <Button
         className="internal-list-element clickable-list-element"
         unstyled
         id={"list_element_" + index}
-        onClick={() => onChange(Number(index))}
+        onClick={() => onClick(Number(index))}
       >
         {children}
       </Button>

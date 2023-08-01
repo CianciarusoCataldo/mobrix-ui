@@ -22,7 +22,7 @@
 - All types are now imported from [mobrix-ui-types lib](https://github.com/CianciarusoCataldo/mobrix-ui-types)
 - Building functions are now imported from [mobrix-ui-tools lib](https://github.com/CianciarusoCataldo/mobrix-ui-tools)
 - Dependencies updated
-- `Form` component updated, new fields type, `radio` (rendered as a `RadioButton`) is now supported (`checkbox` and `boolean` fields are both rendered as a `CheckBox`) 
+- `Form` component updated
 - `Table` component updated
 
 <br>

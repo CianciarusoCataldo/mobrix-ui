@@ -45,7 +45,7 @@ import dropdownComponentBuilder from "./builder";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Dropdown: DropdownComponent = ({
-  content,
+  elements,
   onChange,
   value: inputValue,
   hideArrow,
@@ -57,7 +57,7 @@ const Dropdown: DropdownComponent = ({
     inputValue,
     props: (value, setValue) =>
       dropdownComponentBuilder({
-        content,
+        elements,
         onChange,
         value,
         hideArrow,

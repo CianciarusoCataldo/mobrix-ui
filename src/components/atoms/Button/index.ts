@@ -65,7 +65,7 @@ const Button: ButtonComponent = ({
     Component: children,
     commonProps: {
       ...commonProps,
-      className: `${disabled ? "disabled" : "enabled"} ${className}`,
+      className: `${className} ${disabled ? "disabled" : "enabled"}`,
     },
   });
 

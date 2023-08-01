@@ -15,9 +15,8 @@ import { getMonthsDuration, getDateMatrix } from "./utils";
 
 import { arrowIcon } from "../../molecules/Carousel/icons";
 
-import Table from "../../molecules/Table";
-import Button from "../../atoms/Button";
-import Label from "../../atoms/Label";
+import { Button, Label } from "../../atoms";
+import { Table } from "../../molecules";
 
 const CalendarComponent: MobrixUiReactiveComponent<
   DeepPartial<CalendarDate>,

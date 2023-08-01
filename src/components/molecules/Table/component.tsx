@@ -1,49 +1,54 @@
 import React from "react";
-import classNames from "classnames";
 
 import { MoBrixUiComponent, TableProps } from "mobrix-ui-types";
 
-const tableComponent: MoBrixUiComponent<TableProps> = ({ headers, rows }) => {
-  let gridTemplateRows = "";
-  let gridTemplateColumns = "";
+const tableComponent: MoBrixUiComponent<TableProps, JSX.Element[]> = ({
+  headers,
+  rows = [],
+}) => {
+  let tableRows = rows;
+  const commponents: JSX.Element[] = [];
 
-  let tableRows = rows || [];
+  if (headers && tableRows.length > 0) {
+    commponents.push(
+      <thead key="table_head">
+        <tr>
+          {tableRows[0].map((header, index) => (
+            <th key={`header_${index}`} data-mobrix-ui-class="table-cell">
+              {header}
+            </th>
+          ))}
+        </tr>
+      </thead>
+    );
 
-  let elements: (JSX.Element | string)[][] = tableRows.map((row, rowIndex) =>
-    row.map((element, index) => (
-      <div
-        key={`element_${rowIndex}_${index}`}
-        className={classNames({
-          header: headers && rowIndex === 0,
-          element: !headers || rowIndex > 0,
-        })}
-      >
-        {element}
-      </div>
-    ))
-  );
-
-  if (tableRows.length > 0) {
-    for (let i = 0; i < tableRows.length; i++) {
-      gridTemplateRows += " auto";
-    }
-
-    for (let i = 0; i < tableRows[0].length; i++) {
-      gridTemplateColumns += " auto";
-    }
+    tableRows.splice(0, 1);
   }
 
-  return (
-    <div
-      className="rows"
-      style={{
-        gridTemplateRows,
-        gridTemplateColumns,
-      }}
-    >
-      {elements}
-    </div>
+  commponents.push(
+    <tbody key="table_body">
+      {tableRows.map((row, rowIndex) => (
+        <tr
+          className={`table-row ${headers ? "header-row" : ""}`}
+          data-mobrix-ui-class={`table-row ${
+            headers && rowIndex === 0 ? "header-row" : ""
+          }`}
+          key={`row_${rowIndex}`}
+        >
+          {row.map((element, index) => (
+            <td
+              key={`element_${rowIndex}_${index}`}
+              data-mobrix-ui-class="table-cell"
+            >
+              {element}
+            </td>
+          ))}
+        </tr>
+      ))}
+    </tbody>
   );
+
+  return commponents;
 };
 
 export default tableComponent;

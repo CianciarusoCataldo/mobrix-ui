@@ -1,4 +1,4 @@
-#mobrix-ui-button.styled {
+[data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"] {
   background: var(--mobrix-ui-background);
   color: var(--mobrix-ui-text-color);
   text-align: center;
@@ -11,37 +11,41 @@
   line-height: 1.25rem;
 }
 
-#mobrix-ui-button:not(.styled){
+[data-mobrix-ui-id="button"]:not([data-mobrix-ui-styled="true"]) {
   border: 0;
   background: transparent;
 }
 
-#mobrix-ui-button.enabled {
+[data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"].enabled {
   transition-duration: 0.1s;
   transition-property: transform;
 }
 
-#mobrix-ui-button.disabled {
+[data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"][data-mobrix-ui-class="disabled"] {
   opacity: 0.5;
 }
 
 @media (hover) {
-  #mobrix-ui-button.styled.enabled:hover {
+  [data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"].enabled:hover {
     background: linear-gradient(to right, #c9cacc, #e1e1e4, #c8c9ca);
   }
 
-  #mobrix-ui-button.dark.styled.enabled:hover {
+  [data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"].enabled:hover {
+    background: rgb(178, 178, 201);
+  }
+
+  [data-mobrix-ui-id="button"][data-mobrix-ui-dark="true"][data-mobrix-ui-styled="true"].enabled:hover {
     background: rgb(61, 61, 75);
   }
 
-  #mobrix-ui-button.styled.enabled.animated:hover {
+  [data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"].enabled[data-mobrix-ui-animated="true"]:hover {
     position: relative;
     transform: scaleX(1.15) scaleY(1.1);
   }
 }
 
 @media (hover: none) {
-  #mobrix-ui-button.styled.enabled:hover {
+  [data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"].enabled:hover {
     background: var(--mobrix-ui-background);
     color: var(--mobrix-ui-text-color);
   }

@@ -10,7 +10,7 @@ import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
  * @since 2.0.0
  *
  * @param {number} value actual slider value
- * @param {string} thumbColor Slider thumb custom color (exadecimal). If set, the standard style is overwritten
+ * @param {string} thumbColor Slider thumb custom color (exadecimal or any gradient css attribute). If set, the standard style is overwritten
  * @param {(newValue:number)=>void} onChange callback triggered when input change
  * @param {string} placeholder label showed when no value is set
  * @param {boolean} readonly if true, compoent value can only be set with `value` parameter

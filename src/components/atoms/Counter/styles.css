@@ -1,4 +1,4 @@
-#mobrix-ui-counterbox.styled {
+[data-mobrix-ui-id="counterbox"][data-mobrix-ui-styled="true"] {
   border-radius: 5px;
   padding: 0.5rem;
   background-color: var(--mobrix-ui-background-color);

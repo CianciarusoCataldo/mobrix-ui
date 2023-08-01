@@ -2,20 +2,19 @@ import React from "react";
 
 import {
   DropdownProps,
-  DropdownStandardElement,
   MobrixUiReactiveComponentBuilder,
 } from "mobrix-ui-types";
 
 import classnames from "classnames";
 
-import Button from "../../atoms/Button";
+import { Button } from "../../atoms";
 import Popup from "../Popup";
 
 const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
   number,
   DropdownProps
 > = ({
-  content = [],
+  elements = [],
   onChange = () => {},
   value,
   hideArrow,
@@ -26,27 +25,9 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
   onFocusLost = () => {},
   ...commonProps
 }) => {
-  const dropdownContent: DropdownStandardElement[] = content.map((el) => {
-    let icon = <div />;
-    let name: string | JSX.Element = "";
-
-    if (typeof el === "string") {
-      name = el;
-    } else {
-      name = el.name;
-      icon = el.icon || <div />;
-    }
-    return {
-      name,
-      icon,
-    };
-  });
   const [isVisible, setVisible] = React.useState(false);
   const [selected, selectItem] = React.useState<number>(-2);
-  const selectedItem = dropdownContent[value] || {
-    name: "",
-    icon: <div />,
-  };
+  const selectedItem = elements[value] || <div />;
 
   const keyDownCallback = (visibility: boolean) => {
     isVisible !== visibility && setVisible(visibility);
@@ -72,7 +53,7 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
           case "Tab": {
             if (
               (e.shiftKey && actualSelected === 0) ||
-              actualSelected === content.length - 1
+              actualSelected === elements.length - 1
             ) {
               keyDownCallback(false);
             }
@@ -106,7 +87,7 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
           }
 
           case "ArrowDown": {
-            if (actualSelected === content.length - 1) {
+            if (actualSelected === elements.length - 1) {
               keyDownCallback(false);
               return;
             }
@@ -135,17 +116,10 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
       >
         <div
           tabIndex={-1}
-          key="dropdown_selected_element_icon"
-          className="dropdown-selected-element"
-        >
-          {selectedItem.icon}
-        </div>
-        <div
-          tabIndex={-1}
           key="dropdown_selected_element_label"
           className="dropdown-selected-element"
         >
-          {selectedItem.name}
+          {selectedItem}
         </div>
         <div
           key="icon"
@@ -169,7 +143,7 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
         a11y={false}
         className="options"
       >
-        {dropdownContent.map((item, index) => (
+        {elements.map((item, index) => (
           <Button
             unstyled
             onFocus={() => {
@@ -184,14 +158,11 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
             key={`item_${index}`}
             className={classnames("regular", {
               first: index === 0,
-              last: index === content.length - 1,
+              last: index === elements.length - 1,
               selected: selected === index,
             })}
           >
-            <div className="dropdown-element">
-              <div className="dropdown-selected-element">{item.icon}</div>
-              {item.name}
-            </div>
+            <div className="dropdown-element">{item}</div>
           </Button>
         ))}
       </Popup>,

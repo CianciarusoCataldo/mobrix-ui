@@ -1,42 +1,56 @@
-#mobrix-ui-tab-viewer {
+[data-mobrix-ui-id="tab-viewer"] {
   display: flex;
   flex-direction: column;
 }
 
-#mobrix-ui-tab-viewer .tabs-list {
+[data-mobrix-ui-id="tab-viewer"] [data-mobrix-ui-class="tabs-list"] {
   display: flex;
   flex-direction: row;
 }
 
-#mobrix-ui-tab-viewer.styled .tabs-list .tab {
+[data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-styled="true"]
+  [data-mobrix-ui-class="tabs-list"]
+  .tab {
   padding: 0.7rem 1rem;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  color:var(--mobrix-ui-text-color)
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: var(--mobrix-ui-text-color);
 }
 
-#mobrix-ui-tab-viewer.styled .tabs-list .tab.selected {
+[data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-styled="true"]
+  [data-mobrix-ui-class="tabs-list"]
+  .tab.selected {
   background-image: var(--mobrix-ui-background);
 }
 
-#mobrix-ui-tab-viewer .tabs-list .tab:not(.selected) {
-  background-image: linear-gradient(to right, #b4b4b4, #919191);
-  color:#504f4f
+[data-mobrix-ui-id="tab-viewer"]
+  [data-mobrix-ui-class="tabs-list"]
+  .tab:not(.selected) {
+  background-image: var(--mobrix-ui-background-dark);
+  color: #bdbdbd;
 }
 
-#mobrix-ui-tab-viewer .tabs-list .tab:not(.selected):hover {
+[data-mobrix-ui-id="tab-viewer"]
+  [data-mobrix-ui-class="tabs-list"]
+  .tab:not(.selected):hover {
   background-image: linear-gradient(to right, #a1a0a0, #797979);
 }
 
-#mobrix-ui-tab-viewer.dark .tabs-list .tab:not(.selected) {
-  background-image: linear-gradient(to right, #44536d, #2b3342);
-  color:#bdbdbd
+[data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-dark="true"]
+  [data-mobrix-ui-class="tabs-list"]
+  .tab:not(.selected) {
+  background-image: linear-gradient(to right, #3e4b63, #3f4858);
+  color: #bdbdbd;
 }
 
-#mobrix-ui-tab-viewer.dark .tabs-list .tab:not(.selected):hover {
+[data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-dark="true"]
+  [data-mobrix-ui-class="tabs-list"]
+  .tab:not(.selected):hover {
   background-image: linear-gradient(to right, #566888, #3c465a);
 }
 
-#mobrix-ui-tab-viewer .tab-view {
+[data-mobrix-ui-id="tab-viewer"] [data-mobrix-ui-class="tab-view"] {
   padding: 0.7rem 1rem;
 }

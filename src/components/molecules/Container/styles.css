@@ -1,4 +1,4 @@
-#mobrix-ui-container.styled {
+[data-mobrix-ui-id="container"][data-mobrix-ui-styled="true"] {
   background-image: var(--mobrix-ui-background);
   color: var(--mobrix-ui-text-color);
 }

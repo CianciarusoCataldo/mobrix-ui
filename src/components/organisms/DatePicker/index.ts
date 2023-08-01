@@ -68,7 +68,7 @@ const DatePicker: DatePickerComponent = ({
   return buildMobrixUiReactiveComponent<CalendarDate>({
     name: "date-picker",
     commonProps,
-    render: (value, setValue) =>
+    Component: ({ value, setValue }) =>
       datePickerComponent({
         today: todayDate,
         onChange,

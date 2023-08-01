@@ -46,6 +46,7 @@ const Table: TableComponent = ({ headers, rows, ...commonProps }) =>
     name: "table",
     Component: tableComponent({ headers, rows }),
     commonProps,
+    wrapper: "table"
   });
 
 export default Table;
