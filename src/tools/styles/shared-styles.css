@@ -1,0 +1,135 @@
+[data-mobrix-ui-id] {
+  --mobrix-ui-background-color-light: #f5f5f5;
+  --mobrix-ui-background-color-dark: #1d232e;
+  --mobrix-ui-text-color-light: #1b1b1b;
+  --mobrix-ui-text-color-dark: white;
+  --mobrix-ui-focus-color-light: #7785ff;
+  --mobrix-ui-focus-color-dark: #fb7a10;
+  --mobrix-ui-background-dark: linear-gradient(to right, #2d3748, #1d232e);
+  --mobrix-ui-background-light: linear-gradient(to right, #fff, #eaebec);
+}
+
+[data-mobrix-ui-id],
+[data-mobrix-ui-id]:hover,
+[data-mobrix-ui-id]:active {
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+
+[data-mobrix-ui-id]:focus {
+  outline: none;
+}
+
+[data-mobrix-ui-id]:not([data-mobrix-ui-dark="true"]) {
+  --mobrix-ui-background-color: var(
+    --mobrix-ui-custom-background-color-light,
+    var(--mobrix-ui-background-color-light)
+  );
+  --mobrix-ui-background: var(
+    --mobrix-ui-custom-background-light,
+    var(--mobrix-ui-background-light)
+  );
+  --mobrix-ui-text-color: var(
+    --mobrix-ui-custom-text-color-light,
+    var(--mobrix-ui-text-color-light)
+  );
+  --mobrix-ui-link-color: rgb(37, 99, 235);
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-dark="true"] {
+  --mobrix-ui-background-color: var(
+    --mobrix-ui-custom-background-color-dark,
+    var(--mobrix-ui-background-color-dark)
+  );
+  --mobrix-ui-background: var(
+    --mobrix-ui-custom-background-dark,
+    var(--mobrix-ui-background-dark)
+  );
+  --mobrix-ui-text-color: var(
+    --mobrix-ui-custom-text-color-dark,
+    var(--mobrix-ui-text-color-dark)
+  );
+  --mobrix-ui-link-color: white;
+}
+
+[data-mobrix-ui-id]:not([data-mobrix-ui-dark="true"]):hover {
+  --mobrix-ui-link-color: rgb(33, 89, 211);
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-dark="true"]:hover {
+  --mobrix-ui-link-color: rgb(165, 174, 187);
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-a11y="true"]:not(
+    [data-mobrix-ui-a11y-dark="true"]
+  ) {
+  --mobrix-ui-focus-color: var(
+    --mobrix-ui-custom-focus-color-light,
+    var(--mobrix-ui-focus-color-light)
+  );
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-a11y="true"]:focus-visible {
+  box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
+  -webkit-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
+  -moz-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
+  -o-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
+
+  --mobrix-ui-link-color: rgb(37, 99, 235);
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-a11y="true"][data-mobrix-ui-a11y-dark="true"] {
+  --mobrix-ui-focus-color: var(
+    --mobrix-ui-custom-focus-color-dark,
+    var(--mobrix-ui-focus-color-dark)
+  );
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-a11y="true"][data-mobrix-ui-a11y-dark="true"]:focus-visible {
+  --mobrix-ui-link-color: orange;
+}
+
+[data-mobrix-ui-id] [data-mobrix-ui-hide="true"],
+[data-mobrix-ui-id][data-mobrix-ui-hide="true"] {
+  display: none !important;
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-animated="true"],
+[data-mobrix-ui-id][data-mobrix-ui-animated="true"]
+  [data-mobrix-ui-animated="true"] {
+  animation: fadein 0.4s;
+  -webkit-animation: fadein 0.4s;
+  -moz-animation: fadein 0.4s;
+  -ms-animation: fadein 0.4s;
+  -o-animation: fadein 0.4s;
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-animated="true"][data-mobrix-ui-animation="fade-out"],
+[data-mobrix-ui-id][data-mobrix-ui-animated="true"]
+  [data-mobrix-ui-animation="fade-out"] {
+  animation: fadeOut 0.3s;
+  -webkit-animation: fadeOut 0.3s;
+  -moz-animation: fadeOut 0.3s;
+  -ms-animation: fadeOut 0.3s;
+  -o-animation: fadeOut 0.3s;
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-animated="true"][data-mobrix-ui-animation="shake"],
+[data-mobrix-ui-id][data-mobrix-ui-animated="true"]
+  [data-mobrix-ui-animation="shake"] {
+  animation: shake 0.5s;
+  -webkit-animation: shake 0.5s;
+  -moz-animation: shake 0.5s;
+  -ms-animation: shake 0.5s;
+  -o-animation: shake 0.5s;
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-shadow="true"],
+[data-mobrix-ui-id] [data-mobrix-ui-shadow="true"] {
+  box-shadow: 0 5px 13px -1px #464545;
+  -webkit-box-shadow: 0 5px 13px -1px #464545;
+  -moz-box-shadow: 0 5px 13px -1px #464545;
+  -o-box-shadow: 0 5px 13px -1px #464545;
+}
