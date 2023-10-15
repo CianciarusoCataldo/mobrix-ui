@@ -21,6 +21,9 @@ export type TableProps = {
 
   /** Custom class-name applied on every table cell */
   cellClassName?: string;
+
+  /** If `true`, pre-format content inside table cell */
+  format?: boolean;
 };
 
 /**

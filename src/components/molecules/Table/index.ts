@@ -41,10 +41,10 @@ import tableComponent from "./component";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Table: TableComponent = ({ headers, rows, ...commonProps }) =>
+const Table: TableComponent = ({ headers, rows, format, rowClassName, cellClassName, ...commonProps }) =>
   buildMobrixUiStandardComponent({
     name: "table",
-    Component: tableComponent({ headers, rows }),
+    Component: tableComponent({ headers, rows, format }),
     commonProps,
     wrapper: "table"
   });

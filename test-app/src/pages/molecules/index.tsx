@@ -5,6 +5,7 @@ import {
   Label,
   Card,
   DismissableCard,
+  Dropdown,
   Button,
   FormField,
 } from "../../mobrix-ui-preview";
@@ -133,6 +134,16 @@ const MoleculesPage = () => {
         name="Carousel"
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}></div>
+        }
+      />
+      <ComponentDemo
+        name="Dropdown"
+        Component={
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <Dropdown elements={["el 1", "el 2", "el 3"]} />
+            <div style={{ marginTop: "20px" }} />
+            <Dropdown dark elements={["el 1", "el 2", "el 3"]} />
+          </div>
         }
       />
       <ComponentDemo
@@ -291,7 +302,7 @@ const MoleculesPage = () => {
         children={(props, setProps) => (
           <FormField
             {...props}
-            //validate={(value) => String(value).length > 6}
+          //validate={(value) => String(value).length > 6}
           />
         )}
       />
@@ -301,6 +312,7 @@ const MoleculesPage = () => {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Table />
             <Table
+              format
               rows={[
                 ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
                 ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
@@ -311,7 +323,7 @@ const MoleculesPage = () => {
               ]}
             />
             <div style={{ marginTop: "20px" }} />
-            <Table
+            <Table format
               headers
               rows={[
                 ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
@@ -323,7 +335,7 @@ const MoleculesPage = () => {
               ]}
             />
             <div style={{ marginTop: "20px" }} />
-            <Table
+            <Table format
               dark
               rows={[
                 ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
@@ -335,7 +347,7 @@ const MoleculesPage = () => {
               ]}
             />
             <div style={{ marginTop: "20px" }} />
-            <Table
+            <Table format
               dark
               headers
               rows={[
@@ -348,8 +360,8 @@ const MoleculesPage = () => {
               ]}
             />
             <div style={{ marginTop: "20px" }} />
-            <Table
-              unstyled
+            <Table format
+              dark
               rows={[
                 ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
                 ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
@@ -360,18 +372,20 @@ const MoleculesPage = () => {
               ]}
             />
             <div style={{ marginTop: "20px" }} />
-            <Table
-              unstyled
-              headers
-              rows={[
-                ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-              ]}
-            />
+            <div style={{ display: "flex", flexDirection: "column", padding: "0.6rem" }}>
+              <Table format
+                dark
+                headers
+                rows={[
+                  ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                ]}
+              />
+            </div>
           </div>
         }
         name="Table"

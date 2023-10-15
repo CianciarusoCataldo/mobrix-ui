@@ -16,6 +16,7 @@ import calendarComponent from "./component";
  * @param value actual selected date (`null` if not set)
  * @param onChange callback called when a day is selected, with the entire selected date (year, month, day) as a parameter
  * @param onViewChange callback called when the Calendar view (the showed month) change
+ * @param {} labelProps
  * @param {string[]} days custom days labels (default use english days)
  * @param {string[]} months custom months labels (default use english months)
  * @param {boolean} dayLabel show/hide actual day label on top of the calendar
@@ -63,6 +64,7 @@ const Calendar: CalendarComponent = ({
   startMonth,
   fromToday,
   dayLabel,
+  labelClassName,
   ...commonProps
 }) => {
   const todayDate = today();
@@ -91,6 +93,7 @@ const Calendar: CalendarComponent = ({
         startMonth,
         fromToday,
         dayLabel,
+        labelClassName,
         ...commonProps,
       }),
   });

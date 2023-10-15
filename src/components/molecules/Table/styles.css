@@ -2,6 +2,8 @@
   border-width: 3px;
   border-style: solid;
   border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
 }
 
 [data-mobrix-ui-id="table"][data-mobrix-ui-styled="true"] {
@@ -19,15 +21,14 @@
 }
 
 [data-mobrix-ui-id="table"][data-mobrix-ui-styled="true"]
-  tr[data-mobrix-ui-class="table-row header-row"] {
-  border-bottom-color: #39455f;
+  tr[data-mobrix-ui-class^="table-row header-row"] {
   border-bottom-width: 3px;
   border-style: solid;
   border-collapse: collapse;
 }
 
 [data-mobrix-ui-id="table"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-class="table-cell"] {
+  [data-mobrix-ui-class^="table-cell"] {
   border-width: 2px;
   border-style: solid;
   border-collapse: collapse;
@@ -36,58 +37,44 @@
 }
 
 [data-mobrix-ui-id="table"][data-mobrix-ui-styled="true"][data-mobrix-ui-dark="true"]
-  [data-mobrix-ui-class="table-cell"] {
+  [data-mobrix-ui-class^="table-cell"] {
   border-color: whitesmoke;
 }
 
 [data-mobrix-ui-id="table"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-class="table-cell"] {
+  [data-mobrix-ui-class^="table-cell formatted"] {
   padding: 0.3rem;
 }
 
 [data-mobrix-ui-id="table"][data-mobrix-ui-styled="true"]
-  th[data-mobrix-ui-class="table-cell"] {
-  padding: 0.3rem;
+  th[data-mobrix-ui-class^="table-cell"] {
   color: #3d5381;
   font-size: x-large;
-}
-
-[data-mobrix-ui-id="table"][data-mobrix-ui-styled="true"]
-  th[data-mobrix-ui-class="table-cell"] {
-  padding: 0.3rem;
-  color: #3d5381;
-  font-size: x-large;
+  padding: 0.4rem;
 }
 
 [data-mobrix-ui-id="table"][data-mobrix-ui-styled="true"][data-mobrix-ui-dark="true"]
-  th[data-mobrix-ui-class="table-cell"] {
+  th[data-mobrix-ui-class^="table-cell"] {
   color: #859dd3;
-}
-
-@media (min-width: 550px) {
-  [data-mobrix-ui-id="table"][data-mobrix-ui-styled="true"]
-    [data-mobrix-ui-class="table-cell"] {
-    padding: 0.6rem;
-  }
 }
 
 @media (max-width: 500px) {
   [data-mobrix-ui-id="table"][data-mobrix-ui-styled="true"]
-    th[data-mobrix-ui-class="table-cell"] {
+    th[data-mobrix-ui-class^="table-cell"] {
     font-size: large;
   }
 }
 
 @media (max-width: 400px) {
   [data-mobrix-ui-id="table"][data-mobrix-ui-styled="true"]
-    th[data-mobrix-ui-class="table-cell"] {
+    th[data-mobrix-ui-class^="table-cell"] {
     font-size: medium;
   }
 }
 
 @media (max-width: 300px) {
   [data-mobrix-ui-id="table"][data-mobrix-ui-styled="true"]
-    th[data-mobrix-ui-class="table-cell"] {
+    th[data-mobrix-ui-class^="table-cell"] {
     font-size: small;
   }
 }

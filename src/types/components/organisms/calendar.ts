@@ -1,5 +1,4 @@
 import {
-  CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
   DeepPartial,
@@ -72,6 +71,8 @@ export type CalendarProps = ComponentWithValue<DeepPartial<CalendarDate>> &
 
     /** callback called when the Calendar view (the showed month) change */
     onViewChange?: (date: CalendarDate) => void;
+
+    labelClassName?: string;
   };
 
 /**

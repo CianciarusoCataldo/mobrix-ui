@@ -31,7 +31,7 @@ root.render(
     </Drawer>
     <TabViewer
       dark
-      selected={0}
+      selected={1}
       tabs={[
         {
           label: "Atoms",
