@@ -36,6 +36,7 @@ jobs:
         cache: 'npm'
     - run: npm i
     - run: npm run test --verbose
+    - run: echo "Tests step completed"
     - name: Upload coverage to Code Climate
       uses: paambaati/codeclimate-action@v3.0.0
       env:
