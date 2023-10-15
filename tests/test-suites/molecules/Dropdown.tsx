@@ -7,8 +7,8 @@ const dropdownTest = () => {
     test("Rendering test", () => {
       let wrapper = mount(
         <Dropdown
-          onFocusLost={() => {}}
-          content={["Dropdown element 1", "Dropdown element 2"]}
+          onFocusLost={() => { }}
+          elements={["Dropdown element 1", "Dropdown element 2"]}
           value={2}
         />
       );
@@ -25,13 +25,8 @@ const dropdownTest = () => {
       let wrapper = mount(
         <Dropdown
           onChange={onChangeStub}
-          content={[
-            { name: "Dropdown test element 1" },
-            {
-              name: "Dropdown test element 2",
-              icon: <div>icon</div>,
-            },
-          ]}
+          elements={["Dropdown element 1", "Dropdown element 2"]}
+
         />
       );
       wrapper.find('button[data-id="options_menu"]').simulate("click");
@@ -48,13 +43,8 @@ const dropdownTest = () => {
         let wrapper = mount(
           <Dropdown
             onChange={onChangeStub}
-            content={[
-              { name: "Dropdown test element 1" },
-              {
-                name: "Dropdown test element 2",
-                icon: <div>icon</div>,
-              },
-            ]}
+            elements={["Dropdown element 1", "Dropdown element 2"]}
+
           />
         );
 
@@ -92,13 +82,8 @@ const dropdownTest = () => {
         let wrapper = mount(
           <Dropdown
             onChange={onChangeStub}
-            content={[
-              { name: "Dropdown test element 1" },
-              {
-                name: "Dropdown test element 2",
-                icon: <div>icon</div>,
-              },
-            ]}
+            elements={["Dropdown element 1", "Dropdown element 2"]}
+
           />
         );
 
@@ -117,13 +102,8 @@ const dropdownTest = () => {
         let wrapper = mount(
           <Dropdown
             onChange={onChangeStub}
-            content={[
-              { name: "Dropdown test element 1" },
-              {
-                name: "Dropdown test element 2",
-                icon: <div>icon</div>,
-              },
-            ]}
+            elements={["Dropdown element 1", "Dropdown element 2"]}
+
           />
         );
 

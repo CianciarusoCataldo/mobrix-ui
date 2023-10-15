@@ -13,7 +13,7 @@ const codeBoxTest = () => {
     test("Copy icon test", () => {
       const copyStub = jest.fn();
       const wrapper = mount(
-        <CodeBox enhanced value={`npm i 'mobrix-ui' "mobrix-engine"`} />
+        <CodeBox highlight noCopyButton value={`npm i 'mobrix-ui' "mobrix-engine"`} />
       );
       navigator.clipboard.writeText = copyStub;
       wrapper.find(".codebox-copy-icon button").simulate("click");

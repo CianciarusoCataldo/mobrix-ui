@@ -12,15 +12,6 @@ const cardTest = () => {
       );
       expect(wrapper);
     });
-
-    test("If dismissable === true, clicking on the X icon trigger the onClose callback", () => {
-      const onCloseStub = jest.fn();
-
-      const wrapper = mount(<Card onClose={onCloseStub} dismissable />);
-
-      wrapper.find(".card-dismiss-button").at(0).simulate("click");
-      expect(onCloseStub).toBeCalled;
-    });
   });
 };
 

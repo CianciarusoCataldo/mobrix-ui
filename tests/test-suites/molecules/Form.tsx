@@ -28,7 +28,7 @@ const formTest = () => {
       const submitStub = jest.fn();
       let wrapper = mount(
         <Form
-          onClick={submitStub}
+          onSubmit={submitStub}
           fieldClassName="test-field-class"
           fields={{
             testField1: { type: "boolean" },

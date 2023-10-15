@@ -15,7 +15,7 @@ const listTest = () => {
       const onChangeStub = jest.fn();
       const wrapper = mount(
         <List
-          onChange={onChangeStub}
+          onClick={onChangeStub}
           elements={["Test element 1", "Test element 2"]}
         />
       );
