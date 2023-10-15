@@ -36,3 +36,7 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm test
+    - name: Run codacy-coverage-reporter
+      uses: codacy/codacy-coverage-reporter-action@v1
+      with:
+        project-token: ${{ secrets.CODACY_API_TOKEN }}

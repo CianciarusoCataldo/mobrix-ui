@@ -13,7 +13,6 @@ import {
   SelectProp,
   BooleanProp,
   StringProp,
-  HiddenProp,
 } from "@cianciarusocataldo/demo-ui";
 
 const MoleculesPage = () => {
@@ -51,42 +50,32 @@ const MoleculesPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Card /> <br />
+            <div style={{ marginTop: "20px" }} /> <Card header="header" />{" "}
             <br />
-            <Card header="header" /> <br />
+            <div style={{ marginTop: "20px" }} /> <Card body="body" /> <br />
+            <div style={{ marginTop: "20px" }} /> <Card footer="footer" />{" "}
             <br />
-            <Card body="body" /> <br />
-            <br />
-            <Card footer="footer" /> <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />{" "}
             <Card header="header" body="body" footer="footer" /> <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />{" "}
             <Card noDividers header="header" body="body" footer="footer" />{" "}
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card noFooterDivider header="header" body="body" footer="footer" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card noHeaderDivider header="header" body="body" footer="footer" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card dark />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card dark header="header" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card dark body="body" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card dark footer="footer" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card dark header="header" body="body" footer="footer" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card dark noDividers header="header" body="body" footer="footer" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card
               dark
               noHeaderDivider
@@ -94,8 +83,7 @@ const MoleculesPage = () => {
               body="body"
               footer="footer"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card
               dark
               noFooterDivider
@@ -103,23 +91,17 @@ const MoleculesPage = () => {
               body="body"
               footer="footer"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card unstyled />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card unstyled header="header" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card unstyled body="body" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card unstyled footer="footer" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card unstyled header="header" body="body" footer="footer" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card
               unstyled
               noHeaderDivider
@@ -127,8 +109,7 @@ const MoleculesPage = () => {
               body="body"
               footer="footer"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card
               unstyled
               noFooterDivider
@@ -136,8 +117,7 @@ const MoleculesPage = () => {
               body="body"
               footer="footer"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Card
               unstyled
               noDividers
@@ -173,55 +153,46 @@ const MoleculesPage = () => {
               Reset
             </Button>
             <DismissableCard /> <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />{" "}
             <DismissableCard header="header" /> <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />{" "}
             <DismissableCard body="body" /> <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />{" "}
             <DismissableCard footer="footer" /> <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />{" "}
             <DismissableCard header="header" body="body" footer="footer" />{" "}
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard
               noDividers
               header="header"
               body="body"
               footer="footer"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard
               noFooterDivider
               header="header"
               body="body"
               footer="footer"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard
               noHeaderDivider
               header="header"
               body="body"
               footer="footer"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard dark />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard dark header="header" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard dark body="body" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard dark footer="footer" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard dark header="header" body="body" footer="footer" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard
               dark
               noDividers
@@ -229,8 +200,7 @@ const MoleculesPage = () => {
               body="body"
               footer="footer"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard
               dark
               noHeaderDivider
@@ -238,8 +208,7 @@ const MoleculesPage = () => {
               body="body"
               footer="footer"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard
               dark
               noFooterDivider
@@ -247,28 +216,22 @@ const MoleculesPage = () => {
               body="body"
               footer="footer"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard unstyled />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard unstyled header="header" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard unstyled body="body" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard unstyled footer="footer" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard
               unstyled
               header="header"
               body="body"
               footer="footer"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard
               unstyled
               noHeaderDivider
@@ -276,8 +239,7 @@ const MoleculesPage = () => {
               body="body"
               footer="footer"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard
               unstyled
               noFooterDivider
@@ -285,8 +247,7 @@ const MoleculesPage = () => {
               body="body"
               footer="footer"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <DismissableCard
               unstyled
               noDividers
@@ -349,8 +310,7 @@ const MoleculesPage = () => {
                 ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
               ]}
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Table
               headers
               rows={[
@@ -362,8 +322,7 @@ const MoleculesPage = () => {
                 ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
               ]}
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Table
               dark
               rows={[
@@ -375,8 +334,7 @@ const MoleculesPage = () => {
                 ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
               ]}
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Table
               dark
               headers
@@ -389,8 +347,7 @@ const MoleculesPage = () => {
                 ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
               ]}
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Table
               unstyled
               rows={[
@@ -402,8 +359,7 @@ const MoleculesPage = () => {
                 ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
               ]}
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Table
               unstyled
               headers

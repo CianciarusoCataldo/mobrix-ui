@@ -52,19 +52,15 @@ const AtomsPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Button className="test-class">Button light not animated</Button>
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Button dark>Button dark not animated</Button>
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Button animated>Button light animated</Button>
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Button animated dark>
               Button dark animated
             </Button>
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Button unstyled onClick={() => alert("clicked")}>
               <svg
                 x={0}
@@ -101,23 +97,17 @@ const AtomsPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <CheckBox />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CheckBox value={true} />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CheckBox icon={<img alt="" src={tick} width="30px" />} />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CheckBox dark />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CheckBox dark value={true} />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CheckBox dark icon={<img alt="" src={tick} width="30px" />} />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CheckBox
               unstyled
               style={{
@@ -127,8 +117,7 @@ const AtomsPage = () => {
               }}
               icon={<img alt="" src={tick} width="30px" />}
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CheckBox
               unstyled
               style={{
@@ -147,29 +136,21 @@ const AtomsPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <CodeBox />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CodeBox noCopyButton value="npm i mobrix ui" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CodeBox highlight value="npm i mobrix ui" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CodeBox dark />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CodeBox dark noCopyButton value="npm i mobrix ui" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CodeBox highlight dark value="npm i mobrix ui" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CodeBox unstyled />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CodeBox noCopyButton unstyled value="npm i mobrix ui" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <CodeBox highlight unstyled value="npm i mobrix ui" />
           </div>
         }
@@ -179,20 +160,15 @@ const AtomsPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Counter />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Counter animated value={35} />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Counter dark />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Counter animated dark value={35} />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Counter unstyled />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Counter unstyled value={35} />
           </div>
         }
@@ -217,20 +193,15 @@ const AtomsPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Input />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Input value="text" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Input dark />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Input dark value="text" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Input unstyled />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Input unstyled value="text" />
           </div>
         }
@@ -240,11 +211,9 @@ const AtomsPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Label children="text" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Label dark children="text" />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Label unstyled children="text" />
           </div>
         }
@@ -258,16 +227,14 @@ const AtomsPage = () => {
               to="https://github.com/CianciarusoCataldo/mobrix-ui"
               children="text"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Link
               newTab
               to="https://github.com/CianciarusoCataldo/mobrix-ui"
               dark
               children="text"
             />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Link
               newTab
               to="https://github.com/CianciarusoCataldo/mobrix-ui"
@@ -282,20 +249,15 @@ const AtomsPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <RadioButton />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <RadioButton deselectable={false} />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <RadioButton dark />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <RadioButton dark deselectable={false} />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <RadioButton unstyled />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <RadioButton unstyled deselectable={false} />
           </div>
         }
@@ -305,14 +267,11 @@ const AtomsPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Selector />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Selector elements={["el1", "el2"]} />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Selector dark elements={["el1", "el2"]} />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Selector unstyled elements={["el1", "el2"]} />
           </div>
         }
@@ -322,20 +281,15 @@ const AtomsPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Slider />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Slider value={32} />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Slider dark />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Slider dark value={32} />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Slider unstyled />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Slider unstyled value={32} />
           </div>
         }
@@ -364,20 +318,15 @@ const AtomsPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Toggle />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Toggle value={false} />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Toggle dark />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Toggle dark value={false} />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Toggle unstyled />
-            <br />
-            <br />
+            <div style={{ marginTop: "20px" }} />
             <Toggle unstyled value={false} />
           </div>
         }

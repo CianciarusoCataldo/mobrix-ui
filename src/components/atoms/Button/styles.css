@@ -9,6 +9,7 @@
   align-items: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
+  border: 0;
 }
 
 [data-mobrix-ui-id="button"]:not([data-mobrix-ui-styled="true"]) {

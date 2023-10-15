@@ -5,10 +5,12 @@
   border-radius: 50%;
   width: 30px;
   height: 30px;
+  --internal-ring-color: #bebebe;
+  --internal-circle-color: #e4e4e4;
   background: radial-gradient(
     #f1f1f1 20%,
-    #e4e4e4 30%,
-    #bebebe 55%,
+    var(--internal-circle-color) 30%,
+    var(--internal-ring-color) 55%,
     #f0f0f0 20%
   );
 }
@@ -17,6 +19,11 @@
   padding: 0.2rem;
   border-color: #dadada;
   border-width: 1px;
+}
+
+[data-mobrix-ui-id="radio-button"][data-mobrix-ui-styled="true"]:hover {
+  --internal-ring-color: #a7a7a7;
+  --internal-circle-color: #cfcfcf;
 }
 
 [data-mobrix-ui-id="radio-button"][data-mobrix-ui-styled="true"][data-mobrix-ui-dark="true"] {
