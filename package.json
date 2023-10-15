@@ -31,7 +31,6 @@
   "homepage": "https://github.com/CianciarusoCataldo/mobrix-ui#readme",
   "peerDependencies": {
     "classnames": "^2.3.2",
-    "mobrix-ui-tools": "^0.6.0",
     "react": ">=16"
   },
   "devDependencies": {
