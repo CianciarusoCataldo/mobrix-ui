@@ -40,6 +40,7 @@ const DismissableCard: DismissableCardComponent = ({
               dark={commonProps.dark}
               unstyled
               className="card-dismiss-button"
+              testId="card_dismiss_button"
               onClick={() => setValue(true)}
             >
               {xIcon}

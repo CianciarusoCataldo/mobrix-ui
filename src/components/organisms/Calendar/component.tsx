@@ -84,7 +84,7 @@ const CalendarComponent: MobrixUiReactiveComponent<
         return (
           <Button
             key={"date-button-" + indexDay}
-            test-id={isDisabled ? "disabled_date_button" : "date_button_" + day}
+            testId={isDisabled ? "disabled_date_button" : "date_button_" + day}
             unstyled
             dark={commonProps.dark}
             style={{ width: "100%" }}
@@ -151,7 +151,7 @@ const CalendarComponent: MobrixUiReactiveComponent<
           dark={commonProps.dark}
           unstyled
           key={"arrow_" + direction}
-          id={"arrow_" + direction}
+          testId={"arrow_" + direction}
           className={classNames("arrow", direction, labelClassName || "decorated")}
         >
           {arrowIcon}
@@ -174,7 +174,7 @@ const CalendarComponent: MobrixUiReactiveComponent<
     components.push(
       <Table
         key="calendar_table"
-        id="calendar-table"
+        testId="calendar-table"
         unstyled={commonProps.unstyled}
         shadow={shadow}
         dark={commonProps.dark}

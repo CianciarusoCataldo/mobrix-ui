@@ -1,5 +1,5 @@
 import React from "react";
-import { Calendar, Container, Label } from "../../mobrix-ui-preview";
+import { Calendar, Container, DatePicker, Label } from "../../mobrix-ui-preview";
 
 const AtomsPage = () => {
   const ComponentDemo = ({
@@ -42,6 +42,19 @@ const AtomsPage = () => {
           </div>
         }
         name="Calendar"
+      />
+      <ComponentDemo
+        Component={
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <div style={{ display: "flex", flexDirection: "column", padding: "0.6rem" }}>
+              <DatePicker fromToday={false} labelClassName="calendar-test-label"/>
+            </div>
+            <DatePicker />
+            <DatePicker dark fromToday={false} />
+            <DatePicker dark />
+          </div>
+        }
+        name="DatePicker"
       />
     </Container>
   );

@@ -21,12 +21,12 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
 }) => {
   const dropdownFields: Record<string, string | boolean | number> = fields
     ? Object.keys(fields).reduce(
-        (o, key) => ({
-          ...o,
-          [key]: null,
-        }),
-        {}
-      )
+      (o, key) => ({
+        ...o,
+        [key]: null,
+      }),
+      {}
+    )
     : {};
 
   const [values, setValues] =
@@ -63,7 +63,8 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
           )}
           <FieldElement
             value={value}
-            key={`form_field_${index}_element`}
+            key={`form-field-${field}`}
+            testId={`form_field_${field}`}
             className={"form-input " + type}
             placeholder={fieldSettings.placeholder}
             onChange={callBack}
@@ -81,7 +82,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
       key="mobrix_ui_form_submit_button"
       className="submit-button"
       dark={!commonProps.dark}
-      id="form_submit_button"
+      testId="form_submit_button"
       onClick={() => {
         onSubmit && onSubmit(values);
       }}

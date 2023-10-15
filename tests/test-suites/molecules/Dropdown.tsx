@@ -12,9 +12,9 @@ const dropdownTest = () => {
           value={2}
         />
       );
-      wrapper.find('button[data-id="options_menu"]').simulate("click");
-      wrapper.find('button[data-id="dropdown_option_1"]').simulate("focus");
-      wrapper.find('button[data-id="dropdown_option_1"]').simulate("click");
+      wrapper.find('[data-mobrix-ui-test="options_menu"]').simulate("click");
+      wrapper.find('[data-mobrix-ui-test="dropdown_option_1"]').simulate("focus");
+      wrapper.find('[data-mobrix-ui-test="dropdown_option_1"]').simulate("click");
       expect(wrapper);
       wrapper = mount(<Dropdown />);
       expect(wrapper);
@@ -29,10 +29,10 @@ const dropdownTest = () => {
 
         />
       );
-      wrapper.find('button[data-id="options_menu"]').simulate("click");
-      wrapper.find('button[data-id="dropdown_option_1"]').simulate("focus");
+      wrapper.find('[data-mobrix-ui-test="options_menu"]').simulate("click");
+      wrapper.find('[data-mobrix-ui-test="dropdown_option_1"]').simulate("focus");
 
-      wrapper.find('button[data-id="dropdown_option_1"]').simulate("click");
+      wrapper.find('[data-mobrix-ui-test="dropdown_option_1"]').simulate("click");
 
       expect(onChangeStub).lastCalledWith(1);
     });
@@ -49,29 +49,29 @@ const dropdownTest = () => {
         );
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "Enter" });
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "Enter" });
 
-        wrapper.find('div[id="mobrix-ui-dropdown"]').simulate("focus");
+        wrapper.find('[data-mobrix-ui-id="dropdown"]').simulate("focus");
 
         //Selecting an item
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "Enter" });
 
         expect(onChangeStub).lastCalledWith(1);
@@ -87,12 +87,12 @@ const dropdownTest = () => {
           />
         );
 
-        wrapper.find('div[id="mobrix-ui-dropdown"]').simulate("focus");
+        wrapper.find('[data-mobrix-ui-id="dropdown"]').simulate("focus");
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "Enter" });
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "Escape" });
         expect(onChangeStub).not.toBeCalled;
       });
@@ -107,35 +107,35 @@ const dropdownTest = () => {
           />
         );
 
-        wrapper.find('div[id="mobrix-ui-dropdown"]').simulate("focus");
+        wrapper.find('[data-mobrix-ui-id="dropdown"]').simulate("focus");
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "Enter" });
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "Escape" });
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowUp" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mobrix-ui-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowUp" });
 
         expect(onChangeStub).not.toBeCalled;

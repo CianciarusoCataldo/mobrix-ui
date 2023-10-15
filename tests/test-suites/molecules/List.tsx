@@ -19,7 +19,7 @@ const listTest = () => {
           elements={["Test element 1", "Test element 2"]}
         />
       );
-      wrapper.find('[data-id="list_element_0"]').simulate("click");
+      wrapper.find('[data-mobrix-ui-test="list_element_0"]').simulate("click");
       expect(onChangeStub).toBeCalledWith(0);
     });
   });

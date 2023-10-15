@@ -52,6 +52,8 @@ export interface CommonProps {
 
   /** callback called when a key is pressed when inside the component */
   onKeyDown?: (keyEvent: any) => void;
+
+  testId?: string;
 }
 
 /**

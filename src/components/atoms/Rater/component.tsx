@@ -54,7 +54,7 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
           onMouseLeave={() => {
             setHover(null);
           }}
-          id={`vote_${i}`}
+          testId={`vote_${i}`}
         >
           {ICONS[voteType][iconToShow]}
         </Button>

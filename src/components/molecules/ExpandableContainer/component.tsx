@@ -30,7 +30,7 @@ const expandableContainerComponent: MobrixUiReactiveComponent<
         onChange(!compact);
         setCompact(!compact);
       }}
-      id="expandable_container_arrow_button"
+      testId="expandable_container_arrow_button"
       className="expandable-container-arrow-button"
       key="arrow_button"
       dark={dark}

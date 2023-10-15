@@ -6,14 +6,14 @@ const toggleTest = () => {
   describe("Toggle", () => {
     test("Rendering test", () => {
       let wrapper = mount(<Toggle />);
-      wrapper.find("#mobrix-ui-toggle").simulate("click");
+      wrapper.find('[data-mobrix-ui-id="toggle"]').simulate("click");
       expect(wrapper);
     });
 
     test("Clicking on the toggle switch its status and trigger the onChange callback", () => {
       const onChangeStub = jest.fn();
       let wrapper = mount(<Toggle onChange={onChangeStub} />);
-      wrapper.find("#mobrix-ui-toggle").simulate("click");
+      wrapper.find('[data-mobrix-ui-id="toggle"]').simulate("click");
       expect(onChangeStub).toBeCalled;
     });
 
@@ -24,7 +24,7 @@ const toggleTest = () => {
       );
 
       wrapper
-        .find("#mobrix-ui-toggle")
+        .find('[data-mobrix-ui-id="toggle"]')
         .simulate("keyDown", { keyCode: 13, code: "Enter" });
 
       expect(onChangeStub).toBeCalled;

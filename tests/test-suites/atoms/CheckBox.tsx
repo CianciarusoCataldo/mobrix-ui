@@ -7,9 +7,9 @@ const checkBoxTest = () => {
     test("Clicking on the checkbox trigger the onChange callback", () => {
       const onChangeStub = jest.fn();
       const wrapper = mount(<CheckBox onChange={onChangeStub} />);
-      wrapper.find('div[id^="mobrix-ui"]').simulate("click");
+      wrapper.find('[data-mobrix-ui-id="checkbox"]').simulate("click");
       wrapper
-      .find('div[id^="mobrix-ui"]')
+      .find('[data-mobrix-ui-id="checkbox"]')
       .simulate("keyDown", { keyCode: 13, code: "Alt" });
       expect(onChangeStub).toBeCalledWith(true);
     });
@@ -19,14 +19,14 @@ const checkBoxTest = () => {
       let wrapper = mount(<CheckBox onKeyDown={() => {}} />);
 
       wrapper
-        .find('div[id^="mobrix-ui"]')
+        .find('[data-mobrix-ui-id="checkbox"]')
         .simulate("keyDown", { keyCode: 13, code: "Enter" });
 
       expect(onChangeStub).toBeCalled;
 
       onChangeStub.mockReset();
       wrapper
-        .find('div[id^="mobrix-ui"]')
+        .find('[data-mobrix-ui-id="checkbox"]')
         .simulate("keyDown", { keyCode: 13, code: "Space" });
 
       expect(onChangeStub).toBeCalled;

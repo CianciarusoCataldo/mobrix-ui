@@ -13,22 +13,11 @@ const modalTest = () => {
       expect(wrapper);
 
       wrapper = mount(
-        <Modal overlayClassName="test-classname" onFocusLost={() => {}}>
+        <Modal overlayClassName="test-classname" onFocusLost={() => { }}>
           <p>Modal content</p>
         </Modal>
       );
       expect(wrapper);
-    });
-
-    test("Clicking on the X icon trigger the onClose callback", () => {
-      const onCloseStub = jest.fn();
-      const wrapper = mount(
-        <Modal overlayClassName="test-classname" onClose={onCloseStub}>
-          <p>Modal content</p>
-        </Modal>
-      );
-      wrapper.find('[data-id="card_dismiss_button"]').simulate("click");
-      expect(onCloseStub).toBeCalled;
     });
   });
 };

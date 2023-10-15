@@ -25,12 +25,12 @@ const calendarTest = () => {
         />
       );
       wrapper
-        .find("#mobrix-ui-calendar")
-        .find('[data-id="date_button_3"]')
+        .find("[data-mobrix-ui-id='calendar']")
+        .find('[data-mobrix-ui-test="date_button_3"]')
         .simulate("click");
       wrapper
-        .find("#mobrix-ui-calendar")
-        .find('[data-id="arrow_left"]')
+        .find("[data-mobrix-ui-id='calendar']")
+        .find('[data-mobrix-ui-test="arrow_left"]')
         .simulate("click");
       expect(wrapper);
     });
@@ -42,8 +42,8 @@ const calendarTest = () => {
         <Calendar fromToday={false} onChange={onChangeStub} />
       );
       wrapper
-        .find("#mobrix-ui-calendar")
-        .find('[data-id="date_button_4"]')
+        .find("[data-mobrix-ui-id='calendar']")
+        .find('[data-mobrix-ui-test="date_button_4"]')
         .simulate("click");
 
       expect(onChangeStub).toBeCalled;
@@ -58,15 +58,15 @@ const calendarTest = () => {
 
       for (let i = 0; i < 11; i++) {
         wrapper
-          .find("#mobrix-ui-calendar")
-          .find('[data-id="arrow_right"]')
+          .find("[data-mobrix-ui-id='calendar']")
+          .find('[data-mobrix-ui-test="arrow_right"]')
           .simulate("click");
       }
 
       for (let i = 0; i < 11; i++) {
         wrapper
-          .find("#mobrix-ui-calendar")
-          .find('[data-id="arrow_left"]')
+          .find("[data-mobrix-ui-id='calendar']")
+          .find('[data-mobrix-ui-test="arrow_left"]')
           .simulate("click");
       }
       expect(onViewChangeStub).toBeCalled;

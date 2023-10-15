@@ -16,34 +16,22 @@ const modalBuilder: MoBrixUiComponent<
   hide,
   ...commonProps
 }) => {
-  const [customClassName, setClassName] =
-    React.useState<string>("component-hidden");
+    const [customClassName, setClassName] =
+      React.useState<string>("component-hidden");
 
-  return {
-    Component: modalComponent({
-      children,
-      className,
-      onClose:
-        onClose &&
-        (() => {
-          setClassName("fade-out");
-          onClose();
-          /* istanbul ignore next */
-          setTimeout(() => {
-            setClassName("component-hidden");
-          }, 300);
-        }),
-      closeOutside,
-      hide,
-      ...commonProps,
-    }),
-    commonProps: {
-      ...commonProps,
-      className: classNames(overlayClassName, {
-        [customClassName]: hide,
+    return {
+      Component: modalComponent({
+        children,
+        className,
+        hide,
+        ...commonProps,
       }),
-    },
+      commonProps: {
+        ...commonProps,
+        hide,
+        className: classNames(overlayClassName),
+      },
+    };
   };
-};
 
 export default modalBuilder;

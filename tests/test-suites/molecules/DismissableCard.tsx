@@ -18,7 +18,7 @@ const cardTest = () => {
 
       const wrapper = mount(<DismissableCard onClose={onCloseStub} />);
 
-      wrapper.find(".card-dismiss-button").at(0).simulate("click");
+      wrapper.find('[data-mobrix-ui-test="card_dismiss_button"]').at(0).simulate("click");
       expect(onCloseStub).toBeCalled;
     });
   });

@@ -45,7 +45,7 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
         <Button
           className="dot"
           unstyled
-          id={`dot_${index}`}
+          testId={`dot_${index}`}
           key={`dot_${index}`}
           onMouseEnter={() => setHoveredDot(index)}
           onMouseLeave={() => setHoveredDot(null)}
@@ -66,7 +66,7 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
     <div className="elements" key="mobrix_ui_carousel_elements">
       <Button
         dark={dark}
-        id="left_arrow"
+        testId="left_arrow"
         className={classNames("arrow prev", {
           disabled: item === 0,
         })}
@@ -86,7 +86,7 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
         className={classNames("arrow next", {
           disabled: item === elements.length - 1,
         })}
-        id="right_arrow"
+        testId="right_arrow"
         disabled={item === elements.length - 1}
         onClick={() => {
           setActiveClassname("from-right");

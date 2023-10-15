@@ -28,43 +28,42 @@ const datePickerTest = () => {
           days={defaultDays}
         />
       );
-      wrapper.find('[data-id="date_picker_day_selector"]').simulate("click");
+      wrapper.find('[data-mobrix-ui-test="date_picker_day_selector"]').simulate("click");
       wrapper
         .find(
-          '[data-id="date_picker_day_selector"] [data-id="dropdown_option_0"]'
+          '[data-mobrix-ui-test="date_picker_day_selector"] [data-mobrix-ui-test="dropdown_option_0"]'
         )
         .simulate("click");
       expect(onChangeStub).toBeCalled;
       onChangeStub.mockReset();
 
-      wrapper.find('[data-id="date_picker_day_selector"]').simulate("click");
+      wrapper.find('[data-mobrix-ui-test="date_picker_day_selector"]').simulate("click");
       wrapper
         .find(
-          '[data-id="date_picker_month_selector"] [data-id="dropdown_option_0"]'
+          '[data-mobrix-ui-test="date_picker_month_selector"] [data-mobrix-ui-test="dropdown_option_0"]'
         )
         .simulate("click");
       expect(onChangeStub).toBeCalled;
       onChangeStub.mockReset();
 
-      wrapper.find('[data-id="date_picker_day_selector"]').simulate("click");
+      wrapper.find('[data-mobrix-ui-test="date_picker_day_selector"]').simulate("click");
       wrapper
         .find(
-          '[data-id="date_picker_year_selector"] [data-id="dropdown_option_0"]'
+          '[data-mobrix-ui-test="date_picker_year_selector"] [data-mobrix-ui-test="dropdown_option_0"]'
         )
         .simulate("click");
       expect(onChangeStub).toBeCalled;
 
       onChangeStub.mockReset();
       wrapper = mount(<DatePicker fromToday={false} onChange={onChangeStub} />);
-      wrapper.find('[data-id="date_picker_calendar_button"]').simulate("click");
+      wrapper.find('[data-mobrix-ui-test="date_picker_calendar_button"]').simulate("click");
       wrapper
-        .find("#mobrix-ui-calendar")
-        .find('[data-id="date_button_4"]')
+        .find("[data-mobrix-ui-id='calendar']")
+        .find('[data-mobrix-ui-test="date_button_4"]')
         .simulate("click");
 
       wrapper
-        .find("#mobrix-ui-card")
-        .find('[data-id="card_dismiss_button"]')
+        .find('[data-mobrix-ui-test="close_button"]')
         .simulate("click");
 
       expect(onChangeStub).toBeCalled;

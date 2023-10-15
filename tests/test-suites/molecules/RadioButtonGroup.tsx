@@ -10,7 +10,7 @@ const radioButtonGroupTest = () => {
       wrapper = mount(
         <RadioButtonGroup buttons={[{ text: "Test radio button" }]} />
       );
-      wrapper.find('[data-id="radio_component_0"]').simulate("click");
+      wrapper.find('[data-mobrix-ui-test="radio_component_0"]').simulate("click");
       expect(wrapper);
     });
 
@@ -25,7 +25,7 @@ const radioButtonGroupTest = () => {
           ]}
         />
       );
-      wrapper.find('[data-id="radio_component_0"]').simulate("click");
+      wrapper.find('[data-mobrix-ui-test="radio_component_0"]').simulate("click");
       expect(onChangeStub).toBeCalledWith(0);
     });
   });

@@ -111,7 +111,7 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
           }}
           dark={dark}
           className="button"
-          id="options_menu"
+          testId="options_menu"
           key="options-menu"
           a11y={false}
         >
@@ -122,19 +122,20 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
           >
             {selectedItem}
           </div>
-          <div
+          <Container
+            hide={hideArrow}
+            unstyled
             key="icon"
-            tabIndex={-1}
+            a11y={false}
             className={classnames("icon", {
               rotate: isVisible,
               "rotate-back": !isVisible,
-              "component-hidden": hideArrow,
             })}
           >
             <p tabIndex={-1}>
               <i className="arrow-icon"></i>
             </p>
-          </div>
+          </Container>
         </Button>,
         <Popup
           key="options"
@@ -150,7 +151,7 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
               onFocus={() => {
                 selectItem(index);
               }}
-              id={`dropdown_option_${index}`}
+              testId={`dropdown_option_${index}`}
               onClick={() => {
                 onChange(index);
                 setValue(index);

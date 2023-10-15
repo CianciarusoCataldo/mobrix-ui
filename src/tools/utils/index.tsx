@@ -57,6 +57,7 @@ export const buildMobrixUiStandardComponent = ({
     "data-mobrix-ui-animated": commonProps.animated,
     "data-mobrix-ui-hide": commonProps.hide,
     "data-mobrix-ui-a11y": commonProps.a11y,
+    "data-mobrix-ui-test": commonProps.testId,
     "data-mobrix-ui-a11y-dark":
       a11y &&
       (commonProps.a11yDark !== undefined
