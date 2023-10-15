@@ -3,7 +3,7 @@ import React from "react";
 import {
   DropdownProps,
   MobrixUiReactiveComponentBuilder,
-} from "mobrix-ui-types";
+} from "../../../types";
 
 import classnames from "classnames";
 

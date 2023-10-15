@@ -1,6 +1,6 @@
 import React from "react";
 
-import { MobrixUiReactiveComponent, ToggleProps } from "mobrix-ui-types";
+import { MobrixUiReactiveComponent, ToggleProps } from "../../../types";
 
 import classNames from "classnames";
 

@@ -2,7 +2,7 @@ import {
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
-} from "mobrix-ui-types-essential";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} RadioButton component props

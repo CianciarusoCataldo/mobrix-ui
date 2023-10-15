@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { ModalComponent } from "mobrix-ui-types";
+import { ModalComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
+import { buildMobrixUiStandardComponent } from "../../../tools";
 
 import modalBuilder from "./builder";
 

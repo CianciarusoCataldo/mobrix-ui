@@ -3,7 +3,7 @@ import {
   ComponentWithValue,
   MoBrixUiComponent,
   NumericInputComponent,
-} from "mobrix-ui-types-essential";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Slider component props

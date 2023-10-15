@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { ButtonComponent } from "mobrix-ui-types";
+import { ButtonComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
+import { buildMobrixUiStandardComponent } from "../../../tools";
 
 /**
  * A button component, designed for a lot of scenarios. Can be used as is, or as a clickable image

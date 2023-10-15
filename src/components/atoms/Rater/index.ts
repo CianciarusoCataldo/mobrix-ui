@@ -1,9 +1,9 @@
 import "./styles.css";
 
 import classnames from "classnames";
-import { RaterComponent } from "mobrix-ui-types";
+import { RaterComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiReactiveComponent } from "../../../tools";
 
 import raterComponent from "./component";
 

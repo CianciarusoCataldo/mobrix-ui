@@ -2,9 +2,9 @@ import React from "react";
 
 import "./styles.css";
 
-import { DismissableCardComponent } from "mobrix-ui-types";
+import { DismissableCardComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiReactiveComponent } from "../../../tools";
 
 import { xIcon } from "./icons";
 import { Button } from "../../atoms";

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BuilderProps, DrawerProps, MoBrixUiComponent } from "mobrix-ui-types";
+import { BuilderProps, DrawerProps, MoBrixUiComponent } from "../../../types";
 
 import classNames from "classnames";
 

@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { ExpandableContainerComponent } from "mobrix-ui-types";
+import { ExpandableContainerComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiReactiveComponent } from "../../../tools";
 
 import expandableContainerComponent from "./component";
 

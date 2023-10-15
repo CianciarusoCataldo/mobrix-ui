@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { InputComponent } from "mobrix-ui-types";
+import { InputComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiReactiveComponent } from "../../../tools";
 
 /**
  * A flexible text input element

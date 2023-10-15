@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { SpinnerComponent } from "mobrix-ui-types";
+import { SpinnerComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
+import { buildMobrixUiStandardComponent } from "../../../tools";
 
 import defaultIcons from "./icons";
 

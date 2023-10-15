@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { SliderComponent } from "mobrix-ui-types";
+import { SliderComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiReactiveComponent } from "../../../tools";
 
 /**
  * A modern `range` input component, to control a value using a simple slider.

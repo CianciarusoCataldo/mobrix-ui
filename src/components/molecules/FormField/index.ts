@@ -5,9 +5,9 @@ import {
   FormFieldProps,
   FormFieldComponent,
   MobrixUiProps,
-} from "mobrix-ui-types";
+} from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiReactiveComponent } from "../../../tools";
 
 import FormFieldInternalComponent from "./component";
 

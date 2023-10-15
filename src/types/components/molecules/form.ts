@@ -1,7 +1,7 @@
 import {
   ComponentWithChildren,
   MoBrixUiComponent,
-} from "mobrix-ui-types-essential";
+} from "../../../types/global";
 
 import { FormFieldProps } from "../atoms/form-field";
 

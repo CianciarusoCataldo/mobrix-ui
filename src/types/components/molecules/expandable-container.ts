@@ -2,7 +2,7 @@ import {
   BuilderComponent,
   ComponentWithCallback,
   MoBrixUiComponent,
-} from "mobrix-ui-types-essential";
+} from "../../../types/global";
 
 import { ContainerProps } from "./container";
 

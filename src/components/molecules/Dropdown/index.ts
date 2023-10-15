@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { DropdownComponent } from "mobrix-ui-types";
+import { DropdownComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiReactiveComponent } from "../../../tools";
 
 import dropdownComponentBuilder from "./builder";
 

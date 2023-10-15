@@ -3,7 +3,7 @@ import {
   ComponentWithValue,
   GenericInputComponent,
   MoBrixUiComponent,
-} from "mobrix-ui-types-essential";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Input component props

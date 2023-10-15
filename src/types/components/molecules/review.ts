@@ -1,7 +1,7 @@
 import {
   ComponentWithIcon,
   MoBrixUiComponent,
-} from "mobrix-ui-types-essential";
+} from "../../../types/global";
 
 import { RaterProps } from "./rater";
 

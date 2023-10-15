@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { ReviewComponent } from "mobrix-ui-types";
+import { ReviewComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
+import { buildMobrixUiStandardComponent } from "../../../tools";
 
 import reviewComponent from "./component";
 

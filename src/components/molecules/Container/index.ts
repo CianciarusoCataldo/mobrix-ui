@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { ContainerComponent } from "mobrix-ui-types";
+import { ContainerComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
+import { buildMobrixUiStandardComponent } from "../../../tools";
 
 /**
  * A simple but smart container, enhanced with MoBrix-ui common props

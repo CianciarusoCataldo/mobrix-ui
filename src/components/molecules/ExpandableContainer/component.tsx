@@ -5,7 +5,7 @@ import classNames from "classnames";
 import {
   ExpandableContainerProps,
   MobrixUiReactiveComponent,
-} from "mobrix-ui-types";
+} from "../../../types";
 
 import Button from "../../atoms/Button";
 

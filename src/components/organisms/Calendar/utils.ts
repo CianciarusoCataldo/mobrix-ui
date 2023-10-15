@@ -1,4 +1,4 @@
-import { CalendarDate } from "mobrix-ui-types";
+import { CalendarDate } from "../../../types";
 
 export const leapYear = (year: number) => {
   return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;

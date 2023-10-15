@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { LabelComponent } from "mobrix-ui-types";
+import { LabelComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
+import { buildMobrixUiStandardComponent } from "../../../tools";
 
 /**
  * A text wrapper, with many options to customize its content

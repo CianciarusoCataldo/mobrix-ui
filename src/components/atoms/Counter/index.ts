@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { CounterComponent } from "mobrix-ui-types";
+import { CounterComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiReactiveComponent } from "../../../tools";
 
 /**
  * A flexible numeric input element

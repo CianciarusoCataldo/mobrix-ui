@@ -1,7 +1,7 @@
 import {
   ClosableComponent,
   MoBrixUiComponent,
-} from "mobrix-ui-types-essential";
+} from "../../../types/global";
 
 import { CardProps } from "./card";
 

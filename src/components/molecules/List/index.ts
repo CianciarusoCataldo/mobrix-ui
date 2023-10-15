@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { ListComponent } from "mobrix-ui-types";
+import { ListComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
+import { buildMobrixUiStandardComponent } from "../../../tools";
 
 import listComponent from "./component";
 

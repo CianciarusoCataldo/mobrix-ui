@@ -2,7 +2,7 @@ import {
   ClosableComponent,
   ComponentWithCallback,
   MoBrixUiComponent,
-} from "mobrix-ui-types-essential";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/TabViewer MoBrix-ui TabViewer} single Tab

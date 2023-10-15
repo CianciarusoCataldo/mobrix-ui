@@ -4,7 +4,7 @@ import {
   BuilderComponent,
   MoBrixUiComponent,
   ModalProps,
-} from "mobrix-ui-types";
+} from "../../../types";
 
 import Card from "../Card";
 import Container from "../Container";

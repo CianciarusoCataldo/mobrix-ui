@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { CarouselComponent } from "mobrix-ui-types";
+import { CarouselComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiReactiveComponent } from "../../../tools";
 
 import carouselComponent from "./component";
 

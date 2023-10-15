@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { TabViewerComponent } from "mobrix-ui-types";
+import { TabViewerComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiReactiveComponent } from "../../../tools";
 
 import tabViewerComponent from "./component";
 

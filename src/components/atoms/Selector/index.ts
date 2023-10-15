@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { SelectorComponent } from "mobrix-ui-types";
+import { SelectorComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiReactiveComponent } from "../../../tools";
 
 import selectorComponent from "./component";
 

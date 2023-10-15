@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { FormComponent } from "mobrix-ui-types";
+import { FormComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
+import { buildMobrixUiStandardComponent } from "../../../tools";
 
 import formComponent from "./component";
 

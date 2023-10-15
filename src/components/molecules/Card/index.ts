@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { CardComponent } from "mobrix-ui-types";
+import { CardComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
+import { buildMobrixUiStandardComponent } from "../../../tools";
 
 import cardComponent from "./component";
 

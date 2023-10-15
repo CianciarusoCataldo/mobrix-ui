@@ -1,6 +1,6 @@
 import React from "react";
 
-import { MoBrixUiComponent, TableProps } from "mobrix-ui-types";
+import { MoBrixUiComponent, TableProps } from "../../../types";
 
 const tableComponent: MoBrixUiComponent<TableProps, JSX.Element[]> = ({
   headers,

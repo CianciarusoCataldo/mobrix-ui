@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { RadioButtonGroupComponent } from "mobrix-ui-types";
+import { RadioButtonGroupComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiReactiveComponent } from "../../../tools";
 
 import radioButtonGroupComponent from "./component";
 

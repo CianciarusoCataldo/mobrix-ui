@@ -1,6 +1,3 @@
-/** Shared types */
-export * from "mobrix-ui-types-essential";
-
 /** Atom components types */
 export * from "./atoms";
 

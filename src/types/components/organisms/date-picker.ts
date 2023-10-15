@@ -2,7 +2,7 @@ import {
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
-} from "mobrix-ui-types-essential";
+} from "../../../types/global";
 
 import { CalendarDate, CalendarProps } from "./calendar";
 

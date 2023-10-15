@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { CheckBoxComponent } from "mobrix-ui-types";
+import { CheckBoxComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "mobrix-ui-tools";
+import { buildMobrixUiReactiveComponent } from "../../../tools";
 
 import { DefaultCheckIcon } from "./icons";
 

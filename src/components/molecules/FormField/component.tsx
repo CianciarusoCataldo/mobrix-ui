@@ -5,7 +5,7 @@ import {
   BuilderComponent,
   FormFieldProps,
   MobrixUiReactiveComponent,
-} from "mobrix-ui-types";
+} from "../../../types";
 
 import { fieldFormatters } from "./utils";
 

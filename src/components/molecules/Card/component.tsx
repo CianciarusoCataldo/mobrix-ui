@@ -4,7 +4,7 @@ import {
   MoBrixUiComponent,
   CardProps,
   BuilderComponent,
-} from "mobrix-ui-types";
+} from "../../../types";
 
 import { Divider } from "../../atoms";
 

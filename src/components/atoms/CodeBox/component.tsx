@@ -4,7 +4,7 @@ import {
   BuilderComponent,
   CodeBoxProps,
   MoBrixUiComponent,
-} from "mobrix-ui-types";
+} from "../../../types";
 
 import { parseCode } from "./parser";
 

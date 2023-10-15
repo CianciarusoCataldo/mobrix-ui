@@ -4,7 +4,7 @@ import {
   BuilderComponent,
   MoBrixUiComponent,
   PopupProps,
-} from "mobrix-ui-types";
+} from "../../../types";
 
 const popupComponent: MoBrixUiComponent<PopupProps, BuilderComponent> = ({
   className,

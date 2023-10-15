@@ -1,8 +1,8 @@
 import "./styles.css";
 
-import { LinkComponent } from "mobrix-ui-types";
+import { LinkComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "mobrix-ui-tools";
+import { buildMobrixUiStandardComponent } from "../../../tools";
 
 /**
  * A re-defined `<a>` component, designed to be better used with links
