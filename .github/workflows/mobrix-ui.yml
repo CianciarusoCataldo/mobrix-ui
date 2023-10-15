@@ -35,7 +35,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm i
-    - run: npm test 
+    - run: npm test --verbose
     - name: Upload coverage to Code Climate
       uses: paambaati/codeclimate-action@v3.0.0
       env:
