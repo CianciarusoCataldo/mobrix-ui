@@ -7,6 +7,30 @@
   --mobrix-ui-focus-color-dark: #fb7a10;
   --mobrix-ui-background-dark: linear-gradient(to right, #2d3748, #1d232e);
   --mobrix-ui-background-light: linear-gradient(to right, #fff, #eaebec);
+  --mobrix-ui-radio-background-light: radial-gradient(
+    #f1f1f1 20%,
+    #e4e4e4 30%,
+    #bebebe 55%,
+    #f0f0f0 20%
+  );
+  --mobrix-ui-radio-background-dark: radial-gradient(
+    #000564 20%,
+    #010550 30%,
+    #1d1f44 55%,
+    #000564 20%
+  );
+  --mobrix-ui-radio-background-hover-light: radial-gradient(
+    #f1f1f1 20%,
+    #cfcfcf 30%,
+    #a7a7a7 55%,
+    #f0f0f0 20%
+  );
+  --mobrix-ui-radio-background-hover-dark: radial-gradient(
+    #000564 20%,
+    #040a6e 30%,
+    #252857 55%,
+    #000564 20%
+  );
 }
 
 [data-mobrix-ui-id],
@@ -36,6 +60,7 @@
     var(--mobrix-ui-text-color-light)
   );
   --mobrix-ui-link-color: rgb(37, 99, 235);
+  --mobrix-ui-radio-background: var(--mobrix-ui-radio-background-light);
 }
 
 [data-mobrix-ui-id][data-mobrix-ui-dark="true"] {
@@ -52,14 +77,17 @@
     var(--mobrix-ui-text-color-dark)
   );
   --mobrix-ui-link-color: white;
+  --mobrix-ui-radio-background: var(--mobrix-ui-radio-background-dark);
 }
 
 [data-mobrix-ui-id]:not([data-mobrix-ui-dark="true"]):hover {
   --mobrix-ui-link-color: rgb(33, 89, 211);
+  --mobrix-ui-radio-background: var(--mobrix-ui-radio-background-hover-light);
 }
 
 [data-mobrix-ui-id][data-mobrix-ui-dark="true"]:hover {
   --mobrix-ui-link-color: rgb(165, 174, 187);
+  --mobrix-ui-radio-background: var(--mobrix-ui-radio-background-hover-dark);
 }
 
 [data-mobrix-ui-id][data-mobrix-ui-a11y="true"]:not(
