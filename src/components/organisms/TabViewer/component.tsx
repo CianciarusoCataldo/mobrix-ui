@@ -28,7 +28,7 @@ const tabViewerComponent: MobrixUiReactiveComponent<number, TabViewerProps> = ({
           selected: !unstyled && index === value,
         })}
         unstyled
-        id={`tab_${index}`}
+        testId={`tab_${index}`}
         key={`tab_${index}`}
         onClick={() => {
           setValue(index);
@@ -42,7 +42,7 @@ const tabViewerComponent: MobrixUiReactiveComponent<number, TabViewerProps> = ({
   <Container
     className={classNames(tabViewClassName, { "tab-view": !unstyled })}
     dark={dark}
-    id="tabs_view"
+    testId="tabs_view"
     key="tabs_view"
     unstyled={unstyled}
   >

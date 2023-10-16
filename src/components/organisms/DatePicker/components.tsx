@@ -113,7 +113,7 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
           <Button
             unstyled
             dark={commonProps.dark}
-            onClick={() => setVisible(!isVisible)}
+            onClick={() => setVisible(true)}
             key="date_picker_calendar_button"
             testId="date_picker_calendar_button"
             className="element"
@@ -132,14 +132,14 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
       >
         <div>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <Button dark unstyled style={{ marginLeft: "auto" }} onClick={() => {
-              console.log("test")
+            <Button testId="date_picker_close_button" dark unstyled style={{ marginLeft: "auto" }} onClick={() => {
               setVisible(false)
             }}>{xIcon}</Button>
           </div>
           <Calendar
             animated={animated}
             className="date-picker-calendar"
+            testId="date_picker_calendar"
             days={customDays}
             months={customMonths}
             startMonth={startMonth}

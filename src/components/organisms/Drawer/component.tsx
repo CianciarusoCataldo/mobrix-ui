@@ -48,7 +48,7 @@ const DrawerInternalComponent: MoBrixUiComponent<
         key="drawer_buttons_panel"
         dark={dark}
         unstyled
-        id="drawer_close_button"
+        testId="drawer_close_button"
         onClick={() => {
           onClose!();
         }}

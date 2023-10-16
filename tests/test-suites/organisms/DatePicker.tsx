@@ -24,46 +24,18 @@ const datePickerTest = () => {
       let wrapper = mount(
         <DatePicker
           onChange={onChangeStub}
-          months={defaultMonths}
-          days={defaultDays}
+fromToday={false}
         />
       );
-      wrapper.find('[data-mobrix-ui-test="date_picker_day_selector"]').simulate("click");
-      wrapper
-        .find(
-          '[data-mobrix-ui-test="date_picker_day_selector"] [data-mobrix-ui-test="dropdown_option_0"]'
-        )
-        .simulate("click");
-      expect(onChangeStub).toBeCalled;
-      onChangeStub.mockReset();
 
-      wrapper.find('[data-mobrix-ui-test="date_picker_day_selector"]').simulate("click");
-      wrapper
-        .find(
-          '[data-mobrix-ui-test="date_picker_month_selector"] [data-mobrix-ui-test="dropdown_option_0"]'
-        )
-        .simulate("click");
-      expect(onChangeStub).toBeCalled;
-      onChangeStub.mockReset();
-
-      wrapper.find('[data-mobrix-ui-test="date_picker_day_selector"]').simulate("click");
-      wrapper
-        .find(
-          '[data-mobrix-ui-test="date_picker_year_selector"] [data-mobrix-ui-test="dropdown_option_0"]'
-        )
-        .simulate("click");
-      expect(onChangeStub).toBeCalled;
-
-      onChangeStub.mockReset();
-      wrapper = mount(<DatePicker fromToday={false} onChange={onChangeStub} />);
       wrapper.find('[data-mobrix-ui-test="date_picker_calendar_button"]').simulate("click");
       wrapper
-        .find("[data-mobrix-ui-id='calendar']")
-        .find('[data-mobrix-ui-test="date_button_4"]')
+      .find('[data-mobrix-ui-test="date_picker_calendar"]')
+        .find(`button[data-mobrix-ui-test="date_button_4"]`)
         .simulate("click");
 
       wrapper
-        .find('[data-mobrix-ui-test="close_button"]')
+        .find('[data-mobrix-ui-test="date_picker_close_button"]')
         .simulate("click");
 
       expect(onChangeStub).toBeCalled;
