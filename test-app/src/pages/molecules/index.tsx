@@ -8,6 +8,7 @@ import {
   Dropdown,
   Button,
   FormField,
+  Form,
 } from "../../mobrix-ui-preview";
 import {
   Demo,
@@ -46,7 +47,7 @@ const MoleculesPage = () => {
   };
 
   return (
-    <Container className="App" dark style={{ height: "110%" }}>
+    <Container unstyled className="App" style={{ height: "110%" }}>
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -73,7 +74,7 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Card dark footer="footer" />
             <div style={{ marginTop: "20px" }} />
-            <Card dark header="header" body="body" footer="footer" />
+            <Card dark header="header" body="Card dark no background" footer="footer" noBackground />
             <div style={{ marginTop: "20px" }} />
             <Card dark noDividers header="header" body="body" footer="footer" />
             <div style={{ marginTop: "20px" }} />
@@ -101,13 +102,13 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Card unstyled footer="footer" />
             <div style={{ marginTop: "20px" }} />
-            <Card unstyled header="header" body="body" footer="footer" />
+            <Card unstyled header="header" body="Card unstyled" footer="footer" />
             <div style={{ marginTop: "20px" }} />
             <Card
               unstyled
               noHeaderDivider
               header="header"
-              body="body"
+              body="Card unstyled noHeaderDivider"
               footer="footer"
             />
             <div style={{ marginTop: "20px" }} />
@@ -115,7 +116,7 @@ const MoleculesPage = () => {
               unstyled
               noFooterDivider
               header="header"
-              body="body"
+              body="Card unstyled noFooterDivider"
               footer="footer"
             />
             <div style={{ marginTop: "20px" }} />
@@ -123,7 +124,7 @@ const MoleculesPage = () => {
               unstyled
               noDividers
               header="header"
-              body="body"
+              body="Card unstyled noDividers"
               footer="footer"
             />
           </div>
@@ -172,6 +173,8 @@ const MoleculesPage = () => {
             <DismissableCard footer="footer" /> <br />
             <div style={{ marginTop: "20px" }} />{" "}
             <DismissableCard header="header" body="body" footer="footer" />{" "}
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard noHover alwaysVisible header="Always visible nohover" body="body" footer="footer" />{" "}
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
               noDividers
@@ -306,13 +309,63 @@ const MoleculesPage = () => {
           />
         )}
       />
-
+      <ComponentDemo
+        name="Form"
+        Component={
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <Form
+              dark
+              submitLabel={"submit"}
+              fields={{
+                field1: {
+                  placeholder: "placeholder",
+                  header: "text",
+                },
+                field2: {
+                  placeholder: "placeholder",
+                  type: "boolean",
+                  header: "boolean",
+                },
+                field3: {
+                  placeholder: "placeholder",
+                  type: "numeric",
+                  header: "numeric",
+                },
+                field4: {
+                  placeholder: "placeholder",
+                  type: "radio",
+                  header: "radio",
+                },
+              }} />
+            <Form
+              submitLabel={"submit"}
+              fields={{
+                field1: {
+                  placeholder: "placeholder",
+                  header: "text",
+                },
+                field2: {
+                  placeholder: "placeholder",
+                  type: "boolean",
+                  header: "boolean",
+                },
+                field3: {
+                  placeholder: "placeholder",
+                  type: "numeric",
+                  header: "numeric",
+                },
+                field4: {
+                  placeholder: "placeholder",
+                  type: "radio",
+                  header: "radio",
+                },
+              }} />
+          </div>} />
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Table />
             <Table
-              format
               rows={[
                 ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
                 ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
@@ -323,7 +376,7 @@ const MoleculesPage = () => {
               ]}
             />
             <div style={{ marginTop: "20px" }} />
-            <Table format
+            <Table
               headers
               rows={[
                 ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
@@ -335,7 +388,7 @@ const MoleculesPage = () => {
               ]}
             />
             <div style={{ marginTop: "20px" }} />
-            <Table format
+            <Table
               dark
               rows={[
                 ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
@@ -347,7 +400,7 @@ const MoleculesPage = () => {
               ]}
             />
             <div style={{ marginTop: "20px" }} />
-            <Table format
+            <Table
               dark
               headers
               rows={[
@@ -360,7 +413,7 @@ const MoleculesPage = () => {
               ]}
             />
             <div style={{ marginTop: "20px" }} />
-            <Table format
+            <Table
               dark
               rows={[
                 ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
@@ -373,7 +426,7 @@ const MoleculesPage = () => {
             />
             <div style={{ marginTop: "20px" }} />
             <div style={{ display: "flex", flexDirection: "column", padding: "0.6rem" }}>
-              <Table format
+              <Table
                 dark
                 headers
                 rows={[

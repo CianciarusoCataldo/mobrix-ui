@@ -1,54 +1,66 @@
 import React from "react";
 
 import { MoBrixUiComponent, TableProps } from "../../../types";
-import classNames from "classnames";
 
-const tableComponent: MoBrixUiComponent<TableProps, JSX.Element[]> = ({
+const parseClassName = (className: string) => className ? { className } : {}
+
+const tableComponent: MoBrixUiComponent<TableProps, JSX.Element> = ({
   headers,
   rows = [],
-  format
+  cellClassName,
+  cellProps = {},
+  rowClassName,
+  rowProps = {},
+  headerClassName,
+  headersProps = {},
+  onClick = () => { },
+  propsCallback = () => ({})
 }) => {
-  let tableRows = rows;
-  const commponents: JSX.Element[] = [];
 
-  if (headers && tableRows.length > 0) {
-    commponents.push(
-      <thead key="table_head">
-        <tr data-mobrix-ui-class="table-row header-row">
-          {tableRows[0].map((header, index) => (
-            <th key={`header_${index}`} data-mobrix-ui-class="table-cell"
-            >
-              {header}
-            </th>
-          ))}
-        </tr>
-      </thead>
-    );
-
-    tableRows.splice(0, 1);
+  const props = {
+    row: { ...parseClassName(rowClassName), ...rowProps },
+    cell: { ...parseClassName(cellClassName), ...cellProps }
   }
 
-  commponents.push(
-    <tbody key="table_body">
-      {tableRows.map((row, rowIndex) => (
-        <tr
-          data-mobrix-ui-class="table-row"
-          key={`row_${rowIndex}`}
-        >
-          {row.map((element, index) => (
-            <td
+  let wrappers: {
+    wrapper: "td" | "th";
+    cellProps: Record<string, any>;
+    rowProps: Record<string, any>
+  }[] = rows.map(row =>
+    ({ wrapper: "td", cellProps: props.cell, rowProps: props.row }));
+
+  if (headers && rows.length > 0) {
+    wrappers[0].wrapper = "th"
+    wrappers[0].cellProps = { ...parseClassName(headerClassName), ...headersProps }
+  }
+
+  return <tbody key="table_body">
+    {rows.map((row, rowIndex) => (
+      <tr
+        data-mobrix-ui-table-row="true"
+        key={`row_${rowIndex}`}
+        {...rowProps}
+      >
+        {row.map((element, index) => {
+
+          const Wrapper = wrappers[rowIndex].wrapper
+
+          return (
+            <Wrapper
+              data-mobrix-ui-table-cell="true"
               key={`element_${rowIndex}_${index}`}
-              data-mobrix-ui-class={classNames("table-cell", { formatted: format })}
+              align="center"
+              onClick={() => onClick(rowIndex, index)}
+              {...cellProps}
+              {...propsCallback(rowIndex, index)}
             >
               {element}
-            </td>
-          ))}
-        </tr>
-      ))}
-    </tbody>
-  );
-
-  return commponents;
+            </Wrapper>
+          )
+        })}
+      </tr>
+    ))}
+  </tbody>;
 };
 
 export default tableComponent;

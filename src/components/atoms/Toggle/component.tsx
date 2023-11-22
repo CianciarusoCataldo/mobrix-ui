@@ -2,8 +2,6 @@ import React from "react";
 
 import { MobrixUiReactiveComponent, ToggleProps } from "../../../types";
 
-import classNames from "classnames";
-
 import { defaultIcon } from "./icons";
 
 const toggleComponent: MobrixUiReactiveComponent<boolean, ToggleProps> = ({
@@ -17,10 +15,8 @@ const toggleComponent: MobrixUiReactiveComponent<boolean, ToggleProps> = ({
 
   return (
     <div
-      className={classNames("toggle-icon", {
-        flip: !status,
-        "flip-back": status,
-      })}
+      data-mobrix-ui-flip={status}
+      data-mobrix-ui-class="toggle-icon"
     >
       {status === true ? iconOn : iconOff}
     </div>

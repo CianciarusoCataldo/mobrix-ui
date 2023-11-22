@@ -36,10 +36,11 @@ import { buildMobrixUiStandardComponent } from "../../../tools";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Divider: DividerComponent = (props) =>
+const Divider: DividerComponent = ({ additionalProps, ...commonProps }) =>
   buildMobrixUiStandardComponent({
     name: "divider",
-    commonProps: { ...props, a11y: false },
+    commonProps: { ...commonProps, a11y: false },
+    additionalProps
   });
 
 export default Divider;

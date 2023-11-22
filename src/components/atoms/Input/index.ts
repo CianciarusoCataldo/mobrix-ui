@@ -41,19 +41,25 @@ import { buildMobrixUiReactiveComponent } from "../../../tools";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Input: InputComponent = ({
-  onChange,
-  value,
+  onChange = () => { },
+  value: inputValue,
   placeholder,
   readOnly,
+  additionalProps = {},
+  autoresizable,
   ...commonProps
 }) => {
-  const onChangeCallback = onChange || (() => {});
   return buildMobrixUiReactiveComponent<string | undefined>({
     commonProps,
     name: "inputbox",
     wrapper: "input",
     props: (value, setValue) => ({
       additionalProps: {
+        ...additionalProps,
+        ...(autoresizable && {
+          "data-mobrix-ui-autoresizable": !!autoresizable,
+          size: value.length,
+        }),
         type: "text",
         value,
         placeholder,
@@ -61,13 +67,13 @@ const Input: InputComponent = ({
         onChange: (e) => {
           if (!readOnly) {
             const newValue = e.target.value ? e.target.value : "";
-            onChangeCallback(newValue);
+            onChange(newValue);
             setValue(newValue);
           }
         },
       },
     }),
-    inputValue: value,
+    inputValue,
     defaultValue: "",
   });
 };

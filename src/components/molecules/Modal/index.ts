@@ -3,8 +3,9 @@ import "./styles.css";
 import { ModalComponent } from "../../../types";
 
 import { buildMobrixUiStandardComponent } from "../../../tools";
+import { useAnimation } from "../../../tools/utils/hooks";
 
-import modalBuilder from "./builder";
+import modalComponent from "./component";
 
 /**
  * A light Modal component. Can be totally customized (the overlay too, through `overlayClassName` parameter)
@@ -44,10 +45,31 @@ import modalBuilder from "./builder";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Modal: ModalComponent = (props) =>
-  buildMobrixUiStandardComponent({
+const Modal: ModalComponent = ({ animated, overlayClassName = "", children, closeOutside, additionalProps = {}, onClose = () => { }, className, hide, ...commonProps }) => {
+
+  const [value, setValue, onCloseCallback] = useAnimation("", onClose);
+
+
+  return buildMobrixUiStandardComponent({
     name: "modal",
-    ...modalBuilder(props),
+    Component: modalComponent({
+      children,
+      closeOutside,
+      onClose: onCloseCallback,
+      className,
+      hide,
+      ...commonProps,
+    }),
+    commonProps: {
+      ...commonProps,
+      hide: value.length === 0 && hide,
+      className: overlayClassName,
+    },
+    additionalProps: {
+      ...additionalProps,
+      "data-mobrix-ui-modal-animation": hide ? value : "ease-in"
+    }
   });
+}
 
 export default Modal;

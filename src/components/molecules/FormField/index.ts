@@ -59,9 +59,7 @@ const FormField: FormFieldComponent = ({
   value: inputValue,
   shadow,
   ...sharedProps
-}: MobrixUiProps<
-  FormFieldProps & { value?: any; errorLabel?: BuilderComponent }
->) => {
+}) => {
   return buildMobrixUiReactiveComponent({
     name: "form-field",
     commonProps: sharedProps,

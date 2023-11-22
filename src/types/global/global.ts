@@ -8,6 +8,7 @@ export type MobBrixAnimation = "fadeIn" | "fadeOut" | "slideIn" | "slideOut";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=components-building-process
  * */
 export interface CommonProps {
+
   /** React key, the standard {@link https://reactjs.org/docs/lists-and-keys.html key parameter} */
   key?: string;
 
@@ -35,6 +36,18 @@ export interface CommonProps {
   /** Enable/disable component animations (default `false`) */
   animated?: boolean;
 
+  /** If true, disable component background */
+  noBackground?: boolean;
+
+  /** If `true`, disable component hover standard styles (default `true`, but it is automatically disabled when `unstyled` parameter is `true` ) */
+  noHover?: boolean;
+
+  /** If true, disable the component. The effect may vary depending on the component type */
+  disabled?: boolean;
+
+  /** The `data-mobrix-ui-parameter`, an alternative custom class that can be easily used with `[data-mobrix-ui-class=VALUE]` */
+  mobrixUiClass?: string;
+
   /** If `true`, the component is selectable by navigating with tab key (default `true`) */
   a11y?: boolean;
 
@@ -53,7 +66,7 @@ export interface CommonProps {
   /** callback called when a key is pressed when inside the component */
   onKeyDown?: (keyEvent: any) => void;
 
-  testId?: string;
+  additionalProps?: Record<string, any>
 }
 
 /**
@@ -99,6 +112,10 @@ export interface GenericInputComponent {
 
   /** A label showed when no input is given */
   placeholder?: string;
+}
+
+export interface AutoResizableComponent {
+  autoresizable?: boolean
 }
 
 /**
@@ -219,7 +236,7 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
   commonProps?: CommonProps;
 
   /** Additional props applied on main container (default `{}`) */
-  additionalProps?: any;
+  additionalProps?: Record<string, any>;
 
   /** Component wrapper (default `div`) */
   wrapper?: Wrappers;
@@ -289,9 +306,9 @@ export type MobrixUiReactiveComponentBuilder<
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type MobrixUiReactiveComponent<T = any, K = any> = MoBrixUiComponent<
+export type MobrixUiReactiveComponent<T = any, K = any, ReturnType = BuilderComponent | BuilderComponent[]> = MoBrixUiComponent<
   MobrixUiReactiveComponentProps<T, K>,
-  BuilderComponent | BuilderComponent[]
+  ReturnType
 >;
 
 export type DeepPartial<T> = {

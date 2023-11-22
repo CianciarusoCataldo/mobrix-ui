@@ -30,7 +30,6 @@ export const DrawerComponent = ({
       hide={!drawerVisible}
       onClose={() => store?.dispatch(closeDrawer())}
       dark={dark}
-      animated
     >
       <DrawerContent store={store} />
     </Drawer>

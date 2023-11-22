@@ -1,8 +1,11 @@
 import {
+  BuilderComponent,
+  CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
 } from "../../../types/global";
+import { RadioButtonProps } from "../atoms";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} RadioButtonGroup single element
@@ -22,6 +25,8 @@ export type RadioElement = {
 
   /** Radio button text position */
   textPosition?: "top" | "bottom" | "left" | "right";
+
+  props?: RadioButtonProps & CommonProps
 };
 
 /**
@@ -48,6 +53,12 @@ export type RadioButtonGroupProps = ComponentWithCallback<number> &
 
     /** if `true`, radio buttons are displayed horizontally, in a single row (default `false`, the radio buttons are displayed vertically) */
     horizontal?: boolean;
+
+    defaultPosition?: RadioElement["textPosition"];
+
+    elements?: BuilderComponent[]
+
+    radioProps?: RadioButtonProps & CommonProps
   };
 
 /**

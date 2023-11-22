@@ -45,28 +45,26 @@ import { buildMobrixUiStandardComponent } from "../../../tools";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Button: ButtonComponent = ({
-  disabled,
   children,
   onClick,
-  className = "",
   onMouseEnter,
   onMouseLeave,
+  additionalProps = {},
   ...commonProps
 }) =>
   buildMobrixUiStandardComponent({
     name: "button",
     wrapper: "button",
     additionalProps: {
-      disabled,
+      ...additionalProps,
+      disabled: commonProps.disabled,
       onClick,
       onMouseEnter,
       onMouseLeave,
     },
     Component: children,
-    commonProps: {
-      ...commonProps,
-      className: `${className} ${disabled ? "disabled" : "enabled"}`,
-    },
+    commonProps,
   });
+
 
 export default Button;

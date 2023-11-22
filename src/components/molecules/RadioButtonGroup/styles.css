@@ -1,44 +1,75 @@
 [data-mobrix-ui-id="radio-button-group"] {
   display: flex;
   flex-direction: column;
+  padding: 0.3rem;
+  width: fit-content;
 }
 
-[data-mobrix-ui-id="radio-button-group"] .radio-group-element {
+[data-mobrix-ui-id="radio-button-group"][data-mobrix-ui-background="true"] {
+  background: var(--mobrix-ui-background);
+}
+
+[data-mobrix-ui-id="radio-button-group"][data-mobrix-ui-orientation="true"] {
+  flex-direction: row;
+}
+
+[data-mobrix-ui-id="radio-button-group"] [data-mobrix-ui-text-position] {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
+}
+
+[data-mobrix-ui-id="radio-button-group"][data-mobrix-ui-orientation="true"]
+  [data-mobrix-ui-text-position] {
+  margin-right: 2rem;
+}
+
+[data-mobrix-ui-id="radio-button-group"]:not(
+    [data-mobrix-ui-orientation="true"]
+  )
+  [data-mobrix-ui-text-position] {
   margin-bottom: 2rem;
 }
 
-[data-mobrix-ui-id="radio-button-group"] .radio-group-element.right {
+[data-mobrix-ui-id="radio-button-group"]
+  [data-mobrix-ui-text-position="right"] {
   flex-direction: row-reverse;
 }
 
-[data-mobrix-ui-id="radio-button-group"] .radio-group-element.left {
+[data-mobrix-ui-id="radio-button-group"] [data-mobrix-ui-text-position="left"] {
   flex-direction: row;
 }
 
-[data-mobrix-ui-id="radio-button-group"] .radio-group-element.top {
+[data-mobrix-ui-id="radio-button-group"] [data-mobrix-ui-text-position="top"] {
   flex-direction: column;
 }
 
-[data-mobrix-ui-id="radio-button-group"] .radio-group-element.bottom {
+[data-mobrix-ui-id="radio-button-group"]
+  [data-mobrix-ui-text-position="bottom"] {
   flex-direction: column-reverse;
 }
 
-[data-mobrix-ui-id="radio-button-group"] .radio-group-element.left .radio-text {
+[data-mobrix-ui-id="radio-button-group"]
+  [data-mobrix-ui-text-position="left"]
+  [data-mobrix-ui-class="radio-text"] {
   margin-right: 0.7rem;
 }
 
-[data-mobrix-ui-id="radio-button-group"] .radio-group-element.right .radio-text {
+[data-mobrix-ui-id="radio-button-group"]
+  [data-mobrix-ui-text-position="right"]
+  [data-mobrix-ui-class="radio-text"] {
   margin-left: 0.7rem;
 }
 
-[data-mobrix-ui-id="radio-button-group"] .radio-group-element.top .radio-text {
+[data-mobrix-ui-id="radio-button-group"]
+  [data-mobrix-ui-text-position="top"]
+  [data-mobrix-ui-class="radio-text"] {
   margin-bottom: 0.7rem;
 }
 
-[data-mobrix-ui-id="radio-button-group"] .radio-group-element.bottom .radio-text {
+[data-mobrix-ui-id="radio-button-group"]
+  [data-mobrix-ui-text-position="bottom"]
+  [data-mobrix-ui-class="radio-text"] {
   margin-top: 0.7rem;
 }

@@ -4,7 +4,7 @@ export const CalendarIcon = (
   <svg
     height="20px"
     width="20px"
-    className="calendar-icon"
+    data-mobrix-ui-class="calendar-icon"
     viewBox="0 -256 1850 1850"
     xmlns="http://www.w3.org/2000/svg"
   >

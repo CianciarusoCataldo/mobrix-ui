@@ -53,6 +53,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
   children,
   wrapper,
   onChange,
+  additionalProps,
   ...commonProps
 }) => {
   return buildMobrixUiReactiveComponent({
@@ -61,6 +62,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
     commonProps,
     wrapper,
     inputValue: startCompact,
+    additionalProps,
     Component: ({ value, setValue }) =>
       expandableContainerComponent({
         value,
@@ -70,6 +72,11 @@ const ExpandableContainer: ExpandableContainerComponent = ({
         onChange,
         ...commonProps,
       }),
+    props: (value, setValue) => ({
+      additionalProps: {
+        "data-mobrix-ui-compact": value
+      }
+    })
   });
 };
 

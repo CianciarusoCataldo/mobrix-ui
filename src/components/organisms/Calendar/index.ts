@@ -65,6 +65,8 @@ const Calendar: CalendarComponent = ({
   fromToday,
   dayLabel,
   labelClassName,
+  additionalProps,
+  labelProps,
   ...commonProps
 }) => {
   const todayDate = today();
@@ -78,6 +80,7 @@ const Calendar: CalendarComponent = ({
       month: todayDate.month,
       day: todayDate.dayOfTheMonth,
     },
+    additionalProps,
     Component: ({ value, setValue }) =>
       calendarComponent({
         today: todayDate,
@@ -94,6 +97,7 @@ const Calendar: CalendarComponent = ({
         fromToday,
         dayLabel,
         labelClassName,
+        labelProps,
         ...commonProps,
       }),
   });

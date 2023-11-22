@@ -6,31 +6,34 @@
   background-image: var(--mobrix-ui-background);
   color: var(--mobrix-ui-text-color);
   border-radius: 3px;
+  width: fit-content;
 }
 
-[data-mobrix-ui-id="review"] .review-photo,
-[data-mobrix-ui-id="review"] .review-photo img {
+[data-mobrix-ui-id="review"] [data-mobrix-ui-class="review-photo"],
+[data-mobrix-ui-id="review"] [data-mobrix-ui-class="review-photo"] img {
   border-radius: 9999px;
 }
 
-[data-mobrix-ui-id="review"] .review-url-container {
+[data-mobrix-ui-id="review"] [data-mobrix-ui-class="review-url-container"] {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-[data-mobrix-ui-id="review"] .review-info-box {
+[data-mobrix-ui-id="review"] [data-mobrix-ui-class="review-info-box"] {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.4rem;
 }
 
-[data-mobrix-ui-id="review"] .review-user-info {
+[data-mobrix-ui-id="review"] [data-mobrix-ui-class="review-user-info"] {
   display: flex;
   flex-direction: row;
 }
 
-[data-mobrix-ui-id="review"] .review-user-info .review-username {
+[data-mobrix-ui-id="review"]
+  [data-mobrix-ui-class="review-user-info"]
+  [data-mobrix-ui-class="review-username"] {
   margin-left: 0.5rem;
   font-weight: 600;
   font-size: 1.125rem;
@@ -39,18 +42,29 @@
   margin-bottom: auto;
 }
 
-[data-mobrix-ui-id="review"] .review-info-box .review-description {
-  margin-left: 0.5rem;
+[data-mobrix-ui-id="review"]
+  [data-mobrix-ui-class="review-info-box"]
+  [data-mobrix-ui-class="review-description"] {
   margin-top: 1rem;
   overflow-wrap: break-word;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
 }
 
-[data-mobrix-ui-id="review"] .review-url-container .default-icon,
-[data-mobrix-ui-id="review"] .review-url-container .github-icon {
+[data-mobrix-ui-id="review"]
+  [data-mobrix-ui-class="review-url-container"]
+  [data-mobrix-ui-class="default-icon"],
+[data-mobrix-ui-id="review"]
+  [data-mobrix-ui-class="review-url-container"]
+  [data-mobrix-ui-class="github-icon"] {
   fill: grey;
 }
 
-[data-mobrix-ui-id="review"][data-mobrix-ui-dark="true"] .review-url-container .default-icon,
-[data-mobrix-ui-id="review"][data-mobrix-ui-dark="true"] .review-url-container .github-icon {
+[data-mobrix-ui-id="review"][data-mobrix-ui-dark="true"]
+  [data-mobrix-ui-class="review-url-container"]
+  [data-mobrix-ui-class="default-icon"],
+[data-mobrix-ui-id="review"][data-mobrix-ui-dark="true"]
+  [data-mobrix-ui-class="review-url-container"]
+  [data-mobrix-ui-class="github-icon"] {
   fill: white;
 }

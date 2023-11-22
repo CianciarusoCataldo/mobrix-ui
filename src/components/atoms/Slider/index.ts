@@ -44,12 +44,13 @@ import { buildMobrixUiReactiveComponent } from "../../../tools";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Slider: SliderComponent = ({
-  onChange = (e) => {},
+  onChange = (e) => { },
   value: inputValue,
   min,
   max,
   readOnly,
   thumbColor,
+  additionalProps = {},
   ...commonProps
 }) => {
   let extraProps: Record<string, any> = {};
@@ -75,6 +76,7 @@ const Slider: SliderComponent = ({
 
       return {
         additionalProps: {
+          ...additionalProps,
           type: "range",
           min,
           max,

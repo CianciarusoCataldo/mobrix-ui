@@ -23,6 +23,8 @@ export interface CalendarDate {
 
   /** Calendar date day (1 to month length) */
   day: number;
+
+  dayOfTheMonth?: number
 }
 
 /**
@@ -73,6 +75,9 @@ export type CalendarProps = ComponentWithValue<DeepPartial<CalendarDate>> &
     onViewChange?: (date: CalendarDate) => void;
 
     labelClassName?: string;
+
+    labelProps?: Record<string, any>;
+
   };
 
 /**

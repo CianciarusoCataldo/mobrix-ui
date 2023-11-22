@@ -5,7 +5,7 @@
   "props_field_radio": "Campo radio",
   "props_field_text": "Campo testuale",
   "props_field_custom": "Campo personalizzato",
-  "props_buttonContent": "Contenuto del pulsante",
+  "props_submitLabel": "Contenuto del pulsante",
   "props_title": "Titolo",
   "props_children": "Contenuto personalizzato"
 }

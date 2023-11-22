@@ -1,0 +1,51 @@
+[data-mobrix-ui-id] {
+  --mobrix-ui-background-color-light: #f5f5f5;
+  --mobrix-ui-background-color-dark: #1d232e;
+  --mobrix-ui-text-color-light: #1b1b1b;
+  --mobrix-ui-text-color-dark: white;
+  --mobrix-ui-focus-color-light: #7785ff;
+  --mobrix-ui-focus-color-dark: #fb7a10;
+  --mobrix-ui-background-dark: linear-gradient(to right, #2d3748, #1d232e);
+  --mobrix-ui-background-light: linear-gradient(to right, #fff, #eaebec);
+  --mobrix-ui-button-hover-color-light: #fb7a10;
+  --mobrix-ui-button-hover-color-dark: #fb7a10;
+  --mobrix-ui-radio-background-light: radial-gradient(
+    #f1f1f1 20%,
+    #e4e4e4 30%,
+    #bebebe 55%,
+    #f0f0f0 20%
+  );
+  --mobrix-ui-radio-background-dark: radial-gradient(
+    #000564 20%,
+    #010550 30%,
+    #1d1f44 55%,
+    #000564 20%
+  );
+  --mobrix-ui-radio-background-hover-light: radial-gradient(
+    #f1f1f1 20%,
+    #cfcfcf 30%,
+    #a7a7a7 55%,
+    #f0f0f0 20%
+  );
+  --mobrix-ui-radio-background-hover-dark: radial-gradient(
+    #000564 20%,
+    #040a6e 30%,
+    #252857 55%,
+    #000564 20%
+  );
+  --mobrix-ui-table-header-background-dark: linear-gradient(
+    to right,
+    #dddbdb,
+    #c5c6c7
+  );
+  --mobrix-ui-table-header-background-light: linear-gradient(
+    to right,
+    #354155,
+    #2b3546
+  );
+
+  --mobrix-ui-table-header-text-color-dark: rgb(47, 55, 79);
+  --mobrix-ui-table-header-text-color-light: whitesmoke;
+  --mobrix-ui-tab-viewer-background-dark: linear-gradient(to right, #2d3748, #1d232e);
+  --mobrix-ui-tab-viewer-background-light: linear-gradient(to right, #cccccc, rgb(199, 199, 199));
+}

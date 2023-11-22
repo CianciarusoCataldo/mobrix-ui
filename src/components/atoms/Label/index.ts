@@ -37,12 +37,13 @@ import { buildMobrixUiStandardComponent } from "../../../tools";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Label: LabelComponent = ({ children, ...commonProps }) =>
+const Label: LabelComponent = ({ children, additionalProps, ...commonProps }) =>
   buildMobrixUiStandardComponent({
     name: "label",
     Component: children,
     wrapper: "p",
     commonProps,
+    additionalProps
   });
 
 export default Label;

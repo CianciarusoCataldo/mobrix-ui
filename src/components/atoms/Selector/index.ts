@@ -46,7 +46,8 @@ import selectorComponent from "./component";
 const Selector: SelectorComponent = ({
   elements,
   value: inputValue,
-  onChange = (e) => {},
+  onChange = (e) => { },
+  additionalProps = {},
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent<number | undefined>({
@@ -58,6 +59,7 @@ const Selector: SelectorComponent = ({
     props: (value, setValue) => {
       return {
         additionalProps: {
+          ...additionalProps,
           value,
           onChange: (e) => {
             onChange(e.target.value);

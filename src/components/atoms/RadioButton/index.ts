@@ -41,9 +41,10 @@ import component from "./component";
  */
 const RadioButton: RadioButtonComponent = ({
   value: inputValue,
-  onChange = (e) => {},
+  onChange = (e) => { },
   deselectable = true,
-  onKeyDown = (e) => {},
+  onKeyDown = (e) => { },
+  additionalProps = {},
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent<boolean>({
@@ -70,6 +71,7 @@ const RadioButton: RadioButtonComponent = ({
           },
         },
         additionalProps: {
+          ...additionalProps,
           onClick: callBack,
         },
       };

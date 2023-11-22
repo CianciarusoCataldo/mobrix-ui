@@ -20,14 +20,14 @@
   }
 }
 
-[data-mobrix-ui-id="radio-button"] .icon {
-  border-radius: 50%;
+[data-mobrix-ui-id="radio-button"] [data-mobrix-ui-class="icon"] {
+  border-radius: 100%;
   margin: auto;
   width: 18px;
   height: 18px;
   background: var(--mobrix-ui-radio-background-dark);
 }
 
-[data-mobrix-ui-id="radio-button"][data-mobrix-ui-dark="true"] .icon {
+[data-mobrix-ui-id="radio-button"][data-mobrix-ui-dark="true"] [data-mobrix-ui-class="icon"] {
   background: var(--mobrix-ui-radio-background-light);
 }

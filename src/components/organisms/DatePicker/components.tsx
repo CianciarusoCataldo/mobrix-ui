@@ -13,11 +13,9 @@ import { getMonthsDuration } from "../Calendar/utils";
 import { CalendarIcon } from "./icons";
 
 import Container from "../../molecules/Container";
-import Dropdown from "../../molecules/Dropdown";
 import Modal from "../../molecules/Modal";
 import Calendar from "../Calendar";
 import Button from "../../atoms/Button";
-import { xIcon } from "../../molecules/DismissableCard/icons";
 import Label from "../../atoms/Label";
 
 const DatePickerInternalComponent: MobrixUiReactiveComponent<
@@ -37,6 +35,7 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
   dayLabel,
   onViewChange,
   animated,
+  calendarProps = {},
   ...commonProps
 }) => {
     const [isVisible, setVisible] = React.useState<boolean>(false);
@@ -50,113 +49,68 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
     const monthsDuration = getMonthsDuration(year);
 
     const day =
-      value.day && value.day > 0 && value.day <= monthsDuration[month]
-        ? value.day
+      value.dayOfTheMonth && value.dayOfTheMonth > 0 && value.dayOfTheMonth <= monthsDuration[month]
+        ? value.dayOfTheMonth
         : todayDate.dayOfTheMonth;
-
-    const days = new Array(monthsDuration[month])
-      .fill(" ")
-      .map((el, index) => String(index + 1));
-
-    const years = new Array(50)
-      .fill(" ")
-      .map((el, index) => Number(todayDate.year - 50 + index))
-      .concat(
-        new Array(30).fill("").map((el, index) => Number(index + todayDate.year))
-      );
 
     /* istanbul ignore next */
     const calendarFocusCallback = () => !commonProps.hide && setVisible(false);
 
+    const DateLabel = ({ children }) => <Label additionalProps={{
+      "data-mobrix-ui-class": "date-picker-element",
+    }}
+      dark={commonProps.dark}
+    >{children}</Label>
+
     return [
-      <div key="date_picker_box" className="date-picker-box">
-        <Container dark={commonProps.dark} className="buttons">
-          <div className="date-selectors">
-            <Label
-              dark={commonProps.dark}
-            >{String(day)}</Label>
-            <Dropdown
-              dark={commonProps.dark}
-              unstyled
-              value={month}
-              hideArrow
-              elements={customMonths}
-              key="date_picker_month_selector"
-              testId="date_picker_month_selector"
-              className="element months"
-              onChange={(selectedMonth) =>
-                setValue({
-                  month: selectedMonth,
-                  day: 1,
-                  year,
-                })
-              }
-            />
-            <Dropdown
-              dark={commonProps.dark}
-              unstyled
-              hideArrow
-              onChange={(selectedYear) =>
-                setValue({
-                  month,
-                  day: 1,
-                  year: Number(years[selectedYear]),
-                })
-              }
-              elements={years.map((el, index) => String(el))}
-              value={years.indexOf(year)}
-              key="date_picker_year_selector"
-              testId="date_picker_year_selector"
-              className="element years"
-            />
-          </div>
-          <Button
-            unstyled
-            dark={commonProps.dark}
-            onClick={() => setVisible(true)}
-            key="date_picker_calendar_button"
-            testId="date_picker_calendar_button"
-            className="element"
-          >
-            {CalendarIcon}
-          </Button>
-        </Container>
+      <div data-mobrix-ui-class="date-selectors" key="date_picker_selectors">
+        <DateLabel>{String(day)}</DateLabel>
+        <DateLabel>{String(customMonths[month])}</DateLabel>
+        <DateLabel>{String(year)}</DateLabel>
       </div>,
+      <Button
+        unstyled
+        dark={commonProps.dark}
+        onClick={() => setVisible(true)}
+        key="date_picker_calendar_button"
+        additionalProps={{
+          "data-mobrix-ui-test": "date_picker_calendar_button"
+        }}
+      >
+        {CalendarIcon}
+      </Button>,
       <Modal
         hide={!isVisible}
-        className="date-picker-modal"
         key="date_picker_modal"
         animated={animated}
         onClose={() => setVisible(false)}
         dark={true}
+        additionalProps={{
+          "data-mobrix-ui-class": "date-picker-modal"
+        }}
+      //closeOutside
       >
-        <div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <Button testId="date_picker_close_button" dark unstyled style={{ marginLeft: "auto" }} onClick={() => {
-              setVisible(false)
-            }}>{xIcon}</Button>
-          </div>
-          <Calendar
-            animated={animated}
-            className="date-picker-calendar"
-            testId="date_picker_calendar"
-            days={customDays}
-            months={customMonths}
-            startMonth={startMonth}
-            startYear={startYear}
-            hideArrows={hideArrows}
-            fromToday={fromToday}
-            onViewChange={onViewChange}
-            dayLabel={dayLabel}
-            value={{ day, month, year }}
-            onChange={(date) => {
-              onChange && onChange(date);
-              setValue(date);
-            }}
-            onFocusLost={calendarFocusCallback}
-            dark={commonProps.dark}
-          />
-        </div>
+        <Calendar
+          animated={animated}
+          additionalProps={{ "data-mobrix-ui-test": "date_picker_calendar" }}
+          days={customDays}
+          months={customMonths}
+          startMonth={startMonth}
+          startYear={startYear}
+          hideArrows={hideArrows}
+          fromToday={fromToday}
+          onViewChange={onViewChange}
+          dayLabel={dayLabel}
+          value={{ day, month, year }}
+          onChange={(date) => {
+            onChange && onChange(date);
+            setValue(date);
+          }}
+          //onFocusLost={calendarFocusCallback}
+          dark={commonProps.dark}
+          labelProps={{ dark: true }}
+          {...calendarProps}
+        />
       </Modal>,
     ];
   };

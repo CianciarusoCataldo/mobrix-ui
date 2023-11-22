@@ -46,16 +46,10 @@ const DropdownPage = () => (
 
             return {
               ...props,
-              content: [
-                {
-                  name: elementLabel.replace("<INDEX>", "1"),
-                  icon,
-                },
+              elements: [
+                elementLabel.replace("<INDEX>", "1"),
                 elementLabel.replace("<INDEX>", "2") + " - string",
-                {
-                  name: elementLabel.replace("<INDEX>", "3"),
-                  icon,
-                },
+                elementLabel.replace("<INDEX>", "3"),
               ],
             };
           }}

@@ -43,9 +43,10 @@ import { DefaultCheckIcon } from "./icons";
  */
 const Checkbox: CheckBoxComponent = ({
   value,
-  onChange = (e) => {},
+  onChange = (e) => { },
   icon,
-  onKeyDown = (e) => {},
+  onKeyDown = (e) => { },
+  additionalProps = {},
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent<boolean>({
@@ -63,6 +64,7 @@ const Checkbox: CheckBoxComponent = ({
         },
       },
       additionalProps: {
+        ...additionalProps,
         onClick: () => {
           onChange(!actualValue);
           setValue(!actualValue);

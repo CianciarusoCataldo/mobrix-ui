@@ -1,7 +1,6 @@
 import {
   BuilderComponent,
   ComponentWithChildren,
-  ComponentWithIcon,
   MoBrixUiComponent,
 } from "../../../types/global";
 
@@ -15,27 +14,26 @@ import {
  * @copyright 2023 Cataldo Cianciaruso
  */
 export type CardProps = ComponentWithChildren<
-  BuilderComponent | BuilderComponent[]
-> &
-  ComponentWithIcon & {
-    /** Card header content */
-    header?: BuilderComponent;
+  BuilderComponent
+> & {
+  /** Card header content */
+  header?: BuilderComponent;
 
-    /** Card body content */
-    body?: BuilderComponent;
+  /** Card body content */
+  body?: BuilderComponent;
 
-    /** Card footer content */
-    footer?: BuilderComponent;
+  /** Card footer content */
+  footer?: BuilderComponent;
 
-    /** If true, hide the dividers between every Card part (header, body and footer) */
-    noDividers?: boolean;
+  /** If true, hide the dividers between every Card part (header, body and footer) */
+  noDividers?: boolean;
 
-    /** If `true`, hide the divider below the Card header */
-    noHeaderDivider?: boolean;
+  /** If `true`, hide the divider below the Card header */
+  noHeaderDivider?: boolean;
 
-    /** If `true`, hide the divider above the Card footer */
-    noFooterDivider?: boolean;
-  };
+  /** If `true`, hide the divider above the Card footer */
+  noFooterDivider?: boolean;
+};
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Card component

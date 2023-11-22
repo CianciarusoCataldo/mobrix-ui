@@ -5,3 +5,7 @@
   color: var(--mobrix-ui-text-color);
   border-color: transparent;
 }
+
+[data-mobrix-ui-id="inputbox"][data-mobrix-ui-styled="true"][data-mobrix-ui-autoresizable="true"] {
+  width: fit-content;
+}

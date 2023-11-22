@@ -50,15 +50,17 @@ const Counter: CounterComponent = ({
   readOnly,
   max,
   min,
+  additionalProps = {},
   ...commonProps
-}) =>
-  buildMobrixUiReactiveComponent<number | undefined>({
+}) => {
+  return buildMobrixUiReactiveComponent<number | undefined>({
     wrapper: "input",
     name: "counterbox",
     inputValue,
     defaultValue: undefined,
     props: (value, setValue) => ({
       additionalProps: {
+        ...additionalProps,
         type: "number",
         value: value,
         placeholder,
@@ -75,5 +77,6 @@ const Counter: CounterComponent = ({
     }),
     commonProps,
   });
+}
 
 export default Counter;

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import classnames from "classnames";
 
 import {
   BuilderComponent,
@@ -13,12 +12,12 @@ import Container from "../Container";
 
 const FormFieldInternalComponent: MobrixUiReactiveComponent<
   any,
-  FormFieldProps & { errorLabel?: BuilderComponent; header?: BuilderComponent }
+  FormFieldProps & { errorLabel?: BuilderComponent; }
 > = ({
   value,
   setValue,
   type,
-  onChange = (newvalue: any) => {},
+  onChange = (newvalue: any) => { },
   placeholder,
   required,
   validate = (newvalue: any) => true,
@@ -28,83 +27,98 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
   dark,
   unstyled,
   shadow,
+  animated
 }) => {
-  const [error, setError] = useState(false);
-  const [stateClassName, setStateClassName] = useState("idle");
+    const [error, setError] = useState(false);
+    const [animate, setAnimated] = useState(false);
 
-  useEffect(() => {
-    if (validate(value) && !required) {
-      setError(false);
-    } else if (required && !value) {
-      setError(true);
+    useEffect(() => {
+      if (validate(value) && !required) {
+        setError(false);
+      } else if (required && !value) {
+        setError(true);
+      }
+    }, [required]);
+
+    const components: JSX.Element[] = [];
+
+    if (header) {
+      components.push(
+        <Container
+          additionalProps={{
+            "data-mobrix-ui-class": "form-field-box",
+            "data-mobrix-ui-form-field-header-box": true,
+          }}
+          animated={animated}
+          key="form_field_header_box"
+          dark={!dark}
+        >
+          {header}
+        </Container>
+      );
     }
-  }, [required]);
 
-  const components: JSX.Element[] = [];
+    const FieldComponent: MobrixUiReactiveComponent =
+      fieldFormatters[type].component;
 
-  if (header) {
+    components.push(
+      <FieldComponent
+        animated={animated}
+        additionalProps={{
+          "data-mobrix-ui-class": "form-field-component",
+          "data-mobrix-ui-form-field-error": error,
+          ...(animate &&
+          {
+            ...{
+              "data-mobrix-ui-animation": "shake"
+            }
+          })
+        }}
+        key="form_field_component"
+        value={fieldFormatters[type].format(value)}
+        shadow={shadow}
+        dark={dark}
+        unstyled={unstyled}
+        onKeyDown={(e) => {
+          if (e.code === "Enter" && error) {
+            setAnimated(true);
+            setTimeout(() => {
+              setAnimated(false);
+            }, 600);
+          }
+        }}
+        onChange={(newValue) => {
+          const formattedValue = fieldFormatters[type].format(newValue);
+
+          if (!validate(formattedValue) || (required && !formattedValue)) {
+            setError(true);
+          } else if (error) {
+            setError(false);
+          }
+
+          onChange(formattedValue);
+
+          setValue(formattedValue);
+        }}
+      />
+    );
+
     components.push(
       <Container
-        className="form-field-box form-field-header-box"
-        animated
-        key="form_field_header_box"
+        additionalProps={{
+          "data-mobrix-ui-class": "form-field-box",
+          "data-mobrix-ui-form-field-error-box": true,
+        }}
+        animated={true}
         dark={dark}
+        hide={!error}
+        key="form_field_error_box"
       >
-        {header}
+        {errorLabel}
       </Container>
     );
-  }
 
-  const FieldComponent: MobrixUiReactiveComponent =
-    fieldFormatters[type].component;
-
-  components.push(
-    <FieldComponent
-      key="form_field_component"
-      value={value}
-      shadow={shadow}
-      dark={dark}
-      unstyled={unstyled}
-      className={classnames(className, "form-field-component", stateClassName, {
-        "field-error": error,
-      })}
-      onKeyDown={(e) => {
-        if (e.code === "Enter" && error) {
-          setStateClassName("invalid");
-          setTimeout(() => {
-            setStateClassName("idle");
-          }, 600);
-        }
-      }}
-      onChange={(newValue) => {
-        const formattedValue = fieldFormatters[type].format(newValue);
-
-        if (!validate(formattedValue) || (required && !formattedValue)) {
-          setError(true);
-        } else if (error) {
-          setError(false);
-        }
-
-        onChange(formattedValue);
-
-        setValue(formattedValue);
-      }}
-    />
-  );
-
-  components.push(
-    <Container
-      className="form-field-box form-field-error-box"
-      animated={true}
-      dark={dark}
-      hide={!error}
-      key="form_field_error_box"
-    >
-      {errorLabel}
-    </Container>
-  );
-
-  return components;
-};
+    return components;
+  };
 
 export default FormFieldInternalComponent;

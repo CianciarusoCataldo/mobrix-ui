@@ -60,11 +60,13 @@ const Review: ReviewComponent = ({
   url,
   logo,
   rateType,
+  additionalProps,
   ...commonProps
 }) =>
   buildMobrixUiStandardComponent({
     name: "review",
     commonProps,
+    additionalProps,
     Component: reviewComponent({
       user,
       description,

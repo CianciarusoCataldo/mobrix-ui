@@ -61,6 +61,8 @@ const DatePicker: DatePickerComponent = ({
   fromToday,
   dayLabel,
   onViewChange,
+  calendarProps,
+  additionalProps,
   ...commonProps
 }) => {
   const todayDate = today();
@@ -82,10 +84,12 @@ const DatePicker: DatePickerComponent = ({
         fromToday,
         dayLabel,
         onViewChange,
+        calendarProps,
         ...commonProps,
       }),
     inputValue,
     defaultValue: todayDate,
+    additionalProps
   });
 };
 

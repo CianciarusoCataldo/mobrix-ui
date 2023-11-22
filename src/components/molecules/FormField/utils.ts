@@ -9,7 +9,7 @@ import {
 } from "../../atoms";
 
 /* istanbul ignore next */
-const valueFormatters = {
+export const valueFormatters = {
   text: (value: any) => {
     const result = String(value);
     if (result.length < 1) {

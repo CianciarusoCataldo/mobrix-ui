@@ -5,8 +5,6 @@ import {
   MobrixUiReactiveComponentBuilder,
 } from "../../../types";
 
-import classnames from "classnames";
-
 import { Button } from "../../atoms";
 import Popup from "../Popup";
 import Container from "../Container";
@@ -110,30 +108,33 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
             keyDownCallback(!isVisible);
           }}
           dark={dark}
-          className="button"
-          testId="options_menu"
+          additionalProps={{
+            "data-mobrix-ui-class": "button",
+            "data-mobrix-ui-test": "options_menu"
+          }}
           key="options-menu"
           a11y={false}
         >
           <div
             tabIndex={-1}
             key="dropdown_selected_element_label"
-            className="dropdown-selected-element"
+            data-mobrix-ui-class="dropdown-selected-element"
           >
             {selectedItem}
           </div>
           <Container
             hide={hideArrow}
+            dark={dark}
             unstyled
             key="icon"
             a11y={false}
-            className={classnames("icon", {
-              rotate: isVisible,
-              "rotate-back": !isVisible,
-            })}
+            additionalProps={{
+              "data-mobrix-ui-class": "icon",
+              "data-mobrix-ui-rotate": isVisible
+            }}
           >
             <p tabIndex={-1}>
-              <i className="arrow-icon"></i>
+              <i data-mobrix-ui-class="arrow-icon"></i>
             </p>
           </Container>
         </Button>,
@@ -143,7 +144,9 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
           dark={dark}
           hide={!isVisible}
           a11y={false}
-          className="options"
+          additionalProps={{
+            "data-mobrix-ui-class": "options"
+          }}
         >
           {elements.map((item, index) => (
             <Button
@@ -151,20 +154,26 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
               onFocus={() => {
                 selectItem(index);
               }}
-              testId={`dropdown_option_${index}`}
               onClick={() => {
                 onChange(index);
                 setValue(index);
                 keyDownCallback(false);
               }}
               key={`item_${index}`}
-              className={classnames("regular", {
-                first: index === 0,
-                last: index === elements.length - 1,
-                selected: selected === index,
-              })}
+              additionalProps={{
+                "data-mobrix-ui-class": "regular",
+                "data-mobrix-ui-first": index === 0,
+                "data-mobrix-ui-last": index === elements.length - 1,
+                "data-mobrix-ui-selected": selected === index,
+                "data-mobrix-ui-test": `dropdown_option_${index}`
+              }}
             >
-              <Container unstyled dark={dark} className="dropdown-element">{item}</Container>
+              <Container
+                unstyled
+                dark={dark}
+                additionalProps={{
+                  "data-mobrix-ui-class": "dropdown-element"
+                }}>{item}</Container>
             </Button>
           ))}
         </Popup>,

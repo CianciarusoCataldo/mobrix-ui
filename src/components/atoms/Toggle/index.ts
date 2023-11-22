@@ -4,7 +4,6 @@ import { ToggleComponent } from "../../../types";
 
 import { buildMobrixUiReactiveComponent } from "../../../tools";
 
-import toggleComponentBuilder from "./builder";
 import toggleComponent from "./component";
 
 /**
@@ -49,19 +48,28 @@ const Toggle: ToggleComponent = ({
   icon,
   offIcon,
   onIcon,
+  onChange = () => { },
+  additionalProps = {},
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent<boolean>({
     name: "toggle",
     props: (status, setStatus) =>
-      toggleComponentBuilder({
-        setValue: setStatus,
-        value: status,
-        icon,
-        offIcon,
-        onIcon,
-        ...commonProps,
-      }),
+    ({
+      additionalProps: {
+        ...additionalProps,
+        onClick: () => {
+          onChange(!status);
+          setStatus(!status);
+        },
+        onKeyDown: (e) => {
+          if (e.code === "Enter") {
+            onChange(!status);
+            setStatus(!status);
+          }
+        },
+      }
+    }),
     Component: ({ value, setValue }) =>
       toggleComponent({
         value,
@@ -72,6 +80,7 @@ const Toggle: ToggleComponent = ({
       }),
     defaultValue: true,
     inputValue,
+    commonProps,
   });
 
 export default Toggle;

@@ -11,7 +11,7 @@ const DEFAULT_ICONS: Record<string, JSX.Element> = {
       x="0"
       y="0"
       xmlSpace="preserve"
-      className="rotating"
+      data-mobrix-ui-class="rotating"
     >
       <path
         className="st0"

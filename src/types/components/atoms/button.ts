@@ -24,8 +24,6 @@ export type ButtonProps = ComponentWithChildren<
     /** callback triggered when the cursor exit the component */
     onMouseLeave?: () => void;
 
-    /**enable or disable the button functionalities (UI will reflect it too) */
-    disabled?: boolean;
   };
 
 /**

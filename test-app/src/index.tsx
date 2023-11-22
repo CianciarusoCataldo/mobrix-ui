@@ -4,7 +4,8 @@ import "./index.css";
 import AtomsPage from "./pages/atoms";
 import MoleculesPage from "./pages/molecules";
 import OrganismsPage from "./pages/organisms";
-import { Drawer, TabViewer } from "./mobrix-ui-preview";
+import { Drawer, TabViewer, Dropdown, ExpandableContainer } from "./mobrix-ui-preview";
+import TestComponent from "./TestComponent";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -13,10 +14,31 @@ const root = ReactDOM.createRoot(
 const Atoms = <AtomsPage />;
 const Molecules = <MoleculesPage />;
 const Organisms = <OrganismsPage />;
+const tabs = <TabViewer
+  tabClassName="demo-tab"
+  tabSelectedClassName="demo-tab-selected"
+  tabUnselectedClassName="demo-tab-unselected"
+  //dark
+  selected={0}
+  tabs={[
+    {
+      label: "Atoms",
+      content: Atoms,
+    },
+    {
+      label: "Molecules",
+      content: Molecules,
+    },
+    {
+      label: "Organisms",
+      content: Organisms,
+    },
+  ]}
+/>
 
 root.render(
   <>
-    <Drawer dark hide={true} animated onClose={() => {}}>
+    <Drawer dark hide={true} animated onClose={() => { }}>
       <div
         style={{
           padding: "1rem",
@@ -29,23 +51,8 @@ root.render(
         ))}
       </div>
     </Drawer>
-    <TabViewer
-      dark
-      selected={1}
-      tabs={[
-        {
-          label: "Atoms",
-          content: Atoms,
-        },
-        {
-          label: "Molecules",
-          content: Molecules,
-        },
-        {
-          label: "Organisms",
-          content: Organisms,
-        },
-      ]}
-    />
+    <div>
+      {tabs}
+    </div>
   </>
 );

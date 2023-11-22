@@ -6,14 +6,13 @@ import { ICONS } from "./icons";
 import Button from "../Button";
 
 const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
-  type,
+  type = "star",
   max,
   readonly,
   onChange,
   value: actualValue,
   setValue,
 }) => {
-  const voteType = type || "star";
   let startMax = max || 5;
 
   const [hoveredElement, setHover] = React.useState<number | null>(null);
@@ -38,7 +37,7 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
 
     iconArray.push(
       readonly ? (
-        <div key={`vote_${i}`}>{ICONS[voteType][iconToShow]}</div>
+        <div key={`vote_${i}`}>{ICONS[type][iconToShow]}</div>
       ) : (
         <Button
           key={`vote_${i}`}
@@ -54,9 +53,11 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
           onMouseLeave={() => {
             setHover(null);
           }}
-          testId={`vote_${i}`}
+          additionalProps={{
+            "data-mobrix-ui-test": `vote_${i}`
+          }}
         >
-          {ICONS[voteType][iconToShow]}
+          {ICONS[type][iconToShow]}
         </Button>
       )
     );

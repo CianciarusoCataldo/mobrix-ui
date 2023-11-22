@@ -5,12 +5,16 @@
   border-radius: 6px;
 }
 
-[data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"] option {
+[data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"]
+  [data-mobrix-ui-class="selector-option"] {
   background-color: var(--mobrix-ui-background-color);
   color: var(--mobrix-ui-text-color);
   padding: 1rem;
 }
 
-[data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"] option:hover {
-  box-shadow: 0 0 10px 100px #6b6a75 inset;
+@media (hover: hover) {
+  [data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]
+    [data-mobrix-ui-class="selector-option"]:hover {
+    box-shadow: 0 0 10px 100px #6b6a75 inset;
+  }
 }

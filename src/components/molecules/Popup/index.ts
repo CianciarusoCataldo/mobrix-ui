@@ -40,8 +40,9 @@ import popupComponent from "./component";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Popup: PopupComponent = ({ children, className = "", ...commonProps }) =>
+const Popup: PopupComponent = ({ children, className = "", additionalProps, ...commonProps }) =>
   buildMobrixUiStandardComponent({
+    additionalProps,
     name: "popup",
     commonProps,
     Component: popupComponent({ className, children }),

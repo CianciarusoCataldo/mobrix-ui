@@ -10,6 +10,7 @@ import {
   Label,
   Link,
   RadioButton,
+  Rater,
   Selector,
   Slider,
   Spinner,
@@ -47,7 +48,7 @@ const AtomsPage = () => {
   };
 
   return (
-    <Container className="App" dark style={{ height: "110%" }}>
+    <Container unstyled className="App" dark style={{ height: "110%" }}>
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -192,7 +193,7 @@ const AtomsPage = () => {
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <Input />
+            <Input autoresizable />
             <div style={{ marginTop: "20px" }} />
             <Input value="text" />
             <div style={{ marginTop: "20px" }} />
@@ -262,6 +263,20 @@ const AtomsPage = () => {
           </div>
         }
         name="RadioButton"
+      />
+      <ComponentDemo
+        Component={
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <Rater />
+            <div style={{ marginTop: "20px" }} />
+            <Rater value={3} />
+            <div style={{ marginTop: "20px" }} />
+            <Rater dark />
+            <div style={{ marginTop: "20px" }} />
+            <Rater vertical />
+          </div>
+        }
+        name="Rater"
       />
       <ComponentDemo
         Component={

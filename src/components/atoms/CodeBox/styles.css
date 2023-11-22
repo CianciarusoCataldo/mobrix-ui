@@ -11,21 +11,21 @@
   background-color: var(--mobrix-ui-background-color);
 }
 
-[data-mobrix-ui-id="codebox"] .codebox-copy-icon {
+[data-mobrix-ui-id="codebox"] [data-mobrix-ui-class="codebox-copy-icon"] {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-[data-mobrix-ui-id="codebox"] .codebox-copy-icon:hover {
+[data-mobrix-ui-id="codebox"][data-mobrix-ui-hover="true"] [data-mobrix-ui-class="codebox-copy-icon"]:hover {
   opacity: 0.8;
 }
 
-[data-mobrix-ui-id="codebox"] .codebox-copy-icon:active {
+[data-mobrix-ui-id="codebox"] [data-mobrix-ui-class="codebox-copy-icon"]:active {
   opacity: 0.3;
 }
 
-[data-mobrix-ui-id="codebox"] .codebox-code {
+[data-mobrix-ui-id="codebox"] [data-mobrix-ui-class="codebox-code"] {
   margin-top: 0.7rem;
   padding: 1rem;
   line-height: 1.5rem;

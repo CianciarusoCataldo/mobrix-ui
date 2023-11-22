@@ -39,10 +39,11 @@ import listComponent from "./component";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const List: ListComponent = ({ elements, onClick, ...commonProps }) =>
+const List: ListComponent = ({ elements, onClick, additionalProps, ...commonProps }) =>
   buildMobrixUiStandardComponent({
     name: "list",
     Component: listComponent({ elements, onClick, ...commonProps }),
+    additionalProps,
     commonProps,
   });
 

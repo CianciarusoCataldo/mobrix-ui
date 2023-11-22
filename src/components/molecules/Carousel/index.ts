@@ -44,6 +44,7 @@ const Carousel: CarouselComponent = ({
   elements: actualElements,
   onChange,
   value,
+  additionalProps,
   ...commonProps
 }) => {
   return buildMobrixUiReactiveComponent<number>({
@@ -51,6 +52,7 @@ const Carousel: CarouselComponent = ({
     commonProps,
     defaultValue: 0,
     inputValue: value,
+    additionalProps,
     Component: ({ value, setValue }) =>
       carouselComponent({
         value,

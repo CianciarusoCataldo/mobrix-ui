@@ -57,6 +57,10 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
   buttons,
   elementClassName,
   onChange,
+  elements,
+  horizontal,
+  additionalProps = {},
+  radioProps,
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent<number>({
@@ -64,6 +68,10 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
     defaultValue: -1,
     inputValue,
     commonProps,
+    additionalProps: {
+      ...additionalProps,
+      "data-mobrix-ui-orientation": horizontal
+    },
     Component: ({ value, setValue }) =>
       radioButtonGroupComponent({
         value,
@@ -71,7 +79,10 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
         setValue,
         buttons,
         elementClassName,
-        dark: commonProps.dark,
+        horizontal,
+        elements,
+        radioProps,
+        ...commonProps,
       }),
   });
 

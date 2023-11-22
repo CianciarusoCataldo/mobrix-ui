@@ -19,7 +19,7 @@
 }
 
 @media (hover) {
-  [data-mobrix-ui-id="link"][data-mobrix-ui-styled="true"]:hover {
+  [data-mobrix-ui-id="link"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]:hover {
     color: var(--mobrix-ui-link-color);
   }
 }

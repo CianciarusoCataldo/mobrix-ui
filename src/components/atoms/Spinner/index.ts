@@ -44,11 +44,13 @@ import defaultIcons from "./icons";
 const Spinner: SpinnerComponent = ({
   value,
   statuses = defaultIcons,
+  additionalProps,
   ...commonProps
 }) =>
   buildMobrixUiStandardComponent({
     name: "spinner",
     commonProps,
+    additionalProps,
     Component: value && statuses[value]
       ? statuses[value]
       : statuses.loading || defaultIcons.loading,

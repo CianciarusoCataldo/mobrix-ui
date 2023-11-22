@@ -1,6 +1,5 @@
 import "./styles.css";
 
-import classnames from "classnames";
 import { RaterComponent } from "../../../types";
 
 import { buildMobrixUiReactiveComponent } from "../../../tools";
@@ -52,7 +51,8 @@ const Rater: RaterComponent = ({
   readonly,
   onChange,
   value,
-  vertical,
+  vertical = false,
+  additionalProps = {},
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent<number>({
@@ -68,13 +68,11 @@ const Rater: RaterComponent = ({
         value,
         setValue,
       }),
-    commonProps: {
-      ...commonProps,
-      className: classnames(commonProps.className, {
-        vertical: vertical,
-        horizontal: !vertical,
-      }),
+    additionalProps: {
+      ...additionalProps,
+      "data-mobrix-ui-vertical": vertical
     },
+    commonProps,
   });
 
 export default Rater;

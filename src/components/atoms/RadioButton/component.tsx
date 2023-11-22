@@ -1,5 +1,5 @@
 import React from "react";
 
-const radioButtonComponent = <div className="icon" />;
+const radioButtonComponent = <div data-mobrix-ui-class="icon" />;
 
 export default radioButtonComponent;

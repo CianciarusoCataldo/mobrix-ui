@@ -1,66 +1,25 @@
 [data-mobrix-ui-id="date-picker"] {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  border-radius: 0.375rem;
+  color: var(--mobrix-ui-text-color);
+  padding: 0.3rem 0.5rem;
+  width: max-content;
+  background-image: var(--mobrix-ui-background);
+  color: var(--mobrix-ui-text-color);
 }
 
-[data-mobrix-ui-id="date-picker"] .date-picker-box {
-  display: flex;
-  justify-content: center;
-}
-
-[data-mobrix-ui-id="date-picker"] .date-picker-calendar-container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+[data-mobrix-ui-id="date-picker"] [data-mobrix-ui-id="calendar"] {
   margin: auto;
 }
 
-[data-mobrix-ui-id="date-picker"] .date-picker-modal {
-  background: transparent;
-}
-
-[data-mobrix-ui-id="date-picker"] .date-picker-modal #mobrix-ui-divider {
-  display: none;
-}
-
-[data-mobrix-ui-id="date-picker"] .date-picker-box > .buttons,
-[data-mobrix-ui-id="date-picker"] .date-picker-box > .buttons .date-selectors {
+[data-mobrix-ui-id="date-picker"] [data-mobrix-ui-class="date-selectors"] {
   display: flex;
   flex-direction: row;
 }
 
-[data-mobrix-ui-id="date-picker"] [data-mobrix-ui-id="calendar"].date-picker-calendar .actual-date {
-  color: white;
-}
-
-[data-mobrix-ui-id="date-picker"] [data-mobrix-ui-id="calendar"].date-picker-calendar .arrow svg {
-  fill: white;
-}
-
-@media (hover) {
-  [data-mobrix-ui-id="date-picker"]
-    [data-mobrix-ui-id="calendar"].date-picker-calendar
-    .arrow:hover
-    svg {
-    fill: orange;
-  }
-
-  [data-mobrix-ui-id="date-picker"] .element:hover {
-    color: var(--mobrix-ui-focus-color);
-  }
-}
-
-[data-mobrix-ui-id="date-picker"] .date-picker-box > .buttons {
-  border-radius: 0.375rem;
-  color: var(--mobrix-ui-text-color);
-  padding: 0.3rem 0.5rem;
-}
-
-[data-mobrix-ui-id="date-picker"] .calendar-icon {
-  margin-left: 0.6rem;
-}
-
-[data-mobrix-ui-id="date-picker"] .element:focus-visible {
+[data-mobrix-ui-id="date-picker"]
+  [data-mobrix-ui-class="date-picker-element"]:focus-visible {
   color: var(--mobrix-ui-focus-color);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -68,30 +27,73 @@
   box-shadow: none;
 }
 
-[data-mobrix-ui-id="date-picker"] .date-picker-box > .buttons .element {
+[data-mobrix-ui-id="date-picker"] [data-mobrix-ui-class="date-picker-element"] {
   vertical-align: middle;
   display: inline-block;
+  margin-right: 0.3rem;
+}
+
+[data-mobrix-ui-id="date-picker"][data-mobrix-ui-styled="true"]
+  [data-mobrix-ui-class="calendar-icon"]
+  path {
+  fill: var(--mobrix-ui-text-color);
+}
+
+[data-mobrix-ui-id="date-picker"][data-mobrix-ui-styled="true"]
+  [data-mobrix-ui-class="calendar-icon"]:hover
+  path {
+  fill: var(--mobrix-ui-focus-color);
+}
+
+[data-mobrix-ui-id="date-picker"][data-mobrix-ui-styled="true"]
+  [data-mobrix-ui-class="date-picker-modal"]
+  [data-mobrix-ui-class="body"] {
+  width: 80%;
+  padding: 0;
+}
+
+@media (hover: none) {
+  [data-mobrix-ui-id="date-picker"][data-mobrix-ui-styled="true"]
+    [data-mobrix-ui-class="calendar-icon"]:hover
+    path {
+    fill: var(--mobrix-ui-text-color);
+  }
+}
+
+@media (max-width: 600px) {
+  [data-mobrix-ui-id="date-picker"][data-mobrix-ui-styled="true"]
+    [data-mobrix-ui-class="date-picker-modal"]
+    [data-mobrix-ui-class="body"] {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  [data-mobrix-ui-id="date-picker"][data-mobrix-ui-styled="true"]
+    [data-mobrix-ui-class="date-picker-modal"]
+    [data-mobrix-ui-class="body"] {
+    width: 95%;
+  }
+}
+
+@media (max-width: 400px) {
+  [data-mobrix-ui-id="date-picker"][data-mobrix-ui-styled="true"]
+    [data-mobrix-ui-class="date-picker-modal"]
+    [data-mobrix-ui-class="body"] {
+    width: 100%;
+  }
 }
 
 @media (max-width: 300px) {
-  [data-mobrix-ui-id="date-picker"] .date-picker-box > .buttons {
+  [data-mobrix-ui-id="date-picker"] {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  [data-mobrix-ui-id="date-picker"][data-mobrix-ui-styled="true"] [data-mobrix-ui-id="counterbox"].days {
-    font-size: 1.05rem;
-    width: 2em;
-  }
-
-  [data-mobrix-ui-id="date-picker"] .calendar-icon {
-    margin-top: 0.6rem;
-  }
 }
 
 @media (max-width: 260px) {
-  [data-mobrix-ui-id="date-picker"] .date-picker-box .buttons .date-selectors {
+  [data-mobrix-ui-id="date-picker"] [data-mobrix-ui-class="date-selectors"] {
     display: flex;
     flex-direction: column;
     align-items: center;

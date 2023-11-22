@@ -9,6 +9,7 @@ import {
 import { fieldFormatters } from "../FormField/utils";
 
 import Button from "../../atoms/Button";
+import FormField from "../FormField";
 
 const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
   title,
@@ -17,6 +18,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
   submitLabel,
   children,
   fieldClassName = "",
+  dark,
   ...commonProps
 }) => {
   const dropdownFields: Record<string, string | boolean | number> = fields
@@ -41,34 +43,18 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
 
       const type = fieldSettings.type || "text";
 
-      let FieldElement: (props: any) => JSX.Element =
-        fieldFormatters[type].component;
-
       const callBack = (newValue: any) => {
-        let formattedValue = fieldFormatters[type].format(newValue);
-        setValues({ ...values, [field]: formattedValue });
+        setValues({ ...values, [field]: newValue });
       };
-
-      const value =
-        values[field] !== null
-          ? fieldFormatters[type].format(values[field])
-          : undefined;
 
       return (
         <div className={"field " + fieldClassName} key={`form_field_${index}`}>
-          {fieldSettings.header && (
-            <span className="header" key={`form_field_${index}_header`}>
-              {fieldSettings.header}
-            </span>
-          )}
-          <FieldElement
-            value={value}
-            key={`form-field-${field}`}
-            testId={`form_field_${field}`}
-            className={"form-input " + type}
-            placeholder={fieldSettings.placeholder}
+          <FormField
+            value={values[field]}
+            header={fieldSettings.header}
+            type={type}
             onChange={callBack}
-            autocomplete="off"
+            dark={!dark}
           />
         </div>
       );
@@ -81,8 +67,8 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
     <Button
       key="mobrix_ui_form_submit_button"
       className="submit-button"
-      dark={!commonProps.dark}
-      testId="form_submit_button"
+      dark={!dark}
+      additionalProps={{ "data-mobrix-ui-test": "form_submit_button" }}
       onClick={() => {
         onSubmit && onSubmit(values);
       }}

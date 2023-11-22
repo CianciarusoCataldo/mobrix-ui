@@ -139,10 +139,7 @@ const HeaderContent = () => {
               onChange={(lang: number) => {
                 dispatch(changeLanguage(LANGUAGES[lang]));
               }}
-              content={Object.keys(LANGUAGES_ICONS).map((lang) => ({
-                name: lang,
-                icon: LANGUAGES_ICONS[lang],
-              }))}
+              elements={Object.keys(LANGUAGES_ICONS).map(lang => <div className="flex flex-row">{LANGUAGES_ICONS[lang]}{` ${lang}`}</div>)}
             />
             <Toggle
               onIcon={LightModeIcon}

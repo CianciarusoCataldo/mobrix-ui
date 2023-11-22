@@ -61,10 +61,12 @@ const TabViewer: TabViewerComponent = ({
   tabSelectedClassName,
   tabUnselectedClassName,
   tabViewClassName,
+  additionalProps,
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent({
     commonProps,
+    additionalProps,
     defaultValue: 0,
     inputValue: selected,
     name: "tab-viewer",

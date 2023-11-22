@@ -10,7 +10,7 @@
 
 [data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-styled="true"]
   [data-mobrix-ui-class="tabs-list"]
-  .tab {
+  [data-mobrix-ui-class="tab"] {
   padding: 0.7rem 1rem;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -21,36 +21,54 @@
 
 [data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-styled="true"]
   [data-mobrix-ui-class="tabs-list"]
-  .tab.selected {
-  background-image: var(--mobrix-ui-background);
+  [data-mobrix-ui-class="tab"][data-mobrix-ui-tab-viewer-selected="true"] {
+  background-image: var(--mobrix-ui-tab-viewer-background);
 }
 
 [data-mobrix-ui-id="tab-viewer"]
   [data-mobrix-ui-class="tabs-list"]
-  .tab:not(.selected) {
-  background-image: var(--mobrix-ui-background-dark);
+  [data-mobrix-ui-class="tab"]:not(
+    [data-mobrix-ui-tab-viewer-selected="true"]
+  ) {
+  background-image: linear-gradient(to right, #a1a0a0, #797979);
+  color: #bdbdbd;
+}
+
+[data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-dark="true"]
+  [data-mobrix-ui-class="tabs-list"]
+  [data-mobrix-ui-class="tab"]:not(
+    [data-mobrix-ui-tab-viewer-selected="true"]
+  ) {
+  background-image: linear-gradient(to right, #3e4b63, #3f4858);
   color: #bdbdbd;
 }
 
 [data-mobrix-ui-id="tab-viewer"]
   [data-mobrix-ui-class="tabs-list"]
-  .tab:not(.selected):hover {
-  background-image: linear-gradient(to right, #a1a0a0, #797979);
+  [data-mobrix-ui-class="tab"]:not(
+    [data-mobrix-ui-tab-viewer-selected="true"]
+  ):hover {
+  background-image: linear-gradient(to right, #b6b4b4, #999797);
 }
 
 [data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-dark="true"]
   [data-mobrix-ui-class="tabs-list"]
-  .tab:not(.selected) {
+  [data-mobrix-ui-class="tab"]:not(
+    [data-mobrix-ui-tab-viewer-selected="true"]
+  ) {
   background-image: linear-gradient(to right, #3e4b63, #3f4858);
   color: #bdbdbd;
 }
 
 [data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-dark="true"]
   [data-mobrix-ui-class="tabs-list"]
-  .tab:not(.selected):hover {
+  [data-mobrix-ui-class="tab"]:not(
+    [data-mobrix-ui-tab-viewer-selected="true"]
+  ):hover {
   background-image: linear-gradient(to right, #566888, #3c465a);
 }
 
 [data-mobrix-ui-id="tab-viewer"] [data-mobrix-ui-class="tab-view"] {
   padding: 0.7rem 1rem;
+  background-image: var(--mobrix-ui-tab-viewer-background);
 }

@@ -43,7 +43,6 @@ import cardComponent from "./component";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Card: CardComponent = ({
-  icon,
   header,
   body,
   footer,
@@ -52,13 +51,13 @@ const Card: CardComponent = ({
   noDividers,
   noFooterDivider,
   noHeaderDivider,
+  additionalProps,
   ...commonProps
 }) => {
   return buildMobrixUiStandardComponent({
     name: "card",
     Component: cardComponent({
       header,
-      icon,
       body,
       children,
       footer,
@@ -68,6 +67,7 @@ const Card: CardComponent = ({
       noHeaderDivider,
     }),
     commonProps,
+    additionalProps
   });
 };
 

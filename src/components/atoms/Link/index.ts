@@ -39,12 +39,13 @@ import { buildMobrixUiStandardComponent } from "../../../tools";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Link: LinkComponent = ({ to, children, newTab, ...commonProps }) =>
+const Link: LinkComponent = ({ to, children, newTab, additionalProps = {}, ...commonProps }) =>
   buildMobrixUiStandardComponent({
     name: "link",
     Component: children,
     commonProps,
     additionalProps: {
+      ...additionalProps,
       href: to,
       target: newTab ? "_blank" : undefined,
     },

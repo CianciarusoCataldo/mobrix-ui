@@ -24,13 +24,13 @@ const datePickerTest = () => {
       let wrapper = mount(
         <DatePicker
           onChange={onChangeStub}
-fromToday={false}
+          fromToday={false}
         />
       );
 
       wrapper.find('[data-mobrix-ui-test="date_picker_calendar_button"]').simulate("click");
       wrapper
-      .find('[data-mobrix-ui-test="date_picker_calendar"]')
+        .find('[data-mobrix-ui-test="date_picker_calendar"]')
         .find(`button[data-mobrix-ui-test="date_button_4"]`)
         .simulate("click");
 

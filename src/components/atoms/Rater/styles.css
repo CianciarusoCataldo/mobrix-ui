@@ -1,6 +1,7 @@
 [data-mobrix-ui-id="rater"] {
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 [data-mobrix-ui-id="rater"][data-mobrix-ui-styled="true"] {
@@ -9,15 +10,16 @@
   padding: 0.4rem;
 }
 
-[data-mobrix-ui-id="rater"].horizontal {
+[data-mobrix-ui-id="rater"][data-mobrix-ui-vertical="false"] {
   flex-direction: row;
 }
 
-[data-mobrix-ui-id="rater"].vertical {
+[data-mobrix-ui-id="rater"][data-mobrix-ui-vertical="true"] {
   flex-direction: column;
+  width: fit-content;
 }
 
-[data-mobrix-ui-id="rater"] .rater-icon {
+[data-mobrix-ui-id="rater"] [data-mobrix-ui-class="rater-icon"] {
   margin-left: 0.2rem;
   margin-right: 0.2rem;
 }

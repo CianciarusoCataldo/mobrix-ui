@@ -1,4 +1,4 @@
-import { BuilderComponent, MoBrixUiComponent } from "../../../types/global";
+import { BuilderComponent, BuilderProps, ClickableComponent, CommonProps, MoBrixUiComponent } from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Table component props
@@ -9,7 +9,7 @@ import { BuilderComponent, MoBrixUiComponent } from "../../../types/global";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type TableProps = {
+export type TableProps = ClickableComponent<(row: number, column: number) => void> & {
   /** if true, the first row will be used as headers (and not generic data) */
   headers?: boolean;
 
@@ -22,8 +22,18 @@ export type TableProps = {
   /** Custom class-name applied on every table cell */
   cellClassName?: string;
 
-  /** If `true`, pre-format content inside table cell */
-  format?: boolean;
+  /** Custom class-name applied on every table cell */
+  headerClassName?: string;
+
+  headersProps?: Record<string, any>
+
+  cellProps?: Record<string, any>
+
+  rowProps?: Record<string, any>
+
+  propsCallback?: (row: number, column: number) => Record<string, any>
+
+  cellWidth?: string
 };
 
 /**

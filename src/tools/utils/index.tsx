@@ -3,7 +3,8 @@ import "../styles/shared-styles.css";
 
 import React, { useEffect, useRef } from "react";
 
-import { BuilderProps, CommonProps } from "../../types/global";
+import { BuilderComponent, BuilderProps, CommonProps } from "../../types/global";
+import { DEFAULT_COMMON_PROPS } from "./constants";
 
 /* istanbul ignore next */
 const useOutsideAlerter = (ref: any, callback: () => void) => {
@@ -20,6 +21,14 @@ const useOutsideAlerter = (ref: any, callback: () => void) => {
   });
 };
 
+export const generateElementsArray = (components: { condition: boolean, component: BuilderComponent }[]) =>
+  components.filter(component => component.condition).map((component, index) => component.component)
+
+
+export const parseCommonProps = (props: CommonProps): CommonProps => ({
+  ...DEFAULT_COMMON_PROPS,
+  ...props,
+})
 /**
  * Build a standard {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component, providing shared functionalities and props, to optimize the process.
  *
@@ -49,15 +58,20 @@ export const buildMobrixUiStandardComponent = ({
 }: BuilderProps) => {
   let a11y = commonProps.a11y !== undefined ? commonProps.a11y : true;
 
+  const inputCommonProps = parseCommonProps(commonProps)
+
   let props: CommonProps & Record<string, any> = {
     "data-mobrix-ui-id": name,
-    "data-mobrix-ui-dark": commonProps.dark,
-    "data-mobrix-ui-styled": !commonProps.unstyled,
-    "data-mobrix-ui-shadow": commonProps.shadow,
-    "data-mobrix-ui-animated": commonProps.animated,
-    "data-mobrix-ui-hide": commonProps.hide,
-    "data-mobrix-ui-a11y": commonProps.a11y,
-    "data-mobrix-ui-test": commonProps.testId,
+    "data-mobrix-ui-dark": inputCommonProps.dark,
+    "data-mobrix-ui-styled": !inputCommonProps.unstyled,
+    "data-mobrix-ui-shadow": inputCommonProps.shadow,
+    "data-mobrix-ui-animated": inputCommonProps.animated,
+    "data-mobrix-ui-hide": inputCommonProps.hide,
+    "data-mobrix-ui-a11y": inputCommonProps.a11y,
+    "data-mobrix-ui-background": !inputCommonProps.noBackground,
+    "data-mobrix-ui-hover": !inputCommonProps.noHover,
+    "data-mobrix-ui-class": inputCommonProps.mobrixUiClass,
+    "data-mobrix-ui-enabled": !inputCommonProps.disabled,
     "data-mobrix-ui-a11y-dark":
       a11y &&
       (commonProps.a11yDark !== undefined
@@ -71,6 +85,7 @@ export const buildMobrixUiStandardComponent = ({
     onFocus: commonProps.onFocus,
     onKeyDown: commonProps.onKeyDown,
     ...additionalProps,
+    ...inputCommonProps.additionalProps
   };
 
   const wrapperRef = useRef(null);
@@ -103,7 +118,7 @@ export const buildMobrixUiStandardComponent = ({
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export const buildMobrixUiReactiveComponent = <T=any>({
+export const buildMobrixUiReactiveComponent = <T = any>({
   name,
   additionalProps,
   wrapper,

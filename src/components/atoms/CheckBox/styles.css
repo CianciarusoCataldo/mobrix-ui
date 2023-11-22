@@ -16,11 +16,11 @@
 }
 
 @media (hover) {
-  [data-mobrix-ui-id="checkbox"][data-mobrix-ui-styled="true"]:hover {
+  [data-mobrix-ui-id="checkbox"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]:hover {
     background-color: #d4e6fa;
   }
 
-  [data-mobrix-ui-id="checkbox"][data-mobrix-ui-styled="true"][data-mobrix-ui-dark="true"]:hover {
+  [data-mobrix-ui-id="checkbox"][data-mobrix-ui-styled="true"][data-mobrix-ui-dark="true"][data-mobrix-ui-hover="true"]:hover {
     background-color: #3a3552;
   }
 }

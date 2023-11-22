@@ -1,5 +1,7 @@
 import {
+  CommonProps,
   ComponentWithCallback,
+  ComponentWithValue,
   MoBrixUiComponent,
 } from "../../../types/global";
 
@@ -12,7 +14,7 @@ import {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type FormFieldProps<T=any> = ComponentWithCallback<T> & {
+export type FormFieldProps<T = any> = ComponentWithValue & ComponentWithCallback<T> & {
   /** Text showed above the field */
   header?: string;
 
@@ -32,16 +34,16 @@ export type FormFieldProps<T=any> = ComponentWithCallback<T> & {
    * - `counter` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Counter Counter})
    */
   type?:
-    | "boolean"
-    | "text"
-    | "numeric"
-    | "radio"
-    | "checkbox"
-    | "toggle"
-    | "rater"
-    | "slider"
-    | "input"
-    | "counter";
+  | "boolean"
+  | "text"
+  | "numeric"
+  | "radio"
+  | "checkbox"
+  | "toggle"
+  | "rater"
+  | "slider"
+  | "input"
+  | "counter";
 
   /** Placeholder value showed when the input field is empty */
   placeholder?: string;
@@ -51,6 +53,8 @@ export type FormFieldProps<T=any> = ComponentWithCallback<T> & {
 
   /** Custom validation function called on submit. I */
   validate?: (fieldValue: T) => boolean;
+
+  headerProps?: CommonProps
 };
 
 /**

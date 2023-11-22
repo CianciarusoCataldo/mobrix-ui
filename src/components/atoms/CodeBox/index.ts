@@ -12,7 +12,6 @@ import codeboxComponent from "./component";
  * @since 1.0.0
  *
  * @param {string} value code to display
- * @param {boolean} enhanced enable/disable advanced mode, to access extra features, like the integrated copy button
  * @param environment environment for text highlight feature, default to "terminal" (only enabled into enhanced mode)
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
@@ -46,10 +45,12 @@ const CodeBox: CodeBoxComponent = ({
   highlight,
   environment,
   noCopyButton,
+  additionalProps,
   ...commonProps
 }) =>
   buildMobrixUiStandardComponent({
     name: "codebox",
+    additionalProps,
     commonProps,
     Component: codeboxComponent({
       highlight,

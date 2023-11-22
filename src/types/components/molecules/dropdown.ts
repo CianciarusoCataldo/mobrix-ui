@@ -1,5 +1,6 @@
 import {
   BuilderComponent,
+  CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
@@ -21,6 +22,12 @@ export type DropdownProps = ComponentWithValue<number> &
 
     /** Show/hide arrow icon near selected element */
     hideArrow?: boolean;
+
+    /**  */
+    containerClassname?: string
+
+    /**  */
+    containerProps?: CommonProps
   };
 
 export type DropdownComponent = MoBrixUiComponent<DropdownProps>;

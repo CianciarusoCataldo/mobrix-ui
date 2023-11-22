@@ -25,3 +25,5 @@ export { default as RadioButtonGroup } from "./RadioButtonGroup";
 export { default as Review } from "./Review";
 
 export { default as Table } from "./Table";
+
+export { default as TabViewer } from "./TabViewer";

@@ -6,8 +6,7 @@ import {
   ModalProps,
 } from "../../../types";
 
-import Card from "../Card";
-import Container from "../Container";
+import DismissableCard from "../DismissableCard";
 
 const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
   children,
@@ -19,30 +18,36 @@ const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
   closeOutside,
   animated,
   /* istanbul ignore next */
-  onFocusLost = () => {},
+  onFocusLost = () => { },
 }) => {
-  /* istanbul ignore next */
-  const onCloseCallback = onClose ? onClose : () => {};
 
   /* istanbul ignore next */
   const onFocusLostCallback = () => {
     if (!hide) {
       onFocusLost();
-      closeOutside && onCloseCallback();
+      console.log("onFocusLost")
+
+      closeOutside && onClose();
     }
   };
 
   return (
-    <div className="modal-window">
-      <Container
-        className={"content " + className}
-        dark={dark}
-        hide={false}
-        onFocusLost={onFocusLostCallback}
-        unstyled={unstyled}
-        animated={animated}
-      >{children}</Container>
-    </div>
+    <DismissableCard
+      unstyled={unstyled}
+      alwaysVisible
+      noHeaderDivider
+      additionalProps={{
+        "data-mobrix-ui-class": "modal-window",
+      }}
+      className={className}
+      dark={dark}
+      hide={false}
+      onFocusLost={onFocusLostCallback}
+      noBackground
+      onClose={onClose}
+      animated={animated}
+      body={children}
+    />
   );
 };
 

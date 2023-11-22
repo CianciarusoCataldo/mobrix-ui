@@ -1,10 +1,24 @@
+import React from "react";
+
 import "./styles.css";
 
 import { DrawerComponent } from "../../../types";
 
 import { buildMobrixUiStandardComponent } from "../../../tools";
 
-import drawerBuilder from "./builder";
+import drawerComponent from "./component";
+import { useAnimation } from "../../../tools/utils/hooks";
+
+const ALLOWED_POSITIONS = [
+  "right",
+  "left",
+  "top",
+  "bottom",
+  "top-left",
+  "top-right",
+  "bottom-left",
+  "bottom-right",
+];
 
 /**
  * A modern drawer, easy to integrate and to customize.
@@ -41,10 +55,29 @@ import drawerBuilder from "./builder";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Drawer: DrawerComponent = (props) => {
+const Drawer: DrawerComponent = ({ position, hide, animated, children, additionalProps = {}, onClose = () => { }, ...commonProps }) => {
+  const drawerLocation =
+    position && ALLOWED_POSITIONS.includes(position) ? position : "left";
+
+  const [value, setValue, onCloseCallback] = useAnimation("", onClose);
+
   return buildMobrixUiStandardComponent({
     name: "drawer",
-    ...drawerBuilder(props),
+    commonProps: {
+      ...commonProps,
+      hide: value.length === 0 && hide,
+    },
+    additionalProps: {
+      ...additionalProps, 
+      "data-mobrix-ui-drawer-location": drawerLocation,
+      "data-mobrix-ui-drawer-animation": hide ? value : "ease-in"
+    },
+    Component: drawerComponent({
+      children,
+      hide,
+      onClose: onCloseCallback,
+      ...commonProps,
+    })
   });
 };
 

@@ -15,6 +15,8 @@ import {
 export type ContainerProps = ComponentWithChildren<any> & {
   /** component wrapper type ("div" | "header" | "footer") */
   wrapper?: "div" | "header" | "footer";
+
+  additionalProps?: Record<string, any>
 };
 
 /**

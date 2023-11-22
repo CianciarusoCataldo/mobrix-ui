@@ -6,3 +6,5 @@ export * from "./components/molecules";
 
 /** Organisms */
 export * from "./components/organisms";
+
+export * from "./types"

@@ -41,12 +41,14 @@ import { buildMobrixUiStandardComponent } from "../../../tools";
 const Container: ContainerComponent = ({
   children,
   wrapper,
+  additionalProps,
   ...commonProps
 }) => buildMobrixUiStandardComponent({
-    name: "container",
-    Component: children,
-    commonProps,
-    wrapper,
-  });
+  name: "container",
+  Component: children,
+  commonProps,
+  additionalProps,
+  wrapper,
+});
 
 export default Container;

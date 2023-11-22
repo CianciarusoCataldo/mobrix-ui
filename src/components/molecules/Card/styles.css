@@ -10,26 +10,23 @@
   padding: 0.25rem;
 }
 
-[data-mobrix-ui-id*="card"][data-mobrix-ui-styled="true"] .header {
+[data-mobrix-ui-id*="card"][data-mobrix-ui-styled="true"] [data-mobrix-ui-class="header"] {
+  margin: auto;
+  text-align: center;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
+  width: 100%;
 }
 
-[data-mobrix-ui-id="card"][data-mobrix-ui-styled="true"] .header {
-  padding: 0.75rem;
-  margin: auto;
-  text-align: center;
-}
-
-[data-mobrix-ui-id*="card"][data-mobrix-ui-styled="true"] .body {
+[data-mobrix-ui-id*="card"][data-mobrix-ui-styled="true"] [data-mobrix-ui-class="body"] {
   padding: 0.25rem;
   margin: 0.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-[data-mobrix-ui-id*="card"][data-mobrix-ui-styled="true"] .footer {
+[data-mobrix-ui-id*="card"][data-mobrix-ui-styled="true"] [data-mobrix-ui-class="footer"] {
   padding: 0.25rem;
   margin: 0.5rem;
   font-size: 1rem;
