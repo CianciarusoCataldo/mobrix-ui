@@ -41,9 +41,9 @@ import component from "./component";
  */
 const RadioButton: RadioButtonComponent = ({
   value: inputValue,
-  onChange = (e) => { },
+  onChange = () => { },
   deselectable = true,
-  onKeyDown = (e) => { },
+  onKeyDown = () => { },
   additionalProps = {},
   ...commonProps
 }) =>

@@ -19,7 +19,7 @@ const DismissableCardComponent: MobrixUiReactiveComponent<boolean, DismissableCa
     footer,
     header,
     dark,
-    onClose,
+    onClose = () => { },
     alwaysVisible
 }) => cardComponent({
     children,

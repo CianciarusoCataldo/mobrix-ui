@@ -44,7 +44,7 @@ import { buildMobrixUiReactiveComponent } from "../../../tools";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Slider: SliderComponent = ({
-  onChange = (e) => { },
+  onChange = () => { },
   value: inputValue,
   min,
   max,

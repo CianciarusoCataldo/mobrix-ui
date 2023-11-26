@@ -44,7 +44,7 @@ import { buildMobrixUiReactiveComponent } from "../../../tools";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Counter: CounterComponent = ({
-  onChange,
+  onChange = () => { },
   value: inputValue,
   placeholder,
   readOnly,
@@ -69,7 +69,7 @@ const Counter: CounterComponent = ({
         min,
         onChange: (e) => {
           if (!readOnly) {
-            onChange && onChange(Number(e.target.value));
+            onChange(Number(e.target.value));
             setValue(Number(e.target.value));
           }
         },

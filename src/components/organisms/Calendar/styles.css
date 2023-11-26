@@ -55,6 +55,7 @@
   [data-mobrix-ui-calendar-table="true"]
   tr[data-mobrix-ui-table-row="true"]
   [data-mobrix-ui-table-cell="true"][data-mobrix-ui-selected="true"] {
+  cursor: default;
   background-image: var(--mobrix-ui-background-dark);
   color: var(--mobrix-ui-text-color-dark);
 }
@@ -69,6 +70,7 @@
   [data-mobrix-ui-calendar-table="true"]
   tr[data-mobrix-ui-table-row="true"]
   [data-mobrix-ui-table-cell="true"][data-mobrix-ui-selected="true"] {
+  cursor: default;
   background-image: var(--mobrix-ui-background-light);
   color: var(--mobrix-ui-text-color-light);
 }

@@ -33,7 +33,6 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
           data-mobrix-ui-hide={index !== item}
           data-mobrix-ui-class="element"
           data-mobrix-ui-animation={index === item ? activeClassName : ""}
-          className={index === item ? activeClassName : ""}
         >
           {element}
         </div>

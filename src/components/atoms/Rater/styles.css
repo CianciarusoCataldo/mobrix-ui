@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   text-align: center;
+  background: var(--mobrix-ui-rater-background);
 }
 
 [data-mobrix-ui-id="rater"][data-mobrix-ui-styled="true"] {
-  background: var(--mobrix-ui-background);
   border-radius: 8px;
   padding: 0.4rem;
 }

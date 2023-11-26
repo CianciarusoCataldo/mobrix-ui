@@ -6,7 +6,7 @@ export const DefaultCheckIcon = (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 1171.000000 1280.000000"
     preserveAspectRatio="xMidYMid meet"
-    fill="var(--mobrix-ui-link-color)"
+    fill="var(--mobrix-ui-checkbox-tick-color)"
   >
     <g
       transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"

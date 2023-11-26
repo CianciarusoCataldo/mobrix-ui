@@ -56,6 +56,8 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Button dark>Button dark not animated</Button>
             <div style={{ marginTop: "20px" }} />
+            <Button noBackground dark>Button dark not animated</Button>
+            <div style={{ marginTop: "20px" }} />
             <Button animated>Button light animated</Button>
             <div style={{ marginTop: "20px" }} />
             <Button animated dark>
@@ -121,11 +123,6 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <CheckBox
               unstyled
-              style={{
-                background: "white",
-                borderWidth: "2px",
-                borderRadius: "30%",
-              }}
               icon={<img alt="" src={tick} width="30px" />}
               value={true}
             />
@@ -269,7 +266,7 @@ const AtomsPage = () => {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Rater />
             <div style={{ marginTop: "20px" }} />
-            <Rater value={3} />
+            <Rater unstyled value={3} />
             <div style={{ marginTop: "20px" }} />
             <Rater dark />
             <div style={{ marginTop: "20px" }} />

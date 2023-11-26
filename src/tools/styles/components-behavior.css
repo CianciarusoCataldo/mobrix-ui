@@ -1,0 +1,295 @@
+[data-mobrix-ui-id]:not([data-mobrix-ui-dark="true"]) {
+  --mobrix-ui-link-color: var(
+    --mobrix-ui-custom-link-color-light,
+    var(--mobrix-ui-link-color-light)
+  );
+  --mobrix-ui-radio-background: var(--mobrix-ui-radio-background-light);
+
+  --mobrix-ui-table-header-background: var(
+    --mobrix-ui-table-header-background-light
+  );
+
+  --mobrix-ui-table-header-text-color: var(
+    --mobrix-ui-table-header-text-color-light
+  );
+
+  --mobrix-ui-tab-viewer-background: var(
+    --mobrix-ui-tab-viewer-background-light
+  );
+
+  --mobrix-ui-button-background: var(
+    --mobrix-ui-custom-button-background-light,
+    var(--mobrix-ui-background-light)
+  );
+
+  --mobrix-ui-button-text-color: var(
+    --mobrix-ui-custom-button-text-color-light,
+    var(--mobrix-ui-text-color-light)
+  );
+
+  --mobrix-ui-checkbox-background: var(
+    --mobrix-ui-custom-checkbox-background-color-light,
+    var(--mobrix-ui-background-color-light)
+  );
+
+  --mobrix-ui-checkbox-tick-color: var(
+    --mobrix-ui-custom-checkbox-tick-color-light,
+    var(--mobrix-ui-checkbox-tick-color-light)
+  );
+
+  --mobrix-ui-codebox-background: var(
+    --mobrix-ui-custom-codebox-background-light,
+    var(--mobrix-ui-background-color-light)
+  );
+
+  --mobrix-ui-codebox-text-color: var(
+    --mobrix-ui-custom-codebox-text-color-light,
+    var(--mobrix-ui-text-color-light)
+  );
+
+  --mobrix-ui-counterbox-background: var(
+    --mobrix-ui-custom-counterbox-background-light,
+    var(--mobrix-ui-background-color-light)
+  );
+
+  --mobrix-ui-counterbox-text-color: var(
+    --mobrix-ui-custom-counterbox-text-color-light,
+    var(--mobrix-ui-text-color-light)
+  );
+
+  --mobrix-ui-divider-color: var(
+    --mobrix-ui-custom-divider-color-light,
+    var(--mobrix-ui-text-color-light)
+  );
+
+  --mobrix-ui-inputbox-background: var(
+    --mobrix-ui-custom-inputbox-background-light,
+    var(--mobrix-ui-background-color-light)
+  );
+
+  --mobrix-ui-inputbox-text-color: var(
+    --mobrix-ui-custom-inputbox-text-color-light,
+    var(--mobrix-ui-text-color-light)
+  );
+
+  --mobrix-ui-label-text-color: var(
+    --mobrix-ui-custom-label-text-color-light,
+    var(--mobrix-ui-text-color-light)
+  );
+
+  --mobrix-ui-rater-background: var(
+    --mobrix-ui-custom-rater-background-light,
+    var(--mobrix-ui-background-light)
+  );
+
+  --mobrix-ui-selector-background: var(
+    --mobrix-ui-custom-selector-background-light,
+    var(--mobrix-ui-background-color-light)
+  );
+
+  --mobrix-ui-selector-text-color: var(
+    --mobrix-ui-custom-selector-text-color-light,
+    var(--mobrix-ui-text-color-light)
+  );
+
+  --mobrix-ui-slider-background: var(
+    --mobrix-ui-custom-slider-background-light,
+    var(--mobrix-ui-background-light)
+  );
+
+  --mobrix-ui-slider-thumb-color: var(
+    --mobrix-ui-custom-slider-thumb-color-light,
+    var(--mobrix-ui-slider-thumb-color-light)
+  );
+
+  --mobrix-ui-toggle-background: var(
+    --mobrix-ui-custom-toggle-background-light,
+    var(--mobrix-ui-background-light)
+  );
+
+  --mobrix-ui-dropdown-arrow-color: var(
+    --mobrix-ui-custom-dropdown-arrow-color-light,
+    var(--mobrix-ui-dropdown-arrow-color-light)
+  );
+
+  --mobrix-ui-dropdown-arrow-color-hover: var(
+    --mobrix-ui-custom-dropdown-arrow-color-hover-light,
+    var(--mobrix-ui-dropdown-arrow-color-hover-light)
+  );
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-dark="true"] {
+  --mobrix-ui-radio-background: var(--mobrix-ui-radio-background-dark);
+
+  --mobrix-ui-table-header-background: var(
+    --mobrix-ui-table-header-background-dark
+  );
+
+  --mobrix-ui-table-header-text-color: var(
+    --mobrix-ui-table-header-text-color-dark
+  );
+
+  --mobrix-ui-tab-viewer-background: var(
+    --mobrix-ui-tab-viewer-background-dark
+  );
+
+  --mobrix-ui-button-background: var(
+    --mobrix-ui-custom-button-background-dark,
+    var(--mobrix-ui-background-dark)
+  );
+
+  --mobrix-ui-button-text-color: var(
+    --mobrix-ui-custom-button-text-color-dark,
+    var(--mobrix-ui-text-color-dark)
+  );
+
+  --mobrix-ui-checkbox-background: var(
+    --mobrix-ui-custom-checkbox-background-color-dark,
+    var(--mobrix-ui-background-color-dark)
+  );
+
+  --mobrix-ui-checkbox-tick-color: var(
+    --mobrix-ui-custom-checkbox-tick-color-dark,
+    var(--mobrix-ui-checkbox-tick-color-dark)
+  );
+
+  --mobrix-ui-codebox-background: var(
+    --mobrix-ui-custom-codebox-background-dark,
+    var(--mobrix-ui-background-color-dark)
+  );
+
+  --mobrix-ui-codebox-text-color: var(
+    --mobrix-ui-custom-codebox-text-color-dark,
+    var(--mobrix-ui-text-color-dark)
+  );
+
+  --mobrix-ui-counterbox-background: var(
+    --mobrix-ui-custom-counterbox-background-dark,
+    var(--mobrix-ui-background-color-dark)
+  );
+
+  --mobrix-ui-counterbox-text-color: var(
+    --mobrix-ui-custom-counterbox-text-color-dark,
+    var(--mobrix-ui-text-color-dark)
+  );
+
+  --mobrix-ui-divider-color: var(
+    --mobrix-ui-custom-divider-color-dark,
+    var(--mobrix-ui-text-color-dark)
+  );
+
+  --mobrix-ui-inputbox-background: var(
+    --mobrix-ui-custom-inputbox-background-dark,
+    var(--mobrix-ui-background-color-dark)
+  );
+
+  --mobrix-ui-inputbox-text-color: var(
+    --mobrix-ui-custom-inputbox-text-color-dark,
+    var(--mobrix-ui-text-color-dark)
+  );
+
+  --mobrix-ui-label-text-color: var(
+    --mobrix-ui-custom-label-text-color-dark,
+    var(--mobrix-ui-text-color-dark)
+  );
+
+  --mobrix-ui-link-color: var(
+    --mobrix-ui-custom-link-color-dark,
+    var(--mobrix-ui-link-color-dark)
+  );
+
+  --mobrix-ui-rater-background: var(
+    --mobrix-ui-custom-rater-background-dark,
+    var(--mobrix-ui-background-dark)
+  );
+
+  --mobrix-ui-selector-background: var(
+    --mobrix-ui-custom-selector-background-dark,
+    var(--mobrix-ui-background-color-dark)
+  );
+
+  --mobrix-ui-selector-text-color: var(
+    --mobrix-ui-custom-selector-text-color-dark,
+    var(--mobrix-ui-text-color-dark)
+  );
+
+  --mobrix-ui-slider-background: var(
+    --mobrix-ui-custom-slider-background-dark,
+    var(--mobrix-ui-background-dark)
+  );
+
+  --mobrix-ui-toggle-background: var(
+    --mobrix-ui-custom-toggle-background-dark,
+    var(--mobrix-ui-background-dark)
+  );
+
+  --mobrix-ui-slider-thumb-color: var(
+    --mobrix-ui-custom-slider-thumb-color-dark,
+    var(--mobrix-ui-slider-thumb-color-dark)
+  );
+
+  --mobrix-ui-dropdown-arrow-color: var(
+    --mobrix-ui-custom-dropdown-arrow-color-dark,
+    var(--mobrix-ui-dropdown-arrow-color-dark)
+  );
+
+  --mobrix-ui-dropdown-arrow-color-hover: var(
+    --mobrix-ui-custom-dropdown-arrow-color-hover-dark,
+    var(--mobrix-ui-dropdown-arrow-color-hover-dark)
+  );
+}
+
+@media (hover) {
+  [data-mobrix-ui-id]:not([data-mobrix-ui-dark="true"]):hover {
+    --mobrix-ui-radio-background: var(--mobrix-ui-radio-background-hover-light);
+    --mobrix-ui-button-background: var(
+      --mobrix-ui-custom-button-background-hover-light,
+      var(--mobrix-ui-button-background-hover-light)
+    );
+    --mobrix-ui-checkbox-background: var(
+      --mobrix-ui-custom-checkbox-background-hover-light,
+      var(--mobrix-ui-checkbox-background-hover-light)
+    );
+    --mobrix-ui-link-color: var(
+      --mobrix-ui-custom-link-color-hover-light,
+      var(--mobrix-ui-link-color-hover-light)
+    );
+  }
+
+  [data-mobrix-ui-id][data-mobrix-ui-dark="true"]:hover {
+    --mobrix-ui-radio-background: var(--mobrix-ui-radio-background-hover-dark);
+    --mobrix-ui-button-background: var(
+      --mobrix-ui-custom-button-background-hover-dark,
+      var(--mobrix-ui-button-background-hover-dark)
+    );
+    --mobrix-ui-checkbox-background: var(
+      --mobrix-ui-custom-checkbox-background-hover-dark,
+      var(--mobrix-ui-checkbox-background-hover-dark)
+    );
+    --mobrix-ui-link-color: var(
+      --mobrix-ui-custom-link-color-hover-dark,
+      var(--mobrix-ui-link-color-hover-dark)
+    );
+  }
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-a11y="true"]:focus-visible {
+  --mobrix-ui-link-color: rgb(37, 99, 235);
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-a11y="true"][data-mobrix-ui-a11y-dark="true"]:focus-visible {
+  --mobrix-ui-link-color: orange;
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-background="false"],
+[data-mobrix-ui-id][data-mobrix-ui-background="false"]:hover,
+[data-mobrix-ui-id][data-mobrix-ui-styled="false"],
+[data-mobrix-ui-id][data-mobrix-ui-styled="false"]:hover {
+  --mobrix-ui-button-background: transparent;
+  --mobrix-ui-checkbox-background: transparent;
+  --mobrix-ui-codebox-background: transparent;
+  --mobrix-ui-counterbox-background: transparent;
+  --mobrix-ui-inputbox-background: transparent;
+  --mobrix-ui-rater-background: transparent;
+  --mobrix-ui-slider-background: transparent;
+}

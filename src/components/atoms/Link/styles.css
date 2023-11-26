@@ -3,7 +3,7 @@
   line-height: 1.5rem;
 }
 
-[data-mobrix-ui-id="link"][data-mobrix-ui-styled="true"]:focus-visible {
+[data-mobrix-ui-id="link"][data-mobrix-ui-styled="true"] {
   color: var(--mobrix-ui-link-color);
 }
 
@@ -16,10 +16,4 @@
 
 [data-mobrix-ui-id="link"]:active {
   font-weight: 700;
-}
-
-@media (hover) {
-  [data-mobrix-ui-id="link"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]:hover {
-    color: var(--mobrix-ui-link-color);
-  }
 }

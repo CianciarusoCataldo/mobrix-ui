@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.test-class {
+  background: white;
+}
+
 .calendar-test-label {
   color: white;
   fill: white;

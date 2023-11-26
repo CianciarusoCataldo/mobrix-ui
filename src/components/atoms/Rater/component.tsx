@@ -9,7 +9,7 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
   type = "star",
   max,
   readonly,
-  onChange,
+  onChange = () => { },
   value: actualValue,
   setValue,
 }) => {
@@ -45,7 +45,7 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
           onClick={() => {
             let newVote: number = i + 1;
             setValue(newVote);
-            onChange && onChange(i + 1);
+            onChange(i + 1);
           }}
           onMouseEnter={() => {
             setHover(i);

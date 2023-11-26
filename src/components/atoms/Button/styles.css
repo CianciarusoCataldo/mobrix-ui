@@ -1,6 +1,10 @@
+[data-mobrix-ui-id="button"] {
+  border: 0;
+  background: var(--mobrix-ui-button-background);
+}
+
 [data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"] {
-  background: var(--mobrix-ui-background);
-  color: var(--mobrix-ui-text-color);
+  color: var(--mobrix-ui-button-text-color);
   text-align: center;
   font-weight: 800;
   padding: 0.5rem 1rem;
@@ -9,13 +13,11 @@
   align-items: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  border: 0;
   width: fit-content;
 }
 
-[data-mobrix-ui-id="button"]:not([data-mobrix-ui-styled="true"]) {
-  border: 0;
-  background: transparent;
+[data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"][data-mobrix-ui-background="false"] {
+  border: solid;
 }
 
 [data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="true"] {
@@ -28,27 +30,8 @@
 }
 
 @media (hover) {
-  [data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="true"][data-mobrix-ui-hover="true"]:hover {
-    background: linear-gradient(to right, #c9cacc, #e1e1e4, #c8c9ca);
-  }
-
-  [data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="true"][data-mobrix-ui-hover="true"]:hover {
-    background: rgb(178, 178, 201);
-  }
-
-  [data-mobrix-ui-id="button"][data-mobrix-ui-dark="true"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="true"][data-mobrix-ui-hover="true"]:hover {
-    background: rgb(61, 61, 75);
-  }
-
   [data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="true"][data-mobrix-ui-animated="true"][data-mobrix-ui-hover="true"]:hover {
     position: relative;
     transform: scaleX(1.15) scaleY(1.1);
-  }
-}
-
-@media (hover: none) {
-  [data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="true"][data-mobrix-ui-hover="true"]:hover {
-    background: var(--mobrix-ui-background);
-    color: var(--mobrix-ui-text-color);
   }
 }

@@ -1,14 +1,15 @@
 [data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"] {
   padding: 0.2rem;
-  background: var(--mobrix-ui-background);
-  color: var(--mobrix-ui-text-color);
+  background: var(--mobrix-ui-selector-background);
+  color: var(--mobrix-ui-selector-text-color);
+  border: 0;
   border-radius: 6px;
 }
 
 [data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"]
   [data-mobrix-ui-class="selector-option"] {
-  background-color: var(--mobrix-ui-background-color);
-  color: var(--mobrix-ui-text-color);
+  background-color: var(--mobrix-ui-selector-background);
+  color: var(--mobrix-ui-selector-text-color);
   padding: 1rem;
 }
 

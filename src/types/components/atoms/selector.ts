@@ -17,6 +17,8 @@ export type SelectorProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {
     /** selector options, every element must be a string */
     elements?: string[];
+
+    optionClassName?: string
   };
 
 /**

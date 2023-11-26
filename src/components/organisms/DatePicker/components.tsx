@@ -88,7 +88,7 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
         additionalProps={{
           "data-mobrix-ui-class": "date-picker-modal"
         }}
-      //closeOutside
+        closeOutside
       >
         <Calendar
           animated={animated}

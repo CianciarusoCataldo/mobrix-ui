@@ -5,26 +5,11 @@
   flex-direction: column;
   align-items: center;
   vertical-align: baseline;
+  background-color: var(--mobrix-ui-checkbox-background);
 }
 
 [data-mobrix-ui-id="checkbox"][data-mobrix-ui-styled="true"] {
-  border-width: 1px;
-  border-color: #423c5e;
   text-align: center;
   padding: 0.2rem;
-  background-color: var(--mobrix-ui-background-color);
-}
-
-@media (hover) {
-  [data-mobrix-ui-id="checkbox"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]:hover {
-    background-color: #d4e6fa;
-  }
-
-  [data-mobrix-ui-id="checkbox"][data-mobrix-ui-styled="true"][data-mobrix-ui-dark="true"][data-mobrix-ui-hover="true"]:hover {
-    background-color: #3a3552;
-  }
-}
-
-[data-mobrix-ui-id="checkbox"][data-mobrix-ui-styled="true"] > * {
   margin: auto;
 }

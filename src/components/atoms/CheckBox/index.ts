@@ -42,10 +42,10 @@ import { DefaultCheckIcon } from "./icons";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Checkbox: CheckBoxComponent = ({
-  value,
-  onChange = (e) => { },
+  value: inputValue,
+  onChange = () => { },
   icon,
-  onKeyDown = (e) => { },
+  onKeyDown = () => { },
   additionalProps = {},
   ...commonProps
 }) =>
@@ -71,7 +71,7 @@ const Checkbox: CheckBoxComponent = ({
         },
       },
     }),
-    inputValue: value,
+    inputValue,
     defaultValue: false,
   });
 
