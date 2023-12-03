@@ -1,7 +1,5 @@
-import "../styles/constants.css";
-import "../styles/animations.css";
-import "../styles/shared-styles.css";
-import "../styles/components-behavior.css";
+import "../styles/core/global-styles.css";
+import "../styles/components/components-behavior.css";
 
 import React, { useEffect, useRef } from "react";
 
@@ -71,7 +69,7 @@ export const buildMobrixUiStandardComponent = ({
     "data-mobrix-ui-hide": inputCommonProps.hide,
     "data-mobrix-ui-a11y": inputCommonProps.a11y,
     "data-mobrix-ui-background": !inputCommonProps.noBackground,
-    "data-mobrix-ui-hover": !inputCommonProps.noHover,
+    "data-mobrix-ui-hover": (!inputCommonProps.noHover) && (!inputCommonProps.disabled),
     "data-mobrix-ui-class": inputCommonProps.mobrixUiClass,
     "data-mobrix-ui-enabled": !inputCommonProps.disabled,
     "data-mobrix-ui-a11y-dark":

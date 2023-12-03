@@ -64,6 +64,7 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
     components.push(
       <FieldComponent
         animated={animated}
+        autoresizable
         additionalProps={{
           "data-mobrix-ui-class": "form-field-component",
           "data-mobrix-ui-form-field-error": error,

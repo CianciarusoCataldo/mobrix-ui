@@ -1,0 +1,6 @@
+[data-mobrix-ui-id] {
+  /** Checkbox **/
+  --mobrix-ui-default-checkbox-tick-color-light: rgb(37, 99, 235);
+
+  --mobrix-ui-default-checkbox-tick-color-dark: white;
+}

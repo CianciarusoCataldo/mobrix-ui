@@ -5,5 +5,6 @@ export const DEFAULT_COMMON_PROPS: CommonProps = {
     noHover: false,
     a11y: true,
     disabled: false,
-    additionalProps: {}
+    additionalProps: {},
+    dark: false
 }

@@ -52,7 +52,7 @@ const AtomsPage = () => {
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <Button className="test-class">Button light not animated</Button>
+            <Button >Button light not animated</Button>
             <div style={{ marginTop: "20px" }} />
             <Button dark>Button dark not animated</Button>
             <div style={{ marginTop: "20px" }} />
@@ -64,7 +64,11 @@ const AtomsPage = () => {
               Button dark animated
             </Button>
             <div style={{ marginTop: "20px" }} />
-            <Button unstyled onClick={() => alert("clicked")}>
+            <Button animated dark disabled>
+              Button dark animated disabled
+            </Button>
+            <div style={{ marginTop: "20px" }} />
+            <Button className="test-class" unstyled onClick={() => alert("clicked")}>
               <svg
                 x={0}
                 y={0}
@@ -193,6 +197,10 @@ const AtomsPage = () => {
             <Input autoresizable />
             <div style={{ marginTop: "20px" }} />
             <Input value="text" />
+            <div style={{ marginTop: "20px" }} />
+            <Input readOnly value="readonly" />
+            <div style={{ marginTop: "20px" }} />
+            <Input disabled value="disabled" />
             <div style={{ marginTop: "20px" }} />
             <Input dark />
             <div style={{ marginTop: "20px" }} />

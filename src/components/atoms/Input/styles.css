@@ -12,3 +12,7 @@
 [data-mobrix-ui-id="inputbox"][data-mobrix-ui-styled="true"][data-mobrix-ui-autoresizable="true"] {
   width: fit-content;
 }
+
+[data-mobrix-ui-id="inputbox"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="false"] {
+  background-color: grey;
+}

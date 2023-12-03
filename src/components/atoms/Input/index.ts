@@ -47,35 +47,33 @@ const Input: InputComponent = ({
   readOnly,
   additionalProps = {},
   autoresizable,
+  noHover,
   ...commonProps
-}) => {
-  return buildMobrixUiReactiveComponent<string | undefined>({
-    commonProps,
-    name: "inputbox",
-    wrapper: "input",
-    props: (value, setValue) => ({
-      additionalProps: {
-        ...additionalProps,
-        ...(autoresizable && {
-          "data-mobrix-ui-autoresizable": !!autoresizable,
-          size: value.length,
-        }),
-        type: "text",
-        value,
-        placeholder,
-        readOnly,
-        onChange: (e) => {
-          if (!readOnly) {
-            const newValue = e.target.value ? e.target.value : "";
-            onChange(newValue);
-            setValue(newValue);
-          }
-        },
-      },
-    }),
-    inputValue,
-    defaultValue: "",
-  });
-};
+}) => buildMobrixUiReactiveComponent<string | undefined>({
+  commonProps: {
+    ...commonProps, noHover: noHover || readOnly
+  },
+  name: "inputbox",
+  wrapper: "input",
+  props: (value, setValue) => ({
+    additionalProps: {
+      ...additionalProps,
+      ...(autoresizable && {
+        "data-mobrix-ui-autoresizable": !!autoresizable,
+        size: Math.ceil((value.length / 2)) + (value.length > 0 ? 0 : 1),
+      }),
+      type: "text",
+      value,
+      placeholder,
+      readOnly: readOnly || commonProps.disabled,
+      onChange: ((e) => {
+        const newValue = e.target.value ? e.target.value : "";
+        setValue(newValue);
+      }),
+    },
+  }),
+  inputValue,
+  defaultValue: "",
+});
 
 export default Input;
