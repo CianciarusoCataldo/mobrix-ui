@@ -1,21 +1,23 @@
 [data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"] {
   padding: 0.2rem;
-  background: var(--mobrix-ui-selector-background);
-  color: var(--mobrix-ui-selector-text-color);
+  background: var(--mobrix-ui-computed-selector-background);
+  color: var(--mobrix-ui-computed-selector-text-color);
   border: 0;
   border-radius: 6px;
 }
 
 [data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"]
   [data-mobrix-ui-class="selector-option"] {
-  background-color: var(--mobrix-ui-selector-background);
-  color: var(--mobrix-ui-selector-text-color);
+  background-color: var(--mobrix-ui-computed-selector-background);
+  color: var(--mobrix-ui-computed-selector-text-color);
   padding: 1rem;
 }
 
 @media (hover: hover) {
-  [data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]
+  [data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]:hover,
+  [data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"]
     [data-mobrix-ui-class="selector-option"]:hover {
-    box-shadow: 0 0 10px 100px #6b6a75 inset;
+    background: var(--mobrix-ui-computed-selector-background-hover);
+    color: var(--mobrix-ui-computed-selector-text-color-hover);
   }
 }

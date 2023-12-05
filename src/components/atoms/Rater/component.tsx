@@ -36,30 +36,29 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
     }
 
     iconArray.push(
-      readonly ? (
-        <div key={`vote_${i}`}>{ICONS[type][iconToShow]}</div>
-      ) : (
-        <Button
-          key={`vote_${i}`}
-          unstyled
-          onClick={() => {
+      <Button
+        key={`vote_${i}`}
+        unstyled
+        additionalProps={{
+          "data-mobrix-ui-test": `vote_${i}`
+        }}
+        {...(!readonly && {
+          onClick: () => {
             let newVote: number = i + 1;
             setValue(newVote);
             onChange(i + 1);
-          }}
-          onMouseEnter={() => {
+          },
+          onMouseEnter: () => {
             setHover(i);
-          }}
-          onMouseLeave={() => {
+          },
+          onMouseLeave: () => {
             setHover(null);
-          }}
-          additionalProps={{
-            "data-mobrix-ui-test": `vote_${i}`
-          }}
-        >
-          {ICONS[type][iconToShow]}
-        </Button>
-      )
+          }
+        })}
+      >
+        {ICONS[type][iconToShow]}
+      </Button >
+
     );
   }
 

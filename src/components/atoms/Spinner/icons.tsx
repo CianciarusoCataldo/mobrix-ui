@@ -12,6 +12,7 @@ const DEFAULT_ICONS: Record<string, JSX.Element> = {
       y="0"
       xmlSpace="preserve"
       data-mobrix-ui-class="rotating"
+      fill="var(--mobrix-ui-computed-spinner-loading-color)"
     >
       <path
         className="st0"
@@ -34,8 +35,8 @@ const DEFAULT_ICONS: Record<string, JSX.Element> = {
           y1="446.746"
           y2="64.887"
         >
-          <stop offset="0" stopColor="#05bc29" />
-          <stop offset="1" stopColor="#5bf877" />
+          <stop offset="0" stopColor="var(--mobrix-ui-computed-spinner-success-color)" />
+          <stop offset="1" stopColor="var(--mobrix-ui-computed-spinner-success-color)" />
         </linearGradient>
       </defs>
       <path
@@ -55,7 +56,7 @@ const DEFAULT_ICONS: Record<string, JSX.Element> = {
         style={{
           fill: "none",
           fillRule: "evenodd",
-          stroke: "red",
+          stroke: "var(--mobrix-ui-computed-spinner-error-color)",
           strokeWidth: "18.05195999",
           strokeLinecap: "butt",
           strokeLinejoin: "miter",
@@ -69,7 +70,7 @@ const DEFAULT_ICONS: Record<string, JSX.Element> = {
         style={{
           fill: "none",
           fillRule: "evenodd",
-          stroke: "red",
+          stroke: "var(--mobrix-ui-computed-spinner-error-color)",
           strokeWidth: "17.80202103",
           strokeLinecap: "butt",
           strokeLinejoin: "miter",

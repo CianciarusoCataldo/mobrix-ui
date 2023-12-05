@@ -1,0 +1,275 @@
+@import url("constants/computed.css");
+@import url("on-hover.css");
+
+[data-mobrix-ui-id][data-mobrix-ui-dark="false"] {
+  /** Button **/
+  --mobrix-ui-computed-button-background: var(
+    --mobrix-ui-computed-button-background-light
+  );
+
+  --mobrix-ui-computed-button-text-color: var(
+    --mobrix-ui-computed-button-text-color-light
+  );
+
+  /** Checkbox **/
+  --mobrix-ui-computed-checkbox-background: var(
+    --mobrix-ui-computed-checkbox-background-light
+  );
+
+  --mobrix-ui-computed-checkbox-tick-color: var(
+    --mobrix-ui-computed-checkbox-tick-color-light
+  );
+
+  /** Codebox **/
+  --mobrix-ui-computed-codebox-background: var(
+    --mobrix-ui-computed-codebox-background-light
+  );
+
+  --mobrix-ui-computed-codebox-text-color: var(
+    --mobrix-ui-computed-codebox-text-color-light
+  );
+
+  /** Counter **/
+  --mobrix-ui-computed-counterbox-background: var(
+    --mobrix-ui-computed-counterbox-background-light
+  );
+
+  --mobrix-ui-computed-counterbox-text-color: var(
+    --mobrix-ui-computed-counterbox-text-color-light
+  );
+
+  /** Divider **/
+  --mobrix-ui-computed-divider-color: var(
+    --mobrix-ui-computed-divider-color-light
+  );
+
+  /** Input **/
+  --mobrix-ui-computed-inputbox-background: var(
+    --mobrix-ui-computed-inputbox-background-light
+  );
+
+  --mobrix-ui-computed-inputbox-text-color: var(
+    --mobrix-ui-computed-inputbox-text-color-light
+  );
+
+  /** Label **/
+  --mobrix-ui-computed-label-text-color: var(
+    --mobrix-ui-computed-label-text-color-light
+  );
+
+  /** Link **/
+  --mobrix-ui-computed-link-color: var(--mobrix-ui-computed-link-color-light);
+
+  /** Radio Button **/
+  --mobrix-ui-computed-radio-background: var(
+    --mobrix-ui-computed-radio-background-light
+  );
+
+  --mobrix-ui-computed-radio-icon-background: var(
+    --mobrix-ui-computed-radio-icon-background-light
+  );
+
+  /** Rater **/
+  --mobrix-ui-computed-rater-background: var(
+    --mobrix-ui-computed-rater-background-light
+  );
+
+  /** Selector **/
+  --mobrix-ui-computed-selector-background: var(
+    --mobrix-ui-computed-selector-background-light
+  );
+  --mobrix-ui-computed-selector-background-hover: var(
+    --mobrix-ui-computed-selector-background-hover-light
+  );
+  --mobrix-ui-computed-selector-text-color: var(
+    --mobrix-ui-computed-selector-text-color-light
+  );
+  --mobrix-ui-computed-selector-text-color-hover: var(
+    --mobrix-ui-computed-selector-text-color-hover-light
+  );
+
+  /** Slider **/
+  --mobrix-ui-computed-slider-background: var(
+    --mobrix-ui-computed-slider-background-light
+  );
+
+  --mobrix-ui-computed-slider-thumb-color: var(
+    --mobrix-ui-computed-slider-thumb-color-light
+  );
+
+  --mobrix-ui-computed-slider-thumb-color-hover: var(
+    --mobrix-ui-computed-slider-thumb-color-hover-light
+  );
+
+  /** Spinner **/
+  --mobrix-ui-computed-spinner-success-color: var(
+    --mobrix-ui-computed-spinner-success-color-light
+  );
+  --mobrix-ui-computed-spinner-error-color: var(
+    --mobrix-ui-computed-spinner-error-color-light
+  );
+  --mobrix-ui-computed-spinner-loading-color: var(
+    --mobrix-ui-computed-spinner-loading-color-light
+  );
+
+  /** Toggle **/
+  --mobrix-ui-computed-toggle-background: var(
+    --mobrix-ui-computed-toggle-background-light
+  );
+  --mobrix-ui-computed-toggle-icon-on-external-color: var(
+    --mobrix-ui-computed-toggle-icon-on-external-color-light
+  );
+  --mobrix-ui-computed-toggle-icon-on-internal-color: var(
+    --mobrix-ui-computed-toggle-icon-on-internal-color-light
+  );
+  --mobrix-ui-computed-toggle-icon-off-external-color: var(
+    --mobrix-ui-computed-toggle-icon-off-external-color-light
+  );
+  --mobrix-ui-computed-toggle-icon-off-internal-color: var(
+    --mobrix-ui-computed-toggle-icon-off-internal-color-light
+  );
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-dark="true"] {
+  /** Button **/
+  --mobrix-ui-computed-button-background: var(
+    --mobrix-ui-computed-button-background-dark
+  );
+
+  --mobrix-ui-computed-button-text-color: var(
+    --mobrix-ui-computed-button-text-color-dark
+  );
+
+  /** Checkbox **/
+  --mobrix-ui-computed-checkbox-background: var(
+    --mobrix-ui-computed-checkbox-background-dark
+  );
+
+  --mobrix-ui-computed-checkbox-tick-color: var(
+    --mobrix-ui-computed-checkbox-tick-color-dark
+  );
+
+  /** Codebox **/
+  --mobrix-ui-computed-codebox-background: var(
+    --mobrix-ui-computed-codebox-background-dark
+  );
+
+  --mobrix-ui-computed-codebox-text-color: var(
+    --mobrix-ui-computed-codebox-text-color-dark
+  );
+
+  /** Counter **/
+  --mobrix-ui-computed-counterbox-background: var(
+    --mobrix-ui-computed-counterbox-background-dark
+  );
+
+  --mobrix-ui-computed-counterbox-text-color: var(
+    --mobrix-ui-computed-counterbox-text-color-dark
+  );
+
+  /** Divider **/
+  --mobrix-ui-computed-divider-color: var(
+    --mobrix-ui-computed-divider-color-dark
+  );
+
+  /** Input **/
+  --mobrix-ui-computed-inputbox-background: var(
+    --mobrix-ui-computed-inputbox-background-dark
+  );
+
+  --mobrix-ui-computed-inputbox-text-color: var(
+    --mobrix-ui-computed-inputbox-text-color-dark
+  );
+
+  /** Label **/
+  --mobrix-ui-computed-label-text-color: var(
+    --mobrix-ui-computed-label-text-color-dark
+  );
+
+  /** Link **/
+  --mobrix-ui-computed-link-color: var(--mobrix-ui-computed-link-color-dark);
+
+  /** Radio Button **/
+  --mobrix-ui-computed-radio-background: var(
+    --mobrix-ui-computed-radio-background-dark
+  );
+  --mobrix-ui-computed-radio-icon-background: var(
+    --mobrix-ui-computed-radio-icon-background-dark
+  );
+
+  /** Rater **/
+  --mobrix-ui-computed-rater-background: var(
+    --mobrix-ui-computed-rater-background-dark
+  );
+
+  /** Selector **/
+  --mobrix-ui-computed-selector-background: var(
+    --mobrix-ui-computed-selector-background-dark
+  );
+  --mobrix-ui-computed-selector-background-hover: var(
+    --mobrix-ui-computed-selector-background-hover-dark
+  );
+  --mobrix-ui-computed-selector-text-color: var(
+    --mobrix-ui-computed-selector-text-color-dark
+  );
+  --mobrix-ui-computed-selector-text-color-hover: var(
+    --mobrix-ui-computed-selector-text-color-hover-dark
+  );
+
+  /** Slider **/
+  --mobrix-ui-computed-slider-background: var(
+    --mobrix-ui-computed-slider-background-dark
+  );
+
+  --mobrix-ui-computed-slider-thumb-color: var(
+    --mobrix-ui-computed-slider-thumb-color-dark
+  );
+
+  --mobrix-ui-computed-slider-thumb-color-hover: var(
+    --mobrix-ui-computed-slider-thumb-color-hover-dark
+  );
+
+  /** Spinner **/
+  --mobrix-ui-computed-spinner-success-color: var(
+    --mobrix-ui-computed-spinner-success-color-dark
+  );
+  --mobrix-ui-computed-spinner-error-color: var(
+    --mobrix-ui-computed-spinner-error-color-dark
+  );
+  --mobrix-ui-computed-spinner-loading-color: var(
+    --mobrix-ui-computed-spinner-loading-color-dark
+  );
+
+  /** Toggle **/
+  --mobrix-ui-computed-toggle-background: var(
+    --mobrix-ui-computed-toggle-background-dark
+  );
+  --mobrix-ui-computed-toggle-icon-on-external-color: var(
+    --mobrix-ui-computed-toggle-icon-on-external-color-dark
+  );
+  --mobrix-ui-computed-toggle-icon-on-internal-color: var(
+    --mobrix-ui-computed-toggle-icon-on-internal-color-dark
+  );
+  --mobrix-ui-computed-toggle-icon-off-external-color: var(
+    --mobrix-ui-computed-toggle-icon-off-external-color-dark
+  );
+  --mobrix-ui-computed-toggle-icon-off-internal-color: var(
+    --mobrix-ui-computed-toggle-icon-off-internal-color-dark
+  );
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-background="false"],
+[data-mobrix-ui-id][data-mobrix-ui-background="false"]:hover,
+[data-mobrix-ui-id][data-mobrix-ui-styled="false"],
+[data-mobrix-ui-id][data-mobrix-ui-styled="false"]:hover {
+  --mobrix-ui-computed-button-background: transparent !important;
+  --mobrix-ui-computed-checkbox-background: transparent !important;
+  --mobrix-ui-computed-codebox-background: transparent !important;
+  --mobrix-ui-computed-counterbox-background: transparent !important;
+  --mobrix-ui-computed-inputbox-background: transparent !important;
+  --mobrix-ui-computed-rater-background: transparent !important;
+  --mobrix-ui-computed-selector-background: transparent !important;
+  --mobrix-ui-computed-selector-background-hover: transparent !important;
+  --mobrix-ui-computed-slider-background: transparent !important;
+  --mobrix-ui-computed-toggle-background: transparent !important;
+}

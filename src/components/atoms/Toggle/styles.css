@@ -4,7 +4,7 @@
 }
 
 [data-mobrix-ui-id="toggle"][data-mobrix-ui-styled="true"] {
-  background-image: var(--mobrix-ui-toggle-background);
+  background-image: var(--mobrix-ui-computed-toggle-background);
   border-radius: 40px;
   border-width: 0;
 }
@@ -22,28 +22,15 @@
   [data-mobrix-ui-class="toggle-icon"][data-mobrix-ui-flip="true"] {
   transform: translate(0%);
 
-  --svginternalcolor: #ffffff;
-  --svgexternalcolor: #adadad;
+  --svginternalcolor: var(--mobrix-ui-computed-toggle-icon-on-internal-color);
+  --svgexternalcolor: var(--mobrix-ui-computed-toggle-icon-on-external-color);
 }
 
 [data-mobrix-ui-id="toggle"]
   [data-mobrix-ui-class="toggle-icon"][data-mobrix-ui-flip="false"] {
   transform: translate(35px);
-
-  --svginternalcolor: #a5a5a5;
-  --svgexternalcolor: #7a7878;
-}
-
-[data-mobrix-ui-id="toggle"][data-mobrix-ui-dark="true"]
-  [data-mobrix-ui-class="toggle-icon"][data-mobrix-ui-flip="true"] {
-  --svginternalcolor: #ffffff;
-  --svgexternalcolor: #adadad;
-}
-
-[data-mobrix-ui-id="toggle"][data-mobrix-ui-dark="true"]
-  [data-mobrix-ui-class="toggle-icon"][data-mobrix-ui-flip="false"] {
-  --svginternalcolor: #636363;
-  --svgexternalcolor: #a7a3a3;
+  --svginternalcolor: var(--mobrix-ui-computed-toggle-icon-off-internal-color);
+  --svgexternalcolor: var(--mobrix-ui-computed-toggle-icon-off-external-color);
 }
 
 [data-mobrix-ui-id="toggle"]

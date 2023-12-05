@@ -1,10 +1,10 @@
 [data-mobrix-ui-id="button"] {
   border: 0;
-  background: var(--mobrix-ui-button-background);
+  background: var(--mobrix-ui-computed-button-background);
 }
 
 [data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"] {
-  color: var(--mobrix-ui-button-text-color);
+  color: var(--mobrix-ui-computed-button-text-color);
   text-align: center;
   font-weight: 800;
   padding: 0.5rem 1rem;

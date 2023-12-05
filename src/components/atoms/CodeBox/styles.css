@@ -4,11 +4,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--mobrix-ui-codebox-background);
+  background-color: var(--mobrix-ui-computed-codebox-background);
 }
 
 [data-mobrix-ui-id="codebox"][data-mobrix-ui-styled="true"] {
-  color: var(--mobrix-ui-codebox-text-color);
+  color: var(--mobrix-ui-computed-codebox-text-color);
 }
 
 [data-mobrix-ui-id="codebox"] [data-mobrix-ui-class="codebox-copy-icon"] {

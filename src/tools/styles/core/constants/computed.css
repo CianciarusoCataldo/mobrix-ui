@@ -5,8 +5,20 @@
   --mobrix-ui-background-color-dark: #1d232e;
   --mobrix-ui-text-color-light: #1b1b1b;
   --mobrix-ui-text-color-dark: white;
-  --mobrix-ui-text-color-hover-light: #1b1b1b;
-  --mobrix-ui-text-color-hover-dark: white;
+  --mobrix-ui-text-color-hover-light: var(
+    --mobrix-ui-custom-text-color-hover-light,
+    var(
+      --mobrix-ui-custom-text-color-hover,
+      var(--mobrix-ui-default-text-color-hover-light)
+    )
+  );
+  --mobrix-ui-text-color-hover-dark: var(
+    --mobrix-ui-custom-text-color-hover-dark,
+    var(
+      --mobrix-ui-custom-text-color-hover,
+      var(--mobrix-ui-default-text-color-hover-dark)
+    )
+  );
   --mobrix-ui-focus-color-light: #7785ff;
   --mobrix-ui-focus-color-dark: #fb7a10;
   --mobrix-ui-background-dark: linear-gradient(to right, #2d3748, #1d232e);
@@ -15,6 +27,13 @@
     #fff,
     #ededee,
     #e6e7e7
+  );
+
+  --mobrix-ui-background-color-hover-dark: var(
+    --mobrix-ui-default-background-color-hover-dark
+  );
+  --mobrix-ui-background-color-hover-light: var(
+    --mobrix-ui-default-background-color-hover-light
   );
 
   --mobrix-ui-background-hover-dark: linear-gradient(

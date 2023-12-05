@@ -1,7 +1,7 @@
 [data-mobrix-ui-id="form-field"] {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }
 
 [data-mobrix-ui-id="form-field"] [data-mobrix-ui-class="form-field-box"] {

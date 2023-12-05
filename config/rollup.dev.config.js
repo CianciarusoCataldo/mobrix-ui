@@ -46,7 +46,7 @@ module.exports = [
     plugins: [
       postcss({
         plugins: [postcssImport],
-        minimize: true,
+        minimize: false,
         extract: "styles.css",
       }),
       typescript({

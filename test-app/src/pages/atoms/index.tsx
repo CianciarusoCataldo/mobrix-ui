@@ -165,6 +165,8 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Counter animated value={35} />
             <div style={{ marginTop: "20px" }} />
+            <Counter noBackground value={35} />
+            <div style={{ marginTop: "20px" }} />
             <Counter dark />
             <div style={{ marginTop: "20px" }} />
             <Counter animated dark value={35} />
@@ -197,6 +199,8 @@ const AtomsPage = () => {
             <Input autoresizable />
             <div style={{ marginTop: "20px" }} />
             <Input value="text" />
+            <div style={{ marginTop: "20px" }} />
+            <Input value="text" noBackground />
             <div style={{ marginTop: "20px" }} />
             <Input readOnly value="readonly" />
             <div style={{ marginTop: "20px" }} />
@@ -276,7 +280,7 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Rater unstyled value={3} />
             <div style={{ marginTop: "20px" }} />
-            <Rater dark />
+            <Rater dark value={4} readonly />
             <div style={{ marginTop: "20px" }} />
             <Rater vertical />
           </div>
@@ -289,6 +293,8 @@ const AtomsPage = () => {
             <Selector />
             <div style={{ marginTop: "20px" }} />
             <Selector elements={["el1", "el2"]} />
+            <div style={{ marginTop: "20px" }} />
+            <Selector noBackground elements={["el1", "el2"]} />
             <div style={{ marginTop: "20px" }} />
             <Selector dark elements={["el1", "el2"]} />
             <div style={{ marginTop: "20px" }} />
@@ -338,6 +344,8 @@ const AtomsPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Toggle />
+            <div style={{ marginTop: "20px" }} />
+            <Toggle noBackground />
             <div style={{ marginTop: "20px" }} />
             <Toggle value={false} />
             <div style={{ marginTop: "20px" }} />

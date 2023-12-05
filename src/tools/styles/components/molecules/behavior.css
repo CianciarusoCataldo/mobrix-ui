@@ -1,0 +1,61 @@
+@import url("constants/computed.css");
+
+[data-mobrix-ui-id][data-mobrix-ui-dark="false"] {
+  /** Dropdown **/
+  --mobrix-ui-dropdown-arrow-color: var(
+    --mobrix-ui-custom-dropdown-arrow-color-light,
+    var(--mobrix-ui-dropdown-arrow-color-light)
+  );
+
+  --mobrix-ui-dropdown-arrow-color-hover: var(
+    --mobrix-ui-custom-dropdown-arrow-color-hover-light,
+    var(--mobrix-ui-dropdown-arrow-color-hover-light)
+  );
+
+  /** Table **/
+  --mobrix-ui-table-header-background: var(
+    --mobrix-ui-table-header-background-light
+  );
+
+  --mobrix-ui-table-header-text-color: var(
+    --mobrix-ui-table-header-text-color-light
+  );
+
+  --mobrix-ui-tab-viewer-background: var(
+    --mobrix-ui-tab-viewer-background-light
+  );
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-dark="true"] {
+  /** Dropdown **/
+  --mobrix-ui-dropdown-arrow-color: var(
+    --mobrix-ui-custom-dropdown-arrow-color-dark,
+    var(--mobrix-ui-dropdown-arrow-color-dark)
+  );
+
+  --mobrix-ui-dropdown-arrow-color-hover: var(
+    --mobrix-ui-custom-dropdown-arrow-color-hover-dark,
+    var(--mobrix-ui-dropdown-arrow-color-hover-dark)
+  );
+
+  /** Table **/
+  --mobrix-ui-table-header-background: var(
+    --mobrix-ui-table-header-background-dark
+  );
+
+  --mobrix-ui-table-header-text-color: var(
+    --mobrix-ui-table-header-text-color-dark
+  );
+
+  --mobrix-ui-tab-viewer-background: var(
+    --mobrix-ui-tab-viewer-background-dark
+  );
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-background="false"],
+[data-mobrix-ui-id][data-mobrix-ui-background="false"]:hover,
+[data-mobrix-ui-id][data-mobrix-ui-styled="false"],
+[data-mobrix-ui-id][data-mobrix-ui-styled="false"]:hover {
+  --mobrix-ui-table-header-background: transparent;
+  --mobrix-ui-tab-viewer-background: transparent;
+}

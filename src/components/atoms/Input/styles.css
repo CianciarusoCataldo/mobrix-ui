@@ -1,6 +1,6 @@
 [data-mobrix-ui-id="inputbox"] {
-  background-color: var(--mobrix-ui-inputbox-background);
-  color: var(--mobrix-ui-inputbox-text-color);
+  background-color: var(--mobrix-ui-computed-inputbox-background);
+  color: var(--mobrix-ui-computed-inputbox-text-color);
 }
 
 [data-mobrix-ui-id="inputbox"][data-mobrix-ui-styled="true"] {

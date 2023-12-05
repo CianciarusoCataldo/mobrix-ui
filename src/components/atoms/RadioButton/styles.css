@@ -1,33 +1,28 @@
 [data-mobrix-ui-id="radio-button"] {
+  width: 30px;
+  height: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  background: var(--mobrix-ui-radio-background)
+  background: var(--mobrix-ui-computed-radio-background);
 }
 
 [data-mobrix-ui-id="radio-button"][data-mobrix-ui-styled="true"] {
-  padding: 0.2rem;
+  padding: 0.1rem;
   border-color: transparent;
-  border-width: 1px;
-}
-
-@media (hover: none) {
-  [data-mobrix-ui-id="radio-button"][data-mobrix-ui-styled="true"] {
-    background: var(--mobrix-ui-radio-background);
-  }
+  border-style: hidden;
 }
 
 [data-mobrix-ui-id="radio-button"] [data-mobrix-ui-class="icon"] {
-  border-radius: 100%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border-color: transparent;
   margin: auto;
-  width: 18px;
-  height: 18px;
-  background: var(--mobrix-ui-radio-background-dark);
-}
-
-[data-mobrix-ui-id="radio-button"][data-mobrix-ui-dark="true"] [data-mobrix-ui-class="icon"] {
-  background: var(--mobrix-ui-radio-background-light);
+  width: 24px;
+  height: 24px;
+  background: var(--mobrix-ui-computed-radio-icon-background);
 }

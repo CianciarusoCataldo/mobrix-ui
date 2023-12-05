@@ -1,5 +1,5 @@
 import "../styles/core/global-styles.css";
-import "../styles/components/components-behavior.css";
+import "../styles/components/index.css";
 
 import React, { useEffect, useRef } from "react";
 
@@ -65,7 +65,7 @@ export const buildMobrixUiStandardComponent = ({
     "data-mobrix-ui-dark": inputCommonProps.dark,
     "data-mobrix-ui-styled": !inputCommonProps.unstyled,
     "data-mobrix-ui-shadow": inputCommonProps.shadow,
-    "data-mobrix-ui-animated": inputCommonProps.animated,
+    "data-mobrix-ui-animated": inputCommonProps.animated && !inputCommonProps.disabled,
     "data-mobrix-ui-hide": inputCommonProps.hide,
     "data-mobrix-ui-a11y": inputCommonProps.a11y,
     "data-mobrix-ui-background": !inputCommonProps.noBackground,

@@ -1,5 +1,5 @@
 [data-mobrix-ui-id="divider"] {
   height: 2px;
   width: 100%;
-  background-color: var(--mobrix-ui-divider-color);
+  background-color: var(--mobrix-ui-computed-divider-color);
 }

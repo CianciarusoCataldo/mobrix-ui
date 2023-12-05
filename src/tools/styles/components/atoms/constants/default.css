@@ -1,0 +1,87 @@
+[data-mobrix-ui-id] {
+  /** Checkbox **/
+  --mobrix-ui-default-checkbox-tick-color-light: rgb(37, 99, 235);
+
+  --mobrix-ui-default-checkbox-tick-color-dark: white;
+
+  /* Radio Button */
+  --mobrix-ui-default-radio-background-light: radial-gradient(
+    #f1f1f1 20%,
+    #e4e4e4 30%,
+    #bebebe 55%,
+    #f0f0f0 20%
+  );
+
+  --mobrix-ui-default-radio-background-dark: radial-gradient(
+    closest-side,
+    #2d3748 20%,
+    #232b38 30%,
+    #1d1f44 55%,
+    #191f29 20%
+  );
+
+  --mobrix-ui-default-radio-icon-background-dark: radial-gradient(
+    circle at 23px 23px,
+    #dbe0e6,
+    #949494
+  );
+
+  --mobrix-ui-default-radio-icon-background-light: radial-gradient(
+    circle at 23px 23px,
+    #2d3748,
+    #191f29
+  );
+
+  --mobrix-ui-default-radio-background-hover-light: radial-gradient(
+    #f1f1f1 20%,
+    #cfcfcf 30%,
+    #a7a7a7 55%,
+    #f0f0f0 20%
+  );
+
+  --mobrix-ui-default-radio-background-hover-dark: radial-gradient(
+    #354155 20%,
+    #2d3747 30%,
+    #2b2e5f 55%,
+    #323f55 20%
+  );
+
+  /* Slider */
+  --mobrix-ui-default-slider-thumb-color: radial-gradient(#2d3748, #1d232e);
+
+  --mobrix-ui-default-slider-thumb-color-light: radial-gradient(
+    #2d3748,
+    #1d232e
+  );
+
+  --mobrix-ui-default-slider-thumb-color-dark: radial-gradient(
+    #e3e4e9,
+    #9b9999
+  );
+
+  --mobrix-ui-default-slider-thumb-color-hover-light: radial-gradient(
+    #364257,
+    #2a3444
+  );
+
+  --mobrix-ui-default-slider-thumb-color-hover-dark: radial-gradient(
+    #e8e9f0,
+    #adabab
+  );
+
+  /** Spinner **/
+  --mobrix-ui-default-spinner-success-color: #05bc29;
+  --mobrix-ui-default-spinner-error-color: #ff0000;
+  --mobrix-ui-default-spinner-loading-color: #202020;
+
+  /** Toggle **/
+  --mobrix-ui-default-toggle-icon-on-internal-color-light: #ffffff;
+  --mobrix-ui-default-toggle-icon-on-external-color-light: #adadad;
+  --mobrix-ui-default-toggle-icon-on-internal-color-dark: #ffffff;
+  --mobrix-ui-default-toggle-icon-on-external-color-dark: #adadad;
+
+  --mobrix-ui-default-toggle-icon-off-internal-color-light: #a5a5a5;
+  --mobrix-ui-default-toggle-icon-off-external-color-light: #7a7878;
+  --mobrix-ui-default-toggle-icon-off-internal-color-dark: #636363;
+  --mobrix-ui-default-toggle-icon-off-external-color-dark: #a7a3a3;
+}
