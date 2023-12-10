@@ -7,7 +7,7 @@
 }
 
 [data-mobrix-ui-id="carousel"][data-mobrix-ui-styled="true"] {
-  background-image: var(--mobrix-ui-background);
+  background-image: var(--mobrix-ui-computed-carousel-background);
   padding: 0.4rem;
 }
 
@@ -29,13 +29,15 @@
 }
 
 [data-mobrix-ui-id="carousel"] [data-mobrix-ui-arrow] svg {
-  fill: var(--mobrix-ui-text-color);
+  fill: var(--mobrix-ui-computed-carousel-arrow-color);
 }
 
-[data-mobrix-ui-id="carousel"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]
-  [data-mobrix-ui-arrow]:hover
-  svg {
-  fill: rgb(231, 152, 6);
+@media (hover) {
+  [data-mobrix-ui-id="carousel"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]
+    [data-mobrix-ui-arrow]:hover
+    svg {
+    fill: var(--mobrix-ui-computed-carousel-arrow-color-hover);
+  }
 }
 
 [data-mobrix-ui-id="carousel"][data-mobrix-ui-styled="true"]
@@ -77,10 +79,26 @@
   margin-right: 0.3rem;
 }
 
-@media (hover: none) {
-  [data-mobrix-ui-id="carousel"][data-mobrix-ui-hover="true"][data-mobrix-ui-styled="true"]
-    [data-mobrix-ui-arrow]:hover
-    svg {
-    fill: var(--mobrix-ui-text-color);
-  }
+[data-mobrix-ui-id="carousel"]
+  [data-mobrix-ui-class="dots"]
+  [data-mobrix-ui-class="dot"]
+  [data-mobrix-ui-class="carousel-dot-icon"] {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-color: transparent;
+}
+
+[data-mobrix-ui-id="carousel"]
+  [data-mobrix-ui-class="dots"]
+  [data-mobrix-ui-class="dot"]
+  [data-mobrix-ui-class="carousel-dot-icon"][data-mobrix-ui-icon-full="true"] {
+  background: var(--mobrix-ui-computed-carousel-dot-full-background);
+}
+
+[data-mobrix-ui-id="carousel"]
+  [data-mobrix-ui-class="dots"]
+  [data-mobrix-ui-class="dot"]
+  [data-mobrix-ui-class="carousel-dot-icon"][data-mobrix-ui-icon-full="false"] {
+  background: var(--mobrix-ui-computed-carousel-dot-empty-background);
 }

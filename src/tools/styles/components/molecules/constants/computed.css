@@ -1,6 +1,180 @@
 @import url("default.css");
 
 [data-mobrix-ui-id] {
+  /* Card */
+  --mobrix-ui-computed-card-background-light: var(
+    --mobrix-ui-card-background-light,
+    var(--mobrix-ui-card-background, var(--mobrix-ui-default-background-light))
+  );
+  --mobrix-ui-computed-card-background-dark: var(
+    --mobrix-ui-card-background-dark,
+    var(
+      --mobrix-ui-card-background,
+      var(--mobrix-ui-default-card-background-dark)
+    )
+  );
+
+  --mobrix-ui-computed-card-text-color-light: var(
+    --mobrix-ui-card-text-color-light,
+    var(--mobrix-ui-card-text-color, var(--mobrix-ui-text-color-light))
+  );
+  --mobrix-ui-computed-card-text-color-dark: var(
+    --mobrix-ui-card-text-color-dark,
+    var(--mobrix-ui-card-text-color, var(--mobrix-ui-text-color-dark))
+  );
+
+  /** Carousel **/
+  --mobrix-ui-computed-carousel-background-light: var(
+    --mobrix-ui-carousel-background-light,
+    var(--mobrix-ui-carousel-background, var(--mobrix-ui-background-light))
+  );
+  --mobrix-ui-computed-carousel-background-dark: var(
+    --mobrix-ui-carousel-background-dark,
+    var(--mobrix-ui-carousel-background, var(--mobrix-ui-background-dark))
+  );
+
+  --mobrix-ui-computed-carousel-arrow-color-light: var(
+    --mobrix-ui-carousel-arrow-color-light,
+    var(
+      --mobrix-ui-carousel-arrow-color,
+      var(--mobrix-ui-default-carousel-arrow-color-light)
+    )
+  );
+  --mobrix-ui-computed-carousel-arrow-color-dark: var(
+    --mobrix-ui-carousel-arrow-color-dark,
+    var(
+      --mobrix-ui-carousel-arrow-color,
+      var(--mobrix-ui-default-carousel-arrow-color-dark)
+    )
+  );
+
+  --mobrix-ui-computed-internal-carousel-arrow-color-hover: var(
+    --mobrix-ui-carousel-arrow-color-hover,
+    var(--mobrix-ui-carousel-arrow-color)
+  );
+
+  --mobrix-ui-computed-carousel-arrow-color-hover-light: var(
+    --mobrix-ui-carousel-arrow-color-hover-light,
+    var(
+      --mobrix-ui-computed-internal-carousel-arrow-color,
+      var(--mobrix-ui-default-carousel-arrow-color-hover-light)
+    )
+  );
+  --mobrix-ui-computed-carousel-arrow-color-hover-dark: var(
+    --mobrix-ui-carousel-arrow-color-dark,
+    var(
+      --mobrix-ui-computed-internal-carousel-arrow-color,
+      var(--mobrix-ui-default-carousel-arrow-color-hover-dark)
+    )
+  );
+
+  --mobrix-ui-computed-carousel-dot-full-background-light: var(
+    --mobrix-ui-carousel-dot-full-background-light,
+    var(
+      --mobrix-ui-carousel-dot-background,
+      var(--mobrix-ui-default-carousel-dot-full-background)
+    )
+  );
+  --mobrix-ui-computed-carousel-dot-full-background-dark: var(
+    --mobrix-ui-carousel-dot-full-background-dark,
+    var(
+      --mobrix-ui-carousel-dot-background,
+      var(--mobrix-ui-default-carousel-dot-full-background)
+    )
+  );
+  --mobrix-ui-computed-carousel-dot-empty-background-light: var(
+    --mobrix-ui-carousel-dot-empty-background-light,
+    var(
+      --mobrix-ui-carousel-dot-background,
+      var(--mobrix-ui-default-carousel-dot-empty-background)
+    )
+  );
+
+  --mobrix-ui-computed-carousel-dot-empty-background-dark: var(
+    --mobrix-ui-carousel-dot-empty-background-dark,
+    var(
+      --mobrix-ui-carousel-dot-background,
+      var(--mobrix-ui-default-carousel-dot-empty-background)
+    )
+  );
+
+  /** Container **/
+  --mobrix-ui-computed-container-background-light: var(
+    --mobrix-ui-container-background-light,
+    var(--mobrix-ui-container-background, var(--mobrix-ui-background-light))
+  );
+  --mobrix-ui-computed-container-background-dark: var(
+    --mobrix-ui-container-background-dark,
+    var(--mobrix-ui-container-background, var(--mobrix-ui-background-dark))
+  );
+  --mobrix-ui-computed-container-text-color-light: var(
+    --mobrix-ui-container-text-color-light,
+    var(--mobrix-ui-container-text-color, var(--mobrix-ui-text-color-light))
+  );
+  --mobrix-ui-computed-container-text-color-dark: var(
+    --mobrix-ui-container-text-color-dark,
+    var(--mobrix-ui-container-text-color, var(--mobrix-ui-text-color-dark))
+  );
+
+  /* DismissableCard */
+  --mobrix-ui-computed-dismissablecard-background-light: var(
+    --mobrix-ui-dismissablecard-background-light,
+    var(
+      --mobrix-ui-dismissablecard-background,
+      var(--mobrix-ui-computed-card-background-light)
+    )
+  );
+  --mobrix-ui-computed-dismissablecard-background-dark: var(
+    --mobrix-ui-dismissablecard-background-dark,
+    var(
+      --mobrix-ui-dismissablecard-background,
+      var(--mobrix-ui-computed-card-background-dark)
+    )
+  );
+  --mobrix-ui-computed-dismissablecard-text-color-light: var(
+    --mobrix-ui-dismissablecard-text-color-light,
+    var(
+      --mobrix-ui-dismissablecard-text-color,
+      var(--mobrix-ui-computed-card-text-color-light)
+    )
+  );
+  --mobrix-ui-computed-dismissablecard-text-color-dark: var(
+    --mobrix-ui-dismissablecard-text-color-dark,
+    var(
+      --mobrix-ui-dismissablecard-text-color,
+      var(--mobrix-ui-computed-card-text-color-dark)
+    )
+  );
+
+  --mobrix-ui-computed-dismissablecard-x-color-light: var(
+    --mobrix-ui-dismissablecard-x-color-light,
+    var(
+      --mobrix-ui-dismissablecard-x-color,
+      var(--mobrix-ui-computed-dismissablecard-text-color-light)
+    )
+  );
+  --mobrix-ui-computed-dismissablecard-x-color-dark: var(
+    --mobrix-ui-dismissablecard-x-color-dark,
+    var(
+      --mobrix-ui-dismissablecard-x-color,
+      var(--mobrix-ui-computed-dismissablecard-text-color-dark)
+    )
+  );
+  --mobrix-ui-computed-dismissablecard-x-color-hover-light: var(
+    --mobrix-ui-dismissablecard-x-color-hover-light,
+    var(
+      --mobrix-ui-dismissablecard-x-color-hover,
+      var(--mobrix-ui-default-dismissablecard-x-color-hover)
+    )
+  );
+  --mobrix-ui-computed-dismissablecard-x-color-hover-dark: var(
+    --mobrix-ui-dismissablecard-x-color-hover-dark,
+    var(
+      --mobrix-ui-dismissablecard-x-color-hover,
+      var(--mobrix-ui-default-dismissablecard-x-color-hover)
+    )
+  );
+
   /* Dropdown */
   --mobrix-ui-dropdown-arrow-color-light: #1b1b1b;
 
@@ -9,6 +183,94 @@
   --mobrix-ui-dropdown-arrow-color-hover-light: #2d3748;
 
   --mobrix-ui-dropdown-arrow-color-hover-dark: #cccccc;
+
+  --mobrix-ui-computed-internal-dropdown-background-hover: var(
+    --mobrix-ui-dropdown-background-hover,
+    var(--mobrix-ui-dropdown-background)
+  );
+  --mobrix-ui-computed-internal-dropdown-text-color-hover: var(
+    --mobrix-ui-dropdown-text-color-hover,
+    var(--mobrix-ui-dropdown-text-color)
+  );
+
+  --mobrix-ui-computed-dropdown-background-light: var(
+    --mobrix-ui-dropdown-background-light,
+    var(--mobrix-ui-dropdown-background, var(--mobrix-ui-background-light))
+  );
+
+  --mobrix-ui-computed-dropdown-background-dark: var(
+    --mobrix-ui-dropdown-background-dark,
+    var(--mobrix-ui-dropdown-background, var(--mobrix-ui-background-dark))
+  );
+  --mobrix-ui-computed-dropdown-background-hover-light: var(
+    --mobrix-ui-dropdown-background-hover-light,
+    var(
+      --mobrix-ui-computed-internal-dropdown-background-hover,
+      var(--mobrix-ui-background-hover-light)
+    )
+  );
+
+  --mobrix-ui-computed-dropdown-background-hover-dark: var(
+    --mobrix-ui-dropdown-background-hover-dark,
+    var(
+      --mobrix-ui-computed-internal-dropdown-background-hover,
+      var(--mobrix-ui-background-hover-dark)
+    )
+  );
+
+  --mobrix-ui-computed-dropdown-text-color-light: var(
+    --mobrix-ui-dropdown-text-color-light,
+    var(--mobrix-ui-dropdown-text-color, var(--mobrix-ui-text-color-light))
+  );
+
+  --mobrix-ui-computed-dropdown-text-color-dark: var(
+    --mobrix-ui-dropdown-text-color-dark,
+    var(--mobrix-ui-dropdown-text-color, var(--mobrix-ui-text-color-dark))
+  );
+
+  --mobrix-ui-computed-dropdown-text-color-hover-light: var(
+    --mobrix-ui-dropdown-text-color-hover-light,
+    var(
+      --mobrix-ui-computed-internal-dropdown-text-color-hover,
+      var(--mobrix-ui-text-color-hover-light)
+    )
+  );
+
+  --mobrix-ui-computed-dropdown-text-color-hover-dark: var(
+    --mobrix-ui-dropdown-text-color-hover-dark,
+    var(
+      --mobrix-ui-computed-internal-dropdown-text-color-hover,
+      var(--mobrix-ui-default-dropdown-text-color-hover-dark)
+    )
+  );
+
+  /* List */
+  --mobrix-ui-computed-list-text-color-light: var(
+    --mobrix-ui-list-text-color-light,
+    var(--mobrix-ui-list-text-color, var(--mobrix-ui-text-color-light))
+  );
+  --mobrix-ui-computed-list-text-color-dark: var(
+    --mobrix-ui-list-text-color-dark,
+    var(--mobrix-ui-list-text-color, var(--mobrix-ui-text-color-dark))
+  );
+  --mobrix-ui-computed-internal-list-text-color-hover: var(
+    --mobrix-ui-list-text-color-hover,
+    var(--mobrix-ui-list-text-color)
+  );
+  --mobrix-ui-computed-list-text-color-hover-light: var(
+    --mobrix-ui-list-text-color-hover-light,
+    var(
+      --mobrix-ui-list-text-color-hover,
+      var(--mobrix-ui-text-color-hover-light)
+    )
+  );
+  --mobrix-ui-computed-list-text-color-hover-dark: var(
+    --mobrix-ui-list-text-color-hover-dark,
+    var(
+      --mobrix-ui-list-text-color-hover,
+      var(--mobrix-ui-text-color-hover-dark)
+    )
+  );
 
   /* Table */
   --mobrix-ui-table-header-background-dark: linear-gradient(

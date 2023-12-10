@@ -33,6 +33,7 @@
     "react": ">=16"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "@rollup/plugin-node-resolve": "^15.1.0",

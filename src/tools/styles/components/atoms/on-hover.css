@@ -87,7 +87,7 @@
 
     /** Inputbox **/
     --mobrix-ui-computed-inputbox-background: var(
-      --mobrix-ui-inputbox-background-hover-dark
+      --mobrix-ui-computed-inputbox-background-hover-dark
     );
 
     --mobrix-ui-computed-inputbox-text-color: var(

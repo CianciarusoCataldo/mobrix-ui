@@ -25,3 +25,21 @@ code {
   color: red;
   fill: red;
 }
+
+.mbui-test-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to top,
+    #ff8007,
+    #fd8616,
+    #fd9b3f,
+    #fd9c40,
+    #fcbb7f,
+    #fad6b4
+  );
+  border-width: 1px;
+  border-color: #ff8007;
+  border-style: solid;
+}

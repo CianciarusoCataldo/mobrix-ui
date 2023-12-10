@@ -8,9 +8,9 @@ import dismissableCardInternalComponent from "./component";
 
 const DismissableCard: DismissableCardComponent = ({
   onClose,
-  noFooterDivider,
+  noBottomDivider,
   noDividers,
-  noHeaderDivider,
+  noTopDivider,
   header,
   body,
   footer,
@@ -28,9 +28,9 @@ const DismissableCard: DismissableCardComponent = ({
       dismissableCardInternalComponent({
         value,
         setValue,
-        noFooterDivider,
+        noBottomDivider,
         noDividers,
-        noHeaderDivider,
+        noTopDivider,
         header,
         body,
         footer,

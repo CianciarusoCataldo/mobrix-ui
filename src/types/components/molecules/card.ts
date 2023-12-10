@@ -29,10 +29,10 @@ export type CardProps = ComponentWithChildren<
   noDividers?: boolean;
 
   /** If `true`, hide the divider below the Card header */
-  noHeaderDivider?: boolean;
+  noTopDivider?: boolean;
 
   /** If `true`, hide the divider above the Card footer */
-  noFooterDivider?: boolean;
+  noBottomDivider?: boolean;
 };
 
 /**

@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import Elem0 from "../../assets/elem0.png";
+import Elem1 from "../../assets/elem1.png";
+import Elem2 from "../../assets/elem2.png";
 import {
   Table,
   Container,
@@ -8,7 +11,9 @@ import {
   Dropdown,
   Button,
   FormField,
+  Carousel,
   Form,
+  List,
 } from "../../mobrix-ui-preview";
 import {
   Demo,
@@ -62,9 +67,9 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />{" "}
             <Card noDividers header="header" body="body" footer="footer" />{" "}
             <div style={{ marginTop: "20px" }} />
-            <Card noFooterDivider header="header" body="body" footer="footer" />
+            <Card noBottomDivider header="header" body="body" footer="footer" />
             <div style={{ marginTop: "20px" }} />
-            <Card noHeaderDivider header="header" body="body" footer="footer" />
+            <Card noTopDivider header="header" body="body" footer="footer" />
             <div style={{ marginTop: "20px" }} />
             <Card dark />
             <div style={{ marginTop: "20px" }} />
@@ -80,7 +85,7 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Card
               dark
-              noHeaderDivider
+              noTopDivider
               header="header"
               body="body"
               footer="footer"
@@ -88,7 +93,7 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Card
               dark
-              noFooterDivider
+              noBottomDivider
               header="header"
               body="body"
               footer="footer"
@@ -96,6 +101,7 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Card unstyled />
             <div style={{ marginTop: "20px" }} />
+            <div className="mbui-test-icon" />
             <Card unstyled header="header" />
             <div style={{ marginTop: "20px" }} />
             <Card unstyled body="body" />
@@ -106,17 +112,17 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Card
               unstyled
-              noHeaderDivider
+              noTopDivider
               header="header"
-              body="Card unstyled noHeaderDivider"
+              body="Card unstyled noTopDivider"
               footer="footer"
             />
             <div style={{ marginTop: "20px" }} />
             <Card
               unstyled
-              noFooterDivider
+              noBottomDivider
               header="header"
-              body="Card unstyled noFooterDivider"
+              body="Card unstyled noBottomDivider"
               footer="footer"
             />
             <div style={{ marginTop: "20px" }} />
@@ -134,7 +140,17 @@ const MoleculesPage = () => {
       <ComponentDemo
         name="Carousel"
         Component={
-          <div style={{ display: "flex", flexDirection: "column" }}></div>
+          <><Carousel elements={[
+            <img alt="" src={Elem0} width="250px" height="250px" />,
+            <img alt="" src={Elem1} width="250px" height="250px" />,
+            <img alt="" src={Elem2} width="250px" height="250px" />,
+          ]} />
+            <Carousel dark elements={[
+              <img alt="" src={Elem0} width="250px" height="250px" />,
+              <img alt="" src={Elem1} width="250px" height="250px" />,
+              <img alt="" src={Elem2} width="250px" height="250px" />,
+            ]} />
+          </>
         }
       />
       <ComponentDemo
@@ -184,14 +200,14 @@ const MoleculesPage = () => {
             />
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
-              noFooterDivider
+              noBottomDivider
               header="header"
               body="body"
               footer="footer"
             />
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
-              noHeaderDivider
+              noTopDivider
               header="header"
               body="body"
               footer="footer"
@@ -217,7 +233,7 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
               dark
-              noHeaderDivider
+              noTopDivider
               header="header"
               body="body"
               footer="footer"
@@ -225,7 +241,7 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
               dark
-              noFooterDivider
+              noBottomDivider
               header="header"
               body="body"
               footer="footer"
@@ -248,7 +264,7 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
               unstyled
-              noHeaderDivider
+              noTopDivider
               header="header"
               body="body"
               footer="footer"
@@ -256,7 +272,7 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
               unstyled
-              noFooterDivider
+              noBottomDivider
               header="header"
               body="body"
               footer="footer"
@@ -361,6 +377,11 @@ const MoleculesPage = () => {
                 },
               }} />
           </div>} />
+      <ComponentDemo
+        name="List"
+        Component={<><List elements={["el 1", "el 2", "el 3"]} />
+          <div style={{ marginTop: "20px" }} />
+          <List dark elements={["el 1", "el 2", "el 3"]} /></>} />
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>

@@ -35,7 +35,7 @@ const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
     <DismissableCard
       unstyled={unstyled}
       alwaysVisible
-      noHeaderDivider
+      noTopDivider
       additionalProps={{
         "data-mobrix-ui-class": "modal-window",
       }}

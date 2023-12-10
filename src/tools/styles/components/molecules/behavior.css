@@ -1,32 +1,152 @@
 @import url("constants/computed.css");
 
 [data-mobrix-ui-id][data-mobrix-ui-dark="false"] {
+  /** Card **/
+  --mobrix-ui-computed-card-background: var(
+    --mobrix-ui-computed-card-background-light
+  );
+
+  --mobrix-ui-computed-card-text-color: var(
+    --mobrix-ui-computed-card-text-color-light
+  );
+
+  /** Carousel **/
+  --mobrix-ui-computed-carousel-background: var(
+    --mobrix-ui-computed-carousel-background-light
+  );
+
+  --mobrix-ui-computed-carousel-arrow-color: var(
+    --mobrix-ui-computed-carousel-arrow-color-light
+  );
+
+  --mobrix-ui-computed-carousel-arrow-color-hover: var(
+    --mobrix-ui-computed-carousel-arrow-color-hover-light
+  );
+
+  --mobrix-ui-computed-carousel-dot-full-background: var(
+    --mobrix-ui-computed-carousel-dot-full-background-light
+  );
+
+  --mobrix-ui-computed-carousel-dot-empty-background: var(
+    --mobrix-ui-computed-carousel-dot-empty-background-light
+  );
+
+  /** Container **/
+  --mobrix-ui-computed-container-background: var(
+    --mobrix-ui-computed-container-background-light
+  );
+  --mobrix-ui-computed-container-text-color: var(
+    --mobrix-ui-computed-container-text-color-light
+  );
+
+  /** DismissableCard **/
+  --mobrix-ui-computed-dismissablecard-background: var(
+    --mobrix-ui-computed-dismissablecard-background-light
+  );
+
+  --mobrix-ui-computed-dismissablecard-text-color: var(
+    --mobrix-ui-computed-dismissablecard-text-color-light
+  );
+
+  --mobrix-ui-computed-dismissablecard-x-color: var(
+    --mobrix-ui-computed-dismissablecard-x-color-light
+  );
+  --mobrix-ui-computed-dismissablecard-x-color-hover: var(
+    --mobrix-ui-computed-dismissablecard-x-color-hover-light
+  );
+
   /** Dropdown **/
   --mobrix-ui-dropdown-arrow-color: var(
     --mobrix-ui-custom-dropdown-arrow-color-light,
     var(--mobrix-ui-dropdown-arrow-color-light)
   );
-
   --mobrix-ui-dropdown-arrow-color-hover: var(
     --mobrix-ui-custom-dropdown-arrow-color-hover-light,
     var(--mobrix-ui-dropdown-arrow-color-hover-light)
+  );
+  --mobrix-ui-computed-dropdown-background: var(
+    --mobrix-ui-computed-dropdown-background-light
+  );
+  --mobrix-ui-computed-dropdown-background-hover: var(
+    --mobrix-ui-computed-dropdown-background-hover-light
+  );
+  --mobrix-ui-computed-dropdown-text-color: var(
+    --mobrix-ui-computed-dropdown-text-color-light
+  );
+  --mobrix-ui-computed-dropdown-text-color-hover: var(
+    --mobrix-ui-computed-dropdown-text-color-hover-light
+  );
+
+  /** List **/
+  --mobrix-ui-computed-list-text-color: var(
+    --mobrix-ui-computed-list-text-color-light
+  );
+  --mobrix-ui-computed-list-text-color-hover: var(
+    --mobrix-ui-computed-list-text-color-hover-light
   );
 
   /** Table **/
   --mobrix-ui-table-header-background: var(
     --mobrix-ui-table-header-background-light
   );
-
   --mobrix-ui-table-header-text-color: var(
     --mobrix-ui-table-header-text-color-light
   );
-
   --mobrix-ui-tab-viewer-background: var(
     --mobrix-ui-tab-viewer-background-light
   );
 }
 
 [data-mobrix-ui-id][data-mobrix-ui-dark="true"] {
+  /** Card **/
+  --mobrix-ui-computed-card-background: var(
+    --mobrix-ui-computed-card-background-dark
+  );
+
+  --mobrix-ui-computed-card-text-color: var(
+    --mobrix-ui-computed-card-text-color-dark
+  );
+
+  /** Carousel **/
+  --mobrix-ui-computed-carousel-background: var(
+    --mobrix-ui-computed-carousel-background-dark
+  );
+  --mobrix-ui-computed-carousel-arrow-color: var(
+    --mobrix-ui-computed-carousel-arrow-color-dark
+  );
+  --mobrix-ui-computed-carousel-arrow-color-hover: var(
+    --mobrix-ui-computed-carousel-arrow-color-hover-dark
+  );
+  --mobrix-ui-computed-carousel-dot-full-background: var(
+    --mobrix-ui-computed-carousel-dot-full-background-dark
+  );
+
+  --mobrix-ui-computed-carousel-dot-empty-background: var(
+    --mobrix-ui-computed-carousel-dot-empty-background-dark
+  );
+
+  /** Container **/
+  --mobrix-ui-computed-container-background: var(
+    --mobrix-ui-computed-container-background-dark
+  );
+  --mobrix-ui-computed-container-text-color: var(
+    --mobrix-ui-computed-container-text-color-dark
+  );
+
+  /** DismissableCard **/
+  --mobrix-ui-computed-dismissablecard-background: var(
+    --mobrix-ui-computed-dismissablecard-background-dark
+  );
+  --mobrix-ui-computed-dismissablecard-text-color: var(
+    --mobrix-ui-computed-dismissablecard-text-color-dark
+  );
+  --mobrix-ui-computed-dismissablecard-x-color: var(
+    --mobrix-ui-computed-dismissablecard-x-color-dark
+  );
+  --mobrix-ui-computed-dismissablecard-x-color-hover: var(
+    --mobrix-ui-computed-dismissablecard-x-color-hover-dark
+  );
+
   /** Dropdown **/
   --mobrix-ui-dropdown-arrow-color: var(
     --mobrix-ui-custom-dropdown-arrow-color-dark,
@@ -36,6 +156,29 @@
   --mobrix-ui-dropdown-arrow-color-hover: var(
     --mobrix-ui-custom-dropdown-arrow-color-hover-dark,
     var(--mobrix-ui-dropdown-arrow-color-hover-dark)
+  );
+
+  --mobrix-ui-computed-dropdown-background: var(
+    --mobrix-ui-computed-dropdown-background-dark
+  );
+  --mobrix-ui-computed-dropdown-background-hover: var(
+    --mobrix-ui-computed-dropdown-background-hover-dark
+  );
+
+  --mobrix-ui-computed-dropdown-text-color: var(
+    --mobrix-ui-computed-dropdown-text-color-dark
+  );
+  --mobrix-ui-computed-dropdown-text-color-hover: var(
+    --mobrix-ui-computed-dropdown-text-color-hover-dark
+  );
+
+  /** List **/
+  --mobrix-ui-computed-list-text-color: var(
+    --mobrix-ui-computed-list-text-color-dark
+  );
+
+  --mobrix-ui-computed-list-text-color-hover: var(
+    --mobrix-ui-computed-list-text-color-hover-dark
   );
 
   /** Table **/
@@ -56,6 +199,10 @@
 [data-mobrix-ui-id][data-mobrix-ui-background="false"]:hover,
 [data-mobrix-ui-id][data-mobrix-ui-styled="false"],
 [data-mobrix-ui-id][data-mobrix-ui-styled="false"]:hover {
-  --mobrix-ui-table-header-background: transparent;
-  --mobrix-ui-tab-viewer-background: transparent;
+  --mobrix-ui-computed-card-background: transparent !important;
+  --mobrix-ui-computed-carousel-background: transparent !important;
+  --mobrix-ui-computed-container-background: transparent !important;
+  --mobrix-ui-computed-dismissablecard-background: transparent !important;
+  --mobrix-ui-table-header-background: transparent !important;
+  --mobrix-ui-tab-viewer-background: transparent !important;
 }

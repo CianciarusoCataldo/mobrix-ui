@@ -46,16 +46,11 @@ const userIcon = (
 const TestComponent = () => {
     const [isVisible, setVisible] = React.useState(false)
     return (
-        <><Button onClick={() => setVisible(true)}>Show</Button>
-            <Modal onClose={() => setVisible(false)} hide={!isVisible}><Carousel elements={[
-                <img alt="" src={Elem0} width="250px" height="250px" />,
-                <img alt="" src={Elem1} width="250px" height="250px" />,
-                <img alt="" src={Elem2} width="250px" height="250px" />,
-            ]} /></Modal>
-            <Review icon={userIcon} user="Random user" description="Review description jjjjjjjjjjjjjjjj j j jjjj jjjjjjjjjjjjjjjjj hhhhhh" rate={4} />
-            <Review icon={userIcon} user="Random user" description="Review description jjjjjjjjjjjjjjjj j j jjjj jjjjjjjjjjjjjjjjj hhhhhh" noBackground />
-            <Review dark icon={userIcon} user="Random user" description="Review description" />
-        </>
+        <Carousel elements={[
+            <img alt="" src={Elem0} width="250px" height="250px" />,
+            <img alt="" src={Elem1} width="250px" height="250px" />,
+            <img alt="" src={Elem2} width="250px" height="250px" />,
+        ]} />
     )
 }
 

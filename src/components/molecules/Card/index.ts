@@ -49,8 +49,8 @@ const Card: CardComponent = ({
   children,
   hide,
   noDividers,
-  noFooterDivider,
-  noHeaderDivider,
+  noBottomDivider,
+  noTopDivider,
   additionalProps,
   ...commonProps
 }) => {
@@ -63,8 +63,8 @@ const Card: CardComponent = ({
       footer,
       dark: commonProps.dark,
       noDividers,
-      noFooterDivider,
-      noHeaderDivider,
+      noBottomDivider,
+      noTopDivider,
     }),
     commonProps,
     additionalProps

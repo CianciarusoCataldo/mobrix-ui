@@ -1,7 +1,6 @@
 import React from "react";
 import { CarouselProps, MobrixUiReactiveComponent } from "../../../types";
 
-import { ICONS } from "../../atoms/Rater/icons";
 import { arrowIcon } from "./icons";
 
 import { Button } from "../../atoms";
@@ -53,9 +52,8 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
             updateItem(index);
           }}
         >
-          {index === item || (hoveredDot != null && index === hoveredDot)
-            ? ICONS.circle.FULL
-            : ICONS.circle.EMPTY}
+          <div data-mobrix-ui-class="carousel-dot-icon"
+            data-mobrix-ui-icon-full={index === item || (hoveredDot != null && index === hoveredDot)} />
         </Button>
       );
     });

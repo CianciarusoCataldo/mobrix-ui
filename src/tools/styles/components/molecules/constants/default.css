@@ -1,4 +1,58 @@
 [data-mobrix-ui-id] {
+  /* Card */
+  --mobrix-ui-default-card-background-dark: linear-gradient(
+    to right,
+    #2d3748,
+    #1d232e
+  );
+  --mobrix-ui-default-card-background-light: linear-gradient(
+    to right,
+    #fff,
+    #ededee,
+    #e6e7e7
+  );
+
+  /** Carousel **/
+  --mobrix-ui-default-carousel-arrow-color-hover-light: #287dfd;
+  --mobrix-ui-default-carousel-arrow-color-hover-dark: #ff8007;
+  --mobrix-ui-default-carousel-arrow-color-light: #252525;
+  --mobrix-ui-default-carousel-arrow-color-dark: #e2e2e2;
+
+  --mobrix-ui-default-carousel-dot-full-background: linear-gradient(
+    to top,
+    #ff8007,
+    #fd8616,
+    #fd9b3f,
+    #fd9c40,
+    #fcbb7f,
+    #fad6b4
+  );
+
+  --mobrix-ui-default-carousel-dot-empty-background: radial-gradient(
+    #000000,
+    #181818,
+    #282828,
+    #3a3a3a,
+    #4c4c4c,
+    #6b6a6a,
+    #858383
+  );
+
+  /** DismissableCard **/
+  --mobrix-ui-default-dismissablecard-x-color-hover: red;
+
+  /* Dropdown */
+  --mobrix-ui-default-dropdown-arrow-color-light: #1b1b1b;
+
+  --mobrix-ui-default-dropdown-arrow-color-dark: #f5f5f5;
+
+  --mobrix-ui-default-dropdown-arrow-color-hover-light: #344053;
+
+  --mobrix-ui-default-dropdown-arrow-color-hover-dark: #cccccc;
+
+  --mobrix-ui-default-dropdown-text-color-hover-light: #354053;
+
+  --mobrix-ui-default-dropdown-text-color-hover-dark: #cccccc;
   /* Table */
   --mobrix-ui-default-table-header-background-dark: linear-gradient(
     to right,
@@ -27,13 +81,4 @@
     #cccccc,
     rgb(199, 199, 199)
   );
-
-  /* Dropdown */
-  --mobrix-ui-default-dropdown-arrow-color-light: #1b1b1b;
-
-  --mobrix-ui-default-dropdown-arrow-color-dark: #f5f5f5;
-
-  --mobrix-ui-default-dropdown-arrow-color-hover-light: #2d3748;
-
-  --mobrix-ui-default-dropdown-arrow-color-hover-dark: #cccccc;
 }

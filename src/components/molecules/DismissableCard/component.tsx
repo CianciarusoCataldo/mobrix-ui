@@ -11,9 +11,9 @@ import cardComponent from "../Card/component";
 
 const DismissableCardComponent: MobrixUiReactiveComponent<boolean, DismissableCardProps> = ({
     children,
-    noFooterDivider,
+    noBottomDivider,
     noDividers,
-    noHeaderDivider,
+    noTopDivider,
     setValue,
     body,
     footer,
@@ -23,26 +23,28 @@ const DismissableCardComponent: MobrixUiReactiveComponent<boolean, DismissableCa
     alwaysVisible
 }) => cardComponent({
     children,
-    noFooterDivider,
+    noBottomDivider,
     noDividers,
-    noHeaderDivider,
+    noTopDivider,
     header: (
         <div data-mobrix-ui-class="header-container">
-            <Button
-                dark={dark}
-                unstyled
-                additionalProps={{
-                    "data-mobrix-ui-class": "card-dismiss-button",
-                    "data-mobrix-ui-test": "card_dismiss_button"
-                }}
-                onClick={() => {
-                    onClose()
-                    !alwaysVisible && setValue(true)
-                }}
-            >
-                {xIcon}
-            </Button>
-            <div data-mobrix-ui-class="header-element">{header}</div>
+            <div data-mobrix-ui-class="dismissable-card-dismiss-container">
+                <Button
+                    dark={dark}
+                    unstyled
+                    additionalProps={{
+                        "data-mobrix-ui-class": "card-dismiss-button",
+                        "data-mobrix-ui-test": "card_dismiss_button"
+                    }}
+                    onClick={() => {
+                        onClose()
+                        !alwaysVisible && setValue(true)
+                    }}
+                >
+                    {xIcon}
+                </Button>
+            </div>
+            {header && <div data-mobrix-ui-class="header-element">{header}</div>}
         </div>
     ),
     body,
