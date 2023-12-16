@@ -12,7 +12,6 @@ import { getMonthsDuration } from "../Calendar/utils";
 
 import { CalendarIcon } from "./icons";
 
-import Container from "../../molecules/Container";
 import Modal from "../../molecules/Modal";
 import Calendar from "../Calendar";
 import Button from "../../atoms/Button";
@@ -84,7 +83,6 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
         key="date_picker_modal"
         animated={animated}
         onClose={() => setVisible(false)}
-        dark={true}
         additionalProps={{
           "data-mobrix-ui-class": "date-picker-modal"
         }}

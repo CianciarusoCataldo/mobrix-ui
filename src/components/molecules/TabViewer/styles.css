@@ -16,13 +16,14 @@
   border-top-right-radius: 6px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  color: var(--mobrix-ui-text-color);
+  color: var(--mobrix-ui-computed-tab-viewer-text-color);
 }
 
 [data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-styled="true"]
   [data-mobrix-ui-class="tabs-list"]
   [data-mobrix-ui-class="tab"][data-mobrix-ui-tab-viewer-selected="true"] {
-  background-image: var(--mobrix-ui-tab-viewer-background);
+  background-image: var(--mobrix-ui-computed-tab-viewer-background);
+  color: var(--mobrix-ui-computed-tab-viewer-text-color);
 }
 
 [data-mobrix-ui-id="tab-viewer"]
@@ -30,45 +31,23 @@
   [data-mobrix-ui-class="tab"]:not(
     [data-mobrix-ui-tab-viewer-selected="true"]
   ) {
-  background-image: linear-gradient(to right, #a1a0a0, #797979);
-  color: #bdbdbd;
-}
-
-[data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-dark="true"]
-  [data-mobrix-ui-class="tabs-list"]
-  [data-mobrix-ui-class="tab"]:not(
-    [data-mobrix-ui-tab-viewer-selected="true"]
-  ) {
-  background-image: linear-gradient(to right, #3e4b63, #3f4858);
-  color: #bdbdbd;
-}
-
-[data-mobrix-ui-id="tab-viewer"]
-  [data-mobrix-ui-class="tabs-list"]
-  [data-mobrix-ui-class="tab"]:not(
-    [data-mobrix-ui-tab-viewer-selected="true"]
-  ):hover {
-  background-image: linear-gradient(to right, #b6b4b4, #999797);
-}
-
-[data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-dark="true"]
-  [data-mobrix-ui-class="tabs-list"]
-  [data-mobrix-ui-class="tab"]:not(
-    [data-mobrix-ui-tab-viewer-selected="true"]
-  ) {
-  background-image: linear-gradient(to right, #3e4b63, #3f4858);
-  color: #bdbdbd;
-}
-
-[data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-dark="true"]
-  [data-mobrix-ui-class="tabs-list"]
-  [data-mobrix-ui-class="tab"]:not(
-    [data-mobrix-ui-tab-viewer-selected="true"]
-  ):hover {
-  background-image: linear-gradient(to right, #566888, #3c465a);
+  background-image: var(--mobrix-ui-computed-tab-viewer-background-inactive);
+  color: var(--mobrix-ui-computed-tab-viewer-text-color-inactive);
 }
 
 [data-mobrix-ui-id="tab-viewer"] [data-mobrix-ui-class="tab-view"] {
   padding: 0.7rem 1rem;
-  background-image: var(--mobrix-ui-tab-viewer-background);
+  background-image: var(--mobrix-ui-computed-tab-viewer-background);
+}
+
+@media (hover) {
+  [data-mobrix-ui-id="tab-viewer"]
+    [data-mobrix-ui-class="tabs-list"]
+    [data-mobrix-ui-class="tab"]:not(
+      [data-mobrix-ui-tab-viewer-selected="true"]
+    ):hover {
+    background-image: var(
+      --mobrix-ui-computed-tab-viewer-background-inactive-hover
+    );
+  }
 }

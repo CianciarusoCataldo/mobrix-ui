@@ -53,6 +53,16 @@
   --mobrix-ui-default-dropdown-text-color-hover-light: #354053;
 
   --mobrix-ui-default-dropdown-text-color-hover-dark: #cccccc;
+
+  /** Modal **/
+  --mobrix-ui-default-modal-background: rgba(0, 0, 0, 0.8);
+  --mobrix-ui-default-modal-x-color: white;
+  --mobrix-ui-default-modal-x-color-hover: red;
+
+  /** Review **/
+  --mobrix-ui-default-review-link-color-light: #615f5f;
+  --mobrix-ui-default-review-link-color-dark: white;
+
   /* Table */
   --mobrix-ui-default-table-header-background-dark: linear-gradient(
     to right,
@@ -65,6 +75,10 @@
     #354155,
     #2b3546
   );
+
+  --mobrix-ui-default-table-border-color-dark: rgb(219, 219, 219);
+
+  --mobrix-ui-default-table-border-color-light: darkslategrey;
 
   --mobrix-ui-default-table-header-text-color-dark: rgb(47, 55, 79);
 
@@ -79,6 +93,30 @@
   --mobrix-ui-default-tab-viewer-background-light: linear-gradient(
     to right,
     #cccccc,
-    rgb(199, 199, 199)
+    #c7c7c7
   );
+
+  --mobrix-ui-default-tab-viewer-background-inactive-light: linear-gradient(
+    to right,
+    #a1a0a0,
+    #797979
+  );
+  --mobrix-ui-default-tab-viewer-background-inactive-dark: linear-gradient(
+    to right,
+    #3e4b63,
+    #3f4858
+  );
+
+  --mobrix-ui-default-tab-viewer-background-inactive-hover-light: linear-gradient(
+    to right,
+    #b6b4b4,
+    #999797
+  );
+  --mobrix-ui-default-tab-viewer-background-inactive-hover-dark: linear-gradient(
+    to right,
+    #566888,
+    #3c465a
+  );
+
+  --mobrix-ui-default-tab-viewer-text-color-inactive: #c2c2c2;
 }

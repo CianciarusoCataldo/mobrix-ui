@@ -7,8 +7,11 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--mobrix-ui-computed-modal-background);
   padding: 0.1rem;
+}
+
+[data-mobrix-ui-id="modal"][data-mobrix-ui-animated="true"] {
   --mobrix-ui-modal-animation-in: fadein 0.3s forwards;
   --mobrix-ui-modal-animation-out: fadeOut 0.3s forwards;
   animation: var(--mobrix-ui-modal-animation);
@@ -17,29 +20,39 @@
   -o-animation: var(--mobrix-ui-modal-animation);
 }
 
-[data-mobrix-ui-id="modal"][data-mobrix-ui-modal-animation="ease-in"] {
+[data-mobrix-ui-id="modal"][data-mobrix-ui-animated="true"][data-mobrix-ui-modal-animation="ease-in"] {
   --mobrix-ui-modal-animation: var(--mobrix-ui-modal-animation-in);
 }
 
-[data-mobrix-ui-id="modal"][data-mobrix-ui-modal-animation="ease-out"] {
-  --mobrix-ui-modal-animation: var(--mobrix-ui-modal-animation-out);
+[data-mobrix-ui-id="modal"][data-mobrix-ui-animated="true"][data-mobrix-ui-modal-animation="ease-in"] {
+  --mobrix-ui-modal-animation: var(--mobrix-ui-modal-animation-in);
 }
 
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  [data-mobrix-ui-id="modal"] {
-    -webkit-backdrop-filter: blur(2em);
-    backdrop-filter: blur(2em);
-  }
+[data-mobrix-ui-id="modal"][data-mobrix-ui-animated="true"][data-mobrix-ui-modal-animation="ease-out"] {
+  --mobrix-ui-modal-animation: var(--mobrix-ui-modal-animation-out);
 }
 
 [data-mobrix-ui-id="modal"] > [data-mobrix-ui-class="modal-window"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  --mobrix-ui-computed-dismissablecard-x-color: var(
+    --mobrix-ui-computed-modal-x-color
+  );
+  --mobrix-ui-computed-dismissablecard-x-color-hover: var(
+    --mobrix-ui-computed-modal-x-color-hover
+  );
 }
 
 [data-mobrix-ui-id="modal"]
   > [data-mobrix-ui-class="modal-window"]
   [data-mobrix-ui-class="body"] {
   margin: 0;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  [data-mobrix-ui-id="modal"] {
+    -webkit-backdrop-filter: blur(2.5em);
+    backdrop-filter: blur(2.5em);
+  }
 }

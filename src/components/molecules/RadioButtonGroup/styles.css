@@ -6,7 +6,8 @@
 }
 
 [data-mobrix-ui-id="radio-button-group"][data-mobrix-ui-background="true"] {
-  background: var(--mobrix-ui-background);
+  background: var(--mobrix-ui-computed-radiogroup-background);
+  color: var(--mobrix-ui-computed-radiogroup-text-color);
 }
 
 [data-mobrix-ui-id="radio-button-group"][data-mobrix-ui-orientation="true"] {

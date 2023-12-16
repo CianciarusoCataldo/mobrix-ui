@@ -17,6 +17,9 @@
   [data-mobrix-ui-calendar-table="true"] {
   width: 100%;
   margin: auto;
+  --mobrix-ui-table-background: var(
+    var(--mobrix-ui-computed-calendar-background)
+  );
 }
 
 [data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]

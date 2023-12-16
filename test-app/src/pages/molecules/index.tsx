@@ -14,6 +14,11 @@ import {
   Carousel,
   Form,
   List,
+  ExpandableContainer,
+  Modal,
+  Popup,
+  RadioButtonGroup,
+  Review,
 } from "../../mobrix-ui-preview";
 import {
   Demo,
@@ -22,8 +27,49 @@ import {
   StringProp,
 } from "@cianciarusocataldo/demo-ui";
 
+const userIcon = (
+  <svg height="40" width="40" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 0a20 20 0 1 0 0 40 20 20 0 0 0 0-40Zm0 0" fill="#334d5c" />
+    <path
+      d="M23 35.8c-.3-1.9.8-6 .8-6h-7.3s1.2 4 .8 6c-.1 1-2.4 2.1-4 3a20 20 0 0 0 13.6 0c-1.5-1-3.8-2-4-3Zm0 0"
+      fill="#41af87"
+    />
+    <path
+      d="M20 4.8c-6.8 0-15 6.8-12.3 14.6C10.1 26.3 16.3 32 20 32c3.7 0 10-5.8 12.3-12.6C34.9 11.6 26.8 4.8 20 4.8Zm0 0"
+      fill="#4abc96"
+    />
+    <path
+      d="M18.8 20s-.4-1.2-1.2-2.4c-1.1-1.6-2.4-2.4-3.9-2.4-1.4 0-2.9.8-4.5 2.4v.2s2 3.1 6 3.1c1.2 0 2.3-.2 3.5-.6 0 0 .1-.2 0-.2Zm0 0"
+      fill="#3faa83"
+    />
+    <path d="M10.1 17.8s2.6 4 7.8 2c0 0-2.4-7.4-7.8-2Zm0 0" fill="#22343d" />
+    <path
+      d="M13.1 16.6c0 .6 1.7.8 1.8.3 0-.5-1.7-.8-1.8-.3Zm0 0"
+      fill="#cbefe1"
+    />
+    <path
+      d="M30.8 17.6c-1.6-1.6-3.1-2.4-4.5-2.4-1.5 0-2.8.8-3.9 2.4a9.1 9.1 0 0 0-1.2 2.5l.1.1c1.2.5 2.3.7 3.4.7 4 0 6-3 6.1-3.1v-.2Zm0 0"
+      fill="#3faa83"
+    />
+    <path
+      d="M22.1 19.8c5.2 2 7.8-2 7.8-2-5.4-5.4-7.8 2-7.8 2Zm0 0"
+      fill="#22343d"
+    />
+    <path
+      d="M26.9 16.6c-.1-.5-1.8-.2-1.8.3.1.5 1.8.3 1.8-.3Zm0 0"
+      fill="#cbefe1"
+    />
+    <path
+      d="M19.3 24.1c-.3 0-.6.2-.6.5s1.2.3 1.2 0-.3-.5-.6-.5Zm1.4 0c-.3 0-.6.2-.6.5s1.2.3 1.2 0-.3-.5-.6-.5Zm1.9 3.9c0 .3-1.2.3-2.7.3-1.5 0-2.7 0-2.7-.3 0-.2 1.2-.3 2.7-.3 1.5 0 2.7 0 2.7.3Zm0 0"
+      fill="#329670"
+    />
+  </svg>
+);
+
 const MoleculesPage = () => {
   const [hide, setHide] = useState(null);
+  const [isVisible, setVisible] = React.useState(false);
+  const [isPopupVisible, setPopupVisible] = React.useState(false);
 
   const ComponentDemo = ({
     Component,
@@ -79,7 +125,13 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Card dark footer="footer" />
             <div style={{ marginTop: "20px" }} />
-            <Card dark header="header" body="Card dark no background" footer="footer" noBackground />
+            <Card
+              dark
+              header="header"
+              body="Card dark no background"
+              footer="footer"
+              noBackground
+            />
             <div style={{ marginTop: "20px" }} />
             <Card dark noDividers header="header" body="body" footer="footer" />
             <div style={{ marginTop: "20px" }} />
@@ -108,7 +160,12 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Card unstyled footer="footer" />
             <div style={{ marginTop: "20px" }} />
-            <Card unstyled header="header" body="Card unstyled" footer="footer" />
+            <Card
+              unstyled
+              header="header"
+              body="Card unstyled"
+              footer="footer"
+            />
             <div style={{ marginTop: "20px" }} />
             <Card
               unstyled
@@ -140,16 +197,22 @@ const MoleculesPage = () => {
       <ComponentDemo
         name="Carousel"
         Component={
-          <><Carousel elements={[
-            <img alt="" src={Elem0} width="250px" height="250px" />,
-            <img alt="" src={Elem1} width="250px" height="250px" />,
-            <img alt="" src={Elem2} width="250px" height="250px" />,
-          ]} />
-            <Carousel dark elements={[
-              <img alt="" src={Elem0} width="250px" height="250px" />,
-              <img alt="" src={Elem1} width="250px" height="250px" />,
-              <img alt="" src={Elem2} width="250px" height="250px" />,
-            ]} />
+          <>
+            <Carousel
+              elements={[
+                <img alt="" src={Elem0} width="250px" height="250px" />,
+                <img alt="" src={Elem1} width="250px" height="250px" />,
+                <img alt="" src={Elem2} width="250px" height="250px" />,
+              ]}
+            />
+            <Carousel
+              dark
+              elements={[
+                <img alt="" src={Elem0} width="250px" height="250px" />,
+                <img alt="" src={Elem1} width="250px" height="250px" />,
+                <img alt="" src={Elem2} width="250px" height="250px" />,
+              ]}
+            />
           </>
         }
       />
@@ -190,7 +253,13 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />{" "}
             <DismissableCard header="header" body="body" footer="footer" />{" "}
             <div style={{ marginTop: "20px" }} />
-            <DismissableCard noHover alwaysVisible header="Always visible nohover" body="body" footer="footer" />{" "}
+            <DismissableCard
+              noHover
+              alwaysVisible
+              header="Always visible nohover"
+              body="body"
+              footer="footer"
+            />{" "}
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
               noDividers
@@ -289,6 +358,50 @@ const MoleculesPage = () => {
         }
         name="DismissableCard"
       />
+      <ComponentDemo
+        name="ExpandableContainer"
+        Component={
+          <div
+            style={{ width: "100%", display: "flex", flexDirection: "column" }}
+          >
+            <ExpandableContainer
+              expanded={
+                <div>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                </div>
+              }
+            >
+              <div>
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+              </div>
+            </ExpandableContainer>
+            <ExpandableContainer
+              dark
+              expanded={
+                <div>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                </div>
+              }
+            >
+              <div>
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+              </div>
+            </ExpandableContainer>
+          </div>
+        }
+      />
       <Demo
         props={{
           type: SelectProp({
@@ -321,7 +434,7 @@ const MoleculesPage = () => {
         children={(props, setProps) => (
           <FormField
             {...props}
-          //validate={(value) => String(value).length > 6}
+            //validate={(value) => String(value).length > 6}
           />
         )}
       />
@@ -352,7 +465,8 @@ const MoleculesPage = () => {
                   type: "radio",
                   header: "radio",
                 },
-              }} />
+              }}
+            />
             <Form
               submitLabel={"submit"}
               fields={{
@@ -375,13 +489,164 @@ const MoleculesPage = () => {
                   type: "radio",
                   header: "radio",
                 },
-              }} />
-          </div>} />
+              }}
+            />
+          </div>
+        }
+      />
       <ComponentDemo
         name="List"
-        Component={<><List elements={["el 1", "el 2", "el 3"]} />
-          <div style={{ marginTop: "20px" }} />
-          <List dark elements={["el 1", "el 2", "el 3"]} /></>} />
+        Component={
+          <>
+            <List elements={["el 1", "el 2", "el 3"]} />
+            <div style={{ marginTop: "20px" }} />
+            <List dark elements={["el 1", "el 2", "el 3"]} />
+          </>
+        }
+      />
+      <ComponentDemo
+        name="Modal"
+        Component={
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <button onClick={() => setVisible(true)}>Show</button>
+            <Modal
+              animated={true}
+              onClose={() => setVisible(false)}
+              hide={!isVisible}
+            >
+              <div>Content</div>
+            </Modal>
+          </div>
+        }
+      />
+      <ComponentDemo
+        name="Popup"
+        Component={
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <button onClick={() => setPopupVisible(!isPopupVisible)}>
+              toggle popups
+            </button>
+            <Popup hide={!isPopupVisible}>
+              <div>Content</div>
+            </Popup>
+            {/* <div style={{ height: "10px" }} />
+            <Popup dark hide={!isPopupVisible}>
+              <div>Content</div>
+            </Popup>
+            <div style={{ height: "10px" }} />
+            <Popup noBackground hide={!isPopupVisible}>
+              <div>Content</div>
+            </Popup> */}
+          </div>
+        }
+      />
+      <ComponentDemo
+        name="RadioButtonGroup"
+        Component={
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <RadioButtonGroup
+              buttons={[
+                { text: "textPosition = left", textPosition: "left" },
+                { text: "textPosition = top", textPosition: "top" },
+                { text: "textPosition = right", textPosition: "right" },
+                { text: "textPosition = bottom", textPosition: "bottom" },
+              ]}
+            />
+            <RadioButtonGroup
+              dark
+              buttons={[
+                { text: "textPosition = left", textPosition: "left" },
+                { text: "textPosition = top", textPosition: "top" },
+                { text: "textPosition = right", textPosition: "right" },
+                { text: "textPosition = bottom", textPosition: "bottom" },
+              ]}
+            />
+          </div>
+        }
+      />
+      <ComponentDemo
+        name="RadioButtonGroup"
+        Component={
+          <div>
+            <Review
+              user="User"
+              rate={4}
+              url="https://github.com"
+              logo="link"
+              description="description"
+              icon={userIcon}
+            />
+            <Review
+              dark
+              user="User"
+              logo="link"
+              rate={4}
+              description="description"
+              icon={userIcon}
+            />
+            <Review
+              user="User"
+              logo="github"
+              rate={4}
+              description="description"
+              icon={userIcon}
+            />
+            <Review
+              dark
+              user="User"
+              logo="github"
+              rate={4}
+              description="description"
+              icon={userIcon}
+            />
+            <Review
+              user="User"
+              logo="facebook"
+              rate={4}
+              description="description"
+              icon={userIcon}
+            />
+            <Review
+              dark
+              user="User"
+              logo="facebook"
+              rate={4}
+              description="description"
+              icon={userIcon}
+            />
+            <Review
+              user="User"
+              logo="twitter"
+              rate={4}
+              description="description"
+              icon={userIcon}
+            />
+            <Review
+              dark
+              user="User"
+              logo="twitter"
+              rate={4}
+              description="description"
+              icon={userIcon}
+            />
+            <Review
+              user="User"
+              logo="linkedin"
+              rate={4}
+              description="description"
+              icon={userIcon}
+            />
+            <Review
+              dark
+              user="User"
+              logo="linkedin"
+              rate={4}
+              description="description"
+              icon={userIcon}
+            />
+          </div>
+        }
+      />
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -446,7 +711,13 @@ const MoleculesPage = () => {
               ]}
             />
             <div style={{ marginTop: "20px" }} />
-            <div style={{ display: "flex", flexDirection: "column", padding: "0.6rem" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                padding: "0.6rem",
+              }}
+            >
               <Table
                 dark
                 headers

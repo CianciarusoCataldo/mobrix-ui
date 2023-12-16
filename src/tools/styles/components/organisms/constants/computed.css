@@ -1,0 +1,11 @@
+[data-mobrix-ui-id] {
+  /* Calendar */
+  --mobrix-ui-computed-calendar-background-light: var(
+    --mobrix-ui-calendar-background-light,
+    var(--mobrix-ui-calendar-background, var(--mobrix-ui-background-light))
+  );
+  --mobrix-ui-computed-calendar-background-dark: var(
+    --mobrix-ui-calendar-background-dark,
+    var(--mobrix-ui-calendar-background, var(--mobrix-ui-background-dark))
+  );
+}

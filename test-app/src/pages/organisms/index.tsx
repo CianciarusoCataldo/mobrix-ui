@@ -1,5 +1,10 @@
 import React from "react";
-import { Calendar, Container, DatePicker, Label } from "../../mobrix-ui-preview";
+import {
+  Calendar,
+  Container,
+  DatePicker,
+  Label,
+} from "../../mobrix-ui-preview";
 
 const AtomsPage = () => {
   const ComponentDemo = ({
@@ -33,8 +38,17 @@ const AtomsPage = () => {
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <div style={{ display: "flex", flexDirection: "column", padding: "0.6rem" }}>
-              <Calendar fromToday={false} labelClassName="calendar-test-label" />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                padding: "0.6rem",
+              }}
+            >
+              <Calendar
+                fromToday={false}
+                labelClassName="calendar-test-label"
+              />
             </div>
             <Calendar />
             <Calendar dark fromToday={false} />
@@ -46,10 +60,23 @@ const AtomsPage = () => {
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <DatePicker fromToday={false} labelClassName="calendar-test-label" />
+            <DatePicker
+              animated
+              fromToday={false}
+              labelClassName="calendar-test-label"
+            />
             <DatePicker calendarProps={{ dark: true }} />
-            <DatePicker dark fromToday={false} calendarProps={{ dark: false }} />
-            <DatePicker dark noBackground calendarProps={{ noBackground: true }} />
+            <DatePicker
+              animated
+              dark
+              fromToday={false}
+              calendarProps={{ dark: false }}
+            />
+            <DatePicker
+              dark
+              noBackground
+              calendarProps={{ noBackground: true }}
+            />
           </div>
         }
         name="DatePicker"

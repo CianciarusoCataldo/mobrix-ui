@@ -45,31 +45,38 @@ import modalComponent from "./component";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Modal: ModalComponent = ({ animated, overlayClassName = "", children, closeOutside, additionalProps = {}, onClose = () => { }, className, hide, ...commonProps }) => {
-
-  const [value, setValue, onCloseCallback] = useAnimation("", onClose);
-
+const Modal: ModalComponent = ({
+  overlayClassName = "",
+  children,
+  closeOutside,
+  additionalProps = {},
+  onClose = () => {},
+  className,
+  ...commonProps
+}) => {
+  const [value, setValue, onCloseCallback] = useAnimation(
+    commonProps.hide ? "ease-out" : "ease-in",
+    onClose
+  );
 
   return buildMobrixUiStandardComponent({
     name: "modal",
     Component: modalComponent({
       children,
       closeOutside,
-      onClose: onCloseCallback,
       className,
-      hide,
+      onClose: commonProps.animated ? onCloseCallback : onClose,
       ...commonProps,
     }),
     commonProps: {
       ...commonProps,
-      hide: value.length === 0 && hide,
       className: overlayClassName,
     },
     additionalProps: {
       ...additionalProps,
-      "data-mobrix-ui-modal-animation": hide ? value : "ease-in"
-    }
+      "data-mobrix-ui-modal-animation": commonProps.animated && value,
+    },
   });
-}
+};
 
 export default Modal;

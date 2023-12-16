@@ -1,7 +1,4 @@
-import {
-  ComponentWithIcon,
-  MoBrixUiComponent,
-} from "../../../types/global";
+import { ComponentWithIcon, MoBrixUiComponent } from "../../../types/global";
 
 import { RaterProps } from "./rater";
 
@@ -16,6 +13,7 @@ import { RaterProps } from "./rater";
  */
 export type ReviewLogo =
   | "default"
+  | "link"
   | "facebook"
   | "twitter"
   | "google"

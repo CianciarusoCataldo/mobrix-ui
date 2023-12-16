@@ -32,7 +32,7 @@
 @media (hover) {
   [data-mobrix-ui-id="list"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]
     [data-mobrix-ui-list-element="clickable"]:hover {
-    color: var(--mobrix-ui-focus-color);
+    color: var(--mobrix-ui-computed-list-text-color-hover);
   }
 }
 

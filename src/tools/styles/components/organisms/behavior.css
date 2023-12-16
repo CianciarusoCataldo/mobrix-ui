@@ -1,0 +1,19 @@
+@import url("constants/computed.css");
+
+[data-mobrix-ui-id][data-mobrix-ui-dark="false"] {
+  --mobrix-ui-computed-calendar-background: var(
+    --mobrix-ui-computed-calendar-background-light
+  );
+}
+
+[data-mobrix-ui-id][data-mobrix-ui-dark="true"] {
+  --mobrix-ui-computed-calendar-background: var(
+    --mobrix-ui-computed-calendar-background-dark
+  );
+}
+
+/** Background styles @TODO **/
+
+[data-mobrix-ui-id="calendar"][data-mobrix-ui-background="false"] {
+  --mobrix-ui-computed-calendar-background: transparent !important;
+}

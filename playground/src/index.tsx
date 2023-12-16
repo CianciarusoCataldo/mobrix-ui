@@ -18,6 +18,7 @@ if ("serviceWorker" in navigator && process.env.NODE_ENV === "production") {
 let MoBrixDesignerApp: any = null;
 let engineParams: any = null;
 
+// file deepcode ignore PromiseNotCaughtGeneral: <please specify a reason of ignoring this>
 import("mobrix-engine").then(({ initEngine }) => {
   import("./engine.config").then(({ default: engineConfig }) => {
     engineParams = initEngine(engineConfig);

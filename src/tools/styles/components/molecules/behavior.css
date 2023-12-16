@@ -77,6 +77,20 @@
     --mobrix-ui-computed-dropdown-text-color-hover-light
   );
 
+  /** ExpandableContainer **/
+  --mobrix-ui-computed-expandable-container-background: var(
+    --mobrix-ui-computed-expandable-container-background-light
+  );
+  --mobrix-ui-computed-expandable-container-text-color: var(
+    --mobrix-ui-computed-expandable-container-text-color-light
+  );
+  --mobrix-ui-computed-expandable-container-arrow-color: var(
+    --mobrix-ui-computed-expandable-container-arrow-color-light
+  );
+  --mobrix-ui-computed-expandable-container-arrow-color-hover: var(
+    --mobrix-ui-computed-expandable-container-arrow-color-hover-light
+  );
+
   /** List **/
   --mobrix-ui-computed-list-text-color: var(
     --mobrix-ui-computed-list-text-color-light
@@ -85,15 +99,79 @@
     --mobrix-ui-computed-list-text-color-hover-light
   );
 
+  /** Modal **/
+  --mobrix-ui-computed-modal-background: var(
+    --mobrix-ui-computed-modal-background-light
+  );
+  --mobrix-ui-computed-modal-x-color: var(
+    --mobrix-ui-computed-modal-x-color-light
+  );
+  --mobrix-ui-computed-modal-x-color-hover: var(
+    --mobrix-ui-computed-modal-x-color-hover-light
+  );
+
+  /** Popup **/
+  --mobrix-ui-computed-popup-background: var(
+    --mobrix-ui-computed-popup-background-light
+  );
+  --mobrix-ui-computed-popup-text-color: var(
+    --mobrix-ui-computed-popup-text-color-light
+  );
+
+  /** RadioButtonGroup **/
+  --mobrix-ui-computed-radiogroup-background: var(
+    --mobrix-ui-computed-radiogroup-background-light
+  );
+  --mobrix-ui-computed-radiogroup-text-color: var(
+    --mobrix-ui-computed-radiogroup-text-color-light
+  );
+
+  /** Review **/
+  --mobrix-ui-computed-review-background: var(
+    --mobrix-ui-computed-review-background-light
+  );
+  --mobrix-ui-computed-review-text-color: var(
+    --mobrix-ui-computed-review-text-color-light
+  );
+  --mobrix-ui-computed-review-link-color: var(
+    --mobrix-ui-computed-review-link-color-light
+  );
+  --mobrix-ui-computed-review-github-color: var(
+    --mobrix-ui-computed-review-github-color-light
+  );
+
   /** Table **/
-  --mobrix-ui-table-header-background: var(
-    --mobrix-ui-table-header-background-light
+  --mobrix-ui-computed-table-background: var(
+    --mobrix-ui-computed-table-background-light
   );
-  --mobrix-ui-table-header-text-color: var(
-    --mobrix-ui-table-header-text-color-light
+  --mobrix-ui-computed-table-text-color: var(
+    --mobrix-ui-computed-table-text-color-light
   );
-  --mobrix-ui-tab-viewer-background: var(
-    --mobrix-ui-tab-viewer-background-light
+  --mobrix-ui-computed-table-header-background: var(
+    --mobrix-ui-computed-table-header-background-light
+  );
+  --mobrix-ui-computed-table-header-text-color: var(
+    --mobrix-ui-computed-table-header-text-color-light
+  );
+  --mobrix-ui-computed-table-border-color: var(
+    --mobrix-ui-computed-table-border-color-light
+  );
+
+  /** TabViewer **/
+  --mobrix-ui-computed-tab-viewer-background: var(
+    --mobrix-ui-computed-tab-viewer-background-light
+  );
+  --mobrix-ui-computed-tab-viewer-text-color: var(
+    --mobrix-ui-computed-tab-viewer-text-color-light
+  );
+  --mobrix-ui-computed-tab-viewer-background-inactive: var(
+    --mobrix-ui-computed-tab-viewer-background-inactive-light
+  );
+  --mobrix-ui-computed-tab-viewer-background-inactive-hover: var(
+    --mobrix-ui-computed-tab-viewer-background-inactive-hover-light
+  );
+  --mobrix-ui-computed-tab-viewer-text-color-inactive: var(
+    --mobrix-ui-computed-tab-viewer-text-color-inactive-light
   );
 }
 
@@ -172,6 +250,20 @@
     --mobrix-ui-computed-dropdown-text-color-hover-dark
   );
 
+  /** Container **/
+  --mobrix-ui-computed-expandable-container-background: var(
+    --mobrix-ui-computed-expandable-container-background-dark
+  );
+  --mobrix-ui-computed-expandable-container-text-color: var(
+    --mobrix-ui-computed-expandable-container-text-color-dark
+  );
+  --mobrix-ui-computed-expandable-container-arrow-color: var(
+    --mobrix-ui-computed-expandable-container-arrow-color-dark
+  );
+  --mobrix-ui-computed-expandable-container-arrow-color-hover: var(
+    --mobrix-ui-computed-expandable-container-arrow-color-hover-dark
+  );
+
   /** List **/
   --mobrix-ui-computed-list-text-color: var(
     --mobrix-ui-computed-list-text-color-dark
@@ -181,17 +273,80 @@
     --mobrix-ui-computed-list-text-color-hover-dark
   );
 
+  /** Modal **/
+  --mobrix-ui-computed-modal-background: var(
+    --mobrix-ui-computed-modal-background-dark
+  );
+
+  --mobrix-ui-computed-modal-x-color: var(
+    --mobrix-ui-computed-modal-x-color-dark
+  );
+  --mobrix-ui-computed-modal-x-color-hover: var(
+    --mobrix-ui-computed-modal-x-color-hover-dark
+  );
+
+  /** Popup **/
+  --mobrix-ui-computed-popup-background: var(
+    --mobrix-ui-computed-popup-background-dark
+  );
+  --mobrix-ui-computed-popup-text-color: var(
+    --mobrix-ui-computed-popup-text-color-dark
+  );
+
+  /** RadioButtonGroup **/
+  --mobrix-ui-computed-radiogroup-background: var(
+    --mobrix-ui-computed-radiogroup-background-dark
+  );
+  --mobrix-ui-computed-radiogroup-text-color: var(
+    --mobrix-ui-computed-radiogroup-text-color-dark
+  );
+
+  /** Review **/
+  --mobrix-ui-computed-review-background: var(
+    --mobrix-ui-computed-review-background-dark
+  );
+  --mobrix-ui-computed-review-text-color: var(
+    --mobrix-ui-computed-review-text-color-dark
+  );
+  --mobrix-ui-computed-review-link-color: var(
+    --mobrix-ui-computed-review-link-color-dark
+  );
+  --mobrix-ui-computed-review-github-color: var(
+    --mobrix-ui-computed-review-github-color-dark
+  );
+
   /** Table **/
-  --mobrix-ui-table-header-background: var(
-    --mobrix-ui-table-header-background-dark
+  --mobrix-ui-computed-table-background: var(
+    --mobrix-ui-computed-table-background-dark
+  );
+  --mobrix-ui-computed-table-text-color: var(
+    --mobrix-ui-computed-table-text-color-dark
+  );
+  --mobrix-ui-computed-table-header-background: var(
+    --mobrix-ui-computed-table-header-background-dark
+  );
+  --mobrix-ui-computed-table-header-text-color: var(
+    --mobrix-ui-computed-table-header-text-color-dark
+  );
+  --mobrix-ui-computed-table-border-color: var(
+    --mobrix-ui-computed-table-border-color-dark
   );
 
-  --mobrix-ui-table-header-text-color: var(
-    --mobrix-ui-table-header-text-color-dark
+  /** TabViewer **/
+  --mobrix-ui-computed-tab-viewer-background: var(
+    --mobrix-ui-computed-tab-viewer-background-dark
   );
-
-  --mobrix-ui-tab-viewer-background: var(
-    --mobrix-ui-tab-viewer-background-dark
+  --mobrix-ui-computed-tab-viewer-text-color: var(
+    --mobrix-ui-computed-tab-viewer-text-color-dark
+  );
+  --mobrix-ui-computed-tab-viewer-background-inactive: var(
+    --mobrix-ui-computed-tab-viewer-background-inactive-dark
+  );
+  --mobrix-ui-computed-tab-viewer-background-inactive-hover: var(
+    --mobrix-ui-computed-tab-viewer-background-inactive-hover-dark
+  );
+  --mobrix-ui-computed-tab-viewer-text-color-inactive: var(
+    --mobrix-ui-computed-tab-viewer-text-color-inactive-dark
   );
 }
 
@@ -203,6 +358,17 @@
   --mobrix-ui-computed-carousel-background: transparent !important;
   --mobrix-ui-computed-container-background: transparent !important;
   --mobrix-ui-computed-dismissablecard-background: transparent !important;
-  --mobrix-ui-table-header-background: transparent !important;
-  --mobrix-ui-tab-viewer-background: transparent !important;
+}
+
+/** Background styles @TODO **/
+
+[data-mobrix-ui-id="table"][data-mobrix-ui-background="false"] {
+  --mobrix-ui-computed-table-background: transparent !important;
+  --mobrix-ui-computed-table-header-background: transparent !important;
+}
+
+[data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-background="false"] {
+  --mobrix-ui-computed-tab-viewer-background: transparent !important;
+  --mobrix-ui-computed-tab-viewer-background-inactive: transparent !important;
+  --mobrix-ui-computed-tab-viewer-background-inactive-hover: transparent !important;
 }

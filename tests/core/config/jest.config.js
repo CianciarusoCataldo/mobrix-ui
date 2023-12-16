@@ -14,10 +14,6 @@ module.exports = {
     "^.+\\.(ts|tsx|js|jsx)$": "ts-jest",
   },
   setupFilesAfterEnv: ["./tests/core/utils/testSetup.js"],
-  moduleNameMapper: {
-    "^@/(.*)$": "src/$1",
-    "\\.(css|less)$": "<rootDir>/tests/core/utils/__mocks__/fileMock.js",
-  },
   modulePathIgnorePatterns: [
     "src/tests/test-suites/(*.*.*|*.*)",
     "/tests/core/utils/*.*",
@@ -26,7 +22,6 @@ module.exports = {
   transformIgnorePatterns: ["node_modules/"],
   testEnvironment: "jsdom",
   testMatch: ["**/tests/main.test.tsx"],
-  modulePathIgnorePatterns: ["/tests/test-suites/", "/tests/core/utils/"],
   coveragePathIgnorePatterns: ["/tests/test-suites/", "/tests/core/utils/"],
   collectCoverage: true,
   verbose: true,

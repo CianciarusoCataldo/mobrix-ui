@@ -9,12 +9,13 @@
   z-index: 2;
 }
 
-[data-mobrix-ui-id="popup"][data-mobrix-ui-styled="true"] [data-mobrix-ui-class="popup-content"] {
+[data-mobrix-ui-id="popup"][data-mobrix-ui-styled="true"]
+  [data-mobrix-ui-class="popup-content"] {
   border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
-  background-image: var(--mobrix-ui-background);
-  color: var(--mobrix-ui-text-color);
+  background-image: var(--mobrix-ui-computed-popup-background);
+  color: var(--mobrix-ui-computed-popup-text-color);
   -webkit-animation: fadein 0.3s;
   -moz-animation: fadein 0.3s;
   -ms-animation: fadein 0.3s;
