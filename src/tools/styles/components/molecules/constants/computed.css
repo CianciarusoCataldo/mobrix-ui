@@ -304,6 +304,69 @@
     )
   );
 
+  /** FormField **/
+  --mobrix-ui-computed-formfield-background-light: var(
+    --mobrix-ui-formfield-background-light,
+    var(--mobrix-ui-formfield-background)
+  );
+  --mobrix-ui-computed-formfield-text-color-light: var(
+    --mobrix-ui-formfield-text-color-light,
+    var(--mobrix-ui-formfield-text-color)
+  );
+  --mobrix-ui-computed-formfield-background-dark: var(
+    --mobrix-ui-formfield-background-dark,
+    var(--mobrix-ui-formfield-background)
+  );
+  --mobrix-ui-computed-formfield-text-color-dark: var(
+    --mobrix-ui-formfield-text-color-dark,
+    var(--mobrix-ui-formfield-text-color)
+  );
+  --mobrix-ui-computed-formfield-background-hover-light: var(
+    --mobrix-ui-formfield-background-hover-light,
+    var(--mobrix-ui-formfield-background-hover)
+  );
+  --mobrix-ui-computed-formfield-text-color-hover-light: var(
+    --mobrix-ui-formfield-text-color-hover-light,
+    var(--mobrix-ui-formfield-text-color-hover)
+  );
+  --mobrix-ui-computed-formfield-background-hover-dark: var(
+    --mobrix-ui-formfield-background-hover-dark,
+    var(--mobrix-ui-formfield-background-hover)
+  );
+  --mobrix-ui-computed-formfield-text-color-hover-dark: var(
+    --mobrix-ui-formfield-text-color-hover-dark,
+    var(--mobrix-ui-formfield-text-color-hover)
+  );
+
+  --mobrix-ui-computed-formfield-error-border-light: var(
+    --mobrix-ui-formfield-error-border-light,
+    var(
+      --mobrix-ui-formfield-error-border,
+      var(--mobrix-ui-default-formfield-error)
+    )
+  );
+  --mobrix-ui-computed-formfield-error-border-dark: var(
+    --mobrix-ui-formfield-error-border-dark,
+    var(
+      --mobrix-ui-formfield-error-border,
+      var(--mobrix-ui-default-formfield-error)
+    )
+  );
+  --mobrix-ui-computed-formfield-error-text-light: var(
+    --mobrix-ui-formfield-error-text-light,
+    var(
+      --mobrix-ui-formfield-error-text,
+      var(--mobrix-ui-default-formfield-error)
+    )
+  );
+  --mobrix-ui-computed-formfield-error-text-dark: var(
+    --mobrix-ui-formfield-error-text-dark,
+    var(
+      --mobrix-ui-formfield-error-text,
+      var(--mobrix-ui-default-formfield-error)
+    )
+  );
+
   /* List */
   --mobrix-ui-computed-list-text-color-light: var(
     --mobrix-ui-list-text-color-light,

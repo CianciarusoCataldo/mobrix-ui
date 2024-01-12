@@ -1,0 +1,82 @@
+[data-mobrix-ui-id="form"] {
+  border-color: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  border-radius: 0.7rem;
+  background: var(--mobrix-ui-computed-form-background);
+  color: var(--mobrix-ui-computed-form-text-color);
+}
+
+[data-mobrix-ui-id="form"] [data-mobrix-ui-class="title"] {
+  text-align: center;
+  margin-bottom: 0.9rem;
+  font-size: 1.35rem;
+  line-height: 1.75rem;
+  --mobrix-ui-label-text-color: var(--mobrix-ui-computed-form-text-color);
+}
+
+[data-mobrix-ui-id="form"]
+  [data-mobrix-ui-class="field"][data-mobrix-ui-field-type="checkbox"],
+[data-mobrix-ui-id="form"]
+  [data-mobrix-ui-class="field"][data-mobrix-ui-field-type="boolean"],
+[data-mobrix-ui-id="form"]
+  [data-mobrix-ui-class="field"][data-mobrix-ui-field-type="radio"] {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-mobrix-ui-id="form"] [data-mobrix-ui-class="field"] {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  --mobrix-ui-formfield-background-light: var(
+    --mobrix-ui-form-formfield-background-light,
+    var(--mobrix-ui-form-formfield-background)
+  );
+  --mobrix-ui-formfield-text-color-light: var(
+    --mobrix-ui-form-formfield-text-color-light,
+    var(--mobrix-ui-form-formfield-text-color)
+  );
+  --mobrix-ui-formfield-background-dark: var(
+    --mobrix-ui-form-formfield-background-dark,
+    var(--mobrix-ui-form-formfield-background)
+  );
+  --mobrix-ui-formfield-text-color-dark: var(
+    --mobrix-ui-form-formfield-text-color-dark,
+    var(--mobrix-ui-form-formfield-text-color)
+  );
+}
+
+@media (max-width: 330px) {
+  [data-mobrix-ui-id="form"] {
+    max-width: 75%;
+    min-width: 3%;
+  }
+
+  [data-mobrix-ui-id="form"] [data-mobrix-ui-id*="box"] {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 250px) {
+  [data-mobrix-ui-id="form"] {
+    max-width: 55%;
+    min-width: 3%;
+  }
+
+  [data-mobrix-ui-id="form"] [data-mobrix-ui-class="field"] {
+    max-width: 65%;
+  }
+}
+
+[data-mobrix-ui-id="form"] [data-mobrix-ui-class="submit-button"] {
+  margin-top: 0.9rem;
+  margin-left: auto;
+  margin-right: auto;
+  --mobrix-ui-button-text-color: var(
+    --mobrix-ui-computed-form-submit-text-color
+  );
+  --mobrix-ui-button-background: var(
+    --mobrix-ui-computed-form-submit-background
+  );
+}

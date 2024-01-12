@@ -1,15 +1,12 @@
 import React from "react";
 
-import {
-  BuilderComponent,
-  FormProps,
-  MoBrixUiComponent,
-} from "../../../types";
+import { BuilderComponent, FormProps, MoBrixUiComponent } from "../../../types";
 
-import { fieldFormatters } from "../FormField/utils";
+import { fieldFormatters } from "../../molecules/FormField/utils";
 
 import Button from "../../atoms/Button";
-import FormField from "../FormField";
+import FormField from "../../molecules/FormField";
+import { Label } from "../../atoms";
 
 const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
   title,
@@ -23,21 +20,25 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
 }) => {
   const dropdownFields: Record<string, string | boolean | number> = fields
     ? Object.keys(fields).reduce(
-      (o, key) => ({
-        ...o,
-        [key]: null,
-      }),
-      {}
-    )
+        (o, key) => ({
+          ...o,
+          [key]: null,
+        }),
+        {}
+      )
     : {};
 
   const [values, setValues] =
     React.useState<Record<string, string | boolean | number>>(dropdownFields);
 
   const components = [
-    <p key="mobrix_ui_form_title" className="title">
+    <Label
+      key="mobrix_ui_form_title"
+      additionalProps={{ "data-mobrix-ui-class": "title" }}
+      dark={dark}
+    >
       {title}
-    </p>,
+    </Label>,
     ...Object.keys(dropdownFields).map((field, index) => {
       const fieldSettings = fields![field];
 
@@ -48,7 +49,12 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
       };
 
       return (
-        <div className={"field " + fieldClassName} key={`form_field_${index}`}>
+        <div
+          data-mobrix-ui-class="field"
+          data-mobrix-ui-field-type={type}
+          className={fieldClassName}
+          key={`form_field_${index}`}
+        >
           <FormField
             value={values[field]}
             header={fieldSettings.header}
@@ -66,9 +72,11 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
   components.push(
     <Button
       key="mobrix_ui_form_submit_button"
-      className="submit-button"
       dark={!dark}
-      additionalProps={{ "data-mobrix-ui-test": "form_submit_button" }}
+      additionalProps={{
+        "data-mobrix-ui-test": "form_submit_button",
+        "data-mobrix-ui-class": "submit-button",
+      }}
       onClick={() => {
         onSubmit && onSubmit(values);
       }}

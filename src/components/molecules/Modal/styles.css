@@ -9,6 +9,12 @@
   flex-direction: column;
   background-color: var(--mobrix-ui-computed-modal-background);
   padding: 0.1rem;
+  --mobrix-ui-dismissablecard-x-color: var(
+    --mobrix-ui-computed-modal-x-color
+  );
+  --mobrix-ui-dismissablecard-x-color-hover: var(
+    --mobrix-ui-computed-modal-x-color-hover
+  );
 }
 
 [data-mobrix-ui-id="modal"][data-mobrix-ui-animated="true"] {
@@ -36,12 +42,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  --mobrix-ui-computed-dismissablecard-x-color: var(
-    --mobrix-ui-computed-modal-x-color
-  );
-  --mobrix-ui-computed-dismissablecard-x-color-hover: var(
-    --mobrix-ui-computed-modal-x-color-hover
-  );
 }
 
 [data-mobrix-ui-id="modal"]

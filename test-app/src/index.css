@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --mobrix-ui-form-formfield-background-light: red;
+  --mobrix-ui-formfield-background-light: yellow;
+  --mobrix-ui-datepicker-calendar-background-light: orange;
+  --mobrix-ui-formfield-text-color-light: orange;
+  --mobrix-ui-formfield-text-color-dark: blue;
 }
 
 code {

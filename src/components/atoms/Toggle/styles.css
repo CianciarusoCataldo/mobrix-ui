@@ -4,7 +4,7 @@
 }
 
 [data-mobrix-ui-id="toggle"][data-mobrix-ui-styled="true"] {
-  background-image: var(--mobrix-ui-computed-toggle-background);
+  background: var(--mobrix-ui-computed-toggle-background);
   border-radius: 40px;
   border-width: 0;
 }

@@ -62,7 +62,7 @@ export const buildMobrixUiStandardComponent = ({
 
   let props: CommonProps & Record<string, any> = {
     "data-mobrix-ui-id": name,
-    "data-mobrix-ui-dark": inputCommonProps.dark,
+    "data-mobrix-ui-dark": !!inputCommonProps.dark,
     "data-mobrix-ui-styled": !inputCommonProps.unstyled,
     "data-mobrix-ui-shadow": inputCommonProps.shadow,
     "data-mobrix-ui-animated": inputCommonProps.animated && !inputCommonProps.disabled,

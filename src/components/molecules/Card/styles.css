@@ -5,7 +5,7 @@
 }
 
 [data-mobrix-ui-id="card"][data-mobrix-ui-styled="true"] {
-  background-image: var(--mobrix-ui-computed-card-background);
+  background: var(--mobrix-ui-computed-card-background);
   color: var(--mobrix-ui-computed-card-text-color);
 }
 

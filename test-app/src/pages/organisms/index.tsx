@@ -70,7 +70,6 @@ const AtomsPage = () => {
               animated
               dark
               fromToday={false}
-              calendarProps={{ dark: false }}
             />
             <DatePicker
               dark

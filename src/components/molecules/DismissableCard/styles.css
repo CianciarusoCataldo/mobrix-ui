@@ -5,7 +5,7 @@
 }
 
 [data-mobrix-ui-id="dismissable-card"][data-mobrix-ui-styled="true"] {
-  background-image: var(--mobrix-ui-computed-dismissablecard-background);
+  background: var(--mobrix-ui-computed-dismissablecard-background);
   color: var(--mobrix-ui-computed-dismissablecard-text-color);
 }
 

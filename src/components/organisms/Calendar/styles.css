@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  --mobrix-ui-table-background: var(--mobrix-ui-computed-calendar-background);
+  --mobrix-ui-table-text-color: var(--mobrix-ui-computed-calendar-text-color);
 }
 
 [data-mobrix-ui-id="calendar"] [data-mobrix-ui-class="actual-date"] {
@@ -17,9 +19,6 @@
   [data-mobrix-ui-calendar-table="true"] {
   width: 100%;
   margin: auto;
-  --mobrix-ui-table-background: var(
-    var(--mobrix-ui-computed-calendar-background)
-  );
 }
 
 [data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]
@@ -34,48 +33,28 @@
   [data-mobrix-ui-calendar-table="true"]
   tr[data-mobrix-ui-table-row="true"]
   td[data-mobrix-ui-table-cell="true"] {
-  color: var(--mobrix-ui-text-color);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   font-size: larger;
+  transition: 0.3s;
 }
 
 [data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]
   [data-mobrix-ui-calendar-table="true"]
   tr[data-mobrix-ui-table-row="true"]
   th[data-mobrix-ui-table-cell="true"] {
-  margin: 0.4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   font-size: x-large;
 }
 
 [data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]
   [data-mobrix-ui-calendar-table="true"]
   tr[data-mobrix-ui-table-row="true"]
-  [data-mobrix-ui-table-cell="true"]:not([data-mobrix-ui-selected="true"]):not(
-    [data-mobrix-ui-disabled="true"]
-  ):hover,
-[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-calendar-table="true"]
-  tr[data-mobrix-ui-table-row="true"]
   [data-mobrix-ui-table-cell="true"][data-mobrix-ui-selected="true"] {
   cursor: default;
-  background-image: var(--mobrix-ui-background-dark);
-  color: var(--mobrix-ui-text-color-dark);
-}
-
-[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"][data-mobrix-ui-dark="true"]
-  [data-mobrix-ui-calendar-table="true"]
-  tr[data-mobrix-ui-table-row="true"]
-  [data-mobrix-ui-table-cell="true"]:not([data-mobrix-ui-selected="true"]):not(
-    [data-mobrix-ui-disabled="true"]
-  ):hover,
-[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"][data-mobrix-ui-dark="true"]
-  [data-mobrix-ui-calendar-table="true"]
-  tr[data-mobrix-ui-table-row="true"]
-  [data-mobrix-ui-table-cell="true"][data-mobrix-ui-selected="true"] {
-  cursor: default;
-  background-image: var(--mobrix-ui-background-light);
-  color: var(--mobrix-ui-text-color-light);
+  background: var(--mobrix-ui-computed-calendar-background-selected);
+  color: var(--mobrix-ui-computed-calendar-text-color-selected);
 }
 
 [data-mobrix-ui-id="calendar"] [data-mobrix-ui-class="top-selector"] {
@@ -88,6 +67,7 @@
   margin: auto;
   margin-bottom: 1.2rem;
   width: 100%;
+  color: var(--mobrix-ui-computed-calendar-text-color);
 }
 
 [data-mobrix-ui-id="calendar"] [data-mobrix-ui-calendar-arrow="right"] {
@@ -98,50 +78,44 @@
 [data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]
   [data-mobrix-ui-calendar-arrow]
   svg {
-  fill: var(--mobrix-ui-text-color);
-}
-
-[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-calendar-arrow]:hover
-  svg {
-  fill: orange;
+  fill: var(--mobrix-ui-computed-calendar-arrow);
+  width: 3rem;
+  height: 3rem;
+  transition: 0.3s;
 }
 
 [data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]
   [data-mobrix-ui-calendar-table="true"]
   tr[data-mobrix-ui-table-row="true"]
   [data-mobrix-ui-table-cell="true"][data-mobrix-ui-calendar-today="true"],
-[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"][data-mobrix-ui-dark="true"]
-  [data-mobrix-ui-calendar-table="true"]
+[data-mobrix-ui-calendar-table="true"]
   tr[data-mobrix-ui-table-row="true"]
   [data-mobrix-ui-table-cell="true"][data-mobrix-ui-calendar-today="true"] {
-  color: red;
+  color: var(--mobrix-ui-computed-calendar-today);
   font-weight: 800;
 }
 
-@media (hover: none) {
+[data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]
+  [data-mobrix-ui-calendar-arrow]:active
+  svg {
+  fill: var(--mobrix-ui-computed-calendar-arrow-hover);
+}
+
+@media (hover) {
+  [data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]
+    [data-mobrix-ui-calendar-table="true"]
+    tr[data-mobrix-ui-table-row="true"]
+    td[data-mobrix-ui-table-cell="true"]:not(
+      [data-mobrix-ui-selected="true"]
+    ):not([data-mobrix-ui-disabled="true"]):hover {
+    background-image: var(--mobrix-ui-computed-calendar-background-hover);
+    color: var(--mobrix-ui-computed-calendar-text-color-hover);
+  }
+
   [data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]
     [data-mobrix-ui-calendar-arrow]:hover
     svg {
-    fill: var(--mobrix-ui-text-color);
-  }
-
-  [data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]
-    [data-mobrix-ui-calendar-table="true"]
-    tr[data-mobrix-ui-table-row="true"]
-    [data-mobrix-ui-table-cell="true"]:not(
-      [data-mobrix-ui-selected="true"]
-    ):not([data-mobrix-ui-disabled="true"]):hover {
-    background-image: none;
-  }
-
-  [data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"][data-mobrix-ui-dark="true"]
-    [data-mobrix-ui-calendar-table="true"]
-    tr[data-mobrix-ui-table-row="true"]
-    [data-mobrix-ui-table-cell="true"]:not(
-      [data-mobrix-ui-selected="true"]
-    ):not([data-mobrix-ui-disabled="true"]):hover {
-    background-image: none;
+    fill: var(--mobrix-ui-computed-calendar-arrow-hover);
   }
 }
 
@@ -161,7 +135,6 @@
     [data-mobrix-ui-calendar-table="true"]
     tr[data-mobrix-ui-table-row="true"]
     td[data-mobrix-ui-table-cell="true"] {
-    color: var(--mobrix-ui-text-color);
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
@@ -185,7 +158,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   [data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]
     [data-mobrix-ui-calendar-table="true"]
     tr[data-mobrix-ui-table-row="true"]
@@ -194,15 +167,23 @@
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
     margin: 0;
-    font-size: large;
+    font-size: medium;
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 310px) {
   [data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]
     [data-mobrix-ui-calendar-table="true"]
     tr[data-mobrix-ui-table-row="true"]
     th[data-mobrix-ui-table-cell="true"] {
     display: none;
+  }
+
+  [data-mobrix-ui-id="calendar"][data-mobrix-ui-styled="true"]
+    [data-mobrix-ui-calendar-table="true"]
+    tr[data-mobrix-ui-table-row="true"]
+    td[data-mobrix-ui-table-cell="true"] {
+    padding: 0;
+    margin: 0;
   }
 }

@@ -443,7 +443,7 @@ const MoleculesPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Form
-              dark
+              title="Test Form"
               submitLabel={"submit"}
               fields={{
                 field1: {
@@ -468,6 +468,8 @@ const MoleculesPage = () => {
               }}
             />
             <Form
+              title="Test Form"
+              dark
               submitLabel={"submit"}
               fields={{
                 field1: {
@@ -554,6 +556,7 @@ const MoleculesPage = () => {
             />
             <RadioButtonGroup
               dark
+              horizontal
               buttons={[
                 { text: "textPosition = left", textPosition: "left" },
                 { text: "textPosition = top", textPosition: "top" },

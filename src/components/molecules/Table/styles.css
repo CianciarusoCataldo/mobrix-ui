@@ -47,6 +47,6 @@
   tr[data-mobrix-ui-table-row="true"]
   th[data-mobrix-ui-table-cell="true"] {
   font-size: large;
-  background-image: var(--mobrix-ui-computed-table-header-background);
+  background: var(--mobrix-ui-computed-table-header-background);
   color: var(--mobrix-ui-computed-table-header-text-color);
 }

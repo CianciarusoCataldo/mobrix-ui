@@ -10,9 +10,7 @@ export { default as Dropdown } from "./Dropdown";
 
 export { default as ExpandableContainer } from "./ExpandableContainer";
 
-export { default as Form } from "./Form";
-
-export { default as FormField } from "./FormField";
+export { default as FormField } from "../molecules/FormField";
 
 export { default as List } from "./List";
 

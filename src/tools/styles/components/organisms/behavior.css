@@ -1,14 +1,148 @@
 @import url("constants/computed.css");
 
-[data-mobrix-ui-id][data-mobrix-ui-dark="false"] {
+[data-mobrix-ui-id]:not([data-mobrix-ui-dark="true"]) {
+  /** Calendar **/
   --mobrix-ui-computed-calendar-background: var(
     --mobrix-ui-computed-calendar-background-light
+  );
+  --mobrix-ui-computed-calendar-text-color: var(
+    --mobrix-ui-computed-calendar-text-color-light
+  );
+  --mobrix-ui-computed-calendar-background-selected: var(
+    --mobrix-ui-computed-calendar-background-selected-light
+  );
+  --mobrix-ui-computed-calendar-text-color-selected: var(
+    --mobrix-ui-computed-calendar-text-color-selected-light
+  );
+  --mobrix-ui-computed-calendar-background-hover: var(
+    --mobrix-ui-computed-calendar-background-hover-light
+  );
+  --mobrix-ui-computed-calendar-text-color-hover: var(
+    --mobrix-ui-computed-calendar-text-color-hover-light
+  );
+  --mobrix-ui-computed-calendar-arrow: var(
+    --mobrix-ui-computed-calendar-arrow-light
+  );
+  --mobrix-ui-computed-calendar-arrow-hover: var(
+    --mobrix-ui-computed-calendar-arrow-hover-light
+  );
+  --mobrix-ui-computed-calendar-today: var(
+    --mobrix-ui-computed-calendar-today-light
+  );
+
+  /** DatePicker **/
+  --mobrix-ui-computed-datepicker-background: var(
+    --mobrix-ui-computed-datepicker-background-light
+  );
+  --mobrix-ui-computed-datepicker-text-color: var(
+    --mobrix-ui-computed-datepicker-text-color-light
+  );
+
+  /** Drawer **/
+  --mobrix-ui-computed-drawer-background: var(
+    --mobrix-ui-computed-drawer-background-light
+  );
+  --mobrix-ui-computed-drawer-text-color: var(
+    --mobrix-ui-computed-drawer-text-color-light
+  );
+  --mobrix-ui-computed-drawer-arrow: var(
+    --mobrix-ui-computed-drawer-arrow-light
+  );
+  --mobrix-ui-computed-drawer-arrow-hover: var(
+    --mobrix-ui-computed-drawer-arrow-hover-light
+  );
+
+  /** Form **/
+  --mobrix-ui-computed-form-background: var(
+    --mobrix-ui-computed-form-background-light
+  );
+  --mobrix-ui-computed-form-text-color: var(
+    --mobrix-ui-computed-form-text-color-light
+  );
+  --mobrix-ui-computed-form-submit-background: var(
+    --mobrix-ui-computed-form-submit-background-light
+  );
+  --mobrix-ui-computed-form-submit-text-color: var(
+    --mobrix-ui-computed-form-submit-text-color-light
+  );
+  --mobrix-ui-computed-form-formfield-background: var(
+    --mobrix-ui-computed-form-formfield-background-light
+  );
+  --mobrix-ui-computed-form-formfield-text-color: var(
+    --mobrix-ui-computed-form-formfield-text-color-light
   );
 }
 
 [data-mobrix-ui-id][data-mobrix-ui-dark="true"] {
+  /** Calendar **/
   --mobrix-ui-computed-calendar-background: var(
     --mobrix-ui-computed-calendar-background-dark
+  );
+  --mobrix-ui-computed-calendar-text-color: var(
+    --mobrix-ui-computed-calendar-text-color-dark
+  );
+  --mobrix-ui-computed-calendar-background-selected: var(
+    --mobrix-ui-computed-calendar-background-selected-dark
+  );
+  --mobrix-ui-computed-calendar-text-color-selected: var(
+    --mobrix-ui-computed-calendar-text-color-selected-dark
+  );
+  --mobrix-ui-computed-calendar-background-hover: var(
+    --mobrix-ui-computed-calendar-background-hover-dark
+  );
+  --mobrix-ui-computed-calendar-text-color-hover: var(
+    --mobrix-ui-computed-calendar-text-color-hover-dark
+  );
+  --mobrix-ui-computed-calendar-arrow: var(
+    --mobrix-ui-computed-calendar-arrow-dark
+  );
+  --mobrix-ui-computed-calendar-arrow-hover: var(
+    --mobrix-ui-computed-calendar-arrow-hover-dark
+  );
+  --mobrix-ui-computed-calendar-today: var(
+    --mobrix-ui-computed-calendar-today-dark
+  );
+
+  /** DatePicker **/
+  --mobrix-ui-computed-datepicker-background: var(
+    --mobrix-ui-computed-datepicker-background-dark
+  );
+  --mobrix-ui-computed-datepicker-text-color: var(
+    --mobrix-ui-computed-datepicker-text-color-dark
+  );
+
+  /** Drawer **/
+  --mobrix-ui-computed-drawer-background: var(
+    --mobrix-ui-computed-drawer-background-dark
+  );
+  --mobrix-ui-computed-drawer-text-color: var(
+    --mobrix-ui-computed-drawer-text-color-dark
+  );
+  --mobrix-ui-computed-drawer-arrow: var(
+    --mobrix-ui-computed-drawer-arrow-dark
+  );
+  --mobrix-ui-computed-drawer-arrow-hover: var(
+    --mobrix-ui-computed-drawer-arrow-hover-dark
+  );
+
+  /** Form **/
+  --mobrix-ui-computed-form-background: var(
+    --mobrix-ui-computed-form-background-dark
+  );
+  --mobrix-ui-computed-form-text-color: var(
+    --mobrix-ui-computed-form-text-color-dark
+  );
+  --mobrix-ui-computed-form-submit-background: var(
+    --mobrix-ui-computed-form-submit-background-dark
+  );
+  --mobrix-ui-computed-form-submit-text-color: var(
+    --mobrix-ui-computed-form-submit-text-color-dark
+  );
+  --mobrix-ui-computed-form-formfield-background: var(
+    --mobrix-ui-computed-form-formfield-background-dark
+  );
+  --mobrix-ui-computed-form-formfield-text-color: var(
+    --mobrix-ui-computed-form-formfield-text-color-dark
   );
 }
 
@@ -16,4 +150,6 @@
 
 [data-mobrix-ui-id="calendar"][data-mobrix-ui-background="false"] {
   --mobrix-ui-computed-calendar-background: transparent !important;
+  --mobrix-ui-computed-datepicker-background: transparent !important;
+  --mobrix-ui-computed-drawer-background: transparent !important;
 }

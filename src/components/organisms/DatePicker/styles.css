@@ -5,8 +5,8 @@
   color: var(--mobrix-ui-text-color);
   padding: 0.3rem 0.5rem;
   width: max-content;
-  background-image: var(--mobrix-ui-background);
-  color: var(--mobrix-ui-text-color);
+  background: var(--mobrix-ui-computed-datepicker-background);
+  color: var(--mobrix-ui-computed-datepicker-text-color);
 }
 
 [data-mobrix-ui-id="date-picker"] [data-mobrix-ui-id="calendar"] {

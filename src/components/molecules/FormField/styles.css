@@ -2,6 +2,61 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  --mobrix-ui-counterbox-background: var(
+    --mobrix-ui-computed-formfield-background
+  );
+  --mobrix-ui-counterbox-text-color: var(
+    --mobrix-ui-computed-formfield-text-color
+  );
+  --mobrix-ui-counterbox-background-hover: var(
+    --mobrix-ui-computed-formfield-background-hover
+  );
+  --mobrix-ui-counterbox-text-color-hover: var(
+    --mobrix-ui-computed-formfield-text-color-hover
+  );
+
+  --mobrix-ui-checkbox-background: var(
+    --mobrix-ui-computed-formfield-background
+  );
+  --mobrix-ui-checkbox-text-color: var(
+    --mobrix-ui-computed-formfield-text-color
+  );
+  --mobrix-ui-checkbox-background-hover: var(
+    --mobrix-ui-computed-formfield-background-hover
+  );
+  --mobrix-ui-checkbox-text-color-hover: var(
+    --mobrix-ui-computed-formfield-text-color-hover
+  );
+
+  --mobrix-ui-inputbox-background: var(
+    --mobrix-ui-computed-formfield-background
+  );
+  --mobrix-ui-inputbox-text-color: var(
+    --mobrix-ui-computed-formfield-text-color
+  );
+  --mobrix-ui-inputbox-background-hover: var(
+    --mobrix-ui-computed-formfield-background-hover
+  );
+  --mobrix-ui-inputbox-text-color-hover: var(
+    --mobrix-ui-computed-formfield-text-color-hover
+  );
+
+  --mobrix-ui-radio-background: var(
+    --mobrix-ui-computed-formfield-background-light
+  );
+  --mobrix-ui-radio-background-hover: var(
+    --mobrix-ui-computed-formfield-background-hover
+  );
+
+  --mobrix-ui-rater-background: var(--mobrix-ui-computed-formfield-background);
+  --mobrix-ui-rater-background-hover: var(
+    --mobrix-ui-computed-formfield-background-hover
+  );
+
+  --mobrix-ui-slider-background: var(--mobrix-ui-computed-formfield-background);
+
+  --mobrix-ui-toggle-background: var(--mobrix-ui-computed-formfield-background);
 }
 
 [data-mobrix-ui-id="form-field"] [data-mobrix-ui-class="form-field-box"] {
@@ -16,13 +71,13 @@
 
 [data-mobrix-ui-id="form-field"][data-mobrix-ui-styled="true"]
   [data-mobrix-ui-form-field-error-box="true"] {
-  color: red;
+  color: var(--mobrix-ui-computed-formfield-error-text);
   transition: all 0.3s ease-out;
   padding-top: 0.2rem;
 }
 
 [data-mobrix-ui-id="form-field"] [data-mobrix-ui-form-field-error="true"] {
-  border-color: red;
+  border-color: var(--mobrix-ui-computed-formfield-error-border);
   border-width: 2px;
   border-style: ridge;
 }

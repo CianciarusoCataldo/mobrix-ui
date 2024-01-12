@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./index.css";
+
 import AtomsPage from "./pages/atoms";
 import MoleculesPage from "./pages/molecules";
 import OrganismsPage from "./pages/organisms";
 import { Drawer, TabViewer } from "./mobrix-ui-preview";
-import "./index.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

@@ -91,6 +91,26 @@
     --mobrix-ui-computed-expandable-container-arrow-color-hover-light
   );
 
+  /** FormField **/
+  --mobrix-ui-computed-formfield-background: var(
+    --mobrix-ui-computed-formfield-background-light
+  );
+  --mobrix-ui-computed-formfield-text-color: var(
+    --mobrix-ui-computed-formfield-text-color-light
+  );
+  --mobrix-ui-computed-formfield-background-hover: var(
+    --mobrix-ui-computed-formfield-background-hover-light
+  );
+  --mobrix-ui-computed-formfield-text-color-hover: var(
+    --mobrix-ui-computed-formfield-text-color-hover-light
+  );
+  --mobrix-ui-computed-formfield-error-border: var(
+    --mobrix-ui-computed-formfield-error-border-light
+  );
+  --mobrix-ui-computed-formfield-error-text: var(
+    --mobrix-ui-computed-formfield-error-text-light
+  );
+
   /** List **/
   --mobrix-ui-computed-list-text-color: var(
     --mobrix-ui-computed-list-text-color-light
@@ -264,6 +284,26 @@
     --mobrix-ui-computed-expandable-container-arrow-color-hover-dark
   );
 
+  /** FormField **/
+  --mobrix-ui-computed-formfield-background: var(
+    --mobrix-ui-computed-formfield-background-dark
+  );
+  --mobrix-ui-computed-formfield-text-color: var(
+    --mobrix-ui-computed-formfield-text-color-dark
+  );
+  --mobrix-ui-computed-formfield-background-hover: var(
+    --mobrix-ui-computed-formfield-background-hover-dark
+  );
+  --mobrix-ui-computed-formfield-text-color-hover: var(
+    --mobrix-ui-computed-formfield-text-color-hover-dark
+  );
+  --mobrix-ui-computed-formfield-error-border: var(
+    --mobrix-ui-computed-formfield-error-border-dark
+  );
+  --mobrix-ui-computed-formfield-error-text: var(
+    --mobrix-ui-computed-formfield-error-text-dark
+  );
+
   /** List **/
   --mobrix-ui-computed-list-text-color: var(
     --mobrix-ui-computed-list-text-color-dark
@@ -371,4 +411,8 @@
   --mobrix-ui-computed-tab-viewer-background: transparent !important;
   --mobrix-ui-computed-tab-viewer-background-inactive: transparent !important;
   --mobrix-ui-computed-tab-viewer-background-inactive-hover: transparent !important;
+}
+
+[data-mobrix-ui-id="form"][data-mobrix-ui-background="false"] {
+  --mobrix-ui-computed-form-background: transparent !important;
 }

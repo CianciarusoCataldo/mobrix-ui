@@ -1,0 +1,7 @@
+[data-mobrix-ui-id] {
+  /* Calendar */
+  --mobrix-ui-default-calendar-today: red;
+
+  /* Drawer */
+  --mobrix-ui-default-drawer-arrow-hover: orange;
+}

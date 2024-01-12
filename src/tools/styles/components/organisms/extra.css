@@ -1,0 +1,52 @@
+[data-mobrix-ui-id="date-picker"] {
+  --mobrix-ui-calendar-background-light: var(
+    --mobrix-ui-datepicker-calendar-background-light,
+    var(--mobrix-ui-datepicker-background)
+  );
+  --mobrix-ui-calendar-background-dark: var(
+    --mobrix-ui-datepicker-calendar-background-dark,
+    var(--mobrix-ui-datepicker-background)
+  );
+  --mobrix-ui-calendar-arrow-light: var(
+    --mobrix-ui-datepicker-calendar-arrow-light,
+    var(
+      --mobrix-ui-datepicker-calendar-arrow,
+      var(--mobrix-ui-computed-calendar-arrow-light)
+    )
+  );
+  --mobrix-ui--calendar-arrow-dark: var(
+    --mobrix-ui-datepicker-calendar-arrow-dark,
+    var(
+      --mobrix-ui-datepicker-calendar-arrow,
+      var(--mobrix-ui-computed-calendar-arrow-dark)
+    )
+  );
+  --mobrix-ui-calendar-arrow-hover-light: var(
+    --mobrix-ui-datepicker-calendar-arrow-hover-light,
+    var(
+      --mobrix-ui-datepicker-calendar-arrow-hover,
+      var(--mobrix-ui-computed-calendar-arrow-hover-light)
+    )
+  );
+  --mobrix-ui-computed-datepicker-calendar-arrow-hover-dark: var(
+    --mobrix-ui-datepicker-calendar-arrow-hover-dark,
+    var(
+      --mobrix-ui-datepicker-calendar-arrow-hover,
+      var(--mobrix-ui-computed-calendar-arrow-hover-dark)
+    )
+  );
+  --mobrix-ui-computed-datepicker-calendar-today-light: var(
+    --mobrix-ui-datepicker-calendar-today-light,
+    var(
+      --mobrix-ui-datepicker-calendar-today,
+      var(--mobrix-ui-computed-calendar-today-light)
+    )
+  );
+  --mobrix-ui-computed-datepicker-calendar-today-dark: var(
+    --mobrix-ui-datepicker-calendar-today-dark,
+    var(
+      --mobrix-ui-datepicker-calendar-today,
+      var(--mobrix-ui-computed-calendar-today-dark)
+    )
+  );
+}
