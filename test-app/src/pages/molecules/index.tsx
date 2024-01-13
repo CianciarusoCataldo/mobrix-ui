@@ -516,7 +516,7 @@ const MoleculesPage = () => {
               onClose={() => setVisible(false)}
               hide={!isVisible}
             >
-              <div>Content</div>
+              <DismissableCard alwaysVisible>Content</DismissableCard>
             </Modal>
           </div>
         }

@@ -56,13 +56,12 @@
   );
 
   /** Dropdown **/
-  --mobrix-ui-dropdown-arrow-color: var(
-    --mobrix-ui-custom-dropdown-arrow-color-light,
-    var(--mobrix-ui-dropdown-arrow-color-light)
+  --mobrix-ui-computed-dropdown-arrow-color: var(
+    --mobrix-ui-computed-dropdown-arrow-color-light
   );
-  --mobrix-ui-dropdown-arrow-color-hover: var(
-    --mobrix-ui-custom-dropdown-arrow-color-hover-light,
-    var(--mobrix-ui-dropdown-arrow-color-hover-light)
+
+  --mobrix-ui-computed-dropdown-arrow-color-hover: var(
+    --mobrix-ui-computed-dropdown-arrow-color-hover-light
   );
   --mobrix-ui-computed-dropdown-background: var(
     --mobrix-ui-computed-dropdown-background-light
@@ -246,14 +245,12 @@
   );
 
   /** Dropdown **/
-  --mobrix-ui-dropdown-arrow-color: var(
-    --mobrix-ui-custom-dropdown-arrow-color-dark,
-    var(--mobrix-ui-dropdown-arrow-color-dark)
+  --mobrix-ui-computed-dropdown-arrow-color: var(
+    --mobrix-ui-computed-dropdown-arrow-color-dark
   );
 
-  --mobrix-ui-dropdown-arrow-color-hover: var(
-    --mobrix-ui-custom-dropdown-arrow-color-hover-dark,
-    var(--mobrix-ui-dropdown-arrow-color-hover-dark)
+  --mobrix-ui-computed-dropdown-arrow-color-hover: var(
+    --mobrix-ui-computed-dropdown-arrow-color-hover-dark
   );
 
   --mobrix-ui-computed-dropdown-background: var(

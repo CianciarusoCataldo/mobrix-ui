@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0.6rem;
-  background-image: var(--mobrix-ui-computed-review-background);
+  background: var(--mobrix-ui-computed-review-background);
   color: var(--mobrix-ui-computed-review-text-color);
   border-radius: 3px;
   width: fit-content;

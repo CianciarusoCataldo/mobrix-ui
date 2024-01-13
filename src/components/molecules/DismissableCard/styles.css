@@ -34,13 +34,18 @@
   margin-top: 0;
 }
 
+[data-mobrix-ui-id="dismissable-card"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]
+  [data-mobrix-ui-class="card-dismiss-button"]
+  svg
+  path {
+  fill: var(--mobrix-ui-computed-dismissablecard-x-color);
+}
+
 @media (hover) {
   [data-mobrix-ui-id="dismissable-card"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]
     [data-mobrix-ui-class="card-dismiss-button"]
     svg:hover
     path {
-    --mobrix-ui-computed-dismissablecard-x-color: var(
-      --mobrix-ui-computed-dismissablecard-x-color-hover
-    );
+    fill: var(--mobrix-ui-computed-dismissablecard-x-color-hover);
   }
 }

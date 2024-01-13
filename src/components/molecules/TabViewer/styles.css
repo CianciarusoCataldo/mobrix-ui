@@ -22,7 +22,7 @@
 [data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-styled="true"]
   [data-mobrix-ui-class="tabs-list"]
   [data-mobrix-ui-class="tab"][data-mobrix-ui-tab-viewer-selected="true"] {
-  background-image: var(--mobrix-ui-computed-tab-viewer-background);
+  background: var(--mobrix-ui-computed-tab-viewer-background);
   color: var(--mobrix-ui-computed-tab-viewer-text-color);
 }
 
@@ -31,13 +31,13 @@
   [data-mobrix-ui-class="tab"]:not(
     [data-mobrix-ui-tab-viewer-selected="true"]
   ) {
-  background-image: var(--mobrix-ui-computed-tab-viewer-background-inactive);
+  background: var(--mobrix-ui-computed-tab-viewer-background-inactive);
   color: var(--mobrix-ui-computed-tab-viewer-text-color-inactive);
 }
 
 [data-mobrix-ui-id="tab-viewer"] [data-mobrix-ui-class="tab-view"] {
   padding: 0.7rem 1rem;
-  background-image: var(--mobrix-ui-computed-tab-viewer-background);
+  background: var(--mobrix-ui-computed-tab-viewer-background);
 }
 
 @media (hover) {
@@ -46,7 +46,7 @@
     [data-mobrix-ui-class="tab"]:not(
       [data-mobrix-ui-tab-viewer-selected="true"]
     ):hover {
-    background-image: var(
+    background: var(
       --mobrix-ui-computed-tab-viewer-background-inactive-hover
     );
   }

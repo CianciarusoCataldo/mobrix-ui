@@ -14,7 +14,7 @@
   border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
-  background-image: var(--mobrix-ui-computed-popup-background);
+  background: var(--mobrix-ui-computed-popup-background);
   color: var(--mobrix-ui-computed-popup-text-color);
   -webkit-animation: fadein 0.3s;
   -moz-animation: fadein 0.3s;

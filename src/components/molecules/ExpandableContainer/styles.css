@@ -1,5 +1,5 @@
 [data-mobrix-ui-id="expandable-container"][data-mobrix-ui-styled="true"] {
-  background-image: var(--mobrix-ui-computed-expandable-container-background);
+  background: var(--mobrix-ui-computed-expandable-container-background);
   color: var(--mobrix-ui-computed-expandable-container-text-color);
 }
 

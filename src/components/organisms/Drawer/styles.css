@@ -2,15 +2,13 @@
   position: fixed;
   z-index: 10;
   padding: 0;
-  color: var(--mobrix-ui-text-color);
-  background: transparent;
   display: flex;
   animation: var(--mobrix-ui-drawer-animation);
   -moz-animation: var(--mobrix-ui-drawer-animation);
   -ms-animation: var(--mobrix-ui-drawer-animation);
   -o-animation: var(--mobrix-ui-drawer-animation);
-  --mobrix-ui-container-background: var(--mobrix-ui-computed-drawer-background);
-  --mobrix-ui-container-text-color: var(--mobrix-ui-computed-drawer-text-color);
+  background: var(--mobrix-ui-computed-drawer-background);
+  color: var(--mobrix-ui-computed-drawer-text-color);
 }
 
 [data-mobrix-ui-id="drawer"][data-mobrix-ui-drawer-location="bottom"],

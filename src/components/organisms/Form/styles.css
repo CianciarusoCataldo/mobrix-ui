@@ -45,6 +45,23 @@
     --mobrix-ui-form-formfield-text-color-dark,
     var(--mobrix-ui-form-formfield-text-color)
   );
+
+  --mobrix-ui-formfield-background-hover-light: var(
+    --mobrix-ui-form-formfield-background-hover-light,
+    var(--mobrix-ui-form-formfield-background-hover)
+  );
+  --mobrix-ui-formfield-text-color-light: var(
+    --mobrix-ui-form-formfield-text-color-light,
+    var(--mobrix-ui-form-formfield-text-color-hover)
+  );
+  --mobrix-ui-formfield-background-dark: var(
+    --mobrix-ui-form-formfield-background-hover-dark,
+    var(--mobrix-ui-form-formfield-background-hover)
+  );
+  --mobrix-ui-formfield-text-color-dark: var(
+    --mobrix-ui-form-formfield-text-color-hover-dark,
+    var(--mobrix-ui-form-formfield-text-color-hover)
+  );
 }
 
 @media (max-width: 330px) {

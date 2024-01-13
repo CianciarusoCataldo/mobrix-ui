@@ -113,7 +113,7 @@
   transition-duration: 0.2s;
   transition-property: transform;
   transform: rotate(45deg);
-  border-color: var(--mobrix-ui-dropdown-arrow-color);
+  border-color: var(--mobrix-ui-computed-dropdown-arrow-color);
   -webkit-transform: rotate(45deg);
 }
 
@@ -192,14 +192,6 @@
   }
 
   [data-mobrix-ui-id="dropdown"]:hover [data-mobrix-ui-class="arrow-icon"] {
-    border-color: var(--mobrix-ui-dropdown-arrow-color-hover);
+    border-color: var(--mobrix-ui-computed-dropdown-arrow-color-hover);
   }
-
-  /* [data-mobrix-ui-id="dropdown"][data-mobrix-ui-hover="true"]
-    [data-mobrix-ui-class="regular"]:hover,
-  [data-mobrix-ui-id="dropdown"]
-    [data-mobrix-ui-class="regular"][data-mobrix-ui-selected="true"] {
-    background: var(--mobrix-ui-computed-dropdown-background-hover);
-    color: var(--mobrix-ui-computed-dropdown-text-color-hover);
-  } */
 }

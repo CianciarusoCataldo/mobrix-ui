@@ -330,7 +330,7 @@
   --mobrix-ui-computed-radio-background-hover-light: var(
     --mobrix-ui-radio-background-hover-light,
     var(
-      --mobrix-ui-background-hover,
+      --mobrix-ui-radio-background-hover,
       var(--mobrix-ui-default-radio-background-hover-light)
     )
   );
@@ -338,7 +338,7 @@
   --mobrix-ui-computed-radio-background-hover-dark: var(
     --mobrix-ui-radio-background-hover-dark,
     var(
-      --mobrix-ui-background-hover,
+      --mobrix-ui-radio-background-hover,
       var(--mobrix-ui-default-radio-background-hover-dark)
     )
   );
