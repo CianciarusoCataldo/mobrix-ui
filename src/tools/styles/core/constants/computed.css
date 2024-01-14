@@ -43,7 +43,7 @@
     var(--mobrix-ui-custom-text-color, var(--mobrix-ui-default-text-color-dark))
   );
 
-  --mobrix-ui-background-color-light: var(
+  --mobrix-ui-computed-background-color-light: var(
     --mobrix-ui-custom-background-color-light,
     var(
       --mobrix-ui-custom-background-color,
@@ -51,7 +51,7 @@
     )
   );
 
-  --mobrix-ui-background-color-dark: var(
+  --mobrix-ui-computed-background-color-dark: var(
     --mobrix-ui-custom-background-color-dark,
     var(
       --mobrix-ui-custom-background-color,

@@ -57,13 +57,13 @@
     --mobrix-ui-checkbox-background-light,
     var(
       --mobrix-ui-checkbox-background,
-      var(--mobrix-ui-background-color-light)
+      var(--mobrix-ui-computed-background-color-light)
     )
   );
 
   --mobrix-ui-computed-checkbox-background-dark: var(
     --mobrix-ui-checkbox-background-dark,
-    var(--mobrix-ui-checkbox-background, var(--mobrix-ui-background-color-dark))
+    var(--mobrix-ui-checkbox-background, var(--mobrix-ui-computed-background-color-dark))
   );
 
   --mobrix-ui-computed-checkbox-background-hover-light: var(
@@ -101,7 +101,7 @@
   /** Codebox **/
   --mobrix-ui-computed-codebox-background-light: var(
     --mobrix-ui-codebox-background-light,
-    var(--mobrix-ui-codebox-background, var(--mobrix-ui-background-color-light))
+    var(--mobrix-ui-codebox-background, var(--mobrix-ui-computed-background-color-light))
   );
 
   --mobrix-ui-computed-codebox-text-color-light: var(
@@ -111,7 +111,7 @@
 
   --mobrix-ui-computed-codebox-background-dark: var(
     --mobrix-ui-codebox-background-dark,
-    var(--mobrix-ui-codebox-background, var(--mobrix-ui-background-color-dark))
+    var(--mobrix-ui-codebox-background, var(--mobrix-ui-computed-background-color-dark))
   );
 
   --mobrix-ui-computed-codebox-text-color-dark: var(
@@ -129,7 +129,7 @@
     --mobrix-ui-counterbox-background-light,
     var(
       --mobrix-ui-counterbox-background,
-      var(--mobrix-ui-background-color-light)
+      var(--mobrix-ui-computed-background-color-light)
     )
   );
 
@@ -137,7 +137,7 @@
     --mobrix-ui-counterbox-background-dark,
     var(
       --mobrix-ui-counterbox-background,
-      var(--mobrix-ui-background-color-dark)
+      var(--mobrix-ui-computed-background-color-dark)
     )
   );
 
@@ -210,13 +210,13 @@
     --mobrix-ui-inputbox-background-light,
     var(
       --mobrix-ui-inputbox-background,
-      var(--mobrix-ui-background-color-light)
+      var(--mobrix-ui-computed-background-color-light)
     )
   );
 
   --mobrix-ui-computed-inputbox-background-dark: var(
     --mobrix-ui-inputbox-background-dark,
-    var(--mobrix-ui-inputbox-background, var(--mobrix-ui-background-color-dark))
+    var(--mobrix-ui-inputbox-background, var(--mobrix-ui-computed-background-color-dark))
   );
 
   --mobrix-ui-computed-inputbox-text-color-light: var(
@@ -375,13 +375,13 @@
     --mobrix-ui-selector-background-light,
     var(
       --mobrix-ui-selector-background,
-      var(--mobrix-ui-background-color-light)
+      var(--mobrix-ui-computed-background-color-light)
     )
   );
 
   --mobrix-ui-computed-selector-background-dark: var(
     --mobrix-ui-selector-background-dark,
-    var(--mobrix-ui-selector-background, var(--mobrix-ui-background-color-dark))
+    var(--mobrix-ui-selector-background, var(--mobrix-ui-computed-background-color-dark))
   );
 
   --mobrix-ui-computed-selector-background-hover-light: var(
