@@ -4,19 +4,22 @@
   --mobrix-ui-focus-color-light: #7785ff;
   --mobrix-ui-focus-color-dark: #fb7a10;
 
-  --mobrix-ui-background-light: var(
+  --mobrix-ui-computed-background-light: var(
     --mobrix-ui-custom-background-light,
-    var(--mobrix-ui-default-background-light)
+    var(
+      --mobrix-ui-custom-background,
+      var(--mobrix-ui-default-background-light)
+    )
+  );
+
+  --mobrix-ui-computed-background-dark: var(
+    --mobrix-ui-custom-background-dark,
+    var(--mobrix-ui-custom-background, var(--mobrix-ui-default-background-dark))
   );
 
   --mobrix-ui-text-color-light: var(
     --mobrix-ui-custom-text-color-light,
     var(--mobrix-ui-default-text-color-light)
-  );
-
-  --mobrix-ui-background-dark: var(
-    --mobrix-ui-custom-background-dark,
-    var(--mobrix-ui-default-background-dark)
   );
 
   --mobrix-ui-text-color-dark: var(
@@ -54,5 +57,20 @@
   );
   --mobrix-ui-background-color-hover-light: var(
     --mobrix-ui-default-background-color-hover-light
+  );
+
+  --mobrix-ui-background-hover-dark: var(
+    --mobrix-ui-custom-background-hover-dark,
+    var(
+      --mobrix-ui-custom-background-hover,
+      var(--mobrix-ui-default-background-color-hover-dark)
+    )
+  );
+  --mobrix-ui-background-hover-light: var(
+    --mobrix-ui-custom-background-hover-light,
+    var(
+      --mobrix-ui-custom-background-hover,
+      var(--mobrix-ui-default-background-color-hover-light)
+    )
   );
 }

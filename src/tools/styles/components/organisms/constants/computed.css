@@ -4,11 +4,11 @@
   /* Calendar */
   --mobrix-ui-computed-calendar-background-light: var(
     --mobrix-ui-calendar-background-light,
-    var(--mobrix-ui-calendar-background, var(--mobrix-ui-background-light))
+    var(--mobrix-ui-calendar-background, var(--mobrix-ui-computed-background-light))
   );
   --mobrix-ui-computed-calendar-background-dark: var(
     --mobrix-ui-calendar-background-dark,
-    var(--mobrix-ui-calendar-background, var(--mobrix-ui-background-dark))
+    var(--mobrix-ui-calendar-background, var(--mobrix-ui-computed-background-dark))
   );
 
   --mobrix-ui-computed-calendar-text-color-light: var(
@@ -128,11 +128,11 @@
   /** DatePicker **/
   --mobrix-ui-computed-datepicker-background-light: var(
     --mobrix-ui-datepicker-background-light,
-    var(--mobrix-ui-datepicker-background, var(--mobrix-ui-background-light))
+    var(--mobrix-ui-datepicker-background, var(--mobrix-ui-computed-background-light))
   );
   --mobrix-ui-computed-datepicker-background-dark: var(
     --mobrix-ui-datepicker-background-dark,
-    var(--mobrix-ui-datepicker-background, var(--mobrix-ui-background-dark))
+    var(--mobrix-ui-datepicker-background, var(--mobrix-ui-computed-background-dark))
   );
   --mobrix-ui-computed-datepicker-text-color-light: var(
     --mobrix-ui-datepicker-text-color-light,
@@ -258,11 +258,11 @@
   /** Form **/
   --mobrix-ui-computed-form-background-light: var(
     --mobrix-ui-form-background-light,
-    var(--mobrix-ui-form-background, var(--mobrix-ui-background-light))
+    var(--mobrix-ui-form-background, var(--mobrix-ui-computed-background-light))
   );
   --mobrix-ui-computed-form-background-dark: var(
     --mobrix-ui-form-background-dark,
-    var(--mobrix-ui-form-background, var(--mobrix-ui-background-dark))
+    var(--mobrix-ui-form-background, var(--mobrix-ui-computed-background-dark))
   );
   --mobrix-ui-computed-form-submit-background-light: var(
     --mobrix-ui-form-submit-background-light,

@@ -26,11 +26,11 @@
   /** Carousel **/
   --mobrix-ui-computed-carousel-background-light: var(
     --mobrix-ui-carousel-background-light,
-    var(--mobrix-ui-carousel-background, var(--mobrix-ui-background-light))
+    var(--mobrix-ui-carousel-background, var(--mobrix-ui-computed-background-light))
   );
   --mobrix-ui-computed-carousel-background-dark: var(
     --mobrix-ui-carousel-background-dark,
-    var(--mobrix-ui-carousel-background, var(--mobrix-ui-background-dark))
+    var(--mobrix-ui-carousel-background, var(--mobrix-ui-computed-background-dark))
   );
 
   --mobrix-ui-computed-carousel-arrow-color-light: var(
@@ -101,11 +101,11 @@
   /** Container **/
   --mobrix-ui-computed-container-background-light: var(
     --mobrix-ui-container-background-light,
-    var(--mobrix-ui-container-background, var(--mobrix-ui-background-light))
+    var(--mobrix-ui-container-background, var(--mobrix-ui-computed-background-light))
   );
   --mobrix-ui-computed-container-background-dark: var(
     --mobrix-ui-container-background-dark,
-    var(--mobrix-ui-container-background, var(--mobrix-ui-background-dark))
+    var(--mobrix-ui-container-background, var(--mobrix-ui-computed-background-dark))
   );
   --mobrix-ui-computed-container-text-color-light: var(
     --mobrix-ui-container-text-color-light,
@@ -219,12 +219,12 @@
 
   --mobrix-ui-computed-dropdown-background-light: var(
     --mobrix-ui-dropdown-background-light,
-    var(--mobrix-ui-dropdown-background, var(--mobrix-ui-background-light))
+    var(--mobrix-ui-dropdown-background, var(--mobrix-ui-computed-background-light))
   );
 
   --mobrix-ui-computed-dropdown-background-dark: var(
     --mobrix-ui-dropdown-background-dark,
-    var(--mobrix-ui-dropdown-background, var(--mobrix-ui-background-dark))
+    var(--mobrix-ui-dropdown-background, var(--mobrix-ui-computed-background-dark))
   );
   --mobrix-ui-computed-dropdown-background-hover-light: var(
     --mobrix-ui-dropdown-background-hover-light,
@@ -455,11 +455,11 @@
   /** Popup **/
   --mobrix-ui-computed-popup-background-light: var(
     --mobrix-ui-popup-background-light,
-    var(--mobrix-ui-popup-background, var(--mobrix-ui-background-light))
+    var(--mobrix-ui-popup-background, var(--mobrix-ui-computed-background-light))
   );
   --mobrix-ui-computed-popup-background-dark: var(
     --mobrix-ui-popup-background-dark,
-    var(--mobrix-ui-popup-background, var(--mobrix-ui-background-dark))
+    var(--mobrix-ui-popup-background, var(--mobrix-ui-computed-background-dark))
   );
   --mobrix-ui-computed-list-text-color-light: var(
     --mobrix-ui-popup-text-color-light,
@@ -473,11 +473,11 @@
   /** RadioButtonGroup **/
   --mobrix-ui-computed-radiogroup-background-light: var(
     --mobrix-ui-radiogroup-background-light,
-    var(--mobrix-ui-radiogroup-background, var(--mobrix-ui-background-light))
+    var(--mobrix-ui-radiogroup-background, var(--mobrix-ui-computed-background-light))
   );
   --mobrix-ui-computed-radiogroup-background-dark: var(
     --mobrix-ui-radiogroup-background-dark,
-    var(--mobrix-ui-radiogroup-background, var(--mobrix-ui-background-dark))
+    var(--mobrix-ui-radiogroup-background, var(--mobrix-ui-computed-background-dark))
   );
   --mobrix-ui-computed-radiogroup-text-color-light: var(
     --mobrix-ui-radiogroup-text-color-light,
@@ -492,11 +492,11 @@
   /** Review **/
   --mobrix-ui-computed-review-background-light: var(
     --mobrix-ui-review-background-light,
-    var(--mobrix-ui-review-background, var(--mobrix-ui-background-light))
+    var(--mobrix-ui-review-background, var(--mobrix-ui-computed-background-light))
   );
   --mobrix-ui-computed-review-background-dark: var(
     --mobrix-ui-review-background-dark,
-    var(--mobrix-ui-review-background, var(--mobrix-ui-background-dark))
+    var(--mobrix-ui-review-background, var(--mobrix-ui-computed-background-dark))
   );
   --mobrix-ui-computed-review-text-color-light: var(
     --mobrix-ui-review-text-color-light,
@@ -538,11 +538,11 @@
   /* Table */
   --mobrix-ui-computed-table-background-light: var(
     --mobrix-ui-table-background-light,
-    var(--mobrix-ui-table-background, var(--mobrix-ui-background-light))
+    var(--mobrix-ui-table-background, var(--mobrix-ui-computed-background-light))
   );
   --mobrix-ui-computed-table-background-dark: var(
     --mobrix-ui-table-background-dark,
-    var(--mobrix-ui-table-background, var(--mobrix-ui-background-dark))
+    var(--mobrix-ui-table-background, var(--mobrix-ui-computed-background-dark))
   );
 
   --mobrix-ui-computed-table-text-color-dark: var(

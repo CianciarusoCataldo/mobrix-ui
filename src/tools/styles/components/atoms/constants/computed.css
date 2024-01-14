@@ -4,12 +4,12 @@
   /* Button */
   --mobrix-ui-computed-button-background-light: var(
     --mobrix-ui-button-background-light,
-    var(--mobrix-ui-button-background, var(--mobrix-ui-background-light))
+    var(--mobrix-ui-button-background, var(--mobrix-ui-computed-background-light))
   );
 
   --mobrix-ui-computed-button-background-dark: var(
     --mobrix-ui-button-background-dark,
-    var(--mobrix-ui-button-background, var(--mobrix-ui-background-dark))
+    var(--mobrix-ui-button-background, var(--mobrix-ui-computed-background-dark))
   );
 
   --mobrix-ui-computed-button-text-color-light: var(
@@ -362,12 +362,12 @@
   /** Rater **/
   --mobrix-ui-computed-rater-background-light: var(
     --mobrix-ui-rater-background-light,
-    var(--mobrix-ui-rater-background, var(--mobrix-ui-background-light))
+    var(--mobrix-ui-rater-background, var(--mobrix-ui-computed-background-light))
   );
 
   --mobrix-ui-computed-rater-background-dark: var(
     --mobrix-ui-rater-background-dark,
-    var(--mobrix-ui-rater-background, var(--mobrix-ui-background-dark))
+    var(--mobrix-ui-rater-background, var(--mobrix-ui-computed-background-dark))
   );
 
   /** Selector **/
@@ -466,12 +466,12 @@
 
   --mobrix-ui-computed-slider-background-light: var(
     --mobrix-ui-slider-background-light,
-    var(--mobrix-ui-slider-background, var(--mobrix-ui-background-light))
+    var(--mobrix-ui-slider-background, var(--mobrix-ui-computed-background-light))
   );
 
   --mobrix-ui-computed-slider-background-dark: var(
     --mobrix-ui-slider-background-dark,
-    var(--mobrix-ui-slider-background, var(--mobrix-ui-background-dark))
+    var(--mobrix-ui-slider-background, var(--mobrix-ui-computed-background-dark))
   );
 
   /** Spinner **/
@@ -522,12 +522,12 @@
   /** Toggle **/
   --mobrix-ui-computed-toggle-background-light: var(
     --mobrix-ui-toggle-background-light,
-    var(--mobrix-ui-toggle-background, var(--mobrix-ui-background-light))
+    var(--mobrix-ui-toggle-background, var(--mobrix-ui-computed-background-light))
   );
 
   --mobrix-ui-computed-toggle-background-dark: var(
     --mobrix-ui-toggle-background-dark,
-    var(--mobrix-ui-toggle-background, var(--mobrix-ui-background-dark))
+    var(--mobrix-ui-toggle-background, var(--mobrix-ui-computed-background-dark))
   );
 
   --mobrix-ui-computed-toggle-icon-on-internal-color-light: var(
