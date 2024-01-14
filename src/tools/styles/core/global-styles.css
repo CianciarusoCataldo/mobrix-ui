@@ -19,23 +19,14 @@
   ) {
   --mobrix-ui-focus-color: var(
     --mobrix-ui-custom-focus-color-light,
-    var(--mobrix-ui-focus-color-light)
+    var(--mobrix-ui-computed-focus-color-light)
   );
-}
-
-@media (hover: hover) {
-  [data-mobrix-ui-id][data-mobrix-ui-a11y="true"][data-mobrix-ui-styled="true"]:focus-visible {
-    box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
-    -webkit-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
-    -moz-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
-    -o-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
-  }
 }
 
 [data-mobrix-ui-id][data-mobrix-ui-a11y="true"][data-mobrix-ui-a11y-dark="true"] {
   --mobrix-ui-focus-color: var(
     --mobrix-ui-custom-focus-color-dark,
-    var(--mobrix-ui-focus-color-dark)
+    var(--mobrix-ui-computed-focus-color-dark)
   );
 }
 
@@ -89,4 +80,13 @@
 [data-mobrix-ui-id][data-mobrix-ui-styled="false"]:hover {
   --mobrix-ui-background: transparent;
   --mobrix-ui-background-color: transparent;
+}
+
+@media (hover: hover) {
+  [data-mobrix-ui-id][data-mobrix-ui-a11y="true"][data-mobrix-ui-styled="true"]:focus-visible {
+    box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
+    -webkit-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
+    -moz-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
+    -o-box-shadow: 0 5px 13px -1px var(--mobrix-ui-focus-color);
+  }
 }

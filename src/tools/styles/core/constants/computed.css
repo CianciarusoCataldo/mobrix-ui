@@ -1,8 +1,21 @@
 @import url("default.css");
 
 [data-mobrix-ui-id] {
-  --mobrix-ui-focus-color-light: #7785ff;
-  --mobrix-ui-focus-color-dark: #fb7a10;
+  --mobrix-ui-computed-focus-color-light: var(
+    --mobrix-ui-custom-focus-color-light,
+    var(
+      --mobrix-ui-custom-focus-color,
+      var(--mobrix-ui-default-focus-color-light)
+    )
+  );
+
+  --mobrix-ui-computed-focus-color-dark: var(
+    --mobrix-ui-custom-focus-color-dark,
+    var(
+      --mobrix-ui-custom-focus-color,
+      var(--mobrix-ui-default-focus-color-dark)
+    )
+  );
 
   --mobrix-ui-computed-background-light: var(
     --mobrix-ui-custom-background-light,
@@ -17,24 +30,33 @@
     var(--mobrix-ui-custom-background, var(--mobrix-ui-default-background-dark))
   );
 
-  --mobrix-ui-text-color-light: var(
+  --mobrix-ui-computed-text-color-light: var(
     --mobrix-ui-custom-text-color-light,
-    var(--mobrix-ui-default-text-color-light)
+    var(
+      --mobrix-ui-custom-text-color,
+      var(--mobrix-ui-default-text-color-light)
+    )
   );
 
-  --mobrix-ui-text-color-dark: var(
+  --mobrix-ui-computed-text-color-dark: var(
     --mobrix-ui-custom-text-color-dark,
-    var(--mobrix-ui-default-text-color-dark)
+    var(--mobrix-ui-custom-text-color, var(--mobrix-ui-default-text-color-dark))
   );
 
   --mobrix-ui-background-color-light: var(
     --mobrix-ui-custom-background-color-light,
-    var(--mobrix-ui-default-background-color-light)
+    var(
+      --mobrix-ui-custom-background-color,
+      var(--mobrix-ui-default-background-color-light)
+    )
   );
 
   --mobrix-ui-background-color-dark: var(
     --mobrix-ui-custom-background-color-dark,
-    var(--mobrix-ui-default-background-color-dark)
+    var(
+      --mobrix-ui-custom-background-color,
+      var(--mobrix-ui-default-background-color-dark)
+    )
   );
 
   --mobrix-ui-text-color-hover-light: var(
@@ -44,6 +66,7 @@
       var(--mobrix-ui-default-text-color-hover-light)
     )
   );
+
   --mobrix-ui-text-color-hover-dark: var(
     --mobrix-ui-custom-text-color-hover-dark,
     var(
@@ -53,10 +76,19 @@
   );
 
   --mobrix-ui-background-color-hover-dark: var(
-    --mobrix-ui-default-background-color-hover-dark
+    --mobrix-ui-custom-background-color-hover-dark,
+    var(
+      --mobrix-ui-background-color-hover,
+      var(--mobrix-ui-default-background-color-hover-dark)
+    )
   );
+
   --mobrix-ui-background-color-hover-light: var(
-    --mobrix-ui-default-background-color-hover-light
+    --mobrix-ui-custom-background-color-hover-light,
+    var(
+      --mobrix-ui-background-color-hover,
+      var(--mobrix-ui-default-background-color-hover-light)
+    )
   );
 
   --mobrix-ui-background-hover-dark: var(
@@ -66,6 +98,7 @@
       var(--mobrix-ui-default-background-color-hover-dark)
     )
   );
+
   --mobrix-ui-background-hover-light: var(
     --mobrix-ui-custom-background-hover-light,
     var(

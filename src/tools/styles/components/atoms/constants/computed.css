@@ -14,12 +14,12 @@
 
   --mobrix-ui-computed-button-text-color-light: var(
     --mobrix-ui-button-text-color-light,
-    var(--mobrix-ui-text-color-light)
+    var(--mobrix-ui-computed-text-color-light)
   );
 
   --mobrix-ui-computed-button-text-color-dark: var(
     --mobrix-ui-button-text-color-dark,
-    var(--mobrix-ui-text-color-dark)
+    var(--mobrix-ui-computed-text-color-dark)
   );
 
   --mobrix-ui-computed-button-background-hover: var(
@@ -106,7 +106,7 @@
 
   --mobrix-ui-computed-codebox-text-color-light: var(
     --mobrix-ui-codebox-text-color-light,
-    var(--mobrix-ui-codebox-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-codebox-text-color, var(--mobrix-ui-computed-text-color-light))
   );
 
   --mobrix-ui-computed-codebox-background-dark: var(
@@ -116,7 +116,7 @@
 
   --mobrix-ui-computed-codebox-text-color-dark: var(
     --mobrix-ui-codebox-text-color-dark,
-    var(--mobrix-ui-codebox-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-codebox-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
 
   /** Counter **/
@@ -143,12 +143,12 @@
 
   --mobrix-ui-computed-counterbox-text-color-light: var(
     --mobrix-ui-counterbox-text-color-light,
-    var(--mobrix-ui-counterbox-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-counterbox-text-color, var(--mobrix-ui-computed-text-color-light))
   );
 
   --mobrix-ui-computed-counterbox-text-color-dark: var(
     --mobrix-ui-counterbox-text-color-dark,
-    var(--mobrix-ui-counterbox-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-counterbox-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
 
   --mobrix-ui-computed-counterbox-background-hover-light: var(
@@ -192,12 +192,12 @@
   /** Divider **/
   --mobrix-ui-computed-divider-color-light: var(
     --mobrix-ui-divider-color-light,
-    var(--mobrix-ui-divider-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-divider-color, var(--mobrix-ui-computed-text-color-light))
   );
 
   --mobrix-ui-computed-divider-color-dark: var(
     --mobrix-ui-divider-color-dark,
-    var(--mobrix-ui-divider-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-divider-color, var(--mobrix-ui-computed-text-color-dark))
   );
 
   /** Input **/
@@ -221,12 +221,12 @@
 
   --mobrix-ui-computed-inputbox-text-color-light: var(
     --mobrix-ui-inputbox-text-color-light,
-    var(--mobrix-ui-inputbox-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-inputbox-text-color, var(--mobrix-ui-computed-text-color-light))
   );
 
   --mobrix-ui-computed-inputbox-text-color-dark: var(
     --mobrix-ui-inputbox-text-color-dark,
-    var(--mobrix-ui-inputbox-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-inputbox-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
 
   --mobrix-ui-computed-inputbox-background-hover-light: var(
@@ -270,23 +270,23 @@
   /** Label **/
   --mobrix-ui-computed-label-text-color-light: var(
     --mobrix-ui-label-text-color-light,
-    var(--mobrix-ui-label-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-label-text-color, var(--mobrix-ui-computed-text-color-light))
   );
 
   --mobrix-ui-computed-label-text-color-dark: var(
     --mobrix-ui-label-text-color-dark,
-    var(--mobrix-ui-label-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-label-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
 
   /* Link */
   --mobrix-ui-computed-link-color-light: var(
     --mobrix-ui-link-color-light,
-    var(--mobrix-ui-link-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-link-color, var(--mobrix-ui-computed-text-color-light))
   );
 
   --mobrix-ui-computed-link-color-dark: var(
     --mobrix-ui-link-color-dark,
-    var(--mobrix-ui-link-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-link-color, var(--mobrix-ui-computed-text-color-dark))
   );
 
   --mobrix-ui-computed-link-color-hover: var(
@@ -402,12 +402,12 @@
 
   --mobrix-ui-computed-selector-text-color-light: var(
     --mobrix-ui-selector-text-color-light,
-    var(--mobrix-ui-text-color-light)
+    var(--mobrix-ui-computed-text-color-light)
   );
 
   --mobrix-ui-computed-selector-text-color-dark: var(
     --mobrix-ui-selector-text-color-dark,
-    var(--mobrix-ui-text-color-dark)
+    var(--mobrix-ui-computed-text-color-dark)
   );
 
   --mobrix-ui-computed-selector-text-color-hover-light: var(

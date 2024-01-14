@@ -16,11 +16,11 @@
 
   --mobrix-ui-computed-card-text-color-light: var(
     --mobrix-ui-card-text-color-light,
-    var(--mobrix-ui-card-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-card-text-color, var(--mobrix-ui-computed-text-color-light))
   );
   --mobrix-ui-computed-card-text-color-dark: var(
     --mobrix-ui-card-text-color-dark,
-    var(--mobrix-ui-card-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-card-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
 
   /** Carousel **/
@@ -109,11 +109,11 @@
   );
   --mobrix-ui-computed-container-text-color-light: var(
     --mobrix-ui-container-text-color-light,
-    var(--mobrix-ui-container-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-container-text-color, var(--mobrix-ui-computed-text-color-light))
   );
   --mobrix-ui-computed-container-text-color-dark: var(
     --mobrix-ui-container-text-color-dark,
-    var(--mobrix-ui-container-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-container-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
 
   /* DismissableCard */
@@ -244,12 +244,12 @@
 
   --mobrix-ui-computed-dropdown-text-color-light: var(
     --mobrix-ui-dropdown-text-color-light,
-    var(--mobrix-ui-dropdown-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-dropdown-text-color, var(--mobrix-ui-computed-text-color-light))
   );
 
   --mobrix-ui-computed-dropdown-text-color-dark: var(
     --mobrix-ui-dropdown-text-color-dark,
-    var(--mobrix-ui-dropdown-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-dropdown-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
 
   --mobrix-ui-computed-dropdown-text-color-hover-light: var(
@@ -394,11 +394,11 @@
   /* List */
   --mobrix-ui-computed-list-text-color-light: var(
     --mobrix-ui-list-text-color-light,
-    var(--mobrix-ui-list-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-list-text-color, var(--mobrix-ui-computed-text-color-light))
   );
   --mobrix-ui-computed-list-text-color-dark: var(
     --mobrix-ui-list-text-color-dark,
-    var(--mobrix-ui-list-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-list-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
   --mobrix-ui-computed-internal-list-text-color-hover: var(
     --mobrix-ui-list-text-color-hover,
@@ -463,11 +463,11 @@
   );
   --mobrix-ui-computed-list-text-color-light: var(
     --mobrix-ui-popup-text-color-light,
-    var(--mobrix-ui-popup-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-popup-text-color, var(--mobrix-ui-computed-text-color-light))
   );
   --mobrix-ui-computed-popup-text-color-dark: var(
     --mobrix-ui-popup-text-color-dark,
-    var(--mobrix-ui-popup-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-popup-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
 
   /** RadioButtonGroup **/
@@ -481,12 +481,12 @@
   );
   --mobrix-ui-computed-radiogroup-text-color-light: var(
     --mobrix-ui-radiogroup-text-color-light,
-    var(--mobrix-ui-radiogroup-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-radiogroup-text-color, var(--mobrix-ui-computed-text-color-light))
   );
 
   --mobrix-ui-computed-radiogroup-text-color-dark: var(
     --mobrix-ui-radiogroup-text-color-dark,
-    var(--mobrix-ui-radiogroup-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-radiogroup-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
 
   /** Review **/
@@ -500,11 +500,11 @@
   );
   --mobrix-ui-computed-review-text-color-light: var(
     --mobrix-ui-review-text-color-light,
-    var(--mobrix-ui-review-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-review-text-color, var(--mobrix-ui-computed-text-color-light))
   );
   --mobrix-ui-computed-review-text-color-dark: var(
     --mobrix-ui-review-text-color-dark,
-    var(--mobrix-ui-review-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-review-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
   --mobrix-ui-computed-review-link-color-light: var(
     --mobrix-ui-review-link-color-light,
@@ -547,11 +547,11 @@
 
   --mobrix-ui-computed-table-text-color-dark: var(
     --mobrix-ui-table-text-color-dark,
-    var(--mobrix-ui-table-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-table-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
   --mobrix-ui-computed-table-text-color-light: var(
     --mobrix-ui-table-text-color-light,
-    var(--mobrix-ui-table-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-table-text-color, var(--mobrix-ui-computed-text-color-light))
   );
 
   --mobrix-ui-computed-table-border-color-dark: var(
@@ -655,7 +655,7 @@
 
   --mobrix-ui-computed-tab-viewer-text-color-light: var(
     --mobrix-ui-tab-viewer-text-color-light,
-    var(--mobrix-ui-tab-viewer-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-tab-viewer-text-color, var(--mobrix-ui-computed-text-color-light))
   );
 
   --mobrix-ui-computed-tab-viewer-text-color-inactive-dark: var(

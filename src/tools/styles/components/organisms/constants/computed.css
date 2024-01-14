@@ -13,11 +13,11 @@
 
   --mobrix-ui-computed-calendar-text-color-light: var(
     --mobrix-ui-calendar-text-color-light,
-    var(--mobrix-ui-calendar-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-calendar-text-color, var(--mobrix-ui-computed-text-color-light))
   );
   --mobrix-ui-computed-calendar-text-color-dark: var(
     --mobrix-ui-calendar-text-color-dark,
-    var(--mobrix-ui-calendar-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-calendar-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
 
   --mobrix-ui-computed-calendar-background-selected-light: var(
@@ -136,11 +136,11 @@
   );
   --mobrix-ui-computed-datepicker-text-color-light: var(
     --mobrix-ui-datepicker-text-color-light,
-    var(--mobrix-ui-datepicker-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-datepicker-text-color, var(--mobrix-ui-computed-text-color-light))
   );
   --mobrix-ui-computed-datepicker-text-color-dark: var(
     --mobrix-ui-datepicker-text-color-dark,
-    var(--mobrix-ui-datepicker-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-datepicker-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
   --mobrix-ui-computed-datepicker-calendar-text-color-light: var(
     --mobrix-ui-datepicker-calendar-text-color-light,
@@ -225,11 +225,11 @@
   );
   --mobrix-ui-computed-drawer-text-color-light: var(
     --mobrix-ui-drawer-text-color-light,
-    var(--mobrix-ui-drawer-text-color, var(--mobrix-ui-text-color-light))
+    var(--mobrix-ui-drawer-text-color, var(--mobrix-ui-computed-text-color-light))
   );
   --mobrix-ui-computed-drawer-text-color-dark: var(
     --mobrix-ui-drawer-text-color-light,
-    var(--mobrix-ui-drawer-text-color, var(--mobrix-ui-text-color-dark))
+    var(--mobrix-ui-drawer-text-color, var(--mobrix-ui-computed-text-color-dark))
   );
 
   --mobrix-ui-computed-drawer-arrow-light: var(
