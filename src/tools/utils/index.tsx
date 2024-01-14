@@ -1,4 +1,4 @@
-import "../styles/core/global-styles.css";
+import "../styles/core/index.css";
 import "../styles/components/index.css";
 
 import React, { useEffect, useRef } from "react";
@@ -70,7 +70,6 @@ export const buildMobrixUiStandardComponent = ({
     "data-mobrix-ui-a11y": inputCommonProps.a11y,
     "data-mobrix-ui-background": !inputCommonProps.noBackground,
     "data-mobrix-ui-hover": (!inputCommonProps.noHover) && (!inputCommonProps.disabled),
-    "data-mobrix-ui-class": inputCommonProps.mobrixUiClass,
     "data-mobrix-ui-enabled": !inputCommonProps.disabled,
     "data-mobrix-ui-a11y-dark":
       a11y &&

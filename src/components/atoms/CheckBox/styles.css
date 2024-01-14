@@ -13,3 +13,7 @@
   padding: 0.2rem;
   margin: auto;
 }
+
+[data-mobrix-ui-id="checkbox"] > *:first-child {
+  fill: var(--mobrix-ui-computed-checkbox-tick-color);
+}

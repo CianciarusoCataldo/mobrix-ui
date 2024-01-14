@@ -1,10 +1,39 @@
 @import url("default.css");
 
 [data-mobrix-ui-id] {
-  --mobrix-ui-background-color-light: #f5f5f5;
-  --mobrix-ui-background-color-dark: #1d232e;
-  --mobrix-ui-text-color-light: #1b1b1b;
-  --mobrix-ui-text-color-dark: white;
+  --mobrix-ui-focus-color-light: #7785ff;
+  --mobrix-ui-focus-color-dark: #fb7a10;
+
+  --mobrix-ui-background-light: var(
+    --mobrix-ui-custom-background-light,
+    var(--mobrix-ui-default-background-light)
+  );
+
+  --mobrix-ui-text-color-light: var(
+    --mobrix-ui-custom-text-color-light,
+    var(--mobrix-ui-default-text-color-light)
+  );
+
+  --mobrix-ui-background-dark: var(
+    --mobrix-ui-custom-background-dark,
+    var(--mobrix-ui-default-background-dark)
+  );
+
+  --mobrix-ui-text-color-dark: var(
+    --mobrix-ui-custom-text-color-dark,
+    var(--mobrix-ui-default-text-color-dark)
+  );
+
+  --mobrix-ui-background-color-light: var(
+    --mobrix-ui-custom-background-color-light,
+    var(--mobrix-ui-default-background-color-light)
+  );
+
+  --mobrix-ui-background-color-dark: var(
+    --mobrix-ui-custom-background-color-dark,
+    var(--mobrix-ui-default-background-color-dark)
+  );
+
   --mobrix-ui-text-color-hover-light: var(
     --mobrix-ui-custom-text-color-hover-light,
     var(
@@ -19,32 +48,11 @@
       var(--mobrix-ui-default-text-color-hover-dark)
     )
   );
-  --mobrix-ui-focus-color-light: #7785ff;
-  --mobrix-ui-focus-color-dark: #fb7a10;
-  --mobrix-ui-background-dark: linear-gradient(to right, #2d3748, #1d232e);
-  --mobrix-ui-background-light: linear-gradient(
-    to right,
-    #fff,
-    #ededee,
-    #e6e7e7
-  );
 
   --mobrix-ui-background-color-hover-dark: var(
     --mobrix-ui-default-background-color-hover-dark
   );
   --mobrix-ui-background-color-hover-light: var(
     --mobrix-ui-default-background-color-hover-light
-  );
-
-  --mobrix-ui-background-hover-dark: linear-gradient(
-    to right,
-    #364257,
-    #252d3b
-  );
-  --mobrix-ui-background-hover-light: linear-gradient(
-    to right,
-    #ececec,
-    #e1e1e6,
-    #dbdddd
   );
 }

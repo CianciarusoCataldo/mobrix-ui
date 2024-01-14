@@ -14,40 +14,6 @@
   outline: none;
 }
 
-[data-mobrix-ui-id]:not([data-mobrix-ui-dark="true"]) {
-  --mobrix-ui-background-color: var(
-    --mobrix-ui-custom-background-color-light,
-    var(--mobrix-ui-background-color-light)
-  );
-
-  --mobrix-ui-background: var(
-    --mobrix-ui-custom-background-light,
-    var(--mobrix-ui-background-light)
-  );
-
-  --mobrix-ui-text-color: var(
-    --mobrix-ui-custom-text-color-light,
-    var(--mobrix-ui-text-color-light)
-  );
-}
-
-[data-mobrix-ui-id][data-mobrix-ui-dark="true"] {
-  --mobrix-ui-background-color: var(
-    --mobrix-ui-custom-background-color-dark,
-    var(--mobrix-ui-background-color-dark)
-  );
-
-  --mobrix-ui-background: var(
-    --mobrix-ui-custom-background-dark,
-    var(--mobrix-ui-background-dark)
-  );
-
-  --mobrix-ui-text-color: var(
-    --mobrix-ui-custom-text-color-dark,
-    var(--mobrix-ui-text-color-dark)
-  );
-}
-
 [data-mobrix-ui-id][data-mobrix-ui-a11y="true"]:not(
     [data-mobrix-ui-a11y-dark="true"]
   ) {

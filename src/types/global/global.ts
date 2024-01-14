@@ -45,9 +45,6 @@ export interface CommonProps {
   /** If true, disable the component. The effect may vary depending on the component type */
   disabled?: boolean;
 
-  /** The `data-mobrix-ui-parameter`, an alternative custom class that can be easily used with `[data-mobrix-ui-class=VALUE]` */
-  mobrixUiClass?: string;
-
   /** If `true`, the component is selectable by navigating with tab key (default `true`) */
   a11y?: boolean;
 
