@@ -65,6 +65,7 @@ const Input: InputComponent = ({
       type: "text",
       value,
       placeholder,
+      disabled: commonProps.disabled,
       readOnly: readOnly || commonProps.disabled,
       onChange: ((e) => {
         const newValue = e.target.value ? e.target.value : "";

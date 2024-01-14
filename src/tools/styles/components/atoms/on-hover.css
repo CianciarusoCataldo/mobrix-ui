@@ -1,97 +1,49 @@
 @media (hover) {
-  [data-mobrix-ui-id][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"][data-mobrix-ui-dark="false"][data-mobrix-ui-background="true"]:hover {
+  [data-mobrix-ui-id][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"][data-mobrix-ui-background="true"][data-mobrix-ui-enabled="true"]:hover {
+    /** Button **/
     --mobrix-ui-computed-button-background: var(
-      --mobrix-ui-computed-button-background-hover-light
+      --mobrix-ui-computed-button-background-hover
     );
 
+    /** Checkbox **/
     --mobrix-ui-computed-checkbox-background: var(
-      --mobrix-ui-computed-checkbox-background-hover-light
+      --mobrix-ui-computed-checkbox-background-hover
     );
 
+    /** RadioButton **/
     --mobrix-ui-computed-radio-background: var(
-      --mobrix-ui-computed-radio-background-hover-light
+      --mobrix-ui-computed-radio-background-hover
     );
   }
 
-  [data-mobrix-ui-id][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"][data-mobrix-ui-dark="true"][data-mobrix-ui-background="true"]:hover {
-    --mobrix-ui-computed-button-background: var(
-      --mobrix-ui-computed-button-background-hover-dark
-    );
-
-    --mobrix-ui-computed-checkbox-background: var(
-      --mobrix-ui-computed-checkbox-background-hover-dark
-    );
-
-    --mobrix-ui-computed-radio-background: var(
-      --mobrix-ui-computed-radio-background-hover-dark
-    );
-  }
-
-  [data-mobrix-ui-id][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"][data-mobrix-ui-dark="false"]:hover {
+  [data-mobrix-ui-id][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"][data-mobrix-ui-enabled="true"]:hover {
     /** Button **/
     --mobrix-ui-computed-button-text-color: var(
-      --mobrix-ui-computed-button-text-color-hover-light
+      --mobrix-ui-computed-button-text-color-hover
     );
 
     /** Link **/
-    --mobrix-ui-computed-link-color: var(
-      --mobrix-ui-computed-link-color-hover-light
-    );
+    --mobrix-ui-computed-link-color: var(--mobrix-ui-computed-link-color-hover);
   }
 
-  [data-mobrix-ui-id][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"][data-mobrix-ui-dark="true"]:hover {
-    /** Button **/
-    --mobrix-ui-computed-button-text-color: var(
-      --mobrix-ui-computed-button-text-color-hover-dark
-    );
-
-    /** Link **/
-    --mobrix-ui-computed-link-color: var(
-      --mobrix-ui-computed-link-color-hover-dark
-    );
-  }
-
-  [data-mobrix-ui-id][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"][data-mobrix-ui-dark="false"]:hover:not(
+  [data-mobrix-ui-id][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"][data-mobrix-ui-background="true"][data-mobrix-ui-enabled="true"]:hover:not(
       :focus-visible
     ) {
     /** Counter **/
     --mobrix-ui-computed-counterbox-background: var(
-      --mobrix-ui-computed-counterbox-background-hover-light
+      --mobrix-ui-computed-counterbox-background-hover
     );
-
     --mobrix-ui-computed-counterbox-text-color: var(
-      --mobrix-ui-computed-counterbox-text-color-hover-light
+      --mobrix-ui-computed-counterbox-text-color-hover
     );
 
     /** Inputbox **/
     --mobrix-ui-computed-inputbox-background: var(
-      --mobrix-ui-computed-inputbox-background-hover-light
+      --mobrix-ui-computed-inputbox-background-hover
     );
 
     --mobrix-ui-computed-inputbox-text-color: var(
-      --mobrix-ui-computed-inputbox-text-color-hover-light
-    );
-  }
-
-  [data-mobrix-ui-id][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"][data-mobrix-ui-dark="true"]:hover:not(
-      :focus-visible
-    ) {
-    /** Counter **/
-    --mobrix-ui-computed-counterbox-background: var(
-      --mobrix-ui-computed-counterbox-background-hover-dark
-    );
-
-    --mobrix-ui-computed-counterbox-text-color: var(
-      --mobrix-ui-computed-counterbox-text-color-hover-dark
-    );
-
-    /** Inputbox **/
-    --mobrix-ui-computed-inputbox-background: var(
-      --mobrix-ui-computed-inputbox-background-hover-dark
-    );
-
-    --mobrix-ui-computed-inputbox-text-color: var(
-      --mobrix-ui-computed-inputbox-text-color-hover-dark
+      --mobrix-ui-computed-inputbox-text-color-hover
     );
   }
 }

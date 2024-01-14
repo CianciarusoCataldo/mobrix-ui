@@ -60,6 +60,7 @@ const Carousel: CarouselComponent = ({
         onChange,
         elements: actualElements,
         dark: commonProps.dark,
+        disabled: commonProps.disabled,
       }),
   });
 };

@@ -11,13 +11,33 @@
     --mobrix-ui-computed-button-text-color-light
   );
 
+  --mobrix-ui-computed-button-background-hover: var(
+    --mobrix-ui-computed-button-background-hover-light
+  );
+
+  --mobrix-ui-computed-button-text-color-hover: var(
+    --mobrix-ui-computed-button-text-color-hover-light
+  );
+
   /** Checkbox **/
   --mobrix-ui-computed-checkbox-background: var(
     --mobrix-ui-computed-checkbox-background-light
   );
 
+  --mobrix-ui-computed-checkbox-background-hover: var(
+    --mobrix-ui-computed-checkbox-background-hover-light
+  );
+
   --mobrix-ui-computed-checkbox-tick-color: var(
     --mobrix-ui-computed-checkbox-tick-color-light
+  );
+
+  --mobrix-ui-computed-checkbox-background-disabled: var(
+    --mobrix-ui-computed-checkbox-background-disabled-light
+  );
+
+  --mobrix-ui-computed-checkbox-text-color-disabled: var(
+    --mobrix-ui-computed-checkbox-text-color-disabled-light
   );
 
   /** Codebox **/
@@ -38,6 +58,22 @@
     --mobrix-ui-computed-counterbox-text-color-light
   );
 
+  --mobrix-ui-computed-counterbox-background-hover: var(
+    --mobrix-ui-computed-counterbox-background-hover-light
+  );
+
+  --mobrix-ui-computed-counterbox-text-color-hover: var(
+    --mobrix-ui-computed-counterbox-text-color-hover-light
+  );
+
+  --mobrix-ui-computed-counterbox-background-disabled: var(
+    --mobrix-ui-computed-counterbox-background-disabled-light
+  );
+
+  --mobrix-ui-computed-counterbox-text-color-disabled: var(
+    --mobrix-ui-computed-counterbox-text-color-disabled-light
+  );
+
   /** Divider **/
   --mobrix-ui-computed-divider-color: var(
     --mobrix-ui-computed-divider-color-light
@@ -51,6 +87,21 @@
   --mobrix-ui-computed-inputbox-text-color: var(
     --mobrix-ui-computed-inputbox-text-color-light
   );
+  --mobrix-ui-computed-inputbox-background-hover: var(
+    --mobrix-ui-computed-inputbox-background-hover-light
+  );
+
+  --mobrix-ui-computed-inputbox-text-color-hover: var(
+    --mobrix-ui-computed-inputbox-text-color-hover-light
+  );
+
+  --mobrix-ui-computed-inputbox-background-disabled: var(
+    --mobrix-ui-computed-inputbox-background-disabled-light
+  );
+
+  --mobrix-ui-computed-inputbox-text-color-disabled: var(
+    --mobrix-ui-computed-inputbox-text-color-disabled-light
+  );
 
   /** Label **/
   --mobrix-ui-computed-label-text-color: var(
@@ -59,12 +110,17 @@
 
   /** Link **/
   --mobrix-ui-computed-link-color: var(--mobrix-ui-computed-link-color-light);
+  --mobrix-ui-computed-link-color-hover: var(
+    --mobrix-ui-computed-link-color-hover-light
+  );
 
   /** Radio Button **/
   --mobrix-ui-computed-radio-background: var(
     --mobrix-ui-computed-radio-background-light
   );
-
+  --mobrix-ui-computed-radio-background-hover: var(
+    --mobrix-ui-computed-radio-background-hover-light
+  );
   --mobrix-ui-computed-radio-icon-background: var(
     --mobrix-ui-computed-radio-icon-background-light
   );
@@ -139,14 +195,33 @@
   --mobrix-ui-computed-button-text-color: var(
     --mobrix-ui-computed-button-text-color-dark
   );
+  --mobrix-ui-computed-button-background-hover: var(
+    --mobrix-ui-computed-button-background-hover-dark
+  );
+
+  --mobrix-ui-computed-button-text-color-hover: var(
+    --mobrix-ui-computed-button-text-color-hover-dark
+  );
 
   /** Checkbox **/
   --mobrix-ui-computed-checkbox-background: var(
     --mobrix-ui-computed-checkbox-background-dark
   );
 
+  --mobrix-ui-computed-checkbox-background-hover: var(
+    --mobrix-ui-computed-checkbox-background-hover-dark
+  );
+
   --mobrix-ui-computed-checkbox-tick-color: var(
     --mobrix-ui-computed-checkbox-tick-color-dark
+  );
+
+  --mobrix-ui-computed-checkbox-background-disabled: var(
+    --mobrix-ui-computed-checkbox-background-disabled-dark
+  );
+
+  --mobrix-ui-computed-checkbox-text-color-disabled: var(
+    --mobrix-ui-computed-checkbox-text-color-disabled-dark
   );
 
   /** Codebox **/
@@ -167,6 +242,22 @@
     --mobrix-ui-computed-counterbox-text-color-dark
   );
 
+  --mobrix-ui-computed-counterbox-background-hover: var(
+    --mobrix-ui-computed-counterbox-background-hover-dark
+  );
+
+  --mobrix-ui-computed-counterbox-text-color-hover: var(
+    --mobrix-ui-computed-counterbox-text-color-hover-dark
+  );
+
+  --mobrix-ui-computed-counterbox-background-disabled: var(
+    --mobrix-ui-computed-counterbox-background-disabled-dark
+  );
+
+  --mobrix-ui-computed-counterbox-text-color-disabled: var(
+    --mobrix-ui-computed-counterbox-text-color-disabled-dark
+  );
+
   /** Divider **/
   --mobrix-ui-computed-divider-color: var(
     --mobrix-ui-computed-divider-color-dark
@@ -181,6 +272,22 @@
     --mobrix-ui-computed-inputbox-text-color-dark
   );
 
+  --mobrix-ui-computed-inputbox-background-hover: var(
+    --mobrix-ui-computed-inputbox-background-hover-dark
+  );
+
+  --mobrix-ui-computed-inputbox-text-color-hover: var(
+    --mobrix-ui-computed-inputbox-text-color-hover-dark
+  );
+
+  --mobrix-ui-computed-inputbox-background-disabled: var(
+    --mobrix-ui-computed-inputbox-background-disabled-dark
+  );
+
+  --mobrix-ui-computed-inputbox-text-color-disabled: var(
+    --mobrix-ui-computed-inputbox-text-color-disabled-dark
+  );
+
   /** Label **/
   --mobrix-ui-computed-label-text-color: var(
     --mobrix-ui-computed-label-text-color-dark
@@ -188,10 +295,16 @@
 
   /** Link **/
   --mobrix-ui-computed-link-color: var(--mobrix-ui-computed-link-color-dark);
+  --mobrix-ui-computed-link-color-hover: var(
+    --mobrix-ui-computed-link-color-hover-dark
+  );
 
   /** Radio Button **/
   --mobrix-ui-computed-radio-background: var(
     --mobrix-ui-computed-radio-background-dark
+  );
+  --mobrix-ui-computed-radio-background-hover: var(
+    --mobrix-ui-computed-radio-background-hover-dark
   );
   --mobrix-ui-computed-radio-icon-background: var(
     --mobrix-ui-computed-radio-icon-background-dark

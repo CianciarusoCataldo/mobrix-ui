@@ -17,6 +17,7 @@ const expandableContainerComponent: MobrixUiReactiveComponent<
   expanded,
   dark,
   onChange = () => {},
+  disabled,
 }) => {
   let components = [children];
 
@@ -28,8 +29,8 @@ const expandableContainerComponent: MobrixUiReactiveComponent<
   components.push(
     <Button
       unstyled
+      disabled={disabled}
       onClick={() => {
-        
         onChange(!compact);
         setCompact(!compact);
       }}

@@ -4,14 +4,18 @@
   color: var(--mobrix-ui-computed-link-color);
 }
 
-[data-mobrix-ui-id="link"][data-mobrix-ui-styled="true"][data-mobrix-ui-a11y="true"]:focus-visible {
+[data-mobrix-ui-id="link"][data-mobrix-ui-styled="true"][data-mobrix-ui-a11y="true"][data-mobrix-ui-enabled="true"]:focus-visible {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
-  color: var(--mobrix-ui-focus-color);
+  color: var(--mobrix-ui-computed-focus-color);
 }
 
-[data-mobrix-ui-id="link"]:active {
+[data-mobrix-ui-id="link"][data-mobrix-ui-enabled="true"]:active {
   font-weight: 700;
+}
+
+[data-mobrix-ui-id="link"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="false"] {
+  text-decoration: underline;
 }

@@ -17,15 +17,15 @@ const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
   onClose,
   closeOutside,
   animated,
+  disabled,
   /* istanbul ignore next */
-  onFocusLost = () => { },
+  onFocusLost = () => {},
 }) => {
-
   /* istanbul ignore next */
   const onFocusLostCallback = () => {
     if (!hide) {
       onFocusLost();
-      console.log("onFocusLost")
+      console.log("onFocusLost");
 
       closeOutside && onClose();
     }
@@ -33,6 +33,7 @@ const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
 
   return (
     <DismissableCard
+      disabled={disabled}
       unstyled={unstyled}
       alwaysVisible
       noTopDivider

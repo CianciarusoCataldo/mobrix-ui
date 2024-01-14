@@ -48,27 +48,28 @@ const Toggle: ToggleComponent = ({
   icon,
   offIcon,
   onIcon,
-  onChange = () => { },
+  onChange = () => {},
   additionalProps = {},
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent<boolean>({
     name: "toggle",
-    props: (status, setStatus) =>
-    ({
+    props: (status, setStatus) => ({
       additionalProps: {
         ...additionalProps,
-        onClick: () => {
-          onChange(!status);
-          setStatus(!status);
-        },
-        onKeyDown: (e) => {
-          if (e.code === "Enter") {
+        ...(!commonProps.disabled && {
+          onClick: () => {
             onChange(!status);
             setStatus(!status);
-          }
-        },
-      }
+          },
+          onKeyDown: (e) => {
+            if (e.code === "Enter") {
+              onChange(!status);
+              setStatus(!status);
+            }
+          },
+        }),
+      },
     }),
     Component: ({ value, setValue }) =>
       toggleComponent({

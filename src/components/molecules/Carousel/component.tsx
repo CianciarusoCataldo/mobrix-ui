@@ -8,9 +8,10 @@ import { Button } from "../../atoms";
 const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
   value: selectedItem,
   setValue: setItem,
-  onChange = () => { },
+  onChange = () => {},
   elements = [],
   dark,
+  disabled,
 }) => {
   const [activeClassName, setActiveClassname] = React.useState("");
   const [hoveredDot, setHoveredDot] = React.useState<number | null>(null);
@@ -41,9 +42,10 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
         <Button
           additionalProps={{
             "data-mobrix-ui-class": "dot",
-            "data-mobrix-ui-test": `dot_${index}`
+            "data-mobrix-ui-test": `dot_${index}`,
           }}
           unstyled
+          disabled={disabled}
           key={`dot_${index}`}
           onMouseEnter={() => setHoveredDot(index)}
           onMouseLeave={() => setHoveredDot(null)}
@@ -52,8 +54,12 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
             updateItem(index);
           }}
         >
-          <div data-mobrix-ui-class="carousel-dot-icon"
-            data-mobrix-ui-icon-full={index === item || (hoveredDot != null && index === hoveredDot)} />
+          <div
+            data-mobrix-ui-class="carousel-dot-icon"
+            data-mobrix-ui-icon-full={
+              index === item || (hoveredDot != null && index === hoveredDot)
+            }
+          />
         </Button>
       );
     });
@@ -65,10 +71,10 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
         dark={dark}
         additionalProps={{
           "data-mobrix-ui-arrow": "prev",
-          "data-mobrix-ui-test": "left_arrow"
+          "data-mobrix-ui-test": "left_arrow",
         }}
         unstyled
-        disabled={item === 0}
+        disabled={item === 0 || disabled}
         onClick={() => {
           setActiveClassname("from-left");
           updateItem(item - 1);
@@ -82,9 +88,9 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
         unstyled
         additionalProps={{
           "data-mobrix-ui-arrow": "next",
-          "data-mobrix-ui-test": "right_arrow"
+          "data-mobrix-ui-test": "right_arrow",
         }}
-        disabled={item === elements.length - 1}
+        disabled={item === elements.length - 1 || disabled}
         onClick={() => {
           setActiveClassname("from-right");
           updateItem(item + 1);
@@ -93,7 +99,9 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
         {arrowIcon}
       </Button>
     </div>,
-    <div key="mobrix_ui_carousel_dots" data-mobrix-ui-class="dots">{dots}</div>,
+    <div key="mobrix_ui_carousel_dots" data-mobrix-ui-class="dots">
+      {dots}
+    </div>,
   ];
 };
 

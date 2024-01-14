@@ -16,7 +16,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
   children,
   fieldClassName = "",
   dark,
-  ...commonProps
+  disabled,
 }) => {
   const dropdownFields: Record<string, string | boolean | number> = fields
     ? Object.keys(fields).reduce(
@@ -33,6 +33,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
 
   const components = [
     <Label
+      disabled={disabled}
       key="mobrix_ui_form_title"
       additionalProps={{ "data-mobrix-ui-class": "title" }}
       dark={dark}
@@ -56,6 +57,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
           key={`form_field_${index}`}
         >
           <FormField
+            disabled={disabled}
             value={values[field]}
             header={fieldSettings.header}
             type={type}
@@ -71,6 +73,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
 
   components.push(
     <Button
+      disabled={disabled}
       key="mobrix_ui_form_submit_button"
       dark={!dark}
       additionalProps={{

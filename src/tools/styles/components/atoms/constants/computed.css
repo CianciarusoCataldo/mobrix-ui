@@ -4,12 +4,18 @@
   /* Button */
   --mobrix-ui-computed-button-background-light: var(
     --mobrix-ui-button-background-light,
-    var(--mobrix-ui-button-background, var(--mobrix-ui-computed-background-light))
+    var(
+      --mobrix-ui-button-background,
+      var(--mobrix-ui-computed-background-light)
+    )
   );
 
   --mobrix-ui-computed-button-background-dark: var(
     --mobrix-ui-button-background-dark,
-    var(--mobrix-ui-button-background, var(--mobrix-ui-computed-background-dark))
+    var(
+      --mobrix-ui-button-background,
+      var(--mobrix-ui-computed-background-dark)
+    )
   );
 
   --mobrix-ui-computed-button-text-color-light: var(
@@ -22,37 +28,39 @@
     var(--mobrix-ui-computed-text-color-dark)
   );
 
-  --mobrix-ui-computed-button-background-hover: var(
-    --mobrix-ui-button-background-hover,
-    var(--mobrix-ui-button-background)
-  );
-
   --mobrix-ui-computed-button-background-hover-light: var(
     --mobrix-ui-button-background-hover-light,
-    var(--mobrix-ui-default-background-hover-light)
+    var(
+      --mobrix-ui-button-background-hover,
+      var(--mobrix-ui-default-background-hover-light)
+    )
   );
 
   --mobrix-ui-computed-button-background-hover-dark: var(
     --mobrix-ui-button-background-hover-dark,
-    var(--mobrix-ui-background-hover-dark)
+    var(
+      --mobrix-ui-button-background-hover,
+      var(--mobrix-ui-default-background-hover-dark)
+    )
   );
 
   --mobrix-ui-computed-button-text-color-hover-light: var(
     --mobrix-ui-button-text-color-hover-light,
-    var(--mobrix-ui-text-color-hover-light)
+    var(
+      --mobrix-ui-button-text-color-hover,
+      var(--mobrix-ui-computed-text-color-hover-light)
+    )
   );
 
   --mobrix-ui-computed-button-text-color-hover-dark: var(
     --mobrix-ui-button-text-color-hover-dark,
-    var(--mobrix-ui-text-color-hover-dark)
+    var(
+      --mobrix-ui-button-text-color-hover,
+      var(--mobrix-ui-computed-text-color-hover-dark)
+    )
   );
 
   /* Checkbox */
-  --mobrix-ui-computed-checkbox-background-hover: var(
-    --mobrix-ui-checkbox-background-hover,
-    var(--mobrix-ui-checkbox-background)
-  );
-
   --mobrix-ui-computed-checkbox-background-light: var(
     --mobrix-ui-checkbox-background-light,
     var(
@@ -63,22 +71,25 @@
 
   --mobrix-ui-computed-checkbox-background-dark: var(
     --mobrix-ui-checkbox-background-dark,
-    var(--mobrix-ui-checkbox-background, var(--mobrix-ui-computed-background-color-dark))
+    var(
+      --mobrix-ui-checkbox-background,
+      var(--mobrix-ui-computed-background-color-dark)
+    )
   );
 
   --mobrix-ui-computed-checkbox-background-hover-light: var(
     --mobrix-ui-checkbox-background-hover-light,
     var(
-      --mobrix-ui-computed-checkbox-background-hover,
-      var(--mobrix-ui-background-color-hover-light)
+      --mobrix-ui-checkbox-background-hover,
+      var(--mobrix-ui-computed-background-color-hover-light)
     )
   );
 
   --mobrix-ui-computed-checkbox-background-hover-dark: var(
     --mobrix-ui-checkbox-background-hover-dark,
     var(
-      --mobrix-ui-computed-checkbox-background-hover,
-      var(--mobrix-ui-background-color-hover-dark)
+      --mobrix-ui-checkbox-background-hover,
+      var(--mobrix-ui-computed-background-color-hover-dark)
     )
   );
 
@@ -101,30 +112,37 @@
   /** Codebox **/
   --mobrix-ui-computed-codebox-background-light: var(
     --mobrix-ui-codebox-background-light,
-    var(--mobrix-ui-codebox-background, var(--mobrix-ui-computed-background-color-light))
+    var(
+      --mobrix-ui-codebox-background,
+      var(--mobrix-ui-computed-background-color-light)
+    )
   );
 
   --mobrix-ui-computed-codebox-text-color-light: var(
     --mobrix-ui-codebox-text-color-light,
-    var(--mobrix-ui-codebox-text-color, var(--mobrix-ui-computed-text-color-light))
+    var(
+      --mobrix-ui-codebox-text-color,
+      var(--mobrix-ui-computed-text-color-light)
+    )
   );
 
   --mobrix-ui-computed-codebox-background-dark: var(
     --mobrix-ui-codebox-background-dark,
-    var(--mobrix-ui-codebox-background, var(--mobrix-ui-computed-background-color-dark))
+    var(
+      --mobrix-ui-codebox-background,
+      var(--mobrix-ui-computed-background-color-dark)
+    )
   );
 
   --mobrix-ui-computed-codebox-text-color-dark: var(
     --mobrix-ui-codebox-text-color-dark,
-    var(--mobrix-ui-codebox-text-color, var(--mobrix-ui-computed-text-color-dark))
+    var(
+      --mobrix-ui-codebox-text-color,
+      var(--mobrix-ui-computed-text-color-dark)
+    )
   );
 
   /** Counter **/
-  --mobrix-ui-computed-counterbox-background-hover: var(
-    --mobrix-ui-checkbox-background-hover,
-    var(--mobrix-ui-counterbox-background)
-  );
-
   --mobrix-ui-computed-counterbox-background-light: var(
     --mobrix-ui-counterbox-background-light,
     var(
@@ -143,27 +161,33 @@
 
   --mobrix-ui-computed-counterbox-text-color-light: var(
     --mobrix-ui-counterbox-text-color-light,
-    var(--mobrix-ui-counterbox-text-color, var(--mobrix-ui-computed-text-color-light))
+    var(
+      --mobrix-ui-counterbox-text-color,
+      var(--mobrix-ui-computed-text-color-light)
+    )
   );
 
   --mobrix-ui-computed-counterbox-text-color-dark: var(
     --mobrix-ui-counterbox-text-color-dark,
-    var(--mobrix-ui-counterbox-text-color, var(--mobrix-ui-computed-text-color-dark))
+    var(
+      --mobrix-ui-counterbox-text-color,
+      var(--mobrix-ui-computed-text-color-dark)
+    )
   );
 
   --mobrix-ui-computed-counterbox-background-hover-light: var(
     --mobrix-ui-counterbox-background-hover-light,
     var(
-      --mobrix-ui-computed-counterbox-background-hover,
-      var(--mobrix-ui-default-background-color-hover-light)
+      --mobrix-ui-counterbox-background-hover,
+      var(--mobrix-ui-computed-background-color-hover-light)
     )
   );
 
   --mobrix-ui-computed-counterbox-background-hover-dark: var(
     --mobrix-ui-counterbox-background-hover-dark,
     var(
-      --mobrix-ui-computed-counterbox-background-hover,
-      var(--mobrix-ui-default-background-color-hover-dark)
+      --mobrix-ui-counterbox-background-hover,
+      var(--mobrix-ui-computed-background-color-hover-dark)
     )
   );
 
@@ -171,10 +195,7 @@
     --mobrix-ui-counterbox-text-color-hover-light,
     var(
       --mobrix-ui-counterbox-text-color-hover,
-      var(
-        --mobrix-ui-counterbox-text-color,
-        var(--mobrix-ui-default-text-color-hover-light)
-      )
+      var(--mobrix-ui-computed-text-color-hover-light)
     )
   );
 
@@ -182,10 +203,7 @@
     --mobrix-ui-counterbox-text-color-hover-dark,
     var(
       --mobrix-ui-counterbox-text-color-hover,
-      var(
-        --mobrix-ui-counterbox-text-color,
-        var(--mobrix-ui-default-text-color-hover-dark)
-      )
+      var(--mobrix-ui-computed-text-color-hover-dark)
     )
   );
 
@@ -216,17 +234,26 @@
 
   --mobrix-ui-computed-inputbox-background-dark: var(
     --mobrix-ui-inputbox-background-dark,
-    var(--mobrix-ui-inputbox-background, var(--mobrix-ui-computed-background-color-dark))
+    var(
+      --mobrix-ui-inputbox-background,
+      var(--mobrix-ui-computed-background-color-dark)
+    )
   );
 
   --mobrix-ui-computed-inputbox-text-color-light: var(
     --mobrix-ui-inputbox-text-color-light,
-    var(--mobrix-ui-inputbox-text-color, var(--mobrix-ui-computed-text-color-light))
+    var(
+      --mobrix-ui-inputbox-text-color,
+      var(--mobrix-ui-computed-text-color-light)
+    )
   );
 
   --mobrix-ui-computed-inputbox-text-color-dark: var(
     --mobrix-ui-inputbox-text-color-dark,
-    var(--mobrix-ui-inputbox-text-color, var(--mobrix-ui-computed-text-color-dark))
+    var(
+      --mobrix-ui-inputbox-text-color,
+      var(--mobrix-ui-computed-text-color-dark)
+    )
   );
 
   --mobrix-ui-computed-inputbox-background-hover-light: var(
@@ -270,7 +297,10 @@
   /** Label **/
   --mobrix-ui-computed-label-text-color-light: var(
     --mobrix-ui-label-text-color-light,
-    var(--mobrix-ui-label-text-color, var(--mobrix-ui-computed-text-color-light))
+    var(
+      --mobrix-ui-label-text-color,
+      var(--mobrix-ui-computed-text-color-light)
+    )
   );
 
   --mobrix-ui-computed-label-text-color-dark: var(
@@ -289,24 +319,19 @@
     var(--mobrix-ui-link-color, var(--mobrix-ui-computed-text-color-dark))
   );
 
-  --mobrix-ui-computed-link-color-hover: var(
-    --mobrix-ui-link-text-color-hover,
-    var(--mobrix-ui-custom-link-text-color)
-  );
-
   --mobrix-ui-computed-link-color-hover-light: var(
     --mobrix-ui-link-color-hover-light,
     var(
-      --mobrix-ui-computed-link-color-hover,
-      var(--mobrix-ui-text-color-hover-light)
+      --mobrix-ui-link-color-hover,
+      var(--mobrix-ui-computed-text-color-hover-light)
     )
   );
 
   --mobrix-ui-computed-link-color-hover-dark: var(
     --mobrix-ui-link-color-hover-dark,
     var(
-      --mobrix-ui-computed-link-color-hover,
-      var(--mobrix-ui-text-color-hover-dark)
+      --mobrix-ui-link-color-hover,
+      var(--mobrix-ui-computed-text-color-hover-dark)
     )
   );
 
@@ -362,7 +387,10 @@
   /** Rater **/
   --mobrix-ui-computed-rater-background-light: var(
     --mobrix-ui-rater-background-light,
-    var(--mobrix-ui-rater-background, var(--mobrix-ui-computed-background-light))
+    var(
+      --mobrix-ui-rater-background,
+      var(--mobrix-ui-computed-background-light)
+    )
   );
 
   --mobrix-ui-computed-rater-background-dark: var(
@@ -381,14 +409,17 @@
 
   --mobrix-ui-computed-selector-background-dark: var(
     --mobrix-ui-selector-background-dark,
-    var(--mobrix-ui-selector-background, var(--mobrix-ui-computed-background-color-dark))
+    var(
+      --mobrix-ui-selector-background,
+      var(--mobrix-ui-computed-background-color-dark)
+    )
   );
 
   --mobrix-ui-computed-selector-background-hover-light: var(
     --mobrix-ui-selector-background-hover-light,
     var(
       --mobrix-ui-selector-background-hover,
-      var(--mobrix-ui-background-hover-light)
+      var(--mobrix-ui-computed-background-hover-light)
     )
   );
 
@@ -396,7 +427,7 @@
     --mobrix-ui-selector-background-hover-dark,
     var(
       --mobrix-ui-selector-background-hover,
-      var(--mobrix-ui-background-hover-dark)
+      var(--mobrix-ui-computed-background-hover-dark)
     )
   );
 
@@ -414,7 +445,7 @@
     --mobrix-ui-selector-text-color-hover-light,
     var(
       --mobrix-ui-selector-text-color-hover,
-      var(--mobrix-ui-text-color-hover-light)
+      var(--mobrix-ui-computed-text-color-hover-light)
     )
   );
 
@@ -422,7 +453,7 @@
     --mobrix-ui-selector-text-color-hover-dark,
     var(
       --mobrix-ui-selector-text-color-hover,
-      var(--mobrix-ui-text-color-hover-dark)
+      var(--mobrix-ui-computed-text-color-hover-dark)
     )
   );
 
@@ -466,12 +497,18 @@
 
   --mobrix-ui-computed-slider-background-light: var(
     --mobrix-ui-slider-background-light,
-    var(--mobrix-ui-slider-background, var(--mobrix-ui-computed-background-light))
+    var(
+      --mobrix-ui-slider-background,
+      var(--mobrix-ui-computed-background-light)
+    )
   );
 
   --mobrix-ui-computed-slider-background-dark: var(
     --mobrix-ui-slider-background-dark,
-    var(--mobrix-ui-slider-background, var(--mobrix-ui-computed-background-dark))
+    var(
+      --mobrix-ui-slider-background,
+      var(--mobrix-ui-computed-background-dark)
+    )
   );
 
   /** Spinner **/
@@ -522,12 +559,18 @@
   /** Toggle **/
   --mobrix-ui-computed-toggle-background-light: var(
     --mobrix-ui-toggle-background-light,
-    var(--mobrix-ui-toggle-background, var(--mobrix-ui-computed-background-light))
+    var(
+      --mobrix-ui-toggle-background,
+      var(--mobrix-ui-computed-background-light)
+    )
   );
 
   --mobrix-ui-computed-toggle-background-dark: var(
     --mobrix-ui-toggle-background-dark,
-    var(--mobrix-ui-toggle-background, var(--mobrix-ui-computed-background-dark))
+    var(
+      --mobrix-ui-toggle-background,
+      var(--mobrix-ui-computed-background-dark)
+    )
   );
 
   --mobrix-ui-computed-toggle-icon-on-internal-color-light: var(

@@ -41,9 +41,9 @@ import component from "./component";
  */
 const RadioButton: RadioButtonComponent = ({
   value: inputValue,
-  onChange = () => { },
+  onChange = () => {},
   deselectable = true,
-  onKeyDown = () => { },
+  onKeyDown = () => {},
   additionalProps = {},
   ...commonProps
 }) =>
@@ -63,16 +63,20 @@ const RadioButton: RadioButtonComponent = ({
       return {
         commonProps: {
           ...commonProps,
-          onKeyDown: (e) => {
-            if (e.code === "Enter") {
-              callBack();
-            }
-            onKeyDown(e);
-          },
+          ...(!commonProps.disabled && {
+            onKeyDown: (e) => {
+              if (e.code === "Enter") {
+                callBack();
+              }
+              onKeyDown(e);
+            },
+          }),
         },
         additionalProps: {
           ...additionalProps,
-          onClick: callBack,
+          ...(!commonProps.disabled && {
+            onClick: callBack,
+          }),
         },
       };
     },

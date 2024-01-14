@@ -196,7 +196,7 @@
 }
 
 @media (hover) {
-  [data-mobrix-ui-id="drawer"]
+  [data-mobrix-ui-id="drawer"][data-mobrix-ui-enabled="true"]
     [data-mobrix-ui-class="drawer-close-button"]
     svg:hover {
     fill: var(--mobrix-ui-computed-drawer-arrow-hover);

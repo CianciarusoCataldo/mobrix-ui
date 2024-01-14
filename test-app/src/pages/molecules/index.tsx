@@ -12,7 +12,6 @@ import {
   Button,
   FormField,
   Carousel,
-  Form,
   List,
   ExpandableContainer,
   Modal,
@@ -190,6 +189,10 @@ const MoleculesPage = () => {
               body="Card unstyled noDividers"
               footer="footer"
             />
+            <div style={{ marginTop: "20px" }} />{" "}
+            <Card disabled header="header" body="body" footer="footer" />{" "}
+            <div style={{ marginTop: "20px" }} />
+            <Card dark disabled header="header" body="body" footer="footer" />
           </div>
         }
         name="Card"
@@ -213,6 +216,23 @@ const MoleculesPage = () => {
                 <img alt="" src={Elem2} width="250px" height="250px" />,
               ]}
             />
+            <Carousel
+              disabled
+              elements={[
+                <img alt="" src={Elem0} width="250px" height="250px" />,
+                <img alt="" src={Elem1} width="250px" height="250px" />,
+                <img alt="" src={Elem2} width="250px" height="250px" />,
+              ]}
+            />
+            <Carousel
+              dark
+              disabled
+              elements={[
+                <img alt="" src={Elem0} width="250px" height="250px" />,
+                <img alt="" src={Elem1} width="250px" height="250px" />,
+                <img alt="" src={Elem2} width="250px" height="250px" />,
+              ]}
+            />
           </>
         }
       />
@@ -223,6 +243,10 @@ const MoleculesPage = () => {
             <Dropdown elements={["el 1", "el 2", "el 3"]} />
             <div style={{ marginTop: "20px" }} />
             <Dropdown dark elements={["el 1", "el 2", "el 3"]} />
+            <div style={{ marginTop: "20px" }} />
+            <Dropdown disabled elements={["el 1", "el 2", "el 3"]} />
+            <div style={{ marginTop: "20px" }} />
+            <Dropdown disabled dark elements={["el 1", "el 2", "el 3"]} />
           </div>
         }
       />
@@ -354,6 +378,21 @@ const MoleculesPage = () => {
               body="body"
               footer="footer"
             />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              disabled
+              header="header"
+              body="body"
+              footer="footer"
+            />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              disabled
+              dark
+              header="header"
+              body="body"
+              footer="footer"
+            />
           </div>
         }
         name="DismissableCard"
@@ -382,6 +421,44 @@ const MoleculesPage = () => {
               </div>
             </ExpandableContainer>
             <ExpandableContainer
+              dark
+              expanded={
+                <div>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                </div>
+              }
+            >
+              <div>
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+              </div>
+            </ExpandableContainer>
+
+            <ExpandableContainer
+              disabled
+              expanded={
+                <div>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                </div>
+              }
+            >
+              <div>
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+              </div>
+            </ExpandableContainer>
+            <ExpandableContainer
+              disabled
               dark
               expanded={
                 <div>
@@ -439,64 +516,6 @@ const MoleculesPage = () => {
         )}
       />
       <ComponentDemo
-        name="Form"
-        Component={
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <Form
-              title="Test Form"
-              submitLabel={"submit"}
-              fields={{
-                field1: {
-                  placeholder: "placeholder",
-                  header: "text",
-                },
-                field2: {
-                  placeholder: "placeholder",
-                  type: "boolean",
-                  header: "boolean",
-                },
-                field3: {
-                  placeholder: "placeholder",
-                  type: "numeric",
-                  header: "numeric",
-                },
-                field4: {
-                  placeholder: "placeholder",
-                  type: "radio",
-                  header: "radio",
-                },
-              }}
-            />
-            <Form
-              title="Test Form"
-              dark
-              submitLabel={"submit"}
-              fields={{
-                field1: {
-                  placeholder: "placeholder",
-                  header: "text",
-                },
-                field2: {
-                  placeholder: "placeholder",
-                  type: "boolean",
-                  header: "boolean",
-                },
-                field3: {
-                  placeholder: "placeholder",
-                  type: "numeric",
-                  header: "numeric",
-                },
-                field4: {
-                  placeholder: "placeholder",
-                  type: "radio",
-                  header: "radio",
-                },
-              }}
-            />
-          </div>
-        }
-      />
-      <ComponentDemo
         name="List"
         Component={
           <>
@@ -531,14 +550,6 @@ const MoleculesPage = () => {
             <Popup hide={!isPopupVisible}>
               <div>Content</div>
             </Popup>
-            {/* <div style={{ height: "10px" }} />
-            <Popup dark hide={!isPopupVisible}>
-              <div>Content</div>
-            </Popup>
-            <div style={{ height: "10px" }} />
-            <Popup noBackground hide={!isPopupVisible}>
-              <div>Content</div>
-            </Popup> */}
           </div>
         }
       />
@@ -564,11 +575,31 @@ const MoleculesPage = () => {
                 { text: "textPosition = bottom", textPosition: "bottom" },
               ]}
             />
+            <RadioButtonGroup
+              disabled
+              buttons={[
+                { text: "textPosition = left", textPosition: "left" },
+                { text: "textPosition = top", textPosition: "top" },
+                { text: "textPosition = right", textPosition: "right" },
+                { text: "textPosition = bottom", textPosition: "bottom" },
+              ]}
+            />
+            <RadioButtonGroup
+              disabled
+              dark
+              horizontal
+              buttons={[
+                { text: "textPosition = left", textPosition: "left" },
+                { text: "textPosition = top", textPosition: "top" },
+                { text: "textPosition = right", textPosition: "right" },
+                { text: "textPosition = bottom", textPosition: "bottom" },
+              ]}
+            />
           </div>
         }
       />
       <ComponentDemo
-        name="RadioButtonGroup"
+        name="Review"
         Component={
           <div>
             <Review
@@ -643,6 +674,24 @@ const MoleculesPage = () => {
               dark
               user="User"
               logo="linkedin"
+              rate={4}
+              description="description"
+              icon={userIcon}
+            />
+            <Review
+              disabled
+              user="User"
+              rate={4}
+              url="https://github.com"
+              logo="link"
+              description="description"
+              icon={userIcon}
+            />
+            <Review
+              dark
+              disabled
+              user="User"
+              logo="link"
               rate={4}
               description="description"
               icon={userIcon}

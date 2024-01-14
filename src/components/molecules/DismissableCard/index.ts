@@ -36,7 +36,8 @@ const DismissableCard: DismissableCardComponent = ({
         footer,
         dark: commonProps.dark,
         alwaysVisible,
-        onClose
+        onClose,
+        disabled: commonProps.disabled,
       }),
     additionalProps,
     props: (value, setValue) => ({

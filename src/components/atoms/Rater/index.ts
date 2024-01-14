@@ -67,10 +67,11 @@ const Rater: RaterComponent = ({
         onChange,
         value,
         setValue,
+        disabled: commonProps.disabled,
       }),
     additionalProps: {
       ...additionalProps,
-      "data-mobrix-ui-vertical": vertical
+      "data-mobrix-ui-vertical": vertical,
     },
     commonProps,
   });

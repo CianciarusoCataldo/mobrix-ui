@@ -76,6 +76,7 @@ const Review: ReviewComponent = ({
       url,
       logo,
       rateType,
+      disabled: commonProps.disabled,
     }),
   });
 

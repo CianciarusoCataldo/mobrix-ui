@@ -37,6 +37,12 @@
   --mobrix-ui-computed-datepicker-text-color: var(
     --mobrix-ui-computed-datepicker-text-color-light
   );
+  --mobrix-ui-computed-datepicker-icon-hover: var(
+    --mobrix-ui-computed-datepicker-icon-hover-light
+  );
+  --mobrix-ui-computed-datepicker-icon: var(
+    --mobrix-ui-computed-datepicker-icon-light
+  );
 
   /** Drawer **/
   --mobrix-ui-computed-drawer-background: var(
@@ -109,6 +115,13 @@
   );
   --mobrix-ui-computed-datepicker-text-color: var(
     --mobrix-ui-computed-datepicker-text-color-dark
+  );
+  --mobrix-ui-computed-datepicker-icon: var(
+    --mobrix-ui-computed-datepicker-icon-dark
+  );
+
+  --mobrix-ui-computed-datepicker-icon-hover: var(
+    --mobrix-ui-computed-datepicker-icon-hover-dark
   );
 
   /** Drawer **/

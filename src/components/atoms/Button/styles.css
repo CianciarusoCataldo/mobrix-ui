@@ -25,10 +25,6 @@
   transition-property: transform;
 }
 
-[data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="false"] {
-  opacity: 0.5;
-}
-
 @media (hover) {
   [data-mobrix-ui-id="button"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="true"][data-mobrix-ui-animated="true"][data-mobrix-ui-hover="true"]:hover {
     position: relative;

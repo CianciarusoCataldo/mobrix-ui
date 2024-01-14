@@ -22,12 +22,13 @@ const CalendarComponent: MobrixUiReactiveComponent<
 > = ({
   value,
   shadow,
+  disabled,
   today: todayDate,
   hideArrows,
   days = defaultDays,
   months: customMonths = defaultMonths,
-  onViewChange = () => { },
-  onChange = () => { },
+  onViewChange = () => {},
+  onChange = () => {},
   startYear,
   startMonth,
   fromToday = true,
@@ -37,142 +38,160 @@ const CalendarComponent: MobrixUiReactiveComponent<
   labelProps = {},
   ...commonProps
 }) => {
-    const customProps = labelClassName ? { className: labelClassName, ...labelProps } : labelProps
-    const year = startYear && startYear > 0 ? startYear : todayDate.year;
-    const month =
+  const customProps = labelClassName
+    ? { className: labelClassName, ...labelProps }
+    : labelProps;
+  const year = startYear && startYear > 0 ? startYear : todayDate.year;
+  const month =
+    startMonth !== undefined && startMonth >= 0 && startMonth <= 11
+      ? startMonth
+      : todayDate.month;
+
+  const [onScreenDate, displayDate] = React.useState<{
+    month: number;
+    year: number;
+  }>({
+    year,
+    month,
+  });
+
+  React.useEffect(() => {
+    const actualYear = startYear && startYear > 0 ? startYear : todayDate.year;
+    const actualMonth =
       startMonth !== undefined && startMonth >= 0 && startMonth <= 11
         ? startMonth
         : todayDate.month;
 
-    const [onScreenDate, displayDate] = React.useState<{
-      month: number;
-      year: number;
-    }>({
-      year,
-      month,
-    });
+    displayDate({ month: actualMonth, year: actualYear });
+  }, [startMonth, startYear]);
 
-    React.useEffect(() => {
-      const actualYear = startYear && startYear > 0 ? startYear : todayDate.year;
-      const actualMonth =
-        startMonth !== undefined && startMonth >= 0 && startMonth <= 11
-          ? startMonth
-          : todayDate.month;
+  const months = getMonthsDuration(onScreenDate.year);
 
-      displayDate({ month: actualMonth, year: actualYear });
-    }, [startMonth, startYear]);
+  const basicMatrix = getDateMatrix({ ...onScreenDate, day: 1 }, months);
 
-    const months = getMonthsDuration(onScreenDate.year);
-
-    const basicMatrix = getDateMatrix({ ...onScreenDate, day: 1 }, months);
-
-    const arrowActions: Record<"left" | "right", () => void> = {
-      left: () =>
-        onScreenDate.month > 0
-          ? displayDate({
+  const arrowActions: Record<"left" | "right", () => void> = {
+    left: () =>
+      onScreenDate.month > 0
+        ? displayDate({
             ...onScreenDate,
             month: onScreenDate.month - 1,
           })
-          : displayDate({ year: onScreenDate.year - 1, month: 11 }),
-      right: () =>
-        onScreenDate.month < 11
-          ? displayDate({
+        : displayDate({ year: onScreenDate.year - 1, month: 11 }),
+    right: () =>
+      onScreenDate.month < 11
+        ? displayDate({
             ...onScreenDate,
             month: onScreenDate.month + 1,
           })
-          : displayDate({ year: onScreenDate.year + 1, month: 0 }),
-    };
-
-    const getArrowButton = (direction: "left" | "right") => (
-      <Button
-        onClick={() => {
-          arrowActions[direction]();
-          onViewChange({ ...onScreenDate, day: 1 });
-        }}
-        hide={hideArrows}
-        dark={commonProps.dark}
-        unstyled
-        key={"arrow_" + direction}
-        additionalProps={{
-          "data-mobrix-ui-calendar-arrow": direction,
-          "data-mobrix-ui-test": "arrow_" + direction
-        }}
-        {...customProps}
-      >
-        {arrowIcon}
-      </Button>
-    );
-
-    let components: JSX.Element[] = [];
-
-    dayLabel &&
-      components.push(
-        <div data-mobrix-ui-class="top-selector" key="date_top_selector">
-          {getArrowButton("left")}
-          <Label additionalProps={{
-            "data-mobrix-ui-class": "actual-date"
-          }} dark={commonProps.dark}
-            {...customProps}
-          >{`${customMonths[onScreenDate.month]
-            } ${onScreenDate.year}`}</Label>
-          {getArrowButton("right")}
-        </div>
-      );
-
-    components.push(
-      <Table
-        key="calendar_table"
-        additionalProps={{
-          "data-mobrix-ui-calendar-table": "true",
-          "data-mobrix-ui-test": "calendar-table",
-        }}
-        propsCallback={(row, column) => {
-          if (row > 0) {
-            const isDisabled = fromToday ?
-              (onScreenDate.year < todayDate.year ||
-                (onScreenDate.year === todayDate.year &&
-                  onScreenDate.month < todayDate.month) ||
-                (onScreenDate.year === todayDate.year &&
-                  onScreenDate.month === todayDate.month &&
-                  basicMatrix[row - 1][column] < todayDate.dayOfTheMonth)) : false
-
-            const isNotDay = basicMatrix[row - 1][column] <= 0
-
-            const extraProps = !isDisabled && !isNotDay ? {
-              onClick: () => {
-                onChange({ ...onScreenDate, dayOfTheMonth: basicMatrix[row - 1][column], day: basicMatrix[row - 1][column] });
-                setValue({
-                  month: onScreenDate.month,
-                  year: onScreenDate.year,
-                  day: basicMatrix[row - 1][column],
-                });
-              }
-            } : {}
-
-            return ({
-              "data-mobrix-ui-calendar-today":
-                fromToday &&
-                basicMatrix[row - 1][column] === todayDate.dayOfTheMonth &&
-                onScreenDate.month === todayDate.month &&
-                onScreenDate.year === todayDate.year,
-              "data-mobrix-ui-selected": value.year === onScreenDate.year &&
-                value.month === onScreenDate.month &&
-                value.day === basicMatrix[row - 1][column],
-              "data-mobrix-ui-disabled": (isDisabled || isNotDay),
-              ...extraProps
-            })
-          } else return {}
-        }}
-        unstyled={commonProps.unstyled}
-        shadow={shadow}
-        dark={commonProps.dark}
-        headers
-        rows={[days.map((dayName) => dayName.slice(0, 3)), ...basicMatrix.map(row => row.map(element => element > 0 ? String(element) : ""))]}
-
-      />
-    );
-
-    return components;
+        : displayDate({ year: onScreenDate.year + 1, month: 0 }),
   };
+
+  const getArrowButton = (direction: "left" | "right") => (
+    <Button
+      disabled={disabled}
+      onClick={() => {
+        arrowActions[direction]();
+        onViewChange({ ...onScreenDate, day: 1 });
+      }}
+      hide={hideArrows}
+      dark={commonProps.dark}
+      unstyled
+      key={"arrow_" + direction}
+      additionalProps={{
+        "data-mobrix-ui-calendar-arrow": direction,
+        "data-mobrix-ui-test": "arrow_" + direction,
+      }}
+      {...customProps}
+    >
+      {arrowIcon}
+    </Button>
+  );
+
+  let components: JSX.Element[] = [];
+
+  dayLabel &&
+    components.push(
+      <div data-mobrix-ui-class="top-selector" key="date_top_selector">
+        {getArrowButton("left")}
+        <Label
+          additionalProps={{
+            "data-mobrix-ui-class": "actual-date",
+          }}
+          dark={commonProps.dark}
+          {...customProps}
+        >{`${customMonths[onScreenDate.month]} ${onScreenDate.year}`}</Label>
+        {getArrowButton("right")}
+      </div>
+    );
+
+  components.push(
+    <Table
+      disabled={disabled}
+      key="calendar_table"
+      additionalProps={{
+        "data-mobrix-ui-calendar-table": "true",
+        "data-mobrix-ui-test": "calendar-table",
+      }}
+      propsCallback={(row, column) => {
+        if (row > 0) {
+          const isDisabled = fromToday
+            ? onScreenDate.year < todayDate.year ||
+              (onScreenDate.year === todayDate.year &&
+                onScreenDate.month < todayDate.month) ||
+              (onScreenDate.year === todayDate.year &&
+                onScreenDate.month === todayDate.month &&
+                basicMatrix[row - 1][column] < todayDate.dayOfTheMonth)
+            : false;
+
+          const isNotDay = basicMatrix[row - 1][column] <= 0;
+
+          const extraProps =
+            !disabled && !isDisabled && !isNotDay
+              ? {
+                  onClick: () => {
+                    onChange({
+                      ...onScreenDate,
+                      dayOfTheMonth: basicMatrix[row - 1][column],
+                      day: basicMatrix[row - 1][column],
+                    });
+                    setValue({
+                      month: onScreenDate.month,
+                      year: onScreenDate.year,
+                      day: basicMatrix[row - 1][column],
+                    });
+                  },
+                }
+              : {};
+
+          return {
+            "data-mobrix-ui-calendar-today":
+              fromToday &&
+              basicMatrix[row - 1][column] === todayDate.dayOfTheMonth &&
+              onScreenDate.month === todayDate.month &&
+              onScreenDate.year === todayDate.year,
+            "data-mobrix-ui-selected":
+              value.year === onScreenDate.year &&
+              value.month === onScreenDate.month &&
+              value.day === basicMatrix[row - 1][column],
+            "data-mobrix-ui-disabled": isDisabled || isNotDay,
+            ...extraProps,
+          };
+        } else return {};
+      }}
+      unstyled={commonProps.unstyled}
+      shadow={shadow}
+      dark={commonProps.dark}
+      headers
+      rows={[
+        days.map((dayName) => dayName.slice(0, 3)),
+        ...basicMatrix.map((row) =>
+          row.map((element) => (element > 0 ? String(element) : ""))
+        ),
+      ]}
+    />
+  );
+
+  return components;
+};
 
 export default CalendarComponent;

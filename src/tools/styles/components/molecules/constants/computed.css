@@ -230,7 +230,7 @@
     --mobrix-ui-dropdown-background-hover-light,
     var(
       --mobrix-ui-computed-internal-dropdown-background-hover,
-      var(--mobrix-ui-background-hover-light)
+      var(--mobrix-ui-computed-background-hover-light)
     )
   );
 
@@ -238,7 +238,7 @@
     --mobrix-ui-dropdown-background-hover-dark,
     var(
       --mobrix-ui-computed-internal-dropdown-background-hover,
-      var(--mobrix-ui-background-hover-dark)
+      var(--mobrix-ui-computed-background-hover-dark)
     )
   );
 
@@ -256,7 +256,7 @@
     --mobrix-ui-dropdown-text-color-hover-light,
     var(
       --mobrix-ui-computed-internal-dropdown-text-color-hover,
-      var(--mobrix-ui-text-color-hover-light)
+      var(--mobrix-ui-computed-text-color-hover-light)
     )
   );
 
@@ -317,14 +317,14 @@
     --mobrix-ui-expandable-container-arrow-color-hover-light,
     var(
       --mobrix-ui-expandable-container-arrow-color-hover,
-      var(--mobrix-ui-text-color-hover-light)
+      var(--mobrix-ui-computed-text-color-hover-light)
     )
   );
   --mobrix-ui-computed-expandable-container-arrow-color-hover-dark: var(
     --mobrix-ui-expandable-container-arrow-color-hover-dark,
     var(
       --mobrix-ui-expandable-container-arrow-color-hover,
-      var(--mobrix-ui-text-color-hover-dark)
+      var(--mobrix-ui-computed-text-color-hover-dark)
     )
   );
 
@@ -408,14 +408,14 @@
     --mobrix-ui-list-text-color-hover-light,
     var(
       --mobrix-ui-list-text-color-hover,
-      var(--mobrix-ui-text-color-hover-light)
+      var(--mobrix-ui-computed-text-color-hover-light)
     )
   );
   --mobrix-ui-computed-list-text-color-hover-dark: var(
     --mobrix-ui-list-text-color-hover-dark,
     var(
       --mobrix-ui-list-text-color-hover,
-      var(--mobrix-ui-text-color-hover-dark)
+      var(--mobrix-ui-computed-text-color-hover-dark)
     )
   );
 

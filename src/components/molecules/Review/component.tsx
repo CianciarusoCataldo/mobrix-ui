@@ -21,6 +21,7 @@ const reviewComponent: MoBrixUiComponent<ReviewProps, BuilderComponent[]> = ({
   url,
   logo,
   rateType,
+  disabled,
 }) => {
   const selectedLogo =
     logo && allowedLogoTypes.includes(logo) ? logo : "default";
@@ -28,7 +29,7 @@ const reviewComponent: MoBrixUiComponent<ReviewProps, BuilderComponent[]> = ({
   return [
     <div key="url" data-mobrix-ui-class="review-url-container">
       {url ? (
-        <Link newTab to={url}>
+        <Link newTab to={url} disabled={disabled}>
           {icons[selectedLogo]}
         </Link>
       ) : (
@@ -40,9 +41,12 @@ const reviewComponent: MoBrixUiComponent<ReviewProps, BuilderComponent[]> = ({
         <div data-mobrix-ui-class="review-photo">{icon}</div>
         {user && <span data-mobrix-ui-class="review-username">{user}</span>}
       </div>
-      {description && <span data-mobrix-ui-class="review-description">{description}</span>}
+      {description && (
+        <span data-mobrix-ui-class="review-description">{description}</span>
+      )}
     </div>,
     <Rater
+      disabled={disabled}
       key="rate"
       hide={!rate}
       type={rateType}

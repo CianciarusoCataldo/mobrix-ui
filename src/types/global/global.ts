@@ -8,7 +8,6 @@ export type MobBrixAnimation = "fadeIn" | "fadeOut" | "slideIn" | "slideOut";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=components-building-process
  * */
 export interface CommonProps {
-
   /** React key, the standard {@link https://reactjs.org/docs/lists-and-keys.html key parameter} */
   key?: string;
 
@@ -63,7 +62,7 @@ export interface CommonProps {
   /** callback called when a key is pressed when inside the component */
   onKeyDown?: (keyEvent: any) => void;
 
-  additionalProps?: Record<string, any>
+  additionalProps?: Record<string, any>;
 }
 
 /**
@@ -112,7 +111,7 @@ export interface GenericInputComponent {
 }
 
 export interface AutoResizableComponent {
-  autoresizable?: boolean
+  autoresizable?: boolean;
 }
 
 /**
@@ -211,7 +210,8 @@ export type Wrappers =
   | "input"
   | "select"
   | "table"
-  | "textarea";
+  | "textarea"
+  | "span";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} components builder props
@@ -303,10 +303,11 @@ export type MobrixUiReactiveComponentBuilder<
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type MobrixUiReactiveComponent<T = any, K = any, ReturnType = BuilderComponent | BuilderComponent[]> = MoBrixUiComponent<
-  MobrixUiReactiveComponentProps<T, K>,
-  ReturnType
->;
+export type MobrixUiReactiveComponent<
+  T = any,
+  K = any,
+  ReturnType = BuilderComponent | BuilderComponent[]
+> = MoBrixUiComponent<MobrixUiReactiveComponentProps<T, K>, ReturnType>;
 
 export type DeepPartial<T> = {
   [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];

@@ -14,171 +14,182 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
   DropdownProps
 > = ({
   elements = [],
-  onChange = () => { },
+  onChange = () => {},
   value,
   hideArrow,
   dark,
+  disabled,
   setValue,
   shadow,
   /* istanbul ignore next */
-  onFocusLost = () => { },
+  onFocusLost = () => {},
   ...commonProps
 }) => {
-    const [isVisible, setVisible] = React.useState(false);
-    const [selected, selectItem] = React.useState<number>(-2);
-    const selectedItem = elements[value] || <div />;
+  const [isVisible, setVisible] = React.useState(false);
+  const [selected, selectItem] = React.useState<number>(-2);
+  const selectedItem = elements[value] || <div />;
 
-    const keyDownCallback = (visibility: boolean) => {
-      isVisible !== visibility && setVisible(visibility);
-      selectItem(-1);
-    };
+  const keyDownCallback = (visibility: boolean) => {
+    isVisible !== visibility && setVisible(visibility);
+    selectItem(-1);
+  };
 
-    /* istanbul ignore next */
-    const onFocusLostCallback = () => {
-      onFocusLost();
-      keyDownCallback(false);
-    };
+  /* istanbul ignore next */
+  const onFocusLostCallback = () => {
+    onFocusLost();
+    keyDownCallback(false);
+  };
 
-    return {
-      commonProps: {
-        ...commonProps,
-        dark,
-        shadow,
-        onFocusLost: onFocusLostCallback,
-        onKeyDown: (e) => {
-          let actualSelected = selected;
-          switch (e.code) {
-            /* istanbul ignore next */
-            case "Tab": {
-              if (
-                (e.shiftKey && actualSelected === 0) ||
-                actualSelected === elements.length - 1
-              ) {
-                keyDownCallback(false);
-              }
-              break;
+  return {
+    commonProps: {
+      ...commonProps,
+      dark,
+      shadow,
+      onFocusLost: onFocusLostCallback,
+      onKeyDown: (e) => {
+        let actualSelected = selected;
+        switch (e.code) {
+          /* istanbul ignore next */
+          case "Tab": {
+            if (
+              (e.shiftKey && actualSelected === 0) ||
+              actualSelected === elements.length - 1
+            ) {
+              keyDownCallback(false);
             }
-            case "Enter": {
-              if (selected > -1) {
-                onChange(selected);
-                setValue(selected);
-                keyDownCallback(false);
-                return;
-              } else {
-                setVisible(!isVisible);
-              }
-              e.preventDefault();
-              break;
+            break;
+          }
+          case "Enter": {
+            if (selected > -1) {
+              onChange(selected);
+              setValue(selected);
+              keyDownCallback(false);
+              return;
+            } else {
+              setVisible(!isVisible);
             }
+            e.preventDefault();
+            break;
+          }
 
-            case "Escape": {
+          case "Escape": {
+            keyDownCallback(false);
+            return;
+          }
+
+          case "ArrowUp": {
+            if (actualSelected === 0) {
               keyDownCallback(false);
               return;
             }
-
-            case "ArrowUp": {
-              if (actualSelected === 0) {
-                keyDownCallback(false);
-                return;
-              }
-              actualSelected -= 1;
-              break;
-            }
-
-            case "ArrowDown": {
-              if (actualSelected === elements.length - 1) {
-                keyDownCallback(false);
-                return;
-              }
-              if (!isVisible) {
-                setVisible(true);
-              }
-              actualSelected += 1;
-              break;
-            }
+            actualSelected -= 1;
+            break;
           }
 
-          actualSelected !== selected && selectItem(actualSelected);
-        },
+          case "ArrowDown": {
+            if (actualSelected === elements.length - 1) {
+              keyDownCallback(false);
+              return;
+            }
+            if (!isVisible) {
+              setVisible(true);
+            }
+            actualSelected += 1;
+            break;
+          }
+        }
+
+        actualSelected !== selected && selectItem(actualSelected);
       },
-      Component: [
-        <Button
-          unstyled
-          onClick={() => {
-            keyDownCallback(!isVisible);
-          }}
-          dark={dark}
-          additionalProps={{
-            "data-mobrix-ui-class": "button",
-            "data-mobrix-ui-test": "options_menu"
-          }}
-          key="options-menu"
-          a11y={false}
+    },
+    Component: [
+      <Button
+        disabled={disabled}
+        unstyled
+        onClick={() => {
+          keyDownCallback(!isVisible);
+        }}
+        dark={dark}
+        additionalProps={{
+          "data-mobrix-ui-class": "button",
+          "data-mobrix-ui-test": "options_menu",
+        }}
+        key="options-menu"
+        a11y={false}
+      >
+        <div
+          tabIndex={-1}
+          key="dropdown_selected_element_label"
+          data-mobrix-ui-class="dropdown-selected-element"
         >
-          <div
-            tabIndex={-1}
-            key="dropdown_selected_element_label"
-            data-mobrix-ui-class="dropdown-selected-element"
-          >
-            {selectedItem}
-          </div>
-          <Container
-            hide={hideArrow}
-            dark={dark}
+          {selectedItem}
+        </div>
+        <Container
+          hide={hideArrow}
+          dark={dark}
+          unstyled
+          key="icon"
+          disabled={disabled}
+          a11y={false}
+          additionalProps={{
+            "data-mobrix-ui-class": "icon",
+            "data-mobrix-ui-rotate": isVisible,
+          }}
+        >
+          <p tabIndex={-1}>
+            <i
+              data-mobrix-ui-class="arrow-icon"
+              data-mobrix-ui-enabled={!disabled}
+            ></i>
+          </p>
+        </Container>
+      </Button>,
+      <Popup
+        key="options"
+        shadow={shadow}
+        disabled={disabled}
+        dark={dark}
+        hide={!isVisible}
+        a11y={false}
+        additionalProps={{
+          "data-mobrix-ui-class": "options",
+        }}
+      >
+        {elements.map((item, index) => (
+          <Button
             unstyled
-            key="icon"
-            a11y={false}
+            disabled={disabled}
+            onFocus={() => {
+              selectItem(index);
+            }}
+            onClick={() => {
+              onChange(index);
+              setValue(index);
+              keyDownCallback(false);
+            }}
+            key={`item_${index}`}
             additionalProps={{
-              "data-mobrix-ui-class": "icon",
-              "data-mobrix-ui-rotate": isVisible
+              "data-mobrix-ui-class": "regular",
+              "data-mobrix-ui-first": index === 0,
+              "data-mobrix-ui-last": index === elements.length - 1,
+              "data-mobrix-ui-selected": selected === index,
+              "data-mobrix-ui-test": `dropdown_option_${index}`,
             }}
           >
-            <p tabIndex={-1}>
-              <i data-mobrix-ui-class="arrow-icon"></i>
-            </p>
-          </Container>
-        </Button>,
-        <Popup
-          key="options"
-          shadow={shadow}
-          dark={dark}
-          hide={!isVisible}
-          a11y={false}
-          additionalProps={{
-            "data-mobrix-ui-class": "options"
-          }}
-        >
-          {elements.map((item, index) => (
-            <Button
+            <Container
               unstyled
-              onFocus={() => {
-                selectItem(index);
-              }}
-              onClick={() => {
-                onChange(index);
-                setValue(index);
-                keyDownCallback(false);
-              }}
-              key={`item_${index}`}
+              dark={dark}
               additionalProps={{
-                "data-mobrix-ui-class": "regular",
-                "data-mobrix-ui-first": index === 0,
-                "data-mobrix-ui-last": index === elements.length - 1,
-                "data-mobrix-ui-selected": selected === index,
-                "data-mobrix-ui-test": `dropdown_option_${index}`
+                "data-mobrix-ui-class": "dropdown-element",
               }}
             >
-              <Container
-                unstyled
-                dark={dark}
-                additionalProps={{
-                  "data-mobrix-ui-class": "dropdown-element"
-                }}>{item}</Container>
-            </Button>
-          ))}
-        </Popup>,
-      ],
-    };
+              {item}
+            </Container>
+          </Button>
+        ))}
+      </Popup>,
+    ],
   };
+};
 
 export default DropdownInternalComponent;

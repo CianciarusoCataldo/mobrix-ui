@@ -54,13 +54,12 @@
   transform: rotate(180deg);
 }
 
-[data-mobrix-ui-id="expandable-container"]
-  [data-mobrix-ui-class="arrow"] {
+[data-mobrix-ui-id="expandable-container"] [data-mobrix-ui-class="arrow"] {
   fill: var(--mobrix-ui-computed-expandable-container-arrow-color);
 }
 
 @media (hover) {
-  [data-mobrix-ui-id="expandable-container"]
+  [data-mobrix-ui-id="expandable-container"][data-mobrix-ui-enabled="true"]
     [data-mobrix-ui-class="arrow"]:hover {
     fill: var(--mobrix-ui-computed-expandable-container-arrow-color-hover);
   }

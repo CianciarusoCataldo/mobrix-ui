@@ -44,7 +44,7 @@ import { buildMobrixUiReactiveComponent } from "../../../tools";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Counter: CounterComponent = ({
-  onChange = () => { },
+  onChange = () => {},
   value: inputValue,
   placeholder,
   readOnly,
@@ -61,6 +61,7 @@ const Counter: CounterComponent = ({
     props: (value, setValue) => ({
       additionalProps: {
         ...additionalProps,
+        disabled: commonProps.disabled,
         type: "number",
         value: value,
         placeholder,
@@ -77,6 +78,6 @@ const Counter: CounterComponent = ({
     }),
     commonProps,
   });
-}
+};
 
 export default Counter;

@@ -4,7 +4,7 @@
 }
 
 [data-mobrix-ui-id="label"][data-mobrix-ui-styled="true"][data-mobrix-ui-a11y="true"]:focus-visible {
-  color: var(--mobrix-ui-focus-color);
+  color: var(--mobrix-ui-computed-focus-color);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;

@@ -1,33 +1,23 @@
 [data-mobrix-ui-id]:not([data-mobrix-ui-dark="true"]) {
-  --mobrix-ui-background-color: var(
-    --mobrix-ui-custom-background-color-light,
-    var(--mobrix-ui-default-background-color-light)
+  --mobrix-ui-computed-background-color: var(
+    --mobrix-ui-computed-background-color-light
   );
 
-  --mobrix-ui-background: var(
-    --mobrix-ui-custom-background-light,
-    var(--mobrix-ui-default-background-light)
-  );
+  --mobrix-ui-computed-background: var(--mobrix-ui-computed-background-light);
 
-  --mobrix-ui-text-color: var(
-    --mobrix-ui-custom-text-color-light,
-    var(--mobrix-ui-default-text-color-light)
-  );
+  --mobrix-ui-computed-text-color: var(--mobrix-ui-computed-text-color-light);
+
+  --mobrix-ui-computed-focus-color: var(--mobrix-ui-computed-focus-color-light);
 }
 
 [data-mobrix-ui-id][data-mobrix-ui-dark="true"] {
-  --mobrix-ui-background-color: var(
-    --mobrix-ui-custom-background-color-dark,
-    var(--mobrix-ui-default-background-color-dark)
+  --mobrix-ui-computed-background-color: var(
+    --mobrix-ui-computed-background-color-dark
   );
 
-  --mobrix-ui-background: var(
-    --mobrix-ui-custom-background-dark,
-    var(--mobrix-ui-default-background-dark)
-  );
+  --mobrix-ui-computed-background: var(--mobrix-ui-computed-background-dark);
 
-  --mobrix-ui-text-color: var(
-    --mobrix-ui-custom-text-color-dark,
-    var(--mobrix-ui-default-text-color-dark)
-  );
+  --mobrix-ui-computed-text-color: var(--mobrix-ui-computed-text-color-dark);
+
+  --mobrix-ui-computed-focus-color: var(--mobrix-ui-computed-focus-color-dark);
 }

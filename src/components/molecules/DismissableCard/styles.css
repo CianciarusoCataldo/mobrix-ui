@@ -42,7 +42,7 @@
 }
 
 @media (hover) {
-  [data-mobrix-ui-id="dismissable-card"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]
+  [data-mobrix-ui-id="dismissable-card"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"][data-mobrix-ui-enabled="true"]
     [data-mobrix-ui-class="card-dismiss-button"]
     svg:hover
     path {

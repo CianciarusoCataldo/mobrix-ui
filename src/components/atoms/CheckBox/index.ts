@@ -43,9 +43,9 @@ import { DefaultCheckIcon } from "./icons";
  */
 const Checkbox: CheckBoxComponent = ({
   value: inputValue,
-  onChange = () => { },
+  onChange = () => {},
   icon,
-  onKeyDown = () => { },
+  onKeyDown = () => {},
   additionalProps = {},
   ...commonProps
 }) =>
@@ -55,20 +55,24 @@ const Checkbox: CheckBoxComponent = ({
     props: (actualValue, setValue) => ({
       commonProps: {
         ...commonProps,
-        onKeyDown: (e) => {
-          onKeyDown(e);
-          if (e.code === "Enter" || e.code === "Space") {
-            onChange(!actualValue);
-            setValue(!actualValue);
-          }
-        },
+        ...(!commonProps.disabled && {
+          onKeyDown: (e) => {
+            onKeyDown(e);
+            if (e.code === "Enter" || e.code === "Space") {
+              onChange(!actualValue);
+              setValue(!actualValue);
+            }
+          },
+        }),
       },
       additionalProps: {
         ...additionalProps,
-        onClick: () => {
-          onChange(!actualValue);
-          setValue(!actualValue);
-        },
+        ...(!commonProps.disabled && {
+          onClick: () => {
+            onChange(!actualValue);
+            setValue(!actualValue);
+          },
+        }),
       },
     }),
     inputValue,

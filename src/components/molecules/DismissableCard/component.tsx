@@ -23,6 +23,7 @@ const DismissableCardComponent: MobrixUiReactiveComponent<
   dark,
   onClose = () => {},
   alwaysVisible,
+  disabled,
 }) =>
   cardComponent({
     children,
@@ -39,6 +40,7 @@ const DismissableCardComponent: MobrixUiReactiveComponent<
               "data-mobrix-ui-class": "card-dismiss-button",
               "data-mobrix-ui-test": "card_dismiss_button",
             }}
+            disabled={disabled}
             onClick={() => {
               onClose();
               !alwaysVisible && setValue(true);

@@ -41,13 +41,11 @@
 }
 
 @media (hover) {
-  [data-mobrix-ui-id="tab-viewer"]
+  [data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-enabled="true"]
     [data-mobrix-ui-class="tabs-list"]
     [data-mobrix-ui-class="tab"]:not(
       [data-mobrix-ui-tab-viewer-selected="true"]
     ):hover {
-    background: var(
-      --mobrix-ui-computed-tab-viewer-background-inactive-hover
-    );
+    background: var(--mobrix-ui-computed-tab-viewer-background-inactive-hover);
   }
 }

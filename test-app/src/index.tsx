@@ -19,7 +19,7 @@ const tabs = <TabViewer
   tabSelectedClassName="demo-tab-selected"
   tabUnselectedClassName="demo-tab-unselected"
   //dark
-  selected={1}
+  selected={2}
   tabs={[
     {
       label: "Atoms",

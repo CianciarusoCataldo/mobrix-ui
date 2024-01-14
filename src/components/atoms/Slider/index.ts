@@ -44,7 +44,7 @@ import { buildMobrixUiReactiveComponent } from "../../../tools";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Slider: SliderComponent = ({
-  onChange = () => { },
+  onChange = () => {},
   value: inputValue,
   min,
   max,
@@ -60,6 +60,10 @@ const Slider: SliderComponent = ({
       "--mobrix-ui-slider-thumb-color": thumbColor,
     };
   }
+
+  if (commonProps.disabled) {
+  }
+
   return buildMobrixUiReactiveComponent<number>({
     name: "slider",
     commonProps,
@@ -81,9 +85,12 @@ const Slider: SliderComponent = ({
           min,
           max,
           readOnly,
+          disabled: commonProps.disabled,
           value: String(value),
-          onChange: callback,
-          onInput: callback,
+          ...(!commonProps.disabled && {
+            onChange: callback,
+            onInput: callback,
+          }),
           ...extraProps,
         },
       };

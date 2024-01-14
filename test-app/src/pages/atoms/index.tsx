@@ -52,11 +52,13 @@ const AtomsPage = () => {
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <Button >Button light not animated</Button>
+            <Button>Button light not animated</Button>
             <div style={{ marginTop: "20px" }} />
             <Button dark>Button dark not animated</Button>
             <div style={{ marginTop: "20px" }} />
-            <Button noBackground dark>Button dark not animated</Button>
+            <Button noBackground dark>
+              Button dark not animated
+            </Button>
             <div style={{ marginTop: "20px" }} />
             <Button animated>Button light animated</Button>
             <div style={{ marginTop: "20px" }} />
@@ -68,7 +70,11 @@ const AtomsPage = () => {
               Button dark animated disabled
             </Button>
             <div style={{ marginTop: "20px" }} />
-            <Button className="test-class" unstyled onClick={() => alert("clicked")}>
+            <Button
+              className="test-class"
+              unstyled
+              onClick={() => alert("clicked")}
+            >
               <svg
                 x={0}
                 y={0}
@@ -130,6 +136,10 @@ const AtomsPage = () => {
               icon={<img alt="" src={tick} width="30px" />}
               value={true}
             />
+            <div style={{ marginTop: "20px" }} />
+            <CheckBox disabled value={true} />
+            <div style={{ marginTop: "20px" }} />
+            <CheckBox dark disabled value={true} />
           </div>
         }
         name="CheckBox"
@@ -154,6 +164,10 @@ const AtomsPage = () => {
             <CodeBox noCopyButton unstyled value="npm i mobrix ui" />
             <div style={{ marginTop: "20px" }} />
             <CodeBox highlight unstyled value="npm i mobrix ui" />
+            <div style={{ marginTop: "20px" }} />
+            <CodeBox highlight disabled value="npm i mobrix ui" />
+            <div style={{ marginTop: "20px" }} />
+            <CodeBox highlight disabled dark value="npm i mobrix ui" />
           </div>
         }
         name="CodeBox"
@@ -174,6 +188,10 @@ const AtomsPage = () => {
             <Counter unstyled />
             <div style={{ marginTop: "20px" }} />
             <Counter unstyled value={35} />
+            <div style={{ marginTop: "20px" }} />
+            <Counter disabled value={35} />
+            <div style={{ marginTop: "20px" }} />
+            <Counter dark disabled value={35} />
           </div>
         }
         name="Counter"
@@ -206,6 +224,8 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Input disabled value="disabled" />
             <div style={{ marginTop: "20px" }} />
+            <Input dark disabled value="disabled" />
+            <div style={{ marginTop: "20px" }} />
             <Input dark />
             <div style={{ marginTop: "20px" }} />
             <Input dark value="text" />
@@ -225,6 +245,10 @@ const AtomsPage = () => {
             <Label dark children="text" />
             <div style={{ marginTop: "20px" }} />
             <Label unstyled children="text" />
+            <div style={{ marginTop: "20px" }} />
+            <Label disabled children="disabled" />
+            <div style={{ marginTop: "20px" }} />
+            <Label disabled dark children="disabled" />
           </div>
         }
         name="Label"
@@ -251,6 +275,21 @@ const AtomsPage = () => {
               unstyled
               children="text"
             />
+            <div style={{ marginTop: "20px" }} />
+            <Link
+              newTab
+              to="https://github.com/CianciarusoCataldo/mobrix-ui"
+              disabled
+              children="disabled"
+            />
+            <div style={{ marginTop: "20px" }} />
+            <Link
+              newTab
+              to="https://github.com/CianciarusoCataldo/mobrix-ui"
+              dark
+              disabled
+              children="disabled"
+            />
           </div>
         }
         name="Link"
@@ -269,6 +308,10 @@ const AtomsPage = () => {
             <RadioButton unstyled />
             <div style={{ marginTop: "20px" }} />
             <RadioButton unstyled deselectable={false} />
+            <div style={{ marginTop: "20px" }} />
+            <RadioButton disabled />
+            <div style={{ marginTop: "20px" }} />
+            <RadioButton dark disabled />
           </div>
         }
         name="RadioButton"
@@ -283,6 +326,10 @@ const AtomsPage = () => {
             <Rater dark value={4} readonly />
             <div style={{ marginTop: "20px" }} />
             <Rater vertical />
+            <div style={{ marginTop: "20px" }} />
+            <Rater disabled value={3} />
+            <div style={{ marginTop: "20px" }} />
+            <Rater disabled dark value={4} />
           </div>
         }
         name="Rater"
@@ -299,6 +346,10 @@ const AtomsPage = () => {
             <Selector dark elements={["el1", "el2"]} />
             <div style={{ marginTop: "20px" }} />
             <Selector unstyled elements={["el1", "el2"]} />
+            <div style={{ marginTop: "20px" }} />
+            <Selector disabled elements={["el1", "el2"]} />
+            <div style={{ marginTop: "20px" }} />
+            <Selector disabled dark elements={["el1", "el2"]} />
           </div>
         }
         name="Selector"
@@ -317,6 +368,10 @@ const AtomsPage = () => {
             <Slider unstyled />
             <div style={{ marginTop: "20px" }} />
             <Slider unstyled value={32} />
+            <div style={{ marginTop: "20px" }} />
+            <Slider disabled value={32} />
+            <div style={{ marginTop: "20px" }} />
+            <Slider disabled dark value={52} />
           </div>
         }
         name="Slider"
@@ -356,6 +411,10 @@ const AtomsPage = () => {
             <Toggle unstyled />
             <div style={{ marginTop: "20px" }} />
             <Toggle unstyled value={false} />
+            <div style={{ marginTop: "20px" }} />
+            <Toggle disabled />
+            <div style={{ marginTop: "20px" }} />
+            <Toggle disabled dark />
           </div>
         }
         name="Toggle"

@@ -20,7 +20,7 @@
 
 [data-mobrix-ui-id="date-picker"]
   [data-mobrix-ui-class="date-picker-element"]:focus-visible {
-  color: var(--mobrix-ui-focus-color);
+  color: var(--mobrix-ui-computed-focus-color);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
@@ -36,13 +36,7 @@
 [data-mobrix-ui-id="date-picker"][data-mobrix-ui-styled="true"]
   [data-mobrix-ui-class="calendar-icon"]
   path {
-  fill: var(--mobrix-ui-text-color);
-}
-
-[data-mobrix-ui-id="date-picker"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-class="calendar-icon"]:hover
-  path {
-  fill: var(--mobrix-ui-focus-color);
+  fill: var(--mobrix-ui-computed-datepicker-icon);
 }
 
 [data-mobrix-ui-id="date-picker"][data-mobrix-ui-styled="true"]
@@ -52,11 +46,11 @@
   padding: 0;
 }
 
-@media (hover: none) {
-  [data-mobrix-ui-id="date-picker"][data-mobrix-ui-styled="true"]
+@media (hover) {
+  [data-mobrix-ui-id="date-picker"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="true"]
     [data-mobrix-ui-class="calendar-icon"]:hover
     path {
-    fill: var(--mobrix-ui-text-color);
+    fill: var(--mobrix-ui-computed-datepicker-icon-hover);
   }
 }
 

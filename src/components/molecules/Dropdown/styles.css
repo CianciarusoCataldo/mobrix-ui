@@ -174,24 +174,16 @@
 }
 
 @media (hover) {
-  [data-mobrix-ui-id="dropdown"][data-mobrix-ui-styled="true"]
-    [data-mobrix-ui-class="button"]:hover,
-  [data-mobrix-ui-id="dropdown"][data-mobrix-ui-hover="true"]
+  [data-mobrix-ui-id="dropdown"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="true"]
+    [data-mobrix-ui-class="button"][data-mobrix-ui-enabled="true"]:hover,
+  [data-mobrix-ui-id="dropdown"][data-mobrix-ui-hover="true"][data-mobrix-ui-enabled="true"]
     [data-mobrix-ui-class="regular"]:hover {
     color: var(--mobrix-ui-computed-dropdown-text-color-hover);
     background: var(--mobrix-ui-computed-dropdown-background-hover);
   }
 
-  [data-mobrix-ui-id="dropdown"][data-mobrix-ui-hover="true"]
-    [data-mobrix-ui-class="icon"]:hover {
-    animation: pulse 0.7s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    transition-property: background-color, border-color, color, fill, stroke,
-      opacity, box-shadow, transform, filter, backdrop-filter;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
-  }
-
-  [data-mobrix-ui-id="dropdown"]:hover [data-mobrix-ui-class="arrow-icon"] {
+  [data-mobrix-ui-id="dropdown"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="true"]
+    [data-mobrix-ui-class="arrow-icon"]:hover {
     border-color: var(--mobrix-ui-computed-dropdown-arrow-color-hover);
   }
 }

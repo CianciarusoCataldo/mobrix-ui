@@ -9,9 +9,10 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
   type = "star",
   max,
   readonly,
-  onChange = () => { },
+  onChange = () => {},
   value: actualValue,
   setValue,
+  disabled,
 }) => {
   let startMax = max || 5;
 
@@ -39,10 +40,11 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
       <Button
         key={`vote_${i}`}
         unstyled
+        disabled={disabled}
         additionalProps={{
-          "data-mobrix-ui-test": `vote_${i}`
+          "data-mobrix-ui-test": `vote_${i}`,
         }}
-        {...(!readonly && {
+        {...(!(readonly || disabled) && {
           onClick: () => {
             let newVote: number = i + 1;
             setValue(newVote);
@@ -53,12 +55,11 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
           },
           onMouseLeave: () => {
             setHover(null);
-          }
+          },
         })}
       >
         {ICONS[type][iconToShow]}
-      </Button >
-
+      </Button>
     );
   }
 

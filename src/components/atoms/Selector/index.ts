@@ -46,7 +46,7 @@ import selectorComponent from "./component";
 const Selector: SelectorComponent = ({
   elements,
   value: inputValue,
-  onChange = () => { },
+  onChange = () => {},
   additionalProps = {},
   optionClassName,
   ...commonProps
@@ -57,10 +57,10 @@ const Selector: SelectorComponent = ({
     defaultValue: undefined,
     inputValue,
     commonProps,
-    props: (value, setValue) =>
-    ({
+    props: (value, setValue) => ({
       additionalProps: {
         ...additionalProps,
+        disabled: commonProps.disabled,
         value,
         onChange: (e) => {
           onChange(e.target.value);

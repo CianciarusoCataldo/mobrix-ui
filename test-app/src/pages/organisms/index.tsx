@@ -3,6 +3,7 @@ import {
   Calendar,
   Container,
   DatePicker,
+  Form,
   Label,
 } from "../../mobrix-ui-preview";
 
@@ -53,6 +54,8 @@ const AtomsPage = () => {
             <Calendar />
             <Calendar dark fromToday={false} />
             <Calendar dark />
+            <Calendar disabled />
+            <Calendar disabled dark />
           </div>
         }
         name="Calendar"
@@ -66,19 +69,128 @@ const AtomsPage = () => {
               labelClassName="calendar-test-label"
             />
             <DatePicker calendarProps={{ dark: true }} />
-            <DatePicker
-              animated
-              dark
-              fromToday={false}
-            />
+            <DatePicker animated dark fromToday={false} />
             <DatePicker
               dark
               noBackground
               calendarProps={{ noBackground: true }}
             />
+            <DatePicker animated disabled />
+            <DatePicker dark disabled animated />
           </div>
         }
         name="DatePicker"
+      />
+      <ComponentDemo
+        name="Form"
+        Component={
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <Form
+              title="Test Form"
+              submitLabel={"submit"}
+              fields={{
+                field1: {
+                  placeholder: "placeholder",
+                  header: "text",
+                },
+                field2: {
+                  placeholder: "placeholder",
+                  type: "boolean",
+                  header: "boolean",
+                },
+                field3: {
+                  placeholder: "placeholder",
+                  type: "numeric",
+                  header: "numeric",
+                },
+                field4: {
+                  placeholder: "placeholder",
+                  type: "radio",
+                  header: "radio",
+                },
+              }}
+            />
+            <Form
+              title="Test Form"
+              dark
+              submitLabel={"submit"}
+              fields={{
+                field1: {
+                  placeholder: "placeholder",
+                  header: "text",
+                },
+                field2: {
+                  placeholder: "placeholder",
+                  type: "boolean",
+                  header: "boolean",
+                },
+                field3: {
+                  placeholder: "placeholder",
+                  type: "numeric",
+                  header: "numeric",
+                },
+                field4: {
+                  placeholder: "placeholder",
+                  type: "radio",
+                  header: "radio",
+                },
+              }}
+            />
+            <Form
+              title="Test Form disabled"
+              disabled
+              submitLabel={"submit"}
+              fields={{
+                field1: {
+                  placeholder: "placeholder",
+                  header: "text",
+                },
+                field2: {
+                  placeholder: "placeholder",
+                  type: "boolean",
+                  header: "boolean",
+                },
+                field3: {
+                  placeholder: "placeholder",
+                  type: "numeric",
+                  header: "numeric",
+                },
+                field4: {
+                  placeholder: "placeholder",
+                  type: "radio",
+                  header: "radio",
+                },
+              }}
+            />
+            <Form
+              title="Test Form disabled"
+              dark
+              disabled
+              submitLabel={"submit"}
+              fields={{
+                field1: {
+                  placeholder: "placeholder",
+                  header: "text",
+                },
+                field2: {
+                  placeholder: "placeholder",
+                  type: "boolean",
+                  header: "boolean",
+                },
+                field3: {
+                  placeholder: "placeholder",
+                  type: "numeric",
+                  header: "numeric",
+                },
+                field4: {
+                  placeholder: "placeholder",
+                  type: "radio",
+                  header: "radio",
+                },
+              }}
+            />
+          </div>
+        }
       />
     </Container>
   );

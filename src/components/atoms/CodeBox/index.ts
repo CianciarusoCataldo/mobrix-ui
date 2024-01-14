@@ -56,7 +56,8 @@ const CodeBox: CodeBoxComponent = ({
       highlight,
       environment,
       value,
-      noCopyButton
+      noCopyButton,
+      ...commonProps,
     }),
   });
 

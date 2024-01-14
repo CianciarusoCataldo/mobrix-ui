@@ -4,7 +4,8 @@
   min-width: 4rem;
 }
 
-[data-mobrix-ui-id="spinner"] [data-mobrix-ui-class="rotating"] {
+[data-mobrix-ui-id="spinner"][data-mobrix-ui-enabled="true"]
+  [data-mobrix-ui-class="rotating"] {
   -webkit-animation: rotating 2s linear infinite;
   -moz-animation: rotating 2s linear infinite;
   -ms-animation: rotating 2s linear infinite;

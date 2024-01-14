@@ -9,6 +9,10 @@
   border-width: 0;
 }
 
+[data-mobrix-ui-id="toggle"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="false"] {
+  opacity: 0.7;
+}
+
 [data-mobrix-ui-id="toggle"] [data-mobrix-ui-class="toggle-icon"] {
   overflow: hidden;
   transition: all 0.2s;

@@ -4,4 +4,8 @@
 
   /* Drawer */
   --mobrix-ui-default-drawer-arrow-hover: orange;
+
+  /****/
+  --mobrix-ui-default-datepicker-icon-hover-light: blue;
+  --mobrix-ui-default-datepicker-icon-hover-dark: orange;
 }
