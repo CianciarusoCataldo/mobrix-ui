@@ -1,39 +1,39 @@
-[data-mobrix-ui-id="review"] {
+[data-mbx-id="review"] {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0.6rem;
-  background: var(--mobrix-ui-computed-review-background);
-  color: var(--mobrix-ui-computed-review-text-color);
+  background: var(--mbx-c-rev-bg);
+  color: var(--mbx-c-rev-txt);
   border-radius: 3px;
   width: fit-content;
 }
 
-[data-mobrix-ui-id="review"] [data-mobrix-ui-class="review-photo"],
-[data-mobrix-ui-id="review"] [data-mobrix-ui-class="review-photo"] img {
+[data-mbx-id="review"] [data-mbx-class="review-photo"],
+[data-mbx-id="review"] [data-mbx-class="review-photo"] img {
   border-radius: 9999px;
 }
 
-[data-mobrix-ui-id="review"] [data-mobrix-ui-class="review-url-container"] {
+[data-mbx-id="review"] [data-mbx-class="review-url-container"] {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-[data-mobrix-ui-id="review"] [data-mobrix-ui-class="review-info-box"] {
+[data-mbx-id="review"] [data-mbx-class="review-info-box"] {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.4rem;
 }
 
-[data-mobrix-ui-id="review"] [data-mobrix-ui-class="review-user-info"] {
+[data-mbx-id="review"] [data-mbx-class="review-user-info"] {
   display: flex;
   flex-direction: row;
 }
 
-[data-mobrix-ui-id="review"]
-  [data-mobrix-ui-class="review-user-info"]
-  [data-mobrix-ui-class="review-username"] {
+[data-mbx-id="review"]
+  [data-mbx-class="review-user-info"]
+  [data-mbx-class="review-username"] {
   margin-left: 0.5rem;
   font-weight: 600;
   font-size: 1.125rem;
@@ -42,23 +42,23 @@
   margin-bottom: auto;
 }
 
-[data-mobrix-ui-id="review"]
-  [data-mobrix-ui-class="review-info-box"]
-  [data-mobrix-ui-class="review-description"] {
+[data-mbx-id="review"]
+  [data-mbx-class="review-info-box"]
+  [data-mbx-class="review-description"] {
   margin-top: 1rem;
   overflow-wrap: break-word;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
 }
 
-[data-mobrix-ui-id="review"]
-  [data-mobrix-ui-class="review-url-container"]
-  [data-mobrix-ui-class="default-icon"] {
-  fill: var(--mobrix-ui-computed-review-link-color);
+[data-mbx-id="review"]
+  [data-mbx-class="review-url-container"]
+  [data-mbx-class="default-icon"] {
+  fill: var(--mbx-c-rev-link);
 }
 
-[data-mobrix-ui-id="review"]
-  [data-mobrix-ui-class="review-url-container"]
-  [data-mobrix-ui-class="github-icon"] {
-  fill: var(--mobrix-ui-computed-review-github-color);
+[data-mbx-id="review"]
+  [data-mbx-class="review-url-container"]
+  [data-mbx-class="github-icon"] {
+  fill: var(--mbx-c-rev-gh);
 }

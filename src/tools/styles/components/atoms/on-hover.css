@@ -1,49 +1,49 @@
 @media (hover) {
-  [data-mobrix-ui-id][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"][data-mobrix-ui-background="true"][data-mobrix-ui-enabled="true"]:hover {
+  [data-mbx-id][data-mbx-styled="true"][data-mbx-hover="true"][data-mbx-background="true"][data-mbx-enabled="true"]:hover {
     /** Button **/
-    --mobrix-ui-computed-button-background: var(
-      --mobrix-ui-computed-button-background-hover
+    --mbx-c-btn-bg: var(
+      --mbx-c-btn-bg-h
     );
 
     /** Checkbox **/
-    --mobrix-ui-computed-checkbox-background: var(
-      --mobrix-ui-computed-checkbox-background-hover
+    --mbx-c-chk-bg: var(
+      --mbx-c-chk-bg-h
     );
 
     /** RadioButton **/
-    --mobrix-ui-computed-radio-background: var(
-      --mobrix-ui-computed-radio-background-hover
+    --mbx-c-rad-bg: var(
+      --mbx-c-rad-bg-h
     );
   }
 
-  [data-mobrix-ui-id][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"][data-mobrix-ui-enabled="true"]:hover {
+  [data-mbx-id][data-mbx-styled="true"][data-mbx-hover="true"][data-mbx-enabled="true"]:hover {
     /** Button **/
-    --mobrix-ui-computed-button-text-color: var(
-      --mobrix-ui-computed-button-text-color-hover
+    --mbx-c-btn-txt: var(
+      --mbx-c-btn-txt-h
     );
 
     /** Link **/
-    --mobrix-ui-computed-link-color: var(--mobrix-ui-computed-link-color-hover);
+    --mbx-c-link-txt: var(--mbx-c-link-txt-h);
   }
 
-  [data-mobrix-ui-id][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"][data-mobrix-ui-background="true"][data-mobrix-ui-enabled="true"]:hover:not(
+  [data-mbx-id][data-mbx-styled="true"][data-mbx-hover="true"][data-mbx-background="true"][data-mbx-enabled="true"]:hover:not(
       :focus-visible
     ) {
     /** Counter **/
-    --mobrix-ui-computed-counterbox-background: var(
-      --mobrix-ui-computed-counterbox-background-hover
+    --mbx-c-cnt-bg: var(
+      --mbx-c-cnt-bg-h
     );
-    --mobrix-ui-computed-counterbox-text-color: var(
-      --mobrix-ui-computed-counterbox-text-color-hover
+    --mbx-c-cnt-txt: var(
+      --mbx-c-cnt-txt-h
     );
 
     /** Inputbox **/
-    --mobrix-ui-computed-inputbox-background: var(
-      --mobrix-ui-computed-inputbox-background-hover
+    --mbx-c-inb-bgc: var(
+      --mbx-c-inb-bgc-h
     );
 
-    --mobrix-ui-computed-inputbox-text-color: var(
-      --mobrix-ui-computed-inputbox-text-color-hover
+    --mbx-c-inb-txt: var(
+      --mbx-c-inb-txt-h
     );
   }
 }

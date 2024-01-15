@@ -1,51 +1,51 @@
-[data-mobrix-ui-id="tab-viewer"] {
+[data-mbx-id="tab-viewer"] {
   display: flex;
   flex-direction: column;
 }
 
-[data-mobrix-ui-id="tab-viewer"] [data-mobrix-ui-class="tabs-list"] {
+[data-mbx-id="tab-viewer"] [data-mbx-class="tabs-list"] {
   display: flex;
   flex-direction: row;
 }
 
-[data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-class="tabs-list"]
-  [data-mobrix-ui-class="tab"] {
+[data-mbx-id="tab-viewer"][data-mbx-styled="true"]
+  [data-mbx-class="tabs-list"]
+  [data-mbx-class="tab"] {
   padding: 0.7rem 1rem;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  color: var(--mobrix-ui-computed-tab-viewer-text-color);
+  color: var(--mbx-c-tabv-txt);
 }
 
-[data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-class="tabs-list"]
-  [data-mobrix-ui-class="tab"][data-mobrix-ui-tab-viewer-selected="true"] {
-  background: var(--mobrix-ui-computed-tab-viewer-background);
-  color: var(--mobrix-ui-computed-tab-viewer-text-color);
+[data-mbx-id="tab-viewer"][data-mbx-styled="true"]
+  [data-mbx-class="tabs-list"]
+  [data-mbx-class="tab"][data-mbx-tab-viewer-selected="true"] {
+  background: var(--mbx-c-tabv-bg);
+  color: var(--mbx-c-tabv-txt);
 }
 
-[data-mobrix-ui-id="tab-viewer"]
-  [data-mobrix-ui-class="tabs-list"]
-  [data-mobrix-ui-class="tab"]:not(
-    [data-mobrix-ui-tab-viewer-selected="true"]
+[data-mbx-id="tab-viewer"]
+  [data-mbx-class="tabs-list"]
+  [data-mbx-class="tab"]:not(
+    [data-mbx-tab-viewer-selected="true"]
   ) {
-  background: var(--mobrix-ui-computed-tab-viewer-background-inactive);
-  color: var(--mobrix-ui-computed-tab-viewer-text-color-inactive);
+  background: var(--mbx-c-tabv-off-bg);
+  color: var(--mbx-c-tabv-off-txt);
 }
 
-[data-mobrix-ui-id="tab-viewer"] [data-mobrix-ui-class="tab-view"] {
+[data-mbx-id="tab-viewer"] [data-mbx-class="tab-view"] {
   padding: 0.7rem 1rem;
-  background: var(--mobrix-ui-computed-tab-viewer-background);
+  background: var(--mbx-c-tabv-bg);
 }
 
 @media (hover) {
-  [data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-enabled="true"]
-    [data-mobrix-ui-class="tabs-list"]
-    [data-mobrix-ui-class="tab"]:not(
-      [data-mobrix-ui-tab-viewer-selected="true"]
+  [data-mbx-id="tab-viewer"][data-mbx-enabled="true"]
+    [data-mbx-class="tabs-list"]
+    [data-mbx-class="tab"]:not(
+      [data-mbx-tab-viewer-selected="true"]
     ):hover {
-    background: var(--mobrix-ui-computed-tab-viewer-background-inactive-hover);
+    background: var(--mbx-c-tabv-off-bg-h);
   }
 }

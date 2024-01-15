@@ -1,28 +1,28 @@
-[data-mobrix-ui-id="list"] {
+[data-mbx-id="list"] {
   display: flex;
   flex-direction: column;
   background: transparent;
 }
 
-[data-mobrix-ui-id="list"][data-mobrix-ui-styled="true"] {
+[data-mbx-id="list"][data-mbx-styled="true"] {
   padding: 0.6rem;
 }
 
-[data-mobrix-ui-id="list"] [data-mobrix-ui-list-element] {
+[data-mbx-id="list"] [data-mbx-list-element] {
   display: flex;
   flex-direction: row;
 }
 
-[data-mobrix-ui-id="list"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-list-element] {
-  color: var(--mobrix-ui-computed-list-text-color);
+[data-mbx-id="list"][data-mbx-styled="true"]
+  [data-mbx-list-element] {
+  color: var(--mbx-c-lst-txt);
   outline: none;
   margin-top: 0.2rem;
 }
 
-[data-mobrix-ui-id="list"][data-mobrix-ui-styled="true"][data-mobrix-ui-a11y="true"]
-  [data-mobrix-ui-list-element]:focus-visible {
-  color: var(--mobrix-ui-computed-focus-color);
+[data-mbx-id="list"][data-mbx-styled="true"][data-mbx-a11y="true"]
+  [data-mbx-list-element]:focus-visible {
+  color: var(--mbx-c-fc);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
@@ -30,24 +30,24 @@
 }
 
 @media (hover) {
-  [data-mobrix-ui-id="list"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]
-    [data-mobrix-ui-list-element="clickable"]:hover {
-    color: var(--mobrix-ui-computed-list-text-color-hover);
+  [data-mbx-id="list"][data-mbx-styled="true"][data-mbx-hover="true"]
+    [data-mbx-list-element="clickable"]:hover {
+    color: var(--mbx-c-lst-txt-h);
   }
 }
 
-[data-mobrix-ui-id="list"]
-  [data-mobrix-ui-list-element]
-  [data-mobrix-ui-class="dot"] {
+[data-mbx-id="list"]
+  [data-mbx-list-element]
+  [data-mbx-class="dot"] {
   display: none;
 }
 
-[data-mobrix-ui-id="list"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-list-element]
-  [data-mobrix-ui-class="dot"] {
+[data-mbx-id="list"][data-mbx-styled="true"]
+  [data-mbx-list-element]
+  [data-mbx-class="dot"] {
   width: 6px;
   height: 6px;
-  fill: var(--mobrix-ui-computed-list-text-color);
+  fill: var(--mbx-c-lst-txt);
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 0.3rem;

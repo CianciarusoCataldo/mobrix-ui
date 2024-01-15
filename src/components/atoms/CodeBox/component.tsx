@@ -18,7 +18,7 @@ const codeboxComponent: MoBrixUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   noCopyButton,
   disabled,
 }) => [
-  <div key="codebox_copy_icon" data-mobrix-ui-class="codebox-copy-icon">
+  <div key="codebox_copy_icon" data-mbx-class="codebox-copy-icon">
     <Button
       unstyled
       onClick={() => code && navigator.clipboard.writeText(code)}
@@ -28,7 +28,7 @@ const codeboxComponent: MoBrixUiComponent<CodeBoxProps, BuilderComponent[]> = ({
       {CopyIcon}
     </Button>
   </div>,
-  <code key="codebox_code" data-mobrix-ui-class="codebox-code">
+  <code key="codebox_code" data-mbx-class="codebox-code">
     {code &&
       (highlight
         ? parseCode(code, environment).map((part, index) => (

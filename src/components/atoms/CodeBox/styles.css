@@ -1,39 +1,39 @@
-[data-mobrix-ui-id="codebox"] {
+[data-mbx-id="codebox"] {
   overflow: hidden;
   padding: 0.3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--mobrix-ui-computed-codebox-background);
+  background-color: var(--mbx-c-cdb-bg);
 }
 
-[data-mobrix-ui-id="codebox"][data-mobrix-ui-styled="true"] {
-  color: var(--mobrix-ui-computed-codebox-text-color);
+[data-mbx-id="codebox"][data-mbx-styled="true"] {
+  color: var(--mbx-c-cdb-txt);
 }
 
-[data-mobrix-ui-id="codebox"] [data-mobrix-ui-class="codebox-copy-icon"] {
+[data-mbx-id="codebox"] [data-mbx-class="codebox-copy-icon"] {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-[data-mobrix-ui-id="codebox"] [data-mobrix-ui-class="codebox-code"] {
+[data-mbx-id="codebox"] [data-mbx-class="codebox-code"] {
   margin-top: 0.7rem;
   padding: 1rem;
   line-height: 1.5rem;
   overflow: auto;
 }
 
-[data-mobrix-ui-id="codebox"][data-mobrix-ui-enabled="true"]
-  [data-mobrix-ui-class="codebox-copy-icon"]>[data-mobrix-ui-id="button"]:active {
+[data-mbx-id="codebox"][data-mbx-enabled="true"]
+  [data-mbx-class="codebox-copy-icon"]>[data-mbx-id="button"]:active {
   opacity: 0.3;
 }
 
 
 
 @media (hover) {
-  [data-mobrix-ui-id="codebox"][data-mobrix-ui-hover="true"][data-mobrix-ui-enabled="true"]
-    [data-mobrix-ui-class="codebox-copy-icon"]:hover {
+  [data-mbx-id="codebox"][data-mbx-hover="true"][data-mbx-enabled="true"]
+    [data-mbx-class="codebox-copy-icon"]:hover {
     opacity: 0.8;
   }
 }

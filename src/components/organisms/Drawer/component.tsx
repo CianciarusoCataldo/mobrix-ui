@@ -39,7 +39,7 @@ const DrawerInternalComponent: MoBrixUiComponent<
       a11yLabel="drawer-content"
       onFocusLost={onFocusLostCallback}
       additionalProps={{
-        "data-mobrix-ui-class": "content",
+        "data-mbx-class": "content",
       }}
     >
       {children}
@@ -53,8 +53,8 @@ const DrawerInternalComponent: MoBrixUiComponent<
           onClose!();
         }}
         additionalProps={{
-          "data-mobrix-ui-class": "drawer-close-button",
-          "data-mobrix-ui-test": "drawer_close_button",
+          "data-mbx-class": "drawer-close-button",
+          "data-mbx-test": "drawer_close_button",
         }}
         a11yLabel="drawer-close-button"
       >

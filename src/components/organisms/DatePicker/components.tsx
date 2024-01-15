@@ -61,7 +61,7 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
   const DateLabel = ({ children }) => (
     <Label
       additionalProps={{
-        "data-mobrix-ui-class": "date-picker-element",
+        "data-mbx-class": "date-picker-element",
       }}
       dark={commonProps.dark}
     >
@@ -70,7 +70,7 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
   );
 
   return [
-    <div data-mobrix-ui-class="date-selectors" key="date_picker_selectors">
+    <div data-mbx-class="date-selectors" key="date_picker_selectors">
       <DateLabel>{String(day)}</DateLabel>
       <DateLabel>{String(customMonths[month])}</DateLabel>
       <DateLabel>{String(year)}</DateLabel>
@@ -82,7 +82,7 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
       onClick={() => setVisible(true)}
       key="date_picker_calendar_button"
       additionalProps={{
-        "data-mobrix-ui-test": "date_picker_calendar_button",
+        "data-mbx-test": "date_picker_calendar_button",
       }}
     >
       {CalendarIcon}
@@ -94,13 +94,13 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
       animated={animated}
       onClose={() => setVisible(false)}
       additionalProps={{
-        "data-mobrix-ui-class": "date-picker-modal",
+        "data-mbx-class": "date-picker-modal",
       }}
       closeOutside
     >
       <Calendar
         animated={animated}
-        additionalProps={{ "data-mobrix-ui-test": "date_picker_calendar" }}
+        additionalProps={{ "data-mbx-test": "date_picker_calendar" }}
         days={customDays}
         months={customMonths}
         startMonth={startMonth}

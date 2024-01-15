@@ -1,97 +1,73 @@
 @import url("default.css");
 
-[data-mobrix-ui-id] {
-  --mobrix-ui-computed-focus-color-light: var(
+[data-mbx-id] {
+  --mbx-c-fc-l: var(
     --mobrix-ui-focus-color-light,
-    var(--mobrix-ui-focus-color, var(--mobrix-ui-default-focus-color-light))
+    var(--mobrix-ui-focus-color, var(--mbx-d-fc-l))
   );
 
-  --mobrix-ui-computed-focus-color-dark: var(
+  --mbx-c-fc-d: var(
     --mobrix-ui-focus-color-dark,
-    var(--mobrix-ui-focus-color, var(--mobrix-ui-default-focus-color-dark))
+    var(--mobrix-ui-focus-color, var(--mbx-d-fc-d))
   );
 
-  --mobrix-ui-computed-background-light: var(
+  --mbx-c-bg-l: var(
     --mobrix-ui-background-light,
-    var(--mobrix-ui-background, var(--mobrix-ui-default-background-light))
+    var(--mobrix-ui-background, var(--mbx-d-bg-l))
   );
 
-  --mobrix-ui-computed-background-dark: var(
+  --mbx-c-bg-d: var(
     --mobrix-ui-background-dark,
-    var(--mobrix-ui-background, var(--mobrix-ui-default-background-dark))
+    var(--mobrix-ui-background, var(--mbx-d-bg-d))
   );
 
-  --mobrix-ui-computed-text-color-light: var(
+  --mbx-c-txt-l: var(
     --mobrix-ui-text-color-light,
-    var(--mobrix-ui-text-color, var(--mobrix-ui-default-text-color-light))
+    var(--mobrix-ui-text-color, var(--mbx-d-txt-l))
   );
 
-  --mobrix-ui-computed-text-color-dark: var(
+  --mbx-c-txt-d: var(
     --mobrix-ui-text-color-dark,
-    var(--mobrix-ui-text-color, var(--mobrix-ui-default-text-color-dark))
+    var(--mobrix-ui-text-color, var(--mbx-d-txt-d))
   );
 
-  --mobrix-ui-computed-background-color-light: var(
+  --mbx-c-bgc-l: var(
     --mobrix-ui-background-color-light,
-    var(
-      --mobrix-ui-background-color,
-      var(--mobrix-ui-default-background-color-light)
-    )
+    var(--mobrix-ui-background-color, var(--mbx-d-bgc-l))
   );
 
-  --mobrix-ui-computed-background-color-dark: var(
+  --mbx-c-bgc-d: var(
     --mobrix-ui-background-color-dark,
-    var(
-      --mobrix-ui-background-color,
-      var(--mobrix-ui-default-background-color-dark)
-    )
+    var(--mobrix-ui-background-color, var(--mbx-d-bgc-d))
   );
 
-  --mobrix-ui-computed-text-color-hover-light: var(
+  --mbx-c-txt-h-l: var(
     --mobrix-ui-text-color-hover-light,
-    var(
-      --mobrix-ui-text-color-hover,
-      var(--mobrix-ui-default-text-color-hover-light)
-    )
+    var(--mobrix-ui-text-color-hover, var(--mbx-d-txt-h-l))
   );
 
-  --mobrix-ui-computed-text-color-hover-dark: var(
+  --mbx-c-txt-h-d: var(
     --mobrix-ui-text-color-hover-dark,
-    var(
-      --mobrix-ui-text-color-hover,
-      var(--mobrix-ui-default-text-color-hover-dark)
-    )
+    var(--mobrix-ui-text-color-hover, var(--mbx-d-txt-h-d))
   );
 
-  --mobrix-ui-computed-background-color-hover-light: var(
+  --mbx-c-bgc-h-l: var(
     --mobrix-ui-background-color-hover-light,
-    var(
-      --mobrix-ui-background-color-hover,
-      var(--mobrix-ui-default-background-color-hover-light)
-    )
+    var(--mobrix-ui-background-color-hover, var(--mbx-d-bgc-h-l))
   );
 
-  --mobrix-ui-computed-background-color-hover-dark: var(
+  --mbx-c-bgc-h-d: var(
     --mobrix-ui-background-color-hover-dark,
-    var(
-      --mobrix-ui-background-color-hover,
-      var(--mobrix-ui-default-background-color-hover-dark)
-    )
+    var(--mobrix-ui-background-color-hover, var(--mbx-d-bgc-h-d))
   );
 
-  --mobrix-ui-computed-background-hover-dark: var(
+  --mbx-c-bg-h-d: var(
     --mobrix-ui-background-hover-dark,
-    var(
-      --mobrix-ui-background-hover,
-      var(--mobrix-ui-default-background-hover-dark)
-    )
+    var(--mobrix-ui-background-hover, var(--mbx-d-bg-h-d))
   );
 
-  --mobrix-ui-computed-background-hover-light: var(
+  --mbx-c-bg-h-l: var(
     --mobrix-ui-background-hover-light,
-    var(
-      --mobrix-ui-background-hover,
-      var(--mobrix-ui-default-background-hover-light)
-    )
+    var(--mobrix-ui-background-hover, var(--mbx-d-bg-h-l))
   );
 }

@@ -1,65 +1,65 @@
-[data-mobrix-ui-id="form-field"] {
+[data-mbx-id="form-field"] {
   --mobrix-ui-counterbox-background: var(
-    --mobrix-ui-computed-formfield-background
+    --mbx-c-field-bg
   );
   --mobrix-ui-counterbox-text-color: var(
-    --mobrix-ui-computed-formfield-text-color
+    --mbx-c-field-txt
   );
   --mobrix-ui-counterbox-background-hover: var(
-    --mobrix-ui-computed-formfield-background-hover
+    --mbx-c-field-bg-h
   );
   --mobrix-ui-counterbox-text-color-hover: var(
-    --mobrix-ui-computed-formfield-text-color-hover
+    --mbx-c-field-txt-h
   );
 
   --mobrix-ui-checkbox-background: var(
-    --mobrix-ui-computed-formfield-background
+    --mbx-c-field-bg
   );
   --mobrix-ui-checkbox-text-color: var(
-    --mobrix-ui-computed-formfield-text-color
+    --mbx-c-field-txt
   );
   --mobrix-ui-checkbox-background-hover: var(
-    --mobrix-ui-computed-formfield-background-hover
+    --mbx-c-field-bg-h
   );
   --mobrix-ui-checkbox-text-color-hover: var(
-    --mobrix-ui-computed-formfield-text-color-hover
+    --mbx-c-field-txt-h
   );
 
   --mobrix-ui-inputbox-background: var(
-    --mobrix-ui-computed-formfield-background
+    --mbx-c-field-bg
   );
   --mobrix-ui-inputbox-text-color: var(
-    --mobrix-ui-computed-formfield-text-color
+    --mbx-c-field-txt
   );
   --mobrix-ui-inputbox-background-hover: var(
-    --mobrix-ui-computed-formfield-background-hover
+    --mbx-c-field-bg-h
   );
   --mobrix-ui-inputbox-text-color-hover: var(
-    --mobrix-ui-computed-formfield-text-color-hover
+    --mbx-c-field-txt-h
   );
 
   --mobrix-ui-radio-background: var(
-    --mobrix-ui-computed-formfield-background-light
+    --mbx-c-field-bg-l
   );
   --mobrix-ui-radio-background-hover: var(
-    --mobrix-ui-computed-formfield-background-hover
+    --mbx-c-field-bg-h
   );
 
-  --mobrix-ui-rater-background: var(--mobrix-ui-computed-formfield-background);
+  --mobrix-ui-rater-background: var(--mbx-c-field-bg);
   --mobrix-ui-rater-background-hover: var(
-    --mobrix-ui-computed-formfield-background-hover
+    --mbx-c-field-bg-h
   );
 
-  --mobrix-ui-slider-background: var(--mobrix-ui-computed-formfield-background);
+  --mobrix-ui-slider-background: var(--mbx-c-field-bg);
 
-  --mobrix-ui-toggle-background: var(--mobrix-ui-computed-formfield-background);
+  --mobrix-ui-toggle-background: var(--mbx-c-field-bg);
 }
 
-[data-mobrix-ui-id="modal"]
-  > [data-mobrix-ui-class="modal-window"]
-  > [data-mobrix-ui-class="header"] {
-  --mobrix-ui-dismissablecard-x-color: var(--mobrix-ui-computed-modal-x-color);
+[data-mbx-id="modal"]
+  > [data-mbx-class="modal-window"]
+  > [data-mbx-class="header"] {
+  --mobrix-ui-dismissablecard-x-color: var(--mbx-c-mod-x);
   --mobrix-ui-dismissablecard-x-color-hover: var(
-    --mobrix-ui-computed-modal-x-color-hover
+    --mbx-c-mod-x-h
   );
 }

@@ -111,8 +111,8 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
         }}
         dark={dark}
         additionalProps={{
-          "data-mobrix-ui-class": "button",
-          "data-mobrix-ui-test": "options_menu",
+          "data-mbx-class": "button",
+          "data-mbx-test": "options_menu",
         }}
         key="options-menu"
         a11y={false}
@@ -120,7 +120,7 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
         <div
           tabIndex={-1}
           key="dropdown_selected_element_label"
-          data-mobrix-ui-class="dropdown-selected-element"
+          data-mbx-class="dropdown-selected-element"
         >
           {selectedItem}
         </div>
@@ -132,14 +132,14 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
           disabled={disabled}
           a11y={false}
           additionalProps={{
-            "data-mobrix-ui-class": "icon",
-            "data-mobrix-ui-rotate": isVisible,
+            "data-mbx-class": "icon",
+            "data-mbx-rotate": isVisible,
           }}
         >
           <p tabIndex={-1}>
             <i
-              data-mobrix-ui-class="arrow-icon"
-              data-mobrix-ui-enabled={!disabled}
+              data-mbx-class="arrow-icon"
+              data-mbx-enabled={!disabled}
             ></i>
           </p>
         </Container>
@@ -152,7 +152,7 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
         hide={!isVisible}
         a11y={false}
         additionalProps={{
-          "data-mobrix-ui-class": "options",
+          "data-mbx-class": "options",
         }}
       >
         {elements.map((item, index) => (
@@ -169,18 +169,18 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
             }}
             key={`item_${index}`}
             additionalProps={{
-              "data-mobrix-ui-class": "regular",
-              "data-mobrix-ui-first": index === 0,
-              "data-mobrix-ui-last": index === elements.length - 1,
-              "data-mobrix-ui-selected": selected === index,
-              "data-mobrix-ui-test": `dropdown_option_${index}`,
+              "data-mbx-class": "regular",
+              "data-mbx-first": index === 0,
+              "data-mbx-last": index === elements.length - 1,
+              "data-mbx-selected": selected === index,
+              "data-mbx-test": `dropdown_option_${index}`,
             }}
           >
             <Container
               unstyled
               dark={dark}
               additionalProps={{
-                "data-mobrix-ui-class": "dropdown-element",
+                "data-mbx-class": "dropdown-element",
               }}
             >
               {item}

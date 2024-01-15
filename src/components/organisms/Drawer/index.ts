@@ -69,8 +69,8 @@ const Drawer: DrawerComponent = ({ position, hide, animated, children, additiona
     },
     additionalProps: {
       ...additionalProps, 
-      "data-mobrix-ui-drawer-location": drawerLocation,
-      "data-mobrix-ui-drawer-animation": hide ? value : "ease-in"
+      "data-mbx-drawer-location": drawerLocation,
+      "data-mbx-drawer-animation": hide ? value : "ease-in"
     },
     Component: drawerComponent({
       children,

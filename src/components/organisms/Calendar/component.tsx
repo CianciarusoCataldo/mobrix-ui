@@ -98,8 +98,8 @@ const CalendarComponent: MobrixUiReactiveComponent<
       unstyled
       key={"arrow_" + direction}
       additionalProps={{
-        "data-mobrix-ui-calendar-arrow": direction,
-        "data-mobrix-ui-test": "arrow_" + direction,
+        "data-mbx-calendar-arrow": direction,
+        "data-mbx-test": "arrow_" + direction,
       }}
       {...customProps}
     >
@@ -111,11 +111,11 @@ const CalendarComponent: MobrixUiReactiveComponent<
 
   dayLabel &&
     components.push(
-      <div data-mobrix-ui-class="top-selector" key="date_top_selector">
+      <div data-mbx-class="top-selector" key="date_top_selector">
         {getArrowButton("left")}
         <Label
           additionalProps={{
-            "data-mobrix-ui-class": "actual-date",
+            "data-mbx-class": "actual-date",
           }}
           dark={commonProps.dark}
           {...customProps}
@@ -129,8 +129,8 @@ const CalendarComponent: MobrixUiReactiveComponent<
       disabled={disabled}
       key="calendar_table"
       additionalProps={{
-        "data-mobrix-ui-calendar-table": "true",
-        "data-mobrix-ui-test": "calendar-table",
+        "data-mbx-calendar-table": "true",
+        "data-mbx-test": "calendar-table",
       }}
       propsCallback={(row, column) => {
         if (row > 0) {
@@ -164,16 +164,16 @@ const CalendarComponent: MobrixUiReactiveComponent<
               : {};
 
           return {
-            "data-mobrix-ui-calendar-today":
+            "data-mbx-calendar-today":
               fromToday &&
               basicMatrix[row - 1][column] === todayDate.dayOfTheMonth &&
               onScreenDate.month === todayDate.month &&
               onScreenDate.year === todayDate.year,
-            "data-mobrix-ui-selected":
+            "data-mbx-selected":
               value.year === onScreenDate.year &&
               value.month === onScreenDate.month &&
               value.day === basicMatrix[row - 1][column],
-            "data-mobrix-ui-disabled": isDisabled || isNotDay,
+            "data-mbx-disabled": isDisabled || isNotDay,
             ...extraProps,
           };
         } else return {};

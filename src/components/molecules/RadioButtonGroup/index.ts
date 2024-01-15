@@ -70,7 +70,7 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
     commonProps,
     additionalProps: {
       ...additionalProps,
-      "data-mobrix-ui-orientation": horizontal
+      "data-mbx-orientation": horizontal
     },
     Component: ({ value, setValue }) =>
       radioButtonGroupComponent({

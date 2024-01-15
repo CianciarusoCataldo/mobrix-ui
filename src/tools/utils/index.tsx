@@ -61,17 +61,17 @@ export const buildMobrixUiStandardComponent = ({
   const inputCommonProps = parseCommonProps(commonProps)
 
   let props: CommonProps & Record<string, any> = {
-    "data-mobrix-ui-id": name,
-    "data-mobrix-ui-dark": !!inputCommonProps.dark,
-    "data-mobrix-ui-styled": !inputCommonProps.unstyled,
-    "data-mobrix-ui-shadow": inputCommonProps.shadow,
-    "data-mobrix-ui-animated": inputCommonProps.animated && !inputCommonProps.disabled,
-    "data-mobrix-ui-hide": inputCommonProps.hide,
-    "data-mobrix-ui-a11y": inputCommonProps.a11y,
-    "data-mobrix-ui-background": !inputCommonProps.noBackground,
-    "data-mobrix-ui-hover": (!inputCommonProps.noHover) && (!inputCommonProps.disabled),
-    "data-mobrix-ui-enabled": !inputCommonProps.disabled,
-    "data-mobrix-ui-a11y-dark":
+    "data-mbx-id": name,
+    "data-mbx-dark": !!inputCommonProps.dark,
+    "data-mbx-styled": !inputCommonProps.unstyled,
+    "data-mbx-shadow": inputCommonProps.shadow,
+    "data-mbx-animated": inputCommonProps.animated && !inputCommonProps.disabled,
+    "data-mbx-hide": inputCommonProps.hide,
+    "data-mbx-a11y": inputCommonProps.a11y,
+    "data-mbx-background": !inputCommonProps.noBackground,
+    "data-mbx-hover": (!inputCommonProps.noHover) && (!inputCommonProps.disabled),
+    "data-mbx-enabled": !inputCommonProps.disabled,
+    "data-mbx-a11y-dark":
       a11y &&
       (commonProps.a11yDark !== undefined
         ? commonProps.a11yDark

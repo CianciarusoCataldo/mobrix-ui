@@ -9,7 +9,7 @@ const expandableContainerTest = () => {
         <ExpandableContainer>Test Container</ExpandableContainer>
       );
       wrapper
-        .find('[data-mobrix-ui-test="expandable_container_arrow_button"]')
+        .find('[data-mbx-test="expandable_container_arrow_button"]')
         .simulate("click");
       expect(wrapper);
     });
@@ -24,7 +24,7 @@ const expandableContainerTest = () => {
         </ExpandableContainer>
       );
       wrapper
-        .find('[data-mobrix-ui-test="expandable_container_arrow_button"]')
+        .find('[data-mbx-test="expandable_container_arrow_button"]')
         .simulate("click");
       expect(onChangeStub).toBeCalled;
     });

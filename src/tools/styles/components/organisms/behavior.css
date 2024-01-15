@@ -1,168 +1,86 @@
 @import url("constants/computed.css");
 
-[data-mobrix-ui-id]:not([data-mobrix-ui-dark="true"]) {
+[data-mbx-id]:not([data-mbx-dark="true"]) {
   /** Calendar **/
-  --mobrix-ui-computed-calendar-background: var(
-    --mobrix-ui-computed-calendar-background-light
-  );
-  --mobrix-ui-computed-calendar-text-color: var(
-    --mobrix-ui-computed-calendar-text-color-light
-  );
-  --mobrix-ui-computed-calendar-background-selected: var(
-    --mobrix-ui-computed-calendar-background-selected-light
-  );
-  --mobrix-ui-computed-calendar-text-color-selected: var(
-    --mobrix-ui-computed-calendar-text-color-selected-light
-  );
-  --mobrix-ui-computed-calendar-background-hover: var(
-    --mobrix-ui-computed-calendar-background-hover-light
-  );
-  --mobrix-ui-computed-calendar-text-color-hover: var(
-    --mobrix-ui-computed-calendar-text-color-hover-light
-  );
-  --mobrix-ui-computed-calendar-arrow: var(
-    --mobrix-ui-computed-calendar-arrow-light
-  );
-  --mobrix-ui-computed-calendar-arrow-hover: var(
-    --mobrix-ui-computed-calendar-arrow-hover-light
-  );
-  --mobrix-ui-computed-calendar-today: var(
-    --mobrix-ui-computed-calendar-today-light
-  );
+  --mbx-c-cal-bg: var(--mbx-c-cal-bg-l);
+  --mbx-c-cal-txt: var(--mbx-c-cal-txt-l);
+  --mbx-c-cal-s-bg: var(--mbx-c-cal-bg-s-l);
+  --mbx-c-cal-s-txt: var(--mbx-c-cal-txt-s-l);
+  --mbx-c-cal-bg-h: var(--mbx-c-cal-bg-h-l);
+  --mbx-c-cal-txt-h: var(--mbx-c-cal-txt-h-l);
+  --mbx-c-cal-arr: var(--mbx-c-cal-arr-l);
+  --mbx-c-cal-arr-h: var(--mbx-c-cal-arr-h-l);
+  --mbx-c-cal-t: var(--mbx-c-cal-t-l);
 
   /** DatePicker **/
-  --mobrix-ui-computed-datepicker-background: var(
-    --mobrix-ui-computed-datepicker-background-light
-  );
-  --mobrix-ui-computed-datepicker-text-color: var(
-    --mobrix-ui-computed-datepicker-text-color-light
-  );
-  --mobrix-ui-computed-datepicker-icon-hover: var(
-    --mobrix-ui-computed-datepicker-icon-hover-light
-  );
-  --mobrix-ui-computed-datepicker-icon: var(
-    --mobrix-ui-computed-datepicker-icon-light
-  );
+  --mbx-c-dtp-bg: var(--mbx-c-dtp-bg-l);
+  --mbx-c-dtp-txt: var(--mbx-c-dtp-txt-l);
+  --mbx-c-dtp-ic-h: var(--mbx-c-dtp-ic-h-l);
+  --mbx-c-dtp-ic: var(---mbx-c-dtp-ic-l);
 
   /** Drawer **/
-  --mobrix-ui-computed-drawer-background: var(
-    --mobrix-ui-computed-drawer-background-light
-  );
-  --mobrix-ui-computed-drawer-text-color: var(
-    --mobrix-ui-computed-drawer-text-color-light
-  );
-  --mobrix-ui-computed-drawer-arrow: var(
-    --mobrix-ui-computed-drawer-arrow-light
-  );
-  --mobrix-ui-computed-drawer-arrow-hover: var(
-    --mobrix-ui-computed-drawer-arrow-hover-light
-  );
+  --mbx-c-draw-bg: var(--mbx-c-draw-bg-l);
+  --mbx-c-draw-txt: var(--mbx-c-draw-txt-l);
+  --mbx-c-draw-arr: var(--mbx-c-draw-arr-l);
+  --mbx-c-draw-arr-h: var(--mbx-c-draw-arr-h-l);
 
   /** Form **/
-  --mobrix-ui-computed-form-background: var(
-    --mobrix-ui-computed-form-background-light
-  );
-  --mobrix-ui-computed-form-text-color: var(
-    --mobrix-ui-computed-form-text-color-light
-  );
-  --mobrix-ui-computed-form-submit-background: var(
-    --mobrix-ui-computed-form-submit-background-light
-  );
-  --mobrix-ui-computed-form-submit-text-color: var(
-    --mobrix-ui-computed-form-submit-text-color-light
-  );
-  --mobrix-ui-computed-form-formfield-background: var(
-    --mobrix-ui-computed-form-formfield-background-light
-  );
-  --mobrix-ui-computed-form-formfield-text-color: var(
-    --mobrix-ui-computed-form-formfield-text-color-light
-  );
+  --mbx-c-form-bg: var(--mbx-c-form-bg-l);
+  --mbx-c-form-txt: var(--mbx-c-form-txt-l);
+  --mbx-c-form-sub-bg: var(--mbx-c-form-sub-bg-l);
+  --mbx-c-form-sub-txt: var(--mbx-c-form-sub-txt-l);
+  --mbx-c-form-field-bg: var(--mbx-c-form-field-bg-l);
+  --mbx-c-form-field-txt: var(--mbx-c-form-field-txt-l);
 }
 
-[data-mobrix-ui-id][data-mobrix-ui-dark="true"] {
+[data-mbx-id][data-mbx-dark="true"] {
   /** Calendar **/
-  --mobrix-ui-computed-calendar-background: var(
-    --mobrix-ui-computed-calendar-background-dark
-  );
-  --mobrix-ui-computed-calendar-text-color: var(
-    --mobrix-ui-computed-calendar-text-color-dark
-  );
-  --mobrix-ui-computed-calendar-background-selected: var(
-    --mobrix-ui-computed-calendar-background-selected-dark
-  );
-  --mobrix-ui-computed-calendar-text-color-selected: var(
-    --mobrix-ui-computed-calendar-text-color-selected-dark
-  );
-  --mobrix-ui-computed-calendar-background-hover: var(
-    --mobrix-ui-computed-calendar-background-hover-dark
-  );
-  --mobrix-ui-computed-calendar-text-color-hover: var(
-    --mobrix-ui-computed-calendar-text-color-hover-dark
-  );
-  --mobrix-ui-computed-calendar-arrow: var(
-    --mobrix-ui-computed-calendar-arrow-dark
-  );
-  --mobrix-ui-computed-calendar-arrow-hover: var(
-    --mobrix-ui-computed-calendar-arrow-hover-dark
-  );
-  --mobrix-ui-computed-calendar-today: var(
-    --mobrix-ui-computed-calendar-today-dark
-  );
+  --mbx-c-cal-bg: var(--mbx-c-cal-bg-d);
+  --mbx-c-cal-txt: var(--mbx-c-cal-txt-d);
+  --mbx-c-cal-s-bg: var(--mbx-c-cal-bg-s-d);
+  --mbx-c-cal-s-txt: var(--mbx-c-cal-txt-s-d);
+  --mbx-c-cal-bg-h: var(--mbx-c-cal-bg-h-d);
+  --mbx-c-cal-txt-h: var(--mbx-c-cal-txt-h-d);
+  --mbx-c-cal-arr: var(--mbx-c-cal-arr-d);
+  --mbx-c-cal-arr-h: var(--mbx-c-cal-arr-h-d);
+  --mbx-c-cal-t: var(--mbx-c-cal-t-d);
 
   /** DatePicker **/
-  --mobrix-ui-computed-datepicker-background: var(
-    --mobrix-ui-computed-datepicker-background-dark
-  );
-  --mobrix-ui-computed-datepicker-text-color: var(
-    --mobrix-ui-computed-datepicker-text-color-dark
-  );
-  --mobrix-ui-computed-datepicker-icon: var(
-    --mobrix-ui-computed-datepicker-icon-dark
-  );
+  --mbx-c-dtp-bg: var(--mbx-c-dtp-bg-d);
+  --mbx-c-dtp-txt: var(--mbx-c-dtp-txt-d);
+  --mbx-c-dtp-ic: var(---mbx-c-dtp-ic-d);
 
-  --mobrix-ui-computed-datepicker-icon-hover: var(
-    --mobrix-ui-computed-datepicker-icon-hover-dark
-  );
+  --mbx-c-dtp-ic-h: var(--mbx-c-dtp-ic-h-d);
 
   /** Drawer **/
-  --mobrix-ui-computed-drawer-background: var(
-    --mobrix-ui-computed-drawer-background-dark
-  );
-  --mobrix-ui-computed-drawer-text-color: var(
-    --mobrix-ui-computed-drawer-text-color-dark
-  );
-  --mobrix-ui-computed-drawer-arrow: var(
-    --mobrix-ui-computed-drawer-arrow-dark
-  );
-  --mobrix-ui-computed-drawer-arrow-hover: var(
-    --mobrix-ui-computed-drawer-arrow-hover-dark
-  );
+  --mbx-c-draw-bg: var(--mbx-c-draw-bg-d);
+  --mbx-c-draw-txt: var(--mbx-c-draw-txt-d);
+  --mbx-c-draw-arr: var(--mbx-c-draw-arr-d);
+  --mbx-c-draw-arr-h: var(--mbx-c-draw-arr-h-d);
 
   /** Form **/
-  --mobrix-ui-computed-form-background: var(
-    --mobrix-ui-computed-form-background-dark
-  );
-  --mobrix-ui-computed-form-text-color: var(
-    --mobrix-ui-computed-form-text-color-dark
-  );
-  --mobrix-ui-computed-form-submit-background: var(
-    --mobrix-ui-computed-form-submit-background-dark
-  );
-  --mobrix-ui-computed-form-submit-text-color: var(
-    --mobrix-ui-computed-form-submit-text-color-dark
-  );
-  --mobrix-ui-computed-form-formfield-background: var(
-    --mobrix-ui-computed-form-formfield-background-dark
-  );
-  --mobrix-ui-computed-form-formfield-text-color: var(
-    --mobrix-ui-computed-form-formfield-text-color-dark
-  );
+  --mbx-c-form-bg: var(--mbx-c-form-bg-d);
+  --mbx-c-form-txt: var(--mbx-c-form-txt-d);
+  --mbx-c-form-sub-bg: var(--mbx-c-form-sub-bg-d);
+  --mbx-c-form-sub-txt: var(--mbx-c-form-sub-txt-d);
+  --mbx-c-form-field-bg: var(--mbx-c-form-field-bg-d);
+  --mbx-c-form-field-txt: var(--mbx-c-form-field-txt-d);
 }
 
 /** Background styles @TODO **/
 
-[data-mobrix-ui-id="calendar"][data-mobrix-ui-background="false"] {
-  --mobrix-ui-computed-calendar-background: transparent !important;
-  --mobrix-ui-computed-datepicker-background: transparent !important;
-  --mobrix-ui-computed-drawer-background: transparent !important;
+[data-mbx-id="calendar"][data-mbx-background="false"] {
+  --mbx-c-cal-bg: transparent !important;
+}
+
+[data-mbx-id="date-picker"][data-mbx-background="false"] {
+  --mbx-c-dtp-bg: transparent !important;
+}
+
+[data-mbx-id="drawer"][data-mbx-background="false"] {
+  --mbx-c-draw-bg: transparent !important;
+}
+
+[data-mbx-id="form"][data-mbx-background="false"] {
+  --mbx-c-form-bg: transparent !important;
 }

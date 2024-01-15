@@ -44,7 +44,7 @@ const tableComponent: MoBrixUiComponent<TableProps, JSX.Element> = ({
     <tbody key="table_body">
       {rows.map((row, rowIndex) => (
         <tr
-          data-mobrix-ui-table-row="true"
+          data-mbx-table-row="true"
           key={`row_${rowIndex}`}
           {...rowProps}
         >
@@ -53,7 +53,7 @@ const tableComponent: MoBrixUiComponent<TableProps, JSX.Element> = ({
 
             return (
               <Wrapper
-                data-mobrix-ui-table-cell="true"
+                data-mbx-table-cell="true"
                 key={`element_${rowIndex}_${index}`}
                 align="center"
                 onClick={() => onClick(rowIndex, index)}

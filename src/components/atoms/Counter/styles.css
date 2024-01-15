@@ -1,10 +1,10 @@
-[data-mobrix-ui-id="counterbox"] {
-  background-color: var(--mobrix-ui-computed-counterbox-background);
+[data-mbx-id="counterbox"] {
+  background-color: var(--mbx-c-cnt-bg);
 }
 
-[data-mobrix-ui-id="counterbox"][data-mobrix-ui-styled="true"] {
+[data-mbx-id="counterbox"][data-mbx-styled="true"] {
   border-radius: 5px;
   padding: 0.5rem;
-  color: var(--mobrix-ui-computed-counterbox-text-color);
+  color: var(--mbx-c-cnt-txt);
   border-color: transparent;
 }

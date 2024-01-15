@@ -1,21 +1,21 @@
-[data-mobrix-ui-id="link"][data-mobrix-ui-styled="true"] {
+[data-mbx-id="link"][data-mbx-styled="true"] {
   font-size: 1rem;
   line-height: 1.5rem;
-  color: var(--mobrix-ui-computed-link-color);
+  color: var(--mbx-c-link-txt);
 }
 
-[data-mobrix-ui-id="link"][data-mobrix-ui-styled="true"][data-mobrix-ui-a11y="true"][data-mobrix-ui-enabled="true"]:focus-visible {
+[data-mbx-id="link"][data-mbx-styled="true"][data-mbx-a11y="true"][data-mbx-enabled="true"]:focus-visible {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
-  color: var(--mobrix-ui-computed-focus-color);
+  color: var(--mbx-c-fc);
 }
 
-[data-mobrix-ui-id="link"][data-mobrix-ui-enabled="true"]:active {
+[data-mbx-id="link"][data-mbx-enabled="true"]:active {
   font-weight: 700;
 }
 
-[data-mobrix-ui-id="link"][data-mobrix-ui-styled="true"][data-mobrix-ui-enabled="false"] {
+[data-mbx-id="link"][data-mbx-styled="true"][data-mbx-enabled="false"] {
   text-decoration: underline;
 }

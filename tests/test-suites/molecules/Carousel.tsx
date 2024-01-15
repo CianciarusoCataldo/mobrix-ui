@@ -12,7 +12,7 @@ const carouselTest = () => {
   describe("Carousel", () => {
     test("Rendering test", () => {
       let wrapper = mount(<Carousel />);
-      wrapper.find("[data-mobrix-ui-test='right_arrow']").simulate("click");
+      wrapper.find("[data-mbx-test='right_arrow']").simulate("click");
       expect(wrapper);
     });
 
@@ -21,11 +21,11 @@ const carouselTest = () => {
       let wrapper = mount(
         <Carousel elements={testElements} onChange={onChangeStub} />
       );
-      wrapper.find("[data-mobrix-ui-test='right_arrow']").simulate("click");
+      wrapper.find("[data-mbx-test='right_arrow']").simulate("click");
 
       expect(onChangeStub).toBeCalledWith(1);
 
-      wrapper.find("[data-mobrix-ui-test='left_arrow']").simulate("click");
+      wrapper.find("[data-mbx-test='left_arrow']").simulate("click");
 
       expect(onChangeStub).toBeCalledWith(0);
     });
@@ -35,13 +35,13 @@ const carouselTest = () => {
       let wrapper = mount(
         <Carousel elements={testElements} onChange={onChangeStub} />
       );
-      wrapper.find("[data-mobrix-ui-test='dot_2']").simulate("mouseenter");
-      wrapper.find("[data-mobrix-ui-test='dot_2']").simulate("mouseleave");
-      wrapper.find("[data-mobrix-ui-test='dot_2']").simulate("click");
+      wrapper.find("[data-mbx-test='dot_2']").simulate("mouseenter");
+      wrapper.find("[data-mbx-test='dot_2']").simulate("mouseleave");
+      wrapper.find("[data-mbx-test='dot_2']").simulate("click");
 
       expect(onChangeStub).toBeCalledWith(2);
 
-      wrapper.find("[data-mobrix-ui-test='dot_1']").simulate("click");
+      wrapper.find("[data-mbx-test='dot_1']").simulate("click");
 
       expect(onChangeStub).toBeCalledWith(1);
     });

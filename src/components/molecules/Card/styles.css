@@ -1,20 +1,20 @@
-[data-mobrix-ui-id*="card"] {
+[data-mbx-id*="card"] {
   display: flex;
   flex-direction: column;
   background-color: transparent;
 }
 
-[data-mobrix-ui-id="card"][data-mobrix-ui-styled="true"] {
-  background: var(--mobrix-ui-computed-card-background);
-  color: var(--mobrix-ui-computed-card-text-color);
+[data-mbx-id="card"][data-mbx-styled="true"] {
+  background: var(--mbx-c-card-bg);
+  color: var(--mbx-c-card-txt);
 }
 
-[data-mobrix-ui-id*="card"][data-mobrix-ui-styled="true"] {
+[data-mbx-id*="card"][data-mbx-styled="true"] {
   padding: 0.25rem;
 }
 
-[data-mobrix-ui-id*="card"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-class="header"] {
+[data-mbx-id*="card"][data-mbx-styled="true"]
+  [data-mbx-class="header"] {
   margin: auto;
   text-align: center;
   width: 100%;
@@ -22,16 +22,16 @@
   margin-bottom: 0.3rem;
 }
 
-[data-mobrix-ui-id*="card"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-class="body"] {
+[data-mbx-id*="card"][data-mbx-styled="true"]
+  [data-mbx-class="body"] {
   padding: 0.25rem;
   margin: 0.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-[data-mobrix-ui-id*="card"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-class="footer"] {
+[data-mbx-id*="card"][data-mbx-styled="true"]
+  [data-mbx-class="footer"] {
   margin-top: 0.3rem;
   padding: 0.3rem;
   font-size: 1rem;

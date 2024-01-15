@@ -28,14 +28,14 @@ const datePickerTest = () => {
         />
       );
 
-      wrapper.find('[data-mobrix-ui-test="date_picker_calendar_button"]').simulate("click");
+      wrapper.find('[data-mbx-test="date_picker_calendar_button"]').simulate("click");
       wrapper
-        .find('[data-mobrix-ui-test="date_picker_calendar"]')
-        .find(`button[data-mobrix-ui-test="date_button_4"]`)
+        .find('[data-mbx-test="date_picker_calendar"]')
+        .find(`button[data-mbx-test="date_button_4"]`)
         .simulate("click");
 
       wrapper
-        .find('[data-mobrix-ui-test="date_picker_close_button"]')
+        .find('[data-mbx-test="date_picker_close_button"]')
         .simulate("click");
 
       expect(onChangeStub).toBeCalled;

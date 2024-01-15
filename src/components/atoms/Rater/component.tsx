@@ -42,7 +42,7 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
         unstyled
         disabled={disabled}
         additionalProps={{
-          "data-mobrix-ui-test": `vote_${i}`,
+          "data-mbx-test": `vote_${i}`,
         }}
         {...(!(readonly || disabled) && {
           onClick: () => {

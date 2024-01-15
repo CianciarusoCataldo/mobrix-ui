@@ -1,21 +1,21 @@
-[data-mobrix-ui-id="popup"] {
+[data-mbx-id="popup"] {
   position: relative;
 }
 
-[data-mobrix-ui-id="popup"] [data-mobrix-ui-class="popup-content"] {
+[data-mbx-id="popup"] [data-mbx-class="popup-content"] {
   position: absolute;
   scroll-behavior: smooth;
   animation-duration: 0.2s;
   z-index: 2;
 }
 
-[data-mobrix-ui-id="popup"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-class="popup-content"] {
+[data-mbx-id="popup"][data-mbx-styled="true"]
+  [data-mbx-class="popup-content"] {
   border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
-  background: var(--mobrix-ui-computed-popup-background);
-  color: var(--mobrix-ui-computed-popup-text-color);
+  background: var(--mbx-c-pop-bg);
+  color: var(--mbx-c-pop-txt);
   -webkit-animation: fadein 0.3s;
   -moz-animation: fadein 0.3s;
   -ms-animation: fadein 0.3s;

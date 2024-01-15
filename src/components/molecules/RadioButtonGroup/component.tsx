@@ -33,8 +33,8 @@ const radioButtonGroupComponent: MobrixUiReactiveComponent<
   return returnElements.map((element, index) => (
     <div
       className={elementClassName}
-      data-mobrix-ui-text-position={element.textPosition || defaultPosition}
-      data-mobrix-ui-class="radio-group-element"
+      data-mbx-text-position={element.textPosition || defaultPosition}
+      data-mbx-class="radio-group-element"
       key={"radio_group_element_" + index}
     >
       {element.text && (
@@ -42,7 +42,7 @@ const radioButtonGroupComponent: MobrixUiReactiveComponent<
           disabled={disabled}
           key="radio_text"
           additionalProps={{
-            "data-mobrix-ui-class": "radio-text",
+            "data-mbx-class": "radio-text",
           }}
           dark={dark}
         >
@@ -53,7 +53,7 @@ const radioButtonGroupComponent: MobrixUiReactiveComponent<
       <RadioButton
         disabled={disabled}
         deselectable={false}
-        additionalProps={{ "data-mobrix-ui-test": "radio_component_" + index }}
+        additionalProps={{ "data-mbx-test": "radio_component_" + index }}
         key="radio_component"
         value={value === index}
         onChange={() => {

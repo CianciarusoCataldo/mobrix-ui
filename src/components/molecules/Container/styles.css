@@ -1,4 +1,4 @@
-[data-mobrix-ui-id="container"][data-mobrix-ui-styled="true"] {
-  background: var(--mobrix-ui-computed-container-background);
-  color: var(--mobrix-ui-computed-container-text-color);
+[data-mbx-id="container"][data-mbx-styled="true"] {
+  background: var(--mbx-c-con-bg);
+  color: var(--mbx-c-con-txt);
 }

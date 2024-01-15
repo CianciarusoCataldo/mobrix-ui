@@ -1,14 +1,14 @@
-[data-mobrix-ui-id="inputbox"] {
-  background-color: var(--mobrix-ui-computed-inputbox-background);
-  color: var(--mobrix-ui-computed-inputbox-text-color);
+[data-mbx-id="inputbox"] {
+  background-color: var(--mbx-c-inb-bgc);
+  color: var(--mbx-c-inb-txt);
 }
 
-[data-mobrix-ui-id="inputbox"][data-mobrix-ui-styled="true"] {
+[data-mbx-id="inputbox"][data-mbx-styled="true"] {
   border-radius: 5px;
   padding: 0.5rem;
   border-color: transparent;
 }
 
-[data-mobrix-ui-id="inputbox"][data-mobrix-ui-styled="true"][data-mobrix-ui-autoresizable="true"] {
+[data-mbx-id="inputbox"][data-mbx-styled="true"][data-mbx-autoresizable="true"] {
   width: fit-content;
 }

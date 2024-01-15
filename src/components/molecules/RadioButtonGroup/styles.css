@@ -1,20 +1,20 @@
-[data-mobrix-ui-id="radio-button-group"] {
+[data-mbx-id="radio-button-group"] {
   display: flex;
   flex-direction: column;
   padding: 0.3rem;
   width: fit-content;
 }
 
-[data-mobrix-ui-id="radio-button-group"][data-mobrix-ui-background="true"] {
-  background: var(--mobrix-ui-computed-radiogroup-background);
-  color: var(--mobrix-ui-computed-radiogroup-text-color);
+[data-mbx-id="radio-button-group"][data-mbx-background="true"] {
+  background: var(--mbx-c-radg-bg);
+  color: var(--mbx-c-radg-txt);
 }
 
-[data-mobrix-ui-id="radio-button-group"][data-mobrix-ui-orientation="true"] {
+[data-mbx-id="radio-button-group"][data-mbx-orientation="true"] {
   flex-direction: row;
 }
 
-[data-mobrix-ui-id="radio-button-group"] [data-mobrix-ui-text-position] {
+[data-mbx-id="radio-button-group"] [data-mbx-text-position] {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -22,69 +22,69 @@
   justify-content: center;
 }
 
-[data-mobrix-ui-id="radio-button-group"][data-mobrix-ui-orientation="true"]
-  [data-mobrix-ui-text-position] {
+[data-mbx-id="radio-button-group"][data-mbx-orientation="true"]
+  [data-mbx-text-position] {
   margin: 0.3rem 1rem 0.3rem 1rem;
 }
 
-[data-mobrix-ui-id="radio-button-group"]:not(
-    [data-mobrix-ui-orientation="true"]
+[data-mbx-id="radio-button-group"]:not(
+    [data-mbx-orientation="true"]
   )
-  [data-mobrix-ui-text-position] {
+  [data-mbx-text-position] {
   margin: 1rem 0.3rem 1rem 0.3rem;
 }
 
-[data-mobrix-ui-id="radio-button-group"]
-  [data-mobrix-ui-text-position="right"] {
+[data-mbx-id="radio-button-group"]
+  [data-mbx-text-position="right"] {
   flex-direction: row-reverse;
 }
 
-[data-mobrix-ui-id="radio-button-group"] [data-mobrix-ui-text-position="left"] {
+[data-mbx-id="radio-button-group"] [data-mbx-text-position="left"] {
   flex-direction: row;
 }
 
-[data-mobrix-ui-id="radio-button-group"] [data-mobrix-ui-text-position="top"] {
+[data-mbx-id="radio-button-group"] [data-mbx-text-position="top"] {
   flex-direction: column;
 }
 
-[data-mobrix-ui-id="radio-button-group"]
-  [data-mobrix-ui-text-position="bottom"] {
+[data-mbx-id="radio-button-group"]
+  [data-mbx-text-position="bottom"] {
   flex-direction: column-reverse;
 }
 
-[data-mobrix-ui-id="radio-button-group"]
-  [data-mobrix-ui-text-position="left"]
-  [data-mobrix-ui-class="radio-text"] {
+[data-mbx-id="radio-button-group"]
+  [data-mbx-text-position="left"]
+  [data-mbx-class="radio-text"] {
   margin-right: 0.7rem;
 }
 
-[data-mobrix-ui-id="radio-button-group"]
-  [data-mobrix-ui-text-position="right"]
-  [data-mobrix-ui-class="radio-text"] {
+[data-mbx-id="radio-button-group"]
+  [data-mbx-text-position="right"]
+  [data-mbx-class="radio-text"] {
   margin-left: 0.7rem;
 }
 
-[data-mobrix-ui-id="radio-button-group"]
-  [data-mobrix-ui-text-position="top"]
-  [data-mobrix-ui-class="radio-text"] {
+[data-mbx-id="radio-button-group"]
+  [data-mbx-text-position="top"]
+  [data-mbx-class="radio-text"] {
   margin-bottom: 0.7rem;
   margin-top: 0;
 }
 
-[data-mobrix-ui-id="radio-button-group"]
-  [data-mobrix-ui-text-position="bottom"]
-  [data-mobrix-ui-class="radio-text"] {
+[data-mbx-id="radio-button-group"]
+  [data-mbx-text-position="bottom"]
+  [data-mbx-class="radio-text"] {
   margin-top: 0.7rem;
   margin-bottom: 0;
 }
 
 @media (max-width: 600px) {
-  [data-mobrix-ui-id="radio-button-group"][data-mobrix-ui-orientation="true"] {
+  [data-mbx-id="radio-button-group"][data-mbx-orientation="true"] {
     flex-direction: column;
   }
 
-  [data-mobrix-ui-id="radio-button-group"][data-mobrix-ui-orientation="true"]
-    [data-mobrix-ui-text-position] {
+  [data-mbx-id="radio-button-group"][data-mbx-orientation="true"]
+    [data-mbx-text-position] {
     margin: 1rem 0.3rem 1rem 0.3rem;
   }
 }

@@ -38,7 +38,7 @@ const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
       alwaysVisible
       noTopDivider
       additionalProps={{
-        "data-mobrix-ui-class": "modal-window",
+        "data-mbx-class": "modal-window",
       }}
       className={className}
       dark={dark}

@@ -47,8 +47,8 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
     components.push(
       <Container
         additionalProps={{
-          "data-mobrix-ui-class": "form-field-box",
-          "data-mobrix-ui-form-field-header-box": true,
+          "data-mbx-class": "form-field-box",
+          "data-mbx-form-field-header-box": true,
         }}
         animated={animated}
         key="form_field_header_box"
@@ -67,11 +67,11 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
       disabled={disabled}
       animated={animated}
       additionalProps={{
-        "data-mobrix-ui-class": "form-field-component",
-        "data-mobrix-ui-form-field-error": error,
+        "data-mbx-class": "form-field-component",
+        "data-mbx-form-field-error": error,
         ...(animate && {
           ...{
-            "data-mobrix-ui-animation": "shake",
+            "data-mbx-animation": "shake",
           },
         }),
       }}
@@ -107,8 +107,8 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
   components.push(
     <Container
       additionalProps={{
-        "data-mobrix-ui-class": "form-field-box",
-        "data-mobrix-ui-form-field-error-box": true,
+        "data-mbx-class": "form-field-box",
+        "data-mbx-form-field-error-box": true,
       }}
       animated={true}
       dark={dark}

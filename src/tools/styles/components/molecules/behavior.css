@@ -1,415 +1,195 @@
 @import url("constants/computed.css");
 
-[data-mobrix-ui-id][data-mobrix-ui-dark="false"] {
+[data-mbx-id][data-mbx-dark="false"] {
   /** Card **/
-  --mobrix-ui-computed-card-background: var(
-    --mobrix-ui-computed-card-background-light
-  );
-
-  --mobrix-ui-computed-card-text-color: var(
-    --mobrix-ui-computed-card-text-color-light
-  );
+  --mbx-c-card-bg: var(--mbx-c-card-bg-l);
+  --mbx-c-card-txt: var(--mbx-c-card-txt-l);
 
   /** Carousel **/
-  --mobrix-ui-computed-carousel-background: var(
-    --mobrix-ui-computed-carousel-background-light
-  );
-
-  --mobrix-ui-computed-carousel-arrow-color: var(
-    --mobrix-ui-computed-carousel-arrow-color-light
-  );
-
-  --mobrix-ui-computed-carousel-arrow-color-hover: var(
-    --mobrix-ui-computed-carousel-arrow-color-hover-light
-  );
-
-  --mobrix-ui-computed-carousel-dot-full-background: var(
-    --mobrix-ui-computed-carousel-dot-full-background-light
-  );
-
-  --mobrix-ui-computed-carousel-dot-empty-background: var(
-    --mobrix-ui-computed-carousel-dot-empty-background-light
-  );
+  --mbx-c-car-bg: var(--mbx-c-car-bg-l);
+  --mbx-c-car-arr: var(--mbx-c-car-arr-l);
+  --mbx-c-car-arr-h: var(--mbx-c-car-arr-h-l);
+  --mbx-c-car-dot-f: var(--mbx-c-car-dot-f-l);
+  --mbx-c-car-dot-e: var(--mbx-c-car-dot-e-l);
 
   /** Container **/
-  --mobrix-ui-computed-container-background: var(
-    --mobrix-ui-computed-container-background-light
-  );
-  --mobrix-ui-computed-container-text-color: var(
-    --mobrix-ui-computed-container-text-color-light
-  );
+  --mbx-c-con-bg: var(--mbx-c-con-bg-l);
+  --mbx-c-con-txt: var(--mbx-c-con-txt-l);
 
   /** DismissableCard **/
-  --mobrix-ui-computed-dismissablecard-background: var(
-    --mobrix-ui-computed-dismissablecard-background-light
-  );
-
-  --mobrix-ui-computed-dismissablecard-text-color: var(
-    --mobrix-ui-computed-dismissablecard-text-color-light
-  );
-
-  --mobrix-ui-computed-dismissablecard-x-color: var(
-    --mobrix-ui-computed-dismissablecard-x-color-light
-  );
-  --mobrix-ui-computed-dismissablecard-x-color-hover: var(
-    --mobrix-ui-computed-dismissablecard-x-color-hover-light
-  );
+  --mbx-c-dcard-bg: var(--mbx-c-dcard-bg-l);
+  --mbx-c-dcard-txt: var(--mbx-c-dcard-txt-l);
+  --mbx-c-dcard-x: var(--mbx-c-dcard-x-l);
+  --mbx-c-dcard-x-h: var(--mbx-c-dcard-x-h-l);
 
   /** Dropdown **/
-  --mobrix-ui-computed-dropdown-arrow-color: var(
-    --mobrix-ui-computed-dropdown-arrow-color-light
-  );
-
-  --mobrix-ui-computed-dropdown-arrow-color-hover: var(
-    --mobrix-ui-computed-dropdown-arrow-color-hover-light
-  );
-  --mobrix-ui-computed-dropdown-background: var(
-    --mobrix-ui-computed-dropdown-background-light
-  );
-  --mobrix-ui-computed-dropdown-background-hover: var(
-    --mobrix-ui-computed-dropdown-background-hover-light
-  );
-  --mobrix-ui-computed-dropdown-text-color: var(
-    --mobrix-ui-computed-dropdown-text-color-light
-  );
-  --mobrix-ui-computed-dropdown-text-color-hover: var(
-    --mobrix-ui-computed-dropdown-text-color-hover-light
-  );
+  --mbx-c-drop-arr: var(--mbx-c-drop-arr-l);
+  --mbx-c-drop-arr-h: var(--mbx-c-drop-arr-h-l);
+  --mbx-c-drop-bg: var(--mbx-c-drop-bg-l);
+  --mbx-c-drop-bg-h: var(--mbx-c-drop-bg-h-l);
+  --mbx-c-drop-txt: var(--mbx-c-drop-txt-l);
+  --mbx-c-drop-txt-h: var(--mbx-c-drop-txt-h-l);
 
   /** ExpandableContainer **/
-  --mobrix-ui-computed-expandable-container-background: var(
-    --mobrix-ui-computed-expandable-container-background-light
-  );
-  --mobrix-ui-computed-expandable-container-text-color: var(
-    --mobrix-ui-computed-expandable-container-text-color-light
-  );
-  --mobrix-ui-computed-expandable-container-arrow-color: var(
-    --mobrix-ui-computed-expandable-container-arrow-color-light
-  );
-  --mobrix-ui-computed-expandable-container-arrow-color-hover: var(
-    --mobrix-ui-computed-expandable-container-arrow-color-hover-light
-  );
+  --mbx-c-exp-bg: var(--mbx-c-exp-bg-l);
+  --mbx-c-exp-text: var(--mbx-c-exp-txt-l);
+  --mbx-c-exp-arr: var(--mbx-c-exp-arr-l);
+  --mbx-c-exp-arr-h: var(--mbx-c-exp-arr-h-l);
 
   /** FormField **/
-  --mobrix-ui-computed-formfield-background: var(
-    --mobrix-ui-computed-formfield-background-light
-  );
-  --mobrix-ui-computed-formfield-text-color: var(
-    --mobrix-ui-computed-formfield-text-color-light
-  );
-  --mobrix-ui-computed-formfield-background-hover: var(
-    --mobrix-ui-computed-formfield-background-hover-light
-  );
-  --mobrix-ui-computed-formfield-text-color-hover: var(
-    --mobrix-ui-computed-formfield-text-color-hover-light
-  );
-  --mobrix-ui-computed-formfield-error-border: var(
-    --mobrix-ui-computed-formfield-error-border-light
-  );
-  --mobrix-ui-computed-formfield-error-text: var(
-    --mobrix-ui-computed-formfield-error-text-light
-  );
+  --mbx-c-field-bg: var(--mbx-c-field-bg-l);
+  --mbx-c-field-txt: var(--mbx-c-field-txt-l);
+  --mbx-c-field-bg-h: var(--mbx-c-field-bg-h-l);
+  --mbx-c-field-txt-h: var(--mbx-c-field-txt-h-l);
+  --mbx-c-field-err-b: var(--mbx-c-field-err-b-l);
+  --mbx-c-field-err-txt: var(--mbx-c-field-err-txt-l);
 
   /** List **/
-  --mobrix-ui-computed-list-text-color: var(
-    --mobrix-ui-computed-list-text-color-light
-  );
-  --mobrix-ui-computed-list-text-color-hover: var(
-    --mobrix-ui-computed-list-text-color-hover-light
-  );
+  --mbx-c-lst-txt: var(--mbx-c-lst-txt-l);
+  --mbx-c-lst-txt-h: var(--mbx-c-lst-txt-h-l);
 
   /** Modal **/
-  --mobrix-ui-computed-modal-background: var(
-    --mobrix-ui-computed-modal-background-light
-  );
-  --mobrix-ui-computed-modal-x-color: var(
-    --mobrix-ui-computed-modal-x-color-light
-  );
-  --mobrix-ui-computed-modal-x-color-hover: var(
-    --mobrix-ui-computed-modal-x-color-hover-light
-  );
+  --mbx-c-mod-bg: var(--mbx-c-mod-bg-l);
+  --mbx-c-mod-x: var(--mbx-c-mod-x-l);
+  --mbx-c-mod-x-h: var(--mbx-c-mod-x-h-l);
 
   /** Popup **/
-  --mobrix-ui-computed-popup-background: var(
-    --mobrix-ui-computed-popup-background-light
-  );
-  --mobrix-ui-computed-popup-text-color: var(
-    --mobrix-ui-computed-popup-text-color-light
-  );
+  --mbx-c-pop-bg: var(--mbx-c-pop-bg-l);
+  --mbx-c-pop-txt: var(--mbx-c-pop-txt-l);
 
   /** RadioButtonGroup **/
-  --mobrix-ui-computed-radiogroup-background: var(
-    --mobrix-ui-computed-radiogroup-background-light
-  );
-  --mobrix-ui-computed-radiogroup-text-color: var(
-    --mobrix-ui-computed-radiogroup-text-color-light
-  );
+  --mbx-c-radg-bg: var(--mbx-c-radg-bg-l);
+  --mbx-c-radg-txt: var(--mbx-c-radg-txt-l);
 
   /** Review **/
-  --mobrix-ui-computed-review-background: var(
-    --mobrix-ui-computed-review-background-light
-  );
-  --mobrix-ui-computed-review-text-color: var(
-    --mobrix-ui-computed-review-text-color-light
-  );
-  --mobrix-ui-computed-review-link-color: var(
-    --mobrix-ui-computed-review-link-color-light
-  );
-  --mobrix-ui-computed-review-github-color: var(
-    --mobrix-ui-computed-review-github-color-light
-  );
+  --mbx-c-rev-bg: var(--mbx-c-rev-bg-l);
+  --mbx-c-rev-txt: var(--mbx-c-rev-txt-l);
+  --mbx-c-rev-link: var(--mbx-c-rev-link-l);
+  --mbx-c-rev-gh: var(--mbx-c-rev-gh-l);
 
   /** Table **/
-  --mobrix-ui-computed-table-background: var(
-    --mobrix-ui-computed-table-background-light
-  );
-  --mobrix-ui-computed-table-text-color: var(
-    --mobrix-ui-computed-table-text-color-light
-  );
-  --mobrix-ui-computed-table-header-background: var(
-    --mobrix-ui-computed-table-header-background-light
-  );
-  --mobrix-ui-computed-table-header-text-color: var(
-    --mobrix-ui-computed-table-header-text-color-light
-  );
-  --mobrix-ui-computed-table-border-color: var(
-    --mobrix-ui-computed-table-border-color-light
-  );
+  --mbx-c-table-bg: var(--mbx-c-table-bg-l);
+  --mbx-c-table-txt: var(--mbx-c-table-txt-l);
+  --mbx-c-table-head-bg: var(--mbx-c-table-head-bg-l);
+  --mbx-c-table-head-txt: var(--mbx-c-table-head-txt-l);
+  --mbx-c-table-bord: var(--mbx-c-table-bord-l);
 
   /** TabViewer **/
-  --mobrix-ui-computed-tab-viewer-background: var(
-    --mobrix-ui-computed-tab-viewer-background-light
-  );
-  --mobrix-ui-computed-tab-viewer-text-color: var(
-    --mobrix-ui-computed-tab-viewer-text-color-light
-  );
-  --mobrix-ui-computed-tab-viewer-background-inactive: var(
-    --mobrix-ui-computed-tab-viewer-background-inactive-light
-  );
-  --mobrix-ui-computed-tab-viewer-background-inactive-hover: var(
-    --mobrix-ui-computed-tab-viewer-background-inactive-hover-light
-  );
-  --mobrix-ui-computed-tab-viewer-text-color-inactive: var(
-    --mobrix-ui-computed-tab-viewer-text-color-inactive-light
-  );
+  --mbx-c-tabv-bg: var(--mbx-c-tabv-bg-l);
+  --mbx-c-tabv-txt: var(--mbx-c-tabv-txt-l);
+  --mbx-c-tabv-off-bg: var(--mbx-c-tabv-off-bg-l);
+  --mbx-c-tabv-off-bg-h: var(--mbx-c-tabv-off-bg-h-l);
+  --mbx-c-tabv-off-txt: var(--mobrix--mbx-c-tabv-off-txt-l);
 }
 
-[data-mobrix-ui-id][data-mobrix-ui-dark="true"] {
+[data-mbx-id][data-mbx-dark="true"] {
   /** Card **/
-  --mobrix-ui-computed-card-background: var(
-    --mobrix-ui-computed-card-background-dark
-  );
+  --mbx-c-card-bg: var(--mbx-c-card-bg-d);
 
-  --mobrix-ui-computed-card-text-color: var(
-    --mobrix-ui-computed-card-text-color-dark
-  );
+  --mbx-c-card-txt: var(--mbx-c-card-txt-d);
 
   /** Carousel **/
-  --mobrix-ui-computed-carousel-background: var(
-    --mobrix-ui-computed-carousel-background-dark
-  );
-  --mobrix-ui-computed-carousel-arrow-color: var(
-    --mobrix-ui-computed-carousel-arrow-color-dark
-  );
-  --mobrix-ui-computed-carousel-arrow-color-hover: var(
-    --mobrix-ui-computed-carousel-arrow-color-hover-dark
-  );
-  --mobrix-ui-computed-carousel-dot-full-background: var(
-    --mobrix-ui-computed-carousel-dot-full-background-dark
-  );
+  --mbx-c-car-bg: var(--mbx-c-car-bg-d);
+  --mbx-c-car-arr: var(--mbx-c-car-arr-d);
+  --mbx-c-car-arr-h: var(--mbx-c-car-arr-h-d);
+  --mbx-c-car-dot-f: var(--mbx-c-car-dot-f-d);
 
-  --mobrix-ui-computed-carousel-dot-empty-background: var(
-    --mobrix-ui-computed-carousel-dot-empty-background-dark
-  );
+  --mbx-c-car-dot-e: var(--mbx-c-car-dot-e-d);
 
   /** Container **/
-  --mobrix-ui-computed-container-background: var(
-    --mobrix-ui-computed-container-background-dark
-  );
-  --mobrix-ui-computed-container-text-color: var(
-    --mobrix-ui-computed-container-text-color-dark
-  );
+  --mbx-c-con-bg: var(--mbx-c-con-bg-d);
+  --mbx-c-con-txt: var(--mbx-c-con-txt-d);
 
   /** DismissableCard **/
-  --mobrix-ui-computed-dismissablecard-background: var(
-    --mobrix-ui-computed-dismissablecard-background-dark
-  );
-  --mobrix-ui-computed-dismissablecard-text-color: var(
-    --mobrix-ui-computed-dismissablecard-text-color-dark
-  );
-  --mobrix-ui-computed-dismissablecard-x-color: var(
-    --mobrix-ui-computed-dismissablecard-x-color-dark
-  );
-  --mobrix-ui-computed-dismissablecard-x-color-hover: var(
-    --mobrix-ui-computed-dismissablecard-x-color-hover-dark
-  );
+  --mbx-c-dcard-bg: var(--mbx-c-dcard-bg-d);
+  --mbx-c-dcard-txt: var(--mbx-c-dcard-txt-d);
+  --mbx-c-dcard-x: var(--mbx-c-dcard-x-d);
+  --mbx-c-dcard-x-h: var(--mbx-c-dcard-x-h-d);
 
   /** Dropdown **/
-  --mobrix-ui-computed-dropdown-arrow-color: var(
-    --mobrix-ui-computed-dropdown-arrow-color-dark
-  );
+  --mbx-c-drop-arr: var(--mbx-c-drop-arr-d);
 
-  --mobrix-ui-computed-dropdown-arrow-color-hover: var(
-    --mobrix-ui-computed-dropdown-arrow-color-hover-dark
-  );
+  --mbx-c-drop-arr-h: var(--mbx-c-drop-arr-h-d);
 
-  --mobrix-ui-computed-dropdown-background: var(
-    --mobrix-ui-computed-dropdown-background-dark
-  );
-  --mobrix-ui-computed-dropdown-background-hover: var(
-    --mobrix-ui-computed-dropdown-background-hover-dark
-  );
+  --mbx-c-drop-bg: var(--mbx-c-drop-bg-d);
+  --mbx-c-drop-bg-h: var(--mbx-c-drop-bg-h-d);
 
-  --mobrix-ui-computed-dropdown-text-color: var(
-    --mobrix-ui-computed-dropdown-text-color-dark
-  );
-  --mobrix-ui-computed-dropdown-text-color-hover: var(
-    --mobrix-ui-computed-dropdown-text-color-hover-dark
-  );
+  --mbx-c-drop-txt: var(--mbx-c-drop-txt-d);
+  --mbx-c-drop-txt-h: var(--mbx-c-drop-txt-h-d);
 
-  /** Container **/
-  --mobrix-ui-computed-expandable-container-background: var(
-    --mobrix-ui-computed-expandable-container-background-dark
-  );
-  --mobrix-ui-computed-expandable-container-text-color: var(
-    --mobrix-ui-computed-expandable-container-text-color-dark
-  );
-  --mobrix-ui-computed-expandable-container-arrow-color: var(
-    --mobrix-ui-computed-expandable-container-arrow-color-dark
-  );
-  --mobrix-ui-computed-expandable-container-arrow-color-hover: var(
-    --mobrix-ui-computed-expandable-container-arrow-color-hover-dark
-  );
+  /** ExpandableContainer **/
+  --mbx-c-exp-bg: var(--mbx-c-exp-bg-d);
+  --mbx-c-exp-text: var(--mbx-c-exp-txt-d);
+  --mbx-c-exp-arr: var(--mbx-c-exp-arr-d);
+  --mbx-c-exp-arr-h: var(--mbx-c-exp-arr-h-d);
 
   /** FormField **/
-  --mobrix-ui-computed-formfield-background: var(
-    --mobrix-ui-computed-formfield-background-dark
-  );
-  --mobrix-ui-computed-formfield-text-color: var(
-    --mobrix-ui-computed-formfield-text-color-dark
-  );
-  --mobrix-ui-computed-formfield-background-hover: var(
-    --mobrix-ui-computed-formfield-background-hover-dark
-  );
-  --mobrix-ui-computed-formfield-text-color-hover: var(
-    --mobrix-ui-computed-formfield-text-color-hover-dark
-  );
-  --mobrix-ui-computed-formfield-error-border: var(
-    --mobrix-ui-computed-formfield-error-border-dark
-  );
-  --mobrix-ui-computed-formfield-error-text: var(
-    --mobrix-ui-computed-formfield-error-text-dark
-  );
+  --mbx-c-field-bg: var(--mbx-c-field-bg-d);
+  --mbx-c-field-txt: var(--mbx-c-field-txt-d);
+  --mbx-c-field-bg-h: var(--mbx-c-field-bg-h-d);
+  --mbx-c-field-txt-h: var(--mbx-c-field-txt-h-d);
+  --mbx-c-field-err-b: var(--mbx-c-field-err-b-d);
+  --mbx-c-field-err-txt: var(--mbx-c-field-err-txt-d);
 
   /** List **/
-  --mobrix-ui-computed-list-text-color: var(
-    --mobrix-ui-computed-list-text-color-dark
-  );
+  --mbx-c-lst-txt: var(--mbx-c-lst-txt-d);
 
-  --mobrix-ui-computed-list-text-color-hover: var(
-    --mobrix-ui-computed-list-text-color-hover-dark
-  );
+  --mbx-c-lst-txt-h: var(--mbx-c-lst-txt-h-d);
 
   /** Modal **/
-  --mobrix-ui-computed-modal-background: var(
-    --mobrix-ui-computed-modal-background-dark
-  );
+  --mbx-c-mod-bg: var(--mbx-c-mod-bg-d);
 
-  --mobrix-ui-computed-modal-x-color: var(
-    --mobrix-ui-computed-modal-x-color-dark
-  );
-  --mobrix-ui-computed-modal-x-color-hover: var(
-    --mobrix-ui-computed-modal-x-color-hover-dark
-  );
+  --mbx-c-mod-x: var(--mbx-c-mod-x-d);
+  --mbx-c-mod-x-h: var(--mbx-c-mod-x-h-d);
 
   /** Popup **/
-  --mobrix-ui-computed-popup-background: var(
-    --mobrix-ui-computed-popup-background-dark
-  );
-  --mobrix-ui-computed-popup-text-color: var(
-    --mobrix-ui-computed-popup-text-color-dark
-  );
+  --mbx-c-pop-bg: var(--mbx-c-pop-bg-d);
+  --mbx-c-pop-txt: var(--mbx-c-pop-txt-d);
 
   /** RadioButtonGroup **/
-  --mobrix-ui-computed-radiogroup-background: var(
-    --mobrix-ui-computed-radiogroup-background-dark
-  );
-  --mobrix-ui-computed-radiogroup-text-color: var(
-    --mobrix-ui-computed-radiogroup-text-color-dark
-  );
+  --mbx-c-radg-bg: var(--mbx-c-radg-bg-d);
+  --mbx-c-radg-txt: var(--mbx-c-radg-txt-d);
 
   /** Review **/
-  --mobrix-ui-computed-review-background: var(
-    --mobrix-ui-computed-review-background-dark
-  );
-  --mobrix-ui-computed-review-text-color: var(
-    --mobrix-ui-computed-review-text-color-dark
-  );
-  --mobrix-ui-computed-review-link-color: var(
-    --mobrix-ui-computed-review-link-color-dark
-  );
-  --mobrix-ui-computed-review-github-color: var(
-    --mobrix-ui-computed-review-github-color-dark
-  );
+  --mbx-c-rev-bg: var(--mbx-c-rev-bg-d);
+  --mbx-c-rev-txt: var(--mbx-c-rev-txt-d);
+  --mbx-c-rev-link: var(--mbx-c-rev-link-d);
+  --mbx-c-rev-gh: var(--mbx-c-rev-gh-d);
 
   /** Table **/
-  --mobrix-ui-computed-table-background: var(
-    --mobrix-ui-computed-table-background-dark
-  );
-  --mobrix-ui-computed-table-text-color: var(
-    --mobrix-ui-computed-table-text-color-dark
-  );
-  --mobrix-ui-computed-table-header-background: var(
-    --mobrix-ui-computed-table-header-background-dark
-  );
-  --mobrix-ui-computed-table-header-text-color: var(
-    --mobrix-ui-computed-table-header-text-color-dark
-  );
-  --mobrix-ui-computed-table-border-color: var(
-    --mobrix-ui-computed-table-border-color-dark
-  );
+  --mbx-c-table-bg: var(--mbx-c-table-bg-d);
+  --mbx-c-table-txt: var(--mbx-c-table-txt-d);
+  --mbx-c-table-head-bg: var(--mbx-c-table-head-bg-d);
+  --mbx-c-table-head-txt: var(--mbx-c-table-head-txt-d);
+  --mbx-c-table-bord: var(--mbx-c-table-bord-d);
 
   /** TabViewer **/
-  --mobrix-ui-computed-tab-viewer-background: var(
-    --mobrix-ui-computed-tab-viewer-background-dark
-  );
-  --mobrix-ui-computed-tab-viewer-text-color: var(
-    --mobrix-ui-computed-tab-viewer-text-color-dark
-  );
-  --mobrix-ui-computed-tab-viewer-background-inactive: var(
-    --mobrix-ui-computed-tab-viewer-background-inactive-dark
-  );
-  --mobrix-ui-computed-tab-viewer-background-inactive-hover: var(
-    --mobrix-ui-computed-tab-viewer-background-inactive-hover-dark
-  );
-  --mobrix-ui-computed-tab-viewer-text-color-inactive: var(
-    --mobrix-ui-computed-tab-viewer-text-color-inactive-dark
-  );
+  --mbx-c-tabv-bg: var(--mbx-c-tabv-bg-d);
+  --mbx-c-tabv-txt: var(--mbx-c-tabv-txt-d);
+  --mbx-c-tabv-off-bg: var(--mbx-c-tabv-off-bg-d);
+  --mbx-c-tabv-off-bg-h: var(--mbx-c-tabv-off-bg-h-d);
+  --mbx-c-tabv-off-txt: var(--mobrix--mbx-c-tabv-off-txt-d);
 }
 
-[data-mobrix-ui-id][data-mobrix-ui-background="false"],
-[data-mobrix-ui-id][data-mobrix-ui-background="false"]:hover,
-[data-mobrix-ui-id][data-mobrix-ui-styled="false"],
-[data-mobrix-ui-id][data-mobrix-ui-styled="false"]:hover {
-  --mobrix-ui-computed-card-background: transparent !important;
-  --mobrix-ui-computed-carousel-background: transparent !important;
-  --mobrix-ui-computed-container-background: transparent !important;
-  --mobrix-ui-computed-dismissablecard-background: transparent !important;
+[data-mbx-id][data-mbx-background="false"],
+[data-mbx-id][data-mbx-background="false"]:hover,
+[data-mbx-id][data-mbx-styled="false"],
+[data-mbx-id][data-mbx-styled="false"]:hover {
+  --mbx-c-card-bg: transparent !important;
+  --mbx-c-car-bg: transparent !important;
+  --mbx-c-con-bg: transparent !important;
+  --mbx-c-dcard-bg: transparent !important;
 }
 
 /** Background styles @TODO **/
 
-[data-mobrix-ui-id="table"][data-mobrix-ui-background="false"] {
-  --mobrix-ui-computed-table-background: transparent !important;
-  --mobrix-ui-computed-table-header-background: transparent !important;
+[data-mbx-id="table"][data-mbx-background="false"] {
+  --mbx-c-table-bg: transparent !important;
+  --mbx-c-table-head-bg: transparent !important;
 }
 
-[data-mobrix-ui-id="tab-viewer"][data-mobrix-ui-background="false"] {
-  --mobrix-ui-computed-tab-viewer-background: transparent !important;
-  --mobrix-ui-computed-tab-viewer-background-inactive: transparent !important;
-  --mobrix-ui-computed-tab-viewer-background-inactive-hover: transparent !important;
-}
-
-[data-mobrix-ui-id="form"][data-mobrix-ui-background="false"] {
-  --mobrix-ui-computed-form-background: transparent !important;
+[data-mbx-id="tab-viewer"][data-mbx-background="false"] {
+  --mbx-c-tabv-bg: transparent !important;
+  --mbx-c-tabv-off-bg: transparent !important;
+  --mbx-c-tabv-off-bg-h: transparent !important;
 }

@@ -1,23 +1,23 @@
-[data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"] {
+[data-mbx-id="selector"][data-mbx-styled="true"] {
   padding: 0.2rem;
-  background: var(--mobrix-ui-computed-selector-background);
-  color: var(--mobrix-ui-computed-selector-text-color);
+  background: var(--mbx-c-sel-bg);
+  color: var(--mbx-c-sel-txt);
   border: 0;
   border-radius: 6px;
 }
 
-[data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-class="selector-option"] {
-  background-color: var(--mobrix-ui-computed-selector-background);
-  color: var(--mobrix-ui-computed-selector-text-color);
+[data-mbx-id="selector"][data-mbx-styled="true"]
+  [data-mbx-class="selector-option"] {
+  background-color: var(--mbx-c-sel-bg);
+  color: var(--mbx-c-sel-txt);
   padding: 1rem;
 }
 
 @media (hover: hover) {
-  [data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]:hover,
-  [data-mobrix-ui-id="selector"][data-mobrix-ui-styled="true"]
-    [data-mobrix-ui-class="selector-option"]:hover {
-    background: var(--mobrix-ui-computed-selector-background-hover);
-    color: var(--mobrix-ui-computed-selector-text-color-hover);
+  [data-mbx-id="selector"][data-mbx-styled="true"][data-mbx-hover="true"]:hover,
+  [data-mbx-id="selector"][data-mbx-styled="true"]
+    [data-mbx-class="selector-option"]:hover {
+    background: var(--mbx-c-sel-bg-h);
+    color: var(--mbx-c-sel-txt-h);
   }
 }

@@ -71,7 +71,7 @@ const Rater: RaterComponent = ({
       }),
     additionalProps: {
       ...additionalProps,
-      "data-mobrix-ui-vertical": vertical,
+      "data-mbx-vertical": vertical,
     },
     commonProps,
   });

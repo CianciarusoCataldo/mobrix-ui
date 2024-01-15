@@ -35,7 +35,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
     <Label
       disabled={disabled}
       key="mobrix_ui_form_title"
-      additionalProps={{ "data-mobrix-ui-class": "title" }}
+      additionalProps={{ "data-mbx-class": "title" }}
       dark={dark}
     >
       {title}
@@ -51,8 +51,8 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
 
       return (
         <div
-          data-mobrix-ui-class="field"
-          data-mobrix-ui-field-type={type}
+          data-mbx-class="field"
+          data-mbx-field-type={type}
           className={fieldClassName}
           key={`form_field_${index}`}
         >
@@ -77,8 +77,8 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
       key="mobrix_ui_form_submit_button"
       dark={!dark}
       additionalProps={{
-        "data-mobrix-ui-test": "form_submit_button",
-        "data-mobrix-ui-class": "submit-button",
+        "data-mbx-test": "form_submit_button",
+        "data-mbx-class": "submit-button",
       }}
       onClick={() => {
         onSubmit && onSubmit(values);

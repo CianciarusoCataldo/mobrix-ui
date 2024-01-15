@@ -20,7 +20,7 @@ const formTest = () => {
         </Form>
       );
       wrapper
-        .find('[data-mobrix-ui-test="form_field_testField3"]')
+        .find('[data-mbx-test="form_field_testField3"]')
         .simulate("change", "new test text");
       expect(wrapper);
     });
@@ -38,11 +38,11 @@ const formTest = () => {
         />
       );
       wrapper
-        .find('[data-mobrix-ui-test="form_field_testField3"]')
+        .find('[data-mbx-test="form_field_testField3"]')
         .simulate("change", "new test text");
-      wrapper.find('[data-mobrix-ui-test="form_field_testField1"]').simulate("click");
+      wrapper.find('[data-mbx-test="form_field_testField1"]').simulate("click");
 
-      wrapper.find('[data-mobrix-ui-test="form_submit_button"]').simulate("click");
+      wrapper.find('[data-mbx-test="form_submit_button"]').simulate("click");
       expect(submitStub).toBeCalledWith({
         testField1: true,
         testField2: null,

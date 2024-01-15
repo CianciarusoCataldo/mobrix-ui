@@ -30,9 +30,9 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
       elementsArray.push(
         <div
           key={`carousel_element_${index}`}
-          data-mobrix-ui-hide={index !== item}
-          data-mobrix-ui-class="element"
-          data-mobrix-ui-animation={index === item ? activeClassName : ""}
+          data-mbx-hide={index !== item}
+          data-mbx-class="element"
+          data-mbx-animation={index === item ? activeClassName : ""}
         >
           {element}
         </div>
@@ -41,8 +41,8 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
       dots.push(
         <Button
           additionalProps={{
-            "data-mobrix-ui-class": "dot",
-            "data-mobrix-ui-test": `dot_${index}`,
+            "data-mbx-class": "dot",
+            "data-mbx-test": `dot_${index}`,
           }}
           unstyled
           disabled={disabled}
@@ -55,8 +55,8 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
           }}
         >
           <div
-            data-mobrix-ui-class="carousel-dot-icon"
-            data-mobrix-ui-icon-full={
+            data-mbx-class="carousel-dot-icon"
+            data-mbx-icon-full={
               index === item || (hoveredDot != null && index === hoveredDot)
             }
           />
@@ -66,12 +66,12 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
   }
 
   return [
-    <div data-mobrix-ui-class="elements" key="mobrix_ui_carousel_elements">
+    <div data-mbx-class="elements" key="mobrix_ui_carousel_elements">
       <Button
         dark={dark}
         additionalProps={{
-          "data-mobrix-ui-arrow": "prev",
-          "data-mobrix-ui-test": "left_arrow",
+          "data-mbx-arrow": "prev",
+          "data-mbx-test": "left_arrow",
         }}
         unstyled
         disabled={item === 0 || disabled}
@@ -87,8 +87,8 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
         dark={dark}
         unstyled
         additionalProps={{
-          "data-mobrix-ui-arrow": "next",
-          "data-mobrix-ui-test": "right_arrow",
+          "data-mbx-arrow": "next",
+          "data-mbx-test": "right_arrow",
         }}
         disabled={item === elements.length - 1 || disabled}
         onClick={() => {
@@ -99,7 +99,7 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
         {arrowIcon}
       </Button>
     </div>,
-    <div key="mobrix_ui_carousel_dots" data-mobrix-ui-class="dots">
+    <div key="mobrix_ui_carousel_dots" data-mbx-class="dots">
       {dots}
     </div>,
   ];

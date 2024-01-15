@@ -15,8 +15,8 @@ const toggleComponent: MobrixUiReactiveComponent<boolean, ToggleProps> = ({
 
   return (
     <div
-      data-mobrix-ui-flip={status}
-      data-mobrix-ui-class="toggle-icon"
+      data-mbx-flip={status}
+      data-mbx-class="toggle-icon"
     >
       {status === true ? iconOn : iconOff}
     </div>

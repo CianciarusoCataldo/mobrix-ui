@@ -31,14 +31,14 @@ const DismissableCardComponent: MobrixUiReactiveComponent<
     noDividers,
     noTopDivider,
     header: (
-      <div data-mobrix-ui-class="header-container">
-        <div data-mobrix-ui-class="dismissable-card-dismiss-container">
+      <div data-mbx-class="header-container">
+        <div data-mbx-class="dismissable-card-dismiss-container">
           <Button
             dark={dark}
             unstyled
             additionalProps={{
-              "data-mobrix-ui-class": "card-dismiss-button",
-              "data-mobrix-ui-test": "card_dismiss_button",
+              "data-mbx-class": "card-dismiss-button",
+              "data-mbx-test": "card_dismiss_button",
             }}
             disabled={disabled}
             onClick={() => {
@@ -49,7 +49,7 @@ const DismissableCardComponent: MobrixUiReactiveComponent<
             {x_icon}
           </Button>
         </div>
-        {header && <div data-mobrix-ui-class="header-element">{header}</div>}
+        {header && <div data-mbx-class="header-element">{header}</div>}
       </div>
     ),
     body,

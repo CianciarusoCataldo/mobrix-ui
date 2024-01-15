@@ -1,66 +1,66 @@
-[data-mobrix-ui-id="expandable-container"][data-mobrix-ui-styled="true"] {
-  background: var(--mobrix-ui-computed-expandable-container-background);
-  color: var(--mobrix-ui-computed-expandable-container-text-color);
+[data-mbx-id="expandable-container"][data-mbx-styled="true"] {
+  background: var(--mbx-c-exp-bg);
+  color: var(--mbx-c-exp-text);
 }
 
-[data-mobrix-ui-id="expandable-container"][data-mobrix-ui-compact="true"]
-  [data-mobrix-ui-class="expanded-area"] {
+[data-mbx-id="expandable-container"][data-mbx-compact="true"]
+  [data-mbx-class="expanded-area"] {
   max-height: 0;
   transition: max-height 0.3s ease-out;
   overflow: hidden;
 }
-[data-mobrix-ui-id="expandable-container"][data-mobrix-ui-compact="false"]
-  [data-mobrix-ui-class="expanded-area"] {
+[data-mbx-id="expandable-container"][data-mbx-compact="false"]
+  [data-mbx-class="expanded-area"] {
   max-height: 100vh;
   transition: max-height 0.3s ease-in;
   overflow: hidden;
 }
 
-[data-mobrix-ui-id="expandable-container"]
-  [data-mobrix-ui-class="container-arrow-button"] {
+[data-mbx-id="expandable-container"]
+  [data-mbx-class="container-arrow-button"] {
   display: flex;
   flex-direction: column;
   margin: auto;
 }
 
-[data-mobrix-ui-id="expandable-container"] [data-mobrix-ui-class="arrow"] {
+[data-mbx-id="expandable-container"] [data-mbx-class="arrow"] {
   margin-bottom: 0.3rem;
   padding-top: 0.2rem;
   transition: all 0.2s;
   outline: none;
 }
 
-[data-mobrix-ui-id="expandable-container"][data-mobrix-ui-a11y="true"]
-  [data-mobrix-ui-class="container-arrow-button"]:focus-visible {
+[data-mbx-id="expandable-container"][data-mbx-a11y="true"]
+  [data-mbx-class="container-arrow-button"]:focus-visible {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
 }
 
-[data-mobrix-ui-id="expandable-container"][data-mobrix-ui-a11y="true"]
-  [data-mobrix-ui-class="container-arrow-button"]:focus-visible
+[data-mbx-id="expandable-container"][data-mbx-a11y="true"]
+  [data-mbx-class="container-arrow-button"]:focus-visible
   svg {
-  fill: var(--mobrix-ui-computed-expandable-container-arrow-color-hover);
+  fill: var(--mbx-c-exp-arr-h);
 }
 
-[data-mobrix-ui-id="expandable-container"][data-mobrix-ui-compact="false"]
-  [data-mobrix-ui-class="arrow"] {
+[data-mbx-id="expandable-container"][data-mbx-compact="false"]
+  [data-mbx-class="arrow"] {
   transform: rotate(0deg);
 }
 
-[data-mobrix-ui-id="expandable-container"][data-mobrix-ui-compact="true"]
-  [data-mobrix-ui-class="arrow"] {
+[data-mbx-id="expandable-container"][data-mbx-compact="true"]
+  [data-mbx-class="arrow"] {
   transform: rotate(180deg);
 }
 
-[data-mobrix-ui-id="expandable-container"] [data-mobrix-ui-class="arrow"] {
-  fill: var(--mobrix-ui-computed-expandable-container-arrow-color);
+[data-mbx-id="expandable-container"] [data-mbx-class="arrow"] {
+  fill: var(--mbx-c-exp-arr);
 }
 
 @media (hover) {
-  [data-mobrix-ui-id="expandable-container"][data-mobrix-ui-enabled="true"]
-    [data-mobrix-ui-class="arrow"]:hover {
-    fill: var(--mobrix-ui-computed-expandable-container-arrow-color-hover);
+  [data-mbx-id="expandable-container"][data-mbx-enabled="true"]
+    [data-mbx-class="arrow"]:hover {
+    fill: var(--mbx-c-exp-arr-h);
   }
 }

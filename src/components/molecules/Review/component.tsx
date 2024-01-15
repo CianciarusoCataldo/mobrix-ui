@@ -27,7 +27,7 @@ const reviewComponent: MoBrixUiComponent<ReviewProps, BuilderComponent[]> = ({
     logo && allowedLogoTypes.includes(logo) ? logo : "default";
 
   return [
-    <div key="url" data-mobrix-ui-class="review-url-container">
+    <div key="url" data-mbx-class="review-url-container">
       {url ? (
         <Link newTab to={url} disabled={disabled}>
           {icons[selectedLogo]}
@@ -36,13 +36,13 @@ const reviewComponent: MoBrixUiComponent<ReviewProps, BuilderComponent[]> = ({
         logo && icons[selectedLogo]
       )}
     </div>,
-    <div data-mobrix-ui-class="review-info-box" key="info">
-      <div data-mobrix-ui-class="review-user-info">
-        <div data-mobrix-ui-class="review-photo">{icon}</div>
-        {user && <span data-mobrix-ui-class="review-username">{user}</span>}
+    <div data-mbx-class="review-info-box" key="info">
+      <div data-mbx-class="review-user-info">
+        <div data-mbx-class="review-photo">{icon}</div>
+        {user && <span data-mbx-class="review-username">{user}</span>}
       </div>
       {description && (
-        <span data-mobrix-ui-class="review-description">{description}</span>
+        <span data-mbx-class="review-description">{description}</span>
       )}
     </div>,
     <Rater

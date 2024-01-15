@@ -1,11 +1,11 @@
-[data-mobrix-ui-id="spinner"],
-[data-mobrix-ui-id="spinner"] svg {
+[data-mbx-id="spinner"],
+[data-mbx-id="spinner"] svg {
   background: transparent;
   min-width: 4rem;
 }
 
-[data-mobrix-ui-id="spinner"][data-mobrix-ui-enabled="true"]
-  [data-mobrix-ui-class="rotating"] {
+[data-mbx-id="spinner"][data-mbx-enabled="true"]
+  [data-mbx-class="rotating"] {
   -webkit-animation: rotating 2s linear infinite;
   -moz-animation: rotating 2s linear infinite;
   -ms-animation: rotating 2s linear infinite;

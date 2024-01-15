@@ -9,7 +9,7 @@ const selectorComponent: MobrixUiReactiveComponent<
   const optionProps = optionClassName ? { className: optionClassName } : {}
 
   return elements.map((el, index) => (
-    <option data-mobrix-ui-class="selector-option" key={"selector_option_" + index} value={index} {...optionProps}>
+    <option data-mbx-class="selector-option" key={"selector_option_" + index} value={index} {...optionProps}>
       {el}
     </option>
   ))

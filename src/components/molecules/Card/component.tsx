@@ -20,7 +20,7 @@ const cardComponent: MoBrixUiComponent<CardProps, BuilderComponent[]> = ({
   noTopDivider,
 }) => generateElementsArray([{
   condition: !!header,
-  component: <div key="mobrix_ui_card_header" data-mobrix-ui-class="header">
+  component: <div key="mobrix_ui_card_header" data-mbx-class="header">
     {header}
   </div>
 },
@@ -29,13 +29,13 @@ const cardComponent: MoBrixUiComponent<CardProps, BuilderComponent[]> = ({
   component: <Divider
     dark={dark}
     additionalProps={{
-      "data-mobrix-ui-class": "top-divider"
+      "data-mbx-class": "top-divider"
     }}
   />
 },
 {
   condition: !!body,
-  component: <div data-mobrix-ui-class="body" key="mobrix_ui_card_body">
+  component: <div data-mbx-class="body" key="mobrix_ui_card_body">
     {body}
   </div>
 },
@@ -48,14 +48,14 @@ const cardComponent: MoBrixUiComponent<CardProps, BuilderComponent[]> = ({
   component: <Divider
     dark={dark}
     additionalProps={{
-      "data-mobrix-ui-class": "bottom-divider"
+      "data-mbx-class": "bottom-divider"
     }}
   />
 },
 {
   condition: !!footer,
   component:
-    <div data-mobrix-ui-class="footer">{footer}</div>
+    <div data-mbx-class="footer">{footer}</div>
 }]);
 
 export default cardComponent;

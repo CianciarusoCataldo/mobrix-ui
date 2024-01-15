@@ -74,7 +74,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
       }),
     props: (value, setValue) => ({
       additionalProps: {
-        "data-mobrix-ui-compact": value
+        "data-mbx-compact": value
       }
     })
   });

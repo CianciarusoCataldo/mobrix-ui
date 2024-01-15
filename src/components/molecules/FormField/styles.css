@@ -1,28 +1,28 @@
-[data-mobrix-ui-id="form-field"] {
+[data-mbx-id="form-field"] {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-[data-mobrix-ui-id="form-field"] [data-mobrix-ui-class="form-field-box"] {
+[data-mbx-id="form-field"] [data-mbx-class="form-field-box"] {
   background: transparent;
 }
 
-[data-mobrix-ui-id="form-field"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-form-field-header-box="true"] {
+[data-mbx-id="form-field"][data-mbx-styled="true"]
+  [data-mbx-form-field-header-box="true"] {
   font-weight: 600;
   padding-bottom: 0.2rem;
 }
 
-[data-mobrix-ui-id="form-field"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-form-field-error-box="true"] {
-  color: var(--mobrix-ui-computed-formfield-error-text);
+[data-mbx-id="form-field"][data-mbx-styled="true"]
+  [data-mbx-form-field-error-box="true"] {
+  color: var(--mbx-c-field-err-txt);
   transition: all 0.3s ease-out;
   padding-top: 0.2rem;
 }
 
-[data-mobrix-ui-id="form-field"] [data-mobrix-ui-form-field-error="true"] {
-  border-color: var(--mobrix-ui-computed-formfield-error-border);
+[data-mbx-id="form-field"] [data-mbx-form-field-error="true"] {
+  border-color: var(--mbx-c-field-err-b);
   border-width: 2px;
   border-style: ridge;
 }

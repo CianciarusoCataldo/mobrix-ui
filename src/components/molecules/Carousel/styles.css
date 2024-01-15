@@ -1,4 +1,4 @@
-[data-mobrix-ui-id="carousel"] {
+[data-mbx-id="carousel"] {
   color: var(--mobrix-ui-text-color);
   display: flex;
   flex-direction: column;
@@ -6,20 +6,20 @@
   width: fit-content;
 }
 
-[data-mobrix-ui-id="carousel"][data-mobrix-ui-styled="true"] {
-  background: var(--mobrix-ui-computed-carousel-background);
+[data-mbx-id="carousel"][data-mbx-styled="true"] {
+  background: var(--mbx-c-car-bg);
   padding: 0.4rem;
 }
 
-[data-mobrix-ui-id="carousel"] [data-mobrix-ui-animation="from-left"] {
+[data-mbx-id="carousel"] [data-mbx-animation="from-left"] {
   --mobrix-ui-carousel-animation: slideLeft 0.3s forwards;
 }
 
-[data-mobrix-ui-id="carousel"] [data-mobrix-ui-animation="from-right"] {
+[data-mbx-id="carousel"] [data-mbx-animation="from-right"] {
   --mobrix-ui-carousel-animation: slideRight 0.3s forwards;
 }
 
-[data-mobrix-ui-id="carousel"] [data-mobrix-ui-class="element"] {
+[data-mbx-id="carousel"] [data-mbx-class="element"] {
   position: relative;
   -webkit-animation: var(--mobrix-ui-carousel-animation);
   animation: var(--mobrix-ui-carousel-animation);
@@ -28,39 +28,39 @@
   -o-animation: var(--mobrix-ui-carousel-animation);
 }
 
-[data-mobrix-ui-id="carousel"] [data-mobrix-ui-arrow] svg {
-  fill: var(--mobrix-ui-computed-carousel-arrow-color);
+[data-mbx-id="carousel"] [data-mbx-arrow] svg {
+  fill: var(--mbx-c-car-arr);
 }
 
 @media (hover) {
-  [data-mobrix-ui-id="carousel"][data-mobrix-ui-styled="true"][data-mobrix-ui-hover="true"]
-    [data-mobrix-ui-arrow]:hover
+  [data-mbx-id="carousel"][data-mbx-styled="true"][data-mbx-hover="true"]
+    [data-mbx-arrow]:hover
     svg {
-    fill: var(--mobrix-ui-computed-carousel-arrow-color-hover);
+    fill: var(--mbx-c-car-arr-h);
   }
 }
 
-[data-mobrix-ui-id="carousel"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-arrow][data-mobrix-ui-enabled="false"]
+[data-mbx-id="carousel"][data-mbx-styled="true"]
+  [data-mbx-arrow][data-mbx-enabled="false"]
   svg,
-[data-mobrix-ui-id="carousel"][data-mobrix-ui-styled="true"]
-  [data-mobrix-ui-arrow][data-mobrix-ui-enabled="false"]:hover
+[data-mbx-id="carousel"][data-mbx-styled="true"]
+  [data-mbx-arrow][data-mbx-enabled="false"]:hover
   svg {
   fill: none;
 }
 
-[data-mobrix-ui-id="carousel"] [data-mobrix-ui-arrow="prev"] {
+[data-mbx-id="carousel"] [data-mbx-arrow="prev"] {
   margin-right: 0.6rem;
 }
 
-[data-mobrix-ui-id="carousel"] [data-mobrix-ui-arrow="next"] {
+[data-mbx-id="carousel"] [data-mbx-arrow="next"] {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   margin-left: 0.6rem;
 }
 
-[data-mobrix-ui-id="carousel"] [data-mobrix-ui-class="elements"],
-[data-mobrix-ui-id="carousel"] [data-mobrix-ui-class="dots"] {
+[data-mbx-id="carousel"] [data-mbx-class="elements"],
+[data-mbx-id="carousel"] [data-mbx-class="dots"] {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -68,37 +68,37 @@
   padding: 0.5rem;
 }
 
-[data-mobrix-ui-id="carousel"] [data-mobrix-ui-class="dots"] {
+[data-mbx-id="carousel"] [data-mbx-class="dots"] {
   justify-content: center;
 }
 
-[data-mobrix-ui-id="carousel"]
-  [data-mobrix-ui-class="dots"]
-  [data-mobrix-ui-class="dot"] {
+[data-mbx-id="carousel"]
+  [data-mbx-class="dots"]
+  [data-mbx-class="dot"] {
   margin-left: 0.3rem;
   margin-right: 0.3rem;
 }
 
-[data-mobrix-ui-id="carousel"]
-  [data-mobrix-ui-class="dots"]
-  [data-mobrix-ui-class="dot"]
-  [data-mobrix-ui-class="carousel-dot-icon"] {
+[data-mbx-id="carousel"]
+  [data-mbx-class="dots"]
+  [data-mbx-class="dot"]
+  [data-mbx-class="carousel-dot-icon"] {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border-color: transparent;
 }
 
-[data-mobrix-ui-id="carousel"]
-  [data-mobrix-ui-class="dots"]
-  [data-mobrix-ui-class="dot"]
-  [data-mobrix-ui-class="carousel-dot-icon"][data-mobrix-ui-icon-full="true"] {
-  background: var(--mobrix-ui-computed-carousel-dot-full-background);
+[data-mbx-id="carousel"]
+  [data-mbx-class="dots"]
+  [data-mbx-class="dot"]
+  [data-mbx-class="carousel-dot-icon"][data-mbx-icon-full="true"] {
+  background: var(--mbx-c-car-dot-f);
 }
 
-[data-mobrix-ui-id="carousel"]
-  [data-mobrix-ui-class="dots"]
-  [data-mobrix-ui-class="dot"]
-  [data-mobrix-ui-class="carousel-dot-icon"][data-mobrix-ui-icon-full="false"] {
-  background: var(--mobrix-ui-computed-carousel-dot-empty-background);
+[data-mbx-id="carousel"]
+  [data-mbx-class="dots"]
+  [data-mbx-class="dot"]
+  [data-mbx-class="carousel-dot-icon"][data-mbx-icon-full="false"] {
+  background: var(--mbx-c-car-dot-e);
 }

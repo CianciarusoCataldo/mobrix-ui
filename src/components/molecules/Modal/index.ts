@@ -74,7 +74,7 @@ const Modal: ModalComponent = ({
     },
     additionalProps: {
       ...additionalProps,
-      "data-mobrix-ui-modal-animation": commonProps.animated && value,
+      "data-mbx-modal-animation": commonProps.animated && value,
     },
   });
 };

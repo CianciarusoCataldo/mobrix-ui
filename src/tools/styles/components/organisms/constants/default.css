@@ -1,11 +1,11 @@
-[data-mobrix-ui-id] {
+[data-mbx-id] {
   /* Calendar */
-  --mobrix-ui-default-calendar-today: red;
+  --mbx-d-cal-tod: red;
 
   /* Drawer */
-  --mobrix-ui-default-drawer-arrow-hover: orange;
+  --mbx-d-draw-arr-h: orange;
 
-  /****/
-  --mobrix-ui-default-datepicker-icon-hover-light: blue;
-  --mobrix-ui-default-datepicker-icon-hover-dark: orange;
+  /** DatePicker **/
+  --mbx-d-dtp-ic-h-l: blue;
+  --mbx-d-dtp-ic-h-d: orange;
 }

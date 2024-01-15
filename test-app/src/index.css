@@ -8,6 +8,9 @@ body {
   --mobrix-ui-form-formfield-background-light: red;
   --mobrix-ui-formfield-background-light: yellow;
   --mobrix-ui-datepicker-calendar-background-light: orange;
+  --mobrix-ui-datepicker-calendar-background-selected-light: blue;
+  --mobrix-ui-datepicker-calendar-text-color-light: gray;
+  --mobrix-ui-datepicker-calendar-text-color-selected-light: green;
   --mobrix-ui-formfield-text-color-light: orange;
   --mobrix-ui-formfield-text-color-dark: blue;
 }

@@ -22,7 +22,7 @@ const expandableContainerComponent: MobrixUiReactiveComponent<
   let components = [children];
 
   components.push(
-    <div key="expanded_area" data-mobrix-ui-class="expanded-area">
+    <div key="expanded_area" data-mbx-class="expanded-area">
       {expanded}
     </div>
   );
@@ -35,16 +35,16 @@ const expandableContainerComponent: MobrixUiReactiveComponent<
         setCompact(!compact);
       }}
       additionalProps={{
-        "data-mobrix-ui-class": "container-arrow-button",
-        "data-mobrix-ui-test": "container_arrow_button",
+        "data-mbx-class": "container-arrow-button",
+        "data-mbx-test": "container_arrow_button",
       }}
       key="arrow_button"
       dark={dark}
     >
       <svg
-        data-mobrix-ui-dark={dark}
-        data-mobrix-ui-compact={compact}
-        data-mobrix-ui-class="arrow"
+        data-mbx-dark={dark}
+        data-mbx-compact={compact}
+        data-mbx-class="arrow"
         tabIndex={0}
         width="1.5rem"
         fillRule="evenodd"

@@ -59,7 +59,7 @@ const Input: InputComponent = ({
     additionalProps: {
       ...additionalProps,
       ...(autoresizable && {
-        "data-mobrix-ui-autoresizable": !!autoresizable,
+        "data-mbx-autoresizable": !!autoresizable,
         size: Math.ceil((value.length / 2)) + (value.length > 0 ? 0 : 1),
       }),
       type: "text",

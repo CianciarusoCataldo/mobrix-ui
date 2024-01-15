@@ -6,7 +6,7 @@ const drawerTest = () => {
   describe("Drawer", () => {
     test("Rendering test", () => {
       let wrapper = mount(<Drawer position="left" />);
-      wrapper.find('[data-mobrix-ui-test="drawer_close_button"]').simulate("click");
+      wrapper.find('[data-mbx-test="drawer_close_button"]').simulate("click");
       expect(wrapper);
     });
 
@@ -21,7 +21,7 @@ const drawerTest = () => {
           <p>Test drawer content</p>
         </Drawer>
       );
-      wrapper.find('[data-mobrix-ui-test="drawer_close_button"]').simulate("click");
+      wrapper.find('[data-mbx-test="drawer_close_button"]').simulate("click");
       expect(onCloseStub).toBeCalled;
     });
   });

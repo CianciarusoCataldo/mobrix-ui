@@ -9,7 +9,7 @@ const listComponent: MoBrixUiComponent<ListProps, BuilderComponent[]> = ({
   onClick,
 }) => {
   let Wrapper: ({ children }: any) => JSX.Element = ({ children }) => (
-    <div data-mobrix-ui-list-element="" tabIndex={0}>
+    <div data-mbx-list-element="" tabIndex={0}>
       {children}
     </div>
   );
@@ -18,8 +18,8 @@ const listComponent: MoBrixUiComponent<ListProps, BuilderComponent[]> = ({
     Wrapper = ({ children, index }) => (
       <Button
         additionalProps={{
-          "data-mobrix-ui-list-element": "clickable",
-          "data-mobrix-ui-test": "list_element_" + index
+          "data-mbx-list-element": "clickable",
+          "data-mbx-test": "list_element_" + index
         }}
         unstyled
         onClick={() => onClick(Number(index))}
@@ -30,7 +30,7 @@ const listComponent: MoBrixUiComponent<ListProps, BuilderComponent[]> = ({
   }
   return elements.map((element, index) => (
     <Wrapper key={`element_${index}`} index={index}>
-      <svg viewBox="0 0 9 9" key="list_dot" data-mobrix-ui-class="dot">
+      <svg viewBox="0 0 9 9" key="list_dot" data-mbx-class="dot">
         <circle cx={4.5} cy={4.5} r={3.5} />
       </svg>
       <div key={"list_element_" + index}>{element}</div>

@@ -1,23 +1,19 @@
-[data-mobrix-ui-id]:not([data-mobrix-ui-dark="true"]) {
-  --mobrix-ui-computed-background-color: var(
-    --mobrix-ui-computed-background-color-light
-  );
+[data-mbx-id]:not([data-mbx-dark="true"]) {
+  --mbx-c-bgc: var(--mbx-c-bgc-l);
 
-  --mobrix-ui-computed-background: var(--mobrix-ui-computed-background-light);
+  --mbx-c-bg: var(--mbx-c-bg-l);
 
-  --mobrix-ui-computed-text-color: var(--mobrix-ui-computed-text-color-light);
+  --mbx-c-txt: var(--mbx-c-txt-l);
 
-  --mobrix-ui-computed-focus-color: var(--mobrix-ui-computed-focus-color-light);
+  --mbx-c-fc: var(--mbx-c-fc-l);
 }
 
-[data-mobrix-ui-id][data-mobrix-ui-dark="true"] {
-  --mobrix-ui-computed-background-color: var(
-    --mobrix-ui-computed-background-color-dark
-  );
+[data-mbx-id][data-mbx-dark="true"] {
+  --mbx-c-bgc: var(--mbx-c-bgc-d);
 
-  --mobrix-ui-computed-background: var(--mobrix-ui-computed-background-dark);
+  --mbx-c-bg: var(--mbx-c-bg-d);
 
-  --mobrix-ui-computed-text-color: var(--mobrix-ui-computed-text-color-dark);
+  --mbx-c-txt: var(--mbx-c-txt-d);
 
-  --mobrix-ui-computed-focus-color: var(--mobrix-ui-computed-focus-color-dark);
+  --mbx-c-fc: var(--mbx-c-fc-d);
 }
