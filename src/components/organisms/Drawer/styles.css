@@ -3,10 +3,10 @@
   z-index: 10;
   padding: 0;
   display: flex;
-  animation: var(--mobrix-ui-drawer-animation);
-  -moz-animation: var(--mobrix-ui-drawer-animation);
-  -ms-animation: var(--mobrix-ui-drawer-animation);
-  -o-animation: var(--mobrix-ui-drawer-animation);
+  animation: var(--mbx-drawer-animation);
+  -moz-animation: var(--mbx-drawer-animation);
+  -ms-animation: var(--mbx-drawer-animation);
+  -o-animation: var(--mbx-drawer-animation);
   background: var(--mbx-c-draw-bg);
   color: var(--mbx-c-draw-txt);
 }
@@ -16,8 +16,8 @@
 [data-mbx-id="drawer"][data-mbx-drawer-location="bottom-right"] {
   top: auto;
   bottom: 0;
-  --mobrix-ui-drawer-animation-in: slideBottom 0.3s forwards;
-  --mobrix-ui-drawer-animation-out: slideOutBottom 0.3s forwards;
+  --mbx-drawer-animation-in: slideBottom 0.3s forwards;
+  --mbx-drawer-animation-out: slideOutBottom 0.3s forwards;
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location="left"],
@@ -53,26 +53,26 @@
   bottom: auto;
   top: 0;
 
-  --mobrix-ui-drawer-animation-in: slideTop 0.3s forwards;
-  --mobrix-ui-drawer-animation-out: slideOutTop 0.3s forwards;
+  --mbx-drawer-animation-in: slideTop 0.3s forwards;
+  --mbx-drawer-animation-out: slideOutTop 0.3s forwards;
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location="left"] {
-  --mobrix-ui-drawer-animation-in: slideLeft 0.3s forwards;
-  --mobrix-ui-drawer-animation-out: slideOutLeft 0.3s forwards;
+  --mbx-drawer-animation-in: slideLeft 0.3s forwards;
+  --mbx-drawer-animation-out: slideOutLeft 0.3s forwards;
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location="right"] {
-  --mobrix-ui-drawer-animation-in: slideRight 0.3s forwards;
-  --mobrix-ui-drawer-animation-out: slideOutRight 0.3s forwards;
+  --mbx-drawer-animation-in: slideRight 0.3s forwards;
+  --mbx-drawer-animation-out: slideOutRight 0.3s forwards;
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-animation="ease-in"] {
-  --mobrix-ui-drawer-animation: var(--mobrix-ui-drawer-animation-in);
+  --mbx-drawer-animation: var(--mbx-drawer-animation-in);
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-animation="ease-out"] {
-  --mobrix-ui-drawer-animation: var(--mobrix-ui-drawer-animation-out);
+  --mbx-drawer-animation: var(--mbx-drawer-animation-out);
 }
 
 [data-mbx-id="drawer"] [data-mbx-class="content"] {

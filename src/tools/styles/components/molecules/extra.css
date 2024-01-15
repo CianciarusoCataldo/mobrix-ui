@@ -1,65 +1,65 @@
 [data-mbx-id="form-field"] {
-  --mobrix-ui-counterbox-background: var(
+  --mbx-counterbox-background: var(
     --mbx-c-field-bg
   );
-  --mobrix-ui-counterbox-text-color: var(
+  --mbx-counterbox-text-color: var(
     --mbx-c-field-txt
   );
-  --mobrix-ui-counterbox-background-hover: var(
+  --mbx-counterbox-background-hover: var(
     --mbx-c-field-bg-h
   );
-  --mobrix-ui-counterbox-text-color-hover: var(
+  --mbx-counterbox-text-color-hover: var(
     --mbx-c-field-txt-h
   );
 
-  --mobrix-ui-checkbox-background: var(
+  --mbx-checkbox-background: var(
     --mbx-c-field-bg
   );
-  --mobrix-ui-checkbox-text-color: var(
+  --mbx-checkbox-text-color: var(
     --mbx-c-field-txt
   );
-  --mobrix-ui-checkbox-background-hover: var(
+  --mbx-checkbox-background-hover: var(
     --mbx-c-field-bg-h
   );
-  --mobrix-ui-checkbox-text-color-hover: var(
+  --mbx-checkbox-text-color-hover: var(
     --mbx-c-field-txt-h
   );
 
-  --mobrix-ui-inputbox-background: var(
+  --mbx-inputbox-background: var(
     --mbx-c-field-bg
   );
-  --mobrix-ui-inputbox-text-color: var(
+  --mbx-inputbox-text-color: var(
     --mbx-c-field-txt
   );
-  --mobrix-ui-inputbox-background-hover: var(
+  --mbx-inputbox-background-hover: var(
     --mbx-c-field-bg-h
   );
-  --mobrix-ui-inputbox-text-color-hover: var(
+  --mbx-inputbox-text-color-hover: var(
     --mbx-c-field-txt-h
   );
 
-  --mobrix-ui-radio-background: var(
+  --mbx-radio-background: var(
     --mbx-c-field-bg-l
   );
-  --mobrix-ui-radio-background-hover: var(
+  --mbx-radio-background-hover: var(
     --mbx-c-field-bg-h
   );
 
-  --mobrix-ui-rater-background: var(--mbx-c-field-bg);
-  --mobrix-ui-rater-background-hover: var(
+  --mbx-rater-background: var(--mbx-c-field-bg);
+  --mbx-rater-background-hover: var(
     --mbx-c-field-bg-h
   );
 
-  --mobrix-ui-slider-background: var(--mbx-c-field-bg);
+  --mbx-slider-background: var(--mbx-c-field-bg);
 
-  --mobrix-ui-toggle-background: var(--mbx-c-field-bg);
+  --mbx-toggle-background: var(--mbx-c-field-bg);
 }
 
 [data-mbx-id="modal"]
   > [data-mbx-class="modal-window"]
   > [data-mbx-class="header"] {
-  --mobrix-ui-dismissablecard-x-color: var(--mbx-c-mod-x);
-  --mobrix-ui-dismissablecard-x-color-hover: var(
+  --mbx-dismissablecard-x-color: var(--mbx-c-mod-x);
+  --mbx-dismissablecard-x-color-hover: var(
     --mbx-c-mod-x-h
   );
 }

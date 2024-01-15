@@ -13,7 +13,7 @@
   margin-bottom: 0.9rem;
   font-size: 1.35rem;
   line-height: 1.75rem;
-  --mobrix-ui-label-text-color: var(--mbx-c-form-txt);
+  --mbx-label-text-color: var(--mbx-c-form-txt);
 }
 
 [data-mbx-id="form"] [data-mbx-class="field"][data-mbx-field-type="checkbox"],
@@ -26,14 +26,14 @@
 [data-mbx-id="form"] [data-mbx-class="field"] {
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;
-  --mobrix-ui-formfield-background-light: var(--mbx-c-form-field-bg-l);
-  --mobrix-ui-formfield-text-color-light: var(--mbx-c-form-field-txt-l);
-  --mobrix-ui-formfield-background-dark: var(--mbx-c-form-field-bg-d);
-  --mobrix-ui-formfield-text-color-dark: var(--mbx-c-form-field-txt-d);
-  --mobrix-ui-formfield-background-hover-light: var(--mbx-c-form-field-bg-h-l);
-  --mobrix-ui-formfield-background-hover-dark: var(--mbx-c-form-field-bg-h-d);
-  --mobrix-ui-formfield-text-color-hover-light: var(--mbx-c-form-field-txt-h-l);
-  --mobrix-ui-formfield-text-color-hover-dark: var(--mbx-c-form-field-txt-h-d);
+  --mbx-formfield-background-light: var(--mbx-c-form-field-bg-l);
+  --mbx-formfield-text-color-light: var(--mbx-c-form-field-txt-l);
+  --mbx-formfield-background-dark: var(--mbx-c-form-field-bg-d);
+  --mbx-formfield-text-color-dark: var(--mbx-c-form-field-txt-d);
+  --mbx-formfield-background-hover-light: var(--mbx-c-form-field-bg-h-l);
+  --mbx-formfield-background-hover-dark: var(--mbx-c-form-field-bg-h-d);
+  --mbx-formfield-text-color-hover-light: var(--mbx-c-form-field-txt-h-l);
+  --mbx-formfield-text-color-hover-dark: var(--mbx-c-form-field-txt-h-d);
 }
 
 @media (max-width: 330px) {
@@ -62,6 +62,6 @@
   margin-top: 0.9rem;
   margin-left: auto;
   margin-right: auto;
-  --mobrix-ui-button-text-color: var(--mbx-c-form-sub-txt);
-  --mobrix-ui-button-background: var(--mbx-c-form-sub-bg);
+  --mbx-button-text-color: var(--mbx-c-form-sub-txt);
+  --mbx-button-background: var(--mbx-c-form-sub-bg);
 }

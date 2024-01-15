@@ -57,7 +57,7 @@ const Slider: SliderComponent = ({
 
   if (thumbColor) {
     extraProps.style = {
-      "--mobrix-ui-slider-thumb-color": thumbColor,
+      "--mbx-slider-thumb-color": thumbColor,
     };
   }
 

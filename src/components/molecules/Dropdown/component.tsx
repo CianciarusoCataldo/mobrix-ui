@@ -104,6 +104,7 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
     },
     Component: [
       <Button
+        noBackground={commonProps.noBackground}
         disabled={disabled}
         unstyled
         onClick={() => {
@@ -137,14 +138,12 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
           }}
         >
           <p tabIndex={-1}>
-            <i
-              data-mbx-class="arrow-icon"
-              data-mbx-enabled={!disabled}
-            ></i>
+            <i data-mbx-class="arrow-icon" data-mbx-enabled={!disabled}></i>
           </p>
         </Container>
       </Button>,
       <Popup
+        noBackground={commonProps.noBackground}
         key="options"
         shadow={shadow}
         disabled={disabled}

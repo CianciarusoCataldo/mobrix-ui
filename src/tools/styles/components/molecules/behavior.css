@@ -171,25 +171,3 @@
   --mbx-c-tabv-off-txt: var(--mobrix--mbx-c-tabv-off-txt-d);
 }
 
-[data-mbx-id][data-mbx-background="false"],
-[data-mbx-id][data-mbx-background="false"]:hover,
-[data-mbx-id][data-mbx-styled="false"],
-[data-mbx-id][data-mbx-styled="false"]:hover {
-  --mbx-c-card-bg: transparent !important;
-  --mbx-c-car-bg: transparent !important;
-  --mbx-c-con-bg: transparent !important;
-  --mbx-c-dcard-bg: transparent !important;
-}
-
-/** Background styles @TODO **/
-
-[data-mbx-id="table"][data-mbx-background="false"] {
-  --mbx-c-table-bg: transparent !important;
-  --mbx-c-table-head-bg: transparent !important;
-}
-
-[data-mbx-id="tab-viewer"][data-mbx-background="false"] {
-  --mbx-c-tabv-bg: transparent !important;
-  --mbx-c-tabv-off-bg: transparent !important;
-  --mbx-c-tabv-off-bg-h: transparent !important;
-}

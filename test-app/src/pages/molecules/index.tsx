@@ -233,6 +233,23 @@ const MoleculesPage = () => {
                 <img alt="" src={Elem2} width="250px" height="250px" />,
               ]}
             />
+            <Carousel
+              noBackground
+              elements={[
+                <img alt="" src={Elem0} width="250px" height="250px" />,
+                <img alt="" src={Elem1} width="250px" height="250px" />,
+                <img alt="" src={Elem2} width="250px" height="250px" />,
+              ]}
+            />
+            <Carousel
+              dark
+              noBackground
+              elements={[
+                <img alt="" src={Elem0} width="250px" height="250px" />,
+                <img alt="" src={Elem1} width="250px" height="250px" />,
+                <img alt="" src={Elem2} width="250px" height="250px" />,
+              ]}
+            />
           </>
         }
       />
@@ -247,6 +264,10 @@ const MoleculesPage = () => {
             <Dropdown disabled elements={["el 1", "el 2", "el 3"]} />
             <div style={{ marginTop: "20px" }} />
             <Dropdown disabled dark elements={["el 1", "el 2", "el 3"]} />
+            <div style={{ marginTop: "20px" }} />
+            <Dropdown noBackground elements={["el 1", "el 2", "el 3"]} />
+            <div style={{ marginTop: "20px" }} />
+            <Dropdown noBackground dark elements={["el 1", "el 2", "el 3"]} />
           </div>
         }
       />
@@ -393,6 +414,21 @@ const MoleculesPage = () => {
               body="body"
               footer="footer"
             />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              header="header"
+              body="body"
+              footer="footer"
+              noBackground
+            />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              header="header"
+              body="body"
+              footer="footer"
+              noBackground
+              dark
+            />
           </div>
         }
         name="DismissableCard"
@@ -459,6 +495,44 @@ const MoleculesPage = () => {
             </ExpandableContainer>
             <ExpandableContainer
               disabled
+              dark
+              expanded={
+                <div>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                </div>
+              }
+            >
+              <div>
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+              </div>
+            </ExpandableContainer>
+
+            <ExpandableContainer
+              noBackground
+              expanded={
+                <div>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                  <p>Expanded area</p>
+                </div>
+              }
+            >
+              <div>
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+                <p>Content</p>
+              </div>
+            </ExpandableContainer>
+            <ExpandableContainer
+              noBackground
               dark
               expanded={
                 <div>
@@ -595,6 +669,26 @@ const MoleculesPage = () => {
                 { text: "textPosition = bottom", textPosition: "bottom" },
               ]}
             />
+            <RadioButtonGroup
+              noBackground
+              buttons={[
+                { text: "textPosition = left", textPosition: "left" },
+                { text: "textPosition = top", textPosition: "top" },
+                { text: "textPosition = right", textPosition: "right" },
+                { text: "textPosition = bottom", textPosition: "bottom" },
+              ]}
+            />
+            <RadioButtonGroup
+              noBackground
+              dark
+              horizontal
+              buttons={[
+                { text: "textPosition = left", textPosition: "left" },
+                { text: "textPosition = top", textPosition: "top" },
+                { text: "textPosition = right", textPosition: "right" },
+                { text: "textPosition = bottom", textPosition: "bottom" },
+              ]}
+            />
           </div>
         }
       />
@@ -696,6 +790,24 @@ const MoleculesPage = () => {
               description="description"
               icon={userIcon}
             />
+            <Review
+              noBackground
+              user="User"
+              rate={4}
+              url="https://github.com"
+              logo="link"
+              description="description"
+              icon={userIcon}
+            />
+            <Review
+              dark
+              noBackground
+              user="User"
+              logo="link"
+              rate={4}
+              description="description"
+              icon={userIcon}
+            />
           </div>
         }
       />
@@ -771,6 +883,33 @@ const MoleculesPage = () => {
               }}
             >
               <Table
+                dark
+                headers
+                rows={[
+                  ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                ]}
+              />
+              <div style={{ marginTop: "20px" }} />
+              <Table
+                noBackground
+                headers
+                rows={[
+                  ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                ]}
+              />
+              <div style={{ marginTop: "20px" }} />
+              <Table
+                noBackground
                 dark
                 headers
                 rows={[

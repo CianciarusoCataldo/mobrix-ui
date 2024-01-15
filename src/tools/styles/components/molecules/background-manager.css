@@ -1,0 +1,87 @@
+[data-mbx-id="dismissable-card"][data-mbx-background="false"],
+[data-mbx-id="dismissable-card"][data-mbx-background="false"]:hover,
+[data-mbx-id="dismissable-card"][data-mbx-styled="false"],
+[data-mbx-id="dismissable-card"][data-mbx-styled="false"]:hover {
+  --mbx-c-dcard-bg: transparent !important;
+}
+
+[data-mbx-id="dropdown"][data-mbx-background="false"],
+[data-mbx-id="dropdown"][data-mbx-background="false"]:hover,
+[data-mbx-id="dropdown"][data-mbx-styled="false"],
+[data-mbx-id="dropdown"][data-mbx-styled="false"]:hover {
+  --mbx-c-drop-bg: transparent !important;
+  --mbx-c-drop-bg-h: transparent !important;
+}
+
+[data-mbx-id="card"][data-mbx-background="false"],
+[data-mbx-id="card"][data-mbx-styled="false"],
+[data-mbx-id="card"][data-mbx-styled="false"]:hover
+  [data-mbx-id="card"][data-mbx-background="false"]:hover {
+  --mbx-c-card-bg: transparent !important;
+}
+
+[data-mbx-id="carousel"][data-mbx-background="false"],
+[data-mbx-id="carousel"][data-mbx-background="false"]:hover,
+[data-mbx-id="carousel"][data-mbx-styled="false"],
+[data-mbx-id="carousel"][data-mbx-styled="false"]:hover {
+  --mbx-c-car-bg: transparent !important;
+}
+
+[data-mbx-id="table"][data-mbx-background="false"],
+[data-mbx-id="table"][data-mbx-background="false"]:hover,
+[data-mbx-id="table"][data-mbx-styled="false"],
+[data-mbx-id="table"][data-mbx-styled="false"]:hover {
+  --mbx-c-table-bg: transparent !important;
+  --mbx-c-table-head-bg: transparent !important;
+}
+
+[data-mbx-id="tab-viewer"][data-mbx-background="false"],
+[data-mbx-id="tab-viewer"][data-mbx-background="false"]:hover,
+[data-mbx-id="tab-viewer"][data-mbx-styled="false"],
+[data-mbx-id="tab-viewer"][data-mbx-styled="false"]:hover {
+  --mbx-c-tabv-bg: transparent !important;
+  --mbx-c-tabv-off-bg: transparent !important;
+  --mbx-c-tabv-off-bg-h: transparent !important;
+}
+
+[data-mbx-id="container"][data-mbx-background="false"],
+[data-mbx-id="container"][data-mbx-background="false"]:hover,
+[data-mbx-id="container"][data-mbx-styled="false"],
+[data-mbx-id="container"][data-mbx-styled="false"]:hover {
+  --mbx-c-con-bg: transparent !important;
+}
+
+[data-mbx-id="review"][data-mbx-background="false"],
+[data-mbx-id="review"][data-mbx-background="false"]:hover,
+[data-mbx-id="review"][data-mbx-styled="false"],
+[data-mbx-id="review"][data-mbx-styled="false"]:hover {
+  --mbx-c-rev-bg: transparent !important;
+}
+
+[data-mbx-id="expandable-container"][data-mbx-background="false"],
+[data-mbx-id="expandable-container"][data-mbx-background="false"]:hover,
+[data-mbx-id="expandable-container"][data-mbx-styled="false"],
+[data-mbx-id="expandable-container"][data-mbx-styled="false"]:hover {
+  --mbx-c-exp-bg: transparent !important;
+}
+
+[data-mbx-id="popup"][data-mbx-background="false"],
+[data-mbx-id="popup"][data-mbx-background="false"]:hover,
+[data-mbx-id="popup"][data-mbx-styled="false"],
+[data-mbx-id="popup"][data-mbx-styled="false"]:hover {
+  --mbx-c-pop-bg: transparent !important;
+}
+
+[data-mbx-id="radio-button-group"][data-mbx-background="false"],
+[data-mbx-id="radio-button-group"][data-mbx-background="false"]:hover,
+[data-mbx-id="radio-button-group"][data-mbx-styled="false"],
+[data-mbx-id="radio-button-group"][data-mbx-styled="false"]:hover {
+  --mbx-c-radg-bg: transparent !important;
+}
+
+[data-mbx-id="form-field"][data-mbx-background="false"],
+[data-mbx-id="form-field"][data-mbx-background="false"]:hover,
+[data-mbx-id="form-field"][data-mbx-styled="false"],
+[data-mbx-id="form-field"][data-mbx-styled="false"]:hover {
+  --mbx-c-field-bg: transparent !important;
+}

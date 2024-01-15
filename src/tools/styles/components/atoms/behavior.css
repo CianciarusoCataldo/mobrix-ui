@@ -166,19 +166,3 @@
   --mbx-c-tog-ic-off-ext: var(--mbx-c-tog-ic-off-ext-d);
   --mbx-c-tog-ic-off-int: var(--mbx-c-tog-ic-off-int-d);
 }
-
-[data-mbx-id][data-mbx-background="false"],
-[data-mbx-id][data-mbx-background="false"]:hover,
-[data-mbx-id][data-mbx-styled="false"],
-[data-mbx-id][data-mbx-styled="false"]:hover {
-  --mbx-c-btn-bg: transparent !important;
-  --mbx-c-chk-bg: transparent !important;
-  --mbx-c-cdb-bg: transparent !important;
-  --mbx-c-cnt-bg: transparent !important;
-  --mbx-c-inb-bgc: transparent !important;
-  --mbx-c-rat-bg: transparent !important;
-  --mbx-c-sel-bg: transparent !important;
-  --mbx-c-sel-bg-h: transparent !important;
-  --mbx-c-sld-bg: transparent !important;
-  --mbx-c-tog-bg: transparent !important;
-}

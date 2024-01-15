@@ -56,6 +56,8 @@ const AtomsPage = () => {
             <Calendar dark />
             <Calendar disabled />
             <Calendar disabled dark />
+            <Calendar noBackground />
+            <Calendar noBackground dark />
           </div>
         }
         name="Calendar"
@@ -166,6 +168,59 @@ const AtomsPage = () => {
               title="Test Form disabled"
               dark
               disabled
+              submitLabel={"submit"}
+              fields={{
+                field1: {
+                  placeholder: "placeholder",
+                  header: "text",
+                },
+                field2: {
+                  placeholder: "placeholder",
+                  type: "boolean",
+                  header: "boolean",
+                },
+                field3: {
+                  placeholder: "placeholder",
+                  type: "numeric",
+                  header: "numeric",
+                },
+                field4: {
+                  placeholder: "placeholder",
+                  type: "radio",
+                  header: "radio",
+                },
+              }}
+            />
+            <Form
+              title="Test Form"
+              noBackground
+              submitLabel={"submit"}
+              fields={{
+                field1: {
+                  placeholder: "placeholder",
+                  header: "text",
+                },
+                field2: {
+                  placeholder: "placeholder",
+                  type: "boolean",
+                  header: "boolean",
+                },
+                field3: {
+                  placeholder: "placeholder",
+                  type: "numeric",
+                  header: "numeric",
+                },
+                field4: {
+                  placeholder: "placeholder",
+                  type: "radio",
+                  header: "radio",
+                },
+              }}
+            />
+            <Form
+              title="Test Form"
+              dark
+              noBackground
               submitLabel={"submit"}
               fields={{
                 field1: {

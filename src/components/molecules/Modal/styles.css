@@ -12,24 +12,24 @@
 }
 
 [data-mbx-id="modal"][data-mbx-animated="true"] {
-  --mobrix-ui-modal-animation-in: fadein 0.3s forwards;
-  --mobrix-ui-modal-animation-out: fadeOut 0.3s forwards;
-  animation: var(--mobrix-ui-modal-animation);
-  -moz-animation: var(--mobrix-ui-modal-animation);
-  -ms-animation: var(--mobrix-ui-modal-animation);
-  -o-animation: var(--mobrix-ui-modal-animation);
+  --mbx-modal-animation-in: fadein 0.3s forwards;
+  --mbx-modal-animation-out: fadeOut 0.3s forwards;
+  animation: var(--mbx-modal-animation);
+  -moz-animation: var(--mbx-modal-animation);
+  -ms-animation: var(--mbx-modal-animation);
+  -o-animation: var(--mbx-modal-animation);
 }
 
 [data-mbx-id="modal"][data-mbx-animated="true"][data-mbx-modal-animation="ease-in"] {
-  --mobrix-ui-modal-animation: var(--mobrix-ui-modal-animation-in);
+  --mbx-modal-animation: var(--mbx-modal-animation-in);
 }
 
 [data-mbx-id="modal"][data-mbx-animated="true"][data-mbx-modal-animation="ease-in"] {
-  --mobrix-ui-modal-animation: var(--mobrix-ui-modal-animation-in);
+  --mbx-modal-animation: var(--mbx-modal-animation-in);
 }
 
 [data-mbx-id="modal"][data-mbx-animated="true"][data-mbx-modal-animation="ease-out"] {
-  --mobrix-ui-modal-animation: var(--mobrix-ui-modal-animation-out);
+  --mbx-modal-animation: var(--mbx-modal-animation-out);
 }
 
 [data-mbx-id="modal"] > [data-mbx-class="modal-window"] {

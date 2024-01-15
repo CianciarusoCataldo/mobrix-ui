@@ -1,0 +1,70 @@
+[data-mbx-id="button"][data-mbx-background="false"],
+[data-mbx-id="button"][data-mbx-background="false"]:hover,
+[data-mbx-id="button"][data-mbx-styled="false"],
+[data-mbx-id="button"][data-mbx-styled="false"]:hover {
+  --mbx-c-btn-bg: transparent !important;
+}
+
+[data-mbx-id="checkbox"][data-mbx-background="false"],
+[data-mbx-id="checkbox"][data-mbx-background="false"]:hover,
+[data-mbx-id="checkbox"][data-mbx-styled="false"],
+[data-mbx-id="checkbox"][data-mbx-styled="false"]:hover {
+  --mbx-c-chk-bg: transparent !important;
+}
+
+[data-mbx-id="codebox"][data-mbx-background="false"],
+[data-mbx-id="codebox"][data-mbx-background="false"]:hover,
+[data-mbx-id="codebox"][data-mbx-styled="false"],
+[data-mbx-id="codebox"][data-mbx-styled="false"]:hover {
+  --mbx-c-cdb-bg: transparent !important;
+}
+
+[data-mbx-id="counterbox"][data-mbx-background="false"],
+[data-mbx-id="counterbox"][data-mbx-background="false"]:hover,
+[data-mbx-id="counterbox"][data-mbx-styled="false"],
+[data-mbx-id="counterbox"][data-mbx-styled="false"]:hover {
+  --mbx-c-cnt-bg: transparent !important;
+}
+
+[data-mbx-id="inputbox"][data-mbx-background="false"],
+[data-mbx-id="inputbox"][data-mbx-background="false"]:hover,
+[data-mbx-id="inputbox"][data-mbx-styled="false"],
+[data-mbx-id="inputbox"][data-mbx-styled="false"]:hover {
+  --mbx-c-inb-bgc: transparent !important;
+}
+
+[data-mbx-id="radio-button"][data-mbx-background="false"],
+[data-mbx-id="radio-button"][data-mbx-background="false"]:hover,
+[data-mbx-id="radio-button"][data-mbx-styled="false"],
+[data-mbx-id="radio-button"][data-mbx-styled="false"]:hover {
+  --mbx-c-rad-bg: transparent !important;
+}
+
+[data-mbx-id="rater"][data-mbx-background="false"],
+[data-mbx-id="rater"][data-mbx-background="false"]:hover,
+[data-mbx-id="rater"][data-mbx-styled="false"],
+[data-mbx-id="rater"][data-mbx-styled="false"]:hover {
+  --mbx-c-rat-bg: transparent !important;
+}
+
+[data-mbx-id="selector"][data-mbx-background="false"],
+[data-mbx-id="selector"][data-mbx-background="false"]:hover,
+[data-mbx-id="selector"][data-mbx-styled="false"],
+[data-mbx-id="selector"][data-mbx-styled="false"]:hover {
+  --mbx-c-sel-bg: transparent !important;
+  --mbx-c-sel-bg-h: transparent !important;
+}
+
+[data-mbx-id="slider"][data-mbx-background="false"],
+[data-mbx-id="slider"][data-mbx-background="false"]:hover,
+[data-mbx-id="slider"][data-mbx-styled="false"],
+[data-mbx-id="slider"][data-mbx-styled="false"]:hover {
+  --mbx-c-sld-bg: transparent !important;
+}
+
+[data-mbx-id="toggle"][data-mbx-background="false"],
+[data-mbx-id="toggle"][data-mbx-background="false"]:hover,
+[data-mbx-id="toggle"][data-mbx-styled="false"],
+[data-mbx-id="toggle"][data-mbx-styled="false"]:hover {
+  --mbx-c-tog-bg: transparent !important;
+}

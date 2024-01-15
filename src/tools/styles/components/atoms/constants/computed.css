@@ -3,415 +3,415 @@
 [data-mbx-id] {
   /* Button */
   --mbx-c-btn-bg-l: var(
-    --mobrix-ui-button-background-light,
-    var(--mobrix-ui-button-background, var(--mbx-c-bg-l))
+    --mbx-button-background-light,
+    var(--mbx-button-background, var(--mbx-c-bg-l))
   );
 
   --mbx-c-btn-bg-d: var(
-    --mobrix-ui-button-background-dark,
-    var(--mobrix-ui-button-background, var(--mbx-c-bg-d))
+    --mbx-button-background-dark,
+    var(--mbx-button-background, var(--mbx-c-bg-d))
   );
 
   --mbx-c-btn-txt-l: var(
-    --mobrix-ui-button-text-color-light,
-    var(--mobrix-ui-button-text-color, var(--mbx-c-txt-l))
+    --mbx-button-text-color-light,
+    var(--mbx-button-text-color, var(--mbx-c-txt-l))
   );
 
   --mbx-c-btn-txt-d: var(
-    --mobrix-ui-button-text-color-dark,
-    var(--mobrix-ui-button-text-color, var(--mbx-c-txt-d))
+    --mbx-button-text-color-dark,
+    var(--mbx-button-text-color, var(--mbx-c-txt-d))
   );
 
   --mbx-c-btn-bg-h-l: var(
-    --mobrix-ui-button-background-hover-light,
-    var(--mobrix-ui-button-background-hover, var(--mbx-d-bg-h-l))
+    --mbx-button-background-hover-light,
+    var(--mbx-button-background-hover, var(--mbx-d-bg-h-l))
   );
 
   --mbx-c-btn-bg-h-d: var(
-    --mobrix-ui-button-background-hover-dark,
-    var(--mobrix-ui-button-background-hover, var(--mbx-d-bg-h-d))
+    --mbx-button-background-hover-dark,
+    var(--mbx-button-background-hover, var(--mbx-d-bg-h-d))
   );
 
   --mbx-c-btn-txt-h-l: var(
-    --mobrix-ui-button-text-color-hover-light,
-    var(--mobrix-ui-button-text-color-hover, var(--mbx-c-txt-h-l))
+    --mbx-button-text-color-hover-light,
+    var(--mbx-button-text-color-hover, var(--mbx-c-txt-h-l))
   );
 
   --mbx-c-btn-txt-h-d: var(
-    --mobrix-ui-button-text-color-hover-dark,
-    var(--mobrix-ui-button-text-color-hover, var(--mbx-c-txt-h-d))
+    --mbx-button-text-color-hover-dark,
+    var(--mbx-button-text-color-hover, var(--mbx-c-txt-h-d))
   );
 
   /* Checkbox */
   --mbx-c-chk-bg-l: var(
-    --mobrix-ui-checkbox-background-light,
-    var(--mobrix-ui-checkbox-background, var(--mbx-c-bgc-l))
+    --mbx-checkbox-background-light,
+    var(--mbx-checkbox-background, var(--mbx-c-bgc-l))
   );
 
   --mbx-c-chk-bg-d: var(
-    --mobrix-ui-checkbox-background-dark,
-    var(--mobrix-ui-checkbox-background, var(--mbx-c-bgc-d))
+    --mbx-checkbox-background-dark,
+    var(--mbx-checkbox-background, var(--mbx-c-bgc-d))
   );
 
   --mbx-c-chk-bg-h-l: var(
-    --mobrix-ui-checkbox-background-hover-light,
-    var(--mobrix-ui-checkbox-background-hover, var(--mbx-c-bgc-h-l))
+    --mbx-checkbox-background-hover-light,
+    var(--mbx-checkbox-background-hover, var(--mbx-c-bgc-h-l))
   );
 
   --mbx-c-chk-bg-h-d: var(
-    --mobrix-ui-checkbox-background-hover-dark,
-    var(--mobrix-ui-checkbox-background-hover, var(--mbx-c-bgc-h-d))
+    --mbx-checkbox-background-hover-dark,
+    var(--mbx-checkbox-background-hover, var(--mbx-c-bgc-h-d))
   );
 
   --mbx-c-chk-tk-l: var(
-    --mobrix-ui-checkbox-tick-color-light,
-    var(--mobrix-ui-checkbox-tick-color, var(--mbx-d-chk-tk-l))
+    --mbx-checkbox-tick-color-light,
+    var(--mbx-checkbox-tick-color, var(--mbx-d-chk-tk-l))
   );
 
   --mbx-c-chk-tk-d: var(
-    --mobrix-ui-checkbox-tick-color-dark,
-    var(--mobrix-ui-checkbox-tick-color, var(--mbx-d-chk-tk-d))
+    --mbx-checkbox-tick-color-dark,
+    var(--mbx-checkbox-tick-color, var(--mbx-d-chk-tk-d))
   );
 
   /** Codebox **/
   --mbx-c-cdb-bg-l: var(
-    --mobrix-ui-codebox-background-light,
-    var(--mobrix-ui-codebox-background, var(--mbx-c-bgc-l))
+    --mbx-codebox-background-light,
+    var(--mbx-codebox-background, var(--mbx-c-bgc-l))
   );
 
   --mbx-c-cdb-txt-l: var(
-    --mobrix-ui-codebox-text-color-light,
-    var(--mobrix-ui-codebox-text-color, var(--mbx-c-txt-l))
+    --mbx-codebox-text-color-light,
+    var(--mbx-codebox-text-color, var(--mbx-c-txt-l))
   );
 
   --mbx-c-cdb-bg-d: var(
-    --mobrix-ui-codebox-background-dark,
-    var(--mobrix-ui-codebox-background, var(--mbx-c-bgc-d))
+    --mbx-codebox-background-dark,
+    var(--mbx-codebox-background, var(--mbx-c-bgc-d))
   );
 
   --mbx-c-cdb-txt-d: var(
-    --mobrix-ui-codebox-text-color-dark,
-    var(--mobrix-ui-codebox-text-color, var(--mbx-c-txt-d))
+    --mbx-codebox-text-color-dark,
+    var(--mbx-codebox-text-color, var(--mbx-c-txt-d))
   );
 
   /** Counter **/
   --mbx-c-cnt-bgc-l: var(
-    --mobrix-ui-counterbox-background-light,
-    var(--mobrix-ui-counterbox-background, var(--mbx-c-bgc-l))
+    --mbx-counterbox-background-light,
+    var(--mbx-counterbox-background, var(--mbx-c-bgc-l))
   );
 
   --mbx-c-cnt-bgc-d: var(
-    --mobrix-ui-counterbox-background-dark,
-    var(--mobrix-ui-counterbox-background, var(--mbx-c-bgc-d))
+    --mbx-counterbox-background-dark,
+    var(--mbx-counterbox-background, var(--mbx-c-bgc-d))
   );
 
   --mbx-c-cnt-txt-l: var(
-    --mobrix-ui-counterbox-text-color-light,
-    var(--mobrix-ui-counterbox-text-color, var(--mbx-c-txt-l))
+    --mbx-counterbox-text-color-light,
+    var(--mbx-counterbox-text-color, var(--mbx-c-txt-l))
   );
 
   --mbx-c-cnt-txt-d: var(
-    --mobrix-ui-counterbox-text-color-dark,
-    var(--mobrix-ui-counterbox-text-color, var(--mbx-c-txt-d))
+    --mbx-counterbox-text-color-dark,
+    var(--mbx-counterbox-text-color, var(--mbx-c-txt-d))
   );
 
   --mbx-c-cnt-bgc-h-l: var(
-    --mobrix-ui-counterbox-background-hover-light,
-    var(--mobrix-ui-counterbox-background-hover, var(--mbx-c-bgc-h-l))
+    --mbx-counterbox-background-hover-light,
+    var(--mbx-counterbox-background-hover, var(--mbx-c-bgc-h-l))
   );
 
   --mbx-c-cnt-bgc-h-d: var(
-    --mobrix-ui-counterbox-background-hover-dark,
-    var(--mobrix-ui-counterbox-background-hover, var(--mbx-c-bgc-h-d))
+    --mbx-counterbox-background-hover-dark,
+    var(--mbx-counterbox-background-hover, var(--mbx-c-bgc-h-d))
   );
 
   --mbx-c-cnt-txt-h-l: var(
-    --mobrix-ui-counterbox-text-color-hover-light,
-    var(--mobrix-ui-counterbox-text-color-hover, var(--mbx-c-txt-h-l))
+    --mbx-counterbox-text-color-hover-light,
+    var(--mbx-counterbox-text-color-hover, var(--mbx-c-txt-h-l))
   );
 
   --mbx-c-cnt-txt-h-d: var(
-    --mobrix-ui-counterbox-text-color-hover-dark,
-    var(--mobrix-ui-counterbox-text-color-hover, var(--mbx-c-txt-h-d))
+    --mbx-counterbox-text-color-hover-dark,
+    var(--mbx-counterbox-text-color-hover, var(--mbx-c-txt-h-d))
   );
 
   /** Divider **/
   --mbx-c-dv-bgc-l: var(
-    --mobrix-ui-divider-color-light,
-    var(--mobrix-ui-divider-color, var(--mbx-c-txt-l))
+    --mbx-divider-color-light,
+    var(--mbx-divider-color, var(--mbx-c-txt-l))
   );
 
   --mbx-c-dv-bgc-d: var(
-    --mobrix-ui-divider-color-dark,
-    var(--mobrix-ui-divider-color, var(--mbx-c-txt-d))
+    --mbx-divider-color-dark,
+    var(--mbx-divider-color, var(--mbx-c-txt-d))
   );
 
   /** Input **/
   --mbx-c-inb-bgc-l: var(
-    --mobrix-ui-inputbox-background-light,
-    var(--mobrix-ui-inputbox-background, var(--mbx-c-bgc-l))
+    --mbx-inputbox-background-light,
+    var(--mbx-inputbox-background, var(--mbx-c-bgc-l))
   );
 
   --mbx-c-inb-bgc-d: var(
-    --mobrix-ui-inputbox-background-dark,
-    var(--mobrix-ui-inputbox-background, var(--mbx-c-bgc-d))
+    --mbx-inputbox-background-dark,
+    var(--mbx-inputbox-background, var(--mbx-c-bgc-d))
   );
 
   --mbx-c-inb-txt-l: var(
-    --mobrix-ui-inputbox-text-color-light,
-    var(--mobrix-ui-inputbox-text-color, var(--mbx-c-txt-l))
+    --mbx-inputbox-text-color-light,
+    var(--mbx-inputbox-text-color, var(--mbx-c-txt-l))
   );
 
   --mbx-c-inb-txt-d: var(
-    --mobrix-ui-inputbox-text-color-dark,
-    var(--mobrix-ui-inputbox-text-color, var(--mbx-c-txt-d))
+    --mbx-inputbox-text-color-dark,
+    var(--mbx-inputbox-text-color, var(--mbx-c-txt-d))
   );
 
   --mbx-c-inb-bgc-h-l: var(
-    --mobrix-ui-inputbox-background-hover-light,
-    var(--mobrix-ui-inputbox-background-hover, var(--mbx-d-bgc-h-l))
+    --mbx-inputbox-background-hover-light,
+    var(--mbx-inputbox-background-hover, var(--mbx-d-bgc-h-l))
   );
 
   --mbx-c-inb-bgc-h-d: var(
-    --mobrix-ui-inputbox-background-hover-dark,
-    var(--mobrix-ui-inputbox-background-hover, var(--mbx-d-bgc-h-d))
+    --mbx-inputbox-background-hover-dark,
+    var(--mbx-inputbox-background-hover, var(--mbx-d-bgc-h-d))
   );
 
   --mbx-c-inb-txt-h-l: var(
-    --mobrix-ui-inputbox-text-color-hover-light,
-    var(--mobrix-ui-inputbox-text-color-hover, var(--mbx-d-txt-h-l))
+    --mbx-inputbox-text-color-hover-light,
+    var(--mbx-inputbox-text-color-hover, var(--mbx-d-txt-h-l))
   );
 
   --mbx-c-inb-txt-h-d: var(
-    --mobrix-ui-inputbox-text-color-hover-dark,
-    var(--mobrix-ui-inputbox-text-color-hover, var(--mbx-d-txt-h-d))
+    --mbx-inputbox-text-color-hover-dark,
+    var(--mbx-inputbox-text-color-hover, var(--mbx-d-txt-h-d))
   );
 
   /** Label **/
   --mbx-c-lab-txt-l: var(
-    --mobrix-ui-label-text-color-light,
-    var(--mobrix-ui-label-text-color, var(--mbx-c-txt-l))
+    --mbx-label-text-color-light,
+    var(--mbx-label-text-color, var(--mbx-c-txt-l))
   );
 
   --mbx-c-lab-txt-d: var(
-    --mobrix-ui-label-text-color-dark,
-    var(--mobrix-ui-label-text-color, var(--mbx-c-txt-d))
+    --mbx-label-text-color-dark,
+    var(--mbx-label-text-color, var(--mbx-c-txt-d))
   );
 
   /* Link */
   --mbx-c-link-txt-l: var(
-    --mobrix-ui-link-color-light,
-    var(--mobrix-ui-link-color, var(--mbx-c-txt-l))
+    --mbx-link-color-light,
+    var(--mbx-link-color, var(--mbx-c-txt-l))
   );
 
   --mbx-c-link-txt-d: var(
-    --mobrix-ui-link-color-dark,
-    var(--mobrix-ui-link-color, var(--mbx-c-txt-d))
+    --mbx-link-color-dark,
+    var(--mbx-link-color, var(--mbx-c-txt-d))
   );
 
   --mbx-c-link-txt-h-l: var(
-    --mobrix-ui-link-color-hover-light,
-    var(--mobrix-ui-link-color-hover, var(--mbx-c-txt-h-l))
+    --mbx-link-color-hover-light,
+    var(--mbx-link-color-hover, var(--mbx-c-txt-h-l))
   );
 
   --mbx-c-link-txt-h-d: var(
-    --mobrix-ui-link-color-hover-dark,
-    var(--mobrix-ui-link-color-hover, var(--mbx-c-txt-h-d))
+    --mbx-link-color-hover-dark,
+    var(--mbx-link-color-hover, var(--mbx-c-txt-h-d))
   );
 
   /* Radio Button */
   --mbx-c-rad-bg-l: var(
-    --mobrix-ui-radio-background-light,
-    var(--mobrix-ui-radio-background, var(--mbx-d-rad-bg-l))
+    --mbx-radio-background-light,
+    var(--mbx-radio-background, var(--mbx-d-rad-bg-l))
   );
 
   --mbx-c-rad-bg-d: var(
-    --mobrix-ui-radio-background-dark,
-    var(--mobrix-ui-radio-background, var(--mbx-d-rad-bg-d))
+    --mbx-radio-background-dark,
+    var(--mbx-radio-background, var(--mbx-d-rad-bg-d))
   );
 
   --mbx-c-rad-bg-h-l: var(
-    --mobrix-ui-radio-background-hover-light,
-    var(--mobrix-ui-radio-background-hover, var(--mbx-d-rad-bg-h-l))
+    --mbx-radio-background-hover-light,
+    var(--mbx-radio-background-hover, var(--mbx-d-rad-bg-h-l))
   );
 
   --mbx-c-rad-bg-h-d: var(
-    --mobrix-ui-radio-background-hover-dark,
-    var(--mobrix-ui-radio-background-hover, var(--mbx-d-rad-bg-h-d))
+    --mbx-radio-background-hover-dark,
+    var(--mbx-radio-background-hover, var(--mbx-d-rad-bg-h-d))
   );
 
   --mbx-c-rad-ic-bg-l: var(
-    --mobrix-ui-radio-icon-background-light,
-    var(--mobrix-ui-radio-icon-background, var(--mbx-d-rad-ic-bg-l))
+    --mbx-radio-icon-background-light,
+    var(--mbx-radio-icon-background, var(--mbx-d-rad-ic-bg-l))
   );
 
   --mbx-c-rad-ic-bg-d: var(
-    --mobrix-ui-radio-icon-background-dark,
-    var(--mobrix-ui-radio-icon-background, var(--mbx-d-rad-ic-bg-d))
+    --mbx-radio-icon-background-dark,
+    var(--mbx-radio-icon-background, var(--mbx-d-rad-ic-bg-d))
   );
 
   /** Rater **/
   --mbx-c-rat-bg-l: var(
-    --mobrix-ui-rater-background-light,
-    var(--mobrix-ui-rater-background, var(--mbx-c-bg-l))
+    --mbx-rater-background-light,
+    var(--mbx-rater-background, var(--mbx-c-bg-l))
   );
 
   --mbx-c-rat-bg-d: var(
-    --mobrix-ui-rater-background-dark,
-    var(--mobrix-ui-rater-background, var(--mbx-c-bg-d))
+    --mbx-rater-background-dark,
+    var(--mbx-rater-background, var(--mbx-c-bg-d))
   );
 
   /** Selector **/
   --mbx-c-sel-bg-l: var(
-    --mobrix-ui-selector-background-light,
-    var(--mobrix-ui-selector-background, var(--mbx-c-bgc-l))
+    --mbx-selector-background-light,
+    var(--mbx-selector-background, var(--mbx-c-bgc-l))
   );
 
   --mbx-c-sel-bg-d: var(
-    --mobrix-ui-selector-background-dark,
-    var(--mobrix-ui-selector-background, var(--mbx-c-bgc-d))
+    --mbx-selector-background-dark,
+    var(--mbx-selector-background, var(--mbx-c-bgc-d))
   );
 
   --mbx-c-sel-bg-h-l: var(
-    --mobrix-ui-selector-background-hover-light,
-    var(--mobrix-ui-selector-background-hover, var(--mbx-c-bg-h-l))
+    --mbx-selector-background-hover-light,
+    var(--mbx-selector-background-hover, var(--mbx-c-bg-h-l))
   );
 
   --mbx-c-sel-bg-h-d: var(
-    --mobrix-ui-selector-background-hover-dark,
-    var(--mobrix-ui-selector-background-hover, var(--mbx-c-bg-h-d))
+    --mbx-selector-background-hover-dark,
+    var(--mbx-selector-background-hover, var(--mbx-c-bg-h-d))
   );
 
   --mbx-c-sel-txt-l: var(
-    --mobrix-ui-selector-text-color-light,
-    var(--mobrix-ui-selector-text-color, var(--mbx-c-txt-l))
+    --mbx-selector-text-color-light,
+    var(--mbx-selector-text-color, var(--mbx-c-txt-l))
   );
 
   --mbx-c-sel-txt-d: var(
-    --mobrix-ui-selector-text-color-dark,
-    var(--mobrix-ui-selector-text-color, var(--mbx-c-txt-d))
+    --mbx-selector-text-color-dark,
+    var(--mbx-selector-text-color, var(--mbx-c-txt-d))
   );
 
   --mbx-c-sel-txt-h-l: var(
-    --mobrix-ui-selector-text-color-hover-light,
-    var(--mobrix-ui-selector-text-color-hover, var(--mbx-c-txt-h-l))
+    --mbx-selector-text-color-hover-light,
+    var(--mbx-selector-text-color-hover, var(--mbx-c-txt-h-l))
   );
 
   --mbx-c-sel-txt-h-d: var(
-    --mobrix-ui-selector-text-color-hover-dark,
-    var(--mobrix-ui-selector-text-color-hover, var(--mbx-c-txt-h-d))
+    --mbx-selector-text-color-hover-dark,
+    var(--mbx-selector-text-color-hover, var(--mbx-c-txt-h-d))
   );
 
   /* Slider */
   --mbx-c-sld-tb-l: var(
-    --mobrix-ui-slider-thumb-color-light,
-    var(--mobrix-ui-slider-thumb-color, var(--mbx-d-sld-tb-l))
+    --mbx-slider-thumb-color-light,
+    var(--mbx-slider-thumb-color, var(--mbx-d-sld-tb-l))
   );
 
   --mbx-c-sld-tb-d: var(
-    --mobrix-ui-slider-thumb-color-dark,
-    var(--mobrix-ui-slider-thumb-color, var(--mbx-d-sld-tb-d))
+    --mbx-slider-thumb-color-dark,
+    var(--mbx-slider-thumb-color, var(--mbx-d-sld-tb-d))
   );
 
   --mbx-c-sld-tb-h-l: var(
-    --mobrix-ui-slider-thumb-color-hover-light,
-    var(--mobrix-ui-slider-thumb-color-hover, var(--mbx-d-sld-tb-h-l))
+    --mbx-slider-thumb-color-hover-light,
+    var(--mbx-slider-thumb-color-hover, var(--mbx-d-sld-tb-h-l))
   );
 
   --mbx-c-sld-tb-h-d: var(
-    --mobrix-ui-slider-thumb-color-dark,
-    var(--mobrix-ui-slider-thumb-color-hover, var(--mbx-d-sld-tb-h-d))
+    --mbx-slider-thumb-color-dark,
+    var(--mbx-slider-thumb-color-hover, var(--mbx-d-sld-tb-h-d))
   );
 
   --mbx-c-sld-bg-l: var(
-    --mobrix-ui-slider-background-light,
-    var(--mobrix-ui-slider-background, var(--mbx-c-bg-l))
+    --mbx-slider-background-light,
+    var(--mbx-slider-background, var(--mbx-c-bg-l))
   );
 
   --mbx-c-sld-bg-d: var(
-    --mobrix-ui-slider-background-dark,
-    var(--mobrix-ui-slider-background, var(--mbx-c-bg-d))
+    --mbx-slider-background-dark,
+    var(--mbx-slider-background, var(--mbx-c-bg-d))
   );
 
   /** Spinner **/
   --mbx-c-spn-suc-l: var(
-    --mobrix-ui-spinner-success-color-light,
-    var(--mobrix-ui-spinner-success-color, var(--mbx-d-spn-suc))
+    --mbx-spinner-success-color-light,
+    var(--mbx-spinner-success-color, var(--mbx-d-spn-suc))
   );
   --mbx-c-spn-err-l: var(
-    --mobrix-ui-spinner-error-color-light,
-    var(--mobrix-ui-spinner-error-color, var(--mbx-d-spn-err))
+    --mbx-spinner-error-color-light,
+    var(--mbx-spinner-error-color, var(--mbx-d-spn-err))
   );
   --mbx-c-spn-load-l: var(
-    --mobrix-ui-spinner-loading-color-light,
-    var(--mobrix-ui-spinner-loading-color, var(--mbx-d-spn-load))
+    --mbx-spinner-loading-color-light,
+    var(--mbx-spinner-loading-color, var(--mbx-d-spn-load))
   );
 
   --mbx-c-spn-suc-d: var(
-    --mobrix-ui-spinner-success-color-dark,
-    var(--mobrix-ui-spinner-success-color, var(--mbx-d-spn-suc))
+    --mbx-spinner-success-color-dark,
+    var(--mbx-spinner-success-color, var(--mbx-d-spn-suc))
   );
   --mbx-c-spn-err-d: var(
-    --mobrix-ui-spinner-error-color-dark,
-    var(--mobrix-ui-spinner-error-color, var(--mbx-d-spn-err))
+    --mbx-spinner-error-color-dark,
+    var(--mbx-spinner-error-color, var(--mbx-d-spn-err))
   );
   --mbx-c-spn-load-d: var(
-    --mobrix-ui-spinner-loading-color-dark,
-    var(--mobrix-ui-spinner-loading-color, var(--mbx-d-spn-load))
+    --mbx-spinner-loading-color-dark,
+    var(--mbx-spinner-loading-color, var(--mbx-d-spn-load))
   );
 
   /** Toggle **/
   --mbx-c-tog-bg-l: var(
-    --mobrix-ui-toggle-background-light,
-    var(--mobrix-ui-toggle-background, var(--mbx-c-bg-l))
+    --mbx-toggle-background-light,
+    var(--mbx-toggle-background, var(--mbx-c-bg-l))
   );
 
   --mbx-c-tog-bg-d: var(
-    --mobrix-ui-toggle-background-dark,
-    var(--mobrix-ui-toggle-background, var(--mbx-c-bg-d))
+    --mbx-toggle-background-dark,
+    var(--mbx-toggle-background, var(--mbx-c-bg-d))
   );
 
   --mbx-c-tog-ic-on-int-l: var(
-    --mobrix-ui-toggle-icon-on-internal-color-light,
-    var(--mobrix-ui-toggle-icon-on-internal-color, var(--mbx-d-tog-ic-on-int-l))
+    --mbx-toggle-icon-on-internal-color-light,
+    var(--mbx-toggle-icon-on-internal-color, var(--mbx-d-tog-ic-on-int-l))
   );
   --mbx-c-tog-ic-on-ext-l: var(
-    --mobrix-ui-toggle-icon-on-external-color-light,
-    var(--mobrix-ui-toggle-icon-on-external-color, var(--mbx-d-tog-ic-on-ext-l))
+    --mbx-toggle-icon-on-external-color-light,
+    var(--mbx-toggle-icon-on-external-color, var(--mbx-d-tog-ic-on-ext-l))
   );
   --mbx-c-tog-ic-on-int-d: var(
-    --mobrix-ui-toggle-icon-on-internal-color-dark,
-    var(--mobrix-ui-toggle-icon-on-internal-color, var(--mbx-d-tog-ic-on-int-d))
+    --mbx-toggle-icon-on-internal-color-dark,
+    var(--mbx-toggle-icon-on-internal-color, var(--mbx-d-tog-ic-on-int-d))
   );
   --mbx-c-tog-ic-on-ext-d: var(
-    --mobrix-ui-toggle-icon-on-external-color-light,
-    var(--mobrix-ui-toggle-icon-on-external-color, var(--mbx-d-tog-ic-on-ext-d))
+    --mbx-toggle-icon-on-external-color-light,
+    var(--mbx-toggle-icon-on-external-color, var(--mbx-d-tog-ic-on-ext-d))
   );
   --mbx-c-tog-ic-off-int-l: var(
-    --mobrix-ui-toggle-icon-off-internal-color-light,
+    --mbx-toggle-icon-off-internal-color-light,
     var(
-      --mobrix-ui-toggle-icon-off-internal-color,
+      --mbx-toggle-icon-off-internal-color,
       var(--mbx-d-tog-ic-off-int-l)
     )
   );
   --mbx-c-tog-ic-off-ext-l: var(
-    --mobrix-ui-toggle-icon-off-external-color-light,
+    --mbx-toggle-icon-off-external-color-light,
     var(
-      --mobrix-ui-toggle-icon-off-external-color,
+      --mbx-toggle-icon-off-external-color,
       var(--mbx-d-tog-ic-off-ext-l)
     )
   );
   --mbx-c-tog-ic-off-int-d: var(
-    --mobrix-ui-toggle-icon-off-internal-color-dark,
+    --mbx-toggle-icon-off-internal-color-dark,
     var(
-      --mobrix-ui-toggle-icon-off-internal-color,
+      --mbx-toggle-icon-off-internal-color,
       var(--mbx-d-tog-ic-off-int-d)
     )
   );
   --mbx-c-tog-ic-off-ext-d: var(
-    --mobrix-ui-toggle-icon-off-external-color-light,
+    --mbx-toggle-icon-off-external-color-light,
     var(
-      --mobrix-ui-toggle-icon-off-external-color,
+      --mbx-toggle-icon-off-external-color,
       var(--mbx-d-tog-ic-off-ext-d)
     )
   );

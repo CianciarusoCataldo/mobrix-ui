@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  --mobrix-ui-table-background: var(--mbx-c-cal-bg);
-  --mobrix-ui-table-text-color: var(--mbx-c-cal-txt);
+  --mbx-table-background: var(--mbx-c-cal-bg);
+  --mbx-table-text-color: var(--mbx-c-cal-txt);
 }
 
 [data-mbx-id="calendar"] [data-mbx-class="actual-date"] {

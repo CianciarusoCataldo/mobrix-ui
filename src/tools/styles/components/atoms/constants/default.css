@@ -47,7 +47,7 @@
   );
 
   /* Slider */
-  --mobrix-ui-default-slider-thumb-color: radial-gradient(#2d3748, #1d232e);
+  --mbx-default-slider-thumb-color: radial-gradient(#2d3748, #1d232e);
 
   --mbx-d-sld-tb-l: radial-gradient(
     #2d3748,
