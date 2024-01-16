@@ -32,14 +32,6 @@
   fill: var(--mbx-c-car-arr);
 }
 
-@media (hover) {
-  [data-mbx-id="carousel"][data-mbx-styled="true"][data-mbx-hover="true"]
-    [data-mbx-arrow]:hover
-    svg {
-    fill: var(--mbx-c-car-arr-h);
-  }
-}
-
 [data-mbx-id="carousel"][data-mbx-styled="true"]
   [data-mbx-arrow][data-mbx-enabled="false"]
   svg,
@@ -72,9 +64,7 @@
   justify-content: center;
 }
 
-[data-mbx-id="carousel"]
-  [data-mbx-class="dots"]
-  [data-mbx-class="dot"] {
+[data-mbx-id="carousel"] [data-mbx-class="dots"] [data-mbx-class="dot"] {
   margin-left: 0.3rem;
   margin-right: 0.3rem;
 }
@@ -101,4 +91,12 @@
   [data-mbx-class="dot"]
   [data-mbx-class="carousel-dot-icon"][data-mbx-icon-full="false"] {
   background: var(--mbx-c-car-dot-e);
+}
+
+@media (hover) {
+  [data-mbx-id="carousel"][data-mbx-styled="true"][data-mbx-hover="true"]
+    [data-mbx-arrow]:hover
+    svg {
+    fill: var(--mbx-c-car-arr-h);
+  }
 }

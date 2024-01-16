@@ -1,0 +1,14 @@
+{
+  "--mbx-drawer-background": {},
+  "--mbx-drawer-background-dark": {},
+  "--mbx-drawer-background-light": {},
+  "--mbx-drawer-text-color": {},
+  "--mbx-drawer-text-color-light": {},
+  "--mbx-drawer-text-color-dark": {},
+  "--mbx-drawer-arrow": {},
+  "--mbx-drawer-arrow-light": {},
+  "--mbx-drawer-arrow-dark": {},
+  "--mbx-drawer-arrow-hover": {},
+  "--mbx-drawer-arrow-hover-light": {},
+  "--mbx-drawer-arrow-hover-dark": {}
+}

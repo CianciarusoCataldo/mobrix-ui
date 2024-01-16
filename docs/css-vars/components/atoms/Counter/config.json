@@ -1,0 +1,38 @@
+{
+  "--mbx-counterbox-background": {
+    "fallback": "[--mbx-background](global-css-vars.md#mbx-background)"
+  },
+  "--mbx-counterbox-background-dark": {
+    "fallback": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)"
+  },
+  "--mbx-counterbox-background-light": {
+    "fallback": "[--mbx-background-light](global-css-vars.md#mbx-background-light)"
+  },
+  "--mbx-counterbox-text-color": {
+    "fallback": "[--mbx-text-color](global-css-vars.md#mbx-text-color)"
+  },
+  "--mbx-counterbox-text-color-light": {
+    "fallback": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)"
+  },
+  "--mbx-counterbox-text-color-dark": {
+    "fallback": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)"
+  },
+  "--mbx-counterbox-background-hover-light": {
+    "fallback": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)"
+  },
+  "--mbx-counterbox-background-hover-dark": {
+    "fallback": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)"
+  },
+  "--mbx-counterbox-background-hover": {
+    "fallback": "[--mbx-background-hover](global-css-vars.md#mbx-background-hover)"
+  },
+  "--mbx-counterbox-text-color-hover": {
+    "fallback": "[--mbx-text-color-hover](global-css-vars.md#mbx-text-color-hover)"
+  },
+  "--mbx-counterbox-text-color-hover-light": {
+    "fallback": "[--mbx-text-color-hover-light](global-css-vars.md#mbx-text-color-hover-light)"
+  },
+  "--mbx-counterbox-text-color-hover-dark": {
+    "fallback": "[--mbx-text-color-hover-dark](global-css-vars.md#mbx-text-color-hover-dark)"
+  }
+}

@@ -21,32 +21,32 @@
   );
 
   --mbx-c-cal-bg-s-l: var(
-    --mbx-calendar-background-selected-light,
-    var(--mbx-calendar-background-selected, var(--mbx-c-cal-bg-d))
+    --mbx-calendar-selected-background-light,
+    var(--mbx-calendar-selected-background, var(--mbx-c-cal-bg-d))
   );
 
   --mbx-c-cal-bg-s-d: var(
-    --mbx-calendar-background-selected-dark,
-    var(--mbx-calendar-background-selected, var(--mbx-c-cal-bg-l))
+    --mbx-calendar-selected-background-dark,
+    var(--mbx-calendar-selected-background, var(--mbx-c-cal-bg-l))
   );
 
   --mbx-c-cal-txt-s-l: var(
-    --mbx-calendar-text-color-selected-light,
-    var(--mbx-calendar-text-color-selected, var(--mbx-c-cal-txt-d))
+    --mbx-calendar-selected-text-color-light,
+    var(--mbx-calendar-selected-text-color, var(--mbx-c-cal-txt-d))
   );
 
   --mbx-c-cal-txt-s-d: var(
-    --mbx-calendar-text-color-selected-dark,
-    var(--mbx-calendar-text-color-selected, var(--mbx-c-cal-txt-l))
+    --mbx-calendar-selected-text-color-dark,
+    var(--mbx-calendar-selected-text-color, var(--mbx-c-cal-txt-l))
   );
 
   --mbx-c-cal-t-l: var(
     --mbx-calendar-today-color-light,
-    var(--mbx-calendar-today, var(--mbx-d-cal-tod))
+    var(--mbx-calendar-today-color, var(--mbx-d-cal-tod))
   );
   --mbx-c-cal-t-d: var(
     --mbx-calendar-today-color-dark,
-    var(--mbx-calendar-today, var(--mbx-d-cal-tod))
+    var(--mbx-calendar-today-color, var(--mbx-d-cal-tod))
   );
 
   --mbx-c-cal-bg-h-l: var(
@@ -86,7 +86,7 @@
 
   --mbx-c-cal-arr-h-d: var(
     --mbx-calendar-arrow-hover-dark,
-    var(--mbx-calendar-text-color-hover, var(--mbx-c-txt-h-d))
+    var(--mbx-calendar-arrow-hover, var(--mbx-c-txt-h-d))
   );
 
   /** DatePicker **/

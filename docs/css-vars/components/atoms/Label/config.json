@@ -1,0 +1,11 @@
+{
+  "--mbx-label-text-color": {
+    "default": "[--mbx-text-color](global-css-vars.md#mbx-text-color)"
+  },
+  "--mbx-label-text-color-light": {
+    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)"
+  },
+  "--mbx-label-text-color-dark": {
+    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)"
+  }
+}

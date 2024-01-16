@@ -1,0 +1,47 @@
+{
+  "--mbx-carousel-background": {
+    "default": ""
+  },
+  "--mbx-carousel-background-dark": {
+    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)"
+  },
+  "--mbx-carousel-background-light": {
+    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)"
+  },
+  "--mbx-carousel-arrow-color": {
+    "default": ""
+  },
+  "--mbx-carousel-arrow-color-light": {
+    "default": "#252525"
+  },
+  "--mbx-carousel-arrow-color-dark": {
+    "default": "#e2e2e2"
+  },
+  "--mbx-carousel-arrow-color-hover": {
+    "default": ""
+  },
+  "--mbx-carousel-arrow-color-hover-light": {
+    "default": "#287dfd"
+  },
+  "--mbx-carousel-arrow-color-hover-dark": {
+    "default": "#ff8007"
+  },
+  "--mbx-carousel-dot-empty-background": {
+    "default": ""
+  },
+  "--mbx-carousel-dot-empty-background-light": {
+    "default": "radial-gradient(#000000, #181818, #282828, #3a3a3a, #4c4c4c, #6b6a6a, #858383)"
+  },
+  "--mbx-carousel-dot-empty-background-dark": {
+    "default": "radial-gradient(#000000, #181818, #282828, #3a3a3a, #4c4c4c, #6b6a6a, #858383)"
+  },
+  "--mbx-carousel-dot-full-background": {
+    "default": ""
+  },
+  "--mbx-carousel-dot-full-background-light": {
+    "default": "linear-gradient(to top, #ff8007, #fd8616, #fd9b3f, #fd9c40, #fcbb7f, #fad6b4)"
+  },
+  "--mbx-carousel-dot-full-background-dark": {
+    "default": "linear-gradient(to top, #ff8007, #fd8616, #fd9b3f, #fd9c40, #fcbb7f, #fad6b4)"
+  }
+}

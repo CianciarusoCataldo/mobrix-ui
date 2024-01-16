@@ -1,0 +1,14 @@
+{
+  "--mbx-expandablecontainer-background": {},
+  "--mbx-expandablecontainer-background-light": {},
+  "--mbx-expandablecontainer-background-dark": {},
+  "--mbx-expandablecontainer-text-color": {},
+  "--mbx-expandablecontainer-text-color-light": {},
+  "--mbx-expandablecontainer-text-color-dark": {},
+  "--mbx-expandablecontainer-arrow-color": {},
+  "--mbx-expandablecontainer-arrow-color-light": {},
+  "--mbx-expandablecontainer-arrow-color-dark": {},
+  "--mbx-expandablecontainer-arrow-color-hover": {},
+  "--mbx-expandablecontainer-arrow-color-hover-light": {},
+  "--mbx-expandablecontainer-arrow-color-hover-dark": {}
+}

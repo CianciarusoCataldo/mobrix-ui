@@ -25,11 +25,10 @@
 }
 
 [data-mbx-id="codebox"][data-mbx-enabled="true"]
-  [data-mbx-class="codebox-copy-icon"]>[data-mbx-id="button"]:active {
+  [data-mbx-class="codebox-copy-icon"]
+  > [data-mbx-id="button"]:active {
   opacity: 0.3;
 }
-
-
 
 @media (hover) {
   [data-mbx-id="codebox"][data-mbx-hover="true"][data-mbx-enabled="true"]

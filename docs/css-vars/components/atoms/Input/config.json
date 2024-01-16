@@ -1,0 +1,38 @@
+{
+  "--mbx-inputbox-background": {
+    "default": "[--mbx-background](global-css-vars.md#mbx-background)"
+  },
+  "--mbx-inputbox-background-dark": {
+    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)"
+  },
+  "--mbx-inputbox-background-light": {
+    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)"
+  },
+  "--mbx-inputbox-text-color": {
+    "default": "[--mbx-text-color](global-css-vars.md#mbx-text-color)"
+  },
+  "--mbx-inputbox-text-color-light": {
+    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)"
+  },
+  "--mbx-inputbox-text-color-dark": {
+    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)"
+  },
+  "--mbx-inputbox-background-hover-light": {
+    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)"
+  },
+  "--mbx-inputbox-background-hover-dark": {
+    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)"
+  },
+  "--mbx-inputbox-background-hover": {
+    "default": "[--mbx-background-hover](global-css-vars.md#mbx-background-hover)"
+  },
+  "--mbx-inputbox-text-color-hover": {
+    "default": "[--mbx-text-color-hover](global-css-vars.md#mbx-text-color-hover)"
+  },
+  "--mbx-inputbox-text-color-hover-light": {
+    "default": "[--mbx-text-color-hover-light](global-css-vars.md#mbx-text-color-hover-light)"
+  },
+  "--mbx-inputbox-text-color-hover-dark": {
+    "default": "[--mbx-text-color-hover-dark](global-css-vars.md#mbx-text-color-hover-dark)"
+  }
+}

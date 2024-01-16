@@ -255,7 +255,6 @@
     --mbx-rater-background-light,
     var(--mbx-rater-background, var(--mbx-c-bg-l))
   );
-
   --mbx-c-rat-bg-d: var(
     --mbx-rater-background-dark,
     var(--mbx-rater-background, var(--mbx-c-bg-d))
@@ -291,12 +290,10 @@
     --mbx-selector-text-color-dark,
     var(--mbx-selector-text-color, var(--mbx-c-txt-d))
   );
-
   --mbx-c-sel-txt-h-l: var(
     --mbx-selector-text-color-hover-light,
     var(--mbx-selector-text-color-hover, var(--mbx-c-txt-h-l))
   );
-
   --mbx-c-sel-txt-h-d: var(
     --mbx-selector-text-color-hover-dark,
     var(--mbx-selector-text-color-hover, var(--mbx-c-txt-h-d))
@@ -307,27 +304,22 @@
     --mbx-slider-thumb-color-light,
     var(--mbx-slider-thumb-color, var(--mbx-d-sld-tb-l))
   );
-
   --mbx-c-sld-tb-d: var(
     --mbx-slider-thumb-color-dark,
     var(--mbx-slider-thumb-color, var(--mbx-d-sld-tb-d))
   );
-
   --mbx-c-sld-tb-h-l: var(
     --mbx-slider-thumb-color-hover-light,
     var(--mbx-slider-thumb-color-hover, var(--mbx-d-sld-tb-h-l))
   );
-
   --mbx-c-sld-tb-h-d: var(
-    --mbx-slider-thumb-color-dark,
+    --mbx-slider-thumb-color-hover-dark,
     var(--mbx-slider-thumb-color-hover, var(--mbx-d-sld-tb-h-d))
   );
-
   --mbx-c-sld-bg-l: var(
     --mbx-slider-background-light,
     var(--mbx-slider-background, var(--mbx-c-bg-l))
   );
-
   --mbx-c-sld-bg-d: var(
     --mbx-slider-background-dark,
     var(--mbx-slider-background, var(--mbx-c-bg-d))
@@ -346,7 +338,6 @@
     --mbx-spinner-loading-color-light,
     var(--mbx-spinner-loading-color, var(--mbx-d-spn-load))
   );
-
   --mbx-c-spn-suc-d: var(
     --mbx-spinner-success-color-dark,
     var(--mbx-spinner-success-color, var(--mbx-d-spn-suc))
@@ -365,12 +356,10 @@
     --mbx-toggle-background-light,
     var(--mbx-toggle-background, var(--mbx-c-bg-l))
   );
-
   --mbx-c-tog-bg-d: var(
     --mbx-toggle-background-dark,
     var(--mbx-toggle-background, var(--mbx-c-bg-d))
   );
-
   --mbx-c-tog-ic-on-int-l: var(
     --mbx-toggle-icon-on-internal-color-light,
     var(--mbx-toggle-icon-on-internal-color, var(--mbx-d-tog-ic-on-int-l))
@@ -389,30 +378,18 @@
   );
   --mbx-c-tog-ic-off-int-l: var(
     --mbx-toggle-icon-off-internal-color-light,
-    var(
-      --mbx-toggle-icon-off-internal-color,
-      var(--mbx-d-tog-ic-off-int-l)
-    )
+    var(--mbx-toggle-icon-off-internal-color, var(--mbx-d-tog-ic-off-int-l))
   );
   --mbx-c-tog-ic-off-ext-l: var(
     --mbx-toggle-icon-off-external-color-light,
-    var(
-      --mbx-toggle-icon-off-external-color,
-      var(--mbx-d-tog-ic-off-ext-l)
-    )
+    var(--mbx-toggle-icon-off-external-color, var(--mbx-d-tog-ic-off-ext-l))
   );
   --mbx-c-tog-ic-off-int-d: var(
     --mbx-toggle-icon-off-internal-color-dark,
-    var(
-      --mbx-toggle-icon-off-internal-color,
-      var(--mbx-d-tog-ic-off-int-d)
-    )
+    var(--mbx-toggle-icon-off-internal-color, var(--mbx-d-tog-ic-off-int-d))
   );
   --mbx-c-tog-ic-off-ext-d: var(
     --mbx-toggle-icon-off-external-color-light,
-    var(
-      --mbx-toggle-icon-off-external-color,
-      var(--mbx-d-tog-ic-off-ext-d)
-    )
+    var(--mbx-toggle-icon-off-external-color, var(--mbx-d-tog-ic-off-ext-d))
   );
 }

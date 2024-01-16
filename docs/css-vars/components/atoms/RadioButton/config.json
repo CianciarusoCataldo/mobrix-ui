@@ -1,0 +1,27 @@
+{
+  "--mbx-radio-background": {
+    "default": ""
+  },
+  "--mbx-radio-background-light": {
+    "default": "radial-gradient(#f1f1f1 20%, #e4e4e4 30%, #bebebe 55%, #f0f0f0 20%)"
+  },
+  "--mbx-radio-background-dark": {
+    "default": "radial-gradient(closest-side, #2d3748 20%, #232b38 30%, #1d1f44 55%, #191f29 20%)"
+  },
+  "--mbx-radio-background-hover": {},
+  "--mbx-radio-background-hover-light": {
+    "default": "radial-gradient(#f1f1f1 20%, #cfcfcf 30%, #a7a7a7 55%, #f0f0f0 20%)"
+  },
+  "--mbx-radio-background-hover-dark": {
+    "default": "radial-gradient(#354155 20%, #2d3747 30%, #2b2e5f 55%, #323f55 20%)"
+  },
+  "--mbx-radio-icon-background": {
+    "default": ""
+  },
+  "--mbx-radio-icon-background-light": {
+    "default": "radial-gradient(circle at 23px 23px, #2d3748, #191f29)"
+  },
+  "--mbx-radio-icon-background-dark": {
+    "default": "radial-gradient(circle at 23px 23px, #dbe0e6, #949494)"
+  }
+}

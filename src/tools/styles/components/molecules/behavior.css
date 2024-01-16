@@ -79,7 +79,8 @@
   --mbx-c-tabv-txt: var(--mbx-c-tabv-txt-l);
   --mbx-c-tabv-off-bg: var(--mbx-c-tabv-off-bg-l);
   --mbx-c-tabv-off-bg-h: var(--mbx-c-tabv-off-bg-h-l);
-  --mbx-c-tabv-off-txt: var(--mobrix--mbx-c-tabv-off-txt-l);
+  --mbx-c-tabv-off-txt: var(--mbx-c-tabv-off-txt-l);
+  --mbx-c-tabv-off-txt-h: var(--mbx-c-tabv-off-txt-h-l);
 }
 
 [data-mbx-id][data-mbx-dark="true"] {
@@ -169,5 +170,5 @@
   --mbx-c-tabv-off-bg: var(--mbx-c-tabv-off-bg-d);
   --mbx-c-tabv-off-bg-h: var(--mbx-c-tabv-off-bg-h-d);
   --mbx-c-tabv-off-txt: var(--mobrix--mbx-c-tabv-off-txt-d);
+  --mbx-c-tabv-off-txt-h: var(--mbx-c-tabv-off-txt-h-d);
 }
-

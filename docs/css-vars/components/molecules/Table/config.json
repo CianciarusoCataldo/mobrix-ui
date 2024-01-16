@@ -1,0 +1,17 @@
+{
+  "--mbx-table-background": {},
+  "--mbx-table-background-dark": {},
+  "--mbx-table-background-light": {},
+  "--mbx-table-text-color": {},
+  "--mbx-table-text-color-light": {},
+  "--mbx-table-text-color-dark": {},
+  "--mbx-table-header-background": {},
+  "--mbx-table-header-background-light": {},
+  "--mbx-table-header-background-dark": {},
+  "--mbx-table-header-text-color": {},
+  "--mbx-table-header-text-color-light": {},
+  "--mbx-table-header-text-color-dark": {},
+  "--mbx-table-border-color-background": {},
+  "--mbx-table-border-color-background-light": {},
+  "--mbx-table-border-color-background-dark": {}
+}

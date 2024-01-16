@@ -1,0 +1,29 @@
+{
+  "--mbx-spinner-success-color": {
+    "default": ""
+  },
+  "--mbx-spinner-success-color-light": {
+    "default": "#05bc29"
+  },
+  "--mbx-spinner-success-color-dark": {
+    "default": "#05bc29"
+  },
+  "--mbx-spinner-error-color": {
+    "default": ""
+  },
+  "--mbx-spinner-error-color-light": {
+    "default": "#ff0000"
+  },
+  "--mbx-spinner-error-color-dark": {
+    "default": "#ff0000"
+  },
+  "--mbx-spinner-loading-color": {
+    "default": ""
+  },
+  "--mbx-spinner-loading-color-light": {
+    "default": "#202020"
+  },
+  "--mbx-spinner-loading-color-dark": {
+    "default": "#202020"
+  }
+}

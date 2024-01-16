@@ -47,5 +47,6 @@
       [data-mbx-tab-viewer-selected="true"]
     ):hover {
     background: var(--mbx-c-tabv-off-bg-h);
+    color: var(--mbx-c-tabv-off-txt-h);
   }
 }

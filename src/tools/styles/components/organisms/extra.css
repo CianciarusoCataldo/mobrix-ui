@@ -6,8 +6,8 @@
   --mbx-calendar-arrow-light: var(--mbx-c-dtp-cal-arr-l);
   --mbx-calendar-arrow-dark: var(--mbx-c-dtp-cal-arr-d);
   --mbx-calendar-arrow-hover-light: var(--mbx-c-dtp-cal-arr-h-l);
-  --mbx-calendar-background-selected-light: var(--mbx-c-dtp-cal-s-bg-l);
-  --mbx-calendar-background-selected-dark: var(--mbx-c-dtp-cal-s-bg-d);
-  --mbx-calendar-text-color-selected-light: var(--mbx-c-dtp-cal-s-txt-l);
-  --mbx-calendar-text-color-selected-dark: var(--mbx-c-dtp-cal-s-txt-d);
+  --mbx-calendar-selected-background-light: var(--mbx-c-dtp-cal-s-bg-l);
+  --mbx-calendar-selected-background-dark: var(--mbx-c-dtp-cal-s-bg-d);
+  --mbx-calendar-selected-text-color-light: var(--mbx-c-dtp-cal-s-txt-l);
+  --mbx-calendar-selected-text-color-dark: var(--mbx-c-dtp-cal-s-txt-d);
 }

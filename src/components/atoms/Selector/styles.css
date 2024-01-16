@@ -13,7 +13,7 @@
   padding: 1rem;
 }
 
-@media (hover: hover) {
+@media (hover) {
   [data-mbx-id="selector"][data-mbx-styled="true"][data-mbx-hover="true"]:hover,
   [data-mbx-id="selector"][data-mbx-styled="true"]
     [data-mbx-class="selector-option"]:hover {

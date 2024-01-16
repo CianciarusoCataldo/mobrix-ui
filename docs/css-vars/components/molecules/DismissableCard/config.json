@@ -1,0 +1,36 @@
+{
+  "--mbx-dismissablecard-background": {},
+  "--mbx-dismissablecard-background-light": {
+    "default": "[--mbx-card-background-light](card-css-vars.md#mbx-card-background-light)"
+  },
+  "--mbx-dismissablecard-background-dark": {
+    "default": "[--mbx-card-background-dark](card-css-vars.md#mbx-card-background-dark)"
+  },
+  "--mbx-dismissablecard-text-color": {
+    "default": ""
+  },
+  "--mbx-dismissablecard-text-color-light": {
+    "default": "[--mbx-card-text-color-dark](card-css-vars.md#mbx-card-text-color-light)"
+  },
+  "--mbx-dismissablecard-text-color-dark": {
+    "default": "[--mbx-card-text-color-dark](card-css-vars.md#mbx-card-text-color-dark)"
+  },
+  "--mbx-dismissablecard-x-color": {
+    "default": ""
+  },
+  "--mbx-dismissablecard-x-color-light": {
+    "default": "[--mbx-dismissablecard-text-color-light](#mbx-dismissablecard-text-color-light)"
+  },
+  "--mbx-dismissablecard-x-color-dark": {
+    "default": "[--mbx-dismissablecard-text-color-dark](#mbx-dismissablecard-text-color-dark)"
+  },
+  "--mbx-dismissablecard-x-color-hover": {
+    "default": ""
+  },
+  "--mbx-dismissablecard-x-color-hover-light": {
+    "default": "red"
+  },
+  "--mbx-dismissablecard-x-color-hover-dark": {
+    "default": "red"
+  }
+}

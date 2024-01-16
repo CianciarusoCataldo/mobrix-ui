@@ -38,11 +38,11 @@
   );
   --mbx-c-car-arr-h-l: var(
     --mbx-carousel-arrow-color-hover-light,
-    var(--mbx-carousel-arrow-color, var(--mbx-d-car-arr-h-l))
+    var(--mbx-carousel-arrow-color-hover, var(--mbx-d-car-arr-h-l))
   );
   --mbx-c-car-arr-h-d: var(
-    --mbx-carousel-arrow-color-dark,
-    var(--mbx-carousel-arrow-color, var(--mbx-d-car-arr-h-d))
+    --mbx-carousel-arrow-color-hover-dark,
+    var(--mbx-carousel-arrow-color-hover, var(--mbx-d-car-arr-h-d))
   );
   --mbx-c-car-dot-f-l: var(
     --mbx-carousel-dot-full-background-light,
@@ -165,42 +165,36 @@
 
   /** ExpandableContainer **/
   --mbx-c-exp-bg-l: var(
-    --mbx-expandable-container-background-light,
-    var(--mbx-expandable-container-background, var(--mbx-c-con-bg-l))
+    --mbx-expandablecontainer-background-light,
+    var(--mbx-expandablecontainer-background, var(--mbx-c-con-bg-l))
   );
   --mbx-c-exp-bg-d: var(
-    --mbx-expandable-container-background-dark,
-    var(--mbx-expandable-container-background, var(--mbx-c-con-bg-d))
+    --mbx-expandablecontainer-background-dark,
+    var(--mbx-expandablecontainer-background, var(--mbx-c-con-bg-d))
   );
   --mbx-c-exp-txt-l: var(
-    --mbx-expandable-container-text-color-light,
-    var(--mbx-expandable-container-text-color, var(--mbx-c-con-txt-l))
+    --mbx-expandablecontainer-text-color-light,
+    var(--mbx-expandablecontainer-text-color, var(--mbx-c-con-txt-l))
   );
   --mbx-c-exp-txt-d: var(
-    --mbx-expandable-container-text-color-dark,
-    var(--mbx-expandable-container-text-color, var(--mbx-c-con-txt-d))
+    --mbx-expandablecontainer-text-color-dark,
+    var(--mbx-expandablecontainer-text-color, var(--mbx-c-con-txt-d))
   );
   --mbx-c-exp-arr-l: var(
-    --mbx-expandable-container-arrow-color-light,
-    var(--mbx-expandable-container-arrow-color, var(--mbx-c-exp-txt-l))
+    --mbx-expandablecontainer-arrow-color-light,
+    var(--mbx-expandablecontainer-arrow-color, var(--mbx-c-exp-txt-l))
   );
   --mbx-c-exp-arr-d: var(
-    --mbx-expandable-container-arrow-color-dark,
-    var(--mbx-expandable-container-arrow-color, var(--mbx-c-exp-txt-d))
+    --mbx-expandablecontainer-arrow-color-dark,
+    var(--mbx-expandablecontainer-arrow-color, var(--mbx-c-exp-txt-d))
   );
   --mbx-c-exp-arr-h-l: var(
-    --mbx-expandable-container-arrow-color-hover-light,
-    var(
-      --mbx-expandable-container-arrow-color-hover,
-      var(--mbx-c-txt-h-l)
-    )
+    --mbx-expandablecontainer-arrow-color-hover-light,
+    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-txt-h-l))
   );
   --mbx-c-exp-arr-h-d: var(
-    --mbx-expandable-container-arrow-color-hover-dark,
-    var(
-      --mbx-expandable-container-arrow-color-hover,
-      var(--mbx-c-txt-h-d)
-    )
+    --mbx-expandablecontainer-arrow-color-hover-dark,
+    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-txt-h-d))
   );
 
   /** FormField **/
@@ -355,7 +349,7 @@
     var(--mbx-review-link-color, var(--mbx-d-rev-link-l))
   );
   --mbx-c-rev-link-d: var(
-    --mbx-review-link-icon-color-dark,
+    --mbx-review-link-color-dark,
     var(--mbx-review-link-color, var(--mbx-d-rev-link-d))
   );
   --mbx-c-rev-gh-l: var(
@@ -363,7 +357,7 @@
     var(--mbx-review-github-color, var(--mbx-d-rev-link-l))
   );
   --mbx-c-rev-gh-d: var(
-    --mbx-review-github-icon-color-dark,
+    --mbx-review-github-color-dark,
     var(--mbx-review-github-color, var(--mbx-d-rev-link-d))
   );
 
@@ -411,49 +405,61 @@
 
   /* Tab viewer */
   --mbx-c-tabv-bg-l: var(
-    --mbx-tab-viewer-background-light,
-    var(--mbx-tab-viewer-background, var(--mbx-d-tabv-bg-l))
+    --mbx-tabviewer-background-light,
+    var(--mbx-tabviewer-background, var(--mbx-d-tabv-bg-l))
   );
   --mbx-c-tabv-bg-d: var(
-    --mbx-tab-viewer-background-dark,
-    var(--mbx-tab-viewer-background, var(--mbx-d-tabv-bg-d))
+    --mbx-tabviewer-background-dark,
+    var(--mbx-tabviewer-background, var(--mbx-d-tabv-bg-d))
   );
+
+  --mbx-c-tabv-txt-l: var(
+    --mbx-tabviewer-text-color-light,
+    var(--mbx-tabviewer-text-color, var(--mbx-c-txt-l))
+  );
+  --mbx-c-tabv-txt-d: var(
+    --mbx-tabviewer-text-color-dark,
+    var(--mbx-tabviewer-text-color, var(--mbx-c-txt-d))
+  );
+
   --mbx-c-tabv-off-bg-d: var(
-    --mbx-tab-viewer-background-inactive-dark,
-    var(--mbx-tab-viewer-background-inactive, var(--mbx-d-tabv-off-bg-d))
+    --mbx-tabviewer-inactive-background-dark,
+    var(--mbx-tabviewer-inactive-background, var(--mbx-d-tabv-off-bg-d))
   );
   --mbx-c-tabv-off-bg-l: var(
-    --mbx-tab-viewer-background-inactive-light,
-    var(--mbx-tab-viewer-background-inactive, var(--mbx-d-tabv-off-bg-l))
+    --mbx-tabviewer-inactive-background-light,
+    var(--mbx-tabviewer-inactive-background, var(--mbx-d-tabv-off-bg-l))
   );
   --mbx-c-tabv-off-bg-h-d: var(
-    --mbx-tab-viewer-background-inactive-hover-dark,
+    --mbx-tabviewer-inactive-background-hover-dark,
     var(
-      --mbx-tab-viewer-background-inactive-hover,
+      --mbx-tabviewer-inactive-background-hover,
       var(--mbx-d-tabv-off-bg-h-d)
     )
   );
   --mbx-c-tabv-off-bg-h-l: var(
-    --mbx-tab-viewer-background-inactive-hover-light,
+    --mbx-tabviewer-inactive-background-hover-light,
     var(
-      --mbx-tab-viewer-background-inactive-hover,
+      --mbx-tabviewer-inactive-background-hover,
       var(--mbx-d-tabv-off-bg-h-l)
     )
   );
-  --mbx-c-tabv-txt-d: var(
-    --mbx-tab-viewer-text-color-dark,
-    var(--mbx-tab-viewer-text-color, var(--mbx-c-txt-d))
+
+  --mbx-c-tabv-off-txt-l: var(
+    --mbx-tabviewer-inactive-text-color-light,
+    var(--mbx-tabviewer-inactive-text-color, var(--mbx-d-tabv-off-txt))
   );
-  --mbx-c-tabv-txt-l: var(
-    --mbx-tab-viewer-text-color-light,
-    var(--mbx-tab-viewer-text-color, var(--mbx-c-txt-l))
+  --mbx-c-tabv-off-txt-d: var(
+    --mbx-tabviewer-inactive-text-color-dark,
+    var(--mbx-tabviewer-inactive-text-color, var(--mbx-d-tabv-off-txt))
   );
-  --mobrix--mbx-c-tabv-off-txt-d: var(
-    --mbx-tab-viewer-text-color-inactive-dark,
-    var(--mbx-tab-viewer-text-color-inactive, var(--mbx-d-tabv-off-txt))
+
+  --mbx-c-tabv-off-txt-h-l: var(
+    --mbx-tabviewer-inactive-text-color-hover-light,
+    var(--mbx-tabviewer-inactive-text-color-hover, var(--mbx-c-txt-h-l))
   );
-  --mobrix--mbx-c-tabv-off-txt-l: var(
-    --mbx-tab-viewer-text-color-inactive-light,
-    var(--mbx-tab-viewer-text-color-inactive, var(--mbx-d-tabv-off-txt))
+  --mbx-c-tabv-off-txt-h-d: var(
+    --mbx-tabviewer-inactive-text-color-hover-dark,
+    var(--mbx-tabviewer-inactive-text-color-hover, var(--mbx-c-txt-h-d))
   );
 }

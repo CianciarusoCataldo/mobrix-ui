@@ -1,0 +1,39 @@
+{
+  "--mbx-button-background": {
+    "fallback": "[--mbx-background](global-css-vars.md#mbx-background)"
+  },
+  "--mbx-button-background-dark": {
+    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)"
+  },
+  "--mbx-button-background-light": {
+    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)"
+  },
+  "--mbx-button-text-color": {
+    "fallback": "[--mbx-text-color](global-css-vars.md#mbx-text-color)"
+  },
+  "--mbx-button-text-color-light": {
+    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)"
+  },
+  "--mbx-button-text-color-dark": {
+    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
+    "fallback": "[--mbx-button-text-color](#mbx-button-text-color)"
+  },
+  "--mbx-button-background-hover-light": {
+    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)"
+  },
+  "--mbx-button-background-hover-dark": {
+    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)"
+  },
+  "--mbx-button-background-hover": {
+    "fallback": "[--mbx-background-hover](global-css-vars.md#mbx-background-hover)"
+  },
+  "--mbx-button-text-color-hover": {
+    "fallback": "[--mbx-text-color-hover](global-css-vars.md#mbx-text-color-hover)"
+  },
+  "--mbx-button-text-color-hover-light": {
+    "default": "[--mbx-text-color-hover-light](global-css-vars.md#mbx-text-color-hover-light)"
+  },
+  "--mbx-button-text-color-hover-dark": {
+    "default": "[--mbx-text-color-hover-dark](global-css-vars.md#mbx-text-color-hover-dark)"
+  }
+}
