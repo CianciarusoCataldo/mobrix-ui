@@ -1,35 +1,101 @@
 {
   "--mbx-datepicker-background": {},
-  "--mbx-datepicker-background-dark": {},
-  "--mbx-datepicker-background-light": {},
+  "--mbx-datepicker-background-light": {
+    "default": "",
+    "fallback": "--mbx-datepicker-background"
+  },
+  "--mbx-datepicker-background-dark": {
+    "default": "",
+    "fallback": "--mbx-datepicker-background"
+  },
   "--mbx-datepicker-text-color": {},
-  "--mbx-datepicker-text-color-light": {},
-  "--mbx-datepicker-text-color-dark": {},
+  "--mbx-datepicker-text-color-light": {
+    "default": "",
+    "fallback": "--mbx-datepicker-text-color"
+  },
+  "--mbx-datepicker-text-color-dark": {
+    "default": "",
+    "fallback": "--mbx-datepicker-text-color"
+  },
   "--mbx-datepicker-calendar-background": {},
-  "--mbx-datepicker-calendar-background-dark": {},
-  "--mbx-datepicker-calendar-background-light": {},
+  "--mbx-datepicker-calendar-background-light": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-background"
+  },
+  "--mbx-datepicker-calendar-background-dark": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-background"
+  },
   "--mbx-datepicker-calendar-text-color": {},
-  "--mbx-datepicker-calendar-text-color-light": {},
-  "--mbx-datepicker-calendar-text-color-dark": {},
-  "--mbx-datepicker-calendar-background-hover-light": {},
-  "--mbx-datepicker-calendar-background-hover-dark": {},
+  "--mbx-datepicker-calendar-text-color-light": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-text-color"
+  },
+  "--mbx-datepicker-calendar-text-color-dark": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-text-color"
+  },
   "--mbx-datepicker-calendar-background-hover": {},
-  "--mbx-datepicker-calendar-text-color-hover-light": {},
-  "--mbx-datepicker-calendar-text-color-hover-dark": {},
+  "--mbx-datepicker-calendar-background-hover-light": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-background-hover"
+  },
+  "--mbx-datepicker-calendar-background-hover-dark": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-background-hover"
+  },
   "--mbx-datepicker-calendar-text-color-hover": {},
+  "--mbx-datepicker-calendar-text-color-hover-light": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-text-color-hover"
+  },
+  "--mbx-datepicker-calendar-text-color-hover-dark": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-text-color-hover"
+  },
   "--mbx-datepicker-calendar-arrow": {},
-  "--mbx-datepicker-calendar-arrow-light": {},
-  "--mbx-datepicker-calendar-arrow-dark": {},
+  "--mbx-datepicker-calendar-arrow-light": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-arrow"
+  },
+  "--mbx-datepicker-calendar-arrow-dark": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-arrow"
+  },
   "--mbx-datepicker-calendar-arrow-hover": {},
-  "--mbx-datepicker-calendar-arrow-hover-light": {},
-  "--mbx-datepicker-calendar-arrow-hover-dark": {},
+  "--mbx-datepicker-calendar-arrow-hover-light": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-arrow-hover"
+  },
+  "--mbx-datepicker-calendar-arrow-hover-dark": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-arrow-hover"
+  },
   "--mbx-datepicker-calendar-selected-background": {},
-  "--mbx-datepicker-calendar-selected-background-dark": {},
-  "--mbx-datepicker-calendar-selected-background-light": {},
+  "--mbx-datepicker-calendar-selected-background-light": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-selected-background"
+  },
+  "--mbx-datepicker-calendar-selected-background-dark": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-selected-background"
+  },
   "--mbx-datepicker-calendar-selected-text-color": {},
-  "--mbx-datepicker-calendar-selected-text-color-light": {},
-  "--mbx-datepicker-calendar-selected-text-color-dark": {},
+  "--mbx-datepicker-calendar-selected-text-color-light": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-selected-text-color"
+  },
+  "--mbx-datepicker-calendar-selected-text-color-dark": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-selected-text-color"
+  },
   "--mbx-datepicker-calendar-today-color": {},
-  "--mbx-datepicker-calendar-today-color-light": {},
-  "--mbx-datepicker-calendar-today-color-dark": {}
+  "--mbx-datepicker-calendar-today-color-light": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-today-color"
+  },
+  "--mbx-datepicker-calendar-today-color-dark": {
+    "default": "",
+    "fallback": "--mbx-datepicker-calendar-today-color"
+  }
 }

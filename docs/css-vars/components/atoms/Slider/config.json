@@ -1,27 +1,29 @@
 {
-  "--mbx-slider-background": {
-    "default": ""
-  },
+  "--mbx-slider-background": {},
   "--mbx-slider-background-dark": {
-    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)"
+    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
+    "fallback": "--mbx-slider-background"
   },
   "--mbx-slider-background-light": {
-    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)"
+    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "fallback": "--mbx-slider-background"
   },
-  "--mbx-slider-thumb-color": {
-    "default": ""
-  },
+  "--mbx-slider-thumb-color": {},
   "--mbx-slider-thumb-color-light": {
-    "default": "radial-gradient(#2d3748, #1d232e)"
+    "default": "radial-gradient(#2d3748, #1d232e)",
+    "fallback": "--mbx-slider-thumb-color"
   },
   "--mbx-slider-thumb-color-dark": {
-    "default": "radial-gradient(#e3e4e9, #9b9999)"
+    "default": "radial-gradient(#e3e4e9, #9b9999)",
+    "fallback": "--mbx-slider-thumb-color"
   },
-  "--mbx-slider-thumb-color-hover": { "default": "" },
+  "--mbx-slider-thumb-color-hover": {},
   "--mbx-slider-thumb-color-hover-light": {
-    "default": "radial-gradient(#364257, #2a3444)"
+    "default": "radial-gradient(#364257, #2a3444)",
+    "fallback": "--mbx-slider-thumb-color-hover"
   },
   "--mbx-slider-thumb-color-hover-dark": {
-    "default": "radial-gradient(#e8e9f0, #adabab)"
+    "default": "radial-gradient(#e8e9f0, #adabab)",
+    "fallback": "--mbx-slider-thumb-color-hover"
   }
 }

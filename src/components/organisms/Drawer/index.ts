@@ -7,7 +7,6 @@ import { DrawerComponent } from "../../../types";
 import { buildMobrixUiStandardComponent } from "../../../tools";
 
 import drawerComponent from "./component";
-import { useAnimation } from "../../../tools/utils/hooks";
 
 const ALLOWED_POSITIONS = [
   "right",
@@ -55,29 +54,54 @@ const ALLOWED_POSITIONS = [
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Drawer: DrawerComponent = ({ position, hide, animated, children, additionalProps = {}, onClose = () => { }, ...commonProps }) => {
+const Drawer: DrawerComponent = ({
+  position,
+  hide,
+  animated,
+  children,
+  additionalProps = {},
+  onClose = () => {},
+  onFocusLost = () => {},
+  ...commonProps
+}) => {
   const drawerLocation =
     position && ALLOWED_POSITIONS.includes(position) ? position : "left";
 
-  const [value, setValue, onCloseCallback] = useAnimation("", onClose);
+  const [value, setValue] = React.useState("");
+
+  const onCloseCallback = () => {
+    setValue("ease-out");
+    setTimeout(() => {
+      setValue("");
+      onClose();
+    }, 200);
+  };
 
   return buildMobrixUiStandardComponent({
     name: "drawer",
     commonProps: {
       ...commonProps,
       hide: value.length === 0 && hide,
+      /* istanbul ignore next */
+      onFocusLost: () => {
+        if (!hide) {
+          onFocusLost();
+          onCloseCallback();
+        }
+      },
     },
     additionalProps: {
-      ...additionalProps, 
+      ...additionalProps,
       "data-mbx-drawer-location": drawerLocation,
-      "data-mbx-drawer-animation": hide ? value : "ease-in"
+      "data-mbx-drawer-animation":
+        value.length === 0 ? (hide ? "" : "ease-in") : value,
     },
     Component: drawerComponent({
       children,
       hide,
       onClose: onCloseCallback,
       ...commonProps,
-    })
+    }),
   });
 };
 

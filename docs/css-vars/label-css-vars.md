@@ -4,11 +4,11 @@
 
 ### Label
 
-| Prop                                                        | Fallback | Default                                                           |
-| ----------------------------------------------------------- | -------- | ----------------------------------------------------------------- |
-| [--mbx-label-text-color](#mbx-label-text-color)             |          | [--mbx-text-color](global-css-vars.md#mbx-text-color)             |
-| [--mbx-label-text-color-light](#mbx-label-text-color-light) |          | [--mbx-text-color-light](global-css-vars.md#mbx-text-color-light) |
-| [--mbx-label-text-color-dark](#mbx-label-text-color-dark)   |          | [--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)   |
+| Prop                                                        | Fallback                                           | Default                                                           |
+| ----------------------------------------------------------- | -------------------------------------------------- | ----------------------------------------------------------------- |
+| [--mbx-label-text-color](#mbx-label-text-color)             | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div>                |
+| [--mbx-label-text-color-light](#mbx-label-text-color-light) | [--mbx-label-text-color](#mbx-label-text-color)    | [--mbx-text-color-light](global-css-vars.md#mbx-text-color-light) |
+| [--mbx-label-text-color-dark](#mbx-label-text-color-dark)   | [--mbx-label-text-color](#mbx-label-text-color)    | [--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)   |
 
 <br>
 

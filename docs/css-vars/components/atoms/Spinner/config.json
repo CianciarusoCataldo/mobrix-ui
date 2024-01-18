@@ -1,29 +1,29 @@
 {
-  "--mbx-spinner-success-color": {
-    "default": ""
-  },
+  "--mbx-spinner-success-color": {},
   "--mbx-spinner-success-color-light": {
-    "default": "#05bc29"
+    "default": "#05bc29",
+    "fallback": "--mbx-spinner-success-color"
   },
   "--mbx-spinner-success-color-dark": {
-    "default": "#05bc29"
+    "default": "#05bc29",
+    "fallback": "--mbx-spinner-success-color"
   },
-  "--mbx-spinner-error-color": {
-    "default": ""
-  },
+  "--mbx-spinner-error-color": {},
   "--mbx-spinner-error-color-light": {
-    "default": "#ff0000"
+    "default": "#ff0000",
+    "fallback": "--mbx-spinner-error-color"
   },
   "--mbx-spinner-error-color-dark": {
-    "default": "#ff0000"
+    "default": "#ff0000",
+    "fallback": "--mbx-spinner-error-color"
   },
-  "--mbx-spinner-loading-color": {
-    "default": ""
-  },
+  "--mbx-spinner-loading-color": {},
   "--mbx-spinner-loading-color-light": {
-    "default": "#202020"
+    "default": "#202020",
+    "fallback": "--mbx-spinner-loading-color"
   },
   "--mbx-spinner-loading-color-dark": {
-    "default": "#202020"
+    "default": "#202020",
+    "fallback": "--mbx-spinner-loading-color"
   }
 }

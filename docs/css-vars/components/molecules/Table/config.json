@@ -1,17 +1,47 @@
 {
   "--mbx-table-background": {},
-  "--mbx-table-background-dark": {},
-  "--mbx-table-background-light": {},
+  "--mbx-table-background-dark": {
+    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
+    "fallback": "--mbx-table-background"
+  },
+  "--mbx-table-background-light": {
+    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "fallback": "--mbx-table-background"
+  },
   "--mbx-table-text-color": {},
-  "--mbx-table-text-color-light": {},
-  "--mbx-table-text-color-dark": {},
+  "--mbx-table-text-color-light": {
+    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)",
+    "fallback": "--mbx-table-text-color"
+  },
+  "--mbx-table-text-color-dark": {
+    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
+    "fallback": "--mbx-table-text-color"
+  },
   "--mbx-table-header-background": {},
-  "--mbx-table-header-background-light": {},
-  "--mbx-table-header-background-dark": {},
+  "--mbx-table-header-background-dark": {
+    "default": "linear-gradient(to right, #4b5b77, #3e4c64)",
+    "fallback": "--mbx-table-header-background"
+  },
+  "--mbx-table-header-background-light": {
+    "default": "linear-gradient(to right, #354155, #2b3546)",
+    "fallback": "--mbx-table-header-background"
+  },
   "--mbx-table-header-text-color": {},
-  "--mbx-table-header-text-color-light": {},
-  "--mbx-table-header-text-color-dark": {},
-  "--mbx-table-border-color-background": {},
-  "--mbx-table-border-color-background-light": {},
-  "--mbx-table-border-color-background-dark": {}
+  "--mbx-table-header-text-color-light": {
+    "default": "whitesmoke",
+    "fallback": "--mbx-table-header-text-color"
+  },
+  "--mbx-table-header-text-color-dark": {
+    "default": "rgb(255, 255, 255)",
+    "fallback": "--mbx-table-header-text-color"
+  },
+  "--mbx-table-border-color": {},
+  "--mbx-table-border-color-light": {
+    "default": "darkslategrey",
+    "fallback": "--mbx-table-border-color"
+  },
+  "--mbx-table-border-color-dark": {
+    "default": "rgb(219, 219, 219)",
+    "fallback": "--mbx-table-border-color"
+  }
 }

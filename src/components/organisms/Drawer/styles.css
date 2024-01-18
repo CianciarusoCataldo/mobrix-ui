@@ -1,3 +1,5 @@
+@import url("positions.css");
+
 [data-mbx-id="drawer"] {
   position: fixed;
   z-index: 10;
@@ -9,113 +11,30 @@
   -o-animation: var(--mbx-drawer-animation);
   background: var(--mbx-c-draw-bg);
   color: var(--mbx-c-draw-txt);
-}
-
-[data-mbx-id="drawer"][data-mbx-drawer-location="bottom"],
-[data-mbx-id="drawer"][data-mbx-drawer-location="bottom-left"],
-[data-mbx-id="drawer"][data-mbx-drawer-location="bottom-right"] {
-  top: auto;
-  bottom: 0;
-  --mbx-drawer-animation-in: slideBottom 0.3s forwards;
-  --mbx-drawer-animation-out: slideOutBottom 0.3s forwards;
-}
-
-[data-mbx-id="drawer"][data-mbx-drawer-location="left"],
-[data-mbx-id="drawer"][data-mbx-drawer-location="top-left"],
-[data-mbx-id="drawer"][data-mbx-drawer-location="bottom-left"] {
-  right: auto;
-  left: 0;
-}
-
-[data-mbx-id="drawer"][data-mbx-drawer-location="right"],
-[data-mbx-id="drawer"][data-mbx-drawer-location="top-right"],
-[data-mbx-id="drawer"][data-mbx-drawer-location="bottom-right"] {
-  left: auto;
-  right: 0;
-}
-
-[data-mbx-id="drawer"][data-mbx-drawer-location="left"],
-[data-mbx-id="drawer"][data-mbx-drawer-location="right"] {
-  top: 0;
-  bottom: 0;
-  height: 100%;
-}
-
-[data-mbx-id="drawer"][data-mbx-drawer-location="top"],
-[data-mbx-id="drawer"][data-mbx-drawer-location="bottom"] {
-  left: 0;
-  right: 0;
-}
-
-[data-mbx-id="drawer"][data-mbx-drawer-location="top"],
-[data-mbx-id="drawer"][data-mbx-drawer-location="top-left"],
-[data-mbx-id="drawer"][data-mbx-drawer-location="top-right"] {
-  bottom: auto;
-  top: 0;
-
-  --mbx-drawer-animation-in: slideTop 0.3s forwards;
-  --mbx-drawer-animation-out: slideOutTop 0.3s forwards;
-}
-
-[data-mbx-id="drawer"][data-mbx-drawer-location="left"] {
-  --mbx-drawer-animation-in: slideLeft 0.3s forwards;
-  --mbx-drawer-animation-out: slideOutLeft 0.3s forwards;
-}
-
-[data-mbx-id="drawer"][data-mbx-drawer-location="right"] {
-  --mbx-drawer-animation-in: slideRight 0.3s forwards;
-  --mbx-drawer-animation-out: slideOutRight 0.3s forwards;
-}
-
-[data-mbx-id="drawer"][data-mbx-drawer-animation="ease-in"] {
-  --mbx-drawer-animation: var(--mbx-drawer-animation-in);
-}
-
-[data-mbx-id="drawer"][data-mbx-drawer-animation="ease-out"] {
-  --mbx-drawer-animation: var(--mbx-drawer-animation-out);
-}
-
-[data-mbx-id="drawer"] [data-mbx-class="content"] {
   display: flex;
 }
 
-[data-mbx-id="drawer"][data-mbx-drawer-location^="bottom"]
-  [data-mbx-class="content"] {
-  flex-direction: column-reverse;
+[data-mbx-id="drawer"] > [data-mbx-class="drawer-content"]::-webkit-scrollbar {
+  display: none !important;
 }
 
-[data-mbx-id="drawer"][data-mbx-drawer-location^="top"]
-  [data-mbx-class="content"] {
-  flex-direction: column;
+[data-mbx-id="drawer"] > [data-mbx-class="drawer-content"] {
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
 }
 
-[data-mbx-id="drawer"][data-mbx-drawer-location="bottom"]
-  [data-mbx-class="content"],
-[data-mbx-id="drawer"][data-mbx-drawer-location="top"]
-  [data-mbx-class="content"] {
-  width: 100%;
+[data-mbx-id="drawer"] > [data-mbx-class="drawer-content"] {
+  overflow-y: auto;
 }
 
-[data-mbx-id="drawer"][data-mbx-drawer-location="left"]
-  [data-mbx-class="content"] {
-  flex-direction: row;
-  height: 100%;
-}
-
-[data-mbx-id="drawer"][data-mbx-drawer-location="right"]
-  [data-mbx-class="content"] {
-  flex-direction: row-reverse;
-  height: 100%;
-}
-
-[data-mbx-id="drawer"] [data-mbx-class="drawer-close-button"] {
+[data-mbx-id="drawer"] > [data-mbx-class="drawer-close-button"] {
   border: 0;
   background: transparent;
   margin: 0;
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location^="bottom"]
-  [data-mbx-class="drawer-close-button"] {
+  > [data-mbx-class="drawer-close-button"] {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   padding-right: 0.5rem;
@@ -125,7 +44,7 @@
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location^="top"]
-  [data-mbx-class="drawer-close-button"] {
+  > [data-mbx-class="drawer-close-button"] {
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   padding-right: 0.5rem;
@@ -135,64 +54,70 @@
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location="right"]
-  [data-mbx-class="drawer-close-button"],
+  > [data-mbx-class="drawer-close-button"],
 [data-mbx-id="drawer"][data-mbx-drawer-location="left"]
-  [data-mbx-class="drawer-close-button"] {
+  > [data-mbx-class="drawer-close-button"] {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   height: 100%;
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location="right"]
-  [data-mbx-class="drawer-close-button"] {
+  > [data-mbx-class="drawer-close-button"] {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   padding-left: 0.1rem;
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location="left"]
-  [data-mbx-class="drawer-close-button"] {
+  > [data-mbx-class="drawer-close-button"] {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   padding-right: 0.1rem;
 }
 
-[data-mbx-id="drawer"]
-  [data-mbx-class="drawer-close-button"]:focus-visible {
+[data-mbx-id="drawer"] > [data-mbx-class="drawer-close-button"]:focus-visible {
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
 }
 
-[data-mbx-id="drawer"] [data-mbx-class="drawer-close-button"] svg {
+[data-mbx-id="drawer"] > [data-mbx-class="drawer-close-button"] svg {
   fill: var(--mbx-c-draw-arr);
   margin: auto;
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location^="top"]
-  [data-mbx-class="drawer-close-button"]
+  > [data-mbx-class="drawer-close-button"]
   svg {
   transform: rotate(90deg);
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location^="bottom"]
-  [data-mbx-class="drawer-close-button"]
+  > [data-mbx-class="drawer-close-button"]
   svg {
   transform: rotate(-90deg);
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location="right"]
-  [data-mbx-class="drawer-close-button"]
+  > [data-mbx-class="drawer-close-button"]
   svg {
   transform: rotate(180deg);
 }
 
-[data-mbx-id="drawer"]:focus-visible,
 [data-mbx-id="drawer"]
-  [data-mbx-class="drawer-close-button"]:focus-visible
+  > [data-mbx-class="drawer-close-button"]:focus-visible
   svg {
   fill: var(--mbx-c-draw-arr-h);
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-animation="ease-in"] {
+  --mbx-drawer-animation: var(--mbx-drawer-animation-in);
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-animation="ease-out"] {
+  --mbx-drawer-animation: var(--mbx-drawer-animation-out);
 }
 
 @media (hover) {

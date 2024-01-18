@@ -1,20 +1,20 @@
 {
-  "--mbx-link-color": {
-    "default": "[--mbx-link-color](global-css-vars.md#mbx-link-color)"
-  },
+  "--mbx-link-color": {},
   "--mbx-link-color-light": {
-    "default": "[--mbx-link-color-light](global-css-vars.md#mbx-link-color-light)"
+    "default": "[--mbx-link-color-light](global-css-vars.md#mbx-link-color-light)",
+    "fallback": "--mbx-link-color"
   },
   "--mbx-link-color-dark": {
-    "default": "[--mbx-link-color-dark](global-css-vars.md#mbx-link-color-dark)"
+    "default": "[--mbx-link-color-dark](global-css-vars.md#mbx-link-color-dark)",
+    "fallback": "--mbx-link-color"
   },
-  "--mbx-link-color-hover": {
-    "default": "[--mbx-link-color-hover](global-css-vars.md#mbx-link-color-hover)"
-  },
+  "--mbx-link-color-hover": {},
   "--mbx-link-color-hover-light": {
-    "default": "[--mbx-link-color-hover-light](global-css-vars.md#mbx-link-color-hover-light)"
+    "default": "[--mbx-link-color-hover-light](global-css-vars.md#mbx-link-color-hover-light)",
+    "fallback": "--mbx-link-color-hover"
   },
   "--mbx-link-color-hover-dark": {
-    "default": "[--mbx-link-color-hover-dark](global-css-vars.md#mbx-link-color-hover-dark)"
+    "default": "[--mbx-link-color-hover-dark](global-css-vars.md#mbx-link-color-hover-dark)",
+    "fallback": "--mbx-link-color-hover"
   }
 }

@@ -1,38 +1,38 @@
 {
-  "--mbx-selector-background": {
-    "default": ""
+  "--mbx-selector-background": {},
+  "--mbx-selector-background-light": {
+    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "fallback": "--mbx-selector-background"
   },
   "--mbx-selector-background-dark": {
-    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)"
+    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
+    "fallback": "--mbx-selector-background"
   },
-  "--mbx-selector-background-light": {
-    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)"
-  },
-  "--mbx-selector-text-color": {
-    "default": ""
-  },
+  "--mbx-selector-text-color": {},
   "--mbx-selector-text-color-light": {
-    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)"
+    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)",
+    "fallback": "--mbx-selector-text-color"
   },
   "--mbx-selector-text-color-dark": {
-    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)"
+    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
+    "fallback": "--mbx-selector-text-color"
   },
-  "--mbx-selector-background-hover": {
-    "default": ""
-  },
+  "--mbx-selector-background-hover": {},
   "--mbx-selector-background-hover-light": {
-    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)"
+    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)",
+    "fallback": "--mbx-selector-background-hover"
   },
   "--mbx-selector-background-hover-dark": {
-    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)"
+    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)",
+    "fallback": "--mbx-selector-background-hover"
   },
-  "--mbx-selector-text-color-hover": {
-    "default": ""
-  },
+  "--mbx-selector-text-color-hover": {},
   "--mbx-selector-text-color-hover-light": {
-    "default": "[--mbx-text-color-hover-light](global-css-vars.md#mbx-text-color-hover-light)"
+    "default": "[--mbx-text-color-hover-light](global-css-vars.md#mbx-text-color-hover-light)",
+    "fallback": "--mbx-selector-text-color-hover"
   },
   "--mbx-selector-text-color-hover-dark": {
-    "default": "[--mbx-text-color-hover-dark](global-css-vars.md#mbx-text-color-hover-dark)"
+    "default": "[--mbx-text-color-hover-dark](global-css-vars.md#mbx-text-color-hover-dark)",
+    "fallback": "--mbx-selector-text-color-hover"
   }
 }

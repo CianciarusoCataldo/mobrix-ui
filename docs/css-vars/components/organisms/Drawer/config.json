@@ -1,14 +1,38 @@
 {
+  "--mbx-drawer-background-light": {
+    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "fallback": "--mbx-drawer-background"
+  },
   "--mbx-drawer-background": {},
-  "--mbx-drawer-background-dark": {},
-  "--mbx-drawer-background-light": {},
+  "--mbx-drawer-background-dark": {
+    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
+    "fallback": "--mbx-drawer-background"
+  },
   "--mbx-drawer-text-color": {},
-  "--mbx-drawer-text-color-light": {},
-  "--mbx-drawer-text-color-dark": {},
+  "--mbx-drawer-text-color-light": {
+    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)",
+    "fallback": "--mbx-drawer-text-color"
+  },
+  "--mbx-drawer-text-color-dark": {
+    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
+    "fallback": "--mbx-drawer-text-color"
+  },
   "--mbx-drawer-arrow": {},
-  "--mbx-drawer-arrow-light": {},
-  "--mbx-drawer-arrow-dark": {},
+  "--mbx-drawer-arrow-light": {
+    "default": "",
+    "fallback": "--mbx-drawer-arrow"
+  },
+  "--mbx-drawer-arrow-dark": {
+    "default": "",
+    "fallback": "--mbx-drawer-arrow"
+  },
   "--mbx-drawer-arrow-hover": {},
-  "--mbx-drawer-arrow-hover-light": {},
-  "--mbx-drawer-arrow-hover-dark": {}
+  "--mbx-drawer-arrow-hover-light": {
+    "default": "",
+    "fallback": "--mbx-drawer-arrow-hover"
+  },
+  "--mbx-drawer-arrow-hover-dark": {
+    "default": "",
+    "fallback": "--mbx-drawer-arrow-hover"
+  }
 }

@@ -1,14 +1,38 @@
 {
   "--mbx-expandablecontainer-background": {},
-  "--mbx-expandablecontainer-background-light": {},
-  "--mbx-expandablecontainer-background-dark": {},
+  "--mbx-expandablecontainer-background-light": {
+    "default": "[--mbx-container-background-light](container-css-vars.md#mbx-container-background-light)",
+    "fallback": "--mbx-expandablecontainer-background"
+  },
+  "--mbx-expandablecontainer-background-dark": {
+    "default": "[--mbx-container-background-dark](container-css-vars.md#mbx-container-background-dark)",
+    "fallback": "--mbx-expandablecontainer-background"
+  },
   "--mbx-expandablecontainer-text-color": {},
-  "--mbx-expandablecontainer-text-color-light": {},
-  "--mbx-expandablecontainer-text-color-dark": {},
+  "--mbx-expandablecontainer-text-color-light": {
+    "default": "[--mbx-container-text-color-light](container-css-vars.md#mbx-container-text-color-light)",
+    "fallback": "--mbx-expandablecontainer-text-color"
+  },
+  "--mbx-expandablecontainer-text-color-dark": {
+    "default": "[--mbx-container-text-color-dark](container-css-vars.md#mbx-container-text-color-dark)",
+    "fallback": "--mbx-expandablecontainer-text-color"
+  },
   "--mbx-expandablecontainer-arrow-color": {},
-  "--mbx-expandablecontainer-arrow-color-light": {},
-  "--mbx-expandablecontainer-arrow-color-dark": {},
+  "--mbx-expandablecontainer-arrow-color-light": {
+    "default": "[--mbx-expandablecontainer-text-color-light](#mbx-expandablecontainer-text-color-light)",
+    "fallback": "--mbx-expandablecontainer-arrow-color"
+  },
+  "--mbx-expandablecontainer-arrow-color-dark": {
+    "default": "[--mbx-expandablecontainer-text-color-dark](#mbx-expandablecontainer-text-color-dark)",
+    "fallback": "--mbx-expandablecontainer-arrow-color"
+  },
   "--mbx-expandablecontainer-arrow-color-hover": {},
-  "--mbx-expandablecontainer-arrow-color-hover-light": {},
-  "--mbx-expandablecontainer-arrow-color-hover-dark": {}
+  "--mbx-expandablecontainer-arrow-color-hover-light": {
+    "default": "[--mbx-text-color-hover-light](global-css-vars.md#mbx-text-color-hover-light)",
+    "fallback": "--mbx-expandablecontainer-arrow-color-hover"
+  },
+  "--mbx-expandablecontainer-arrow-color-hover-dark": {
+    "default": "[--mbx-text-color-hover-dark](global-css-vars.md#mbx-text-color-hover-dark)",
+    "fallback": "--mbx-expandablecontainer-arrow-color-hover"
+  }
 }

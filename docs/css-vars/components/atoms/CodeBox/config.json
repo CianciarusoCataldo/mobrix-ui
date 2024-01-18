@@ -1,20 +1,20 @@
 {
-  "--mbx-codebox-background": {
-    "fallback": "[--mbx-background](global-css-vars.md#mbx-background)"
-  },
+  "--mbx-codebox-background": {},
   "--mbx-codebox-background-dark": {
-    "fallback": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)"
+    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
+    "fallback": "--mbx-codebox-background"
   },
   "--mbx-codebox-background-light": {
-    "fallback": "[--mbx-background-light](global-css-vars.md#mbx-background-light)"
+    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "fallback": "--mbx-codebox-background"
   },
-  "--mbx-codebox-text-color": {
-    "fallback": "[--mbx-text-color](global-css-vars.md#mbx-text-color)"
-  },
+  "--mbx-codebox-text-color": {},
   "--mbx-codebox-text-color-light": {
-    "fallback": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)"
+    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)",
+    "fallback": "--mbx-codebox-text-color"
   },
   "--mbx-codebox-text-color-dark": {
-    "fallback": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)"
+    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
+    "fallback": "--mbx-codebox-text-color"
   }
 }

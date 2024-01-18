@@ -1,16 +1,12 @@
 {
-  "--mbx-card-background": {
-    "default": ""
-  },
+  "--mbx-card-background": {},
   "--mbx-card-background-light": {
     "default": "linear-gradient(to right, #fff, #ededee, #e6e7e7)"
   },
   "--mbx-card-background-dark": {
     "default": "linear-gradient(to right, #2d3748, #1d232e)"
   },
-  "--mbx-card-text-color": {
-    "default": ""
-  },
+  "--mbx-card-text-color": {},
   "--mbx-card-text-color-light": {
     "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)"
   },

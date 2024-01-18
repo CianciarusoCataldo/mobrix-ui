@@ -1,11 +1,11 @@
 {
-  "--mbx-divider-color": {
-    "fallback": "[--mbx-text-color](global-css-vars.md#mbx-text-color)"
-  },
+  "--mbx-divider-color": {},
   "--mbx-divider-color-light": {
-    "fallback": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)"
+    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)",
+    "fallback": "--mbx-divider-color"
   },
   "--mbx-divider-color-dark": {
-    "fallback": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)"
+    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
+    "fallback": "--mbx-divider-color"
   }
 }

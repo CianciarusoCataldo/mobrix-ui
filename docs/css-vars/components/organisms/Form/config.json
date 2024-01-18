@@ -1,26 +1,74 @@
 {
+  "--mbx-form-background-light": {
+    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "fallback": "--mbx-form-background"
+  },
   "--mbx-form-background": {},
-  "--mbx-form-background-dark": {},
-  "--mbx-form-background-light": {},
+  "--mbx-form-background-dark": {
+    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
+    "fallback": "--mbx-form-background"
+  },
   "--mbx-form-text-color": {},
-  "--mbx-form-text-color-light": {},
-  "--mbx-form-text-color-dark": {},
+  "--mbx-form-text-color-light": {
+    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)",
+    "fallback": "--mbx-form-text-color"
+  },
+  "--mbx-form-text-color-dark": {
+    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
+    "fallback": "--mbx-form-text-color"
+  },
   "--mbx-form-submit-background": {},
-  "--mbx-form-submit-background-dark": {},
-  "--mbx-form-submit-background-light": {},
+  "--mbx-form-submit-background-light": {
+    "default": "[--mbx-button-background-light](button-css-vars.md#mbx-button-background-light)",
+    "fallback": "--mbx-form-submit-background"
+  },
+  "--mbx-form-submit-background-dark": {
+    "default": "[--mbx-button-background-dark](button-css-vars.md#mbx-button-background-dark)",
+    "fallback": "--mbx-form-submit-background"
+  },
   "--mbx-form-submit-text-color": {},
-  "--mbx-form-submit-text-color-light": {},
-  "--mbx-form-submit-text-color-dark": {},
+  "--mbx-form-submit-text-color-light": {
+    "default": "[--mbx-button-text-color-light](button-css-vars.md#mbx-button-text-color-light)",
+    "fallback": "--mbx-form-submit-text-color"
+  },
+  "--mbx-form-submit-text-color-dark": {
+    "default": "[--mbx-button-text-color-dark](button-css-vars.md#mbx-button-text-color-dark)",
+    "fallback": "--mbx-form-submit-text-color"
+  },
   "--mbx-form-formfield-background": {},
-  "--mbx-form-formfield-background-dark": {},
-  "--mbx-form-formfield-background-light": {},
+  "--mbx-form-formfield-background-light": {
+    "default": "[--mbx-formfield-background-light](formfield-css-vars.md#mbx-formfield-background-light)",
+    "fallback": "--mbx-form-formfield-background"
+  },
+  "--mbx-form-formfield-background-dark": {
+    "default": "[--mbx-formfield-background-dark](formfield-css-vars.md#mbx-formfield-background-dark)",
+    "fallback": "--mbx-form-formfield-background"
+  },
   "--mbx-form-formfield-text-color": {},
-  "--mbx-form-formfield-text-color-light": {},
-  "--mbx-form-formfield-text-color-dark": {},
-  "--mbx-form-formfield-background-hover-light": {},
-  "--mbx-form-formfield-background-hover-dark": {},
+  "--mbx-form-formfield-text-color-light": {
+    "default": "[--mbx-formfield-text-color-light](formfield-css-vars.md#mbx-formfield-text-color-light)",
+    "fallback": "--mbx-form-formfield-text-color"
+  },
+  "--mbx-form-formfield-text-color-dark": {
+    "default": "[--mbx-formfield-text-color-dark](formfield-css-vars.md#mbx-formfield-text-color-dark)",
+    "fallback": "--mbx-form-formfield-text-color"
+  },
   "--mbx-form-formfield-background-hover": {},
-  "--mbx-form-formfield-text-color-hover-light": {},
-  "--mbx-form-formfield-text-color-hover-dark": {},
-  "--mbx-form-formfield-text-color-hover": {}
+  "--mbx-form-formfield-background-hover-light": {
+    "default": "[--mbx-formfield-background-hover-light](formfield-css-vars.md#mbx-formfield-background-hover-light)",
+    "fallback": "--mbx-form-formfield-background-hover"
+  },
+  "--mbx-form-formfield-background-hover-dark": {
+    "default": "[--mbx-formfield-background-hover-dark](formfield-css-vars.md#mbx-formfield-background-hover-dark)",
+    "fallback": "--mbx-form-formfield-background-hover"
+  },
+  "--mbx-form-formfield-text-color-hover": {},
+  "--mbx-form-formfield-text-color-hover-light": {
+    "default": "[--mbx-formfield-text-color-hover-light](formfield-css-vars.md#mbx-formfield-text-color-hover-light)",
+    "fallback": "--mbx-form-formfield-text-color-hover"
+  },
+  "--mbx-form-formfield-text-color-hover-dark": {
+    "default": "[--mbx-formfield-text-color-hover-dark](formfield-css-vars.md#mbx-formfield-text-color-hover-dark)",
+    "fallback": "--mbx-form-formfield-text-color-hover"
+  }
 }

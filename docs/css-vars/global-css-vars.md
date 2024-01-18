@@ -4,29 +4,29 @@
 
 ### Global
 
-| Prop                                                                    | Fallback | Default |
-| ----------------------------------------------------------------------- | -------- | ------- |
-| [--mbx-focus-color](#mbx-focus-color)                                   |          |         |
-| [--mbx-focus-color-light](#mbx-focus-color-light)                       |          |         |
-| [--mbx-focus-color-dark](#mbx-focus-color-dark)                         |          |         |
-| [--mbx-background](#mbx-background)                                     |          |         |
-| [--mbx-background-dark](#mbx-background-dark)                           |          |         |
-| [--mbx-background-light](#mbx-background-light)                         |          |         |
-| [--mbx-background-color](#mbx-background-color)                         |          |         |
-| [--mbx-background-color-dark](#mbx-background-color-dark)               |          |         |
-| [--mbx-background-color-light](#mbx-background-color-light)             |          |         |
-| [--mbx-background-color-hover](#mbx-background-color-hover)             |          |         |
-| [--mbx-background-color-hover-light](#mbx-background-color-hover-light) |          |         |
-| [--mbx-background-color-hover-dark](#mbx-background-color-hover-dark)   |          |         |
-| [--mbx-text-color](#mbx-text-color)                                     |          |         |
-| [--mbx-text-color-light](#mbx-text-color-light)                         |          |         |
-| [--mbx-text-color-dark](#mbx-text-color-dark)                           |          |         |
-| [--mbx-background-hover-light](#mbx-background-hover-light)             |          |         |
-| [--mbx-background-hover-dark](#mbx-background-hover-dark)               |          |         |
-| [--mbx-background-hover](#mbx-background-hover)                         |          |         |
-| [--mbx-text-color-hover](#mbx-text-color-hover)                         |          |         |
-| [--mbx-text-color-hover-light](#mbx-text-color-hover-light)             |          |         |
-| [--mbx-text-color-hover-dark](#mbx-text-color-hover-dark)               |          |         |
+| Prop                                                                    | Fallback                                           | Default                                            |
+| ----------------------------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- |
+| [--mbx-focus-color](#mbx-focus-color)                                   | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-focus-color-light](#mbx-focus-color-light)                       | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-focus-color-dark](#mbx-focus-color-dark)                         | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-background](#mbx-background)                                     | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-background-dark](#mbx-background-dark)                           | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-background-light](#mbx-background-light)                         | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-background-color](#mbx-background-color)                         | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-background-color-dark](#mbx-background-color-dark)               | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-background-color-light](#mbx-background-color-light)             | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-background-color-hover](#mbx-background-color-hover)             | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-background-color-hover-light](#mbx-background-color-hover-light) | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-background-color-hover-dark](#mbx-background-color-hover-dark)   | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-text-color](#mbx-text-color)                                     | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-text-color-light](#mbx-text-color-light)                         | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-text-color-dark](#mbx-text-color-dark)                           | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-background-hover-light](#mbx-background-hover-light)             | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-background-hover-dark](#mbx-background-hover-dark)               | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-background-hover](#mbx-background-hover)                         | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-text-color-hover](#mbx-text-color-hover)                         | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-text-color-hover-light](#mbx-text-color-hover-light)             | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-text-color-hover-dark](#mbx-text-color-hover-dark)               | <div style="text-align:center;width:100%;">/</div> | <div style="text-align:center;width:100%;">/</div> |
 
 <br>
 

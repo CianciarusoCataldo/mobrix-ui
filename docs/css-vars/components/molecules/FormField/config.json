@@ -1,13 +1,56 @@
 {
   "--mbx-formfield-background": {},
-  "--mbx-formfield-background-dark": {},
-  "--mbx-formfield-background-light": {},
-  "--mbx-formfield-text-color-dark": {},
+  "--mbx-formfield-background-dark": {
+    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
+    "fallback": "--mbx-formfield-background"
+  },
+  "--mbx-formfield-background-light": {
+    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "fallback": "--mbx-formfield-background"
+  },
   "--mbx-formfield-text-color": {},
-  "--mbx-formfield-background-hover-light": {},
-  "--mbx-formfield-background-hover-dark": {},
+  "--mbx-formfield-text-color-light": {
+    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)",
+    "fallback": "--mbx-formfield-text-color"
+  },
+  "--mbx-formfield-text-color-dark": {
+    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
+    "fallback": "--mbx-formfield-text-color"
+  },
   "--mbx-formfield-background-hover": {},
-  "--mbx-formfield-text-color-hover-light": {},
-  "--mbx-formfield-text-color-hover-dark": {},
-  "--mbx-formfield-text-color-hover": {}
+  "--mbx-formfield-background-hover-light": {
+    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)",
+    "fallback": "--mbx-formfield-background-hover"
+  },
+  "--mbx-formfield-background-hover-dark": {
+    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)",
+    "fallback": "--mbx-formfield-background-hover"
+  },
+  "--mbx-formfield-text-color-hover": {},
+  "--mbx-formfield-text-color-hover-light": {
+    "default": "[--mbx-text-color-hover-light](global-css-vars.md#mbx-text-color-hover-light)",
+    "fallback": "--mbx-formfield-text-color-hover"
+  },
+  "--mbx-formfield-text-color-hover-dark": {
+    "default": "[--mbx-text-color-hover-dark](global-css-vars.md#mbx-text-color-hover-dark)",
+    "fallback": "--mbx-formfield-text-color-hover"
+  },
+  "--mbx-formfield-error-border": {},
+  "--mbx-formfield-error-border-light": {
+    "default": "red",
+    "fallback": "--mbx-formfield-error-border"
+  },
+  "--mbx-formfield-error-border-dark": {
+    "default": "red",
+    "fallback": "--mbx-formfield-error-border"
+  },
+  "--mbx-formfield-error-text": {},
+  "--mbx-formfield-error-text-light": {
+    "default": "red",
+    "fallback": "--mbx-formfield-error-text"
+  },
+  "--mbx-formfield-error-text-dark": {
+    "default": "red",
+    "fallback": "--mbx-formfield-error-text"
+  }
 }

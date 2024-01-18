@@ -1,5 +1,6 @@
 const fs = require("fs");
 
+const DEFAULT_FILENAME = "css-vars.md";
 let summary = "\n";
 let tables = "\n";
 let components = {
@@ -34,6 +35,13 @@ function getComponents(type) {
   return result;
 }
 
+const normalizeVar = (cssvar) => cssvar.replace("--", "");
+
+const DEFAULT_EMPTY_LABEL = `<div style="text-align:center;width:100%;">/</div>`;
+
+const getFilename = (component) =>
+  component.toLowerCase() + "-" + DEFAULT_FILENAME;
+
 function parseVars(component = "Global", type) {
   let list = "";
   let singlePageTable = "";
@@ -46,12 +54,30 @@ function parseVars(component = "Global", type) {
     const result = require("../../docs/css-vars/components/" + resPath);
 
     Object.keys(result).forEach((cssvar, varindex) => {
-      res += `| ${cssvar} | ${result[cssvar]?.fallback || ""} | ${result[cssvar]?.default || ""} |\n`;
-      singlePageTable += `| [${cssvar}](#${cssvar.replace("--", "")}) | ${result[cssvar]?.fallback || ""} | ${result[cssvar]?.default || ""} |\n`;
+      const fallback = result[cssvar].fallback;
+      const defaultValue = result[cssvar]?.default || DEFAULT_EMPTY_LABEL;
+
+      const values = {
+        full: {
+          prop: `[${cssvar}](${getFilename(component)}#${normalizeVar(cssvar)})`,
+          fallback: fallback
+            ? `[${fallback}](${getFilename(component)}#${normalizeVar(fallback)})`
+            : DEFAULT_EMPTY_LABEL,
+        },
+        single: {
+          prop: `[${cssvar}](#${normalizeVar(cssvar)})`,
+          fallback: fallback
+            ? `[${fallback}](#${normalizeVar(fallback)})`
+            : DEFAULT_EMPTY_LABEL,
+        },
+      };
+
+      res += `| ${values.full.prop} | ${values.full.fallback} | ${defaultValue} |\n`;
+      singlePageTable += `| ${values.single.prop} | ${values.single.fallback} | ${defaultValue} |\n`;
       list += "\n\n<br>\n\n## " + cssvar + "\n\n<br>";
     });
   } catch (e) {
-    fs.writeFileSync("docs/css-vars/components/" + resPath + ".json", "{}");
+    console.log(e);
   }
 
   const outPath =

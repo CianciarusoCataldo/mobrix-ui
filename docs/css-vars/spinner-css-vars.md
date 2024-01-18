@@ -4,17 +4,17 @@
 
 ### Spinner
 
-| Prop                                                                  | Fallback | Default |
-| --------------------------------------------------------------------- | -------- | ------- |
-| [--mbx-spinner-success-color](#mbx-spinner-success-color)             |          |         |
-| [--mbx-spinner-success-color-light](#mbx-spinner-success-color-light) |          | #05bc29 |
-| [--mbx-spinner-success-color-dark](#mbx-spinner-success-color-dark)   |          | #05bc29 |
-| [--mbx-spinner-error-color](#mbx-spinner-error-color)                 |          |         |
-| [--mbx-spinner-error-color-light](#mbx-spinner-error-color-light)     |          | #ff0000 |
-| [--mbx-spinner-error-color-dark](#mbx-spinner-error-color-dark)       |          | #ff0000 |
-| [--mbx-spinner-loading-color](#mbx-spinner-loading-color)             |          |         |
-| [--mbx-spinner-loading-color-light](#mbx-spinner-loading-color-light) |          | #202020 |
-| [--mbx-spinner-loading-color-dark](#mbx-spinner-loading-color-dark)   |          | #202020 |
+| Prop                                                                  | Fallback                                                  | Default                                            |
+| --------------------------------------------------------------------- | --------------------------------------------------------- | -------------------------------------------------- |
+| [--mbx-spinner-success-color](#mbx-spinner-success-color)             | <div style="text-align:center;width:100%;">/</div>        | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-spinner-success-color-light](#mbx-spinner-success-color-light) | [--mbx-spinner-success-color](#mbx-spinner-success-color) | #05bc29                                            |
+| [--mbx-spinner-success-color-dark](#mbx-spinner-success-color-dark)   | [--mbx-spinner-success-color](#mbx-spinner-success-color) | #05bc29                                            |
+| [--mbx-spinner-error-color](#mbx-spinner-error-color)                 | <div style="text-align:center;width:100%;">/</div>        | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-spinner-error-color-light](#mbx-spinner-error-color-light)     | [--mbx-spinner-error-color](#mbx-spinner-error-color)     | #ff0000                                            |
+| [--mbx-spinner-error-color-dark](#mbx-spinner-error-color-dark)       | [--mbx-spinner-error-color](#mbx-spinner-error-color)     | #ff0000                                            |
+| [--mbx-spinner-loading-color](#mbx-spinner-loading-color)             | <div style="text-align:center;width:100%;">/</div>        | <div style="text-align:center;width:100%;">/</div> |
+| [--mbx-spinner-loading-color-light](#mbx-spinner-loading-color-light) | [--mbx-spinner-loading-color](#mbx-spinner-loading-color) | #202020                                            |
+| [--mbx-spinner-loading-color-dark](#mbx-spinner-loading-color-dark)   | [--mbx-spinner-loading-color](#mbx-spinner-loading-color) | #202020                                            |
 
 <br>
 

@@ -1,11 +1,29 @@
 {
   "--mbx-modal-background": {},
-  "--mbx-modal-background-light": {},
-  "--mbx-modal-background-dark": {},
+  "--mbx-modal-background-light": {
+    "default": "rgba(0, 0, 0, 0.8)",
+    "fallback": "--mbx-modal-background"
+  },
+  "--mbx-modal-background-dark": {
+    "default": "rgba(0, 0, 0, 0.8)",
+    "fallback": "--mbx-modal-background"
+  },
   "--mbx-modal-x-color": {},
-  "--mbx-modal-x-color-light": {},
-  "--mbx-modal-x-color-dark": {},
+  "--mbx-modal-x-color-light": {
+    "default": "white",
+    "fallback": "--mbx-modal-x-color"
+  },
+  "--mbx-modal-x-color-dark": {
+    "default": "white",
+    "fallback": "--mbx-modal-x-color"
+  },
   "--mbx-modal-x-color-hover": {},
-  "--mbx-modal-x-color-hover-light": {},
-  "--mbx-modal-x-color-hover-dark": {}
+  "--mbx-modal-x-color-hover-light": {
+    "default": "red",
+    "fallback": "--mbx-modal-x-color-hover"
+  },
+  "--mbx-modal-x-color-hover-dark": {
+    "default": "red",
+    "fallback": "--mbx-modal-x-color-hover"
+  }
 }

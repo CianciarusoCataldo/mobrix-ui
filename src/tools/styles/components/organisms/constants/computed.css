@@ -194,11 +194,11 @@
 
   --mbx-c-draw-bg-l: var(
     --mbx-drawer-background-light,
-    var(--mbx-drawer-background)
+    var(--mbx-drawer-background, var(--mbx-c-bg-l))
   );
   --mbx-c-draw-bg-d: var(
     --mbx-drawer-background-dark,
-    var(--mbx-drawer-background)
+    var(--mbx-drawer-background, var(--mbx-c-bg-d))
   );
   --mbx-c-draw-txt-l: var(
     --mbx-drawer-text-color-light,

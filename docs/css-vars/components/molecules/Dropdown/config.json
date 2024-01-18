@@ -1,20 +1,44 @@
 {
   "--mbx-dropdown-background": {},
-  "--mbx-dropdown-background-dark": {},
-  "--mbx-dropdown-background-light": {},
+  "--mbx-dropdown-background-dark": {
+    "fallback": "--mbx-dropdown-background"
+  },
+  "--mbx-dropdown-background-light": {
+    "fallback": "--mbx-dropdown-background"
+  },
   "--mbx-dropdown-text-color": {},
-  "--mbx-dropdown-text-color-light": {},
-  "--mbx-dropdown-text-color-dark": {},
-  "--mbx-dropdown-background-hover-light": {},
-  "--mbx-dropdown-background-hover-dark": {},
+  "--mbx-dropdown-text-color-light": {
+    "fallback": "--mbx-dropdown-text-color"
+  },
+  "--mbx-dropdown-text-color-dark": {
+    "fallback": "--mbx-dropdown-text-color"
+  },
   "--mbx-dropdown-background-hover": {},
-  "--mbx-dropdown-text-color-hover-light": {},
-  "--mbx-dropdown-text-color-hover-dark": {},
+  "--mbx-dropdown-background-hover-light": {
+    "fallback": "--mbx-dropdown-background"
+  },
+  "--mbx-dropdown-background-hover-dark": {
+    "fallback": "--mbx-dropdown-background"
+  },
   "--mbx-dropdown-text-color-hover": {},
+  "--mbx-dropdown-text-color-hover-light": {
+    "fallback": "--mbx-dropdown-background-hover"
+  },
+  "--mbx-dropdown-text-color-hover-dark": {
+    "fallback": "--mbx-dropdown-background-hover"
+  },
   "--mbx-dropdown-arrow-color": {},
-  "--mbx-dropdown-arrow-color-light": {},
-  "--mbx-dropdown-arrow-color-dark": {},
+  "--mbx-dropdown-arrow-color-light": {
+    "fallback": "--mbx-dropdown-arrow-color"
+  },
+  "--mbx-dropdown-arrow-color-dark": {
+    "fallback": "--mbx-dropdown-arrow-color"
+  },
   "--mbx-dropdown-arrow-color-hover": {},
-  "--mbx-dropdown-arrow-color-hover-light": {},
-  "--mbx-dropdown-arrow-color-hover-dark": {}
+  "--mbx-dropdown-arrow-color-hover-light": {
+    "fallback": "--mbx-dropdown-arrow-color-hover"
+  },
+  "--mbx-dropdown-arrow-color-hover-dark": {
+    "fallback": "--mbx-dropdown-arrow-color-hover"
+  }
 }

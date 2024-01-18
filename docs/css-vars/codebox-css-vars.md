@@ -4,14 +4,14 @@
 
 ### CodeBox
 
-| Prop                                                            | Fallback                                                          | Default |
-| --------------------------------------------------------------- | ----------------------------------------------------------------- | ------- |
-| [--mbx-codebox-background](#mbx-codebox-background)             | [--mbx-background](global-css-vars.md#mbx-background)             |         |
-| [--mbx-codebox-background-dark](#mbx-codebox-background-dark)   | [--mbx-background-dark](global-css-vars.md#mbx-background-dark)   |         |
-| [--mbx-codebox-background-light](#mbx-codebox-background-light) | [--mbx-background-light](global-css-vars.md#mbx-background-light) |         |
-| [--mbx-codebox-text-color](#mbx-codebox-text-color)             | [--mbx-text-color](global-css-vars.md#mbx-text-color)             |         |
-| [--mbx-codebox-text-color-light](#mbx-codebox-text-color-light) | [--mbx-text-color-light](global-css-vars.md#mbx-text-color-light) |         |
-| [--mbx-codebox-text-color-dark](#mbx-codebox-text-color-dark)   | [--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)   |         |
+| Prop                                                            | Fallback                                            | Default                                                           |
+| --------------------------------------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------- |
+| [--mbx-codebox-background](#mbx-codebox-background)             | <div style="text-align:center;width:100%;">/</div>  | <div style="text-align:center;width:100%;">/</div>                |
+| [--mbx-codebox-background-dark](#mbx-codebox-background-dark)   | [--mbx-codebox-background](#mbx-codebox-background) | [--mbx-background-dark](global-css-vars.md#mbx-background-dark)   |
+| [--mbx-codebox-background-light](#mbx-codebox-background-light) | [--mbx-codebox-background](#mbx-codebox-background) | [--mbx-background-light](global-css-vars.md#mbx-background-light) |
+| [--mbx-codebox-text-color](#mbx-codebox-text-color)             | <div style="text-align:center;width:100%;">/</div>  | <div style="text-align:center;width:100%;">/</div>                |
+| [--mbx-codebox-text-color-light](#mbx-codebox-text-color-light) | [--mbx-codebox-text-color](#mbx-codebox-text-color) | [--mbx-text-color-light](global-css-vars.md#mbx-text-color-light) |
+| [--mbx-codebox-text-color-dark](#mbx-codebox-text-color-dark)   | [--mbx-codebox-text-color](#mbx-codebox-text-color) | [--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)   |
 
 <br>
 

@@ -1,29 +1,29 @@
 {
-  "--mbx-checkbox-background": {
-    "fallback": "[--mbx-background](global-css-vars.md#mbx-background)"
-  },
+  "--mbx-checkbox-background": {},
   "--mbx-checkbox-background-dark": {
-    "fallback": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)"
+    "fallback": "--mbx-checkbox-background",
+    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)"
   },
   "--mbx-checkbox-background-light": {
-    "fallback": "[--mbx-background-light](global-css-vars.md#mbx-background-light)"
+    "fallback": "--mbx-checkbox-background",
+    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)"
   },
+  "--mbx-checkbox-background-hover": {},
   "--mbx-checkbox-background-hover-light": {
-    "fallback": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)"
+    "fallback": "--mbx-checkbox-background-hover",
+    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)"
   },
   "--mbx-checkbox-background-hover-dark": {
-    "fallback": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)"
+    "fallback": "--mbx-checkbox-background-hover",
+    "default": "[--mbx-background-hover-dark](global-css-vars.md#mbx-background-hover-dark)"
   },
-  "--mbx-checkbox-background-hover": {
-    "fallback": "[--mbx-background-hover](global-css-vars.md#mbx-background-hover)"
-  },
-  "--mbx-checkbox-tick-color": {
-    "default": ""
-  },
+  "--mbx-checkbox-tick-color": {},
   "--mbx-checkbox-tick-color-light": {
+    "fallback": "--mbx-checkbox-tick-color",
     "default": "rgb(37, 99, 235)"
   },
   "--mbx-checkbox-tick-color-dark": {
+    "fallback": "--mbx-checkbox-tick-color",
     "default": "white"
   }
 }

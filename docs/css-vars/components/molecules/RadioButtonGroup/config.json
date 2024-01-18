@@ -1,8 +1,20 @@
 {
   "--mbx-radiogroup-background": {},
-  "--mbx-radiogroup-background-dark": {},
-  "--mbx-radiogroup-background-light": {},
+  "--mbx-radiogroup-background-dark": {
+    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
+    "fallback": "--mbx-radiogroup-background"
+  },
+  "--mbx-radiogroup-background-light": {
+    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "fallback": "--mbx-radiogroup-background"
+  },
   "--mbx-radiogroup-text-color": {},
-  "--mbx-radiogroup-text-color-light": {},
-  "--mbx-radiogroup-text-color-dark": {}
+  "--mbx-radiogroup-text-color-light": {
+    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)",
+    "fallback": "--mbx-radiogroup-text-color"
+  },
+  "--mbx-radiogroup-text-color-dark": {
+    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
+    "fallback": "--mbx-radiogroup-text-color"
+  }
 }

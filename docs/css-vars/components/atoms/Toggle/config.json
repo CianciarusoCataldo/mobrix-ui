@@ -1,47 +1,47 @@
 {
-  "--mbx-toggle-background": {
-    "default": ""
+  "--mbx-toggle-background": {},
+  "--mbx-toggle-background-light": {
+    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "fallback": "--mbx-toggle-background"
   },
   "--mbx-toggle-background-dark": {
-    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)"
+    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
+    "fallback": "--mbx-toggle-background"
   },
-  "--mbx-toggle-background-light": {
-    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)"
-  },
-  "--mbx-toggle-icon-on-internal-color": {
-    "default": ""
-  },
+  "--mbx-toggle-icon-on-internal-color": {},
   "--mbx-toggle-icon-on-internal-color-light": {
-    "default": "#ffffff"
+    "default": "#ffffff",
+    "fallback": "--mbx-toggle-icon-on-internal-color"
   },
   "--mbx-toggle-icon-on-internal-color-dark": {
-    "default": "#ffffff"
+    "default": "#ffffff",
+    "fallback": "--mbx-toggle-icon-on-internal-color"
   },
-  "--mbx-toggle-icon-on-external-color": {
-    "default": ""
-  },
+  "--mbx-toggle-icon-on-external-color": {},
   "--mbx-toggle-icon-on-external-color-light": {
-    "default": "#adadad"
+    "default": "#adadad",
+    "fallback": "--mbx-toggle-icon-on-external-color"
   },
   "--mbx-toggle-icon-on-external-color-dark": {
-    "default": "#adadad"
+    "default": "#adadad",
+    "fallback": "--mbx-toggle-icon-on-external-color"
   },
-  "--mbx-toggle-icon-off-internal-color": {
-    "default": ""
-  },
+  "--mbx-toggle-icon-off-internal-color": {},
   "--mbx-toggle-icon-off-internal-color-light": {
-    "default": "#a5a5a5"
+    "default": "#a5a5a5",
+    "fallback": "--mbx-toggle-icon-off-internal-color"
   },
   "--mbx-toggle-icon-off-internal-color-dark": {
-    "default": "#a5a5a5"
+    "default": "#a5a5a5",
+    "fallback": "--mbx-toggle-icon-off-internal-color"
   },
-  "--mbx-toggle-icon-off-external-color": {
-    "default": ""
-  },
+  "--mbx-toggle-icon-off-external-color": {},
   "--mbx-toggle-icon-off-external-color-light": {
-    "default": "#a7a3a3"
+    "default": "#a7a3a3",
+    "fallback": "--mbx-toggle-icon-off-external-color"
   },
   "--mbx-toggle-icon-off-external-color-dark": {
-    "default": "#a7a3a3"
+    "default": "#a7a3a3",
+    "fallback": "--mbx-toggle-icon-off-external-color"
   }
 }
