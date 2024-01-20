@@ -1,15 +1,12 @@
 [data-mbx-id="toggle"] {
   width: 65px;
   height: 30px;
-}
-
-[data-mbx-id="toggle"][data-mbx-styled="true"] {
   background: var(--mbx-c-tog-bg);
   border-radius: 40px;
   border-width: 0;
 }
 
-[data-mbx-id="toggle"][data-mbx-styled="true"][data-mbx-enabled="false"] {
+[data-mbx-id="toggle"][data-mbx-enabled="false"] {
   opacity: 0.7;
 }
 
@@ -22,16 +19,14 @@
   -ms-transition: all 0.2s;
 }
 
-[data-mbx-id="toggle"]
-  [data-mbx-class="toggle-icon"][data-mbx-flip="true"] {
+[data-mbx-id="toggle"] [data-mbx-class="toggle-icon"][data-mbx-flip="true"] {
   transform: translate(0%);
 
   --svginternalcolor: var(--mbx-c-tog-ic-on-int);
   --svgexternalcolor: var(--mbx-c-tog-ic-on-ext);
 }
 
-[data-mbx-id="toggle"]
-  [data-mbx-class="toggle-icon"][data-mbx-flip="false"] {
+[data-mbx-id="toggle"] [data-mbx-class="toggle-icon"][data-mbx-flip="false"] {
   transform: translate(35px);
   --svginternalcolor: var(--mbx-c-tog-ic-off-int);
   --svgexternalcolor: var(--mbx-c-tog-ic-off-ext);

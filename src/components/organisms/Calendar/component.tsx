@@ -95,7 +95,7 @@ const CalendarComponent: MobrixUiReactiveComponent<
       }}
       hide={hideArrows}
       dark={commonProps.dark}
-      unstyled
+      noBackground
       key={"arrow_" + direction}
       additionalProps={{
         "data-mbx-calendar-arrow": direction,
@@ -178,7 +178,7 @@ const CalendarComponent: MobrixUiReactiveComponent<
           };
         } else return {};
       }}
-      unstyled={commonProps.unstyled}
+      noBackground={commonProps.noBackground}
       shadow={shadow}
       dark={commonProps.dark}
       headers

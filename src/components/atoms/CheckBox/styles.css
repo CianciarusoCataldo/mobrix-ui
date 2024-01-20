@@ -6,9 +6,6 @@
   align-items: center;
   vertical-align: baseline;
   background-color: var(--mbx-c-chk-bg);
-}
-
-[data-mbx-id="checkbox"][data-mbx-styled="true"] {
   text-align: center;
   padding: 0.2rem;
   margin: auto;

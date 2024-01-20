@@ -60,9 +60,7 @@
 }
 
 [data-mbx-id][data-mbx-background="false"],
-[data-mbx-id][data-mbx-background="false"]:hover,
-[data-mbx-id][data-mbx-styled="false"],
-[data-mbx-id][data-mbx-styled="false"]:hover {
+[data-mbx-id][data-mbx-background="false"]:hover {
   --mbx-c-bg: transparent;
   --mbx-c-bgc: transparent;
 }

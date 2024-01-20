@@ -57,6 +57,7 @@ const Dropdown: DropdownComponent = ({
     defaultValue: 0,
     inputValue,
     additionalProps,
+    commonProps,
     props: (value, setValue) =>
       dropdownComponentBuilder({
         elements,

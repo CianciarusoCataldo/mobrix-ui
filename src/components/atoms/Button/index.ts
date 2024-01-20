@@ -5,8 +5,7 @@ import { ButtonComponent } from "../../../types";
 import { buildMobrixUiStandardComponent } from "../../../tools";
 
 /**
- * A button component, designed for a lot of scenarios. Can be used as is, or as a clickable image
- * (through `unstyled` prop that removes all its standard styles).
+ * A button component, designed for a lot of scenarios.
  *
  * @since 1.0.0
  *

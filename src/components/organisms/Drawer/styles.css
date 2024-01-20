@@ -19,18 +19,15 @@
 }
 
 [data-mbx-id="drawer"] > [data-mbx-class="drawer-content"] {
-  -ms-overflow-style: none !important; /* IE and Edge */
-  scrollbar-width: none !important; /* Firefox */
-}
-
-[data-mbx-id="drawer"] > [data-mbx-class="drawer-content"] {
   overflow-y: auto;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
 }
 
 [data-mbx-id="drawer"] > [data-mbx-class="drawer-close-button"] {
   border: 0;
   background: transparent;
-  margin: 0;
+  margin: auto;
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location^="bottom"]
@@ -40,7 +37,6 @@
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   padding-top: 0.1rem;
-  width: 100%;
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location^="top"]
@@ -50,7 +46,6 @@
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   padding-bottom: 0.1rem;
-  width: 100%;
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location="right"]
@@ -59,7 +54,7 @@
   > [data-mbx-class="drawer-close-button"] {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  height: 100%;
+  height: fit-content;
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location="right"]

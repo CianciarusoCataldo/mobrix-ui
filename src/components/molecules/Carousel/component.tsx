@@ -3,7 +3,7 @@ import { CarouselProps, MobrixUiReactiveComponent } from "../../../types";
 
 import { arrowIcon } from "./icons";
 
-import { Button } from "../../atoms";
+import { Button, IconButton } from "../../atoms";
 
 const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
   value: selectedItem,
@@ -39,12 +39,11 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
       );
 
       dots.push(
-        <Button
+        <IconButton
           additionalProps={{
             "data-mbx-class": "dot",
             "data-mbx-test": `dot_${index}`,
           }}
-          unstyled
           disabled={disabled}
           key={`dot_${index}`}
           onMouseEnter={() => setHoveredDot(index)}
@@ -60,20 +59,19 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
               index === item || (hoveredDot != null && index === hoveredDot)
             }
           />
-        </Button>
+        </IconButton>
       );
     });
   }
 
   return [
     <div data-mbx-class="elements" key="mobrix_ui_carousel_elements">
-      <Button
+      <IconButton
         dark={dark}
         additionalProps={{
           "data-mbx-arrow": "prev",
           "data-mbx-test": "left_arrow",
         }}
-        unstyled
         disabled={item === 0 || disabled}
         onClick={() => {
           setActiveClassname("from-left");
@@ -81,11 +79,10 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
         }}
       >
         {arrowIcon}
-      </Button>
+      </IconButton>
       {elementsArray}
-      <Button
+      <IconButton
         dark={dark}
-        unstyled
         additionalProps={{
           "data-mbx-arrow": "next",
           "data-mbx-test": "right_arrow",
@@ -97,7 +94,7 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
         }}
       >
         {arrowIcon}
-      </Button>
+      </IconButton>
     </div>,
     <div key="mobrix_ui_carousel_dots" data-mbx-class="dots">
       {dots}

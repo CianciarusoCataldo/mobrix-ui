@@ -1,27 +1,24 @@
-[data-mbx-id="dismissable-card"]
-  [data-mbx-class="header-container"] {
-  display: flex;
-  flex-direction: column;
-}
-
-[data-mbx-id="dismissable-card"][data-mbx-styled="true"] {
+[data-mbx-id="dismissable-card"] {
   background: var(--mbx-c-dcard-bg);
   color: var(--mbx-c-dcard-txt);
+}
+
+[data-mbx-id="dismissable-card"] [data-mbx-class="header-container"] {
+  display: flex;
+  flex-direction: column;
 }
 
 [data-mbx-id="dismissable-card"] [data-mbx-class="header-element"] {
   margin: auto;
 }
 
-[data-mbx-id="dismissable-card"]
-  [data-mbx-class="dismissable-card-dismiss-container"] {
+[data-mbx-id="dismissable-card"] [data-mbx-class="dismiss-container"] {
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
 }
 
-[data-mbx-id="dismissable-card"]
-  [data-mbx-class="card-dismiss-button"] {
+[data-mbx-id="dismissable-card"] [data-mbx-class="dismiss-button"] {
   display: flex;
   flex-direction: row-reverse;
   padding: 0;
@@ -29,21 +26,20 @@
   width: fit-content;
 }
 
-[data-mbx-id*="dismissable-card"][data-mbx-styled="true"]
-  [data-mbx-class="header"] {
+[data-mbx-id*="dismissable-card"] [data-mbx-class="header"] {
   margin-top: 0;
 }
 
-[data-mbx-id="dismissable-card"][data-mbx-styled="true"][data-mbx-hover="true"]
-  [data-mbx-class="card-dismiss-button"]
+[data-mbx-id="dismissable-card"][data-mbx-hover="true"]
+  [data-mbx-class="dismiss-button"]
   svg
   path {
   fill: var(--mbx-c-dcard-x);
 }
 
 @media (hover) {
-  [data-mbx-id="dismissable-card"][data-mbx-styled="true"][data-mbx-hover="true"][data-mbx-enabled="true"]
-    [data-mbx-class="card-dismiss-button"]
+  [data-mbx-id="dismissable-card"][data-mbx-hover="true"][data-mbx-enabled="true"]
+    [data-mbx-class="dismiss-button"]
     svg:hover
     path {
     fill: var(--mbx-c-dcard-x-h);

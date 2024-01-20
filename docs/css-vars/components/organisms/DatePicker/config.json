@@ -91,11 +91,29 @@
   },
   "--mbx-datepicker-calendar-today-color": {},
   "--mbx-datepicker-calendar-today-color-light": {
-    "default": "",
+    "default": "red",
     "fallback": "--mbx-datepicker-calendar-today-color"
   },
   "--mbx-datepicker-calendar-today-color-dark": {
-    "default": "",
+    "default": "red",
     "fallback": "--mbx-datepicker-calendar-today-color"
+  },
+  "--mbx-datepicker-icon": {},
+  "--mbx-datepicker-icon-light": {
+    "default": "",
+    "fallback": "--mbx-datepicker-icon"
+  },
+  "--mbx-datepicker-icon-dark": {
+    "default": "",
+    "fallback": "--mbx-datepicker-icon"
+  },
+  "--mbx-datepicker-icon-hover": {},
+  "--mbx-datepicker-icon-hover-light": {
+    "default": "blue",
+    "fallback": "--mbx-datepicker-icon-hover"
+  },
+  "--mbx-datepicker-icon-hover-dark": {
+    "default": "orange",
+    "fallback": "--mbx-datepicker-icon-hover"
   }
 }

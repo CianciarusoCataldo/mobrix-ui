@@ -28,6 +28,7 @@ export type DrawerProps = ComponentWithChildren<
       | "top-right"
       | "bottom-left"
       | "bottom-right";
+    closeOnClickOutside?: boolean;
   };
 
 /**

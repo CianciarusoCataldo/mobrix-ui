@@ -19,20 +19,20 @@
   },
   "--mbx-drawer-arrow": {},
   "--mbx-drawer-arrow-light": {
-    "default": "",
+    "default": "[--mbx-drawer-arrow-light](drawer-css-vars.md#mbx-arrow-light)",
     "fallback": "--mbx-drawer-arrow"
   },
   "--mbx-drawer-arrow-dark": {
-    "default": "",
+    "default": "[--mbx-drawer-arrow-dark](drawer-css-vars.md#mbx-arrow-dark)",
     "fallback": "--mbx-drawer-arrow"
   },
   "--mbx-drawer-arrow-hover": {},
   "--mbx-drawer-arrow-hover-light": {
-    "default": "",
+    "default": "orange",
     "fallback": "--mbx-drawer-arrow-hover"
   },
   "--mbx-drawer-arrow-hover-dark": {
-    "default": "",
+    "default": "orange",
     "fallback": "--mbx-drawer-arrow-hover"
   }
 }

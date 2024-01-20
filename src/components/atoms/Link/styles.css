@@ -1,10 +1,10 @@
-[data-mbx-id="link"][data-mbx-styled="true"] {
+[data-mbx-id="link"] {
   font-size: 1rem;
   line-height: 1.5rem;
   color: var(--mbx-c-link-txt);
 }
 
-[data-mbx-id="link"][data-mbx-styled="true"][data-mbx-a11y="true"][data-mbx-enabled="true"]:focus-visible {
+[data-mbx-id="link"][data-mbx-a11y="true"][data-mbx-enabled="true"]:focus-visible {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
@@ -16,6 +16,6 @@
   font-weight: 700;
 }
 
-[data-mbx-id="link"][data-mbx-styled="true"][data-mbx-enabled="false"] {
+[data-mbx-id="link"][data-mbx-enabled="false"] {
   text-decoration: underline;
 }

@@ -1,8 +1,5 @@
 [data-mbx-id="counterbox"] {
   background-color: var(--mbx-c-cnt-bg);
-}
-
-[data-mbx-id="counterbox"][data-mbx-styled="true"] {
   border-radius: 5px;
   padding: 0.5rem;
   color: var(--mbx-c-cnt-txt);

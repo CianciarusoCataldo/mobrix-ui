@@ -9,7 +9,8 @@ import {
 import { parseCode } from "./parser";
 
 import { CopyIcon } from "./icons";
-import Button from "../Button";
+
+import IconButton from "../IconButton";
 
 const codeboxComponent: MoBrixUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   value: code,
@@ -19,14 +20,13 @@ const codeboxComponent: MoBrixUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   disabled,
 }) => [
   <div key="codebox_copy_icon" data-mbx-class="codebox-copy-icon">
-    <Button
-      unstyled
+    <IconButton
       onClick={() => code && navigator.clipboard.writeText(code)}
       hide={noCopyButton}
       disabled={disabled}
     >
       {CopyIcon}
-    </Button>
+    </IconButton>
   </div>,
   <code key="codebox_code" data-mbx-class="codebox-code">
     {code &&

@@ -8,9 +8,6 @@
   -webkit-border-radius: 50%;
   border-radius: 50%;
   background: var(--mbx-c-rad-bg);
-}
-
-[data-mbx-id="radio-button"][data-mbx-styled="true"] {
   padding: 0.1rem;
   border-color: transparent;
   border-style: hidden;

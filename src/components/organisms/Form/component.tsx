@@ -2,8 +2,6 @@ import React from "react";
 
 import { BuilderComponent, FormProps, MoBrixUiComponent } from "../../../types";
 
-import { fieldFormatters } from "../../molecules/FormField/utils";
-
 import Button from "../../atoms/Button";
 import FormField from "../../molecules/FormField";
 import { Label } from "../../atoms";

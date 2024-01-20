@@ -17,7 +17,7 @@ const AtomsPage = () => {
   }) => {
     return (
       <Container
-        unstyled
+        noBackground
         style={{
           padding: "0.5rem",
           marginBottom: "1rem",
@@ -35,7 +35,7 @@ const AtomsPage = () => {
   };
 
   return (
-    <Container unstyled className="App" dark style={{ height: "110%" }}>
+    <Container noBackground className="App" dark style={{ height: "110%" }}>
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -70,13 +70,13 @@ const AtomsPage = () => {
               fromToday={false}
               labelClassName="calendar-test-label"
             />
-            <DatePicker calendarProps={{ dark: true }} />
             <DatePicker animated dark fromToday={false} />
             <DatePicker
               dark
               noBackground
               calendarProps={{ noBackground: true }}
             />
+            <DatePicker calendarProps={{ dark: true }} />
             <DatePicker animated disabled />
             <DatePicker dark disabled animated />
           </div>

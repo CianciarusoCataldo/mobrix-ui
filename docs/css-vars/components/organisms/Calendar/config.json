@@ -73,11 +73,11 @@
   },
   "--mbx-calendar-today-color": {},
   "--mbx-calendar-today-color-light": {
-    "default": "",
+    "default": "red",
     "fallback": "--mbx-calendar-today-color"
   },
   "--mbx-calendar-today-color-dark": {
-    "default": "",
+    "default": "red",
     "fallback": "--mbx-calendar-today-color"
   }
 }

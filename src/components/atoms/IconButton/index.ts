@@ -1,23 +1,21 @@
 import "./styles.css";
 
-import { ModalComponent } from "../../../types";
+import { ButtonComponent } from "../../../types";
 
 import { buildMobrixUiStandardComponent } from "../../../tools";
-
-import modalComponent from "./component";
-import React from "react";
+import { IconButtonComponent } from "../../../types/components/atoms/icon-button";
 
 /**
- * A light Modal component. Can be totally customized (the overlay too, through `overlayClassName` parameter)
- * and can be driven with redux-state or internal state parameters.
+ * A button component, designed for a lot of scenarios. Can be used as is, or as a clickable image
+ * (through `unstyled` prop that removes all its standard styles).
  *
  * @since 1.0.0
  *
- * @param {JSX.Element | Element} children Modal Content
- * @param {()=>void} onClose Callback triggered when modal is closed
- * @param {string} title Modal title
- * @param {string} overlayClassName A custom className applied on the Modal overlay container
- * @param {boolean} closeOutside if `true`, and if `unstyled`===`false`, the modal can be closed by clicking outside it
+ * @param children button content
+ * @param {boolean} disabled enable/disable the button click functionality (UI will reflect it too)
+ * @param {()=>void} onClick callback triggered when the button is clicked
+ * @param {()=>void} onMouseEnter callback triggered when the cursor enter the component
+ * @param {()=>void} onMouseLeave callback triggered when the cursor exit the component
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
@@ -33,59 +31,39 @@ import React from "react";
  * @param {() => void} onFocusLost `common MoBrix-ui prop` - callback called when component focus is lost
  * @param {(keyEvent: any) => void} onKeyDown `common MoBrix-ui prop` - callback called when a key is pressed when inside the component
  *
- *@example <caption>Example Modal usage</caption>
- *import { render } from "react-dom";
- *import { Modal } from 'mobrix-ui';
+ * @example <caption>Example Button usage</caption>
+ * import { render } from "react-dom";
+ * import { Button } from 'mobrix-ui';
  *
- * render(<Modal><div>Example modal content</div></Modal>, document.getElementById("root"));
+ * render(<Button animated shadow onClick={()=>alert("Click !")}>
+ *            Example button
+ *        </Button>, document.getElementById("root"));
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Modal
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Button
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Modal: ModalComponent = ({
-  overlayClassName = "",
+const IconButton: IconButtonComponent = ({
   children,
-  closeOutside,
+  onClick,
+  onMouseEnter,
+  onMouseLeave,
   additionalProps = {},
-  onClose = () => {},
-  className,
-  hide,
   ...commonProps
-}) => {
-  const [value, setValue] = React.useState("");
-
-  const onCloseCallback = () => {
-    setValue("ease-out");
-    setTimeout(() => {
-      setValue("");
-      onClose();
-    }, 200);
-  };
-
-  return buildMobrixUiStandardComponent({
-    name: "modal",
-    Component: modalComponent({
-      children,
-      closeOutside,
-      className,
-      onClose: onCloseCallback,
-      hide,
-      ...commonProps,
-    }),
-    commonProps: {
-      ...commonProps,
-      hide: value.length === 0 && hide,
-      className: overlayClassName,
-    },
+}) =>
+  buildMobrixUiStandardComponent({
+    name: "icon-button",
+    wrapper: "button",
     additionalProps: {
       ...additionalProps,
-      "data-mbx-modal-animation":
-        value.length === 0 ? (hide ? "" : "ease-in") : value,
+      onClick,
+      onMouseEnter,
+      onMouseLeave,
     },
+    Component: children,
+    commonProps,
   });
-};
 
-export default Modal;
+export default IconButton;

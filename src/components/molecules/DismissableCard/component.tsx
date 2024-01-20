@@ -3,7 +3,7 @@ import React from "react";
 import { DismissableCardProps } from "../../../types/components";
 import { MobrixUiReactiveComponent } from "../../../types/global";
 
-import { Button } from "../../atoms";
+import { IconButton } from "../../atoms";
 import { x_icon } from "../../../icons";
 
 import cardComponent from "../Card/component";
@@ -30,15 +30,14 @@ const DismissableCardComponent: MobrixUiReactiveComponent<
     noBottomDivider,
     noDividers,
     noTopDivider,
+    dark,
     header: (
       <div data-mbx-class="header-container">
-        <div data-mbx-class="dismissable-card-dismiss-container">
-          <Button
+        <div data-mbx-class="dismiss-container">
+          <IconButton
             dark={dark}
-            unstyled
             additionalProps={{
-              "data-mbx-class": "card-dismiss-button",
-              "data-mbx-test": "card_dismiss_button",
+              "data-mbx-class": "dismiss-button",
             }}
             disabled={disabled}
             onClick={() => {
@@ -47,7 +46,7 @@ const DismissableCardComponent: MobrixUiReactiveComponent<
             }}
           >
             {x_icon}
-          </Button>
+          </IconButton>
         </div>
         {header && <div data-mbx-class="header-element">{header}</div>}
       </div>

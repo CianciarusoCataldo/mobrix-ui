@@ -28,7 +28,7 @@ const expandableContainerComponent: MobrixUiReactiveComponent<
   );
   components.push(
     <Button
-      unstyled
+      noBackground
       disabled={disabled}
       onClick={() => {
         onChange(!compact);

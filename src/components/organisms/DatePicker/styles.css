@@ -33,13 +33,11 @@
   margin-right: 0.3rem;
 }
 
-[data-mbx-id="date-picker"][data-mbx-styled="true"]
-  [data-mbx-class="calendar-icon"]
-  path {
+[data-mbx-id="date-picker"] [data-mbx-class="calendar-icon"] path {
   fill: var(--mbx-c-dtp-ic);
 }
 
-[data-mbx-id="date-picker"][data-mbx-styled="true"]
+[data-mbx-id="date-picker"]
   [data-mbx-class="date-picker-modal"]
   [data-mbx-class="body"] {
   width: 80%;
@@ -47,7 +45,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="date-picker"][data-mbx-styled="true"][data-mbx-enabled="true"]
+  [data-mbx-id="date-picker"][data-mbx-enabled="true"]
     [data-mbx-class="calendar-icon"]:hover
     path {
     fill: var(--mbx-c-dtp-ic-h);
@@ -55,7 +53,7 @@
 }
 
 @media (max-width: 600px) {
-  [data-mbx-id="date-picker"][data-mbx-styled="true"]
+  [data-mbx-id="date-picker"]
     [data-mbx-class="date-picker-modal"]
     [data-mbx-class="body"] {
     width: 90%;
@@ -63,7 +61,7 @@
 }
 
 @media (max-width: 500px) {
-  [data-mbx-id="date-picker"][data-mbx-styled="true"]
+  [data-mbx-id="date-picker"]
     [data-mbx-class="date-picker-modal"]
     [data-mbx-class="body"] {
     width: 95%;
@@ -71,7 +69,7 @@
 }
 
 @media (max-width: 400px) {
-  [data-mbx-id="date-picker"][data-mbx-styled="true"]
+  [data-mbx-id="date-picker"]
     [data-mbx-class="date-picker-modal"]
     [data-mbx-class="body"] {
     width: 100%;

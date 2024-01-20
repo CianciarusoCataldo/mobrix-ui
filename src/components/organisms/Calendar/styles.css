@@ -15,13 +15,12 @@
   margin-right: auto;
 }
 
-[data-mbx-id="calendar"][data-mbx-styled="true"]
-  [data-mbx-calendar-table="true"] {
+[data-mbx-id="calendar"] [data-mbx-calendar-table="true"] {
   width: 100%;
   margin: auto;
 }
 
-[data-mbx-id="calendar"][data-mbx-styled="true"]
+[data-mbx-id="calendar"]
   [data-mbx-calendar-table="true"]
   tr[data-mbx-table-row="true"]
   [data-mbx-table-cell="true"] {
@@ -29,7 +28,7 @@
   font-weight: 700;
 }
 
-[data-mbx-id="calendar"][data-mbx-styled="true"]
+[data-mbx-id="calendar"]
   [data-mbx-calendar-table="true"]
   tr[data-mbx-table-row="true"]
   td[data-mbx-table-cell="true"] {
@@ -39,7 +38,7 @@
   transition: 0.3s;
 }
 
-[data-mbx-id="calendar"][data-mbx-styled="true"]
+[data-mbx-id="calendar"]
   [data-mbx-calendar-table="true"]
   tr[data-mbx-table-row="true"]
   th[data-mbx-table-cell="true"] {
@@ -48,7 +47,7 @@
   font-size: x-large;
 }
 
-[data-mbx-id="calendar"][data-mbx-styled="true"]
+[data-mbx-id="calendar"]
   [data-mbx-calendar-table="true"]
   tr[data-mbx-table-row="true"]
   [data-mbx-table-cell="true"][data-mbx-selected="true"] {
@@ -60,10 +59,6 @@
 [data-mbx-id="calendar"] [data-mbx-class="top-selector"] {
   display: flex;
   flex-direction: row;
-}
-
-[data-mbx-id="calendar"][data-mbx-styled="true"]
-  [data-mbx-class="top-selector"] {
   margin: auto;
   margin-bottom: 1.2rem;
   width: 100%;
@@ -75,44 +70,37 @@
   transform: scaleX(-1);
 }
 
-[data-mbx-id="calendar"][data-mbx-styled="true"]
-  [data-mbx-calendar-arrow]
-  svg {
+[data-mbx-id="calendar"] [data-mbx-calendar-arrow] svg {
   fill: var(--mbx-c-cal-arr);
   width: 3rem;
   height: 3rem;
   transition: 0.3s;
 }
 
-[data-mbx-id="calendar"][data-mbx-styled="true"]
+[data-mbx-id="calendar"]
   [data-mbx-calendar-table="true"]
-  tr[data-mbx-table-row="true"]
-  [data-mbx-table-cell="true"][data-mbx-calendar-today="true"],
-[data-mbx-calendar-table="true"]
   tr[data-mbx-table-row="true"]
   [data-mbx-table-cell="true"][data-mbx-calendar-today="true"] {
   color: var(--mbx-c-cal-t);
   font-weight: 800;
 }
 
-[data-mbx-id="calendar"][data-mbx-styled="true"]
-  [data-mbx-calendar-arrow]:active
-  svg {
+[data-mbx-id="calendar"] [data-mbx-calendar-arrow]:active svg {
   fill: var(--mbx-c-cal-arr-h);
 }
 
 @media (hover) {
-  [data-mbx-id="calendar"][data-mbx-styled="true"][data-mbx-enabled="true"]
+  [data-mbx-id="calendar"][data-mbx-enabled="true"]
     [data-mbx-calendar-table="true"]
     tr[data-mbx-table-row="true"]
-    td[data-mbx-table-cell="true"]:not(
-      [data-mbx-selected="true"]
-    ):not([data-mbx-disabled="true"]):hover {
+    td[data-mbx-table-cell="true"]:not([data-mbx-selected="true"]):not(
+      [data-mbx-disabled="true"]
+    ):hover {
     background: var(--mbx-c-cal-bg-h);
     color: var(--mbx-c-cal-txt-h);
   }
 
-  [data-mbx-id="calendar"][data-mbx-styled="true"][data-mbx-enabled="true"]
+  [data-mbx-id="calendar"][data-mbx-enabled="true"]
     [data-mbx-calendar-arrow]:hover
     svg {
     fill: var(--mbx-c-cal-arr-h);
@@ -120,7 +108,7 @@
 }
 
 @media (max-width: 500px) {
-  [data-mbx-id="calendar"][data-mbx-styled="true"]
+  [data-mbx-id="calendar"]
     [data-mbx-calendar-table="true"]
     tr[data-mbx-table-row="true"]
     th[data-mbx-table-cell="true"] {
@@ -131,7 +119,7 @@
     padding-bottom: 0.4rem;
   }
 
-  [data-mbx-id="calendar"][data-mbx-styled="true"]
+  [data-mbx-id="calendar"]
     [data-mbx-calendar-table="true"]
     tr[data-mbx-table-row="true"]
     td[data-mbx-table-cell="true"] {
@@ -139,8 +127,7 @@
     padding-bottom: 1rem;
   }
 
-  [data-mbx-id="calendar"][data-mbx-styled="true"]
-    [data-mbx-calendar-table="true"] {
+  [data-mbx-id="calendar"] [data-mbx-calendar-table="true"] {
     width: 100%;
   }
 
@@ -150,7 +137,7 @@
 }
 
 @media (max-width: 400px) {
-  [data-mbx-id="calendar"][data-mbx-styled="true"]
+  [data-mbx-id="calendar"]
     [data-mbx-calendar-table="true"]
     tr[data-mbx-table-row="true"]
     th[data-mbx-table-cell="true"] {
@@ -167,7 +154,7 @@
 }
 
 @media (max-width: 340px) {
-  [data-mbx-id="calendar"][data-mbx-styled="true"]
+  [data-mbx-id="calendar"]
     [data-mbx-calendar-table="true"]
     tr[data-mbx-table-row="true"]
     th[data-mbx-table-cell="true"] {
@@ -184,14 +171,14 @@
 }
 
 @media (max-width: 310px) {
-  [data-mbx-id="calendar"][data-mbx-styled="true"]
+  [data-mbx-id="calendar"]
     [data-mbx-calendar-table="true"]
     tr[data-mbx-table-row="true"]
     th[data-mbx-table-cell="true"] {
     display: none;
   }
 
-  [data-mbx-id="calendar"][data-mbx-styled="true"]
+  [data-mbx-id="calendar"]
     [data-mbx-calendar-table="true"]
     tr[data-mbx-table-row="true"]
     td[data-mbx-table-cell="true"] {

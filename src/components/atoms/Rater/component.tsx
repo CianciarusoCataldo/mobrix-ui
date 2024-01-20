@@ -39,7 +39,7 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
     iconArray.push(
       <Button
         key={`vote_${i}`}
-        unstyled
+        noBackground
         disabled={disabled}
         additionalProps={{
           "data-mbx-test": `vote_${i}`,

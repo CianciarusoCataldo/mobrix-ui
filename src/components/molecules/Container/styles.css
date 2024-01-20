@@ -1,4 +1,4 @@
-[data-mbx-id="container"][data-mbx-styled="true"] {
+[data-mbx-id="container"] {
   background: var(--mbx-c-con-bg);
   color: var(--mbx-c-con-txt);
 }

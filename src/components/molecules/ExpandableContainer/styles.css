@@ -1,4 +1,4 @@
-[data-mbx-id="expandable-container"][data-mbx-styled="true"] {
+[data-mbx-id="expandable-container"] {
   background: var(--mbx-c-exp-bg);
   color: var(--mbx-c-exp-text);
 }
@@ -62,5 +62,6 @@
   [data-mbx-id="expandable-container"][data-mbx-enabled="true"]
     [data-mbx-class="arrow"]:hover {
     fill: var(--mbx-c-exp-arr-h);
+    opacity: 0.5;
   }
 }

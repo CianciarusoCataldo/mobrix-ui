@@ -1,29 +1,12 @@
 [data-mbx-id="dropdown"] {
   width: fit-content;
-}
-
-[data-mbx-id="dropdown"][data-mbx-styled="true"][data-mbx-background="true"] {
-  color: var(--mbx-text-color);
-  background-image: var(--mbx-c-drop-bg);
-}
-
-[data-mbx-id="dropdown"][data-mbx-background="false"] {
-  border-style: solid;
-  border-color: var(--mbx-c-drop-txt);
-}
-
-[data-mbx-id="dropdown"][data-mbx-background="false"]
-  [data-mbx-class="options"]
-  [data-mbx-class="popup-content"] {
-  border-bottom-style: solid;
-  border-right-style: solid;
-  border-left-style: solid;
-  border-color: var(--mbx-c-drop-txt);
-}
-
-[data-mbx-id="dropdown"][data-mbx-styled="true"] {
   border-radius: 0.375rem;
   border-color: var(--mbx-c-drop-txt);
+}
+
+[data-mbx-id="dropdown"][data-mbx-background="true"] {
+  color: var(--mbx-text-color);
+  background-image: var(--mbx-c-drop-bg);
 }
 
 [data-mbx-id="dropdown"] [data-mbx-class="options"] {
@@ -72,15 +55,13 @@
   border-radius: 0.375rem;
 }
 
-[data-mbx-id="dropdown"][data-mbx-styled="true"] [data-mbx-class="button"] {
+[data-mbx-id="dropdown"] [data-mbx-class="button"] {
   padding-left: 0.4rem;
   padding-right: 0.4rem;
   outline: none;
 }
 
-[data-mbx-id="dropdown"][data-mbx-styled="true"]
-  [data-mbx-class="options"]
-  [data-mbx-class="option"] {
+[data-mbx-id="dropdown"] [data-mbx-class="options"] [data-mbx-class="option"] {
   background: transparent;
   color: var(--mbx-c-drop-txt);
 }
@@ -167,22 +148,23 @@
 }
 
 @media (hover) {
-  [data-mbx-id="dropdown"][data-mbx-styled="true"][data-mbx-enabled="true"][data-mbx-hover="true"]
+  [data-mbx-id="dropdown"][data-mbx-enabled="true"][data-mbx-hover="true"]
     [data-mbx-class="button"][data-mbx-enabled="true"]:hover,
   [data-mbx-id="dropdown"][data-mbx-hover="true"][data-mbx-enabled="true"][data-mbx-hover="true"]
     [data-mbx-class="regular"]:hover {
     color: var(--mbx-c-drop-txt-h);
   }
 
-  [data-mbx-id="dropdown"][data-mbx-styled="true"][data-mbx-enabled="true"][data-mbx-background="true"][data-mbx-hover="true"]
+  [data-mbx-id="dropdown"][data-mbx-enabled="true"][data-mbx-background="true"][data-mbx-hover="true"]
     [data-mbx-class="button"][data-mbx-enabled="true"]:hover,
   [data-mbx-id="dropdown"][data-mbx-hover="true"][data-mbx-enabled="true"][data-mbx-background="true"][data-mbx-hover="true"]
     [data-mbx-class="regular"]:hover {
     background: var(--mbx-c-drop-bg-h);
   }
 
-  [data-mbx-id="dropdown"][data-mbx-styled="true"][data-mbx-enabled="true"][data-mbx-hover="true"]
+  [data-mbx-id="dropdown"][data-mbx-enabled="true"][data-mbx-hover="true"]
     [data-mbx-class="arrow-icon"]:hover {
     border-color: var(--mbx-c-drop-arr-h);
+    opacity: 0.5;
   }
 }

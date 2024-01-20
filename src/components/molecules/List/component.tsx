@@ -21,7 +21,7 @@ const listComponent: MoBrixUiComponent<ListProps, BuilderComponent[]> = ({
           "data-mbx-list-element": "clickable",
           "data-mbx-test": "list_element_" + index
         }}
-        unstyled
+        noBackground
         onClick={() => onClick(Number(index))}
       >
         {children}

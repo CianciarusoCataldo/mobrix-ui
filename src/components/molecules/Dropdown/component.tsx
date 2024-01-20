@@ -106,7 +106,6 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
       <Button
         noBackground={commonProps.noBackground}
         disabled={disabled}
-        unstyled
         onClick={() => {
           keyDownCallback(!isVisible);
         }}
@@ -128,7 +127,7 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
         <Container
           hide={hideArrow}
           dark={dark}
-          unstyled
+          noBackground
           key="icon"
           disabled={disabled}
           a11y={false}
@@ -156,7 +155,7 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
       >
         {elements.map((item, index) => (
           <Button
-            unstyled
+            noBackground
             disabled={disabled}
             onFocus={() => {
               selectItem(index);
@@ -176,7 +175,7 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
             }}
           >
             <Container
-              unstyled
+              noBackground
               dark={dark}
               additionalProps={{
                 "data-mbx-class": "dropdown-element",

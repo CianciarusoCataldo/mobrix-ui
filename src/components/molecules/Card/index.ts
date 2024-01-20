@@ -67,7 +67,7 @@ const Card: CardComponent = ({
       noTopDivider,
     }),
     commonProps,
-    additionalProps
+    additionalProps,
   });
 };
 

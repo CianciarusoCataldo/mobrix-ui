@@ -1,13 +1,13 @@
 [data-mbx-id="codebox"] {
   overflow: hidden;
-  padding: 0.3rem;
+  padding: 0.1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: var(--mbx-c-cdb-bg);
 }
 
-[data-mbx-id="codebox"][data-mbx-styled="true"] {
+[data-mbx-id="codebox"] {
   color: var(--mbx-c-cdb-txt);
 }
 
@@ -26,13 +26,14 @@
 
 [data-mbx-id="codebox"][data-mbx-enabled="true"]
   [data-mbx-class="codebox-copy-icon"]
-  > [data-mbx-id="button"]:active {
+  > [data-mbx-id="icon-button"]:active {
   opacity: 0.3;
 }
 
 @media (hover) {
   [data-mbx-id="codebox"][data-mbx-hover="true"][data-mbx-enabled="true"]
-    [data-mbx-class="codebox-copy-icon"]:hover {
+    [data-mbx-class="codebox-copy-icon"]
+    > [data-mbx-id="icon-button"]:hover {
     opacity: 0.8;
   }
 }

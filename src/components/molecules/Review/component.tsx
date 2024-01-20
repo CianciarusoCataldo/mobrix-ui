@@ -50,7 +50,7 @@ const reviewComponent: MoBrixUiComponent<ReviewProps, BuilderComponent[]> = ({
       key="rate"
       hide={!rate}
       type={rateType}
-      unstyled
+      noBackground
       readonly
       value={rate}
       max={max}

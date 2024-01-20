@@ -18,6 +18,7 @@ import {
   Popup,
   RadioButtonGroup,
   Review,
+  Calendar,
 } from "../../mobrix-ui-preview";
 import {
   Demo,
@@ -79,7 +80,7 @@ const MoleculesPage = () => {
   }) => {
     return (
       <Container
-        unstyled
+        noBackground
         style={{
           padding: "0.5rem",
           marginBottom: "1rem",
@@ -97,7 +98,7 @@ const MoleculesPage = () => {
   };
 
   return (
-    <Container unstyled className="App" style={{ height: "110%" }}>
+    <Container noBackground className="App" style={{ height: "110%" }}>
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -147,46 +148,6 @@ const MoleculesPage = () => {
               noBottomDivider
               header="header"
               body="body"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <Card unstyled />
-            <div style={{ marginTop: "20px" }} />
-            <div className="mbui-test-icon" />
-            <Card unstyled header="header" />
-            <div style={{ marginTop: "20px" }} />
-            <Card unstyled body="body" />
-            <div style={{ marginTop: "20px" }} />
-            <Card unstyled footer="footer" />
-            <div style={{ marginTop: "20px" }} />
-            <Card
-              unstyled
-              header="header"
-              body="Card unstyled"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <Card
-              unstyled
-              noTopDivider
-              header="header"
-              body="Card unstyled noTopDivider"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <Card
-              unstyled
-              noBottomDivider
-              header="header"
-              body="Card unstyled noBottomDivider"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <Card
-              unstyled
-              noDividers
-              header="header"
-              body="Card unstyled noDividers"
               footer="footer"
             />
             <div style={{ marginTop: "20px" }} />{" "}
@@ -609,7 +570,7 @@ const MoleculesPage = () => {
               onClose={() => setVisible(false)}
               hide={!isVisible}
             >
-              <DismissableCard alwaysVisible>Content</DismissableCard>
+              <Calendar fromToday />
             </Modal>
           </div>
         }

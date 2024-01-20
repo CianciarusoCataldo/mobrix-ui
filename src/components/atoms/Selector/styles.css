@@ -1,4 +1,4 @@
-[data-mbx-id="selector"][data-mbx-styled="true"] {
+[data-mbx-id="selector"] {
   padding: 0.2rem;
   background: var(--mbx-c-sel-bg);
   color: var(--mbx-c-sel-txt);
@@ -6,17 +6,15 @@
   border-radius: 6px;
 }
 
-[data-mbx-id="selector"][data-mbx-styled="true"]
-  [data-mbx-class="selector-option"] {
+[data-mbx-id="selector"] [data-mbx-class="selector-option"] {
   background-color: var(--mbx-c-sel-bg);
   color: var(--mbx-c-sel-txt);
   padding: 1rem;
 }
 
 @media (hover) {
-  [data-mbx-id="selector"][data-mbx-styled="true"][data-mbx-hover="true"]:hover,
-  [data-mbx-id="selector"][data-mbx-styled="true"]
-    [data-mbx-class="selector-option"]:hover {
+  [data-mbx-id="selector"][data-mbx-hover="true"]:hover,
+  [data-mbx-id="selector"] [data-mbx-class="selector-option"]:hover {
     background: var(--mbx-c-sel-bg-h);
     color: var(--mbx-c-sel-txt-h);
   }

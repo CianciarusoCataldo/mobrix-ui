@@ -8,14 +8,12 @@
   background: transparent;
 }
 
-[data-mbx-id="form-field"][data-mbx-styled="true"]
-  [data-mbx-form-field-header-box="true"] {
+[data-mbx-id="form-field"] [data-mbx-form-field-header-box="true"] {
   font-weight: 600;
   padding-bottom: 0.2rem;
 }
 
-[data-mbx-id="form-field"][data-mbx-styled="true"]
-  [data-mbx-form-field-error-box="true"] {
+[data-mbx-id="form-field"] [data-mbx-form-field-error-box="true"] {
   color: var(--mbx-c-field-err-txt);
   transition: all 0.3s ease-out;
   padding-top: 0.2rem;

@@ -10,7 +10,6 @@ import DismissableCard from "../DismissableCard";
 
 const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
   children,
-  unstyled,
   className,
   dark,
   hide,
@@ -34,7 +33,6 @@ const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
   return (
     <DismissableCard
       disabled={disabled}
-      unstyled={unstyled}
       alwaysVisible
       noTopDivider
       additionalProps={{

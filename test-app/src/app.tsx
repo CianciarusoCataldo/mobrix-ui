@@ -32,7 +32,7 @@ const tabs = (
 );
 
 const App = () => {
-  const position: DrawerProps["position"] = "right";
+  const position: DrawerProps["position"] = "top-left";
 
   const [isVisible, setVisible] = React.useState(false);
 

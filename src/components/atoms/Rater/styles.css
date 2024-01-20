@@ -3,9 +3,6 @@
   align-items: center;
   text-align: center;
   background: var(--mbx-c-rat-bg);
-}
-
-[data-mbx-id="rater"][data-mbx-styled="true"] {
   border-radius: 8px;
   padding: 0.4rem;
 }

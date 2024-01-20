@@ -18,7 +18,7 @@ const DrawerInternalComponent: MoBrixUiComponent<
       animated={animated}
       key="drawer_buttons_panel"
       dark={dark}
-      unstyled
+      noBackground
       onClick={() => {
         onClose!();
       }}
