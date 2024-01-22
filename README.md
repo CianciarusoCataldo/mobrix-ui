@@ -20,17 +20,11 @@ Smart React components for every app, easily customizable for every purpose.
 
 <br>
 
-![Code Climate technical debt](https://img.shields.io/codeclimate/tech-debt/CianciarusoCataldo/mobrix-ui?logo=codeclimate&style=for-the-badge)
-![Code Climate issues](https://img.shields.io/codeclimate/issues/CianciarusoCataldo/mobrix-ui?logo=codeclimate&style=for-the-badge)
-![Code Climate coverage](https://img.shields.io/codeclimate/coverage/CianciarusoCataldo/mobrix-ui?label=Coverage&logo=codeclimate&style=for-the-badge)
 <a href="https://snyk.io/test/github/CianciarusoCataldo/mobrix-ui">
 <img src="https://snyk.io/test/github/CianciarusoCataldo/mobrix-ui/badge.svg?targetFile=package.json&style=flat-square" height="27px"/>
 </a>
----
 
 ---
-
-:exclamation:
 
 ## Note for MoBrix-ui v1 user
 

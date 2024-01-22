@@ -45,74 +45,266 @@
 
 ### --mbx-form-background-light
 
-<br>VAR_DESCRIPTION_0<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-background](#mbx-form-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](global-css-vars.md#mbx-background-light)</div> |
+
+
+VAR_DESCRIPTION_0<br><br>
 ### --mbx-form-background
 
-<br>VAR_DESCRIPTION_1<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_1<br><br>
 ### --mbx-form-background-dark
 
-<br>VAR_DESCRIPTION_2<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-background](#mbx-form-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](global-css-vars.md#mbx-background-dark)</div> |
+
+
+VAR_DESCRIPTION_2<br><br>
 ### --mbx-form-text-color
 
-<br>VAR_DESCRIPTION_3<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_3<br><br>
 ### --mbx-form-text-color-light
 
-<br>VAR_DESCRIPTION_4<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-text-color](#mbx-form-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)</div> |
+
+
+VAR_DESCRIPTION_4<br><br>
 ### --mbx-form-text-color-dark
 
-<br>VAR_DESCRIPTION_5<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-text-color](#mbx-form-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)</div> |
+
+
+VAR_DESCRIPTION_5<br><br>
 ### --mbx-form-submit-background
 
-<br>VAR_DESCRIPTION_6<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_6<br><br>
 ### --mbx-form-submit-background-light
 
-<br>VAR_DESCRIPTION_7<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-submit-background](#mbx-form-submit-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-button-background-light](button-css-vars.md#mbx-button-background-light)</div> |
+
+
+VAR_DESCRIPTION_7<br><br>
 ### --mbx-form-submit-background-dark
 
-<br>VAR_DESCRIPTION_8<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-submit-background](#mbx-form-submit-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-button-background-dark](button-css-vars.md#mbx-button-background-dark)</div> |
+
+
+VAR_DESCRIPTION_8<br><br>
 ### --mbx-form-submit-text-color
 
-<br>VAR_DESCRIPTION_9<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_9<br><br>
 ### --mbx-form-submit-text-color-light
 
-<br>VAR_DESCRIPTION_10<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-submit-text-color](#mbx-form-submit-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-light](button-css-vars.md#mbx-button-text-color-light)</div> |
+
+
+VAR_DESCRIPTION_10<br><br>
 ### --mbx-form-submit-text-color-dark
 
-<br>VAR_DESCRIPTION_11<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-submit-text-color](#mbx-form-submit-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-dark](button-css-vars.md#mbx-button-text-color-dark)</div> |
+
+
+VAR_DESCRIPTION_11<br><br>
 ### --mbx-form-formfield-background
 
-<br>VAR_DESCRIPTION_12<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_12<br><br>
 ### --mbx-form-formfield-background-light
 
-<br>VAR_DESCRIPTION_13<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-formfield-background](#mbx-form-formfield-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-background-light](formfield-css-vars.md#mbx-formfield-background-light)</div> |
+
+
+VAR_DESCRIPTION_13<br><br>
 ### --mbx-form-formfield-background-dark
 
-<br>VAR_DESCRIPTION_14<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-formfield-background](#mbx-form-formfield-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-background-dark](formfield-css-vars.md#mbx-formfield-background-dark)</div> |
+
+
+VAR_DESCRIPTION_14<br><br>
 ### --mbx-form-formfield-text-color
 
-<br>VAR_DESCRIPTION_15<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_15<br><br>
 ### --mbx-form-formfield-text-color-light
 
-<br>VAR_DESCRIPTION_16<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-formfield-text-color](#mbx-form-formfield-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-color-light](formfield-css-vars.md#mbx-formfield-text-color-light)</div> |
+
+
+VAR_DESCRIPTION_16<br><br>
 ### --mbx-form-formfield-text-color-dark
 
-<br>VAR_DESCRIPTION_17<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-formfield-text-color](#mbx-form-formfield-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-color-dark](formfield-css-vars.md#mbx-formfield-text-color-dark)</div> |
+
+
+VAR_DESCRIPTION_17<br><br>
 ### --mbx-form-formfield-background-hover
 
-<br>VAR_DESCRIPTION_18<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_18<br><br>
 ### --mbx-form-formfield-background-hover-light
 
-<br>VAR_DESCRIPTION_19<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-formfield-background-hover](#mbx-form-formfield-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-background-hover-light](formfield-css-vars.md#mbx-formfield-background-hover-light)</div> |
+
+
+VAR_DESCRIPTION_19<br><br>
 ### --mbx-form-formfield-background-hover-dark
 
-<br>VAR_DESCRIPTION_20<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-formfield-background-hover](#mbx-form-formfield-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-background-hover-dark](formfield-css-vars.md#mbx-formfield-background-hover-dark)</div> |
+
+
+VAR_DESCRIPTION_20<br><br>
 ### --mbx-form-formfield-text-color-hover
 
-<br>VAR_DESCRIPTION_21<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_21<br><br>
 ### --mbx-form-formfield-text-color-hover-light
 
-<br>VAR_DESCRIPTION_22<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-formfield-text-color-hover](#mbx-form-formfield-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-color-hover-light](formfield-css-vars.md#mbx-formfield-text-color-hover-light)</div> |
+
+
+VAR_DESCRIPTION_22<br><br>
 ### --mbx-form-formfield-text-color-hover-dark
 
-<br>VAR_DESCRIPTION_23<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-form-formfield-text-color-hover](#mbx-form-formfield-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-color-hover-dark](formfield-css-vars.md#mbx-formfield-text-color-hover-dark)</div> |
+
+
+VAR_DESCRIPTION_23<br><br>
 

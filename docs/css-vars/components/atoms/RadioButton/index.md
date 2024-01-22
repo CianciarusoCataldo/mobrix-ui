@@ -30,29 +30,101 @@
 
 ### --mbx-radio-background
 
-<br>VAR_DESCRIPTION_0<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_0<br><br>
 ### --mbx-radio-background-light
 
-<br>VAR_DESCRIPTION_1<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-radio-background](#mbx-radio-background)</div> | <div style='text-align:center;margin:auto;'>radial-gradient(#f1f1f1 20%, #e4e4e4 30%, #bebebe 55%, #f0f0f0 20%)</div> |
+
+
+VAR_DESCRIPTION_1<br><br>
 ### --mbx-radio-background-dark
 
-<br>VAR_DESCRIPTION_2<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-radio-background](#mbx-radio-background)</div> | <div style='text-align:center;margin:auto;'>radial-gradient(closest-side, #2d3748 20%, #232b38 30%, #1d1f44 55%, #191f29 20%)</div> |
+
+
+VAR_DESCRIPTION_2<br><br>
 ### --mbx-radio-background-hover
 
-<br>VAR_DESCRIPTION_3<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_3<br><br>
 ### --mbx-radio-background-hover-light
 
-<br>VAR_DESCRIPTION_4<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-radio-background-hover](#mbx-radio-background-hover)</div> | <div style='text-align:center;margin:auto;'>radial-gradient(#f1f1f1 20%, #cfcfcf 30%, #a7a7a7 55%, #f0f0f0 20%)</div> |
+
+
+VAR_DESCRIPTION_4<br><br>
 ### --mbx-radio-background-hover-dark
 
-<br>VAR_DESCRIPTION_5<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-radio-background-hover](#mbx-radio-background-hover)</div> | <div style='text-align:center;margin:auto;'>radial-gradient(#354155 20%, #2d3747 30%, #2b2e5f 55%, #323f55 20%)</div> |
+
+
+VAR_DESCRIPTION_5<br><br>
 ### --mbx-radio-icon-background
 
-<br>VAR_DESCRIPTION_6<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_6<br><br>
 ### --mbx-radio-icon-background-light
 
-<br>VAR_DESCRIPTION_7<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-radio-icon-background](#mbx-radio-icon-background)</div> | <div style='text-align:center;margin:auto;'>radial-gradient(circle at 23px 23px, #2d3748, #191f29)</div> |
+
+
+VAR_DESCRIPTION_7<br><br>
 ### --mbx-radio-icon-background-dark
 
-<br>VAR_DESCRIPTION_8<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-radio-icon-background](#mbx-radio-icon-background)</div> | <div style='text-align:center;margin:auto;'>radial-gradient(circle at 23px 23px, #dbe0e6, #949494)</div> |
+
+
+VAR_DESCRIPTION_8<br><br>
 

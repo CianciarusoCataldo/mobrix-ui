@@ -33,38 +33,134 @@
 
 ### --mbx-drawer-background-light
 
-<br>VAR_DESCRIPTION_0<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-drawer-background](#mbx-drawer-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](global-css-vars.md#mbx-background-light)</div> |
+
+
+VAR_DESCRIPTION_0<br><br>
 ### --mbx-drawer-background
 
-<br>VAR_DESCRIPTION_1<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_1<br><br>
 ### --mbx-drawer-background-dark
 
-<br>VAR_DESCRIPTION_2<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-drawer-background](#mbx-drawer-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](global-css-vars.md#mbx-background-dark)</div> |
+
+
+VAR_DESCRIPTION_2<br><br>
 ### --mbx-drawer-text-color
 
-<br>VAR_DESCRIPTION_3<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_3<br><br>
 ### --mbx-drawer-text-color-light
 
-<br>VAR_DESCRIPTION_4<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-drawer-text-color](#mbx-drawer-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)</div> |
+
+
+VAR_DESCRIPTION_4<br><br>
 ### --mbx-drawer-text-color-dark
 
-<br>VAR_DESCRIPTION_5<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-drawer-text-color](#mbx-drawer-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)</div> |
+
+
+VAR_DESCRIPTION_5<br><br>
 ### --mbx-drawer-arrow
 
-<br>VAR_DESCRIPTION_6<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_6<br><br>
 ### --mbx-drawer-arrow-light
 
-<br>VAR_DESCRIPTION_7<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-drawer-arrow](#mbx-drawer-arrow)</div> | <div style='text-align:center;margin:auto;'>[--mbx-drawer-arrow-light](drawer-css-vars.md#mbx-arrow-light)</div> |
+
+
+VAR_DESCRIPTION_7<br><br>
 ### --mbx-drawer-arrow-dark
 
-<br>VAR_DESCRIPTION_8<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-drawer-arrow](#mbx-drawer-arrow)</div> | <div style='text-align:center;margin:auto;'>[--mbx-drawer-arrow-dark](drawer-css-vars.md#mbx-arrow-dark)</div> |
+
+
+VAR_DESCRIPTION_8<br><br>
 ### --mbx-drawer-arrow-hover
 
-<br>VAR_DESCRIPTION_9<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_9<br><br>
 ### --mbx-drawer-arrow-hover-light
 
-<br>VAR_DESCRIPTION_10<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-drawer-arrow-hover](#mbx-drawer-arrow-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>orange</div><div style='text-align:center;margin-auto;'><div style='background:orange;margin:auto; width:15px; height:15px;'/></div></div></div> |
+
+
+VAR_DESCRIPTION_10<br><br>
 ### --mbx-drawer-arrow-hover-dark
 
-<br>VAR_DESCRIPTION_11<br><br>
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-drawer-arrow-hover](#mbx-drawer-arrow-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>orange</div><div style='text-align:center;margin-auto;'><div style='background:orange;margin:auto; width:15px; height:15px;'/></div></div></div> |
+
+
+VAR_DESCRIPTION_11<br><br>
 

@@ -1,11 +1,14 @@
 #!/bin/sh
 
 export OUTPUT_FILE_PATH="docs/css-vars"
+export README_CHAPTER_PATH=docs-gen/readme/chapters/building-process-css-global-vars.md
 
 rm -rf "$OUTPUT_FILE_PATH"
+rm -f docs-gen/readme/chapters/building-process-css-global-vars.md
 
 mkdir "$OUTPUT_FILE_PATH"
 
+touch docs-gen/readme/chapters/building-process-css-global-vars.md
 touch "$OUTPUT_FILE_PATH"/index.md
 touch "$OUTPUT_FILE_PATH"/summary.md
 touch "$OUTPUT_FILE_PATH"/tables.md
@@ -19,10 +22,11 @@ mkdir "$OUTPUT_FILE_PATH"/components
 
 cat docs-gen/css-vars/templates/base.md >>"$OUTPUT_FILE_PATH"/index.md
 cat docs-gen/css-vars/templates/table-header.md >>"$OUTPUT_FILE_PATH"/global/table.md
+cat docs-gen/readme/templates/css-variables.md >>docs-gen/readme/chapters/building-process-css-global-vars.md
 
 COUNT=0
 cat docs-gen/css-vars/templates/table-base.md >>"$OUTPUT_FILE_PATH"/global/index.md
-for cssvar in $(cat docs-gen/css-vars/components/global.json | jq 'keys_unsorted[]'); do
+for cssvar in $(cat docs-gen/components/global-css-vars.json | jq 'keys_unsorted[]'); do
     touch "$OUTPUT_FILE_PATH"/global/tmp_row.md
     touch "$OUTPUT_FILE_PATH"/global/tmp_row_mini.md
     cat docs-gen/css-vars/templates/table-row.md >>"$OUTPUT_FILE_PATH"/global/tmp_row.md
@@ -47,6 +51,8 @@ done
 
 sed -i 's/"//g' "$OUTPUT_FILE_PATH"/global/list.md
 
+echo -n "\n\n" >>"$README_CHAPTER_PATH"
+cat "$OUTPUT_FILE_PATH"/global/table.md >>"$README_CHAPTER_PATH"
 node "docs-gen/css-vars/parse-global-vars.js"
 
 rm "$OUTPUT_FILE_PATH"/global/list.md
@@ -87,12 +93,17 @@ for type in $(
         cat docs-gen/css-vars/templates/table-base-external.md >>"$componentPath"/index-external.md
         cat docs-gen/css-vars/templates/table-base-global.md >>"$componentPath"/index-global.md
 
+        touch docs-gen/components/"$type"/"$component"/props.json
+
         COUNTER=0
 
-        for cssvar in $(cat docs-gen/css-vars/components/"$type"/"$component"/config.json | jq 'keys_unsorted[]'); do
+        for cssvar in $(cat docs-gen/components/"$type"/"$component"/css-vars.json | jq 'keys_unsorted[]'); do
             touch "$componentPath"/tmp_row.md
+            touch "$componentPath"/tmp_row_mini.md
             touch "$componentPath"/tmp_row_external.md
             touch "$componentPath"/tmp_row_global.md
+            cat docs-gen/css-vars/templates/table-header-mini.md >>"$componentPath"/tmp_row_mini.md
+            cat docs-gen/css-vars/templates/table-row-mini.md >>"$componentPath"/tmp_row_mini.md
             cat docs-gen/css-vars/templates/table-row.md >>"$componentPath"/tmp_row.md
             cat docs-gen/css-vars/templates/table-row.md >>"$componentPath"/tmp_row_external.md
             cat docs-gen/css-vars/templates/table-row.md >>"$componentPath"/tmp_row_global.md
@@ -105,14 +116,21 @@ for type in $(
             sed -i "s/PROP_NAME/PROP_NAME_GLOBAL_$COUNTER/g" "$componentPath"/tmp_row_global.md
             sed -i "s/FALLBACK/FALLBACK_GLOBAL_$COUNTER/g" "$componentPath"/tmp_row_global.md
             sed -i "s/DEFAULT/"DEFAULT_GLOBAL_$COUNTER"/g" "$componentPath"/tmp_row_global.md
+            sed -i "s/FALLBACK/FALLBACK_$COUNTER/g" "$componentPath"/tmp_row_mini.md
+            sed -i "s/DEFAULT/"DEFAULT_$COUNTER"/g" "$componentPath"/tmp_row_mini.md
             cat "$componentPath"/tmp_row_global.md >>"$componentPath"/table-global.md
             cat "$componentPath"/tmp_row_external.md >>"$componentPath"/table-external.md
             cat "$componentPath"/tmp_row.md >>"$componentPath"/table.md
-            echo "### $cssvar\n\n<br>VAR_DESCRIPTION_$COUNTER<br><br>" >>"$componentPath"/list.md
+            echo "### $cssvar\n\n<br>" >>"$componentPath"/list.md
+            echo -n "\n\n" >>"$componentPath"/list.md
+            cat "$componentPath"/tmp_row_mini.md >>"$componentPath"/list.md
+            echo -n "\n\n" >>"$componentPath"/list.md
+            echo "VAR_DESCRIPTION_$COUNTER<br><br>" >>"$componentPath"/list.md
             COUNTER=$((COUNTER + 1))
             rm "$componentPath"/tmp_row.md
             rm "$componentPath"/tmp_row_external.md
             rm "$componentPath"/tmp_row_global.md
+            rm "$componentPath"/tmp_row_mini.md
         done
 
         sed -i 's/"//g' "$componentPath"/list.md

@@ -27,13 +27,32 @@ const INPUT_PATH = process.env["OUTPUT_FILE_PATH"];
 
 let cssVars = {};
 
+let internalPage = "";
+let externalPage = "";
+let globalPage = "";
+let list = "";
+
 try {
-  cssVars = require(
-    "./components/" +
+  list = fs.readFileSync(
+    INPUT_PATH +
+      "/components/" +
       COMPONENT_TYPE_TO_PARSE +
       "/" +
       COMPONENT_NAME_TO_PARSE +
-      "/config.json"
+      "/list.md",
+    "utf8"
+  );
+} catch (e) {
+  console.log(e);
+  list = "";
+}
+try {
+  cssVars = require(
+    "../components/" +
+      COMPONENT_TYPE_TO_PARSE +
+      "/" +
+      COMPONENT_NAME_TO_PARSE +
+      "/css-vars.json"
   );
 } catch (e) {
   console.log(e);
@@ -117,6 +136,7 @@ Object.keys(cssVars).forEach((cssvar, index) => {
   }
 
   inputTable = inputTable.replace("FALLBACK_" + index, internalFallBack);
+  list = list.replace("FALLBACK_" + index, internalFallBack);
   externalTable = externalTable.replace(
     "FALLBACK_EXTERNAL_" + index,
     externalFallBack
@@ -155,6 +175,7 @@ Object.keys(cssVars).forEach((cssvar, index) => {
   }
 
   inputTable = inputTable.replace("DEFAULT_" + index, internalDefault);
+  list = list.replace("DEFAULT_" + index, internalDefault);
   externalTable = externalTable.replace(
     "DEFAULT_EXTERNAL_" + index,
     externalDefault
@@ -172,11 +193,6 @@ fs.writeFileSync(
   inputTable
 );
 
-let internalPage = "";
-let externalPage = "";
-let globalPage = "";
-let list = "";
-
 try {
   internalPage = fs.readFileSync(
     INPUT_PATH +
@@ -190,21 +206,6 @@ try {
 } catch (e) {
   console.log(e);
   internalPage = "";
-}
-
-try {
-  list = fs.readFileSync(
-    INPUT_PATH +
-      "/components/" +
-      COMPONENT_TYPE_TO_PARSE +
-      "/" +
-      COMPONENT_NAME_TO_PARSE +
-      "/list.md",
-    "utf8"
-  );
-} catch (e) {
-  console.log(e);
-  list = "";
 }
 
 try {

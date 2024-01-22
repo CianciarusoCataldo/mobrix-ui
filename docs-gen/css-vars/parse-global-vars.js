@@ -2,6 +2,7 @@ const fs = require("fs");
 
 const INPUT_PATH = process.env["OUTPUT_FILE_PATH"];
 
+let readmeVarsTable = "";
 let globalVarsTable = "";
 let globalVarsPage = "";
 let globalVarsList = "";
@@ -30,7 +31,14 @@ try {
 }
 
 try {
-  cssVars = require("./components/global.json");
+  readmeVarsTable = fs.readFileSync(process.env["README_CHAPTER_PATH"], "utf8");
+} catch (e) {
+  console.log(e);
+  readmeVarsTable = "";
+}
+
+try {
+  cssVars = require("../components/global-css-vars.json");
 } catch (e) {
   console.log(e);
   cssVars = {};
@@ -41,6 +49,10 @@ Object.keys(cssVars).forEach((cssvar, index) => {
     "PROP_NAME_" + index,
     `[${cssvar}](#${cssvar.replace("--", "")})`
   );
+  readmeVarsTable = readmeVarsTable.replace(
+    "PROP_NAME_" + index,
+    `[${cssvar}](docs/css-vars/global/index.md#${cssvar.replace("--", "")})`
+  );
 
   if (cssVars[cssvar].description) {
     globalVarsList = globalVarsList.replace(
@@ -50,15 +62,17 @@ Object.keys(cssVars).forEach((cssvar, index) => {
   }
 
   let internalFallBack = "/";
+  let readmeFallBack = "/";
 
   if (cssVars[cssvar].fallback) {
     const fallback = cssVars[cssvar].fallback.replace("--", "");
-    internalFallBack = `[${fallback}](#${fallback})`;
+    internalFallBack = `[${cssVars[cssvar].fallback}](#${fallback})`;
+    readmeFallBack = `[${cssVars[cssvar].fallback}](docs/css-vars/global/index.md#${fallback})`;
   }
 
-  globalVarsTable = globalVarsTable.replace(
+  readmeVarsTable = readmeVarsTable.replace(
     "FALLBACK_" + index,
-    internalFallBack
+    readmeFallBack
   );
 
   globalVarsList = globalVarsList.replace(
@@ -88,10 +102,15 @@ Object.keys(cssVars).forEach((cssvar, index) => {
     "DEFAULT_" + index,
     internalDefault
   );
+  readmeVarsTable = readmeVarsTable.replace(
+    "DEFAULT_" + index,
+    internalDefault
+  );
   globalVarsList = globalVarsList.replace("DEFAULT_" + index, internalDefault);
 });
 
 fs.writeFileSync(INPUT_PATH + "/global/table.md", globalVarsTable);
+fs.writeFileSync(process.env["README_CHAPTER_PATH"], readmeVarsTable);
 fs.writeFileSync(INPUT_PATH + "/global/list.md", globalVarsList);
 
 fs.writeFileSync(
