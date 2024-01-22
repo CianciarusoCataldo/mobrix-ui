@@ -84,6 +84,6 @@
     "test": "sh ./scripts/start-tests.sh",
     "update:docs": "sh ./scripts/update-docs.sh",
     "docs:format": "prettier --write docs/css-vars/*.md",
-    "docs:generate-css-vars": "sh ./scripts/docs/generate-css-vars-list.sh && npm run docs:format"
+    "docs:generate-css-vars": "sh ./docs-gen/css-vars/generate-css-vars-list.sh && npm run docs:format"
   }
 }

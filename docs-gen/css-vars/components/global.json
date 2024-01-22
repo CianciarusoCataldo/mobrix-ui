@@ -1,0 +1,67 @@
+{
+  "--mbx-background": {
+    "description": "Fallback value for [--mbx-background-light](#mbx-background-light) and [--mbx-background-dark](#mbx-background-dark) variables"
+  },
+  "--mbx-background-light": {
+    "fallback": "--mbx-background",
+    "defaultColor": "linear-gradient(to right, #fff, #ededee, #e6e7e7)"
+  },
+  "--mbx-background-dark": {
+    "fallback": "--mbx-background",
+    "defaultColor": "linear-gradient(to right, #2d3748, #1d232e)"
+  },
+  "--mbx-background-color": {},
+  "--mbx-background-color-light": {
+    "fallback": "--mbx-background-color",
+    "defaultColor": "#e9e9e9"
+  },
+  "--mbx-background-color-dark": {
+    "fallback": "--mbx-background-color",
+    "defaultColor": "#1d232e"
+  },
+  "--mbx-background-color-hover": {},
+  "--mbx-background-color-hover-light": {
+    "fallback": "--mbx-background-color-hover",
+    "defaultColor": "#dfeaf8"
+  },
+  "--mbx-background-color-hover-dark": {
+    "fallback": "--mbx-background-color-hover",
+    "defaultColor": "#3a3552"
+  },
+  "--mbx-background-hover": {},
+  "--mbx-background-hover-light": {
+    "fallback": "--mbx-background-hover",
+    "defaultColor": "linear-gradient(to right, #ececec, #e1e1e6, #dbdddd)"
+  },
+  "--mbx-background-hover-dark": {
+    "fallback": "--mbx-background-hover",
+    "defaultColor": "linear-gradient(to right, #364257, #252d3b)"
+  },
+  "--mbx-text-color": {},
+  "--mbx-text-color-light": {
+    "fallback": "--mbx-text-color",
+    "defaultColor": "#1b1b1b"
+  },
+  "--mbx-text-color-dark": {
+    "fallback": "--mbx-text-color",
+    "defaultColor": "white"
+  },
+  "--mbx-text-color-hover": {},
+  "--mbx-text-color-hover-light": {
+    "fallback": "--mbx-text-color-hover",
+    "defaultColor": "#413c5c"
+  },
+  "--mbx-text-color-hover-dark": {
+    "fallback": "--mbx-text-color-hover",
+    "defaultColor": "#dfeaf8"
+  },
+  "--mbx-focus-color": {},
+  "--mbx-focus-color-light": {
+    "fallback": "--mbx-focus-color",
+    "defaultColor": "#7785ff"
+  },
+  "--mbx-focus-color-dark": {
+    "fallback": "--mbx-focus-color",
+    "defaultColor": "#fb7a10"
+  }
+}

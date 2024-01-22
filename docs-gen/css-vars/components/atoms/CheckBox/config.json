@@ -1,0 +1,29 @@
+{
+  "--mbx-checkbox-background": {},
+  "--mbx-checkbox-background-light": {
+    "fallback": "--mbx-checkbox-background",
+    "defaultGlobal": "--mbx-background-light"
+  },
+  "--mbx-checkbox-background-dark": {
+    "fallback": "--mbx-checkbox-background",
+    "defaultGlobal": "--mbx-background-dark"
+  },
+  "--mbx-checkbox-background-hover": {},
+  "--mbx-checkbox-background-hover-light": {
+    "fallback": "--mbx-checkbox-background-hover",
+    "defaultGlobal": "--mbx-background-hover-light"
+  },
+  "--mbx-checkbox-background-hover-dark": {
+    "fallback": "--mbx-checkbox-background-hover",
+    "defaultGlobal": "--mbx-background-hover-dark"
+  },
+  "--mbx-checkbox-tick-color": {},
+  "--mbx-checkbox-tick-color-light": {
+    "fallback": "--mbx-checkbox-tick-color",
+    "defaultColor": "rgb(37, 99, 235)"
+  },
+  "--mbx-checkbox-tick-color-dark": {
+    "fallback": "--mbx-checkbox-tick-color",
+    "default": "white"
+  }
+}

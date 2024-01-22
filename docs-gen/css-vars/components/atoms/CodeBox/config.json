@@ -1,0 +1,20 @@
+{
+  "--mbx-codebox-background": {},
+  "--mbx-codebox-background-light": {
+    "defaultGlobal": "--mbx-background-light",
+    "fallback": "--mbx-codebox-background"
+  },
+  "--mbx-codebox-background-dark": {
+    "defaultGlobal": "--mbx-background-dark",
+    "fallback": "--mbx-codebox-background"
+  },
+  "--mbx-codebox-text-color": {},
+  "--mbx-codebox-text-color-light": {
+    "defaultGlobal": "--mbx-text-color-light",
+    "fallback": "--mbx-codebox-text-color"
+  },
+  "--mbx-codebox-text-color-dark": {
+    "defaultGlobal": "--mbx-text-color-dark",
+    "fallback": "--mbx-codebox-text-color"
+  }
+}

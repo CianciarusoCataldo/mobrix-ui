@@ -1,0 +1,83 @@
+{
+  "--mbx-calendar-background": {},
+  "--mbx-calendar-background-light": {
+    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "fallback": "--mbx-calendar-background"
+  },
+  "--mbx-calendar-background-dark": {
+    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
+    "fallback": "--mbx-calendar-background"
+  },
+  "--mbx-calendar-text-color": {},
+  "--mbx-calendar-text-color-light": {
+    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)",
+    "fallback": "--mbx-calendar-text-color"
+  },
+  "--mbx-calendar-text-color-dark": {
+    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
+    "fallback": "--mbx-calendar-text-color"
+  },
+  "--mbx-calendar-selected-background": {},
+  "--mbx-calendar-selected-background-light": {
+    "fallback": "--mbx-calendar-selected-background",
+    "defaultInternal": "--mbx-calendar-background-dark"
+  },
+  "--mbx-calendar-selected-background-dark": {
+    "fallback": "--mbx-calendar-selected-background",
+    "defaultInternal": "--mbx-calendar-background-light"
+  },
+  "--mbx-calendar-selected-text-color": {},
+  "--mbx-calendar-selected-text-color-light": {
+    "fallback": "--mbx-calendar-selected-text-color",
+    "defaultInternal": "--mbx-calendar-text-color-dark"
+  },
+  "--mbx-calendar-selected-text-color-dark": {
+    "fallback": "--mbx-calendar-selected-text-color",
+    "defaultInternal": "--mbx-calendar-text-color-light"
+  },
+  "--mbx-calendar-background-hover": {},
+  "--mbx-calendar-background-hover-light": {
+    "fallback": "--mbx-calendar-background-hover",
+    "defaultInternal": "--mbx-calendar-selected-background-light"
+  },
+  "--mbx-calendar-background-hover-dark": {
+    "fallback": "--mbx-calendar-background-hover",
+    "defaultInternal": "--mbx-calendar-selected-background-dark"
+  },
+  "--mbx-calendar-text-color-hover": {},
+  "--mbx-calendar-text-color-hover-light": {
+    "fallback": "--mbx-calendar-text-color-hover",
+    "defaultInternal": "--mbx-calendar-selected-text-color-light"
+  },
+  "--mbx-calendar-text-color-hover-dark": {
+    "fallback": "--mbx-calendar-text-color-hover",
+    "defaultInternal": "--mbx-calendar-selected-text-color-dark"
+  },
+  "--mbx-calendar-arrow": {},
+  "--mbx-calendar-arrow-light": {
+    "fallback": "--mbx-calendar-arrow",
+    "defaultInternal": "--mbx-calendar-text-color-light"
+  },
+  "--mbx-calendar-arrow-dark": {
+    "fallback": "--mbx-calendar-arrow",
+    "defaultInternal": "--mbx-calendar-text-color-dark"
+  },
+  "--mbx-calendar-arrow-hover": {},
+  "--mbx-calendar-arrow-hover-light": {
+    "default": "[--mbx-text-color-hover-light](global-css-vars.md#mbx-text-color-hover-light)",
+    "fallback": "--mbx-calendar-arrow-hover"
+  },
+  "--mbx-calendar-arrow-hover-dark": {
+    "default": "[--mbx-text-color-hover-dark](global-css-vars.md#mbx-text-color-hover-dark)",
+    "fallback": "--mbx-calendar-arrow-hover"
+  },
+  "--mbx-calendar-today-color": {},
+  "--mbx-calendar-today-color-light": {
+    "defaultColor": "red",
+    "fallback": "--mbx-calendar-today-color"
+  },
+  "--mbx-calendar-today-color-dark": {
+    "defaultColor": "red",
+    "fallback": "--mbx-calendar-today-color"
+  }
+}
