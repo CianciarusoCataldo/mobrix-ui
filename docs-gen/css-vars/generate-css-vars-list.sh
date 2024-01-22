@@ -93,8 +93,6 @@ for type in $(
         cat docs-gen/css-vars/templates/table-base-external.md >>"$componentPath"/index-external.md
         cat docs-gen/css-vars/templates/table-base-global.md >>"$componentPath"/index-global.md
 
-        touch docs-gen/components/"$type"/"$component"/props.json
-
         COUNTER=0
 
         for cssvar in $(cat docs-gen/components/"$type"/"$component"/css-vars.json | jq 'keys_unsorted[]'); do
