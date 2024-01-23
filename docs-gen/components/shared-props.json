@@ -1,1 +1,55 @@
-{}
+{
+  "key": {
+    "description": "React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)"
+  },
+
+  "className": { "description": "custom className applied on main container" },
+
+  "dark": { "description": "Enable/disable dark mode", "default": false },
+
+  "hide": { "description": "Hide/show component", "default": false },
+
+  "id": {
+    "description": "[id parameter](https://www.w3schools.com/html/html_id.asp) (for styling/testing purpose, to easily find the component into the DOM)"
+  },
+
+  "shadow": {
+    "description": "Enable/disable shadow behind component",
+    "default": false
+  },
+
+  "style": {
+    "description": "Css inline properties applied on main container",
+    "default": {}
+  },
+
+  "unstyled": {
+    "description": "If `true`, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons)",
+    "default": false
+  },
+
+  "animated": {
+    "description": "Enable/disable component animations",
+    "default": false
+  },
+
+  "background": {
+    "description": "Enable/disable component background",
+    "default": true
+  },
+
+  "hover": {
+    "default": true,
+    "description": "Enable/disable component hover standard styles"
+  },
+
+  "disabled": {
+    "description": "If true, disable the component. The effect may vary depending on the component type",
+    "default": "false"
+  },
+
+  "additionalProps": {
+    "description": "Custom additional properties, applied to the component",
+    "default": {}
+  }
+}
