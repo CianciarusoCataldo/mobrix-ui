@@ -21,7 +21,7 @@ const centerElement = (element, styles, wrapper = "div") =>
     wrapper
   );
 
-const COMPONENT_NAME_TO_PARSE = process.env["COMPONENT_NAME"].replace("/", "");
+const COMPONENT_NAME_TO_PARSE = process.env["COMPONENT_NAME"];
 const COMPONENT_TYPE_TO_PARSE = process.env["COMPONENT_TYPE"];
 const INPUT_PATH = process.env["OUTPUT_FILE_PATH"];
 

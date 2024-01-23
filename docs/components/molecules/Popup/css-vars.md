@@ -1,0 +1,94 @@
+# Popup
+
+## Summary
+
+- [CSS Variables table](#css-variables-table)
+- [CSS Variables list](#css-variables-list)
+
+<br>
+
+## CSS Variables table
+
+<br>
+
+| <div style='text-align:center;margin:auto;'>Prop</div> | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ------------------------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-popup-background](#mbx-popup-background)</div> | <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-popup-background-dark](#mbx-popup-background-dark)</div> | <div style='text-align:center;margin:auto;'>[mbx-popup-background](#mbx-popup-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](global-css-vars.md#mbx-background-dark)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-popup-background-light](#mbx-popup-background-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-popup-background](#mbx-popup-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](global-css-vars.md#mbx-background-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-popup-text-color](#mbx-popup-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-popup-text-color-light](#mbx-popup-text-color-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-popup-text-color](#mbx-popup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-popup-text-color-dark](#mbx-popup-text-color-dark)</div> | <div style='text-align:center;margin:auto;'>[mbx-popup-text-color](#mbx-popup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)</div> |
+
+
+## CSS Variables list
+
+<br>
+
+### --mbx-popup-background
+
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_0<br><br>
+### --mbx-popup-background-dark
+
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-popup-background](#mbx-popup-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](global-css-vars.md#mbx-background-dark)</div> |
+
+
+VAR_DESCRIPTION_1<br><br>
+### --mbx-popup-background-light
+
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-popup-background](#mbx-popup-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](global-css-vars.md#mbx-background-light)</div> |
+
+
+VAR_DESCRIPTION_2<br><br>
+### --mbx-popup-text-color
+
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+
+VAR_DESCRIPTION_3<br><br>
+### --mbx-popup-text-color-light
+
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-popup-text-color](#mbx-popup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)</div> |
+
+
+VAR_DESCRIPTION_4<br><br>
+### --mbx-popup-text-color-dark
+
+<br>
+
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-popup-text-color](#mbx-popup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)</div> |
+
+
+VAR_DESCRIPTION_5<br><br>
+
