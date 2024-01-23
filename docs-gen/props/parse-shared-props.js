@@ -47,11 +47,11 @@ try {
 Object.keys(propsToParse).forEach((actualProp, index) => {
   globalVarsTable = globalVarsTable.replace(
     "PROP_NAME_" + index,
-    `[${actualProp}](#${actualProp.replace("--", "")})`
+    `[${actualProp}](#${actualProp.toLowerCase()})`
   );
   readmeVarsTable = readmeVarsTable.replace(
     "PROP_NAME_" + index,
-    `[${actualProp}](docs/props/global/index.md#${actualProp.replace("--", "")})`
+    `[${actualProp}](docs/props/global/index.md#${actualProp.toLowerCase()})`
   );
 
   if (propsToParse[actualProp].description) {
@@ -67,15 +67,11 @@ Object.keys(propsToParse).forEach((actualProp, index) => {
     propType = propsToParse[actualProp].type;
   }
 
-  readmeVarsTable = readmeVarsTable.replace(
-    "PROP_TYPE_" + index,
-    propType
-  );
+  readmeVarsTable = readmeVarsTable.replace("PROP_TYPE_" + index, propType);
 
-  globalVarsList = globalVarsList.replace(
-    "PROP_TYPE_" + index,
-    propType
-  );
+  globalVarsList = globalVarsList.replace("PROP_TYPE_" + index, propType);
+
+  globalVarsTable = globalVarsTable.replace("PROP_TYPE_" + index, propType);
 
   let defaultValue = "/";
 
@@ -83,9 +79,18 @@ Object.keys(propsToParse).forEach((actualProp, index) => {
     defaultValue = propsToParse[actualProp].default;
   }
 
-  globalVarsTable = globalVarsTable.replace("PROP_DEFAULT_" + index, defaultValue);
-  readmeVarsTable = readmeVarsTable.replace("PROP_DEFAULT_" + index, defaultValue);
-  globalVarsList = globalVarsList.replace("PROP_DEFAULT_" + index, internalDefault);
+  globalVarsTable = globalVarsTable.replace(
+    "PROP_DEFAULT_" + index,
+    defaultValue
+  );
+  readmeVarsTable = readmeVarsTable.replace(
+    "PROP_DEFAULT_" + index,
+    defaultValue
+  );
+  globalVarsList = globalVarsList.replace(
+    "PROP_DEFAULT_" + index,
+    defaultValue
+  );
 });
 
 fs.writeFileSync(INPUT_PATH + "/global/table.md", globalVarsTable);

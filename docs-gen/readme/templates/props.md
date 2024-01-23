@@ -1,3 +1,3 @@
-### Props
+### Shared Properties
 
 <br>

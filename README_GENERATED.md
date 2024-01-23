@@ -42,7 +42,7 @@ MoBrix-ui v3 introduces some breaking changes that makes it not compatible with 
 
 - [MoBrix-ui philosophy](#mobrix-ui-philosophy)
 - [Components building process](#components-building-process)
-  - [UI properties](#ui-properties)
+  - [Shared Properties](#shared-properties)
   - [Accessibility properties](#accessibility-properties)
   - [CSS variables](#css-variables)
   - [Reactive components](#reactive-components)
@@ -81,46 +81,27 @@ Some properties are shared between all components, for a smoother dev experience
 
 ---
 
-### UI properties
+### Shared Properties
 
 <br>
 
-| Property    | Type                 | Description                                                                                                        | Default value |
-| ----------- | -------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------- |
-| `className` | `string`             | custom className applied on main container                                                                         | `""`          |
-| `dark`      | `boolean`            | Enable/disable dark mode                                                                                           | `false`       |
-| `hide`      | `boolean`            | Hide/show component                                                                                                | `false`       |
-| `id`        | `string`             | `data-id` parameter (for testing purpose, to easily find the component into the DOM)                               | `/`           |
-| `shadow`    | `boolean`            | Enable/disable shadow behind component                                                                             | `false`       |
-| `style`     | `Record<string,any>` | [Css inline properties](https://www.w3schools.com/html/html_css.asp) applied on main container                     | `/`           |
-| `unstyled`  | `boolean`            | If `true`, no standard mobrix-ui styles will be applied on the components (useful for example, with image buttons) | `false`       |
-| `animated`  | `boolean`            | Enable/disable component animations                                                                                | `false`       |
+| <div style='text-align:center;margin:auto;'>Parameter</div>                                                     | <div style='text-align:center;margin:auto;'>Type</div>                | <div style='text-align:center;margin:auto;'>Default</div> |
+| --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[key](docs/props/global/index.md#key)</div>                         | <div style='text-align:center;margin:auto;'>string</div>              | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[className](docs/props/global/index.md#classname)</div>             | <div style='text-align:center;margin:auto;'>string</div>              | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[dark](docs/props/global/index.md#dark)</div>                       | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[hide](docs/props/global/index.md#hide)</div>                       | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[id](docs/props/global/index.md#id)</div>                           | <div style='text-align:center;margin:auto;'>string</div>              | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[shadow](docs/props/global/index.md#shadow)</div>                   | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>true</div>    |
+| <div style='text-align:center;margin:auto;'>[style](docs/props/global/index.md#style)</div>                     | <div style='text-align:center;margin:auto;'>CSSProperties</div>       | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[unstyled](docs/props/global/index.md#unstyled)</div>               | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[animated](docs/props/global/index.md#animated)</div>               | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>true</div>    |
+| <div style='text-align:center;margin:auto;'>[background](docs/props/global/index.md#background)</div>           | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>true</div>    |
+| <div style='text-align:center;margin:auto;'>[hover](docs/props/global/index.md#hover)</div>                     | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>true</div>    |
+| <div style='text-align:center;margin:auto;'>[disabled](docs/props/global/index.md#disabled)</div>               | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[additionalProps](docs/props/global/index.md#additionalprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
-
----
-
-### Accessibility properties
-
-<br>
-
-Some accessibility properties are shared between all components, for a better and smoother user experience, in any scenario:
-
-| Property      | Type                         | Description                                                                                                                                                | Default value             |
-| ------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| `onFocus`     | ( ) => `void`                | custom callback triggered when the component get the focus (for example, through tab key)                                                                  | `/`                       |
-| `onFocusLost` | ( ) => `void`                | custom callback triggered when the component lose the focus (for example, when user clicks outside it)                                                     | `/`                       |
-| `a11y`        | `boolean`                    | Enable/disable accessibility features.                                                                                                                     | `true`                    |
-| `a11yLabel`   | `string`                     | If `a11y` = `true`, is used as [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) accessibility parameter | `/`                       |
-| `a11yDark`    | `boolean`                    | If `a11y` = `true`, enable/disable dark mode for a11y styles. If not set, will be used the `dark` UI parameter                                             | same as `dark` or `false` |
-| `onKeyDown`   | (keyEvent : `any`) => `void` | custom callback triggered when a key is pressed while using the component (for example, when writing text inside an `Input` component).                    | `/`                       |
-
-<br>
-
----
-
----
-
 ### CSS variables
 
 <br>
@@ -151,6 +132,7 @@ MoBrix-ui is globally configurable, with CSS variables. By defining some specifi
 | <div style='text-align:center;margin:auto;'>[--mbx-focus-color-light](docs/css-vars/global/index.md#mbx-focus-color-light)</div>                       | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](docs/css-vars/global/index.md#mbx-focus-color)</div>                       | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#7785ff</div><div style='text-align:center;margin-auto;'><div style='background:#7785ff;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-focus-color-dark](docs/css-vars/global/index.md#mbx-focus-color-dark)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](docs/css-vars/global/index.md#mbx-focus-color)</div>                       | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#fb7a10</div><div style='text-align:center;margin-auto;'><div style='background:#fb7a10;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
 
+<br>
 ### Reactive components
 
 <br>
@@ -175,6 +157,8 @@ A clear example is the [Input](https://cianciarusocataldo.github.io/mobrix-ui/co
 ---
 
 ---
+
+<br>
 
 <br>
 <br>
@@ -240,6 +224,7 @@ If you want to customize the UI globally, initialize the dedicated [CSS variable
 
 ---
 
+<br>
 <br>
 
 ## Tests

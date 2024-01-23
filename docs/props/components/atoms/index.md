@@ -4,168 +4,183 @@
 
 <br>
 
- - [Button](#button)
+- [Button](#button)
 
- - [CheckBox](#checkbox)
+- [CheckBox](#checkbox)
 
- - [CodeBox](#codebox)
+- [CodeBox](#codebox)
 
- - [Counter](#counter)
+- [Counter](#counter)
 
- - [Divider](#divider)
+- [Divider](#divider)
 
- - [IconButton](#iconbutton)
+- [IconButton](#iconbutton)
 
- - [Input](#input)
+- [Input](#input)
 
- - [Label](#label)
+- [Label](#label)
 
- - [Link](#link)
+- [Link](#link)
 
- - [RadioButton](#radiobutton)
+- [RadioButton](#radiobutton)
 
- - [Rater](#rater)
+- [Rater](#rater)
 
- - [Selector](#selector)
+- [Selector](#selector)
 
- - [Slider](#slider)
+- [Slider](#slider)
 
- - [Spinner](#spinner)
+- [Spinner](#spinner)
 
- - [Toggle](#toggle)
-
-<br>
-
-## COMPONENT_NAME
+- [Toggle](#toggle)
 
 <br>
 
-COMPONENT_TABLE
-
-<br>
-<br>
-
-## COMPONENT_NAME
+## Button
 
 <br>
 
-COMPONENT_TABLE
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
 
 <br>
 <br>
 
-## COMPONENT_NAME
+## CheckBox
 
 <br>
 
-COMPONENT_TABLE
-
-<br>
-<br>
-
-## COMPONENT_NAME
-
-<br>
-
-COMPONENT_TABLE
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
 
 <br>
 <br>
 
-## COMPONENT_NAME
+## CodeBox
 
 <br>
 
-COMPONENT_TABLE
-
-<br>
-<br>
-
-## COMPONENT_NAME
-
-<br>
-
-COMPONENT_TABLE
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
 
 <br>
 <br>
 
-## COMPONENT_NAME
+## Counter
 
 <br>
 
-COMPONENT_TABLE
-
-<br>
-<br>
-
-## COMPONENT_NAME
-
-<br>
-
-COMPONENT_TABLE
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
 
 <br>
 <br>
 
-## COMPONENT_NAME
+## Divider
 
 <br>
 
-COMPONENT_TABLE
-
-<br>
-<br>
-
-## COMPONENT_NAME
-
-<br>
-
-COMPONENT_TABLE
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
 
 <br>
 <br>
 
-## COMPONENT_NAME
+## IconButton
 
 <br>
 
-COMPONENT_TABLE
-
-<br>
-<br>
-
-## COMPONENT_NAME
-
-<br>
-
-COMPONENT_TABLE
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
 
 <br>
 <br>
 
-## COMPONENT_NAME
+## Input
 
 <br>
 
-COMPONENT_TABLE
-
-<br>
-<br>
-
-## COMPONENT_NAME
-
-<br>
-
-COMPONENT_TABLE
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
 
 <br>
 <br>
 
-## COMPONENT_NAME
+## Label
 
 <br>
 
-COMPONENT_TABLE
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+
+<br>
+<br>
+
+## Link
+
+<br>
+
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+
+<br>
+<br>
+
+## RadioButton
+
+<br>
+
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+
+<br>
+<br>
+
+## Rater
+
+<br>
+
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+
+<br>
+<br>
+
+## Selector
+
+<br>
+
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+
+<br>
+<br>
+
+## Slider
+
+<br>
+
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+
+<br>
+<br>
+
+## Spinner
+
+<br>
+
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+
+<br>
+<br>
+
+## Toggle
+
+<br>
+
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
 
 <br>

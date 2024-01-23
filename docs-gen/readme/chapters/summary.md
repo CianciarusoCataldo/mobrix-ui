@@ -2,7 +2,7 @@
 
 - [MoBrix-ui philosophy](#mobrix-ui-philosophy)
 - [Components building process](#components-building-process)
-  - [UI properties](#ui-properties)
+  - [Shared Properties](#shared-properties)
   - [Accessibility properties](#accessibility-properties)
   - [CSS variables](#css-variables)
   - [Reactive components](#reactive-components)

@@ -11,35 +11,33 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Prop</div> | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ------------------------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-background](#mbx-background)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_0</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-background-light](#mbx-background-light)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_1</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #fff, #ededee, #e6e7e7)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #fff, #ededee, #e6e7e7);margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-background-dark](#mbx-background-dark)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_2</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #2d3748, #1d232e)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #2d3748, #1d232e);margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-background-color](#mbx-background-color)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_3</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-background-color-light](#mbx-background-color-light)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_4</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#e9e9e9</div><div style='text-align:center;margin-auto;'><div style='background:#e9e9e9;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-background-color-dark](#mbx-background-color-dark)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_5</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#1d232e</div><div style='text-align:center;margin-auto;'><div style='background:#1d232e;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover](#mbx-background-color-hover)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_6</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-light](#mbx-background-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_7</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#dfeaf8</div><div style='text-align:center;margin-auto;'><div style='background:#dfeaf8;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-dark](#mbx-background-color-hover-dark)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_8</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#3a3552</div><div style='text-align:center;margin-auto;'><div style='background:#3a3552;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-background-hover](#mbx-background-hover)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_9</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](#mbx-background-hover-light)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_10</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #ececec, #e1e1e6, #dbdddd)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #ececec, #e1e1e6, #dbdddd);margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](#mbx-background-hover-dark)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_11</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #364257, #252d3b)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #364257, #252d3b);margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-text-color](#mbx-text-color)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_12</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](#mbx-text-color-light)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_13</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#1b1b1b</div><div style='text-align:center;margin-auto;'><div style='background:#1b1b1b;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](#mbx-text-color-dark)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_14</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>white</div><div style='text-align:center;margin-auto;'><div style='background:white;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover](#mbx-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_15</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](#mbx-text-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_16</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#413c5c</div><div style='text-align:center;margin-auto;'><div style='background:#413c5c;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](#mbx-text-color-hover-dark)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_17</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#dfeaf8</div><div style='text-align:center;margin-auto;'><div style='background:#dfeaf8;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-focus-color](#mbx-focus-color)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_18</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-focus-color-light](#mbx-focus-color-light)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_19</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#7785ff</div><div style='text-align:center;margin-auto;'><div style='background:#7785ff;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-focus-color-dark](#mbx-focus-color-dark)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_20</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#fb7a10</div><div style='text-align:center;margin-auto;'><div style='background:#fb7a10;margin:auto; width:15px; height:15px;'/></div></div></div> |
-
+| <div style='text-align:center;margin:auto;'>Prop</div>                                                                    | <div style='text-align:center;margin:auto;'>Fallback</div>    | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-background](#mbx-background)</div>                                     | <div style='text-align:center;margin:auto;'>FALLBACK_0</div>  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-light](#mbx-background-light)</div>                         | <div style='text-align:center;margin:auto;'>FALLBACK_1</div>  | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #fff, #ededee, #e6e7e7)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #fff, #ededee, #e6e7e7);margin:auto; width:15px; height:15px;'/></div></div></div>       |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-dark](#mbx-background-dark)</div>                           | <div style='text-align:center;margin:auto;'>FALLBACK_2</div>  | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #2d3748, #1d232e)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #2d3748, #1d232e);margin:auto; width:15px; height:15px;'/></div></div></div>                   |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-color](#mbx-background-color)</div>                         | <div style='text-align:center;margin:auto;'>FALLBACK_3</div>  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-color-light](#mbx-background-color-light)</div>             | <div style='text-align:center;margin:auto;'>FALLBACK_4</div>  | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#e9e9e9</div><div style='text-align:center;margin-auto;'><div style='background:#e9e9e9;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-color-dark](#mbx-background-color-dark)</div>               | <div style='text-align:center;margin:auto;'>FALLBACK_5</div>  | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#1d232e</div><div style='text-align:center;margin-auto;'><div style='background:#1d232e;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover](#mbx-background-color-hover)</div>             | <div style='text-align:center;margin:auto;'>FALLBACK_6</div>  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-light](#mbx-background-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>FALLBACK_7</div>  | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#dfeaf8</div><div style='text-align:center;margin-auto;'><div style='background:#dfeaf8;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-dark](#mbx-background-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>FALLBACK_8</div>  | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#3a3552</div><div style='text-align:center;margin-auto;'><div style='background:#3a3552;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-hover](#mbx-background-hover)</div>                         | <div style='text-align:center;margin:auto;'>FALLBACK_9</div>  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](#mbx-background-hover-light)</div>             | <div style='text-align:center;margin:auto;'>FALLBACK_10</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #ececec, #e1e1e6, #dbdddd)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #ececec, #e1e1e6, #dbdddd);margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](#mbx-background-hover-dark)</div>               | <div style='text-align:center;margin:auto;'>FALLBACK_11</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #364257, #252d3b)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #364257, #252d3b);margin:auto; width:15px; height:15px;'/></div></div></div>                   |
+| <div style='text-align:center;margin:auto;'>[--mbx-text-color](#mbx-text-color)</div>                                     | <div style='text-align:center;margin:auto;'>FALLBACK_12</div> | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](#mbx-text-color-light)</div>                         | <div style='text-align:center;margin:auto;'>FALLBACK_13</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#1b1b1b</div><div style='text-align:center;margin-auto;'><div style='background:#1b1b1b;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](#mbx-text-color-dark)</div>                           | <div style='text-align:center;margin:auto;'>FALLBACK_14</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>white</div><div style='text-align:center;margin-auto;'><div style='background:white;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover](#mbx-text-color-hover)</div>                         | <div style='text-align:center;margin:auto;'>FALLBACK_15</div> | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](#mbx-text-color-hover-light)</div>             | <div style='text-align:center;margin:auto;'>FALLBACK_16</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#413c5c</div><div style='text-align:center;margin-auto;'><div style='background:#413c5c;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](#mbx-text-color-hover-dark)</div>               | <div style='text-align:center;margin:auto;'>FALLBACK_17</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#dfeaf8</div><div style='text-align:center;margin-auto;'><div style='background:#dfeaf8;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-focus-color](#mbx-focus-color)</div>                                   | <div style='text-align:center;margin:auto;'>FALLBACK_18</div> | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-focus-color-light](#mbx-focus-color-light)</div>                       | <div style='text-align:center;margin:auto;'>FALLBACK_19</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#7785ff</div><div style='text-align:center;margin-auto;'><div style='background:#7785ff;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-focus-color-dark](#mbx-focus-color-dark)</div>                         | <div style='text-align:center;margin:auto;'>FALLBACK_20</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#fb7a10</div><div style='text-align:center;margin-auto;'><div style='background:#fb7a10;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
 
 ## CSS Variables list
 
 <br>
-
 
 <br>
 
@@ -47,13 +45,11 @@
 
 <br>
 
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
-
 
 Fallback value for [--mbx-background-light](#mbx-background-light) and [--mbx-background-dark](#mbx-background-dark) variables
 
@@ -63,13 +59,11 @@ Fallback value for [--mbx-background-light](#mbx-background-light) and [--mbx-ba
 
 <br>
 
-
-| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                                                                                           |
+| ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-background](#mbx-background)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #fff, #ededee, #e6e7e7)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #fff, #ededee, #e6e7e7);margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
-
 
 VAR_DESCRIPTION_1
 
@@ -79,13 +73,11 @@ VAR_DESCRIPTION_1
 
 <br>
 
-
-| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                                                                               |
+| ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-background](#mbx-background)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #2d3748, #1d232e)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #2d3748, #1d232e);margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
-
 
 VAR_DESCRIPTION_2
 
@@ -95,13 +87,11 @@ VAR_DESCRIPTION_2
 
 <br>
 
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
-
 
 VAR_DESCRIPTION_3
 
@@ -111,13 +101,11 @@ VAR_DESCRIPTION_3
 
 <br>
 
-
-| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-background-color](#mbx-background-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#e9e9e9</div><div style='text-align:center;margin-auto;'><div style='background:#e9e9e9;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
-
 
 VAR_DESCRIPTION_4
 
@@ -127,13 +115,11 @@ VAR_DESCRIPTION_4
 
 <br>
 
-
-| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-background-color](#mbx-background-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#1d232e</div><div style='text-align:center;margin-auto;'><div style='background:#1d232e;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
-
 
 VAR_DESCRIPTION_5
 
@@ -143,13 +129,11 @@ VAR_DESCRIPTION_5
 
 <br>
 
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
-
 
 VAR_DESCRIPTION_6
 
@@ -159,13 +143,11 @@ VAR_DESCRIPTION_6
 
 <br>
 
-
-| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover](#mbx-background-color-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#dfeaf8</div><div style='text-align:center;margin-auto;'><div style='background:#dfeaf8;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
-
 
 VAR_DESCRIPTION_7
 
@@ -175,13 +157,11 @@ VAR_DESCRIPTION_7
 
 <br>
 
-
-| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover](#mbx-background-color-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#3a3552</div><div style='text-align:center;margin-auto;'><div style='background:#3a3552;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
-
 
 VAR_DESCRIPTION_8
 
@@ -191,13 +171,11 @@ VAR_DESCRIPTION_8
 
 <br>
 
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
-
 
 VAR_DESCRIPTION_9
 
@@ -207,13 +185,11 @@ VAR_DESCRIPTION_9
 
 <br>
 
-
-| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                                                                                                 |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-background-hover](#mbx-background-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #ececec, #e1e1e6, #dbdddd)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #ececec, #e1e1e6, #dbdddd);margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
-
 
 VAR_DESCRIPTION_10
 
@@ -223,13 +199,11 @@ VAR_DESCRIPTION_10
 
 <br>
 
-
-| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-background-hover](#mbx-background-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #364257, #252d3b)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #364257, #252d3b);margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
-
 
 VAR_DESCRIPTION_11
 
@@ -239,13 +213,11 @@ VAR_DESCRIPTION_11
 
 <br>
 
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
-
 
 VAR_DESCRIPTION_12
 
@@ -255,13 +227,11 @@ VAR_DESCRIPTION_12
 
 <br>
 
-
-| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-text-color](#mbx-text-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#1b1b1b</div><div style='text-align:center;margin-auto;'><div style='background:#1b1b1b;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
-
 
 VAR_DESCRIPTION_13
 
@@ -271,13 +241,11 @@ VAR_DESCRIPTION_13
 
 <br>
 
-
-| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-text-color](#mbx-text-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>white</div><div style='text-align:center;margin-auto;'><div style='background:white;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
-
 
 VAR_DESCRIPTION_14
 
@@ -287,13 +255,11 @@ VAR_DESCRIPTION_14
 
 <br>
 
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
-
 
 VAR_DESCRIPTION_15
 
@@ -303,13 +269,11 @@ VAR_DESCRIPTION_15
 
 <br>
 
-
-| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover](#mbx-text-color-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#413c5c</div><div style='text-align:center;margin-auto;'><div style='background:#413c5c;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
-
 
 VAR_DESCRIPTION_16
 
@@ -319,13 +283,11 @@ VAR_DESCRIPTION_16
 
 <br>
 
-
-| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover](#mbx-text-color-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#dfeaf8</div><div style='text-align:center;margin-auto;'><div style='background:#dfeaf8;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
-
 
 VAR_DESCRIPTION_17
 
@@ -335,13 +297,11 @@ VAR_DESCRIPTION_17
 
 <br>
 
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
-
 
 VAR_DESCRIPTION_18
 
@@ -351,13 +311,11 @@ VAR_DESCRIPTION_18
 
 <br>
 
-
-| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                              | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](#mbx-focus-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#7785ff</div><div style='text-align:center;margin-auto;'><div style='background:#7785ff;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
-
 
 VAR_DESCRIPTION_19
 
@@ -367,13 +325,10 @@ VAR_DESCRIPTION_19
 
 <br>
 
-
-| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                              | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](#mbx-focus-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#fb7a10</div><div style='text-align:center;margin-auto;'><div style='background:#fb7a10;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
-
 VAR_DESCRIPTION_20
-

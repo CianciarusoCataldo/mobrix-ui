@@ -1,4 +1,4 @@
-# COMPONENT_NAME
+# Label
 
 ## Summary
 
@@ -11,10 +11,11 @@
 
 <br>
 
-COMPONENT_TABLE
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+
+<br>
 
 ## Props list
 
 <br>
-
-COMPONENT_LIST

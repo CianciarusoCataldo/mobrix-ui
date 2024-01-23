@@ -13,6 +13,8 @@
 
 COMPONENT_TABLE
 
+<br>
+
 ## Props list
 
 <br>
