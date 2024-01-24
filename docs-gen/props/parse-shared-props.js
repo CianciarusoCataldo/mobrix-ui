@@ -51,7 +51,7 @@ Object.keys(propsToParse).forEach((actualProp, index) => {
   );
   readmeVarsTable = readmeVarsTable.replace(
     "PROP_NAME_" + index,
-    `[${actualProp}](docs/props/global/index.md#${actualProp.toLowerCase()})`
+    `[${actualProp}](docs/components/global/props.md#${actualProp.toLowerCase()})`
   );
 
   if (propsToParse[actualProp].description) {

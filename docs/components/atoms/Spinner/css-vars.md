@@ -35,7 +35,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_0<br><br>
+<br><br>
 
 ### --mbx-spinner-success-color-light
 
@@ -45,7 +45,7 @@ VAR_DESCRIPTION_0<br><br>
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-spinner-success-color](#mbx-spinner-success-color)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |
 
-VAR_DESCRIPTION_1<br><br>
+<br><br>
 
 ### --mbx-spinner-success-color-dark
 
@@ -55,7 +55,7 @@ VAR_DESCRIPTION_1<br><br>
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-spinner-success-color](#mbx-spinner-success-color)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |
 
-VAR_DESCRIPTION_2<br><br>
+<br><br>
 
 ### --mbx-spinner-error-color
 
@@ -65,7 +65,7 @@ VAR_DESCRIPTION_2<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_3<br><br>
+<br><br>
 
 ### --mbx-spinner-error-color-light
 
@@ -75,7 +75,7 @@ VAR_DESCRIPTION_3<br><br>
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-spinner-error-color](#mbx-spinner-error-color)</div> | <div style='text-align:center;margin:auto;'>#ff0000</div> |
 
-VAR_DESCRIPTION_4<br><br>
+<br><br>
 
 ### --mbx-spinner-error-color-dark
 
@@ -85,7 +85,7 @@ VAR_DESCRIPTION_4<br><br>
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-spinner-error-color](#mbx-spinner-error-color)</div> | <div style='text-align:center;margin:auto;'>#ff0000</div> |
 
-VAR_DESCRIPTION_5<br><br>
+<br><br>
 
 ### --mbx-spinner-loading-color
 
@@ -95,7 +95,7 @@ VAR_DESCRIPTION_5<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_6<br><br>
+<br><br>
 
 ### --mbx-spinner-loading-color-light
 
@@ -105,7 +105,7 @@ VAR_DESCRIPTION_6<br><br>
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-spinner-loading-color](#mbx-spinner-loading-color)</div> | <div style='text-align:center;margin:auto;'>#202020</div> |
 
-VAR_DESCRIPTION_7<br><br>
+<br><br>
 
 ### --mbx-spinner-loading-color-dark
 
@@ -115,4 +115,4 @@ VAR_DESCRIPTION_7<br><br>
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-spinner-loading-color](#mbx-spinner-loading-color)</div> | <div style='text-align:center;margin:auto;'>#202020</div> |
 
-VAR_DESCRIPTION_8<br><br>
+<br><br>

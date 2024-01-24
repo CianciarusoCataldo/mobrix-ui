@@ -49,7 +49,7 @@ export type CodeBoxProps = ComponentWithValue<string> & {
   highlight?: boolean;
 
   /** Environment for text highlight feature, default to "terminal" (only enabled into enhanced mode) */
-  environment?: SupportedEnvironment | undefined;
+  environment?: SupportedEnvironment;
 
   /** if `true`, hide the copy button */
   noCopyButton?: boolean;

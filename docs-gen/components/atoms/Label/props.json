@@ -1,1 +1,6 @@
-{}
+{
+  "children": {
+    "description": "text content to show (string arrays are accepted)",
+    "type": "string | string[]"
+  }
+}

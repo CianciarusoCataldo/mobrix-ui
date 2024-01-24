@@ -106,11 +106,11 @@ Object.keys(propsToParse).forEach((actualProp, index) => {
   );
   externalTable = externalTable.replace(
     "PROP_NAME_EXTERNAL_" + index,
-    `[${actualProp}](../../${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/index.md#${actualProp.toLowerCase()})`
+    `[${actualProp}](../${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/props.md#${actualProp.toLowerCase()})`
   );
   globalTable = globalTable.replace(
     "PROP_NAME_GLOBAL_" + index,
-    `[${actualProp}](components/${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/index.md#${actualProp.toLowerCase()})`
+    `[${actualProp}](${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/props.md#${actualProp.toLowerCase()})`
   );
 
   const outputType = propsToParse[actualProp].type || "/";

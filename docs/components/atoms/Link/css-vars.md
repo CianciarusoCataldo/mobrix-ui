@@ -14,8 +14,8 @@
 | <div style='text-align:center;margin:auto;'>Prop</div>                                                        | <div style='text-align:center;margin:auto;'>Fallback</div>                                      | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-link-color](#mbx-link-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                       |
-| <div style='text-align:center;margin:auto;'>[--mbx-link-color-light](#mbx-link-color-light)</div>             | <div style='text-align:center;margin:auto;'>[mbx-link-color](#mbx-link-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../../global/index.md#mbx-text-color-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-link-color-dark](#mbx-link-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[mbx-link-color](#mbx-link-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../../global/index.md#mbx-text-color-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-link-color-light](#mbx-link-color-light)</div>             | <div style='text-align:center;margin:auto;'>[mbx-link-color](#mbx-link-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-link-color-dark](#mbx-link-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[mbx-link-color](#mbx-link-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#mbx-text-color-dark)</div>   |
 | <div style='text-align:center;margin:auto;'>[--mbx-link-color-hover](#mbx-link-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                       |
 | <div style='text-align:center;margin:auto;'>[--mbx-link-color-hover-light](#mbx-link-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-link-color-hover](#mbx-link-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-link-color-light](#mbx-link-color-light)</div>                         |
 | <div style='text-align:center;margin:auto;'>[--mbx-link-color-hover-dark](#mbx-link-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-link-color-hover](#mbx-link-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-link-color-dark](#mbx-link-color-dark)</div>                           |
@@ -32,7 +32,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_0<br><br>
+<br><br>
 
 ### --mbx-link-color-light
 
@@ -40,9 +40,9 @@ VAR_DESCRIPTION_0<br><br>
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                          | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-link-color](#mbx-link-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../../global/index.md#mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>[mbx-link-color](#mbx-link-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#mbx-text-color-light)</div> |
 
-VAR_DESCRIPTION_1<br><br>
+<br><br>
 
 ### --mbx-link-color-dark
 
@@ -50,9 +50,9 @@ VAR_DESCRIPTION_1<br><br>
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                          | <div style='text-align:center;margin:auto;'>Default</div>                                                               |
 | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-link-color](#mbx-link-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../../global/index.md#mbx-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>[mbx-link-color](#mbx-link-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#mbx-text-color-dark)</div> |
 
-VAR_DESCRIPTION_2<br><br>
+<br><br>
 
 ### --mbx-link-color-hover
 
@@ -62,7 +62,7 @@ VAR_DESCRIPTION_2<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_3<br><br>
+<br><br>
 
 ### --mbx-link-color-hover-light
 
@@ -72,7 +72,7 @@ VAR_DESCRIPTION_3<br><br>
 | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-link-color-hover](#mbx-link-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-link-color-light](#mbx-link-color-light)</div> |
 
-VAR_DESCRIPTION_4<br><br>
+<br><br>
 
 ### --mbx-link-color-hover-dark
 
@@ -82,4 +82,4 @@ VAR_DESCRIPTION_4<br><br>
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-link-color-hover](#mbx-link-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-link-color-dark](#mbx-link-color-dark)</div> |
 
-VAR_DESCRIPTION_5<br><br>
+<br><br>

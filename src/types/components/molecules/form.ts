@@ -3,7 +3,7 @@ import {
   MoBrixUiComponent,
 } from "../../../types/global";
 
-import { FormFieldProps } from "../atoms/form-field";
+import { FormFieldProps } from "./form-field";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Form component props

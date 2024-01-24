@@ -1,38 +1,54 @@
 {
   "--mbx-dismissablecard-background": {},
   "--mbx-dismissablecard-background-light": {
-    "default": "[--mbx-card-background-light](card-css-vars.md#mbx-card-background-light)",
+    "defaultExternal": {
+      "type": "molecules",
+      "component": "Card",
+      "prop": "--mbx-card-background-light"
+    },
     "fallback": "--mbx-dismissablecard-background"
   },
   "--mbx-dismissablecard-background-dark": {
-    "default": "[--mbx-card-background-dark](card-css-vars.md#mbx-card-background-dark)",
+    "defaultExternal": {
+      "type": "molecules",
+      "component": "Card",
+      "prop": "--mbx-card-background-dark"
+    },
     "fallback": "--mbx-dismissablecard-background"
   },
   "--mbx-dismissablecard-text-color": {},
   "--mbx-dismissablecard-text-color-light": {
-    "default": "[--mbx-card-text-color-dark](card-css-vars.md#mbx-card-text-color-light)",
+    "defaultExternal": {
+      "type": "molecules",
+      "component": "Card",
+      "prop": "--mbx-card-text-color-light"
+    },
     "fallback": "--mbx-dismissablecard-text-color"
   },
   "--mbx-dismissablecard-text-color-dark": {
-    "default": "[--mbx-card-text-color-dark](card-css-vars.md#mbx-card-text-color-dark)",
+    "defaultExternal": {
+      "type": "molecules",
+      "prop": "--mbx-card-text-color-dark",
+      "component": "Card"
+    },
     "fallback": "--mbx-dismissablecard-text-color"
   },
   "--mbx-dismissablecard-x-color": {},
   "--mbx-dismissablecard-x-color-light": {
-    "default": "[--mbx-dismissablecard-text-color-light](#mbx-dismissablecard-text-color-light)",
+    "defaultInternal": "--mbx-dismissablecard-text-color-light",
     "fallback": "--mbx-dismissablecard-x-color"
   },
   "--mbx-dismissablecard-x-color-dark": {
-    "default": "[--mbx-dismissablecard-text-color-dark](#mbx-dismissablecard-text-color-dark)",
+    "defaultInternal": "--mbx-dismissablecard-text-color-dark",
     "fallback": "--mbx-dismissablecard-x-color"
   },
   "--mbx-dismissablecard-x-color-hover": {},
   "--mbx-dismissablecard-x-color-hover-light": {
-    "default": "red",
+    "defaultColor": "red",
     "fallback": "--mbx-dismissablecard-x-color-hover"
   },
   "--mbx-dismissablecard-x-color-hover-dark": {
-    "default": "red",
+    "defaultColor": "red",
     "fallback": "--mbx-dismissablecard-x-color-hover"
   }
 }

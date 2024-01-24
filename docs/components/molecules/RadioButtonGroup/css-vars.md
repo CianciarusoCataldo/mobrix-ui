@@ -32,7 +32,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_0<br><br>
+<br><br>
 
 ### --mbx-radiogroup-background-dark
 
@@ -42,7 +42,7 @@ VAR_DESCRIPTION_0<br><br>
 | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-radiogroup-background](#mbx-radiogroup-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](global-css-vars.md#mbx-background-dark)</div> |
 
-VAR_DESCRIPTION_1<br><br>
+<br><br>
 
 ### --mbx-radiogroup-background-light
 
@@ -52,7 +52,7 @@ VAR_DESCRIPTION_1<br><br>
 | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-radiogroup-background](#mbx-radiogroup-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](global-css-vars.md#mbx-background-light)</div> |
 
-VAR_DESCRIPTION_2<br><br>
+<br><br>
 
 ### --mbx-radiogroup-text-color
 
@@ -62,7 +62,7 @@ VAR_DESCRIPTION_2<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_3<br><br>
+<br><br>
 
 ### --mbx-radiogroup-text-color-light
 
@@ -72,7 +72,7 @@ VAR_DESCRIPTION_3<br><br>
 | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-radiogroup-text-color](#mbx-radiogroup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)</div> |
 
-VAR_DESCRIPTION_4<br><br>
+<br><br>
 
 ### --mbx-radiogroup-text-color-dark
 
@@ -82,4 +82,4 @@ VAR_DESCRIPTION_4<br><br>
 | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-radiogroup-text-color](#mbx-radiogroup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)</div> |
 
-VAR_DESCRIPTION_5<br><br>
+<br><br>

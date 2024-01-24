@@ -1,47 +1,47 @@
 {
   "--mbx-carousel-background": {},
   "--mbx-carousel-background-light": {
-    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-carousel-background"
   },
   "--mbx-carousel-background-dark": {
-    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
+    "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-carousel-background"
   },
   "--mbx-carousel-arrow-color": {},
   "--mbx-carousel-arrow-color-light": {
-    "default": "#252525",
+    "defaultColor": "#252525",
     "fallback": "--mbx-carousel-arrow-color"
   },
   "--mbx-carousel-arrow-color-dark": {
-    "default": "#e2e2e2",
+    "defaultColor": "#e2e2e2",
     "fallback": "--mbx-carousel-arrow-color"
   },
   "--mbx-carousel-arrow-color-hover": {},
   "--mbx-carousel-arrow-color-hover-light": {
-    "default": "#287dfd",
+    "defaultColor": "#287dfd",
     "fallback": "--mbx-carousel-arrow-color-hover"
   },
   "--mbx-carousel-arrow-color-hover-dark": {
-    "default": "#ff8007",
+    "defaultColor": "#ff8007",
     "fallback": "--mbx-carousel-arrow-color-hover"
   },
   "--mbx-carousel-dot-empty-background": {},
   "--mbx-carousel-dot-empty-background-light": {
-    "default": "radial-gradient(#000000, #181818, #282828, #3a3a3a, #4c4c4c, #6b6a6a, #858383)",
+    "defaultColor": "radial-gradient(#000000, #181818, #282828, #3a3a3a, #4c4c4c, #6b6a6a, #858383)",
     "fallback": "--mbx-carousel-dot-empty-background"
   },
   "--mbx-carousel-dot-empty-background-dark": {
-    "default": "radial-gradient(#000000, #181818, #282828, #3a3a3a, #4c4c4c, #6b6a6a, #858383)",
+    "defaultColor": "radial-gradient(#000000, #181818, #282828, #3a3a3a, #4c4c4c, #6b6a6a, #858383)",
     "fallback": "--mbx-carousel-dot-empty-background"
   },
   "--mbx-carousel-dot-full-background": {},
   "--mbx-carousel-dot-full-background-light": {
-    "default": "linear-gradient(to top, #ff8007, #fd8616, #fd9b3f, #fd9c40, #fcbb7f, #fad6b4)",
+    "defaultColor": "linear-gradient(to top, #ff8007, #fd8616, #fd9b3f, #fd9c40, #fcbb7f, #fad6b4)",
     "fallback": "--mbx-carousel-dot-full-background"
   },
   "--mbx-carousel-dot-full-background-dark": {
-    "default": "linear-gradient(to top, #ff8007, #fd8616, #fd9b3f, #fd9c40, #fcbb7f, #fad6b4)",
+    "defaultColor": "linear-gradient(to top, #ff8007, #fd8616, #fd9b3f, #fd9c40, #fcbb7f, #fad6b4)",
     "fallback": "--mbx-carousel-dot-full-background"
   }
 }

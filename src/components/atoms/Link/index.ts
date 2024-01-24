@@ -2,7 +2,6 @@ import "./styles.css";
 
 import { LinkComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "../../../tools";
 import { buildMbxStandardComponent } from "../../../tools/utils";
 
 /**

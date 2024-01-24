@@ -44,7 +44,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_0<br><br>
+<br><br>
 
 ### --mbx-dropdown-background-dark
 
@@ -54,7 +54,7 @@ VAR_DESCRIPTION_0<br><br>
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-dropdown-background](#mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_1<br><br>
+<br><br>
 
 ### --mbx-dropdown-background-light
 
@@ -64,7 +64,7 @@ VAR_DESCRIPTION_1<br><br>
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-dropdown-background](#mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_2<br><br>
+<br><br>
 
 ### --mbx-dropdown-text-color
 
@@ -74,7 +74,7 @@ VAR_DESCRIPTION_2<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_3<br><br>
+<br><br>
 
 ### --mbx-dropdown-text-color-light
 
@@ -84,7 +84,7 @@ VAR_DESCRIPTION_3<br><br>
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-dropdown-text-color](#mbx-dropdown-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_4<br><br>
+<br><br>
 
 ### --mbx-dropdown-text-color-dark
 
@@ -94,7 +94,7 @@ VAR_DESCRIPTION_4<br><br>
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-dropdown-text-color](#mbx-dropdown-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_5<br><br>
+<br><br>
 
 ### --mbx-dropdown-background-hover
 
@@ -104,7 +104,7 @@ VAR_DESCRIPTION_5<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_6<br><br>
+<br><br>
 
 ### --mbx-dropdown-background-hover-light
 
@@ -114,7 +114,7 @@ VAR_DESCRIPTION_6<br><br>
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-dropdown-background](#mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_7<br><br>
+<br><br>
 
 ### --mbx-dropdown-background-hover-dark
 
@@ -124,7 +124,7 @@ VAR_DESCRIPTION_7<br><br>
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-dropdown-background](#mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_8<br><br>
+<br><br>
 
 ### --mbx-dropdown-text-color-hover
 
@@ -134,7 +134,7 @@ VAR_DESCRIPTION_8<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_9<br><br>
+<br><br>
 
 ### --mbx-dropdown-text-color-hover-light
 
@@ -144,7 +144,7 @@ VAR_DESCRIPTION_9<br><br>
 | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-dropdown-background-hover](#mbx-dropdown-background-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_10<br><br>
+<br><br>
 
 ### --mbx-dropdown-text-color-hover-dark
 
@@ -154,7 +154,7 @@ VAR_DESCRIPTION_10<br><br>
 | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-dropdown-background-hover](#mbx-dropdown-background-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_11<br><br>
+<br><br>
 
 ### --mbx-dropdown-arrow-color
 
@@ -164,7 +164,7 @@ VAR_DESCRIPTION_11<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_12<br><br>
+<br><br>
 
 ### --mbx-dropdown-arrow-color-light
 
@@ -174,7 +174,7 @@ VAR_DESCRIPTION_12<br><br>
 | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-dropdown-arrow-color](#mbx-dropdown-arrow-color)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_13<br><br>
+<br><br>
 
 ### --mbx-dropdown-arrow-color-dark
 
@@ -184,7 +184,7 @@ VAR_DESCRIPTION_13<br><br>
 | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-dropdown-arrow-color](#mbx-dropdown-arrow-color)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_14<br><br>
+<br><br>
 
 ### --mbx-dropdown-arrow-color-hover
 
@@ -194,7 +194,7 @@ VAR_DESCRIPTION_14<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_15<br><br>
+<br><br>
 
 ### --mbx-dropdown-arrow-color-hover-light
 
@@ -204,7 +204,7 @@ VAR_DESCRIPTION_15<br><br>
 | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-dropdown-arrow-color-hover](#mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_16<br><br>
+<br><br>
 
 ### --mbx-dropdown-arrow-color-hover-dark
 
@@ -214,4 +214,4 @@ VAR_DESCRIPTION_16<br><br>
 | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-dropdown-arrow-color-hover](#mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_17<br><br>
+<br><br>

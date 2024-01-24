@@ -1,422 +1,268 @@
-# MoBrix-ui full props list
+# MoBrix-ui shared props
 
 ## Summary
 
-- [atoms](#atoms)
+- [Props table](#props-table)
+- [Props list](#props-list)
 
-  - [Button](#button)
-
-  - [CheckBox](#checkbox)
-
-  - [CodeBox](#codebox)
-
-  - [Counter](#counter)
-
-  - [Divider](#divider)
-
-  - [IconButton](#iconbutton)
-
-  - [Input](#input)
-
-  - [Label](#label)
-
-  - [Link](#link)
-
-  - [RadioButton](#radiobutton)
-
-  - [Rater](#rater)
-
-  - [Selector](#selector)
-
-  - [Slider](#slider)
-
-  - [Spinner](#spinner)
-
-  - [Toggle](#toggle)
-
-- [molecules](#molecules)
-
-  - [Card](#card)
-
-  - [Carousel](#carousel)
-
-  - [Container](#container)
-
-  - [DismissableCard](#dismissablecard)
-
-  - [Dropdown](#dropdown)
-
-  - [ExpandableContainer](#expandablecontainer)
-
-  - [FormField](#formfield)
-
-  - [List](#list)
-
-  - [Modal](#modal)
-
-  - [Popup](#popup)
-
-  - [RadioButtonGroup](#radiobuttongroup)
-
-  - [Review](#review)
-
-  - [Table](#table)
-
-  - [TabViewer](#tabviewer)
-
-- [organisms](#organisms)
-
-  - [Calendar](#calendar)
-
-  - [DatePicker](#datepicker)
-
-  - [Drawer](#drawer)
-
-  - [Form](#form)
-
-## atoms
-
 <br>
 
-### Button
+## Props table
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                                     | <div style='text-align:center;margin:auto;'>Type</div>       | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[onClick](components/atoms/Button/index.md#onclick)</div>           | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[onMouseEnter](components/atoms/Button/index.md#onmouseenter)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[onMouseLeave](components/atoms/Button/index.md#onmouseleave)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Parameter</div>                           | <div style='text-align:center;margin:auto;'>Type</div>                | <div style='text-align:center;margin:auto;'>Default</div> |
+| ------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[key](#key)</div>                         | <div style='text-align:center;margin:auto;'>string</div>              | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[className](#classname)</div>             | <div style='text-align:center;margin:auto;'>string</div>              | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[dark](#dark)</div>                       | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[hide](#hide)</div>                       | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[id](#id)</div>                           | <div style='text-align:center;margin:auto;'>string</div>              | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[shadow](#shadow)</div>                   | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>true</div>    |
+| <div style='text-align:center;margin:auto;'>[style](#style)</div>                     | <div style='text-align:center;margin:auto;'>CSSProperties</div>       | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[unstyled](#unstyled)</div>               | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[animated](#animated)</div>               | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>true</div>    |
+| <div style='text-align:center;margin:auto;'>[background](#background)</div>           | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>true</div>    |
+| <div style='text-align:center;margin:auto;'>[hover](#hover)</div>                     | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>true</div>    |
+| <div style='text-align:center;margin:auto;'>[disabled](#disabled)</div>               | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[additionalProps](#additionalprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br>
 <br>
 
-### CheckBox
+## Props list
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                               | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[value](components/atoms/CheckBox/index.md#value)</div>       | <div style='text-align:center;margin:auto;'>/</div>    | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[onChamge](components/atoms/CheckBox/index.md#onchamge)</div> | <div style='text-align:center;margin:auto;'>/</div>    | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[icon](components/atoms/CheckBox/index.md#icon)</div>         | <div style='text-align:center;margin:auto;'>/</div>    | <div style='text-align:center;margin:auto;'>/</div>       |
-
 <br>
-<br>
 
-### CodeBox
+## key
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                                | <div style='text-align:center;margin:auto;'>Type</div>   | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[value](components/atoms/CodeBox/index.md#value)</div>         | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[highlight](components/atoms/CodeBox/index.md#highlight)</div> | <div style='text-align:center;margin:auto;'>/</div>      | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Type</div>   | <div style='text-align:center;margin:auto;'>Default</div> |
+| -------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br>
 <br>
 
-### Counter
-
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
 
 <br>
-<br>
-
-### Divider
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+## className
 
 <br>
-<br>
 
-### IconButton
+| <div style='text-align:center;margin:auto;'>Type</div>   | <div style='text-align:center;margin:auto;'>Default</div> |
+| -------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
-
-<br>
 <br>
 
-### Input
+custom className applied on main container
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
-
-<br>
 <br>
 
-### Label
+## dark
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
-<br>
 
-### Link
-
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+Enable/disable dark mode
 
-<br>
 <br>
 
-### RadioButton
-
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+## hide
 
 <br>
-<br>
 
-### Rater
+| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
-
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
 
 <br>
-<br>
 
-### Selector
+Hide/show component
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
-
-<br>
 <br>
 
-### Slider
+## id
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Type</div>   | <div style='text-align:center;margin:auto;'>Default</div> |
+| -------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
-<br>
 
-### Spinner
-
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+[id parameter](https://www.w3schools.com/html/html_id.asp) (for styling/testing purpose, to easily find the component into the DOM)
 
-<br>
 <br>
 
-### Toggle
-
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+## shadow
 
 <br>
 
-## molecules
+| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div>    |
 
 <br>
 
-### Card
-
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+Enable/disable shadow behind component
 
-<br>
 <br>
 
-### Carousel
-
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+## style
 
 <br>
-<br>
 
-### Container
+| <div style='text-align:center;margin:auto;'>Type</div>          | <div style='text-align:center;margin:auto;'>Default</div> |
+| --------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>CSSProperties</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
-
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
 
 <br>
-<br>
 
-### DismissableCard
+Css inline properties applied on main container
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
-
-<br>
 <br>
 
-### Dropdown
+## unstyled
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
-<br>
-
-### ExpandableContainer
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+If `true`, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons)
 
 <br>
-<br>
 
-### FormField
-
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+## animated
 
-<br>
 <br>
 
-### List
+| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div>    |
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
-
 <br>
-<br>
 
-### Modal
+Enable/disable component animations
 
 <br>
-
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
 
 <br>
-<br>
 
-### Popup
+## background
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div>    |
 
 <br>
-<br>
-
-### RadioButtonGroup
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+Enable/disable component background
 
 <br>
-<br>
 
-### Review
-
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+## hover
 
-<br>
 <br>
 
-### Table
+| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div>    |
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
-
 <br>
-<br>
 
-### TabViewer
+Enable/disable component hover standard styles
 
 <br>
-
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
 
 <br>
 
-## organisms
+## disabled
 
 <br>
 
-### Calendar
+| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
-
 <br>
-<br>
 
-### DatePicker
+If true, disable the component. The effect may vary depending on the component type
 
 <br>
-
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
 
 <br>
-<br>
 
-### Drawer
+## additionalProps
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Type</div>                | <div style='text-align:center;margin:auto;'>Default</div> |
+| --------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
-<br>
-
-### Form
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+Custom additional properties, applied to the component
 
 <br>

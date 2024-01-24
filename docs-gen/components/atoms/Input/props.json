@@ -1,1 +1,20 @@
-{}
+{
+  "value": {
+    "type": "string",
+    "description": "text input value"
+  },
+  "onChange": {
+    "type": "(newValue: string) => void",
+    "description": "callback triggered when text input changes",
+    "default": "() => {}"
+  },
+  "placeholder": {
+    "type": "string",
+    "description": "label showed when no value is set"
+  },
+  "readOnly": {
+    "type": "boolean",
+    "description": "if true, component value can only be set with `value` parameter",
+    "default": "false"
+  }
+}

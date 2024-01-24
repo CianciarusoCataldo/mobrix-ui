@@ -1,11 +1,11 @@
 {
   "--mbx-modal-background": {},
   "--mbx-modal-background-light": {
-    "default": "rgba(0, 0, 0, 0.8)",
+    "defaultColor": "rgba(0, 0, 0, 0.8)",
     "fallback": "--mbx-modal-background"
   },
   "--mbx-modal-background-dark": {
-    "default": "rgba(0, 0, 0, 0.8)",
+    "defaultColor": "rgba(0, 0, 0, 0.8)",
     "fallback": "--mbx-modal-background"
   },
   "--mbx-modal-x-color": {},
@@ -19,11 +19,19 @@
   },
   "--mbx-modal-x-color-hover": {},
   "--mbx-modal-x-color-hover-light": {
-    "default": "red",
+    "defaultExternal": {
+      "prop": "--mbx-dismissablecard-x-color-hover-light",
+      "type": "molecules",
+      "component": "DismissableCard"
+    },
     "fallback": "--mbx-modal-x-color-hover"
   },
   "--mbx-modal-x-color-hover-dark": {
-    "default": "red",
+    "defaultExternal": {
+      "prop": "--mbx-dismissablecard-x-color-hover-dark",
+      "type": "molecules",
+      "component": "DismissableCard"
+    },
     "fallback": "--mbx-modal-x-color-hover"
   }
 }

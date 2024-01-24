@@ -1,1 +1,28 @@
-{}
+{
+  "value": { "default": "0", "description": "actual vote", "type": "number" },
+  "max": {
+    "default": "5",
+    "description": "max vote (max number of icons displayed)",
+    "type": "number"
+  },
+  "readOnly": {
+    "default": "false",
+    "description": "if `true`, the rate can't be changed by clicking on the icons",
+    "type": "boolean"
+  },
+  "type": {
+    "default": "'star'",
+    "description": "vote icons type",
+    "type": "'star'|'circle'"
+  },
+  "vertical": {
+    "default": "false",
+    "description": "if `true`, rate icons will be showed vertically",
+    "type": "boolean"
+  },
+  "onChange": {
+    "default": "() => {}",
+    "description": "callback triggered when user select a vote",
+    "type": "(newVote:number) => void"
+  }
+}

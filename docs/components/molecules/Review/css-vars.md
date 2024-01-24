@@ -38,7 +38,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_0<br><br>
+<br><br>
 
 ### --mbx-review-background-dark
 
@@ -48,7 +48,7 @@ VAR_DESCRIPTION_0<br><br>
 | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-review-background](#mbx-review-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](global-css-vars.md#mbx-background-dark)</div> |
 
-VAR_DESCRIPTION_1<br><br>
+<br><br>
 
 ### --mbx-review-background-light
 
@@ -58,7 +58,7 @@ VAR_DESCRIPTION_1<br><br>
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-review-background](#mbx-review-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](global-css-vars.md#mbx-background-light)</div> |
 
-VAR_DESCRIPTION_2<br><br>
+<br><br>
 
 ### --mbx-review-text-color
 
@@ -68,7 +68,7 @@ VAR_DESCRIPTION_2<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_3<br><br>
+<br><br>
 
 ### --mbx-review-text-color-light
 
@@ -78,7 +78,7 @@ VAR_DESCRIPTION_3<br><br>
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-review-text-color](#mbx-review-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)</div> |
 
-VAR_DESCRIPTION_4<br><br>
+<br><br>
 
 ### --mbx-review-text-color-dark
 
@@ -88,7 +88,7 @@ VAR_DESCRIPTION_4<br><br>
 | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-review-text-color](#mbx-review-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)</div> |
 
-VAR_DESCRIPTION_5<br><br>
+<br><br>
 
 ### --mbx-review-link-color
 
@@ -98,7 +98,7 @@ VAR_DESCRIPTION_5<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_6<br><br>
+<br><br>
 
 ### --mbx-review-link-color-light
 
@@ -108,7 +108,7 @@ VAR_DESCRIPTION_6<br><br>
 | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-review-link-color](#mbx-review-link-color)</div> | <div style='text-align:center;margin:auto;'>#615f5f</div> |
 
-VAR_DESCRIPTION_7<br><br>
+<br><br>
 
 ### --mbx-review-link-color-dark
 
@@ -118,7 +118,7 @@ VAR_DESCRIPTION_7<br><br>
 | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-review-link-color](#mbx-review-link-color)</div> | <div style='text-align:center;margin:auto;'>white</div>   |
 
-VAR_DESCRIPTION_8<br><br>
+<br><br>
 
 ### --mbx-review-github-color
 
@@ -128,7 +128,7 @@ VAR_DESCRIPTION_8<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_9<br><br>
+<br><br>
 
 ### --mbx-review-github-color-light
 
@@ -138,7 +138,7 @@ VAR_DESCRIPTION_9<br><br>
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-review-github-color](#mbx-review-github-color)</div> | <div style='text-align:center;margin:auto;'>#615f5f</div> |
 
-VAR_DESCRIPTION_10<br><br>
+<br><br>
 
 ### --mbx-review-github-color-dark
 
@@ -148,4 +148,4 @@ VAR_DESCRIPTION_10<br><br>
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-review-github-color](#mbx-review-github-color)</div> | <div style='text-align:center;margin:auto;'>white</div>   |
 
-VAR_DESCRIPTION_11<br><br>
+<br><br>

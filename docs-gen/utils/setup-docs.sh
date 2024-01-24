@@ -35,7 +35,7 @@ done
 
 cp "$OUTPUT_CSSVARS_PATH"/global/index.md "$OUTPUT_PATH"/global/css-vars.md
 cp "$OUTPUT_PROPS_PATH"/global/index.md "$OUTPUT_PATH"/global/props.md
-cp "$OUTPUT_CSSVARS_PATH"/index.md "$OUTPUT_PATH"/global/css-vars.md
-cp "$OUTPUT_PROPS_PATH"/index.md "$OUTPUT_PATH"/global/props.md
+cp "$OUTPUT_CSSVARS_PATH"/index.md "$OUTPUT_PATH"/css-vars.md
+cp "$OUTPUT_PROPS_PATH"/index.md "$OUTPUT_PATH"/props.md
 rm -rf "$OUTPUT_CSSVARS_PATH"
 rm -rf "$OUTPUT_PROPS_PATH"

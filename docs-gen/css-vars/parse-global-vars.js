@@ -51,7 +51,7 @@ Object.keys(cssVars).forEach((cssvar, index) => {
   );
   readmeVarsTable = readmeVarsTable.replace(
     "PROP_NAME_" + index,
-    `[${cssvar}](docs/css-vars/global/index.md#${cssvar.replace("--", "")})`
+    `[${cssvar}](docs/components/global/css-vars.md#${cssvar.replace("--", "")})`
   );
 
   if (cssVars[cssvar].description) {
@@ -67,7 +67,7 @@ Object.keys(cssVars).forEach((cssvar, index) => {
   if (cssVars[cssvar].fallback) {
     const fallback = cssVars[cssvar].fallback.replace("--", "");
     internalFallBack = `[${cssVars[cssvar].fallback}](#${fallback})`;
-    readmeFallBack = `[${cssVars[cssvar].fallback}](docs/css-vars/global/index.md#${fallback})`;
+    readmeFallBack = `[${cssVars[cssvar].fallback}](docs/components/global/css-vars.md#${fallback})`;
   }
 
   readmeVarsTable = readmeVarsTable.replace(

@@ -1,4 +1,8 @@
 {
+  "children": {
+    "type": "(JSX.Element | string) | (JSX.Element | string)[]",
+    "description": "Button content"
+  },
   "onClick": {
     "type": "() => void",
     "description": "This callback is triggered everytime the user clicks on the button"

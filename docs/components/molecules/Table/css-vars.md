@@ -41,7 +41,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_0<br><br>
+<br><br>
 
 ### --mbx-table-background-dark
 
@@ -51,7 +51,7 @@ VAR_DESCRIPTION_0<br><br>
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-table-background](#mbx-table-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](global-css-vars.md#mbx-background-dark)</div> |
 
-VAR_DESCRIPTION_1<br><br>
+<br><br>
 
 ### --mbx-table-background-light
 
@@ -61,7 +61,7 @@ VAR_DESCRIPTION_1<br><br>
 | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-table-background](#mbx-table-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](global-css-vars.md#mbx-background-light)</div> |
 
-VAR_DESCRIPTION_2<br><br>
+<br><br>
 
 ### --mbx-table-text-color
 
@@ -71,7 +71,7 @@ VAR_DESCRIPTION_2<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_3<br><br>
+<br><br>
 
 ### --mbx-table-text-color-light
 
@@ -81,7 +81,7 @@ VAR_DESCRIPTION_3<br><br>
 | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-table-text-color](#mbx-table-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)</div> |
 
-VAR_DESCRIPTION_4<br><br>
+<br><br>
 
 ### --mbx-table-text-color-dark
 
@@ -91,7 +91,7 @@ VAR_DESCRIPTION_4<br><br>
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-table-text-color](#mbx-table-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)</div> |
 
-VAR_DESCRIPTION_5<br><br>
+<br><br>
 
 ### --mbx-table-header-background
 
@@ -101,7 +101,7 @@ VAR_DESCRIPTION_5<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_6<br><br>
+<br><br>
 
 ### --mbx-table-header-background-dark
 
@@ -111,7 +111,7 @@ VAR_DESCRIPTION_6<br><br>
 | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-table-header-background](#mbx-table-header-background)</div> | <div style='text-align:center;margin:auto;'>linear-gradient(to right, #4b5b77, #3e4c64)</div> |
 
-VAR_DESCRIPTION_7<br><br>
+<br><br>
 
 ### --mbx-table-header-background-light
 
@@ -121,7 +121,7 @@ VAR_DESCRIPTION_7<br><br>
 | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-table-header-background](#mbx-table-header-background)</div> | <div style='text-align:center;margin:auto;'>linear-gradient(to right, #354155, #2b3546)</div> |
 
-VAR_DESCRIPTION_8<br><br>
+<br><br>
 
 ### --mbx-table-header-text-color
 
@@ -131,7 +131,7 @@ VAR_DESCRIPTION_8<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_9<br><br>
+<br><br>
 
 ### --mbx-table-header-text-color-light
 
@@ -141,7 +141,7 @@ VAR_DESCRIPTION_9<br><br>
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | <div style='text-align:center;margin:auto;'>[mbx-table-header-text-color](#mbx-table-header-text-color)</div> | <div style='text-align:center;margin:auto;'>whitesmoke</div> |
 
-VAR_DESCRIPTION_10<br><br>
+<br><br>
 
 ### --mbx-table-header-text-color-dark
 
@@ -151,7 +151,7 @@ VAR_DESCRIPTION_10<br><br>
 | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-table-header-text-color](#mbx-table-header-text-color)</div> | <div style='text-align:center;margin:auto;'>rgb(255, 255, 255)</div> |
 
-VAR_DESCRIPTION_11<br><br>
+<br><br>
 
 ### --mbx-table-border-color
 
@@ -161,7 +161,7 @@ VAR_DESCRIPTION_11<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_12<br><br>
+<br><br>
 
 ### --mbx-table-border-color-light
 
@@ -171,7 +171,7 @@ VAR_DESCRIPTION_12<br><br>
 | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-table-border-color](#mbx-table-border-color)</div> | <div style='text-align:center;margin:auto;'>darkslategrey</div> |
 
-VAR_DESCRIPTION_13<br><br>
+<br><br>
 
 ### --mbx-table-border-color-dark
 
@@ -181,4 +181,4 @@ VAR_DESCRIPTION_13<br><br>
 | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-table-border-color](#mbx-table-border-color)</div> | <div style='text-align:center;margin:auto;'>rgb(219, 219, 219)</div> |
 
-VAR_DESCRIPTION_14<br><br>
+<br><br>

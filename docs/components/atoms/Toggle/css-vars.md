@@ -14,8 +14,8 @@
 | <div style='text-align:center;margin:auto;'>Prop</div>                                                                                    | <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background](#mbx-toggle-background)</div>                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                         | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-light](#mbx-toggle-background-light)</div>                           | <div style='text-align:center;margin:auto;'>[mbx-toggle-background](#mbx-toggle-background)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../../global/index.md#mbx-background-light)</div>                                                                                                                       |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-dark](#mbx-toggle-background-dark)</div>                             | <div style='text-align:center;margin:auto;'>[mbx-toggle-background](#mbx-toggle-background)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../../global/index.md#mbx-background-dark)</div>                                                                                                                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-light](#mbx-toggle-background-light)</div>                           | <div style='text-align:center;margin:auto;'>[mbx-toggle-background](#mbx-toggle-background)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div>                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-dark](#mbx-toggle-background-dark)</div>                             | <div style='text-align:center;margin:auto;'>[mbx-toggle-background](#mbx-toggle-background)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#mbx-background-dark)</div>                                                                                                                         |
 | <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-internal-color](#mbx-toggle-icon-on-internal-color)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                         | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
 | <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-internal-color-light](#mbx-toggle-icon-on-internal-color-light)</div>   | <div style='text-align:center;margin:auto;'>[mbx-toggle-icon-on-internal-color](#mbx-toggle-icon-on-internal-color)</div>   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ffffff</div><div style='text-align:center;margin-auto;'><div style='background:#ffffff;margin:auto; width:15px; height:15px;'/></div></div></div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-internal-color-dark](#mbx-toggle-icon-on-internal-color-dark)</div>     | <div style='text-align:center;margin:auto;'>[mbx-toggle-icon-on-internal-color](#mbx-toggle-icon-on-internal-color)</div>   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ffffff</div><div style='text-align:center;margin-auto;'><div style='background:#ffffff;margin:auto; width:15px; height:15px;'/></div></div></div> |
@@ -41,7 +41,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_0<br><br>
+<br><br>
 
 ### --mbx-toggle-background-light
 
@@ -49,9 +49,9 @@ VAR_DESCRIPTION_0<br><br>
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-toggle-background](#mbx-toggle-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../../global/index.md#mbx-background-light)</div> |
+| <div style='text-align:center;margin:auto;'>[mbx-toggle-background](#mbx-toggle-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div> |
 
-VAR_DESCRIPTION_1<br><br>
+<br><br>
 
 ### --mbx-toggle-background-dark
 
@@ -59,9 +59,9 @@ VAR_DESCRIPTION_1<br><br>
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                               |
 | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-toggle-background](#mbx-toggle-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../../global/index.md#mbx-background-dark)</div> |
+| <div style='text-align:center;margin:auto;'>[mbx-toggle-background](#mbx-toggle-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#mbx-background-dark)</div> |
 
-VAR_DESCRIPTION_2<br><br>
+<br><br>
 
 ### --mbx-toggle-icon-on-internal-color
 
@@ -71,7 +71,7 @@ VAR_DESCRIPTION_2<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_3<br><br>
+<br><br>
 
 ### --mbx-toggle-icon-on-internal-color-light
 
@@ -81,7 +81,7 @@ VAR_DESCRIPTION_3<br><br>
 | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-toggle-icon-on-internal-color](#mbx-toggle-icon-on-internal-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ffffff</div><div style='text-align:center;margin-auto;'><div style='background:#ffffff;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-VAR_DESCRIPTION_4<br><br>
+<br><br>
 
 ### --mbx-toggle-icon-on-internal-color-dark
 
@@ -91,7 +91,7 @@ VAR_DESCRIPTION_4<br><br>
 | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-toggle-icon-on-internal-color](#mbx-toggle-icon-on-internal-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ffffff</div><div style='text-align:center;margin-auto;'><div style='background:#ffffff;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-VAR_DESCRIPTION_5<br><br>
+<br><br>
 
 ### --mbx-toggle-icon-on-external-color
 
@@ -101,7 +101,7 @@ VAR_DESCRIPTION_5<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_6<br><br>
+<br><br>
 
 ### --mbx-toggle-icon-on-external-color-light
 
@@ -111,7 +111,7 @@ VAR_DESCRIPTION_6<br><br>
 | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-toggle-icon-on-external-color](#mbx-toggle-icon-on-external-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#adadad</div><div style='text-align:center;margin-auto;'><div style='background:#adadad;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-VAR_DESCRIPTION_7<br><br>
+<br><br>
 
 ### --mbx-toggle-icon-on-external-color-dark
 
@@ -121,7 +121,7 @@ VAR_DESCRIPTION_7<br><br>
 | ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-toggle-icon-on-external-color](#mbx-toggle-icon-on-external-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#adadad</div><div style='text-align:center;margin-auto;'><div style='background:#adadad;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-VAR_DESCRIPTION_8<br><br>
+<br><br>
 
 ### --mbx-toggle-icon-off-internal-color
 
@@ -131,7 +131,7 @@ VAR_DESCRIPTION_8<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_9<br><br>
+<br><br>
 
 ### --mbx-toggle-icon-off-internal-color-light
 
@@ -141,7 +141,7 @@ VAR_DESCRIPTION_9<br><br>
 | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-toggle-icon-off-internal-color](#mbx-toggle-icon-off-internal-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a5a5a5</div><div style='text-align:center;margin-auto;'><div style='background:#a5a5a5;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-VAR_DESCRIPTION_10<br><br>
+<br><br>
 
 ### --mbx-toggle-icon-off-internal-color-dark
 
@@ -151,7 +151,7 @@ VAR_DESCRIPTION_10<br><br>
 | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-toggle-icon-off-internal-color](#mbx-toggle-icon-off-internal-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a5a5a5</div><div style='text-align:center;margin-auto;'><div style='background:#a5a5a5;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-VAR_DESCRIPTION_11<br><br>
+<br><br>
 
 ### --mbx-toggle-icon-off-external-color
 
@@ -161,7 +161,7 @@ VAR_DESCRIPTION_11<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_12<br><br>
+<br><br>
 
 ### --mbx-toggle-icon-off-external-color-light
 
@@ -171,7 +171,7 @@ VAR_DESCRIPTION_12<br><br>
 | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-toggle-icon-off-external-color](#mbx-toggle-icon-off-external-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a7a3a3</div><div style='text-align:center;margin-auto;'><div style='background:#a7a3a3;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-VAR_DESCRIPTION_13<br><br>
+<br><br>
 
 ### --mbx-toggle-icon-off-external-color-dark
 
@@ -181,4 +181,4 @@ VAR_DESCRIPTION_13<br><br>
 | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-toggle-icon-off-external-color](#mbx-toggle-icon-off-external-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a7a3a3</div><div style='text-align:center;margin-auto;'><div style='background:#a7a3a3;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-VAR_DESCRIPTION_14<br><br>
+<br><br>
