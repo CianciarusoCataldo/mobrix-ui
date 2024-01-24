@@ -10,11 +10,11 @@
   },
   "--mbx-radio-background-hover": {},
   "--mbx-radio-background-hover-light": {
-    "default": "radial-gradient(#f1f1f1 20%, #cfcfcf 30%, #a7a7a7 55%, #f0f0f0 20%)",
+    "defaultInternal": "--mbx-radio-background-light",
     "fallback": "--mbx-radio-background-hover"
   },
   "--mbx-radio-background-hover-dark": {
-    "default": "radial-gradient(#354155 20%, #2d3747 30%, #2b2e5f 55%, #323f55 20%)",
+    "defaultInternal": "--mbx-radio-background-dark",
     "fallback": "--mbx-radio-background-hover"
   },
   "--mbx-radio-icon-background": {},

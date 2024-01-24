@@ -13,7 +13,7 @@ const tabs = (
     tabSelectedClassName="demo-tab-selected"
     tabUnselectedClassName="demo-tab-unselected"
     //dark
-    selected={2}
+    selected={1}
     tabs={[
       {
         label: "Atoms",
@@ -42,7 +42,10 @@ const App = () => {
         dark
         hide={!isVisible}
         animated
-        onClose={() => setVisible(false)}
+        onClose={() => {
+          console.log("drawer close");
+          setVisible(false);
+        }}
         position={position}
       >
         <div

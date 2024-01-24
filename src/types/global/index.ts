@@ -1,6 +1,7 @@
 /** Shared types */
 export {
   BuilderComponent,
+  BuilderPropsReactive,
   BuilderProps,
   ClickableComponent,
   ClosableComponent,

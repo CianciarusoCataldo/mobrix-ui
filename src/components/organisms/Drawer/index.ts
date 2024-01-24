@@ -7,6 +7,7 @@ import { DrawerComponent } from "../../../types";
 import { buildMobrixUiStandardComponent } from "../../../tools";
 
 import drawerComponent from "./component";
+import { buildMbxStandardComponent } from "../../../tools/utils";
 
 const ALLOWED_POSITIONS = [
   "right",
@@ -77,10 +78,10 @@ const Drawer: DrawerComponent = ({
     }, 200);
   };
 
-  return buildMobrixUiStandardComponent({
+  return buildMbxStandardComponent(commonProps,(props)=>({
     name: "drawer",
     commonProps: {
-      ...commonProps,
+      ...props,
       hide: value.length === 0 && hide,
       /* istanbul ignore next */
       onFocusLost: () => {
@@ -100,9 +101,9 @@ const Drawer: DrawerComponent = ({
       children,
       hide,
       onClose: onCloseCallback,
-      ...commonProps,
+      ...props,
     }),
-  });
+  }));
 };
 
 export default Drawer;

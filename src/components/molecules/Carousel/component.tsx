@@ -12,6 +12,7 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
   elements = [],
   dark,
   disabled,
+  hover,
 }) => {
   const [activeClassName, setActiveClassname] = React.useState("");
   const [hoveredDot, setHoveredDot] = React.useState<number | null>(null);

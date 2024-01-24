@@ -81,12 +81,12 @@
 
   --mbx-c-cal-arr-h-l: var(
     --mbx-calendar-arrow-hover-light,
-    var(--mbx-calendar-arrow-hover, var(--mbx-c-txt-h-l))
+    var(--mbx-calendar-arrow-hover, var(--mbx-c-txt-l))
   );
 
   --mbx-c-cal-arr-h-d: var(
     --mbx-calendar-arrow-hover-dark,
-    var(--mbx-calendar-arrow-hover, var(--mbx-c-txt-h-d))
+    var(--mbx-calendar-arrow-hover, var(--mbx-c-txt-d))
   );
 
   /** DatePicker **/
@@ -219,11 +219,11 @@
   );
   --mbx-c-draw-arr-h-l: var(
     --mbx-drawer-arrow-light,
-    var(--mbx-drawer-arrow, var(--mbx-d-draw-arr-h))
+    var(--mbx-drawer-arrow, var(--mbx-c-draw-arr-l))
   );
   --mbx-c-draw-arr-h-d: var(
     --mbx-drawer-arrow-dark,
-    var(--mbx-drawer-arrow, var(--mbx-d-draw-arr-h))
+    var(--mbx-drawer-arrow, var(--mbx-c-draw-arr-d))
   );
 
   /** Form **/

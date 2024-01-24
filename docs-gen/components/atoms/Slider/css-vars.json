@@ -1,11 +1,11 @@
 {
   "--mbx-slider-background": {},
   "--mbx-slider-background-dark": {
-    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
+    "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-slider-background"
   },
   "--mbx-slider-background-light": {
-    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-slider-background"
   },
   "--mbx-slider-thumb-color": {},
@@ -19,11 +19,11 @@
   },
   "--mbx-slider-thumb-color-hover": {},
   "--mbx-slider-thumb-color-hover-light": {
-    "default": "radial-gradient(#364257, #2a3444)",
+    "defaultInternal": "--mbx-slider-thumb-color-light",
     "fallback": "--mbx-slider-thumb-color-hover"
   },
   "--mbx-slider-thumb-color-hover-dark": {
-    "default": "radial-gradient(#e8e9f0, #adabab)",
+    "defaultInternal": "--mbx-slider-thumb-color-dark",
     "fallback": "--mbx-slider-thumb-color-hover"
   }
 }

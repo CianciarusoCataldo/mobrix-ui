@@ -3,6 +3,7 @@ import "./styles.css";
 import { LinkComponent } from "../../../types";
 
 import { buildMobrixUiStandardComponent } from "../../../tools";
+import { buildMbxStandardComponent } from "../../../tools/utils";
 
 /**
  * A re-defined `<a>` component, designed to be better used with links
@@ -46,18 +47,22 @@ const Link: LinkComponent = ({
   additionalProps = {},
   ...commonProps
 }) =>
-  buildMobrixUiStandardComponent({
-    name: "link",
-    Component: children,
-    commonProps,
-    additionalProps: {
-      ...additionalProps,
-      ...(!commonProps.disabled && {
-        href: to,
-        target: newTab ? "_blank" : undefined,
-      }),
-    },
-    wrapper: commonProps.disabled ? "span" : "a",
-  });
+  buildMbxStandardComponent(
+    { ...commonProps, shadow: false },
+    (props) => ({
+      name: "link",
+      Component: children,
+      commonProps: props,
+      additionalProps: {
+        ...additionalProps,
+        "data-mbx-opacityhover": props.hover && !props.disabled,
+        ...(!props.disabled && {
+          href: to,
+          target: newTab ? "_blank" : undefined,
+        }),
+      },
+      wrapper: props.disabled ? "span" : "a",
+    })
+  );
 
 export default Link;

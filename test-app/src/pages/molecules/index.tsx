@@ -80,7 +80,8 @@ const MoleculesPage = () => {
   }) => {
     return (
       <Container
-        noBackground
+        background={false}
+        shadow={false}
         style={{
           padding: "0.5rem",
           marginBottom: "1rem",
@@ -98,7 +99,12 @@ const MoleculesPage = () => {
   };
 
   return (
-    <Container noBackground className="App" style={{ height: "110%" }}>
+    <Container
+      shadow={false}
+      background={false}
+      className="App"
+      style={{ height: "110%" }}
+    >
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -130,7 +136,7 @@ const MoleculesPage = () => {
               header="header"
               body="Card dark no background"
               footer="footer"
-              noBackground
+              background={false}
             />
             <div style={{ marginTop: "20px" }} />
             <Card dark noDividers header="header" body="body" footer="footer" />
@@ -194,8 +200,27 @@ const MoleculesPage = () => {
                 <img alt="" src={Elem2} width="250px" height="250px" />,
               ]}
             />
+
             <Carousel
-              noBackground
+              hover={false}
+              elements={[
+                <img alt="" src={Elem0} width="250px" height="250px" />,
+                <img alt="" src={Elem1} width="250px" height="250px" />,
+                <img alt="" src={Elem2} width="250px" height="250px" />,
+              ]}
+            />
+            <Carousel
+              hover={false}
+              dark
+              elements={[
+                <img alt="" src={Elem0} width="250px" height="250px" />,
+                <img alt="" src={Elem1} width="250px" height="250px" />,
+                <img alt="" src={Elem2} width="250px" height="250px" />,
+              ]}
+            />
+
+            <Carousel
+              background={false}
               elements={[
                 <img alt="" src={Elem0} width="250px" height="250px" />,
                 <img alt="" src={Elem1} width="250px" height="250px" />,
@@ -204,7 +229,7 @@ const MoleculesPage = () => {
             />
             <Carousel
               dark
-              noBackground
+              background={false}
               elements={[
                 <img alt="" src={Elem0} width="250px" height="250px" />,
                 <img alt="" src={Elem1} width="250px" height="250px" />,
@@ -226,9 +251,13 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Dropdown disabled dark elements={["el 1", "el 2", "el 3"]} />
             <div style={{ marginTop: "20px" }} />
-            <Dropdown noBackground elements={["el 1", "el 2", "el 3"]} />
+            <Dropdown background={false} elements={["el 1", "el 2", "el 3"]} />
             <div style={{ marginTop: "20px" }} />
-            <Dropdown noBackground dark elements={["el 1", "el 2", "el 3"]} />
+            <Dropdown
+              background={false}
+              dark
+              elements={["el 1", "el 2", "el 3"]}
+            />
           </div>
         }
       />
@@ -260,9 +289,8 @@ const MoleculesPage = () => {
             <DismissableCard header="header" body="body" footer="footer" />{" "}
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
-              noHover
               alwaysVisible
-              header="Always visible nohover"
+              header="Always visible"
               body="body"
               footer="footer"
             />{" "}
@@ -322,45 +350,6 @@ const MoleculesPage = () => {
               footer="footer"
             />
             <div style={{ marginTop: "20px" }} />
-            <DismissableCard unstyled />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard unstyled header="header" />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard unstyled body="body" />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard unstyled footer="footer" />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              unstyled
-              header="header"
-              body="body"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              unstyled
-              noTopDivider
-              header="header"
-              body="body"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              unstyled
-              noBottomDivider
-              header="header"
-              body="body"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              unstyled
-              noDividers
-              header="header"
-              body="body"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
             <DismissableCard
               disabled
               header="header"
@@ -380,14 +369,14 @@ const MoleculesPage = () => {
               header="header"
               body="body"
               footer="footer"
-              noBackground
+              background={false}
             />
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
               header="header"
               body="body"
               footer="footer"
-              noBackground
+              background={false}
               dark
             />
           </div>
@@ -475,7 +464,7 @@ const MoleculesPage = () => {
             </ExpandableContainer>
 
             <ExpandableContainer
-              noBackground
+              background={false}
               expanded={
                 <div>
                   <p>Expanded area</p>
@@ -493,7 +482,7 @@ const MoleculesPage = () => {
               </div>
             </ExpandableContainer>
             <ExpandableContainer
-              noBackground
+              background={false}
               dark
               expanded={
                 <div>
@@ -631,7 +620,7 @@ const MoleculesPage = () => {
               ]}
             />
             <RadioButtonGroup
-              noBackground
+              background={false}
               buttons={[
                 { text: "textPosition = left", textPosition: "left" },
                 { text: "textPosition = top", textPosition: "top" },
@@ -640,7 +629,7 @@ const MoleculesPage = () => {
               ]}
             />
             <RadioButtonGroup
-              noBackground
+              background={false}
               dark
               horizontal
               buttons={[
@@ -752,7 +741,7 @@ const MoleculesPage = () => {
               icon={userIcon}
             />
             <Review
-              noBackground
+              background={false}
               user="User"
               rate={4}
               url="https://github.com"
@@ -762,7 +751,7 @@ const MoleculesPage = () => {
             />
             <Review
               dark
-              noBackground
+              background={false}
               user="User"
               logo="link"
               rate={4}
@@ -857,7 +846,7 @@ const MoleculesPage = () => {
               />
               <div style={{ marginTop: "20px" }} />
               <Table
-                noBackground
+                background={false}
                 headers
                 rows={[
                   ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
@@ -870,7 +859,7 @@ const MoleculesPage = () => {
               />
               <div style={{ marginTop: "20px" }} />
               <Table
-                noBackground
+                background={false}
                 dark
                 headers
                 rows={[

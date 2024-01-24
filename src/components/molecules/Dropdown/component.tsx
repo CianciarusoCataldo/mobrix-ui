@@ -5,7 +5,7 @@ import {
   MobrixUiReactiveComponentBuilder,
 } from "../../../types";
 
-import { Button } from "../../atoms";
+import { Button, IconButton } from "../../atoms";
 import Popup from "../Popup";
 import Container from "../Container";
 
@@ -104,7 +104,9 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
     },
     Component: [
       <Button
-        noBackground={commonProps.noBackground}
+        animated={false}
+        shadow={false}
+        background={commonProps.background}
         disabled={disabled}
         onClick={() => {
           keyDownCallback(!isVisible);
@@ -124,10 +126,9 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
         >
           {selectedItem}
         </div>
-        <Container
+        <IconButton
           hide={hideArrow}
           dark={dark}
-          noBackground
           key="icon"
           disabled={disabled}
           a11y={false}
@@ -139,10 +140,10 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
           <p tabIndex={-1}>
             <i data-mbx-class="arrow-icon" data-mbx-enabled={!disabled}></i>
           </p>
-        </Container>
+        </IconButton>
       </Button>,
       <Popup
-        noBackground={commonProps.noBackground}
+        background={commonProps.background}
         key="options"
         shadow={shadow}
         disabled={disabled}
@@ -155,7 +156,9 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
       >
         {elements.map((item, index) => (
           <Button
-            noBackground
+            animated={false}
+            shadow={false}
+            background={false}
             disabled={disabled}
             onFocus={() => {
               selectItem(index);
@@ -175,7 +178,8 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
             }}
           >
             <Container
-              noBackground
+              background={false}
+              shadow={false}
               dark={dark}
               additionalProps={{
                 "data-mbx-class": "dropdown-element",

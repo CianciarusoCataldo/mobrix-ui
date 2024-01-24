@@ -16,8 +16,7 @@
   overflow: hidden;
 }
 
-[data-mbx-id="expandable-container"]
-  [data-mbx-class="container-arrow-button"] {
+[data-mbx-id="expandable-container"] [data-mbx-class="container-arrow-button"] {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -62,6 +61,5 @@
   [data-mbx-id="expandable-container"][data-mbx-enabled="true"]
     [data-mbx-class="arrow"]:hover {
     fill: var(--mbx-c-exp-arr-h);
-    opacity: 0.5;
   }
 }

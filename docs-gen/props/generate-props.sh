@@ -43,7 +43,9 @@ for cssvar in $(cat docs-gen/components/shared-props.json | jq 'keys_unsorted[]'
     sed -i "s/PROP_DEFAULT/"PROP_DEFAULT_$COUNT"/" "$OUTPUT_FILE_PATH"/global/tmp_row_mini.md
     cat "$OUTPUT_FILE_PATH"/global/tmp_row_mini.md >>"$OUTPUT_FILE_PATH"/global/list.md
     echo -n "\n<br>\n" >>"$OUTPUT_FILE_PATH"/global/list.md
+    echo -n "\n\n<br>\n\n" >>"$OUTPUT_FILE_PATH"/global/list.md
     echo "\n\nVAR_DESCRIPTION_$COUNT" >>"$OUTPUT_FILE_PATH"/global/list.md
+    echo -n "\n\n<br>\n\n" >>"$OUTPUT_FILE_PATH"/global/list.md
     COUNT=$((COUNT + 1))
     rm "$OUTPUT_FILE_PATH"/global/tmp_row.md
     rm "$OUTPUT_FILE_PATH"/global/tmp_row_mini.md

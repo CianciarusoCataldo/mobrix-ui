@@ -3,8 +3,13 @@ import "../styles/components/index.css";
 
 import React, { useEffect, useRef } from "react";
 
-import { BuilderComponent, BuilderProps, CommonProps } from "../../types/global";
+import {
+  BuilderComponent,
+  BuilderProps,
+  CommonProps,
+} from "../../types/global";
 import { DEFAULT_COMMON_PROPS } from "./constants";
+import { BuilderPropsReactive } from "../../types/global";
 
 /* istanbul ignore next */
 const useOutsideAlerter = (ref: any, callback: () => void) => {
@@ -21,14 +26,17 @@ const useOutsideAlerter = (ref: any, callback: () => void) => {
   });
 };
 
-export const generateElementsArray = (components: { condition: boolean, component: BuilderComponent }[]) =>
-  components.filter(component => component.condition).map((component, index) => component.component)
-
+export const generateElementsArray = (
+  components: { condition: boolean; component: BuilderComponent }[]
+) =>
+  components
+    .filter((component) => component.condition)
+    .map((component, index) => component.component);
 
 export const parseCommonProps = (props: CommonProps): CommonProps => ({
   ...DEFAULT_COMMON_PROPS,
   ...props,
-})
+});
 /**
  * Build a standard {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component, providing shared functionalities and props, to optimize the process.
  *
@@ -58,18 +66,20 @@ export const buildMobrixUiStandardComponent = ({
 }: BuilderProps) => {
   let a11y = commonProps.a11y !== undefined ? commonProps.a11y : true;
 
-  const inputCommonProps = parseCommonProps(commonProps)
+  const inputCommonProps = parseCommonProps(commonProps);
 
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,
     "data-mbx-dark": !!inputCommonProps.dark,
+    "data-mbx-mode": inputCommonProps.dark ? "dark" : "light",
     "data-mbx-styled": !inputCommonProps.unstyled,
-    "data-mbx-shadow": inputCommonProps.shadow,
-    "data-mbx-animated": inputCommonProps.animated && !inputCommonProps.disabled,
+    "data-mbx-shadow": !!inputCommonProps.shadow,
+    "data-mbx-animated":
+      inputCommonProps.animated && !inputCommonProps.disabled,
     "data-mbx-hide": inputCommonProps.hide,
     "data-mbx-a11y": inputCommonProps.a11y,
-    "data-mbx-background": !inputCommonProps.noBackground,
-    "data-mbx-hover": (!inputCommonProps.noHover) && (!inputCommonProps.disabled),
+    "data-mbx-background": inputCommonProps.background,
+    "data-mbx-hover": inputCommonProps.hover && !inputCommonProps.disabled,
     "data-mbx-enabled": !inputCommonProps.disabled,
     "data-mbx-a11y-dark":
       a11y &&
@@ -84,7 +94,7 @@ export const buildMobrixUiStandardComponent = ({
     onFocus: commonProps.onFocus,
     onKeyDown: commonProps.onKeyDown,
     ...additionalProps,
-    ...inputCommonProps.additionalProps
+    ...inputCommonProps.additionalProps,
   };
 
   const wrapperRef = useRef(null);
@@ -117,7 +127,8 @@ export const buildMobrixUiStandardComponent = ({
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export const buildMobrixUiReactiveComponent = <T = any>({
+// prettier-ignore
+export const buildMobrixUiReactiveComponent = <T=any>({
   name,
   additionalProps,
   wrapper,
@@ -166,5 +177,38 @@ export const buildMobrixUiReactiveComponent = <T = any>({
     Component: Component && Component({ value, setValue }),
     wrapper,
     ...processedProps,
+  });
+};
+
+export const buildMbxStandardComponent: (
+  props: CommonProps,
+  callback: (props: CommonProps) => BuilderProps
+) => React.JSX.Element = (
+  /* istanbul ignore next */
+  commonProps,
+  callback
+) => {
+  const inputCommonProps = parseCommonProps(commonProps);
+
+  const builderProps = callback(inputCommonProps);
+
+  return buildMobrixUiStandardComponent({
+    commonProps: inputCommonProps,
+    ...builderProps,
+  });
+};
+
+// prettier-ignore
+export const buildMbxReactiveComponent = <T=any>(
+  sharedProps: CommonProps,
+  callback: (props:CommonProps) => BuilderPropsReactive<T>
+) => {
+  const inputCommonProps = parseCommonProps(sharedProps);
+
+  const builderProps = callback(inputCommonProps);
+
+  return buildMobrixUiReactiveComponent<T>({
+    commonProps: inputCommonProps,
+    ...builderProps,
   });
 };

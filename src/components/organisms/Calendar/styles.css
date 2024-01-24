@@ -70,6 +70,12 @@
   transform: scaleX(-1);
 }
 
+[data-mbx-id="calendar"] [data-mbx-calendar-arrow] {
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 [data-mbx-id="calendar"] [data-mbx-calendar-arrow] svg {
   fill: var(--mbx-c-cal-arr);
   width: 3rem;

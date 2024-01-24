@@ -2,9 +2,8 @@ import "./styles.css";
 
 import { DropdownComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
-
 import dropdownComponentBuilder from "./component";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
  * Show a list of elements in a dropdown menu (with fade-in and out effects).
@@ -52,24 +51,21 @@ const Dropdown: DropdownComponent = ({
   additionalProps,
   ...commonProps
 }) =>
-  buildMobrixUiReactiveComponent({
+  buildMbxReactiveComponent(commonProps, (props) => ({
     name: "dropdown",
     defaultValue: 0,
     inputValue,
     additionalProps,
-    commonProps,
+    commonProps: props,
     props: (value, setValue) =>
       dropdownComponentBuilder({
         elements,
         onChange,
         value,
         hideArrow,
-        dark: commonProps.dark,
         setValue,
-        shadow: commonProps.shadow,
-        a11yDark: commonProps.a11yDark,
-        ...commonProps,
+        ...props,
       }),
-  });
+  }));
 
 export default Dropdown;

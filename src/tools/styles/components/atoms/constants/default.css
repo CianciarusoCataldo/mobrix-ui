@@ -20,52 +20,14 @@
     #191f29 20%
   );
 
-  --mbx-d-rad-ic-bg-d: radial-gradient(
-    circle at 23px 23px,
-    #dbe0e6,
-    #949494
-  );
+  --mbx-d-rad-ic-bg-d: radial-gradient(circle at 23px 23px, #dbe0e6, #949494);
 
-  --mbx-d-rad-ic-bg-l: radial-gradient(
-    circle at 23px 23px,
-    #2d3748,
-    #191f29
-  );
-
-  --mbx-d-rad-bg-h-l: radial-gradient(
-    #f1f1f1 20%,
-    #cfcfcf 30%,
-    #a7a7a7 55%,
-    #f0f0f0 20%
-  );
-
-  --mbx-d-rad-bg-h-d: radial-gradient(
-    #354155 20%,
-    #2d3747 30%,
-    #2b2e5f 55%,
-    #323f55 20%
-  );
+  --mbx-d-rad-ic-bg-l: radial-gradient(circle at 23px 23px, #2d3748, #191f29);
 
   /* Slider */
-  --mbx-d-sld-tb-l: radial-gradient(
-    #2d3748,
-    #1d232e
-  );
+  --mbx-d-sld-tb-l: radial-gradient(#2d3748, #1d232e);
 
-  --mbx-d-sld-tb-d: radial-gradient(
-    #e3e4e9,
-    #9b9999
-  );
-
-  --mbx-d-sld-tb-h-l: radial-gradient(
-    #364257,
-    #2a3444
-  );
-
-  --mbx-d-sld-tb-h-d: radial-gradient(
-    #e8e9f0,
-    #adabab
-  );
+  --mbx-d-sld-tb-d: radial-gradient(#e3e4e9, #9b9999);
 
   /** Spinner **/
   --mbx-d-spn-suc: #05bc29;

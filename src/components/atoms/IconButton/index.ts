@@ -1,9 +1,7 @@
 import "./styles.css";
 
-import { ButtonComponent } from "../../../types";
-
-import { buildMobrixUiStandardComponent } from "../../../tools";
 import { IconButtonComponent } from "../../../types/components/atoms/icon-button";
+import { buildMbxStandardComponent } from "../../../tools/utils";
 
 /**
  * A button component, designed for a lot of scenarios. Can be used as is, or as a clickable image
@@ -53,17 +51,19 @@ const IconButton: IconButtonComponent = ({
   additionalProps = {},
   ...commonProps
 }) =>
-  buildMobrixUiStandardComponent({
+  buildMbxStandardComponent(commonProps, (props) => ({
     name: "icon-button",
     wrapper: "button",
     additionalProps: {
       ...additionalProps,
-      onClick,
+      ...(!props.disabled && {
+        onClick,
+      }),
       onMouseEnter,
       onMouseLeave,
     },
     Component: children,
-    commonProps,
-  });
+    commonProps: { ...props, shadow: false },
+  }));
 
 export default IconButton;

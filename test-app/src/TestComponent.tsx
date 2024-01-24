@@ -83,15 +83,6 @@ const TestComponent2 = () => (
             headers
             rows={rows}
         />
-        <Table
-            unstyled
-            rows={rows}
-        />
-        <Table
-            unstyled
-            dark
-            rows={rows}
-        />
         <Calendar />
         <Calendar dark />
 

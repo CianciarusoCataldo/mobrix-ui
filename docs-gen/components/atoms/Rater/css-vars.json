@@ -1,11 +1,11 @@
 {
   "--mbx-rater-background": {},
-  "--mbx-rater-background-dark": {
-    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
+  "--mbx-rater-background-light": {
+    "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-rater-background"
   },
-  "--mbx-rater-background-light": {
-    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+  "--mbx-rater-background-dark": {
+    "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-rater-background"
   }
 }

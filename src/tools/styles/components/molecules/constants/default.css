@@ -6,8 +6,6 @@
   /** Carousel **/
   --mbx-d-car-arr-h-l: #287dfd;
   --mbx-d-car-arr-h-d: #ff8007;
-  --mbx-d-car-arr-l: #252525;
-  --mbx-d-car-arr-d: #e2e2e2;
 
   --mbx-d-car-dot-f-bg: linear-gradient(
     to top,
@@ -32,43 +30,21 @@
   /** DismissableCard **/
   --mbx-d-dcard-x-h: red;
 
-  /* Dropdown */
-  --mbx-d-drop-arr-l: #1b1b1b;
-
-  --mbx-d-drop-arr-d: #f5f5f5;
-
-  --mbx-d-drop-arr-h-l: #344053;
-
-  --mbx-d-drop-arr-h-d: #cccccc;
-
-  --mbx-d-drop-txt-h-l: #354053;
-
-  --mbx-d-drop-txt-h-d: #cccccc;
-
   /** Modal **/
   --mbx-d-field-err: red;
 
   /** Modal **/
   --mbx-d-mod-bg: rgba(0, 0, 0, 0.8);
   --mbx-d-mod-x: white;
-  --mbx-d-mod-x-h: red;
 
   /** Review **/
   --mbx-d-rev-link-l: #615f5f;
   --mbx-d-rev-link-d: white;
 
   /* Table */
-  --mbx-d-table-head-bg-l: linear-gradient(
-    to right,
-    #354155,
-    #2b3546
-  );
+  --mbx-d-table-head-bg-l: linear-gradient(to right, #354155, #2b3546);
 
-  --mbx-d-table-head-bg-d: linear-gradient(
-    to right,
-    #4b5b77,
-    #3e4c64
-  );
+  --mbx-d-table-head-bg-d: linear-gradient(to right, #4b5b77, #3e4c64);
   --mbx-d-table-bord-d: rgb(219, 219, 219);
 
   --mbx-d-table-bord-l: darkslategrey;
@@ -78,38 +54,14 @@
   --mbx-d-table-head-txt-d: rgb(255, 255, 255);
 
   /* Tab viewer */
-  --mbx-d-tabv-bg-d: linear-gradient(
-    to right,
-    #2d3748,
-    #1d232e
-  );
-  --mbx-d-tabv-bg-l: linear-gradient(
-    to right,
-    #cccccc,
-    #c7c7c7
-  );
+  --mbx-d-tabv-bg-d: linear-gradient(to right, #2d3748, #1d232e);
+  --mbx-d-tabv-bg-l: linear-gradient(to right, #cccccc, #c7c7c7);
 
-  --mbx-d-tabv-off-bg-l: linear-gradient(
-    to right,
-    #a1a0a0,
-    #797979
-  );
-  --mbx-d-tabv-off-bg-d: linear-gradient(
-    to right,
-    #3e4b63,
-    #3f4858
-  );
+  --mbx-d-tabv-off-bg-l: linear-gradient(to right, #a1a0a0, #797979);
+  --mbx-d-tabv-off-bg-d: linear-gradient(to right, #3e4b63, #3f4858);
 
-  --mbx-d-tabv-off-bg-h-l: linear-gradient(
-    to right,
-    #b6b4b4,
-    #999797
-  );
-  --mbx-d-tabv-off-bg-h-d: linear-gradient(
-    to right,
-    #566888,
-    #3c465a
-  );
+  --mbx-d-tabv-off-bg-h-l: linear-gradient(to right, #b6b4b4, #999797);
+  --mbx-d-tabv-off-bg-h-d: linear-gradient(to right, #566888, #3c465a);
 
   --mbx-d-tabv-off-txt: #c2c2c2;
 }

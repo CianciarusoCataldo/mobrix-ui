@@ -1,15 +1,11 @@
 import "./styles.css";
 
 import {
-  BuilderComponent,
-  FormFieldProps,
   FormFieldComponent,
-  MobrixUiProps,
 } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
-
 import FormFieldInternalComponent from "./component";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
  * A smart Form field, that render different components based on its type, to be better integrated into every scenario (for example, a Login form)
@@ -18,8 +14,8 @@ import FormFieldInternalComponent from "./component";
  *
  * @param {JSX.Element | string} header Form field header
  * @param {JSX.Element | string} errorLabel custom submit button content
-  * @param {boolean} required 
- * @param {(value: any)=>boolean} validate 
+ * @param {boolean} required
+ * @param {(value: any)=>boolean} validate
  * @param {(value:any) => void} onChange callback triggered when input value changes
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
@@ -57,12 +53,11 @@ const FormField: FormFieldComponent = ({
   header,
   className,
   value: inputValue,
-  shadow,
   ...sharedProps
 }) => {
-  return buildMobrixUiReactiveComponent({
+  return buildMbxReactiveComponent(sharedProps, (props) => ({
     name: "form-field",
-    commonProps: sharedProps,
+    commonProps: { ...props, shadow: false },
     Component: ({ value, setValue }) =>
       FormFieldInternalComponent({
         value,
@@ -74,12 +69,11 @@ const FormField: FormFieldComponent = ({
         validate,
         header,
         className,
-        shadow,
-        ...sharedProps,
+        ...props,
       }),
     inputValue,
     defaultValue: null,
-  });
+  }));
 };
 
 export default FormField;

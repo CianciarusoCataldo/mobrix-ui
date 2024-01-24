@@ -2,7 +2,10 @@ import "./styles.css";
 
 import { CounterComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
+import {
+  buildMobrixUiReactiveComponent,
+  parseCommonProps,
+} from "../../../tools";
 
 /**
  * A flexible numeric input element
@@ -53,6 +56,8 @@ const Counter: CounterComponent = ({
   additionalProps = {},
   ...commonProps
 }) => {
+  const parsedCommonProps = parseCommonProps(commonProps);
+
   return buildMobrixUiReactiveComponent<number | undefined>({
     wrapper: "input",
     name: "counterbox",
@@ -76,7 +81,10 @@ const Counter: CounterComponent = ({
         },
       },
     }),
-    commonProps,
+    commonProps: {
+      ...parsedCommonProps,
+      hover: parsedCommonProps.hover && !readOnly,
+    },
   });
 };
 

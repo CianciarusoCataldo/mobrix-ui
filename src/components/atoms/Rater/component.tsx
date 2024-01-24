@@ -3,7 +3,7 @@ import React from "react";
 import { MobrixUiReactiveComponent, RaterProps } from "../../../types";
 
 import { ICONS } from "./icons";
-import Button from "../Button";
+import IconButton from "../IconButton";
 
 const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
   type = "star",
@@ -37,9 +37,8 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
     }
 
     iconArray.push(
-      <Button
+      <IconButton
         key={`vote_${i}`}
-        noBackground
         disabled={disabled}
         additionalProps={{
           "data-mbx-test": `vote_${i}`,
@@ -59,7 +58,7 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
         })}
       >
         {ICONS[type][iconToShow]}
-      </Button>
+      </IconButton>
     );
   }
 

@@ -19,8 +19,9 @@
   display: none !important;
 }
 
-[data-mbx-id][data-mbx-animated="true"],
-[data-mbx-id][data-mbx-animated="true"] [data-mbx-animated="true"] {
+[data-mbx-id][data-mbx-animated="true"][data-mbx-animation="fade-in"],
+[data-mbx-id][data-mbx-animated="true"]
+  [data-mbx-animated="true"][data-mbx-animation="fade-in"] {
   animation: fadein 0.4s;
   -webkit-animation: fadein 0.4s;
   -moz-animation: fadein 0.4s;
@@ -71,5 +72,10 @@
     -webkit-box-shadow: 0 5px 13px -1px var(--mbx-c-fc);
     -moz-box-shadow: 0 5px 13px -1px var(--mbx-c-fc);
     -o-box-shadow: 0 5px 13px -1px var(--mbx-c-fc);
+  }
+
+  [data-mbx-id][data-mbx-opacityhover="true"]:hover,
+  [data-mbx-id] [data-mbx-opacityhover="true"]:hover {
+    opacity: 0.7;
   }
 }

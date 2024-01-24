@@ -5,6 +5,7 @@ import { CodeBoxComponent } from "../../../types";
 import { buildMobrixUiStandardComponent } from "../../../tools";
 
 import codeboxComponent from "./component";
+import { buildMbxStandardComponent } from "../../../tools/utils";
 
 /**
  * A smart code box, to display code text as a compiler.
@@ -48,17 +49,17 @@ const CodeBox: CodeBoxComponent = ({
   additionalProps,
   ...commonProps
 }) =>
-  buildMobrixUiStandardComponent({
+  buildMbxStandardComponent(commonProps, (props) => ({
     name: "codebox",
     additionalProps,
-    commonProps,
+    commonProps: props,
     Component: codeboxComponent({
       highlight,
       environment,
       value,
       noCopyButton,
-      ...commonProps,
+      ...props,
     }),
-  });
+  }));
 
 export default CodeBox;

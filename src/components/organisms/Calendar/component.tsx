@@ -13,7 +13,7 @@ import { getMonthsDuration, getDateMatrix } from "./utils";
 
 import { arrowIcon } from "../../molecules/Carousel/icons";
 
-import { Button, Label } from "../../atoms";
+import { Button, IconButton, Label } from "../../atoms";
 import { Table } from "../../molecules";
 
 const CalendarComponent: MobrixUiReactiveComponent<
@@ -36,6 +36,7 @@ const CalendarComponent: MobrixUiReactiveComponent<
   setValue,
   labelClassName,
   labelProps = {},
+  hover,
   ...commonProps
 }) => {
   const customProps = labelClassName
@@ -87,24 +88,25 @@ const CalendarComponent: MobrixUiReactiveComponent<
   };
 
   const getArrowButton = (direction: "left" | "right") => (
-    <Button
+    <IconButton
       disabled={disabled}
       onClick={() => {
         arrowActions[direction]();
         onViewChange({ ...onScreenDate, day: 1 });
       }}
       hide={hideArrows}
+      hover={hover}
       dark={commonProps.dark}
-      noBackground
       key={"arrow_" + direction}
       additionalProps={{
         "data-mbx-calendar-arrow": direction,
         "data-mbx-test": "arrow_" + direction,
+        "data-mbx-opacityhover": hover && !disabled,
       }}
       {...customProps}
     >
       {arrowIcon}
-    </Button>
+    </IconButton>
   );
 
   let components: JSX.Element[] = [];
@@ -178,7 +180,7 @@ const CalendarComponent: MobrixUiReactiveComponent<
           };
         } else return {};
       }}
-      noBackground={commonProps.noBackground}
+      background={commonProps.background}
       shadow={shadow}
       dark={commonProps.dark}
       headers

@@ -18,12 +18,16 @@ const codeboxComponent: MoBrixUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   environment = "terminal",
   noCopyButton,
   disabled,
+  hover,
 }) => [
   <div key="codebox_copy_icon" data-mbx-class="codebox-copy-icon">
     <IconButton
       onClick={() => code && navigator.clipboard.writeText(code)}
       hide={noCopyButton}
       disabled={disabled}
+      additionalProps={{
+        "data-mbx-opacityhover": hover && !disabled,
+      }}
     >
       {CopyIcon}
     </IconButton>

@@ -23,23 +23,35 @@ export interface CommonProps {
   /** {@link https://www.w3schools.com/html/html_id.asp id parameter} (for styling/testing purpose, to easily find the component into the DOM) */
   id?: string;
 
-  /** Enable/disable shadow behind component (default `false`) */
+  /** Enable/disable shadow behind component (default `true`) */
   shadow?: boolean;
 
   /** Css inline properties applied on main container */
   style?: CSSProperties;
 
+  /** If `false`, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons) (default `false`) */
+  styled?: boolean;
+
   /** If `true`, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons) (default `false`) */
   unstyled?: boolean;
 
-  /** Enable/disable component animations (default `false`) */
+  /** Enable/disable component animations (default `true`) */
   animated?: boolean;
 
-  /** If true, disable component background */
-  noBackground?: boolean;
+  /** If true, disable component animations */
+  noAnimation?: boolean;
 
-  /** If `true`, disable component hover standard styles (default `true`, but it is automatically disabled when `unstyled` parameter is `true` ) */
+  /** If false, disable component background */
+  background?: boolean;
+
+  /** If `true`, disable component hover standard styles (default `true`) */
   noHover?: boolean;
+
+  /** If `false`, disable component hover standard styles (default `true`) */
+  hover?: boolean;
+
+  /** If false, disable the component. The effect may vary depending on the component type */
+  enabled?: boolean;
 
   /** If true, disable the component. The effect may vary depending on the component type */
   disabled?: boolean;
@@ -312,3 +324,22 @@ export type MobrixUiReactiveComponent<
 export type DeepPartial<T> = {
   [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];
 };
+
+export type BuilderPropsReactive<T = BuilderComponent | BuilderComponent[]> =
+  BuilderProps<
+    (props: {
+      value: T;
+      setValue: React.Dispatch<React.SetStateAction<T>>;
+    }) => BuilderProps["Component"]
+  > & {
+    inputValue?: T;
+    defaultValue: T;
+    render?: (
+      value: T,
+      setValue: React.Dispatch<React.SetStateAction<T>>
+    ) => BuilderProps["Component"];
+    props?: (
+      value: T,
+      setValue: React.Dispatch<React.SetStateAction<T>>
+    ) => Omit<BuilderProps, "name">;
+  };

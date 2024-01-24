@@ -102,6 +102,7 @@ Some properties are shared between all components, for a smoother dev experience
 | <div style='text-align:center;margin:auto;'>[additionalProps](docs/props/global/index.md#additionalprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
+
 ### CSS variables
 
 <br>
@@ -133,6 +134,7 @@ MoBrix-ui is globally configurable, with CSS variables. By defining some specifi
 | <div style='text-align:center;margin:auto;'>[--mbx-focus-color-dark](docs/css-vars/global/index.md#mbx-focus-color-dark)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](docs/css-vars/global/index.md#mbx-focus-color)</div>                       | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#fb7a10</div><div style='text-align:center;margin-auto;'><div style='background:#fb7a10;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
 
 <br>
+
 ### Reactive components
 
 <br>
@@ -161,6 +163,7 @@ A clear example is the [Input](https://cianciarusocataldo.github.io/mobrix-ui/co
 <br>
 
 <br>
+
 <br>
 
 ## Getting started
@@ -225,6 +228,7 @@ If you want to customize the UI globally, initialize the dedicated [CSS variable
 ---
 
 <br>
+
 <br>
 
 ## Tests

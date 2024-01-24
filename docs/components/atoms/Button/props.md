@@ -11,11 +11,11 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                     | <div style='text-align:center;margin:auto;'>Type</div>                      | <div style='text-align:center;margin:auto;'>Default</div> |
-| ------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[onClick](#onClick)</div>           | <div style='text-align:center;margin:auto;'>[() => void](#() => void)</div> | <div style='text-align:center;margin:auto;'>PROP\_/</div> |
-| <div style='text-align:center;margin:auto;'>[onMouseEnter](#onMouseEnter)</div> | <div style='text-align:center;margin:auto;'>[() => void](#() => void)</div> | <div style='text-align:center;margin:auto;'>PROP\_/</div> |
-| <div style='text-align:center;margin:auto;'>[onMouseLeave](#onMouseLeave)</div> | <div style='text-align:center;margin:auto;'>[() => void](#() => void)</div> | <div style='text-align:center;margin:auto;'>PROP\_/</div> |
+| <div style='text-align:center;margin:auto;'>Parameter</div>                     | <div style='text-align:center;margin:auto;'>Type</div>       | <div style='text-align:center;margin:auto;'>Default</div> |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[onClick](#onclick)</div>           | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[onMouseEnter](#onmouseenter)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[onMouseLeave](#onmouseleave)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 
@@ -27,28 +27,28 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>                      | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[() => void](#() => void)</div> | <div style='text-align:center;margin:auto;'>PROP\_/</div> |
+| <div style='text-align:center;margin:auto;'>Type</div>       | <div style='text-align:center;margin:auto;'>Default</div> |
+| ------------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_0<br><br>
+This callback is triggered everytime the user clicks on the button<br><br>
 
 ### onMouseEnter
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>                      | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[() => void](#() => void)</div> | <div style='text-align:center;margin:auto;'>PROP\_/</div> |
+| <div style='text-align:center;margin:auto;'>Type</div>       | <div style='text-align:center;margin:auto;'>Default</div> |
+| ------------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_1<br><br>
+This callback is triggered everytime the cursor enter the button area<br><br>
 
 ### onMouseLeave
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>                      | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[() => void](#() => void)</div> | <div style='text-align:center;margin:auto;'>PROP\_/</div> |
+| <div style='text-align:center;margin:auto;'>Type</div>       | <div style='text-align:center;margin:auto;'>Default</div> |
+| ------------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-VAR_DESCRIPTION_2<br><br>
+This callback is triggered everytime the cursor exit the button area<br><br>

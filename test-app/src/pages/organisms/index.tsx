@@ -17,7 +17,8 @@ const AtomsPage = () => {
   }) => {
     return (
       <Container
-        noBackground
+        background={false}
+        shadow={false}
         style={{
           padding: "0.5rem",
           marginBottom: "1rem",
@@ -35,7 +36,13 @@ const AtomsPage = () => {
   };
 
   return (
-    <Container noBackground className="App" dark style={{ height: "110%" }}>
+    <Container
+      shadow={false}
+      background={false}
+      className="App"
+      dark
+      style={{ height: "110%" }}
+    >
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -56,8 +63,8 @@ const AtomsPage = () => {
             <Calendar dark />
             <Calendar disabled />
             <Calendar disabled dark />
-            <Calendar noBackground />
-            <Calendar noBackground dark />
+            <Calendar background={false} />
+            <Calendar background={false} dark />
           </div>
         }
         name="Calendar"
@@ -66,15 +73,15 @@ const AtomsPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <DatePicker
-              animated
               fromToday={false}
               labelClassName="calendar-test-label"
             />
-            <DatePicker animated dark fromToday={false} />
+            <DatePicker dark fromToday={false} />
             <DatePicker
+              animated={false}
               dark
-              noBackground
-              calendarProps={{ noBackground: true }}
+              background={false}
+              calendarProps={{ background: false }}
             />
             <DatePicker calendarProps={{ dark: true }} />
             <DatePicker animated disabled />
@@ -139,6 +146,32 @@ const AtomsPage = () => {
               }}
             />
             <Form
+              title="Test Form"
+              shadow={false}
+              submitLabel={"submit"}
+              fields={{
+                field1: {
+                  placeholder: "placeholder",
+                  header: "text",
+                },
+                field2: {
+                  placeholder: "placeholder",
+                  type: "boolean",
+                  header: "boolean",
+                },
+                field3: {
+                  placeholder: "placeholder",
+                  type: "numeric",
+                  header: "numeric",
+                },
+                field4: {
+                  placeholder: "placeholder",
+                  type: "radio",
+                  header: "radio",
+                },
+              }}
+            />
+            <Form
               title="Test Form disabled"
               disabled
               submitLabel={"submit"}
@@ -193,7 +226,7 @@ const AtomsPage = () => {
             />
             <Form
               title="Test Form"
-              noBackground
+              background={false}
               submitLabel={"submit"}
               fields={{
                 field1: {
@@ -220,7 +253,7 @@ const AtomsPage = () => {
             <Form
               title="Test Form"
               dark
-              noBackground
+              background={false}
               submitLabel={"submit"}
               fields={{
                 field1: {

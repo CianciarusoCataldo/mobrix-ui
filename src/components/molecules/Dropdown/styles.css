@@ -163,7 +163,7 @@
   }
 
   [data-mbx-id="dropdown"][data-mbx-enabled="true"][data-mbx-hover="true"]
-    [data-mbx-class="arrow-icon"]:hover {
+    [data-mbx-class="arrow-icon"][data-mbx-enabled="true"]:hover {
     border-color: var(--mbx-c-drop-arr-h);
     opacity: 0.5;
   }

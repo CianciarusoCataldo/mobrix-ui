@@ -82,11 +82,11 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                                     | <div style='text-align:center;margin:auto;'>Type</div>                                                      | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[onClick](components/atoms/Button/index.md#onClick)</div>           | <div style='text-align:center;margin:auto;'>[() => void](components/atoms/Button/index.md#() => void)</div> | <div style='text-align:center;margin:auto;'>PROP\_/</div> |
-| <div style='text-align:center;margin:auto;'>[onMouseEnter](components/atoms/Button/index.md#onMouseEnter)</div> | <div style='text-align:center;margin:auto;'>[() => void](components/atoms/Button/index.md#() => void)</div> | <div style='text-align:center;margin:auto;'>PROP\_/</div> |
-| <div style='text-align:center;margin:auto;'>[onMouseLeave](components/atoms/Button/index.md#onMouseLeave)</div> | <div style='text-align:center;margin:auto;'>[() => void](components/atoms/Button/index.md#() => void)</div> | <div style='text-align:center;margin:auto;'>PROP\_/</div> |
+| <div style='text-align:center;margin:auto;'>Parameter</div>                                                     | <div style='text-align:center;margin:auto;'>Type</div>       | <div style='text-align:center;margin:auto;'>Default</div> |
+| --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[onClick](components/atoms/Button/index.md#onclick)</div>           | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[onMouseEnter](components/atoms/Button/index.md#onmouseenter)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[onMouseLeave](components/atoms/Button/index.md#onmouseleave)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 <br>
@@ -95,8 +95,11 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Parameter</div>                                               | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](components/atoms/CheckBox/index.md#value)</div>       | <div style='text-align:center;margin:auto;'>/</div>    | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[onChamge](components/atoms/CheckBox/index.md#onchamge)</div> | <div style='text-align:center;margin:auto;'>/</div>    | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[icon](components/atoms/CheckBox/index.md#icon)</div>         | <div style='text-align:center;margin:auto;'>/</div>    | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 <br>

@@ -2,9 +2,8 @@ import "./styles.css";
 
 import { TabViewerComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
-
 import tabViewerComponent from "./component";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
  * A tabs manager, to let the user switch to different views by simply click on a different tab
@@ -64,8 +63,11 @@ const TabViewer: TabViewerComponent = ({
   additionalProps,
   ...commonProps
 }) =>
-  buildMobrixUiReactiveComponent({
-    commonProps,
+  buildMbxReactiveComponent(commonProps, (props) => ({
+    commonProps: {
+      ...props,
+      shadow: false,
+    },
     additionalProps,
     defaultValue: 0,
     inputValue: selected,
@@ -80,8 +82,8 @@ const TabViewer: TabViewerComponent = ({
         tabViewClassName,
         tabs,
         value: Number(value),
-        ...commonProps,
+        ...props,
       }),
-  });
+  }));
 
 export default TabViewer;

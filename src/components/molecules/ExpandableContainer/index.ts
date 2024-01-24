@@ -2,9 +2,8 @@ import "./styles.css";
 
 import { ExpandableContainerComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
-
 import expandableContainerComponent from "./component";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
  * An exapandable container, to hide/show some content on demand.
@@ -56,10 +55,10 @@ const ExpandableContainer: ExpandableContainerComponent = ({
   additionalProps,
   ...commonProps
 }) => {
-  return buildMobrixUiReactiveComponent({
+  return buildMbxReactiveComponent(commonProps, (props) => ({
     name: "expandable-container",
     defaultValue: false,
-    commonProps,
+    commonProps: props,
     wrapper,
     inputValue: startCompact,
     additionalProps,
@@ -70,14 +69,14 @@ const ExpandableContainer: ExpandableContainerComponent = ({
         expanded,
         children,
         onChange,
-        ...commonProps,
+        ...props,
       }),
     props: (value, setValue) => ({
       additionalProps: {
-        "data-mbx-compact": value
-      }
-    })
-  });
+        "data-mbx-compact": value,
+      },
+    }),
+  }));
 };
 
 export default ExpandableContainer;

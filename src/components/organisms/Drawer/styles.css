@@ -5,13 +5,16 @@
   z-index: 10;
   padding: 0;
   display: flex;
+  background: var(--mbx-c-draw-bg);
+  color: var(--mbx-c-draw-txt);
+  display: flex;
+}
+
+[data-mbx-id="drawer"][data-mbx-enabled="true"] {
   animation: var(--mbx-drawer-animation);
   -moz-animation: var(--mbx-drawer-animation);
   -ms-animation: var(--mbx-drawer-animation);
   -o-animation: var(--mbx-drawer-animation);
-  background: var(--mbx-c-draw-bg);
-  color: var(--mbx-c-draw-txt);
-  display: flex;
 }
 
 [data-mbx-id="drawer"] > [data-mbx-class="drawer-content"]::-webkit-scrollbar {

@@ -211,12 +211,12 @@
 
   --mbx-c-link-txt-h-l: var(
     --mbx-link-color-hover-light,
-    var(--mbx-link-color-hover, var(--mbx-c-txt-h-l))
+    var(--mbx-link-color-hover, var(--mbx-c-link-txt-l))
   );
 
   --mbx-c-link-txt-h-d: var(
     --mbx-link-color-hover-dark,
-    var(--mbx-link-color-hover, var(--mbx-c-txt-h-d))
+    var(--mbx-link-color-hover, var(--mbx-c-link-txt-d))
   );
 
   /* Radio Button */
@@ -232,12 +232,12 @@
 
   --mbx-c-rad-bg-h-l: var(
     --mbx-radio-background-hover-light,
-    var(--mbx-radio-background-hover, var(--mbx-d-rad-bg-h-l))
+    var(--mbx-radio-background-hover, var(--mbx-c-rad-bg-l))
   );
 
   --mbx-c-rad-bg-h-d: var(
     --mbx-radio-background-hover-dark,
-    var(--mbx-radio-background-hover, var(--mbx-d-rad-bg-h-d))
+    var(--mbx-radio-background-hover, var(--mbx-c-rad-bg-d))
   );
 
   --mbx-c-rad-ic-bg-l: var(
@@ -310,11 +310,11 @@
   );
   --mbx-c-sld-tb-h-l: var(
     --mbx-slider-thumb-color-hover-light,
-    var(--mbx-slider-thumb-color-hover, var(--mbx-d-sld-tb-h-l))
+    var(--mbx-slider-thumb-color-hover, var(--mbx-c-sld-tb-l))
   );
   --mbx-c-sld-tb-h-d: var(
     --mbx-slider-thumb-color-hover-dark,
-    var(--mbx-slider-thumb-color-hover, var(--mbx-d-sld-tb-h-d))
+    var(--mbx-slider-thumb-color-hover, var(--mbx-c-sld-tb-d))
   );
   --mbx-c-sld-bg-l: var(
     --mbx-slider-background-light,

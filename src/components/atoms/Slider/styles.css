@@ -13,7 +13,6 @@
 
 [data-mbx-id="slider"]::-ms-track {
   width: 100%;
-  cursor: pointer;
   background: var(--mbx-c-sld-tb);
   border-color: transparent;
   color: transparent;
@@ -26,7 +25,6 @@
   appearance: none;
   width: 30px;
   height: 30px;
-  cursor: pointer;
   background: var(--mbx-c-sld-tb);
 }
 
@@ -35,22 +33,23 @@
   appearance: none;
   width: 30px;
   height: 30px;
-  cursor: pointer;
   background: var(--mbx-c-sld-tb);
   -webkit-appearance: none;
 }
 
 [data-mbx-id="slider"][data-mbx-shadow="true"]::-webkit-slider-thumb {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media (hover) {
   [data-mbx-id="slider"][data-mbx-hover="true"]::-ms-track:hover {
     width: 100%;
-    cursor: pointer;
     background: var(--mbx-c-sld-tb-h);
     border-color: transparent;
     color: transparent;
+    opacity: 0.8;
   }
 
   [data-mbx-id="slider"][data-mbx-hover="true"]::-moz-range-thumb:hover {
@@ -60,7 +59,7 @@
     appearance: none;
     width: 30px;
     height: 30px;
-    cursor: pointer;
+    opacity: 0.8;
     background: var(--mbx-c-sld-tb-h);
   }
 
@@ -69,8 +68,8 @@
     appearance: none;
     width: 30px;
     height: 30px;
-    cursor: pointer;
     background: var(--mbx-c-sld-tb-h);
     -webkit-appearance: none;
+    opacity: 0.8;
   }
 }

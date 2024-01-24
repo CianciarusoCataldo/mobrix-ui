@@ -29,11 +29,3 @@
   > [data-mbx-id="icon-button"]:active {
   opacity: 0.3;
 }
-
-@media (hover) {
-  [data-mbx-id="codebox"][data-mbx-hover="true"][data-mbx-enabled="true"]
-    [data-mbx-class="codebox-copy-icon"]
-    > [data-mbx-id="icon-button"]:hover {
-    opacity: 0.8;
-  }
-}

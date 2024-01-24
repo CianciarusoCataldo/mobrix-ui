@@ -6,25 +6,25 @@ import {
   MoBrixUiComponent,
 } from "../../../types";
 
-import Button from "../../atoms/Button";
+import IconButton from "../../atoms/IconButton";
 
 const DrawerInternalComponent: MoBrixUiComponent<
   DrawerProps,
   BuilderComponent[]
-> = ({ onClose, children, dark, hide, animated, disabled }) => {
+> = ({ onClose, children, dark, hide, animated, disabled, hover }) => {
   return [
-    <Button
+    <IconButton
       disabled={disabled}
       animated={animated}
       key="drawer_buttons_panel"
       dark={dark}
-      noBackground
       onClick={() => {
         onClose!();
       }}
       additionalProps={{
         "data-mbx-class": "drawer-close-button",
         "data-mbx-test": "drawer_close_button",
+        "data-mbx-opacityhover": hover && !disabled,
       }}
       a11yLabel="drawer-close-button"
     >
@@ -39,7 +39,7 @@ const DrawerInternalComponent: MoBrixUiComponent<
           <path d="M10.8032656 15.0470656l-2.1213 2.1213-8.4852-8.4852 2.1213-2.1213z" />
         </svg>
       }
-    </Button>,
+    </IconButton>,
     <div data-mbx-class="drawer-content">{children}</div>,
   ];
 };

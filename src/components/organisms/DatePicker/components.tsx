@@ -14,7 +14,7 @@ import { CalendarIcon } from "./icons";
 
 import Modal from "../../molecules/Modal";
 import Calendar from "../Calendar";
-import Button from "../../atoms/Button";
+import IconButton from "../../atoms/IconButton";
 import Label from "../../atoms/Label";
 
 const DatePickerInternalComponent: MobrixUiReactiveComponent<
@@ -75,9 +75,8 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
       <DateLabel>{String(customMonths[month])}</DateLabel>
       <DateLabel>{String(year)}</DateLabel>
     </div>,
-    <Button
+    <IconButton
       disabled={disabled}
-      noBackground
       dark={commonProps.dark}
       onClick={() => setVisible(true)}
       key="date_picker_calendar_button"
@@ -86,7 +85,7 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
       }}
     >
       {CalendarIcon}
-    </Button>,
+    </IconButton>,
     <Modal
       disabled={disabled}
       hide={!isVisible}

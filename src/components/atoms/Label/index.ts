@@ -42,8 +42,8 @@ const Label: LabelComponent = ({ children, additionalProps, ...commonProps }) =>
     name: "label",
     Component: children,
     wrapper: "p",
-    commonProps,
-    additionalProps
+    commonProps: { ...commonProps, shadow: false },
+    additionalProps,
   });
 
 export default Label;

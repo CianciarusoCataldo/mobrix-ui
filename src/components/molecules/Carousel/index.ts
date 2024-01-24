@@ -2,9 +2,8 @@ import "./styles.css";
 
 import { CarouselComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
-
 import carouselComponent from "./component";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
  * A compact carousel, to show any component (or image) into a slide, with dots and arrow button to go next/previous
@@ -47,9 +46,9 @@ const Carousel: CarouselComponent = ({
   additionalProps,
   ...commonProps
 }) => {
-  return buildMobrixUiReactiveComponent<number>({
+  return buildMbxReactiveComponent<number>(commonProps, (props) => ({
     name: "carousel",
-    commonProps,
+    commonProps: props,
     defaultValue: 0,
     inputValue: value,
     additionalProps,
@@ -59,10 +58,9 @@ const Carousel: CarouselComponent = ({
         setValue,
         onChange,
         elements: actualElements,
-        dark: commonProps.dark,
-        disabled: commonProps.disabled,
+        ...props,
       }),
-  });
+  }));
 };
 
 export default Carousel;

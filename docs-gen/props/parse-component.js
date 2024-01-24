@@ -10,17 +10,6 @@ const wrapElement = (element, styles = {}, wrapper = "div") => {
   return result + "'>" + element + "</" + wrapper + ">";
 };
 
-const centerElement = (element, styles, wrapper = "div") =>
-  wrapElement(
-    element,
-    {
-      "text-align": "center",
-      margin: "auto",
-      ...styles,
-    },
-    wrapper
-  );
-
 const COMPONENT_NAME_TO_PARSE = process.env["COMPONENT_NAME"];
 const COMPONENT_TYPE_TO_PARSE = process.env["COMPONENT_TYPE"];
 const INPUT_PATH = process.env["OUTPUT_FILE_PATH"];
@@ -113,57 +102,42 @@ try {
 Object.keys(propsToParse).forEach((actualProp, index) => {
   inputTable = inputTable.replace(
     "PROP_NAME_" + index,
-    `[${actualProp}](#${actualProp})`
+    `[${actualProp}](#${actualProp.toLowerCase()})`
   );
   externalTable = externalTable.replace(
     "PROP_NAME_EXTERNAL_" + index,
-    `[${actualProp}](../../${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/index.md#${actualProp})`
+    `[${actualProp}](../../${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/index.md#${actualProp.toLowerCase()})`
   );
   globalTable = globalTable.replace(
     "PROP_NAME_GLOBAL_" + index,
-    `[${actualProp}](components/${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/index.md#${actualProp})`
+    `[${actualProp}](components/${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/index.md#${actualProp.toLowerCase()})`
   );
 
-  let internalFallBack = "/";
-  let externalFallBack = "/";
-  let globalFallback = "/";
+  const outputType = propsToParse[actualProp].type || "/";
 
-  if (propsToParse[actualProp].type) {
-    const type = propsToParse[actualProp].type;
-    internalFallBack = `[${type}](#${type})`;
-    externalFallBack = `[${type}](${COMPONENT_NAME_TO_PARSE}/index.md#${type})`;
-    globalFallback = `[${type}](components/${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/index.md#${type})`;
-  }
-
-  inputTable = inputTable.replace("PROP_TYPE_" + index, internalFallBack);
-  list = list.replace("PROP_TYPE_" + index, internalFallBack);
+  inputTable = inputTable.replace("PROP_TYPE_" + index, outputType);
+  list = list.replace("PROP_TYPE_" + index, outputType);
   externalTable = externalTable.replace(
     "PROP_TYPE_EXTERNAL_" + index,
-    externalFallBack
+    outputType
+  );
+  globalTable = globalTable.replace("PROP_TYPE_GLOBAL_" + index, outputType);
+
+  const outputDefault = propsToParse[actualProp].default || "/";
+
+  inputTable = inputTable.replace("PROP_DEFAULT_" + index, outputDefault);
+  list = list.replace("PROP_DEFAULT_" + index, outputDefault);
+  externalTable = externalTable.replace(
+    "PROP_DEFAULT_EXTERNAL_" + index,
+    outputDefault
   );
   globalTable = globalTable.replace(
-    "PROP_TYPE_GLOBAL_" + index,
-    globalFallback
+    "PROP_DEFAULT_GLOBAL_" + index,
+    outputDefault
   );
 
-  let internalDefault = "/";
-  let externalDefault = "/";
-  let globalDefault = "/";
-
-  if (propsToParse[actualProp].default) {
-    const defaultInline = propsToParse[actualProp].default;
-    internalDefault = defaultInline;
-    externalDefault = defaultInline;
-    globalDefault = defaultInline;
-  }
-
-  inputTable = inputTable.replace("DEFAULT_" + index, internalDefault);
-  list = list.replace("DEFAULT_" + index, internalDefault);
-  externalTable = externalTable.replace(
-    "DEFAULT_EXTERNAL_" + index,
-    externalDefault
-  );
-  globalTable = globalTable.replace("DEFAULT_GLOBAL_" + index, globalDefault);
+  const outputDescription = propsToParse[actualProp].description || "";
+  list = list.replace("VAR_DESCRIPTION_" + index, outputDescription);
 });
 
 fs.writeFileSync(

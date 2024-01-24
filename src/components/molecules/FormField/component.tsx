@@ -25,7 +25,7 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
   errorLabel,
   className,
   dark,
-  noBackground,
+  background,
   shadow,
   animated,
   disabled,
@@ -50,7 +50,9 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
           "data-mbx-class": "form-field-box",
           "data-mbx-form-field-header-box": true,
         }}
-        animated={animated}
+        shadow={false}
+        animated={false}
+        background={false}
         key="form_field_header_box"
         dark={!dark}
       >
@@ -79,7 +81,7 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
       value={fieldFormatters[type].format(value)}
       shadow={shadow}
       dark={dark}
-      noBackground={noBackground}
+      background={background}
       onKeyDown={(e) => {
         if (e.code === "Enter" && error) {
           setAnimated(true);

@@ -2,7 +2,10 @@ import "./styles.css";
 
 import { RadioButtonComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
+import {
+  buildMobrixUiReactiveComponent,
+  parseCommonProps,
+} from "../../../tools";
 
 import component from "./component";
 
@@ -46,8 +49,10 @@ const RadioButton: RadioButtonComponent = ({
   onKeyDown = () => {},
   additionalProps = {},
   ...commonProps
-}) =>
-  buildMobrixUiReactiveComponent<boolean>({
+}) => {
+  const parsedProps = parseCommonProps(commonProps);
+
+  return buildMobrixUiReactiveComponent<boolean>({
     name: "radio-button",
     Component: ({ value, setValue }) => (value ? component : ""),
     defaultValue: false,
@@ -62,8 +67,8 @@ const RadioButton: RadioButtonComponent = ({
 
       return {
         commonProps: {
-          ...commonProps,
-          ...(!commonProps.disabled && {
+          ...parsedProps,
+          ...(!parsedProps.disabled && {
             onKeyDown: (e) => {
               if (e.code === "Enter") {
                 callBack();
@@ -74,12 +79,14 @@ const RadioButton: RadioButtonComponent = ({
         },
         additionalProps: {
           ...additionalProps,
-          ...(!commonProps.disabled && {
+          ...(!parsedProps.disabled && {
             onClick: callBack,
+            "data-mbx-opacityhover": parsedProps.hover,
           }),
         },
       };
     },
   });
+};
 
 export default RadioButton;

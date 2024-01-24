@@ -1,11 +1,11 @@
 {
   "--mbx-divider-color": {},
   "--mbx-divider-color-light": {
-    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)",
+    "defaultGlobal": "--mbx-text-color-light",
     "fallback": "--mbx-divider-color"
   },
   "--mbx-divider-color-dark": {
-    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
+    "defaultGlobal": "--mbx-text-color-dark",
     "fallback": "--mbx-divider-color"
   }
 }

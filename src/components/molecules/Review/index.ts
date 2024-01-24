@@ -2,7 +2,10 @@ import "./styles.css";
 
 import { ReviewComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "../../../tools";
+import {
+  buildMbxStandardComponent,
+  buildMobrixUiStandardComponent,
+} from "../../../tools";
 
 import reviewComponent from "./component";
 
@@ -63,9 +66,9 @@ const Review: ReviewComponent = ({
   additionalProps,
   ...commonProps
 }) =>
-  buildMobrixUiStandardComponent({
+  buildMbxStandardComponent(commonProps, (props) => ({
     name: "review",
-    commonProps,
+    commonProps: props,
     additionalProps,
     Component: reviewComponent({
       user,
@@ -76,8 +79,8 @@ const Review: ReviewComponent = ({
       url,
       logo,
       rateType,
-      disabled: commonProps.disabled,
+      ...props,
     }),
-  });
+  }));
 
 export default Review;

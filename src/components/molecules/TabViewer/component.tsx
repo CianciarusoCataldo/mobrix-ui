@@ -14,13 +14,17 @@ const tabViewerComponent: MobrixUiReactiveComponent<number, TabViewerProps> = ({
   tabUnselectedClassName = "",
   tabViewClassName = "",
   tabs = [],
-  noBackground,
+  shadow,
   value,
+  hover,
   disabled,
 }) => [
   <div data-mbx-class="tabs-list" key="tabs_list">
     {tabs.map((tab, index) => (
       <Button
+        shadow={shadow}
+        hover={!(index === value)}
+        animated={false}
         disabled={disabled}
         dark={dark}
         additionalProps={{
@@ -31,7 +35,6 @@ const tabViewerComponent: MobrixUiReactiveComponent<number, TabViewerProps> = ({
         className={`${tabClassName} ${
           index === value ? tabSelectedClassName : tabUnselectedClassName
         }`}
-        noBackground
         key={`tab_${index}`}
         onClick={() => {
           setValue(index);
@@ -50,7 +53,8 @@ const tabViewerComponent: MobrixUiReactiveComponent<number, TabViewerProps> = ({
     className={tabViewClassName}
     dark={dark}
     key="tabs_view"
-    noBackground
+    shadow={shadow}
+    background={false}
     disabled={disabled}
   >
     {tabs.length > 0 && tabs.length > value ? tabs[value].content : <div />}

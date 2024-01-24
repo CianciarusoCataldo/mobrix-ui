@@ -42,7 +42,7 @@ const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
       dark={dark}
       hide={false}
       onFocusLost={onFocusLostCallback}
-      noBackground
+      background={false}
       onClose={onClose}
       animated={animated}
       body={children}

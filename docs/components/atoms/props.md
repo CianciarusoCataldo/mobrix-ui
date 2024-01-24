@@ -40,11 +40,11 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                                | <div style='text-align:center;margin:auto;'>Type</div>                                     | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[onClick](../../atoms/Button/index.md#onClick)</div>           | <div style='text-align:center;margin:auto;'>[() => void](Button/index.md#() => void)</div> | <div style='text-align:center;margin:auto;'>PROP\_/</div> |
-| <div style='text-align:center;margin:auto;'>[onMouseEnter](../../atoms/Button/index.md#onMouseEnter)</div> | <div style='text-align:center;margin:auto;'>[() => void](Button/index.md#() => void)</div> | <div style='text-align:center;margin:auto;'>PROP\_/</div> |
-| <div style='text-align:center;margin:auto;'>[onMouseLeave](../../atoms/Button/index.md#onMouseLeave)</div> | <div style='text-align:center;margin:auto;'>[() => void](Button/index.md#() => void)</div> | <div style='text-align:center;margin:auto;'>PROP\_/</div> |
+| <div style='text-align:center;margin:auto;'>Parameter</div>                                                | <div style='text-align:center;margin:auto;'>Type</div>       | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[onClick](../../atoms/Button/index.md#onclick)</div>           | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[onMouseEnter](../../atoms/Button/index.md#onmouseenter)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[onMouseLeave](../../atoms/Button/index.md#onmouseleave)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 <br>
@@ -53,8 +53,11 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Parameter</div>                                          | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](../../atoms/CheckBox/index.md#value)</div>       | <div style='text-align:center;margin:auto;'>/</div>    | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[onChamge](../../atoms/CheckBox/index.md#onchamge)</div> | <div style='text-align:center;margin:auto;'>/</div>    | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[icon](../../atoms/CheckBox/index.md#icon)</div>         | <div style='text-align:center;margin:auto;'>/</div>    | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 <br>

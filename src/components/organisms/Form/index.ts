@@ -5,6 +5,7 @@ import { FormComponent } from "../../../types";
 import { buildMobrixUiStandardComponent } from "../../../tools";
 
 import formComponent from "./component";
+import { buildMbxStandardComponent } from "../../../tools/utils";
 
 /**
  * A totally configurable Form, with a submit button to let the user submit data from your web-app
@@ -61,7 +62,7 @@ const Form: FormComponent = ({
   fieldClassName,
   ...commonProps
 }) =>
-  buildMobrixUiStandardComponent({
+  buildMbxStandardComponent(commonProps, (props) => ({
     name: "form",
     Component: formComponent({
       title,
@@ -70,9 +71,9 @@ const Form: FormComponent = ({
       submitLabel,
       children,
       fieldClassName,
-      ...commonProps,
+      ...props,
     }),
-    commonProps,
-  });
+    commonProps: props,
+  }));
 
 export default Form;

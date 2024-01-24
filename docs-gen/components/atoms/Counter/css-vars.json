@@ -1,38 +1,38 @@
 {
   "--mbx-counterbox-background": {},
-  "--mbx-counterbox-background-dark": {
-    "fallback": "--mbx-counterbox-background",
-    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)"
-  },
   "--mbx-counterbox-background-light": {
     "fallback": "--mbx-counterbox-background",
-    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)"
+    "defaultGlobal": "--mbx-background-light"
+  },
+  "--mbx-counterbox-background-dark": {
+    "fallback": "--mbx-counterbox-background",
+    "defaultGlobal": "--mbx-background-dark"
   },
   "--mbx-counterbox-text-color": {},
   "--mbx-counterbox-text-color-light": {
     "fallback": "--mbx-counterbox-text-color",
-    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)"
+    "defaultGlobal": "--mbx-text-color-light"
   },
   "--mbx-counterbox-text-color-dark": {
     "fallback": "--mbx-counterbox-text-color",
-    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)"
+    "defaultGlobal": "--mbx-text-color-dark"
   },
   "--mbx-counterbox-background-hover": {},
   "--mbx-counterbox-background-hover-light": {
     "fallback": "--mbx-counterbox-background-hover",
-    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)"
+    "defaultGlobal": "--mbx-background-hover-light"
   },
   "--mbx-counterbox-background-hover-dark": {
     "fallback": "--mbx-counterbox-background-hover",
-    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)"
+    "defaultGlobal": "--mbx-background-hover-dark"
   },
   "--mbx-counterbox-text-color-hover": {},
   "--mbx-counterbox-text-color-hover-light": {
-    "default": "[--mbx-text-color-hover-light](global-css-vars.md#mbx-text-color-hover-light)",
+    "defaultGlobal": "--mbx-text-color-hover-light",
     "fallback": "--mbx-counterbox-text-color-hover"
   },
   "--mbx-counterbox-text-color-hover-dark": {
-    "default": "[--mbx-text-color-hover-dark](global-css-vars.md#mbx-text-color-hover-dark)",
+    "defaultGlobal": "--mbx-text-color-hover-dark",
     "fallback": "--mbx-counterbox-text-color-hover"
   }
 }

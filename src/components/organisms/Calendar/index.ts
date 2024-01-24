@@ -2,11 +2,10 @@ import "./styles.css";
 
 import { CalendarComponent, CalendarDate, DeepPartial } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
-
 import { today } from "./utils";
 
 import calendarComponent from "./component";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
  * A ready to use Calendar, fully customizable to be usable for many purposes.
@@ -54,7 +53,6 @@ import calendarComponent from "./component";
  */
 const Calendar: CalendarComponent = ({
   value: inputValue,
-  shadow,
   hideArrows,
   days,
   months,
@@ -71,36 +69,38 @@ const Calendar: CalendarComponent = ({
 }) => {
   const todayDate = today();
 
-  return buildMobrixUiReactiveComponent<DeepPartial<CalendarDate>>({
-    name: "calendar",
+  return buildMbxReactiveComponent<DeepPartial<CalendarDate>>(
     commonProps,
-    inputValue,
-    defaultValue: {
-      year: todayDate.year,
-      month: todayDate.month,
-      day: todayDate.dayOfTheMonth,
-    },
-    additionalProps,
-    Component: ({ value, setValue }) =>
-      calendarComponent({
-        today: todayDate,
-        value,
-        setValue,
-        shadow,
-        hideArrows,
-        days,
-        months,
-        onViewChange,
-        onChange,
-        startYear,
-        startMonth,
-        fromToday,
-        dayLabel,
-        labelClassName,
-        labelProps,
-        ...commonProps,
-      }),
-  });
+    (props) => ({
+      name: "calendar",
+      commonProps: { ...props, shadow: false },
+      inputValue,
+      defaultValue: {
+        year: todayDate.year,
+        month: todayDate.month,
+        day: todayDate.dayOfTheMonth,
+      },
+      additionalProps,
+      Component: ({ value, setValue }) =>
+        calendarComponent({
+          today: todayDate,
+          value,
+          setValue,
+          hideArrows,
+          days,
+          months,
+          onViewChange,
+          onChange,
+          startYear,
+          startMonth,
+          fromToday,
+          dayLabel,
+          labelClassName,
+          labelProps,
+          ...props,
+        }),
+    })
+  );
 };
 
 export default Calendar;

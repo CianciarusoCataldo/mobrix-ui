@@ -9,6 +9,8 @@ const toggleComponent: MobrixUiReactiveComponent<boolean, ToggleProps> = ({
   icon = defaultIcon,
   offIcon,
   onIcon,
+  disabled,
+  hover,
 }) => {
   const iconOn = onIcon || icon;
   const iconOff = offIcon || icon;
@@ -17,6 +19,7 @@ const toggleComponent: MobrixUiReactiveComponent<boolean, ToggleProps> = ({
     <div
       data-mbx-flip={status}
       data-mbx-class="toggle-icon"
+      data-mbx-opacityhover={!disabled && hover}
     >
       {status === true ? iconOn : iconOff}
     </div>

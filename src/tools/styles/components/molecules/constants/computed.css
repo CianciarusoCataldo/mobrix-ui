@@ -30,11 +30,11 @@
   );
   --mbx-c-car-arr-l: var(
     --mbx-carousel-arrow-color-light,
-    var(--mbx-carousel-arrow-color, var(--mbx-d-car-arr-l))
+    var(--mbx-carousel-arrow-color, var(--mbx-c-txt-l))
   );
   --mbx-c-car-arr-d: var(
     --mbx-carousel-arrow-color-dark,
-    var(--mbx-carousel-arrow-color, var(--mbx-d-car-arr-d))
+    var(--mbx-carousel-arrow-color, var(--mbx-c-txt-d))
   );
   --mbx-c-car-arr-h-l: var(
     --mbx-carousel-arrow-color-hover-light,
@@ -114,22 +114,6 @@
   );
 
   /* Dropdown */
-  --mbx-c-drop-arr-l: var(
-    --mbx-dropdown-arrow-color-light,
-    var(--mbx-dropdown-arrow-color, var(--mbx-d-drop-arr-l))
-  );
-  --mbx-c-drop-arr-d: var(
-    --mbx-dropdown-arrow-color-dark,
-    var(--mbx-dropdown-arrow-color, var(--mbx-d-drop-arr-d))
-  );
-  --mbx-c-drop-arr-h-l: var(
-    --mbx-dropdown-arrow-color-hover-light,
-    var(--mbx-dropdown-arrow-color-hover, var(--mbx-d-drop-arr-h-l))
-  );
-  --mbx-c-drop-arr-h-d: var(
-    --mbx-dropdown-arrow-color-hover-dark,
-    var(--mbx-dropdown-arrow-color-hover, var(--mbx-d-drop-arr-h-d))
-  );
   --mbx-c-drop-bg-l: var(
     --mbx-dropdown-background-light,
     var(--mbx-dropdown-background, var(--mbx-c-bg-l))
@@ -162,6 +146,22 @@
     --mbx-dropdown-text-color-hover-dark,
     var(--mbx-dropdown-text-color-hover, var(--mbx-c-txt-h-d))
   );
+  --mbx-c-drop-arr-l: var(
+    --mbx-dropdown-arrow-color-light,
+    var(--mbx-dropdown-arrow-color, var(--mbx-c-drop-txt-l))
+  );
+  --mbx-c-drop-arr-d: var(
+    --mbx-dropdown-arrow-color-dark,
+    var(--mbx-dropdown-arrow-color, var(--mbx-c-drop-txt-d))
+  );
+  --mbx-c-drop-arr-h-l: var(
+    --mbx-dropdown-arrow-color-hover-light,
+    var(--mbx-dropdown-arrow-color-hover, var(--mbx-c-drop-arr-l))
+  );
+  --mbx-c-drop-arr-h-d: var(
+    --mbx-dropdown-arrow-color-hover-dark,
+    var(--mbx-dropdown-arrow-color-hover, var(--mbx-c-drop-arr-d))
+  );
 
   /** ExpandableContainer **/
   --mbx-c-exp-bg-l: var(
@@ -190,11 +190,11 @@
   );
   --mbx-c-exp-arr-h-l: var(
     --mbx-expandablecontainer-arrow-color-hover-light,
-    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-txt-h-l))
+    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-txt-l))
   );
   --mbx-c-exp-arr-h-d: var(
     --mbx-expandablecontainer-arrow-color-hover-dark,
-    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-txt-h-d))
+    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-txt-d))
   );
 
   /** FormField **/
@@ -284,11 +284,11 @@
   );
   --mbx-c-mod-x-h-l: var(
     --mbx-modal-x-color-hover-light,
-    var(--mbx-modal-x-color-hover, var(--mbx-d-mod-x-h))
+    var(--mbx-modal-x-color-hover)
   );
   --mbx-c-mod-x-h-d: var(
     --mbx-modal-x-color-hover-dark,
-    var(--mbx-modal-x-color-hover, var(--mbx-d-mod-x-h))
+    var(--mbx-modal-x-color-hover)
   );
 
   /** Popup **/
@@ -432,17 +432,11 @@
   );
   --mbx-c-tabv-off-bg-h-d: var(
     --mbx-tabviewer-inactive-background-hover-dark,
-    var(
-      --mbx-tabviewer-inactive-background-hover,
-      var(--mbx-d-tabv-off-bg-h-d)
-    )
+    var(--mbx-tabviewer-inactive-background-hover, var(--mbx-d-tabv-off-bg-h-d))
   );
   --mbx-c-tabv-off-bg-h-l: var(
     --mbx-tabviewer-inactive-background-hover-light,
-    var(
-      --mbx-tabviewer-inactive-background-hover,
-      var(--mbx-d-tabv-off-bg-h-l)
-    )
+    var(--mbx-tabviewer-inactive-background-hover, var(--mbx-d-tabv-off-bg-h-l))
   );
 
   --mbx-c-tabv-off-txt-l: var(

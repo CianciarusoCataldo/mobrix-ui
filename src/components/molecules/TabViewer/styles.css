@@ -20,27 +20,20 @@
 [data-mbx-id="tab-viewer"]
   [data-mbx-class="tabs-list"]
   [data-mbx-class="tab"][data-mbx-tab-viewer-selected="true"] {
-  background: var(--mbx-c-tabv-bg);
-  color: var(--mbx-c-tabv-txt);
+  --mbx-button-background: var(--mbx-c-tabv-bg);
+  --mbx-button-text-color: var(--mbx-c-tabv-txt);
 }
 
 [data-mbx-id="tab-viewer"]
   [data-mbx-class="tabs-list"]
   [data-mbx-class="tab"]:not([data-mbx-tab-viewer-selected="true"]) {
-  background: var(--mbx-c-tabv-off-bg);
-  color: var(--mbx-c-tabv-off-txt);
+  --mbx-button-background: var(--mbx-c-tabv-off-bg);
+  --mbx-button-text-color: var(--mbx-c-tabv-off-txt);
+  --mbx-button-background-hover: var(--mbx-c-tabv-off-bg-h);
+  --mbx-button-text-color-hover: var(--mbx-c-tabv-off-txt-h);
 }
 
 [data-mbx-id="tab-viewer"] [data-mbx-class="tab-view"] {
   padding: 0.7rem 1rem;
   background: var(--mbx-c-tabv-bg);
-}
-
-@media (hover) {
-  [data-mbx-id="tab-viewer"][data-mbx-enabled="true"]
-    [data-mbx-class="tabs-list"]
-    [data-mbx-class="tab"]:not([data-mbx-tab-viewer-selected="true"]):hover {
-    background: var(--mbx-c-tabv-off-bg-h);
-    color: var(--mbx-c-tabv-off-txt-h);
-  }
 }

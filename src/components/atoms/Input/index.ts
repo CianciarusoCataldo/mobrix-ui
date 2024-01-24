@@ -2,7 +2,10 @@ import "./styles.css";
 
 import { InputComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
+import {
+  buildMobrixUiReactiveComponent,
+  parseCommonProps,
+} from "../../../tools";
 
 /**
  * A flexible text input element
@@ -41,40 +44,44 @@ import { buildMobrixUiReactiveComponent } from "../../../tools";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Input: InputComponent = ({
-  onChange = () => { },
+  onChange = () => {},
   value: inputValue,
   placeholder,
   readOnly,
   additionalProps = {},
   autoresizable,
-  noHover,
   ...commonProps
-}) => buildMobrixUiReactiveComponent<string | undefined>({
-  commonProps: {
-    ...commonProps, noHover: noHover || readOnly
-  },
-  name: "inputbox",
-  wrapper: "input",
-  props: (value, setValue) => ({
-    additionalProps: {
-      ...additionalProps,
-      ...(autoresizable && {
-        "data-mbx-autoresizable": !!autoresizable,
-        size: Math.ceil((value.length / 2)) + (value.length > 0 ? 0 : 1),
-      }),
-      type: "text",
-      value,
-      placeholder,
-      disabled: commonProps.disabled,
-      readOnly: readOnly || commonProps.disabled,
-      onChange: ((e) => {
-        const newValue = e.target.value ? e.target.value : "";
-        setValue(newValue);
-      }),
+}) => {
+  const parsedCommonProps = parseCommonProps(commonProps);
+
+  return buildMobrixUiReactiveComponent<string | undefined>({
+    commonProps: {
+      ...parsedCommonProps,
+      hover: parsedCommonProps.hover && !readOnly,
     },
-  }),
-  inputValue,
-  defaultValue: "",
-});
+    name: "inputbox",
+    wrapper: "input",
+    props: (value, setValue) => ({
+      additionalProps: {
+        ...additionalProps,
+        ...(autoresizable && {
+          "data-mbx-autoresizable": !!autoresizable,
+          size: Math.ceil(value.length / 2) + (value.length > 0 ? 0 : 1),
+        }),
+        type: "text",
+        value,
+        placeholder,
+        disabled: commonProps.disabled,
+        readOnly: readOnly || commonProps.disabled,
+        onChange: (e) => {
+          const newValue = e.target.value ? e.target.value : "";
+          setValue(newValue);
+        },
+      },
+    }),
+    inputValue,
+    defaultValue: "",
+  });
+};
 
 export default Input;

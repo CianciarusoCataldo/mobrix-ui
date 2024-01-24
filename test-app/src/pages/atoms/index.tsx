@@ -30,7 +30,8 @@ const AtomsPage = () => {
   }) => {
     return (
       <Container
-        noBackground
+        shadow={false}
+        background={false}
         style={{
           padding: "0.5rem",
           marginBottom: "1rem",
@@ -48,16 +49,24 @@ const AtomsPage = () => {
   };
 
   return (
-    <Container noBackground className="App" dark style={{ height: "110%" }}>
+    <Container
+      shadow={false}
+      background={false}
+      className="App"
+      dark
+      style={{ height: "110%" }}
+    >
       <ComponentDemo
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <Button>Button light not animated</Button>
+            <Button animated={false}>Button light not animated</Button>
             <div style={{ marginTop: "20px" }} />
-            <Button dark>Button dark not animated</Button>
-            <div style={{ marginTop: "20px" }} />
-            <Button noBackground dark>
+            <Button animated={false} dark>
               Button dark not animated
+            </Button>
+            <div style={{ marginTop: "20px" }} />
+            <Button background={false} dark>
+              Button dark no background
             </Button>
             <div style={{ marginTop: "20px" }} />
             <Button animated>Button light animated</Button>
@@ -72,7 +81,8 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Button
               className="test-class"
-              noBackground
+              background={false}
+              animated={false}
               onClick={() => alert("clicked")}
             >
               <svg
@@ -122,7 +132,7 @@ const AtomsPage = () => {
             <CheckBox dark icon={<img alt="" src={tick} width="30px" />} />
             <div style={{ marginTop: "20px" }} />
             <CheckBox
-              noBackground
+              background={false}
               style={{
                 background: "white",
                 borderWidth: "2px",
@@ -131,7 +141,7 @@ const AtomsPage = () => {
               icon={<img alt="" src={tick} width="30px" />}
             />
             <CheckBox
-              noBackground
+              background={false}
               icon={<img alt="" src={tick} width="30px" />}
             />
             <div style={{ marginTop: "20px" }} />
@@ -162,9 +172,9 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <CodeBox highlight disabled dark value="npm i mobrix ui" />
             <div style={{ marginTop: "20px" }} />
-            <CodeBox noCopyButton noBackground value="npm i mobrix ui" />
+            <CodeBox noCopyButton background={false} value="npm i mobrix ui" />
             <div style={{ marginTop: "20px" }} />
-            <CodeBox highlight noBackground value="npm i mobrix ui" />
+            <CodeBox highlight background={false} value="npm i mobrix ui" />
           </div>
         }
         name="CodeBox"
@@ -176,7 +186,7 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Counter animated value={35} />
             <div style={{ marginTop: "20px" }} />
-            <Counter noBackground value={35} />
+            <Counter background={false} value={35} />
             <div style={{ marginTop: "20px" }} />
             <Counter dark />
             <div style={{ marginTop: "20px" }} />
@@ -209,7 +219,7 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Input value="text" />
             <div style={{ marginTop: "20px" }} />
-            <Input value="text" noBackground />
+            <Input value="text" background={false} />
             <div style={{ marginTop: "20px" }} />
             <Input readOnly value="readonly" />
             <div style={{ marginTop: "20px" }} />
@@ -221,7 +231,7 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Input dark value="text" />
             <div style={{ marginTop: "20px" }} />
-            <Input noBackground value="text" />
+            <Input background={false} value="text" />
           </div>
         }
         name="Input"
@@ -289,9 +299,13 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <RadioButton dark disabled />
             <div style={{ marginTop: "20px" }} />
-            <RadioButton noBackground />
+            <RadioButton background={false} />
             <div style={{ marginTop: "20px" }} />
-            <RadioButton noBackground deselectable={false} />
+            <RadioButton background={false} deselectable={false} />
+            <div style={{ marginTop: "20px" }} />
+            <RadioButton hover={false} />
+            <div style={{ marginTop: "20px" }} />
+            <RadioButton dark hover={false} />
             <div style={{ marginTop: "20px" }} />
           </div>
         }
@@ -310,7 +324,7 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Rater disabled dark value={4} />
             <div style={{ marginTop: "20px" }} />
-            <Rater noBackground value={3} />
+            <Rater background={false} value={3} />
           </div>
         }
         name="Rater"
@@ -322,7 +336,7 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Selector elements={["el1", "el2"]} />
             <div style={{ marginTop: "20px" }} />
-            <Selector noBackground elements={["el1", "el2"]} />
+            <Selector background={false} elements={["el1", "el2"]} />
             <div style={{ marginTop: "20px" }} />
             <Selector dark elements={["el1", "el2"]} />
             <div style={{ marginTop: "20px" }} />
@@ -348,9 +362,9 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <Slider disabled dark value={52} />
             <div style={{ marginTop: "20px" }} />
-            <Slider noBackground />
+            <Slider background={false} />
             <div style={{ marginTop: "20px" }} />
-            <Slider noBackground value={32} />
+            <Slider background={false} value={32} />
           </div>
         }
         name="Slider"
@@ -379,7 +393,7 @@ const AtomsPage = () => {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Toggle />
             <div style={{ marginTop: "20px" }} />
-            <Toggle noBackground />
+            <Toggle background={false} />
             <div style={{ marginTop: "20px" }} />
             <Toggle value={false} />
             <div style={{ marginTop: "20px" }} />
@@ -390,9 +404,9 @@ const AtomsPage = () => {
             <Toggle disabled />
             <div style={{ marginTop: "20px" }} />
             <Toggle disabled dark />
-            <Toggle noBackground />
+            <Toggle background={false} />
             <div style={{ marginTop: "20px" }} />
-            <Toggle noBackground value={false} />
+            <Toggle background={false} value={false} />
             <div style={{ marginTop: "20px" }} />
           </div>
         }
