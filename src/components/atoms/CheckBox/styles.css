@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   vertical-align: baseline;
-  background-color: var(--mbx-c-chk-bg);
+  background: var(--mbx-c-chk-bg);
   text-align: center;
   padding: 0.2rem;
   margin: auto;

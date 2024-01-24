@@ -11,20 +11,20 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Prop</div>                                                                          | <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                             |
-| ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background](#mbx-inputbox-background)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                   |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-light](#mbx-inputbox-background-light)</div>             | <div style='text-align:center;margin:auto;'>[mbx-inputbox-background](#mbx-inputbox-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../../global/index.md#mbx-background-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-dark](#mbx-inputbox-background-dark)</div>               | <div style='text-align:center;margin:auto;'>[mbx-inputbox-background](#mbx-inputbox-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../../global/index.md#mbx-background-dark)</div>               |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color](#mbx-inputbox-text-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                   |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-light](#mbx-inputbox-text-color-light)</div>             | <div style='text-align:center;margin:auto;'>[mbx-inputbox-text-color](#mbx-inputbox-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../../global/index.md#mbx-text-color-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-dark](#mbx-inputbox-text-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[mbx-inputbox-text-color](#mbx-inputbox-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../../global/index.md#mbx-text-color-dark)</div>               |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-hover](#mbx-inputbox-background-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                   |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-hover-light](#mbx-inputbox-background-hover-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-inputbox-background-hover](#mbx-inputbox-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](../../../global/index.md#mbx-background-hover-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-hover-dark](#mbx-inputbox-background-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-inputbox-background-hover](#mbx-inputbox-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](../../../global/index.md#mbx-background-hover-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-hover](#mbx-inputbox-text-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                   |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-hover-light](#mbx-inputbox-text-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-inputbox-text-color-hover](#mbx-inputbox-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](../../../global/index.md#mbx-text-color-hover-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-hover-dark](#mbx-inputbox-text-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-inputbox-text-color-hover](#mbx-inputbox-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](../../../global/index.md#mbx-text-color-hover-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>Prop</div>                                                                          | <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background](#mbx-inputbox-background)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-light](#mbx-inputbox-background-light)</div>             | <div style='text-align:center;margin:auto;'>[mbx-inputbox-background](#mbx-inputbox-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-color-light](../../../global/index.md#mbx-background-color-light)</div>             |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-dark](#mbx-inputbox-background-dark)</div>               | <div style='text-align:center;margin:auto;'>[mbx-inputbox-background](#mbx-inputbox-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-color-dark](../../../global/index.md#mbx-background-color-dark)</div>               |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color](#mbx-inputbox-text-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-light](#mbx-inputbox-text-color-light)</div>             | <div style='text-align:center;margin:auto;'>[mbx-inputbox-text-color](#mbx-inputbox-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../../global/index.md#mbx-text-color-light)</div>                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-dark](#mbx-inputbox-text-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[mbx-inputbox-text-color](#mbx-inputbox-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../../global/index.md#mbx-text-color-dark)</div>                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-hover](#mbx-inputbox-background-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-hover-light](#mbx-inputbox-background-hover-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-inputbox-background-hover](#mbx-inputbox-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-light](../../../global/index.md#mbx-background-color-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-hover-dark](#mbx-inputbox-background-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-inputbox-background-hover](#mbx-inputbox-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-dark](../../../global/index.md#mbx-background-color-hover-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-hover](#mbx-inputbox-text-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-hover-light](#mbx-inputbox-text-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-inputbox-text-color-hover](#mbx-inputbox-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](../../../global/index.md#mbx-text-color-hover-light)</div>             |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-hover-dark](#mbx-inputbox-text-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-inputbox-text-color-hover](#mbx-inputbox-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](../../../global/index.md#mbx-text-color-hover-dark)</div>               |
 
 ## CSS Variables list
 
@@ -44,9 +44,9 @@ VAR_DESCRIPTION_0<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-inputbox-background](#mbx-inputbox-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../../global/index.md#mbx-background-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                             |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-inputbox-background](#mbx-inputbox-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-light](../../../global/index.md#mbx-background-color-light)</div> |
 
 VAR_DESCRIPTION_1<br><br>
 
@@ -54,9 +54,9 @@ VAR_DESCRIPTION_1<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                               |
-| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-inputbox-background](#mbx-inputbox-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../../global/index.md#mbx-background-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                           |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-inputbox-background](#mbx-inputbox-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-dark](../../../global/index.md#mbx-background-color-dark)</div> |
 
 VAR_DESCRIPTION_2<br><br>
 
@@ -104,9 +104,9 @@ VAR_DESCRIPTION_6<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                             |
-| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-inputbox-background-hover](#mbx-inputbox-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](../../../global/index.md#mbx-background-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-inputbox-background-hover](#mbx-inputbox-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-light](../../../global/index.md#mbx-background-color-hover-light)</div> |
 
 VAR_DESCRIPTION_7<br><br>
 
@@ -114,9 +114,9 @@ VAR_DESCRIPTION_7<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                           |
-| ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-inputbox-background-hover](#mbx-inputbox-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](../../../global/index.md#mbx-background-hover-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                                       |
+| ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-inputbox-background-hover](#mbx-inputbox-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-dark](../../../global/index.md#mbx-background-color-hover-dark)</div> |
 
 VAR_DESCRIPTION_8<br><br>
 

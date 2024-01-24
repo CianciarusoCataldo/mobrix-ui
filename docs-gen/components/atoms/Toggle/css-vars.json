@@ -10,38 +10,38 @@
   },
   "--mbx-toggle-icon-on-internal-color": {},
   "--mbx-toggle-icon-on-internal-color-light": {
-    "default": "#ffffff",
+    "defaultColor": "#ffffff",
     "fallback": "--mbx-toggle-icon-on-internal-color"
   },
   "--mbx-toggle-icon-on-internal-color-dark": {
-    "default": "#ffffff",
+    "defaultColor": "#ffffff",
     "fallback": "--mbx-toggle-icon-on-internal-color"
   },
   "--mbx-toggle-icon-on-external-color": {},
   "--mbx-toggle-icon-on-external-color-light": {
-    "default": "#adadad",
+    "defaultColor": "#adadad",
     "fallback": "--mbx-toggle-icon-on-external-color"
   },
   "--mbx-toggle-icon-on-external-color-dark": {
-    "default": "#adadad",
+    "defaultColor": "#adadad",
     "fallback": "--mbx-toggle-icon-on-external-color"
   },
   "--mbx-toggle-icon-off-internal-color": {},
   "--mbx-toggle-icon-off-internal-color-light": {
-    "default": "#a5a5a5",
+    "defaultColor": "#a5a5a5",
     "fallback": "--mbx-toggle-icon-off-internal-color"
   },
   "--mbx-toggle-icon-off-internal-color-dark": {
-    "default": "#a5a5a5",
+    "defaultColor": "#a5a5a5",
     "fallback": "--mbx-toggle-icon-off-internal-color"
   },
   "--mbx-toggle-icon-off-external-color": {},
   "--mbx-toggle-icon-off-external-color-light": {
-    "default": "#a7a3a3",
+    "defaultColor": "#a7a3a3",
     "fallback": "--mbx-toggle-icon-off-external-color"
   },
   "--mbx-toggle-icon-off-external-color-dark": {
-    "default": "#a7a3a3",
+    "defaultColor": "#a7a3a3",
     "fallback": "--mbx-toggle-icon-off-external-color"
   }
 }

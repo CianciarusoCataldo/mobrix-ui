@@ -2,11 +2,11 @@
   "--mbx-inputbox-background": {},
   "--mbx-inputbox-background-light": {
     "fallback": "--mbx-inputbox-background",
-    "defaultGlobal": "--mbx-background-light"
+    "defaultGlobal": "--mbx-background-color-light"
   },
   "--mbx-inputbox-background-dark": {
     "fallback": "--mbx-inputbox-background",
-    "defaultGlobal": "--mbx-background-dark"
+    "defaultGlobal": "--mbx-background-color-dark"
   },
   "--mbx-inputbox-text-color": {},
   "--mbx-inputbox-text-color-light": {
@@ -20,11 +20,11 @@
   "--mbx-inputbox-background-hover": {},
   "--mbx-inputbox-background-hover-light": {
     "fallback": "--mbx-inputbox-background-hover",
-    "defaultGlobal": "--mbx-background-hover-light"
+    "defaultGlobal": "--mbx-background-color-hover-light"
   },
   "--mbx-inputbox-background-hover-dark": {
     "fallback": "--mbx-inputbox-background-hover",
-    "defaultGlobal": "--mbx-background-hover-dark"
+    "defaultGlobal": "--mbx-background-color-hover-dark"
   },
   "--mbx-inputbox-text-color-hover": {},
   "--mbx-inputbox-text-color-hover-light": {

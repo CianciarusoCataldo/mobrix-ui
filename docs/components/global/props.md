@@ -108,8 +108,10 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Parameter</div>                                                | <div style='text-align:center;margin:auto;'>Type</div>   | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](components/atoms/CodeBox/index.md#value)</div>         | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[highlight](components/atoms/CodeBox/index.md#highlight)</div> | <div style='text-align:center;margin:auto;'>/</div>      | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 <br>

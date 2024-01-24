@@ -36,6 +36,12 @@ export const generateElementsArray = (
 export const parseCommonProps = (props: CommonProps): CommonProps => ({
   ...DEFAULT_COMMON_PROPS,
   ...props,
+  ...(props.unstyled && {
+    shadow: false,
+    background: false,
+    animated: false,
+    hover: false,
+  }),
 });
 /**
  * Build a standard {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component, providing shared functionalities and props, to optimize the process.
@@ -66,7 +72,7 @@ export const buildMobrixUiStandardComponent = ({
 }: BuilderProps) => {
   let a11y = commonProps.a11y !== undefined ? commonProps.a11y : true;
 
-  const inputCommonProps = parseCommonProps(commonProps);
+  let inputCommonProps = parseCommonProps(commonProps);
 
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,

@@ -45,22 +45,22 @@
   /* Checkbox */
   --mbx-c-chk-bg-l: var(
     --mbx-checkbox-background-light,
-    var(--mbx-checkbox-background, var(--mbx-c-bgc-l))
+    var(--mbx-checkbox-background, var(--mbx-c-bg-l))
   );
 
   --mbx-c-chk-bg-d: var(
     --mbx-checkbox-background-dark,
-    var(--mbx-checkbox-background, var(--mbx-c-bgc-d))
+    var(--mbx-checkbox-background, var(--mbx-c-bg-d))
   );
 
   --mbx-c-chk-bg-h-l: var(
     --mbx-checkbox-background-hover-light,
-    var(--mbx-checkbox-background-hover, var(--mbx-c-bgc-h-l))
+    var(--mbx-checkbox-background-hover, var(--mbx-c-bg-h-l))
   );
 
   --mbx-c-chk-bg-h-d: var(
     --mbx-checkbox-background-hover-dark,
-    var(--mbx-checkbox-background-hover, var(--mbx-c-bgc-h-d))
+    var(--mbx-checkbox-background-hover, var(--mbx-c-bg-h-d))
   );
 
   --mbx-c-chk-tk-l: var(
@@ -76,7 +76,7 @@
   /** Codebox **/
   --mbx-c-cdb-bg-l: var(
     --mbx-codebox-background-light,
-    var(--mbx-codebox-background, var(--mbx-c-bgc-l))
+    var(--mbx-codebox-background, var(--mbx-c-bg-l))
   );
 
   --mbx-c-cdb-txt-l: var(
@@ -86,7 +86,7 @@
 
   --mbx-c-cdb-bg-d: var(
     --mbx-codebox-background-dark,
-    var(--mbx-codebox-background, var(--mbx-c-bgc-d))
+    var(--mbx-codebox-background, var(--mbx-c-bg-d))
   );
 
   --mbx-c-cdb-txt-d: var(
