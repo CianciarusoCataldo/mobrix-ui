@@ -12,7 +12,7 @@ import defaultIcons from "./icons";
  * @since 1.0.0
  *
  * @param {number} value Spinner status
- * @param {Record<string, (JSX.Element|string)>} statuses custom statuses, to map every icon in a custom way
+ * @param {Record<string, (JSX.Element|string)>} statuses Custom statuses, to map every icon with a specific status
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
  * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)

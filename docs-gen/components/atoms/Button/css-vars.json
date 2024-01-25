@@ -1,37 +1,53 @@
 {
-  "--mbx-button-background": {},
+  "--mbx-button-background": {
+    "description": "Fallback value for `mbx-button-background-light` and `mbx-button-background-dark`"
+  },
   "--mbx-button-background-light": {
+    "description": "Button background color when dark mode is off",
     "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-button-background"
   },
   "--mbx-button-background-dark": {
+    "description": "Button background color when dark mode is on",
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-button-background"
   },
-  "--mbx-button-text-color": {},
+  "--mbx-button-text-color": {
+    "description": "Fallback value for `mbx-button-text-color-light` and `mbx-button-text-color-dark`"
+  },
   "--mbx-button-text-color-light": {
+    "description": "Button text color when dark mode is off",
     "defaultGlobal": "--mbx-text-color-light",
     "fallback": "--mbx-button-text-color"
   },
   "--mbx-button-text-color-dark": {
+    "description": "Button text color when dark mode is on",
     "defaultGlobal": "--mbx-text-color-dark",
     "fallback": "--mbx-button-text-color"
   },
-  "--mbx-button-background-hover": {},
+  "--mbx-button-background-hover": {
+    "description": "Fallback value for `mbx-button-background-hover-light` and `mbx-button-background-hover-dark`"
+  },
   "--mbx-button-background-hover-light": {
+    "description": "Button background color when dark mode is off, on hover",
     "defaultGlobal": "--mbx-background-hover-light",
     "fallback": "--mbx-button-background-hover"
   },
   "--mbx-button-background-hover-dark": {
+    "description": "Button background color when dark mode is on, on hover",
     "defaultGlobal": "--mbx-background-hover-dark",
     "fallback": "--mbx-button-background-hover"
   },
-  "--mbx-button-text-color-hover": {},
+  "--mbx-button-text-color-hover": {
+    "description": "Fallback value for `mbx-button-text-color-hover-light` and `mbx-button-text-color-hover-dark`"
+  },
   "--mbx-button-text-color-hover-light": {
+    "description": "Button text color when dark mode is off, on hover",
     "defaultGlobal": "--mbx-text-color-hover-light",
     "fallback": "--mbx-button-text-color-hover"
   },
   "--mbx-button-text-color-hover-dark": {
+    "description": "Button text color when dark mode is on, on hover",
     "defaultGlobal": "--mbx-text-color-hover-dark",
     "fallback": "--mbx-button-text-color-hover"
   }

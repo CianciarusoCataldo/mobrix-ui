@@ -12,8 +12,8 @@ import { buildMbxReactiveComponent } from "../../../tools";
  *
  * @param {boolean} value toggle status (true - on/false - off)
  * @param {JSX.Element} icon custom toggle icon, used as a default icon
- * @param {JSX.Element} onIcon custom toggle "on" icon (`value` === `true`)
- * @param {JSX.Element} offIcon custom toggle "off" icon (`value` === `false`)
+ * @param {JSX.Element} onIcon custom toggle `on` icon (`value` === `true`)
+ * @param {JSX.Element} offIcon custom toggle `off` icon (`value` === `false`)
  * @param {(newValue:boolean)=>void} onChange calllback triggered when changing Toggle status
  * @param {string} className `common MoBrix-ui prop` - custom className
  * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles

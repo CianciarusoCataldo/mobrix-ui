@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { SliderComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
  * A modern `range` input component, to control a value using a simple slider.
@@ -10,10 +10,8 @@ import { buildMobrixUiReactiveComponent } from "../../../tools";
  * @since 2.0.0
  *
  * @param {number} value actual slider value
- * @param {string} thumbColor Slider thumb custom color (exadecimal or any gradient css attribute). If set, the standard style is overwritten
  * @param {(newValue:number)=>void} onChange callback triggered when input change
- * @param {string} placeholder label showed when no value is set
- * @param {boolean} readonly if true, compoent value can only be set with `value` parameter
+ * @param {boolean} readonly if `true`, compoent value can only be set with `value` parameter
  * @param {number} min min allowed value
  * @param {number} max max allowed value
  * @param {string} className `common MoBrix-ui prop` - custom className
@@ -49,34 +47,23 @@ const Slider: SliderComponent = ({
   min,
   max,
   readOnly,
-  thumbColor,
   additionalProps = {},
   ...commonProps
-}) => {
-  let extraProps: Record<string, any> = {};
-
-  if (thumbColor) {
-    extraProps.style = {
-      "--mbx-slider-thumb-color": thumbColor,
-    };
-  }
-
-  if (commonProps.disabled) {
-  }
-
-  return buildMobrixUiReactiveComponent<number>({
+}) =>
+  buildMbxReactiveComponent<number>(commonProps, (parsedProps) => ({
     name: "slider",
-    commonProps,
+    commonProps: parsedProps,
     inputValue,
     defaultValue: 0,
     wrapper: "input",
     props: (value, setValue) => {
-      const callback = (e: any) => {
-        if (!readOnly) {
-          onChange(e.target.value);
-          setValue(e.target.value);
-        }
-      };
+      const callback =
+        parsedProps.disabled && !readOnly
+          ? (e: any) => {
+              onChange(e.target.value);
+              setValue(e.target.value);
+            }
+          : () => {};
 
       return {
         additionalProps: {
@@ -85,17 +72,13 @@ const Slider: SliderComponent = ({
           min,
           max,
           readOnly,
-          disabled: commonProps.disabled,
+          disabled: parsedProps.disabled,
           value: String(value),
-          ...(!commonProps.disabled && {
-            onChange: callback,
-            onInput: callback,
-          }),
-          ...extraProps,
+          onChange: callback,
+          onInput: callback,
         },
       };
     },
-  });
-};
+  }));
 
 export default Slider;

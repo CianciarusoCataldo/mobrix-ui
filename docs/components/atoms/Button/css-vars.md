@@ -38,7 +38,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `mbx-button-background-light` and `mbx-button-background-dark`<br><br>
 
 ### --mbx-button-background-light
 
@@ -48,7 +48,7 @@
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-button-background](#mbx-button-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div> |
 
-<br><br>
+Button background color when dark mode is off<br><br>
 
 ### --mbx-button-background-dark
 
@@ -58,7 +58,7 @@
 | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-button-background](#mbx-button-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#mbx-background-dark)</div> |
 
-<br><br>
+Button background color when dark mode is on<br><br>
 
 ### --mbx-button-text-color
 
@@ -68,7 +68,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `mbx-button-text-color-light` and `mbx-button-text-color-dark`<br><br>
 
 ### --mbx-button-text-color-light
 
@@ -78,7 +78,7 @@
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-button-text-color](#mbx-button-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#mbx-text-color-light)</div> |
 
-<br><br>
+Button text color when dark mode is off<br><br>
 
 ### --mbx-button-text-color-dark
 
@@ -88,7 +88,7 @@
 | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-button-text-color](#mbx-button-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#mbx-text-color-dark)</div> |
 
-<br><br>
+Button text color when dark mode is on<br><br>
 
 ### --mbx-button-background-hover
 
@@ -98,7 +98,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `mbx-button-background-hover-light` and `mbx-button-background-hover-dark`<br><br>
 
 ### --mbx-button-background-hover-light
 
@@ -108,7 +108,7 @@
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-button-background-hover](#mbx-button-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](../../global/css-vars.md#mbx-background-hover-light)</div> |
 
-<br><br>
+Button background color when dark mode is off, on hover<br><br>
 
 ### --mbx-button-background-hover-dark
 
@@ -118,7 +118,7 @@
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-button-background-hover](#mbx-button-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](../../global/css-vars.md#mbx-background-hover-dark)</div> |
 
-<br><br>
+Button background color when dark mode is on, on hover<br><br>
 
 ### --mbx-button-text-color-hover
 
@@ -128,7 +128,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `mbx-button-text-color-hover-light` and `mbx-button-text-color-hover-dark`<br><br>
 
 ### --mbx-button-text-color-hover-light
 
@@ -138,7 +138,7 @@
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-button-text-color-hover](#mbx-button-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](../../global/css-vars.md#mbx-text-color-hover-light)</div> |
 
-<br><br>
+Button text color when dark mode is off, on hover<br><br>
 
 ### --mbx-button-text-color-hover-dark
 
@@ -148,4 +148,4 @@
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-button-text-color-hover](#mbx-button-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](../../global/css-vars.md#mbx-text-color-hover-dark)</div> |
 
-<br><br>
+Button text color when dark mode is on, on hover<br><br>

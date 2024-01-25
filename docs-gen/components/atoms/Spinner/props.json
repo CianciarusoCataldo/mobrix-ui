@@ -1,1 +1,11 @@
-{}
+{
+  "value": {
+    "description": "Spinner status",
+    "type": "number",
+    "default": "'loading'"
+  },
+  "statuses": {
+    "type": "Record<string, (JSX.Element | string)>",
+    "description": "Custom statuses, to map every icon with a specific status"
+  }
+}

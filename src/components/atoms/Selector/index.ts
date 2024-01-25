@@ -11,7 +11,7 @@ import selectorComponent from "./component";
  *
  * @since 2.0.0
  *
- * @param {number|undefined} value option index actually showed
+ * @param {number|undefined} value option index actually displayed
  * @param {string[]} elements selector options, every element must be a string
  * @param {(index:number)=>void} onChange callback triggered when the button is clicked
  * @param {string} className `common MoBrix-ui prop` - custom className

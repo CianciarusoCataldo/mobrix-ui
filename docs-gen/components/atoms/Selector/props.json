@@ -1,1 +1,22 @@
-{}
+{
+  "value": {
+    "default": "0",
+    "type": "number",
+    "description": "option index actually displayed"
+  },
+  "onChange": {
+    "default": "() => {}",
+    "type": "(index: number) => void",
+    "description": "allback triggered when an option is clicked"
+  },
+  "elements": {
+    "default": "[]",
+    "type": "string[]",
+    "description": "selector options array, every element must be a string"
+  },
+  "optionClassName": {
+    "default": "",
+    "type": "string",
+    "description": "className applied on every options inside the selector"
+  }
+}

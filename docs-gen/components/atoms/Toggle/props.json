@@ -1,1 +1,24 @@
-{}
+{
+  "value": {
+    "default": "",
+    "description": "toggle status (true - on/false - off)",
+    "type": "boolean"
+  },
+  "onChange": {
+    "default": "() => {}",
+    "description": "calllback triggered when Toggle status changes",
+    "type": "(newValue: boolean) => void"
+  },
+  "onIcon": {
+    "description": "custom toggle `on` icon (`value` === `true`)",
+    "type": "JSX.Element"
+  },
+  "icon": {
+    "description": "custom toggle icon, used as a default icon",
+    "type": "JSX.Element"
+  },
+  "offIcon": {
+    "description": "custom toggle `off` icon (`value` === `false`)",
+    "type": "JSX.Element"
+  }
+}

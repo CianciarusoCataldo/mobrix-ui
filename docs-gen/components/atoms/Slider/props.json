@@ -1,1 +1,15 @@
-{}
+{
+  "value": { "description": "Actual slider value", "type": "number" },
+  "onChange": {
+    "default": "() => {}",
+    "description": "callback triggered when slider value changes",
+    "type": "(newValue: number) => void"
+  },
+  "min": { "description": "Min allowed value", "type": "number" },
+  "max": { "description": "Max allowed value", "type": "number" },
+  "readOnly": {
+    "default": false,
+    "description": "if `true`, component value can only be set with `value` parameter",
+    "type": "boolean"
+  }
+}

@@ -11,11 +11,55 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Parameter</div>                           | <div style='text-align:center;margin:auto;'>Type</div>                    | <div style='text-align:center;margin:auto;'>Default</div>  |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](#value)</div>                     | <div style='text-align:center;margin:auto;'>number</div>                  | <div style='text-align:center;margin:auto;'>0</div>        |
+| <div style='text-align:center;margin:auto;'>[onChange](#onchange)</div>               | <div style='text-align:center;margin:auto;'>(index: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
+| <div style='text-align:center;margin:auto;'>[elements](#elements)</div>               | <div style='text-align:center;margin:auto;'>string[]</div>                | <div style='text-align:center;margin:auto;'>[]</div>       |
+| <div style='text-align:center;margin:auto;'>[optionClassName](#optionclassname)</div> | <div style='text-align:center;margin:auto;'>string</div>                  | <div style='text-align:center;margin:auto;'>/</div>        |
 
 <br>
 
 ## Props list
 
 <br>
+
+### value
+
+<br>
+
+| <div style='text-align:center;margin:auto;'>Type</div>   | <div style='text-align:center;margin:auto;'>Default</div> |
+| -------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>0</div>       |
+
+option index actually displayed<br><br>
+
+### onChange
+
+<br>
+
+| <div style='text-align:center;margin:auto;'>Type</div>                    | <div style='text-align:center;margin:auto;'>Default</div>  |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>(index: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
+
+allback triggered when an option is clicked<br><br>
+
+### elements
+
+<br>
+
+| <div style='text-align:center;margin:auto;'>Type</div>     | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>string[]</div> | <div style='text-align:center;margin:auto;'>[]</div>      |
+
+selector options array, every element must be a string<br><br>
+
+### optionClassName
+
+<br>
+
+| <div style='text-align:center;margin:auto;'>Type</div>   | <div style='text-align:center;margin:auto;'>Default</div> |
+| -------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+
+className applied on every options inside the selector<br><br>
