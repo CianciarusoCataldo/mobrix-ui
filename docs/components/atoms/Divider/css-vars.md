@@ -29,7 +29,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `--mbx-divider-color-light` and `--mbx-divider-color-dark`<br><br>
 
 ### --mbx-divider-color-light
 
@@ -39,7 +39,7 @@
 | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-divider-color](#mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#mbx-text-color-light)</div> |
 
-<br><br>
+Divider color when dark mode is off<br><br>
 
 ### --mbx-divider-color-dark
 
@@ -49,4 +49,4 @@
 | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-divider-color](#mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#mbx-text-color-dark)</div> |
 
-<br><br>
+Divider color when dark mode is on<br><br>

@@ -35,7 +35,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `--mbx-spinner-success-color-light` and `--mbx-spinner-success-color-dark`<br><br>
 
 ### --mbx-spinner-success-color-light
 
@@ -45,7 +45,7 @@
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-spinner-success-color](#mbx-spinner-success-color)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |
 
-<br><br>
+Spinner success color when dark mode is off<br><br>
 
 ### --mbx-spinner-success-color-dark
 
@@ -55,7 +55,7 @@
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-spinner-success-color](#mbx-spinner-success-color)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |
 
-<br><br>
+Spinner success color when dark mode is on<br><br>
 
 ### --mbx-spinner-error-color
 
@@ -65,7 +65,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `--mbx-spinner-error-color-light` and `--mbx-spinner-error-color-dark`<br><br>
 
 ### --mbx-spinner-error-color-light
 
@@ -75,7 +75,7 @@
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-spinner-error-color](#mbx-spinner-error-color)</div> | <div style='text-align:center;margin:auto;'>#ff0000</div> |
 
-<br><br>
+Spinner error color when dark mode is off<br><br>
 
 ### --mbx-spinner-error-color-dark
 
@@ -85,7 +85,7 @@
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-spinner-error-color](#mbx-spinner-error-color)</div> | <div style='text-align:center;margin:auto;'>#ff0000</div> |
 
-<br><br>
+Spinner error color when dark mode is on<br><br>
 
 ### --mbx-spinner-loading-color
 
@@ -95,7 +95,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `--mbx-spinner-loading-color-light` and `--mbx-spinner-loading-color-dark`<br><br>
 
 ### --mbx-spinner-loading-color-light
 
@@ -105,7 +105,7 @@
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-spinner-loading-color](#mbx-spinner-loading-color)</div> | <div style='text-align:center;margin:auto;'>#202020</div> |
 
-<br><br>
+Spinner loading color when dark mode is off<br><br>
 
 ### --mbx-spinner-loading-color-dark
 
@@ -115,4 +115,4 @@
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-spinner-loading-color](#mbx-spinner-loading-color)</div> | <div style='text-align:center;margin:auto;'>#202020</div> |
 
-<br><br>
+Spinner loading color when dark mode is on<br><br>

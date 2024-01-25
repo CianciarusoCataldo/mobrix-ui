@@ -1,37 +1,53 @@
 {
-  "--mbx-inputbox-background": {},
+  "--mbx-inputbox-background": {
+    "description": "Fallback value for `mbx-inputbox-background-light` and `mbx-inputbox-background-dark`"
+  },
   "--mbx-inputbox-background-light": {
+    "description": "Input background when dark mode is off",
     "fallback": "--mbx-inputbox-background",
     "defaultGlobal": "--mbx-background-color-light"
   },
   "--mbx-inputbox-background-dark": {
+    "description": "Input background when dark mode is on",
     "fallback": "--mbx-inputbox-background",
     "defaultGlobal": "--mbx-background-color-dark"
   },
-  "--mbx-inputbox-text-color": {},
+  "--mbx-inputbox-text-color": {
+    "description": "Fallback value for `mbx-inputbox-text-color-light` and `mbx-inputbox-text-color-dark`"
+  },
   "--mbx-inputbox-text-color-light": {
+    "description": "Input text color when dark mode is off",
     "fallback": "--mbx-inputbox-text-color",
     "defaultGlobal": "--mbx-text-color-light"
   },
   "--mbx-inputbox-text-color-dark": {
+    "description": "Input text color when dark mode is on",
     "fallback": "--mbx-inputbox-text-color",
     "defaultGlobal": "--mbx-text-color-dark"
   },
-  "--mbx-inputbox-background-hover": {},
+  "--mbx-inputbox-background-hover": {
+    "description": "Fallback value for `mbx-inputbox-background-hover-light` and `mbx-inputbox-background-hover-dark`"
+  },
   "--mbx-inputbox-background-hover-light": {
+    "description": "Input background when dark mode is off, on hover",
     "fallback": "--mbx-inputbox-background-hover",
     "defaultGlobal": "--mbx-background-color-hover-light"
   },
   "--mbx-inputbox-background-hover-dark": {
+    "description": "Input background when dark mode is on, on hover",
     "fallback": "--mbx-inputbox-background-hover",
     "defaultGlobal": "--mbx-background-color-hover-dark"
   },
-  "--mbx-inputbox-text-color-hover": {},
+  "--mbx-inputbox-text-color-hover": {
+    "description": "Fallback value for `mbx-inputbox-text-color-hover-light` and `mbx-inputbox-text-color-hover-dark`"
+  },
   "--mbx-inputbox-text-color-hover-light": {
+    "description": "Input text color when dark mode is off, on hover",
     "defaultGlobal": "--mbx-text-color-hover-light",
     "fallback": "--mbx-inputbox-text-color-hover"
   },
   "--mbx-inputbox-text-color-hover-dark": {
+    "description": "Input text color when dark mode is on, on hover",
     "defaultGlobal": "--mbx-text-color-hover-dark",
     "fallback": "--mbx-inputbox-text-color-hover"
   }

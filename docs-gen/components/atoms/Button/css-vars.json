@@ -3,12 +3,12 @@
     "description": "Fallback value for `mbx-button-background-light` and `mbx-button-background-dark`"
   },
   "--mbx-button-background-light": {
-    "description": "Button background color when dark mode is off",
+    "description": "Button background when dark mode is off",
     "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-button-background"
   },
   "--mbx-button-background-dark": {
-    "description": "Button background color when dark mode is on",
+    "description": "Button background when dark mode is on",
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-button-background"
   },
@@ -29,12 +29,12 @@
     "description": "Fallback value for `mbx-button-background-hover-light` and `mbx-button-background-hover-dark`"
   },
   "--mbx-button-background-hover-light": {
-    "description": "Button background color when dark mode is off, on hover",
+    "description": "Button background when dark mode is off, on hover",
     "defaultGlobal": "--mbx-background-hover-light",
     "fallback": "--mbx-button-background-hover"
   },
   "--mbx-button-background-hover-dark": {
-    "description": "Button background color when dark mode is on, on hover",
+    "description": "Button background when dark mode is on, on hover",
     "defaultGlobal": "--mbx-background-hover-dark",
     "fallback": "--mbx-button-background-hover"
   },

@@ -38,7 +38,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `mbx-selector-background-light` and `mbx-selector-background-dark`<br><br>
 
 ### --mbx-selector-background-light
 
@@ -48,7 +48,7 @@
 | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-selector-background](#mbx-selector-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div> |
 
-<br><br>
+Selector background when dark mode is off<br><br>
 
 ### --mbx-selector-background-dark
 
@@ -58,7 +58,7 @@
 | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-selector-background](#mbx-selector-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark)](../../global/css-vars.md#mbx-background-dark))</div> |
 
-<br><br>
+Selector background when dark mode is on<br><br>
 
 ### --mbx-selector-text-color
 
@@ -68,7 +68,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `mbx-selector-text-color-light` and `mbx-selector-text-color-dark`<br><br>
 
 ### --mbx-selector-text-color-light
 
@@ -78,7 +78,7 @@
 | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-selector-text-color](#mbx-selector-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#mbx-text-color-light)</div> |
 
-<br><br>
+Selector text color when dark mode is off<br><br>
 
 ### --mbx-selector-text-color-dark
 
@@ -88,7 +88,7 @@
 | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-selector-text-color](#mbx-selector-text-color)</div> | <div style='text-align:center;margin:auto;'>[[--mbx-text-color-dark](../../global/css-vars.md#[mbx-text-color-dark)</div> |
 
-<br><br>
+Selector text color when dark mode is on<br><br>
 
 ### --mbx-selector-background-hover
 
@@ -98,7 +98,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `mbx-selector-background-hover-light` and `mbx-selector-background-hover-dark`<br><br>
 
 ### --mbx-selector-background-hover-light
 
@@ -108,7 +108,7 @@
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-selector-background-hover](#mbx-selector-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](../../global/css-vars.md#mbx-background-hover-light)</div> |
 
-<br><br>
+Selector background when dark mode is off, on hover<br><br>
 
 ### --mbx-selector-background-hover-dark
 
@@ -118,7 +118,7 @@
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-selector-background-hover](#mbx-selector-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](../../global/css-vars.md#mbx-background-hover-light)</div> |
 
-<br><br>
+Selector background when dark mode is on, on hover<br><br>
 
 ### --mbx-selector-text-color-hover
 
@@ -128,7 +128,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `mbx-selector-text-color-hover-light` and `mbx-selector-text-color-hover-dark`<br><br>
 
 ### --mbx-selector-text-color-hover-light
 
@@ -138,7 +138,7 @@
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-selector-text-color-hover](#mbx-selector-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](../../global/css-vars.md#mbx-text-color-hover-light)</div> |
 
-<br><br>
+Selector text color when dark mode is off, on hover<br><br>
 
 ### --mbx-selector-text-color-hover-dark
 
@@ -148,4 +148,4 @@
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-selector-text-color-hover](#mbx-selector-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](../../global/css-vars.md#mbx-text-color-hover-dark)</div> |
 
-<br><br>
+Selector text color when dark mode is on, on hover<br><br>

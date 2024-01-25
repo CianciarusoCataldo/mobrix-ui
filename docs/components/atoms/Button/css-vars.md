@@ -48,7 +48,7 @@ Fallback value for `mbx-button-background-light` and `mbx-button-background-dark
 | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-button-background](#mbx-button-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div> |
 
-Button background color when dark mode is off<br><br>
+Button background when dark mode is off<br><br>
 
 ### --mbx-button-background-dark
 
@@ -58,7 +58,7 @@ Button background color when dark mode is off<br><br>
 | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-button-background](#mbx-button-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#mbx-background-dark)</div> |
 
-Button background color when dark mode is on<br><br>
+Button background when dark mode is on<br><br>
 
 ### --mbx-button-text-color
 
@@ -108,7 +108,7 @@ Fallback value for `mbx-button-background-hover-light` and `mbx-button-backgroun
 | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-button-background-hover](#mbx-button-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](../../global/css-vars.md#mbx-background-hover-light)</div> |
 
-Button background color when dark mode is off, on hover<br><br>
+Button background when dark mode is off, on hover<br><br>
 
 ### --mbx-button-background-hover-dark
 
@@ -118,7 +118,7 @@ Button background color when dark mode is off, on hover<br><br>
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-button-background-hover](#mbx-button-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](../../global/css-vars.md#mbx-background-hover-dark)</div> |
 
-Button background color when dark mode is on, on hover<br><br>
+Button background when dark mode is on, on hover<br><br>
 
 ### --mbx-button-text-color-hover
 

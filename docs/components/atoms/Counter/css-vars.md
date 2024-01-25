@@ -38,7 +38,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `mbx-counterbox-background-light` and `mbx-counterbox-background-dark`<br><br>
 
 ### --mbx-counterbox-background-light
 
@@ -48,7 +48,7 @@
 | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-counterbox-background](#mbx-counterbox-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-light](../../global/css-vars.md#mbx-background-color-light)</div> |
 
-<br><br>
+Counter background when dark mode is off<br><br>
 
 ### --mbx-counterbox-background-dark
 
@@ -58,7 +58,7 @@
 | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-counterbox-background](#mbx-counterbox-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-dark](../../global/css-vars.md#mbx-background-color-dark)</div> |
 
-<br><br>
+Counter background when dark mode is on<br><br>
 
 ### --mbx-counterbox-text-color
 
@@ -68,7 +68,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `mbx-counterbox-text-color-light` and `mbx-counterbox-text-color-dark`<br><br>
 
 ### --mbx-counterbox-text-color-light
 
@@ -78,7 +78,7 @@
 | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-counterbox-text-color](#mbx-counterbox-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#mbx-text-color-light)</div> |
 
-<br><br>
+Counter text color when dark mode is off<br><br>
 
 ### --mbx-counterbox-text-color-dark
 
@@ -88,7 +88,7 @@
 | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-counterbox-text-color](#mbx-counterbox-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#mbx-text-color-dark)</div> |
 
-<br><br>
+Counter text color when dark mode is on<br><br>
 
 ### --mbx-counterbox-background-hover
 
@@ -98,7 +98,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `mbx-counterbox-background-hover-light` and `mbx-counterbox-background-hover-dark`<br><br>
 
 ### --mbx-counterbox-background-hover-light
 
@@ -108,7 +108,7 @@
 | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-counterbox-background-hover](#mbx-counterbox-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-light](../../global/css-vars.md#mbx-background-color-hover-light)</div> |
 
-<br><br>
+Counter background when dark mode is off, on hover<br><br>
 
 ### --mbx-counterbox-background-hover-dark
 
@@ -118,7 +118,7 @@
 | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-counterbox-background-hover](#mbx-counterbox-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-dark](../../global/css-vars.md#mbx-background-color-hover-dark)</div> |
 
-<br><br>
+Counter background when dark mode is on, on hover<br><br>
 
 ### --mbx-counterbox-text-color-hover
 
@@ -128,7 +128,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `mbx-counterbox-text-color-hover-light` and `mbx-counterbox-text-color-hover-dark`<br><br>
 
 ### --mbx-counterbox-text-color-hover-light
 
@@ -138,7 +138,7 @@
 | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-counterbox-text-color-hover](#mbx-counterbox-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](../../global/css-vars.md#mbx-text-color-hover-light)</div> |
 
-<br><br>
+Counter text color when dark mode is off, on hover<br><br>
 
 ### --mbx-counterbox-text-color-hover-dark
 
@@ -148,4 +148,4 @@
 | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-counterbox-text-color-hover](#mbx-counterbox-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](../../global/css-vars.md#mbx-text-color-hover-dark)</div> |
 
-<br><br>
+Counter text color when dark mode is on, on hover<br><br>

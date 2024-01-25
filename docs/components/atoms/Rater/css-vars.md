@@ -29,7 +29,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `mbx-rater-background-light` and `mbx-rater-background-dark`<br><br>
 
 ### --mbx-rater-background-light
 
@@ -39,7 +39,7 @@
 | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-rater-background](#mbx-rater-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div> |
 
-<br><br>
+Rater background when dark mode is off<br><br>
 
 ### --mbx-rater-background-dark
 
@@ -49,4 +49,4 @@
 | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-rater-background](#mbx-rater-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#mbx-background-dark)</div> |
 
-<br><br>
+Rater background when dark mode is on<br><br>
