@@ -1,19 +1,27 @@
 {
-  "--mbx-card-background": {},
+  "--mbx-card-background": {
+    "description": "Fallback value for `--mbx-card-background-light` and `--mbx-card-background-dark`"
+  },
   "--mbx-card-background-light": {
+    "description": "Card background when dark mode is `off`",
     "fallback": "--mbx-card-background",
     "defaultColor": "linear-gradient(to right, #fff, #ededee, #e6e7e7)"
   },
   "--mbx-card-background-dark": {
+    "description": "Card background when dark mode is `on`",
     "fallback": "--mbx-card-background",
     "defaultColor": "linear-gradient(to right, #2d3748, #1d232e)"
   },
-  "--mbx-card-text-color": {},
+  "--mbx-card-text-color": {
+    "description": "Fallback value for `--mbx-card-text-color-light` and `--mbx-card-text-color-dark`"
+  },
   "--mbx-card-text-color-light": {
+    "description": "Card text color when dark mode is `off`",
     "fallback": "--mbx-card-text-color",
     "defaultGlobal": "--mbx-text-color-light"
   },
   "--mbx-card-text-color-dark": {
+    "description": "Card text color when dark mode is `on`",
     "fallback": "--mbx-card-text-color",
     "defaultGlobal": "--mbx-text-color-dark"
   }

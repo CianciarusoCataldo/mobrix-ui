@@ -1,19 +1,27 @@
 {
-  "--mbx-container-background": {},
+  "--mbx-container-background": {
+    "description": "Fallback value for `--mbx-container-background-light` and `--mbx-container-background-dark`"
+  },
   "--mbx-container-background-light": {
+    "description": "Container background when dark mode is `off`",
     "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-container-background"
   },
   "--mbx-container-background-dark": {
+    "description": "Container background when dark mode is `on`",
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-container-background"
   },
-  "--mbx-container-text-color": {},
+  "--mbx-container-text-color": {
+    "description": "Fallback value for `--mbx-container-text-color-light` and `--mbx-container-text-color-dark`"
+  },
   "--mbx-container-text-color-light": {
+    "description": "Container text color when dark mode is `off`",
     "defaultGlobal": "--mbx-text-color-light",
     "fallback": "--mbx-container-text-color"
   },
   "--mbx-container-text-color-dark": {
+    "description": "Container text color when dark mode is `on`",
     "defaultGlobal": "--mbx-text-color-dark",
     "fallback": "--mbx-container-text-color"
   }

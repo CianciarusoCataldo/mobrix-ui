@@ -1,1 +1,12 @@
-{}
+{
+  "onClose": {
+    "description": "Callback triggered when the X icon is clicked",
+    "default": "() => {}",
+    "type": "() => void"
+  },
+  "alwaysVisible": {
+    "description": "If `true`, the DismissableCard won't disappear if the X icon is clicked (can be hidden with `hide` shared prop)",
+    "default": "false",
+    "type": "boolean"
+  }
+}

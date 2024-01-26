@@ -1,1 +1,22 @@
-{}
+{
+  "value": {
+    "description": "actual selected element (as index). If not set, default value will be used.",
+    "type": "number",
+    "default": 0
+  },
+  "elements": {
+    "description": "Dropdown content elements",
+    "type": "(JSX.Element | string)[]",
+    "default": "[]"
+  },
+  "onChange": {
+    "description": "alllback triggered when selecting new element from dropdown",
+    "type": "(index: number) => void",
+    "default": "() => {}"
+  },
+  "hideArrow": {
+    "description": "If `true`, hide the arrow icon near selected element",
+    "type": "boolean",
+    "default": "false"
+  }
+}

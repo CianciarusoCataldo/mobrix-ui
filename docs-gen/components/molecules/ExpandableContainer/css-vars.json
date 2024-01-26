@@ -1,38 +1,66 @@
 {
-  "--mbx-expandablecontainer-background": {},
+  "--mbx-expandablecontainer-background": {
+    "description": "Fallback value for `--mbx-expandablecontainer-background-light` and `--mbx-expandablecontainer-background-dark`"
+  },
   "--mbx-expandablecontainer-background-light": {
-    "default": "[--mbx-container-background-light](container-css-vars.md#mbx-container-background-light)",
+    "description": "ExpandableContainer background when dark mode is `off`",
+    "defaultExternal": {
+      "type": "molecules",
+      "component": "container",
+      "prop": "mbx-container-background-light"
+    },
     "fallback": "--mbx-expandablecontainer-background"
   },
   "--mbx-expandablecontainer-background-dark": {
-    "default": "[--mbx-container-background-dark](container-css-vars.md#mbx-container-background-dark)",
+    "description": "ExpandableContainer background when dark mode is `on`",
+    "defaultExternal": {
+      "type": "molecules",
+      "component": "container",
+      "prop": "mbx-container-background-dark"
+    },
     "fallback": "--mbx-expandablecontainer-background"
   },
-  "--mbx-expandablecontainer-text-color": {},
+  "--mbx-expandablecontainer-text-color": {
+    "description": "Fallback value for `--mbx-expandablecontainer-text-color-light` and `--mbx-expandablecontainer-text-color-dark`"
+  },
   "--mbx-expandablecontainer-text-color-light": {
-    "default": "[--mbx-container-text-color-light](container-css-vars.md#mbx-container-text-color-light)",
+    "description": "ExpandableContainer text color when dark mode is `off`",
+    "defaultExternal": {
+      "type": "molecules",
+      "component": "container",
+      "prop": "mbx-container-text-color-light"
+    },
     "fallback": "--mbx-expandablecontainer-text-color"
   },
   "--mbx-expandablecontainer-text-color-dark": {
-    "default": "[--mbx-container-text-color-dark](container-css-vars.md#mbx-container-text-color-dark)",
+    "description": "ExpandableContainer text color when dark mode is `on`",
+    "defaultExternal": {
+      "type": "molecules",
+      "component": "container",
+      "prop": "mbx-container-text-color-dark"
+    },
     "fallback": "--mbx-expandablecontainer-text-color"
   },
-  "--mbx-expandablecontainer-arrow-color": {},
+  "--mbx-expandablecontainer-arrow-color": {
+    "description": "Fallback value for `--mbx-expandablecontainer-arrow-color-light` and `--mbx-expandablecontainer-arrow-color-dark`"
+  },
   "--mbx-expandablecontainer-arrow-color-light": {
-    "default": "[--mbx-expandablecontainer-text-color-light](#mbx-expandablecontainer-text-color-light)",
+    "defaultInternal": "--mbx-expandablecontainer-text-color-light",
     "fallback": "--mbx-expandablecontainer-arrow-color"
   },
   "--mbx-expandablecontainer-arrow-color-dark": {
-    "default": "[--mbx-expandablecontainer-text-color-dark](#mbx-expandablecontainer-text-color-dark)",
+    "defaultInternal": "--mbx-expandablecontainer-text-color-dark",
     "fallback": "--mbx-expandablecontainer-arrow-color"
   },
-  "--mbx-expandablecontainer-arrow-color-hover": {},
+  "--mbx-expandablecontainer-arrow-color-hover": {
+    "description": "Fallback value for `--mbx-expandablecontainer-arrow-color-hover-light` and `--mbx-expandablecontainer-arrow-color-hover-dark`"
+  },
   "--mbx-expandablecontainer-arrow-color-hover-light": {
-    "default": "[--mbx-text-color-hover-light](global-css-vars.md#mbx-text-color-hover-light)",
+    "defaultInternal": "--mbx-expandablecontainer-arrow-color-lrrowight",
     "fallback": "--mbx-expandablecontainer-arrow-color-hover"
   },
   "--mbx-expandablecontainer-arrow-color-hover-dark": {
-    "default": "[--mbx-text-color-hover-dark](global-css-vars.md#mbx-text-color-hover-dark)",
+    "defaultInternal": "--mbx-expandablecontainer-a-color-dark",
     "fallback": "--mbx-expandablecontainer-arrow-color-hover"
   }
 }

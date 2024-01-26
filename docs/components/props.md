@@ -82,12 +82,13 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                          | <div style='text-align:center;margin:auto;'>Type</div>       | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------- | ------------ | --------------- | --------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[children](atoms/Button/props.md#children)</div>         | <div style='text-align:center;margin:auto;'>(JSX.Element     | string)                                                   | (JSX.Element | string)[]</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[onClick](atoms/Button/props.md#onclick)</div>           | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[onMouseEnter](atoms/Button/props.md#onmouseenter)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[onMouseLeave](atoms/Button/props.md#onmouseleave)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[children](atoms/Button/props.md#children)</div> | <div style='text-align:center;margin:auto;'>(JSX.Element | string) | (JSX.Element | string)[]</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onClick](atoms/Button/props.md#onclick)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onMouseEnter](atoms/Button/props.md#onmouseenter)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onMouseLeave](atoms/Button/props.md#onmouseleave)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 <br>
@@ -96,11 +97,12 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                    | <div style='text-align:center;margin:auto;'>Type</div>                        | <div style='text-align:center;margin:auto;'>Default</div>            |
-| ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[value](atoms/CheckBox/props.md#value)</div>       | <div style='text-align:center;margin:auto;'>boolean</div>                     | <div style='text-align:center;margin:auto;'>false</div>              |
-| <div style='text-align:center;margin:auto;'>[onChange](atoms/CheckBox/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: boolean) => void</div> | <div style='text-align:center;margin:auto;'>/</div>                  |
-| <div style='text-align:center;margin:auto;'>[icon](atoms/CheckBox/props.md#icon)</div>         | <div style='text-align:center;margin:auto;'>JSX.Element</div>                 | <div style='text-align:center;margin:auto;'>Internal tick icon</div> |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](atoms/CheckBox/props.md#value)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
+| <div style='text-align:center;margin:auto;'>[onChange](atoms/CheckBox/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: boolean) => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[icon](atoms/CheckBox/props.md#icon)</div> | <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>Internal tick icon</div> |
 
 <br>
 <br>
@@ -109,11 +111,12 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                         | <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- | ---------- | -------------- | ------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[value](atoms/CodeBox/props.md#value)</div>             | <div style='text-align:center;margin:auto;'>string</div>  | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[highlight](atoms/CodeBox/props.md#highlight)</div>     | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[environment](atoms/CodeBox/props.md#environment)</div> | <div style='text-align:center;margin:auto;'>'javascript'  | 'python'                                                  | 'terminal' | 'common'</div> | <div style='text-align:center;margin:auto;'>'terminal'</div> |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](atoms/CodeBox/props.md#value)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[highlight](atoms/CodeBox/props.md#highlight)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[environment](atoms/CodeBox/props.md#environment)</div> | <div style='text-align:center;margin:auto;'>'javascript' | 'python' | 'terminal' | 'common'</div> | <div style='text-align:center;margin:auto;'>'terminal'</div> |
 
 <br>
 <br>
@@ -122,14 +125,15 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                         | <div style='text-align:center;margin:auto;'>Type</div>                       | <div style='text-align:center;margin:auto;'>Default</div>  |
-| --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[value](atoms/Counter/props.md#value)</div>             | <div style='text-align:center;margin:auto;'>number</div>                     | <div style='text-align:center;margin:auto;'>/</div>        |
-| <div style='text-align:center;margin:auto;'>[onChange](atoms/Counter/props.md#onchange)</div>       | <div style='text-align:center;margin:auto;'>(newValue: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
-| <div style='text-align:center;margin:auto;'>[placeholder](atoms/Counter/props.md#placeholder)</div> | <div style='text-align:center;margin:auto;'>string</div>                     | <div style='text-align:center;margin:auto;'>/</div>        |
-| <div style='text-align:center;margin:auto;'>[readOnly](atoms/Counter/props.md#readonly)</div>       | <div style='text-align:center;margin:auto;'>boolean</div>                    | <div style='text-align:center;margin:auto;'>false</div>    |
-| <div style='text-align:center;margin:auto;'>[min](atoms/Counter/props.md#min)</div>                 | <div style='text-align:center;margin:auto;'>number</div>                     | <div style='text-align:center;margin:auto;'>/</div>        |
-| <div style='text-align:center;margin:auto;'>[max](atoms/Counter/props.md#max)</div>                 | <div style='text-align:center;margin:auto;'>number</div>                     | <div style='text-align:center;margin:auto;'>/</div>        |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](atoms/Counter/props.md#value)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onChange](atoms/Counter/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
+| <div style='text-align:center;margin:auto;'>[placeholder](atoms/Counter/props.md#placeholder)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[readOnly](atoms/Counter/props.md#readonly)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
+| <div style='text-align:center;margin:auto;'>[min](atoms/Counter/props.md#min)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[max](atoms/Counter/props.md#max)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 <br>
@@ -138,8 +142,9 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 
 <br>
 <br>
@@ -148,8 +153,9 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 
 <br>
 <br>
@@ -158,12 +164,13 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                       | <div style='text-align:center;margin:auto;'>Type</div>                       | <div style='text-align:center;margin:auto;'>Default</div>  |
-| ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[value](atoms/Input/props.md#value)</div>             | <div style='text-align:center;margin:auto;'>string</div>                     | <div style='text-align:center;margin:auto;'>/</div>        |
-| <div style='text-align:center;margin:auto;'>[onChange](atoms/Input/props.md#onchange)</div>       | <div style='text-align:center;margin:auto;'>(newValue: string) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
-| <div style='text-align:center;margin:auto;'>[placeholder](atoms/Input/props.md#placeholder)</div> | <div style='text-align:center;margin:auto;'>string</div>                     | <div style='text-align:center;margin:auto;'>/</div>        |
-| <div style='text-align:center;margin:auto;'>[readOnly](atoms/Input/props.md#readonly)</div>       | <div style='text-align:center;margin:auto;'>boolean</div>                    | <div style='text-align:center;margin:auto;'>false</div>    |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](atoms/Input/props.md#value)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onChange](atoms/Input/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: string) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
+| <div style='text-align:center;margin:auto;'>[placeholder](atoms/Input/props.md#placeholder)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[readOnly](atoms/Input/props.md#readonly)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
 
 <br>
 <br>
@@ -172,9 +179,10 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- | --------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[children](atoms/Label/props.md#children)</div> | <div style='text-align:center;margin:auto;'>string     | string[]</div>                                            | <div style='text-align:center;margin:auto;'>/</div> |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[children](atoms/Label/props.md#children)</div> | <div style='text-align:center;margin:auto;'>string | string[]</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 <br>
@@ -183,11 +191,12 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                | <div style='text-align:center;margin:auto;'>Type</div>   | <div style='text-align:center;margin:auto;'>Default</div> |
-| ------------------------------------------------------------------------------------------ | -------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[to](atoms/Link/props.md#to)</div>             | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[newTab](atoms/Link/props.md#newtab)</div>     | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>false</div>   |
-| <div style='text-align:center;margin:auto;'>[children](atoms/Link/props.md#children)</div> | <div style='text-align:center;margin:auto;'>JSX.Element  | string</div>                                              | <div style='text-align:center;margin:auto;'>/</div> |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[to](atoms/Link/props.md#to)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[newTab](atoms/Link/props.md#newtab)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>false</div> |
+| <div style='text-align:center;margin:auto;'>[children](atoms/Link/props.md#children)</div> | <div style='text-align:center;margin:auto;'>JSX.Element | string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 <br>
@@ -196,11 +205,12 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                               | <div style='text-align:center;margin:auto;'>Type</div>                        | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[value](atoms/RadioButton/props.md#value)</div>               | <div style='text-align:center;margin:auto;'>boolean</div>                     | <div style='text-align:center;margin:auto;'>false</div>   |
-| <div style='text-align:center;margin:auto;'>[onChange](atoms/RadioButton/props.md#onchange)</div>         | <div style='text-align:center;margin:auto;'>(newValue: boolean) => void</div> | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[deselectable](atoms/RadioButton/props.md#deselectable)</div> | <div style='text-align:center;margin:auto;'>boolean</div>                     | <div style='text-align:center;margin:auto;'>false</div>   |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](atoms/RadioButton/props.md#value)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
+| <div style='text-align:center;margin:auto;'>[onChange](atoms/RadioButton/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: boolean) => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[deselectable](atoms/RadioButton/props.md#deselectable)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
 
 <br>
 <br>
@@ -209,13 +219,14 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                 | <div style='text-align:center;margin:auto;'>Type</div>                     | <div style='text-align:center;margin:auto;'>Default</div>  |
-| ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[value](atoms/Rater/props.md#value)</div>       | <div style='text-align:center;margin:auto;'>number</div>                   | <div style='text-align:center;margin:auto;'>0</div>        |
-| <div style='text-align:center;margin:auto;'>[max](atoms/Rater/props.md#max)</div>           | <div style='text-align:center;margin:auto;'>number</div>                   | <div style='text-align:center;margin:auto;'>5</div>        |
-| <div style='text-align:center;margin:auto;'>[readOnly](atoms/Rater/props.md#readonly)</div> | <div style='text-align:center;margin:auto;'>boolean</div>                  | <div style='text-align:center;margin:auto;'>false</div>    |
-| <div style='text-align:center;margin:auto;'>[type](atoms/Rater/props.md#type)</div>         | <div style='text-align:center;margin:auto;'>'star'                         | 'circle'</div>                                             | <div style='text-align:center;margin:auto;'>'star'</div> |
-| <div style='text-align:center;margin:auto;'>[vertical](atoms/Rater/props.md#vertical)</div> | <div style='text-align:center;margin:auto;'>boolean</div>                  | <div style='text-align:center;margin:auto;'>false</div>    |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](atoms/Rater/props.md#value)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>0</div> |
+| <div style='text-align:center;margin:auto;'>[max](atoms/Rater/props.md#max)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>5</div> |
+| <div style='text-align:center;margin:auto;'>[readOnly](atoms/Rater/props.md#readonly)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
+| <div style='text-align:center;margin:auto;'>[type](atoms/Rater/props.md#type)</div> | <div style='text-align:center;margin:auto;'>'star'|'circle'</div> | <div style='text-align:center;margin:auto;'>'star'</div> |
+| <div style='text-align:center;margin:auto;'>[vertical](atoms/Rater/props.md#vertical)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
 | <div style='text-align:center;margin:auto;'>[onChange](atoms/Rater/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(newVote:number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
 <br>
@@ -225,12 +236,13 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                                  | <div style='text-align:center;margin:auto;'>Type</div>                    | <div style='text-align:center;margin:auto;'>Default</div>  |
-| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[value](atoms/Selector/props.md#value)</div>                     | <div style='text-align:center;margin:auto;'>number</div>                  | <div style='text-align:center;margin:auto;'>0</div>        |
-| <div style='text-align:center;margin:auto;'>[onChange](atoms/Selector/props.md#onchange)</div>               | <div style='text-align:center;margin:auto;'>(index: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
-| <div style='text-align:center;margin:auto;'>[elements](atoms/Selector/props.md#elements)</div>               | <div style='text-align:center;margin:auto;'>string[]</div>                | <div style='text-align:center;margin:auto;'>[]</div>       |
-| <div style='text-align:center;margin:auto;'>[optionClassName](atoms/Selector/props.md#optionclassname)</div> | <div style='text-align:center;margin:auto;'>string</div>                  | <div style='text-align:center;margin:auto;'>/</div>        |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](atoms/Selector/props.md#value)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>0</div> |
+| <div style='text-align:center;margin:auto;'>[onChange](atoms/Selector/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(index: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
+| <div style='text-align:center;margin:auto;'>[elements](atoms/Selector/props.md#elements)</div> | <div style='text-align:center;margin:auto;'>string[]</div> | <div style='text-align:center;margin:auto;'>[]</div> |
+| <div style='text-align:center;margin:auto;'>[optionClassName](atoms/Selector/props.md#optionclassname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 <br>
@@ -239,13 +251,14 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                  | <div style='text-align:center;margin:auto;'>Type</div>                       | <div style='text-align:center;margin:auto;'>Default</div>  |
-| -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[value](atoms/Slider/props.md#value)</div>       | <div style='text-align:center;margin:auto;'>number</div>                     | <div style='text-align:center;margin:auto;'>/</div>        |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](atoms/Slider/props.md#value)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[onChange](atoms/Slider/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
-| <div style='text-align:center;margin:auto;'>[min](atoms/Slider/props.md#min)</div>           | <div style='text-align:center;margin:auto;'>number</div>                     | <div style='text-align:center;margin:auto;'>/</div>        |
-| <div style='text-align:center;margin:auto;'>[max](atoms/Slider/props.md#max)</div>           | <div style='text-align:center;margin:auto;'>number</div>                     | <div style='text-align:center;margin:auto;'>/</div>        |
-| <div style='text-align:center;margin:auto;'>[readOnly](atoms/Slider/props.md#readonly)</div> | <div style='text-align:center;margin:auto;'>boolean</div>                    | <div style='text-align:center;margin:auto;'>/</div>        |
+| <div style='text-align:center;margin:auto;'>[min](atoms/Slider/props.md#min)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[max](atoms/Slider/props.md#max)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[readOnly](atoms/Slider/props.md#readonly)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 <br>
@@ -254,10 +267,11 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                   | <div style='text-align:center;margin:auto;'>Type</div>                  | <div style='text-align:center;margin:auto;'>Default</div>   |
-| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[value](atoms/Spinner/props.md#value)</div>       | <div style='text-align:center;margin:auto;'>number</div>                | <div style='text-align:center;margin:auto;'>'loading'</div> |
-| <div style='text-align:center;margin:auto;'>[statuses](atoms/Spinner/props.md#statuses)</div> | <div style='text-align:center;margin:auto;'>Record<string, (JSX.Element | string)></div>                                              | <div style='text-align:center;margin:auto;'>/</div> |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](atoms/Spinner/props.md#value)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>'loading'</div> |
+| <div style='text-align:center;margin:auto;'>[statuses](atoms/Spinner/props.md#statuses)</div> | <div style='text-align:center;margin:auto;'>Record<string, (JSX.Element | string)></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 <br>
@@ -266,13 +280,14 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                                  | <div style='text-align:center;margin:auto;'>Type</div>                        | <div style='text-align:center;margin:auto;'>Default</div>  |
-| -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[value](atoms/Toggle/props.md#value)</div>       | <div style='text-align:center;margin:auto;'>boolean</div>                     | <div style='text-align:center;margin:auto;'>/</div>        |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](atoms/Toggle/props.md#value)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[onChange](atoms/Toggle/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: boolean) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
-| <div style='text-align:center;margin:auto;'>[onIcon](atoms/Toggle/props.md#onicon)</div>     | <div style='text-align:center;margin:auto;'>JSX.Element</div>                 | <div style='text-align:center;margin:auto;'>/</div>        |
-| <div style='text-align:center;margin:auto;'>[icon](atoms/Toggle/props.md#icon)</div>         | <div style='text-align:center;margin:auto;'>JSX.Element</div>                 | <div style='text-align:center;margin:auto;'>/</div>        |
-| <div style='text-align:center;margin:auto;'>[offIcon](atoms/Toggle/props.md#officon)</div>   | <div style='text-align:center;margin:auto;'>JSX.Element</div>                 | <div style='text-align:center;margin:auto;'>/</div>        |
+| <div style='text-align:center;margin:auto;'>[onIcon](atoms/Toggle/props.md#onicon)</div> | <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[icon](atoms/Toggle/props.md#icon)</div> | <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[offIcon](atoms/Toggle/props.md#officon)</div> | <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -284,8 +299,15 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[header](molecules/Card/props.md#header)</div> | <div style='text-align:center;margin:auto;'>JSX.Element | string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[body](molecules/Card/props.md#body)</div> | <div style='text-align:center;margin:auto;'>JSX.Element | string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[footer](molecules/Card/props.md#footer)</div> | <div style='text-align:center;margin:auto;'>JSX.Element | string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[noDivider](molecules/Card/props.md#nodivider)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[noTopDivider](molecules/Card/props.md#notopdivider)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[noBottomDivider](molecules/Card/props.md#nobottomdivider)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 <br>
@@ -294,8 +316,12 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[elements](molecules/Carousel/props.md#elements)</div> | <div style='text-align:center;margin:auto;'>(JSX.Element | string)[]</div> | <div style='text-align:center;margin:auto;'>[]</div> |
+| <div style='text-align:center;margin:auto;'>[onChange](molecules/Carousel/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(index: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
+| <div style='text-align:center;margin:auto;'>[value](molecules/Carousel/props.md#value)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>0</div> |
 
 <br>
 <br>
@@ -304,8 +330,11 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[children](molecules/Container/props.md#children)</div> | <div style='text-align:center;margin:auto;'>any</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[wrapper](molecules/Container/props.md#wrapper)</div> | <div style='text-align:center;margin:auto;'>'div' | 'header' | 'footer'</div> | <div style='text-align:center;margin:auto;'>div</div> |
 
 <br>
 <br>
@@ -314,8 +343,11 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[onClose](molecules/DismissableCard/props.md#onclose)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
+| <div style='text-align:center;margin:auto;'>[alwaysVisible](molecules/DismissableCard/props.md#alwaysvisible)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
 
 <br>
 <br>
@@ -324,8 +356,13 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](molecules/Dropdown/props.md#value)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[elements](molecules/Dropdown/props.md#elements)</div> | <div style='text-align:center;margin:auto;'>(JSX.Element | string)[]</div> | <div style='text-align:center;margin:auto;'>[]</div> |
+| <div style='text-align:center;margin:auto;'>[onChange](molecules/Dropdown/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(index: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
+| <div style='text-align:center;margin:auto;'>[hideArrow](molecules/Dropdown/props.md#hidearrow)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
 
 <br>
 <br>
@@ -334,8 +371,14 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[children](molecules/ExpandableContainer/props.md#children)</div> | <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[wrapper](molecules/ExpandableContainer/props.md#wrapper)</div> | <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[expanded](molecules/ExpandableContainer/props.md#expanded)</div> | <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[compact](molecules/ExpandableContainer/props.md#compact)</div> | <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onChange](molecules/ExpandableContainer/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 <br>
@@ -344,8 +387,9 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 
 <br>
 <br>
@@ -354,8 +398,9 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 
 <br>
 <br>
@@ -364,8 +409,9 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 
 <br>
 <br>
@@ -374,8 +420,9 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 
 <br>
 <br>
@@ -384,8 +431,9 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 
 <br>
 <br>
@@ -394,8 +442,9 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 
 <br>
 <br>
@@ -404,8 +453,9 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 
 <br>
 <br>
@@ -414,8 +464,9 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 
 <br>
 
@@ -427,8 +478,9 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 
 <br>
 <br>
@@ -437,8 +489,9 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 
 <br>
 <br>
@@ -447,8 +500,9 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 
 <br>
 <br>
@@ -457,7 +511,8 @@
 
 <br>
 
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 
 <br>

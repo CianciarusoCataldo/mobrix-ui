@@ -190,11 +190,11 @@
   );
   --mbx-c-exp-arr-h-l: var(
     --mbx-expandablecontainer-arrow-color-hover-light,
-    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-txt-l))
+    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-exp-arr-l))
   );
   --mbx-c-exp-arr-h-d: var(
     --mbx-expandablecontainer-arrow-color-hover-dark,
-    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-txt-d))
+    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-exp-arr-d))
   );
 
   /** FormField **/

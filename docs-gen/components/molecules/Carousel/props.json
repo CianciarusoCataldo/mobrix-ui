@@ -1,1 +1,17 @@
-{}
+{
+  "elements": {
+    "type": "(JSX.Element | string)[]",
+    "description": "Carousel elements",
+    "default": "[]"
+  },
+  "onChange": {
+    "type": "(index: number) => void",
+    "description": "callback triggered when current displayed element change",
+    "default": "() => {}"
+  },
+  "value": {
+    "type": "number",
+    "description": "Initial element to show (as index)",
+    "default": "0"
+  }
+}

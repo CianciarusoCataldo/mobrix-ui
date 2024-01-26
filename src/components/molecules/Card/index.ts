@@ -11,7 +11,6 @@ import cardComponent from "./component";
  *
  * @since 1.0.0
  *
- * @param {JSX.Element | Element} icon A custom icon showed before the Card header
  * @param {JSX.Element | Element | string} header Card header content
  * @param {JSX.Element | Element | string} body Card body content
  * @param {JSX.Element | Element | string} footer Card footer content

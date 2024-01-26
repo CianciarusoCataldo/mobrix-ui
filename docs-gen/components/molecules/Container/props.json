@@ -1,1 +1,11 @@
-{}
+{
+  "children": {
+    "type": "any",
+    "description": "content to render inside Container"
+  },
+  "wrapper": {
+    "type": "'div' | 'header' | 'footer'",
+    "description": "component wrapper type",
+    "default": "div"
+  }
+}

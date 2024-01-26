@@ -1,15 +1,5 @@
 const fs = require("fs");
 
-const wrapElement = (element, styles = {}, wrapper = "div") => {
-  let result = "<" + wrapper + " style='";
-
-  Object.keys(styles).forEach((attribute) => {
-    result += attribute + ":" + styles[attribute] + ";";
-  });
-
-  return result + "'>" + element + "</" + wrapper + ">";
-};
-
 const COMPONENT_NAME_TO_PARSE = process.env["COMPONENT_NAME"];
 const COMPONENT_TYPE_TO_PARSE = process.env["COMPONENT_TYPE"];
 const INPUT_PATH = process.env["OUTPUT_FILE_PATH"];

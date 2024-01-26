@@ -11,21 +11,22 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Parameter</div>                           | <div style='text-align:center;margin:auto;'>Type</div>                | <div style='text-align:center;margin:auto;'>Default</div> |
-| ------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[key](#key)</div>                         | <div style='text-align:center;margin:auto;'>string</div>              | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[className](#classname)</div>             | <div style='text-align:center;margin:auto;'>string</div>              | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[dark](#dark)</div>                       | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[hide](#hide)</div>                       | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[id](#id)</div>                           | <div style='text-align:center;margin:auto;'>string</div>              | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[shadow](#shadow)</div>                   | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>true</div>    |
-| <div style='text-align:center;margin:auto;'>[style](#style)</div>                     | <div style='text-align:center;margin:auto;'>CSSProperties</div>       | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[unstyled](#unstyled)</div>               | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[animated](#animated)</div>               | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>true</div>    |
-| <div style='text-align:center;margin:auto;'>[background](#background)</div>           | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>true</div>    |
-| <div style='text-align:center;margin:auto;'>[hover](#hover)</div>                     | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>true</div>    |
-| <div style='text-align:center;margin:auto;'>[disabled](#disabled)</div>               | <div style='text-align:center;margin:auto;'>boolean</div>             | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[additionalProps](#additionalprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div>       |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[key](#key)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[className](#classname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[dark](#dark)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[hide](#hide)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[id](#id)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[shadow](#shadow)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[style](#style)</div> | <div style='text-align:center;margin:auto;'>CSSProperties</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[unstyled](#unstyled)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[animated](#animated)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[background](#background)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[hover](#hover)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[disabled](#disabled)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[additionalProps](#additionalprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -39,9 +40,10 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>   | <div style='text-align:center;margin:auto;'>Default</div> |
-| -------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -57,9 +59,10 @@ React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>   | <div style='text-align:center;margin:auto;'>Default</div> |
-| -------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -75,9 +78,10 @@ custom className applied on main container
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -93,9 +97,10 @@ Enable/disable dark mode
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -111,9 +116,10 @@ Hide/show component
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>   | <div style='text-align:center;margin:auto;'>Default</div> |
-| -------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -129,9 +135,10 @@ Hide/show component
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div>    |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
 
 <br>
 
@@ -147,9 +154,10 @@ Enable/disable shadow behind component
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>          | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>CSSProperties</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>CSSProperties</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -165,9 +173,10 @@ Css inline properties applied on main container
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -183,9 +192,10 @@ If `true`, no standard MoBrix-ui styles will be applied on the components (usefu
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div>    |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
 
 <br>
 
@@ -201,9 +211,10 @@ Enable/disable component animations
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div>    |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
 
 <br>
 
@@ -219,9 +230,10 @@ Enable/disable component background
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div>    |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
 
 <br>
 
@@ -237,9 +249,10 @@ Enable/disable component hover standard styles
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -255,9 +268,10 @@ If true, disable the component. The effect may vary depending on the component t
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Type</div>                | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div>       |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 

@@ -1,6 +1,9 @@
 {
-  "since": "",
-  "description": "",
-  "see": [],
-  "examples": []
+  "since": "1.0.0",
+  "description": "An exapandable container, to hide/show some content on demand.",
+  "see": [
+    "https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/ExpandableContainer"
+  ],
+  "examples": [],
+  "extend": { "type": "molecules", "component": "Container" }
 }

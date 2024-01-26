@@ -1,6 +1,10 @@
 {
-  "since": "",
-  "description": "",
-  "see": [],
-  "examples": []
+  "since": "1.0.0",
+  "description": "A Card component. Its UI depends on given parameters (header, body and footer)",
+  "see": [
+    "https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card"
+  ],
+  "examples": [
+    "import { render } from 'react-dom'; import { Card } from 'mobrix-ui'; render(<Card header='Example header' body='Example body' footer='Example footer' />, document.getElementById('root'));"
+  ]
 }

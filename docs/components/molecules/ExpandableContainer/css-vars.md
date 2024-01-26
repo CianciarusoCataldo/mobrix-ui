@@ -11,20 +11,20 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Prop</div>                                                                                                  | <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-background](#mbx-expandablecontainer-background)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                                        |
-| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-background-light](#mbx-expandablecontainer-background-light)</div>               | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-background](#mbx-expandablecontainer-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-container-background-light](container-css-vars.md#mbx-container-background-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-background-dark](#mbx-expandablecontainer-background-dark)</div>                 | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-background](#mbx-expandablecontainer-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-container-background-dark](container-css-vars.md#mbx-container-background-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-text-color](#mbx-expandablecontainer-text-color)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                                        |
-| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-text-color-light](#mbx-expandablecontainer-text-color-light)</div>               | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-text-color](#mbx-expandablecontainer-text-color)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-container-text-color-light](container-css-vars.md#mbx-container-text-color-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-text-color-dark](#mbx-expandablecontainer-text-color-dark)</div>                 | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-text-color](#mbx-expandablecontainer-text-color)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-container-text-color-dark](container-css-vars.md#mbx-container-text-color-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color](#mbx-expandablecontainer-arrow-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                                        |
-| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color-light](#mbx-expandablecontainer-arrow-color-light)</div>             | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color](#mbx-expandablecontainer-arrow-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-text-color-light](#mbx-expandablecontainer-text-color-light)</div>  |
-| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color-dark](#mbx-expandablecontainer-arrow-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color](#mbx-expandablecontainer-arrow-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-text-color-dark](#mbx-expandablecontainer-text-color-dark)</div>    |
-| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color-hover](#mbx-expandablecontainer-arrow-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                                        |
-| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color-hover-light](#mbx-expandablecontainer-arrow-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color-hover](#mbx-expandablecontainer-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](global-css-vars.md#mbx-text-color-hover-light)</div>            |
-| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color-hover-dark](#mbx-expandablecontainer-arrow-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color-hover](#mbx-expandablecontainer-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](global-css-vars.md#mbx-text-color-hover-dark)</div>              |
+| <div style='text-align:center;margin:auto;'>Prop</div>                                                                                                  | <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-background](#mbx-expandablecontainer-background)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                                                      |
+| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-background-light](#mbx-expandablecontainer-background-light)</div>               | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-background](#mbx-expandablecontainer-background)</div>               | <div style='text-align:center;margin:auto;'>[mbx-container-background-light](../../molecules/container/css-vars.md#mbx-container-background-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-background-dark](#mbx-expandablecontainer-background-dark)</div>                 | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-background](#mbx-expandablecontainer-background)</div>               | <div style='text-align:center;margin:auto;'>[mbx-container-background-dark](../../molecules/container/css-vars.md#mbx-container-background-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-text-color](#mbx-expandablecontainer-text-color)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                                                      |
+| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-text-color-light](#mbx-expandablecontainer-text-color-light)</div>               | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-text-color](#mbx-expandablecontainer-text-color)</div>               | <div style='text-align:center;margin:auto;'>[mbx-container-text-color-light](../../molecules/container/css-vars.md#mbx-container-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-text-color-dark](#mbx-expandablecontainer-text-color-dark)</div>                 | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-text-color](#mbx-expandablecontainer-text-color)</div>               | <div style='text-align:center;margin:auto;'>[mbx-container-text-color-dark](../../molecules/container/css-vars.md#mbx-container-text-color-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color](#mbx-expandablecontainer-arrow-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                                                      |
+| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color-light](#mbx-expandablecontainer-arrow-color-light)</div>             | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color](#mbx-expandablecontainer-arrow-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-text-color-light](#mbx-expandablecontainer-text-color-light)</div>                |
+| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color-dark](#mbx-expandablecontainer-arrow-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color](#mbx-expandablecontainer-arrow-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-text-color-dark](#mbx-expandablecontainer-text-color-dark)</div>                  |
+| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color-hover](#mbx-expandablecontainer-arrow-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                                                      |
+| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color-hover-light](#mbx-expandablecontainer-arrow-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color-hover](#mbx-expandablecontainer-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color-lrrowight](#mbx-expandablecontainer-arrow-color-lrrowight)</div>      |
+| <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color-hover-dark](#mbx-expandablecontainer-arrow-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color-hover](#mbx-expandablecontainer-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-a-color-dark](#mbx-expandablecontainer-a-color-dark)</div>                        |
 
 ## CSS Variables list
 
@@ -38,27 +38,27 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `--mbx-expandablecontainer-background-light` and `--mbx-expandablecontainer-background-dark`<br><br>
 
 ### --mbx-expandablecontainer-background-light
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                                  |
-| --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-background](#mbx-expandablecontainer-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-container-background-light](container-css-vars.md#mbx-container-background-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                |
+| --------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-background](#mbx-expandablecontainer-background)</div> | <div style='text-align:center;margin:auto;'>[mbx-container-background-light](../../molecules/container/css-vars.md#mbx-container-background-light)</div> |
 
-<br><br>
+ExpandableContainer background when dark mode is `off`<br><br>
 
 ### --mbx-expandablecontainer-background-dark
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                                |
-| --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-background](#mbx-expandablecontainer-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-container-background-dark](container-css-vars.md#mbx-container-background-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                                              |
+| --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-background](#mbx-expandablecontainer-background)</div> | <div style='text-align:center;margin:auto;'>[mbx-container-background-dark](../../molecules/container/css-vars.md#mbx-container-background-dark)</div> |
 
-<br><br>
+ExpandableContainer background when dark mode is `on`<br><br>
 
 ### --mbx-expandablecontainer-text-color
 
@@ -68,27 +68,27 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `--mbx-expandablecontainer-text-color-light` and `--mbx-expandablecontainer-text-color-dark`<br><br>
 
 ### --mbx-expandablecontainer-text-color-light
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                                  |
-| --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-text-color](#mbx-expandablecontainer-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-container-text-color-light](container-css-vars.md#mbx-container-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                |
+| --------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-text-color](#mbx-expandablecontainer-text-color)</div> | <div style='text-align:center;margin:auto;'>[mbx-container-text-color-light](../../molecules/container/css-vars.md#mbx-container-text-color-light)</div> |
 
-<br><br>
+ExpandableContainer text color when dark mode is `off`<br><br>
 
 ### --mbx-expandablecontainer-text-color-dark
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                                |
-| --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-text-color](#mbx-expandablecontainer-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-container-text-color-dark](container-css-vars.md#mbx-container-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                                              |
+| --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-text-color](#mbx-expandablecontainer-text-color)</div> | <div style='text-align:center;margin:auto;'>[mbx-container-text-color-dark](../../molecules/container/css-vars.md#mbx-container-text-color-dark)</div> |
 
-<br><br>
+ExpandableContainer text color when dark mode is `on`<br><br>
 
 ### --mbx-expandablecontainer-arrow-color
 
@@ -98,7 +98,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `--mbx-expandablecontainer-arrow-color-light` and `--mbx-expandablecontainer-arrow-color-dark`<br><br>
 
 ### --mbx-expandablecontainer-arrow-color-light
 
@@ -128,15 +128,15 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `--mbx-expandablecontainer-arrow-color-hover-light` and `--mbx-expandablecontainer-arrow-color-hover-dark`<br><br>
 
 ### --mbx-expandablecontainer-arrow-color-hover-light
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                       |
-| ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color-hover](#mbx-expandablecontainer-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](global-css-vars.md#mbx-text-color-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color-hover](#mbx-expandablecontainer-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color-lrrowight](#mbx-expandablecontainer-arrow-color-lrrowight)</div> |
 
 <br><br>
 
@@ -144,8 +144,8 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color-hover](#mbx-expandablecontainer-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](global-css-vars.md#mbx-text-color-hover-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color-hover](#mbx-expandablecontainer-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-a-color-dark](#mbx-expandablecontainer-a-color-dark)</div> |
 
 <br><br>

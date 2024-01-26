@@ -1,6 +1,9 @@
 {
-  "since": "",
-  "description": "",
-  "see": [],
-  "examples": []
+  "since": "3.0.0",
+  "description": "A standard Card with a dismiss function",
+  "see": [
+    "https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/DismissableCard"
+  ],
+  "examples": [],
+  "extend": { "type": "molecules", "component": "Card" }
 }
