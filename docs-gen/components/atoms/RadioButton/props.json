@@ -4,14 +4,14 @@
     "description": "actual radio button value (radio icon visiblity)",
     "default": "false"
   },
-  "onChange": {
-    "type": "(newValue: boolean) => void",
-    "description": "callback triggered when radio button value change",
-    "default": ""
-  },
   "deselectable": {
     "type": "boolean",
     "description": "if `false`, the button can be selected only once (the value can't change then)",
     "default": "false"
+  },
+  "onChange": {
+    "type": "(newValue: boolean) => void",
+    "default": "() => {}",
+    "description": "Callback triggered when RadioButton component input value is changed by the user"
   }
 }

@@ -4,5 +4,13 @@
   "see": [
     "https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Dropdown"
   ],
-  "examples": []
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithCallback": {
+        "type": "number",
+        "overrideDescription": "Callback triggered when selecting new element from dropdown"
+      }
+    }
+  }
 }

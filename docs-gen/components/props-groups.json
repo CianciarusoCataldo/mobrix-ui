@@ -1,0 +1,18 @@
+{
+  "ComponentWithCallback": [
+    {
+      "prop": "onChange",
+      "type": "(newValue: TYPE) => void",
+      "description": "Callback triggered when COMPONENT component input value is changed by the user",
+      "default": "() => {}"
+    }
+  ],
+  "ClickableComponent": [
+    {
+      "prop": "onClick",
+      "type": "() => void",
+      "description": "Callback triggered when COMPONENT component is clicked",
+      "default": "() => {}"
+    }
+  ]
+}

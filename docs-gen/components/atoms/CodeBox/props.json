@@ -1,8 +1,5 @@
 {
-  "value": {
-    "type": "string",
-    "description": "code to display"
-  },
+  "value": { "type": "string", "description": "code to display" },
   "highlight": {
     "type": "boolean",
     "description": "Enable/disable  text highlight, based on selected environment",

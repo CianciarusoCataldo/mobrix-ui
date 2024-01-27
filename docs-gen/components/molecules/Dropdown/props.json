@@ -9,14 +9,14 @@
     "type": "(JSX.Element | string)[]",
     "default": "[]"
   },
-  "onChange": {
-    "description": "alllback triggered when selecting new element from dropdown",
-    "type": "(index: number) => void",
-    "default": "() => {}"
-  },
   "hideArrow": {
     "description": "If `true`, hide the arrow icon near selected element",
     "type": "boolean",
     "default": "false"
+  },
+  "onChange": {
+    "type": "(newValue: number) => void",
+    "default": "() => {}",
+    "description": "Callback triggered when selecting new element from dropdown"
   }
 }

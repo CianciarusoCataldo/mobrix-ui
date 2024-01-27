@@ -8,5 +8,38 @@
     "description": "If `true`, the DismissableCard won't disappear if the X icon is clicked (can be hidden with `hide` shared prop)",
     "default": "false",
     "type": "boolean"
+  },
+  "header": {
+    "description": "Card header content - extended from [Card component](../../molecules/Card/props.md#header)",
+    "type": "JSX.Element | string",
+    "comment": "Card header content - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
+  },
+  "body": {
+    "description": "Card body content - extended from [Card component](../../molecules/Card/props.md#body)",
+    "type": "JSX.Element | string",
+    "comment": "Card body content - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
+  },
+  "footer": {
+    "description": "Card footer content - extended from [Card component](../../molecules/Card/props.md#footer)",
+    "type": "JSX.Element | string",
+    "comment": "Card footer content - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
+  },
+  "noDivider": {
+    "description": "If `true`, hide all dividers - extended from [Card component](../../molecules/Card/props.md#noDivider)",
+    "type": "boolean",
+    "default": false,
+    "comment": "If `true`, hide all dividers - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
+  },
+  "noTopDivider": {
+    "description": "If `true`, hide the top divider, between header and body - extended from [Card component](../../molecules/Card/props.md#noTopDivider)",
+    "type": "boolean",
+    "default": false,
+    "comment": "If `true`, hide the top divider, between header and body - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
+  },
+  "noBottomDivider": {
+    "description": "If `true`, hide the top divider, between body and footer - extended from [Card component](../../molecules/Card/props.md#noBottomDivider)",
+    "type": "boolean",
+    "default": false,
+    "comment": "If `true`, hide the top divider, between body and footer - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
   }
 }

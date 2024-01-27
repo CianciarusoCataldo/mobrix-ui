@@ -2,5 +2,10 @@
   "since": "1.0.0",
   "description": "A checkbox element, totally customizable. The tick icon can be a custom image or an Element (using `icon` prop)",
   "see": [],
-  "examples": []
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithCallback": { "type": "boolean" }
+    }
+  }
 }

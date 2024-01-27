@@ -2,5 +2,13 @@
   "since": "",
   "description": "",
   "see": [],
-  "examples": []
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithCallback": {
+        "type": "number",
+        "overrideDescription": "callback triggered when user select a vote"
+      }
+    }
+  }
 }

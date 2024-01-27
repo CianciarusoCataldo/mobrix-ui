@@ -6,5 +6,10 @@
   ],
   "examples": [
     "import { render } from 'react-dom'; import { Carousel } from 'mobrix-ui'; render(<Carousel elements={[<div>Element 0</div>,<div>Element 1</div>]} value={1} />, document.getElementById('root'));"
-  ]
+  ],
+  "extend": {
+    "group": {
+      "ComponentWithCallback": { "type": "number" }
+    }
+  }
 }

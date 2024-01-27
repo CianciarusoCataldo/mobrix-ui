@@ -1,7 +1,28 @@
 {
-  "children": {},
-  "wrapper": {},
-  "expanded": {},
-  "compact": {},
-  "onChange": {}
+  "children": {
+    "type": "any",
+    "description": "content to render inside Container - extended from [Container component](../../molecules/Container/props.md#children)",
+    "comment": "content to render inside Container - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Container Container}"
+  },
+  "wrapper": {
+    "type": "'div' | 'header' | 'footer'",
+    "description": "component wrapper type - extended from [Container component](../../molecules/Container/props.md#wrapper)",
+    "default": "div",
+    "comment": "component wrapper type - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Container Container}"
+  },
+  "expanded": {
+    "type": "boolean",
+    "description": "Extra content showed only when container is expanded (`compact` === `true`)",
+    "default": false
+  },
+  "compact": {
+    "description": "if true, shows the whole container content",
+    "type": "boolean",
+    "default": false
+  },
+  "onChange": {
+    "type": "(newValue: boolean) => void",
+    "default": "() => {}",
+    "description": "Callback triggered when ExpandableContainer component input value is changed by the user"
+  }
 }

@@ -4,11 +4,6 @@
     "description": "toggle status (true - on/false - off)",
     "type": "boolean"
   },
-  "onChange": {
-    "default": "() => {}",
-    "description": "calllback triggered when Toggle status changes",
-    "type": "(newValue: boolean) => void"
-  },
   "onIcon": {
     "description": "custom toggle `on` icon (`value` === `true`)",
     "type": "JSX.Element"
@@ -20,5 +15,10 @@
   "offIcon": {
     "description": "custom toggle `off` icon (`value` === `false`)",
     "type": "JSX.Element"
+  },
+  "onChange": {
+    "type": "(newValue: boolean) => void",
+    "default": "() => {}",
+    "description": "Callback triggered when Toggle component input value is changed by the user"
   }
 }

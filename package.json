@@ -84,8 +84,9 @@
     "test": "sh ./scripts/start-tests.sh",
     "docs:setup": "sh ./docs-gen/utils/setup-docs.sh",
     "docs:format": "prettier --write docs/**/*.md docs/*/**/*.md docs/*/*/*.md docs/*/*/*/*.md",
-    "docs:generate-props": "sh ./docs-gen/props/generate-props.sh",
+    "docs:generate-props": "npm run update:props && sh ./docs-gen/props/generate-props.sh",
     "docs:generate-css-vars": "sh ./docs-gen/css-vars/generate-css-vars-list.sh",
-    "docs:generate-readme": "npm run docs:generate-css-vars && npm run docs:generate-props && npm run docs:setup && npm run docs:format && sh ./docs-gen/readme/generate-readme.sh && prettier --write README_GENERATED.md"
+    "docs:generate-readme": "npm run docs:generate-css-vars && npm run docs:generate-props && npm run docs:setup && npm run docs:format && sh ./docs-gen/readme/generate-readme.sh && prettier --write README_GENERATED.md",
+    "update:props": "sh ./docs-gen/utils/update-props.sh && prettier --write docs-gen/components/*/*/props.json"
   }
 }

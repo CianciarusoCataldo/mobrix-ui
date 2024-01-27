@@ -21,8 +21,8 @@
     "type": "boolean"
   },
   "onChange": {
+    "type": "(newValue: number) => void",
     "default": "() => {}",
-    "description": "callback triggered when user select a vote",
-    "type": "(newVote:number) => void"
+    "description": "callback triggered when user select a vote"
   }
 }

@@ -5,5 +5,10 @@
     "https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/ExpandableContainer"
   ],
   "examples": [],
-  "extend": { "type": "molecules", "component": "Container" }
+  "extend": {
+    "component": { "type": "molecules", "name": "Container" },
+    "group": {
+      "ComponentWithCallback": { "type": "boolean" }
+    }
+  }
 }

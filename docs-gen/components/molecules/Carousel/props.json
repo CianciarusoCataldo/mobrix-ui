@@ -5,9 +5,9 @@
     "default": "[]"
   },
   "onChange": {
-    "type": "(index: number) => void",
-    "description": "callback triggered when current displayed element change",
-    "default": "() => {}"
+    "type": "(newValue: number) => void",
+    "default": "() => {}",
+    "description": "Callback triggered when Carousel component input value is changed by the user"
   },
   "value": {
     "type": "number",

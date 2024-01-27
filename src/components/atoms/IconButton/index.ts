@@ -58,9 +58,9 @@ const IconButton: IconButtonComponent = ({
       ...additionalProps,
       ...(!props.disabled && {
         onClick,
+        onMouseEnter,
+        onMouseLeave,
       }),
-      onMouseEnter,
-      onMouseLeave,
     },
     Component: children,
     commonProps: { ...props, shadow: false },

@@ -5,5 +5,5 @@
     "https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/DismissableCard"
   ],
   "examples": [],
-  "extend": { "type": "molecules", "component": "Card" }
+  "extend": { "component": { "type": "molecules", "name": "Card" } }
 }

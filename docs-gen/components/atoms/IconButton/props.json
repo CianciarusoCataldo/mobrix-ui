@@ -1,1 +1,23 @@
-{}
+{
+  "children": {
+    "type": "(JSX.Element | string) | (JSX.Element | string)[]",
+    "description": "Button content - extended from [Button component](../../atoms/Button/props.md#children)",
+    "comment": "Button content - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Button Button}"
+  },
+  "onMouseEnter": {
+    "type": "() => void",
+    "description": "This callback is triggered everytime the cursor enter the button area - extended from [Button component](../../atoms/Button/props.md#onMouseEnter)",
+    "comment": "This callback is triggered everytime the cursor enter the button area - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Button Button}"
+  },
+  "onMouseLeave": {
+    "type": "() => void",
+    "description": "This callback is triggered everytime the cursor exit the button area - extended from [Button component](../../atoms/Button/props.md#onMouseLeave)",
+    "comment": "This callback is triggered everytime the cursor exit the button area - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Button Button}"
+  },
+  "onClick": {
+    "type": "() => void",
+    "default": "() => {}",
+    "description": "Callback triggered when Button component is clicked - extended from [Button component](../../atoms/Button/props.md#onClick)",
+    "comment": "Callback triggered when Button component is clicked - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Button Button}"
+  }
+}

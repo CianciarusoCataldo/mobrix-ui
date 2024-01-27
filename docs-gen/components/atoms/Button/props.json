@@ -3,10 +3,6 @@
     "type": "(JSX.Element | string) | (JSX.Element | string)[]",
     "description": "Button content"
   },
-  "onClick": {
-    "type": "() => void",
-    "description": "This callback is triggered everytime the user clicks on the button"
-  },
   "onMouseEnter": {
     "type": "() => void",
     "description": "This callback is triggered everytime the cursor enter the button area"
@@ -14,5 +10,10 @@
   "onMouseLeave": {
     "type": "() => void",
     "description": "This callback is triggered everytime the cursor exit the button area"
+  },
+  "onClick": {
+    "type": "() => void",
+    "default": "() => {}",
+    "description": "Callback triggered when Button component is clicked"
   }
 }

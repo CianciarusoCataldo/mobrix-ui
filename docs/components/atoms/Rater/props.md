@@ -19,7 +19,7 @@
 | <div style='text-align:center;margin:auto;'>[readOnly](#readonly)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
 | <div style='text-align:center;margin:auto;'>[type](#type)</div> | <div style='text-align:center;margin:auto;'>'star'|'circle'</div> | <div style='text-align:center;margin:auto;'>'star'</div> |
 | <div style='text-align:center;margin:auto;'>[vertical](#vertical)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
-| <div style='text-align:center;margin:auto;'>[onChange](#onchange)</div> | <div style='text-align:center;margin:auto;'>(newVote:number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
+| <div style='text-align:center;margin:auto;'>[onChange](#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
 <br>
 
@@ -89,6 +89,6 @@ if `true`, rate icons will be showed vertically<br><br>
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>(newVote:number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
+| <div style='text-align:center;margin:auto;'>(newValue: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
 callback triggered when user select a vote<br><br>
