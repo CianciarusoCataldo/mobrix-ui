@@ -1,8 +1,4 @@
 {
-  "children": {
-    "type": "(JSX.Element | string) | (JSX.Element | string)[]",
-    "description": "Button content"
-  },
   "onMouseEnter": {
     "type": "() => void",
     "description": "This callback is triggered everytime the cursor enter the button area"
@@ -13,7 +9,14 @@
   },
   "onClick": {
     "type": "() => void",
+    "typeComment": "",
     "default": "() => {}",
     "description": "Callback triggered when Button component is clicked"
+  },
+  "children": {
+    "type": "JSX.Element `OR` string",
+    "typeComment": "",
+    "default": "",
+    "description": "Button content"
   }
 }

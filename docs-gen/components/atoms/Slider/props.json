@@ -9,6 +9,7 @@
   },
   "onChange": {
     "type": "(newValue: number) => void",
+    "typeComment": "",
     "default": "() => {}",
     "description": "Callback triggered when Slider component input value is changed by the user"
   }

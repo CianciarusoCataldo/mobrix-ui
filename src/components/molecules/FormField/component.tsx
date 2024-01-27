@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import {
-  BuilderComponent,
-  FormFieldProps,
-  MobrixUiReactiveComponent,
-} from "../../../types";
+import { FormFieldProps, MobrixUiReactiveComponent } from "../../../types";
 
 import { fieldFormatters } from "./utils";
 
@@ -12,7 +8,7 @@ import Container from "../Container";
 
 const FormFieldInternalComponent: MobrixUiReactiveComponent<
   any,
-  FormFieldProps & { errorLabel?: BuilderComponent }
+  FormFieldProps
 > = ({
   value,
   setValue,
@@ -66,6 +62,7 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
 
   components.push(
     <FieldComponent
+      className={className}
       disabled={disabled}
       animated={animated}
       additionalProps={{

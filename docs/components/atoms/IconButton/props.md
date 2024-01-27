@@ -14,6 +14,9 @@
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[children](#children)</div> | <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onMouseEnter](#onmouseenter)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onMouseLeave](#onmouseleave)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[onClick](#onclick)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
 <br>
@@ -21,6 +24,39 @@
 ## Props list
 
 <br>
+
+### children
+
+<br>
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+Button content - extended from [Button component](../../atoms/Button/props.md#children)<br><br>
+
+### onMouseEnter
+
+<br>
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+This callback is triggered everytime the cursor enter the button area - extended from [Button component](../../atoms/Button/props.md#onMouseEnter)<br><br>
+
+### onMouseLeave
+
+<br>
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+This callback is triggered everytime the cursor exit the button area - extended from [Button component](../../atoms/Button/props.md#onMouseLeave)<br><br>
 
 ### onClick
 
@@ -31,4 +67,4 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
-Callback triggered when IconButton component is clicked<br><br>
+Callback triggered when Button component is clicked - extended from [Button component](../../atoms/Button/props.md#onClick)<br><br>

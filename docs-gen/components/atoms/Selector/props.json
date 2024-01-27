@@ -16,6 +16,7 @@
   },
   "onChange": {
     "type": "(newValue: number) => void",
+    "typeComment": "",
     "default": "() => {}",
     "description": "Callback triggered when Selector component input value is changed by the user"
   }

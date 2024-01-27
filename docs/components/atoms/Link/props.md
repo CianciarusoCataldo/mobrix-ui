@@ -16,7 +16,7 @@
 | ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[to](#to)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[newTab](#newtab)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>false</div> |
-| <div style='text-align:center;margin:auto;'>[children](#children)</div> | <div style='text-align:center;margin:auto;'>JSX.Element | string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[children](#children)</div> | <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -53,6 +53,6 @@ f true, the link will be opened in a new tab<br><br>
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>JSX.Element | string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Link text<br><br>
+Link content<br><br>

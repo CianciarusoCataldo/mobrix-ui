@@ -5,5 +5,10 @@
     "description": "f true, the link will be opened in a new tab",
     "default": "false"
   },
-  "children": { "type": "JSX.Element | string", "description": "Link text" }
+  "children": {
+    "type": "JSX.Element `OR` string",
+    "typeComment": "",
+    "default": "",
+    "description": "Link content"
+  }
 }

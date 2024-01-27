@@ -11,6 +11,7 @@
   },
   "onChange": {
     "type": "(newValue: boolean) => void",
+    "typeComment": "",
     "default": "() => {}",
     "description": "Callback triggered when CheckBox component input value is changed by the user"
   }

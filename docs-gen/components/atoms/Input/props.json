@@ -11,6 +11,7 @@
   },
   "onChange": {
     "type": "(newValue: string) => void",
+    "typeComment": "",
     "default": "() => {}",
     "description": "Callback triggered when Input component input value is changed by the user"
   }

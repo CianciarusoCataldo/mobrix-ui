@@ -11,17 +11,20 @@
   },
   "header": {
     "description": "Card header content - extended from [Card component](../../molecules/Card/props.md#header)",
-    "type": "JSX.Element | string",
+    "typeComment": "JSX.Element | string",
+    "type": "JSX.Element `OR` string",
     "comment": "Card header content - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
   },
   "body": {
     "description": "Card body content - extended from [Card component](../../molecules/Card/props.md#body)",
-    "type": "JSX.Element | string",
+    "typeComment": "JSX.Element | string",
+    "type": "JSX.Element `OR` string",
     "comment": "Card body content - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
   },
   "footer": {
     "description": "Card footer content - extended from [Card component](../../molecules/Card/props.md#footer)",
-    "type": "JSX.Element | string",
+    "typeComment": "JSX.Element | string",
+    "type": "JSX.Element `OR` string",
     "comment": "Card footer content - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
   },
   "noDivider": {

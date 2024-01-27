@@ -1,11 +1,13 @@
 {
   "elements": {
-    "type": "(JSX.Element | string)[]",
+    "typeComment": "(JSX.Element | string)[]",
+    "type": "(JSX.Element OR string)[]",
     "description": "Carousel elements",
     "default": "[]"
   },
   "onChange": {
     "type": "(newValue: number) => void",
+    "typeComment": "",
     "default": "() => {}",
     "description": "Callback triggered when Carousel component input value is changed by the user"
   },

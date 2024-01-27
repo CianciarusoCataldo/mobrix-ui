@@ -16,9 +16,9 @@
 | ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[onClose](#onclose)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 | <div style='text-align:center;margin:auto;'>[alwaysVisible](#alwaysvisible)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
-| <div style='text-align:center;margin:auto;'>[header](#header)</div> | <div style='text-align:center;margin:auto;'>JSX.Element | string</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[body](#body)</div> | <div style='text-align:center;margin:auto;'>JSX.Element | string</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[footer](#footer)</div> | <div style='text-align:center;margin:auto;'>JSX.Element | string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[header](#header)</div> | <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[body](#body)</div> | <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[footer](#footer)</div> | <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[noDivider](#nodivider)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[noTopDivider](#notopdivider)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[noBottomDivider](#nobottomdivider)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
@@ -58,7 +58,7 @@ If `true`, the DismissableCard won't disappear if the X icon is clicked (can be 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>JSX.Element | string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 Card header content - extended from [Card component](../../molecules/Card/props.md#header)<br><br>
 
@@ -69,7 +69,7 @@ Card header content - extended from [Card component](../../molecules/Card/props.
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>JSX.Element | string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 Card body content - extended from [Card component](../../molecules/Card/props.md#body)<br><br>
 
@@ -80,7 +80,7 @@ Card body content - extended from [Card component](../../molecules/Card/props.md
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>JSX.Element | string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 Card footer content - extended from [Card component](../../molecules/Card/props.md#footer)<br><br>
 

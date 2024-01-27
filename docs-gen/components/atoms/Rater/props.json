@@ -22,6 +22,7 @@
   },
   "onChange": {
     "type": "(newValue: number) => void",
+    "typeComment": "",
     "default": "() => {}",
     "description": "callback triggered when user select a vote"
   }

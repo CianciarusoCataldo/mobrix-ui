@@ -1,1 +1,29 @@
-{}
+{
+  "value": { "description": "FormField input content" },
+  "type": {
+    "default": "'text'",
+    "description": "The field type. It determines the UI component to be used to render it. Allowed types are:\n- `boolean` (rendered as a CheckBox)\n- `numeric` (rendered as a Counter)\n- `text` (rendered as a Input)\n- `radio` (rendered as a RadioButton)\n- `checkbox` (rendered as a CheckBox)\n- `toggle` (rendered as a Toggle)\n- `rater` (rendered as a Rater)\n- `slider` (rendered as a Slider)\n- `input` (rendered as a Input)\n- `counter` (rendered as a Counter)",
+    "type": "<ul><li>'boolean'</li><li>'text'</li><li>'numeric'</li><li>'radio'</li><li>'checkbox'</li><li>'toggle'</li><li>'rater'</li><li>'slider'</li><li>'input'</li><li>'counter'</li></ul>"
+  },
+  "placeholder": { "type": "string", "description": "" },
+  "required": {
+    "type": "boolean",
+    "default": false,
+    "description": "If true, the field switch to error state if its value is empty"
+  },
+  "validate": {
+    "default": "() => ˚{}",
+    "type": "(fieldValue: any) => boolean",
+    "description": "Custom validation function called on submit"
+  },
+  "header": {
+    "description": "Form field header",
+    "type": "JSX.Element `OR` string ",
+    "typeComment": "JSX.Element | string "
+  },
+  "errorLabel": {
+    "description": "Custom error box content, displayed when FormField is in error state",
+    "type": "JSX.Element `OR` string ",
+    "typeComment": "JSX.Element | string "
+  }
+}

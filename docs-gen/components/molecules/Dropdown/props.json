@@ -7,6 +7,7 @@
   "elements": {
     "description": "Dropdown content elements",
     "type": "(JSX.Element | string)[]",
+    "typeComment": "(JSX.Element OR string)[]",
     "default": "[]"
   },
   "hideArrow": {
@@ -16,6 +17,7 @@
   },
   "onChange": {
     "type": "(newValue: number) => void",
+    "typeComment": "",
     "default": "() => {}",
     "description": "Callback triggered when selecting new element from dropdown"
   }

@@ -14,27 +14,16 @@
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[children](#children)</div> | <div style='text-align:center;margin:auto;'>(JSX.Element | string) | (JSX.Element | string)[]</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[onMouseEnter](#onmouseenter)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[onMouseLeave](#onmouseleave)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[onClick](#onclick)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
+| <div style='text-align:center;margin:auto;'>[children](#children)</div> | <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
 ## Props list
 
 <br>
-
-### children
-
-<br>
-
-<!-- prettier-ignore -->
-| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>(JSX.Element | string) | (JSX.Element | string)[]</div> | <div style='text-align:center;margin:auto;'>/</div> |
-
-Button content<br><br>
 
 ### onMouseEnter
 
@@ -68,3 +57,14 @@ This callback is triggered everytime the cursor exit the button area<br><br>
 | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
 Callback triggered when Button component is clicked<br><br>
+
+### children
+
+<br>
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+Button content<br><br>

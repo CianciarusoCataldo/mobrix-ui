@@ -22,5 +22,13 @@
       "description": "COMPONENT content",
       "default": ""
     }
+  ],
+  "ClosableComponent": [
+    {
+      "prop": "onClose",
+      "type": "() => void",
+      "description": "COMPONENT content",
+      "default": ""
+    }
   ]
 }

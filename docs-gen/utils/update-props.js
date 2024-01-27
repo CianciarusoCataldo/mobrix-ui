@@ -20,16 +20,19 @@ try {
   if (settings.extend) {
     if (settings.extend.group) {
       Object.keys(settings.extend.group).forEach((groupName) => {
-        groupProps[groups[groupName].prop] = {
-          type: groups[groupName].type.replace(
-            "TYPE",
-            settings.extend.group[groupName].type
-          ),
-          default: groups[groupName].default,
-          description:
-            settings.extend.group[groupName].overrideDescription ||
-            groups[groupName].description.replace("COMPONENT", COMPONENT_NAME),
-        };
+        groups[groupName].forEach((groupProp) => {
+          groupProps[groupProp.prop] = {
+            type: groupProp.type.replace(
+              "TYPE",
+              settings.extend.group[groupName].type
+            ),
+            typeComment: "",
+            default: groupProp.default,
+            description:
+              settings.extend.group[groupName].overrideDescription ||
+              groupProp.description.replace("COMPONENT", COMPONENT_NAME),
+          };
+        });
       });
     }
 

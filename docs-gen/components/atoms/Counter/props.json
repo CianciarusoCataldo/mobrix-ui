@@ -13,6 +13,7 @@
   "max": { "type": "number", "description": "max allowed value" },
   "onChange": {
     "type": "(newValue: number) => void",
+    "typeComment": "",
     "default": "() => {}",
     "description": "Callback triggered when Counter component input value is changed by the user"
   }

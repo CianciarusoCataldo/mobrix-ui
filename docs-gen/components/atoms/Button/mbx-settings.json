@@ -5,6 +5,10 @@
   "examples": [],
   "extend": {
     "group": {
+      "ComponentWithChildren": {
+        "typeComment": "JSX.Element | string",
+        "type": "JSX.Element `OR` string"
+      },
       "ClickableComponent": {}
     }
   }

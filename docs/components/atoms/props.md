@@ -43,10 +43,10 @@
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[children](../atoms/Button/props.md#children)</div> | <div style='text-align:center;margin:auto;'>(JSX.Element | string) | (JSX.Element | string)[]</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[onMouseEnter](../atoms/Button/props.md#onmouseenter)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[onMouseLeave](../atoms/Button/props.md#onmouseleave)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[onClick](../atoms/Button/props.md#onclick)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
+| <div style='text-align:center;margin:auto;'>[children](../atoms/Button/props.md#children)</div> | <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 <br>
@@ -114,6 +114,9 @@
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[children](../atoms/IconButton/props.md#children)</div> | <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onMouseEnter](../atoms/IconButton/props.md#onmouseenter)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onMouseLeave](../atoms/IconButton/props.md#onmouseleave)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[onClick](../atoms/IconButton/props.md#onclick)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
 <br>
@@ -155,7 +158,7 @@
 | ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[to](../atoms/Link/props.md#to)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[newTab](../atoms/Link/props.md#newtab)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>false</div> |
-| <div style='text-align:center;margin:auto;'>[children](../atoms/Link/props.md#children)</div> | <div style='text-align:center;margin:auto;'>JSX.Element | string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[children](../atoms/Link/props.md#children)</div> | <div style='text-align:center;margin:auto;'>JSX.Element `OR` string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 <br>

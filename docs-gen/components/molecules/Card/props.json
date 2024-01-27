@@ -1,15 +1,18 @@
 {
   "header": {
     "description": "Card header content",
-    "type": "JSX.Element | string"
+    "typeComment": "JSX.Element | string",
+    "type": "JSX.Element `OR` string"
   },
   "body": {
     "description": "Card body content",
-    "type": "JSX.Element | string"
+    "typeComment": "JSX.Element | string",
+    "type": "JSX.Element `OR` string"
   },
   "footer": {
     "description": "Card footer content",
-    "type": "JSX.Element | string"
+    "typeComment": "JSX.Element | string",
+    "type": "JSX.Element `OR` string"
   },
   "noDivider": {
     "description": "If `true`, hide all dividers",

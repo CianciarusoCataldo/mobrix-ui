@@ -1,8 +1,6 @@
 import "./styles.css";
 
-import {
-  FormFieldComponent,
-} from "../../../types";
+import { FormFieldComponent } from "../../../types";
 
 import FormFieldInternalComponent from "./component";
 import { buildMbxReactiveComponent } from "../../../tools";
@@ -13,7 +11,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  * @since 3.0.0
  *
  * @param {JSX.Element | string} header Form field header
- * @param {JSX.Element | string} errorLabel custom submit button content
+ * @param {JSX.Element | string} errorLabel custom error box content
  * @param {boolean} required
  * @param {(value: any)=>boolean} validate
  * @param {(value:any) => void} onChange callback triggered when input value changes
@@ -45,6 +43,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const FormField: FormFieldComponent = ({
+  value: inputValue,
   type,
   onChange,
   placeholder,
@@ -52,7 +51,8 @@ const FormField: FormFieldComponent = ({
   validate,
   header,
   className,
-  value: inputValue,
+  headerProps,
+  errorLabel,
   ...sharedProps
 }) => {
   return buildMbxReactiveComponent(sharedProps, (props) => ({
@@ -69,6 +69,7 @@ const FormField: FormFieldComponent = ({
         validate,
         header,
         className,
+        errorLabel,
         ...props,
       }),
     inputValue,
