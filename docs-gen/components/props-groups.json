@@ -14,5 +14,13 @@
       "description": "Callback triggered when COMPONENT component is clicked",
       "default": "() => {}"
     }
+  ],
+  "ComponentWithChildren": [
+    {
+      "prop": "children",
+      "type": "TYPE",
+      "description": "COMPONENT content",
+      "default": ""
+    }
   ]
 }
