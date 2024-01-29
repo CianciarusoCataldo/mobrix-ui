@@ -15,6 +15,14 @@
       "default": "() => {}"
     }
   ],
+  "ClickableComponentWithProps": [
+    {
+      "prop": "onClick",
+      "type": "(TYPE) => void",
+      "description": "Callback triggered when COMPONENT component is clicked",
+      "default": "() => {}"
+    }
+  ],
   "ComponentWithChildren": [
     {
       "prop": "children",
@@ -27,8 +35,8 @@
     {
       "prop": "onClose",
       "type": "() => void",
-      "description": "COMPONENT content",
-      "default": ""
+      "description": "callback triggered when COMPONENT is closed",
+      "default": "() => {}"
     }
   ]
 }

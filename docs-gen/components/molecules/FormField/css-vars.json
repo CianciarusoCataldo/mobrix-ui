@@ -1,56 +1,80 @@
 {
-  "--mbx-formfield-background": {},
+  "--mbx-formfield-background": {
+    "description": "Fallback value for `--mbx-formfield-background-light` and `--mbx-formfield-background-dark`"
+  },
   "--mbx-formfield-background-dark": {
-    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
+    "description": "FormField background when dark mode is `off`",
+    "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-formfield-background"
   },
   "--mbx-formfield-background-light": {
-    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "description": "FormField background when dark mode is `on`",
+    "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-formfield-background"
   },
-  "--mbx-formfield-text-color": {},
+  "--mbx-formfield-text-color": {
+    "description": "Fallback value for `--mbx-formfield-text-color-light` and `--mbx-formfield-text-color-dark`"
+  },
   "--mbx-formfield-text-color-light": {
-    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)",
+    "description": "FormField text color when dark mode is `off`",
+    "defaultGlobal": "--mbx-text-color-light",
     "fallback": "--mbx-formfield-text-color"
   },
   "--mbx-formfield-text-color-dark": {
-    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
+    "description": "FormField text color when dark mode is `on`",
+    "defaultGlobal": "--mbx-text-color-dark",
     "fallback": "--mbx-formfield-text-color"
   },
-  "--mbx-formfield-background-hover": {},
+  "--mbx-formfield-background-hover": {
+    "description": "Fallback value for `--mbx-formfield-background-hover-light` and `--mbx-formfield-background-hover-dark`"
+  },
   "--mbx-formfield-background-hover-light": {
-    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)",
+    "description": "FormField background when dark mode is `off`, on `hover`",
+    "defaultGlobal": "--mbx-background-hover-light",
     "fallback": "--mbx-formfield-background-hover"
   },
   "--mbx-formfield-background-hover-dark": {
-    "default": "[--mbx-background-hover-light](global-css-vars.md#mbx-background-hover-light)",
+    "description": "FormField background when dark mode is `on`, on `hover`",
+    "defaultGlobal": "--mbx-background-hover-light",
     "fallback": "--mbx-formfield-background-hover"
   },
-  "--mbx-formfield-text-color-hover": {},
+  "--mbx-formfield-text-color-hover": {
+    "description": "Fallback value for `--mbx-formfield-text-color-hover-light` and `--mbx-formfield-text-color-hover-dark`"
+  },
   "--mbx-formfield-text-color-hover-light": {
-    "default": "[--mbx-text-color-hover-light](global-css-vars.md#mbx-text-color-hover-light)",
+    "description": "FormField text color when dark mode is `off`, on `hover`",
+    "defaultGlobal": "--mbx-text-color-hover-light",
     "fallback": "--mbx-formfield-text-color-hover"
   },
   "--mbx-formfield-text-color-hover-dark": {
-    "default": "[--mbx-text-color-hover-dark](global-css-vars.md#mbx-text-color-hover-dark)",
+    "description": "FormField text color when dark mode is `on`, on `hover`",
+    "defaultGlobal": "--mbx-text-color-hover-dark",
     "fallback": "--mbx-formfield-text-color-hover"
   },
-  "--mbx-formfield-error-border": {},
+  "--mbx-formfield-error-border": {
+    "description": "Fallback value for `--mbx-formfield-error-border-light` and `--mbx-formfield-error-border-dark`"
+  },
   "--mbx-formfield-error-border-light": {
-    "default": "red",
+    "description": "FormField error box border color when dark mode is `off`",
+    "defaultColor": "red",
     "fallback": "--mbx-formfield-error-border"
   },
   "--mbx-formfield-error-border-dark": {
-    "default": "red",
+    "description": "FormField error box border color when dark mode is `on`",
+    "defaultColor": "red",
     "fallback": "--mbx-formfield-error-border"
   },
-  "--mbx-formfield-error-text": {},
+  "--mbx-formfield-error-text": {
+    "description": "Fallback value for `--mbx-formfield-error-text-light` and `--mbx-formfield-error-text-dark`"
+  },
   "--mbx-formfield-error-text-light": {
-    "default": "red",
+    "description": "FormField error box text color when dark mode is `off`",
+    "defaultColor": "red",
     "fallback": "--mbx-formfield-error-text"
   },
   "--mbx-formfield-error-text-dark": {
-    "default": "red",
+    "description": "FormField error box text color when dark mode is `on`",
+    "defaultColor": "red",
     "fallback": "--mbx-formfield-error-text"
   }
 }

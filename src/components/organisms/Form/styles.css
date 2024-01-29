@@ -26,14 +26,6 @@
 [data-mbx-id="form"] [data-mbx-class="field"] {
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;
-  --mbx-formfield-background-light: var(--mbx-c-form-field-bg-l);
-  --mbx-formfield-text-color-light: var(--mbx-c-form-field-txt-l);
-  --mbx-formfield-background-dark: var(--mbx-c-form-field-bg-d);
-  --mbx-formfield-text-color-dark: var(--mbx-c-form-field-txt-d);
-  --mbx-formfield-background-hover-light: var(--mbx-c-form-field-bg-h-l);
-  --mbx-formfield-background-hover-dark: var(--mbx-c-form-field-bg-h-d);
-  --mbx-formfield-text-color-hover-light: var(--mbx-c-form-field-txt-h-l);
-  --mbx-formfield-text-color-hover-dark: var(--mbx-c-form-field-txt-h-d);
 }
 
 @media (max-width: 330px) {

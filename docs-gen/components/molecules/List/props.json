@@ -1,1 +1,11 @@
-{}
+{
+  "elements": {
+    "description": "List elements",
+    "type": "(`JSX.Element` | `string`)[]"
+  },
+  "onClick": {
+    "type": "() => void",
+    "default": "() => {}",
+    "description": "Callback triggered when a list element is clicked"
+  }
+}

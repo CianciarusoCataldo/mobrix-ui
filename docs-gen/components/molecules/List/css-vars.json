@@ -1,20 +1,28 @@
 {
-  "--mbx-list-text-color": {},
+  "--mbx-list-text-color": {
+    "description": "Fallback value for `--mbx-list-text-color-light` and `--mbx-list-text-color-dark`"
+  },
   "--mbx-list-text-color-light": {
-    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)",
+    "description": "List element text color when dark is `off`",
+    "defaultGlobal": "--mbx-text-color-light",
     "fallback": "--mbx-list-text-color"
   },
   "--mbx-list-text-color-dark": {
-    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
+    "description": "List element text color when dark is `on`",
+    "defaultGlobal": "--mbx-text-color-dark",
     "fallback": "--mbx-list-text-color"
   },
-  "--mbx-list-text-color-hover": {},
+  "--mbx-list-text-color-hover": {
+    "description": "Fallback value for `--mbx-list-text-color-hover-light` and `--mbx-list-text-color-hover-dark`"
+  },
   "--mbx-list-text-color-hover-light": {
-    "default": "[--mbx-text-color-hover-light](global-css-vars.md#mbx-text-color-hover-light)",
+    "description": "List element text color when dark is `off`, on `hover`",
+    "defaultGlobal": "--mbx-text-color-hover-light",
     "fallback": "--mbx-list-text-color-hover"
   },
   "--mbx-list-text-color-hover-dark": {
-    "default": "[--mbx-text-color-hover-dark](global-css-vars.md#mbx-text-color-hover-dark)",
+    "description": "List element text color when dark is `on`, on `hover`",
+    "defaultGlobal": "--mbx-text-color-hover-dark",
     "fallback": "--mbx-list-text-color-hover"
   }
 }

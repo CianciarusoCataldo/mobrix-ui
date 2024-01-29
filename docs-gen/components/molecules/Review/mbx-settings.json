@@ -1,6 +1,17 @@
 {
-  "since": "",
+  "since": "1.1.0",
   "description": "",
   "see": [],
-  "examples": []
+  "examples": [],
+  "extend": {
+    "component": {
+      "type": "atoms",
+      "name": "Rater",
+      "exclude": ["onChange", "readOnly"],
+      "map": {
+        "value": "rate",
+        "type": "rateType"
+      }
+    }
+  }
 }

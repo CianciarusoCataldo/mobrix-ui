@@ -26,7 +26,6 @@ try {
               "TYPE",
               settings.extend.group[groupName].type
             ),
-            typeComment: "",
             default: groupProp.default,
             description:
               settings.extend.group[groupName].overrideDescription ||
@@ -42,6 +41,24 @@ try {
       externalProps = require(
         "../components/" + type + "/" + component + "/props.json"
       );
+
+      if (settings.extend.component.exclude) {
+        let excludedProps = settings.extend.component.exclude || [];
+        excludedProps.forEach((excludedProp) => {
+          delete externalProps[excludedProp];
+        });
+      }
+
+      if (settings.extend.component.map) {
+        let mappedProps = settings.extend.component.map || {};
+        Object.keys(mappedProps).forEach((mappedProp) => {
+          externalProps = {
+            ...externalProps,
+            [mappedProps[mappedProp]]: externalProps[mappedProp],
+          };
+          delete externalProps[mappedProp];
+        });
+      }
 
       Object.keys(externalProps).forEach((externalProp) => {
         externalProps[externalProp].comment =

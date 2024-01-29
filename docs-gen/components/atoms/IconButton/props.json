@@ -1,7 +1,6 @@
 {
   "children": {
-    "type": "JSX.Element `OR` string",
-    "typeComment": "",
+    "type": "JSX.Element | string",
     "default": "",
     "description": "Button content - extended from [Button component](../../atoms/Button/props.md#children)",
     "comment": "Button content - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Button Button}"
@@ -18,7 +17,6 @@
   },
   "onClick": {
     "type": "() => void",
-    "typeComment": "",
     "default": "() => {}",
     "description": "Callback triggered when Button component is clicked - extended from [Button component](../../atoms/Button/props.md#onClick)",
     "comment": "Callback triggered when Button component is clicked - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Button Button}"

@@ -1,1 +1,12 @@
-{}
+{
+  "onClick": {
+    "type": "(row: number, column: number) => void",
+    "default": "() => {}",
+    "description": "Callback triggered when a Table cell is clicked"
+  },
+  "propsCallback": {
+    "type": "(row: number, column: number) => Record<string, any>",
+    "default": "() => ({})",
+    "description": "A function to add custom props depending on Table row and column"
+  }
+}

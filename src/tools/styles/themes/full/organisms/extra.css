@@ -11,3 +11,14 @@
   --mbx-calendar-selected-text-color-light: var(--mbx-c-dtp-cal-s-txt-l);
   --mbx-calendar-selected-text-color-dark: var(--mbx-c-dtp-cal-s-txt-d);
 }
+
+[data-mbx-id="form"] [data-mbx-class="field"] {
+  --mbx-formfield-background-light: var(--mbx-c-form-field-bg-l);
+  --mbx-formfield-text-color-light: var(--mbx-c-form-field-txt-l);
+  --mbx-formfield-background-dark: var(--mbx-c-form-field-bg-d);
+  --mbx-formfield-text-color-dark: var(--mbx-c-form-field-txt-d);
+  --mbx-formfield-background-hover-light: var(--mbx-c-form-field-bg-h-l);
+  --mbx-formfield-background-hover-dark: var(--mbx-c-form-field-bg-h-d);
+  --mbx-formfield-text-color-hover-light: var(--mbx-c-form-field-txt-h-l);
+  --mbx-formfield-text-color-hover-dark: var(--mbx-c-form-field-txt-h-d);
+}

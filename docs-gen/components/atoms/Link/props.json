@@ -6,8 +6,7 @@
     "default": "false"
   },
   "children": {
-    "type": "JSX.Element `OR` string",
-    "typeComment": "",
+    "type": "`JSX.Element` | `string`",
     "default": "",
     "description": "Link content"
   }

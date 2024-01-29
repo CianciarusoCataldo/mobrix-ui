@@ -1,0 +1,13 @@
+@import url("computed.css");
+
+[data-mbx-id][data-mbx-dark="false"] {
+  --mbx-c-radg-rad-bg: var(--mbx-c-radg-rad-bg-l);
+  --mbx-c-radg-rad-bg-h: var(--mbx-c-radg-rad-bg-h-l);
+  --mbx-c-radg-rad-ic-bg: var(--mbx-c-radg-rad-ic-bg-l);
+}
+
+[data-mbx-id][data-mbx-dark="true"] {
+  --mbx-c-radg-rad-bg: var(--mbx-c-radg-rad-bg-d);
+  --mbx-c-radg-rad-bg-h: var(--mbx-c-radg-rad-bg-h-d);
+  --mbx-c-radg-rad-ic-bg: var(--mbx-c-radg-rad-ic-bg-d);
+}

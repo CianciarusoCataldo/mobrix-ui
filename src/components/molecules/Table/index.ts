@@ -41,13 +41,38 @@ import tableComponent from "./component";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Table: TableComponent = ({ propsCallback, onClick, cellWidth, headers, rows, rowClassName, cellClassName, headerClassName, additionalProps, headersProps, cellProps, rowProps, ...commonProps }) =>
+const Table: TableComponent = ({
+  propsCallback,
+  onClick,
+  headers,
+  rows,
+  rowClassName,
+  cellClassName,
+  headerClassName,
+  additionalProps,
+  headersProps,
+  cellProps,
+  rowProps,
+  ...commonProps
+}) =>
   buildMobrixUiStandardComponent({
     name: "table",
-    Component: tableComponent({ propsCallback, onClick, cellWidth, headers, rows, cellClassName, headerClassName, rowClassName, cellProps, rowProps, headersProps }),
+    Component: tableComponent({
+      propsCallback,
+      onClick,
+      headers,
+      rows,
+      cellClassName,
+      headerClassName,
+      rowClassName,
+      cellProps,
+      rowProps,
+      headersProps,
+      ...commonProps,
+    }),
     commonProps,
     additionalProps,
-    wrapper: "table"
+    wrapper: "table",
   });
 
 export default Table;

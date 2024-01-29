@@ -103,8 +103,9 @@ Object.keys(propsToParse).forEach((actualProp, index) => {
     `[${actualProp}](${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/props.md#${actualProp.toLowerCase()})`
   );
 
-  const outputType = propsToParse[actualProp].type || "/";
-
+  let outputType = (propsToParse[actualProp].type || "/")
+    .replaceAll("'", "`")
+    .replaceAll("|", "&#124;");
   inputTable = inputTable.replace("PROP_TYPE_" + index, outputType);
   list = list.replace("PROP_TYPE_" + index, outputType);
   externalTable = externalTable.replace(

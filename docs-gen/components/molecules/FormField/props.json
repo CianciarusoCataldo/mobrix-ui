@@ -3,7 +3,8 @@
   "type": {
     "default": "'text'",
     "description": "The field type. It determines the UI component to be used to render it. Allowed types are:\n- `boolean` (rendered as a CheckBox)\n- `numeric` (rendered as a Counter)\n- `text` (rendered as a Input)\n- `radio` (rendered as a RadioButton)\n- `checkbox` (rendered as a CheckBox)\n- `toggle` (rendered as a Toggle)\n- `rater` (rendered as a Rater)\n- `slider` (rendered as a Slider)\n- `input` (rendered as a Input)\n- `counter` (rendered as a Counter)",
-    "type": "<ul><li>'boolean'</li><li>'text'</li><li>'numeric'</li><li>'radio'</li><li>'checkbox'</li><li>'toggle'</li><li>'rater'</li><li>'slider'</li><li>'input'</li><li>'counter'</li></ul>"
+    "typeOld": "`boolean` &#124; `text` &#124; `numeric` &#124; `radio` &#124; `checkbox` &#124; `toggle` &#124; `rater` &#124; `slider` &#124; `input` &#124; `counter`",
+    "type": "'boolean' | 'text' | 'numeric' | 'radio' | 'checkbox' | 'toggle' | 'rater' | 'slider' | 'input' | 'counter'"
   },
   "placeholder": { "type": "string", "description": "" },
   "required": {
@@ -18,12 +19,10 @@
   },
   "header": {
     "description": "Form field header",
-    "type": "JSX.Element `OR` string ",
-    "typeComment": "JSX.Element | string "
+    "type": "`JSX.Element` | `string`"
   },
   "errorLabel": {
     "description": "Custom error box content, displayed when FormField is in error state",
-    "type": "JSX.Element `OR` string ",
-    "typeComment": "JSX.Element | string "
+    "type": "`JSX.Element` | `string`"
   }
 }

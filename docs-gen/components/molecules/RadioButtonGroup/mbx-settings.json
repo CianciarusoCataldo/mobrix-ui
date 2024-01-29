@@ -2,5 +2,13 @@
   "since": "",
   "description": "",
   "see": [],
-  "examples": []
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithCallback": {
+        "type": "number",
+        "overrideDescription": "Callback triggered when a RadioButton is clicked by the user, giving its index as parameter"
+      }
+    }
+  }
 }

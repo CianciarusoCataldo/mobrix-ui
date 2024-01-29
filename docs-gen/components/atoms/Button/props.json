@@ -9,13 +9,11 @@
   },
   "onClick": {
     "type": "() => void",
-    "typeComment": "",
     "default": "() => {}",
     "description": "Callback triggered when Button component is clicked"
   },
   "children": {
-    "type": "JSX.Element `OR` string",
-    "typeComment": "",
+    "type": "JSX.Element | string",
     "default": "",
     "description": "Button content"
   }

@@ -1,5 +1,6 @@
 import "../styles/core/index.css";
 import "../styles/components/index.css";
+import "../styles/themes/full/index.css";
 
 import React, { useEffect, useRef } from "react";
 

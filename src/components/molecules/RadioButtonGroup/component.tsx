@@ -16,7 +16,6 @@ const radioButtonGroupComponent: MobrixUiReactiveComponent<
   value,
   setValue,
   buttons,
-  elements = [],
   elementClassName = "",
   dark,
   radioProps = {},
@@ -24,13 +23,7 @@ const radioButtonGroupComponent: MobrixUiReactiveComponent<
   defaultPosition = "left",
   disabled,
 }) => {
-  const returnElements =
-    buttons ||
-    elements.map(
-      (text) => ({ text, textPosition: defaultPosition } as RadioElement)
-    );
-
-  return returnElements.map((element, index) => (
+  return buttons.map((element, index) => (
     <div
       className={elementClassName}
       data-mbx-text-position={element.textPosition || defaultPosition}

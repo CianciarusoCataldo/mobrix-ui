@@ -1,1 +1,33 @@
-{}
+{
+  "user": { "type": "string" },
+  "description": { "type": "string" },
+  "icon": { "type": "JSX.Element" },
+  "url": { "type": "string" },
+  "logo": {
+    "type": "'default' | 'link' | 'facebook' | 'twitter' | 'google' | 'linkedin' | 'github'"
+  },
+  "max": {
+    "default": "5",
+    "description": "max vote (max number of icons displayed) - extended from [Rater component](../../atoms/Rater/props.md#max)",
+    "type": "number",
+    "comment": "max vote (max number of icons displayed) - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}"
+  },
+  "vertical": {
+    "default": "false",
+    "description": "if `true`, rate icons will be showed vertically - extended from [Rater component](../../atoms/Rater/props.md#vertical)",
+    "type": "boolean",
+    "comment": "if `true`, rate icons will be showed vertically - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}"
+  },
+  "rate": {
+    "default": "0",
+    "description": "actual vote - extended from [Rater component](../../atoms/Rater/props.md#rate)",
+    "type": "number",
+    "comment": "actual vote - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}"
+  },
+  "rateType": {
+    "default": "'star'",
+    "description": "vote icons type - extended from [Rater component](../../atoms/Rater/props.md#rateType)",
+    "type": "'star'|'circle'",
+    "comment": "vote icons type - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}"
+  }
+}

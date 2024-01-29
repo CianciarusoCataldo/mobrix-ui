@@ -1,20 +1,91 @@
 {
-  "--mbx-radiogroup-background": {},
-  "--mbx-radiogroup-background-dark": {
-    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
-    "fallback": "--mbx-radiogroup-background"
+  "--mbx-radiogroup-background": {
+    "description": "Fallback value for `--mbx-radiogroup-background-light` and `--mbx-radiogroup-background-dark`"
   },
   "--mbx-radiogroup-background-light": {
-    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "defaultGlobal": "--mbx-background-light",
+    "description": "RadioGroup background when [dark](../../global/props.md#dark)  mode  is `off`",
     "fallback": "--mbx-radiogroup-background"
   },
-  "--mbx-radiogroup-text-color": {},
+  "--mbx-radiogroup-background-dark": {
+    "defaultGlobal": "--mbx-background-dark",
+    "fallback": "--mbx-radiogroup-background",
+    "description": "RadioGroup background when [dark](../../global/props.md#dark)  mode is `on`"
+  },
+  "--mbx-radiogroup-text-color": {
+    "description": "Fallback value for `--mbx-radiogroup-text-color-light` and `--mbx-radiogroup-text-color-dark`"
+  },
   "--mbx-radiogroup-text-color-light": {
-    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)",
-    "fallback": "--mbx-radiogroup-text-color"
+    "defaultGlobal": "--mbx-text-color-light",
+    "fallback": "--mbx-radiogroup-text-color",
+    "description": "RadioGroup text color when [dark](../../global/props.md#dark)  mode  is `off`"
   },
   "--mbx-radiogroup-text-color-dark": {
-    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
-    "fallback": "--mbx-radiogroup-text-color"
+    "defaultGlobal": "--mbx-text-color-dark",
+    "fallback": "--mbx-radiogroup-text-color",
+    "description": "RadioGroup text color when [dark](../../global/props.md#dark)  mode  is `on`"
+  },
+  "--mbx-radiogroup-radio-background": {
+    "description": "Fallback value for `mbx-radiogroup-radio-background-light` and `mbx-radiogroup-radio-background-dark`"
+  },
+  "--mbx-radiogroup-radio-background-light": {
+    "description": "Internal RadioButton background when [dark](../../global/props.md#dark) mode is off",
+    "defaultExternal": {
+      "prop": "--mbx-radio-background-light",
+      "type": "atoms",
+      "component": "RadioButton"
+    },
+    "fallback": "--mbx-radiogroup-radio-background"
+  },
+  "--mbx-radiogroup-radio-background-dark": {
+    "description": "Internal RadioButton background when [dark](../../global/props.md#dark) mode is on",
+    "defaultExternal": {
+      "prop": "--mbx-radio-background-dark",
+      "type": "atoms",
+      "component": "RadioButton"
+    },
+    "fallback": "--mbx-radiogroup-radio-background"
+  },
+  "--mbx-radiogroup-radio-background-hover": {
+    "description": "Fallback value for `mbx-radiogroup-radio-background-hover-light` and `mbx-radiogroup-radio-background-hover-dark`"
+  },
+  "--mbx-radiogroup-radio-background-hover-light": {
+    "description": "Internal RadioButton background when [dark](../../global/props.md#dark) mode is off, on hover",
+    "defaultExternal": {
+      "prop": "--mbx-radio-background-hover-light",
+      "type": "atoms",
+      "component": "RadioButton"
+    },
+    "fallback": "--mbx-radiogroup-radio-background-hover"
+  },
+  "--mbx-radiogroup-radio-background-hover-dark": {
+    "description": "Internal RadioButton background when [dark](../../global/props.md#dark) mode is on, on hover",
+    "defaultExternal": {
+      "prop": "--mbx-radio-background-hover-dark",
+      "type": "atoms",
+      "component": "RadioButton"
+    },
+    "fallback": "--mbx-radiogroup-radio-background-hover"
+  },
+  "--mbx-radiogroup-radio-icon-background": {
+    "description": "Fallback value for `mbx-radiogroup-radio-icon-background-light` and `mbx-radiogroup-radio-icon-background-dark`"
+  },
+  "--mbx-radiogroup-radio-icon-background-light": {
+    "description": "Internal RadioButton icon background when [dark](../../global/props.md#dark) mode is off",
+    "defaultExternal": {
+      "prop": "--mbx-radio-icon-background-light",
+      "type": "atoms",
+      "component": "RadioButton"
+    },
+    "fallback": "--mbx-radiogroup-radio-icon-background"
+  },
+  "--mbx-radiogroup-radio-icon-background-dark": {
+    "description": "Internal RadioButton icon background when [dark](../../global/props.md#dark) mode is on",
+    "defaultExternal": {
+      "prop": "--mbx-radio-icon-background-dark",
+      "type": "atoms",
+      "component": "RadioButton"
+    },
+    "fallback": "--mbx-radiogroup-radio-icon-background"
   }
 }

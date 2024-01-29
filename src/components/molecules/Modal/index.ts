@@ -46,12 +46,10 @@ import React from "react";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Modal: ModalComponent = ({
-  overlayClassName = "",
   children,
   closeOutside,
   additionalProps = {},
   onClose = () => {},
-  className,
   hide,
   ...commonProps
 }) => {
@@ -70,7 +68,6 @@ const Modal: ModalComponent = ({
     Component: modalComponent({
       children,
       closeOutside,
-      className,
       onClose: onCloseCallback,
       hide,
       ...commonProps,
@@ -78,7 +75,6 @@ const Modal: ModalComponent = ({
     commonProps: {
       ...commonProps,
       hide: value.length === 0 && hide,
-      className: overlayClassName,
     },
     additionalProps: {
       ...additionalProps,

@@ -6,5 +6,12 @@
   ],
   "examples": [
     "import { render } from 'react-dom'; import { Card } from 'mobrix-ui'; render(<Card header='Example header' body='Example body' footer='Example footer' />, document.getElementById('root'));"
-  ]
+  ],
+  "extend": {
+    "group": {
+      "ComponentWithChildren": {
+        "type": "`JSX.Element` | `string`"
+      }
+    }
+  }
 }

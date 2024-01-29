@@ -2,7 +2,10 @@ import "./styles.css";
 
 import { PopupComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "../../../tools";
+import {
+  buildMbxStandardComponent,
+  buildMobrixUiStandardComponent,
+} from "../../../tools";
 
 import popupComponent from "./component";
 
@@ -40,12 +43,11 @@ import popupComponent from "./component";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Popup: PopupComponent = ({ children, className = "", additionalProps, ...commonProps }) =>
-  buildMobrixUiStandardComponent({
-    additionalProps,
+const Popup: PopupComponent = ({ children, ...commonProps }) =>
+  buildMbxStandardComponent(commonProps, (props) => ({
     name: "popup",
-    commonProps,
-    Component: popupComponent({ className, children }),
-  });
+    commonProps: { ...props, className: "" },
+    Component: popupComponent({ ...props, children }),
+  }));
 
 export default Popup;

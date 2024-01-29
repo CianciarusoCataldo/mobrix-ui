@@ -1,20 +1,26 @@
 {
-  "--mbx-popup-background": {},
-  "--mbx-popup-background-dark": {
-    "default": "[--mbx-background-dark](global-css-vars.md#mbx-background-dark)",
-    "fallback": "--mbx-popup-background"
+  "--mbx-popup-background": {
+    "description": "Fallback value for `--mbx-popup-background-light` and `--mbx-popup-background-dark`"
   },
   "--mbx-popup-background-light": {
-    "default": "[--mbx-background-light](global-css-vars.md#mbx-background-light)",
+    "defaultGlobal": "--mbx-background-light",
+    "description": "Popup background when [dark](../../global/props.md#dark)  mode  is `off`",
     "fallback": "--mbx-popup-background"
+  },
+  "--mbx-popup-background-dark": {
+    "defaultGlobal": "--mbx-background-dark",
+    "fallback": "--mbx-popup-background",
+    "description": "Popup background when [dark](../../global/props.md#dark)  mode is `on`"
   },
   "--mbx-popup-text-color": {},
   "--mbx-popup-text-color-light": {
-    "default": "[--mbx-text-color-light](global-css-vars.md#mbx-text-color-light)",
-    "fallback": "--mbx-popup-text-color"
+    "defaultGlobal": "--mbx-text-color-light",
+    "fallback": "--mbx-popup-text-color",
+    "description": "Popup text color when [dark](../../global/props.md#dark)  mode is `off`"
   },
   "--mbx-popup-text-color-dark": {
-    "default": "[--mbx-text-color-dark](global-css-vars.md#mbx-text-color-dark)",
-    "fallback": "--mbx-popup-text-color"
+    "defaultGlobal": "--mbx-text-color-dark",
+    "fallback": "--mbx-popup-text-color",
+    "description": "Popup text color when [dark](../../global/props.md#dark)  mode is `on`"
   }
 }

@@ -2,5 +2,12 @@
   "since": "",
   "description": "",
   "see": [],
-  "examples": []
+  "examples": [],
+  "extend": {
+    "group": {
+      "ClickableComponent": {
+        "overrideDescription": "Callback triggered when a list element is clicked"
+      }
+    }
+  }
 }

@@ -6,8 +6,7 @@
   "extend": {
     "group": {
       "ComponentWithChildren": {
-        "typeComment": "JSX.Element | string",
-        "type": "JSX.Element `OR` string"
+        "type": "JSX.Element | string"
       },
       "ClickableComponent": {}
     }

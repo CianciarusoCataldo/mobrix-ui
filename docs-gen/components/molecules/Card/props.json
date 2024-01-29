@@ -28,5 +28,10 @@
     "description": "If `true`, hide the top divider, between body and footer",
     "type": "boolean",
     "default": false
+  },
+  "children": {
+    "type": "`JSX.Element` | `string`",
+    "default": "",
+    "description": "Card content"
   }
 }

@@ -22,7 +22,6 @@
   },
   "onChange": {
     "type": "(newValue: boolean) => void",
-    "typeComment": "",
     "default": "() => {}",
     "description": "Callback triggered when ExpandableContainer component input value is changed by the user"
   }

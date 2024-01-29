@@ -44,5 +44,11 @@
     "type": "boolean",
     "default": false,
     "comment": "If `true`, hide the top divider, between body and footer - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
+  },
+  "children": {
+    "type": "`JSX.Element` | `string`",
+    "default": "",
+    "description": "Card content - extended from [Card component](../../molecules/Card/props.md#children)",
+    "comment": "Card content - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
   }
 }

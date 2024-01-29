@@ -56,8 +56,6 @@ export type RadioButtonGroupProps = ComponentWithCallback<number> &
 
     defaultPosition?: RadioElement["textPosition"];
 
-    elements?: BuilderComponent[]
-
     radioProps?: RadioButtonProps & CommonProps
   };
 

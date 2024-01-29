@@ -17,7 +17,6 @@
   },
   "onChange": {
     "type": "(newValue: number) => void",
-    "typeComment": "",
     "default": "() => {}",
     "description": "Callback triggered when selecting new element from dropdown"
   }
