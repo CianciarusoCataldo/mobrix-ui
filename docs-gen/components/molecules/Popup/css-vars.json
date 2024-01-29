@@ -12,7 +12,7 @@
     "fallback": "--mbx-popup-background",
     "description": "Popup background when [dark](../../global/props.md#dark)  mode is `on`"
   },
-  "--mbx-popup-text-color": {},
+  "--mbx-popup-text-color": { "description": "Fallback value for `` and ``" },
   "--mbx-popup-text-color-light": {
     "defaultGlobal": "--mbx-text-color-light",
     "fallback": "--mbx-popup-text-color",

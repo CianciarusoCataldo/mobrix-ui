@@ -46,21 +46,25 @@
   },
   "--mbx-expandablecontainer-arrow-color-light": {
     "defaultInternal": "--mbx-expandablecontainer-text-color-light",
-    "fallback": "--mbx-expandablecontainer-arrow-color"
+    "fallback": "--mbx-expandablecontainer-arrow-color",
+    "description": "off"
   },
   "--mbx-expandablecontainer-arrow-color-dark": {
     "defaultInternal": "--mbx-expandablecontainer-text-color-dark",
-    "fallback": "--mbx-expandablecontainer-arrow-color"
+    "fallback": "--mbx-expandablecontainer-arrow-color",
+    "description": "off"
   },
   "--mbx-expandablecontainer-arrow-color-hover": {
     "description": "Fallback value for `--mbx-expandablecontainer-arrow-color-hover-light` and `--mbx-expandablecontainer-arrow-color-hover-dark`"
   },
   "--mbx-expandablecontainer-arrow-color-hover-light": {
     "defaultInternal": "--mbx-expandablecontainer-arrow-color-lrrowight",
-    "fallback": "--mbx-expandablecontainer-arrow-color-hover"
+    "fallback": "--mbx-expandablecontainer-arrow-color-hover",
+    "description": "off, on `hover`"
   },
   "--mbx-expandablecontainer-arrow-color-hover-dark": {
     "defaultInternal": "--mbx-expandablecontainer-a-color-dark",
-    "fallback": "--mbx-expandablecontainer-arrow-color-hover"
+    "fallback": "--mbx-expandablecontainer-arrow-color-hover",
+    "description": "off, on `hover`"
   }
 }

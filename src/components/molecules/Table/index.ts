@@ -49,10 +49,10 @@ const Table: TableComponent = ({
   rowClassName,
   cellClassName,
   headerClassName,
-  additionalProps,
   headersProps,
   cellProps,
   rowProps,
+  additionalProps,
   ...commonProps
 }) =>
   buildMobrixUiStandardComponent({

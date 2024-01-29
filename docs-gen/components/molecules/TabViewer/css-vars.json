@@ -1,5 +1,7 @@
 {
-  "--mbx-tabviewer-background": {},
+  "--mbx-tabviewer-background": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-tabviewer-background-light": {
     "defaultColor": "linear-gradient(to right, #cccccc, #c7c7c7)",
     "fallback": "--mbx-tabviewer-background"
@@ -8,7 +10,9 @@
     "defaultColor": "linear-gradient(to right, #2d3748, #1d232e)",
     "fallback": "--mbx-tabviewer-background"
   },
-  "--mbx-tabviewer-text-color": {},
+  "--mbx-tabviewer-text-color": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-tabviewer-text-color-light": {
     "defaultGlobal": "--mbx-text-color-light",
     "fallback": "--mbx-tabviewer-text-color"
@@ -17,7 +21,9 @@
     "defaultGlobal": "--mbx-text-color-dark",
     "fallback": "--mbx-tabviewer-text-color"
   },
-  "--mbx-tabviewer-inactive-background": {},
+  "--mbx-tabviewer-inactive-background": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-tabviewer-inactive-background-light": {
     "defaultColor": "linear-gradient(to right, #a1a0a0, #797979)",
     "fallback": "--mbx-tabviewer-inactive-background"
@@ -26,7 +32,9 @@
     "defaultColor": "linear-gradient(to right, #3e4b63, #3f4858)",
     "fallback": "--mbx-tabviewer-inactive-background"
   },
-  "--mbx-tabviewer-inactive-text-color": {},
+  "--mbx-tabviewer-inactive-text-color": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-tabviewer-inactive-text-color-light": {
     "defaultColor": "#c2c2c2",
     "fallback": "--mbx-tabviewer-inactive-text-color"
@@ -35,7 +43,9 @@
     "defaultColor": "#c2c2c2",
     "fallback": "--mbx-tabviewer-inactive-text-color"
   },
-  "--mbx-tabviewer-inactive-background-hover": {},
+  "--mbx-tabviewer-inactive-background-hover": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-tabviewer-inactive-background-hover-light": {
     "defaultColor": "linear-gradient(to right, #b6b4b4, #999797)",
     "fallback": "--mbx-tabviewer-inactive-background-hover"
@@ -44,7 +54,9 @@
     "defaultColor": "linear-gradient(to right, #566888, #3c465a)",
     "fallback": "--mbx-tabviewer-inactive-background-hover"
   },
-  "--mbx-tabviewer-inactive-text-color-hover": {},
+  "--mbx-tabviewer-inactive-text-color-hover": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-tabviewer-inactive-text-color-hover-light": {
     "defaultGlobal": "--mbx-text-color-hover-light",
     "fallback": "--mbx-tabviewer-inactive-text-color-hover"

@@ -17,8 +17,8 @@
 | <div style='text-align:center;margin:auto;'>[value](#value)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[buttons](#buttons)</div> | <div style='text-align:center;margin:auto;'>{ component: `JSX.Element`, text: `string`, textPosition:  `top` &#124; `bottom` &#124; `left` &#124; `right` }[]</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[elementClassName](#elementclassname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[radioProps](#radioprops)</div> | <div style='text-align:center;margin:auto;'>RadioButtonProps</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[defaultPosition](#defaultposition)</div> | <div style='text-align:center;margin:auto;'>`top` &#124; `bottom` &#124; `left` &#124; `right`</div> | <div style='text-align:center;margin:auto;'>left</div> |
-| <div style='text-align:center;margin:auto;'>[radioProps](#radioprops)</div> | <div style='text-align:center;margin:auto;'>CommonProps</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[horizontal](#horizontal)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
 | <div style='text-align:center;margin:auto;'>[onChange](#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
@@ -61,6 +61,17 @@ Radio elements array. Every element UI can be driven with attributes. A radio el
 
 Classname applied on every radio element<br><br>
 
+### radioProps
+
+<br>
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>RadioButtonProps</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+[RadioButton props](../../atoms/RadioButton/props.md) applied on every RadioButton element<br><br>
+
 ### defaultPosition
 
 <br>
@@ -71,17 +82,6 @@ Classname applied on every radio element<br><br>
 | <div style='text-align:center;margin:auto;'>`top` &#124; `bottom` &#124; `left` &#124; `right`</div> | <div style='text-align:center;margin:auto;'>left</div> |
 
 Default text position for RadioButton elements (when `textPosition` is not provided)<br><br>
-
-### radioProps
-
-<br>
-
-<!-- prettier-ignore -->
-| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>CommonProps</div> | <div style='text-align:center;margin:auto;'>/</div> |
-
-[MoBrix-ui shared props](../../global/css-vars.md) applied on every RadioButton element<br><br>
 
 ### horizontal
 

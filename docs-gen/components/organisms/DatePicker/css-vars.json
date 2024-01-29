@@ -1,5 +1,7 @@
 {
-  "--mbx-datepicker-background": {},
+  "--mbx-datepicker-background": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-datepicker-background-light": {
     "default": "",
     "fallback": "--mbx-datepicker-background"
@@ -8,7 +10,9 @@
     "default": "",
     "fallback": "--mbx-datepicker-background"
   },
-  "--mbx-datepicker-text-color": {},
+  "--mbx-datepicker-text-color": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-datepicker-text-color-light": {
     "default": "",
     "fallback": "--mbx-datepicker-text-color"
@@ -17,7 +21,9 @@
     "default": "",
     "fallback": "--mbx-datepicker-text-color"
   },
-  "--mbx-datepicker-calendar-background": {},
+  "--mbx-datepicker-calendar-background": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-datepicker-calendar-background-light": {
     "default": "",
     "fallback": "--mbx-datepicker-calendar-background"
@@ -26,7 +32,9 @@
     "default": "",
     "fallback": "--mbx-datepicker-calendar-background"
   },
-  "--mbx-datepicker-calendar-text-color": {},
+  "--mbx-datepicker-calendar-text-color": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-datepicker-calendar-text-color-light": {
     "default": "",
     "fallback": "--mbx-datepicker-calendar-text-color"
@@ -35,7 +43,9 @@
     "default": "",
     "fallback": "--mbx-datepicker-calendar-text-color"
   },
-  "--mbx-datepicker-calendar-background-hover": {},
+  "--mbx-datepicker-calendar-background-hover": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-datepicker-calendar-background-hover-light": {
     "default": "",
     "fallback": "--mbx-datepicker-calendar-background-hover"
@@ -44,7 +54,9 @@
     "default": "",
     "fallback": "--mbx-datepicker-calendar-background-hover"
   },
-  "--mbx-datepicker-calendar-text-color-hover": {},
+  "--mbx-datepicker-calendar-text-color-hover": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-datepicker-calendar-text-color-hover-light": {
     "default": "",
     "fallback": "--mbx-datepicker-calendar-text-color-hover"
@@ -53,7 +65,9 @@
     "default": "",
     "fallback": "--mbx-datepicker-calendar-text-color-hover"
   },
-  "--mbx-datepicker-calendar-arrow": {},
+  "--mbx-datepicker-calendar-arrow": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-datepicker-calendar-arrow-light": {
     "default": "",
     "fallback": "--mbx-datepicker-calendar-arrow"
@@ -62,7 +76,9 @@
     "default": "",
     "fallback": "--mbx-datepicker-calendar-arrow"
   },
-  "--mbx-datepicker-calendar-arrow-hover": {},
+  "--mbx-datepicker-calendar-arrow-hover": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-datepicker-calendar-arrow-hover-light": {
     "default": "",
     "fallback": "--mbx-datepicker-calendar-arrow-hover"
@@ -71,7 +87,9 @@
     "default": "",
     "fallback": "--mbx-datepicker-calendar-arrow-hover"
   },
-  "--mbx-datepicker-calendar-selected-background": {},
+  "--mbx-datepicker-calendar-selected-background": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-datepicker-calendar-selected-background-light": {
     "default": "",
     "fallback": "--mbx-datepicker-calendar-selected-background"
@@ -80,7 +98,9 @@
     "default": "",
     "fallback": "--mbx-datepicker-calendar-selected-background"
   },
-  "--mbx-datepicker-calendar-selected-text-color": {},
+  "--mbx-datepicker-calendar-selected-text-color": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-datepicker-calendar-selected-text-color-light": {
     "default": "",
     "fallback": "--mbx-datepicker-calendar-selected-text-color"
@@ -89,7 +109,9 @@
     "default": "",
     "fallback": "--mbx-datepicker-calendar-selected-text-color"
   },
-  "--mbx-datepicker-calendar-today-color": {},
+  "--mbx-datepicker-calendar-today-color": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-datepicker-calendar-today-color-light": {
     "defaultColor": "red",
     "fallback": "--mbx-datepicker-calendar-today-color"
@@ -98,7 +120,7 @@
     "defaultColor": "red",
     "fallback": "--mbx-datepicker-calendar-today-color"
   },
-  "--mbx-datepicker-icon": {},
+  "--mbx-datepicker-icon": { "description": "Fallback value for `` and ``" },
   "--mbx-datepicker-icon-light": {
     "default": "",
     "fallback": "--mbx-datepicker-icon"
@@ -107,7 +129,9 @@
     "default": "",
     "fallback": "--mbx-datepicker-icon"
   },
-  "--mbx-datepicker-icon-hover": {},
+  "--mbx-datepicker-icon-hover": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-datepicker-icon-hover-light": {
     "defaultColor": "blue",
     "fallback": "--mbx-datepicker-icon-hover"

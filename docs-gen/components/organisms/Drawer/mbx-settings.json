@@ -2,5 +2,13 @@
   "since": "",
   "description": "",
   "see": [],
-  "examples": []
+  "examples": [],
+  "extend": {
+    "group": {
+      "ClosableComponent": {},
+      "ComponentWithChildren": {
+        "type": "`(JSX.Element` | `string`) | (JSX.Element` | `string`)[]"
+      }
+    }
+  }
 }

@@ -12,14 +12,15 @@
     "description": "Classname applied on every radio element",
     "type": "string"
   },
+  "radioProps": {
+    "description": "[RadioButton props](../../atoms/RadioButton/props.md) applied on every RadioButton element",
+    "type": "RadioButtonProps",
+    "comment": "RadioButton props applied on every RadioButton element"
+  },
   "defaultPosition": {
     "description": "Default text position for RadioButton elements (when `textPosition` is not provided)",
     "default": "left",
     "type": "'top' | 'bottom' | 'left' | 'right'"
-  },
-  "radioProps": {
-    "description": "[MoBrix-ui shared props](../../global/css-vars.md) applied on every RadioButton element",
-    "type": "CommonProps"
   },
   "horizontal": {
     "description": "If `true`, the RadioButton elements are displayed horizontally",

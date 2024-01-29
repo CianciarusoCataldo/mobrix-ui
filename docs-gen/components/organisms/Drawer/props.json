@@ -1,1 +1,17 @@
-{}
+{
+  "position": {
+    "default": "`left`",
+    "type": "`left` | `right` | `top` | `bottom` | `top-left` | `top-right` | `bottom-left` | `bottom-right`",
+    "description": "Drawer position, relative to the entire window"
+  },
+  "onClose": {
+    "type": "() => void",
+    "default": "() => {}",
+    "description": "callback triggered when Drawer is closed"
+  },
+  "children": {
+    "type": "`(JSX.Element` | `string`) | (JSX.Element` | `string`)[]",
+    "default": "",
+    "description": "Drawer content"
+  }
+}

@@ -1,4 +1,33 @@
 {
+  "headers": { "type": "boolean" },
+  "rows": {
+    "type": "(JSX.Element | string)[][]",
+    "description": "Table elements"
+  },
+  "headerClassName": {
+    "description": "Custom className applied on every Table header element",
+    "type": "string"
+  },
+  "headersProps": {
+    "description": "Custom props applied on every Table header element",
+    "type": "Record<string, any>"
+  },
+  "cellClassName": {
+    "description": "Custom className applied on every Table cell element",
+    "type": "string"
+  },
+  "cellProps": {
+    "description": "Custom props applied on every Table cell element",
+    "type": "Record<string, any>"
+  },
+  "rowClassName": {
+    "description": "Custom className applied on every Table row element",
+    "type": "string"
+  },
+  "rowProps": {
+    "description": "Custom props applied on every Table row element",
+    "type": "Record<string, any>"
+  },
   "onClick": {
     "type": "(row: number, column: number) => void",
     "default": "() => {}",

@@ -2,10 +2,7 @@ import "./styles.css";
 
 import { ReviewComponent } from "../../../types";
 
-import {
-  buildMbxStandardComponent,
-  buildMobrixUiStandardComponent,
-} from "../../../tools";
+import { buildMbxStandardComponent } from "../../../tools";
 
 import reviewComponent from "./component";
 

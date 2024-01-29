@@ -1,10 +1,23 @@
 {
-  "user": { "type": "string" },
-  "description": { "type": "string" },
-  "icon": { "type": "JSX.Element" },
-  "url": { "type": "string" },
+  "user": {
+    "type": "string",
+    "description": "Username displayed above the review description, at the right of the icon"
+  },
+  "description": {
+    "type": "string",
+    "description": "Review description displayed below the review username, at the top of the rate"
+  },
+  "icon": {
+    "type": "JSX.Element",
+    "description": "Icon showed inside the component"
+  },
+  "url": {
+    "type": "string",
+    "description": "Review external url. If set, an icon will be showed at the top right of the review"
+  },
   "logo": {
-    "type": "'default' | 'link' | 'facebook' | 'twitter' | 'google' | 'linkedin' | 'github'"
+    "type": "'default' | 'link' | 'facebook' | 'twitter' | 'google' | 'linkedin' | 'github'",
+    "description": "Social icon type, showed at the top right of the container. Supports popular web services like Facebook, Twitter, Google and so on. Proviced icon list will grow up time by time and will be updated with the latest web services, to keep it usable for the future."
   },
   "max": {
     "default": "5",

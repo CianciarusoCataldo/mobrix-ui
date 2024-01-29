@@ -1,5 +1,7 @@
 {
-  "--mbx-calendar-background": {},
+  "--mbx-calendar-background": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-calendar-background-light": {
     "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-calendar-background"
@@ -8,7 +10,9 @@
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-calendar-background"
   },
-  "--mbx-calendar-text-color": {},
+  "--mbx-calendar-text-color": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-calendar-text-color-light": {
     "defaultGlobal": "--mbx-text-color-light",
     "fallback": "--mbx-calendar-text-color"
@@ -17,7 +21,9 @@
     "defaultGlobal": "--mbx-text-color-dark",
     "fallback": "--mbx-calendar-text-color"
   },
-  "--mbx-calendar-selected-background": {},
+  "--mbx-calendar-selected-background": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-calendar-selected-background-light": {
     "fallback": "--mbx-calendar-selected-background",
     "defaultInternal": "--mbx-calendar-background-dark"
@@ -26,7 +32,9 @@
     "fallback": "--mbx-calendar-selected-background",
     "defaultInternal": "--mbx-calendar-background-light"
   },
-  "--mbx-calendar-selected-text-color": {},
+  "--mbx-calendar-selected-text-color": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-calendar-selected-text-color-light": {
     "fallback": "--mbx-calendar-selected-text-color",
     "defaultInternal": "--mbx-calendar-text-color-dark"
@@ -35,7 +43,9 @@
     "fallback": "--mbx-calendar-selected-text-color",
     "defaultInternal": "--mbx-calendar-text-color-light"
   },
-  "--mbx-calendar-background-hover": {},
+  "--mbx-calendar-background-hover": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-calendar-background-hover-light": {
     "fallback": "--mbx-calendar-background-hover",
     "defaultInternal": "--mbx-calendar-selected-background-light"
@@ -44,7 +54,9 @@
     "fallback": "--mbx-calendar-background-hover",
     "defaultInternal": "--mbx-calendar-selected-background-dark"
   },
-  "--mbx-calendar-text-color-hover": {},
+  "--mbx-calendar-text-color-hover": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-calendar-text-color-hover-light": {
     "fallback": "--mbx-calendar-text-color-hover",
     "defaultInternal": "--mbx-calendar-selected-text-color-light"
@@ -53,7 +65,7 @@
     "fallback": "--mbx-calendar-text-color-hover",
     "defaultInternal": "--mbx-calendar-selected-text-color-dark"
   },
-  "--mbx-calendar-arrow": {},
+  "--mbx-calendar-arrow": { "description": "Fallback value for `` and ``" },
   "--mbx-calendar-arrow-light": {
     "fallback": "--mbx-calendar-arrow",
     "defaultInternal": "--mbx-calendar-text-color-light"
@@ -62,7 +74,9 @@
     "fallback": "--mbx-calendar-arrow",
     "defaultInternal": "--mbx-calendar-text-color-dark"
   },
-  "--mbx-calendar-arrow-hover": {},
+  "--mbx-calendar-arrow-hover": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-calendar-arrow-hover-light": {
     "defaultGlobal": "--mbx-text-color-light",
     "fallback": "--mbx-calendar-arrow-hover"
@@ -71,7 +85,9 @@
     "defaultGlobal": "--mbx-text-color-dark",
     "fallback": "--mbx-calendar-arrow-hover"
   },
-  "--mbx-calendar-today-color": {},
+  "--mbx-calendar-today-color": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-calendar-today-color-light": {
     "defaultColor": "red",
     "fallback": "--mbx-calendar-today-color"
