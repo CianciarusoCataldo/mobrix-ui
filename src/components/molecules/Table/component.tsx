@@ -43,11 +43,7 @@ const tableComponent: MoBrixUiComponent<TableProps, JSX.Element> = ({
   return (
     <tbody key="table_body">
       {rows.map((row, rowIndex) => (
-        <tr
-          data-mbx-table-row="true"
-          key={`row_${rowIndex}`}
-          {...rowProps}
-        >
+        <tr data-mbx-table-row="true" key={`row_${rowIndex}`} {...rowProps}>
           {row.map((element, index) => {
             const Wrapper = wrappers[rowIndex].wrapper;
 

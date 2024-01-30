@@ -36,7 +36,7 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
           data-mbx-animation={index === item ? activeClassName : ""}
         >
           {element}
-        </div>
+        </div>,
       );
 
       dots.push(
@@ -60,7 +60,7 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
               index === item || (hoveredDot != null && index === hoveredDot)
             }
           />
-        </IconButton>
+        </IconButton>,
       );
     });
   }

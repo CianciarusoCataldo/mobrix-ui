@@ -19,7 +19,7 @@ const listComponent: MoBrixUiComponent<ListProps, BuilderComponent[]> = ({
       <Button
         additionalProps={{
           "data-mbx-list-element": "clickable",
-          "data-mbx-test": "list_element_" + index
+          "data-mbx-test": "list_element_" + index,
         }}
         background={false}
         onClick={() => onClick(Number(index))}

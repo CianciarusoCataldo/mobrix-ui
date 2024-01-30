@@ -7,7 +7,17 @@ import { buildMobrixUiReactiveComponent } from "../../../tools";
 import dismissableCardInternalComponent from "./component";
 
 /**
+ * MBX_DESCRIPTION
  *
+ * MBX_PROPS
+ *
+ * @example MBX_EXAMPLE
+ *
+ * @since MBX_SINCE
+ *
+ * @author MBX_AUTHOR
+ *
+ * @copyright MBX_COPYRIGHT
  */
 const DismissableCard: DismissableCardComponent = ({
   onClose,

@@ -53,7 +53,7 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
         dark={!dark}
       >
         {header}
-      </Container>
+      </Container>,
     );
   }
 
@@ -100,7 +100,7 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
 
         setValue(formattedValue);
       }}
-    />
+    />,
   );
 
   components.push(
@@ -115,7 +115,7 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
       key="form_field_error_box"
     >
       {errorLabel}
-    </Container>
+    </Container>,
   );
 
   return components;

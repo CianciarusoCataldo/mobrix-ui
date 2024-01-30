@@ -16,7 +16,7 @@ for type in $(
         export COMPONENT_NAME="$component"
         export COMPONENT_TYPE="$type"
 
-        node "docs-gen/utils/update-comments-test.js"
+        node "docs-gen/utils/update-comments.js"
 
     done
 

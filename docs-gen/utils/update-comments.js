@@ -2,7 +2,6 @@ const fs = require("fs");
 const COMPONENT_NAME = process.env["COMPONENT_NAME"];
 const COMPONENT_TYPE = process.env["COMPONENT_TYPE"];
 const EXTENSION = process.env["COMPONENT_INDEX_EXT"];
-
 try {
   let externalProps = {};
   const props = require(
@@ -27,7 +26,7 @@ try {
   );
 
   let componentFile = fs.readFileSync(
-    "src/testing/" +
+    "src/components/" +
       COMPONENT_TYPE +
       "/" +
       COMPONENT_NAME +
@@ -35,35 +34,43 @@ try {
       EXTENSION,
     "utf8"
   );
+  const TEMPLATE = `
+  /**
+  * MBX_DESCRIPTION
+  *
+  * MBX_PROPS
+  *
+  * @example MBX_EXAMPLE
+  *
+  * @since MBX_SINCE
+  *
+  * @author MBX_AUTHOR
+  *
+  * @copyright MBX_COPYRIGHT
+  */`;
 
-  let executed = false;
+  let executed = true;
+  componentFile = componentFile.replace("/**", "<COMMENT>");
+  componentFile = componentFile.replace("*/", "<COMMENT>");
 
-  if (settings.description) {
-    executed = true;
+  const splittedComment = componentFile.split("<COMMENT>");
 
-    componentFile = componentFile.replace(
-      "MBX_COMPONENT_DESCRIPTION",
-      settings.description
-    );
-  }
-  if (parameters.length > 0) {
-    componentFile = componentFile.replace("MBX_COMPONENT_PROPS", parameters);
-  }
-  if (settings.since) {
-    componentFile = componentFile.replace("MBX_AUTHOR", globalSettings.author);
-    executed = true;
-  }
+  if (splittedComment.length === 3) {
+    const finalString = splittedComment[0] + TEMPLATE + splittedComment[2];
 
-  if (executed) {
-    fs.writeFileSync(
-      "src/testing/" +
-        COMPONENT_TYPE +
-        "/" +
-        COMPONENT_NAME +
-        "/index." +
-        EXTENSION,
-      componentFile
-    );
+    if (executed) {
+      fs.writeFileSync(
+        "src/components/" +
+          COMPONENT_TYPE +
+          "/" +
+          COMPONENT_NAME +
+          "/index." +
+          EXTENSION,
+        finalString
+      );
+    }
+  } else {
+    console.log(COMPONENT_NAME, "lenght!=3\n\n");
   }
 } catch (e) {
   console.log(e);
