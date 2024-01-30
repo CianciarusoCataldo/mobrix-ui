@@ -4,96 +4,114 @@
   },
   "--mbx-calendar-background-light": {
     "defaultGlobal": "--mbx-background-light",
-    "fallback": "--mbx-calendar-background"
+    "fallback": "--mbx-calendar-background",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-calendar-background-dark": {
     "defaultGlobal": "--mbx-background-dark",
-    "fallback": "--mbx-calendar-background"
+    "fallback": "--mbx-calendar-background",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-calendar-text-color": {
     "description": "Fallback value for `` and ``"
   },
   "--mbx-calendar-text-color-light": {
     "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-calendar-text-color"
+    "fallback": "--mbx-calendar-text-color",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-calendar-text-color-dark": {
     "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-calendar-text-color"
+    "fallback": "--mbx-calendar-text-color",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-calendar-selected-background": {
     "description": "Fallback value for `` and ``"
   },
   "--mbx-calendar-selected-background-light": {
     "fallback": "--mbx-calendar-selected-background",
-    "defaultInternal": "--mbx-calendar-background-dark"
+    "defaultInternal": "--mbx-calendar-background-dark",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-calendar-selected-background-dark": {
     "fallback": "--mbx-calendar-selected-background",
-    "defaultInternal": "--mbx-calendar-background-light"
+    "defaultInternal": "--mbx-calendar-background-light",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-calendar-selected-text-color": {
     "description": "Fallback value for `` and ``"
   },
   "--mbx-calendar-selected-text-color-light": {
     "fallback": "--mbx-calendar-selected-text-color",
-    "defaultInternal": "--mbx-calendar-text-color-dark"
+    "defaultInternal": "--mbx-calendar-text-color-dark",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-calendar-selected-text-color-dark": {
     "fallback": "--mbx-calendar-selected-text-color",
-    "defaultInternal": "--mbx-calendar-text-color-light"
+    "defaultInternal": "--mbx-calendar-text-color-light",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-calendar-background-hover": {
     "description": "Fallback value for `` and ``"
   },
   "--mbx-calendar-background-hover-light": {
     "fallback": "--mbx-calendar-background-hover",
-    "defaultInternal": "--mbx-calendar-selected-background-light"
+    "defaultInternal": "--mbx-calendar-selected-background-light",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
   },
   "--mbx-calendar-background-hover-dark": {
     "fallback": "--mbx-calendar-background-hover",
-    "defaultInternal": "--mbx-calendar-selected-background-dark"
+    "defaultInternal": "--mbx-calendar-selected-background-dark",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
   },
   "--mbx-calendar-text-color-hover": {
     "description": "Fallback value for `` and ``"
   },
   "--mbx-calendar-text-color-hover-light": {
     "fallback": "--mbx-calendar-text-color-hover",
-    "defaultInternal": "--mbx-calendar-selected-text-color-light"
+    "defaultInternal": "--mbx-calendar-selected-text-color-light",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
   },
   "--mbx-calendar-text-color-hover-dark": {
     "fallback": "--mbx-calendar-text-color-hover",
-    "defaultInternal": "--mbx-calendar-selected-text-color-dark"
+    "defaultInternal": "--mbx-calendar-selected-text-color-dark",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
   },
   "--mbx-calendar-arrow": { "description": "Fallback value for `` and ``" },
   "--mbx-calendar-arrow-light": {
     "fallback": "--mbx-calendar-arrow",
-    "defaultInternal": "--mbx-calendar-text-color-light"
+    "defaultInternal": "--mbx-calendar-text-color-light",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-calendar-arrow-dark": {
     "fallback": "--mbx-calendar-arrow",
-    "defaultInternal": "--mbx-calendar-text-color-dark"
+    "defaultInternal": "--mbx-calendar-text-color-dark",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-calendar-arrow-hover": {
     "description": "Fallback value for `` and ``"
   },
   "--mbx-calendar-arrow-hover-light": {
     "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-calendar-arrow-hover"
+    "fallback": "--mbx-calendar-arrow-hover",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
   },
   "--mbx-calendar-arrow-hover-dark": {
     "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-calendar-arrow-hover"
+    "fallback": "--mbx-calendar-arrow-hover",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
   },
   "--mbx-calendar-today-color": {
     "description": "Fallback value for `` and ``"
   },
   "--mbx-calendar-today-color-light": {
     "defaultColor": "red",
-    "fallback": "--mbx-calendar-today-color"
+    "fallback": "--mbx-calendar-today-color",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-calendar-today-color-dark": {
     "defaultColor": "red",
-    "fallback": "--mbx-calendar-today-color"
+    "fallback": "--mbx-calendar-today-color",
+    "description": "Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'"
   }
 }

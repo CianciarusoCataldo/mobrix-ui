@@ -108,7 +108,7 @@ Fallback value for `--mbx-expandablecontainer-arrow-color-light` and `--mbx-expa
 | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color](#mbx-expandablecontainer-arrow-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-text-color-light](#mbx-expandablecontainer-text-color-light)</div> |
 
-<br><br>
+off<br><br>
 
 ### --mbx-expandablecontainer-arrow-color-dark
 
@@ -118,7 +118,7 @@ Fallback value for `--mbx-expandablecontainer-arrow-color-light` and `--mbx-expa
 | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color](#mbx-expandablecontainer-arrow-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-text-color-dark](#mbx-expandablecontainer-text-color-dark)</div> |
 
-<br><br>
+off<br><br>
 
 ### --mbx-expandablecontainer-arrow-color-hover
 
@@ -138,7 +138,7 @@ Fallback value for `--mbx-expandablecontainer-arrow-color-hover-light` and `--mb
 | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color-hover](#mbx-expandablecontainer-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-arrow-color-lrrowight](#mbx-expandablecontainer-arrow-color-lrrowight)</div> |
 
-<br><br>
+off, on `hover`<br><br>
 
 ### --mbx-expandablecontainer-arrow-color-hover-dark
 
@@ -148,4 +148,4 @@ Fallback value for `--mbx-expandablecontainer-arrow-color-hover-light` and `--mb
 | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-expandablecontainer-arrow-color-hover](#mbx-expandablecontainer-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-expandablecontainer-a-color-dark](#mbx-expandablecontainer-a-color-dark)</div> |
 
-<br><br>
+off, on `hover`<br><br>

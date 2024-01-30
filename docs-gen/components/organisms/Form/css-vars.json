@@ -1,30 +1,37 @@
 {
   "--mbx-form-background-light": {
     "defaultGlobal": "--mbx-background-light",
-    "fallback": "--mbx-form-background"
+    "fallback": "--mbx-form-background",
+    "description": "Form background when [dark](../../global/props.md#dark) mode is `off'"
   },
-  "--mbx-form-background": {},
+  "--mbx-form-background": { "description": "Fallback value for `` and ``" },
   "--mbx-form-background-dark": {
     "defaultGlobal": "--mbx-background-dark",
-    "fallback": "--mbx-form-background"
+    "fallback": "--mbx-form-background",
+    "description": "Form background when [dark](../../global/props.md#dark) mode is `on'"
   },
-  "--mbx-form-text-color": {},
+  "--mbx-form-text-color": { "description": "Fallback value for `` and ``" },
   "--mbx-form-text-color-light": {
     "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-form-text-color"
+    "fallback": "--mbx-form-text-color",
+    "description": "Form text color when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-form-text-color-dark": {
     "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-form-text-color"
+    "fallback": "--mbx-form-text-color",
+    "description": "Form text color when [dark](../../global/props.md#dark) mode is `on'"
   },
-  "--mbx-form-submit-background": {},
+  "--mbx-form-submit-background": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-form-submit-background-light": {
     "defaultExternal": {
       "type": "atoms",
       "component": "Button",
       "prop": "mbx-button-background-light"
     },
-    "fallback": "--mbx-form-submit-background"
+    "fallback": "--mbx-form-submit-background",
+    "description": "Form submit button background when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-form-submit-background-dark": {
     "defaultExternal": {
@@ -32,16 +39,20 @@
       "component": "Button",
       "prop": "mbx-button-background-dark"
     },
-    "fallback": "--mbx-form-submit-background"
+    "fallback": "--mbx-form-submit-background",
+    "description": "Form submit button background when [dark](../../global/props.md#dark) mode is `on'"
   },
-  "--mbx-form-submit-text-color": {},
+  "--mbx-form-submit-text-color": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-form-submit-text-color-light": {
     "defaultExternal": {
       "type": "atoms",
       "component": "Button",
       "prop": "mbx-button-text-color-light"
     },
-    "fallback": "--mbx-form-submit-text-color"
+    "fallback": "--mbx-form-submit-text-color",
+    "description": "Form submit button text color when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-form-submit-text-color-dark": {
     "defaultExternal": {
@@ -49,16 +60,20 @@
       "component": "Button",
       "prop": "mbx-button-text-color-dark"
     },
-    "fallback": "--mbx-form-submit-text-color"
+    "fallback": "--mbx-form-submit-text-color",
+    "description": "Form submit button text color when [dark](../../global/props.md#dark) mode is `on'"
   },
-  "--mbx-form-formfield-background": {},
+  "--mbx-form-formfield-background": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-form-formfield-background-light": {
     "defaultExternal": {
       "type": "molecules",
       "component": "FormField",
       "prop": "mbx-formfield-background-light"
     },
-    "fallback": "--mbx-form-formfield-background"
+    "fallback": "--mbx-form-formfield-background",
+    "description": "Form field background when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-form-formfield-background-dark": {
     "defaultExternal": {
@@ -66,16 +81,20 @@
       "component": "FormField",
       "prop": "mbx-formfield-background-dark"
     },
-    "fallback": "--mbx-form-formfield-background"
+    "fallback": "--mbx-form-formfield-background",
+    "description": "Form field background when [dark](../../global/props.md#dark) mode is `on'"
   },
-  "--mbx-form-formfield-text-color": {},
+  "--mbx-form-formfield-text-color": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-form-formfield-text-color-light": {
     "defaultExternal": {
       "type": "molecules",
       "component": "FormField",
       "prop": "mbx-formfield-text-color-light"
     },
-    "fallback": "--mbx-form-formfield-text-color"
+    "fallback": "--mbx-form-formfield-text-color",
+    "description": "Form field text color when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-form-formfield-text-color-dark": {
     "defaultExternal": {
@@ -83,16 +102,20 @@
       "component": "FormField",
       "prop": "mbx-formfield-text-color-dark"
     },
-    "fallback": "--mbx-form-formfield-text-color"
+    "fallback": "--mbx-form-formfield-text-color",
+    "description": "Form field text color when [dark](../../global/props.md#dark) mode is `on'"
   },
-  "--mbx-form-formfield-background-hover": {},
+  "--mbx-form-formfield-background-hover": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-form-formfield-background-hover-light": {
     "defaultExternal": {
       "type": "molecules",
       "component": "FormField",
       "prop": "mbx-formfield-background-hover-light"
     },
-    "fallback": "--mbx-form-formfield-background-hover"
+    "fallback": "--mbx-form-formfield-background-hover",
+    "description": "Form field background when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
   },
   "--mbx-form-formfield-background-hover-dark": {
     "defaultExternal": {
@@ -100,16 +123,20 @@
       "component": "FormField",
       "prop": "mbx-formfield-background-hover-dark"
     },
-    "fallback": "--mbx-form-formfield-background-hover"
+    "fallback": "--mbx-form-formfield-background-hover",
+    "description": "Form field background when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
   },
-  "--mbx-form-formfield-text-color-hover": {},
+  "--mbx-form-formfield-text-color-hover": {
+    "description": "Fallback value for `` and ``"
+  },
   "--mbx-form-formfield-text-color-hover-light": {
     "defaultExternal": {
       "type": "molecules",
       "component": "FormField",
       "prop": "mbx-formfield-text-color-hover-light"
     },
-    "fallback": "--mbx-form-formfield-text-color-hover"
+    "fallback": "--mbx-form-formfield-text-color-hover",
+    "description": "Form field text color when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
   },
   "--mbx-form-formfield-text-color-hover-dark": {
     "defaultExternal": {
@@ -117,6 +144,7 @@
       "component": "FormField",
       "prop": "mbx-formfield-text-color-hover-dark"
     },
-    "fallback": "--mbx-form-formfield-text-color-hover"
+    "fallback": "--mbx-form-formfield-text-color-hover",
+    "description": "Form field text color when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
   }
 }

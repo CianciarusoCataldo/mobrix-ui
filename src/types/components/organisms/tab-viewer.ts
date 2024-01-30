@@ -47,6 +47,18 @@ export type TabViewerProps = ClosableComponent & {
   /** Custom className applied on every unselected tab */
   tabUnselectedClassName?: string;
 
+  /** Custom props applied on every tab */
+  tabProps?: Record<string, any>;
+
+  /** Custom props applied on the tab view container (where the selected tab content is showed) */
+  tabViewProps?: Record<string, any>;
+
+  /** Custom props applied only on selected tab */
+  tabSelectedProps?: Record<string, any>;
+
+  /** Custom props applied on every unselected tab */
+  tabUnselectedProps?: Record<string, any>;
+
   /** Initially selected tab (as an array index, default to `0`) */
   selected?: number;
 } & ComponentWithCallback<number>;

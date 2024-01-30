@@ -61,6 +61,10 @@ const TabViewer: TabViewerComponent = ({
   tabUnselectedClassName,
   tabViewClassName,
   additionalProps,
+  tabProps,
+  tabSelectedProps,
+  tabUnselectedProps,
+  tabViewProps,
   ...commonProps
 }) =>
   buildMbxReactiveComponent(commonProps, (props) => ({

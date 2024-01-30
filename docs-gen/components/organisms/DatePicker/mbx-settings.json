@@ -2,5 +2,6 @@
   "since": "",
   "description": "",
   "see": [],
-  "examples": []
+  "examples": [],
+  "extend": { "component": { "type": "organisms", "name": "Calendar" } }
 }

@@ -2,5 +2,13 @@
   "since": "",
   "description": "",
   "see": [],
-  "examples": []
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithCallback": {
+        "type": "number",
+        "overrideDescription": "Callback triggered when a tab is selected, giving its index as parameter"
+      }
+    }
+  }
 }

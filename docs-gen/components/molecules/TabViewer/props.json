@@ -1,1 +1,46 @@
-{}
+{
+  "selected": {},
+  "tabs": {
+    "type": "{`label`: string; `content`: JSX.Element;}[]",
+    "typeComment": "{label: string; content: JSX.Element; dismissable?: boolean;}[]",
+    "description": "tabs array. Every tab object contains 3 fields: <ul><li>`label`: tab label displayed on top</li><li>`content`: tab content element</li></ul>",
+    "comment": "Tabs array. Every tab object contains 3 fields:\n- `label`: tab label displayed on top\n- `content`: tab content element"
+  },
+  "tabProps": {
+    "type": "Record<string,any>",
+    "description": "Custom props applied on every tab"
+  },
+  "tabSelectedProps": {
+    "type": "Record<string,any>",
+    "description": "Custom props applied on every selected tab"
+  },
+  "tabUnselectedProps": {
+    "type": "Record<string,any>",
+    "description": "Custom props applied on every unselected tab"
+  },
+  "tabViewProps": {
+    "type": "Record<string,any>",
+    "description": "Custom props applied on the tab view panel"
+  },
+  "tabClassName": {
+    "type": "Record<string,any>",
+    "description": "Custom props applied on every tab"
+  },
+  "tabSelectedClassName": {
+    "type": "Record<string,any>",
+    "description": "Custom props applied on every selected tab"
+  },
+  "tabUnselectedClassName": {
+    "type": "Record<string,any>",
+    "description": "Custom props applied on every unselected tab"
+  },
+  "tabViewClassName": {
+    "type": "Record<string,any>",
+    "description": "Custom props applied on the tab view panel"
+  },
+  "onChange": {
+    "type": "(newValue: number) => void",
+    "default": "() => {}",
+    "description": "Callback triggered when a tab is selected, giving its index as parameter"
+  }
+}

@@ -1,68 +1,80 @@
 {
   "--mbx-tabviewer-background": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-tabviewer-background-light` and `--mbx-tabviewer-background-dark`"
   },
   "--mbx-tabviewer-background-light": {
     "defaultColor": "linear-gradient(to right, #cccccc, #c7c7c7)",
-    "fallback": "--mbx-tabviewer-background"
+    "fallback": "--mbx-tabviewer-background",
+    "description": "TabViewer background when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-tabviewer-background-dark": {
     "defaultColor": "linear-gradient(to right, #2d3748, #1d232e)",
-    "fallback": "--mbx-tabviewer-background"
+    "fallback": "--mbx-tabviewer-background",
+    "description": "TabViewer background when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-tabviewer-text-color": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-tabviewer-text-color-light` and `--mbx-tabviewer-text-color-dark`"
   },
   "--mbx-tabviewer-text-color-light": {
     "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-tabviewer-text-color"
+    "fallback": "--mbx-tabviewer-text-color",
+    "description": "TabViewer text color when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-tabviewer-text-color-dark": {
     "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-tabviewer-text-color"
+    "fallback": "--mbx-tabviewer-text-color",
+    "description": "TabViewer text color when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-tabviewer-inactive-background": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-tabviewer-inactive-background-light` and `--mbx-tabviewer-inactive-background-dark`"
   },
   "--mbx-tabviewer-inactive-background-light": {
     "defaultColor": "linear-gradient(to right, #a1a0a0, #797979)",
-    "fallback": "--mbx-tabviewer-inactive-background"
+    "fallback": "--mbx-tabviewer-inactive-background",
+    "description": "TabViewer inactive tab background when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-tabviewer-inactive-background-dark": {
     "defaultColor": "linear-gradient(to right, #3e4b63, #3f4858)",
-    "fallback": "--mbx-tabviewer-inactive-background"
+    "fallback": "--mbx-tabviewer-inactive-background",
+    "description": "TabViewer inactive tab background when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-tabviewer-inactive-text-color": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-tabviewer-inactive-text-color-light` and `--mbx-tabviewer-inactive-text-color-dark`"
   },
   "--mbx-tabviewer-inactive-text-color-light": {
     "defaultColor": "#c2c2c2",
-    "fallback": "--mbx-tabviewer-inactive-text-color"
+    "fallback": "--mbx-tabviewer-inactive-text-color",
+    "description": "TabViewer inactive tab text color when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-tabviewer-inactive-text-color-dark": {
     "defaultColor": "#c2c2c2",
-    "fallback": "--mbx-tabviewer-inactive-text-color"
+    "fallback": "--mbx-tabviewer-inactive-text-color",
+    "description": "TabViewer inactive tab text color when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-tabviewer-inactive-background-hover": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-tabviewer-inactive-background-hover-light` and `--mbx-tabviewer-inactive-background-hover-dark`"
   },
   "--mbx-tabviewer-inactive-background-hover-light": {
     "defaultColor": "linear-gradient(to right, #b6b4b4, #999797)",
-    "fallback": "--mbx-tabviewer-inactive-background-hover"
+    "fallback": "--mbx-tabviewer-inactive-background-hover",
+    "description": "TabViewer inactive tab background when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
   },
   "--mbx-tabviewer-inactive-background-hover-dark": {
     "defaultColor": "linear-gradient(to right, #566888, #3c465a)",
-    "fallback": "--mbx-tabviewer-inactive-background-hover"
+    "fallback": "--mbx-tabviewer-inactive-background-hover",
+    "description": "TabViewer inactive tab background when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
   },
   "--mbx-tabviewer-inactive-text-color-hover": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-tabviewer-inactive-text-color-hover-light` and `--mbx-tabviewer-inactive-text-color-hover-dark`"
   },
   "--mbx-tabviewer-inactive-text-color-hover-light": {
     "defaultGlobal": "--mbx-text-color-hover-light",
-    "fallback": "--mbx-tabviewer-inactive-text-color-hover"
+    "fallback": "--mbx-tabviewer-inactive-text-color-hover",
+    "description": "TabViewer inactive tab text color when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
   },
   "--mbx-tabviewer-inactive-text-color-hover-dark": {
     "defaultGlobal": "--mbx-text-color-hover-dark",
-    "fallback": "--mbx-tabviewer-inactive-text-color-hover"
+    "fallback": "--mbx-tabviewer-inactive-text-color-hover",
+    "description": "TabViewer inactive tab text color when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
   }
 }

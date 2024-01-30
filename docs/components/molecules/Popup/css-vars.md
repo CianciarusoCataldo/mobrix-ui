@@ -62,7 +62,7 @@ Popup background when [dark](../../global/props.md#dark) mode is `on`<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-<br><br>
+Fallback value for `and`<br><br>
 
 ### --mbx-popup-text-color-light
 

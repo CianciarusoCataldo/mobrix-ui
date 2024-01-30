@@ -18,6 +18,7 @@ const tabs = (
       {
         label: "Atoms",
         content: Atoms,
+        dismissable: true,
       },
       {
         label: "Molecules",

@@ -105,7 +105,8 @@ Object.keys(propsToParse).forEach((actualProp, index) => {
 
   let outputType = (propsToParse[actualProp].type || "/")
     .replaceAll("'", "`")
-    .replaceAll("|", "&#124;");
+    .replaceAll("|", "&#124;")
+    .replaceAll("<DOUBLE_QUOTE>", '"');
   inputTable = inputTable.replace("PROP_TYPE_" + index, outputType);
   list = list.replace("PROP_TYPE_" + index, outputType);
   externalTable = externalTable.replace(

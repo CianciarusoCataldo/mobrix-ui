@@ -518,6 +518,17 @@
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[selected](molecules/TabViewer/props.md#selected)</div> | <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[tabs](molecules/TabViewer/props.md#tabs)</div> | <div style='text-align:center;margin:auto;'>{`label`: string; `content`: JSX.Element;}[]</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[tabProps](molecules/TabViewer/props.md#tabprops)</div> | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[tabSelectedProps](molecules/TabViewer/props.md#tabselectedprops)</div> | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[tabUnselectedProps](molecules/TabViewer/props.md#tabunselectedprops)</div> | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[tabViewProps](molecules/TabViewer/props.md#tabviewprops)</div> | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[tabClassName](molecules/TabViewer/props.md#tabclassname)</div> | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[tabSelectedClassName](molecules/TabViewer/props.md#tabselectedclassname)</div> | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[tabUnselectedClassName](molecules/TabViewer/props.md#tabunselectedclassname)</div> | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[tabViewClassName](molecules/TabViewer/props.md#tabviewclassname)</div> | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onChange](molecules/TabViewer/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
 <br>
 
@@ -554,6 +565,9 @@
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[position](organisms/Drawer/props.md#position)</div> | <div style='text-align:center;margin:auto;'>`left` &#124; `right` &#124; `top` &#124; `bottom` &#124; `top-left` &#124; `top-right` &#124; `bottom-left` &#124; `bottom-right`</div> | <div style='text-align:center;margin:auto;'>`left`</div> |
+| <div style='text-align:center;margin:auto;'>[onClose](organisms/Drawer/props.md#onclose)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
+| <div style='text-align:center;margin:auto;'>[children](organisms/Drawer/props.md#children)</div> | <div style='text-align:center;margin:auto;'>`(JSX.Element` &#124; `string`) &#124; (JSX.Element` &#124; `string`)[]</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 <br>
