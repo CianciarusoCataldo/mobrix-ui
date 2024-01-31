@@ -164,6 +164,9 @@ const CalendarComponent: MobrixUiReactiveComponent<
               : {};
 
           return {
+            ...(basicMatrix[row - 1][column] > 0 && {
+              "data-mbx-calendar-day": basicMatrix[row - 1][column],
+            }),
             "data-mbx-calendar-today":
               fromToday &&
               basicMatrix[row - 1][column] === todayDate.dayOfTheMonth &&

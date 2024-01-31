@@ -3,5 +3,11 @@
   "description": "",
   "see": [],
   "examples": [],
-  "extend": { "component": { "type": "organisms", "name": "Calendar" } }
+  "extend": {
+    "component": { "type": "organisms", "name": "Calendar" },
+    "group": {
+      "ClosableComponent": {},
+      "ComponentWithCallback": { "type": "number" }
+    }
+  }
 }

@@ -9,6 +9,7 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
   type = "star",
   max,
   readonly,
+  /* istanbul ignore next */
   onChange = () => {},
   value: actualValue,
   setValue,
@@ -58,7 +59,7 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
         })}
       >
         {ICONS[type][iconToShow]}
-      </IconButton>,
+      </IconButton>
     );
   }
 

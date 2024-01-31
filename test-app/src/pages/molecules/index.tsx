@@ -534,6 +534,8 @@ const MoleculesPage = () => {
         ]}
         children={(props, setProps) => (
           <FormField
+            animated
+            onChange={(value) => console.log(value)}
             {...props}
             //validate={(value) => String(value).length > 6}
           />

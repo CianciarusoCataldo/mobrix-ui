@@ -118,6 +118,7 @@ const AtomsPage = () => {
                   header: "radio",
                 },
               }}
+              onSubmit={(values) => console.log(values)}
             />
             <Form
               title="Test Form"

@@ -21,6 +21,7 @@ const DismissableCardComponent: MobrixUiReactiveComponent<
   footer,
   header,
   dark,
+  /* istanbul ignore next */
   onClose = () => {},
   alwaysVisible,
   disabled,

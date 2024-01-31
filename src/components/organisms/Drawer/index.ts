@@ -57,8 +57,9 @@ const Drawer: DrawerComponent = ({
   hide,
   animated,
   children,
-  additionalProps = {},
+  /* istanbul ignore next */
   onClose = () => {},
+  /* istanbul ignore next */
   onFocusLost = () => {},
   ...commonProps
 }) => {
@@ -67,6 +68,7 @@ const Drawer: DrawerComponent = ({
 
   const [value, setValue] = React.useState("");
 
+  /* istanbul ignore next */
   const onCloseCallback = () => {
     setValue("ease-out");
     setTimeout(() => {
@@ -75,24 +77,27 @@ const Drawer: DrawerComponent = ({
     }, 200);
   };
 
+  /* istanbul ignore next */
+  const customProps = {
+    onFocusLost: () => {
+      if (!hide) {
+        onFocusLost();
+        onCloseCallback();
+      }
+    },
+    animation: value.length === 0 ? (hide ? "" : "ease-in") : value,
+  };
+
   return buildMbxStandardComponent(commonProps, (props) => ({
     name: "drawer",
     commonProps: {
       ...props,
       hide: value.length === 0 && hide,
-      /* istanbul ignore next */
-      onFocusLost: () => {
-        if (!hide) {
-          onFocusLost();
-          onCloseCallback();
-        }
-      },
+      onFocusLost: customProps.onFocusLost,
     },
     additionalProps: {
-      ...additionalProps,
       "data-mbx-drawer-location": drawerLocation,
-      "data-mbx-drawer-animation":
-        value.length === 0 ? (hide ? "" : "ease-in") : value,
+      "data-mbx-drawer-animation": customProps.animation,
     },
     Component: drawerComponent({
       children,

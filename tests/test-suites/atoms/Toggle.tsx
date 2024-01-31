@@ -12,7 +12,12 @@ const toggleTest = () => {
 
     test("Clicking on the toggle switch its status and trigger the onChange callback", () => {
       const onChangeStub = jest.fn();
-      let wrapper = mount(<Toggle onChange={onChangeStub} />);
+      let wrapper = mount(
+        <Toggle
+          additionalProps={{ "data-mbx-test-class": "test" }}
+          onChange={onChangeStub}
+        />
+      );
       wrapper.find('[data-mbx-id="toggle"]').simulate("click");
       expect(onChangeStub).toBeCalled;
     });
@@ -20,7 +25,7 @@ const toggleTest = () => {
     test("Pressing Enter key trigger the onChange callback", () => {
       const onChangeStub = jest.fn();
       let wrapper = mount(
-        <Toggle icon={<div/>} onChange={onChangeStub} onKeyDown={() => {}} />
+        <Toggle icon={<div />} onChange={onChangeStub} onKeyDown={() => {}} />
       );
 
       wrapper

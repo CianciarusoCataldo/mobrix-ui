@@ -21,7 +21,6 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
   CalendarDate,
   DatePickerProps & { today: CalendarDate & { dayOfTheMonth: number } }
 > = ({
-  onChange,
   setValue,
   today: todayDate,
   value,
@@ -35,7 +34,9 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
   onViewChange,
   animated,
   disabled,
-  calendarProps = {},
+  calendarProps,
+  onChange,
+  onClose,
   ...commonProps
 }) => {
   const [isVisible, setVisible] = React.useState<boolean>(false);
@@ -56,7 +57,10 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
       : todayDate.dayOfTheMonth;
 
   /* istanbul ignore next */
-  const calendarFocusCallback = () => !commonProps.hide && setVisible(false);
+  const onCloseCallback = () => {
+    onClose();
+    setVisible(false);
+  };
 
   const DateLabel = ({ children }) => (
     <Label
@@ -76,6 +80,9 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
       <DateLabel>{String(year)}</DateLabel>
     </div>,
     <IconButton
+      additionalProps={{
+        "data-mbx-test": "calendar-button",
+      }}
       disabled={disabled}
       dark={commonProps.dark}
       onClick={() => setVisible(true)}
@@ -88,7 +95,7 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
       hide={!isVisible}
       key="date_picker_modal"
       animated={animated}
-      onClose={() => setVisible(false)}
+      onClose={onCloseCallback}
       additionalProps={{
         "data-mbx-class": "date-picker-modal",
       }}
@@ -105,7 +112,7 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
         dayLabel={dayLabel}
         value={{ day, month, year }}
         onChange={(date) => {
-          onChange && onChange(date);
+          onChange(date);
           setValue(date);
         }}
         dark={commonProps.dark}

@@ -38,14 +38,20 @@ const formTest = () => {
         />
       );
       wrapper
-        .find('[data-mbx-test="form_field_testField3"]')
+        .find(
+          '[data-mbx-test="form_field_testField3"] [data-mbx-class="form-field-component"]'
+        )
         .simulate("change", "new test text");
-      wrapper.find('[data-mbx-test="form_field_testField1"]').simulate("click");
+      wrapper
+        .find(
+          '[data-mbx-test="form_field_testField1"] [data-mbx-class="form-field-component"]'
+        )
+        .simulate("click");
 
-      wrapper.find('[data-mbx-test="form_submit_button"]').simulate("click");
+      wrapper.find('[data-mbx-class="submit-button"]').simulate("click");
       expect(submitStub).toBeCalledWith({
         testField1: true,
-        testField2: null,
+        testField2: undefined,
         testField3: "",
       });
     });

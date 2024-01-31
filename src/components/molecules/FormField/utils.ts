@@ -11,7 +11,7 @@ import {
 /* istanbul ignore next */
 export const valueFormatters = {
   text: (value: any) => {
-    const result = String(value);
+    const result = value ? String(value) : "";
     if (result.length < 1) {
       return "";
     } else {

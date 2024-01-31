@@ -24,8 +24,6 @@ const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
   const onFocusLostCallback = () => {
     if (!hide) {
       onFocusLost();
-      console.log("onFocusLost");
-
       closeOutside && onClose();
     }
   };

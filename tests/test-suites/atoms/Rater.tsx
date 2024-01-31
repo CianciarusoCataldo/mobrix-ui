@@ -7,7 +7,14 @@ const raterTest = () => {
     test("Rendering test", () => {
       let wrapper = mount(<Rater />);
       expect(wrapper);
-      wrapper = mount(<Rater value={2} />);
+      wrapper = mount(
+        <Rater
+          type="circle"
+          vertical
+          additionalProps={{ "data-mbx-test-class": "test" }}
+          value={2}
+        />
+      );
       expect(wrapper);
     });
 

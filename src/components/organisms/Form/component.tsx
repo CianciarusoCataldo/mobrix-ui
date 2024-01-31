@@ -22,7 +22,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
     ? Object.keys(fields).reduce(
         (o, key) => ({
           ...o,
-          [key]: null,
+          [key]: undefined,
         }),
         {}
       )
@@ -57,6 +57,9 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
           key={`form_field_${index}`}
         >
           <FormField
+            additionalProps={{
+              "data-mbx-test": `form_field_${field}`,
+            }}
             shadow={shadow}
             disabled={disabled}
             value={values[field]}

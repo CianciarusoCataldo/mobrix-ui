@@ -38,7 +38,10 @@ import { buildMbxReactiveComponent } from "../../../tools";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const DatePicker: DatePickerComponent = ({
-  onChange,
+  /* istanbul ignore next */
+  onClose = () => {},
+  /* istanbul ignore next */
+  onChange = () => {},
   value: inputValue,
   months,
   days,
@@ -48,8 +51,10 @@ const DatePicker: DatePickerComponent = ({
   fromToday,
   dayLabel,
   onViewChange,
-  calendarProps,
+  calendarProps = {},
   additionalProps,
+  labelClassName,
+  labelProps,
   ...commonProps
 }) => {
   const todayDate = today();
@@ -72,6 +77,7 @@ const DatePicker: DatePickerComponent = ({
         dayLabel,
         onViewChange,
         calendarProps,
+        onClose,
         ...props,
       }),
     inputValue,

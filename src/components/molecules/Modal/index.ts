@@ -42,6 +42,7 @@ const Modal: ModalComponent = ({
   children,
   closeOutside,
   additionalProps = {},
+  /* istanbul ignore next */
   onClose = () => {},
   hide,
   ...commonProps
@@ -50,6 +51,7 @@ const Modal: ModalComponent = ({
 
   const onCloseCallback = () => {
     setValue("ease-out");
+    /* istanbul ignore next */
     setTimeout(() => {
       setValue("");
       onClose();

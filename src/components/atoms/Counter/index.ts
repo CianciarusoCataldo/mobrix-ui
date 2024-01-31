@@ -2,11 +2,7 @@ import "./styles.css";
 
 import { CounterComponent } from "../../../types";
 
-import {
-  buildMbxReactiveComponent,
-  buildMobrixUiReactiveComponent,
-  parseCommonProps,
-} from "../../../tools";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
  *
@@ -44,6 +40,7 @@ import {
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Counter: CounterComponent = ({
+  /* istanbul ignore next */
   onChange = () => {},
   value: inputValue,
   placeholder,
@@ -59,7 +56,7 @@ const Counter: CounterComponent = ({
       wrapper: "input",
       name: "counterbox",
       inputValue,
-      defaultValue: undefined,
+      defaultValue: 0,
       props: (value, setValue) => ({
         additionalProps: {
           ...additionalProps,
@@ -71,9 +68,9 @@ const Counter: CounterComponent = ({
           max,
           min,
           onChange: (e) => {
-            if (!readOnly) {
-              onChange(Number(e.target.value));
-              setValue(Number(e.target.value));
+            if (!readOnly && !parsedCommonProps.disabled) {
+              onChange(e.target.value);
+              setValue(e.target.value);
             }
           },
         },

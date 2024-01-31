@@ -11,7 +11,12 @@ const inputTest = () => {
     });
     test("Writing text trigger the onChange callback", () => {
       const onChangeStub = jest.fn();
-      const wrapper = mount(<Input value="test" onChange={onChangeStub} />);
+      let wrapper = mount(
+        <Input autoresizable value="test" onChange={onChangeStub} />
+      );
+      wrapper.find("input").simulate("change", "new test text");
+      expect(onChangeStub).toBeCalled;
+      wrapper = mount(<Input autoresizable value="" onChange={onChangeStub} />);
       wrapper.find("input").simulate("change", "new test text");
       expect(onChangeStub).toBeCalled;
     });

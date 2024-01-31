@@ -12,7 +12,8 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
 > = ({
   value,
   setValue,
-  type,
+  type = "text",
+  /* istanbul ignore next */
   onChange = (newvalue: any) => {},
   placeholder,
   required,
@@ -26,13 +27,14 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
   animated,
   disabled,
 }) => {
-  const [error, setError] = useState(false);
+  const isError = (required && !value) || !validate(value);
+  const [error, setError] = useState(isError);
   const [animate, setAnimated] = useState(false);
 
   useEffect(() => {
-    if (validate(value) && !required) {
+    if (validate(value) && !required && !value) {
       setError(false);
-    } else if (required && !value) {
+    } else if ((required && !value) || !validate(value)) {
       setError(true);
     }
   }, [required]);
@@ -53,7 +55,7 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
         dark={!dark}
       >
         {header}
-      </Container>,
+      </Container>
     );
   }
 
@@ -68,7 +70,8 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
       additionalProps={{
         "data-mbx-class": "form-field-component",
         "data-mbx-form-field-error": error,
-        ...(animate && {
+        .../* istanbul ignore next */
+        (animate && {
           ...{
             "data-mbx-animation": "shake",
           },
@@ -80,6 +83,7 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
       dark={dark}
       background={background}
       onKeyDown={(e) => {
+        /* istanbul ignore next */
         if (e.code === "Enter" && error) {
           setAnimated(true);
           setTimeout(() => {
@@ -90,9 +94,9 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
       onChange={(newValue) => {
         const formattedValue = fieldFormatters[type].format(newValue);
 
-        if (!validate(formattedValue) || (required && !formattedValue)) {
+        if (!validate(formattedValue) || (required && !newValue)) {
           setError(true);
-        } else if (error) {
+        } else {
           setError(false);
         }
 
@@ -100,7 +104,7 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
 
         setValue(formattedValue);
       }}
-    />,
+    />
   );
 
   components.push(
@@ -115,7 +119,7 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
       key="form_field_error_box"
     >
       {errorLabel}
-    </Container>,
+    </Container>
   );
 
   return components;

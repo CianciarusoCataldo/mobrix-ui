@@ -39,12 +39,13 @@ import { buildMbxReactiveComponent } from "../../../tools";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Slider: SliderComponent = ({
+  /* istanbul ignore next */
   onChange = () => {},
   value: inputValue,
   min,
   max,
   readOnly,
-  additionalProps = {},
+  additionalProps,
   ...commonProps
 }) =>
   buildMbxReactiveComponent<number>(commonProps, (parsedProps) => ({
@@ -54,14 +55,12 @@ const Slider: SliderComponent = ({
     defaultValue: 0,
     wrapper: "input",
     props: (value, setValue) => {
-      const callback =
-        parsedProps.disabled && !readOnly
-          ? (e: any) => {
-              onChange(e.target.value);
-              setValue(e.target.value);
-            }
-          : () => {};
-
+      const callback = (e: any) => {
+        if (parsedProps.disabled && !readOnly) {
+          onChange(e.target.value);
+          setValue(e.target.value);
+        }
+      };
       return {
         additionalProps: {
           ...additionalProps,

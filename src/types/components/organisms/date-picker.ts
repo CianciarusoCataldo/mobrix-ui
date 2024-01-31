@@ -1,4 +1,5 @@
 import {
+  ClosableComponent,
   CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
@@ -18,6 +19,7 @@ import { CalendarDate, CalendarProps } from "./calendar";
  */
 export type DatePickerProps = ComponentWithCallback<CalendarDate> &
   ComponentWithValue<CalendarDate> &
+  ClosableComponent &
   CalendarProps & {
     calendarProps?: CommonProps;
   };

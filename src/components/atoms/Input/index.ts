@@ -38,6 +38,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Input: InputComponent = ({
+  /* istanbul ignore next */
   onChange = () => {},
   value: inputValue,
   placeholder,
@@ -65,11 +66,14 @@ const Input: InputComponent = ({
           type: "text",
           value,
           placeholder,
-          disabled: commonProps.disabled,
-          readOnly: readOnly || commonProps.disabled,
+          disabled: parsedCommonProps.disabled,
+          readOnly: readOnly || parsedCommonProps.disabled,
           onChange: (e) => {
-            const newValue = e.target.value ? e.target.value : "";
-            setValue(newValue);
+            if (!readOnly && !parsedCommonProps.disabled) {
+              const newValue = e.target.value ? e.target.value : "";
+              onChange(newValue);
+              setValue(newValue);
+            }
           },
         },
       }),

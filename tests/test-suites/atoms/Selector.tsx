@@ -5,7 +5,12 @@ import { Selector } from "../../../src";
 const selectorTest = () => {
   describe("Selector", () => {
     test("Rendering test", () => {
-      let wrapper = mount(<Selector />);
+      let wrapper = mount(
+        <Selector
+          optionClassName="test-class"
+          additionalProps={{ "data-mbx-test-prop": true }}
+        />
+      );
       wrapper.find("select").simulate("change", { value: 1 });
       expect(wrapper);
     });

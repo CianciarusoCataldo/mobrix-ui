@@ -23,22 +23,32 @@ const datePickerTest = () => {
       const onChangeStub = jest.fn();
       let wrapper = mount(
         <DatePicker
+          calendarProps={{}}
           onChange={onChangeStub}
           fromToday={false}
         />
       );
 
-      wrapper.find('[data-mbx-test="date_picker_calendar_button"]').simulate("click");
+      wrapper.find('[data-mbx-test="calendar-button"]').simulate("click");
       wrapper
-        .find('[data-mbx-test="date_picker_calendar"]')
-        .find(`button[data-mbx-test="date_button_4"]`)
-        .simulate("click");
-
-      wrapper
-        .find('[data-mbx-test="date_picker_close_button"]')
+        .find('[data-mbx-id="calendar"]')
+        .find(`[data-mbx-calendar-day=4]`)
         .simulate("click");
 
       expect(onChangeStub).toBeCalled;
+    });
+
+    test("Closing the modal triggers the onClose callback", () => {
+      const onCloseStub = jest.fn();
+      let wrapper = mount(
+        <DatePicker onClose={onCloseStub} fromToday={false} />
+      );
+
+      wrapper.find('[data-mbx-test="calendar-button"]').simulate("click");
+
+      wrapper.find('[data-mbx-class="dismiss-button"]').simulate("click");
+
+      expect(onCloseStub).toBeCalled;
     });
   });
 };

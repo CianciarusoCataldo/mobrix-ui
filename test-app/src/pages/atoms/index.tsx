@@ -217,7 +217,7 @@ const AtomsPage = () => {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Input autoresizable />
             <div style={{ marginTop: "20px" }} />
-            <Input value="text" />
+            <Input value="text" onChange={(value) => console.log(value)} />
             <div style={{ marginTop: "20px" }} />
             <Input value="text" background={false} />
             <div style={{ marginTop: "20px" }} />

@@ -6,7 +6,7 @@ const drawerTest = () => {
   describe("Drawer", () => {
     test("Rendering test", () => {
       let wrapper = mount(<Drawer position="left" />);
-      wrapper.find('[data-mbx-test="drawer_close_button"]').simulate("click");
+      wrapper.find('[data-mbx-class="drawer-close-button"]').simulate("click");
       expect(wrapper);
     });
 
@@ -21,8 +21,27 @@ const drawerTest = () => {
           <p>Test drawer content</p>
         </Drawer>
       );
-      wrapper.find('[data-mbx-test="drawer_close_button"]').simulate("click");
+      wrapper.find('[data-mbx-class="drawer-close-button"]').simulate("click");
       expect(onCloseStub).toBeCalled;
+
+      wrapper = mount(
+        <Drawer
+          unstyled
+          // @ts-ignore
+          position="fhgdjhsl"
+          additionalProps={{}}
+          onClose={onCloseStub}
+        >
+          <p>Test drawer content</p>
+        </Drawer>
+      );
+
+      wrapper = mount(
+        <Drawer id="test-drawer" onClose={onCloseStub}>
+          <p>Test drawer content</p>
+        </Drawer>
+      );
+      wrapper.simulate("blur");
     });
   });
 };
