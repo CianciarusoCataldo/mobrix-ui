@@ -11,8 +11,6 @@ for type in $(
 
         export COMPONENT_INDEX_EXT=$(find ./src/components/"$type"/"$component"/index.* -printf "%f\n" | cut -d'.' -f2)
 
-        echo "$TMP"
-
         export COMPONENT_NAME="$component"
         export COMPONENT_TYPE="$type"
 

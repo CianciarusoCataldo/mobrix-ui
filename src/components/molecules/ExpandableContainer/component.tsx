@@ -36,7 +36,6 @@ const expandableContainerComponent: MobrixUiReactiveComponent<
       }}
       additionalProps={{
         "data-mbx-class": "container-arrow-button",
-        "data-mbx-test": "container_arrow_button",
         "data-mbx-opacityhover": hover && !disabled,
       }}
       key="arrow_button"

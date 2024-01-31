@@ -12,7 +12,7 @@ const carouselTest = () => {
   describe("Carousel", () => {
     test("Rendering test", () => {
       let wrapper = mount(<Carousel />);
-      wrapper.find("[data-mbx-test='right_arrow']").simulate("click");
+      wrapper.find('[data-mbx-arrow="next"]').simulate("click");
       expect(wrapper);
     });
 
@@ -21,11 +21,11 @@ const carouselTest = () => {
       let wrapper = mount(
         <Carousel elements={testElements} onChange={onChangeStub} />
       );
-      wrapper.find("[data-mbx-test='right_arrow']").simulate("click");
+      wrapper.find('[data-mbx-arrow="next"]').simulate("click");
 
       expect(onChangeStub).toBeCalledWith(1);
 
-      wrapper.find("[data-mbx-test='left_arrow']").simulate("click");
+      wrapper.find('[data-mbx-arrow="prev"]').simulate("click");
 
       expect(onChangeStub).toBeCalledWith(0);
     });

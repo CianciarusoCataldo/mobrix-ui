@@ -2,17 +2,17 @@
   "header": {
     "description": "Card header content",
     "typeComment": "JSX.Element | string",
-    "type": "JSX.Element `OR` string"
+    "type": "JSX.Element | string"
   },
   "body": {
     "description": "Card body content",
     "typeComment": "JSX.Element | string",
-    "type": "JSX.Element `OR` string"
+    "type": "JSX.Element | string"
   },
   "footer": {
     "description": "Card footer content",
     "typeComment": "JSX.Element | string",
-    "type": "JSX.Element `OR` string"
+    "type": "JSX.Element | string"
   },
   "noDivider": {
     "description": "If `true`, hide all dividers",

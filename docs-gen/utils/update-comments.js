@@ -1,29 +1,61 @@
+const TEMPLATE = `
+/**
+* MBX_DESCRIPTION
+*
+* MBX_PROPS
+*
+* @example MBX_EXAMPLE
+*
+* MBX_SEE
+*
+* @since MBX_SINCE
+*
+* @author MBX_AUTHOR
+*
+* @copyright MBX_COPYRIGHT
+*/`;
+
+const DEFAULT_SETTINGS = {
+  since: "",
+  description: "",
+  see: [],
+  examples: [],
+};
+
 const fs = require("fs");
 const COMPONENT_NAME = process.env["COMPONENT_NAME"];
 const COMPONENT_TYPE = process.env["COMPONENT_TYPE"];
 const EXTENSION = process.env["COMPONENT_INDEX_EXT"];
 try {
-  let externalProps = {};
   const props = require(
     "../components/" + COMPONENT_TYPE + "/" + COMPONENT_NAME + "/props.json"
   );
+  const sharedProps = require("../components/shared-props.json");
+  const globalSettings = require("../components/settings.json");
 
   let parameters = "";
 
   Object.keys(props).forEach((propName) => {
     if (props[propName].type && props[propName].description) {
-      parameters += `@param {${props[propName].type}} ${propName} ${props[propName].description}\n* `;
+      parameters += `@param {${props[propName].type}} ${propName} ${props[propName].comment || props[propName].description}\n* `;
     }
   });
 
-  const globalSettings = require("../components/settings.json");
-  const settings = require(
+  Object.keys(sharedProps).forEach((propName) => {
+    if (sharedProps[propName].type && sharedProps[propName].description) {
+      parameters += `@param {${sharedProps[propName].type}} ${propName} - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - ${sharedProps[propName].description}\n* `;
+    }
+  });
+
+  const settingsJson = require(
     "../components/" +
       COMPONENT_TYPE +
       "/" +
       COMPONENT_NAME +
       "/mbx-settings.json"
   );
+
+  const settings = { ...DEFAULT_SETTINGS, ...settingsJson };
 
   let componentFile = fs.readFileSync(
     "src/components/" +
@@ -34,20 +66,6 @@ try {
       EXTENSION,
     "utf8"
   );
-  const TEMPLATE = `
-  /**
-  * MBX_DESCRIPTION
-  *
-  * MBX_PROPS
-  *
-  * @example MBX_EXAMPLE
-  *
-  * @since MBX_SINCE
-  *
-  * @author MBX_AUTHOR
-  *
-  * @copyright MBX_COPYRIGHT
-  */`;
 
   let executed = true;
   componentFile = componentFile.replace("/**", "<COMMENT>");
@@ -56,7 +74,28 @@ try {
   const splittedComment = componentFile.split("<COMMENT>");
 
   if (splittedComment.length === 3) {
-    const finalString = splittedComment[0] + TEMPLATE + splittedComment[2];
+    let customTemplate = TEMPLATE;
+
+    customTemplate = customTemplate.replace(
+      "MBX_DESCRIPTION",
+      settings.description
+    );
+    customTemplate = customTemplate.replace("MBX_SINCE", settings.since);
+    customTemplate = customTemplate.replace(
+      "MBX_AUTHOR",
+      globalSettings.author
+    );
+    customTemplate = customTemplate.replace(
+      "MBX_COPYRIGHT",
+      globalSettings.copyright
+    );
+    customTemplate = customTemplate.replace("MBX_PROPS", parameters);
+    customTemplate = customTemplate.replace(
+      "MBX_SEE",
+      `@see https://cianciarusocataldo.github.io/mobrix-ui/${COMPONENT_TYPE}/${COMPONENT_NAME}\n* @see https://cianciarusocataldo.github.io/mobrix-ui/docs`
+    );
+    const finalString =
+      splittedComment[0] + customTemplate + splittedComment[2];
 
     if (executed) {
       fs.writeFileSync(

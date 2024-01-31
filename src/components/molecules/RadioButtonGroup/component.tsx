@@ -15,7 +15,7 @@ const radioButtonGroupComponent: MobrixUiReactiveComponent<
 > = ({
   value,
   setValue,
-  buttons,
+  buttons = [],
   elementClassName = "",
   dark,
   radioProps = {},

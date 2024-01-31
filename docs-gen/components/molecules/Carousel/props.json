@@ -1,7 +1,7 @@
 {
   "elements": {
     "typeComment": "(JSX.Element | string)[]",
-    "type": "(JSX.Element OR string)[]",
+    "type": "(JSX.Element | string)[]",
     "description": "Carousel elements",
     "default": "[]"
   },

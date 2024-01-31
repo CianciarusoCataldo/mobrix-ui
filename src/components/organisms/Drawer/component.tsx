@@ -23,7 +23,6 @@ const DrawerInternalComponent: MoBrixUiComponent<
       }}
       additionalProps={{
         "data-mbx-class": "drawer-close-button",
-        "data-mbx-test": "drawer_close_button",
         "data-mbx-opacityhover": hover && !disabled,
       }}
       a11yLabel="drawer-close-button"
@@ -40,7 +39,9 @@ const DrawerInternalComponent: MoBrixUiComponent<
         </svg>
       }
     </IconButton>,
-    <div data-mbx-class="drawer-content">{children}</div>,
+    <div key="drawer_content" data-mbx-class="drawer-content">
+      {children}
+    </div>,
   ];
 };
 

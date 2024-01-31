@@ -7,12 +7,12 @@ const dropdownTest = () => {
     test("Rendering test", () => {
       let wrapper = mount(
         <Dropdown
-          onFocusLost={() => { }}
+          onFocusLost={() => {}}
           elements={["Dropdown element 1", "Dropdown element 2"]}
           value={2}
         />
       );
-      wrapper.find('[data-mbx-test="options_menu"]').simulate("click");
+      wrapper.find('[data-mbx-class="button"]').simulate("click");
       wrapper.find('[data-mbx-test="dropdown_option_1"]').simulate("focus");
       wrapper.find('[data-mbx-test="dropdown_option_1"]').simulate("click");
       expect(wrapper);
@@ -26,10 +26,9 @@ const dropdownTest = () => {
         <Dropdown
           onChange={onChangeStub}
           elements={["Dropdown element 1", "Dropdown element 2"]}
-
         />
       );
-      wrapper.find('[data-mbx-test="options_menu"]').simulate("click");
+      wrapper.find('[data-mbx-class="button"]').simulate("click");
       wrapper.find('[data-mbx-test="dropdown_option_1"]').simulate("focus");
 
       wrapper.find('[data-mbx-test="dropdown_option_1"]').simulate("click");
@@ -44,7 +43,6 @@ const dropdownTest = () => {
           <Dropdown
             onChange={onChangeStub}
             elements={["Dropdown element 1", "Dropdown element 2"]}
-
           />
         );
 
@@ -83,7 +81,6 @@ const dropdownTest = () => {
           <Dropdown
             onChange={onChangeStub}
             elements={["Dropdown element 1", "Dropdown element 2"]}
-
           />
         );
 
@@ -103,7 +100,6 @@ const dropdownTest = () => {
           <Dropdown
             onChange={onChangeStub}
             elements={["Dropdown element 1", "Dropdown element 2"]}
-
           />
         );
 

@@ -80,9 +80,6 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
       dark={commonProps.dark}
       onClick={() => setVisible(true)}
       key="date_picker_calendar_button"
-      additionalProps={{
-        "data-mbx-test": "date_picker_calendar_button",
-      }}
     >
       {CalendarIcon}
     </IconButton>,
@@ -97,7 +94,6 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
       }}
     >
       <Calendar
-        additionalProps={{ "data-mbx-test": "date_picker_calendar" }}
         days={customDays}
         months={customMonths}
         startMonth={startMonth}

@@ -48,7 +48,6 @@ const tabViewerComponent: MobrixUiReactiveComponent<number, TabViewerProps> = ({
   <Container
     additionalProps={{
       "data-mbx-class": "tab-view",
-      "data-mbx-test": "tabs_view",
     }}
     className={tabViewClassName}
     dark={dark}

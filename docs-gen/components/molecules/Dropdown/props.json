@@ -7,7 +7,7 @@
   "elements": {
     "description": "Dropdown content elements",
     "type": "(JSX.Element | string)[]",
-    "typeComment": "(JSX.Element OR string)[]",
+    "typeComment": "(JSX.Element | string)[]",
     "default": "[]"
   },
   "hideArrow": {

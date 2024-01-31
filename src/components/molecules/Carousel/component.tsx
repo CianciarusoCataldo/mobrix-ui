@@ -71,7 +71,6 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
         dark={dark}
         additionalProps={{
           "data-mbx-arrow": "prev",
-          "data-mbx-test": "left_arrow",
         }}
         disabled={item === 0 || disabled}
         onClick={() => {
@@ -86,7 +85,6 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
         dark={dark}
         additionalProps={{
           "data-mbx-arrow": "next",
-          "data-mbx-test": "right_arrow",
         }}
         disabled={item === elements.length - 1 || disabled}
         onClick={() => {

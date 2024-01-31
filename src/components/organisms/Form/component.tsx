@@ -24,7 +24,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
           ...o,
           [key]: null,
         }),
-        {},
+        {}
       )
     : {};
 
@@ -82,7 +82,6 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
       key="mobrix_ui_form_submit_button"
       dark={!dark}
       additionalProps={{
-        "data-mbx-test": "form_submit_button",
         "data-mbx-class": "submit-button",
       }}
       onClick={() => {
@@ -90,7 +89,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
       }}
     >
       {submitLabel}
-    </Button>,
+    </Button>
   );
 
   return components;

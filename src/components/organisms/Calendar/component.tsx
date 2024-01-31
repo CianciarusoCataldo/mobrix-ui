@@ -100,7 +100,6 @@ const CalendarComponent: MobrixUiReactiveComponent<
       key={"arrow_" + direction}
       additionalProps={{
         "data-mbx-calendar-arrow": direction,
-        "data-mbx-test": "arrow_" + direction,
         "data-mbx-opacityhover": hover && !disabled,
       }}
       {...customProps}
@@ -123,7 +122,7 @@ const CalendarComponent: MobrixUiReactiveComponent<
           {...customProps}
         >{`${customMonths[onScreenDate.month]} ${onScreenDate.year}`}</Label>
         {getArrowButton("right")}
-      </div>,
+      </div>
     );
 
   components.push(
@@ -132,7 +131,6 @@ const CalendarComponent: MobrixUiReactiveComponent<
       key="calendar_table"
       additionalProps={{
         "data-mbx-calendar-table": "true",
-        "data-mbx-test": "calendar-table",
       }}
       propsCallback={(row, column) => {
         if (row > 0) {
@@ -187,10 +185,10 @@ const CalendarComponent: MobrixUiReactiveComponent<
       rows={[
         days.map((dayName) => dayName.slice(0, 3)),
         ...basicMatrix.map((row) =>
-          row.map((element) => (element > 0 ? String(element) : "")),
+          row.map((element) => (element > 0 ? String(element) : ""))
         ),
       ]}
-    />,
+    />
   );
 
   return components;

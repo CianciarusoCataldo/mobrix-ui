@@ -13,7 +13,7 @@ const modalTest = () => {
       expect(wrapper);
 
       wrapper = mount(
-        <Modal overlayClassName="test-classname" onFocusLost={() => { }}>
+        <Modal onFocusLost={() => {}}>
           <p>Modal content</p>
         </Modal>
       );

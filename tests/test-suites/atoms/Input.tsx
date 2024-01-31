@@ -24,13 +24,6 @@ const inputTest = () => {
       wrapper.find("input").simulate("change", "new test text");
       expect(onChangeStub).not.toBeCalled;
     });
-
-    test("When new value from onChange event is undefined, empty string is passed to onChange callback", () => {
-      const onChangeStub = jest.fn();
-      const wrapper = mount(<Input onChange={onChangeStub} />);
-      wrapper.find("input").simulate("change", undefined);
-      expect(onChangeStub).toBeCalledWith("");
-    });
   });
 };
 

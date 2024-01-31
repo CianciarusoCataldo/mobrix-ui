@@ -114,7 +114,6 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
         dark={dark}
         additionalProps={{
           "data-mbx-class": "button",
-          "data-mbx-test": "options_menu",
         }}
         key="options-menu"
         a11y={false}
@@ -126,7 +125,10 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
         >
           {selectedItem}
         </div>
-        <IconButton
+        <Container
+          background={false}
+          animated={false}
+          shadow={false}
           hide={hideArrow}
           dark={dark}
           key="icon"
@@ -140,7 +142,7 @@ const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
           <p tabIndex={-1}>
             <i data-mbx-class="arrow-icon" data-mbx-enabled={!disabled}></i>
           </p>
-        </IconButton>
+        </Container>
       </Button>,
       <Popup
         background={commonProps.background}
