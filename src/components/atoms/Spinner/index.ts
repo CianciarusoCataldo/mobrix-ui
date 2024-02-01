@@ -7,7 +7,7 @@ import { buildMobrixUiStandardComponent } from "../../../tools";
 import defaultIcons from "./icons";
 
 /**
- *
+ * A smart status indicator, optionally with custom images showed for every state (defaults are `loading`,`success` and `error`)
  *
  * @param {number} value Spinner status
  * @param {Record<string, (JSX.Element | string)>} statuses Custom statuses, to map every icon with a specific status
@@ -31,7 +31,7 @@ import defaultIcons from "./icons";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Spinner
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 1.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

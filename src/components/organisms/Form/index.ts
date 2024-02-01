@@ -8,7 +8,7 @@ import formComponent from "./component";
 import { buildMbxStandardComponent } from "../../../tools/utils";
 
 /**
- *
+ * A totally configurable Form, with a submit button to let the user submit data from your web-app
  *
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
@@ -30,7 +30,7 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/organisms/Form
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 1.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

@@ -5,7 +5,7 @@ import { InputComponent } from "../../../types";
 import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
- *
+ * A flexible text input element
  *
  * @param {string} value text input value
  * @param {string} placeholder label showed when no value is set
@@ -31,7 +31,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Input
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 1.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

@@ -35,7 +35,7 @@ import raterComponent from "./component";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Rater
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 1.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

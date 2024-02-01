@@ -1,9 +1,7 @@
 {
   "since": "1.0.0",
   "description": "A simple but smart container, enhanced with MoBrix-ui common props",
-  "see": [
-    "https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Container"
-  ],
+  "see": [],
   "examples": [
     {
       "title": "Container Example usage",

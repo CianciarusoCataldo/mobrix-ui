@@ -1,6 +1,11 @@
 {
-  "since": "",
-  "description": "",
+  "since": "2.0.0",
+  "description": "A ready to use Calendar, designed to be used in many scenarios.",
   "see": [],
-  "examples": []
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithCallback": { "type": "CalendarDate" }
+    }
+  }
 }

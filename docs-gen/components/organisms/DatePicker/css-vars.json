@@ -3,12 +3,12 @@
     "description": "Fallback value for `--mbx-datepicker-background-light` and `--mbx-datepicker-background-dark`"
   },
   "--mbx-datepicker-background-light": {
-    "default": "",
+    "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-datepicker-background",
     "description": "DatePicker background when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-datepicker-background-dark": {
-    "default": "",
+    "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-datepicker-background",
     "description": "DatePicker background when [dark](../../global/props.md#dark) mode is `on'"
   },
@@ -16,26 +16,27 @@
     "description": "Fallback value for `--mbx-datepicker-text-color-light` and `--mbx-datepicker-text-color-dark`"
   },
   "--mbx-datepicker-text-color-light": {
-    "default": "",
+    "defaultGlobal": "--mbx-text-color-light",
     "fallback": "--mbx-datepicker-text-color",
-    "description": "DatePicker ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'"
+    "description": "DatePicker text color when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-datepicker-text-color-dark": {
-    "default": "",
+    "defaultGlobal": "--mbx-text-color-dark",
     "fallback": "--mbx-datepicker-text-color",
-    "description": "DatePicker ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'"
+    "description": "DatePicker text color when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-datepicker-icon": {
     "description": "Fallback value for `--mbx-datepicker-icon-light` and `--mbx-datepicker-icon-dark`"
   },
   "--mbx-datepicker-icon-light": {
+    "defaultInternal": "--mbx-datepicker-text-color-light",
     "fallback": "--mbx-datepicker-icon",
-    "description": "DatePicker calendar icon when [dark](../../global/props.md#dark) mode is `off'"
+    "description": "DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-datepicker-icon-dark": {
-    "default": "",
+    "defaultInternal": "--mbx-datepicker-text-color-dark",
     "fallback": "--mbx-datepicker-icon",
-    "description": "DatePicker calendar icon when [dark](../../global/props.md#dark) mode is `on'"
+    "description": "DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-datepicker-icon-hover": {
     "description": "Fallback value for `--mbx-datepicker-icon-hover-light` and `--mbx-datepicker-icon-hover-dark`"
@@ -43,75 +44,115 @@
   "--mbx-datepicker-icon-hover-light": {
     "defaultColor": "blue",
     "fallback": "--mbx-datepicker-icon-hover",
-    "description": "DatePicker calendar icon when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
+    "description": "DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
   },
   "--mbx-datepicker-icon-hover-dark": {
     "defaultColor": "orange",
     "fallback": "--mbx-datepicker-icon-hover",
-    "description": "DatePicker calendar icon when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
+    "description": "DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
   },
   "--mbx-datepicker-calendar-background": {
     "description": "Fallback value for `` and ``"
   },
   "--mbx-datepicker-calendar-background-light": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-background-light"
+    },
     "fallback": "--mbx-datepicker-calendar-background",
-    "description": "Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'"
+    "description": "Internal Calendar background when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-datepicker-calendar-background-dark": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-background-dark"
+    },
     "fallback": "--mbx-datepicker-calendar-background",
-    "description": "Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'"
+    "description": "Internal Calendar background when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-datepicker-calendar-text-color": {
     "description": "Fallback value for `` and ``"
   },
   "--mbx-datepicker-calendar-text-color-light": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-text-color-light"
+    },
     "fallback": "--mbx-datepicker-calendar-text-color",
-    "description": "Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'"
+    "description": "Internal Calendar text color when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-datepicker-calendar-text-color-dark": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-text-color-dark"
+    },
     "fallback": "--mbx-datepicker-calendar-text-color",
     "description": "Internal Calendar text color when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-datepicker-calendar-background-hover": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-datepicker-calendar-background-hover-light` and `--mbx-datepicker-calendar-background-hover-dark`"
   },
   "--mbx-datepicker-calendar-background-hover-light": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-background-hover-light"
+    },
     "fallback": "--mbx-datepicker-calendar-background-hover",
-    "description": "Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
+    "description": "Internal Calendar background when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
   },
   "--mbx-datepicker-calendar-background-hover-dark": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-background-hover-dark"
+    },
     "fallback": "--mbx-datepicker-calendar-background-hover",
-    "description": "Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
+    "description": "Internal Calendar background when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
   },
   "--mbx-datepicker-calendar-text-color-hover": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-datepicker-calendar-text-color-hover-light` and `--mbx-datepicker-calendar-text-color-hover-dark`"
   },
   "--mbx-datepicker-calendar-text-color-hover-light": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-text-color-hover-light"
+    },
     "fallback": "--mbx-datepicker-calendar-text-color-hover",
     "description": "Internal Calendar text color when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
   },
   "--mbx-datepicker-calendar-text-color-hover-dark": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-text-color-hover-dark"
+    },
     "fallback": "--mbx-datepicker-calendar-text-color-hover",
     "description": "Internal Calendar text color when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
   },
   "--mbx-datepicker-calendar-arrow": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-datepicker-calendar-arrow-light` and `--mbx-datepicker-calendar-arrow-dark`"
   },
   "--mbx-datepicker-calendar-arrow-light": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-arrow-light"
+    },
     "fallback": "--mbx-datepicker-calendar-arrow",
     "description": "Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-datepicker-calendar-arrow-dark": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-arrow-dark"
+    },
     "fallback": "--mbx-datepicker-calendar-arrow",
     "description": "Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `on'"
   },
@@ -119,12 +160,20 @@
     "description": "Fallback value for `--mbx-datepicker-calendar-arrow-hover-light` and `--mbx-datepicker-calendar-arrow-hover-dark`"
   },
   "--mbx-datepicker-calendar-arrow-hover-light": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-arrow-hover-light"
+    },
     "fallback": "--mbx-datepicker-calendar-arrow-hover",
     "description": "Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
   },
   "--mbx-datepicker-calendar-arrow-hover-dark": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-arrow-hover-dark"
+    },
     "fallback": "--mbx-datepicker-calendar-arrow-hover",
     "description": "Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
   },
@@ -132,12 +181,20 @@
     "description": "Fallback value for `--mbx-datepicker-calendar-selected-background-light` and `--mbx-datepicker-calendar-selected-background-dark`"
   },
   "--mbx-datepicker-calendar-selected-background-light": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-selected-background-light"
+    },
     "fallback": "--mbx-datepicker-calendar-selected-background",
     "description": "Internal Calendar selected cell background when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-datepicker-calendar-selected-background-dark": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-selected-background-dark"
+    },
     "fallback": "--mbx-datepicker-calendar-selected-background",
     "description": "Internal Calendar selected cell background when [dark](../../global/props.md#dark) mode is `on'"
   },
@@ -145,25 +202,41 @@
     "description": "Fallback value for `--mbx-datepicker-calendar-selected-text-color-light` and `--mbx-datepicker-calendar-selected-text-color-dark`"
   },
   "--mbx-datepicker-calendar-selected-text-color-light": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-selected-text-color-light"
+    },
     "fallback": "--mbx-datepicker-calendar-selected-text-color",
     "description": "Internal Calendar selected cell text color when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-datepicker-calendar-selected-text-color-dark": {
-    "default": "",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-selected-text-color-dark"
+    },
     "fallback": "--mbx-datepicker-calendar-selected-text-color",
     "description": "Internal Calendar selected cell text color when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-datepicker-calendar-today-color": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-datepicker-calendar-today-color-light` and `--mbx-datepicker-calendar-today-color-dark`"
   },
   "--mbx-datepicker-calendar-today-color-light": {
-    "defaultColor": "red",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-today-color-light"
+    },
     "fallback": "--mbx-datepicker-calendar-today-color",
     "description": "Internal Calendar today color when [dark](../../global/props.md#dark) mode is `off'"
   },
   "--mbx-datepicker-calendar-today-color-dark": {
-    "defaultColor": "red",
+    "defaultExternal": {
+      "type": "organisms",
+      "component": "Calendar",
+      "prop": "--mbx-calendar-today-color-dark"
+    },
     "fallback": "--mbx-datepicker-calendar-today-color",
     "description": "Internal Calendar today color when [dark](../../global/props.md#dark) mode is `on'"
   }

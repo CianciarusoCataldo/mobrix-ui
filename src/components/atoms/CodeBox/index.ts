@@ -6,7 +6,7 @@ import codeboxComponent from "./component";
 import { buildMbxStandardComponent } from "../../../tools/utils";
 
 /**
- *
+ * A smart code box, to display code text as a compiler. Optionally, can highlight code text, with a selectable environment
  *
  * @param {string} value code to display
  * @param {boolean} highlight Enable/disable  text highlight, based on selected environment
@@ -31,7 +31,7 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/CodeBox
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 1.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

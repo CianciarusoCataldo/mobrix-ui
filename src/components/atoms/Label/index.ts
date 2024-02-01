@@ -5,7 +5,7 @@ import { LabelComponent } from "../../../types";
 import { buildMbxStandardComponent } from "../../../tools";
 
 /**
- *
+ * A text wrapper, with many options to customize its content
  *
  * @param {string | string[]} children text content to show (string arrays are accepted)
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
@@ -28,7 +28,7 @@ import { buildMbxStandardComponent } from "../../../tools";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Label
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 1.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

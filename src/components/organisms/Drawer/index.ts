@@ -21,7 +21,7 @@ const ALLOWED_POSITIONS = [
 ];
 
 /**
- *
+ * A modern drawer, easy to integrate and to customize
  *
  * @param {`left` | `right` | `top` | `bottom` | `top-left` | `top-right` | `bottom-left` | `bottom-right`} position Drawer position, relative to the entire window
  * @param {() => void} onClose callback triggered when Drawer is closed
@@ -46,7 +46,7 @@ const ALLOWED_POSITIONS = [
  * @see https://cianciarusocataldo.github.io/mobrix-ui/organisms/Drawer
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 1.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

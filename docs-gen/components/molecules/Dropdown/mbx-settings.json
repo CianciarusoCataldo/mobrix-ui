@@ -1,9 +1,7 @@
 {
   "since": "1.0.0",
   "description": "Show a list of elements in a dropdown menu (with fade-in and out effects). Can be easily customized and every element style and behaviour (with a callback) can be customized too.",
-  "see": [
-    "https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Dropdown"
-  ],
+  "see": [],
   "examples": [],
   "extend": {
     "group": {

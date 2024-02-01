@@ -1,6 +1,6 @@
 {
-  "since": "",
-  "description": "",
+  "since": "1.0.0",
+  "description": "A modern drawer, easy to integrate and to customize",
   "see": [],
   "examples": [],
   "extend": {

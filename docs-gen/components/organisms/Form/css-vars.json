@@ -22,7 +22,7 @@
     "description": "Form text color when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-form-submit-background": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-form-submit-background-light` and `--mbx-form-submit-background-dark`"
   },
   "--mbx-form-submit-background-light": {
     "defaultExternal": {
@@ -43,7 +43,7 @@
     "description": "Form submit button background when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-form-submit-text-color": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-form-submit-text-color-light` and `--mbx-form-submit-text-color-dark`"
   },
   "--mbx-form-submit-text-color-light": {
     "defaultExternal": {
@@ -64,7 +64,7 @@
     "description": "Form submit button text color when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-form-formfield-background": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-form-formfield-background-light` and `--mbx-form-formfield-background-dark`"
   },
   "--mbx-form-formfield-background-light": {
     "defaultExternal": {
@@ -85,7 +85,7 @@
     "description": "Form field background when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-form-formfield-text-color": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-form-formfield-text-color-light` and `--mbx-form-formfield-text-color-dark`"
   },
   "--mbx-form-formfield-text-color-light": {
     "defaultExternal": {
@@ -106,7 +106,7 @@
     "description": "Form field text color when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-form-formfield-background-hover": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-form-formfield-background-hover-light` and `--mbx-form-formfield-background-hover-dark`"
   },
   "--mbx-form-formfield-background-hover-light": {
     "defaultExternal": {
@@ -127,7 +127,7 @@
     "description": "Form field background when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
   },
   "--mbx-form-formfield-text-color-hover": {
-    "description": "Fallback value for `` and ``"
+    "description": "Fallback value for `--mbx-form-formfield-text-color-hover-light` and `--mbx-form-formfield-text-color-hover-dark`"
   },
   "--mbx-form-formfield-text-color-hover-light": {
     "defaultExternal": {

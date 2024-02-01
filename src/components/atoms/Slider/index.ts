@@ -5,7 +5,7 @@ import { SliderComponent } from "../../../types";
 import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
- *
+ * A modern `range` input component, to control a value using a simple slider
  *
  * @param {number} value Actual slider value
  * @param {number} min Min allowed value
@@ -32,7 +32,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Slider
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 2.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

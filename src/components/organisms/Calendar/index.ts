@@ -8,8 +8,20 @@ import calendarComponent from "./component";
 import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
+ * A ready to use Calendar, designed to be used in many scenarios.
  *
- *
+ * @param {CalendarDate} value Actual selected date
+ * @param {boolean} hideArrows If `true`, hide arrow buttons near the date label
+ * @param {string[]} days Custom days labels
+ * @param {string[]} months Custom months labels
+ * @param {(date: CalendarDate) => void} onViewChange Callback triggered when the Calendar view (the displayed month) is changed
+ * @param {number} startYear Initial displayed year
+ * @param {number} startMonth Initial displayed month
+ * @param {boolean} fromToday If `false`, prevent the user to select a date lower than today date
+ * @param {string} dayLabel Show/hide actual day label on top of the calendar
+ * @param {string} labelClassName Custom className applied on the day label component
+ * @param {Record<string, any>} labelProps Custom props applied on the day label component
+ * @param {(newValue: CalendarDate) => void} onChange Callback triggered when Calendar component input value is changed by the user
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode
@@ -30,7 +42,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/organisms/Calendar
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 2.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -48,8 +60,8 @@ const Calendar: CalendarComponent = ({
   fromToday,
   dayLabel,
   labelClassName,
-  additionalProps,
   labelProps,
+  additionalProps,
   ...commonProps
 }) => {
   const todayDate = today();

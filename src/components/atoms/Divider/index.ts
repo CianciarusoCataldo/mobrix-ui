@@ -5,7 +5,7 @@ import { DividerComponent } from "../../../types";
 import { buildMbxStandardComponent } from "../../../tools";
 
 /**
- *
+ * A simple divider, useful to separate sections and paragraphs
  *
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
@@ -27,7 +27,7 @@ import { buildMbxStandardComponent } from "../../../tools";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Divider
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 1.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

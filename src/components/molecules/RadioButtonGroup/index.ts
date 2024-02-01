@@ -40,7 +40,7 @@ import radioButtonGroupComponent from "./component";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/RadioButtonGroup
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 2.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

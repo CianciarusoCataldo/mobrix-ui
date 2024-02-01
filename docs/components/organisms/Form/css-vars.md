@@ -110,7 +110,7 @@ Form text color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-form-submit-background-light` and `--mbx-form-submit-background-dark`<br><br>
 
 ### --mbx-form-submit-background-light
 
@@ -140,7 +140,7 @@ Form submit button background when [dark](../../global/props.md#dark) mode is `o
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-form-submit-text-color-light` and `--mbx-form-submit-text-color-dark`<br><br>
 
 ### --mbx-form-submit-text-color-light
 
@@ -170,7 +170,7 @@ Form submit button text color when [dark](../../global/props.md#dark) mode is `o
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-form-formfield-background-light` and `--mbx-form-formfield-background-dark`<br><br>
 
 ### --mbx-form-formfield-background-light
 
@@ -200,7 +200,7 @@ Form field background when [dark](../../global/props.md#dark) mode is `on'<br><b
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-form-formfield-text-color-light` and `--mbx-form-formfield-text-color-dark`<br><br>
 
 ### --mbx-form-formfield-text-color-light
 
@@ -230,7 +230,7 @@ Form field text color when [dark](../../global/props.md#dark) mode is `on'<br><b
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-form-formfield-background-hover-light` and `--mbx-form-formfield-background-hover-dark`<br><br>
 
 ### --mbx-form-formfield-background-hover-light
 
@@ -260,7 +260,7 @@ Form field background when [dark](../../global/props.md#dark) mode is `on', on '
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-form-formfield-text-color-hover-light` and `--mbx-form-formfield-text-color-hover-dark`<br><br>
 
 ### --mbx-form-formfield-text-color-hover-light
 

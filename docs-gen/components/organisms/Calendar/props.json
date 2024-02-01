@@ -1,1 +1,60 @@
-{}
+{
+  "value": {
+    "type": "CalendarDate",
+    "description": "Actual selected date",
+    "default": "Today date"
+  },
+  "hideArrows": {
+    "default": false,
+    "type": "boolean",
+    "description": "If `true`, hide arrow buttons near the date label"
+  },
+  "days": {
+    "type": "string[]",
+    "description": "Custom days labels",
+    "default": "English week labels"
+  },
+  "months": {
+    "type": "string[]",
+    "description": "Custom months labels",
+    "default": "English months labels"
+  },
+  "onViewChange": {
+    "type": "(date: CalendarDate) => void",
+    "typeComment": "(date: CalendarDate) => void",
+    "description": "Callback triggered when the Calendar view (the displayed month) is changed"
+  },
+  "startYear": {
+    "default": "Today year",
+    "type": "number",
+    "description": "Initial displayed year"
+  },
+  "startMonth": {
+    "default": "Today month",
+    "type": "number",
+    "description": "Initial displayed month"
+  },
+  "fromToday": {
+    "type": "boolean",
+    "description": "If `false`, prevent the user to select a date lower than today date",
+    "default": true
+  },
+  "dayLabel": {
+    "default": true,
+    "type": "string",
+    "description": "Show/hide actual day label on top of the calendar"
+  },
+  "labelClassName": {
+    "type": "string",
+    "description": "Custom className applied on the day label component"
+  },
+  "labelProps": {
+    "type": "Record<string, any>",
+    "description": "Custom props applied on the day label component"
+  },
+  "onChange": {
+    "type": "(newValue: CalendarDate) => void",
+    "default": "() => {}",
+    "description": "Callback triggered when Calendar component input value is changed by the user"
+  }
+}

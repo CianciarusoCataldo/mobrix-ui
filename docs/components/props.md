@@ -543,6 +543,18 @@
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](organisms/Calendar/props.md#value)</div> | <div style='text-align:center;margin:auto;'>CalendarDate</div> | <div style='text-align:center;margin:auto;'>Today date</div> |
+| <div style='text-align:center;margin:auto;'>[hideArrows](organisms/Calendar/props.md#hidearrows)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[days](organisms/Calendar/props.md#days)</div> | <div style='text-align:center;margin:auto;'>string[]</div> | <div style='text-align:center;margin:auto;'>English week labels</div> |
+| <div style='text-align:center;margin:auto;'>[months](organisms/Calendar/props.md#months)</div> | <div style='text-align:center;margin:auto;'>string[]</div> | <div style='text-align:center;margin:auto;'>English months labels</div> |
+| <div style='text-align:center;margin:auto;'>[onViewChange](organisms/Calendar/props.md#onviewchange)</div> | <div style='text-align:center;margin:auto;'>(date: CalendarDate) => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[startYear](organisms/Calendar/props.md#startyear)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>Today year</div> |
+| <div style='text-align:center;margin:auto;'>[startMonth](organisms/Calendar/props.md#startmonth)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>Today month</div> |
+| <div style='text-align:center;margin:auto;'>[fromToday](organisms/Calendar/props.md#fromtoday)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[dayLabel](organisms/Calendar/props.md#daylabel)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[labelClassName](organisms/Calendar/props.md#labelclassname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[labelProps](organisms/Calendar/props.md#labelprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onChange](organisms/Calendar/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: CalendarDate) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
 <br>
 <br>
@@ -554,8 +566,19 @@
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[value](organisms/DatePicker/props.md#value)</div> | <div style='text-align:center;margin:auto;'>CalendarDate</div> | <div style='text-align:center;margin:auto;'>Today date</div> |
+| <div style='text-align:center;margin:auto;'>[hideArrows](organisms/DatePicker/props.md#hidearrows)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[days](organisms/DatePicker/props.md#days)</div> | <div style='text-align:center;margin:auto;'>string[]</div> | <div style='text-align:center;margin:auto;'>English week labels</div> |
+| <div style='text-align:center;margin:auto;'>[months](organisms/DatePicker/props.md#months)</div> | <div style='text-align:center;margin:auto;'>string[]</div> | <div style='text-align:center;margin:auto;'>English months labels</div> |
+| <div style='text-align:center;margin:auto;'>[onViewChange](organisms/DatePicker/props.md#onviewchange)</div> | <div style='text-align:center;margin:auto;'>(date: CalendarDate) => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[startYear](organisms/DatePicker/props.md#startyear)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>Today year</div> |
+| <div style='text-align:center;margin:auto;'>[startMonth](organisms/DatePicker/props.md#startmonth)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>Today month</div> |
+| <div style='text-align:center;margin:auto;'>[fromToday](organisms/DatePicker/props.md#fromtoday)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[dayLabel](organisms/DatePicker/props.md#daylabel)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[labelClassName](organisms/DatePicker/props.md#labelclassname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[labelProps](organisms/DatePicker/props.md#labelprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onChange](organisms/DatePicker/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: CalendarDate) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 | <div style='text-align:center;margin:auto;'>[onClose](organisms/DatePicker/props.md#onclose)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
-| <div style='text-align:center;margin:auto;'>[onChange](organisms/DatePicker/props.md#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
 <br>
 <br>

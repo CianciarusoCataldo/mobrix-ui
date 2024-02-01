@@ -21,10 +21,11 @@ export interface CalendarDate {
   /** Calendar date year */
   year: number;
 
-  /** Calendar date day (1 to month length) */
+  /** Calendar week day (1 to month length) */
   day: number;
 
-  dayOfTheMonth?: number
+  /** Calendar date day (1 to month length) */
+  dayOfTheMonth?: number;
 }
 
 /**
@@ -77,7 +78,6 @@ export type CalendarProps = ComponentWithValue<DeepPartial<CalendarDate>> &
     labelClassName?: string;
 
     labelProps?: Record<string, any>;
-
   };
 
 /**

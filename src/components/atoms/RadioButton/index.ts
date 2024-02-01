@@ -11,7 +11,7 @@ import {
 import component from "./component";
 
 /**
- *
+ * A single radio button component. Optionally, can prevent user to deselect it
  *
  * @param {boolean} value actual radio button value (radio icon visiblity)
  * @param {boolean} deselectable if `false`, the button can be selected only once (the value can't change then)
@@ -36,7 +36,7 @@ import component from "./component";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/RadioButton
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 2.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

@@ -1,9 +1,7 @@
 {
   "since": "1.0.0",
   "description": "A compact carousel, to show any component (or image) into a slide, with dots and arrow button to go next/previous",
-  "see": [
-    "https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Carousel"
-  ],
+  "see": [],
   "examples": [
     "import { render } from 'react-dom'; import { Carousel } from 'mobrix-ui'; render(<Carousel elements={[<div>Element 0</div>,<div>Element 1</div>]} value={1} />, document.getElementById('root'));"
   ],

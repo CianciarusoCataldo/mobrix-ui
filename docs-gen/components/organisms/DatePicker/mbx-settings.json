@@ -1,13 +1,17 @@
 {
-  "since": "",
-  "description": "",
+  "since": "2.0.0",
+  "description": " A smart date-picker, with an internal Calendar accessible to choose a date",
   "see": [],
   "examples": [],
   "extend": {
-    "component": { "type": "organisms", "name": "Calendar" },
+    "component": {
+      "type": "organisms",
+      "name": "Calendar"
+    },
     "group": {
-      "ClosableComponent": {},
-      "ComponentWithCallback": { "type": "number" }
+      "ClosableComponent": {
+        "overrideDescription": "Callback triggered when DatePicker modal is closed"
+      }
     }
   }
 }

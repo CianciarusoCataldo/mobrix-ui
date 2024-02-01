@@ -5,7 +5,7 @@ import { LinkComponent } from "../../../types";
 import { buildMbxStandardComponent } from "../../../tools/utils";
 
 /**
- *
+ * A re-defined `<a>` component, designed to be better used with links
  *
  * @param {string} to Link url
  * @param {string} newTab f true, the link will be opened in a new tab
@@ -30,7 +30,7 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Link
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 1.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

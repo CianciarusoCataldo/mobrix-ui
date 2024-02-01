@@ -6,7 +6,7 @@ import toggleComponent from "./component";
 import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
- *
+ * A compact Toggle switcher, customized to reflect its actual status
  *
  * @param {boolean} value toggle status (true - on/false - off)
  * @param {JSX.Element} onIcon custom toggle `on` icon (`value` === `true`)
@@ -33,7 +33,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Toggle
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 1.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

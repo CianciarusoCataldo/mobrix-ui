@@ -9,10 +9,21 @@ import datePickerComponent from "./components";
 import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
+ *  A smart date-picker, with an internal Calendar accessible to choose a date
  *
- *
- * @param {() => void} onClose callback triggered when DatePicker is closed
- * @param {(newValue: number) => void} onChange Callback triggered when DatePicker component input value is changed by the user
+ * @param {CalendarDate} value Actual selected date - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {boolean} hideArrows If `true`, hide arrow buttons near the date label - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {string[]} days Custom days labels - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {string[]} months Custom months labels - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {(date: CalendarDate) => void} onViewChange Callback triggered when the Calendar view (the displayed month) is changed - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {number} startYear Initial displayed year - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {number} startMonth Initial displayed month - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {boolean} fromToday If `false`, prevent the user to select a date lower than today date - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {string} dayLabel Show/hide actual day label on top of the calendar - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {string} labelClassName Custom className applied on the day label component - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {Record<string, any>} labelProps Custom props applied on the day label component - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {(newValue: CalendarDate) => void} onChange Callback triggered when Calendar component input value is changed by the user - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {() => void} onClose Callback triggered when DatePicker modal is closed
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode
@@ -33,7 +44,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/organisms/DatePicker
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 2.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

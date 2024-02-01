@@ -14,44 +14,44 @@
 | <div style='text-align:center;margin:auto;'>Prop</div>                                                                                                      | <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                     |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-background](#mbx-datepicker-background)</div>                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-background-light](#mbx-datepicker-background-light)</div>                                     | <div style='text-align:center;margin:auto;'>[mbx-datepicker-background](#mbx-datepicker-background)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-background-dark](#mbx-datepicker-background-dark)</div>                                       | <div style='text-align:center;margin:auto;'>[mbx-datepicker-background](#mbx-datepicker-background)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-background-light](#mbx-datepicker-background-light)</div>                                     | <div style='text-align:center;margin:auto;'>[mbx-datepicker-background](#mbx-datepicker-background)</div>                                     | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div>                                                                                                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-background-dark](#mbx-datepicker-background-dark)</div>                                       | <div style='text-align:center;margin:auto;'>[mbx-datepicker-background](#mbx-datepicker-background)</div>                                     | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#mbx-background-dark)</div>                                                                                                                       |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color](#mbx-datepicker-text-color)</div>                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color-light](#mbx-datepicker-text-color-light)</div>                                     | <div style='text-align:center;margin:auto;'>[mbx-datepicker-text-color](#mbx-datepicker-text-color)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color-dark](#mbx-datepicker-text-color-dark)</div>                                       | <div style='text-align:center;margin:auto;'>[mbx-datepicker-text-color](#mbx-datepicker-text-color)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color-light](#mbx-datepicker-text-color-light)</div>                                     | <div style='text-align:center;margin:auto;'>[mbx-datepicker-text-color](#mbx-datepicker-text-color)</div>                                     | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#mbx-text-color-light)</div>                                                                                                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color-dark](#mbx-datepicker-text-color-dark)</div>                                       | <div style='text-align:center;margin:auto;'>[mbx-datepicker-text-color](#mbx-datepicker-text-color)</div>                                     | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#mbx-text-color-dark)</div>                                                                                                                       |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon](#mbx-datepicker-icon)</div>                                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-light](#mbx-datepicker-icon-light)</div>                                                 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon](#mbx-datepicker-icon)</div>                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-dark](#mbx-datepicker-icon-dark)</div>                                                   | <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon](#mbx-datepicker-icon)</div>                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-light](#mbx-datepicker-icon-light)</div>                                                 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon](#mbx-datepicker-icon)</div>                                                 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color-light](#mbx-datepicker-text-color-light)</div>                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-dark](#mbx-datepicker-icon-dark)</div>                                                   | <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon](#mbx-datepicker-icon)</div>                                                 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color-dark](#mbx-datepicker-text-color-dark)</div>                                                                                                                         |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-hover](#mbx-datepicker-icon-hover)</div>                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-hover-light](#mbx-datepicker-icon-hover-light)</div>                                     | <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon-hover](#mbx-datepicker-icon-hover)</div>                                     | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>blue</div><div style='text-align:center;margin-auto;'><div style='background:blue;margin:auto; width:15px; height:15px;'/></div></div></div>     |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-hover-dark](#mbx-datepicker-icon-hover-dark)</div>                                       | <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon-hover](#mbx-datepicker-icon-hover)</div>                                     | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>orange</div><div style='text-align:center;margin-auto;'><div style='background:orange;margin:auto; width:15px; height:15px;'/></div></div></div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background](#mbx-datepicker-calendar-background)</div>                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-light](#mbx-datepicker-calendar-background-light)</div>                   | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background](#mbx-datepicker-calendar-background)</div>                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-dark](#mbx-datepicker-calendar-background-dark)</div>                     | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background](#mbx-datepicker-calendar-background)</div>                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-light](#mbx-datepicker-calendar-background-light)</div>                   | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background](#mbx-datepicker-calendar-background)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-background-light)</div>                                                                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-dark](#mbx-datepicker-calendar-background-dark)</div>                     | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background](#mbx-datepicker-calendar-background)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-background-dark)</div>                                                                                       |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color](#mbx-datepicker-calendar-text-color)</div>                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-light](#mbx-datepicker-calendar-text-color-light)</div>                   | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color](#mbx-datepicker-calendar-text-color)</div>                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-dark](#mbx-datepicker-calendar-text-color-dark)</div>                     | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color](#mbx-datepicker-calendar-text-color)</div>                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-light](#mbx-datepicker-calendar-text-color-light)</div>                   | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color](#mbx-datepicker-calendar-text-color)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-text-color-light)</div>                                                                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-dark](#mbx-datepicker-calendar-text-color-dark)</div>                     | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color](#mbx-datepicker-calendar-text-color)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-text-color-dark)</div>                                                                                       |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-hover](#mbx-datepicker-calendar-background-hover)</div>                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-hover-light](#mbx-datepicker-calendar-background-hover-light)</div>       | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background-hover](#mbx-datepicker-calendar-background-hover)</div>       | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-hover-dark](#mbx-datepicker-calendar-background-hover-dark)</div>         | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background-hover](#mbx-datepicker-calendar-background-hover)</div>       | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-hover-light](#mbx-datepicker-calendar-background-hover-light)</div>       | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background-hover](#mbx-datepicker-calendar-background-hover)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-hover-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-background-hover-light)</div>                                                                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-hover-dark](#mbx-datepicker-calendar-background-hover-dark)</div>         | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background-hover](#mbx-datepicker-calendar-background-hover)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-hover-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-background-hover-dark)</div>                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-hover](#mbx-datepicker-calendar-text-color-hover)</div>                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-hover-light](#mbx-datepicker-calendar-text-color-hover-light)</div>       | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color-hover](#mbx-datepicker-calendar-text-color-hover)</div>       | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-hover-dark](#mbx-datepicker-calendar-text-color-hover-dark)</div>         | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color-hover](#mbx-datepicker-calendar-text-color-hover)</div>       | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-hover-light](#mbx-datepicker-calendar-text-color-hover-light)</div>       | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color-hover](#mbx-datepicker-calendar-text-color-hover)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-hover-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-text-color-hover-light)</div>                                                                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-hover-dark](#mbx-datepicker-calendar-text-color-hover-dark)</div>         | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color-hover](#mbx-datepicker-calendar-text-color-hover)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-hover-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-text-color-hover-dark)</div>                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow](#mbx-datepicker-calendar-arrow)</div>                                         | <div style='text-align:center;margin:auto;'>/</div>                                                                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow-light](#mbx-datepicker-calendar-arrow-light)</div>                             | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow](#mbx-datepicker-calendar-arrow)</div>                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow-dark](#mbx-datepicker-calendar-arrow-dark)</div>                               | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow](#mbx-datepicker-calendar-arrow)</div>                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow-light](#mbx-datepicker-calendar-arrow-light)</div>                             | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow](#mbx-datepicker-calendar-arrow)</div>                             | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-arrow-light)</div>                                                                                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow-dark](#mbx-datepicker-calendar-arrow-dark)</div>                               | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow](#mbx-datepicker-calendar-arrow)</div>                             | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-arrow-dark)</div>                                                                                                 |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow-hover](#mbx-datepicker-calendar-arrow-hover)</div>                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow-hover-light](#mbx-datepicker-calendar-arrow-hover-light)</div>                 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow-hover](#mbx-datepicker-calendar-arrow-hover)</div>                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow-hover-dark](#mbx-datepicker-calendar-arrow-hover-dark)</div>                   | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow-hover](#mbx-datepicker-calendar-arrow-hover)</div>                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow-hover-light](#mbx-datepicker-calendar-arrow-hover-light)</div>                 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow-hover](#mbx-datepicker-calendar-arrow-hover)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-hover-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-arrow-hover-light)</div>                                                                                   |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow-hover-dark](#mbx-datepicker-calendar-arrow-hover-dark)</div>                   | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow-hover](#mbx-datepicker-calendar-arrow-hover)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-hover-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-arrow-hover-dark)</div>                                                                                     |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-background](#mbx-datepicker-calendar-selected-background)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-background-light](#mbx-datepicker-calendar-selected-background-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-background](#mbx-datepicker-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-background-dark](#mbx-datepicker-calendar-selected-background-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-background](#mbx-datepicker-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-background-light](#mbx-datepicker-calendar-selected-background-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-background](#mbx-datepicker-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-background-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-selected-background-light)</div>                                                                   |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-background-dark](#mbx-datepicker-calendar-selected-background-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-background](#mbx-datepicker-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-background-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-selected-background-dark)</div>                                                                     |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-color](#mbx-datepicker-calendar-selected-text-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-color-light](#mbx-datepicker-calendar-selected-text-color-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-text-color](#mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-color-dark](#mbx-datepicker-calendar-selected-text-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-text-color](#mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-color-light](#mbx-datepicker-calendar-selected-text-color-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-text-color](#mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-color-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-selected-text-color-light)</div>                                                                   |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-color-dark](#mbx-datepicker-calendar-selected-text-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-text-color](#mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-color-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-selected-text-color-dark)</div>                                                                     |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-today-color](#mbx-datepicker-calendar-today-color)</div>                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-today-color-light](#mbx-datepicker-calendar-today-color-light)</div>                 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-today-color](#mbx-datepicker-calendar-today-color)</div>                 | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div>       |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-today-color-dark](#mbx-datepicker-calendar-today-color-dark)</div>                   | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-today-color](#mbx-datepicker-calendar-today-color)</div>                 | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div>       |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-today-color-light](#mbx-datepicker-calendar-today-color-light)</div>                 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-today-color](#mbx-datepicker-calendar-today-color)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-today-color-light)</div>                                                                                   |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-today-color-dark](#mbx-datepicker-calendar-today-color-dark)</div>                   | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-today-color](#mbx-datepicker-calendar-today-color)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-today-color-dark)</div>                                                                                     |
 
 ## CSS Variables list
 
@@ -71,9 +71,9 @@ Fallback value for `--mbx-datepicker-background-light` and `--mbx-datepicker-bac
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-background](#mbx-datepicker-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-background](#mbx-datepicker-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div> |
 
 DatePicker background when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
@@ -81,9 +81,9 @@ DatePicker background when [dark](../../global/props.md#dark) mode is `off'<br><
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-background](#mbx-datepicker-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                               |
+| --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-background](#mbx-datepicker-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#mbx-background-dark)</div> |
 
 DatePicker background when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
@@ -101,21 +101,21 @@ Fallback value for `--mbx-datepicker-text-color-light` and `--mbx-datepicker-tex
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-text-color](#mbx-datepicker-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-text-color](#mbx-datepicker-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#mbx-text-color-light)</div> |
 
-DatePicker ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+DatePicker text color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-text-color-dark
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-text-color](#mbx-datepicker-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                               |
+| --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-text-color](#mbx-datepicker-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#mbx-text-color-dark)</div> |
 
-DatePicker ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+DatePicker text color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-icon
 
@@ -131,21 +131,21 @@ Fallback value for `--mbx-datepicker-icon-light` and `--mbx-datepicker-icon-dark
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon](#mbx-datepicker-icon)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                               |
+| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon](#mbx-datepicker-icon)</div> | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color-light](#mbx-datepicker-text-color-light)</div> |
 
-DatePicker calendar icon when [dark](../../global/props.md#dark) mode is `off'<br><br>
+DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-icon-dark
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon](#mbx-datepicker-icon)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                             |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon](#mbx-datepicker-icon)</div> | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color-dark](#mbx-datepicker-text-color-dark)</div> |
 
-DatePicker calendar icon when [dark](../../global/props.md#dark) mode is `on'<br><br>
+DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-icon-hover
 
@@ -165,7 +165,7 @@ Fallback value for `--mbx-datepicker-icon-hover-light` and `--mbx-datepicker-ico
 | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon-hover](#mbx-datepicker-icon-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>blue</div><div style='text-align:center;margin-auto;'><div style='background:blue;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-DatePicker calendar icon when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
+DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
 
 ### --mbx-datepicker-icon-hover-dark
 
@@ -175,7 +175,7 @@ DatePicker calendar icon when [dark](../../global/props.md#dark) mode is `off', 
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon-hover](#mbx-datepicker-icon-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>orange</div><div style='text-align:center;margin-auto;'><div style='background:orange;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-DatePicker calendar icon when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
+DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-background
 
@@ -191,21 +191,21 @@ Fallback value for `and`<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background](#mbx-datepicker-calendar-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                 |
+| --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background](#mbx-datepicker-calendar-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-background-light)</div> |
 
-Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Internal Calendar background when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-calendar-background-dark
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background](#mbx-datepicker-calendar-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                                               |
+| --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background](#mbx-datepicker-calendar-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-background-dark)</div> |
 
-Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Internal Calendar background when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-calendar-text-color
 
@@ -221,19 +221,19 @@ Fallback value for `and`<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color](#mbx-datepicker-calendar-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                 |
+| --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color](#mbx-datepicker-calendar-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-text-color-light)</div> |
 
-Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Internal Calendar text color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-calendar-text-color-dark
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color](#mbx-datepicker-calendar-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                                               |
+| --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color](#mbx-datepicker-calendar-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-text-color-dark)</div> |
 
 Internal Calendar text color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
@@ -245,27 +245,27 @@ Internal Calendar text color when [dark](../../global/props.md#dark) mode is `on
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-datepicker-calendar-background-hover-light` and `--mbx-datepicker-calendar-background-hover-dark`<br><br>
 
 ### --mbx-datepicker-calendar-background-hover-light
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                              | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background-hover](#mbx-datepicker-calendar-background-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background-hover](#mbx-datepicker-calendar-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-hover-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-background-hover-light)</div> |
 
-Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
+Internal Calendar background when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-background-hover-dark
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                              | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background-hover](#mbx-datepicker-calendar-background-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                           |
+| --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background-hover](#mbx-datepicker-calendar-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-hover-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-background-hover-dark)</div> |
 
-Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
+Internal Calendar background when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-text-color-hover
 
@@ -275,15 +275,15 @@ Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-datepicker-calendar-text-color-hover-light` and `--mbx-datepicker-calendar-text-color-hover-dark`<br><br>
 
 ### --mbx-datepicker-calendar-text-color-hover-light
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                              | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color-hover](#mbx-datepicker-calendar-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                             |
+| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color-hover](#mbx-datepicker-calendar-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-hover-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-text-color-hover-light)</div> |
 
 Internal Calendar text color when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
 
@@ -291,9 +291,9 @@ Internal Calendar text color when [dark](../../global/props.md#dark) mode is `of
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                              | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color-hover](#mbx-datepicker-calendar-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                           |
+| --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color-hover](#mbx-datepicker-calendar-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-hover-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-text-color-hover-dark)</div> |
 
 Internal Calendar text color when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
 
@@ -305,15 +305,15 @@ Internal Calendar text color when [dark](../../global/props.md#dark) mode is `on
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-datepicker-calendar-arrow-light` and `--mbx-datepicker-calendar-arrow-dark`<br><br>
 
 ### --mbx-datepicker-calendar-arrow-light
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow](#mbx-datepicker-calendar-arrow)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                                       |
+| ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow](#mbx-datepicker-calendar-arrow)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-arrow-light)</div> |
 
 Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
@@ -321,9 +321,9 @@ Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `o
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow](#mbx-datepicker-calendar-arrow)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow](#mbx-datepicker-calendar-arrow)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-arrow-dark)</div> |
 
 Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
@@ -341,9 +341,9 @@ Fallback value for `--mbx-datepicker-calendar-arrow-hover-light` and `--mbx-date
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                    | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow-hover](#mbx-datepicker-calendar-arrow-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                   |
+| ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow-hover](#mbx-datepicker-calendar-arrow-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-hover-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-arrow-hover-light)</div> |
 
 Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
 
@@ -351,9 +351,9 @@ Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `o
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                    | <div style='text-align:center;margin:auto;'>Default</div> |
-| ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow-hover](#mbx-datepicker-calendar-arrow-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow-hover](#mbx-datepicker-calendar-arrow-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-hover-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-arrow-hover-dark)</div> |
 
 Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
 
@@ -371,9 +371,9 @@ Fallback value for `--mbx-datepicker-calendar-selected-background-light` and `--
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-background](#mbx-datepicker-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                   |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-background](#mbx-datepicker-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-background-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-selected-background-light)</div> |
 
 Internal Calendar selected cell background when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
@@ -381,9 +381,9 @@ Internal Calendar selected cell background when [dark](../../global/props.md#dar
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-background](#mbx-datepicker-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                 |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-background](#mbx-datepicker-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-background-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-selected-background-dark)</div> |
 
 Internal Calendar selected cell background when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
@@ -401,9 +401,9 @@ Fallback value for `--mbx-datepicker-calendar-selected-text-color-light` and `--
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-text-color](#mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                   |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-text-color](#mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-color-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-selected-text-color-light)</div> |
 
 Internal Calendar selected cell text color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
@@ -411,9 +411,9 @@ Internal Calendar selected cell text color when [dark](../../global/props.md#dar
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                    | <div style='text-align:center;margin:auto;'>Default</div> |
-| --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-text-color](#mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                 |
+| --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-text-color](#mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-color-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-selected-text-color-dark)</div> |
 
 Internal Calendar selected cell text color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
@@ -425,15 +425,15 @@ Internal Calendar selected cell text color when [dark](../../global/props.md#dar
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-datepicker-calendar-today-color-light` and `--mbx-datepicker-calendar-today-color-dark`<br><br>
 
 ### --mbx-datepicker-calendar-today-color-light
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-today-color](#mbx-datepicker-calendar-today-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                   |
+| ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-today-color](#mbx-datepicker-calendar-today-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-today-color-light)</div> |
 
 Internal Calendar today color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
@@ -441,8 +441,8 @@ Internal Calendar today color when [dark](../../global/props.md#dark) mode is `o
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-today-color](#mbx-datepicker-calendar-today-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-today-color](#mbx-datepicker-calendar-today-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-today-color-dark)</div> |
 
 Internal Calendar today color when [dark](../../global/props.md#dark) mode is `on'<br><br>

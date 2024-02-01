@@ -19,9 +19,10 @@
 
 ### 3.0.0
 
-- Dependencies updated
-- `Form` component updated
-- `Table` component updated
+- No more external dependencies
+- Totally re-designed css variables system, to fully customize every component at once
+- Docs and comments generator
+- Global refactoring and hige clean-up
 
 <br>
 

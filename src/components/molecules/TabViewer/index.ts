@@ -40,7 +40,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
 * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/TabViewer
 * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
 *
-* @since 
+* @since 2.1.0
 *
 * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
 *

@@ -1,6 +1,6 @@
 {
-  "since": "",
-  "description": "",
+  "since": "2.0.0",
+  "description": "A re-defined `select` component",
   "see": [],
   "examples": [],
   "extend": {

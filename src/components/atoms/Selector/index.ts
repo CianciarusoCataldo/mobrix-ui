@@ -7,7 +7,7 @@ import { buildMobrixUiReactiveComponent } from "../../../tools";
 import selectorComponent from "./component";
 
 /**
- *
+ * A re-defined `select` component
  *
  * @param {number} value option index actually displayed
  * @param {string[]} elements selector options array, every element must be a string
@@ -33,7 +33,7 @@ import selectorComponent from "./component";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Selector
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 2.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

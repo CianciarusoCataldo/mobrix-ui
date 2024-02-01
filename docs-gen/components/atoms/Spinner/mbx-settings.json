@@ -1,6 +1,6 @@
 {
-  "since": "",
-  "description": "",
+  "since": "1.0.0",
+  "description": "A smart status indicator, optionally with custom images showed for every state (defaults are `loading`,`success` and `error`)",
   "see": [],
   "examples": []
 }
