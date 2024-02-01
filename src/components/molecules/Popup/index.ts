@@ -10,7 +10,7 @@ import {
 import popupComponent from "./component";
 
 /**
- *
+ * A Popup container, displayed upon every other component, overlayed
  *
  * @param {() => void} onClose callback triggered when Popup is closed
  * @param {`JSX.Element` | `string`} children Popup content
@@ -29,7 +29,7 @@ import popupComponent from "./component";
  * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
  *
  *
- * @example MBX_EXAMPLE
+ *
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/Popup
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs

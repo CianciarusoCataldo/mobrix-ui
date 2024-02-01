@@ -7,7 +7,7 @@ import { buildMobrixUiStandardComponent } from "../../../tools";
 import listComponent from "./component";
 
 /**
- *
+ * A custom bullet list, that support any type of elements
  *
  * @param {(`JSX.Element` | `string`)[]} elements List elements
  * @param {() => void} onClick Callback triggered when a list element is clicked
@@ -26,12 +26,12 @@ import listComponent from "./component";
  * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
  *
  *
- * @example MBX_EXAMPLE
+ *
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/List
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 1.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

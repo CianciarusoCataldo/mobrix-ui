@@ -1,6 +1,6 @@
 {
   "since": "2.0.0",
-  "description": "",
+  "description": "A Popup container, displayed upon every other component, overlayed",
   "see": [],
   "examples": [],
   "extend": {

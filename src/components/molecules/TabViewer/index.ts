@@ -6,7 +6,7 @@ import tabViewerComponent from "./component";
 import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
-* 
+* A Tab viewer component, to organize elements with tabs and show them on demand
 *
 * @param {{`label`: string; `content`: JSX.Element;}[]} tabs Tabs array. Every tab object contains 3 fields:
 - `label`: tab label displayed on top
@@ -35,7 +35,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
 * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
 * 
 *
-* @example MBX_EXAMPLE
+* 
 *
 * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/TabViewer
 * @see https://cianciarusocataldo.github.io/mobrix-ui/docs

@@ -18,23 +18,23 @@ Smart React components for every app, easily customizable for every purpose.
 
 ## Status
 
-<br>
-
 <a href="https://snyk.io/test/github/CianciarusoCataldo/mobrix-ui">
 <img src="https://snyk.io/test/github/CianciarusoCataldo/mobrix-ui/badge.svg?targetFile=package.json&style=flat-square" height="27px"/>
 </a>
 
 ---
 
-## Note for MoBrix-ui v1 user
+<br>
 
-MoBrix-ui v2 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 1.X.X, please read the [dedicated guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/#/v1_guide), or upgrade it to v3.X.X!
+> ## Note for MoBrix-ui v1 user
+>
+> MoBrix-ui v2 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 1.X.X, please read the [dedicated guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/#/v1_guide), or upgrade it to v3.X.X!
 
 <br>
 
-## Note for MoBrix-ui v2 user
-
-MoBrix-ui v3 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 2.X.X, please read the [dedicated guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/#/v2_guide), or upgrade it to v3.X.X!
+> ## Note for MoBrix-ui v2 user
+>
+> MoBrix-ui v3 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 2.X.X, please read the [dedicated guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/#/v2_guide), or upgrade it to v3.X.X!
 
 <br>
 
@@ -44,7 +44,7 @@ MoBrix-ui v3 introduces some breaking changes that makes it not compatible with 
 
 - [MoBrix-ui philosophy](#mobrix-ui-philosophy)
 - [Components building process](#components-building-process)
-  - [UI properties](#ui-properties)
+  - [Shared Properties](#shared-properties)
   - [Accessibility properties](#accessibility-properties)
   - [CSS variables](#css-variables)
   - [Reactive components](#reactive-components)
@@ -56,8 +56,6 @@ MoBrix-ui v3 introduces some breaking changes that makes it not compatible with 
 - [License](#license)
 
 <br>
-
----
 
 ---
 
@@ -76,8 +74,6 @@ The same concepts are also the base of another project I maintain, [MoBrix-engin
 
 ---
 
----
-
 ## Components building process
 
 This library use a standardized process to build every component. As result, every component has a shared initial logic, shared CSS styles and shared properties.
@@ -87,43 +83,28 @@ Some properties are shared between all components, for a smoother dev experience
 
 ---
 
-### UI properties
+### Shared Properties
 
 <br>
 
-| Property    | Type                 | Description                                                                                                        | Default value |
-| ----------- | -------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------- |
-| `className` | `string`             | custom className applied on main container                                                                         | `""`          |
-| `dark`      | `boolean`            | Enable/disable dark mode                                                                                           | `false`       |
-| `hide`      | `boolean`            | Hide/show component                                                                                                | `false`       |
-| `id`        | `string`             | `data-id` parameter (for testing purpose, to easily find the component into the DOM)                               | `/`           |
-| `shadow`    | `boolean`            | Enable/disable shadow behind component                                                                             | `false`       |
-| `style`     | `Record<string,any>` | [Css inline properties](https://www.w3schools.com/html/html_css.asp) applied on main container                     | `/`           |
-| `unstyled`  | `boolean`            | If `true`, no standard mobrix-ui styles will be applied on the components (useful for example, with image buttons) | `false`       |
-| `animated`  | `boolean`            | Enable/disable component animations                                                                                | `false`       |
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[key](docs/components/global/props.md#key)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[className](docs/components/global/props.md#classname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[dark](docs/components/global/props.md#dark)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[hide](docs/components/global/props.md#hide)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[id](docs/components/global/props.md#id)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[shadow](docs/components/global/props.md#shadow)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[style](docs/components/global/props.md#style)</div> | <div style='text-align:center;margin:auto;'>CSSProperties</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[unstyled](docs/components/global/props.md#unstyled)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[animated](docs/components/global/props.md#animated)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[background](docs/components/global/props.md#background)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[hover](docs/components/global/props.md#hover)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[disabled](docs/components/global/props.md#disabled)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[additionalProps](docs/components/global/props.md#additionalprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
-
----
-
-### Accessibility properties
-
-<br>
-
-Some accessibility properties are shared between all components, for a better and smoother user experience, in any scenario:
-
-| Property      | Type                         | Description                                                                                                                                                | Default value             |
-| ------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| `onFocus`     | ( ) => `void`                | custom callback triggered when the component get the focus (for example, through tab key)                                                                  | `/`                       |
-| `onFocusLost` | ( ) => `void`                | custom callback triggered when the component lose the focus (for example, when user clicks outside it)                                                     | `/`                       |
-| `a11y`        | `boolean`                    | Enable/disable accessibility features.                                                                                                                     | `true`                    |
-| `a11yLabel`   | `string`                     | If `a11y` = `true`, is used as [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) accessibility parameter | `/`                       |
-| `a11yDark`    | `boolean`                    | If `a11y` = `true`, enable/disable dark mode for a11y styles. If not set, will be used the `dark` UI parameter                                             | same as `dark` or `false` |
-| `onKeyDown`   | (keyEvent : `any`) => `void` | custom callback triggered when a key is pressed while using the component (for example, when writing text inside an `Input` component).                    | `/`                       |
-
-<br>
-
----
 
 ### CSS variables
 
@@ -131,20 +112,31 @@ Some accessibility properties are shared between all components, for a better an
 
 MoBrix-ui is globally configurable, with CSS variables. By defining some specific custom CSS variables into your app css, you'll change the UI of all components:
 
-| CSS variable                                | Description                                                                                                                                      | Default value                                 | Related CSS attribute  |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------- | ---------------------- |
-| `--mobrix-ui-custom-background-dark`        | Components background, when in dark-mode ([dark](#shared-components-properties) is set to true).                                                 | `linear-gradient(to right, #2d3748, #1d232e)` | `background-image`     |
-| `--mobrix-ui-custom-background-color-dark`  | Components background color, when in dark-mode ([dark](#shared-components-properties) is set to true).                                           | `#1d232e`                                     | `background-color`     |
-| `--mobrix-ui-custom-text-color-dark`        | Components text color, when in dark-mode ([dark](#shared-components-properties) is set to true).                                                 | `white`                                       | `text-color`           |
-| `--mobrix-ui-custom-background-light`       | Components background, when not in dark-mode ([dark](#shared-components-properties) is set to false).                                            | `linear-gradient(to right, #fff, #eaebec)`    | `background-image`     |
-| `--mobrix-ui-custom-background-color-light` | Components background color, when not in dark-mode ([dark](#shared-components-properties) is set to false).                                      | `#f5f5f5`                                     | `background-color`     |
-| `--mobrix-ui-custom-text-color-light`       | Components text color, when not in dark-mode ([dark](#shared-components-properties) is set to false).                                            | `#1b1b1b`                                     | `text-color`           |
-| `--mobrix-ui-custom-focus-color-light`      | If `a11yDark` = `false` , this color is used to update UI when a component is focused (with a screen reader or by navigating with the `Tab` key) | `#7785ff`                                     | `box-shadow` / `color` |
-| `--mobrix-ui-custom-focus-color-dark`       | If `a11yDark` = `true` , this color is used to update UI when a component is focused (with a screen reader or by navigating with the `Tab` key)  | `#fb7a10`                                     | `box-shadow` / `color` |
+| <div style='text-align:center;margin:auto;'>Prop</div>                                                                                                      | <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                      | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-background](docs/components/global/css-vars.md#mbx-background)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-light](docs/components/global/css-vars.md#mbx-background-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-background](docs/components/global/css-vars.md#mbx-background)</div>                         | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #fff, #ededee, #e6e7e7)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #fff, #ededee, #e6e7e7);margin:auto; width:15px; height:15px;'/></div></div></div>       |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-dark](docs/components/global/css-vars.md#mbx-background-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-background](docs/components/global/css-vars.md#mbx-background)</div>                         | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #2d3748, #1d232e)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #2d3748, #1d232e);margin:auto; width:15px; height:15px;'/></div></div></div>                   |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-color](docs/components/global/css-vars.md#mbx-background-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-color-light](docs/components/global/css-vars.md#mbx-background-color-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-color](docs/components/global/css-vars.md#mbx-background-color)</div>             | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#e9e9e9</div><div style='text-align:center;margin-auto;'><div style='background:#e9e9e9;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-color-dark](docs/components/global/css-vars.md#mbx-background-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-color](docs/components/global/css-vars.md#mbx-background-color)</div>             | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#1d232e</div><div style='text-align:center;margin-auto;'><div style='background:#1d232e;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover](docs/components/global/css-vars.md#mbx-background-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-light](docs/components/global/css-vars.md#mbx-background-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover](docs/components/global/css-vars.md#mbx-background-color-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#dfeaf8</div><div style='text-align:center;margin-auto;'><div style='background:#dfeaf8;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-dark](docs/components/global/css-vars.md#mbx-background-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover](docs/components/global/css-vars.md#mbx-background-color-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#3a3552</div><div style='text-align:center;margin-auto;'><div style='background:#3a3552;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-hover](docs/components/global/css-vars.md#mbx-background-hover)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](docs/components/global/css-vars.md#mbx-background-hover-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-hover](docs/components/global/css-vars.md#mbx-background-hover)</div>             | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #ececec, #e1e1e6, #dbdddd)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #ececec, #e1e1e6, #dbdddd);margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](docs/components/global/css-vars.md#mbx-background-hover-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-hover](docs/components/global/css-vars.md#mbx-background-hover)</div>             | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #364257, #252d3b)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #364257, #252d3b);margin:auto; width:15px; height:15px;'/></div></div></div>                   |
+| <div style='text-align:center;margin:auto;'>[--mbx-text-color](docs/components/global/css-vars.md#mbx-text-color)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](docs/components/global/css-vars.md#mbx-text-color-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-text-color](docs/components/global/css-vars.md#mbx-text-color)</div>                         | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#1b1b1b</div><div style='text-align:center;margin-auto;'><div style='background:#1b1b1b;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](docs/components/global/css-vars.md#mbx-text-color-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-text-color](docs/components/global/css-vars.md#mbx-text-color)</div>                         | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>white</div><div style='text-align:center;margin-auto;'><div style='background:white;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover](docs/components/global/css-vars.md#mbx-text-color-hover)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](docs/components/global/css-vars.md#mbx-text-color-hover-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover](docs/components/global/css-vars.md#mbx-text-color-hover)</div>             | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#413c5c</div><div style='text-align:center;margin-auto;'><div style='background:#413c5c;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](docs/components/global/css-vars.md#mbx-text-color-hover-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover](docs/components/global/css-vars.md#mbx-text-color-hover)</div>             | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#dfeaf8</div><div style='text-align:center;margin-auto;'><div style='background:#dfeaf8;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-focus-color](docs/components/global/css-vars.md#mbx-focus-color)</div>                                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-focus-color-light](docs/components/global/css-vars.md#mbx-focus-color-light)</div>                       | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](docs/components/global/css-vars.md#mbx-focus-color)</div>                       | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#7785ff</div><div style='text-align:center;margin-auto;'><div style='background:#7785ff;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-focus-color-dark](docs/components/global/css-vars.md#mbx-focus-color-dark)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](docs/components/global/css-vars.md#mbx-focus-color)</div>                       | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#fb7a10</div><div style='text-align:center;margin-auto;'><div style='background:#fb7a10;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
 
 <br>
-
----
 
 ### Reactive components
 
@@ -173,11 +165,13 @@ A clear example is the [Input](https://cianciarusocataldo.github.io/mobrix-ui/co
 
 <br>
 
-## Getting started
+<br>
 
 <br>
 
----
+## Getting started
+
+<br>
 
 ### Installation
 
@@ -213,7 +207,7 @@ render(
       }
     />
   </Container>,
-  document.getElementById("root")
+  document.getElementById("root"),
 );
 ```
 
@@ -225,8 +219,8 @@ If you want to customize the UI globally, initialize the dedicated [CSS variable
 
 ```css
 * {
-  --mobrix-ui-text-color: #f5f5f5;
-  --mobrix-ui-background-color: #1b1b1b;
+  --mbx-ui-text-color: #f5f5f5;
+  --mbx-ui-background-color: #1b1b1b;
 }
 ```
 
@@ -235,6 +229,10 @@ If you want to customize the UI globally, initialize the dedicated [CSS variable
 ---
 
 ---
+
+<br>
+
+<br>
 
 ## Tests
 

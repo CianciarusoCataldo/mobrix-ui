@@ -7,7 +7,7 @@ import { buildMbxStandardComponent } from "../../../tools";
 import reviewComponent from "./component";
 
 /**
- *
+ * A smart review container, useful to show reviews on your web app with custom data inside. Optionally, an external link can be set to redirect user to the platform where the review is located
  *
  * @param {string} user Username displayed above the review description, at the right of the icon
  * @param {string} description Review description displayed below the review username, at the top of the rate
@@ -33,7 +33,7 @@ import reviewComponent from "./component";
  * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
  *
  *
- * @example MBX_EXAMPLE
+ *
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/Review
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs

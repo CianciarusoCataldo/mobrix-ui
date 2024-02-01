@@ -1,6 +1,6 @@
 {
-  "since": "",
-  "description": "",
+  "since": "1.0.0",
+  "description": "A Modal component, with an optional close button",
   "see": [],
   "examples": [],
   "extend": {

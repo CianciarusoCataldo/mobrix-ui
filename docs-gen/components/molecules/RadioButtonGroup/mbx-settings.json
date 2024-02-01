@@ -1,6 +1,6 @@
 {
   "since": "2.0.0",
-  "description": "",
+  "description": "A flexible and fully customizable radio buttons group",
   "see": [],
   "examples": [],
   "extend": {

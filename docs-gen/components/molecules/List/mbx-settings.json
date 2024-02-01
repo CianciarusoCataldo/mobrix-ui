@@ -1,6 +1,6 @@
 {
-  "since": "",
-  "description": "",
+  "since": "1.0.0",
+  "description": "A custom bullet list, that support any type of elements",
   "see": [],
   "examples": [],
   "extend": {

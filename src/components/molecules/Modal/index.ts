@@ -8,7 +8,7 @@ import modalComponent from "./component";
 import React from "react";
 
 /**
- *
+ * A Modal component, with an optional close button
  *
  * @param {() => void} onClose callback triggered when Modal is closed
  * @param {`JSX.Element` | `string`} children Modal content
@@ -27,12 +27,12 @@ import React from "react";
  * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
  *
  *
- * @example MBX_EXAMPLE
+ *
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/Modal
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 1.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

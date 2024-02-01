@@ -6,7 +6,7 @@ import FormFieldInternalComponent from "./component";
 import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
-* 
+* A single form field. Depending on its `type`, a different input component is used inside
 *
 * @param {'boolean' | 'text' | 'numeric' | 'radio' | 'checkbox' | 'toggle' | 'rater' | 'slider' | 'input' | 'counter'} type The field type. It determines the UI component to be used to render it. Allowed types are:
 - `boolean` (rendered as a CheckBox)
@@ -38,12 +38,12 @@ import { buildMbxReactiveComponent } from "../../../tools";
 * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
 * 
 *
-* @example MBX_EXAMPLE
+* 
 *
 * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/FormField
 * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
 *
-* @since 
+* @since 3.0.0
 *
 * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
 *

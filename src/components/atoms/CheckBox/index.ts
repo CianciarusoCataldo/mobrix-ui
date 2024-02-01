@@ -30,7 +30,7 @@ import { DefaultCheckIcon } from "./icons";
  * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
  *
  *
- * @example MBX_EXAMPLE
+ *
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/CheckBox
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs

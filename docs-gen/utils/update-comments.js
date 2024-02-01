@@ -4,7 +4,7 @@ const TEMPLATE = `
 *
 * MBX_PROPS
 *
-* @example MBX_EXAMPLE
+* MBX_EXAMPLE
 *
 * MBX_SEE
 *
@@ -94,6 +94,15 @@ try {
       "MBX_SEE",
       `@see https://cianciarusocataldo.github.io/mobrix-ui/${COMPONENT_TYPE}/${COMPONENT_NAME}\n* @see https://cianciarusocataldo.github.io/mobrix-ui/docs`
     );
+
+    let examples = "";
+
+    settings.examples.forEach((example) => {
+      examples += `@example <caption>${example.name}</caption>\n*`;
+    });
+
+    customTemplate = customTemplate.replace("MBX_EXAMPLE", examples);
+
     const finalString =
       splittedComment[0] + customTemplate + splittedComment[2];
 

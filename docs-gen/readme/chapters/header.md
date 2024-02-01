@@ -18,23 +18,23 @@ Smart React components for every app, easily customizable for every purpose.
 
 ## Status
 
-
-
 <a href="https://snyk.io/test/github/CianciarusoCataldo/mobrix-ui">
 <img src="https://snyk.io/test/github/CianciarusoCataldo/mobrix-ui/badge.svg?targetFile=package.json&style=flat-square" height="27px"/>
 </a>
 
 ---
 
-## Note for MoBrix-ui v1 user
+<br>
 
-MoBrix-ui v2 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 1.X.X, please read the [dedicated guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/#/v1_guide), or upgrade it to v3.X.X!
+> ## Note for MoBrix-ui v1 user
+>
+> MoBrix-ui v2 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 1.X.X, please read the [dedicated guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/#/v1_guide), or upgrade it to v3.X.X!
 
 <br>
 
-## Note for MoBrix-ui v2 user
-
-MoBrix-ui v3 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 2.X.X, please read the [dedicated guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/#/v2_guide), or upgrade it to v3.X.X!
+> ## Note for MoBrix-ui v2 user
+>
+> MoBrix-ui v3 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 2.X.X, please read the [dedicated guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/#/v2_guide), or upgrade it to v3.X.X!
 
 <br>
 
