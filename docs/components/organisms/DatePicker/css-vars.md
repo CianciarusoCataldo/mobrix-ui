@@ -65,7 +65,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-datepicker-background-light` and `--mbx-datepicker-background-dark`<br><br>
 
 ### --mbx-datepicker-background-light
 
@@ -75,7 +75,7 @@ Fallback value for `and`<br><br>
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-background](#mbx-datepicker-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+DatePicker background when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-background-dark
 
@@ -85,7 +85,7 @@ DatePicker ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><b
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-background](#mbx-datepicker-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+DatePicker background when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-text-color
 
@@ -95,7 +95,7 @@ DatePicker ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-datepicker-text-color-light` and `--mbx-datepicker-text-color-dark`<br><br>
 
 ### --mbx-datepicker-text-color-light
 
@@ -135,7 +135,7 @@ Fallback value for `--mbx-datepicker-icon-light` and `--mbx-datepicker-icon-dark
 | --------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon](#mbx-datepicker-icon)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+DatePicker calendar icon when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-icon-dark
 
@@ -145,7 +145,7 @@ DatePicker ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><b
 | --------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon](#mbx-datepicker-icon)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+DatePicker calendar icon when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-icon-hover
 
@@ -165,7 +165,7 @@ Fallback value for `--mbx-datepicker-icon-hover-light` and `--mbx-datepicker-ico
 | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon-hover](#mbx-datepicker-icon-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>blue</div><div style='text-align:center;margin-auto;'><div style='background:blue;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-DatePicker ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
+DatePicker calendar icon when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
 
 ### --mbx-datepicker-icon-hover-dark
 
@@ -175,7 +175,7 @@ DatePicker ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on '
 | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-icon-hover](#mbx-datepicker-icon-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>orange</div><div style='text-align:center;margin-auto;'><div style='background:orange;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-DatePicker ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
+DatePicker calendar icon when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-background
 
@@ -195,7 +195,7 @@ Fallback value for `and`<br><br>
 | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background](#mbx-datepicker-calendar-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-calendar-background-dark
 
@@ -205,7 +205,7 @@ DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `o
 | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background](#mbx-datepicker-calendar-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-calendar-text-color
 
@@ -225,7 +225,7 @@ Fallback value for `and`<br><br>
 | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color](#mbx-datepicker-calendar-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-calendar-text-color-dark
 
@@ -235,7 +235,7 @@ DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `o
 | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color](#mbx-datepicker-calendar-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Internal Calendar text color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-calendar-background-hover
 
@@ -255,7 +255,7 @@ Fallback value for `and`<br><br>
 | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background-hover](#mbx-datepicker-calendar-background-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
+Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-background-hover-dark
 
@@ -265,7 +265,7 @@ DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `o
 | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-background-hover](#mbx-datepicker-calendar-background-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
+Internal Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-text-color-hover
 
@@ -285,7 +285,7 @@ Fallback value for `and`<br><br>
 | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color-hover](#mbx-datepicker-calendar-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
+Internal Calendar text color when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-text-color-hover-dark
 
@@ -295,7 +295,7 @@ DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `o
 | --------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-text-color-hover](#mbx-datepicker-calendar-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
+Internal Calendar text color when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-arrow
 
@@ -315,7 +315,7 @@ Fallback value for `and`<br><br>
 | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow](#mbx-datepicker-calendar-arrow)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-calendar-arrow-dark
 
@@ -325,7 +325,7 @@ DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `o
 | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow](#mbx-datepicker-calendar-arrow)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-calendar-arrow-hover
 
@@ -345,7 +345,7 @@ Fallback value for `--mbx-datepicker-calendar-arrow-hover-light` and `--mbx-date
 | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow-hover](#mbx-datepicker-calendar-arrow-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
+Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-arrow-hover-dark
 
@@ -355,7 +355,7 @@ DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `o
 | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-arrow-hover](#mbx-datepicker-calendar-arrow-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
+Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-selected-background
 
@@ -375,7 +375,7 @@ Fallback value for `--mbx-datepicker-calendar-selected-background-light` and `--
 | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-background](#mbx-datepicker-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar selected cell ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Internal Calendar selected cell background when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-calendar-selected-background-dark
 
@@ -385,7 +385,7 @@ DatePicker Calendar selected cell ATTRIBUTE when [dark](../../global/props.md#da
 | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-background](#mbx-datepicker-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar selected cell ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Internal Calendar selected cell background when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-calendar-selected-text-color
 
@@ -405,7 +405,7 @@ Fallback value for `--mbx-datepicker-calendar-selected-text-color-light` and `--
 | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-text-color](#mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar selected cell ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Internal Calendar selected cell text color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-calendar-selected-text-color-dark
 
@@ -415,7 +415,7 @@ DatePicker Calendar selected cell ATTRIBUTE when [dark](../../global/props.md#da
 | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-selected-text-color](#mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
-DatePicker Calendar selected cell ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Internal Calendar selected cell text color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-calendar-today-color
 
@@ -435,7 +435,7 @@ Fallback value for `and`<br><br>
 | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-today-color](#mbx-datepicker-calendar-today-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-DatePicker Calendar today color when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Internal Calendar today color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-calendar-today-color-dark
 
@@ -445,4 +445,4 @@ DatePicker Calendar today color when [dark](../../global/props.md#dark) mode is 
 | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-datepicker-calendar-today-color](#mbx-datepicker-calendar-today-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-DatePicker Calendar today color when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Internal Calendar today color when [dark](../../global/props.md#dark) mode is `on'<br><br>

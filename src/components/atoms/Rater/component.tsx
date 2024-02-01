@@ -59,7 +59,7 @@ const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
         })}
       >
         {ICONS[type][iconToShow]}
-      </IconButton>
+      </IconButton>,
     );
   }
 

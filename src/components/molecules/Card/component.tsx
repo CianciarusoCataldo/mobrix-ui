@@ -65,7 +65,11 @@ const cardComponent: MoBrixUiComponent<CardProps, BuilderComponent[]> = ({
     },
     {
       condition: !!footer,
-      component: <div key="card_footer"data-mbx-class="footer">{footer}</div>,
+      component: (
+        <div key="card_footer" data-mbx-class="footer">
+          {footer}
+        </div>
+      ),
     },
   ]);
 

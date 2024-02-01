@@ -79,7 +79,7 @@ const Input: InputComponent = ({
       }),
       inputValue,
       defaultValue: "",
-    })
+    }),
   );
 
 export default Input;

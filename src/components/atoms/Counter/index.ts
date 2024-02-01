@@ -79,7 +79,7 @@ const Counter: CounterComponent = ({
         ...parsedCommonProps,
         hover: parsedCommonProps.hover && !readOnly,
       },
-    })
+    }),
   );
 
 export default Counter;

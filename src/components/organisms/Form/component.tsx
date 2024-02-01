@@ -24,7 +24,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
           ...o,
           [key]: undefined,
         }),
-        {}
+        {},
       )
     : {};
 
@@ -92,7 +92,7 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
       }}
     >
       {submitLabel}
-    </Button>
+    </Button>,
   );
 
   return components;

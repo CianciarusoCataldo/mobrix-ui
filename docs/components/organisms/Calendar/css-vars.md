@@ -53,7 +53,7 @@
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-calendar-background-light` and `--mbx-calendar-background-dark`<br><br>
 
 ### --mbx-calendar-background-light
 
@@ -63,7 +63,7 @@ Fallback value for `and`<br><br>
 | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-background](#mbx-calendar-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Calendar background when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-calendar-background-dark
 
@@ -73,7 +73,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-background](#mbx-calendar-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#mbx-background-dark)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Calendar background when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-calendar-text-color
 
@@ -83,7 +83,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-calendar-text-color-light` and `--mbx-calendar-text-color-dark`<br><br>
 
 ### --mbx-calendar-text-color-light
 
@@ -93,7 +93,7 @@ Fallback value for `and`<br><br>
 | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-text-color](#mbx-calendar-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#mbx-text-color-light)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Calendar text color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-calendar-text-color-dark
 
@@ -103,7 +103,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
 | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-text-color](#mbx-calendar-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#mbx-text-color-dark)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Calendar text color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-calendar-selected-background
 
@@ -113,7 +113,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-calendar-selected-background-light` and `--mbx-calendar-selected-background-dark`<br><br>
 
 ### --mbx-calendar-selected-background-light
 
@@ -123,7 +123,7 @@ Fallback value for `and`<br><br>
 | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-selected-background](#mbx-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-dark](#mbx-calendar-background-dark)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Calendar selected cell background when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-calendar-selected-background-dark
 
@@ -133,7 +133,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
 | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-selected-background](#mbx-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-light](#mbx-calendar-background-light)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Calendar selected cell background when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-calendar-selected-text-color
 
@@ -143,7 +143,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-calendar-selected-text-color-light` and `--mbx-calendar-selected-text-color-dark`<br><br>
 
 ### --mbx-calendar-selected-text-color-light
 
@@ -153,7 +153,7 @@ Fallback value for `and`<br><br>
 | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-selected-text-color](#mbx-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-dark](#mbx-calendar-text-color-dark)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Calendar selected cell text color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-calendar-selected-text-color-dark
 
@@ -163,7 +163,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
 | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-selected-text-color](#mbx-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-light](#mbx-calendar-text-color-light)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Calendar selected cell text color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-calendar-background-hover
 
@@ -173,7 +173,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-calendar-background-hover-light` and `--mbx-calendar-background-hover-dark`<br><br>
 
 ### --mbx-calendar-background-hover-light
 
@@ -183,7 +183,7 @@ Fallback value for `and`<br><br>
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-background-hover](#mbx-calendar-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-background-light](#mbx-calendar-selected-background-light)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
+Calendar background when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
 
 ### --mbx-calendar-background-hover-dark
 
@@ -193,7 +193,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'ho
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-background-hover](#mbx-calendar-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-background-dark](#mbx-calendar-selected-background-dark)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
+Calendar background when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
 
 ### --mbx-calendar-text-color-hover
 
@@ -203,7 +203,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hov
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-calendar-text-color-hover-light` and `--mbx-calendar-text-color-hover-dark`<br><br>
 
 ### --mbx-calendar-text-color-hover-light
 
@@ -213,7 +213,7 @@ Fallback value for `and`<br><br>
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-text-color-hover](#mbx-calendar-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-color-light](#mbx-calendar-selected-text-color-light)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
+Calendar text color when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
 
 ### --mbx-calendar-text-color-hover-dark
 
@@ -223,7 +223,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'ho
 | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-text-color-hover](#mbx-calendar-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-color-dark](#mbx-calendar-selected-text-color-dark)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
+Calendar text color when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
 
 ### --mbx-calendar-arrow
 
@@ -233,7 +233,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hov
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-calendar-arrow-light` and `--mbx-calendar-arrow-dark`<br><br>
 
 ### --mbx-calendar-arrow-light
 
@@ -243,7 +243,7 @@ Fallback value for `and`<br><br>
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-arrow](#mbx-calendar-arrow)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-light](#mbx-calendar-text-color-light)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Calendar arrow color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-calendar-arrow-dark
 
@@ -253,7 +253,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
 | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-arrow](#mbx-calendar-arrow)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-dark](#mbx-calendar-text-color-dark)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Calendar arrow color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-calendar-arrow-hover
 
@@ -263,7 +263,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-calendar-arrow-hover-light` and `--mbx-calendar-arrow-hover-dark`<br><br>
 
 ### --mbx-calendar-arrow-hover-light
 
@@ -273,7 +273,7 @@ Fallback value for `and`<br><br>
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-arrow-hover](#mbx-calendar-arrow-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#mbx-text-color-light)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
+Calendar arrow color when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
 
 ### --mbx-calendar-arrow-hover-dark
 
@@ -283,7 +283,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off', on 'ho
 | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-arrow-hover](#mbx-calendar-arrow-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#mbx-text-color-dark)</div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
+Calendar arrow color when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
 
 ### --mbx-calendar-today-color
 
@@ -293,7 +293,7 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on', on 'hov
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Fallback value for `--mbx-calendar-today-color-light` and `--mbx-calendar-today-color-dark`<br><br>
 
 ### --mbx-calendar-today-color-light
 
@@ -303,7 +303,7 @@ Fallback value for `and`<br><br>
 | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-today-color](#mbx-calendar-today-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Calendar today color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-calendar-today-color-dark
 
@@ -313,4 +313,4 @@ Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `off'<br><br>
 | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[mbx-calendar-today-color](#mbx-calendar-today-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
-Calendar ATTRIBUTE when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Calendar today color when [dark](../../global/props.md#dark) mode is `on'<br><br>

@@ -1,1 +1,12 @@
-{}
+{
+  "onClose": {
+    "type": "() => void",
+    "default": "() => {}",
+    "description": "callback triggered when DatePicker is closed"
+  },
+  "onChange": {
+    "type": "(newValue: number) => void",
+    "default": "() => {}",
+    "description": "Callback triggered when DatePicker component input value is changed by the user"
+  }
+}
