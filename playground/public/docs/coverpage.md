@@ -4,7 +4,7 @@
 
 -   Easy to integrate into every app
 -   Highly customizable
--   Few dependencies
+-   No dependencies
 -   Dark mode support
 -   Standard shared props across every component
 
