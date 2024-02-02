@@ -213,7 +213,7 @@ render(
       }
     />
   </Container>,
-  document.getElementById("root")
+  document.getElementById("root"),
 );
 ```
 

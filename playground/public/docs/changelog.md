@@ -2,6 +2,8 @@
 
 ## Versions
 
+- [3.0.0](#300)
+- [2.1.0](#210)
 - [2.0.0](#200)
 - [1.2.0](#120)
 - [1.1.0](#110)
@@ -12,6 +14,22 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.0.0
+
+- No more external dependencies
+- Totally re-designed css variables system, to fully customize every component at once
+- Docs and comments generator
+- Global refactoring and hige clean-up
+
+<br>
+
+### 2.1.0
+
+- `TabViewer` component
+- Minor fixes
 
 <br>
 

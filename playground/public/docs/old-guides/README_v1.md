@@ -10,6 +10,22 @@ React components for every app, easy to use and customize
 
 <br>
 
+## Summary
+
+- [MoBrix-ui philosophy](#mobrix-ui-components-philosophy)
+- [Components building process](#components-building-process)
+  - [Shared components properties](#shared-components-properties)
+  - [Customizable UI](#customizable-ui)
+  - [Box components](#box-components)
+- [Getting started](#getting-started)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Tests](#tests)
+- [Authors](#authors)
+- [License](#license)
+
+<br>
+
 ---
 
 ## mobrix-ui philosophy
@@ -114,7 +130,7 @@ render(
       }
     />
   </Container>,
-  document.getElementById("root")
+  document.getElementById("root"),
 );
 ```
 
