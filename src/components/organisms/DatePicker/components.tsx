@@ -101,6 +101,7 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
       }}
     >
       <Calendar
+        shadow={false}
         days={customDays}
         months={customMonths}
         startMonth={startMonth}
