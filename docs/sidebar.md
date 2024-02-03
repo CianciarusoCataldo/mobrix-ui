@@ -1,9 +1,0 @@
--   [Documentation](guide "MoBrix-ui - documentation")
--   [Changelog](v1_guide "MoBrix-ui - v1 documentation")
--   [Changelog](changelog "MoBrix-ui - changelog")
--   **Links**
--   [Github](https://github.com/cianciarusocataldo/mobrix-ui)
--   [NPM](https://www.npmjs.com/package/mobrix-ui)
--   **MoBrix ecosystem**
--   [MoBrix-designer](https://github.com/cianciarusocataldo/mobrix-designer)
--   [MoBrix-engine](https://github.com/cianciarusocataldo/mobrix-engine)
