@@ -102,15 +102,15 @@ try {
 Object.keys(cssVars).forEach((cssvar, index) => {
   inputTable = inputTable.replace(
     "PROP_NAME_" + index,
-    `[${cssvar}](#${cssvar.replace("--", "")})`
+    `[${cssvar}](#${cssvar})`
   );
   externalTable = externalTable.replace(
     "PROP_NAME_EXTERNAL_" + index,
-    `[${cssvar}](../${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${cssvar.replace("--", "")})`
+    `[${cssvar}](../${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${cssvar})`
   );
   globalTable = globalTable.replace(
     "PROP_NAME_GLOBAL_" + index,
-    `[${cssvar}](${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${cssvar.replace("--", "")})`
+    `[${cssvar}](${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${cssvar})`
   );
 
   let internalFallBack = "/";
@@ -118,7 +118,7 @@ Object.keys(cssVars).forEach((cssvar, index) => {
   let globalFallback = "/";
 
   if (cssVars[cssvar].fallback) {
-    const fallback = cssVars[cssvar].fallback.replace("--", "");
+    const fallback = cssVars[cssvar].fallback;
     internalFallBack = `[${fallback}](#${fallback})`;
     externalFallBack = `[${fallback}](${COMPONENT_NAME_TO_PARSE}/css-vars.md#${fallback})`;
     globalFallback = `[${fallback}](${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${fallback})`;
@@ -138,14 +138,14 @@ Object.keys(cssVars).forEach((cssvar, index) => {
 
   if (cssVars[cssvar].defaultInternal) {
     const defaultInternal = cssVars[cssvar].defaultInternal;
-    internalDefault = `[${defaultInternal}](#${defaultInternal.replace("--", "")})`;
-    externalDefault = `[${defaultInternal}](${COMPONENT_NAME_TO_PARSE}/css-vars.md#${defaultInternal.replace("--", "")})`;
-    globalDefault = `[${defaultInternal}](${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${defaultInternal.replace("--", "")})`;
+    internalDefault = `[${defaultInternal}](#${defaultInternal})`;
+    externalDefault = `[${defaultInternal}](${COMPONENT_NAME_TO_PARSE}/css-vars.md#${defaultInternal})`;
+    globalDefault = `[${defaultInternal}](${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${defaultInternal})`;
   } else if (cssVars[cssvar].defaultGlobal) {
     const defaultGlobal = cssVars[cssvar].defaultGlobal;
-    internalDefault = `[${defaultGlobal}](../../global/css-vars.md#${defaultGlobal.replace("--", "")})`;
-    externalDefault = `[${defaultGlobal}](../global/css-vars.md#${defaultGlobal.replace("--", "")})`;
-    globalDefault = `[${defaultGlobal}](global/css-vars.md#${defaultGlobal.replace("--", "")})`;
+    internalDefault = `[${defaultGlobal}](../../global/css-vars.md#${defaultGlobal})`;
+    externalDefault = `[${defaultGlobal}](../global/css-vars.md#${defaultGlobal})`;
+    globalDefault = `[${defaultGlobal}](global/css-vars.md#${defaultGlobal})`;
   } else if (cssVars[cssvar].defaultColor) {
     const defaultColor =
       "<div><div style='text-align:center;margin-auto;'>" +

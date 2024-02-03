@@ -11,26 +11,26 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Prop</div>                                                                            | <div style='text-align:center;margin:auto;'>Fallback</div>                                                          | <div style='text-align:center;margin:auto;'>Default</div>                                                                             |
-| --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#mbx-dropdown-background)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                   |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-light](#mbx-dropdown-background-light)</div>               | <div style='text-align:center;margin:auto;'>[mbx-dropdown-background](#mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-dark](#mbx-dropdown-background-dark)</div>                 | <div style='text-align:center;margin:auto;'>[mbx-dropdown-background](#mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#mbx-background-dark)</div>               |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#mbx-dropdown-text-color)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                   |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-light](#mbx-dropdown-text-color-light)</div>               | <div style='text-align:center;margin:auto;'>[mbx-dropdown-text-color](#mbx-dropdown-text-color)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#mbx-text-color-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-dark](#mbx-dropdown-text-color-dark)</div>                 | <div style='text-align:center;margin:auto;'>[mbx-dropdown-text-color](#mbx-dropdown-text-color)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#mbx-text-color-dark)</div>               |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#mbx-dropdown-background-hover)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                   |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover-light](#mbx-dropdown-background-hover-light)</div>   | <div style='text-align:center;margin:auto;'>[mbx-dropdown-background](#mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](../../global/css-vars.md#mbx-background-hover-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover-dark](#mbx-dropdown-background-hover-dark)</div>     | <div style='text-align:center;margin:auto;'>[mbx-dropdown-background](#mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](../../global/css-vars.md#mbx-background-hover-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-hover](#mbx-dropdown-text-color-hover)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                   |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-hover-light](#mbx-dropdown-text-color-hover-light)</div>   | <div style='text-align:center;margin:auto;'>[mbx-dropdown-background-hover](#mbx-dropdown-background-hover)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](../../global/css-vars.md#mbx-text-color-hover-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-hover-dark](#mbx-dropdown-text-color-hover-dark)</div>     | <div style='text-align:center;margin:auto;'>[mbx-dropdown-background-hover](#mbx-dropdown-background-hover)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](../../global/css-vars.md#mbx-text-color-hover-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#mbx-dropdown-arrow-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                   |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-light](#mbx-dropdown-arrow-color-light)</div>             | <div style='text-align:center;margin:auto;'>[mbx-dropdown-arrow-color](#mbx-dropdown-arrow-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-light](#mbx-dropdown-text-color-light)</div>                   |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-dark](#mbx-dropdown-arrow-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[mbx-dropdown-arrow-color](#mbx-dropdown-arrow-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-dark](#mbx-dropdown-text-color-dark)</div>                     |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#mbx-dropdown-arrow-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                   |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover-light](#mbx-dropdown-arrow-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-dropdown-arrow-color-hover](#mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-light](#mbx-dropdown-arrow-color-light)</div>                 |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover-dark](#mbx-dropdown-arrow-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-dropdown-arrow-color-hover](#mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-dark](#mbx-dropdown-arrow-color-dark)</div>                   |
+| <div style='text-align:center;margin:auto;'>Prop</div>                                                                              | <div style='text-align:center;margin:auto;'>Fallback</div>                                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                                               |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-light](#--mbx-dropdown-background-light)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#--mbx-background-light)</div>             |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-dark](#--mbx-dropdown-background-dark)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#--mbx-background-dark)</div>               |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#--mbx-dropdown-text-color)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-light](#--mbx-dropdown-text-color-light)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#--mbx-dropdown-text-color)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#--mbx-text-color-light)</div>             |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-dark](#--mbx-dropdown-text-color-dark)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#--mbx-dropdown-text-color)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#--mbx-text-color-dark)</div>               |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#--mbx-dropdown-background-hover)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover-light](#--mbx-dropdown-background-hover-light)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](../../global/css-vars.md#--mbx-background-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover-dark](#--mbx-dropdown-background-hover-dark)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](../../global/css-vars.md#--mbx-background-hover-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-hover](#--mbx-dropdown-text-color-hover)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-hover-light](#--mbx-dropdown-text-color-hover-light)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#--mbx-dropdown-background-hover)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](../../global/css-vars.md#--mbx-text-color-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-hover-dark](#--mbx-dropdown-text-color-hover-dark)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#--mbx-dropdown-background-hover)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](../../global/css-vars.md#--mbx-text-color-hover-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#--mbx-dropdown-arrow-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-light](#--mbx-dropdown-arrow-color-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#--mbx-dropdown-arrow-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-light](#--mbx-dropdown-text-color-light)</div>                   |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-dark](#--mbx-dropdown-arrow-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#--mbx-dropdown-arrow-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-dark](#--mbx-dropdown-text-color-dark)</div>                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#--mbx-dropdown-arrow-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover-light](#--mbx-dropdown-arrow-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#--mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-light](#--mbx-dropdown-arrow-color-light)</div>                 |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover-dark](#--mbx-dropdown-arrow-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#--mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-dark](#--mbx-dropdown-arrow-color-dark)</div>                   |
 
 ## CSS Variables list
 
@@ -50,9 +50,9 @@ Fallback value for `--mbx-dropdown-background-light` and `--mbx-dropdown-backgro
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-dropdown-background](#mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                   |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#--mbx-background-light)</div> |
 
 Dropdown background when dark mode is `off`<br><br>
 
@@ -60,9 +60,9 @@ Dropdown background when dark mode is `off`<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                               |
-| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-dropdown-background](#mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#mbx-background-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#--mbx-background-dark)</div> |
 
 Dropdown background when dark mode is `on`<br><br>
 
@@ -80,9 +80,9 @@ Fallback value for `--mbx-dropdown-text-color-light` and `--mbx-dropdown-text-co
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-dropdown-text-color](#mbx-dropdown-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                   |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#--mbx-dropdown-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#--mbx-text-color-light)</div> |
 
 Dropdown text color when dark mode is `off`<br><br>
 
@@ -90,9 +90,9 @@ Dropdown text color when dark mode is `off`<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                               |
-| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-dropdown-text-color](#mbx-dropdown-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#mbx-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#--mbx-dropdown-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#--mbx-text-color-dark)</div> |
 
 Dropdown text color when dark mode is `on`<br><br>
 
@@ -110,9 +110,9 @@ Fallback value for `--mbx-dropdown-background-hover-light` and `--mbx-dropdown-b
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                             |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-dropdown-background](#mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](../../global/css-vars.md#mbx-background-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                               |
+| --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](../../global/css-vars.md#--mbx-background-hover-light)</div> |
 
 Dropdown background when dark mode is `off`, on hover<br><br>
 
@@ -120,9 +120,9 @@ Dropdown background when dark mode is `off`, on hover<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                           |
-| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-dropdown-background](#mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](../../global/css-vars.md#mbx-background-hover-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                             |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](../../global/css-vars.md#--mbx-background-hover-dark)</div> |
 
 Dropdown background when dark mode is `on`, on hover<br><br>
 
@@ -140,9 +140,9 @@ Fallback value for `--mbx-dropdown-text-color-hover-light` and `--mbx-dropdown-t
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                             |
-| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-dropdown-background-hover](#mbx-dropdown-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](../../global/css-vars.md#mbx-text-color-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                               |
+| --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#--mbx-dropdown-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](../../global/css-vars.md#--mbx-text-color-hover-light)</div> |
 
 Dropdown text color when dark mode is `off`, on hover<br><br>
 
@@ -150,9 +150,9 @@ Dropdown text color when dark mode is `off`, on hover<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                           |
-| ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-dropdown-background-hover](#mbx-dropdown-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](../../global/css-vars.md#mbx-text-color-hover-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                             |
+| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#--mbx-dropdown-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](../../global/css-vars.md#--mbx-text-color-hover-dark)</div> |
 
 Dropdown text color when dark mode is `on`, on hover<br><br>
 
@@ -170,9 +170,9 @@ Fallback value for `--mbx-dropdown-arrow-color-light` and `--mbx-dropdown-arrow-
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                           |
-| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-dropdown-arrow-color](#mbx-dropdown-arrow-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-light](#mbx-dropdown-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                             |
+| ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#--mbx-dropdown-arrow-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-light](#--mbx-dropdown-text-color-light)</div> |
 
 Dropdown arrow color when dark mode is `off`<br><br>
 
@@ -180,9 +180,9 @@ Dropdown arrow color when dark mode is `off`<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                         |
-| ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-dropdown-arrow-color](#mbx-dropdown-arrow-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-dark](#mbx-dropdown-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                           |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#--mbx-dropdown-arrow-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-dark](#--mbx-dropdown-text-color-dark)</div> |
 
 Dropdown arrow color when dark mode is `on`<br><br>
 
@@ -200,9 +200,9 @@ Fallback value for `--mbx-dropdown-arrow-color-hover-light` and `--mbx-dropdown-
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                          | <div style='text-align:center;margin:auto;'>Default</div>                                                             |
-| ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-dropdown-arrow-color-hover](#mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-light](#mbx-dropdown-arrow-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                               |
+| ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#--mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-light](#--mbx-dropdown-arrow-color-light)</div> |
 
 Dropdown arrow color when dark mode is `off`, on hover<br><br>
 
@@ -210,8 +210,8 @@ Dropdown arrow color when dark mode is `off`, on hover<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                          | <div style='text-align:center;margin:auto;'>Default</div>                                                           |
-| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-dropdown-arrow-color-hover](#mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-dark](#mbx-dropdown-arrow-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                             |
+| ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#--mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-dark](#--mbx-dropdown-arrow-color-dark)</div> |
 
 Dropdown arrow color when dark mode is `on`, on hover<br><br>

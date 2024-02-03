@@ -11,17 +11,17 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Prop</div>                                                                        | <div style='text-align:center;margin:auto;'>Fallback</div>                                                      | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
-| ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-slider-background](#mbx-slider-background)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                       |
-| <div style='text-align:center;margin:auto;'>[--mbx-slider-background-light](#mbx-slider-background-light)</div>               | <div style='text-align:center;margin:auto;'>[mbx-slider-background](#mbx-slider-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-slider-background-dark](#mbx-slider-background-dark)</div>                 | <div style='text-align:center;margin:auto;'>[mbx-slider-background](#mbx-slider-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#mbx-background-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color](#mbx-slider-thumb-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                       |
-| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-light](#mbx-slider-thumb-color-light)</div>             | <div style='text-align:center;margin:auto;'>[mbx-slider-thumb-color](#mbx-slider-thumb-color)</div>             | <div style='text-align:center;margin:auto;'>radial-gradient(#2d3748, #1d232e)</div>                                       |
-| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-dark](#mbx-slider-thumb-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[mbx-slider-thumb-color](#mbx-slider-thumb-color)</div>             | <div style='text-align:center;margin:auto;'>radial-gradient(#e3e4e9, #9b9999)</div>                                       |
-| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-hover](#mbx-slider-thumb-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                       |
-| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-hover-light](#mbx-slider-thumb-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-slider-thumb-color-hover](#mbx-slider-thumb-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-light](#mbx-slider-thumb-color-light)</div>         |
-| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-hover-dark](#mbx-slider-thumb-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-slider-thumb-color-hover](#mbx-slider-thumb-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-dark](#mbx-slider-thumb-color-dark)</div>           |
+| <div style='text-align:center;margin:auto;'>Prop</div>                                                                          | <div style='text-align:center;margin:auto;'>Fallback</div>                                                          | <div style='text-align:center;margin:auto;'>Default</div>                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-background](#--mbx-slider-background)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-background-light](#--mbx-slider-background-light)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-slider-background](#--mbx-slider-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#--mbx-background-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-background-dark](#--mbx-slider-background-dark)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-slider-background](#--mbx-slider-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#--mbx-background-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color](#--mbx-slider-thumb-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-light](#--mbx-slider-thumb-color-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color](#--mbx-slider-thumb-color)</div>             | <div style='text-align:center;margin:auto;'>radial-gradient(#2d3748, #1d232e)</div>                                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-dark](#--mbx-slider-thumb-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color](#--mbx-slider-thumb-color)</div>             | <div style='text-align:center;margin:auto;'>radial-gradient(#e3e4e9, #9b9999)</div>                                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-hover](#--mbx-slider-thumb-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-hover-light](#--mbx-slider-thumb-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-hover](#--mbx-slider-thumb-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-light](#--mbx-slider-thumb-color-light)</div>         |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-hover-dark](#--mbx-slider-thumb-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-hover](#--mbx-slider-thumb-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-dark](#--mbx-slider-thumb-color-dark)</div>           |
 
 ## CSS Variables list
 
@@ -41,9 +41,9 @@ Fallback value for `mbx-slider-background-light` and `mbx-slider-background-dark
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
-| ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-slider-background](#mbx-slider-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                   |
+| ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-background](#--mbx-slider-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#--mbx-background-light)</div> |
 
 Slider background when dark mode is off<br><br>
 
@@ -51,9 +51,9 @@ Slider background when dark mode is off<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                               |
-| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-slider-background](#mbx-slider-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#mbx-background-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-background](#--mbx-slider-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#--mbx-background-dark)</div> |
 
 Slider background when dark mode is on<br><br>
 
@@ -71,9 +71,9 @@ Fallback value for `mbx-slider-thumb-color-light` and `mbx-slider-thumb-color-da
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                          | <div style='text-align:center;margin:auto;'>Default</div>                           |
-| --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-slider-thumb-color](#mbx-slider-thumb-color)</div> | <div style='text-align:center;margin:auto;'>radial-gradient(#2d3748, #1d232e)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                              | <div style='text-align:center;margin:auto;'>Default</div>                           |
+| ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color](#--mbx-slider-thumb-color)</div> | <div style='text-align:center;margin:auto;'>radial-gradient(#2d3748, #1d232e)</div> |
 
 Slider thumb color when dark mode is off<br><br>
 
@@ -81,9 +81,9 @@ Slider thumb color when dark mode is off<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                          | <div style='text-align:center;margin:auto;'>Default</div>                           |
-| --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-slider-thumb-color](#mbx-slider-thumb-color)</div> | <div style='text-align:center;margin:auto;'>radial-gradient(#e3e4e9, #9b9999)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                              | <div style='text-align:center;margin:auto;'>Default</div>                           |
+| ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color](#--mbx-slider-thumb-color)</div> | <div style='text-align:center;margin:auto;'>radial-gradient(#e3e4e9, #9b9999)</div> |
 
 Slider thumb color when dark mode is on<br><br>
 
@@ -101,9 +101,9 @@ Fallback value for `mbx-slider-thumb-color-hover-light` and `mbx-slider-thumb-co
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                      | <div style='text-align:center;margin:auto;'>Default</div>                                                         |
-| --------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-slider-thumb-color-hover](#mbx-slider-thumb-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-light](#mbx-slider-thumb-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                          | <div style='text-align:center;margin:auto;'>Default</div>                                                           |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-hover](#--mbx-slider-thumb-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-light](#--mbx-slider-thumb-color-light)</div> |
 
 Slider thumb color when dark mode is off, on hover<br><br>
 
@@ -111,8 +111,8 @@ Slider thumb color when dark mode is off, on hover<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                      | <div style='text-align:center;margin:auto;'>Default</div>                                                       |
-| --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-slider-thumb-color-hover](#mbx-slider-thumb-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-dark](#mbx-slider-thumb-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                          | <div style='text-align:center;margin:auto;'>Default</div>                                                         |
+| ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-hover](#--mbx-slider-thumb-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-slider-thumb-color-dark](#--mbx-slider-thumb-color-dark)</div> |
 
 Slider thumb color when dark mode is on, on hover<br><br>

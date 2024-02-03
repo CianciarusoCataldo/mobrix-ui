@@ -14,7 +14,7 @@
     "url": "git+https://github.com/CianciarusoCataldo/mobrix-ui.git"
   },
   "engines": {
-    "node": ">=16.14.0"
+    "node": ">=18.X.0"
   },
   "keywords": [
     "ui",

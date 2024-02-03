@@ -1,9 +1,10 @@
 #!/bin/sh
 
-PUBLISHED_DOCS_DIR="playground/public/docs"
 rm -rf README.md
-rm -rf playground/public/docs/changelog.md
-rm -rf playground/public/docs/guide.md
+rm -rf docs/index.md
+rm -rf docs/changelog.md
+rm -rf playground/public/docs
+mkdir playground/public/docs
 
 touch README.md
 touch README_PUBLISHED.md
@@ -33,13 +34,12 @@ echo -n "\n\n<br>\n\n" >>README_PUBLISHED.md
 cat docs-gen/readme/chapters/footer.md >>README.md
 cat docs-gen/readme/chapters/footer.md >>README_PUBLISHED.md
 
-rm -rf "$PUBLISHED_DOCS_DIR"/components/
-rm -rf "$PUBLISHED_DOCS_DIR"/old_guides/
-rm -rf "$PUBLISHED_DOCS_DIR"/guide.md
+cp -a README_PUBLISHED.md docs/index.md
+cp -a CHANGELOG.md docs/changelog.md
 
-cp -a README_PUBLISHED.md "$PUBLISHED_DOCS_DIR"/guide.md
-cp -a CHANGELOG.md "$PUBLISHED_DOCS_DIR"/changelog.md
-
-cp -a docs/. "$PUBLISHED_DOCS_DIR"/
+python3 -m mkdocs build -d playground/public/docs
 
 rm -rf README_PUBLISHED.md
+rm -rf docs/index.md
+rm -rf docs/changelog.md
+

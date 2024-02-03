@@ -11,14 +11,14 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Prop</div>                                                                | <div style='text-align:center;margin:auto;'>Fallback</div>                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
-| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-container-background](#mbx-container-background)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                       |
-| <div style='text-align:center;margin:auto;'>[--mbx-container-background-light](#mbx-container-background-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-container-background](#mbx-container-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-container-background-dark](#mbx-container-background-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-container-background](#mbx-container-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#mbx-background-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-container-text-color](#mbx-container-text-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                       |
-| <div style='text-align:center;margin:auto;'>[--mbx-container-text-color-light](#mbx-container-text-color-light)</div> | <div style='text-align:center;margin:auto;'>[mbx-container-text-color](#mbx-container-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#mbx-text-color-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-container-text-color-dark](#mbx-container-text-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[mbx-container-text-color](#mbx-container-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#mbx-text-color-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>Prop</div>                                                                  | <div style='text-align:center;margin:auto;'>Fallback</div>                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                   |
+| ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-container-background](#--mbx-container-background)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                         | <div style='text-align:center;margin:auto;'>/</div>                                                                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-container-background-light](#--mbx-container-background-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-container-background](#--mbx-container-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#--mbx-background-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-container-background-dark](#--mbx-container-background-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-container-background](#--mbx-container-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#--mbx-background-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-container-text-color](#--mbx-container-text-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                         | <div style='text-align:center;margin:auto;'>/</div>                                                                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-container-text-color-light](#--mbx-container-text-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-container-text-color](#--mbx-container-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#--mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-container-text-color-dark](#--mbx-container-text-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-container-text-color](#--mbx-container-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#--mbx-text-color-dark)</div>   |
 
 ## CSS Variables list
 
@@ -38,9 +38,9 @@ Fallback value for `--mbx-container-background-light` and `--mbx-container-backg
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
-| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-container-background](#mbx-container-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#mbx-background-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                   |
+| ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-container-background](#--mbx-container-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#--mbx-background-light)</div> |
 
 Container background when dark mode is `off`<br><br>
 
@@ -48,9 +48,9 @@ Container background when dark mode is `off`<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                               |
-| ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-container-background](#mbx-container-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#mbx-background-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-container-background](#--mbx-container-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#--mbx-background-dark)</div> |
 
 Container background when dark mode is `on`<br><br>
 
@@ -68,9 +68,9 @@ Fallback value for `--mbx-container-text-color-light` and `--mbx-container-text-
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
-| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-container-text-color](#mbx-container-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                   |
+| ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-container-text-color](#--mbx-container-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#--mbx-text-color-light)</div> |
 
 Container text color when dark mode is `off`<br><br>
 
@@ -78,8 +78,8 @@ Container text color when dark mode is `off`<br><br>
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                               |
-| ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[mbx-container-text-color](#mbx-container-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#mbx-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-container-text-color](#--mbx-container-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#--mbx-text-color-dark)</div> |
 
 Container text color when dark mode is `on`<br><br>
