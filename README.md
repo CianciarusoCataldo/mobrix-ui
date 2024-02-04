@@ -112,6 +112,10 @@ Some properties are shared between all components, for a smoother dev experience
 
 <br>
 
+Check out the [complete properties list](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/props/) for more details
+
+<br>
+
 ### CSS variables
 
 <br>

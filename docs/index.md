@@ -82,7 +82,9 @@ Some properties are shared between all components, for a smoother dev experience
 | <div style='text-align:center;margin:auto;'>[hover](components/global/props.md#hover)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
 | <div style='text-align:center;margin:auto;'>[disabled](components/global/props.md#disabled)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[additionalProps](components/global/props.md#additionalprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+<br>
 
+Check out the [complete properties variables](components/props.md) list for more details
 
 <br>
 

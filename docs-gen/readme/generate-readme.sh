@@ -24,11 +24,19 @@ cat docs-gen/readme/chapters/building-process-heading.md >>README_PUBLISHED.md
 
 cat docs-gen/readme/chapters/building-process-shared-props.md >>README.md
 cat docs-gen/readme/chapters/published/building-process-shared-props.md >>README_PUBLISHED.md
+
+cat docs-gen/readme/chapters/building-process-shared-props-footer.md >>README.md
+cat docs-gen/readme/chapters/published/building-process-shared-props-footer.md >>README_PUBLISHED.md
+
 echo -n "\n\n<br>\n\n" >>README.md
 echo -n "\n\n<br>\n\n" >>README_PUBLISHED.md
 
 cat docs-gen/readme/chapters/building-process-css-global-vars.md >>README.md
 cat docs-gen/readme/chapters/published/building-process-css-global-vars.md >>README_PUBLISHED.md
+
+cat docs-gen/readme/chapters/building-process-css-global-vars-footer.md >>README.md
+cat docs-gen/readme/chapters/published/building-process-css-global-vars-footer.md >>README_PUBLISHED.md
+
 echo -n "\n\n<br>\n\n" >>README.md
 echo -n "\n\n<br>\n\n" >>README_PUBLISHED.md
 
