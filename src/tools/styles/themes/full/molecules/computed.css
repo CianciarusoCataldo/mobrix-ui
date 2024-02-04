@@ -1,0 +1,32 @@
+[data-mbx-id] {
+  /** RadioButtonGroup **/
+  --mbx-c-radg-rad-bg-l: var(
+    --mbx-radiogroup-radio-background-light,
+    var(--mbx-radiogroup-radio-background)
+  );
+
+  --mbx-c-radg-rad-bg-d: var(
+    --mbx-radiogroup-radio-background-dark,
+    var(--mbx-radiogroup-radio-background)
+  );
+
+  --mbx-c-radg-rad-bg-h-l: var(
+    --mbx-radiogroup-radio-background-hover-light,
+    var(--mbx-radiogroup-radio-background-hover)
+  );
+
+  --mbx-c-radg-rad-bg-h-d: var(
+    --mbx-radiogroup-radio-background-hover-dark,
+    var(--mbx-radiogroup-radio-background-hover)
+  );
+
+  --mbx-c-radg-rad-ic-bg-l: var(
+    --mbx-radiogroup-radio-icon-background-light,
+    var(--mbx-radiogroup-radio-icon-background)
+  );
+
+  --mbx-c-radg-rad-ic-bg-d: var(
+    --mbx-radiogroup-radio-icon-background-dark,
+    var(--mbx-radiogroup-radio-icon-background)
+  );
+}

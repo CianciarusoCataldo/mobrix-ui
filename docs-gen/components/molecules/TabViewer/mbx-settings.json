@@ -1,0 +1,14 @@
+{
+  "since": "2.1.0",
+  "description": "A Tab viewer component, to organize elements with tabs and show them on demand",
+  "see": [],
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithCallback": {
+        "type": "number",
+        "overrideDescription": "Callback triggered when a tab is selected, giving its index as parameter"
+      }
+    }
+  }
+}

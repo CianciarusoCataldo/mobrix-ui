@@ -1,0 +1,14 @@
+{
+  "since": "1.0.0",
+  "description": "",
+  "see": [],
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithCallback": {
+        "type": "number",
+        "overrideDescription": "callback triggered when user select a vote"
+      }
+    }
+  }
+}

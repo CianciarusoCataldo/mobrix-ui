@@ -1,0 +1,36 @@
+{
+  "value": { "description": "FormField input content" },
+  "type": {
+    "default": "'text'",
+    "description": "The field type. It determines the UI component to be used to render it. Allowed types are:\n- `boolean` (rendered as a CheckBox)\n- `numeric` (rendered as a Counter)\n- `text` (rendered as a Input)\n- `radio` (rendered as a RadioButton)\n- `checkbox` (rendered as a CheckBox)\n- `toggle` (rendered as a Toggle)\n- `rater` (rendered as a Rater)\n- `slider` (rendered as a Slider)\n- `input` (rendered as a Input)\n- `counter` (rendered as a Counter)",
+    "typeOld": "`boolean` &#124; `text` &#124; `numeric` &#124; `radio` &#124; `checkbox` &#124; `toggle` &#124; `rater` &#124; `slider` &#124; `input` &#124; `counter`",
+    "type": "'boolean' | 'text' | 'numeric' | 'radio' | 'checkbox' | 'toggle' | 'rater' | 'slider' | 'input' | 'counter'"
+  },
+  "placeholder": { "type": "string", "description": "" },
+  "required": {
+    "type": "boolean",
+    "default": false,
+    "description": "If true, the field switch to error state if its value is empty"
+  },
+  "validate": {
+    "default": "() => ˚{}",
+    "type": "(fieldValue: any) => boolean",
+    "description": "Custom validation function called on submit"
+  },
+  "header": {
+    "description": "Form field header",
+    "type": "`JSX.Element` | `string`"
+  },
+  "headerClassName": {
+    "description": "Custom classname applied on every header element",
+    "type": "string"
+  },
+  "headerProps": {
+    "description": "Custom props applied on every header element (including MoBrix-ui shared props)",
+    "type": "Record<string, any>"
+  },
+  "errorLabel": {
+    "description": "Custom error box content, displayed when FormField is in error state",
+    "type": "`JSX.Element` | `string`"
+  }
+}

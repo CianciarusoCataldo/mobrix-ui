@@ -1,0 +1,56 @@
+[data-mbx-id="drawer"][data-mbx-drawer-location^="bottom"] {
+  top: auto;
+  bottom: 0;
+  --mbx-drawer-animation-in: slideBottom 0.3s forwards;
+  --mbx-drawer-animation-out: slideOutBottom 0.3s forwards;
+  flex-direction: column;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location^="top"] {
+  bottom: auto;
+  top: 0;
+  --mbx-drawer-animation-in: slideTop 0.3s forwards;
+  --mbx-drawer-animation-out: slideOutTop 0.3s forwards;
+  flex-direction: column-reverse;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location^="top"],
+[data-mbx-id="drawer"][data-mbx-drawer-location^="bottom"] {
+  height: 95%;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location="top"],
+[data-mbx-id="drawer"][data-mbx-drawer-location="bottom"] {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location="left"],
+[data-mbx-id="drawer"][data-mbx-drawer-location="right"] {
+  top: 0;
+  bottom: 0;
+  height: 100%;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location="left"] {
+  --mbx-drawer-animation-in: slideLeft 0.3s forwards;
+  --mbx-drawer-animation-out: slideOutLeft 0.3s forwards;
+  flex-direction: row-reverse;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location="right"] {
+  --mbx-drawer-animation-in: slideRight 0.3s forwards;
+  --mbx-drawer-animation-out: slideOutRight 0.3s forwards;
+  flex-direction: row;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location*="left"] {
+  right: auto;
+  left: 0;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location*="right"] {
+  left: auto;
+  right: 0;
+}

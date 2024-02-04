@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { BuilderComponent, Container } from "mobrix-ui-preview";
-
+import React from "react";
+import ScrollToTop from "../ScrollToTop";
 const AppPage = ({
   className,
   children,
@@ -9,9 +10,11 @@ const AppPage = ({
   children: BuilderComponent | BuilderComponent[];
 }) => {
   return (
-    <Container animated unstyled className={classNames("m-2", className)}>
-      {children}
-    </Container>
+    <ScrollToTop>
+      <Container animated unstyled className={classNames("m-2", className)}>
+        {children}
+      </Container>
+    </ScrollToTop>
   );
 };
 

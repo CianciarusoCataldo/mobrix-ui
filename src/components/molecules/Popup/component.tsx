@@ -9,6 +9,10 @@ import {
 const popupComponent: MoBrixUiComponent<PopupProps, BuilderComponent> = ({
   className,
   children,
-}) => <div className={"popup-content " + className}>{children}</div>;
+}) => (
+  <div data-mbx-class="popup-content" className={className}>
+    {children}
+  </div>
+);
 
 export default popupComponent;

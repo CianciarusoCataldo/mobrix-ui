@@ -1,0 +1,14 @@
+{
+  "since": "1.0.0",
+  "description": "A re-invented Table component. It follows a CSV-like format for its content.",
+  "see": [],
+  "examples": [],
+  "extend": {
+    "group": {
+      "ClickableComponentWithProps": {
+        "overrideDescription": "Callback triggered when a Table cell is clicked",
+        "type": "row: number, column: number"
+      }
+    }
+  }
+}

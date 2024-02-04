@@ -1,0 +1,74 @@
+{
+  "key": {
+    "description": "React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)",
+    "type": "string"
+  },
+
+  "className": {
+    "description": "custom className applied on main container",
+    "type": "string"
+  },
+
+  "dark": {
+    "description": "Enable/disable dark mode",
+    "default": false,
+    "type": "boolean"
+  },
+
+  "hide": {
+    "type": "boolean",
+    "description": "Hide/show component",
+    "default": false
+  },
+
+  "id": {
+    "type": "string",
+    "description": "[id parameter](https://www.w3schools.com/html/html_id.asp) (for styling/testing purpose, to easily find the component into the DOM)"
+  },
+
+  "shadow": {
+    "type": "boolean",
+    "description": "Enable/disable shadow behind component",
+    "default": true
+  },
+
+  "style": {
+    "description": "Css inline properties applied on main container",
+    "type": "CSSProperties"
+  },
+
+  "unstyled": {
+    "description": "If `true`, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons)",
+    "default": false,
+    "type": "boolean"
+  },
+
+  "animated": {
+    "description": "Enable/disable component animations",
+    "default": true,
+    "type": "boolean"
+  },
+
+  "background": {
+    "description": "Enable/disable component background",
+    "default": true,
+    "type": "boolean"
+  },
+
+  "hover": {
+    "default": true,
+    "description": "Enable/disable component hover standard styles",
+    "type": "boolean"
+  },
+
+  "disabled": {
+    "description": "If true, disable the component. The effect may vary depending on the component type",
+    "default": false,
+    "type": "boolean"
+  },
+
+  "additionalProps": {
+    "description": "Custom additional properties, applied to the component",
+    "type": "Record<string, any>"
+  }
+}

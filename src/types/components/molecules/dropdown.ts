@@ -1,33 +1,10 @@
 import {
+  BuilderComponent,
+  CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
-} from "../..";
-
-/**
- * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} generic Dropdown element
- *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Dropdown
- *
- * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
- *
- * @copyright 2023 Cataldo Cianciaruso
- */
-export type DropdownGenericElement = DropdownStandardElement | string;
-
-/**
- * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} standard Dropdown element
- *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Dropdown
- *
- * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
- *
- * @copyright 2023 Cataldo Cianciaruso
- */
-export type DropdownStandardElement = {
-  name: string | JSX.Element;
-  icon?: JSX.Element;
-};
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} Dropdown component props
@@ -40,11 +17,17 @@ export type DropdownStandardElement = {
  */
 export type DropdownProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {
-    /** Dropdown content elements */
-    content?: DropdownGenericElement[];
+    /** Dropdown elements */
+    elements?: BuilderComponent[];
 
     /** Show/hide arrow icon near selected element */
     hideArrow?: boolean;
+
+    /**  */
+    containerClassname?: string
+
+    /**  */
+    containerProps?: CommonProps
   };
 
 export type DropdownComponent = MoBrixUiComponent<DropdownProps>;

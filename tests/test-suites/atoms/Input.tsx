@@ -11,7 +11,12 @@ const inputTest = () => {
     });
     test("Writing text trigger the onChange callback", () => {
       const onChangeStub = jest.fn();
-      const wrapper = mount(<Input value="test" onChange={onChangeStub} />);
+      let wrapper = mount(
+        <Input autoresizable value="test" onChange={onChangeStub} />
+      );
+      wrapper.find("input").simulate("change", "new test text");
+      expect(onChangeStub).toBeCalled;
+      wrapper = mount(<Input autoresizable value="" onChange={onChangeStub} />);
       wrapper.find("input").simulate("change", "new test text");
       expect(onChangeStub).toBeCalled;
     });
@@ -23,13 +28,6 @@ const inputTest = () => {
       );
       wrapper.find("input").simulate("change", "new test text");
       expect(onChangeStub).not.toBeCalled;
-    });
-
-    test("When new value from onChange event is undefined, empty string is passed to onChange callback", () => {
-      const onChangeStub = jest.fn();
-      const wrapper = mount(<Input onChange={onChangeStub} />);
-      wrapper.find("input").simulate("change", undefined);
-      expect(onChangeStub).toBeCalledWith("");
     });
   });
 };

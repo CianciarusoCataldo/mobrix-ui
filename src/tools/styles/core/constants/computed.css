@@ -1,0 +1,73 @@
+@import url("default.css");
+
+[data-mbx-id] {
+  --mbx-c-fc-l: var(
+    --mbx-focus-color-light,
+    var(--mbx-focus-color, var(--mbx-d-fc-l))
+  );
+
+  --mbx-c-fc-d: var(
+    --mbx-focus-color-dark,
+    var(--mbx-focus-color, var(--mbx-d-fc-d))
+  );
+
+  --mbx-c-bg-l: var(
+    --mbx-background-light,
+    var(--mbx-background, var(--mbx-d-bg-l))
+  );
+
+  --mbx-c-bg-d: var(
+    --mbx-background-dark,
+    var(--mbx-background, var(--mbx-d-bg-d))
+  );
+
+  --mbx-c-txt-l: var(
+    --mbx-text-color-light,
+    var(--mbx-text-color, var(--mbx-d-txt-l))
+  );
+
+  --mbx-c-txt-d: var(
+    --mbx-text-color-dark,
+    var(--mbx-text-color, var(--mbx-d-txt-d))
+  );
+
+  --mbx-c-bgc-l: var(
+    --mbx-background-color-light,
+    var(--mbx-background-color, var(--mbx-d-bgc-l))
+  );
+
+  --mbx-c-bgc-d: var(
+    --mbx-background-color-dark,
+    var(--mbx-background-color, var(--mbx-d-bgc-d))
+  );
+
+  --mbx-c-txt-h-l: var(
+    --mbx-text-color-hover-light,
+    var(--mbx-text-color-hover, var(--mbx-d-txt-h-l))
+  );
+
+  --mbx-c-txt-h-d: var(
+    --mbx-text-color-hover-dark,
+    var(--mbx-text-color-hover, var(--mbx-d-txt-h-d))
+  );
+
+  --mbx-c-bgc-h-l: var(
+    --mbx-background-color-hover-light,
+    var(--mbx-background-color-hover, var(--mbx-d-bgc-h-l))
+  );
+
+  --mbx-c-bgc-h-d: var(
+    --mbx-background-color-hover-dark,
+    var(--mbx-background-color-hover, var(--mbx-d-bgc-h-d))
+  );
+
+  --mbx-c-bg-h-d: var(
+    --mbx-background-hover-dark,
+    var(--mbx-background-hover, var(--mbx-d-bg-h-d))
+  );
+
+  --mbx-c-bg-h-l: var(
+    --mbx-background-hover-light,
+    var(--mbx-background-hover, var(--mbx-d-bg-h-l))
+  );
+}

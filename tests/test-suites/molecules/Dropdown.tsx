@@ -8,13 +8,13 @@ const dropdownTest = () => {
       let wrapper = mount(
         <Dropdown
           onFocusLost={() => {}}
-          content={["Dropdown element 1", "Dropdown element 2"]}
+          elements={["Dropdown element 1", "Dropdown element 2"]}
           value={2}
         />
       );
-      wrapper.find('button[data-id="options_menu"]').simulate("click");
-      wrapper.find('button[data-id="dropdown_option_1"]').simulate("focus");
-      wrapper.find('button[data-id="dropdown_option_1"]').simulate("click");
+      wrapper.find('[data-mbx-class="button"]').simulate("click");
+      wrapper.find('[data-mbx-test="dropdown_option_1"]').simulate("focus");
+      wrapper.find('[data-mbx-test="dropdown_option_1"]').simulate("click");
       expect(wrapper);
       wrapper = mount(<Dropdown />);
       expect(wrapper);
@@ -25,19 +25,13 @@ const dropdownTest = () => {
       let wrapper = mount(
         <Dropdown
           onChange={onChangeStub}
-          content={[
-            { name: "Dropdown test element 1" },
-            {
-              name: "Dropdown test element 2",
-              icon: <div>icon</div>,
-            },
-          ]}
+          elements={["Dropdown element 1", "Dropdown element 2"]}
         />
       );
-      wrapper.find('button[data-id="options_menu"]').simulate("click");
-      wrapper.find('button[data-id="dropdown_option_1"]').simulate("focus");
+      wrapper.find('[data-mbx-class="button"]').simulate("click");
+      wrapper.find('[data-mbx-test="dropdown_option_1"]').simulate("focus");
 
-      wrapper.find('button[data-id="dropdown_option_1"]').simulate("click");
+      wrapper.find('[data-mbx-test="dropdown_option_1"]').simulate("click");
 
       expect(onChangeStub).lastCalledWith(1);
     });
@@ -48,40 +42,34 @@ const dropdownTest = () => {
         let wrapper = mount(
           <Dropdown
             onChange={onChangeStub}
-            content={[
-              { name: "Dropdown test element 1" },
-              {
-                name: "Dropdown test element 2",
-                icon: <div>icon</div>,
-              },
-            ]}
+            elements={["Dropdown element 1", "Dropdown element 2"]}
           />
         );
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "Enter" });
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "Enter" });
 
-        wrapper.find('div[id="mobrix-ui-dropdown"]').simulate("focus");
+        wrapper.find('[data-mbx-id="dropdown"]').simulate("focus");
 
         //Selecting an item
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "Enter" });
 
         expect(onChangeStub).lastCalledWith(1);
@@ -92,22 +80,16 @@ const dropdownTest = () => {
         let wrapper = mount(
           <Dropdown
             onChange={onChangeStub}
-            content={[
-              { name: "Dropdown test element 1" },
-              {
-                name: "Dropdown test element 2",
-                icon: <div>icon</div>,
-              },
-            ]}
+            elements={["Dropdown element 1", "Dropdown element 2"]}
           />
         );
 
-        wrapper.find('div[id="mobrix-ui-dropdown"]').simulate("focus");
+        wrapper.find('[data-mbx-id="dropdown"]').simulate("focus");
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "Enter" });
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "Escape" });
         expect(onChangeStub).not.toBeCalled;
       });
@@ -117,45 +99,39 @@ const dropdownTest = () => {
         let wrapper = mount(
           <Dropdown
             onChange={onChangeStub}
-            content={[
-              { name: "Dropdown test element 1" },
-              {
-                name: "Dropdown test element 2",
-                icon: <div>icon</div>,
-              },
-            ]}
+            elements={["Dropdown element 1", "Dropdown element 2"]}
           />
         );
 
-        wrapper.find('div[id="mobrix-ui-dropdown"]').simulate("focus");
+        wrapper.find('[data-mbx-id="dropdown"]').simulate("focus");
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "Enter" });
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "Escape" });
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowUp" });
 
         wrapper
-          .find('div[id="mobrix-ui-dropdown"]')
+          .find('[data-mbx-id="dropdown"]')
           .simulate("keyDown", { code: "ArrowUp" });
 
         expect(onChangeStub).not.toBeCalled;

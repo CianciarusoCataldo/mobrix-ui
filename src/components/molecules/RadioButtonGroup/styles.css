@@ -1,44 +1,90 @@
-#mobrix-ui-radio-button-group {
+[data-mbx-id="radio-button-group"] {
   display: flex;
   flex-direction: column;
+  padding: 0.3rem;
+  width: fit-content;
 }
 
-#mobrix-ui-radio-button-group .radio-group-element {
+[data-mbx-id="radio-button-group"][data-mbx-background="true"] {
+  background: var(--mbx-c-radg-bg);
+  color: var(--mbx-c-radg-txt);
+}
+
+[data-mbx-id="radio-button-group"][data-mbx-orientation="true"] {
+  flex-direction: row;
+}
+
+[data-mbx-id="radio-button-group"] [data-mbx-text-position] {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin-bottom: 2rem;
+  justify-content: center;
 }
 
-#mobrix-ui-radio-button-group .radio-group-element.right {
+[data-mbx-id="radio-button-group"][data-mbx-orientation="true"]
+  [data-mbx-text-position] {
+  margin: 0.3rem 1rem 0.3rem 1rem;
+}
+
+[data-mbx-id="radio-button-group"]:not(
+    [data-mbx-orientation="true"]
+  )
+  [data-mbx-text-position] {
+  margin: 1rem 0.3rem 1rem 0.3rem;
+}
+
+[data-mbx-id="radio-button-group"]
+  [data-mbx-text-position="right"] {
   flex-direction: row-reverse;
 }
 
-#mobrix-ui-radio-button-group .radio-group-element.left {
+[data-mbx-id="radio-button-group"] [data-mbx-text-position="left"] {
   flex-direction: row;
 }
 
-#mobrix-ui-radio-button-group .radio-group-element.top {
+[data-mbx-id="radio-button-group"] [data-mbx-text-position="top"] {
   flex-direction: column;
 }
 
-#mobrix-ui-radio-button-group .radio-group-element.bottom {
+[data-mbx-id="radio-button-group"]
+  [data-mbx-text-position="bottom"] {
   flex-direction: column-reverse;
 }
 
-#mobrix-ui-radio-button-group .radio-group-element.left .radio-text {
+[data-mbx-id="radio-button-group"]
+  [data-mbx-text-position="left"]
+  [data-mbx-class="radio-text"] {
   margin-right: 0.7rem;
 }
 
-#mobrix-ui-radio-button-group .radio-group-element.right .radio-text {
+[data-mbx-id="radio-button-group"]
+  [data-mbx-text-position="right"]
+  [data-mbx-class="radio-text"] {
   margin-left: 0.7rem;
 }
 
-#mobrix-ui-radio-button-group .radio-group-element.top .radio-text {
+[data-mbx-id="radio-button-group"]
+  [data-mbx-text-position="top"]
+  [data-mbx-class="radio-text"] {
   margin-bottom: 0.7rem;
+  margin-top: 0;
 }
 
-#mobrix-ui-radio-button-group .radio-group-element.bottom .radio-text {
+[data-mbx-id="radio-button-group"]
+  [data-mbx-text-position="bottom"]
+  [data-mbx-class="radio-text"] {
   margin-top: 0.7rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  [data-mbx-id="radio-button-group"][data-mbx-orientation="true"] {
+    flex-direction: column;
+  }
+
+  [data-mbx-id="radio-button-group"][data-mbx-orientation="true"]
+    [data-mbx-text-position] {
+    margin: 1rem 0.3rem 1rem 0.3rem;
+  }
 }

@@ -3,7 +3,8 @@ import {
   ComponentWithValue,
   GenericInputComponent,
   MoBrixUiComponent,
-} from "../../global";
+} from "../../../types/global";
+import { AutoResizableComponent } from "../../global/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Input component props
@@ -14,7 +15,7 @@ import {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type InputProps = GenericInputComponent &
+export type InputProps = GenericInputComponent & AutoResizableComponent &
   ComponentWithValue<string> &
   ComponentWithCallback;
 

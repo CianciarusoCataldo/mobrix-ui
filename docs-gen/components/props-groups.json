@@ -1,0 +1,42 @@
+{
+  "ComponentWithCallback": [
+    {
+      "prop": "onChange",
+      "type": "(newValue: TYPE) => void",
+      "description": "Callback triggered when COMPONENT component input value is changed by the user",
+      "default": "() => {}"
+    }
+  ],
+  "ClickableComponent": [
+    {
+      "prop": "onClick",
+      "type": "() => void",
+      "description": "Callback triggered when COMPONENT component is clicked",
+      "default": "() => {}"
+    }
+  ],
+  "ClickableComponentWithProps": [
+    {
+      "prop": "onClick",
+      "type": "(TYPE) => void",
+      "description": "Callback triggered when COMPONENT component is clicked",
+      "default": "() => {}"
+    }
+  ],
+  "ComponentWithChildren": [
+    {
+      "prop": "children",
+      "type": "TYPE",
+      "description": "COMPONENT content",
+      "default": ""
+    }
+  ],
+  "ClosableComponent": [
+    {
+      "prop": "onClose",
+      "type": "() => void",
+      "description": "callback triggered when COMPONENT is closed",
+      "default": "() => {}"
+    }
+  ]
+}

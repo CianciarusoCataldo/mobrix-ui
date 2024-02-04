@@ -1,9 +1,8 @@
 import {
   BuilderComponent,
   ComponentWithChildren,
-  ComponentWithIcon,
   MoBrixUiComponent,
-} from "../../global";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Card component props
@@ -15,24 +14,26 @@ import {
  * @copyright 2023 Cataldo Cianciaruso
  */
 export type CardProps = ComponentWithChildren<
-  JSX.Element | JSX.Element[] | string
-> &
-  ComponentWithIcon & {
-    onClose?: () => void;
+  BuilderComponent
+> & {
+  /** Card header content */
+  header?: BuilderComponent;
 
-    /** Card header content */
-    header?: BuilderComponent;
+  /** Card body content */
+  body?: BuilderComponent;
 
-    /** Card body content */
-    body?: BuilderComponent;
+  /** Card footer content */
+  footer?: BuilderComponent;
 
-    /** Card footer content */
-    footer?: BuilderComponent;
+  /** If true, hide the dividers between every Card part (header, body and footer) */
+  noDividers?: boolean;
 
-    /** If true, the card can be dismissed by clicking the x icon and the card will disappear
-     * (at least until the page is reloaded, use `hide` parameter for a fixed visibility) */
-    dismissable?: boolean;
-  };
+  /** If `true`, hide the divider below the Card header */
+  noTopDivider?: boolean;
+
+  /** If `true`, hide the divider above the Card footer */
+  noBottomDivider?: boolean;
+};
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Card component

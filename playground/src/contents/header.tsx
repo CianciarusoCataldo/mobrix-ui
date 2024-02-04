@@ -35,10 +35,10 @@ import {
 
 const HeaderContent = () => {
   const dispatch = useDispatch();
-  const APP_NAME = useSelector(getAppName);
-  const hideHomeButton = useSelector(isHomePage);
+  const APP_NAME: string = useSelector(getAppName);
+  const hideHomeButton: boolean = useSelector(isHomePage);
   const HOME = useSelector(getHomePage);
-  const dark = useSelector(isInDarkMode);
+  const dark: boolean = useSelector(isInDarkMode);
 
   const language = useSelector(getLanguage);
   const LANGUAGES = Object.keys(LANGUAGES_ICONS);
@@ -139,10 +139,7 @@ const HeaderContent = () => {
               onChange={(lang: number) => {
                 dispatch(changeLanguage(LANGUAGES[lang]));
               }}
-              content={Object.keys(LANGUAGES_ICONS).map((lang) => ({
-                name: lang,
-                icon: LANGUAGES_ICONS[lang],
-              }))}
+              elements={Object.keys(LANGUAGES_ICONS).map(lang => <div className="flex flex-row">{LANGUAGES_ICONS[lang]}{` ${lang}`}</div>)}
             />
             <Toggle
               onIcon={LightModeIcon}

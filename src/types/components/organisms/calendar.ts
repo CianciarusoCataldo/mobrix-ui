@@ -1,10 +1,9 @@
 import {
-  CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
   DeepPartial,
   MoBrixUiComponent,
-} from "../../global";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Calendar date object
@@ -22,8 +21,11 @@ export interface CalendarDate {
   /** Calendar date year */
   year: number;
 
-  /** Calendar date day (1 to month length) */
+  /** Calendar week day (1 to month length) */
   day: number;
+
+  /** Calendar date day (1 to month length) */
+  dayOfTheMonth?: number;
 }
 
 /**
@@ -52,8 +54,7 @@ export interface CalendarSharedProps {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type CalendarProps = CommonProps &
-  ComponentWithValue<DeepPartial<CalendarDate>> &
+export type CalendarProps = ComponentWithValue<DeepPartial<CalendarDate>> &
   ComponentWithCallback<CalendarDate> &
   CalendarSharedProps & {
     /** show/hide arrow buttons */
@@ -73,6 +74,10 @@ export type CalendarProps = CommonProps &
 
     /** callback called when the Calendar view (the showed month) change */
     onViewChange?: (date: CalendarDate) => void;
+
+    labelClassName?: string;
+
+    labelProps?: Record<string, any>;
   };
 
 /**

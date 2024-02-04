@@ -1,6 +1,7 @@
-#mobrix-ui-counterbox.styled {
+[data-mbx-id="counterbox"] {
+  background-color: var(--mbx-c-cnt-bg);
   border-radius: 5px;
   padding: 0.5rem;
-  background-color: var(--mobrix-ui-background-color);
-  color: var(--mobrix-ui-text-color);
+  color: var(--mbx-c-cnt-txt);
+  border-color: transparent;
 }

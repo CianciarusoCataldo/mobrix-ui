@@ -1,13 +1,11 @@
 import React from "react";
 
-import classNames from "classnames";
-
 import {
   ExpandableContainerProps,
   MobrixUiReactiveComponent,
 } from "../../../types";
 
-import Button from "../../atoms/Button";
+import IconButton from "../../atoms/IconButton";
 
 const expandableContainerComponent: MobrixUiReactiveComponent<
   boolean,
@@ -19,28 +17,34 @@ const expandableContainerComponent: MobrixUiReactiveComponent<
   expanded,
   dark,
   onChange = () => {},
+  disabled,
+  hover,
 }) => {
   let components = [children];
 
-  !compact && expanded && components.push(expanded);
   components.push(
-    <Button
-      unstyled
+    <div key="expanded_area" data-mbx-class="expanded-area">
+      {expanded}
+    </div>,
+  );
+  components.push(
+    <IconButton
+      disabled={disabled}
       onClick={() => {
         onChange(!compact);
         setCompact(!compact);
       }}
-      id="expandable_container_arrow_button"
-      className="expandable-container-arrow-button"
+      additionalProps={{
+        "data-mbx-class": "container-arrow-button",
+        "data-mbx-opacityhover": hover && !disabled,
+      }}
       key="arrow_button"
       dark={dark}
     >
       <svg
-        className={classNames("arrow", {
-          down: compact,
-          up: !compact,
-          dark: dark,
-        })}
+        data-mbx-dark={dark}
+        data-mbx-compact={compact}
+        data-mbx-class="arrow"
         tabIndex={0}
         width="1.5rem"
         fillRule="evenodd"
@@ -49,7 +53,7 @@ const expandableContainerComponent: MobrixUiReactiveComponent<
       >
         <path d="m5.9 270.28 43.07 43.07c7.86 7.86 20.73 7.84 28.56 0l178.48-178.48L434.5 313.35c7.86 7.86 20.74 7.82 28.56 0l43.07-43.07c7.83-7.84 7.83-20.72 0-28.56L313.72 49.32l-.36-.37-43.07-43.07c-7.83-7.82-20.7-7.86-28.56 0l-43.07 43.07-.36.37L5.9 241.72c-7.87 7.86-7.87 20.7 0 28.56z" />
       </svg>
-    </Button>
+    </IconButton>,
   );
   return components;
 };

@@ -1,0 +1,12 @@
+{
+  "since": "1.0.0",
+  "description": "An exapandable container, to hide/show some content on demand.",
+  "see": [],
+  "examples": [],
+  "extend": {
+    "component": { "type": "molecules", "name": "Container" },
+    "group": {
+      "ComponentWithCallback": { "type": "boolean" }
+    }
+  }
+}

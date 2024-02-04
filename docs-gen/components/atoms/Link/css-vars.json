@@ -1,0 +1,28 @@
+{
+  "--mbx-link-color": {
+    "description": "Fallback value for `mbx-link-color-light` and `mbx-link-color-dark`"
+  },
+  "--mbx-link-color-light": {
+    "description": "Link text color when dark mode is off",
+    "defaultGlobal": "--mbx-text-color-light",
+    "fallback": "--mbx-link-color"
+  },
+  "--mbx-link-color-dark": {
+    "description": "Link text color when dark mode is on",
+    "defaultGlobal": "--mbx-text-color-dark",
+    "fallback": "--mbx-link-color"
+  },
+  "--mbx-link-color-hover": {
+    "description": "Fallback value for `mbx-link-color-hover-light` and `mbx-link-color-hover-dark`"
+  },
+  "--mbx-link-color-hover-light": {
+    "description": "Link text color when dark mode is off, on hover",
+    "defaultInternal": "--mbx-link-color-light",
+    "fallback": "--mbx-link-color-hover"
+  },
+  "--mbx-link-color-hover-dark": {
+    "description": "Link text color when dark mode is on, on hover",
+    "defaultInternal": "--mbx-link-color-dark",
+    "fallback": "--mbx-link-color-hover"
+  }
+}

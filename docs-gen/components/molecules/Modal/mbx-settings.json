@@ -1,0 +1,14 @@
+{
+  "since": "1.0.0",
+  "description": "A Modal component, with an optional close button",
+  "see": [],
+  "examples": [],
+  "extend": {
+    "group": {
+      "ClosableComponent": {},
+      "ComponentWithChildren": {
+        "type": "`JSX.Element` | `string`"
+      }
+    }
+  }
+}

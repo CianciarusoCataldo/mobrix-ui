@@ -1,97 +1,91 @@
-#mobrix-ui-date-picker {
+[data-mbx-id="date-picker"] {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  border-radius: 0.375rem;
+  color: var(--mbx-text-color);
+  padding: 0.3rem 0.5rem;
+  width: max-content;
+  background: var(--mbx-c-dtp-bg);
+  color: var(--mbx-c-dtp-txt);
 }
 
-#mobrix-ui-date-picker .date-picker-box {
-  display: flex;
-  justify-content: center;
-}
-
-#mobrix-ui-date-picker .date-picker-calendar-container {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+[data-mbx-id="date-picker"] [data-mbx-id="calendar"] {
   margin: auto;
 }
 
-#mobrix-ui-date-picker .date-picker-modal {
-  background: transparent;
-}
-
-#mobrix-ui-date-picker .date-picker-modal #mobrix-ui-divider {
-  display: none;
-}
-
-#mobrix-ui-date-picker .date-picker-box > .buttons,
-#mobrix-ui-date-picker .date-picker-box > .buttons .date-selectors {
+[data-mbx-id="date-picker"] [data-mbx-class="date-selectors"] {
   display: flex;
   flex-direction: row;
 }
 
-#mobrix-ui-date-picker #mobrix-ui-calendar.date-picker-calendar .actual-date {
-  color: white;
-}
-
-#mobrix-ui-date-picker #mobrix-ui-calendar.date-picker-calendar .arrow svg {
-  fill: white;
-}
-
-@media (hover) {
-  #mobrix-ui-date-picker
-    #mobrix-ui-calendar.date-picker-calendar
-    .arrow:hover
-    svg {
-    fill: orange;
-  }
-
-  #mobrix-ui-date-picker .element:hover {
-    color: var(--mobrix-ui-focus-color);
-  }
-}
-
-#mobrix-ui-date-picker .date-picker-box > .buttons {
-  border-radius: 0.375rem;
-  color: var(--mobrix-ui-text-color);
-  padding: 0.3rem 0.5rem;
-}
-
-#mobrix-ui-date-picker .calendar-icon {
-  margin-left: 0.6rem;
-}
-
-#mobrix-ui-date-picker .element:focus-visible {
-  color: var(--mobrix-ui-focus-color);
+[data-mbx-id="date-picker"]
+  [data-mbx-class="date-picker-element"]:focus-visible {
+  color: var(--mbx-c-fc);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
 }
 
-#mobrix-ui-date-picker .date-picker-box > .buttons .element {
+[data-mbx-id="date-picker"] [data-mbx-class="date-picker-element"] {
   vertical-align: middle;
   display: inline-block;
+  margin-right: 0.3rem;
+}
+
+[data-mbx-id="date-picker"] [data-mbx-class="calendar-icon"] path {
+  fill: var(--mbx-c-dtp-ic);
+}
+
+[data-mbx-id="date-picker"]
+  [data-mbx-class="date-picker-modal"]
+  [data-mbx-class="body"] {
+  width: 80%;
+  padding: 0;
+}
+
+@media (hover) {
+  [data-mbx-id="date-picker"][data-mbx-enabled="true"]
+    [data-mbx-class="calendar-icon"]:hover
+    path {
+    fill: var(--mbx-c-dtp-ic-h);
+  }
+}
+
+@media (max-width: 600px) {
+  [data-mbx-id="date-picker"]
+    [data-mbx-class="date-picker-modal"]
+    [data-mbx-class="body"] {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  [data-mbx-id="date-picker"]
+    [data-mbx-class="date-picker-modal"]
+    [data-mbx-class="body"] {
+    width: 95%;
+  }
+}
+
+@media (max-width: 400px) {
+  [data-mbx-id="date-picker"]
+    [data-mbx-class="date-picker-modal"]
+    [data-mbx-class="body"] {
+    width: 100%;
+  }
 }
 
 @media (max-width: 300px) {
-  #mobrix-ui-date-picker .date-picker-box > .buttons {
+  [data-mbx-id="date-picker"] {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  #mobrix-ui-date-picker.styled #mobrix-ui-counterbox.days {
-    font-size: 1.05rem;
-    width: 2em;
-  }
-
-  #mobrix-ui-date-picker .calendar-icon {
-    margin-top: 0.6rem;
-  }
 }
 
 @media (max-width: 260px) {
-  #mobrix-ui-date-picker .date-picker-box .buttons .date-selectors {
+  [data-mbx-id="date-picker"] [data-mbx-class="date-selectors"] {
     display: flex;
     flex-direction: column;
     align-items: center;

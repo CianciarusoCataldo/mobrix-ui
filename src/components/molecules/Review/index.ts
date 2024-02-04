@@ -2,50 +2,43 @@ import "./styles.css";
 
 import { ReviewComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "../../../utils";
+import { buildMbxStandardComponent } from "../../../tools";
 
 import reviewComponent from "./component";
 
 /**
- * A smart review container, useful to show reviews on your website with custom data inside. Optionally, an external link can be set to redirect
- * user to the platform where the review is located.
+ * A smart review container, useful to show reviews on your web app with custom data inside. Optionally, an external link can be set to redirect user to the platform where the review is located
+ *
+ * @param {string} user Username displayed above the review description, at the right of the icon
+ * @param {string} description Review description displayed below the review username, at the top of the rate
+ * @param {JSX.Element} icon Icon showed inside the component
+ * @param {string} url Review external url. If set, an icon will be showed at the top right of the review
+ * @param {'default' | 'link' | 'facebook' | 'twitter' | 'google' | 'linkedin' | 'github'} logo Social icon type, showed at the top right of the container. Supports popular web services like Facebook, Twitter, Google and so on. Proviced icon list will grow up time by time and will be updated with the latest web services, to keep it usable for the future.
+ * @param {number} max max vote (max number of icons displayed) - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
+ * @param {boolean} vertical if `true`, rate icons will be showed vertically - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
+ * @param {number} rate actual vote - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
+ * @param {'star'|'circle'} rateType vote icons type - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
+ * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
+ * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
+ * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode
+ * @param {boolean} hide - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Hide/show component
+ * @param {string} id - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - [id parameter](https://www.w3schools.com/html/html_id.asp) (for styling/testing purpose, to easily find the component into the DOM)
+ * @param {boolean} shadow - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable shadow behind component
+ * @param {CSSProperties} style - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Css inline properties applied on main container
+ * @param {boolean} unstyled - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If `true`, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons)
+ * @param {boolean} animated - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component animations
+ * @param {boolean} background - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component background
+ * @param {boolean} hover - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component hover standard styles
+ * @param {boolean} disabled - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If true, disable the component. The effect may vary depending on the component type
+ * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
+ *
+ *
+ *
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/Review
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.1.0
- *
- * @param {string} user username showed above the review description, at the right of the icon
- * @param {string} description review description showed below the review username, at the top of the rate
- * @param {string} url review external url. If set, an icon will be showed at the top right of the review
- * @param {number} rate review vote, showed at the bottom of the review
- * @param {number} rateType review vote icon type, to choose which icon will be used to show the review rate (allowed icons type are `stars` and `circle`)
- * @param {number} max max vote (max number of rate icons showed)
- * @param {"default" | "facebook" | "twitter" | "google" | "linkedin" | "github"} logo Social icon type, showed at the top right of the container. Supports popular web services like Facebook, Twitter, Google and so on. Proviced icon list will grow up time by time and will be updated with the latest web services, to keep it usable for the future.
- * @param {string} className `common MoBrix-ui prop` - custom className
- * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
- * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
- * @param {boolean} dark `common MoBrix-ui prop` - Enable/disable dark mode
- * @param {boolean} hide `common MoBrix-ui prop` - Hide/show component
- * @param {boolean} shadow `common MoBrix-ui prop` - Enable/disable shadow behind component
- * @param {boolean} animated `common MoBrix-ui prop` enable/disable component animations
- * @param {string} key `common MoBrix-ui prop` - custom component React key (the standard {@link https://reactjs.org/docs/lists-and-keys.html key parameter})
- * @param {boolean} a11y `common MoBrix-ui prop` - enable/disable accessibility features
- * @param {boolean} a11yDark `common MoBrix-ui prop` - if the `a11y` parameter is `true`, override standard focus color style with/without dark mode (normally, the color changes accordingly to the `dark` parameter)
- * @param {string} a11yLabel `common MoBrix-ui prop` - if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label}
- * @param {() => void} onFocus `common MoBrix-ui prop` - callback called when component is focused
- * @param {() => void} onFocusLost `common MoBrix-ui prop` - callback called when component focus is lost
- * @param {(keyEvent: any) => void} onKeyDown `common MoBrix-ui prop` - callback called when a key is pressed when inside the component
- *
- * @example <caption>Example Review usage</caption>
- * import { render } from "react-dom";
- * import { Review } from 'mobrix-ui';
- *
- * render(<Review
- *          logo="facebook"
- *          rate={3}
- *          user="Example user"
- *          description="Example review description"
- *        />, document.getElementById("root"));
- *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Review
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -60,11 +53,13 @@ const Review: ReviewComponent = ({
   url,
   logo,
   rateType,
+  additionalProps,
   ...commonProps
 }) =>
-  buildMobrixUiStandardComponent({
+  buildMbxStandardComponent(commonProps, (props) => ({
     name: "review",
-    commonProps,
+    commonProps: props,
+    additionalProps,
     Component: reviewComponent({
       user,
       description,
@@ -74,7 +69,8 @@ const Review: ReviewComponent = ({
       url,
       logo,
       rateType,
+      ...props,
     }),
-  });
+  }));
 
 export default Review;

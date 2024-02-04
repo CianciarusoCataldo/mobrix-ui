@@ -1,0 +1,9 @@
+{
+  "since": "",
+  "description": "",
+  "see": [],
+  "examples": [],
+  "extend": {
+    "component": { "name": "Button" }
+  }
+}

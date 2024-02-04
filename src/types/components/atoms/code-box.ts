@@ -1,4 +1,7 @@
-import { ComponentWithValue, MoBrixUiComponent } from "../../global";
+import {
+  ComponentWithValue,
+  MoBrixUiComponent,
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Codebox supported environments
@@ -42,11 +45,14 @@ export interface CodeBlock<T = string | null> {
  * @copyright 2023 Cataldo Cianciaruso
  */
 export type CodeBoxProps = ComponentWithValue<string> & {
-  /** Enable/disable advanced mode, to access extra features, like the integrated copy button and text highlight */
-  enhanced?: boolean;
+  /** Enable/disable  text highlight, based on selected environment */
+  highlight?: boolean;
 
   /** Environment for text highlight feature, default to "terminal" (only enabled into enhanced mode) */
-  environment?: SupportedEnvironment | undefined;
+  environment?: SupportedEnvironment;
+
+  /** if `true`, hide the copy button */
+  noCopyButton?: boolean;
 };
 
 /**

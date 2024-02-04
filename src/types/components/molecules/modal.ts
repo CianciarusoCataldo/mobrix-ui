@@ -1,8 +1,9 @@
 import {
   BuilderComponent,
+  ClosableComponent,
   ComponentWithChildren,
   MoBrixUiComponent,
-} from "../../global";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Modal component props
@@ -13,19 +14,11 @@ import {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type ModalProps = ComponentWithChildren<BuilderComponent> & {
-  /** Modal title */
-  title?: string;
-
-  /** Callback triggered when modal is closed */
-  onClose?: () => void;
-
-  /** A custom className applied on the Modal overlay container */
-  overlayClassName?: string;
-
-  /** if `true`, and if `unstyled`===`false`, the modal can be closed by clicking outside it */
-  closeOutside?: boolean;
-};
+export type ModalProps = ComponentWithChildren<BuilderComponent> &
+  ClosableComponent & {
+    /** if `true`, and if `unstyled`===`false`, the modal can be closed by clicking outside it */
+    closeOutside?: boolean;
+  };
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Modal component

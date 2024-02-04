@@ -15,11 +15,11 @@ const listTest = () => {
       const onChangeStub = jest.fn();
       const wrapper = mount(
         <List
-          onChange={onChangeStub}
+          onClick={onChangeStub}
           elements={["Test element 1", "Test element 2"]}
         />
       );
-      wrapper.find('[data-id="list_element_0"]').simulate("click");
+      wrapper.find('[data-mbx-test="list_element_0"]').simulate("click");
       expect(onChangeStub).toBeCalledWith(0);
     });
   });

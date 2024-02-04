@@ -3,7 +3,7 @@ import {
   ClickableComponent,
   ComponentWithChildren,
   MoBrixUiComponent,
-} from "../../global";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Button component props
@@ -24,8 +24,6 @@ export type ButtonProps = ComponentWithChildren<
     /** callback triggered when the cursor exit the component */
     onMouseLeave?: () => void;
 
-    /**enable or disable the button functionalities (UI will reflect it too) */
-    disabled?: boolean;
   };
 
 /**

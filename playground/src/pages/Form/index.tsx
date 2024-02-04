@@ -11,7 +11,7 @@ const FormPage = () => (
     translations
     render={(t, componentLabel) => {
       let props: Record<string, any> = { ...demoProps };
-      ["title", "children", "buttonContent"].forEach(
+      ["title", "children", "submitLabel"].forEach(
         (el) => (props[el] = StringProp(t("props", { context: el })))
       );
 
@@ -23,7 +23,7 @@ const FormPage = () => (
           startColor="#A19B9B"
           props={props}
           rows={[
-            ["title", "buttonContent"],
+            ["title", "submitLabel"],
             ["children", "fieldClassName"],
             ["className", "dark", "shadow"],
             ["unstyled", "hide"],
@@ -47,6 +47,11 @@ const FormPage = () => (
                     placeholder: "placeholder",
                     type: "numeric",
                     header: t("props_field", { context: "numeric" }),
+                  },
+                  field4: {
+                    placeholder: "placeholder",
+                    type: "radio",
+                    header: t("props_field", { context: "radio" }),
                   },
                 }}
                 onClick={(values: any) => console.log(values)}

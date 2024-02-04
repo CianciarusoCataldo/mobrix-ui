@@ -1,0 +1,11 @@
+{
+  "since": "1.0.0",
+  "description": "A flexible numeric input element",
+  "see": [],
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithCallback": { "type": "number" }
+    }
+  }
+}

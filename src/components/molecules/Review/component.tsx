@@ -8,7 +8,7 @@ import {
 
 import { icons } from "./icons";
 import Link from "../../atoms/Link";
-import Rater from "../Rater";
+import Rater from "../../atoms/Rater";
 
 const allowedLogoTypes = Object.keys(icons);
 
@@ -21,32 +21,41 @@ const reviewComponent: MoBrixUiComponent<ReviewProps, BuilderComponent[]> = ({
   url,
   logo,
   rateType,
+  disabled,
+  hover,
+  dark,
 }) => {
   const selectedLogo =
     logo && allowedLogoTypes.includes(logo) ? logo : "default";
 
   return [
-    <div key="url" className="review-url-container">
-      {url ? (
-        <Link newTab to={url}>
-          {icons[selectedLogo]}
-        </Link>
-      ) : (
-        logo && icons[selectedLogo]
+    <div key="url" data-mbx-class="review-url-container">
+      <Link
+        dark={dark}
+        hover={hover && !disabled}
+        newTab
+        to={url}
+        disabled={disabled}
+      >
+        {icons[selectedLogo]}
+      </Link>
+    </div>,
+    <div data-mbx-class="review-info-box" key="info">
+      <div data-mbx-class="review-user-info">
+        <div data-mbx-class="review-photo">{icon}</div>
+        {user && <span data-mbx-class="review-username">{user}</span>}
+      </div>
+      {description && (
+        <span data-mbx-class="review-description">{description}</span>
       )}
     </div>,
-    <div className="review-info-box" key="info">
-      <div className="review-user-info">
-        <div className="review-photo">{icon}</div>
-        {user && <span className="review-username">{user}</span>}
-      </div>
-      {description && <span className="review-description">{description}</span>}
-    </div>,
     <Rater
+      disabled={disabled}
       key="rate"
       hide={!rate}
       type={rateType}
-      unstyled
+      background={false}
+      shadow={false}
       readonly
       value={rate}
       max={max}

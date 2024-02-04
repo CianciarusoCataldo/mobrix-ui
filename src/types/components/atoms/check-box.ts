@@ -3,7 +3,7 @@ import {
   MoBrixUiComponent,
   ComponentWithValue,
   ComponentWithIcon,
-} from "../../global";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} CheckBox component props

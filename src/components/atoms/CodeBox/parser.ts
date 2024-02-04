@@ -5,7 +5,7 @@ import { CODE_LANGUAGES } from "./languages";
 /** Basic code parsers */
 const BASIC_PARSER = (
   code: string,
-  handleOtherElements: ((code: string) => CodeBlock[]) | null
+  handleOtherElements: ((code: string) => CodeBlock[]) | null,
 ) => {
   const parsedCode: { code: string; color: string | null }[] = [];
   code.split(/(\'.+?\')/g).forEach((codeBlock, codeIndex) => {
@@ -25,7 +25,7 @@ const BASIC_PARSER = (
           /* istanbul ignore next */
           if (handleOtherElements) {
             handleOtherElements(codeMicroPart).forEach((element) =>
-              parsedCode.push(element)
+              parsedCode.push(element),
             );
           } else {
             parsedCode.push({
@@ -53,7 +53,7 @@ const PARSERS: Record<
 
 const getHighlightedCode = (
   code: CodeBlock[],
-  environment: SupportedEnvironment
+  environment: SupportedEnvironment,
 ) => {
   let actualEnv = environment;
   let splittedCode: CodeBlock[] = [];
@@ -89,6 +89,6 @@ const getHighlightedCode = (
 export const parseCode = (code: string, environment: SupportedEnvironment) => {
   return getHighlightedCode(
     BASIC_PARSER(code, PARSERS[environment]),
-    environment
+    environment,
   );
 };

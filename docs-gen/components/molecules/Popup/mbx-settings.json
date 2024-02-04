@@ -1,0 +1,14 @@
+{
+  "since": "2.0.0",
+  "description": "A Popup container, displayed upon every other component, overlayed",
+  "see": [],
+  "examples": [],
+  "extend": {
+    "group": {
+      "ClosableComponent": {},
+      "ComponentWithChildren": {
+        "type": "`JSX.Element` | `string`"
+      }
+    }
+  }
+}

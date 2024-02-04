@@ -1,35 +1,39 @@
-#mobrix-ui-review {
+[data-mbx-id="review"] {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0.6rem;
-  background-image: var(--mobrix-ui-background);
-  color: var(--mobrix-ui-text-color);
+  background: var(--mbx-c-rev-bg);
+  color: var(--mbx-c-rev-txt);
+  border-radius: 3px;
+  width: fit-content;
 }
 
-#mobrix-ui-review .review-photo,
-#mobrix-ui-review .review-photo img {
+[data-mbx-id="review"] [data-mbx-class="review-photo"],
+[data-mbx-id="review"] [data-mbx-class="review-photo"] img {
   border-radius: 9999px;
 }
 
-#mobrix-ui-review .review-url-container {
+[data-mbx-id="review"] [data-mbx-class="review-url-container"] {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-#mobrix-ui-review .review-info-box {
+[data-mbx-id="review"] [data-mbx-class="review-info-box"] {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.4rem;
 }
 
-#mobrix-ui-review .review-user-info {
+[data-mbx-id="review"] [data-mbx-class="review-user-info"] {
   display: flex;
   flex-direction: row;
 }
 
-#mobrix-ui-review .review-user-info .review-username {
+[data-mbx-id="review"]
+  [data-mbx-class="review-user-info"]
+  [data-mbx-class="review-username"] {
   margin-left: 0.5rem;
   font-weight: 600;
   font-size: 1.125rem;
@@ -38,18 +42,23 @@
   margin-bottom: auto;
 }
 
-#mobrix-ui-review .review-info-box .review-description {
-  margin-left: 0.5rem;
+[data-mbx-id="review"]
+  [data-mbx-class="review-info-box"]
+  [data-mbx-class="review-description"] {
   margin-top: 1rem;
   overflow-wrap: break-word;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
 }
 
-#mobrix-ui-review .review-url-container .default-icon,
-#mobrix-ui-review .review-url-container .github-icon {
-  fill: grey;
+[data-mbx-id="review"]
+  [data-mbx-class="review-url-container"]
+  [data-mbx-class="default-icon"] {
+  fill: var(--mbx-c-rev-link);
 }
 
-#mobrix-ui-review.dark .review-url-container .default-icon,
-#mobrix-ui-review.dark .review-url-container .github-icon {
-  fill: white;
+[data-mbx-id="review"]
+  [data-mbx-class="review-url-container"]
+  [data-mbx-class="github-icon"] {
+  fill: var(--mbx-c-rev-gh);
 }

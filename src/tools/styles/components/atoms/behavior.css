@@ -1,0 +1,168 @@
+@import url("constants/computed.css");
+@import url("on-hover.css");
+
+[data-mbx-id][data-mbx-dark="false"] {
+  /** Button **/
+  --mbx-c-btn-bg: var(--mbx-c-btn-bg-l);
+
+  --mbx-c-btn-txt: var(--mbx-c-btn-txt-l);
+
+  --mbx-c-btn-bg-h: var(--mbx-c-btn-bg-h-l);
+
+  --mbx-c-btn-txt-h: var(--mbx-c-btn-txt-h-l);
+
+  /** Checkbox **/
+  --mbx-c-chk-bg: var(--mbx-c-chk-bg-l);
+
+  --mbx-c-chk-bg-h: var(--mbx-c-chk-bg-h-l);
+
+  --mbx-c-chk-tk: var(--mbx-c-chk-tk-l);
+
+  /** Codebox **/
+  --mbx-c-cdb-bg: var(--mbx-c-cdb-bg-l);
+
+  --mbx-c-cdb-txt: var(--mbx-c-cdb-txt-l);
+
+  /** Counter **/
+  --mbx-c-cnt-bg: var(--mbx-c-cnt-bgc-l);
+
+  --mbx-c-cnt-txt: var(--mbx-c-cnt-txt-l);
+
+  --mbx-c-cnt-bg-h: var(--mbx-c-cnt-bgc-h-l);
+
+  --mbx-c-cnt-txt-h: var(--mbx-c-cnt-txt-h-l);
+
+  /** Divider **/
+  --mbx-c-dv-bgc: var(--mbx-c-dv-bgc-l);
+
+  /** Input **/
+  --mbx-c-inb-bgc: var(--mbx-c-inb-bgc-l);
+
+  --mbx-c-inb-txt: var(--mbx-c-inb-txt-l);
+  --mbx-c-inb-bgc-h: var(--mbx-c-inb-bgc-h-l);
+
+  --mbx-c-inb-txt-h: var(--mbx-c-inb-txt-h-l);
+
+  /** Label **/
+  --mbx-c-lab-txt: var(--mbx-c-lab-txt-l);
+
+  /** Link **/
+  --mbx-c-link-txt: var(--mbx-c-link-txt-l);
+  --mbx-c-link-txt-h: var(--mbx-c-link-txt-h-l);
+
+  /** Radio Button **/
+  --mbx-c-rad-bg: var(--mbx-c-rad-bg-l);
+  --mbx-c-rad-bg-h: var(--mbx-c-rad-bg-h-l);
+  --mbx-c-rad-ic-bg: var(--mbx-c-rad-ic-bg-l);
+
+  /** Rater **/
+  --mbx-c-rat-bg: var(--mbx-c-rat-bg-l);
+
+  /** Selector **/
+  --mbx-c-sel-bg: var(--mbx-c-sel-bg-l);
+  --mbx-c-sel-bg-h: var(--mbx-c-sel-bg-h-l);
+  --mbx-c-sel-txt: var(--mbx-c-sel-txt-l);
+  --mbx-c-sel-txt-h: var(--mbx-c-sel-txt-h-l);
+
+  /** Slider **/
+  --mbx-c-sld-bg: var(--mbx-c-sld-bg-l);
+
+  --mbx-c-sld-tb: var(--mbx-c-sld-tb-l);
+
+  --mbx-c-sld-tb-h: var(--mbx-c-sld-tb-h-l);
+
+  /** Spinner **/
+  --mbx-c-spn-suc: var(--mbx-c-spn-suc-l);
+  --mbx-c-spn-err: var(--mbx-c-spn-err-l);
+  --mbx-c-spn-load: var(--mbx-c-spn-load-l);
+
+  /** Toggle **/
+  --mbx-c-tog-bg: var(--mbx-c-tog-bg-l);
+  --mbx-c-tog-ic-on-ext: var(--mbx-c-tog-ic-on-ext-l);
+  --mbx-c-tog-ic-on-int: var(--mbx-c-tog-ic-on-int-l);
+  --mbx-c-tog-ic-off-ext: var(--mbx-c-tog-ic-off-ext-l);
+  --mbx-c-tog-ic-off-int: var(--mbx-c-tog-ic-off-int-l);
+}
+
+[data-mbx-id][data-mbx-dark="true"] {
+  /** Button **/
+  --mbx-c-btn-bg: var(--mbx-c-btn-bg-d);
+
+  --mbx-c-btn-txt: var(--mbx-c-btn-txt-d);
+  --mbx-c-btn-bg-h: var(--mbx-c-btn-bg-h-d);
+
+  --mbx-c-btn-txt-h: var(--mbx-c-btn-txt-h-d);
+
+  /** Checkbox **/
+  --mbx-c-chk-bg: var(--mbx-c-chk-bg-d);
+
+  --mbx-c-chk-bg-h: var(--mbx-c-chk-bg-h-d);
+
+  --mbx-c-chk-tk: var(--mbx-c-chk-tk-d);
+
+  /** Codebox **/
+  --mbx-c-cdb-bg: var(--mbx-c-cdb-bg-d);
+
+  --mbx-c-cdb-txt: var(--mbx-c-cdb-txt-d);
+
+  /** Counter **/
+  --mbx-c-cnt-bg: var(--mbx-c-cnt-bgc-d);
+
+  --mbx-c-cnt-txt: var(--mbx-c-cnt-txt-d);
+
+  --mbx-c-cnt-bg-h: var(--mbx-c-cnt-bgc-h-d);
+
+  --mbx-c-cnt-txt-h: var(--mbx-c-cnt-txt-h-d);
+
+  /** Divider **/
+  --mbx-c-dv-bgc: var(--mbx-c-dv-bgc-d);
+
+  /** Input **/
+  --mbx-c-inb-bgc: var(--mbx-c-inb-bgc-d);
+
+  --mbx-c-inb-txt: var(--mbx-c-inb-txt-d);
+
+  --mbx-c-inb-bgc-h: var(--mbx-c-inb-bgc-h-d);
+
+  --mbx-c-inb-txt-h: var(--mbx-c-inb-txt-h-d);
+
+  /** Label **/
+  --mbx-c-lab-txt: var(--mbx-c-lab-txt-d);
+
+  /** Link **/
+  --mbx-c-link-txt: var(--mbx-c-link-txt-d);
+  --mbx-c-link-txt-h: var(--mbx-c-link-txt-h-d);
+
+  /** Radio Button **/
+  --mbx-c-rad-bg: var(--mbx-c-rad-bg-d);
+  --mbx-c-rad-bg-h: var(--mbx-c-rad-bg-h-d);
+  --mbx-c-rad-ic-bg: var(--mbx-c-rad-ic-bg-d);
+
+  /** Rater **/
+  --mbx-c-rat-bg: var(--mbx-c-rat-bg-d);
+
+  /** Selector **/
+  --mbx-c-sel-bg: var(--mbx-c-sel-bg-d);
+  --mbx-c-sel-bg-h: var(--mbx-c-sel-bg-h-d);
+  --mbx-c-sel-txt: var(--mbx-c-sel-txt-d);
+  --mbx-c-sel-txt-h: var(--mbx-c-sel-txt-h-d);
+
+  /** Slider **/
+  --mbx-c-sld-bg: var(--mbx-c-sld-bg-d);
+
+  --mbx-c-sld-tb: var(--mbx-c-sld-tb-d);
+
+  --mbx-c-sld-tb-h: var(--mbx-c-sld-tb-h-d);
+
+  /** Spinner **/
+  --mbx-c-spn-suc: var(--mbx-c-spn-suc-d);
+  --mbx-c-spn-err: var(--mbx-c-spn-err-d);
+  --mbx-c-spn-load: var(--mbx-c-spn-load-d);
+
+  /** Toggle **/
+  --mbx-c-tog-bg: var(--mbx-c-tog-bg-d);
+  --mbx-c-tog-ic-on-ext: var(--mbx-c-tog-ic-on-ext-d);
+  --mbx-c-tog-ic-on-int: var(--mbx-c-tog-ic-on-int-d);
+  --mbx-c-tog-ic-off-ext: var(--mbx-c-tog-ic-off-ext-d);
+  --mbx-c-tog-ic-off-int: var(--mbx-c-tog-ic-off-int-d);
+}

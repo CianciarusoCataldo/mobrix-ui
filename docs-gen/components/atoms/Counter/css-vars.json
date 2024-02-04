@@ -1,0 +1,54 @@
+{
+  "--mbx-counterbox-background": {
+    "description": "Fallback value for `mbx-counterbox-background-light` and `mbx-counterbox-background-dark`"
+  },
+  "--mbx-counterbox-background-light": {
+    "description": "Counter background when dark mode is off",
+    "fallback": "--mbx-counterbox-background",
+    "defaultGlobal": "--mbx-background-color-light"
+  },
+  "--mbx-counterbox-background-dark": {
+    "description": "Counter background when dark mode is on",
+    "fallback": "--mbx-counterbox-background",
+    "defaultGlobal": "--mbx-background-color-dark"
+  },
+  "--mbx-counterbox-text-color": {
+    "description": "Fallback value for `mbx-counterbox-text-color-light` and `mbx-counterbox-text-color-dark`"
+  },
+  "--mbx-counterbox-text-color-light": {
+    "description": "Counter text color when dark mode is off",
+    "fallback": "--mbx-counterbox-text-color",
+    "defaultGlobal": "--mbx-text-color-light"
+  },
+  "--mbx-counterbox-text-color-dark": {
+    "description": "Counter text color when dark mode is on",
+    "fallback": "--mbx-counterbox-text-color",
+    "defaultGlobal": "--mbx-text-color-dark"
+  },
+  "--mbx-counterbox-background-hover": {
+    "description": "Fallback value for `mbx-counterbox-background-hover-light` and `mbx-counterbox-background-hover-dark`"
+  },
+  "--mbx-counterbox-background-hover-light": {
+    "description": "Counter background when dark mode is off, on hover",
+    "fallback": "--mbx-counterbox-background-hover",
+    "defaultGlobal": "--mbx-background-color-hover-light"
+  },
+  "--mbx-counterbox-background-hover-dark": {
+    "description": "Counter background when dark mode is on, on hover",
+    "fallback": "--mbx-counterbox-background-hover",
+    "defaultGlobal": "--mbx-background-color-hover-dark"
+  },
+  "--mbx-counterbox-text-color-hover": {
+    "description": "Fallback value for `mbx-counterbox-text-color-hover-light` and `mbx-counterbox-text-color-hover-dark`"
+  },
+  "--mbx-counterbox-text-color-hover-light": {
+    "description": "Counter text color when dark mode is off, on hover",
+    "defaultGlobal": "--mbx-text-color-hover-light",
+    "fallback": "--mbx-counterbox-text-color-hover"
+  },
+  "--mbx-counterbox-text-color-hover-dark": {
+    "description": "Counter text color when dark mode is on, on hover",
+    "defaultGlobal": "--mbx-text-color-hover-dark",
+    "fallback": "--mbx-counterbox-text-color-hover"
+  }
+}

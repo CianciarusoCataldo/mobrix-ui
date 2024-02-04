@@ -1,0 +1,7 @@
+{
+  "since": "3.0.0",
+  "description": "A standard Card with a dismiss function",
+  "see": [],
+  "examples": [],
+  "extend": { "component": { "type": "molecules", "name": "Card" } }
+}

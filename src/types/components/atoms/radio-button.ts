@@ -2,7 +2,7 @@ import {
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
-} from "../../global";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} RadioButton component props
@@ -15,7 +15,7 @@ import {
  */
 export type RadioButtonProps = ComponentWithValue<boolean> &
   ComponentWithCallback<boolean> & {
-    /** if `false`, the button can be selected only once (the value can't change then) */
+    /** if `false`, the button can be selected only once (after the first selection, the value can't be changed) */
     deselectable?: boolean;
   };
 

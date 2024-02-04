@@ -1,0 +1,41 @@
+{
+  "--mbx-checkbox-background": {
+    "description": "Fallback value for `mbx-checkbox-background-light` and `mbx-checkbox-background-dark`"
+  },
+  "--mbx-checkbox-background-light": {
+    "description": "CheckBox background when dark mode is off",
+    "fallback": "--mbx-checkbox-background",
+    "defaultGlobal": "--mbx-background-light"
+  },
+  "--mbx-checkbox-background-dark": {
+    "description": "CheckBox background when dark mode is on",
+    "fallback": "--mbx-checkbox-background",
+    "defaultGlobal": "--mbx-background-dark"
+  },
+  "--mbx-checkbox-background-hover": {
+    "description": "Fallback value for `mbx-checkbox-background-hover-light` and `mbx-checkbox-background-hover-dark`"
+  },
+  "--mbx-checkbox-background-hover-light": {
+    "description": "CheckBox background when dark mode is off, on hover",
+    "fallback": "--mbx-checkbox-background-hover",
+    "defaultGlobal": "--mbx-background-hover-light"
+  },
+  "--mbx-checkbox-background-hover-dark": {
+    "description": "CheckBox background when dark mode is on, on hover",
+    "fallback": "--mbx-checkbox-background-hover",
+    "defaultGlobal": "--mbx-background-hover-dark"
+  },
+  "--mbx-checkbox-tick-color": {
+    "description": "Fallback value for `mbx-checkbox-tick-color-light` and `mbx-checkbox-tick-color-dark`"
+  },
+  "--mbx-checkbox-tick-color-light": {
+    "description": "CheckBox tick color when dark mode is off",
+    "fallback": "--mbx-checkbox-tick-color",
+    "defaultColor": "rgb(37, 99, 235)"
+  },
+  "--mbx-checkbox-tick-color-dark": {
+    "description": "CheckBox tick color when dark mode is on",
+    "fallback": "--mbx-checkbox-tick-color",
+    "default": "white"
+  }
+}

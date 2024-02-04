@@ -1,0 +1,35 @@
+{
+  "value": {
+    "description": "Selected RadioButton (as index)",
+    "type": "number"
+  },
+  "buttons": {
+    "description": "Radio elements array. Every element UI can be driven with attributes. A radio element can contain 3 fields:<ul><li>- `component`: custom component rendered before radio button</li><li>- `text`: custom radio text showed near the radio button</li><li>- `textPosition`: custom text position</li>",
+    "comment": "Radio elements array. Every element UI can be driven with attributes.\n* A radio element can contain 3 fields:\n* - `component`: custom component rendered before radio button\n* - `text`: custom radio text showed near the radio button\n* - `textPosition`: custom text position",
+    "type": "{ component: `JSX.Element`, text: `string`, textPosition:  'top' | 'bottom' | 'left' | 'right' }[]"
+  },
+  "elementClassName": {
+    "description": "Classname applied on every radio element",
+    "type": "string"
+  },
+  "radioProps": {
+    "description": "[RadioButton props](../../atoms/RadioButton/props.md) applied on every RadioButton element",
+    "type": "RadioButtonProps",
+    "comment": "RadioButton props applied on every RadioButton element"
+  },
+  "defaultPosition": {
+    "description": "Default text position for RadioButton elements (when `textPosition` is not provided)",
+    "default": "left",
+    "type": "'top' | 'bottom' | 'left' | 'right'"
+  },
+  "horizontal": {
+    "description": "If `true`, the RadioButton elements are displayed horizontally",
+    "type": "boolean",
+    "default": "false"
+  },
+  "onChange": {
+    "type": "(newValue: number) => void",
+    "default": "() => {}",
+    "description": "Callback triggered when a RadioButton is clicked by the user, giving its index as parameter"
+  }
+}

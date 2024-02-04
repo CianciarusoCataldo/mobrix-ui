@@ -1,0 +1,19 @@
+{
+  "value": { "type": "number", "description": "numeric input value" },
+  "placeholder": {
+    "type": "string",
+    "description": "label showed when no value is set"
+  },
+  "readOnly": {
+    "type": "boolean",
+    "description": "if true, component value can only be set with `value` parameter",
+    "default": "false"
+  },
+  "min": { "type": "number", "description": "min allowed value" },
+  "max": { "type": "number", "description": "max allowed value" },
+  "onChange": {
+    "type": "(newValue: number) => void",
+    "default": "() => {}",
+    "description": "Callback triggered when Counter component input value is changed by the user"
+  }
+}

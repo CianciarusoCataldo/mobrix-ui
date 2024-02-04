@@ -1,0 +1,37 @@
+{
+  "header": {
+    "description": "Card header content",
+    "typeComment": "JSX.Element | string",
+    "type": "JSX.Element | string"
+  },
+  "body": {
+    "description": "Card body content",
+    "typeComment": "JSX.Element | string",
+    "type": "JSX.Element | string"
+  },
+  "footer": {
+    "description": "Card footer content",
+    "typeComment": "JSX.Element | string",
+    "type": "JSX.Element | string"
+  },
+  "noDivider": {
+    "description": "If `true`, hide all dividers",
+    "type": "boolean",
+    "default": false
+  },
+  "noTopDivider": {
+    "description": "If `true`, hide the top divider, between header and body",
+    "type": "boolean",
+    "default": false
+  },
+  "noBottomDivider": {
+    "description": "If `true`, hide the top divider, between body and footer",
+    "type": "boolean",
+    "default": false
+  },
+  "children": {
+    "type": "`JSX.Element` | `string`",
+    "default": "",
+    "description": "Card content"
+  }
+}

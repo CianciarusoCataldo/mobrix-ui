@@ -1,0 +1,17 @@
+{
+  "value": {
+    "type": "boolean",
+    "description": "Checkbox initial value (checked / unchecked)",
+    "default": "false"
+  },
+  "icon": {
+    "type": "JSX.Element",
+    "description": "custom tick icon (if not set, the default one will be used)",
+    "default": "Internal tick icon"
+  },
+  "onChange": {
+    "type": "(newValue: boolean) => void",
+    "default": "() => {}",
+    "description": "Callback triggered when CheckBox component input value is changed by the user"
+  }
+}

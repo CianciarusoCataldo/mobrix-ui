@@ -1,8 +1,5 @@
-#mobrix-ui-divider {
-  height: 1px;
+[data-mbx-id="divider"] {
+  height: 2px;
   width: 100%;
-}
-
-#mobrix-ui-divider.styled {
-  background-color: var(--mobrix-ui-text-color);
+  background-color: var(--mbx-c-dv-bgc);
 }

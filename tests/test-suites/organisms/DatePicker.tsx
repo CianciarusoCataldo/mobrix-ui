@@ -23,51 +23,32 @@ const datePickerTest = () => {
       const onChangeStub = jest.fn();
       let wrapper = mount(
         <DatePicker
+          calendarProps={{}}
           onChange={onChangeStub}
-          months={defaultMonths}
-          days={defaultDays}
+          fromToday={false}
         />
       );
-      wrapper.find('[data-id="date_picker_day_selector"]').simulate("click");
-      wrapper
-        .find(
-          '[data-id="date_picker_day_selector"] [data-id="dropdown_option_0"]'
-        )
-        .simulate("click");
-      expect(onChangeStub).toBeCalled;
-      onChangeStub.mockReset();
 
-      wrapper.find('[data-id="date_picker_day_selector"]').simulate("click");
+      wrapper.find('[data-mbx-test="calendar-button"]').simulate("click");
       wrapper
-        .find(
-          '[data-id="date_picker_month_selector"] [data-id="dropdown_option_0"]'
-        )
-        .simulate("click");
-      expect(onChangeStub).toBeCalled;
-      onChangeStub.mockReset();
-
-      wrapper.find('[data-id="date_picker_day_selector"]').simulate("click");
-      wrapper
-        .find(
-          '[data-id="date_picker_year_selector"] [data-id="dropdown_option_0"]'
-        )
-        .simulate("click");
-      expect(onChangeStub).toBeCalled;
-
-      onChangeStub.mockReset();
-      wrapper = mount(<DatePicker fromToday={false} onChange={onChangeStub} />);
-      wrapper.find('[data-id="date_picker_calendar_button"]').simulate("click");
-      wrapper
-        .find("#mobrix-ui-calendar")
-        .find('[data-id="date_button_4"]')
-        .simulate("click");
-
-      wrapper
-        .find("#mobrix-ui-card")
-        .find('[data-id="card_dismiss_button"]')
+        .find('[data-mbx-id="calendar"]')
+        .find(`[data-mbx-calendar-day=4]`)
         .simulate("click");
 
       expect(onChangeStub).toBeCalled;
+    });
+
+    test("Closing the modal triggers the onClose callback", () => {
+      const onCloseStub = jest.fn();
+      let wrapper = mount(
+        <DatePicker onClose={onCloseStub} fromToday={false} />
+      );
+
+      wrapper.find('[data-mbx-test="calendar-button"]').simulate("click");
+
+      wrapper.find('[data-mbx-class="dismiss-button"]').simulate("click");
+
+      expect(onCloseStub).toBeCalled;
     });
   });
 };

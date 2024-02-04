@@ -1,0 +1,80 @@
+{
+  "--mbx-dropdown-background": {
+    "description": "Fallback value for `--mbx-dropdown-background-light` and `--mbx-dropdown-background-dark`"
+  },
+  "--mbx-dropdown-background-light": {
+    "description": "Dropdown background when dark mode is `off`",
+    "fallback": "--mbx-dropdown-background",
+    "defaultGlobal": "--mbx-background-light"
+  },
+  "--mbx-dropdown-background-dark": {
+    "description": "Dropdown background when dark mode is `on`",
+    "fallback": "--mbx-dropdown-background",
+    "defaultGlobal": "--mbx-background-dark"
+  },
+  "--mbx-dropdown-text-color": {
+    "description": "Fallback value for `--mbx-dropdown-text-color-light` and `--mbx-dropdown-text-color-dark`"
+  },
+  "--mbx-dropdown-text-color-light": {
+    "description": "Dropdown text color when dark mode is `off`",
+    "fallback": "--mbx-dropdown-text-color",
+    "defaultGlobal": "--mbx-text-color-light"
+  },
+  "--mbx-dropdown-text-color-dark": {
+    "description": "Dropdown text color when dark mode is `on`",
+    "fallback": "--mbx-dropdown-text-color",
+    "defaultGlobal": "--mbx-text-color-dark"
+  },
+  "--mbx-dropdown-background-hover": {
+    "description": "Fallback value for `--mbx-dropdown-background-hover-light` and `--mbx-dropdown-background-hover-dark`"
+  },
+  "--mbx-dropdown-background-hover-light": {
+    "description": "Dropdown background when dark mode is `off`, on hover",
+    "fallback": "--mbx-dropdown-background",
+    "defaultGlobal": "--mbx-background-hover-light"
+  },
+  "--mbx-dropdown-background-hover-dark": {
+    "description": "Dropdown background when dark mode is `on`, on hover",
+    "fallback": "--mbx-dropdown-background",
+    "defaultGlobal": "--mbx-background-hover-dark"
+  },
+  "--mbx-dropdown-text-color-hover": {
+    "description": "Fallback value for `--mbx-dropdown-text-color-hover-light` and `--mbx-dropdown-text-color-hover-dark`"
+  },
+  "--mbx-dropdown-text-color-hover-light": {
+    "description": "Dropdown text color when dark mode is `off`, on hover",
+    "fallback": "--mbx-dropdown-background-hover",
+    "defaultGlobal": "--mbx-text-color-hover-light"
+  },
+  "--mbx-dropdown-text-color-hover-dark": {
+    "description": "Dropdown text color when dark mode is `on`, on hover",
+    "fallback": "--mbx-dropdown-background-hover",
+    "defaultGlobal": "--mbx-text-color-hover-dark"
+  },
+  "--mbx-dropdown-arrow-color": {
+    "description": "Fallback value for `--mbx-dropdown-arrow-color-light` and `--mbx-dropdown-arrow-color-dark`"
+  },
+  "--mbx-dropdown-arrow-color-light": {
+    "description": "Dropdown arrow color when dark mode is `off`",
+    "defaultInternal": "--mbx-dropdown-text-color-light",
+    "fallback": "--mbx-dropdown-arrow-color"
+  },
+  "--mbx-dropdown-arrow-color-dark": {
+    "description": "Dropdown arrow color when dark mode is `on`",
+    "defaultInternal": "--mbx-dropdown-text-color-dark",
+    "fallback": "--mbx-dropdown-arrow-color"
+  },
+  "--mbx-dropdown-arrow-color-hover": {
+    "description": "Fallback value for `--mbx-dropdown-arrow-color-hover-light` and `--mbx-dropdown-arrow-color-hover-dark`"
+  },
+  "--mbx-dropdown-arrow-color-hover-light": {
+    "description": "Dropdown arrow color when dark mode is `off`, on hover",
+    "defaultInternal": "--mbx-dropdown-arrow-color-light",
+    "fallback": "--mbx-dropdown-arrow-color-hover"
+  },
+  "--mbx-dropdown-arrow-color-hover-dark": {
+    "description": "Dropdown arrow color when dark mode is `on`, on hover",
+    "defaultInternal": "--mbx-dropdown-arrow-color-dark",
+    "fallback": "--mbx-dropdown-arrow-color-hover"
+  }
+}

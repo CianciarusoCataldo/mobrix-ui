@@ -1,4 +1,4 @@
-import { MoBrixUiComponent } from "../../global";
+import { MoBrixUiComponent } from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Divider component props

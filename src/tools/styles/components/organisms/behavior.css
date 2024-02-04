@@ -1,0 +1,68 @@
+@import url("constants/computed.css");
+
+[data-mbx-id]:not([data-mbx-dark="true"]) {
+  /** Calendar **/
+  --mbx-c-cal-bg: var(--mbx-c-cal-bg-l);
+  --mbx-c-cal-txt: var(--mbx-c-cal-txt-l);
+  --mbx-c-cal-s-bg: var(--mbx-c-cal-bg-s-l);
+  --mbx-c-cal-s-txt: var(--mbx-c-cal-txt-s-l);
+  --mbx-c-cal-bg-h: var(--mbx-c-cal-bg-h-l);
+  --mbx-c-cal-txt-h: var(--mbx-c-cal-txt-h-l);
+  --mbx-c-cal-arr: var(--mbx-c-cal-arr-l);
+  --mbx-c-cal-arr-h: var(--mbx-c-cal-arr-h-l);
+  --mbx-c-cal-t: var(--mbx-c-cal-t-l);
+
+  /** DatePicker **/
+  --mbx-c-dtp-bg: var(--mbx-c-dtp-bg-l);
+  --mbx-c-dtp-txt: var(--mbx-c-dtp-txt-l);
+  --mbx-c-dtp-ic-h: var(--mbx-c-dtp-ic-h-l);
+  --mbx-c-dtp-ic: var(---mbx-c-dtp-ic-l);
+
+  /** Drawer **/
+  --mbx-c-draw-bg: var(--mbx-c-draw-bg-l);
+  --mbx-c-draw-txt: var(--mbx-c-draw-txt-l);
+  --mbx-c-draw-arr: var(--mbx-c-draw-arr-l);
+  --mbx-c-draw-arr-h: var(--mbx-c-draw-arr-h-l);
+
+  /** Form **/
+  --mbx-c-form-bg: var(--mbx-c-form-bg-l);
+  --mbx-c-form-txt: var(--mbx-c-form-txt-l);
+  --mbx-c-form-sub-bg: var(--mbx-c-form-sub-bg-l);
+  --mbx-c-form-sub-txt: var(--mbx-c-form-sub-txt-l);
+  --mbx-c-form-field-bg: var(--mbx-c-form-field-bg-l);
+  --mbx-c-form-field-txt: var(--mbx-c-form-field-txt-l);
+}
+
+[data-mbx-id][data-mbx-dark="true"] {
+  /** Calendar **/
+  --mbx-c-cal-bg: var(--mbx-c-cal-bg-d);
+  --mbx-c-cal-txt: var(--mbx-c-cal-txt-d);
+  --mbx-c-cal-s-bg: var(--mbx-c-cal-bg-s-d);
+  --mbx-c-cal-s-txt: var(--mbx-c-cal-txt-s-d);
+  --mbx-c-cal-bg-h: var(--mbx-c-cal-bg-h-d);
+  --mbx-c-cal-txt-h: var(--mbx-c-cal-txt-h-d);
+  --mbx-c-cal-arr: var(--mbx-c-cal-arr-d);
+  --mbx-c-cal-arr-h: var(--mbx-c-cal-arr-h-d);
+  --mbx-c-cal-t: var(--mbx-c-cal-t-d);
+
+  /** DatePicker **/
+  --mbx-c-dtp-bg: var(--mbx-c-dtp-bg-d);
+  --mbx-c-dtp-txt: var(--mbx-c-dtp-txt-d);
+  --mbx-c-dtp-ic: var(---mbx-c-dtp-ic-d);
+
+  --mbx-c-dtp-ic-h: var(--mbx-c-dtp-ic-h-d);
+
+  /** Drawer **/
+  --mbx-c-draw-bg: var(--mbx-c-draw-bg-d);
+  --mbx-c-draw-txt: var(--mbx-c-draw-txt-d);
+  --mbx-c-draw-arr: var(--mbx-c-draw-arr-d);
+  --mbx-c-draw-arr-h: var(--mbx-c-draw-arr-h-d);
+
+  /** Form **/
+  --mbx-c-form-bg: var(--mbx-c-form-bg-d);
+  --mbx-c-form-txt: var(--mbx-c-form-txt-d);
+  --mbx-c-form-sub-bg: var(--mbx-c-form-sub-bg-d);
+  --mbx-c-form-sub-txt: var(--mbx-c-form-sub-txt-d);
+  --mbx-c-form-field-bg: var(--mbx-c-form-field-bg-d);
+  --mbx-c-form-field-txt: var(--mbx-c-form-field-txt-d);
+}

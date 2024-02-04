@@ -1,7 +1,7 @@
 import {
   ComponentWithChildren,
   MoBrixUiComponent,
-} from "../../global";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Container component props
@@ -15,6 +15,8 @@ import {
 export type ContainerProps = ComponentWithChildren<any> & {
   /** component wrapper type ("div" | "header" | "footer") */
   wrapper?: "div" | "header" | "footer";
+
+  additionalProps?: Record<string, any>
 };
 
 /**

@@ -31,14 +31,14 @@ const reviewTest = () => {
           url="www.example.com"
         />
       );
-      expect(wrapper.find('svg[data-id="default-logo"]')).toHaveLength(1);
+      expect(wrapper.find('svg[data-mbx-id="default-logo"]')).toHaveLength(1);
       wrapper = mount(
         <Review
           // @ts-ignore
           logo="invalid-logo"
         />
       );
-      expect(wrapper.find('svg[data-id="default-logo"]')).toHaveLength(1);
+      expect(wrapper.find('svg[data-mbx-id="default-logo"]')).toHaveLength(1);
     });
   });
 };

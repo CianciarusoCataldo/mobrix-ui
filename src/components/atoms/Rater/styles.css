@@ -1,0 +1,22 @@
+[data-mbx-id="rater"] {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: var(--mbx-c-rat-bg);
+  border-radius: 8px;
+  padding: 0.4rem;
+}
+
+[data-mbx-id="rater"][data-mbx-vertical="false"] {
+  flex-direction: row;
+}
+
+[data-mbx-id="rater"][data-mbx-vertical="true"] {
+  flex-direction: column;
+  width: fit-content;
+}
+
+[data-mbx-id="rater"] [data-mbx-class="rater-icon"] {
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}

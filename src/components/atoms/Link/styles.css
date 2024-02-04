@@ -1,25 +1,21 @@
-#mobrix-ui-link {
+[data-mbx-id="link"] {
   font-size: 1rem;
   line-height: 1.5rem;
+  color: var(--mbx-c-link-txt);
 }
 
-#mobrix-ui-link.styled:focus-visible {
-  color: var(--mobrix-ui-link-color);
-}
-
-#mobrix-ui-link.styled.a11y:focus-visible {
+[data-mbx-id="link"][data-mbx-a11y="true"][data-mbx-enabled="true"]:focus-visible {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
+  color: var(--mbx-c-fc);
 }
 
-#mobrix-ui-link:active {
+[data-mbx-id="link"][data-mbx-enabled="true"]:active {
   font-weight: 700;
 }
 
-@media (hover) {
-  #mobrix-ui-link.styled:hover {
-    color: var(--mobrix-ui-link-color);
-  }
+[data-mbx-id="link"][data-mbx-enabled="false"] {
+  text-decoration: underline;
 }

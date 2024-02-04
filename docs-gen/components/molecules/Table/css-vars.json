@@ -1,0 +1,67 @@
+{
+  "--mbx-table-background": {
+    "description": "Fallback value for `--mbx-table-background-light` and `--mbx-table-background-dark`"
+  },
+  "--mbx-table-background-light": {
+    "defaultGlobal": "--mbx-background-light",
+    "fallback": "--mbx-table-background",
+    "description": "Table background when [dark](../../global/props.md#dark) mode is `off'"
+  },
+  "--mbx-table-background-dark": {
+    "defaultGlobal": "--mbx-background-dark",
+    "fallback": "--mbx-table-background",
+    "description": "Table background when [dark](../../global/props.md#dark) mode is `on'"
+  },
+  "--mbx-table-text-color": {
+    "description": "Fallback value for `--mbx-table-text-color-light` and `--mbx-table-text-color-dark`"
+  },
+  "--mbx-table-text-color-light": {
+    "defaultGlobal": "--mbx-text-color-light",
+    "fallback": "--mbx-table-text-color",
+    "description": "Table text color when [dark](../../global/props.md#dark) mode is `off'"
+  },
+  "--mbx-table-text-color-dark": {
+    "defaultGlobal": "--mbx-text-color-dark",
+    "fallback": "--mbx-table-text-color",
+    "description": "Table text color when [dark](../../global/props.md#dark) mode is `on'"
+  },
+  "--mbx-table-header-background": {
+    "description": "Fallback value for `--mbx-table-header-background-light` and `--mbx-table-header-background-dark`"
+  },
+  "--mbx-table-header-background-light": {
+    "defaultColor": "linear-gradient(to right, #354155, #2b3546)",
+    "fallback": "--mbx-table-header-background",
+    "description": "Table header background when [dark](../../global/props.md#dark) mode is `off'"
+  },
+  "--mbx-table-header-background-dark": {
+    "defaultColor": "linear-gradient(to right, #4b5b77, #3e4c64)",
+    "fallback": "--mbx-table-header-background",
+    "description": "Table header background when [dark](../../global/props.md#dark) mode is `on'"
+  },
+  "--mbx-table-header-text-color": {
+    "description": "Fallback value for `--mbx-table-header-text-color-light` and `--mbx-table-header-text-color-dark`"
+  },
+  "--mbx-table-header-text-color-light": {
+    "defaultColor": "whitesmoke",
+    "fallback": "--mbx-table-header-text-color",
+    "description": "Table header text color when [dark](../../global/props.md#dark) mode is `off'"
+  },
+  "--mbx-table-header-text-color-dark": {
+    "defaultColor": "rgb(255, 255, 255)",
+    "fallback": "--mbx-table-header-text-color",
+    "description": "Table header text color when [dark](../../global/props.md#dark) mode is `on'"
+  },
+  "--mbx-table-border-color": {
+    "description": "Fallback value for `--mbx-table-border-color-light` and `--mbx-table-border-color-dark`"
+  },
+  "--mbx-table-border-color-light": {
+    "defaultColor": "darkslategrey",
+    "fallback": "--mbx-table-border-color",
+    "description": "Table border color when [dark](../../global/props.md#dark) mode is `off'"
+  },
+  "--mbx-table-border-color-dark": {
+    "default": "rgb(219, 219, 219)",
+    "fallback": "--mbx-table-border-color",
+    "description": "Table border color when [dark](../../global/props.md#dark) mode is `on'"
+  }
+}

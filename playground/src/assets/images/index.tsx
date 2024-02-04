@@ -123,9 +123,9 @@ export const DarkModeIcon = <img alt="" src={DarkMode} width={30} />;
 export const LightModeIcon = <img alt="" src={LightMode} width={30} />;
 
 export const LANGUAGES_ICONS: Record<string, JSX.Element> = {
-  it: <img alt="" width={15} height={15} src={IT_FLAG} />,
-  de: <img alt="" width={15} height={15} src={DE_FLAG} />,
-  fr: <img alt="" width={15} height={15} src={FR_FLAG} />,
-  es: <img alt="" width={15} height={15} src={ES_FLAG} />,
-  en: <img alt="" width={15} height={15} src={EN_FLAG} />,
+  it: <img className="mr-2" alt="" width={15} height={15} src={IT_FLAG} />,
+  de: <img className="mr-2" alt="" width={15} height={15} src={DE_FLAG} />,
+  fr: <img className="mr-2" alt="" width={15} height={15} src={FR_FLAG} />,
+  es: <img className="mr-2" alt="" width={15} height={15} src={ES_FLAG} />,
+  en: <img className="mr-2" alt="" width={15} height={15} src={EN_FLAG} />,
 };

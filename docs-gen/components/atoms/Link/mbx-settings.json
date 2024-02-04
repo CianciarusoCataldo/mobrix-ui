@@ -1,0 +1,13 @@
+{
+  "since": "1.0.0",
+  "description": "A re-defined `<a>` component, designed to be better used with links",
+  "see": [],
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithChildren": {
+        "type": "`JSX.Element` | `string`"
+      }
+    }
+  }
+}

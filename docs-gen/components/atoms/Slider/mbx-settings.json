@@ -1,0 +1,11 @@
+{
+  "since": "2.0.0",
+  "description": "A modern `range` input component, to control a value using a simple slider",
+  "see": [],
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithCallback": { "type": "number" }
+    }
+  }
+}

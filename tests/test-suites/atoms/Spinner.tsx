@@ -7,6 +7,8 @@ const spinnerTest = () => {
     test("Rendering test", () => {
       let wrapper = mount(<Spinner value="non-valid" />);
       expect(wrapper);
+      wrapper = mount(<Spinner value="non-valid" statuses={{}} />);
+      expect(wrapper);
       wrapper = mount(<Spinner statuses={{ test: <div /> }} value="test" />);
       expect(wrapper);
     });

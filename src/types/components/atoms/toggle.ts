@@ -4,7 +4,7 @@ import {
   ComponentWithIcon,
   ComponentWithValue,
   MoBrixUiComponent,
-} from "../../global";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Toggle component props

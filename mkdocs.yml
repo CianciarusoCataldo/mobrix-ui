@@ -1,0 +1,6 @@
+site_name: MoBrix-ui documentation
+repo_url: https://github.com/CianciarusoCataldo/mobrix-ui
+site_author: Cataldo Cianciaruso
+copyright: 2023 Cataldo Cianciaruso
+theme:
+  name: material

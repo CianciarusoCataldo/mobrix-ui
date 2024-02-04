@@ -1,0 +1,15 @@
+[data-mbx-id="calendar"][data-mbx-background="false"] {
+  --mbx-c-cal-bg: transparent !important;
+}
+
+[data-mbx-id="date-picker"][data-mbx-background="false"] {
+  --mbx-c-dtp-bg: transparent !important;
+}
+
+[data-mbx-id="drawer"][data-mbx-background="false"] {
+  --mbx-c-draw-bg: transparent !important;
+}
+
+[data-mbx-id="form"][data-mbx-background="false"] {
+  --mbx-c-form-bg: transparent !important;
+}

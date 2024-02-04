@@ -1,181 +1,127 @@
-#mobrix-ui-drawer {
+@import url("positions.css");
+
+[data-mbx-id="drawer"] {
   position: fixed;
   z-index: 10;
   padding: 0;
-  color: var(--mobrix-ui-text-color);
+  display: flex;
+  background: var(--mbx-c-draw-bg);
+  color: var(--mbx-c-draw-txt);
+  display: flex;
+}
+
+[data-mbx-id="drawer"][data-mbx-enabled="true"] {
+  animation: var(--mbx-drawer-animation);
+  -moz-animation: var(--mbx-drawer-animation);
+  -ms-animation: var(--mbx-drawer-animation);
+  -o-animation: var(--mbx-drawer-animation);
+}
+
+[data-mbx-id="drawer"] > [data-mbx-class="drawer-content"]::-webkit-scrollbar {
+  display: none !important;
+}
+
+[data-mbx-id="drawer"] > [data-mbx-class="drawer-content"] {
+  overflow-y: auto;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+[data-mbx-id="drawer"] > [data-mbx-class="drawer-close-button"] {
+  border: 0;
   background: transparent;
-  display: flex;
-  animation: var(--mobrix-ui-drawer-animation);
-  -moz-animation: var(--mobrix-ui-drawer-animation);
-  -ms-animation: var(--mobrix-ui-drawer-animation);
-  -o-animation: var(--mobrix-ui-drawer-animation);
+  margin: auto;
 }
 
-#mobrix-ui-drawer.bottom,
-#mobrix-ui-drawer.bottom-left,
-#mobrix-ui-drawer.bottom-right {
-  top: auto;
-  bottom: 0;
-
-  --mobrix-ui-drawer-animation-in: slideBottom 0.3s forwards;
-  --mobrix-ui-drawer-animation-out: slideOutBottom 0.3s forwards;
-}
-
-#mobrix-ui-drawer.left,
-#mobrix-ui-drawer.top-left,
-#mobrix-ui-drawer.bottom-left {
-  right: auto;
-  left: 0;
-}
-
-#mobrix-ui-drawer.right,
-#mobrix-ui-drawer.top-right,
-#mobrix-ui-drawer.bottom-right {
-  left: auto;
-  right: 0;
-}
-
-#mobrix-ui-drawer.left,
-#mobrix-ui-drawer.right {
-  top: 0;
-  bottom: 0;
-  height: 100%;
-}
-
-#mobrix-ui-drawer.top,
-#mobrix-ui-drawer.bottom {
-  left: 0;
-  right: 0;
-}
-
-#mobrix-ui-drawer.top,
-#mobrix-ui-drawer.top-left,
-#mobrix-ui-drawer.top-right {
-  bottom: auto;
-  top: 0;
-
-  --mobrix-ui-drawer-animation-in: slideTop 0.3s forwards;
-  --mobrix-ui-drawer-animation-out: slideOutTop 0.3s forwards;
-}
-
-#mobrix-ui-drawer.left {
-  --mobrix-ui-drawer-animation-in: slideLeft 0.3s forwards;
-  --mobrix-ui-drawer-animation-out: slideOutLeft 0.3s forwards;
-}
-
-#mobrix-ui-drawer.right {
-  --mobrix-ui-drawer-animation-in: slideRight 0.3s forwards;
-  --mobrix-ui-drawer-animation-out: slideOutRight 0.3s forwards;
-}
-
-#mobrix-ui-drawer.ease-in {
-  --mobrix-ui-drawer-animation: var(--mobrix-ui-drawer-animation-in);
-}
-
-#mobrix-ui-drawer.ease-out {
-  --mobrix-ui-drawer-animation: var(--mobrix-ui-drawer-animation-out);
-}
-
-#mobrix-ui-drawer .content {
-  display: flex;
-}
-
-#mobrix-ui-drawer[class^="bottom"] .content {
-  flex-direction: column-reverse;
-}
-
-#mobrix-ui-drawer[class^="top"] .content {
-  flex-direction: column;
-}
-
-#mobrix-ui-drawer.bottom .content,
-#mobrix-ui-drawer.top .content {
-  width: 100%;
-}
-
-#mobrix-ui-drawer.left .content {
-  flex-direction: row;
-  height: 100%;
-}
-
-#mobrix-ui-drawer.right .content {
-  flex-direction: row-reverse;
-  height: 100%;
-}
-
-#mobrix-ui-drawer .drawer-close-button {
-  margin: 0;
-}
-
-#mobrix-ui-drawer[class^="bottom"] .drawer-close-button {
+[data-mbx-id="drawer"][data-mbx-drawer-location^="bottom"]
+  > [data-mbx-class="drawer-close-button"] {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   padding-top: 0.1rem;
-  width: 100%;
 }
 
-#mobrix-ui-drawer[class^="top"] .drawer-close-button {
+[data-mbx-id="drawer"][data-mbx-drawer-location^="top"]
+  > [data-mbx-class="drawer-close-button"] {
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   padding-bottom: 0.1rem;
-  width: 100%;
 }
 
-#mobrix-ui-drawer.right .drawer-close-button,
-#mobrix-ui-drawer.left .drawer-close-button {
+[data-mbx-id="drawer"][data-mbx-drawer-location="right"]
+  > [data-mbx-class="drawer-close-button"],
+[data-mbx-id="drawer"][data-mbx-drawer-location="left"]
+  > [data-mbx-class="drawer-close-button"] {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  height: 100%;
+  height: fit-content;
 }
 
-#mobrix-ui-drawer.right .drawer-close-button {
+[data-mbx-id="drawer"][data-mbx-drawer-location="right"]
+  > [data-mbx-class="drawer-close-button"] {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   padding-left: 0.1rem;
 }
 
-#mobrix-ui-drawer.left .drawer-close-button {
+[data-mbx-id="drawer"][data-mbx-drawer-location="left"]
+  > [data-mbx-class="drawer-close-button"] {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   padding-right: 0.1rem;
 }
 
-#mobrix-ui-drawer .drawer-close-button:focus-visible {
+[data-mbx-id="drawer"] > [data-mbx-class="drawer-close-button"]:focus-visible {
   box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
 }
 
-#mobrix-ui-drawer .drawer-close-button svg {
-  fill: var(--mobrix-ui-text-color);
+[data-mbx-id="drawer"] > [data-mbx-class="drawer-close-button"] svg {
+  fill: var(--mbx-c-draw-arr);
   margin: auto;
 }
 
-#mobrix-ui-drawer[class^="top"] .drawer-close-button svg {
+[data-mbx-id="drawer"][data-mbx-drawer-location^="top"]
+  > [data-mbx-class="drawer-close-button"]
+  svg {
   transform: rotate(90deg);
 }
 
-#mobrix-ui-drawer[class^="bottom"] .drawer-close-button svg {
+[data-mbx-id="drawer"][data-mbx-drawer-location^="bottom"]
+  > [data-mbx-class="drawer-close-button"]
+  svg {
   transform: rotate(-90deg);
 }
 
-#mobrix-ui-drawer.right .drawer-close-button svg {
+[data-mbx-id="drawer"][data-mbx-drawer-location="right"]
+  > [data-mbx-class="drawer-close-button"]
+  svg {
   transform: rotate(180deg);
 }
 
-#mobrix-ui-drawer:focus-visible,
-#mobrix-ui-drawer .drawer-close-button svg:hover,
-#mobrix-ui-drawer .drawer-close-button:focus-visible svg {
-  fill: rgba(217, 119, 6, 1);
+[data-mbx-id="drawer"]
+  > [data-mbx-class="drawer-close-button"]:focus-visible
+  svg {
+  fill: var(--mbx-c-draw-arr-h);
 }
 
-@media (hover: none) {
-  #mobrix-ui-drawer .drawer-close-button:hover svg {
-    fill: var(--mobrix-ui-text-color);
+[data-mbx-id="drawer"][data-mbx-drawer-animation="ease-in"] {
+  --mbx-drawer-animation: var(--mbx-drawer-animation-in);
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-animation="ease-out"] {
+  --mbx-drawer-animation: var(--mbx-drawer-animation-out);
+}
+
+@media (hover) {
+  [data-mbx-id="drawer"][data-mbx-enabled="true"]
+    [data-mbx-class="drawer-close-button"]
+    svg:hover {
+    fill: var(--mbx-c-draw-arr-h);
   }
 }

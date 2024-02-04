@@ -3,7 +3,7 @@ import {
   ComponentWithValue,
   MoBrixUiComponent,
   NumericInputComponent,
-} from "../../global";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Slider component props
@@ -16,10 +16,7 @@ import {
  */
 export type SliderProps = ComponentWithValue<number> &
   ComponentWithCallback<number> &
-  Omit<NumericInputComponent, "placeholder"> & {
-    /** Slider thumb custom color (exadecimal). If set, the standard style is overwritten */
-    thumbColor?: string;
-  };
+  Omit<NumericInputComponent, "placeholder">;
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Slider component

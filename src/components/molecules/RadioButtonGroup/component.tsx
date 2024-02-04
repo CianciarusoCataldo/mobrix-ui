@@ -1,9 +1,9 @@
 import React from "react";
-import classNames from "classnames";
 
 import {
   MobrixUiReactiveComponent,
   RadioButtonGroupProps,
+  RadioElement,
 } from "../../../types";
 
 import Label from "../../atoms/Label";
@@ -16,40 +16,48 @@ const radioButtonGroupComponent: MobrixUiReactiveComponent<
   value,
   setValue,
   buttons = [],
-  elementClassName,
+  elementClassName = "",
   dark,
+  radioProps = {},
   onChange = () => {},
-}) =>
-  buttons.map((element, index) => {
-    return (
-      <div
-        className={classNames(
-          "radio-group-element",
-          element.textPosition || "left",
-          elementClassName
-        )}
-        key={"radio_group_element_" + index}
-      >
-        {element.text && (
-          <Label key="radio_text" className="radio-text" dark={dark}>
-            {element.text}
-          </Label>
-        )}
-        {element.component}
-        <RadioButton
-          deselectable={false}
-          dark={dark}
-          id={"radio_component_" + index}
-          key="radio_component"
-          className="radio-component"
-          value={value === index}
-          onChange={() => {
-            onChange(index);
-            setValue(index);
+  defaultPosition = "left",
+  disabled,
+}) => {
+  return buttons.map((element, index) => (
+    <div
+      className={elementClassName}
+      data-mbx-text-position={element.textPosition || defaultPosition}
+      data-mbx-class="radio-group-element"
+      key={"radio_group_element_" + index}
+    >
+      {element.text && (
+        <Label
+          disabled={disabled}
+          key="radio_text"
+          additionalProps={{
+            "data-mbx-class": "radio-text",
           }}
-        />
-      </div>
-    );
-  });
+          dark={dark}
+        >
+          {element.text}
+        </Label>
+      )}
+      {element.component}
+      <RadioButton
+        disabled={disabled}
+        deselectable={false}
+        additionalProps={{ "data-mbx-test": "radio_component_" + index }}
+        key="radio_component"
+        value={value === index}
+        onChange={() => {
+          onChange(index);
+          setValue(index);
+        }}
+        {...radioProps}
+        {...(element.props || {})}
+      />
+    </div>
+  ));
+};
 
 export default radioButtonGroupComponent;

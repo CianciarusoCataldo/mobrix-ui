@@ -1,8 +1,11 @@
 import {
+  ClosableComponent,
+  CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
-} from "../../global";
+} from "../../../types/global";
+
 import { CalendarDate, CalendarProps } from "./calendar";
 
 /**
@@ -16,7 +19,10 @@ import { CalendarDate, CalendarProps } from "./calendar";
  */
 export type DatePickerProps = ComponentWithCallback<CalendarDate> &
   ComponentWithValue<CalendarDate> &
-  CalendarProps;
+  ClosableComponent &
+  CalendarProps & {
+    calendarProps?: CommonProps;
+  };
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} DatePicker component

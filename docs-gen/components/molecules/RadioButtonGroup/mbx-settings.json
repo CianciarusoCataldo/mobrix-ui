@@ -1,0 +1,14 @@
+{
+  "since": "2.0.0",
+  "description": "A flexible and fully customizable radio buttons group",
+  "see": [],
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithCallback": {
+        "type": "number",
+        "overrideDescription": "Callback triggered when a RadioButton is clicked by the user, giving its index as parameter"
+      }
+    }
+  }
+}

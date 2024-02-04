@@ -3,7 +3,7 @@ import {
   ClosableComponent,
   ComponentWithChildren,
   MoBrixUiComponent,
-} from "../../global";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Drawer component props
@@ -28,6 +28,7 @@ export type DrawerProps = ComponentWithChildren<
       | "top-right"
       | "bottom-left"
       | "bottom-right";
+    closeOnClickOutside?: boolean;
   };
 
 /**

@@ -1,56 +1,35 @@
-#mobrix-ui-card {
+[data-mbx-id*="card"] {
   display: flex;
   flex-direction: column;
-  padding: 0.25rem;
-  margin: 0.5rem;
   background-color: transparent;
+  background: var(--mbx-c-card-bg);
+  color: var(--mbx-c-card-txt);
 }
 
-#mobrix-ui-card.styled {
-  color: var(--mobrix-ui-text-color);
-  background-image: var(--mobrix-ui-background);
+[data-mbx-id*="card"] {
+  padding: 0.25rem;
 }
 
-#mobrix-ui-card .header {
+[data-mbx-id*="card"] [data-mbx-class="header"] {
   margin: auto;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 700;
   text-align: center;
-  padding: 0.75rem;
-}
-
-#mobrix-ui-card .header-container {
   width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
-#mobrix-ui-card .body {
+[data-mbx-id*="card"] [data-mbx-class="body"] {
   padding: 0.25rem;
   margin: 0.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-#mobrix-ui-card .footer {
-  padding: 0.25rem;
-  margin: 0.5rem;
+[data-mbx-id*="card"] [data-mbx-class="footer"] {
+  margin-top: 0.3rem;
+  padding: 0.3rem;
   font-size: 1rem;
   text-align: center;
-}
-
-#mobrix-ui-card.styled .card-dismiss-button {
-  position: relative;
-  right: 0;
-}
-
-#mobrix-ui-card.styled .card-dismiss-button:hover svg path {
-  fill: rgba(185, 28, 28, 1);
-}
-
-@media (hover: none) {
-  #mobrix-ui-card.styled .card-dismiss-button:hover svg path {
-    fill: var(--mobrix-ui-text-color);
-  }
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
 }

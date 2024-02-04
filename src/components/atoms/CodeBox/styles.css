@@ -1,25 +1,31 @@
-#mobrix-ui-codebox {
+[data-mbx-id="codebox"] {
   overflow: hidden;
-  padding: 0.3rem;
+  padding: 0.1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: var(--mbx-c-cdb-bg);
 }
 
-#mobrix-ui-codebox.styled {
-  color: var(--mobrix-ui-text-color);
-  background-color: var(--mobrix-ui-background-color);
+[data-mbx-id="codebox"] {
+  color: var(--mbx-c-cdb-txt);
 }
 
-#mobrix-ui-codebox .codebox-copy-icon {
+[data-mbx-id="codebox"] [data-mbx-class="codebox-copy-icon"] {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-#mobrix-ui-codebox .codebox-code {
+[data-mbx-id="codebox"] [data-mbx-class="codebox-code"] {
   margin-top: 0.7rem;
   padding: 1rem;
   line-height: 1.5rem;
   overflow: auto;
+}
+
+[data-mbx-id="codebox"][data-mbx-enabled="true"]
+  [data-mbx-class="codebox-copy-icon"]
+  > [data-mbx-id="icon-button"]:active {
+  opacity: 0.3;
 }

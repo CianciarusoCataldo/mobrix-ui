@@ -8,11 +8,12 @@ export const demoProps = {
   unstyled: BooleanProp(false),
   animated: BooleanProp(true),
   a11y: BooleanProp(true),
+  hover: BooleanProp(true),
   a11yLabel: StringProp(""),
 };
 
 export const demoRows = [
   ["animated", "dark", "shadow"],
-  ["className", "unstyled"],
+  ["className", "unstyled", "hover"],
   ["hide", "a11y", "a11yLabel"],
 ];

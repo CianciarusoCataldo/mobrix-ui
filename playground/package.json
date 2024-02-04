@@ -4,15 +4,18 @@
   "private": true,
   "homepage": "https://cianciarusocataldo.github.io/mobrix-ui",
   "dependencies": {
+    "classnames": "^2.3.1",
     "@cianciarusocataldo/demo-ui": "^3.1.0",
     "mobrix-designer": "^1.0.1",
     "mobrix-designer-plugin-router": "^1.0.2",
     "mobrix-engine": "^1.0.0",
     "mobrix-engine-plugins": "^1.0.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "npm-run-all": "^4.1.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@cianciarusocataldo/demo-ui": "^3.1.0",
     "@types/jest": "^27.4.0",
     "@types/mocha": "^9.0.0",

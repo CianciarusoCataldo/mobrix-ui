@@ -1,0 +1,13 @@
+{
+  "since": "1.0.0",
+  "description": "A checkbox element, totally customizable.",
+  "see": [
+    "https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/CheckBoxx"
+  ],
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithCallback": { "type": "boolean" }
+    }
+  }
+}

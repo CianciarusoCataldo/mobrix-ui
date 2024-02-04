@@ -1,11 +1,9 @@
 import React from "react";
 import { CarouselProps, MobrixUiReactiveComponent } from "../../../types";
 
-import classNames from "classnames";
-
-import { ICONS } from "../Rater/icons";
 import { arrowIcon } from "./icons";
-import Button from "../../atoms/Button";
+
+import { Button, IconButton } from "../../atoms";
 
 const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
   value: selectedItem,
@@ -13,6 +11,8 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
   onChange = () => {},
   elements = [],
   dark,
+  disabled,
+  hover,
 }) => {
   const [activeClassName, setActiveClassname] = React.useState("");
   const [hoveredDot, setHoveredDot] = React.useState<number | null>(null);
@@ -31,20 +31,21 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
       elementsArray.push(
         <div
           key={`carousel_element_${index}`}
-          className={classNames("element", {
-            "component-hidden": index !== item,
-            [activeClassName]: index === item,
-          })}
+          data-mbx-hide={index !== item}
+          data-mbx-class="element"
+          data-mbx-animation={index === item ? activeClassName : ""}
         >
           {element}
-        </div>
+        </div>,
       );
 
       dots.push(
-        <Button
-          className="dot"
-          unstyled
-          id={`dot_${index}`}
+        <IconButton
+          additionalProps={{
+            "data-mbx-class": "dot",
+            "data-mbx-test": `dot_${index}`,
+          }}
+          disabled={disabled}
           key={`dot_${index}`}
           onMouseEnter={() => setHoveredDot(index)}
           onMouseLeave={() => setHoveredDot(null)}
@@ -53,50 +54,49 @@ const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
             updateItem(index);
           }}
         >
-          {index === item || (hoveredDot != null && index === hoveredDot)
-            ? ICONS.circle.FULL
-            : ICONS.circle.EMPTY}
-        </Button>
+          <div
+            data-mbx-class="carousel-dot-icon"
+            data-mbx-icon-full={
+              index === item || (hoveredDot != null && index === hoveredDot)
+            }
+          />
+        </IconButton>,
       );
     });
   }
 
   return [
-    <div className="elements" key="mobrix_ui_carousel_elements">
-      <Button
+    <div data-mbx-class="elements" key="mobrix_ui_carousel_elements">
+      <IconButton
         dark={dark}
-        id="left_arrow"
-        className={classNames("arrow prev", {
-          disabled: item === 0,
-        })}
-        unstyled
-        disabled={item === 0}
+        additionalProps={{
+          "data-mbx-arrow": "prev",
+        }}
+        disabled={item === 0 || disabled}
         onClick={() => {
           setActiveClassname("from-left");
           updateItem(item - 1);
         }}
       >
         {arrowIcon}
-      </Button>
+      </IconButton>
       {elementsArray}
-      <Button
+      <IconButton
         dark={dark}
-        unstyled
-        className={classNames("arrow next", {
-          disabled: item === elements.length - 1,
-        })}
-        id="right_arrow"
-        disabled={item === elements.length - 1}
+        additionalProps={{
+          "data-mbx-arrow": "next",
+        }}
+        disabled={item === elements.length - 1 || disabled}
         onClick={() => {
           setActiveClassname("from-right");
           updateItem(item + 1);
         }}
       >
         {arrowIcon}
-      </Button>
+      </IconButton>
     </div>,
-    <div key="mobrix_ui_carousel_dots">
-      <div className="dots">{dots}</div>
+    <div key="mobrix_ui_carousel_dots" data-mbx-class="dots">
+      {dots}
     </div>,
   ];
 };

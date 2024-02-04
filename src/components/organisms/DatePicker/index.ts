@@ -2,56 +2,59 @@ import "./styles.css";
 
 import { CalendarDate, DatePickerComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../utils";
+import { buildMobrixUiReactiveComponent } from "../../../tools";
 import { today } from "../Calendar/utils";
 
 import datePickerComponent from "./components";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
- * A smart date-picker, with an internal calendar accessible to choose a date.
+ *  A smart date-picker, with an internal Calendar accessible to choose a date
+ *
+ * @param {CalendarDate} value Actual selected date - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {boolean} hideArrows If `true`, hide arrow buttons near the date label - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {string[]} days Custom days labels - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {string[]} months Custom months labels - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {(date: CalendarDate) => void} onViewChange Callback triggered when the Calendar view (the displayed month) is changed - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {number} startYear Initial displayed year - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {number} startMonth Initial displayed month - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {boolean} fromToday If `false`, prevent the user to select a date lower than today date - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {string} dayLabel Show/hide actual day label on top of the calendar - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {string} labelClassName Custom className applied on the day label component - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {Record<string, any>} labelProps Custom props applied on the day label component - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {(newValue: CalendarDate) => void} onChange Callback triggered when Calendar component input value is changed by the user - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
+ * @param {() => void} onClose Callback triggered when DatePicker modal is closed
+ * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
+ * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
+ * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode
+ * @param {boolean} hide - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Hide/show component
+ * @param {string} id - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - [id parameter](https://www.w3schools.com/html/html_id.asp) (for styling/testing purpose, to easily find the component into the DOM)
+ * @param {boolean} shadow - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable shadow behind component
+ * @param {CSSProperties} style - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Css inline properties applied on main container
+ * @param {boolean} unstyled - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If `true`, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons)
+ * @param {boolean} animated - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component animations
+ * @param {boolean} background - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component background
+ * @param {boolean} hover - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component hover standard styles
+ * @param {boolean} disabled - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If true, disable the component. The effect may vary depending on the component type
+ * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
+ *
+ *
+ *
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/organisms/DatePicker
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 2.0.0
- *
- * @param value actual selected date (`today` if not set)
- * @param onChange callback called when a day is selected, with the entire selected date (year, month, day) as a parameter
- * @param onViewChange `internal Caledar props` - callback called when the Calendar view (the showed month) change
- * @param {string[]} days `internal Caledar props` - custom days labels (default use english days)
- * @param {string[]} months `internal Caledar props` - custom months labels (default use english months)
- * @param {boolean} dayLabel `internal Caledar props` - show/hide actual day label on top of the calendar
- * @param {number} startYear `internal Caledar props` - starting displayed year (default today year)
- * @param {number} startMonth `internal Caledar props` - starting displayed month (default today month)
- * @param {boolean} hideArrow `internal Caledar props` - show/hide arrow buttons
- * @param {boolean} fromToday `internal Caledar props` - if true, prevent the user to select onnly a date greater or equal to today date
- * @param {string} className `common MoBrix-ui prop` - custom className
- * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
- * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
- * @param {boolean} dark `common MoBrix-ui prop` - Enable/disable dark mode
- * @param {boolean} hide `common MoBrix-ui prop` - Hide/show component
- * @param {boolean} shadow `common MoBrix-ui prop` - Enable/disable shadow behind component
- * @param {boolean} animated `common MoBrix-ui prop` enable/disable component animations
- * @param {string} key `common MoBrix-ui prop` - custom component React key (the standard {@link https://reactjs.org/docs/lists-and-keys.html key parameter})
- * @param {boolean} a11y `common MoBrix-ui prop` - enable/disable accessibility features
- * @param {boolean} a11yDark `common MoBrix-ui prop` - if the `a11y` parameter is `true`, override standard focus color style with/without dark mode (normally, the color changes accordingly to the `dark` parameter)
- * @param {string} a11yLabel `common MoBrix-ui prop` - if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label}
- * @param {() => void} onFocus `common MoBrix-ui prop` - callback called when component is focused
- * @param {() => void} onFocusLost `common MoBrix-ui prop` - callback called when component focus is lost
- * @param {(keyEvent: any) => void} onKeyDown `common MoBrix-ui prop` - callback called when a key is pressed when inside the component
- *
- * @example <caption>Example Table usage</caption>
- *
- * import { render } from "react-dom";
- * import { Calendar } from 'mobrix-ui';
- *
- * render(<Calendar value={{ year:1993, month:2, day:19 }} />, document.getElementById("root"));
- *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/DatePicker
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
 const DatePicker: DatePickerComponent = ({
-  onChange,
+  /* istanbul ignore next */
+  onClose = () => {},
+  /* istanbul ignore next */
+  onChange = () => {},
   value: inputValue,
   months,
   days,
@@ -61,14 +64,18 @@ const DatePicker: DatePickerComponent = ({
   fromToday,
   dayLabel,
   onViewChange,
+  calendarProps = {},
+  additionalProps,
+  labelClassName,
+  labelProps,
   ...commonProps
 }) => {
   const todayDate = today();
 
-  return buildMobrixUiReactiveComponent<CalendarDate>({
+  return buildMbxReactiveComponent<CalendarDate>(commonProps, (props) => ({
     name: "date-picker",
-    commonProps,
-    render: (value, setValue) =>
+    commonProps: props,
+    Component: ({ value, setValue }) =>
       datePickerComponent({
         today: todayDate,
         onChange,
@@ -82,11 +89,14 @@ const DatePicker: DatePickerComponent = ({
         fromToday,
         dayLabel,
         onViewChange,
-        ...commonProps,
+        calendarProps,
+        onClose,
+        ...props,
       }),
     inputValue,
     defaultValue: todayDate,
-  });
+    additionalProps,
+  }));
 };
 
 export default DatePicker;

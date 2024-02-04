@@ -2,8 +2,6 @@ import React from "react";
 
 import { MobrixUiReactiveComponent, ToggleProps } from "../../../types";
 
-import classNames from "classnames";
-
 import { defaultIcon } from "./icons";
 
 const toggleComponent: MobrixUiReactiveComponent<boolean, ToggleProps> = ({
@@ -11,16 +9,17 @@ const toggleComponent: MobrixUiReactiveComponent<boolean, ToggleProps> = ({
   icon = defaultIcon,
   offIcon,
   onIcon,
+  disabled,
+  hover,
 }) => {
   const iconOn = onIcon || icon;
   const iconOff = offIcon || icon;
 
   return (
     <div
-      className={classNames("toggle-icon", {
-        flip: !status,
-        "flip-back": status,
-      })}
+      data-mbx-flip={status}
+      data-mbx-class="toggle-icon"
+      data-mbx-opacityhover={!disabled && hover}
     >
       {status === true ? iconOn : iconOff}
     </div>

@@ -2,7 +2,7 @@ import {
   ComponentWithCallback,
   ComponentWithValue,
   MoBrixUiComponent,
-} from "../../global";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Selector component props
@@ -17,6 +17,8 @@ export type SelectorProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {
     /** selector options, every element must be a string */
     elements?: string[];
+
+    optionClassName?: string
   };
 
 /**

@@ -1,0 +1,39 @@
+[data-mbx-id="tab-viewer"] {
+  display: flex;
+  flex-direction: column;
+}
+
+[data-mbx-id="tab-viewer"] [data-mbx-class="tabs-list"] {
+  display: flex;
+  flex-direction: row;
+}
+
+[data-mbx-id="tab-viewer"] [data-mbx-class="tabs-list"] [data-mbx-class="tab"] {
+  padding: 0.7rem 1rem;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: var(--mbx-c-tabv-txt);
+}
+
+[data-mbx-id="tab-viewer"]
+  [data-mbx-class="tabs-list"]
+  [data-mbx-class="tab"][data-mbx-tab-viewer-selected="true"] {
+  --mbx-button-background: var(--mbx-c-tabv-bg);
+  --mbx-button-text-color: var(--mbx-c-tabv-txt);
+}
+
+[data-mbx-id="tab-viewer"]
+  [data-mbx-class="tabs-list"]
+  [data-mbx-class="tab"]:not([data-mbx-tab-viewer-selected="true"]) {
+  --mbx-button-background: var(--mbx-c-tabv-off-bg);
+  --mbx-button-text-color: var(--mbx-c-tabv-off-txt);
+  --mbx-button-background-hover: var(--mbx-c-tabv-off-bg-h);
+  --mbx-button-text-color-hover: var(--mbx-c-tabv-off-txt-h);
+}
+
+[data-mbx-id="tab-viewer"] [data-mbx-class="tab-view"] {
+  padding: 0.7rem 1rem;
+  background: var(--mbx-c-tabv-bg);
+}

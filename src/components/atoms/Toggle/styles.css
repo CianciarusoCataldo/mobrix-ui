@@ -1,23 +1,16 @@
-#mobrix-ui-toggle {
+[data-mbx-id="toggle"] {
   width: 65px;
   height: 30px;
-}
-
-#mobrix-ui-toggle.styled {
-  background-image: var(--mobrix-ui-background);
-  border-radius: 14px;
+  background: var(--mbx-c-tog-bg);
+  border-radius: 40px;
   border-width: 0;
 }
 
-#mobrix-ui-toggle.styled.off {
-  background-image: linear-gradient(to right, rgb(219, 217, 217), #b9b9b9);
+[data-mbx-id="toggle"][data-mbx-enabled="false"] {
+  opacity: 0.7;
 }
 
-#mobrix-ui-toggle.styled.dark.off {
-  background-image: linear-gradient(to right, #1e2531, #1d232e);
-}
-
-#mobrix-ui-toggle .toggle-icon {
+[data-mbx-id="toggle"] [data-mbx-class="toggle-icon"] {
   overflow: hidden;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
@@ -26,40 +19,35 @@
   -ms-transition: all 0.2s;
 }
 
-#mobrix-ui-toggle .toggle-icon.flip-back {
+[data-mbx-id="toggle"] [data-mbx-class="toggle-icon"][data-mbx-flip="true"] {
   transform: translate(0%);
 
-  --svginternalcolor: white;
-  --svgexternalcolor: #7a7878;
+  --svginternalcolor: var(--mbx-c-tog-ic-on-int);
+  --svgexternalcolor: var(--mbx-c-tog-ic-on-ext);
 }
 
-#mobrix-ui-toggle .toggle-icon.flip {
+[data-mbx-id="toggle"] [data-mbx-class="toggle-icon"][data-mbx-flip="false"] {
   transform: translate(35px);
-
-  --svginternalcolor: #a5a5a5;
-  --svgexternalcolor: #7a7878;
+  --svginternalcolor: var(--mbx-c-tog-ic-off-int);
+  --svgexternalcolor: var(--mbx-c-tog-ic-off-ext);
 }
 
-#mobrix-ui-toggle.dark .toggle-icon.flip-back {
-  --svginternalcolor: white;
-  --svgexternalcolor: #a7a3a3;
-}
-
-#mobrix-ui-toggle.dark .toggle-icon.flip {
-  --svginternalcolor: #636363;
-  --svgexternalcolor: #a7a3a3;
-}
-
-#mobrix-ui-toggle .toggle-icon .wrapper {
+[data-mbx-id="toggle"]
+  [data-mbx-class="toggle-icon"]
+  [data-mbx-class="wrapper"] {
   opacity: 0.2;
 }
 
-#mobrix-ui-toggle .toggle-icon .external {
+[data-mbx-id="toggle"]
+  [data-mbx-class="toggle-icon"]
+  [data-mbx-class="external"] {
   background-color: var(--svgexternalcolor);
   fill: var(--svgexternalcolor);
 }
 
-#mobrix-ui-toggle .toggle-icon .internal {
+[data-mbx-id="toggle"]
+  [data-mbx-class="toggle-icon"]
+  [data-mbx-class="internal"] {
   fill: var(--svgexternalcolor);
   stroke: var(--svginternalcolor);
   stroke-width: 4;

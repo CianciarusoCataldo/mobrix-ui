@@ -1,0 +1,52 @@
+{
+  "--mbx-drawer-background": {
+    "description": "Fallback value for `--mbx-drawer-background-light` and `--mbx-drawer-background-dark`"
+  },
+  "--mbx-drawer-background-light": {
+    "description": "Drawer background when [dark](../../global/props.md#dark) mode is `off`",
+    "defaultGlobal": "--mbx-background-light",
+    "fallback": "--mbx-drawer-background"
+  },
+  "--mbx-drawer-background-dark": {
+    "description": "Drawer background when [dark](../../global/props.md#dark) mode is `on`",
+    "defaultGlobal": "--mbx-background-dark",
+    "fallback": "--mbx-drawer-background"
+  },
+  "--mbx-drawer-text-color": {
+    "description": "Fallback value for `--mbx-drawer-text-color-light` and `--mbx-drawer-text-color-dark`"
+  },
+  "--mbx-drawer-text-color-light": {
+    "description": "Drawer text color when [dark](../../global/props.md#dark) mode is `off`",
+    "defaultGlobal": "--mbx-text-color-light",
+    "fallback": "--mbx-drawer-text-color"
+  },
+  "--mbx-drawer-text-color-dark": {
+    "description": "Drawer text color when [dark](../../global/props.md#dark) mode is `on`",
+    "defaultGlobal": "--mbx-text-color-dark",
+    "fallback": "--mbx-drawer-text-color"
+  },
+  "--mbx-drawer-arrow": {
+    "description": "Fallback value for `--mbx-drawer-arrow-light` and `--mbx-drawer-arrow-dark`"
+  },
+  "--mbx-drawer-arrow-light": {
+    "description": "Drawer arrow color when [dark](../../global/props.md#dark) mode is `off`",
+    "defaultInternal": "--mbx-drawer-text-color-light",
+    "fallback": "--mbx-drawer-arrow"
+  },
+  "--mbx-drawer-arrow-dark": {
+    "description": "Drawer arrow color when [dark](../../global/props.md#dark) mode is `on`",
+    "defaultInternal": "--mbx-drawer-text-color-dark",
+    "fallback": "--mbx-drawer-arrow"
+  },
+  "--mbx-drawer-arrow-hover": {
+    "description": "Fallback value for `--mbx-drawer-arrow-hover-light` and `--mbx-drawer-arrow-hover-dark`"
+  },
+  "--mbx-drawer-arrow-hover-light": {
+    "description": "Drawer arrow color when [dark](../../global/props.md#dark) mode is `off`, on `hover",
+    "fallback": "--mbx-drawer-arrow-hover"
+  },
+  "--mbx-drawer-arrow-hover-dark": {
+    "description": "Drawer arrow color when [dark](../../global/props.md#dark) mode is `on`, on `hover",
+    "fallback": "--mbx-drawer-arrow-hover"
+  }
+}

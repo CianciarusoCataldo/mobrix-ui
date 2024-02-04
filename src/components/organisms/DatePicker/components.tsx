@@ -12,17 +12,15 @@ import { getMonthsDuration } from "../Calendar/utils";
 
 import { CalendarIcon } from "./icons";
 
-import Container from "../../molecules/Container";
-import Dropdown from "../../molecules/Dropdown";
 import Modal from "../../molecules/Modal";
 import Calendar from "../Calendar";
-import Button from "../../atoms/Button";
+import IconButton from "../../atoms/IconButton";
+import Label from "../../atoms/Label";
 
 const DatePickerInternalComponent: MobrixUiReactiveComponent<
   CalendarDate,
   DatePickerProps & { today: CalendarDate & { dayOfTheMonth: number } }
 > = ({
-  onChange,
   setValue,
   today: todayDate,
   value,
@@ -35,6 +33,10 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
   dayLabel,
   onViewChange,
   animated,
+  disabled,
+  calendarProps,
+  onChange,
+  onClose,
   ...commonProps
 }) => {
   const [isVisible, setVisible] = React.useState<boolean>(false);
@@ -47,121 +49,76 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
 
   const monthsDuration = getMonthsDuration(year);
 
-  const months = customMonths.map((el, index) => ({ name: el }));
-
   const day =
-    value.day && value.day > 0 && value.day <= monthsDuration[month]
-      ? value.day
+    value.dayOfTheMonth &&
+    value.dayOfTheMonth > 0 &&
+    value.dayOfTheMonth <= monthsDuration[month]
+      ? value.dayOfTheMonth
       : todayDate.dayOfTheMonth;
 
-  const days = new Array(monthsDuration[month])
-    .fill(" ")
-    .map((el, index) => ({ name: String(index + 1) }));
-
-  const years = new Array(50)
-    .fill(" ")
-    .map((el, index) => Number(todayDate.year - 50 + index))
-    .concat(
-      new Array(30).fill("").map((el, index) => Number(index + todayDate.year))
-    );
-
   /* istanbul ignore next */
-  const calendarFocusCallback = () => !commonProps.hide && setVisible(false);
+  const onCloseCallback = () => {
+    onClose();
+    setVisible(false);
+  };
+
+  const DateLabel = ({ children }) => (
+    <Label
+      additionalProps={{
+        "data-mbx-class": "date-picker-element",
+      }}
+      dark={commonProps.dark}
+    >
+      {children}
+    </Label>
+  );
 
   return [
-    <div key="date_picker_box" className="date-picker-box">
-      <Container dark={commonProps.dark} className="buttons">
-        <div className="date-selectors">
-          <Dropdown
-            value={day - 1}
-            dark={commonProps.dark}
-            unstyled
-            hideArrow
-            onChange={(selectedDay) =>
-              setValue({
-                month,
-                year,
-                day: selectedDay + 1,
-              })
-            }
-            content={days}
-            key="date_picker_day_selector"
-            id="date_picker_day_selector"
-            className="element days"
-          />
-          <Dropdown
-            dark={commonProps.dark}
-            unstyled
-            value={month}
-            hideArrow
-            content={months}
-            key="date_picker_month_selector"
-            id="date_picker_month_selector"
-            className="element months"
-            onChange={(selectedMonth) =>
-              setValue({
-                month: selectedMonth,
-                day: 1,
-                year,
-              })
-            }
-          />
-          <Dropdown
-            dark={commonProps.dark}
-            unstyled
-            hideArrow
-            onChange={(selectedYear) =>
-              setValue({
-                month,
-                day: 1,
-                year: Number(years[selectedYear]),
-              })
-            }
-            content={years.map((el, index) => ({ name: String(el) }))}
-            value={years.indexOf(year)}
-            key="date_picker_year_selector"
-            id="date_picker_year_selector"
-            className="element years"
-          />
-        </div>
-        <Button
-          unstyled
-          dark={commonProps.dark}
-          onClick={() => setVisible(!isVisible)}
-          key="date_picker_calendar_button"
-          id="date_picker_calendar_button"
-          className="element"
-        >
-          {CalendarIcon}
-        </Button>
-      </Container>
+    <div data-mbx-class="date-selectors" key="date_picker_selectors">
+      <DateLabel>{String(day)}</DateLabel>
+      <DateLabel>{String(customMonths[month])}</DateLabel>
+      <DateLabel>{String(year)}</DateLabel>
     </div>,
+    <IconButton
+      additionalProps={{
+        "data-mbx-test": "calendar-button",
+      }}
+      disabled={disabled}
+      dark={commonProps.dark}
+      onClick={() => setVisible(true)}
+      key="date_picker_calendar_button"
+    >
+      {CalendarIcon}
+    </IconButton>,
     <Modal
+      disabled={disabled}
       hide={!isVisible}
-      className="date-picker-modal"
       key="date_picker_modal"
       animated={animated}
-      onClose={() => setVisible(false)}
-      dark={true}
+      onClose={onCloseCallback}
+      additionalProps={{
+        "data-mbx-class": "date-picker-modal",
+      }}
     >
       <Calendar
-        animated={animated}
-        className="date-picker-calendar"
+        shadow={false}
         days={customDays}
         months={customMonths}
         startMonth={startMonth}
         startYear={startYear}
+        disabled={disabled}
         hideArrows={hideArrows}
         fromToday={fromToday}
         onViewChange={onViewChange}
         dayLabel={dayLabel}
         value={{ day, month, year }}
         onChange={(date) => {
-          onChange && onChange(date);
+          onChange(date);
           setValue(date);
         }}
-        onFocusLost={calendarFocusCallback}
         dark={commonProps.dark}
+        labelProps={{ dark: true }}
+        {...calendarProps}
       />
     </Modal>,
   ];

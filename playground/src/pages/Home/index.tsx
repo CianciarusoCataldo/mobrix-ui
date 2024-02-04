@@ -18,7 +18,7 @@ import AppPage from "components/AppPage";
 const HomePage = () => {
   const t = useHomePageTranslation();
   const dispatch = useDispatch();
-  const PATHS = useSelector(getRoutes);
+  const PATHS: Record<string, any> = useSelector(getRoutes);
 
   const PARSERS = {
     description: (localizedString: string) => {
@@ -62,7 +62,6 @@ const HomePage = () => {
                         ? splittedPart[2]
                         : splittedPart[0]
                     }
-                    enhanced
                     dark
                   />
                 </div>
@@ -98,25 +97,26 @@ const HomePage = () => {
         key="homepage_container"
         className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row"
       >
-        <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 3xl:w-1/2 4xl:w-1/2">
+        <div className="w-full mr-4 md:w-2/3 lg:w-2/3 xl:w-2/3 2xl:w-2/3 3xl:w-2/3 4xl:w-2/3">
           <Card shadow body={description} />
           <AppLabel className="text-2xl mt-10">
             {t("installation", { context: "title" })}
           </AppLabel>
           <Card shadow body={installationGuide} />
         </div>
-        <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 3xl:w-1/2 4xl:w-1/2">
+        <div className="w-full md:w-1/3 lg:w-1/3 xl:w-1/3 2xl:w-1/3 3xl:w-1/3 4xl:w-1/3">
           <Card
             shadow
-            header={t("componentsList_header")}
             body={
-              <List
-                elements={componentsList}
-                onChange={(index) => {
-                  dispatch(goTo(PATHS[componentsList[index]]));
-                  dispatch(closeDrawer());
-                }}
-              ></List>
+              <>
+                {t("componentsList_header")}
+                <List
+                  elements={componentsList}
+                  onClick={(index) => {
+                    dispatch(goTo(PATHS[componentsList[index]]));
+                    dispatch(closeDrawer());
+                  }}
+                ></List></>
             }
           />
         </div>

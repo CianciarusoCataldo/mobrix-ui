@@ -1,0 +1,51 @@
+{
+  "--mbx-modal-background": {
+    "description": "Fallback value for `--mbx-modal-background-light` and `--mbx-modal-background-dark`"
+  },
+  "--mbx-modal-background-light": {
+    "defaultColor": "rgba(0, 0, 0, 0.8)",
+    "description": "Modal background when [dark](../../global/props.md#dark)  mode  is `off`",
+    "fallback": "--mbx-modal-background"
+  },
+  "--mbx-modal-background-dark": {
+    "defaultColor": "rgba(0, 0, 0, 0.8)",
+    "fallback": "--mbx-modal-background",
+    "description": "Modal background when [dark](../../global/props.md#dark)  mode is `on`"
+  },
+  "--mbx-modal-x-color": {
+    "description": "Fallback value for `--mbx-modal-x-color-light` and `--mbx-modal-x-color-dark`"
+  },
+  "--mbx-modal-x-color-light": {
+    "default": "white",
+    "fallback": "--mbx-modal-x-color",
+    "description": "Modal x icon color when [dark](../../global/props.md#dark)  mode  is `off`"
+  },
+  "--mbx-modal-x-color-dark": {
+    "default": "white",
+    "fallback": "--mbx-modal-x-color",
+    "description": "Modal x icon color when [dark](../../global/props.md#dark)  mode  is `on`"
+  },
+  "--mbx-modal-x-color-hover": {
+    "description": "Fallback value for `--mbx-modal-x-color-hover-light` and `--mbx-modal-x-color-hover-dark`"
+  },
+  "--mbx-modal-x-color-hover-light": {
+    "defaultExternal": {
+      "prop": "--mbx-dismissablecard-x-color-hover-light",
+      "type": "molecules",
+      "component": "DismissableCard"
+    },
+    "fallback": "--mbx-modal-x-color-hover",
+    "description": "Modal x icon color when [dark](../../global/props.md#dark)  mode  is `off`, on `hover`",
+    "mode": "hover"
+  },
+  "--mbx-modal-x-color-hover-dark": {
+    "defaultExternal": {
+      "prop": "--mbx-dismissablecard-x-color-hover-dark",
+      "type": "molecules",
+      "component": "DismissableCard"
+    },
+    "fallback": "--mbx-modal-x-color-hover",
+    "description": "Modal x icon color when [dark](../../global/props.md#dark)  mode  is `on`, on `hover`",
+    "mode": "hover"
+  }
+}

@@ -1,48 +1,71 @@
 import React from "react";
-import classNames from "classnames";
 
 import { MoBrixUiComponent, TableProps } from "../../../types";
 
-const tableComponent: MoBrixUiComponent<TableProps> = ({ headers, rows }) => {
-  let gridTemplateRows = "";
-  let gridTemplateColumns = "";
+const parseClassName = (className: string) => (className ? { className } : {});
 
-  let tableRows = rows || [];
+const tableComponent: MoBrixUiComponent<TableProps, JSX.Element> = ({
+  headers,
+  rows = [],
+  cellClassName,
+  cellProps = {},
+  rowClassName,
+  rowProps = {},
+  headerClassName,
+  headersProps = {},
+  onClick = () => {},
+  propsCallback = () => ({}),
+}) => {
+  const props = {
+    row: { ...parseClassName(rowClassName), ...rowProps },
+    cell: { ...parseClassName(cellClassName), ...cellProps },
+  };
 
-  let elements: (JSX.Element | string)[][] = tableRows.map((row, rowIndex) =>
-    row.map((element, index) => (
-      <div
-        key={`element_${rowIndex}_${index}`}
-        className={classNames({
-          header: headers && rowIndex === 0,
-          element: !headers || rowIndex > 0,
-        })}
-      >
-        {element}
-      </div>
-    ))
-  );
+  let wrappers: {
+    wrapper: "td" | "th";
+    cellProps: Record<string, any>;
+    rowProps: Record<string, any>;
+  }[] = rows.map((row) => ({
+    wrapper: "td",
+    cellProps: props.cell,
+    rowProps: props.row,
+  }));
 
-  if (tableRows.length > 0) {
-    for (let i = 0; i < tableRows.length; i++) {
-      gridTemplateRows += " auto";
-    }
-
-    for (let i = 0; i < tableRows[0].length; i++) {
-      gridTemplateColumns += " auto";
-    }
+  if (headers && rows.length > 0) {
+    wrappers[0].wrapper = "th";
+    wrappers[0].cellProps = {
+      ...parseClassName(headerClassName),
+      ...headersProps,
+      ...wrappers[0].cellProps,
+    };
   }
 
   return (
-    <div
-      className="rows"
-      style={{
-        gridTemplateRows,
-        gridTemplateColumns,
-      }}
-    >
-      {elements}
-    </div>
+    <tbody key="table_body">
+      {rows.map((row, rowIndex) => (
+        <tr data-mbx-table-row="true" key={`row_${rowIndex}`} {...rowProps}>
+          {row.map((element, index) => {
+            const Wrapper = wrappers[rowIndex].wrapper;
+
+            return (
+              <Wrapper
+                data-mbx-table-cell="true"
+                key={`element_${rowIndex}_${index}`}
+                align="center"
+                onClick={() => onClick(rowIndex, index)}
+                {...{
+                  "data-mbx-test": `cell_${rowIndex}_${index}`,
+                }}
+                {...wrappers[rowIndex].cellProps}
+                {...propsCallback(rowIndex, index)}
+              >
+                {element}
+              </Wrapper>
+            );
+          })}
+        </tr>
+      ))}
+    </tbody>
   );
 };
 

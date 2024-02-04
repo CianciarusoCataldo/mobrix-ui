@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --mbx-form-formfield-background-light: red;
+  --mbx-formfield-background-light: yellow;
+  --mbx-datepicker-calendar-background-light: orange;
+  --mbx-datepicker-calendar-background-selected-light: blue;
+  --mbx-datepicker-calendar-text-color-light: gray;
+  --mbx-datepicker-calendar-text-color-selected-light: green;
+  --mbx-formfield-text-color-light: orange;
+  --mbx-formfield-text-color-dark: blue;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.test-class {
+  background: white;
+}
+
+.calendar-test-label {
+  color: white;
+  fill: white;
+}
+
+.calendar-test-label:hover {
+  color: red;
+  fill: red;
+}
+
+.mbui-test-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to top,
+    #ff8007,
+    #fd8616,
+    #fd9b3f,
+    #fd9c40,
+    #fcbb7f,
+    #fad6b4
+  );
+  border-width: 1px;
+  border-color: #ff8007;
+  border-style: solid;
+}

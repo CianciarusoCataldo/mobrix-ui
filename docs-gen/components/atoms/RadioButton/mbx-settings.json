@@ -1,0 +1,11 @@
+{
+  "since": "2.0.0",
+  "description": "A single radio button component. Optionally, can prevent user to deselect it",
+  "see": [],
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithCallback": { "type": "boolean" }
+    }
+  }
+}

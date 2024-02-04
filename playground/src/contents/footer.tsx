@@ -3,7 +3,7 @@ import { isInDarkMode } from "mobrix-engine-plugins";
 import { useSelector } from "react-redux";
 
 const FooterContent = () => {
-  const dark = useSelector(isInDarkMode);
+  const dark: boolean = useSelector(isInDarkMode);
 
   return (
     <Container dark={dark}>

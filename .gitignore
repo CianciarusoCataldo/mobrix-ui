@@ -1,6 +1,8 @@
 node_modules
 dist
 playground/src/mobrix-ui-preview
+test-app/src/mobrix-ui-preview
 build
 coverage
 stats.html
+.vscode

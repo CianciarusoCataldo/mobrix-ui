@@ -1,24 +1,16 @@
-#mobrix-ui-checkbox {
+[data-mbx-id="checkbox"] {
   height: 30px;
   width: 30px;
-}
-
-#mobrix-ui-checkbox.styled {
-  border-width: 1px;
-  border-color: #423c5e;
-  text-align: center;
-  padding: 0.2rem;
-  background-color: var(--mobrix-ui-background-color);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  vertical-align: baseline;
+  background: var(--mbx-c-chk-bg);
+  text-align: center;
+  padding: 0.2rem;
+  margin: auto;
 }
 
-@media (hover) {
-  #mobrix-ui-checkbox.styled:hover {
-    background-color: #d4e6fa;
-  }
-
-  #mobrix-ui-checkbox.styled.dark:hover {
-    background-color: #3a3552;
-  }
+[data-mbx-id="checkbox"] > *:first-child {
+  fill: var(--mbx-c-chk-tk);
 }

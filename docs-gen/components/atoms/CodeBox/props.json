@@ -1,0 +1,13 @@
+{
+  "value": { "type": "string", "description": "code to display" },
+  "highlight": {
+    "type": "boolean",
+    "description": "Enable/disable  text highlight, based on selected environment",
+    "default": ""
+  },
+  "environment": {
+    "type": "'javascript' | 'python' | 'terminal' | 'common'",
+    "description": "environment for text highlight feature, default to 'terminal' (only enabled when 'highlight' is true)",
+    "default": "'terminal'"
+  }
+}

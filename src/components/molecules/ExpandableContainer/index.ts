@@ -2,46 +2,38 @@ import "./styles.css";
 
 import { ExpandableContainerComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../utils";
-
 import expandableContainerComponent from "./component";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
  * An exapandable container, to hide/show some content on demand.
  *
+ * @param {any} children content to render inside Container - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Container Container}
+ * @param {'div' | 'header' | 'footer'} wrapper component wrapper type - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Container Container}
+ * @param {boolean} expanded Extra content showed only when container is expanded (`compact` === `true`)
+ * @param {boolean} compact if true, shows the whole container content
+ * @param {(newValue: boolean) => void} onChange Callback triggered when ExpandableContainer component input value is changed by the user
+ * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
+ * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
+ * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode
+ * @param {boolean} hide - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Hide/show component
+ * @param {string} id - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - [id parameter](https://www.w3schools.com/html/html_id.asp) (for styling/testing purpose, to easily find the component into the DOM)
+ * @param {boolean} shadow - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable shadow behind component
+ * @param {CSSProperties} style - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Css inline properties applied on main container
+ * @param {boolean} unstyled - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If `true`, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons)
+ * @param {boolean} animated - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component animations
+ * @param {boolean} background - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component background
+ * @param {boolean} hover - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component hover standard styles
+ * @param {boolean} disabled - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If true, disable the component. The effect may vary depending on the component type
+ * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
+ *
+ *
+ *
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/ExpandableContainer
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
+ *
  * @since 1.0.0
- *
- * @param wrapper component type. The Container component can wrap a content inside different components (by now, )
- * @param children content to render inside Container (always, also when it is not expanded)
- * @param expanded Extra content showed only when container is expanded (`compact` === `true`)
- * @param {boolean} compact if true, the full container is showed (if false, the expanded area is hidden)
- * @param {(isCompact:boolean)=>void} onChange callback triggered when expanded content is showed/hidden
- * @param {string} className `common MoBrix-ui prop` - custom className
- * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
- * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
- * @param {boolean} dark `common MoBrix-ui prop` - Enable/disable dark mode
- * @param {boolean} hide `common MoBrix-ui prop` - Hide/show component
- * @param {boolean} shadow `common MoBrix-ui prop` - Enable/disable shadow behind component
- * @param {boolean} animated `common MoBrix-ui prop` enable/disable component animations
- * @param {string} key `common MoBrix-ui prop` - custom component React key (the standard {@link https://reactjs.org/docs/lists-and-keys.html key parameter})
- * @param {boolean} a11y `common MoBrix-ui prop` - enable/disable accessibility features
- * @param {boolean} a11yDark `common MoBrix-ui prop` - if the `a11y` parameter is `true`, override standard focus color style with/without dark mode (normally, the color changes accordingly to the `dark` parameter)
- * @param {string} a11yLabel `common MoBrix-ui prop` - if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label}
- * @param {() => void} onFocus `common MoBrix-ui prop` - callback called when component is focused
- * @param {() => void} onFocusLost `common MoBrix-ui prop` - callback called when component focus is lost
- * @param {(keyEvent: any) => void} onKeyDown `common MoBrix-ui prop` - callback called when a key is pressed when inside the component
- *
- * @example <caption>Example Container usage</caption>
- * import { render } from "react-dom";
- * import { ExpandableContainer } from 'mobrix-ui';
- *
- * render(
- * <ExpandableContainer animated dark expanded={<p>Expanded area</p>}>
- * Example content
- * </ExpandableContainer>,
- * document.getElementById("root"));
- *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Container
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
@@ -53,25 +45,31 @@ const ExpandableContainer: ExpandableContainerComponent = ({
   children,
   wrapper,
   onChange,
+  additionalProps,
   ...commonProps
 }) => {
-  return buildMobrixUiReactiveComponent({
+  return buildMbxReactiveComponent(commonProps, (props) => ({
     name: "expandable-container",
     defaultValue: false,
-    commonProps,
+    commonProps: props,
     wrapper,
     inputValue: startCompact,
-    props: (compact, setCompact) => ({
-      Component: expandableContainerComponent({
-        value: compact,
-        setValue: setCompact,
+    additionalProps,
+    Component: ({ value, setValue }) =>
+      expandableContainerComponent({
+        value,
+        setValue,
         expanded,
         children,
         onChange,
-        ...commonProps,
+        ...props,
       }),
+    props: (value, setValue) => ({
+      additionalProps: {
+        "data-mbx-compact": value,
+      },
     }),
-  });
+  }));
 };
 
 export default ExpandableContainer;

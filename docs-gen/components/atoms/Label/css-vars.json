@@ -1,0 +1,15 @@
+{
+  "--mbx-label-text-color": {
+    "description": "Fallback value for `mbx-label-text-color-light` and `mbx-label-text-color-dark`"
+  },
+  "--mbx-label-text-color-light": {
+    "description": "Label text color when dark mode is off",
+    "defaultGlobal": "--mbx-text-color-light",
+    "fallback": "--mbx-label-text-color"
+  },
+  "--mbx-label-text-color-dark": {
+    "description": "Label text color when dark mode is on",
+    "defaultGlobal": "--mbx-text-color-dark",
+    "fallback": "--mbx-label-text-color"
+  }
+}

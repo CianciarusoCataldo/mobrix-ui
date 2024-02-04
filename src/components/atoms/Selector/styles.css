@@ -1,11 +1,21 @@
-#mobrix-ui-selector.styled {
+[data-mbx-id="selector"] {
   padding: 0.2rem;
-  background: var(--mobrix-ui-background);
-  color: var(--mobrix-ui-text-color);
+  background: var(--mbx-c-sel-bg);
+  color: var(--mbx-c-sel-txt);
+  border: 0;
   border-radius: 6px;
 }
 
-#mobrix-ui-selector.styled option {
-  background-color: var(--mobrix-ui-background-color);
-  color: var(--mobrix-ui-text-color);
+[data-mbx-id="selector"] [data-mbx-class="selector-option"] {
+  background-color: var(--mbx-c-sel-bg);
+  color: var(--mbx-c-sel-txt);
+  padding: 1rem;
+}
+
+@media (hover) {
+  [data-mbx-id="selector"][data-mbx-hover="true"]:hover,
+  [data-mbx-id="selector"] [data-mbx-class="selector-option"]:hover {
+    background: var(--mbx-c-sel-bg-h);
+    color: var(--mbx-c-sel-txt-h);
+  }
 }

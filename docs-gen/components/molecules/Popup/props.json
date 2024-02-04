@@ -1,0 +1,12 @@
+{
+  "onClose": {
+    "type": "() => void",
+    "default": "() => {}",
+    "description": "callback triggered when Popup is closed"
+  },
+  "children": {
+    "type": "`JSX.Element` | `string`",
+    "default": "",
+    "description": "Popup content"
+  }
+}

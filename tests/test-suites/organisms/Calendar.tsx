@@ -10,12 +10,12 @@ import { today } from "../../../src/components/organisms/Calendar/utils";
 const calendarTest = () => {
   describe("Calendar", () => {
     test("Rendering test", () => {
-      let wrapper = mount(<Calendar           dayLabel={false}
-        />);
+      let wrapper = mount(<Calendar dayLabel={false} />);
       expect(wrapper);
       const todayDate = today();
       wrapper = mount(
         <Calendar
+          labelClassName="test"
           startMonth={todayDate.month}
           startYear={todayDate.year}
           value={todayDate}
@@ -24,14 +24,8 @@ const calendarTest = () => {
           fromToday={false}
         />
       );
-      wrapper
-        .find("#mobrix-ui-calendar")
-        .find('[data-id="date_button_3"]')
-        .simulate("click");
-      wrapper
-        .find("#mobrix-ui-calendar")
-        .find('[data-id="arrow_left"]')
-        .simulate("click");
+      wrapper.find('[data-mbx-calendar-day=3]').simulate("click");
+      wrapper.find('[data-mbx-calendar-arrow="left"]').simulate("click");
       expect(wrapper);
     });
 
@@ -41,10 +35,8 @@ const calendarTest = () => {
       let wrapper = mount(
         <Calendar fromToday={false} onChange={onChangeStub} />
       );
-      wrapper
-        .find("#mobrix-ui-calendar")
-        .find('[data-id="date_button_4"]')
-        .simulate("click");
+      wrapper.update();
+      wrapper.find('[data-mbx-calendar-day=4]').simulate("click");
 
       expect(onChangeStub).toBeCalled;
     });
@@ -56,18 +48,12 @@ const calendarTest = () => {
         <Calendar fromToday={false} onViewChange={onViewChangeStub} />
       );
 
-      for (let i = 0; i < 11; i++) {
-        wrapper
-          .find("#mobrix-ui-calendar")
-          .find('[data-id="arrow_right"]')
-          .simulate("click");
+      for (let i = 0; i < 12; i++) {
+        wrapper.find('[data-mbx-calendar-arrow="right"]').simulate("click");
       }
 
       for (let i = 0; i < 11; i++) {
-        wrapper
-          .find("#mobrix-ui-calendar")
-          .find('[data-id="arrow_left"]')
-          .simulate("click");
+        wrapper.find('[data-mbx-calendar-arrow="left"]').simulate("click");
       }
       expect(onViewChangeStub).toBeCalled;
     });

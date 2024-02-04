@@ -1,23 +1,25 @@
-import typescript from "rollup-plugin-typescript2";
-import postcss from "rollup-plugin-postcss";
-import { visualizer } from 'rollup-plugin-visualizer';
-import analyze from "rollup-plugin-analyzer";
+const typescript = require("rollup-plugin-typescript2");
+const postcss = require("rollup-plugin-postcss");
+const { visualizer } = require("rollup-plugin-visualizer");
+const analyze = require("rollup-plugin-analyzer");
 
-import pkg from "../package.json";
+const postcssImport = require("postcss-import");
 
-export default [
+const pkg = require("../package.json");
+
+module.exports = [
   {
     input: "src/index.ts",
     output: [],
     plugins: [
       postcss({
-        plugins: [],
+        plugins: [postcssImport],
         minimize: true,
       }),
       typescript(),
       analyze(),
       visualizer(),
     ],
-    external: Object.keys(pkg.peerDependencies || {}),
+    external: Object.keys(pkg.peerDependencies || []),
   },
 ];

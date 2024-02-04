@@ -1,0 +1,6 @@
+{
+  "since": "3.0.0",
+  "description": "A single form field. Depending on its `type`, a different input component is used inside",
+  "see": [],
+  "examples": []
+}

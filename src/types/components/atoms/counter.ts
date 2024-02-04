@@ -3,7 +3,7 @@ import {
   ComponentWithValue,
   MoBrixUiComponent,
   NumericInputComponent,
-} from "../../global";
+} from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Counter component props

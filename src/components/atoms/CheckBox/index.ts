@@ -2,75 +2,81 @@ import "./styles.css";
 
 import { CheckBoxComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../utils";
+import {
+  buildMbxReactiveComponent,
+  buildMobrixUiReactiveComponent,
+} from "../../../tools";
 
 import { DefaultCheckIcon } from "./icons";
 
 /**
- * A checkbox element, totally customizable. The tick icon can be a custom image or an Element (using `icon` prop).
- *
- * @since 1.0.0
+ * A checkbox element, totally customizable.
  *
  * @param {boolean} value Checkbox initial value (checked / unchecked)
- * @param {(newValue: boolean) => void} onChange onChange callback called when Checkbox is clicked
- * @param {JSX.Element | Element} icon custom tick icon (if not set, the default one will be used)
- * @param {string} className `common MoBrix-ui prop` - custom className
- * @param {boolean} unstyled `common MoBrix-ui prop` - Style/unstyle component, enabling or not MoBrix-ui custom styles
- * @param {string} id `common MoBrix-ui prop` - `data-id` parameter (for testing purpose, to easily find the component into the DOM)
- * @param {boolean} dark `common MoBrix-ui prop` - Enable/disable dark mode
- * @param {boolean} hide `common MoBrix-ui prop` - Hide/show component
- * @param {boolean} shadow `common MoBrix-ui prop` - Enable/disable shadow behind component
- * @param {boolean} animated `common MoBrix-ui prop` enable/disable component animations
- * @param {string} key `common MoBrix-ui prop` - custom component React key (the standard {@link https://reactjs.org/docs/lists-and-keys.html key parameter})
- * @param {boolean} a11y `common MoBrix-ui prop` - enable/disable accessibility features
- * @param {boolean} a11yDark `common MoBrix-ui prop` - if the `a11y` parameter is `true`, override standard focus color style with/without dark mode (normally, the color changes accordingly to the `dark` parameter)
- * @param {string} a11yLabel `common MoBrix-ui prop` - if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label}
- * @param {() => void} onFocus `common MoBrix-ui prop` - callback called when component is focused
- * @param {() => void} onFocusLost `common MoBrix-ui prop` - callback called when component focus is lost
- * @param {(keyEvent: any) => void} onKeyDown `common MoBrix-ui prop` - callback called when a key is pressed when inside the component
+ * @param {JSX.Element} icon custom tick icon (if not set, the default one will be used)
+ * @param {(newValue: boolean) => void} onChange Callback triggered when CheckBox component input value is changed by the user
+ * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
+ * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
+ * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode
+ * @param {boolean} hide - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Hide/show component
+ * @param {string} id - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - [id parameter](https://www.w3schools.com/html/html_id.asp) (for styling/testing purpose, to easily find the component into the DOM)
+ * @param {boolean} shadow - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable shadow behind component
+ * @param {CSSProperties} style - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Css inline properties applied on main container
+ * @param {boolean} unstyled - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If `true`, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons)
+ * @param {boolean} animated - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component animations
+ * @param {boolean} background - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component background
+ * @param {boolean} hover - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component hover standard styles
+ * @param {boolean} disabled - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If true, disable the component. The effect may vary depending on the component type
+ * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
  *
- * @example <caption>Example CheckBox usage</caption>
- * import { render } from "react-dom";
- * import { CheckBox } from 'mobrix-ui';
  *
- * render(<CheckBox value={true} />, document.getElementById("root"));
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/CheckBox
+ *
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/CheckBox
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
+ *
+ * @since 1.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Checkbox: CheckBoxComponent = ({
-  value,
+  value: inputValue,
   onChange = () => {},
   icon,
   onKeyDown = () => {},
+  additionalProps = {},
   ...commonProps
 }) =>
-  buildMobrixUiReactiveComponent<boolean>({
+  buildMbxReactiveComponent<boolean>(commonProps, (sharedProps) => ({
     name: "checkbox",
+    Component: ({ value, setValue }) => (value ? icon || DefaultCheckIcon : ""),
     props: (actualValue, setValue) => ({
       commonProps: {
-        ...commonProps,
-        onKeyDown: (e) => {
-          onKeyDown(e);
-          if (e.code === "Enter" || e.code === "Space") {
+        ...sharedProps,
+        ...(!sharedProps.disabled && {
+          onKeyDown: (e) => {
+            onKeyDown(e);
+            if (e.code === "Enter" || e.code === "Space") {
+              onChange(!actualValue);
+              setValue(!actualValue);
+            }
+          },
+        }),
+      },
+      additionalProps: {
+        ...additionalProps,
+        ...(!sharedProps.disabled && {
+          onClick: () => {
             onChange(!actualValue);
             setValue(!actualValue);
-          }
-        },
-      },
-      Component: actualValue ? icon || DefaultCheckIcon : "",
-      additionalProps: {
-        onClick: () => {
-          onChange(!actualValue);
-          setValue(!actualValue);
-        },
+          },
+        }),
       },
     }),
-    inputValue: value,
+    inputValue,
     defaultValue: false,
-  });
+  }));
 
 export default Checkbox;
