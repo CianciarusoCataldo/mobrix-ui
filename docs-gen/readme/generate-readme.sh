@@ -54,9 +54,11 @@ cat docs-gen/readme/chapters/footer.md >>README.md
 cat docs-gen/readme/chapters/footer.md >>README_PUBLISHED.md
 
 cp -a README_PUBLISHED.md docs/index.md
-cp -a CHANGELOG.md docs/changelog.md
+cp -a CHANGELOG.md docs/Changelog.md
+cp -a LICENSE docs/License.md
 
 python3 -m mkdocs build -d playground/public/docs
 
 rm -rf README_PUBLISHED.md
-rm -rf docs/changelog.md
+rm -rf docs/Changelog.md
+rm -rf docs/License.md
