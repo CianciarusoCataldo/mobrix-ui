@@ -26,6 +26,7 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
   shadow,
   animated,
   disabled,
+  headerProps = {},
 }) => {
   const isError = (required && !value) || !validate(value);
   const [error, setError] = useState(isError);
@@ -52,7 +53,8 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
         animated={false}
         background={false}
         key="form_field_header_box"
-        dark={!dark}
+        dark={dark}
+        {...headerProps}
       >
         {header}
       </Container>,

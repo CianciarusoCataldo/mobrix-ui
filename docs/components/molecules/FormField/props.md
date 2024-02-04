@@ -20,6 +20,8 @@
 | <div style='text-align:center;margin:auto;'>[required](#required)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[validate](#validate)</div> | <div style='text-align:center;margin:auto;'>(fieldValue: any) => boolean</div> | <div style='text-align:center;margin:auto;'>() => ˚{}</div> |
 | <div style='text-align:center;margin:auto;'>[header](#header)</div> | <div style='text-align:center;margin:auto;'>`JSX.Element` &#124; `string`</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[headerClassName](#headerclassname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[headerProps](#headerprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[errorLabel](#errorlabel)</div> | <div style='text-align:center;margin:auto;'>`JSX.Element` &#124; `string`</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
@@ -104,6 +106,28 @@ Custom validation function called on submit<br><br>
 | <div style='text-align:center;margin:auto;'>`JSX.Element` &#124; `string`</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 Form field header<br><br>
+
+### headerClassName
+
+<br>
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+Custom classname applied on every header element<br><br>
+
+### headerProps
+
+<br>
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+Custom props applied on every header element (including MoBrix-ui shared props)<br><br>
 
 ### errorLabel
 

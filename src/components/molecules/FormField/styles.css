@@ -25,3 +25,29 @@
   border-width: 2px;
   border-style: ridge;
 }
+
+[data-mbx-id="form-field"] [data-mbx-form-field-header-box="true"] {
+  --mbx-container-text-color: var(--mbx-c-field-txt);
+  width: 100%;
+}
+
+[data-mbx-id="form-field"]:is(
+    [data-mbx-field-type="checkbox"],
+    [data-mbx-field-type="radio"],
+    [data-mbx-field-type="boolean"],
+    [data-mbx-field-type="toggle"]
+  )
+  [data-mbx-form-field-header-box="true"] {
+  text-align: center;
+}
+
+[data-mbx-id="form-field"]:is(
+    [data-mbx-field-type="checkbox"],
+    [data-mbx-field-type="radio"],
+    [data-mbx-field-type="boolean"],
+    [data-mbx-field-type="toggle"]
+  )
+  [data-mbx-class="form-field-component"] {
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -22,6 +22,8 @@ import { buildMbxReactiveComponent } from "../../../tools";
 * @param {boolean} required If true, the field switch to error state if its value is empty
 * @param {(fieldValue: any) => boolean} validate Custom validation function called on submit
 * @param {`JSX.Element` | `string`} header Form field header
+* @param {string} headerClassName Custom classname applied on every header element
+* @param {Record<string, any>} headerProps Custom props applied on every header element (including MoBrix-ui shared props)
 * @param {`JSX.Element` | `string`} errorLabel Custom error box content, displayed when FormField is in error state
 * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
 * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
@@ -58,13 +60,21 @@ const FormField: FormFieldComponent = ({
   validate,
   header,
   className,
+  headerClassName,
   headerProps,
   errorLabel,
   ...sharedProps
 }) => {
   return buildMbxReactiveComponent(sharedProps, (props) => ({
     name: "form-field",
-    commonProps: { ...props, shadow: false },
+    commonProps: {
+      ...props,
+      shadow: false,
+      additionalProps: {
+        ...props.additionalProps,
+        "data-mbx-field-type": type,
+      },
+    },
     Component: ({ value, setValue }) =>
       FormFieldInternalComponent({
         value,
@@ -75,8 +85,10 @@ const FormField: FormFieldComponent = ({
         required,
         validate,
         header,
+        headerProps,
         className,
         errorLabel,
+        headerClassName,
         ...props,
       }),
     inputValue,

@@ -66,8 +66,8 @@ const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
             header={fieldSettings.header}
             type={type}
             onChange={callBack}
-            dark={!dark}
             hover={hover}
+            headerProps={{ dark }}
           />
         </div>
       );

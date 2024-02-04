@@ -56,8 +56,13 @@ export type FormFieldProps<T = any> = ComponentWithValue &
     /** Custom validation function called on submit. I */
     validate?: (fieldValue: T) => boolean;
 
-    headerProps?: CommonProps;
+    /** Custom classname applied on every header element */
+    headerClassName?: string;
 
+    /** Custom props applied on every header element (including MoBrix-ui shared props) */
+    headerProps?: Record<string, any> & CommonProps;
+
+    /** Custom error box content, displayed when FormField is in error state */
     errorLabel?: BuilderComponent;
   };
 

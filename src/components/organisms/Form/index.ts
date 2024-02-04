@@ -2,14 +2,18 @@ import "./styles.css";
 
 import { FormComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "../../../tools";
-
 import formComponent from "./component";
 import { buildMbxStandardComponent } from "../../../tools/utils";
 
 /**
  * A totally configurable Form, with a submit button to let the user submit data from your web-app
  *
+ * @param {string} title Form title
+ * @param {Record<string, { header?:string; type: ``}>} fields Form fields object. Every key is the field unique ID, and will be used on submit when returning their values
+ * @param {(values: Record<string, any>) => void} onSubmit Custom callback triggered when clicking on submit button. Gives the fields values as input parameter
+ * @param {`string` | `JSX.Element`} submitLabel Custom submit button label
+ * @param {string} fieldClassName Custom classname applied on every field
+ * @param {JSX.Element} children Form content
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode
@@ -43,6 +47,7 @@ const Form: FormComponent = ({
   submitLabel,
   children,
   fieldClassName,
+  validate,
   ...commonProps
 }) =>
   buildMbxStandardComponent(commonProps, (props) => ({

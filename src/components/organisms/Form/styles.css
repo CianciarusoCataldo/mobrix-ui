@@ -16,9 +16,12 @@
   --mbx-label-text-color: var(--mbx-c-form-txt);
 }
 
-[data-mbx-id="form"] [data-mbx-class="field"][data-mbx-field-type="checkbox"],
-[data-mbx-id="form"] [data-mbx-class="field"][data-mbx-field-type="boolean"],
-[data-mbx-id="form"] [data-mbx-class="field"][data-mbx-field-type="radio"] {
+[data-mbx-id="form"]
+  [data-mbx-class="field"]:is(
+    [data-mbx-field-type="checkbox"],
+    [data-mbx-field-type="radio"],
+    [data-mbx-field-type="boolean"]
+  ) {
   margin-left: auto;
   margin-right: auto;
 }

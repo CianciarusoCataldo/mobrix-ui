@@ -519,7 +519,7 @@ const MoleculesPage = () => {
           }),
           value: StringProp(""),
           required: BooleanProp(true),
-          header: StringProp(""),
+          header: StringProp("header"),
           errorLabel: StringProp(""),
           dark: BooleanProp(false),
           animated: BooleanProp(true),
@@ -769,36 +769,36 @@ const MoleculesPage = () => {
             <Table />
             <Table
               rows={[
-                ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                ["header1", "header2", "header3", "header4", "header5"],
+                ["el1", "el2", "el3", "el4", "el5"],
+                ["el1", "el2", "el3", "el4", "el5"],
+                ["el1", "el2", "el3", "el4", "el5"],
+                ["el1", "el2", "el3", "el4", "el5"],
+                ["el1", "el2", "el3", "el4", "el5"],
               ]}
             />
             <div style={{ marginTop: "20px" }} />
             <Table
               headers
               rows={[
-                ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                ["header1", "header2", "header3", "header4", "header5"],
+                ["el1", "el2", "el3", "el4", "el5"],
+                ["el1", "el2", "el3", "el4", "el5"],
+                ["el1", "el2", "el3", "el4", "el5"],
+                ["el1", "el2", "el3", "el4", "el5"],
+                ["el1", "el2", "el3", "el4", "el5"],
               ]}
             />
             <div style={{ marginTop: "20px" }} />
             <Table
               dark
               rows={[
-                ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
-                ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                ["header1", "header2", "header3", "header4", "header5"],
+                ["el1", "el2", "el3", "el4", "el5"],
+                ["el1", "el2", "el3", "el4", "el5"],
+                ["el1", "el2", "el3", "el4", "el5"],
+                ["el1", "el2", "el3", "el4", "el5"],
+                ["el1", "el2", "el3", "el4", "el5"],
               ]}
             />
             <div style={{ marginTop: "20px" }} />

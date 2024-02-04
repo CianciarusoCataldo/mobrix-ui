@@ -29,11 +29,6 @@ export type FormProps = ComponentWithChildren<JSX.Element> & {
     }
   >;
 
-  /**
-   * Form fields object. Every key is the field unique ID, and will be used on submit when returning their values
-   */
-  fieldsMap?: string[][];
-
   /** Custom submit button label */
   submitLabel?: JSX.Element | string;
 

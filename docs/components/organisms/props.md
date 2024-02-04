@@ -82,5 +82,11 @@
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[title](../organisms/Form/props.md#title)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[fields](../organisms/Form/props.md#fields)</div> | <div style='text-align:center;margin:auto;'>Record<string, { header?:string; type: ``}></div> | <div style='text-align:center;margin:auto;'>{}</div> |
+| <div style='text-align:center;margin:auto;'>[onSubmit](../organisms/Form/props.md#onsubmit)</div> | <div style='text-align:center;margin:auto;'>(values: Record<string, any>) => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[submitLabel](../organisms/Form/props.md#submitlabel)</div> | <div style='text-align:center;margin:auto;'>`string` &#124; `JSX.Element`</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[fieldClassName](../organisms/Form/props.md#fieldclassname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[children](../organisms/Form/props.md#children)</div> | <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>

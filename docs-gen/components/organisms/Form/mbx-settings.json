@@ -2,5 +2,12 @@
   "since": "1.0.0",
   "description": "A totally configurable Form, with a submit button to let the user submit data from your web-app",
   "see": [],
-  "examples": []
+  "examples": [],
+  "extend": {
+    "group": {
+      "ComponentWithChildren": {
+        "type": "JSX.Element"
+      }
+    }
+  }
 }

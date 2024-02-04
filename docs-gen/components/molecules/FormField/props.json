@@ -21,6 +21,14 @@
     "description": "Form field header",
     "type": "`JSX.Element` | `string`"
   },
+  "headerClassName": {
+    "description": "Custom classname applied on every header element",
+    "type": "string"
+  },
+  "headerProps": {
+    "description": "Custom props applied on every header element (including MoBrix-ui shared props)",
+    "type": "Record<string, any>"
+  },
   "errorLabel": {
     "description": "Custom error box content, displayed when FormField is in error state",
     "type": "`JSX.Element` | `string`"

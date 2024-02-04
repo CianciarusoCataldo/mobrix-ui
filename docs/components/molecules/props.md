@@ -143,6 +143,8 @@
 | <div style='text-align:center;margin:auto;'>[required](../molecules/FormField/props.md#required)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[validate](../molecules/FormField/props.md#validate)</div> | <div style='text-align:center;margin:auto;'>(fieldValue: any) => boolean</div> | <div style='text-align:center;margin:auto;'>() => ˚{}</div> |
 | <div style='text-align:center;margin:auto;'>[header](../molecules/FormField/props.md#header)</div> | <div style='text-align:center;margin:auto;'>`JSX.Element` &#124; `string`</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[headerClassName](../molecules/FormField/props.md#headerclassname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[headerProps](../molecules/FormField/props.md#headerprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[errorLabel](../molecules/FormField/props.md#errorlabel)</div> | <div style='text-align:center;margin:auto;'>`JSX.Element` &#124; `string`</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
