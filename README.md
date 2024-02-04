@@ -74,6 +74,12 @@ The same concepts are also the base of another project I maintain, [MoBrix-engin
 
 ---
 
+<br>
+
+Check out the [official MoBrix-ui guide page](https://cianciarusocataldo.github.io/mobrix-ui/docs) for more details
+
+---
+
 ## Components building process
 
 This library use a standardized process to build every component. As result, every component has a shared initial logic, shared CSS styles and shared properties.
