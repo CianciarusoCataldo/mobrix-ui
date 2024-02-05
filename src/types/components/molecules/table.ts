@@ -33,12 +33,16 @@ export type TableProps = ClickableComponent<
   /** Custom class-name applied on every table cell */
   headerClassName?: string;
 
+  /** Custom props applied on every table header cell */
   headersProps?: Record<string, any>;
 
+  /** Custom props applied on every table cell */
   cellProps?: Record<string, any>;
 
+  /** Custom props applied on every table row */
   rowProps?: Record<string, any>;
 
+  /** Custom function to add custom props depending on Table row and column */
   propsCallback?: (row: number, column: number) => Record<string, any>;
 };
 

@@ -14,8 +14,12 @@ import {
  * @copyright 2023 Cataldo Cianciaruso
  */
 export type Tab = {
+  /** Tab label */
   label: string;
+
+  /** Tab content */
   content: JSX.Element;
+
   dismissable?: boolean;
 };
 

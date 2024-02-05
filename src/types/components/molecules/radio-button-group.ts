@@ -55,8 +55,10 @@ export type RadioButtonGroupProps = ComponentWithCallback<number> &
     /** if `true`, radio buttons are displayed horizontally, in a single row (default `false`, the radio buttons are displayed vertically) */
     horizontal?: boolean;
 
+    /** Default text position for RadioButton elements (when `textPosition` is not provided) */
     defaultPosition?: RadioElement["textPosition"];
 
+    /** RadioButton props applied on every RadioButton element */
     radioProps?: RadioButtonProps & CommonProps;
   };
 

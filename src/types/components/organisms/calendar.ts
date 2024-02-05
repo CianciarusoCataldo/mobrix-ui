@@ -75,8 +75,10 @@ export type CalendarProps = ComponentWithValue<DeepPartial<CalendarDate>> &
     /** callback called when the Calendar view (the showed month) change */
     onViewChange?: (date: CalendarDate) => void;
 
+    /** Custom className applied on the day label component */
     labelClassName?: string;
 
+    /** Custom props applied on the day label component */
     labelProps?: Record<string, any>;
   };
 
