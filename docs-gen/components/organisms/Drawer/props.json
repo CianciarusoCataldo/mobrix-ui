@@ -13,5 +13,10 @@
     "type": "`(JSX.Element` | `string`) | (JSX.Element` | `string`)[]",
     "default": "",
     "description": "Drawer content"
+  },
+  "closeOnClickOutside": {
+    "type": "`boolean`",
+    "default": true,
+    "description": "If `false`, the drawer won't be closed when clicking outside of it"
   }
 }

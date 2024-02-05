@@ -5,7 +5,7 @@ import { Drawer } from "../../../src";
 const drawerTest = () => {
   describe("Drawer", () => {
     test("Rendering test", () => {
-      let wrapper = mount(<Drawer position="left" />);
+      let wrapper = mount(<Drawer position="left" closeOnClickOutside />);
       wrapper.find('[data-mbx-class="drawer-close-button"]').simulate("click");
       expect(wrapper);
     });

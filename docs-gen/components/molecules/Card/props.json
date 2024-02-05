@@ -14,6 +14,30 @@
     "typeComment": "JSX.Element | string",
     "type": "JSX.Element | string"
   },
+  "headerClassName": {
+    "description": "Custom classname applied on the Card header",
+    "type": "string"
+  },
+  "bodyClassName": {
+    "description": "Custom classname applied on the Card body",
+    "type": "string"
+  },
+  "footerClassName": {
+    "description": "Custom classname applied on the Card footer",
+    "type": "string"
+  },
+  "headerProps": {
+    "description": "Custom props applied on the Card header",
+    "type": "Record<string, any>"
+  },
+  "bodyProps": {
+    "description": "Custom props applied on the Card body",
+    "type": "Record<string, any>"
+  },
+  "footerProps": {
+    "description": "Custom props applied on the Card footer",
+    "type": "Record<string, any>"
+  },
   "noDivider": {
     "description": "If `true`, hide all dividers",
     "type": "boolean",

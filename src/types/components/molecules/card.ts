@@ -13,17 +13,33 @@ import {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type CardProps = ComponentWithChildren<
-  BuilderComponent
-> & {
+export type CardProps = ComponentWithChildren<BuilderComponent> & {
   /** Card header content */
   header?: BuilderComponent;
+
+  /** Custom classname applied on the Card header */
+  headerClassName?: string;
+
+  /** Custom props applied on the Card header */
+  headerProps?: Record<string, any>;
 
   /** Card body content */
   body?: BuilderComponent;
 
+  /** Custom props applied on the Card body */
+  bodyProps?: Record<string, any>;
+
+  /** Custom classname applied on the Card body */
+  bodyClassName?: string;
+
   /** Card footer content */
   footer?: BuilderComponent;
+
+  /** Custom classname applied on the Card footer */
+  footerClassName?: string;
+
+  /** Custom props applied on the Card footer */
+  footerProps?: Record<string, any>;
 
   /** If true, hide the dividers between every Card part (header, body and footer) */
   noDividers?: boolean;

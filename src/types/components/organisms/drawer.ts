@@ -28,6 +28,8 @@ export type DrawerProps = ComponentWithChildren<
       | "top-right"
       | "bottom-left"
       | "bottom-right";
+
+    /** if `false`, the drawer won't be closed when clicking outside of it */
     closeOnClickOutside?: boolean;
   };
 

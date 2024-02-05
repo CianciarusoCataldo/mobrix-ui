@@ -6,7 +6,14 @@ const cardTest = () => {
   describe("Card", () => {
     test("Rendering test", () => {
       const wrapper = mount(
-        <Card header="Test header" body="Test body" footer="Test footer">
+        <Card
+          headerProps={{}}
+          bodyProps={{}}
+          footerProps={{}}
+          header="Test header"
+          body="Test body"
+          footer="Test footer"
+        >
           Test label
         </Card>
       );
