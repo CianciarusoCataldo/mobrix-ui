@@ -21,6 +21,8 @@
 ### 3.1.0
 
 - New Card properties (`headerClassName`, `headerProps`, `bodyClassName`, `bodyProps`, `footerClassName`, `footerProps`)
+- Clean-up
+- Minor improvements
 
 <br>
 
