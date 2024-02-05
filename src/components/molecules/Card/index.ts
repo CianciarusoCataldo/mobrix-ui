@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { CardComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "../../../tools";
+import { buildMbxStandardComponent } from "../../../tools";
 
 import cardComponent from "./component";
 
@@ -12,6 +12,12 @@ import cardComponent from "./component";
  * @param {JSX.Element | string} header Card header content
  * @param {JSX.Element | string} body Card body content
  * @param {JSX.Element | string} footer Card footer content
+ * @param {string} headerClassName Custom classname applied on the Card header
+ * @param {string} bodyClassName Custom classname applied on the Card body
+ * @param {string} footerClassName Custom classname applied on the Card footer
+ * @param {Record<string, any>} headerProps Custom props applied on the Card header
+ * @param {Record<string, any>} bodyProps Custom props applied on the Card body
+ * @param {Record<string, any>} footerProps Custom props applied on the Card footer
  * @param {boolean} noDivider If `true`, hide all dividers
  * @param {boolean} noTopDivider If `true`, hide the top divider, between header and body
  * @param {boolean} noBottomDivider If `true`, hide the top divider, between body and footer
@@ -53,23 +59,34 @@ const Card: CardComponent = ({
   noBottomDivider,
   noTopDivider,
   additionalProps,
+  headerClassName,
+  bodyClassName,
+  footerClassName,
+  headerProps,
+  bodyProps,
+  footerProps,
   ...commonProps
-}) => {
-  return buildMobrixUiStandardComponent({
+}) =>
+  buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "card",
     Component: cardComponent({
       header,
       body,
       children,
       footer,
-      dark: commonProps.dark,
       noDividers,
       noBottomDivider,
       noTopDivider,
+      headerClassName,
+      bodyClassName,
+      footerClassName,
+      headerProps,
+      bodyProps,
+      footerProps,
+      ...sharedProps,
     }),
-    commonProps,
+    commonProps: sharedProps,
     additionalProps,
-  });
-};
+  }));
 
 export default Card;

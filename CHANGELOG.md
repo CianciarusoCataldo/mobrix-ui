@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.1.0](#310)
 - [3.0.0](#300)
 - [2.1.0](#210)
 - [2.0.0](#200)
@@ -17,12 +18,20 @@
 
 <br>
 
+### 3.1.0
+
+- New Card properties (`headerClassName`, `headerProps`, `bodyClassName`, `bodyProps`, `footerClassName`, `footerProps`)
+- Clean-up
+- Minor improvements
+
+<br>
+
 ### 3.0.0
 
 - No more external dependencies
 - Totally re-designed css variables system, to fully customize every component at once
 - Docs and comments generator
-- Global refactoring and hige clean-up
+- Global refactoring and huge clean-up
 
 <br>
 

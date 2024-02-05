@@ -1,5 +1,4 @@
 import {
-  BuilderComponent,
   CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
@@ -8,7 +7,7 @@ import {
 import { RadioButtonProps } from "../atoms";
 
 /**
- * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} RadioButtonGroup single element
+ * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} RadioButtonGroup element
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/RadioButtonGroup
  *
@@ -26,7 +25,8 @@ export type RadioElement = {
   /** Radio button text position */
   textPosition?: "top" | "bottom" | "left" | "right";
 
-  props?: RadioButtonProps & CommonProps
+  /** Radio button custom props */
+  props?: RadioButtonProps & CommonProps;
 };
 
 /**
@@ -45,7 +45,8 @@ export type RadioButtonGroupProps = ComponentWithCallback<number> &
      * - `component`: custom component rendered before radio button
      * - `text`: custom radio text showed near the radio button
      * - `textPosition`: custom text position
-     *    * */
+     * - `props`: custom props applied on the RadioButton component
+     */
     buttons?: RadioElement[];
 
     /** Classname applied on every radio element */
@@ -56,7 +57,7 @@ export type RadioButtonGroupProps = ComponentWithCallback<number> &
 
     defaultPosition?: RadioElement["textPosition"];
 
-    radioProps?: RadioButtonProps & CommonProps
+    radioProps?: RadioButtonProps & CommonProps;
   };
 
 /**

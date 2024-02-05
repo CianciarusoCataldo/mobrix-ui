@@ -18,6 +18,12 @@ import dismissableCardInternalComponent from "./component";
  * @param {boolean} noTopDivider If `true`, hide the top divider, between header and body - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}
  * @param {boolean} noBottomDivider If `true`, hide the top divider, between body and footer - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}
  * @param {`JSX.Element` | `string`} children Card content - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}
+ * @param {string} headerClassName Custom classname applied on the Card header - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}
+ * @param {string} bodyClassName Custom classname applied on the Card body - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}
+ * @param {string} footerClassName Custom classname applied on the Card footer - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}
+ * @param {Record<string, any>} headerProps Custom props applied on the Card header - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}
+ * @param {Record<string, any>} bodyProps Custom props applied on the Card body - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}
+ * @param {Record<string, any>} footerProps Custom props applied on the Card footer - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode
@@ -56,6 +62,12 @@ const DismissableCard: DismissableCardComponent = ({
   children,
   alwaysVisible,
   additionalProps,
+  headerClassName,
+  bodyClassName,
+  footerClassName,
+  headerProps,
+  bodyProps,
+  footerProps,
   ...commonProps
 }) =>
   buildMobrixUiReactiveComponent({
@@ -76,6 +88,12 @@ const DismissableCard: DismissableCardComponent = ({
         alwaysVisible,
         onClose,
         disabled: commonProps.disabled,
+        headerClassName,
+        bodyClassName,
+        footerClassName,
+        headerProps,
+        bodyProps,
+        footerProps,
       }),
     additionalProps,
     props: (value, setValue) => ({

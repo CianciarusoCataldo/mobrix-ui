@@ -1,7 +1,6 @@
 import {
   BuilderComponent,
   ClickableComponent,
-  ComponentWithCallback,
   MoBrixUiComponent,
 } from "../../../types/global";
 

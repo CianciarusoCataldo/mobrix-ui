@@ -14,12 +14,23 @@ const cardComponent: MoBrixUiComponent<CardProps, BuilderComponent[]> = ({
   noDividers,
   noBottomDivider,
   noTopDivider,
+  headerClassName,
+  bodyClassName,
+  footerClassName,
+  headerProps = {},
+  bodyProps = {},
+  footerProps = {},
 }) =>
   generateElementsArray([
     {
       condition: !!header,
       component: (
-        <div key="card_header" data-mbx-class="header">
+        <div
+          className={headerClassName}
+          key="card_header"
+          data-mbx-class="header"
+          {...headerProps}
+        >
           {header}
         </div>
       ),
@@ -39,7 +50,12 @@ const cardComponent: MoBrixUiComponent<CardProps, BuilderComponent[]> = ({
     {
       condition: !!body,
       component: (
-        <div data-mbx-class="body" key="card_body">
+        <div
+          className={bodyClassName}
+          data-mbx-class="body"
+          key="card_body"
+          {...bodyProps}
+        >
           {body}
         </div>
       ),
@@ -66,7 +82,12 @@ const cardComponent: MoBrixUiComponent<CardProps, BuilderComponent[]> = ({
     {
       condition: !!footer,
       component: (
-        <div key="card_footer" data-mbx-class="footer">
+        <div
+          className={footerClassName}
+          key="card_footer"
+          data-mbx-class="footer"
+          {...footerProps}
+        >
           {footer}
         </div>
       ),

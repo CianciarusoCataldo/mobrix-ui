@@ -50,5 +50,35 @@
     "default": "",
     "description": "Card content - extended from [Card component](../../molecules/Card/props.md#children)",
     "comment": "Card content - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
+  },
+  "headerClassName": {
+    "description": "Custom classname applied on the Card header - extended from [Card component](../../molecules/Card/props.md#headerClassName)",
+    "type": "string",
+    "comment": "Custom classname applied on the Card header - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
+  },
+  "bodyClassName": {
+    "description": "Custom classname applied on the Card body - extended from [Card component](../../molecules/Card/props.md#bodyClassName)",
+    "type": "string",
+    "comment": "Custom classname applied on the Card body - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
+  },
+  "footerClassName": {
+    "description": "Custom classname applied on the Card footer - extended from [Card component](../../molecules/Card/props.md#footerClassName)",
+    "type": "string",
+    "comment": "Custom classname applied on the Card footer - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
+  },
+  "headerProps": {
+    "description": "Custom props applied on the Card header - extended from [Card component](../../molecules/Card/props.md#headerProps)",
+    "type": "Record<string, any>",
+    "comment": "Custom props applied on the Card header - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
+  },
+  "bodyProps": {
+    "description": "Custom props applied on the Card body - extended from [Card component](../../molecules/Card/props.md#bodyProps)",
+    "type": "Record<string, any>",
+    "comment": "Custom props applied on the Card body - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
+  },
+  "footerProps": {
+    "description": "Custom props applied on the Card footer - extended from [Card component](../../molecules/Card/props.md#footerProps)",
+    "type": "Record<string, any>",
+    "comment": "Custom props applied on the Card footer - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
   }
 }

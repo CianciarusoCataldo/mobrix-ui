@@ -25,6 +25,12 @@ const DismissableCardComponent: MobrixUiReactiveComponent<
   onClose = () => {},
   alwaysVisible,
   disabled,
+  headerClassName,
+  bodyClassName,
+  footerClassName,
+  headerProps,
+  bodyProps,
+  footerProps,
 }) =>
   cardComponent({
     children,
@@ -32,6 +38,12 @@ const DismissableCardComponent: MobrixUiReactiveComponent<
     noDividers,
     noTopDivider,
     dark,
+    headerClassName,
+    bodyClassName,
+    footerClassName,
+    headerProps,
+    bodyProps,
+    footerProps,
     header: (
       <div data-mbx-class="header-container">
         <div data-mbx-class="dismiss-container">
