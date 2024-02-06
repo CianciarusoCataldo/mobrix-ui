@@ -31,6 +31,7 @@
   - `--mbx-datepicker-modal-x-color-hover-dark`,
 - Clean-up
 - New CI workflow to publish MoBrix-ui package to github registry
+- Automatic css variables docs generation
 
 <br>
 
