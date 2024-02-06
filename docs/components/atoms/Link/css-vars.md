@@ -1,4 +1,4 @@
-# Link
+# Link CSS variables
 
 ## Summary
 

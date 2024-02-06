@@ -1,4 +1,4 @@
-# Button
+# Button properties
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# CheckBox
+# CheckBox CSS variables
 
 ## Summary
 

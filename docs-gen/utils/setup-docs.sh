@@ -28,6 +28,8 @@ for type in $(
 
         cp "$OUTPUT_CSSVARS_PATH"/components/"$COMPONENT_DIR"/index.md "$OUTPUT_PATH"/"$COMPONENT_DIR"/css-vars.md
         cp "$OUTPUT_PROPS_PATH"/components/"$COMPONENT_DIR"/index.md "$OUTPUT_PATH"/"$COMPONENT_DIR"/props.md
+        cp docs-gen/templates/index-component.md "$OUTPUT_PATH"/"$COMPONENT_DIR"/index.md
+        sed -i "s/COMPONENT_NAME/$component/g" "$OUTPUT_PATH"/"$COMPONENT_DIR"/index.md
 
     done
 

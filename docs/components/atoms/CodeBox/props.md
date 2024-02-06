@@ -1,4 +1,4 @@
-# CodeBox
+# CodeBox properties
 
 ## Summary
 

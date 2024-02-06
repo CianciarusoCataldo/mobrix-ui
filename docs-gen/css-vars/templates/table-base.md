@@ -1,4 +1,4 @@
-# COMPONENT_NAME
+# COMPONENT_NAME CSS variables
 
 ## Summary
 

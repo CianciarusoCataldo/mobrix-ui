@@ -1,4 +1,4 @@
-# ExpandableContainer
+# ExpandableContainer properties
 
 ## Summary
 

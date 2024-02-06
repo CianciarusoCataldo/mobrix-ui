@@ -1,4 +1,4 @@
-# Slider
+# Slider CSS variables
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# RadioButtonGroup
+# RadioButtonGroup properties
 
 ## Summary
 

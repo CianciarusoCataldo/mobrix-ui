@@ -1,4 +1,4 @@
-# CodeBox
+# CodeBox CSS variables
 
 ## Summary
 

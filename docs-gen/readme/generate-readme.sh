@@ -1,4 +1,11 @@
 #!/bin/sh
+npm run update:css-vars
+npm run update:props
+npm run update:comments
+npm run docs:generate-css-vars
+npm run docs:generate-props
+npm run docs:setup
+npm run docs:format
 
 rm -rf README.md
 rm -rf docs/index.md
@@ -34,8 +41,8 @@ echo -n "\n\n<br>\n\n" >>README_PUBLISHED.md
 cat docs-gen/readme/chapters/building-process-css-global-vars.md >>README.md
 cat docs-gen/readme/chapters/published/building-process-css-global-vars.md >>README_PUBLISHED.md
 
-cat docs-gen/readme/chapters/building-process-css-global-vars-footer.md >>README.md
-cat docs-gen/readme/chapters/published/building-process-css-global-vars-footer.md >>README_PUBLISHED.md
+cat docs-gen/readme/chapters/building-process-css-vars-footer.md >>README.md
+cat docs-gen/readme/chapters/published/building-process-css-vars-footer.md >>README_PUBLISHED.md
 
 echo -n "\n\n<br>\n\n" >>README.md
 echo -n "\n\n<br>\n\n" >>README_PUBLISHED.md

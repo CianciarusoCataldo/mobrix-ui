@@ -1,4 +1,4 @@
-# Carousel
+# Carousel CSS variables
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# Link
+# Link properties
 
 ## Summary
 

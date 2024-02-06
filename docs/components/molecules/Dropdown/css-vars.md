@@ -1,4 +1,4 @@
-# Dropdown
+# Dropdown CSS variables
 
 ## Summary
 

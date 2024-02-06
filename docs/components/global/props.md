@@ -1,4 +1,4 @@
-# MoBrix-ui shared props
+# MoBrix-ui shared props properties
 
 ## Summary
 

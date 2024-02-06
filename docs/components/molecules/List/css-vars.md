@@ -1,4 +1,4 @@
-# List
+# List CSS variables
 
 ## Summary
 

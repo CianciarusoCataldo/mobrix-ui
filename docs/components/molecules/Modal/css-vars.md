@@ -1,4 +1,4 @@
-# Modal
+# Modal CSS variables
 
 ## Summary
 

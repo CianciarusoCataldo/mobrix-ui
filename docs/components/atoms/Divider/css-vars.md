@@ -1,4 +1,4 @@
-# Divider
+# Divider CSS variables
 
 ## Summary
 

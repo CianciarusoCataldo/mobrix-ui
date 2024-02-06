@@ -1,4 +1,4 @@
-# Spinner
+# Spinner properties
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# TabViewer
+# TabViewer CSS variables
 
 ## Summary
 
