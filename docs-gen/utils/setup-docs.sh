@@ -17,23 +17,23 @@ for type in $(
 
     TYPE_DIR="$OUTPUT_PATH"/$type
     mkdir "$TYPE_DIR"
-    touch "$TYPE_DIR"/index.md
-    cp "$OUTPUT_CSSVARS_PATH"/components/"$type"/index.md "$OUTPUT_PATH"/"$type"/css-vars.md
-    cp "$OUTPUT_PROPS_PATH"/components/"$type"/index.md "$OUTPUT_PATH"/"$type"/props.md
-    cp docs-gen/templates/index-group.md "$OUTPUT_PATH"/"$type"/index.md
+
+    cp "$OUTPUT_CSSVARS_PATH"/components/"$type"/index.md "$TYPE_DIR"/css-vars.md
+    cp "$OUTPUT_PROPS_PATH"/components/"$type"/index.md "$TYPE_DIR"/props.md
+    cp docs-gen/templates/index-group.md "$TYPE_DIR"/index.md
+    sed -i "s/COMPONENTS_TYPE/$type/g" "$TYPE_DIR"/index.md
 
     for component in $(
         ls -p -- src/components/"$type"/ | grep / | tr -d '/'
     ); do
         COMPONENT_DIR="$type"/"$component"
         mkdir "$OUTPUT_PATH"/"$COMPONENT_DIR"
-        
+
         cp "$OUTPUT_CSSVARS_PATH"/components/"$COMPONENT_DIR"/index.md "$OUTPUT_PATH"/"$COMPONENT_DIR"/css-vars.md
         cp "$OUTPUT_PROPS_PATH"/components/"$COMPONENT_DIR"/index.md "$OUTPUT_PATH"/"$COMPONENT_DIR"/props.md
         cp docs-gen/templates/index-component.md "$OUTPUT_PATH"/"$COMPONENT_DIR"/index.md
         sed -i "s/COMPONENT_NAME/$component/g" "$OUTPUT_PATH"/"$COMPONENT_DIR"/index.md
         echo -n "\n- [$component]($component/index.md)" >>"$TYPE_DIR"/index.md
-        sed -i "s/COMPONENTS_TYPE/$type/g" "$TYPE_DIR"/index.md
 
     done
 
