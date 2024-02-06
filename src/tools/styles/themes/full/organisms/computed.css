@@ -65,6 +65,30 @@
     --mbx-datepicker-calendar-today-dark,
     var(--mbx-datepicker-calendar-today)
   );
+  --mbx-c-dtp-mod-bg-l: var(
+    --mbx-datepicker-modal-background-light,
+    var(--mbx-datepicker-modal-background)
+  );
+  --mbx-c-dtp-mod-bg-d: var(
+    --mbx-datepicker-modal-background-dark,
+    var(--mbx-modal-background)
+  );
+  --mbx-c-dtp-mod-x-l: var(
+    --mbx-datepicker-modal-x-color-light,
+    var(--mbx-datepicker-modal-x-color)
+  );
+  --mbx-c-dtp-mod-x-d: var(
+    --mbx-datepicker-modal-x-color-dark,
+    var(--mbx-datepicker-modal-x-color)
+  );
+  --mbx-c-dtp-mod-x-h-l: var(
+    --mbx-datepicker-modal-x-color-hover-light,
+    var(--mbx-datepicker-modal-x-color-hover)
+  );
+  --mbx-c-dtp-mod-x-h-d: var(
+    --mbx-datepicker-modal-x-color-hover-dark,
+    var(--mbx-datepicker-modal-x-color-hover)
+  );
 
   /** Form **/
 
