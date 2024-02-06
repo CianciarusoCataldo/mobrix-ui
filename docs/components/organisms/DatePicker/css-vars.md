@@ -194,7 +194,7 @@ DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-background-light` and `--mbx-datepicker-calendar-background-dark`<br><br>
 
 ### --mbx-datepicker-calendar-background-light
 
@@ -204,7 +204,7 @@ Fallback value for `and`<br><br>
 | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background](#--mbx-datepicker-calendar-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-background-light)</div> |
 
-Internal Calendar background when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-calendar-background-dark
 
@@ -214,7 +214,7 @@ Internal Calendar background when [dark](../../global/props.md#dark) mode is `of
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background](#--mbx-datepicker-calendar-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-background-dark)</div> |
 
-Internal Calendar background when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-calendar-text-color
 
@@ -224,7 +224,7 @@ Internal Calendar background when [dark](../../global/props.md#dark) mode is `on
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `and`<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-text-color-light` and `--mbx-datepicker-calendar-text-color-dark`<br><br>
 
 ### --mbx-datepicker-calendar-text-color-light
 
@@ -234,7 +234,7 @@ Fallback value for `and`<br><br>
 | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color](#--mbx-datepicker-calendar-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-text-color-light)</div> |
 
-Internal Calendar text color when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-calendar-text-color-dark
 
@@ -244,7 +244,7 @@ Internal Calendar text color when [dark](../../global/props.md#dark) mode is `of
 | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color](#--mbx-datepicker-calendar-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-text-color-dark)</div> |
 
-Internal Calendar text color when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-calendar-background-hover
 
@@ -254,7 +254,7 @@ Internal Calendar text color when [dark](../../global/props.md#dark) mode is `on
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `--mbx-datepicker-calendar-background-hover-light` and `--mbx-datepicker-calendar-background-hover-dark`<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-background-hover-light` and `--mbx-datepicker-calendar-background-hover-dark`<br><br>
 
 ### --mbx-datepicker-calendar-background-hover-light
 
@@ -264,7 +264,7 @@ Fallback value for `--mbx-datepicker-calendar-background-hover-light` and `--mbx
 | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-hover](#--mbx-datepicker-calendar-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-hover-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-background-hover-light)</div> |
 
-Internal Calendar background when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-background-hover-dark
 
@@ -274,7 +274,7 @@ Internal Calendar background when [dark](../../global/props.md#dark) mode is `of
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-hover](#--mbx-datepicker-calendar-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-hover-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-background-hover-dark)</div> |
 
-Internal Calendar background when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-text-color-hover
 
@@ -284,7 +284,7 @@ Internal Calendar background when [dark](../../global/props.md#dark) mode is `on
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `--mbx-datepicker-calendar-text-color-hover-light` and `--mbx-datepicker-calendar-text-color-hover-dark`<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-text-color-hover-light` and `--mbx-datepicker-calendar-text-color-hover-dark`<br><br>
 
 ### --mbx-datepicker-calendar-text-color-hover-light
 
@@ -294,7 +294,7 @@ Fallback value for `--mbx-datepicker-calendar-text-color-hover-light` and `--mbx
 | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-hover](#--mbx-datepicker-calendar-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-hover-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-text-color-hover-light)</div> |
 
-Internal Calendar text color when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-text-color-hover-dark
 
@@ -304,7 +304,7 @@ Internal Calendar text color when [dark](../../global/props.md#dark) mode is `of
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-hover](#--mbx-datepicker-calendar-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-hover-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-text-color-hover-dark)</div> |
 
-Internal Calendar text color when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-arrow
 
@@ -314,7 +314,7 @@ Internal Calendar text color when [dark](../../global/props.md#dark) mode is `on
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `--mbx-datepicker-calendar-arrow-light` and `--mbx-datepicker-calendar-arrow-dark`<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-arrow-light` and `--mbx-datepicker-calendar-arrow-dark`<br><br>
 
 ### --mbx-datepicker-calendar-arrow-light
 
@@ -324,7 +324,7 @@ Fallback value for `--mbx-datepicker-calendar-arrow-light` and `--mbx-datepicker
 | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow](#--mbx-datepicker-calendar-arrow)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-arrow-light)</div> |
 
-Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-calendar-arrow-dark
 
@@ -334,7 +334,7 @@ Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `o
 | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow](#--mbx-datepicker-calendar-arrow)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-arrow-dark)</div> |
 
-Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-calendar-arrow-hover
 
@@ -344,7 +344,7 @@ Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `o
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `--mbx-datepicker-calendar-arrow-hover-light` and `--mbx-datepicker-calendar-arrow-hover-dark`<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-arrow-hover-light` and `--mbx-datepicker-calendar-arrow-hover-dark`<br><br>
 
 ### --mbx-datepicker-calendar-arrow-hover-light
 
@@ -354,7 +354,7 @@ Fallback value for `--mbx-datepicker-calendar-arrow-hover-light` and `--mbx-date
 | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow-hover](#--mbx-datepicker-calendar-arrow-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-hover-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-arrow-hover-light)</div> |
 
-Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](../../global/props.md#dark) mode is `off', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-arrow-hover-dark
 
@@ -364,7 +364,7 @@ Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `o
 | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow-hover](#--mbx-datepicker-calendar-arrow-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-hover-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-arrow-hover-dark)</div> |
 
-Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](../../global/props.md#dark) mode is `on', on 'hover'<br><br>
 
 ### --mbx-datepicker-calendar-selected-background
 
@@ -374,7 +374,7 @@ Internal Calendar arrow color when [dark](../../global/props.md#dark) mode is `o
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `--mbx-datepicker-calendar-selected-background-light` and `--mbx-datepicker-calendar-selected-background-dark`<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-selected-background-light` and `--mbx-datepicker-calendar-selected-background-dark`<br><br>
 
 ### --mbx-datepicker-calendar-selected-background-light
 
@@ -384,7 +384,7 @@ Fallback value for `--mbx-datepicker-calendar-selected-background-light` and `--
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-background](#--mbx-datepicker-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-background-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-selected-background-light)</div> |
 
-Internal Calendar selected cell background when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell background when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-calendar-selected-background-dark
 
@@ -394,7 +394,7 @@ Internal Calendar selected cell background when [dark](../../global/props.md#dar
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-background](#--mbx-datepicker-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-background-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-selected-background-dark)</div> |
 
-Internal Calendar selected cell background when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell background when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-calendar-selected-text-color
 
@@ -404,7 +404,7 @@ Internal Calendar selected cell background when [dark](../../global/props.md#dar
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `--mbx-datepicker-calendar-selected-text-color-light` and `--mbx-datepicker-calendar-selected-text-color-dark`<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-selected-text-color-light` and `--mbx-datepicker-calendar-selected-text-color-dark`<br><br>
 
 ### --mbx-datepicker-calendar-selected-text-color-light
 
@@ -414,7 +414,7 @@ Fallback value for `--mbx-datepicker-calendar-selected-text-color-light` and `--
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-color](#--mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-color-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-selected-text-color-light)</div> |
 
-Internal Calendar selected cell text color when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell text color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-calendar-selected-text-color-dark
 
@@ -424,7 +424,7 @@ Internal Calendar selected cell text color when [dark](../../global/props.md#dar
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-color](#--mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-color-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-selected-text-color-dark)</div> |
 
-Internal Calendar selected cell text color when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell text color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-calendar-today-color
 
@@ -434,7 +434,7 @@ Internal Calendar selected cell text color when [dark](../../global/props.md#dar
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `--mbx-datepicker-calendar-today-color-light` and `--mbx-datepicker-calendar-today-color-dark`<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-today-color-light` and `--mbx-datepicker-calendar-today-color-dark`<br><br>
 
 ### --mbx-datepicker-calendar-today-color-light
 
@@ -444,7 +444,7 @@ Fallback value for `--mbx-datepicker-calendar-today-color-light` and `--mbx-date
 | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-today-color](#--mbx-datepicker-calendar-today-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color-light](../../organisms/Calendar/css-vars.md#--mbx-calendar-today-color-light)</div> |
 
-Internal Calendar today color when [dark](../../global/props.md#dark) mode is `off'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar today color when [dark](../../global/props.md#dark) mode is `off'<br><br>
 
 ### --mbx-datepicker-calendar-today-color-dark
 
@@ -454,7 +454,7 @@ Internal Calendar today color when [dark](../../global/props.md#dark) mode is `o
 | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-today-color](#--mbx-datepicker-calendar-today-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color-dark](../../organisms/Calendar/css-vars.md#--mbx-calendar-today-color-dark)</div> |
 
-Internal Calendar today color when [dark](../../global/props.md#dark) mode is `on'<br><br>
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar today color when [dark](../../global/props.md#dark) mode is `on'<br><br>
 
 ### --mbx-datepicker-modal-background
 

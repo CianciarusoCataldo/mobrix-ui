@@ -11,6 +11,11 @@
           "name": "Modal",
           "type": "molecules",
           "cssName": "modal"
+        },
+        {
+          "name": "Calendar",
+          "type": "organisms",
+          "cssName": "calendar"
         }
       ]
     }
