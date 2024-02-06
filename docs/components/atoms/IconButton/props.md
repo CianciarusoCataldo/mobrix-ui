@@ -1,4 +1,4 @@
-# IconButton
+# IconButton properties
 
 ## Summary
 

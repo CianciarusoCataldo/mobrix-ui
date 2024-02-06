@@ -1,4 +1,4 @@
-# Counter
+# Counter CSS variables
 
 ## Summary
 

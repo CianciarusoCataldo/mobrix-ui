@@ -1,4 +1,4 @@
-# MoBrix-ui global CSS variables
+# MoBrix-ui global CSS variables CSS variables
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# Drawer
+# Drawer properties
 
 ## Summary
 

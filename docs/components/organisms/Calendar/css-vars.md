@@ -1,4 +1,4 @@
-# Calendar
+# Calendar CSS variables
 
 ## Summary
 

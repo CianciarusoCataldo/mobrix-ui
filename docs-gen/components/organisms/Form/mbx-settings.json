@@ -3,6 +3,18 @@
   "description": "A totally configurable Form, with a submit button to let the user submit data from your web-app",
   "see": [],
   "examples": [],
+  "cssVars": {
+    "cssName": "form",
+    "extend": {
+      "components": [
+        {
+          "name": "FormField",
+          "type": "molecules",
+          "cssName": "formfield"
+        }
+      ]
+    }
+  },
   "extend": {
     "group": {
       "ComponentWithChildren": {

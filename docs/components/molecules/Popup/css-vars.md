@@ -1,4 +1,4 @@
-# Popup
+# Popup CSS variables
 
 ## Summary
 

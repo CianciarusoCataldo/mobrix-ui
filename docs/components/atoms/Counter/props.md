@@ -1,4 +1,4 @@
-# Counter
+# Counter properties
 
 ## Summary
 

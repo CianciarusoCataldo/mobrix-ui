@@ -1,6 +1,6 @@
 {
   "name": "mobrix-ui",
-  "version": "3.1.1",
+  "version": "3.2.0",
   "description": "React components for every app, easy to use and customize",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -52,6 +52,7 @@
     "jest": "29.x.x",
     "jest-environment-jsdom": "^29.6.1",
     "jest-transform-stub": "^2.0.0",
+    "json": "^11.0.0",
     "npm-run-all": "^4.1.5",
     "postcss-import": "^15.1.0",
     "prettier": "3.2.2",
@@ -87,9 +88,11 @@
     "docs:format": "prettier --write docs/**/*.md docs/*/**/*.md docs/*/*/*.md docs/*/*/*/*.md docs-gen/components/*/*/*.json",
     "docs:generate-props": "npm run update:props && sh ./docs-gen/props/generate-props.sh",
     "docs:generate-css-vars": "sh ./docs-gen/css-vars/generate-css-vars-list.sh",
-    "docs:generate-readme": "npm run docs:generate-css-vars && npm run docs:generate-props && npm run docs:setup && npm run docs:format && sh ./docs-gen/readme/generate-readme.sh && prettier --write README.md",
-    "update:props": "sh ./docs-gen/utils/update-props.sh && prettier --write docs-gen/components/*/*/props.json",
+    "docs:generate-readme": "sh ./docs-gen/readme/generate-readme.sh && prettier --write README.md",
+    "update:props": "sh ./docs-gen/utils/update-props.sh && prettier --log-level silent --write docs-gen/components/*/*/props.json",
+    "update:css-vars": "sh ./docs-gen/utils/update-css-vars.sh && prettier --log-level silent --write docs-gen/components/*/*/css-vars.json",
     "update:comments": "sh ./docs-gen/utils/update-comments.sh && npm run format:code",
-    "format:code": "prettier --log-level silent --write src/components/*/*/*.ts src/components/*/*/*.tsx"
+    "format:code": "prettier --log-level silent --write src/components/*/*/*.ts src/components/*/*/*.tsx",
+    "update:package-json": "json -I -f package.json -e"
   }
 }

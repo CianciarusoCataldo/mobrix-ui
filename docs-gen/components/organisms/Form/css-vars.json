@@ -64,87 +64,129 @@
     "description": "Form submit button text color when [dark](../../global/props.md#dark) mode is `on'"
   },
   "--mbx-form-formfield-background": {
-    "description": "Fallback value for `--mbx-form-formfield-background-light` and `--mbx-form-formfield-background-dark`"
-  },
-  "--mbx-form-formfield-background-light": {
-    "defaultExternal": {
-      "type": "molecules",
-      "component": "FormField",
-      "prop": "mbx-formfield-background-light"
-    },
-    "fallback": "--mbx-form-formfield-background",
-    "description": "Form field background when [dark](../../global/props.md#dark) mode is `off'"
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - Fallback value for `--mbx-form-formfield-background-light` and `--mbx-form-formfield-background-dark`"
   },
   "--mbx-form-formfield-background-dark": {
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - FormField background when dark mode is `off`",
+    "fallback": "--mbx-form-formfield-background",
     "defaultExternal": {
       "type": "molecules",
-      "component": "FormField",
-      "prop": "mbx-formfield-background-dark"
-    },
+      "prop": "--mbx-formfield-background-dark",
+      "component": "FormField"
+    }
+  },
+  "--mbx-form-formfield-background-light": {
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - FormField background when dark mode is `on`",
     "fallback": "--mbx-form-formfield-background",
-    "description": "Form field background when [dark](../../global/props.md#dark) mode is `on'"
+    "defaultExternal": {
+      "type": "molecules",
+      "prop": "--mbx-formfield-background-light",
+      "component": "FormField"
+    }
   },
   "--mbx-form-formfield-text-color": {
-    "description": "Fallback value for `--mbx-form-formfield-text-color-light` and `--mbx-form-formfield-text-color-dark`"
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - Fallback value for `--mbx-form-formfield-text-color-light` and `--mbx-form-formfield-text-color-dark`"
   },
   "--mbx-form-formfield-text-color-light": {
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - FormField text color when dark mode is `off`",
+    "fallback": "--mbx-form-formfield-text-color",
     "defaultExternal": {
       "type": "molecules",
-      "component": "FormField",
-      "prop": "mbx-formfield-text-color-light"
-    },
-    "fallback": "--mbx-form-formfield-text-color",
-    "description": "Form field text color when [dark](../../global/props.md#dark) mode is `off'"
+      "prop": "--mbx-formfield-text-color-light",
+      "component": "FormField"
+    }
   },
   "--mbx-form-formfield-text-color-dark": {
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - FormField text color when dark mode is `on`",
+    "fallback": "--mbx-form-formfield-text-color",
     "defaultExternal": {
       "type": "molecules",
-      "component": "FormField",
-      "prop": "mbx-formfield-text-color-dark"
-    },
-    "fallback": "--mbx-form-formfield-text-color",
-    "description": "Form field text color when [dark](../../global/props.md#dark) mode is `on'"
+      "prop": "--mbx-formfield-text-color-dark",
+      "component": "FormField"
+    }
   },
   "--mbx-form-formfield-background-hover": {
-    "description": "Fallback value for `--mbx-form-formfield-background-hover-light` and `--mbx-form-formfield-background-hover-dark`"
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - Fallback value for `--mbx-form-formfield-background-hover-light` and `--mbx-form-formfield-background-hover-dark`"
   },
   "--mbx-form-formfield-background-hover-light": {
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - FormField background when dark mode is `off`, on `hover`",
+    "fallback": "--mbx-form-formfield-background-hover",
     "defaultExternal": {
       "type": "molecules",
-      "component": "FormField",
-      "prop": "mbx-formfield-background-hover-light"
-    },
-    "fallback": "--mbx-form-formfield-background-hover",
-    "description": "Form field background when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
+      "prop": "--mbx-formfield-background-hover-light",
+      "component": "FormField"
+    }
   },
   "--mbx-form-formfield-background-hover-dark": {
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - FormField background when dark mode is `on`, on `hover`",
+    "fallback": "--mbx-form-formfield-background-hover",
     "defaultExternal": {
       "type": "molecules",
-      "component": "FormField",
-      "prop": "mbx-formfield-background-hover-dark"
-    },
-    "fallback": "--mbx-form-formfield-background-hover",
-    "description": "Form field background when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
+      "prop": "--mbx-formfield-background-hover-dark",
+      "component": "FormField"
+    }
   },
   "--mbx-form-formfield-text-color-hover": {
-    "description": "Fallback value for `--mbx-form-formfield-text-color-hover-light` and `--mbx-form-formfield-text-color-hover-dark`"
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - Fallback value for `--mbx-form-formfield-text-color-hover-light` and `--mbx-form-formfield-text-color-hover-dark`"
   },
   "--mbx-form-formfield-text-color-hover-light": {
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - FormField text color when dark mode is `off`, on `hover`",
+    "fallback": "--mbx-form-formfield-text-color-hover",
     "defaultExternal": {
       "type": "molecules",
-      "component": "FormField",
-      "prop": "mbx-formfield-text-color-hover-light"
-    },
-    "fallback": "--mbx-form-formfield-text-color-hover",
-    "description": "Form field text color when [dark](../../global/props.md#dark) mode is `off', on 'hover'"
+      "prop": "--mbx-formfield-text-color-hover-light",
+      "component": "FormField"
+    }
   },
   "--mbx-form-formfield-text-color-hover-dark": {
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - FormField text color when dark mode is `on`, on `hover`",
+    "fallback": "--mbx-form-formfield-text-color-hover",
     "defaultExternal": {
       "type": "molecules",
-      "component": "FormField",
-      "prop": "mbx-formfield-text-color-hover-dark"
-    },
-    "fallback": "--mbx-form-formfield-text-color-hover",
-    "description": "Form field text color when [dark](../../global/props.md#dark) mode is `on', on 'hover'"
+      "prop": "--mbx-formfield-text-color-hover-dark",
+      "component": "FormField"
+    }
+  },
+  "--mbx-form-formfield-error-border": {
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - Fallback value for `--mbx-form-formfield-error-border-light` and `--mbx-form-formfield-error-border-dark`"
+  },
+  "--mbx-form-formfield-error-border-light": {
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - FormField error box border color when dark mode is `off`",
+    "fallback": "--mbx-form-formfield-error-border",
+    "defaultExternal": {
+      "type": "molecules",
+      "prop": "--mbx-formfield-error-border-light",
+      "component": "FormField"
+    }
+  },
+  "--mbx-form-formfield-error-border-dark": {
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - FormField error box border color when dark mode is `on`",
+    "fallback": "--mbx-form-formfield-error-border",
+    "defaultExternal": {
+      "type": "molecules",
+      "prop": "--mbx-formfield-error-border-dark",
+      "component": "FormField"
+    }
+  },
+  "--mbx-form-formfield-error-text": {
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - Fallback value for `--mbx-form-formfield-error-text-light` and `--mbx-form-formfield-error-text-dark`"
+  },
+  "--mbx-form-formfield-error-text-light": {
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - FormField error box text color when dark mode is `off`",
+    "fallback": "--mbx-form-formfield-error-text",
+    "defaultExternal": {
+      "type": "molecules",
+      "prop": "--mbx-formfield-error-text-light",
+      "component": "FormField"
+    }
+  },
+  "--mbx-form-formfield-error-text-dark": {
+    "description": "Extended from [FormField](../../molecules/FormField/index.md) - FormField error box text color when dark mode is `on`",
+    "fallback": "--mbx-form-formfield-error-text",
+    "defaultExternal": {
+      "type": "molecules",
+      "prop": "--mbx-formfield-error-text-dark",
+      "component": "FormField"
+    }
   }
 }

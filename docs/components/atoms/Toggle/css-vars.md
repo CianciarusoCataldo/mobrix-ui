@@ -1,4 +1,4 @@
-# Toggle
+# Toggle CSS variables
 
 ## Summary
 

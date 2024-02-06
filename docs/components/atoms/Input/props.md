@@ -1,4 +1,4 @@
-# Input
+# Input properties
 
 ## Summary
 

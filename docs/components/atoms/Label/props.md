@@ -1,4 +1,4 @@
-# Label
+# Label properties
 
 ## Summary
 

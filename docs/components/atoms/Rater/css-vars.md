@@ -1,4 +1,4 @@
-# Rater
+# Rater CSS variables
 
 ## Summary
 

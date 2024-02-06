@@ -1,4 +1,4 @@
-# Rater
+# Rater properties
 
 ## Summary
 

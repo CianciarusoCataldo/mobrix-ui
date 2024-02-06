@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.2.0](#320)
 - [3.1.0](#310)
 - [3.0.0](#300)
 - [2.1.0](#210)
@@ -15,6 +16,22 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.2.0
+
+- New DatePicker css vars, to customize its internal modal
+
+  - `--mbx-datepicker-modal-background-light`,
+  - `--mbx-datepicker-modal-background-dark`,
+  - `--mbx-datepicker-modal-x-color-light`,
+  - `--mbx-datepicker-modal-x-color-dark`,
+  - `--mbx-datepicker-modal-x-color-hover-light`,
+  - `--mbx-datepicker-modal-x-color-hover-dark`,
+- Clean-up
+- New CI workflow to publish MoBrix-ui package to github registry
+- Automatic css variables docs generation
 
 <br>
 

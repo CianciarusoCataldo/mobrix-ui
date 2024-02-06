@@ -1,4 +1,4 @@
-# RadioButton
+# RadioButton properties
 
 ## Summary
 

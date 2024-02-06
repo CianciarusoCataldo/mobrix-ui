@@ -1,4 +1,4 @@
-# DismissableCard
+# DismissableCard CSS variables
 
 ## Summary
 

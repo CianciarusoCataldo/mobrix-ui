@@ -1,4 +1,4 @@
-# Selector
+# Selector CSS variables
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# Popup
+# Popup properties
 
 ## Summary
 

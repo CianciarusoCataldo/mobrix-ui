@@ -1,4 +1,4 @@
-# Card
+# Card CSS variables
 
 ## Summary
 

@@ -1,30 +1,62 @@
 const fs = require("fs");
 const COMPONENT_NAME = process.env["COMPONENT_NAME"];
 const COMPONENT_TYPE = process.env["COMPONENT_TYPE"];
-let executed = false;
+let executed = true;
 
 try {
-  let cssVars = require(
+  const cssVars = require(
     "../components/" + COMPONENT_TYPE + "/" + COMPONENT_NAME + "/css-vars.json"
   );
+  let extendedCssVars = {};
+  const settings = require(
+    "../components/" +
+      COMPONENT_TYPE +
+      "/" +
+      COMPONENT_NAME +
+      "/mbx-settings.json"
+  );
+  if (settings.cssVars && settings.cssVars.cssName) {
+    const componentsToExtend = settings.cssVars.extend.components || [];
 
-  Object.keys(cssVars).forEach((cssVar) => {
-    if (!cssVars[cssVar].description) {
-      if (cssVar.endsWith("dark") || cssVar.endsWith("light")) {
-        executed = true;
+    componentsToExtend
+      .filter((componentsToExtend) => componentsToExtend.cssName)
+      .forEach((componentToExtend) => {
+        const replaceCallback = (inputString) =>
+          inputString.replaceAll(
+            `--mbx-${componentToExtend.cssName}`,
+            `--mbx-${settings.cssVars.cssName}-${componentToExtend.cssName}`
+          );
+        const component = componentToExtend.name;
+        const componentType = componentToExtend.type || COMPONENT_TYPE;
 
-        const description = `${COMPONENT_NAME} ATTRIBUTE when [dark](../../global/props.md#dark) mode is '${
-          cssVar.endsWith("light") ? "off" : "on"
-        }'${cssVar.includes("hover") ? ", on 'hover'" : ""}`;
+        const externalCssVars = require(
+          "../components/" + componentType + "/" + component + "/css-vars.json"
+        );
+        Object.keys(externalCssVars).forEach((externalCssVar) => {
+          const cssVarName = replaceCallback(externalCssVar);
+          extendedCssVars[cssVarName] = {};
+          extendedCssVars[cssVarName].description =
+            `Extended from [${component}](../../${componentType}/${component}/index.md) - ${externalCssVars[externalCssVar].description}`;
 
-        cssVars[cssVar].description = description.replace("'", "`");
-        console.log(cssVars[cssVar].description);
-      } else {
-        executed = true;
-        cssVars[cssVar].description = "Fallback value for `` and ``";
-      }
-    }
-  });
+          if (!cssVarName.endsWith("-dark") && !cssVarName.endsWith("-light")) {
+            extendedCssVars[cssVarName].description = replaceCallback(
+              extendedCssVars[cssVarName].description
+            );
+          } else {
+            extendedCssVars[cssVarName].fallback = replaceCallback(
+              externalCssVars[externalCssVar].fallback
+            );
+            extendedCssVars[cssVarName].defaultExternal = {
+              type: componentType,
+              prop: externalCssVar,
+              component: component,
+            };
+          }
+        });
+      });
+  }
+
+  const cssVariables = { ...cssVars, ...extendedCssVars };
 
   if (executed) {
     fs.writeFileSync(
@@ -33,7 +65,7 @@ try {
         "/" +
         COMPONENT_NAME +
         "/css-vars.json",
-      JSON.stringify({ ...cssVars })
+      JSON.stringify({ ...cssVariables })
     );
   }
 } catch (e) {

@@ -3,6 +3,23 @@
   "description": " A smart date-picker, with an internal Calendar accessible to choose a date",
   "see": [],
   "examples": [],
+  "cssVars": {
+    "cssName": "datepicker",
+    "extend": {
+      "components": [
+        {
+          "name": "Modal",
+          "type": "molecules",
+          "cssName": "modal"
+        },
+        {
+          "name": "Calendar",
+          "type": "organisms",
+          "cssName": "calendar"
+        }
+      ]
+    }
+  },
   "extend": {
     "component": {
       "type": "organisms",

@@ -1,4 +1,4 @@
-# Dropdown
+# Dropdown properties
 
 ## Summary
 

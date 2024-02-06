@@ -118,7 +118,9 @@ MoBrix-ui is globally configurable, with CSS variables. By defining some specifi
 | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](components/global/css-vars.md#mbx-focus-color)</div> | <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-focus-color-light](components/global/css-vars.md#mbx-focus-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](components/global/css-vars.md#mbx-focus-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#7785ff</div><div style='text-align:center;margin-auto;'><div style='background:#7785ff;margin:auto; width:15px; height:15px;'/></div></div></div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-focus-color-dark](components/global/css-vars.md#mbx-focus-color-dark)</div> | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](components/global/css-vars.md#mbx-focus-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#fb7a10</div><div style='text-align:center;margin-auto;'><div style='background:#fb7a10;margin:auto; width:15px; height:15px;'/></div></div></div> |
+<br>
 
+Check out the [complete css variables](components/css-vars.md) list for more details
 
 <br>
 

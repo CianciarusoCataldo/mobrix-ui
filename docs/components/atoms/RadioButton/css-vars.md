@@ -1,4 +1,4 @@
-# RadioButton
+# RadioButton CSS variables
 
 ## Summary
 
