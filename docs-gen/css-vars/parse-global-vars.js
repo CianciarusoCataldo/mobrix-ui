@@ -80,6 +80,11 @@ Object.keys(cssVars).forEach((cssvar, index) => {
     internalFallBack
   );
 
+  globalVarsTable = globalVarsTable.replace(
+    "FALLBACK_" + index,
+    internalFallBack
+  );
+
   let internalDefault = "/";
 
   if (cssVars[cssvar].defaultInternal) {
