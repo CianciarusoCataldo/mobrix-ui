@@ -11,23 +11,23 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Prop</div>                                                                                            | <div style='text-align:center;margin:auto;'>Fallback</div>                                                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background](#--mbx-radiogroup-background)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background-light](#--mbx-radiogroup-background-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background](#--mbx-radiogroup-background)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#--mbx-background-light)</div>                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background-dark](#--mbx-radiogroup-background-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background](#--mbx-radiogroup-background)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#--mbx-background-dark)</div>                                      |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#--mbx-radiogroup-text-color)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color-light](#--mbx-radiogroup-text-color-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#--mbx-radiogroup-text-color)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#--mbx-text-color-light)</div>                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color-dark](#--mbx-radiogroup-text-color-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#--mbx-radiogroup-text-color)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#--mbx-text-color-dark)</div>                                      |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background](#--mbx-radiogroup-radio-background)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-light](#--mbx-radiogroup-radio-background-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background](#--mbx-radiogroup-radio-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-light](../../atoms/RadioButton/css-vars.md#--mbx-radio-background-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-dark](#--mbx-radiogroup-radio-background-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background](#--mbx-radiogroup-radio-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-dark](../../atoms/RadioButton/css-vars.md#--mbx-radio-background-dark)</div>               |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-hover](#--mbx-radiogroup-radio-background-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-hover-light](#--mbx-radiogroup-radio-background-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-hover](#--mbx-radiogroup-radio-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-hover-light](../../atoms/RadioButton/css-vars.md#--mbx-radio-background-hover-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-hover-dark](#--mbx-radiogroup-radio-background-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-hover](#--mbx-radiogroup-radio-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-hover-dark](../../atoms/RadioButton/css-vars.md#--mbx-radio-background-hover-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-icon-background](#--mbx-radiogroup-radio-icon-background)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-icon-background-light](#--mbx-radiogroup-radio-icon-background-light)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-icon-background](#--mbx-radiogroup-radio-icon-background)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-radio-icon-background-light](../../atoms/RadioButton/css-vars.md#--mbx-radio-icon-background-light)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-icon-background-dark](#--mbx-radiogroup-radio-icon-background-dark)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-icon-background](#--mbx-radiogroup-radio-icon-background)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-radio-icon-background-dark](../../atoms/RadioButton/css-vars.md#--mbx-radio-icon-background-dark)</div>     |
+| <div style='text-align:center;margin:auto;'>Prop</div>                                                                                           | <div style='text-align:center;margin:auto;'>Fallback</div>                                                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background](#-mbx-radiogroup-background)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background-light](#-mbx-radiogroup-background-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background](#--mbx-radiogroup-background)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#-mbx-background-light)</div>                                    |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background-dark](#-mbx-radiogroup-background-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background](#--mbx-radiogroup-background)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#-mbx-background-dark)</div>                                      |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#-mbx-radiogroup-text-color)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color-light](#-mbx-radiogroup-text-color-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#--mbx-radiogroup-text-color)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#-mbx-text-color-light)</div>                                    |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color-dark](#-mbx-radiogroup-text-color-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#--mbx-radiogroup-text-color)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#-mbx-text-color-dark)</div>                                      |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background](#-mbx-radiogroup-radio-background)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-light](#-mbx-radiogroup-radio-background-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background](#--mbx-radiogroup-radio-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-light](../../atoms/RadioButton/css-vars.md#-mbx-radio-background-light)</div>             |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-dark](#-mbx-radiogroup-radio-background-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background](#--mbx-radiogroup-radio-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-dark](../../atoms/RadioButton/css-vars.md#-mbx-radio-background-dark)</div>               |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-hover](#-mbx-radiogroup-radio-background-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-hover-light](#-mbx-radiogroup-radio-background-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-hover](#--mbx-radiogroup-radio-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-hover-light](../../atoms/RadioButton/css-vars.md#-mbx-radio-background-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-hover-dark](#-mbx-radiogroup-radio-background-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-hover](#--mbx-radiogroup-radio-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-hover-dark](../../atoms/RadioButton/css-vars.md#-mbx-radio-background-hover-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-icon-background](#-mbx-radiogroup-radio-icon-background)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-icon-background-light](#-mbx-radiogroup-radio-icon-background-light)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-icon-background](#--mbx-radiogroup-radio-icon-background)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-radio-icon-background-light](../../atoms/RadioButton/css-vars.md#-mbx-radio-icon-background-light)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-icon-background-dark](#-mbx-radiogroup-radio-icon-background-dark)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-icon-background](#--mbx-radiogroup-radio-icon-background)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-radio-icon-background-dark](../../atoms/RadioButton/css-vars.md#-mbx-radio-icon-background-dark)</div>     |
 
 ## CSS Variables list
 
@@ -47,9 +47,9 @@ Fallback value for `--mbx-radiogroup-background-light` and `--mbx-radiogroup-bac
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                   |
-| ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background](#--mbx-radiogroup-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#--mbx-background-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                  |
+| ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background](#--mbx-radiogroup-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#-mbx-background-light)</div> |
 
 RadioGroup background when [dark](../../global/props.md#dark) mode is `off`<br><br>
 
@@ -57,9 +57,9 @@ RadioGroup background when [dark](../../global/props.md#dark) mode is `off`<br><
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
-| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background](#--mbx-radiogroup-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#--mbx-background-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background](#--mbx-radiogroup-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#-mbx-background-dark)</div> |
 
 RadioGroup background when [dark](../../global/props.md#dark) mode is `on`<br><br>
 
@@ -77,9 +77,9 @@ Fallback value for `--mbx-radiogroup-text-color-light` and `--mbx-radiogroup-tex
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                   |
-| ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#--mbx-radiogroup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#--mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                  |
+| ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#--mbx-radiogroup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#-mbx-text-color-light)</div> |
 
 RadioGroup text color when [dark](../../global/props.md#dark) mode is `off`<br><br>
 
@@ -87,9 +87,9 @@ RadioGroup text color when [dark](../../global/props.md#dark) mode is `off`<br><
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                 |
-| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#--mbx-radiogroup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#--mbx-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#--mbx-radiogroup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#-mbx-text-color-dark)</div> |
 
 RadioGroup text color when [dark](../../global/props.md#dark) mode is `on`<br><br>
 
@@ -107,9 +107,9 @@ Fallback value for `mbx-radiogroup-radio-background-light` and `mbx-radiogroup-r
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                                          |
-| ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background](#--mbx-radiogroup-radio-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-light](../../atoms/RadioButton/css-vars.md#--mbx-radio-background-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background](#--mbx-radiogroup-radio-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-light](../../atoms/RadioButton/css-vars.md#-mbx-radio-background-light)</div> |
 
 Internal RadioButton background when [dark](../../global/props.md#dark) mode is off<br><br>
 
@@ -117,9 +117,9 @@ Internal RadioButton background when [dark](../../global/props.md#dark) mode is 
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background](#--mbx-radiogroup-radio-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-dark](../../atoms/RadioButton/css-vars.md#--mbx-radio-background-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background](#--mbx-radiogroup-radio-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-dark](../../atoms/RadioButton/css-vars.md#-mbx-radio-background-dark)</div> |
 
 Internal RadioButton background when [dark](../../global/props.md#dark) mode is on<br><br>
 
@@ -137,9 +137,9 @@ Fallback value for `mbx-radiogroup-radio-background-hover-light` and `mbx-radiog
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-hover](#--mbx-radiogroup-radio-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-hover-light](../../atoms/RadioButton/css-vars.md#--mbx-radio-background-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-hover](#--mbx-radiogroup-radio-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-hover-light](../../atoms/RadioButton/css-vars.md#-mbx-radio-background-hover-light)</div> |
 
 Internal RadioButton background when [dark](../../global/props.md#dark) mode is off, on hover<br><br>
 
@@ -147,9 +147,9 @@ Internal RadioButton background when [dark](../../global/props.md#dark) mode is 
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-hover](#--mbx-radiogroup-radio-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-hover-dark](../../atoms/RadioButton/css-vars.md#--mbx-radio-background-hover-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-hover](#--mbx-radiogroup-radio-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-hover-dark](../../atoms/RadioButton/css-vars.md#-mbx-radio-background-hover-dark)</div> |
 
 Internal RadioButton background when [dark](../../global/props.md#dark) mode is on, on hover<br><br>
 
@@ -167,9 +167,9 @@ Fallback value for `mbx-radiogroup-radio-icon-background-light` and `mbx-radiogr
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                          | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                    |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-icon-background](#--mbx-radiogroup-radio-icon-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-icon-background-light](../../atoms/RadioButton/css-vars.md#--mbx-radio-icon-background-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                          | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                   |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-icon-background](#--mbx-radiogroup-radio-icon-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-icon-background-light](../../atoms/RadioButton/css-vars.md#-mbx-radio-icon-background-light)</div> |
 
 Internal RadioButton icon background when [dark](../../global/props.md#dark) mode is off<br><br>
 
@@ -177,8 +177,8 @@ Internal RadioButton icon background when [dark](../../global/props.md#dark) mod
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                          | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                  |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-icon-background](#--mbx-radiogroup-radio-icon-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-icon-background-dark](../../atoms/RadioButton/css-vars.md#--mbx-radio-icon-background-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                          | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-icon-background](#--mbx-radiogroup-radio-icon-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-radio-icon-background-dark](../../atoms/RadioButton/css-vars.md#-mbx-radio-icon-background-dark)</div> |
 
 Internal RadioButton icon background when [dark](../../global/props.md#dark) mode is on<br><br>

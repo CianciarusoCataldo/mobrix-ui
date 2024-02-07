@@ -51,7 +51,7 @@ Object.keys(cssVars).forEach((cssvar, index) => {
   );
   readmeVarsTable = readmeVarsTable.replace(
     "PROP_NAME_" + index,
-    `[${cssvar}](docs/components/global/css-vars.md#${cssvar.replace("--", "")})`
+    `[${cssvar}](docs/components/global/css-vars.md#${cssvar.replace("--", "-")})`
   );
 
   if (cssVars[cssvar].description) {
@@ -65,7 +65,7 @@ Object.keys(cssVars).forEach((cssvar, index) => {
   let readmeFallBack = "/";
 
   if (cssVars[cssvar].fallback) {
-    const fallback = cssVars[cssvar].fallback.replace("--", "");
+    const fallback = cssVars[cssvar].fallback.replace("--", "-");
     internalFallBack = `[${cssVars[cssvar].fallback}](#${fallback})`;
     readmeFallBack = `[${cssVars[cssvar].fallback}](docs/components/global/css-vars.md#${fallback})`;
   }
@@ -84,7 +84,7 @@ Object.keys(cssVars).forEach((cssvar, index) => {
 
   if (cssVars[cssvar].defaultInternal) {
     const defaultInternal = cssVars[cssvar].defaultInternal;
-    internalDefault = `[${defaultInternal}](#${defaultInternal.replace("--", "")})`;
+    internalDefault = `[${defaultInternal}](#${defaultInternal.replace("--", "-")})`;
   } else if (cssVars[cssvar].defaultColor) {
     const defaultColor =
       "<div><div style='text-align:center;margin-auto;'>" +
@@ -111,7 +111,10 @@ Object.keys(cssVars).forEach((cssvar, index) => {
 
 fs.writeFileSync(INPUT_PATH + "/global/table.md", globalVarsTable);
 fs.writeFileSync(process.env["README_CHAPTER_PATH"], readmeVarsTable);
-fs.writeFileSync(process.env["README_CHAPTER_PATH_PUBLISHED"], readmeVarsTable.replaceAll("docs/components","components"));
+fs.writeFileSync(
+  process.env["README_CHAPTER_PATH_PUBLISHED"],
+  readmeVarsTable.replaceAll("docs/components", "components")
+);
 fs.writeFileSync(INPUT_PATH + "/global/list.md", globalVarsList);
 
 fs.writeFileSync(

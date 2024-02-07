@@ -100,17 +100,18 @@ try {
 }
 
 Object.keys(cssVars).forEach((cssvar, index) => {
+  const cssVarIndex = cssvar.replace("--mbx", "-mbx");
   inputTable = inputTable.replace(
     "PROP_NAME_" + index,
-    `[${cssvar}](#${cssvar})`
+    `[${cssvar}](#${cssVarIndex})`
   );
   externalTable = externalTable.replace(
     "PROP_NAME_EXTERNAL_" + index,
-    `[${cssvar}](../${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${cssvar})`
+    `[${cssvar}](../${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${cssVarIndex})`
   );
   globalTable = globalTable.replace(
     "PROP_NAME_GLOBAL_" + index,
-    `[${cssvar}](${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${cssvar})`
+    `[${cssvar}](${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${cssVarIndex})`
   );
 
   let internalFallBack = "/";
@@ -118,10 +119,11 @@ Object.keys(cssVars).forEach((cssvar, index) => {
   let globalFallback = "/";
 
   if (cssVars[cssvar].fallback) {
+    const fallbackIndex = cssVars[cssvar].fallback.replace("--mbx", "-mbx");
     const fallback = cssVars[cssvar].fallback;
     internalFallBack = `[${fallback}](#${fallback})`;
-    externalFallBack = `[${fallback}](${COMPONENT_NAME_TO_PARSE}/css-vars.md#${fallback})`;
-    globalFallback = `[${fallback}](${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${fallback})`;
+    externalFallBack = `[${fallback}](${COMPONENT_NAME_TO_PARSE}/css-vars.md#${fallbackIndex})`;
+    globalFallback = `[${fallback}](${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${fallbackIndex})`;
   }
 
   inputTable = inputTable.replace("FALLBACK_" + index, internalFallBack);
@@ -137,15 +139,22 @@ Object.keys(cssVars).forEach((cssvar, index) => {
   let globalDefault = "/";
 
   if (cssVars[cssvar].defaultInternal) {
+    const defaultInternalIndex = cssVars[
+      cssvar
+    ].defaultInternal.fallback.replace("--mbx", "-mbx");
     const defaultInternal = cssVars[cssvar].defaultInternal;
     internalDefault = `[${defaultInternal}](#${defaultInternal})`;
-    externalDefault = `[${defaultInternal}](${COMPONENT_NAME_TO_PARSE}/css-vars.md#${defaultInternal})`;
-    globalDefault = `[${defaultInternal}](${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${defaultInternal})`;
+    externalDefault = `[${defaultInternal}](${COMPONENT_NAME_TO_PARSE}/css-vars.md#${defaultInternalIndex})`;
+    globalDefault = `[${defaultInternal}](${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${defaultInternalIndex})`;
   } else if (cssVars[cssvar].defaultGlobal) {
+    const defaultGlobalIndex = cssVars[cssvar].defaultGlobal.replace(
+      "--mbx",
+      "-mbx"
+    );
     const defaultGlobal = cssVars[cssvar].defaultGlobal;
-    internalDefault = `[${defaultGlobal}](../../global/css-vars.md#${defaultGlobal})`;
-    externalDefault = `[${defaultGlobal}](../global/css-vars.md#${defaultGlobal})`;
-    globalDefault = `[${defaultGlobal}](global/css-vars.md#${defaultGlobal})`;
+    internalDefault = `[${defaultGlobal}](../../global/css-vars.md#${defaultGlobalIndex})`;
+    externalDefault = `[${defaultGlobal}](../global/css-vars.md#${defaultGlobalIndex})`;
+    globalDefault = `[${defaultGlobal}](global/css-vars.md#${defaultGlobalIndex})`;
   } else if (cssVars[cssvar].defaultColor) {
     const defaultColor =
       "<div><div style='text-align:center;margin-auto;'>" +
@@ -163,11 +172,14 @@ Object.keys(cssVars).forEach((cssvar, index) => {
     cssVars[cssvar].defaultExternal.type
   ) {
     const externalComponent = cssVars[cssvar].defaultExternal.component;
+    const propNameIndex = cssVars[cssvar].defaultExternal.prop.replace(
+      "--mbx",
+      "-mbx"
+    );
     const propName = cssVars[cssvar].defaultExternal.prop;
-
-    internalDefault = `[${propName}](../../${cssVars[cssvar].defaultExternal.type}/${externalComponent}/css-vars.md#${propName})`;
-    externalDefault = `[${propName}](../${cssVars[cssvar].defaultExternal.type}/${externalComponent}/css-vars.md#${propName})`;
-    globalDefault = `[${propName}](components/${cssVars[cssvar].defaultExternal.type}/${externalComponent}/css-vars.md#${propName})`;
+    internalDefault = `[${propName}](../../${cssVars[cssvar].defaultExternal.type}/${externalComponent}/css-vars.md#${propNameIndex})`;
+    externalDefault = `[${propName}](../${cssVars[cssvar].defaultExternal.type}/${externalComponent}/css-vars.md#${propNameIndex})`;
+    globalDefault = `[${propName}](components/${cssVars[cssvar].defaultExternal.type}/${externalComponent}/css-vars.md#${propNameIndex})`;
   } else if (cssVars[cssvar].default) {
     const defaultInline = cssVars[cssvar].default;
     internalDefault = defaultInline;
