@@ -7,17 +7,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Read .nvmrc file
-        run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
-        id: nvm
-      # Setup .npmrc file to publish to GitHub Packages
-      - name: use Node ${{steps.nvm.outputs.NODE_VERSION}}
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: ${{steps.nvm.outputs.NODE_VERSION}}
+          node-version-file: ".nvmrc"
           registry-url: "https://npm.pkg.github.com"
           scope: "@cianciarusocataldo"
-      - run: npm ci
-      - run: npm publish
+          always-auth: "true"
+      - run: |
+          npm ci
+          npm run update:package-json "this.name=\"@cianciarusocataldo/mobrix-ui\""
+          npm run update:package-json "this.publishConfig={\"registry\": \"https://npm.pkg.github.com\"}"
+          echo //npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_ACCESS_TOKEN }} >>.npmrc
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
