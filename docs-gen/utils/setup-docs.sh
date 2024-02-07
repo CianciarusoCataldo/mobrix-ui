@@ -18,8 +18,6 @@ for type in $(
     TYPE_DIR="$OUTPUT_PATH"/$type
     mkdir "$TYPE_DIR"
 
-    cp "$OUTPUT_CSSVARS_PATH"/components/"$type"/index.md "$TYPE_DIR"/css-vars.md
-    cp "$OUTPUT_PROPS_PATH"/components/"$type"/index.md "$TYPE_DIR"/props.md
     cp docs-gen/templates/index-group.md "$TYPE_DIR"/index.md
     sed -i "s/COMPONENTS_TYPE/$type/g" "$TYPE_DIR"/index.md
 

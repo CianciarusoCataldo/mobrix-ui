@@ -51,7 +51,7 @@ Object.keys(propsToParse).forEach((actualProp, index) => {
   );
   readmeVarsTable = readmeVarsTable.replace(
     "PROP_NAME_" + index,
-    `[${actualProp}](docs/components/global/props.md#${actualProp.toLowerCase()})`
+    `[${actualProp}](https//cianciarusocataldo.github.io/mobrix-ui/docs/components/global/css-vars/${actualProp.toLowerCase().replace("--mbx", "-mbx")})`
   );
 
   if (propsToParse[actualProp].description) {
@@ -95,7 +95,10 @@ Object.keys(propsToParse).forEach((actualProp, index) => {
 
 fs.writeFileSync(INPUT_PATH + "/global/table.md", globalVarsTable);
 fs.writeFileSync(process.env["README_CHAPTER_PATH"], readmeVarsTable);
-fs.writeFileSync(process.env["README_CHAPTER_PATH_PUBLISHED"], readmeVarsTable.replaceAll("docs/components","components"));
+fs.writeFileSync(
+  process.env["README_CHAPTER_PATH_PUBLISHED"],
+  readmeVarsTable.replaceAll("docs/components", "components")
+);
 fs.writeFileSync(INPUT_PATH + "/global/list.md", globalVarsList);
 
 fs.writeFileSync(

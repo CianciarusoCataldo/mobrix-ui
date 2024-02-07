@@ -1,4 +1,4 @@
-# COMPONENT_NAME
+# COMPONENT_NAME page
 
 - [Properties](props.md)
 - [Css Variables](css-vars.md)

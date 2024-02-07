@@ -141,7 +141,7 @@ Object.keys(cssVars).forEach((cssvar, index) => {
   if (cssVars[cssvar].defaultInternal) {
     const defaultInternalIndex = cssVars[
       cssvar
-    ].defaultInternal.fallback.replace("--mbx", "-mbx");
+    ].defaultInternal.replace("--mbx", "-mbx");
     const defaultInternal = cssVars[cssvar].defaultInternal;
     internalDefault = `[${defaultInternal}](#${defaultInternal})`;
     externalDefault = `[${defaultInternal}](${COMPONENT_NAME_TO_PARSE}/css-vars.md#${defaultInternalIndex})`;
