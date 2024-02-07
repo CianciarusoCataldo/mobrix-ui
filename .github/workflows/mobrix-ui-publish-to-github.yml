@@ -17,9 +17,6 @@ jobs:
           npm ci
           npm run update:package-json "this.name=\"@cianciarusocataldo/mobrix-ui\""
           npm run update:package-json "this.publishConfig={\"registry\": \"https://npm.pkg.github.com\"}"
-      - uses: JS-DevTools/npm-publish@v3
+          npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
-        with:
-          token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
-          registry: "https://npm.pkg.github.com"
+          NODE_AUTH_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
