@@ -1,4 +1,4 @@
-# Label CSS variables
+# [Label](index.md) CSS variables
 
 ## Summary
 

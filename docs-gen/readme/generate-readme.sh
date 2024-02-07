@@ -1,11 +1,9 @@
 #!/bin/sh
-npm run update:css-vars
-npm run update:props
-npm run update:comments
 npm run docs:generate-css-vars
 npm run docs:generate-props
 npm run docs:setup
 npm run docs:format
+npm run update:comments
 
 rm -rf README.md
 rm -rf docs/index.md
@@ -64,7 +62,7 @@ cp -a README_PUBLISHED.md docs/index.md
 cp -a CHANGELOG.md docs/Changelog.md
 cp -a LICENSE docs/License.md
 
-python3 -m mkdocs build -d playground/public/docs
+python3 -m mkdocs build --quiet -d  playground/public/docs
 
 rm -rf README_PUBLISHED.md
 rm -rf docs/Changelog.md

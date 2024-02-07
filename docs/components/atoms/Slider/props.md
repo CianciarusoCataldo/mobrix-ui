@@ -1,4 +1,4 @@
-# Slider properties
+# [Slider](index.md) properties
 
 ## Summary
 

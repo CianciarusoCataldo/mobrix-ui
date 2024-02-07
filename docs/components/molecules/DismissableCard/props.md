@@ -1,4 +1,4 @@
-# DismissableCard properties
+# [DismissableCard](index.md) properties
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# Toggle properties
+# [Toggle](index.md) properties
 
 ## Summary
 

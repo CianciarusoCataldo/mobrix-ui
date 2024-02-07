@@ -1,4 +1,4 @@
-# Table properties
+# [Table](index.md) properties
 
 ## Summary
 

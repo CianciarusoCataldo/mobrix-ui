@@ -1,4 +1,4 @@
-# MoBrix-ui shared properties
+# [MoBrix-ui shared](index.md) properties
 
 ## Summary
 

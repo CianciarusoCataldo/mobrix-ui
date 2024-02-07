@@ -1,4 +1,4 @@
-# CheckBox properties
+# [CheckBox](index.md) properties
 
 ## Summary
 

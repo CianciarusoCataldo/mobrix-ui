@@ -1,4 +1,4 @@
-# Spinner CSS variables
+# [Spinner](index.md) CSS variables
 
 ## Summary
 

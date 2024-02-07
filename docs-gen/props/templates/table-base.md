@@ -1,4 +1,4 @@
-# COMPONENT_NAME properties
+# [COMPONENT_NAME](index.md) properties
 
 ## Summary
 

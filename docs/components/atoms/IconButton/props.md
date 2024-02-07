@@ -1,4 +1,4 @@
-# IconButton properties
+# [IconButton](index.md) properties
 
 ## Summary
 

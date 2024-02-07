@@ -1,4 +1,4 @@
-# Counter CSS variables
+# [Counter](index.md) CSS variables
 
 ## Summary
 

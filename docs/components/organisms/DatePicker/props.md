@@ -1,4 +1,4 @@
-# DatePicker properties
+# [DatePicker](index.md) properties
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# Rater CSS variables
+# [Rater](index.md) CSS variables
 
 ## Summary
 

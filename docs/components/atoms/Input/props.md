@@ -1,4 +1,4 @@
-# Input properties
+# [Input](index.md) properties
 
 ## Summary
 

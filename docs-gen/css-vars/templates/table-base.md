@@ -1,4 +1,4 @@
-# COMPONENT_NAME CSS variables
+# [COMPONENT_NAME](index.md) CSS variables
 
 ## Summary
 

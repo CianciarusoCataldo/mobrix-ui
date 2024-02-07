@@ -1,4 +1,4 @@
-# Link properties
+# [Link](index.md) properties
 
 ## Summary
 

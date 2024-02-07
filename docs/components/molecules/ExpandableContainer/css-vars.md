@@ -1,4 +1,4 @@
-# ExpandableContainer CSS variables
+# [ExpandableContainer](index.md) CSS variables
 
 ## Summary
 

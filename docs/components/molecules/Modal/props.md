@@ -1,4 +1,4 @@
-# Modal properties
+# [Modal](index.md) properties
 
 ## Summary
 

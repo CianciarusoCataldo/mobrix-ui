@@ -4,7 +4,7 @@ export OUTPUT_FILE_PATH="docs/props"
 export README_CHAPTER_PATH=docs-gen/readme/chapters/building-process-shared-props.md
 
 rm -rf "$OUTPUT_FILE_PATH"
-rm -f docs-gen/readme/chapters/building-process-shared-props.md
+rm -rf docs-gen/readme/chapters/building-process-shared-props.md
 
 mkdir "$OUTPUT_FILE_PATH"
 
@@ -69,16 +69,17 @@ for type in $(
     touch "$typeDir"/tables.md
     cat docs-gen/props/templates/group-base.md >>"$typeDir"/index.md
     sed -i "s/COMPONENTS_TYPE/$type/g" "$typeDir"/index.md
-    echo " - [${type}](#$type)\n" >>"$OUTPUT_FILE_PATH"/summary.md
-    echo "\n\n## $type\n" >>"$OUTPUT_FILE_PATH"/tables.md
+    capitalizedType=$(python3 -c "print(\"$type\".capitalize())")
+    echo "\n\n<br>\n\n${capitalizedType}\n" >>"$OUTPUT_FILE_PATH"/summary.md
+    echo "\n\n## ${capitalizedType}\n" >>"$OUTPUT_FILE_PATH"/tables.md
 
     for actualComponent in $(
         ls -p -- src/components/"$type"/ | grep /
     ); do
         component=$(echo "$actualComponent" | tr -d '/')
         summaryComponent=$(echo "$component" | tr '[:upper:]' '[:lower:]')
-        echo " - [${component}](#$summaryComponent)\n" >>"$typeDir"/summary.md
-        echo "   - [${component}](#$summaryComponent)\n" >>"$OUTPUT_FILE_PATH"/summary.md
+        echo " - [${component}]($component/index.md)\n" >>"$typeDir"/summary.md
+        echo " - [${component}]($type/$component/index.md)\n" >>"$OUTPUT_FILE_PATH"/summary.md
         componentPath="$typeDir"/"$component"
         mkdir "$componentPath"
         touch "$componentPath"/table.md
@@ -127,10 +128,10 @@ for type in $(
             echo -n "\n\n" >>"$componentPath"/list.md
             echo "VAR_DESCRIPTION_$COUNTER<br><br>" >>"$componentPath"/list.md
             COUNTER=$((COUNTER + 1))
-            rm "$componentPath"/tmp_row.md
-            rm "$componentPath"/tmp_row_external.md
-            rm "$componentPath"/tmp_row_global.md
-            rm "$componentPath"/tmp_row_mini.md
+            rm -rf "$componentPath"/tmp_row.md
+            rm -rf "$componentPath"/tmp_row_external.md
+            rm -rf "$componentPath"/tmp_row_global.md
+            rm -rf "$componentPath"/tmp_row_mini.md
         done
 
         sed -i 's/"//g' "$componentPath"/list.md
@@ -145,23 +146,22 @@ for type in $(
 
         cat "$componentPath"/index-global.md >>"$OUTPUT_FILE_PATH"/tables.md
         echo -n "" >>"$OUTPUT_FILE_PATH"/tables.md
-        rm "$componentPath"/table.md
-        rm "$componentPath"/list.md
-        rm "$componentPath"/table-external.md
-        rm "$componentPath"/table-global.md
-        rm "$componentPath"/index-global.md
-        rm "$componentPath"/index-external.md
+        rm -rf "$componentPath"/table.md
+        rm -rf "$componentPath"/list.md
+        rm -rf "$componentPath"/table-external.md
+        rm -rf "$componentPath"/table-global.md
+        rm -rf "$componentPath"/index-global.md
+        rm -rf "$componentPath"/index-external.md
 
     done
 
     echo -n "\n" >>"$typeDir"/index.md
     cat "$typeDir"/summary.md >>"$typeDir"/index.md
     cat "$typeDir"/tables.md >>"$typeDir"/index.md
-    rm "$typeDir"/summary.md
-    rm "$typeDir"/tables.md
+    rm -rf "$typeDir"/summary.md
+    rm -rf "$typeDir"/tables.md
 done
 
 cat "$OUTPUT_FILE_PATH"/summary.md >>"$OUTPUT_FILE_PATH"/index.md
-cat "$OUTPUT_FILE_PATH"/tables.md >>"$OUTPUT_FILE_PATH"/index.md
-rm "$OUTPUT_FILE_PATH"/summary.md
-rm "$OUTPUT_FILE_PATH"/tables.md
+rm -rf "$OUTPUT_FILE_PATH"/summary.md
+rm -rf "$OUTPUT_FILE_PATH"/tables.md

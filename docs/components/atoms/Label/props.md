@@ -1,4 +1,4 @@
-# Label properties
+# [Label](index.md) properties
 
 ## Summary
 

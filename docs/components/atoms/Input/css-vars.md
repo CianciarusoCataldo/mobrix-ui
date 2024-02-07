@@ -1,4 +1,4 @@
-# Input CSS variables
+# [Input](index.md) CSS variables
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# Button properties
+# [Button](index.md) properties
 
 ## Summary
 

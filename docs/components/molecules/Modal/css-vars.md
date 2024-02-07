@@ -1,4 +1,4 @@
-# Modal CSS variables
+# [Modal](index.md) CSS variables
 
 ## Summary
 

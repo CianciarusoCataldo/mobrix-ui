@@ -1,4 +1,4 @@
-# Divider CSS variables
+# [Divider](index.md) CSS variables
 
 ## Summary
 

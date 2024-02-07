@@ -1,4 +1,4 @@
-# Toggle CSS variables
+# [Toggle](index.md) CSS variables
 
 ## Summary
 

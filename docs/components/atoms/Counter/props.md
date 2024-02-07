@@ -1,4 +1,4 @@
-# Counter properties
+# [Counter](index.md) properties
 
 ## Summary
 

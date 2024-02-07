@@ -1,4 +1,4 @@
-# Slider CSS variables
+# [Slider](index.md) CSS variables
 
 ## Summary
 

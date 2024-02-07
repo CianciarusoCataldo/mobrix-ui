@@ -1,4 +1,4 @@
-# Divider properties
+# [Divider](index.md) properties
 
 ## Summary
 

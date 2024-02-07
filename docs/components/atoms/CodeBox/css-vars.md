@@ -1,4 +1,4 @@
-# CodeBox CSS variables
+# [CodeBox](index.md) CSS variables
 
 ## Summary
 

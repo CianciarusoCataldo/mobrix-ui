@@ -1,4 +1,4 @@
-# List properties
+# [List](index.md) properties
 
 ## Summary
 

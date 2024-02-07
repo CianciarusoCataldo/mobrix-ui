@@ -1,4 +1,4 @@
-# ExpandableContainer properties
+# [ExpandableContainer](index.md) properties
 
 ## Summary
 

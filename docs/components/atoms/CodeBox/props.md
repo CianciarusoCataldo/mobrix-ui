@@ -1,4 +1,4 @@
-# CodeBox properties
+# [CodeBox](index.md) properties
 
 ## Summary
 

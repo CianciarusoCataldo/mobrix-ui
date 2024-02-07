@@ -1,4 +1,4 @@
-# Selector CSS variables
+# [Selector](index.md) CSS variables
 
 ## Summary
 

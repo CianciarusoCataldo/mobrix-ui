@@ -1,4 +1,4 @@
-# Spinner properties
+# [Spinner](index.md) properties
 
 ## Summary
 

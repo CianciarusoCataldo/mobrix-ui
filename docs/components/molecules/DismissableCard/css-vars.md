@@ -1,4 +1,4 @@
-# DismissableCard CSS variables
+# [DismissableCard](index.md) CSS variables
 
 ## Summary
 

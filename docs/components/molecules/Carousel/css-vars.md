@@ -1,4 +1,4 @@
-# Carousel CSS variables
+# [Carousel](index.md) CSS variables
 
 ## Summary
 

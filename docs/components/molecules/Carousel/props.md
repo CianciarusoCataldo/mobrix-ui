@@ -1,4 +1,4 @@
-# Carousel properties
+# [Carousel](index.md) properties
 
 ## Summary
 

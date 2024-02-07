@@ -1,4 +1,4 @@
-# Table CSS variables
+# [Table](index.md) CSS variables
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# Rater properties
+# [Rater](index.md) properties
 
 ## Summary
 
