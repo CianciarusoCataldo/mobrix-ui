@@ -5,16 +5,11 @@ on: workflow_dispatch
 jobs:
   publish-package-to-github-registry:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x, 17.x, 18.x]
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: "npm"
+      - name: Set the correct Node version using nvm
+        shell: bash -l {0} 
+        run: nvm install
       - run: npm i
       - run: npm run build
       - run: |
@@ -23,3 +18,4 @@ jobs:
           touch .npmrc
           echo //npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_ACCESS_TOKEN }} >>.npmrc
           npm publish --access public
+          rm -rf ${{ github.workspace }}
