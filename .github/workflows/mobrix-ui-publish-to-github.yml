@@ -1,9 +1,9 @@
-name: Publish MoBrix-ui package to github registry
+name: Publish to github registry
 
 on: workflow_dispatch
 
 jobs:
-  publish-package-to-github-registry:
+  publish-to-github-registry:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

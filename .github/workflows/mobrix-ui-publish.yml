@@ -1,9 +1,9 @@
-name: Publish MoBrix-ui package to npm registry
+name: Publish to npm registry
 
 on: workflow_dispatch
 
 jobs:
-  publish-package-to-npm-registry:
+  publish-to-npm-registry:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
