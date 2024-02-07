@@ -2,7 +2,6 @@
 
 export OUTPUT_FILE_PATH="docs/props"
 export README_CHAPTER_PATH=docs-gen/readme/chapters/building-process-shared-props.md
-export README_CHAPTER_PATH_PUBLISHED=docs-gen/readme/chapters/published/building-process-shared-props.md
 
 rm -rf "$OUTPUT_FILE_PATH"
 rm -f docs-gen/readme/chapters/building-process-shared-props.md

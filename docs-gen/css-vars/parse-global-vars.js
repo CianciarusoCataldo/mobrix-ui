@@ -116,10 +116,6 @@ Object.keys(cssVars).forEach((cssvar, index) => {
 
 fs.writeFileSync(INPUT_PATH + "/global/table.md", globalVarsTable);
 fs.writeFileSync(process.env["README_CHAPTER_PATH"], readmeVarsTable);
-fs.writeFileSync(
-  process.env["README_CHAPTER_PATH_PUBLISHED"],
-  readmeVarsTable.replaceAll("docs/components", "components")
-);
 fs.writeFileSync(INPUT_PATH + "/global/list.md", globalVarsList);
 
 fs.writeFileSync(

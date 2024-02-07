@@ -2,16 +2,13 @@
 
 export OUTPUT_FILE_PATH="docs/css-vars"
 export README_CHAPTER_PATH=docs-gen/readme/chapters/building-process-css-global-vars.md
-export README_CHAPTER_PATH_PUBLISHED=docs-gen/readme/chapters/published/building-process-css-global-vars.md
 
 rm -rf "$OUTPUT_FILE_PATH"
 rm -f docs-gen/readme/chapters/building-process-css-global-vars.md
-rm -f docs-gen/readme/chapters/published/building-process-css-global-vars.md
 
 mkdir "$OUTPUT_FILE_PATH"
 
 touch docs-gen/readme/chapters/building-process-css-global-vars.md
-touch docs-gen/readme/chapters/published/building-process-css-global-vars.md
 
 touch "$OUTPUT_FILE_PATH"/index.md
 touch "$OUTPUT_FILE_PATH"/summary.md
