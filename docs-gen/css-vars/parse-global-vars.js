@@ -47,11 +47,11 @@ try {
 Object.keys(cssVars).forEach((cssvar, index) => {
   globalVarsTable = globalVarsTable.replace(
     "PROP_NAME_" + index,
-    `[${cssvar}](#${cssvar.replace("--", "")})`
+    `[${cssvar}](#${cssvar.replace("--", "-")})`
   );
   readmeVarsTable = readmeVarsTable.replace(
     "PROP_NAME_" + index,
-    `[${cssvar}](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/css-vars/${cssvar.replace("--", "-")})`
+    `[${cssvar}](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/css-vars/#${cssvar.replace("--", "-")})`
   );
 
   if (cssVars[cssvar].description) {
@@ -67,7 +67,7 @@ Object.keys(cssVars).forEach((cssvar, index) => {
   if (cssVars[cssvar].fallback) {
     const fallback = cssVars[cssvar].fallback.replace("--", "-");
     internalFallBack = `[${cssVars[cssvar].fallback}](#${fallback})`;
-    readmeFallBack = `[${cssVars[cssvar].fallback}](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/css-vars/${fallback})`;
+    readmeFallBack = `[${cssVars[cssvar].fallback}](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/css-vars/#${fallback})`;
   }
 
   readmeVarsTable = readmeVarsTable.replace(
