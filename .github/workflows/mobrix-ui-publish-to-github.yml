@@ -14,9 +14,9 @@ jobs:
           scope: "@cianciarusocataldo"
           always-auth: "true"
       - run: |
+          npm ci
           npm run update:package-json "this.name=\"@cianciarusocataldo/mobrix-ui\""
           npm run update:package-json "this.publishConfig={\"registry\": \"https://npm.pkg.github.com\"}"
-          npm ci
           npm run build
           npm publish --access public
         env:
