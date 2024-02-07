@@ -6,16 +6,18 @@ jobs:
   publish-package-to-github-registry:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Set the correct Node version using nvm
-        shell: bash -l {0} 
-        run: nvm install
-      - run: npm i
-      - run: npm run build
-      - run: |
-          npm run update:package-json "this.name=\"@cianciarusocataldo/mobrix-ui\""
-          npm run update:package-json "this.publishConfig={\"registry\": \"https://npm.pkg.github.com\"}"
-          touch .npmrc
-          echo //npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_ACCESS_TOKEN }} >>.npmrc
-          npm publish --access public
-          rm -rf ${{ github.workspace }}
+      - uses: actions/checkout@v4
+      - name: Read .nvmrc file
+        run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
+        id: nvm
+      # Setup .npmrc file to publish to GitHub Packages
+      - name: use Node ${{steps.nvm.outputs.NODE_VERSION}}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{steps.nvm.outputs.NODE_VERSION}}
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@cianciarusocataldo"
+      - run: npm ci
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
