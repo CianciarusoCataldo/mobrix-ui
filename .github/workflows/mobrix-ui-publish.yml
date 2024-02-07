@@ -1,0 +1,20 @@
+name: Publish MoBrix-ui package to npm registry
+
+on: workflow_dispatch
+
+jobs:
+  publish-package-to-npm-registry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          always-auth: "true"
+      - run: |
+          npm ci
+          npm run update:package-json "this.name=\"@cianciarusocataldo/mobrix-ui\""
+          npm run update:package-json "this.publishConfig={\"registry\": \"https://npm.pkg.github.com\"}"
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
