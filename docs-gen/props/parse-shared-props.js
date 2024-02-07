@@ -51,7 +51,7 @@ Object.keys(propsToParse).forEach((actualProp, index) => {
   );
   readmeVarsTable = readmeVarsTable.replace(
     "PROP_NAME_" + index,
-    `[${actualProp}](https//cianciarusocataldo.github.io/mobrix-ui/docs/components/global/css-vars/${actualProp.toLowerCase().replace("--mbx", "-mbx")})`
+    `[${actualProp}](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/css-vars/${actualProp.toLowerCase().replace("--mbx", "-mbx")})`
   );
 
   if (propsToParse[actualProp].description) {
