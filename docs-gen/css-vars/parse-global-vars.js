@@ -119,5 +119,5 @@ fs.writeFileSync(
   globalVarsPage
     .replace("COMPONENT_TABLE", globalVarsTable)
     .replace("COMPONENT_LIST", globalVarsList)
-    .replace("COMPONENT_NAME", "MoBrix-ui global CSS variables")
+    .replace("COMPONENT_NAME", "MoBrix-ui global")
 );

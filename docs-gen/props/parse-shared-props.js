@@ -103,5 +103,5 @@ fs.writeFileSync(
   globalVarsPage
     .replace("COMPONENT_TABLE", globalVarsTable)
     .replace("COMPONENT_LIST", globalVarsList)
-    .replace("COMPONENT_NAME", "MoBrix-ui shared props")
+    .replace("COMPONENT_NAME", "MoBrix-ui shared")
 );

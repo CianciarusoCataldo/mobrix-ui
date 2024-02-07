@@ -1,4 +1,4 @@
-# MoBrix-ui global CSS variables CSS variables
+# MoBrix-ui global CSS variables
 
 ## Summary
 
@@ -51,7 +51,7 @@
 
 <br>
 
-Fallback value for [--mbx-background-light](#mbx-background-light) and [--mbx-background-dark](#mbx-background-dark) variables
+Fallback value for `--mbx-background-light` and `--mbx-background-dark` variables
 
 <br>
 
@@ -65,7 +65,7 @@ Fallback value for [--mbx-background-light](#mbx-background-light) and [--mbx-ba
 
 <br>
 
-VAR_DESCRIPTION_1
+Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
@@ -79,7 +79,7 @@ VAR_DESCRIPTION_1
 
 <br>
 
-VAR_DESCRIPTION_2
+Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `on`
 
 <br>
 
@@ -93,7 +93,7 @@ VAR_DESCRIPTION_2
 
 <br>
 
-VAR_DESCRIPTION_3
+Fallback value for `--mbx-background-color-light` and `--mbx-background-color-dark` variables
 
 <br>
 
@@ -107,7 +107,7 @@ VAR_DESCRIPTION_3
 
 <br>
 
-VAR_DESCRIPTION_4
+Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
@@ -121,7 +121,7 @@ VAR_DESCRIPTION_4
 
 <br>
 
-VAR_DESCRIPTION_5
+Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `on`
 
 <br>
 
@@ -135,7 +135,7 @@ VAR_DESCRIPTION_5
 
 <br>
 
-VAR_DESCRIPTION_6
+Fallback value for `--mbx-background-color-hover-light` and `--mbx-background-color-hover-dark` variables
 
 <br>
 
@@ -149,7 +149,7 @@ VAR_DESCRIPTION_6
 
 <br>
 
-VAR_DESCRIPTION_7
+Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `off`, on `hover`
 
 <br>
 
@@ -163,7 +163,7 @@ VAR_DESCRIPTION_7
 
 <br>
 
-VAR_DESCRIPTION_8
+Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `on`, on `hover`
 
 <br>
 
@@ -177,7 +177,7 @@ VAR_DESCRIPTION_8
 
 <br>
 
-VAR_DESCRIPTION_9
+Fallback value for `--mbx-background-hover-light` and `--mbx-background-hover-dark` variables
 
 <br>
 
@@ -191,7 +191,7 @@ VAR_DESCRIPTION_9
 
 <br>
 
-VAR_DESCRIPTION_10
+Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `off`, on `hover`
 
 <br>
 
@@ -205,7 +205,7 @@ VAR_DESCRIPTION_10
 
 <br>
 
-VAR_DESCRIPTION_11
+Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `on`, on `hover`
 
 <br>
 
@@ -219,7 +219,7 @@ VAR_DESCRIPTION_11
 
 <br>
 
-VAR_DESCRIPTION_12
+Fallback value for `--mbx-text-color-light` and `--mbx-text-color-dark` variables
 
 <br>
 
@@ -233,7 +233,7 @@ VAR_DESCRIPTION_12
 
 <br>
 
-VAR_DESCRIPTION_13
+Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
@@ -247,7 +247,7 @@ VAR_DESCRIPTION_13
 
 <br>
 
-VAR_DESCRIPTION_14
+Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `on`
 
 <br>
 
@@ -261,7 +261,7 @@ VAR_DESCRIPTION_14
 
 <br>
 
-VAR_DESCRIPTION_15
+Fallback value for `--mbx-text-color-hover-light` and `--mbx-text-color-hover-dark` variables
 
 <br>
 
@@ -275,7 +275,7 @@ VAR_DESCRIPTION_15
 
 <br>
 
-VAR_DESCRIPTION_16
+Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `off`, on `hover`
 
 <br>
 
@@ -289,7 +289,7 @@ VAR_DESCRIPTION_16
 
 <br>
 
-VAR_DESCRIPTION_17
+Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `on`, on `hover`
 
 <br>
 
@@ -303,7 +303,7 @@ VAR_DESCRIPTION_17
 
 <br>
 
-VAR_DESCRIPTION_18
+Fallback value for `--mbx-focus-color-light` and `--mbx-focus-color-dark` variables
 
 <br>
 
@@ -317,7 +317,7 @@ VAR_DESCRIPTION_18
 
 <br>
 
-VAR_DESCRIPTION_19
+Global MoBrix-ui focus color, when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
@@ -331,4 +331,4 @@ VAR_DESCRIPTION_19
 
 <br>
 
-VAR_DESCRIPTION_20
+Global MoBrix-ui focus color, when [dark](../../global/props.md#dark) mode is `on`

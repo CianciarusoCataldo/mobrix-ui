@@ -1,66 +1,92 @@
 {
   "--mbx-background": {
-    "description": "Fallback value for [--mbx-background-light](#mbx-background-light) and [--mbx-background-dark](#mbx-background-dark) variables"
+    "description": "Fallback value for `--mbx-background-light` and `--mbx-background-dark` variables"
   },
   "--mbx-background-light": {
+    "description": "Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `off`",
     "fallback": "--mbx-background",
     "defaultColor": "linear-gradient(to right, #fff, #ededee, #e6e7e7)"
   },
   "--mbx-background-dark": {
+    "description": "Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `on`",
     "fallback": "--mbx-background",
     "defaultColor": "linear-gradient(to right, #2d3748, #1d232e)"
   },
-  "--mbx-background-color": {},
+  "--mbx-background-color": {
+    "description": "Fallback value for `--mbx-background-color-light` and `--mbx-background-color-dark` variables"
+  },
   "--mbx-background-color-light": {
+    "description": "Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `off`",
     "fallback": "--mbx-background-color",
     "defaultColor": "#e9e9e9"
   },
   "--mbx-background-color-dark": {
+    "description": "Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `on`",
     "fallback": "--mbx-background-color",
     "defaultColor": "#1d232e"
   },
-  "--mbx-background-color-hover": {},
+  "--mbx-background-color-hover": {
+    "description": "Fallback value for `--mbx-background-color-hover-light` and `--mbx-background-color-hover-dark` variables"
+  },
   "--mbx-background-color-hover-light": {
+    "description": "Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `off`, on `hover`",
     "fallback": "--mbx-background-color-hover",
     "defaultColor": "#dfeaf8"
   },
   "--mbx-background-color-hover-dark": {
+    "description": "Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `on`, on `hover`",
     "fallback": "--mbx-background-color-hover",
     "defaultColor": "#3a3552"
   },
-  "--mbx-background-hover": {},
+  "--mbx-background-hover": {
+    "description": "Fallback value for `--mbx-background-hover-light` and `--mbx-background-hover-dark` variables"
+  },
   "--mbx-background-hover-light": {
+    "description": "Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `off`, on `hover`",
     "fallback": "--mbx-background-hover",
     "defaultColor": "linear-gradient(to right, #ececec, #e1e1e6, #dbdddd)"
   },
   "--mbx-background-hover-dark": {
+    "description": "Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `on`, on `hover`",
     "fallback": "--mbx-background-hover",
     "defaultColor": "linear-gradient(to right, #364257, #252d3b)"
   },
-  "--mbx-text-color": {},
+  "--mbx-text-color": {
+    "description": "Fallback value for `--mbx-text-color-light` and `--mbx-text-color-dark` variables"
+  },
   "--mbx-text-color-light": {
+    "description": "Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `off`",
     "fallback": "--mbx-text-color",
     "defaultColor": "#1b1b1b"
   },
   "--mbx-text-color-dark": {
+    "description": "Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `on`",
     "fallback": "--mbx-text-color",
     "defaultColor": "white"
   },
-  "--mbx-text-color-hover": {},
+  "--mbx-text-color-hover": {
+    "description": "Fallback value for `--mbx-text-color-hover-light` and `--mbx-text-color-hover-dark` variables"
+  },
   "--mbx-text-color-hover-light": {
+    "description": "Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `off`, on `hover`",
     "fallback": "--mbx-text-color-hover",
     "defaultColor": "#413c5c"
   },
   "--mbx-text-color-hover-dark": {
+    "description": "Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `on`, on `hover`",
     "fallback": "--mbx-text-color-hover",
     "defaultColor": "#dfeaf8"
   },
-  "--mbx-focus-color": {},
+  "--mbx-focus-color": {
+    "description": "Fallback value for `--mbx-focus-color-light` and `--mbx-focus-color-dark` variables"
+  },
   "--mbx-focus-color-light": {
+    "description": "Global MoBrix-ui focus color, when [dark](../../global/props.md#dark) mode is `off`",
     "fallback": "--mbx-focus-color",
     "defaultColor": "#7785ff"
   },
   "--mbx-focus-color-dark": {
+    "description": "Global MoBrix-ui focus color, when [dark](../../global/props.md#dark) mode is `on`",
     "fallback": "--mbx-focus-color",
     "defaultColor": "#fb7a10"
   }
