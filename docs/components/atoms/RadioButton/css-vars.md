@@ -51,7 +51,7 @@ Fallback value for `mbx-radio-background-light` and `mbx-radio-background-dark`
 
 <br>
 
-RadioButton background when dark mode is off
+RadioButton background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -65,7 +65,7 @@ RadioButton background when dark mode is off
 
 <br>
 
-RadioButton background when dark mode is on
+RadioButton background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -93,7 +93,7 @@ Fallback value for `mbx-radio-background-hover-light` and `mbx-radio-background-
 
 <br>
 
-RadioButton background when dark mode is off, on hover
+RadioButton background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -107,7 +107,7 @@ RadioButton background when dark mode is off, on hover
 
 <br>
 
-RadioButton background when dark mode is on, on hover
+RadioButton background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -135,7 +135,7 @@ Fallback value for `mbx-radio-icon-background-light` and `mbx-radio-icon-backgro
 
 <br>
 
-RadioButton icon background when dark mode is off
+RadioButton icon background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -149,6 +149,6 @@ RadioButton icon background when dark mode is off
 
 <br>
 
-RadioButton icon background when dark mode is on
+RadioButton icon background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>

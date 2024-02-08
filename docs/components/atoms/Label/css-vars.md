@@ -45,7 +45,7 @@ Fallback value for `mbx-label-text-color-light` and `mbx-label-text-color-dark`
 
 <br>
 
-Label text color when dark mode is off
+Label text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -59,6 +59,6 @@ Label text color when dark mode is off
 
 <br>
 
-Label text color when dark mode is on
+Label text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>

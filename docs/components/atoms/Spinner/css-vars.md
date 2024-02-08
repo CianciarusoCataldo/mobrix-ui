@@ -51,7 +51,7 @@ Fallback value for `--mbx-spinner-success-color-light` and `--mbx-spinner-succes
 
 <br>
 
-Spinner success color when dark mode is off
+Spinner success color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -65,7 +65,7 @@ Spinner success color when dark mode is off
 
 <br>
 
-Spinner success color when dark mode is on
+Spinner success color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -93,7 +93,7 @@ Fallback value for `--mbx-spinner-error-color-light` and `--mbx-spinner-error-co
 
 <br>
 
-Spinner error color when dark mode is off
+Spinner error color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -107,7 +107,7 @@ Spinner error color when dark mode is off
 
 <br>
 
-Spinner error color when dark mode is on
+Spinner error color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -135,7 +135,7 @@ Fallback value for `--mbx-spinner-loading-color-light` and `--mbx-spinner-loadin
 
 <br>
 
-Spinner loading color when dark mode is off
+Spinner loading color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -149,6 +149,6 @@ Spinner loading color when dark mode is off
 
 <br>
 
-Spinner loading color when dark mode is on
+Spinner loading color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>

@@ -51,7 +51,7 @@ Fallback value for `mbx-slider-background-light` and `mbx-slider-background-dark
 
 <br>
 
-Slider background when dark mode is off
+Slider background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -65,7 +65,7 @@ Slider background when dark mode is off
 
 <br>
 
-Slider background when dark mode is on
+Slider background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -93,7 +93,7 @@ Fallback value for `mbx-slider-thumb-color-light` and `mbx-slider-thumb-color-da
 
 <br>
 
-Slider thumb color when dark mode is off
+Slider thumb color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -107,7 +107,7 @@ Slider thumb color when dark mode is off
 
 <br>
 
-Slider thumb color when dark mode is on
+Slider thumb color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -135,7 +135,7 @@ Fallback value for `mbx-slider-thumb-color-hover-light` and `mbx-slider-thumb-co
 
 <br>
 
-Slider thumb color when dark mode is off, on hover
+Slider thumb color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -149,6 +149,6 @@ Slider thumb color when dark mode is off, on hover
 
 <br>
 
-Slider thumb color when dark mode is on, on hover
+Slider thumb color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>

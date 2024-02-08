@@ -45,7 +45,7 @@ Fallback value for `--mbx-divider-color-light` and `--mbx-divider-color-dark`
 
 <br>
 
-Divider color when dark mode is `off`
+Divider color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -59,6 +59,6 @@ Divider color when dark mode is `off`
 
 <br>
 
-Divider color when dark mode is `on`
+Divider color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>

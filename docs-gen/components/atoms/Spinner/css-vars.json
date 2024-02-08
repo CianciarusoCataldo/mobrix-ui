@@ -3,12 +3,12 @@
     "description": "Fallback value for `--mbx-spinner-success-color-light` and `--mbx-spinner-success-color-dark`"
   },
   "--mbx-spinner-success-color-light": {
-    "description": "Spinner success color when dark mode is off",
+    "description": "Spinner success color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "default": "#05bc29",
     "fallback": "--mbx-spinner-success-color"
   },
   "--mbx-spinner-success-color-dark": {
-    "description": "Spinner success color when dark mode is on",
+    "description": "Spinner success color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "default": "#05bc29",
     "fallback": "--mbx-spinner-success-color"
   },
@@ -16,12 +16,12 @@
     "description": "Fallback value for `--mbx-spinner-error-color-light` and `--mbx-spinner-error-color-dark`"
   },
   "--mbx-spinner-error-color-light": {
-    "description": "Spinner error color when dark mode is off",
+    "description": "Spinner error color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "default": "#ff0000",
     "fallback": "--mbx-spinner-error-color"
   },
   "--mbx-spinner-error-color-dark": {
-    "description": "Spinner error color when dark mode is on",
+    "description": "Spinner error color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "default": "#ff0000",
     "fallback": "--mbx-spinner-error-color"
   },
@@ -29,12 +29,12 @@
     "description": "Fallback value for `--mbx-spinner-loading-color-light` and `--mbx-spinner-loading-color-dark`"
   },
   "--mbx-spinner-loading-color-light": {
-    "description": "Spinner loading color when dark mode is off",
+    "description": "Spinner loading color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "default": "#202020",
     "fallback": "--mbx-spinner-loading-color"
   },
   "--mbx-spinner-loading-color-dark": {
-    "description": "Spinner loading color when dark mode is on",
+    "description": "Spinner loading color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "default": "#202020",
     "fallback": "--mbx-spinner-loading-color"
   }

@@ -57,7 +57,7 @@ Fallback value for `--mbx-toggle-background-light` and `--mbx-toggle-background-
 
 <br>
 
-Toggle background when dark mode is `off`
+Toggle background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -71,7 +71,7 @@ Toggle background when dark mode is `off`
 
 <br>
 
-Toggle background when dark mode is `on`
+Toggle background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -99,7 +99,7 @@ Fallback value for `--mbx-toggle-icon-on-internal-color-light` and `--mbx-toggle
 
 <br>
 
-Toggle icon internal color, when dark mode is `off` and toggle status is `off`
+Toggle icon internal color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off` and toggle status is `off`
 
 <br>
 
@@ -113,7 +113,7 @@ Toggle icon internal color, when dark mode is `off` and toggle status is `off`
 
 <br>
 
-Toggle icon internal color, when dark mode is `off` and toggle status is `on`
+Toggle icon internal color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off` and toggle status is `on`
 
 <br>
 
@@ -141,7 +141,7 @@ Fallback value for `--mbx-toggle-icon-on-external-color-light` and `--mbx-toggle
 
 <br>
 
-Toggle icon external color, when dark mode is `off` and toggle status is `on`
+Toggle icon external color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off` and toggle status is `on`
 
 <br>
 
@@ -155,7 +155,7 @@ Toggle icon external color, when dark mode is `off` and toggle status is `on`
 
 <br>
 
-Toggle icon external color, when dark mode is `on` and toggle status is `on`
+Toggle icon external color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on` and toggle status is `on`
 
 <br>
 
@@ -183,7 +183,7 @@ Fallback value for `--mbx-toggle-icon-off-internal-color-light` and `--mbx-toggl
 
 <br>
 
-Toggle icon internal color, when dark mode is `off` and toggle status is `off`
+Toggle icon internal color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off` and toggle status is `off`
 
 <br>
 
@@ -197,7 +197,7 @@ Toggle icon internal color, when dark mode is `off` and toggle status is `off`
 
 <br>
 
-Toggle icon internal color, when dark mode is `on` and toggle status is `off`
+Toggle icon internal color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on` and toggle status is `off`
 
 <br>
 
@@ -225,7 +225,7 @@ Fallback value for `--mbx-toggle-icon-off-external-color-light` and `--mbx-toggl
 
 <br>
 
-Toggle icon external color, when dark mode is `off` and toggle status is `off`
+Toggle icon external color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off` and toggle status is `off`
 
 <br>
 
@@ -239,6 +239,6 @@ Toggle icon external color, when dark mode is `off` and toggle status is `off`
 
 <br>
 
-Toggle icon external color, when dark mode is `on` and toggle status is `off`
+Toggle icon external color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on` and toggle status is `off`
 
 <br>

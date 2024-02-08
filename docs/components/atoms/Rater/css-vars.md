@@ -45,7 +45,7 @@ Fallback value for `mbx-rater-background-light` and `mbx-rater-background-dark`
 
 <br>
 
-Rater background when dark mode is off
+Rater background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -59,6 +59,6 @@ Rater background when dark mode is off
 
 <br>
 
-Rater background when dark mode is on
+Rater background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>

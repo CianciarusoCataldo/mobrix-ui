@@ -63,7 +63,7 @@ Fallback value for `--mbx-background-light` and `--mbx-background-dark` variable
 
 <br>
 
-Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `off`
+Global MoBrix-ui background, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -77,7 +77,7 @@ Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `of
 
 <br>
 
-Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `on`
+Global MoBrix-ui background, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -105,7 +105,7 @@ Fallback value for `--mbx-background-color-light` and `--mbx-background-color-da
 
 <br>
 
-Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `off`
+Global MoBrix-ui background color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -119,7 +119,7 @@ Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode 
 
 <br>
 
-Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `on`
+Global MoBrix-ui background color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -147,7 +147,7 @@ Fallback value for `--mbx-background-color-hover-light` and `--mbx-background-co
 
 <br>
 
-Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `off`, on `hover`
+Global MoBrix-ui background color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -161,7 +161,7 @@ Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode 
 
 <br>
 
-Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `on`, on `hover`
+Global MoBrix-ui background color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -189,7 +189,7 @@ Fallback value for `--mbx-background-hover-light` and `--mbx-background-hover-da
 
 <br>
 
-Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `off`, on `hover`
+Global MoBrix-ui background, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -203,7 +203,7 @@ Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `of
 
 <br>
 
-Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `on`, on `hover`
+Global MoBrix-ui background, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -231,7 +231,7 @@ Fallback value for `--mbx-text-color-light` and `--mbx-text-color-dark` variable
 
 <br>
 
-Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `off`
+Global MoBrix-ui text color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -245,7 +245,7 @@ Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `of
 
 <br>
 
-Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `on`
+Global MoBrix-ui text color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -273,7 +273,7 @@ Fallback value for `--mbx-text-color-hover-light` and `--mbx-text-color-hover-da
 
 <br>
 
-Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `off`, on `hover`
+Global MoBrix-ui text color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -287,7 +287,7 @@ Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `of
 
 <br>
 
-Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `on`, on `hover`
+Global MoBrix-ui text color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -315,7 +315,7 @@ Fallback value for `--mbx-focus-color-light` and `--mbx-focus-color-dark` variab
 
 <br>
 
-Global MoBrix-ui focus color, when [dark](../../global/props.md#dark) mode is `off`
+Global MoBrix-ui focus color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -329,6 +329,6 @@ Global MoBrix-ui focus color, when [dark](../../global/props.md#dark) mode is `o
 
 <br>
 
-Global MoBrix-ui focus color, when [dark](../../global/props.md#dark) mode is `on`
+Global MoBrix-ui focus color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>

@@ -48,7 +48,7 @@ Fallback value for `mbx-link-color-light` and `mbx-link-color-dark`
 
 <br>
 
-Link text color when dark mode is off
+Link text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -62,7 +62,7 @@ Link text color when dark mode is off
 
 <br>
 
-Link text color when dark mode is on
+Link text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -90,7 +90,7 @@ Fallback value for `mbx-link-color-hover-light` and `mbx-link-color-hover-dark`
 
 <br>
 
-Link text color when dark mode is off, on hover
+Link text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -104,6 +104,6 @@ Link text color when dark mode is off, on hover
 
 <br>
 
-Link text color when dark mode is on, on hover
+Link text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>

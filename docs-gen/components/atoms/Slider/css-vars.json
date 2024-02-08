@@ -3,12 +3,12 @@
     "description": "Fallback value for `mbx-slider-background-light` and `mbx-slider-background-dark`"
   },
   "--mbx-slider-background-light": {
-    "description": "Slider background when dark mode is off",
+    "description": "Slider background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-slider-background"
   },
   "--mbx-slider-background-dark": {
-    "description": "Slider background when dark mode is on",
+    "description": "Slider background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-slider-background"
   },
@@ -16,12 +16,12 @@
     "description": "Fallback value for `mbx-slider-thumb-color-light` and `mbx-slider-thumb-color-dark`"
   },
   "--mbx-slider-thumb-color-light": {
-    "description": "Slider thumb color when dark mode is off",
+    "description": "Slider thumb color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "default": "radial-gradient(#2d3748, #1d232e)",
     "fallback": "--mbx-slider-thumb-color"
   },
   "--mbx-slider-thumb-color-dark": {
-    "description": "Slider thumb color when dark mode is on",
+    "description": "Slider thumb color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "default": "radial-gradient(#e3e4e9, #9b9999)",
     "fallback": "--mbx-slider-thumb-color"
   },
@@ -29,12 +29,12 @@
     "description": "Fallback value for `mbx-slider-thumb-color-hover-light` and `mbx-slider-thumb-color-hover-dark`"
   },
   "--mbx-slider-thumb-color-hover-light": {
-    "description": "Slider thumb color when dark mode is off, on hover",
+    "description": "Slider thumb color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultInternal": "--mbx-slider-thumb-color-light",
     "fallback": "--mbx-slider-thumb-color-hover"
   },
   "--mbx-slider-thumb-color-hover-dark": {
-    "description": "Slider thumb color when dark mode is on, on hover",
+    "description": "Slider thumb color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultInternal": "--mbx-slider-thumb-color-dark",
     "fallback": "--mbx-slider-thumb-color-hover"
   }

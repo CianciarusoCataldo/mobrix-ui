@@ -54,7 +54,7 @@ Fallback value for `mbx-inputbox-background-light` and `mbx-inputbox-background-
 
 <br>
 
-Input background when dark mode is off
+Input background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -68,7 +68,7 @@ Input background when dark mode is off
 
 <br>
 
-Input background when dark mode is on
+Input background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -96,7 +96,7 @@ Fallback value for `mbx-inputbox-text-color-light` and `mbx-inputbox-text-color-
 
 <br>
 
-Input text color when dark mode is off
+Input text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -110,7 +110,7 @@ Input text color when dark mode is off
 
 <br>
 
-Input text color when dark mode is on
+Input text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -138,7 +138,7 @@ Fallback value for `mbx-inputbox-background-hover-light` and `mbx-inputbox-backg
 
 <br>
 
-Input background when dark mode is off, on hover
+Input background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -152,7 +152,7 @@ Input background when dark mode is off, on hover
 
 <br>
 
-Input background when dark mode is on, on hover
+Input background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -180,7 +180,7 @@ Fallback value for `mbx-inputbox-text-color-hover-light` and `mbx-inputbox-text-
 
 <br>
 
-Input text color when dark mode is off, on hover
+Input text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -194,6 +194,6 @@ Input text color when dark mode is off, on hover
 
 <br>
 
-Input text color when dark mode is on, on hover
+Input text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>

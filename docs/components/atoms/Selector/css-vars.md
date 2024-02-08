@@ -54,7 +54,7 @@ Fallback value for `mbx-selector-background-light` and `mbx-selector-background-
 
 <br>
 
-Selector background when dark mode is off
+Selector background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -68,7 +68,7 @@ Selector background when dark mode is off
 
 <br>
 
-Selector background when dark mode is on
+Selector background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -96,7 +96,7 @@ Fallback value for `mbx-selector-text-color-light` and `mbx-selector-text-color-
 
 <br>
 
-Selector text color when dark mode is off
+Selector text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -110,7 +110,7 @@ Selector text color when dark mode is off
 
 <br>
 
-Selector text color when dark mode is on
+Selector text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -138,7 +138,7 @@ Fallback value for `mbx-selector-background-hover-light` and `mbx-selector-backg
 
 <br>
 
-Selector background when dark mode is off, on hover
+Selector background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -152,7 +152,7 @@ Selector background when dark mode is off, on hover
 
 <br>
 
-Selector background when dark mode is on, on hover
+Selector background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -180,7 +180,7 @@ Fallback value for `mbx-selector-text-color-hover-light` and `mbx-selector-text-
 
 <br>
 
-Selector text color when dark mode is off, on hover
+Selector text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -194,6 +194,6 @@ Selector text color when dark mode is off, on hover
 
 <br>
 
-Selector text color when dark mode is on, on hover
+Selector text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
