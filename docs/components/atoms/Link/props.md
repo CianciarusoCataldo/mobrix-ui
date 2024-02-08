@@ -24,35 +24,47 @@
 
 <br>
 
-### to
-
 <br>
+
+### to
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Link url<br><br>
+<br>
 
-### newTab
+Link url
 
 <br>
+
+<br>
+
+### newTab
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>false</div> |
 
-f true, the link will be opened in a new tab<br><br>
+<br>
 
-### children
+f true, the link will be opened in a new tab
 
 <br>
+
+<br>
+
+### children
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>`JSX.Element` &#124; `string`</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Link content<br><br>
+<br>
+
+Link content
+
+<br>

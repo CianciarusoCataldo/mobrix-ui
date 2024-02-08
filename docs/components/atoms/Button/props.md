@@ -25,46 +25,62 @@
 
 <br>
 
-### onMouseEnter
-
 <br>
+
+### onMouseEnter
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-This callback is triggered everytime the cursor enter the button area<br><br>
+<br>
+
+This callback is triggered everytime the cursor enter the button area
+
+<br>
+
+<br>
 
 ### onMouseLeave
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-This callback is triggered everytime the cursor exit the button area<br><br>
+<br>
 
-### onClick
+This callback is triggered everytime the cursor exit the button area
 
 <br>
+
+<br>
+
+### onClick
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
-Callback triggered when Button component is clicked<br><br>
+<br>
 
-### children
+Callback triggered when Button component is clicked
 
 <br>
+
+<br>
+
+### children
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>JSX.Element &#124; string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Button content<br><br>
+<br>
+
+Button content
+
+<br>

@@ -1,4 +1,4 @@
-# MoBrix-ui
+# MoBrix-ui - V2 guide
 
 ![NPM](https://img.shields.io/npm/l/mobrix-ui?label=License&style=for-the-badge)
 ![npm (scoped)](https://img.shields.io/npm/v/mobrix-ui?color=orange%20&label=Latest%20version&style=for-the-badge&logo=npm)

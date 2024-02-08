@@ -11,42 +11,54 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Prop</div>                                                         | <div style='text-align:center;margin:auto;'>Fallback</div>                                          | <div style='text-align:center;margin:auto;'>Default</div>                                                                  |
-| -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-rater-background](#-mbx-rater-background)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                        |
-| <div style='text-align:center;margin:auto;'>[--mbx-rater-background-light](#-mbx-rater-background-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-rater-background](#--mbx-rater-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#-mbx-background-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-rater-background-dark](#-mbx-rater-background-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-rater-background](#--mbx-rater-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#-mbx-background-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>Prop</div>                                                         | <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
+| -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-rater-background](#-mbx-rater-background)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                    |
+| <div style='text-align:center;margin:auto;'>[--mbx-rater-background-light](#-mbx-rater-background-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-rater-background](#-mbx-rater-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-rater-background-dark](#-mbx-rater-background-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-rater-background](#-mbx-rater-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div>   |
 
 ## CSS Variables list
 
 <br>
 
-### --mbx-rater-background
-
 <br>
+
+### --mbx-rater-background
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
 
-Fallback value for `mbx-rater-background-light` and `mbx-rater-background-dark`<br><br>
+<br>
+
+Fallback value for `mbx-rater-background-light` and `mbx-rater-background-dark`
+
+<br>
+
+<br>
 
 ### --mbx-rater-background-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div> |
+| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-rater-background](#-mbx-rater-background)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                          | <div style='text-align:center;margin:auto;'>Default</div>                                                                  |
-| --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-rater-background](#--mbx-rater-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#-mbx-background-light)</div> |
+Rater background when dark mode is off
 
-Rater background when dark mode is off<br><br>
+<br>
+
+<br>
 
 ### --mbx-rater-background-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div> |
+| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-rater-background](#-mbx-rater-background)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                          | <div style='text-align:center;margin:auto;'>Default</div>                                                                |
-| --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-rater-background](#--mbx-rater-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#-mbx-background-dark)</div> |
+Rater background when dark mode is on
 
-Rater background when dark mode is on<br><br>
+<br>

@@ -24,35 +24,47 @@
 
 <br>
 
-### value
-
 <br>
+
+### value
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-code to display<br><br>
+<br>
 
-### highlight
+code to display
 
 <br>
+
+<br>
+
+### highlight
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Enable/disable text highlight, based on selected environment<br><br>
+<br>
 
-### environment
+Enable/disable text highlight, based on selected environment
 
 <br>
+
+<br>
+
+### environment
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>`javascript` &#124; `python` &#124; `terminal` &#124; `common`</div> | <div style='text-align:center;margin:auto;'>'terminal'</div> |
 
-environment for text highlight feature, default to 'terminal' (only enabled when 'highlight' is true)<br><br>
+<br>
+
+environment for text highlight feature, default to 'terminal' (only enabled when 'highlight' is true)
+
+<br>

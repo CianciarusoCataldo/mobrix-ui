@@ -33,134 +33,182 @@
 
 <br>
 
-### value
-
 <br>
+
+### value
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>CalendarDate</div> | <div style='text-align:center;margin:auto;'>Today date</div> |
 
-Actual selected date<br><br>
+<br>
 
-### hideArrows
+Actual selected date
 
 <br>
+
+<br>
+
+### hideArrows
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-If `true`, hide arrow buttons near the date label<br><br>
+<br>
 
-### days
+If `true`, hide arrow buttons near the date label
 
 <br>
+
+<br>
+
+### days
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string[]</div> | <div style='text-align:center;margin:auto;'>English week labels</div> |
 
-Custom days labels<br><br>
+<br>
 
-### months
+Custom days labels
 
 <br>
+
+<br>
+
+### months
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string[]</div> | <div style='text-align:center;margin:auto;'>English months labels</div> |
 
-Custom months labels<br><br>
+<br>
 
-### onViewChange
+Custom months labels
 
 <br>
+
+<br>
+
+### onViewChange
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>(date: CalendarDate) => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Callback triggered when the Calendar view (the displayed month) is changed<br><br>
+<br>
 
-### startYear
+Callback triggered when the Calendar view (the displayed month) is changed
 
 <br>
+
+<br>
+
+### startYear
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>Today year</div> |
 
-Initial displayed year<br><br>
+<br>
 
-### startMonth
+Initial displayed year
 
 <br>
+
+<br>
+
+### startMonth
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>Today month</div> |
 
-Initial displayed month<br><br>
+<br>
 
-### fromToday
+Initial displayed month
 
 <br>
+
+<br>
+
+### fromToday
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
 
-If `false`, prevent the user to select a date lower than today date<br><br>
+<br>
 
-### dayLabel
+If `false`, prevent the user to select a date lower than today date
 
 <br>
+
+<br>
+
+### dayLabel
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>true</div> |
 
-Show/hide actual day label on top of the calendar<br><br>
+<br>
 
-### labelClassName
+Show/hide actual day label on top of the calendar
 
 <br>
+
+<br>
+
+### labelClassName
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom className applied on the day label component<br><br>
+<br>
 
-### labelProps
+Custom className applied on the day label component
 
 <br>
+
+<br>
+
+### labelProps
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on the day label component<br><br>
+<br>
 
-### onChange
+Custom props applied on the day label component
 
 <br>
+
+<br>
+
+### onChange
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>(newValue: CalendarDate) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
-Callback triggered when Calendar component input value is changed by the user<br><br>
+<br>
+
+Callback triggered when Calendar component input value is changed by the user
+
+<br>

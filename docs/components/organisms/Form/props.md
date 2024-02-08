@@ -27,68 +27,92 @@
 
 <br>
 
-### title
-
 <br>
+
+### title
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Form title<br><br>
+<br>
 
-### fields
+Form title
 
 <br>
+
+<br>
+
+### fields
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string, { header?:string; type: ``}></div> | <div style='text-align:center;margin:auto;'>{}</div> |
 
-Form fields object. Every key is the field unique ID, and will be used on submit when returning their values<br><br>
+<br>
 
-### onSubmit
+Form fields object. Every key is the field unique ID, and will be used on submit when returning their values
 
 <br>
+
+<br>
+
+### onSubmit
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>(values: Record<string, any>) => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom callback triggered when clicking on submit button. Gives the fields values as input parameter<br><br>
+<br>
 
-### submitLabel
+Custom callback triggered when clicking on submit button. Gives the fields values as input parameter
 
 <br>
+
+<br>
+
+### submitLabel
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>`string` &#124; `JSX.Element`</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom submit button label<br><br>
+<br>
 
-### fieldClassName
+Custom submit button label
 
 <br>
+
+<br>
+
+### fieldClassName
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom classname applied on every field<br><br>
+<br>
 
-### children
+Custom classname applied on every field
 
 <br>
+
+<br>
+
+### children
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Form content<br><br>
+<br>
+
+Form content
+
+<br>

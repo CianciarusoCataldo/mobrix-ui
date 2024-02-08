@@ -34,145 +34,197 @@
 
 <br>
 
-### header
-
 <br>
+
+### header
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>JSX.Element &#124; string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Card header content<br><br>
+<br>
+
+Card header content
+
+<br>
+
+<br>
 
 ### body
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>JSX.Element &#124; string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Card body content<br><br>
+<br>
+
+Card body content
+
+<br>
+
+<br>
 
 ### footer
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>JSX.Element &#124; string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Card footer content<br><br>
+<br>
+
+Card footer content
+
+<br>
+
+<br>
 
 ### headerClassName
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom classname applied on the Card header<br><br>
+<br>
+
+Custom classname applied on the Card header
+
+<br>
+
+<br>
 
 ### bodyClassName
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom classname applied on the Card body<br><br>
+<br>
+
+Custom classname applied on the Card body
+
+<br>
+
+<br>
 
 ### footerClassName
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom classname applied on the Card footer<br><br>
+<br>
+
+Custom classname applied on the Card footer
+
+<br>
+
+<br>
 
 ### headerProps
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on the Card header<br><br>
+<br>
+
+Custom props applied on the Card header
+
+<br>
+
+<br>
 
 ### bodyProps
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on the Card body<br><br>
+<br>
+
+Custom props applied on the Card body
+
+<br>
+
+<br>
 
 ### footerProps
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on the Card footer<br><br>
+<br>
+
+Custom props applied on the Card footer
+
+<br>
+
+<br>
 
 ### noDivider
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-If `true`, hide all dividers<br><br>
+<br>
+
+If `true`, hide all dividers
+
+<br>
+
+<br>
 
 ### noTopDivider
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-If `true`, hide the top divider, between header and body<br><br>
+<br>
+
+If `true`, hide the top divider, between header and body
+
+<br>
+
+<br>
 
 ### noBottomDivider
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-If `true`, hide the top divider, between body and footer<br><br>
+<br>
 
-### children
+If `true`, hide the top divider, between body and footer
 
 <br>
+
+<br>
+
+### children
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>`JSX.Element` &#124; `string`</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Card content<br><br>
+<br>
+
+Card content
+
+<br>

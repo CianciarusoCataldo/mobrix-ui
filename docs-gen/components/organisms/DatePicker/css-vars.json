@@ -55,7 +55,7 @@
     "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-background-light` and `--mbx-datepicker-calendar-background-dark`"
   },
   "--mbx-datepicker-calendar-background-light": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](../../global/props.md#dark) mode is `off'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'",
     "fallback": "--mbx-datepicker-calendar-background",
     "defaultExternal": {
       "type": "organisms",
@@ -64,7 +64,7 @@
     }
   },
   "--mbx-datepicker-calendar-background-dark": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](../../global/props.md#dark) mode is `on'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'",
     "fallback": "--mbx-datepicker-calendar-background",
     "defaultExternal": {
       "type": "organisms",
@@ -76,7 +76,7 @@
     "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-text-color-light` and `--mbx-datepicker-calendar-text-color-dark`"
   },
   "--mbx-datepicker-calendar-text-color-light": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](../../global/props.md#dark) mode is `off'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'",
     "fallback": "--mbx-datepicker-calendar-text-color",
     "defaultExternal": {
       "type": "organisms",
@@ -85,7 +85,7 @@
     }
   },
   "--mbx-datepicker-calendar-text-color-dark": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](../../global/props.md#dark) mode is `on'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'",
     "fallback": "--mbx-datepicker-calendar-text-color",
     "defaultExternal": {
       "type": "organisms",
@@ -97,7 +97,7 @@
     "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-background-hover-light` and `--mbx-datepicker-calendar-background-hover-dark`"
   },
   "--mbx-datepicker-calendar-background-hover-light": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](../../global/props.md#dark) mode is `off', on 'hover'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off', on 'hover'",
     "fallback": "--mbx-datepicker-calendar-background-hover",
     "defaultExternal": {
       "type": "organisms",
@@ -106,7 +106,7 @@
     }
   },
   "--mbx-datepicker-calendar-background-hover-dark": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](../../global/props.md#dark) mode is `on', on 'hover'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on', on 'hover'",
     "fallback": "--mbx-datepicker-calendar-background-hover",
     "defaultExternal": {
       "type": "organisms",
@@ -118,7 +118,7 @@
     "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-text-color-hover-light` and `--mbx-datepicker-calendar-text-color-hover-dark`"
   },
   "--mbx-datepicker-calendar-text-color-hover-light": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](../../global/props.md#dark) mode is `off', on 'hover'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off', on 'hover'",
     "fallback": "--mbx-datepicker-calendar-text-color-hover",
     "defaultExternal": {
       "type": "organisms",
@@ -127,7 +127,7 @@
     }
   },
   "--mbx-datepicker-calendar-text-color-hover-dark": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](../../global/props.md#dark) mode is `on', on 'hover'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on', on 'hover'",
     "fallback": "--mbx-datepicker-calendar-text-color-hover",
     "defaultExternal": {
       "type": "organisms",
@@ -139,7 +139,7 @@
     "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-arrow-light` and `--mbx-datepicker-calendar-arrow-dark`"
   },
   "--mbx-datepicker-calendar-arrow-light": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](../../global/props.md#dark) mode is `off'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'",
     "fallback": "--mbx-datepicker-calendar-arrow",
     "defaultExternal": {
       "type": "organisms",
@@ -148,7 +148,7 @@
     }
   },
   "--mbx-datepicker-calendar-arrow-dark": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](../../global/props.md#dark) mode is `on'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'",
     "fallback": "--mbx-datepicker-calendar-arrow",
     "defaultExternal": {
       "type": "organisms",
@@ -160,7 +160,7 @@
     "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-arrow-hover-light` and `--mbx-datepicker-calendar-arrow-hover-dark`"
   },
   "--mbx-datepicker-calendar-arrow-hover-light": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](../../global/props.md#dark) mode is `off', on 'hover'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off', on 'hover'",
     "fallback": "--mbx-datepicker-calendar-arrow-hover",
     "defaultExternal": {
       "type": "organisms",
@@ -169,7 +169,7 @@
     }
   },
   "--mbx-datepicker-calendar-arrow-hover-dark": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](../../global/props.md#dark) mode is `on', on 'hover'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on', on 'hover'",
     "fallback": "--mbx-datepicker-calendar-arrow-hover",
     "defaultExternal": {
       "type": "organisms",
@@ -181,7 +181,7 @@
     "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-selected-background-light` and `--mbx-datepicker-calendar-selected-background-dark`"
   },
   "--mbx-datepicker-calendar-selected-background-light": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell background when [dark](../../global/props.md#dark) mode is `off'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'",
     "fallback": "--mbx-datepicker-calendar-selected-background",
     "defaultExternal": {
       "type": "organisms",
@@ -190,7 +190,7 @@
     }
   },
   "--mbx-datepicker-calendar-selected-background-dark": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell background when [dark](../../global/props.md#dark) mode is `on'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'",
     "fallback": "--mbx-datepicker-calendar-selected-background",
     "defaultExternal": {
       "type": "organisms",
@@ -202,7 +202,7 @@
     "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-selected-text-color-light` and `--mbx-datepicker-calendar-selected-text-color-dark`"
   },
   "--mbx-datepicker-calendar-selected-text-color-light": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell text color when [dark](../../global/props.md#dark) mode is `off'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'",
     "fallback": "--mbx-datepicker-calendar-selected-text-color",
     "defaultExternal": {
       "type": "organisms",
@@ -211,7 +211,7 @@
     }
   },
   "--mbx-datepicker-calendar-selected-text-color-dark": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell text color when [dark](../../global/props.md#dark) mode is `on'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'",
     "fallback": "--mbx-datepicker-calendar-selected-text-color",
     "defaultExternal": {
       "type": "organisms",
@@ -223,7 +223,7 @@
     "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-today-color-light` and `--mbx-datepicker-calendar-today-color-dark`"
   },
   "--mbx-datepicker-calendar-today-color-light": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar today color when [dark](../../global/props.md#dark) mode is `off'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar today color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'",
     "fallback": "--mbx-datepicker-calendar-today-color",
     "defaultExternal": {
       "type": "organisms",
@@ -232,7 +232,7 @@
     }
   },
   "--mbx-datepicker-calendar-today-color-dark": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar today color when [dark](../../global/props.md#dark) mode is `on'",
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar today color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'",
     "fallback": "--mbx-datepicker-calendar-today-color",
     "defaultExternal": {
       "type": "organisms",

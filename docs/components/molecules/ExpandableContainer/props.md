@@ -26,57 +26,77 @@
 
 <br>
 
-### children
-
 <br>
+
+### children
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>any</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-content to render inside Container - extended from [Container component](../../molecules/Container/props.md#children)<br><br>
+<br>
 
-### wrapper
+content to render inside Container - extended from [Container component](../../molecules/Container/props.md#children)
 
 <br>
+
+<br>
+
+### wrapper
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>`div` &#124; `header` &#124; `footer`</div> | <div style='text-align:center;margin:auto;'>div</div> |
 
-component wrapper type - extended from [Container component](../../molecules/Container/props.md#wrapper)<br><br>
+<br>
+
+component wrapper type - extended from [Container component](../../molecules/Container/props.md#wrapper)
+
+<br>
+
+<br>
 
 ### expanded
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Extra content showed only when container is expanded (`compact` === `true`)<br><br>
+<br>
+
+Extra content showed only when container is expanded (`compact` === `true`)
+
+<br>
+
+<br>
 
 ### compact
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-if true, shows the whole container content<br><br>
+<br>
 
-### onChange
+if true, shows the whole container content
 
 <br>
+
+<br>
+
+### onChange
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>(newValue: boolean) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
-Callback triggered when ExpandableContainer component input value is changed by the user<br><br>
+<br>
+
+Callback triggered when ExpandableContainer component input value is changed by the user
+
+<br>

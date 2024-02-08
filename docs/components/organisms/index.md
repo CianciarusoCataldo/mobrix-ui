@@ -2,9 +2,7 @@
 
 ## Summary
 
-<br>
-
-- [Calendar](Calendar/index.md)
-- [DatePicker](DatePicker/index.md)
-- [Drawer](Drawer/index.md)
-- [Form](Form/index.md)
+- [Calendar](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/)
+- [DatePicker](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/DatePicker/)
+- [Drawer](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Drawer/)
+- [Form](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Form/)

@@ -11,141 +11,189 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Prop</div>                                                               | <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| -------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-background](#-mbx-review-background)</div>                 | <div style='text-align:center;margin:auto;'>/</div>                                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-background-light](#-mbx-review-background-light)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-review-background](#--mbx-review-background)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#-mbx-background-light)</div>                                                                                                                      |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-background-dark](#-mbx-review-background-dark)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-review-background](#--mbx-review-background)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#-mbx-background-dark)</div>                                                                                                                        |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-text-color](#-mbx-review-text-color)</div>                 | <div style='text-align:center;margin:auto;'>/</div>                                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-text-color-light](#-mbx-review-text-color-light)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-review-text-color](#--mbx-review-text-color)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#-mbx-text-color-light)</div>                                                                                                                      |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-text-color-dark](#-mbx-review-text-color-dark)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-review-text-color](#--mbx-review-text-color)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#-mbx-text-color-dark)</div>                                                                                                                        |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-link-color](#-mbx-review-link-color)</div>                 | <div style='text-align:center;margin:auto;'>/</div>                                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-link-color-light](#-mbx-review-link-color-light)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-review-link-color](#--mbx-review-link-color)</div>     | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#615f5f</div><div style='text-align:center;margin-auto;'><div style='background:#615f5f;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-link-color-dark](#-mbx-review-link-color-dark)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-review-link-color](#--mbx-review-link-color)</div>     | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>white</div><div style='text-align:center;margin-auto;'><div style='background:white;margin:auto; width:15px; height:15px;'/></div></div></div>     |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-github-color](#-mbx-review-github-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-github-color-light](#-mbx-review-github-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-review-github-color](#--mbx-review-github-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#615f5f</div><div style='text-align:center;margin-auto;'><div style='background:#615f5f;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-github-color-dark](#-mbx-review-github-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-review-github-color](#--mbx-review-github-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>white</div><div style='text-align:center;margin-auto;'><div style='background:white;margin:auto; width:15px; height:15px;'/></div></div></div>     |
+| <div style='text-align:center;margin:auto;'>Prop</div>                                                               | <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-background](#-mbx-review-background)</div>                 | <div style='text-align:center;margin:auto;'>/</div>                                                      | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-background-light](#-mbx-review-background-light)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-review-background](#-mbx-review-background)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div>                                                                          |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-background-dark](#-mbx-review-background-dark)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-review-background](#-mbx-review-background)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div>                                                                            |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-text-color](#-mbx-review-text-color)</div>                 | <div style='text-align:center;margin:auto;'>/</div>                                                      | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-text-color-light](#-mbx-review-text-color-light)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-review-text-color](#-mbx-review-text-color)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div>                                                                          |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-text-color-dark](#-mbx-review-text-color-dark)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-review-text-color](#-mbx-review-text-color)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div>                                                                            |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-link-color](#-mbx-review-link-color)</div>                 | <div style='text-align:center;margin:auto;'>/</div>                                                      | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-link-color-light](#-mbx-review-link-color-light)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-review-link-color](#-mbx-review-link-color)</div>     | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#615f5f</div><div style='text-align:center;margin-auto;'><div style='background:#615f5f;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-link-color-dark](#-mbx-review-link-color-dark)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-review-link-color](#-mbx-review-link-color)</div>     | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>white</div><div style='text-align:center;margin-auto;'><div style='background:white;margin:auto; width:15px; height:15px;'/></div></div></div>     |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-github-color](#-mbx-review-github-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                      | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-github-color-light](#-mbx-review-github-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-review-github-color](#-mbx-review-github-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#615f5f</div><div style='text-align:center;margin-auto;'><div style='background:#615f5f;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-github-color-dark](#-mbx-review-github-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-review-github-color](#-mbx-review-github-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>white</div><div style='text-align:center;margin-auto;'><div style='background:white;margin:auto; width:15px; height:15px;'/></div></div></div>     |
 
 ## CSS Variables list
 
 <br>
 
-### --mbx-review-background
-
 <br>
+
+### --mbx-review-background
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
 
-Fallback value for `--mbx-review-background-light` and `--mbx-review-background-dark`<br><br>
+<br>
+
+Fallback value for `--mbx-review-background-light` and `--mbx-review-background-dark`
+
+<br>
+
+<br>
 
 ### --mbx-review-background-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-background](#-mbx-review-background)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                  |
-| ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-background](#--mbx-review-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#-mbx-background-light)</div> |
+Review background when [dark](../../global/props.md#dark) mode is `off`
 
-Review background when [dark](../../global/props.md#dark) mode is `off`<br><br>
+<br>
+
+<br>
 
 ### --mbx-review-background-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-background](#-mbx-review-background)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-background](#--mbx-review-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#-mbx-background-dark)</div> |
+Review background when [dark](../../global/props.md#dark) mode is `on`
 
-Review background when [dark](../../global/props.md#dark) mode is `on`<br><br>
+<br>
+
+<br>
 
 ### --mbx-review-text-color
 
-<br>
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
 
-Fallback value for `--mbx-review-text-color-light` and `--mbx-review-text-color-dark`<br><br>
+<br>
+
+Fallback value for `--mbx-review-text-color-light` and `--mbx-review-text-color-dark`
+
+<br>
+
+<br>
 
 ### --mbx-review-text-color-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-text-color](#-mbx-review-text-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                  |
-| ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-text-color](#--mbx-review-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#-mbx-text-color-light)</div> |
+Review text color when [dark](../../global/props.md#dark) mode is `off`
 
-Review text color when [dark](../../global/props.md#dark) mode is `off`<br><br>
+<br>
+
+<br>
 
 ### --mbx-review-text-color-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-text-color](#-mbx-review-text-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-text-color](#--mbx-review-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#-mbx-text-color-dark)</div> |
+Review text color when [dark](../../global/props.md#dark) mode is `on`
 
-Review text color when [dark](../../global/props.md#dark) mode is `on`<br><br>
+<br>
+
+<br>
 
 ### --mbx-review-link-color
 
-<br>
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
 
-Fallback value for `--mbx-review-link-color-light` and `--mbx-review-link-color-dark`<br><br>
+<br>
+
+Fallback value for `--mbx-review-link-color-light` and `--mbx-review-link-color-dark`
+
+<br>
+
+<br>
 
 ### --mbx-review-link-color-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-link-color](#-mbx-review-link-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-link-color](#--mbx-review-link-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#615f5f</div><div style='text-align:center;margin-auto;'><div style='background:#615f5f;margin:auto; width:15px; height:15px;'/></div></div></div> |
+Review link color when [dark](../../global/props.md#dark) mode is `off`
 
-Review link color when [dark](../../global/props.md#dark) mode is `off`<br><br>
+<br>
+
+<br>
 
 ### --mbx-review-link-color-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-link-color](#-mbx-review-link-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                   |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-link-color](#--mbx-review-link-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>white</div><div style='text-align:center;margin-auto;'><div style='background:white;margin:auto; width:15px; height:15px;'/></div></div></div> |
+Review link color when [dark](../../global/props.md#dark) mode is `on`
 
-Review link color when [dark](../../global/props.md#dark) mode is `on`<br><br>
+<br>
+
+<br>
 
 ### --mbx-review-github-color
 
-<br>
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
 
-Fallback value for `--mbx-review-github-color-light` and `--mbx-review-github-color-dark`<br><br>
+<br>
+
+Fallback value for `--mbx-review-github-color-light` and `--mbx-review-github-color-dark`
+
+<br>
+
+<br>
 
 ### --mbx-review-github-color-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div> |
+| -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-github-color](#-mbx-review-github-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-github-color](#--mbx-review-github-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#615f5f</div><div style='text-align:center;margin-auto;'><div style='background:#615f5f;margin:auto; width:15px; height:15px;'/></div></div></div> |
+Review github icon color when [dark](../../global/props.md#dark) mode is `on`
 
-Review github icon color when [dark](../../global/props.md#dark) mode is `on`<br><br>
+<br>
+
+<br>
 
 ### --mbx-review-github-color-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div> |
+| -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-review-github-color](#-mbx-review-github-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                   |
-| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-review-github-color](#--mbx-review-github-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>white</div><div style='text-align:center;margin-auto;'><div style='background:white;margin:auto; width:15px; height:15px;'/></div></div></div> |
+Review github icon color when [dark](../../global/props.md#dark) mode is `off`
 
-Review github icon color when [dark](../../global/props.md#dark) mode is `off`<br><br>
+<br>

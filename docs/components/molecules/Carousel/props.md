@@ -24,35 +24,47 @@
 
 <br>
 
-### elements
-
 <br>
+
+### elements
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>(JSX.Element &#124; string)[]</div> | <div style='text-align:center;margin:auto;'>[]</div> |
 
-Carousel elements<br><br>
+<br>
 
-### onChange
+Carousel elements
 
 <br>
+
+<br>
+
+### onChange
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>(newValue: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
-Callback triggered when Carousel component input value is changed by the user<br><br>
+<br>
 
-### value
+Callback triggered when Carousel component input value is changed by the user
 
 <br>
+
+<br>
+
+### value
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>0</div> |
 
-Initial element to show (as index)<br><br>
+<br>
+
+Initial element to show (as index)
+
+<br>

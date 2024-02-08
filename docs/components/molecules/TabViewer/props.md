@@ -32,123 +32,165 @@
 
 <br>
 
-### selected
-
 <br>
+
+### selected
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-<br><br>
-
-### tabs
+<br>
 
 <br>
+
+<br>
+
+### tabs
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>{`label`: string; `content`: JSX.Element;}[]</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-tabs array. Every tab object contains 3 fields: <ul><li>`label`: tab label displayed on top</li><li>`content`: tab content element</li></ul><br><br>
+<br>
+
+tabs array. Every tab object contains 3 fields: <ul><li>`label`: tab label displayed on top</li><li>`content`: tab content element</li></ul>
+
+<br>
+
+<br>
 
 ### tabProps
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on every tab<br><br>
+<br>
+
+Custom props applied on every tab
+
+<br>
+
+<br>
 
 ### tabSelectedProps
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on every selected tab<br><br>
+<br>
+
+Custom props applied on every selected tab
+
+<br>
+
+<br>
 
 ### tabUnselectedProps
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on every unselected tab<br><br>
+<br>
+
+Custom props applied on every unselected tab
+
+<br>
+
+<br>
 
 ### tabViewProps
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on the tab view panel<br><br>
+<br>
+
+Custom props applied on the tab view panel
+
+<br>
+
+<br>
 
 ### tabClassName
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on every tab<br><br>
+<br>
+
+Custom props applied on every tab
+
+<br>
+
+<br>
 
 ### tabSelectedClassName
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on every selected tab<br><br>
+<br>
+
+Custom props applied on every selected tab
+
+<br>
+
+<br>
 
 ### tabUnselectedClassName
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on every unselected tab<br><br>
+<br>
+
+Custom props applied on every unselected tab
+
+<br>
+
+<br>
 
 ### tabViewClassName
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string,any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on the tab view panel<br><br>
+<br>
 
-### onChange
+Custom props applied on the tab view panel
 
 <br>
+
+<br>
+
+### onChange
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>(newValue: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
-Callback triggered when a tab is selected, giving its index as parameter<br><br>
+<br>
+
+Callback triggered when a tab is selected, giving its index as parameter
+
+<br>

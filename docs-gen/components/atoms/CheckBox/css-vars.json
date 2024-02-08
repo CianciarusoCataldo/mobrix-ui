@@ -36,6 +36,6 @@
   "--mbx-checkbox-tick-color-dark": {
     "description": "CheckBox tick color when dark mode is on",
     "fallback": "--mbx-checkbox-tick-color",
-    "default": "white"
+    "defaultColor": "white"
   }
 }

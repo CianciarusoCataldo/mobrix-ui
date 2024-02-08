@@ -121,7 +121,7 @@ Object.keys(cssVars).forEach((cssvar, index) => {
   if (cssVars[cssvar].fallback) {
     const fallbackIndex = cssVars[cssvar].fallback.replace("--mbx", "-mbx");
     const fallback = cssVars[cssvar].fallback;
-    internalFallBack = `[${fallback}](#${fallback})`;
+    internalFallBack = `[${fallback}](#${fallbackIndex})`;
     externalFallBack = `[${fallback}](${COMPONENT_NAME_TO_PARSE}/css-vars.md#${fallbackIndex})`;
     globalFallback = `[${fallback}](${COMPONENT_TYPE_TO_PARSE}/${COMPONENT_NAME_TO_PARSE}/css-vars.md#${fallbackIndex})`;
   }

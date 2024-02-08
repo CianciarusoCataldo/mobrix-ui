@@ -11,42 +11,54 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Prop</div>                                                   | <div style='text-align:center;margin:auto;'>Fallback</div>                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                  |
-| -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                        |
-| <div style='text-align:center;margin:auto;'>[--mbx-divider-color-light](#-mbx-divider-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#--mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#-mbx-text-color-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-divider-color-dark](#-mbx-divider-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#--mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#-mbx-text-color-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>Prop</div>                                                   | <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                          | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                    |
+| <div style='text-align:center;margin:auto;'>[--mbx-divider-color-light](#-mbx-divider-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-divider-color-dark](#-mbx-divider-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div>   |
 
 ## CSS Variables list
 
 <br>
 
-### --mbx-divider-color
-
 <br>
+
+### --mbx-divider-color
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
 
-Fallback value for `--mbx-divider-color-light` and `--mbx-divider-color-dark`<br><br>
+<br>
+
+Fallback value for `--mbx-divider-color-light` and `--mbx-divider-color-dark`
+
+<br>
+
+<br>
 
 ### --mbx-divider-color-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div> |
+| -------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                  |
-| --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#--mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#-mbx-text-color-light)</div> |
+Divider color when dark mode is off
 
-Divider color when dark mode is off<br><br>
+<br>
+
+<br>
 
 ### --mbx-divider-color-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div> |
+| -------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                    | <div style='text-align:center;margin:auto;'>Default</div>                                                                |
-| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#--mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#-mbx-text-color-dark)</div> |
+Divider color when dark mode is on
 
-Divider color when dark mode is on<br><br>
+<br>

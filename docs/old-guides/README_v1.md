@@ -1,4 +1,4 @@
-# MoBrix-ui - V1
+# MoBrix-ui - V1 guide
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2025?label=Maintained&style=for-the-badge)
 
