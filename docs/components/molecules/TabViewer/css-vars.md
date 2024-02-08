@@ -60,7 +60,7 @@ Fallback value for `--mbx-tabviewer-background-light` and `--mbx-tabviewer-backg
 
 <br>
 
-TabViewer background when [dark](../../global/props.md#dark) mode is `off'
+TabViewer background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -74,7 +74,7 @@ TabViewer background when [dark](../../global/props.md#dark) mode is `off'
 
 <br>
 
-TabViewer background when [dark](../../global/props.md#dark) mode is `on'
+TabViewer background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -102,7 +102,7 @@ Fallback value for `--mbx-tabviewer-text-color-light` and `--mbx-tabviewer-text-
 
 <br>
 
-TabViewer text color when [dark](../../global/props.md#dark) mode is `off'
+TabViewer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -116,7 +116,7 @@ TabViewer text color when [dark](../../global/props.md#dark) mode is `off'
 
 <br>
 
-TabViewer text color when [dark](../../global/props.md#dark) mode is `on'
+TabViewer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -144,7 +144,7 @@ Fallback value for `--mbx-tabviewer-inactive-background-light` and `--mbx-tabvie
 
 <br>
 
-TabViewer inactive tab background when [dark](../../global/props.md#dark) mode is `off'
+TabViewer inactive tab background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -158,7 +158,7 @@ TabViewer inactive tab background when [dark](../../global/props.md#dark) mode i
 
 <br>
 
-TabViewer inactive tab background when [dark](../../global/props.md#dark) mode is `on'
+TabViewer inactive tab background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -186,7 +186,7 @@ Fallback value for `--mbx-tabviewer-inactive-text-color-light` and `--mbx-tabvie
 
 <br>
 
-TabViewer inactive tab text color when [dark](../../global/props.md#dark) mode is `off'
+TabViewer inactive tab text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -200,7 +200,7 @@ TabViewer inactive tab text color when [dark](../../global/props.md#dark) mode i
 
 <br>
 
-TabViewer inactive tab text color when [dark](../../global/props.md#dark) mode is `on'
+TabViewer inactive tab text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -228,7 +228,7 @@ Fallback value for `--mbx-tabviewer-inactive-background-hover-light` and `--mbx-
 
 <br>
 
-TabViewer inactive tab background when [dark](../../global/props.md#dark) mode is `off', on 'hover'
+TabViewer inactive tab background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -242,7 +242,7 @@ TabViewer inactive tab background when [dark](../../global/props.md#dark) mode i
 
 <br>
 
-TabViewer inactive tab background when [dark](../../global/props.md#dark) mode is `on', on 'hover'
+TabViewer inactive tab background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -270,7 +270,7 @@ Fallback value for `--mbx-tabviewer-inactive-text-color-hover-light` and `--mbx-
 
 <br>
 
-TabViewer inactive tab text color when [dark](../../global/props.md#dark) mode is `off', on 'hover'
+TabViewer inactive tab text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -284,6 +284,6 @@ TabViewer inactive tab text color when [dark](../../global/props.md#dark) mode i
 
 <br>
 
-TabViewer inactive tab text color when [dark](../../global/props.md#dark) mode is `on', on 'hover'
+TabViewer inactive tab text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>

@@ -48,7 +48,7 @@ Fallback value for `--mbx-container-background-light` and `--mbx-container-backg
 
 <br>
 
-Container background when dark mode is `off`
+Container background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -62,7 +62,7 @@ Container background when dark mode is `off`
 
 <br>
 
-Container background when dark mode is `on`
+Container background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -90,7 +90,7 @@ Fallback value for `--mbx-container-text-color-light` and `--mbx-container-text-
 
 <br>
 
-Container text color when dark mode is `off`
+Container text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -104,6 +104,6 @@ Container text color when dark mode is `off`
 
 <br>
 
-Container text color when dark mode is `on`
+Container text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>

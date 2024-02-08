@@ -54,7 +54,7 @@ Fallback value for `--mbx-drawer-background-light` and `--mbx-drawer-background-
 
 <br>
 
-Drawer background when [dark](../../global/props.md#dark) mode is `off`
+Drawer background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -68,7 +68,7 @@ Drawer background when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
-Drawer background when [dark](../../global/props.md#dark) mode is `on`
+Drawer background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -96,7 +96,7 @@ Fallback value for `--mbx-drawer-text-color-light` and `--mbx-drawer-text-color-
 
 <br>
 
-Drawer text color when [dark](../../global/props.md#dark) mode is `off`
+Drawer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -110,7 +110,7 @@ Drawer text color when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
-Drawer text color when [dark](../../global/props.md#dark) mode is `on`
+Drawer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -138,7 +138,7 @@ Fallback value for `--mbx-drawer-arrow-light` and `--mbx-drawer-arrow-dark`
 
 <br>
 
-Drawer arrow color when [dark](../../global/props.md#dark) mode is `off`
+Drawer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -152,7 +152,7 @@ Drawer arrow color when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
-Drawer arrow color when [dark](../../global/props.md#dark) mode is `on`
+Drawer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -180,7 +180,7 @@ Fallback value for `--mbx-drawer-arrow-hover-light` and `--mbx-drawer-arrow-hove
 
 <br>
 
-Drawer arrow color when [dark](../../global/props.md#dark) mode is `off`, on `hover
+Drawer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -194,6 +194,6 @@ Drawer arrow color when [dark](../../global/props.md#dark) mode is `off`, on `ho
 
 <br>
 
-Drawer arrow color when [dark](../../global/props.md#dark) mode is `on`, on `hover
+Drawer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>

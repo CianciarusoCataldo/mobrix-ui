@@ -48,7 +48,7 @@ Fallback value for `--mbx-popup-background-light` and `--mbx-popup-background-da
 
 <br>
 
-Popup background when [dark](../../global/props.md#dark) mode is `off`
+Popup background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -62,7 +62,7 @@ Popup background when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
-Popup background when [dark](../../global/props.md#dark) mode is `on`
+Popup background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -90,7 +90,7 @@ Fallback value for `and`
 
 <br>
 
-Popup text color when [dark](../../global/props.md#dark) mode is `off`
+Popup text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -104,6 +104,6 @@ Popup text color when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
-Popup text color when [dark](../../global/props.md#dark) mode is `on`
+Popup text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>

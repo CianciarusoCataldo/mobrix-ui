@@ -65,8 +65,6 @@ Check out the [official MoBrix-ui guide page](https://cianciarusocataldo.github.
 
 ---
 
-<br>
-
 ## MoBrix-ui philosophy
 
 This library is built upon few (but important) concepts:
@@ -245,6 +243,8 @@ If you want to customize the UI globally, initialize the dedicated [CSS variable
 
 <br>
 
+<br>
+
 ## Tests
 
 Unit tests for every component are located inside `tests` folder. The test script is executed with pre-defined test command:
@@ -259,9 +259,7 @@ Unit tests for every component are located inside `tests` folder. The test scrip
 
 - [**Cataldo Cianciaruso**](https://github.com/CianciarusoCataldo)
 
-<br>
-
----
+## <br>
 
 ## License
 

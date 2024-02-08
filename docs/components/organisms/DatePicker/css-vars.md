@@ -90,7 +90,7 @@ Fallback value for `--mbx-datepicker-background-light` and `--mbx-datepicker-bac
 
 <br>
 
-DatePicker background when [dark](../../global/props.md#dark) mode is `off'
+DatePicker background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -104,7 +104,7 @@ DatePicker background when [dark](../../global/props.md#dark) mode is `off'
 
 <br>
 
-DatePicker background when [dark](../../global/props.md#dark) mode is `on'
+DatePicker background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -132,7 +132,7 @@ Fallback value for `--mbx-datepicker-text-color-light` and `--mbx-datepicker-tex
 
 <br>
 
-DatePicker text color when [dark](../../global/props.md#dark) mode is `off'
+DatePicker text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -146,7 +146,7 @@ DatePicker text color when [dark](../../global/props.md#dark) mode is `off'
 
 <br>
 
-DatePicker text color when [dark](../../global/props.md#dark) mode is `on'
+DatePicker text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -174,7 +174,7 @@ Fallback value for `--mbx-datepicker-icon-light` and `--mbx-datepicker-icon-dark
 
 <br>
 
-DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `off'
+DatePicker calendar icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -188,7 +188,7 @@ DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `
 
 <br>
 
-DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `on'
+DatePicker calendar icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -216,7 +216,7 @@ Fallback value for `--mbx-datepicker-icon-hover-light` and `--mbx-datepicker-ico
 
 <br>
 
-DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `off', on 'hover'
+DatePicker calendar icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -230,7 +230,7 @@ DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `
 
 <br>
 
-DatePicker calendar icon color when [dark](../../global/props.md#dark) mode is `on', on 'hover'
+DatePicker calendar icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -258,7 +258,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -272,7 +272,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar backgroun
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -300,7 +300,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -314,7 +314,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text colo
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -342,7 +342,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off', on 'hover'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -356,7 +356,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar backgroun
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on', on 'hover'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -384,7 +384,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off', on 'hover'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -398,7 +398,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text colo
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on', on 'hover'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -426,7 +426,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -440,7 +440,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow col
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -468,7 +468,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off', on 'hover'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -482,7 +482,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow col
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on', on 'hover'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -510,7 +510,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -524,7 +524,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected 
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -552,7 +552,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -566,7 +566,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected 
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected cell text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -594,7 +594,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar today color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar today color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -608,7 +608,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar today col
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar today color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'
+Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar today color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -636,7 +636,7 @@ Extended from [Modal](../../molecules/Modal/index.md) - Fallback value for `--mb
 
 <br>
 
-Extended from [Modal](../../molecules/Modal/index.md) - Modal background when [dark](../../global/props.md#dark) mode is `off`
+Extended from [Modal](../../molecules/Modal/index.md) - Modal background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -650,7 +650,7 @@ Extended from [Modal](../../molecules/Modal/index.md) - Modal background when [d
 
 <br>
 
-Extended from [Modal](../../molecules/Modal/index.md) - Modal background when [dark](../../global/props.md#dark) mode is `on`
+Extended from [Modal](../../molecules/Modal/index.md) - Modal background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -678,7 +678,7 @@ Extended from [Modal](../../molecules/Modal/index.md) - Fallback value for `--mb
 
 <br>
 
-Extended from [Modal](../../molecules/Modal/index.md) - Modal x icon color when [dark](../../global/props.md#dark) mode is `off`
+Extended from [Modal](../../molecules/Modal/index.md) - Modal x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -692,7 +692,7 @@ Extended from [Modal](../../molecules/Modal/index.md) - Modal x icon color when 
 
 <br>
 
-Extended from [Modal](../../molecules/Modal/index.md) - Modal x icon color when [dark](../../global/props.md#dark) mode is `on`
+Extended from [Modal](../../molecules/Modal/index.md) - Modal x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -720,7 +720,7 @@ Extended from [Modal](../../molecules/Modal/index.md) - Fallback value for `--mb
 
 <br>
 
-Extended from [Modal](../../molecules/Modal/index.md) - Modal x icon color when [dark](../../global/props.md#dark) mode is `off`, on `hover`
+Extended from [Modal](../../molecules/Modal/index.md) - Modal x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -734,6 +734,6 @@ Extended from [Modal](../../molecules/Modal/index.md) - Modal x icon color when 
 
 <br>
 
-Extended from [Modal](../../molecules/Modal/index.md) - Modal x icon color when [dark](../../global/props.md#dark) mode is `on`, on `hover`
+Extended from [Modal](../../molecules/Modal/index.md) - Modal x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>

@@ -109,11 +109,12 @@ cat docs-gen/readme/chapters/building-process-reactive-components.md >>README_TE
 echo -n "\n\n<br>\n\n" >>README_TEMP.md
 
 cat docs-gen/readme/chapters/getting-started.md >>README_TEMP.md
-echo -n "\n\n<br>\n\n" >>README.md
+echo -n "\n\n<br>\n\n" >>README_TEMP.md
 
 cat docs-gen/readme/chapters/footer.md >>README_TEMP.md
 
 cat README_TEMP.md >>README.md
+cat docs-gen/readme/chapters/license-section.md >>README.md
 cat README_TEMP.md >>"$OUTPUT_ROOT_DIR"/index.md
 rm -rf README_TEMP.md
 

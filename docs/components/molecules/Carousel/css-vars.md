@@ -57,7 +57,7 @@ Fallback value for `--mbx-carousel-background-light` and `--mbx-carousel-backgro
 
 <br>
 
-Carousel background when dark mode is `off`
+Carousel background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -71,7 +71,7 @@ Carousel background when dark mode is `off`
 
 <br>
 
-Carousel background when dark mode is `on`
+Carousel background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -99,7 +99,7 @@ Fallback value for `--mbx-carousel-arrow-color-light` and `--mbx-carousel-arrow-
 
 <br>
 
-Carousel arrow color when dark mode is `off`
+Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -113,7 +113,7 @@ Carousel arrow color when dark mode is `off`
 
 <br>
 
-Carousel arrow color when dark mode is `on`
+Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -141,7 +141,7 @@ Fallback value for `--mbx-carousel-arrow-color-hover-light` and `--mbx-carousel-
 
 <br>
 
-Carousel arrow color when dark mode is `off`, on hover
+Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -155,7 +155,7 @@ Carousel arrow color when dark mode is `off`, on hover
 
 <br>
 
-Carousel arrow color when dark mode is `on`, on hover
+Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -183,7 +183,7 @@ Fallback value for `--mbx-carousel-dot-empty-background-light` and `--mbx-carous
 
 <br>
 
-Carousel empty dot background when dark mode is `off`
+Carousel empty dot background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -197,7 +197,7 @@ Carousel empty dot background when dark mode is `off`
 
 <br>
 
-Carousel empty dot background when dark mode is `on`
+Carousel empty dot background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -225,7 +225,7 @@ Fallback value for `--mbx-carousel-dot-full-background-light` and `--mbx-carouse
 
 <br>
 
-Carousel full dot background when dark mode is `off`
+Carousel full dot background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -239,6 +239,6 @@ Carousel full dot background when dark mode is `off`
 
 <br>
 
-Carousel full dot background when dark mode is `on`
+Carousel full dot background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>

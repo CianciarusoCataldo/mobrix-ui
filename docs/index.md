@@ -218,6 +218,8 @@ If you want to customize the UI globally, initialize the dedicated [CSS variable
 
 <br>
 
+<br>
+
 ## Tests
 
 Unit tests for every component are located inside `tests` folder. The test script is executed with pre-defined test command:
@@ -233,9 +235,3 @@ Unit tests for every component are located inside `tests` folder. The test scrip
 - [**Cataldo Cianciaruso**](https://github.com/CianciarusoCataldo)
 
 <br>
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

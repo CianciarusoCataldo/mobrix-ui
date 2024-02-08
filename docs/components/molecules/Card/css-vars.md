@@ -48,7 +48,7 @@ Fallback value for `--mbx-card-background-light` and `--mbx-card-background-dark
 
 <br>
 
-Card background when dark mode is `off`
+Card background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -62,7 +62,7 @@ Card background when dark mode is `off`
 
 <br>
 
-Card background when dark mode is `on`
+Card background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -90,7 +90,7 @@ Fallback value for `--mbx-card-text-color-light` and `--mbx-card-text-color-dark
 
 <br>
 
-Card text color when dark mode is `off`
+Card text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -104,6 +104,6 @@ Card text color when dark mode is `off`
 
 <br>
 
-Card text color when dark mode is `on`
+Card text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>

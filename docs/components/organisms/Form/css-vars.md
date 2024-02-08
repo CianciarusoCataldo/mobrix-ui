@@ -58,7 +58,7 @@
 
 <br>
 
-Form background when [dark](../../global/props.md#dark) mode is `off'
+Form background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -86,7 +86,7 @@ Fallback value for `and`
 
 <br>
 
-Form background when [dark](../../global/props.md#dark) mode is `on'
+Form background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -114,7 +114,7 @@ Fallback value for `and`
 
 <br>
 
-Form text color when [dark](../../global/props.md#dark) mode is `off'
+Form text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -128,7 +128,7 @@ Form text color when [dark](../../global/props.md#dark) mode is `off'
 
 <br>
 
-Form text color when [dark](../../global/props.md#dark) mode is `on'
+Form text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -156,7 +156,7 @@ Fallback value for `--mbx-form-submit-background-light` and `--mbx-form-submit-b
 
 <br>
 
-Form submit button background when [dark](../../global/props.md#dark) mode is `off'
+Form submit button background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -170,7 +170,7 @@ Form submit button background when [dark](../../global/props.md#dark) mode is `o
 
 <br>
 
-Form submit button background when [dark](../../global/props.md#dark) mode is `on'
+Form submit button background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -198,7 +198,7 @@ Fallback value for `--mbx-form-submit-text-color-light` and `--mbx-form-submit-t
 
 <br>
 
-Form submit button text color when [dark](../../global/props.md#dark) mode is `off'
+Form submit button text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -212,7 +212,7 @@ Form submit button text color when [dark](../../global/props.md#dark) mode is `o
 
 <br>
 
-Form submit button text color when [dark](../../global/props.md#dark) mode is `on'
+Form submit button text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -240,7 +240,7 @@ Extended from [FormField](../../molecules/FormField/index.md) - Fallback value f
 
 <br>
 
-Extended from [FormField](../../molecules/FormField/index.md) - FormField background when dark mode is `off`
+Extended from [FormField](../../molecules/FormField/index.md) - FormField background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -254,7 +254,7 @@ Extended from [FormField](../../molecules/FormField/index.md) - FormField backgr
 
 <br>
 
-Extended from [FormField](../../molecules/FormField/index.md) - FormField background when dark mode is `on`
+Extended from [FormField](../../molecules/FormField/index.md) - FormField background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -282,7 +282,7 @@ Extended from [FormField](../../molecules/FormField/index.md) - Fallback value f
 
 <br>
 
-Extended from [FormField](../../molecules/FormField/index.md) - FormField text color when dark mode is `off`
+Extended from [FormField](../../molecules/FormField/index.md) - FormField text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -296,7 +296,7 @@ Extended from [FormField](../../molecules/FormField/index.md) - FormField text c
 
 <br>
 
-Extended from [FormField](../../molecules/FormField/index.md) - FormField text color when dark mode is `on`
+Extended from [FormField](../../molecules/FormField/index.md) - FormField text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -324,7 +324,7 @@ Extended from [FormField](../../molecules/FormField/index.md) - Fallback value f
 
 <br>
 
-Extended from [FormField](../../molecules/FormField/index.md) - FormField background when dark mode is `off`, on `hover`
+Extended from [FormField](../../molecules/FormField/index.md) - FormField background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -338,7 +338,7 @@ Extended from [FormField](../../molecules/FormField/index.md) - FormField backgr
 
 <br>
 
-Extended from [FormField](../../molecules/FormField/index.md) - FormField background when dark mode is `on`, on `hover`
+Extended from [FormField](../../molecules/FormField/index.md) - FormField background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -366,7 +366,7 @@ Extended from [FormField](../../molecules/FormField/index.md) - Fallback value f
 
 <br>
 
-Extended from [FormField](../../molecules/FormField/index.md) - FormField text color when dark mode is `off`, on `hover`
+Extended from [FormField](../../molecules/FormField/index.md) - FormField text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -380,7 +380,7 @@ Extended from [FormField](../../molecules/FormField/index.md) - FormField text c
 
 <br>
 
-Extended from [FormField](../../molecules/FormField/index.md) - FormField text color when dark mode is `on`, on `hover`
+Extended from [FormField](../../molecules/FormField/index.md) - FormField text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -408,7 +408,7 @@ Extended from [FormField](../../molecules/FormField/index.md) - Fallback value f
 
 <br>
 
-Extended from [FormField](../../molecules/FormField/index.md) - FormField error box border color when dark mode is `off`
+Extended from [FormField](../../molecules/FormField/index.md) - FormField error box border color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -422,7 +422,7 @@ Extended from [FormField](../../molecules/FormField/index.md) - FormField error 
 
 <br>
 
-Extended from [FormField](../../molecules/FormField/index.md) - FormField error box border color when dark mode is `on`
+Extended from [FormField](../../molecules/FormField/index.md) - FormField error box border color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -450,7 +450,7 @@ Extended from [FormField](../../molecules/FormField/index.md) - Fallback value f
 
 <br>
 
-Extended from [FormField](../../molecules/FormField/index.md) - FormField error box text color when dark mode is `off`
+Extended from [FormField](../../molecules/FormField/index.md) - FormField error box text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -464,6 +464,6 @@ Extended from [FormField](../../molecules/FormField/index.md) - FormField error 
 
 <br>
 
-Extended from [FormField](../../molecules/FormField/index.md) - FormField error box text color when dark mode is `on`
+Extended from [FormField](../../molecules/FormField/index.md) - FormField error box text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>

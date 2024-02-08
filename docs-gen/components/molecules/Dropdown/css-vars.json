@@ -3,12 +3,12 @@
     "description": "Fallback value for `--mbx-dropdown-background-light` and `--mbx-dropdown-background-dark`"
   },
   "--mbx-dropdown-background-light": {
-    "description": "Dropdown background when dark mode is `off`",
+    "description": "Dropdown background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "fallback": "--mbx-dropdown-background",
     "defaultGlobal": "--mbx-background-light"
   },
   "--mbx-dropdown-background-dark": {
-    "description": "Dropdown background when dark mode is `on`",
+    "description": "Dropdown background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "fallback": "--mbx-dropdown-background",
     "defaultGlobal": "--mbx-background-dark"
   },
@@ -16,12 +16,12 @@
     "description": "Fallback value for `--mbx-dropdown-text-color-light` and `--mbx-dropdown-text-color-dark`"
   },
   "--mbx-dropdown-text-color-light": {
-    "description": "Dropdown text color when dark mode is `off`",
+    "description": "Dropdown text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "fallback": "--mbx-dropdown-text-color",
     "defaultGlobal": "--mbx-text-color-light"
   },
   "--mbx-dropdown-text-color-dark": {
-    "description": "Dropdown text color when dark mode is `on`",
+    "description": "Dropdown text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "fallback": "--mbx-dropdown-text-color",
     "defaultGlobal": "--mbx-text-color-dark"
   },
@@ -29,12 +29,12 @@
     "description": "Fallback value for `--mbx-dropdown-background-hover-light` and `--mbx-dropdown-background-hover-dark`"
   },
   "--mbx-dropdown-background-hover-light": {
-    "description": "Dropdown background when dark mode is `off`, on hover",
+    "description": "Dropdown background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "fallback": "--mbx-dropdown-background",
     "defaultGlobal": "--mbx-background-hover-light"
   },
   "--mbx-dropdown-background-hover-dark": {
-    "description": "Dropdown background when dark mode is `on`, on hover",
+    "description": "Dropdown background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "fallback": "--mbx-dropdown-background",
     "defaultGlobal": "--mbx-background-hover-dark"
   },
@@ -42,12 +42,12 @@
     "description": "Fallback value for `--mbx-dropdown-text-color-hover-light` and `--mbx-dropdown-text-color-hover-dark`"
   },
   "--mbx-dropdown-text-color-hover-light": {
-    "description": "Dropdown text color when dark mode is `off`, on hover",
+    "description": "Dropdown text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "fallback": "--mbx-dropdown-background-hover",
     "defaultGlobal": "--mbx-text-color-hover-light"
   },
   "--mbx-dropdown-text-color-hover-dark": {
-    "description": "Dropdown text color when dark mode is `on`, on hover",
+    "description": "Dropdown text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "fallback": "--mbx-dropdown-background-hover",
     "defaultGlobal": "--mbx-text-color-hover-dark"
   },
@@ -55,12 +55,12 @@
     "description": "Fallback value for `--mbx-dropdown-arrow-color-light` and `--mbx-dropdown-arrow-color-dark`"
   },
   "--mbx-dropdown-arrow-color-light": {
-    "description": "Dropdown arrow color when dark mode is `off`",
+    "description": "Dropdown arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultInternal": "--mbx-dropdown-text-color-light",
     "fallback": "--mbx-dropdown-arrow-color"
   },
   "--mbx-dropdown-arrow-color-dark": {
-    "description": "Dropdown arrow color when dark mode is `on`",
+    "description": "Dropdown arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultInternal": "--mbx-dropdown-text-color-dark",
     "fallback": "--mbx-dropdown-arrow-color"
   },
@@ -68,12 +68,12 @@
     "description": "Fallback value for `--mbx-dropdown-arrow-color-hover-light` and `--mbx-dropdown-arrow-color-hover-dark`"
   },
   "--mbx-dropdown-arrow-color-hover-light": {
-    "description": "Dropdown arrow color when dark mode is `off`, on hover",
+    "description": "Dropdown arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultInternal": "--mbx-dropdown-arrow-color-light",
     "fallback": "--mbx-dropdown-arrow-color-hover"
   },
   "--mbx-dropdown-arrow-color-hover-dark": {
-    "description": "Dropdown arrow color when dark mode is `on`, on hover",
+    "description": "Dropdown arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultInternal": "--mbx-dropdown-arrow-color-dark",
     "fallback": "--mbx-dropdown-arrow-color-hover"
   }

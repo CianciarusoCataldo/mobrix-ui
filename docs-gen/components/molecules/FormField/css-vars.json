@@ -3,12 +3,12 @@
     "description": "Fallback value for `--mbx-formfield-background-light` and `--mbx-formfield-background-dark`"
   },
   "--mbx-formfield-background-dark": {
-    "description": "FormField background when dark mode is `off`",
+    "description": "FormField background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-formfield-background"
   },
   "--mbx-formfield-background-light": {
-    "description": "FormField background when dark mode is `on`",
+    "description": "FormField background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-formfield-background"
   },
@@ -16,12 +16,12 @@
     "description": "Fallback value for `--mbx-formfield-text-color-light` and `--mbx-formfield-text-color-dark`"
   },
   "--mbx-formfield-text-color-light": {
-    "description": "FormField text color when dark mode is `off`",
+    "description": "FormField text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultGlobal": "--mbx-text-color-light",
     "fallback": "--mbx-formfield-text-color"
   },
   "--mbx-formfield-text-color-dark": {
-    "description": "FormField text color when dark mode is `on`",
+    "description": "FormField text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultGlobal": "--mbx-text-color-dark",
     "fallback": "--mbx-formfield-text-color"
   },
@@ -29,12 +29,12 @@
     "description": "Fallback value for `--mbx-formfield-background-hover-light` and `--mbx-formfield-background-hover-dark`"
   },
   "--mbx-formfield-background-hover-light": {
-    "description": "FormField background when dark mode is `off`, on `hover`",
+    "description": "FormField background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultGlobal": "--mbx-background-hover-light",
     "fallback": "--mbx-formfield-background-hover"
   },
   "--mbx-formfield-background-hover-dark": {
-    "description": "FormField background when dark mode is `on`, on `hover`",
+    "description": "FormField background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultGlobal": "--mbx-background-hover-light",
     "fallback": "--mbx-formfield-background-hover"
   },
@@ -42,12 +42,12 @@
     "description": "Fallback value for `--mbx-formfield-text-color-hover-light` and `--mbx-formfield-text-color-hover-dark`"
   },
   "--mbx-formfield-text-color-hover-light": {
-    "description": "FormField text color when dark mode is `off`, on `hover`",
+    "description": "FormField text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultGlobal": "--mbx-text-color-hover-light",
     "fallback": "--mbx-formfield-text-color-hover"
   },
   "--mbx-formfield-text-color-hover-dark": {
-    "description": "FormField text color when dark mode is `on`, on `hover`",
+    "description": "FormField text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultGlobal": "--mbx-text-color-hover-dark",
     "fallback": "--mbx-formfield-text-color-hover"
   },
@@ -55,12 +55,12 @@
     "description": "Fallback value for `--mbx-formfield-error-border-light` and `--mbx-formfield-error-border-dark`"
   },
   "--mbx-formfield-error-border-light": {
-    "description": "FormField error box border color when dark mode is `off`",
+    "description": "FormField error box border color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultColor": "red",
     "fallback": "--mbx-formfield-error-border"
   },
   "--mbx-formfield-error-border-dark": {
-    "description": "FormField error box border color when dark mode is `on`",
+    "description": "FormField error box border color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultColor": "red",
     "fallback": "--mbx-formfield-error-border"
   },
@@ -68,12 +68,12 @@
     "description": "Fallback value for `--mbx-formfield-error-text-light` and `--mbx-formfield-error-text-dark`"
   },
   "--mbx-formfield-error-text-light": {
-    "description": "FormField error box text color when dark mode is `off`",
+    "description": "FormField error box text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultColor": "red",
     "fallback": "--mbx-formfield-error-text"
   },
   "--mbx-formfield-error-text-dark": {
-    "description": "FormField error box text color when dark mode is `on`",
+    "description": "FormField error box text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultColor": "red",
     "fallback": "--mbx-formfield-error-text"
   }

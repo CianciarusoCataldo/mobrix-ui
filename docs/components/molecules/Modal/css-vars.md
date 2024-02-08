@@ -51,7 +51,7 @@ Fallback value for `--mbx-modal-background-light` and `--mbx-modal-background-da
 
 <br>
 
-Modal background when [dark](../../global/props.md#dark) mode is `off`
+Modal background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -65,7 +65,7 @@ Modal background when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
-Modal background when [dark](../../global/props.md#dark) mode is `on`
+Modal background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -93,7 +93,7 @@ Fallback value for `--mbx-modal-x-color-light` and `--mbx-modal-x-color-dark`
 
 <br>
 
-Modal x icon color when [dark](../../global/props.md#dark) mode is `off`
+Modal x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -107,7 +107,7 @@ Modal x icon color when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
-Modal x icon color when [dark](../../global/props.md#dark) mode is `on`
+Modal x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -135,7 +135,7 @@ Fallback value for `--mbx-modal-x-color-hover-light` and `--mbx-modal-x-color-ho
 
 <br>
 
-Modal x icon color when [dark](../../global/props.md#dark) mode is `off`, on `hover`
+Modal x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -149,6 +149,6 @@ Modal x icon color when [dark](../../global/props.md#dark) mode is `off`, on `ho
 
 <br>
 
-Modal x icon color when [dark](../../global/props.md#dark) mode is `on`, on `hover`
+Modal x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>

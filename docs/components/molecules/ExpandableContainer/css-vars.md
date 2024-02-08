@@ -54,7 +54,7 @@ Fallback value for `--mbx-expandablecontainer-background-light` and `--mbx-expan
 
 <br>
 
-ExpandableContainer background when dark mode is `off`
+ExpandableContainer background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -68,7 +68,7 @@ ExpandableContainer background when dark mode is `off`
 
 <br>
 
-ExpandableContainer background when dark mode is `on`
+ExpandableContainer background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -96,7 +96,7 @@ Fallback value for `--mbx-expandablecontainer-text-color-light` and `--mbx-expan
 
 <br>
 
-ExpandableContainer text color when dark mode is `off`
+ExpandableContainer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -110,7 +110,7 @@ ExpandableContainer text color when dark mode is `off`
 
 <br>
 
-ExpandableContainer text color when dark mode is `on`
+ExpandableContainer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -138,7 +138,7 @@ Fallback value for `--mbx-expandablecontainer-arrow-color-light` and `--mbx-expa
 
 <br>
 
-off
+ExpandableContainer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -152,7 +152,7 @@ off
 
 <br>
 
-off
+ExpandableContainer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -180,7 +180,7 @@ Fallback value for `--mbx-expandablecontainer-arrow-color-hover-light` and `--mb
 
 <br>
 
-off, on `hover`
+ExpandableContainer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -194,6 +194,6 @@ off, on `hover`
 
 <br>
 
-off, on `hover`
+ExpandableContainer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>

@@ -54,7 +54,7 @@ Fallback value for `--mbx-dismissablecard-background-light` and `--mbx-dismissab
 
 <br>
 
-DismissableCard background when dark mode is `off`
+DismissableCard background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -68,7 +68,7 @@ DismissableCard background when dark mode is `off`
 
 <br>
 
-DismissableCard background when dark mode is `on`
+DismissableCard background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -96,7 +96,7 @@ Fallback value for `--mbx-dismissablecard-text-color-light` and `--mbx-dismissab
 
 <br>
 
-DismissableCard text color when dark mode is `off`
+DismissableCard text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -110,7 +110,7 @@ DismissableCard text color when dark mode is `off`
 
 <br>
 
-DismissableCard text color when dark mode is `on`
+DismissableCard text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -138,7 +138,7 @@ Fallback value for `--mbx-dismissablecard-x-color-light` and `--mbx-dismissablec
 
 <br>
 
-DismissableCard x icon color when dark mode is `off`
+DismissableCard x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -152,7 +152,7 @@ DismissableCard x icon color when dark mode is `off`
 
 <br>
 
-DismissableCard x icon color when dark mode is `on`
+DismissableCard x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -180,7 +180,7 @@ Fallback value for `--mbx-dismissablecard-x-color-hover-light` and `--mbx-dismis
 
 <br>
 
-DismissableCard x icon color when dark mode is `off`, on hover
+DismissableCard x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -194,6 +194,6 @@ DismissableCard x icon color when dark mode is `off`, on hover
 
 <br>
 
-DismissableCard x icon color when dark mode is `on`, on hover
+DismissableCard x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>

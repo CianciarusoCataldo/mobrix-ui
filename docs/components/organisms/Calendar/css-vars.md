@@ -69,7 +69,7 @@ Fallback value for `--mbx-calendar-background-light` and `--mbx-calendar-backgro
 
 <br>
 
-Calendar background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'
+Calendar background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -83,7 +83,7 @@ Calendar background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/d
 
 <br>
 
-Calendar background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'
+Calendar background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -111,7 +111,7 @@ Fallback value for `--mbx-calendar-text-color-light` and `--mbx-calendar-text-co
 
 <br>
 
-Calendar text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'
+Calendar text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -125,7 +125,7 @@ Calendar text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/d
 
 <br>
 
-Calendar text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'
+Calendar text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -153,7 +153,7 @@ Fallback value for `--mbx-calendar-selected-background-light` and `--mbx-calenda
 
 <br>
 
-Calendar selected cell background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'
+Calendar selected cell background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -167,7 +167,7 @@ Calendar selected cell background when [dark](https://cianciarusocataldo.github.
 
 <br>
 
-Calendar selected cell background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'
+Calendar selected cell background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -195,7 +195,7 @@ Fallback value for `--mbx-calendar-selected-text-color-light` and `--mbx-calenda
 
 <br>
 
-Calendar selected cell text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'
+Calendar selected cell text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -209,7 +209,7 @@ Calendar selected cell text color when [dark](https://cianciarusocataldo.github.
 
 <br>
 
-Calendar selected cell text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'
+Calendar selected cell text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -237,7 +237,7 @@ Fallback value for `--mbx-calendar-background-hover-light` and `--mbx-calendar-b
 
 <br>
 
-Calendar background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off', on 'hover'
+Calendar background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -251,7 +251,7 @@ Calendar background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/d
 
 <br>
 
-Calendar background when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on', on 'hover'
+Calendar background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -279,7 +279,7 @@ Fallback value for `--mbx-calendar-text-color-hover-light` and `--mbx-calendar-t
 
 <br>
 
-Calendar text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off', on 'hover'
+Calendar text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -293,7 +293,7 @@ Calendar text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/d
 
 <br>
 
-Calendar text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on', on 'hover'
+Calendar text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -321,7 +321,7 @@ Fallback value for `--mbx-calendar-arrow-light` and `--mbx-calendar-arrow-dark`
 
 <br>
 
-Calendar arrow color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'
+Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -335,7 +335,7 @@ Calendar arrow color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/
 
 <br>
 
-Calendar arrow color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'
+Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -363,7 +363,7 @@ Fallback value for `--mbx-calendar-arrow-hover-light` and `--mbx-calendar-arrow-
 
 <br>
 
-Calendar arrow color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off', on 'hover'
+Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -377,7 +377,7 @@ Calendar arrow color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/
 
 <br>
 
-Calendar arrow color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on', on 'hover'
+Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -405,7 +405,7 @@ Fallback value for `--mbx-calendar-today-color-light` and `--mbx-calendar-today-
 
 <br>
 
-Calendar today color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `off'
+Calendar today color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -419,6 +419,6 @@ Calendar today color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/
 
 <br>
 
-Calendar today color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/global/props/#dark) mode is `on'
+Calendar today color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>

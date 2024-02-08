@@ -57,7 +57,7 @@ Fallback value for `--mbx-radiogroup-background-light` and `--mbx-radiogroup-bac
 
 <br>
 
-RadioGroup background when [dark](../../global/props.md#dark) mode is `off`
+RadioGroup background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -71,7 +71,7 @@ RadioGroup background when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
-RadioGroup background when [dark](../../global/props.md#dark) mode is `on`
+RadioGroup background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -99,7 +99,7 @@ Fallback value for `--mbx-radiogroup-text-color-light` and `--mbx-radiogroup-tex
 
 <br>
 
-RadioGroup text color when [dark](../../global/props.md#dark) mode is `off`
+RadioGroup text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -113,7 +113,7 @@ RadioGroup text color when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
-RadioGroup text color when [dark](../../global/props.md#dark) mode is `on`
+RadioGroup text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -141,7 +141,7 @@ Fallback value for `mbx-radiogroup-radio-background-light` and `mbx-radiogroup-r
 
 <br>
 
-Internal RadioButton background when [dark](../../global/props.md#dark) mode is off
+Internal RadioButton background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is off
 
 <br>
 
@@ -155,7 +155,7 @@ Internal RadioButton background when [dark](../../global/props.md#dark) mode is 
 
 <br>
 
-Internal RadioButton background when [dark](../../global/props.md#dark) mode is on
+Internal RadioButton background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is on
 
 <br>
 
@@ -183,7 +183,7 @@ Fallback value for `mbx-radiogroup-radio-background-hover-light` and `mbx-radiog
 
 <br>
 
-Internal RadioButton background when [dark](../../global/props.md#dark) mode is off, on hover
+Internal RadioButton background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is off, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -197,7 +197,7 @@ Internal RadioButton background when [dark](../../global/props.md#dark) mode is 
 
 <br>
 
-Internal RadioButton background when [dark](../../global/props.md#dark) mode is on, on hover
+Internal RadioButton background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is on, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -225,7 +225,7 @@ Fallback value for `mbx-radiogroup-radio-icon-background-light` and `mbx-radiogr
 
 <br>
 
-Internal RadioButton icon background when [dark](../../global/props.md#dark) mode is off
+Internal RadioButton icon background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is off
 
 <br>
 
@@ -239,6 +239,6 @@ Internal RadioButton icon background when [dark](../../global/props.md#dark) mod
 
 <br>
 
-Internal RadioButton icon background when [dark](../../global/props.md#dark) mode is on
+Internal RadioButton icon background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is on
 
 <br>

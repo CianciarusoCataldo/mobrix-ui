@@ -54,7 +54,7 @@ Fallback value for `--mbx-review-background-light` and `--mbx-review-background-
 
 <br>
 
-Review background when [dark](../../global/props.md#dark) mode is `off`
+Review background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -68,7 +68,7 @@ Review background when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
-Review background when [dark](../../global/props.md#dark) mode is `on`
+Review background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -96,7 +96,7 @@ Fallback value for `--mbx-review-text-color-light` and `--mbx-review-text-color-
 
 <br>
 
-Review text color when [dark](../../global/props.md#dark) mode is `off`
+Review text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -110,7 +110,7 @@ Review text color when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
-Review text color when [dark](../../global/props.md#dark) mode is `on`
+Review text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -138,7 +138,7 @@ Fallback value for `--mbx-review-link-color-light` and `--mbx-review-link-color-
 
 <br>
 
-Review link color when [dark](../../global/props.md#dark) mode is `off`
+Review link color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -152,7 +152,7 @@ Review link color when [dark](../../global/props.md#dark) mode is `off`
 
 <br>
 
-Review link color when [dark](../../global/props.md#dark) mode is `on`
+Review link color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -180,7 +180,7 @@ Fallback value for `--mbx-review-github-color-light` and `--mbx-review-github-co
 
 <br>
 
-Review github icon color when [dark](../../global/props.md#dark) mode is `on`
+Review github icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -194,6 +194,6 @@ Review github icon color when [dark](../../global/props.md#dark) mode is `on`
 
 <br>
 
-Review github icon color when [dark](../../global/props.md#dark) mode is `off`
+Review github icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>

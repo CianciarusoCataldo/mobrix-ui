@@ -3,12 +3,12 @@
     "description": "Fallback value for `--mbx-carousel-background-light` and `--mbx-carousel-background-dark`"
   },
   "--mbx-carousel-background-light": {
-    "description": "Carousel background when dark mode is `off`",
+    "description": "Carousel background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-carousel-background"
   },
   "--mbx-carousel-background-dark": {
-    "description": "Carousel background when dark mode is `on`",
+    "description": "Carousel background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-carousel-background"
   },
@@ -16,12 +16,12 @@
     "description": "Fallback value for `--mbx-carousel-arrow-color-light` and `--mbx-carousel-arrow-color-dark`"
   },
   "--mbx-carousel-arrow-color-light": {
-    "description": "Carousel arrow color when dark mode is `off`",
+    "description": "Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultColor": "#252525",
     "fallback": "--mbx-carousel-arrow-color"
   },
   "--mbx-carousel-arrow-color-dark": {
-    "description": "Carousel arrow color when dark mode is `on`",
+    "description": "Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultColor": "#e2e2e2",
     "fallback": "--mbx-carousel-arrow-color"
   },
@@ -29,12 +29,12 @@
     "description": "Fallback value for `--mbx-carousel-arrow-color-hover-light` and `--mbx-carousel-arrow-color-hover-dark`"
   },
   "--mbx-carousel-arrow-color-hover-light": {
-    "description": "Carousel arrow color when dark mode is `off`, on hover",
+    "description": "Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultColor": "#287dfd",
     "fallback": "--mbx-carousel-arrow-color-hover"
   },
   "--mbx-carousel-arrow-color-hover-dark": {
-    "description": "Carousel arrow color when dark mode is `on`, on hover",
+    "description": "Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultColor": "#ff8007",
     "fallback": "--mbx-carousel-arrow-color-hover"
   },
@@ -42,12 +42,12 @@
     "description": "Fallback value for `--mbx-carousel-dot-empty-background-light` and `--mbx-carousel-dot-empty-background-dark`"
   },
   "--mbx-carousel-dot-empty-background-light": {
-    "description": "Carousel empty dot background when dark mode is `off`",
+    "description": "Carousel empty dot background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultColor": "radial-gradient(#000000, #181818, #282828, #3a3a3a, #4c4c4c, #6b6a6a, #858383)",
     "fallback": "--mbx-carousel-dot-empty-background"
   },
   "--mbx-carousel-dot-empty-background-dark": {
-    "description": "Carousel empty dot background when dark mode is `on`",
+    "description": "Carousel empty dot background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultColor": "radial-gradient(#000000, #181818, #282828, #3a3a3a, #4c4c4c, #6b6a6a, #858383)",
     "fallback": "--mbx-carousel-dot-empty-background"
   },
@@ -55,12 +55,12 @@
     "description": "Fallback value for `--mbx-carousel-dot-full-background-light` and `--mbx-carousel-dot-full-background-dark`"
   },
   "--mbx-carousel-dot-full-background-light": {
-    "description": "Carousel full dot background when dark mode is `off`",
+    "description": "Carousel full dot background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultColor": "linear-gradient(to top, #ff8007, #fd8616, #fd9b3f, #fd9c40, #fcbb7f, #fad6b4)",
     "fallback": "--mbx-carousel-dot-full-background"
   },
   "--mbx-carousel-dot-full-background-dark": {
-    "description": "Carousel full dot background when dark mode is `on`",
+    "description": "Carousel full dot background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultColor": "linear-gradient(to top, #ff8007, #fd8616, #fd9b3f, #fd9c40, #fcbb7f, #fad6b4)",
     "fallback": "--mbx-carousel-dot-full-background"
   }

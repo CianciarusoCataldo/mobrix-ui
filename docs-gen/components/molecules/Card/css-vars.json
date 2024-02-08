@@ -3,12 +3,12 @@
     "description": "Fallback value for `--mbx-card-background-light` and `--mbx-card-background-dark`"
   },
   "--mbx-card-background-light": {
-    "description": "Card background when dark mode is `off`",
+    "description": "Card background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "fallback": "--mbx-card-background",
     "defaultColor": "linear-gradient(to right, #fff, #ededee, #e6e7e7)"
   },
   "--mbx-card-background-dark": {
-    "description": "Card background when dark mode is `on`",
+    "description": "Card background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "fallback": "--mbx-card-background",
     "defaultColor": "linear-gradient(to right, #2d3748, #1d232e)"
   },
@@ -16,12 +16,12 @@
     "description": "Fallback value for `--mbx-card-text-color-light` and `--mbx-card-text-color-dark`"
   },
   "--mbx-card-text-color-light": {
-    "description": "Card text color when dark mode is `off`",
+    "description": "Card text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "fallback": "--mbx-card-text-color",
     "defaultGlobal": "--mbx-text-color-light"
   },
   "--mbx-card-text-color-dark": {
-    "description": "Card text color when dark mode is `on`",
+    "description": "Card text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "fallback": "--mbx-card-text-color",
     "defaultGlobal": "--mbx-text-color-dark"
   }

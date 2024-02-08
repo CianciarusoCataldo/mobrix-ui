@@ -57,7 +57,7 @@ Fallback value for `--mbx-table-background-light` and `--mbx-table-background-da
 
 <br>
 
-Table background when [dark](../../global/props.md#dark) mode is `off'
+Table background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -71,7 +71,7 @@ Table background when [dark](../../global/props.md#dark) mode is `off'
 
 <br>
 
-Table background when [dark](../../global/props.md#dark) mode is `on'
+Table background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -99,7 +99,7 @@ Fallback value for `--mbx-table-text-color-light` and `--mbx-table-text-color-da
 
 <br>
 
-Table text color when [dark](../../global/props.md#dark) mode is `off'
+Table text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -113,7 +113,7 @@ Table text color when [dark](../../global/props.md#dark) mode is `off'
 
 <br>
 
-Table text color when [dark](../../global/props.md#dark) mode is `on'
+Table text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -141,7 +141,7 @@ Fallback value for `--mbx-table-header-background-light` and `--mbx-table-header
 
 <br>
 
-Table header background when [dark](../../global/props.md#dark) mode is `off'
+Table header background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -155,7 +155,7 @@ Table header background when [dark](../../global/props.md#dark) mode is `off'
 
 <br>
 
-Table header background when [dark](../../global/props.md#dark) mode is `on'
+Table header background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -183,7 +183,7 @@ Fallback value for `--mbx-table-header-text-color-light` and `--mbx-table-header
 
 <br>
 
-Table header text color when [dark](../../global/props.md#dark) mode is `off'
+Table header text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -197,7 +197,7 @@ Table header text color when [dark](../../global/props.md#dark) mode is `off'
 
 <br>
 
-Table header text color when [dark](../../global/props.md#dark) mode is `on'
+Table header text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>
 
@@ -225,7 +225,7 @@ Fallback value for `--mbx-table-border-color-light` and `--mbx-table-border-colo
 
 <br>
 
-Table border color when [dark](../../global/props.md#dark) mode is `off'
+Table border color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'
 
 <br>
 
@@ -239,6 +239,6 @@ Table border color when [dark](../../global/props.md#dark) mode is `off'
 
 <br>
 
-Table border color when [dark](../../global/props.md#dark) mode is `on'
+Table border color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'
 
 <br>

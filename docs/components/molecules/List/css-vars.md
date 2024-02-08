@@ -48,7 +48,7 @@ Fallback value for `--mbx-list-text-color-light` and `--mbx-list-text-color-dark
 
 <br>
 
-List element text color when dark is `off`
+List element text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
@@ -62,7 +62,7 @@ List element text color when dark is `off`
 
 <br>
 
-List element text color when dark is `on`
+List element text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
@@ -90,7 +90,7 @@ Fallback value for `--mbx-list-text-color-hover-light` and `--mbx-list-text-colo
 
 <br>
 
-List element text color when dark is `off`, on `hover`
+List element text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
@@ -104,6 +104,6 @@ List element text color when dark is `off`, on `hover`
 
 <br>
 
-List element text color when dark is `on`, on `hover`
+List element text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
