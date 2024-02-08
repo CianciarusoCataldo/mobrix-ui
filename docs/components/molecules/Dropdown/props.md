@@ -25,46 +25,62 @@
 
 <br>
 
-### value
-
 <br>
+
+### value
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-actual selected element (as index). If not set, default value will be used.<br><br>
+<br>
 
-### elements
+actual selected element (as index). If not set, default value will be used.
 
 <br>
+
+<br>
+
+### elements
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>(JSX.Element &#124; string)[]</div> | <div style='text-align:center;margin:auto;'>[]</div> |
 
-Dropdown content elements<br><br>
+<br>
 
-### hideArrow
+Dropdown content elements
 
 <br>
+
+<br>
+
+### hideArrow
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
 
-If `true`, hide the arrow icon near selected element<br><br>
+<br>
 
-### onChange
+If `true`, hide the arrow icon near selected element
 
 <br>
+
+<br>
+
+### onChange
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>(newValue: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
-Callback triggered when selecting new element from dropdown<br><br>
+<br>
+
+Callback triggered when selecting new element from dropdown
+
+<br>

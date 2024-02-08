@@ -4,7 +4,7 @@
 - [Components building process](#components-building-process)
   - [Shared Properties](#shared-properties)
   - [Accessibility properties](#accessibility-properties)
-  - [CSS variables](#css-variables)
+  - [Shared CSS variables](#shared-css-variables)
   - [Reactive components](#reactive-components)
 - [Getting started](#getting-started)
   - [Installation](#installation)

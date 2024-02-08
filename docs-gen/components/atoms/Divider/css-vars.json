@@ -3,12 +3,12 @@
     "description": "Fallback value for `--mbx-divider-color-light` and `--mbx-divider-color-dark`"
   },
   "--mbx-divider-color-light": {
-    "description": "Divider color when dark mode is off",
+    "description": "Divider color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultGlobal": "--mbx-text-color-light",
     "fallback": "--mbx-divider-color"
   },
   "--mbx-divider-color-dark": {
-    "description": "Divider color when dark mode is on",
+    "description": "Divider color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultGlobal": "--mbx-text-color-dark",
     "fallback": "--mbx-divider-color"
   }

@@ -1,4 +1,4 @@
-# [MoBrix-ui global](index.md) CSS variables
+# [MoBrix-ui shared](index.md) CSS variables
 
 ## Summary
 
@@ -11,7 +11,7 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Prop</div>                                                                     | <div style='text-align:center;margin:auto;'>Fallback</div>                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                                                                                                 |
+| <div style='text-align:center;margin:auto;'>Css variable</div>                                                             | <div style='text-align:center;margin:auto;'>Fallback</div>                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                                                                                                 |
 | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-background](#-mbx-background)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                            | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
 | <div style='text-align:center;margin:auto;'>[--mbx-background-light](#-mbx-background-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-background](#-mbx-background)</div>                         | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #fff, #ededee, #e6e7e7)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #fff, #ededee, #e6e7e7);margin:auto; width:15px; height:15px;'/></div></div></div>       |
@@ -41,9 +41,7 @@
 
 <br>
 
-## --mbx-background
-
-<br>
+### --mbx-background
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -55,9 +53,9 @@ Fallback value for `--mbx-background-light` and `--mbx-background-dark` variable
 
 <br>
 
-## --mbx-background-light
-
 <br>
+
+### --mbx-background-light
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                                                                                           |
 | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,13 +63,13 @@ Fallback value for `--mbx-background-light` and `--mbx-background-dark` variable
 
 <br>
 
-Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `off`
+Global MoBrix-ui background, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
-## --mbx-background-dark
-
 <br>
+
+### --mbx-background-dark
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                                                                               |
 | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -79,13 +77,13 @@ Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `of
 
 <br>
 
-Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `on`
+Global MoBrix-ui background, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
-## --mbx-background-color
-
 <br>
+
+### --mbx-background-color
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -97,9 +95,9 @@ Fallback value for `--mbx-background-color-light` and `--mbx-background-color-da
 
 <br>
 
-## --mbx-background-color-light
-
 <br>
+
+### --mbx-background-color-light
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -107,13 +105,13 @@ Fallback value for `--mbx-background-color-light` and `--mbx-background-color-da
 
 <br>
 
-Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `off`
+Global MoBrix-ui background color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
-## --mbx-background-color-dark
-
 <br>
+
+### --mbx-background-color-dark
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -121,13 +119,13 @@ Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode 
 
 <br>
 
-Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `on`
+Global MoBrix-ui background color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
-## --mbx-background-color-hover
-
 <br>
+
+### --mbx-background-color-hover
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -139,9 +137,9 @@ Fallback value for `--mbx-background-color-hover-light` and `--mbx-background-co
 
 <br>
 
-## --mbx-background-color-hover-light
-
 <br>
+
+### --mbx-background-color-hover-light
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -149,13 +147,13 @@ Fallback value for `--mbx-background-color-hover-light` and `--mbx-background-co
 
 <br>
 
-Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `off`, on `hover`
+Global MoBrix-ui background color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
-## --mbx-background-color-hover-dark
-
 <br>
+
+### --mbx-background-color-hover-dark
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -163,13 +161,13 @@ Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode 
 
 <br>
 
-Global MoBrix-ui background color, when [dark](../../global/props.md#dark) mode is `on`, on `hover`
+Global MoBrix-ui background color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
-## --mbx-background-hover
-
 <br>
+
+### --mbx-background-hover
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -181,9 +179,9 @@ Fallback value for `--mbx-background-hover-light` and `--mbx-background-hover-da
 
 <br>
 
-## --mbx-background-hover-light
-
 <br>
+
+### --mbx-background-hover-light
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                                                                                                 |
 | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -191,13 +189,13 @@ Fallback value for `--mbx-background-hover-light` and `--mbx-background-hover-da
 
 <br>
 
-Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `off`, on `hover`
+Global MoBrix-ui background, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
-## --mbx-background-hover-dark
-
 <br>
+
+### --mbx-background-hover-dark
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                                                                               |
 | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -205,13 +203,13 @@ Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `of
 
 <br>
 
-Global MoBrix-ui background, when [dark](../../global/props.md#dark) mode is `on`, on `hover`
+Global MoBrix-ui background, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
-## --mbx-text-color
-
 <br>
+
+### --mbx-text-color
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -223,9 +221,9 @@ Fallback value for `--mbx-text-color-light` and `--mbx-text-color-dark` variable
 
 <br>
 
-## --mbx-text-color-light
-
 <br>
+
+### --mbx-text-color-light
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -233,13 +231,13 @@ Fallback value for `--mbx-text-color-light` and `--mbx-text-color-dark` variable
 
 <br>
 
-Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `off`
+Global MoBrix-ui text color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
-## --mbx-text-color-dark
-
 <br>
+
+### --mbx-text-color-dark
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                   |
 | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -247,13 +245,13 @@ Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `of
 
 <br>
 
-Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `on`
+Global MoBrix-ui text color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 
-## --mbx-text-color-hover
-
 <br>
+
+### --mbx-text-color-hover
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -265,9 +263,9 @@ Fallback value for `--mbx-text-color-hover-light` and `--mbx-text-color-hover-da
 
 <br>
 
-## --mbx-text-color-hover-light
-
 <br>
+
+### --mbx-text-color-hover-light
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -275,13 +273,13 @@ Fallback value for `--mbx-text-color-hover-light` and `--mbx-text-color-hover-da
 
 <br>
 
-Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `off`, on `hover`
+Global MoBrix-ui text color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
-## --mbx-text-color-hover-dark
-
 <br>
+
+### --mbx-text-color-hover-dark
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -289,13 +287,13 @@ Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `of
 
 <br>
 
-Global MoBrix-ui text color, when [dark](../../global/props.md#dark) mode is `on`, on `hover`
+Global MoBrix-ui text color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
 <br>
 
-## --mbx-focus-color
-
 <br>
+
+### --mbx-focus-color
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -307,9 +305,9 @@ Fallback value for `--mbx-focus-color-light` and `--mbx-focus-color-dark` variab
 
 <br>
 
-## --mbx-focus-color-light
-
 <br>
+
+### --mbx-focus-color-light
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
 | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -317,13 +315,13 @@ Fallback value for `--mbx-focus-color-light` and `--mbx-focus-color-dark` variab
 
 <br>
 
-Global MoBrix-ui focus color, when [dark](../../global/props.md#dark) mode is `off`
+Global MoBrix-ui focus color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
-## --mbx-focus-color-dark
-
 <br>
+
+### --mbx-focus-color-dark
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
 | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -331,4 +329,6 @@ Global MoBrix-ui focus color, when [dark](../../global/props.md#dark) mode is `o
 
 <br>
 
-Global MoBrix-ui focus color, when [dark](../../global/props.md#dark) mode is `on`
+Global MoBrix-ui focus color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
+
+<br>

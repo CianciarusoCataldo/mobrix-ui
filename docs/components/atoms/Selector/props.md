@@ -25,46 +25,62 @@
 
 <br>
 
-### value
-
 <br>
+
+### value
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>0</div> |
 
-option index actually displayed<br><br>
+<br>
 
-### elements
+option index actually displayed
 
 <br>
+
+<br>
+
+### elements
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string[]</div> | <div style='text-align:center;margin:auto;'>[]</div> |
 
-selector options array, every element must be a string<br><br>
+<br>
 
-### optionClassName
+selector options array, every element must be a string
 
 <br>
+
+<br>
+
+### optionClassName
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-className applied on every options inside the selector<br><br>
+<br>
 
-### onChange
+className applied on every options inside the selector
 
 <br>
+
+<br>
+
+### onChange
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>(newValue: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
-Callback triggered when Selector component input value is changed by the user<br><br>
+<br>
+
+Callback triggered when Selector component input value is changed by the user
+
+<br>

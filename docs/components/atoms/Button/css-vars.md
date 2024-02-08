@@ -11,141 +11,189 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Prop</div>                                                                       | <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-background](#-mbx-button-background)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-background-light](#-mbx-button-background-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-button-background](#--mbx-button-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#-mbx-background-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-background-dark](#-mbx-button-background-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-button-background](#--mbx-button-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#-mbx-background-dark)</div>               |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#-mbx-button-text-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-light](#-mbx-button-text-color-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#--mbx-button-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#-mbx-text-color-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-dark](#-mbx-button-text-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#--mbx-button-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#-mbx-text-color-dark)</div>               |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover](#-mbx-button-background-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover-light](#-mbx-button-background-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover](#--mbx-button-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](../../global/css-vars.md#-mbx-background-hover-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover-dark](#-mbx-button-background-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover](#--mbx-button-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](../../global/css-vars.md#-mbx-background-hover-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#-mbx-button-text-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover-light](#-mbx-button-text-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#--mbx-button-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](../../global/css-vars.md#-mbx-text-color-hover-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover-dark](#-mbx-button-text-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#--mbx-button-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](../../global/css-vars.md#-mbx-text-color-hover-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>Css variable</div>                                                               | <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-background](#-mbx-button-background)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-background-light](#-mbx-button-background-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-button-background](#-mbx-button-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div>             |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-background-dark](#-mbx-button-background-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-button-background](#-mbx-button-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div>               |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#-mbx-button-text-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-light](#-mbx-button-text-color-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#-mbx-button-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div>             |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-dark](#-mbx-button-text-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#-mbx-button-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div>               |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover](#-mbx-button-background-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover-light](#-mbx-button-background-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover](#-mbx-button-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover-dark](#-mbx-button-background-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover](#-mbx-button-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-hover-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#-mbx-button-text-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover-light](#-mbx-button-text-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#-mbx-button-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover-dark](#-mbx-button-text-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#-mbx-button-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-dark)</div>   |
 
 ## CSS Variables list
 
 <br>
 
-### --mbx-button-background
-
 <br>
+
+### --mbx-button-background
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `mbx-button-background-light` and `mbx-button-background-dark`<br><br>
+<br>
+
+Fallback value for `mbx-button-background-light` and `mbx-button-background-dark`
+
+<br>
+
+<br>
 
 ### --mbx-button-background-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-background](#-mbx-button-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                  |
-| ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-background](#--mbx-button-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#-mbx-background-light)</div> |
+Button background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
-Button background when dark mode is off<br><br>
+<br>
+
+<br>
 
 ### --mbx-button-background-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
+| ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-background](#-mbx-button-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-background](#--mbx-button-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#-mbx-background-dark)</div> |
+Button background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
-Button background when dark mode is on<br><br>
+<br>
+
+<br>
 
 ### --mbx-button-text-color
 
-<br>
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `mbx-button-text-color-light` and `mbx-button-text-color-dark`<br><br>
+<br>
+
+Fallback value for `mbx-button-text-color-light` and `mbx-button-text-color-dark`
+
+<br>
+
+<br>
 
 ### --mbx-button-text-color-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#-mbx-button-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                  |
-| ----------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#--mbx-button-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#-mbx-text-color-light)</div> |
+Button text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is off
 
-Button text color when dark mode is off<br><br>
+<br>
+
+<br>
 
 ### --mbx-button-text-color-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
+| ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#-mbx-button-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#--mbx-button-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#-mbx-text-color-dark)</div> |
+Button text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
-Button text color when dark mode is on<br><br>
+<br>
+
+<br>
 
 ### --mbx-button-background-hover
 
-<br>
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `mbx-button-background-hover-light` and `mbx-button-background-hover-dark`<br><br>
+<br>
+
+Fallback value for `mbx-button-background-hover-light` and `mbx-button-background-hover-dark`
+
+<br>
+
+<br>
 
 ### --mbx-button-background-hover-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover](#-mbx-button-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-hover-light)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                              |
-| ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover](#--mbx-button-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](../../global/css-vars.md#-mbx-background-hover-light)</div> |
+Button background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is off, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
-Button background when dark mode is off, on hover<br><br>
+<br>
+
+<br>
 
 ### --mbx-button-background-hover-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover](#-mbx-button-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-hover-dark)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                            |
-| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover](#--mbx-button-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](../../global/css-vars.md#-mbx-background-hover-dark)</div> |
+Button background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
-Button background when dark mode is on, on hover<br><br>
+<br>
+
+<br>
 
 ### --mbx-button-text-color-hover
-
-<br>
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `mbx-button-text-color-hover-light` and `mbx-button-text-color-hover-dark`<br><br>
+<br>
+
+Fallback value for `mbx-button-text-color-hover-light` and `mbx-button-text-color-hover-dark`
+
+<br>
+
+<br>
 
 ### --mbx-button-text-color-hover-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#-mbx-button-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-light)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                              |
-| ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#--mbx-button-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](../../global/css-vars.md#-mbx-text-color-hover-light)</div> |
+Button text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is off, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
-Button text color when dark mode is off, on hover<br><br>
+<br>
+
+<br>
 
 ### --mbx-button-text-color-hover-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#-mbx-button-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-dark)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                        | <div style='text-align:center;margin:auto;'>Default</div>                                                                            |
-| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#--mbx-button-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](../../global/css-vars.md#-mbx-text-color-hover-dark)</div> |
+Button text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
-Button text color when dark mode is on, on hover<br><br>
+<br>

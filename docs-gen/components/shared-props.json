@@ -11,14 +11,14 @@
 
   "dark": {
     "description": "Enable/disable dark mode",
-    "default": false,
+    "default": "false",
     "type": "boolean"
   },
 
   "hide": {
     "type": "boolean",
     "description": "Hide/show component",
-    "default": false
+    "default": "false"
   },
 
   "id": {
@@ -29,7 +29,7 @@
   "shadow": {
     "type": "boolean",
     "description": "Enable/disable shadow behind component",
-    "default": true
+    "default": "true"
   },
 
   "style": {
@@ -39,31 +39,31 @@
 
   "unstyled": {
     "description": "If `true`, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons)",
-    "default": false,
+    "default": "false",
     "type": "boolean"
   },
 
   "animated": {
     "description": "Enable/disable component animations",
-    "default": true,
+    "default": "true",
     "type": "boolean"
   },
 
   "background": {
     "description": "Enable/disable component background",
-    "default": true,
+    "default": "true",
     "type": "boolean"
   },
 
   "hover": {
-    "default": true,
+    "default": "true",
     "description": "Enable/disable component hover standard styles",
     "type": "boolean"
   },
 
   "disabled": {
     "description": "If true, disable the component. The effect may vary depending on the component type",
-    "default": false,
+    "default": "false",
     "type": "boolean"
   },
 

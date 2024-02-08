@@ -3,12 +3,12 @@
     "description": "Fallback value for `mbx-selector-background-light` and `mbx-selector-background-dark`"
   },
   "--mbx-selector-background-light": {
-    "description": "Selector background when dark mode is off",
+    "description": "Selector background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-selector-background"
   },
   "--mbx-selector-background-dark": {
-    "description": "Selector background when dark mode is on",
+    "description": "Selector background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultGlobal": "--mbx-background-dark)",
     "fallback": "--mbx-selector-background"
   },
@@ -16,12 +16,12 @@
     "description": "Fallback value for `mbx-selector-text-color-light` and `mbx-selector-text-color-dark`"
   },
   "--mbx-selector-text-color-light": {
-    "description": "Selector text color when dark mode is off",
+    "description": "Selector text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultGlobal": "--mbx-text-color-light",
     "fallback": "--mbx-selector-text-color"
   },
   "--mbx-selector-text-color-dark": {
-    "description": "Selector text color when dark mode is on",
+    "description": "Selector text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultGlobal": "[--mbx-text-color-dark",
     "fallback": "--mbx-selector-text-color"
   },
@@ -29,12 +29,12 @@
     "description": "Fallback value for `mbx-selector-background-hover-light` and `mbx-selector-background-hover-dark`"
   },
   "--mbx-selector-background-hover-light": {
-    "description": "Selector background when dark mode is off, on hover",
+    "description": "Selector background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultGlobal": "--mbx-background-hover-light",
     "fallback": "--mbx-selector-background-hover"
   },
   "--mbx-selector-background-hover-dark": {
-    "description": "Selector background when dark mode is on, on hover",
+    "description": "Selector background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultGlobal": "--mbx-background-hover-light",
     "fallback": "--mbx-selector-background-hover"
   },
@@ -42,12 +42,12 @@
     "description": "Fallback value for `mbx-selector-text-color-hover-light` and `mbx-selector-text-color-hover-dark`"
   },
   "--mbx-selector-text-color-hover-light": {
-    "description": "Selector text color when dark mode is off, on hover",
+    "description": "Selector text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultGlobal": "--mbx-text-color-hover-light",
     "fallback": "--mbx-selector-text-color-hover"
   },
   "--mbx-selector-text-color-hover-dark": {
-    "description": "Selector text color when dark mode is on, on hover",
+    "description": "Selector text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultGlobal": "--mbx-text-color-hover-dark",
     "fallback": "--mbx-selector-text-color-hover"
   }

@@ -11,207 +11,279 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Prop</div>                                                                             | <div style='text-align:center;margin:auto;'>Fallback</div>                                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#-mbx-dropdown-background)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-light](#-mbx-dropdown-background-light)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#-mbx-background-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-dark](#-mbx-dropdown-background-dark)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#-mbx-background-dark)</div>               |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#-mbx-dropdown-text-color)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-light](#-mbx-dropdown-text-color-light)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#--mbx-dropdown-text-color)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#-mbx-text-color-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-dark](#-mbx-dropdown-text-color-dark)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#--mbx-dropdown-text-color)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#-mbx-text-color-dark)</div>               |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#-mbx-dropdown-background-hover)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover-light](#-mbx-dropdown-background-hover-light)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](../../global/css-vars.md#-mbx-background-hover-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover-dark](#-mbx-dropdown-background-hover-dark)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](../../global/css-vars.md#-mbx-background-hover-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-hover](#-mbx-dropdown-text-color-hover)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-hover-light](#-mbx-dropdown-text-color-hover-light)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#--mbx-dropdown-background-hover)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](../../global/css-vars.md#-mbx-text-color-hover-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-hover-dark](#-mbx-dropdown-text-color-hover-dark)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#--mbx-dropdown-background-hover)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](../../global/css-vars.md#-mbx-text-color-hover-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#-mbx-dropdown-arrow-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-light](#-mbx-dropdown-arrow-color-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#--mbx-dropdown-arrow-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-light](#--mbx-dropdown-text-color-light)</div>                  |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-dark](#-mbx-dropdown-arrow-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#--mbx-dropdown-arrow-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-dark](#--mbx-dropdown-text-color-dark)</div>                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#-mbx-dropdown-arrow-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover-light](#-mbx-dropdown-arrow-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#--mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-light](#--mbx-dropdown-arrow-color-light)</div>                |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover-dark](#-mbx-dropdown-arrow-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#--mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-dark](#--mbx-dropdown-arrow-color-dark)</div>                  |
+| <div style='text-align:center;margin:auto;'>Css variable</div>                                                                     | <div style='text-align:center;margin:auto;'>Fallback</div>                                                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#-mbx-dropdown-background)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                    | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-light](#-mbx-dropdown-background-light)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#-mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div>             |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-dark](#-mbx-dropdown-background-dark)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#-mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div>               |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#-mbx-dropdown-text-color)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                    | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-light](#-mbx-dropdown-text-color-light)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#-mbx-dropdown-text-color)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div>             |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-dark](#-mbx-dropdown-text-color-dark)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#-mbx-dropdown-text-color)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div>               |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#-mbx-dropdown-background-hover)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                    | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover-light](#-mbx-dropdown-background-hover-light)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#-mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover-dark](#-mbx-dropdown-background-hover-dark)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#-mbx-dropdown-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-hover-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-hover](#-mbx-dropdown-text-color-hover)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                    | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-hover-light](#-mbx-dropdown-text-color-hover-light)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#-mbx-dropdown-background-hover)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-hover-dark](#-mbx-dropdown-text-color-hover-dark)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#-mbx-dropdown-background-hover)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#-mbx-dropdown-arrow-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                    | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-light](#-mbx-dropdown-arrow-color-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#-mbx-dropdown-arrow-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-light](#-mbx-dropdown-text-color-light)</div>                                                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-dark](#-mbx-dropdown-arrow-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#-mbx-dropdown-arrow-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-dark](#-mbx-dropdown-text-color-dark)</div>                                                                 |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#-mbx-dropdown-arrow-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                    | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover-light](#-mbx-dropdown-arrow-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#-mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-light](#-mbx-dropdown-arrow-color-light)</div>                                                             |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover-dark](#-mbx-dropdown-arrow-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#-mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-dark](#-mbx-dropdown-arrow-color-dark)</div>                                                               |
 
 ## CSS Variables list
 
 <br>
 
-### --mbx-dropdown-background
-
 <br>
+
+### --mbx-dropdown-background
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `--mbx-dropdown-background-light` and `--mbx-dropdown-background-dark`<br><br>
+<br>
+
+Fallback value for `--mbx-dropdown-background-light` and `--mbx-dropdown-background-dark`
+
+<br>
+
+<br>
 
 ### --mbx-dropdown-background-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#-mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                  |
-| --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](../../global/css-vars.md#-mbx-background-light)</div> |
+Dropdown background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
-Dropdown background when dark mode is `off`<br><br>
+<br>
+
+<br>
 
 ### --mbx-dropdown-background-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#-mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                |
-| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](../../global/css-vars.md#-mbx-background-dark)</div> |
+Dropdown background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
-Dropdown background when dark mode is `on`<br><br>
+<br>
+
+<br>
 
 ### --mbx-dropdown-text-color
 
-<br>
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `--mbx-dropdown-text-color-light` and `--mbx-dropdown-text-color-dark`<br><br>
+<br>
+
+Fallback value for `--mbx-dropdown-text-color-light` and `--mbx-dropdown-text-color-dark`
+
+<br>
+
+<br>
 
 ### --mbx-dropdown-text-color-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#-mbx-dropdown-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                  |
-| --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#--mbx-dropdown-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](../../global/css-vars.md#-mbx-text-color-light)</div> |
+Dropdown text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
-Dropdown text color when dark mode is `off`<br><br>
+<br>
+
+<br>
 
 ### --mbx-dropdown-text-color-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#-mbx-dropdown-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                |
-| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color](#--mbx-dropdown-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](../../global/css-vars.md#-mbx-text-color-dark)</div> |
+Dropdown text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
-Dropdown text color when dark mode is `on`<br><br>
+<br>
+
+<br>
 
 ### --mbx-dropdown-background-hover
 
-<br>
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `--mbx-dropdown-background-hover-light` and `--mbx-dropdown-background-hover-dark`<br><br>
+<br>
+
+Fallback value for `--mbx-dropdown-background-hover-light` and `--mbx-dropdown-background-hover-dark`
+
+<br>
+
+<br>
 
 ### --mbx-dropdown-background-hover-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                          |
+| -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#-mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-hover-light)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                              |
-| --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](../../global/css-vars.md#-mbx-background-hover-light)</div> |
+Dropdown background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
-Dropdown background when dark mode is `off`, on hover<br><br>
+<br>
+
+<br>
 
 ### --mbx-dropdown-background-hover-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                        |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#-mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-hover-dark)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                | <div style='text-align:center;margin:auto;'>Default</div>                                                                            |
-| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background](#--mbx-dropdown-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](../../global/css-vars.md#-mbx-background-hover-dark)</div> |
+Dropdown background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
-Dropdown background when dark mode is `on`, on hover<br><br>
+<br>
+
+<br>
 
 ### --mbx-dropdown-text-color-hover
 
-<br>
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `--mbx-dropdown-text-color-hover-light` and `--mbx-dropdown-text-color-hover-dark`<br><br>
+<br>
+
+Fallback value for `--mbx-dropdown-text-color-hover-light` and `--mbx-dropdown-text-color-hover-dark`
+
+<br>
+
+<br>
 
 ### --mbx-dropdown-text-color-hover-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#-mbx-dropdown-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-light)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                              |
-| --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#--mbx-dropdown-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](../../global/css-vars.md#-mbx-text-color-hover-light)</div> |
+Dropdown text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
-Dropdown text color when dark mode is `off`, on hover<br><br>
+<br>
+
+<br>
 
 ### --mbx-dropdown-text-color-hover-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#-mbx-dropdown-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-dark)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                            | <div style='text-align:center;margin:auto;'>Default</div>                                                                            |
-| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-background-hover](#--mbx-dropdown-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](../../global/css-vars.md#-mbx-text-color-hover-dark)</div> |
+Dropdown text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
-Dropdown text color when dark mode is `on`, on hover<br><br>
+<br>
+
+<br>
 
 ### --mbx-dropdown-arrow-color
 
-<br>
-
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `--mbx-dropdown-arrow-color-light` and `--mbx-dropdown-arrow-color-dark`<br><br>
+<br>
+
+Fallback value for `--mbx-dropdown-arrow-color-light` and `--mbx-dropdown-arrow-color-dark`
+
+<br>
+
+<br>
 
 ### --mbx-dropdown-arrow-color-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                            |
+| ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#-mbx-dropdown-arrow-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-light](#-mbx-dropdown-text-color-light)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                             |
-| ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#--mbx-dropdown-arrow-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-light](#--mbx-dropdown-text-color-light)</div> |
+Dropdown arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
-Dropdown arrow color when dark mode is `off`<br><br>
+<br>
+
+<br>
 
 ### --mbx-dropdown-arrow-color-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                          |
+| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#-mbx-dropdown-arrow-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-dark](#-mbx-dropdown-text-color-dark)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                  | <div style='text-align:center;margin:auto;'>Default</div>                                                           |
-| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color](#--mbx-dropdown-arrow-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-text-color-dark](#--mbx-dropdown-text-color-dark)</div> |
+Dropdown arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
-Dropdown arrow color when dark mode is `on`<br><br>
+<br>
+
+<br>
 
 ### --mbx-dropdown-arrow-color-hover
-
-<br>
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
-Fallback value for `--mbx-dropdown-arrow-color-hover-light` and `--mbx-dropdown-arrow-color-hover-dark`<br><br>
+<br>
+
+Fallback value for `--mbx-dropdown-arrow-color-hover-light` and `--mbx-dropdown-arrow-color-hover-dark`
+
+<br>
+
+<br>
 
 ### --mbx-dropdown-arrow-color-hover-light
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                             | <div style='text-align:center;margin:auto;'>Default</div>                                                              |
+| ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#-mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-light](#-mbx-dropdown-arrow-color-light)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                               |
-| ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#--mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-light](#--mbx-dropdown-arrow-color-light)</div> |
+Dropdown arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
-Dropdown arrow color when dark mode is `off`, on hover<br><br>
+<br>
+
+<br>
 
 ### --mbx-dropdown-arrow-color-hover-dark
 
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                             | <div style='text-align:center;margin:auto;'>Default</div>                                                            |
+| ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#-mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-dark](#-mbx-dropdown-arrow-color-dark)</div> |
+
 <br>
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                              | <div style='text-align:center;margin:auto;'>Default</div>                                                             |
-| ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-hover](#--mbx-dropdown-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dropdown-arrow-color-dark](#--mbx-dropdown-arrow-color-dark)</div> |
+Dropdown arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
 
-Dropdown arrow color when dark mode is `on`, on hover<br><br>
+<br>

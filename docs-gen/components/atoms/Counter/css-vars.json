@@ -3,12 +3,12 @@
     "description": "Fallback value for `mbx-counterbox-background-light` and `mbx-counterbox-background-dark`"
   },
   "--mbx-counterbox-background-light": {
-    "description": "Counter background when dark mode is off",
+    "description": "Counter background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "fallback": "--mbx-counterbox-background",
     "defaultGlobal": "--mbx-background-color-light"
   },
   "--mbx-counterbox-background-dark": {
-    "description": "Counter background when dark mode is on",
+    "description": "Counter background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "fallback": "--mbx-counterbox-background",
     "defaultGlobal": "--mbx-background-color-dark"
   },
@@ -16,12 +16,12 @@
     "description": "Fallback value for `mbx-counterbox-text-color-light` and `mbx-counterbox-text-color-dark`"
   },
   "--mbx-counterbox-text-color-light": {
-    "description": "Counter text color when dark mode is off",
+    "description": "Counter text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "fallback": "--mbx-counterbox-text-color",
     "defaultGlobal": "--mbx-text-color-light"
   },
   "--mbx-counterbox-text-color-dark": {
-    "description": "Counter text color when dark mode is on",
+    "description": "Counter text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "fallback": "--mbx-counterbox-text-color",
     "defaultGlobal": "--mbx-text-color-dark"
   },
@@ -29,12 +29,12 @@
     "description": "Fallback value for `mbx-counterbox-background-hover-light` and `mbx-counterbox-background-hover-dark`"
   },
   "--mbx-counterbox-background-hover-light": {
-    "description": "Counter background when dark mode is off, on hover",
+    "description": "Counter background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/#hover)",
     "fallback": "--mbx-counterbox-background-hover",
     "defaultGlobal": "--mbx-background-color-hover-light"
   },
   "--mbx-counterbox-background-hover-dark": {
-    "description": "Counter background when dark mode is on, on hover",
+    "description": "Counter background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/#hover)",
     "fallback": "--mbx-counterbox-background-hover",
     "defaultGlobal": "--mbx-background-color-hover-dark"
   },
@@ -42,12 +42,12 @@
     "description": "Fallback value for `mbx-counterbox-text-color-hover-light` and `mbx-counterbox-text-color-hover-dark`"
   },
   "--mbx-counterbox-text-color-hover-light": {
-    "description": "Counter text color when dark mode is off, on hover",
+    "description": "Counter text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/#hover)",
     "defaultGlobal": "--mbx-text-color-hover-light",
     "fallback": "--mbx-counterbox-text-color-hover"
   },
   "--mbx-counterbox-text-color-hover-dark": {
-    "description": "Counter text color when dark mode is on, on hover",
+    "description": "Counter text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/#hover)",
     "defaultGlobal": "--mbx-text-color-hover-dark",
     "fallback": "--mbx-counterbox-text-color-hover"
   }

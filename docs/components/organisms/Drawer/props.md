@@ -25,46 +25,62 @@
 
 <br>
 
-### position
-
 <br>
+
+### position
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>`left` &#124; `right` &#124; `top` &#124; `bottom` &#124; `top-left` &#124; `top-right` &#124; `bottom-left` &#124; `bottom-right`</div> | <div style='text-align:center;margin:auto;'>`left`</div> |
 
-Drawer position, relative to the entire window<br><br>
+<br>
 
-### onClose
+Drawer position, relative to the entire window
 
 <br>
+
+<br>
+
+### onClose
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
-callback triggered when Drawer is closed<br><br>
+<br>
 
-### children
+callback triggered when Drawer is closed
 
 <br>
+
+<br>
+
+### children
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>`(JSX.Element` &#124; `string`) &#124; (JSX.Element` &#124; `string`)[]</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Drawer content<br><br>
+<br>
 
-### closeOnClickOutside
+Drawer content
 
 <br>
+
+<br>
+
+### closeOnClickOutside
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>`boolean`</div> | <div style='text-align:center;margin:auto;'>true</div> |
 
-If `false`, the drawer won't be closed when clicking outside of it<br><br>
+<br>
+
+If `false`, the drawer won't be closed when clicking outside of it
+
+<br>

@@ -36,167 +36,227 @@
 
 <br>
 
-### onClose
-
 <br>
+
+### onClose
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
-Callback triggered when the X icon is clicked<br><br>
+<br>
 
-### alwaysVisible
+Callback triggered when the X icon is clicked
 
 <br>
+
+<br>
+
+### alwaysVisible
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
 
-If `true`, the DismissableCard won't disappear if the X icon is clicked (can be hidden with `hide` shared prop)<br><br>
+<br>
+
+If `true`, the DismissableCard won't disappear if the X icon is clicked (can be hidden with `hide` shared prop)
+
+<br>
+
+<br>
 
 ### header
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>JSX.Element &#124; string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Card header content - extended from [Card component](../../molecules/Card/props.md#header)<br><br>
+<br>
+
+Card header content - extended from [Card component](../../molecules/Card/props.md#header)
+
+<br>
+
+<br>
 
 ### body
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>JSX.Element &#124; string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Card body content - extended from [Card component](../../molecules/Card/props.md#body)<br><br>
+<br>
+
+Card body content - extended from [Card component](../../molecules/Card/props.md#body)
+
+<br>
+
+<br>
 
 ### footer
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>JSX.Element &#124; string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Card footer content - extended from [Card component](../../molecules/Card/props.md#footer)<br><br>
+<br>
+
+Card footer content - extended from [Card component](../../molecules/Card/props.md#footer)
+
+<br>
+
+<br>
 
 ### noDivider
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-If `true`, hide all dividers - extended from [Card component](../../molecules/Card/props.md#noDivider)<br><br>
+<br>
+
+If `true`, hide all dividers - extended from [Card component](../../molecules/Card/props.md#noDivider)
+
+<br>
+
+<br>
 
 ### noTopDivider
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-If `true`, hide the top divider, between header and body - extended from [Card component](../../molecules/Card/props.md#noTopDivider)<br><br>
+<br>
+
+If `true`, hide the top divider, between header and body - extended from [Card component](../../molecules/Card/props.md#noTopDivider)
+
+<br>
+
+<br>
 
 ### noBottomDivider
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-If `true`, hide the top divider, between body and footer - extended from [Card component](../../molecules/Card/props.md#noBottomDivider)<br><br>
+<br>
 
-### children
+If `true`, hide the top divider, between body and footer - extended from [Card component](../../molecules/Card/props.md#noBottomDivider)
 
 <br>
+
+<br>
+
+### children
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>`JSX.Element` &#124; `string`</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Card content - extended from [Card component](../../molecules/Card/props.md#children)<br><br>
+<br>
+
+Card content - extended from [Card component](../../molecules/Card/props.md#children)
+
+<br>
+
+<br>
 
 ### headerClassName
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom classname applied on the Card header - extended from [Card component](../../molecules/Card/props.md#headerClassName)<br><br>
+<br>
+
+Custom classname applied on the Card header - extended from [Card component](../../molecules/Card/props.md#headerClassName)
+
+<br>
+
+<br>
 
 ### bodyClassName
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom classname applied on the Card body - extended from [Card component](../../molecules/Card/props.md#bodyClassName)<br><br>
+<br>
+
+Custom classname applied on the Card body - extended from [Card component](../../molecules/Card/props.md#bodyClassName)
+
+<br>
+
+<br>
 
 ### footerClassName
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom classname applied on the Card footer - extended from [Card component](../../molecules/Card/props.md#footerClassName)<br><br>
+<br>
+
+Custom classname applied on the Card footer - extended from [Card component](../../molecules/Card/props.md#footerClassName)
+
+<br>
+
+<br>
 
 ### headerProps
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on the Card header - extended from [Card component](../../molecules/Card/props.md#headerProps)<br><br>
+<br>
+
+Custom props applied on the Card header - extended from [Card component](../../molecules/Card/props.md#headerProps)
+
+<br>
+
+<br>
 
 ### bodyProps
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on the Card body - extended from [Card component](../../molecules/Card/props.md#bodyProps)<br><br>
+<br>
+
+Custom props applied on the Card body - extended from [Card component](../../molecules/Card/props.md#bodyProps)
+
+<br>
+
+<br>
 
 ### footerProps
 
-<br>
-
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on the Card footer - extended from [Card component](../../molecules/Card/props.md#footerProps)<br><br>
+<br>
+
+Custom props applied on the Card footer - extended from [Card component](../../molecules/Card/props.md#footerProps)
+
+<br>

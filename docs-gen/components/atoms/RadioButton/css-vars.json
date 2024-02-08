@@ -3,12 +3,12 @@
     "description": "Fallback value for `mbx-radio-background-light` and `mbx-radio-background-dark`"
   },
   "--mbx-radio-background-light": {
-    "description": "RadioButton background when dark mode is off",
+    "description": "RadioButton background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "default": "radial-gradient(#f1f1f1 20%, #e4e4e4 30%, #bebebe 55%, #f0f0f0 20%)",
     "fallback": "--mbx-radio-background"
   },
   "--mbx-radio-background-dark": {
-    "description": "RadioButton background when dark mode is on",
+    "description": "RadioButton background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "default": "radial-gradient(closest-side, #2d3748 20%, #232b38 30%, #1d1f44 55%, #191f29 20%)",
     "fallback": "--mbx-radio-background"
   },
@@ -16,12 +16,12 @@
     "description": "Fallback value for `mbx-radio-background-hover-light` and `mbx-radio-background-hover-dark`"
   },
   "--mbx-radio-background-hover-light": {
-    "description": "RadioButton background when dark mode is off, on hover",
+    "description": "RadioButton background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultInternal": "--mbx-radio-background-light",
     "fallback": "--mbx-radio-background-hover"
   },
   "--mbx-radio-background-hover-dark": {
-    "description": "RadioButton background when dark mode is on, on hover",
+    "description": "RadioButton background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultInternal": "--mbx-radio-background-dark",
     "fallback": "--mbx-radio-background-hover"
   },
@@ -29,12 +29,12 @@
     "description": "Fallback value for `mbx-radio-icon-background-light` and `mbx-radio-icon-background-dark`"
   },
   "--mbx-radio-icon-background-light": {
-    "description": "RadioButton icon background when dark mode is off",
+    "description": "RadioButton icon background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "default": "radial-gradient(circle at 23px 23px, #2d3748, #191f29)",
     "fallback": "--mbx-radio-icon-background"
   },
   "--mbx-radio-icon-background-dark": {
-    "description": "RadioButton icon background when dark mode is on",
+    "description": "RadioButton icon background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "default": "radial-gradient(circle at 23px 23px, #dbe0e6, #949494)",
     "fallback": "--mbx-radio-icon-background"
   }

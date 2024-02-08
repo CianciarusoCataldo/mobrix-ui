@@ -3,12 +3,12 @@
     "description": "Fallback value for `mbx-rater-background-light` and `mbx-rater-background-dark`"
   },
   "--mbx-rater-background-light": {
-    "description": "Rater background when dark mode is off",
+    "description": "Rater background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-rater-background"
   },
   "--mbx-rater-background-dark": {
-    "description": "Rater background when dark mode is on",
+    "description": "Rater background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-rater-background"
   }

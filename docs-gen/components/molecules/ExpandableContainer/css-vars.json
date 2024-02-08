@@ -3,7 +3,7 @@
     "description": "Fallback value for `--mbx-expandablecontainer-background-light` and `--mbx-expandablecontainer-background-dark`"
   },
   "--mbx-expandablecontainer-background-light": {
-    "description": "ExpandableContainer background when dark mode is `off`",
+    "description": "ExpandableContainer background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultExternal": {
       "type": "molecules",
       "component": "container",
@@ -12,7 +12,7 @@
     "fallback": "--mbx-expandablecontainer-background"
   },
   "--mbx-expandablecontainer-background-dark": {
-    "description": "ExpandableContainer background when dark mode is `on`",
+    "description": "ExpandableContainer background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultExternal": {
       "type": "molecules",
       "component": "container",
@@ -24,7 +24,7 @@
     "description": "Fallback value for `--mbx-expandablecontainer-text-color-light` and `--mbx-expandablecontainer-text-color-dark`"
   },
   "--mbx-expandablecontainer-text-color-light": {
-    "description": "ExpandableContainer text color when dark mode is `off`",
+    "description": "ExpandableContainer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultExternal": {
       "type": "molecules",
       "component": "container",
@@ -33,7 +33,7 @@
     "fallback": "--mbx-expandablecontainer-text-color"
   },
   "--mbx-expandablecontainer-text-color-dark": {
-    "description": "ExpandableContainer text color when dark mode is `on`",
+    "description": "ExpandableContainer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultExternal": {
       "type": "molecules",
       "component": "container",
@@ -47,12 +47,12 @@
   "--mbx-expandablecontainer-arrow-color-light": {
     "defaultInternal": "--mbx-expandablecontainer-text-color-light",
     "fallback": "--mbx-expandablecontainer-arrow-color",
-    "description": "off"
+    "description": "ExpandableContainer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`"
   },
   "--mbx-expandablecontainer-arrow-color-dark": {
     "defaultInternal": "--mbx-expandablecontainer-text-color-dark",
     "fallback": "--mbx-expandablecontainer-arrow-color",
-    "description": "off"
+    "description": "ExpandableContainer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`"
   },
   "--mbx-expandablecontainer-arrow-color-hover": {
     "description": "Fallback value for `--mbx-expandablecontainer-arrow-color-hover-light` and `--mbx-expandablecontainer-arrow-color-hover-dark`"
@@ -60,11 +60,11 @@
   "--mbx-expandablecontainer-arrow-color-hover-light": {
     "defaultInternal": "--mbx-expandablecontainer-arrow-color-lrrowight",
     "fallback": "--mbx-expandablecontainer-arrow-color-hover",
-    "description": "off, on `hover`"
+    "description": "ExpandableContainer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)"
   },
   "--mbx-expandablecontainer-arrow-color-hover-dark": {
     "defaultInternal": "--mbx-expandablecontainer-a-color-dark",
     "fallback": "--mbx-expandablecontainer-arrow-color-hover",
-    "description": "off, on `hover`"
+    "description": "ExpandableContainer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)"
   }
 }

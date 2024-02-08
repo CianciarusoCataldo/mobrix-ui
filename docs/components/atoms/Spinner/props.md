@@ -23,24 +23,32 @@
 
 <br>
 
-### value
-
 <br>
+
+### value
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>'loading'</div> |
 
-Spinner status<br><br>
+<br>
 
-### statuses
+Spinner status
 
 <br>
+
+<br>
+
+### statuses
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string, (JSX.Element &#124; string)></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom statuses, to map every icon with a specific status<br><br>
+<br>
+
+Custom statuses, to map every icon with a specific status
+
+<br>

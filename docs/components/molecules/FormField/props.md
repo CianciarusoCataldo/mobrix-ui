@@ -30,25 +30,31 @@
 
 <br>
 
-### value
-
 <br>
+
+### value
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-FormField input content<br><br>
+<br>
 
-### type
+FormField input content
 
 <br>
+
+<br>
+
+### type
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>`boolean` &#124; `text` &#124; `numeric` &#124; `radio` &#124; `checkbox` &#124; `toggle` &#124; `rater` &#124; `slider` &#124; `input` &#124; `counter`</div> | <div style='text-align:center;margin:auto;'>'text'</div> |
+
+<br>
 
 The field type. It determines the UI component to be used to render it. Allowed types are:
 
@@ -61,81 +67,109 @@ The field type. It determines the UI component to be used to render it. Allowed 
 - `rater` (rendered as a Rater)
 - `slider` (rendered as a Slider)
 - `input` (rendered as a Input)
-- `counter` (rendered as a Counter)<br><br>
-
-### placeholder
+- `counter` (rendered as a Counter)
 
 <br>
+
+<br>
+
+### placeholder
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-<br><br>
-
-### required
+<br>
 
 <br>
+
+<br>
+
+### required
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-If true, the field switch to error state if its value is empty<br><br>
+<br>
 
-### validate
+If true, the field switch to error state if its value is empty
 
 <br>
+
+<br>
+
+### validate
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>(fieldValue: any) => boolean</div> | <div style='text-align:center;margin:auto;'>() => ˚{}</div> |
 
-Custom validation function called on submit<br><br>
+<br>
 
-### header
+Custom validation function called on submit
 
 <br>
+
+<br>
+
+### header
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>`JSX.Element` &#124; `string`</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Form field header<br><br>
+<br>
 
-### headerClassName
+Form field header
 
 <br>
+
+<br>
+
+### headerClassName
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom classname applied on every header element<br><br>
+<br>
 
-### headerProps
+Custom classname applied on every header element
 
 <br>
+
+<br>
+
+### headerProps
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom props applied on every header element (including MoBrix-ui shared props)<br><br>
+<br>
 
-### errorLabel
+Custom props applied on every header element (including MoBrix-ui shared props)
 
 <br>
+
+<br>
+
+### errorLabel
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>`JSX.Element` &#124; `string`</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-Custom error box content, displayed when FormField is in error state<br><br>
+<br>
+
+Custom error box content, displayed when FormField is in error state
+
+<br>

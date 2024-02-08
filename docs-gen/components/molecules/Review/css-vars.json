@@ -3,12 +3,12 @@
     "description": "Fallback value for `--mbx-review-background-light` and `--mbx-review-background-dark`"
   },
   "--mbx-review-background-light": {
-    "description": "Review background when [dark](../../global/props.md#dark) mode is `off`",
+    "description": "Review background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultGlobal": "--mbx-background-light",
     "fallback": "--mbx-review-background"
   },
   "--mbx-review-background-dark": {
-    "description": "Review background when [dark](../../global/props.md#dark) mode is `on`",
+    "description": "Review background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-review-background"
   },
@@ -16,12 +16,12 @@
     "description": "Fallback value for `--mbx-review-text-color-light` and `--mbx-review-text-color-dark`"
   },
   "--mbx-review-text-color-light": {
-    "description": "Review text color when [dark](../../global/props.md#dark) mode is `off`",
+    "description": "Review text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultGlobal": "--mbx-text-color-light",
     "fallback": "--mbx-review-text-color"
   },
   "--mbx-review-text-color-dark": {
-    "description": "Review text color when [dark](../../global/props.md#dark) mode is `on`",
+    "description": "Review text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultGlobal": "--mbx-text-color-dark",
     "fallback": "--mbx-review-text-color"
   },
@@ -29,12 +29,12 @@
     "description": "Fallback value for `--mbx-review-link-color-light` and `--mbx-review-link-color-dark`"
   },
   "--mbx-review-link-color-light": {
-    "description": "Review link color when [dark](../../global/props.md#dark) mode is `off`",
+    "description": "Review link color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultColor": "#615f5f",
     "fallback": "--mbx-review-link-color"
   },
   "--mbx-review-link-color-dark": {
-    "description": "Review link color when [dark](../../global/props.md#dark) mode is `on`",
+    "description": "Review link color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultColor": "white",
     "fallback": "--mbx-review-link-color"
   },
@@ -42,12 +42,12 @@
     "description": "Fallback value for `--mbx-review-github-color-light` and `--mbx-review-github-color-dark`"
   },
   "--mbx-review-github-color-light": {
-    "description": "Review github icon color when [dark](../../global/props.md#dark) mode is `on`",
+    "description": "Review github icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultColor": "#615f5f",
     "fallback": "--mbx-review-github-color"
   },
   "--mbx-review-github-color-dark": {
-    "description": "Review github icon color when [dark](../../global/props.md#dark) mode is `off`",
+    "description": "Review github icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultColor": "white",
     "fallback": "--mbx-review-github-color"
   }

@@ -23,24 +23,32 @@
 
 <br>
 
-### children
-
 <br>
+
+### children
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>any</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
-content to render inside Container<br><br>
+<br>
 
-### wrapper
+content to render inside Container
 
 <br>
+
+<br>
+
+### wrapper
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>`div` &#124; `header` &#124; `footer`</div> | <div style='text-align:center;margin:auto;'>div</div> |
 
-component wrapper type<br><br>
+<br>
+
+component wrapper type
+
+<br>

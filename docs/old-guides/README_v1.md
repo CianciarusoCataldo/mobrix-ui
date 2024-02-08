@@ -1,4 +1,4 @@
-# MoBrix-ui - V1
+# MoBrix-ui - V1 guide
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2025?label=Maintained&style=for-the-badge)
 
@@ -169,4 +169,4 @@ Unit tests for every component are located inside `tests` folder. The test scrip
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://cianciarusocataldo.github.io/mobrix-ui/docs/License) file for details

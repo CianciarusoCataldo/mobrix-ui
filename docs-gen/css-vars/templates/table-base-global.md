@@ -1,9 +1,0 @@
-<br>
-
-### COMPONENT_NAME
-
-<br>
-
-COMPONENT_TABLE
-
-<br>

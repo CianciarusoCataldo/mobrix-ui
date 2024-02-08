@@ -28,13 +28,13 @@ Smart React components for every app, easily customizable for every purpose.
 
 > ## Note for MoBrix-ui v1 user
 >
-> MoBrix-ui v2 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 1.X.X, please read the [dedicated guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/#/v1_guide), or upgrade it to v3.X.X!
+> MoBrix-ui v2 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 1.X.X, please read the [dedicated guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/old-guides/v1_guide), or upgrade it to v3.X.X!
 
 <br>
 
 > ## Note for MoBrix-ui v2 user
 >
-> MoBrix-ui v3 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 2.X.X, please read the [dedicated guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/#/v2_guide), or upgrade it to v3.X.X!
+> MoBrix-ui v3 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 2.X.X, please read the [dedicated guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/old-guides/v2_guide), or upgrade it to v3.X.X!
 
 <br>
 
@@ -46,7 +46,7 @@ Smart React components for every app, easily customizable for every purpose.
 - [Components building process](#components-building-process)
   - [Shared Properties](#shared-properties)
   - [Accessibility properties](#accessibility-properties)
-  - [CSS variables](#css-variables)
+  - [Shared CSS variables](#shared-css-variables)
   - [Reactive components](#reactive-components)
 - [Getting started](#getting-started)
   - [Installation](#installation)
@@ -56,6 +56,12 @@ Smart React components for every app, easily customizable for every purpose.
 - [License](#license)
 
 <br>
+
+---
+
+<br>
+
+Check out the [official MoBrix-ui guide page](https://cianciarusocataldo.github.io/mobrix-ui/docs) for more details
 
 ---
 
@@ -74,12 +80,6 @@ The same concepts are also the base of another project I maintain, [MoBrix-engin
 
 ---
 
-<br>
-
-Check out the [official MoBrix-ui guide page](https://cianciarusocataldo.github.io/mobrix-ui/docs) for more details
-
----
-
 ## Components building process
 
 This library use a standardized process to build every component. As result, every component has a shared initial logic, shared CSS styles and shared properties.
@@ -94,21 +94,22 @@ Some properties are shared between all components, for a smoother dev experience
 <br>
 
 <!-- prettier-ignore -->
+<!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ----------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[key](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/props/#key)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[className](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/props/#classname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/props/#dark)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[hide](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/props/#hide)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[id](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/props/#id)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[shadow](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/props/#shadow)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
-| <div style='text-align:center;margin:auto;'>[style](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/props/#style)</div> | <div style='text-align:center;margin:auto;'>CSSProperties</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[unstyled](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/props/#unstyled)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[animated](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/props/#animated)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
-| <div style='text-align:center;margin:auto;'>[background](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/props/#background)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
-| <div style='text-align:center;margin:auto;'>[hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/props/#hover)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
-| <div style='text-align:center;margin:auto;'>[disabled](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/props/#disabled)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[additionalProps](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/props/#additionalprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[key](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#key)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[className](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#classname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
+| <div style='text-align:center;margin:auto;'>[hide](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hide)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
+| <div style='text-align:center;margin:auto;'>[id](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#id)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[shadow](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#shadow)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[style](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#style)</div> | <div style='text-align:center;margin:auto;'>CSSProperties</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[unstyled](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#unstyled)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
+| <div style='text-align:center;margin:auto;'>[animated](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#animated)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[background](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#background)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[disabled](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#disabled)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
+| <div style='text-align:center;margin:auto;'>[additionalProps](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#additionalprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -116,7 +117,7 @@ Check out the [complete properties list](https://cianciarusocataldo.github.io/mo
 
 <br>
 
-### CSS variables
+### Shared CSS variables
 
 <br>
 
@@ -145,10 +146,6 @@ MoBrix-ui is globally configurable, with CSS variables. By defining some specifi
 | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/css-vars/#-mbx-focus-color)</div>                                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
 | <div style='text-align:center;margin:auto;'>[--mbx-focus-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/css-vars/#-mbx-focus-color-light)</div>                       | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/css-vars/#-mbx-focus-color)</div>                       | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#7785ff</div><div style='text-align:center;margin-auto;'><div style='background:#7785ff;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-focus-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/css-vars/#-mbx-focus-color-dark)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/global/css-vars/#-mbx-focus-color)</div>                       | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#fb7a10</div><div style='text-align:center;margin-auto;'><div style='background:#fb7a10;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
-
-<br>
-
-Check out the [complete css variables list](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/css-vars/) for more details
 
 <br>
 
@@ -262,9 +259,7 @@ Unit tests for every component are located inside `tests` folder. The test scrip
 
 - [**Cataldo Cianciaruso**](https://github.com/CianciarusoCataldo)
 
-<br>
-
----
+## <br>
 
 ## License
 
