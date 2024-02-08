@@ -256,4 +256,4 @@ Unit tests for every component are located inside `tests` folder. The test scrip
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://cianciarusocataldo.github.io/mobrix-ui/docs/License) file for details

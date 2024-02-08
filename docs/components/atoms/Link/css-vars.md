@@ -30,7 +30,7 @@
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 
@@ -42,9 +42,9 @@ Fallback value for `mbx-link-color-light` and `mbx-link-color-dark`
 
 ### --mbx-link-color-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                             | <div style='text-align:center;margin:auto;'>Default</div> |
-| -------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-link-color](#-mbx-link-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
+| -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-link-color](#-mbx-link-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
 
 <br>
 
@@ -56,9 +56,9 @@ Link text color when dark mode is off
 
 ### --mbx-link-color-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                             | <div style='text-align:center;margin:auto;'>Default</div> |
-| -------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-link-color](#-mbx-link-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-link-color](#-mbx-link-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div> |
 
 <br>
 
@@ -72,7 +72,7 @@ Link text color when dark mode is on
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 
@@ -84,9 +84,9 @@ Fallback value for `mbx-link-color-hover-light` and `mbx-link-color-hover-dark`
 
 ### --mbx-link-color-hover-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div> |
-| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-link-color-hover](#-mbx-link-color-hover)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div>                                          |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-link-color-hover](#-mbx-link-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-link-color-light](#-mbx-link-color-light)</div> |
 
 <br>
 
@@ -98,9 +98,9 @@ Link text color when dark mode is off, on hover
 
 ### --mbx-link-color-hover-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div> |
-| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-link-color-hover](#-mbx-link-color-hover)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div>                                        |
+| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[--mbx-link-color-hover](#-mbx-link-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-link-color-dark](#-mbx-link-color-dark)</div> |
 
 <br>
 

@@ -36,7 +36,7 @@
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 
@@ -48,9 +48,9 @@ Fallback value for `--mbx-drawer-background-light` and `--mbx-drawer-background-
 
 ### --mbx-drawer-background-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-drawer-background](#-mbx-drawer-background)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-drawer-background](#-mbx-drawer-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div> |
 
 <br>
 
@@ -62,9 +62,9 @@ Drawer background when [dark](../../global/props.md#dark) mode is `off`
 
 ### --mbx-drawer-background-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-drawer-background](#-mbx-drawer-background)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
+| ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-drawer-background](#-mbx-drawer-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div> |
 
 <br>
 
@@ -78,7 +78,7 @@ Drawer background when [dark](../../global/props.md#dark) mode is `on`
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 
@@ -90,9 +90,9 @@ Fallback value for `--mbx-drawer-text-color-light` and `--mbx-drawer-text-color-
 
 ### --mbx-drawer-text-color-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-drawer-text-color](#-mbx-drawer-text-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-drawer-text-color](#-mbx-drawer-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
 
 <br>
 
@@ -104,9 +104,9 @@ Drawer text color when [dark](../../global/props.md#dark) mode is `off`
 
 ### --mbx-drawer-text-color-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-drawer-text-color](#-mbx-drawer-text-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
+| ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-drawer-text-color](#-mbx-drawer-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div> |
 
 <br>
 
@@ -120,7 +120,7 @@ Drawer text color when [dark](../../global/props.md#dark) mode is `on`
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 
@@ -132,9 +132,9 @@ Fallback value for `--mbx-drawer-arrow-light` and `--mbx-drawer-arrow-dark`
 
 ### --mbx-drawer-arrow-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                 | <div style='text-align:center;margin:auto;'>Default</div> |
-| ------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-drawer-arrow](#-mbx-drawer-arrow)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                        |
+| ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-drawer-arrow](#-mbx-drawer-arrow)</div> | <div style='text-align:center;margin:auto;'>[--mbx-drawer-text-color-light](#-mbx-drawer-text-color-light)</div> |
 
 <br>
 
@@ -146,9 +146,9 @@ Drawer arrow color when [dark](../../global/props.md#dark) mode is `off`
 
 ### --mbx-drawer-arrow-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                 | <div style='text-align:center;margin:auto;'>Default</div> |
-| ------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-drawer-arrow](#-mbx-drawer-arrow)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                      |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-drawer-arrow](#-mbx-drawer-arrow)</div> | <div style='text-align:center;margin:auto;'>[--mbx-drawer-text-color-dark](#-mbx-drawer-text-color-dark)</div> |
 
 <br>
 
@@ -162,7 +162,7 @@ Drawer arrow color when [dark](../../global/props.md#dark) mode is `on`
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 
@@ -176,7 +176,7 @@ Fallback value for `--mbx-drawer-arrow-hover-light` and `--mbx-drawer-arrow-hove
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                             | <div style='text-align:center;margin:auto;'>Default</div> |
 | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-drawer-arrow-hover](#-mbx-drawer-arrow-hover)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-drawer-arrow-hover](#-mbx-drawer-arrow-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 
@@ -190,7 +190,7 @@ Drawer arrow color when [dark](../../global/props.md#dark) mode is `off`, on `ho
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                             | <div style='text-align:center;margin:auto;'>Default</div> |
 | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-drawer-arrow-hover](#-mbx-drawer-arrow-hover)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-drawer-arrow-hover](#-mbx-drawer-arrow-hover)</div> | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 

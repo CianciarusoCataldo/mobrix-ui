@@ -33,7 +33,7 @@
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 
@@ -47,7 +47,7 @@ Fallback value for `--mbx-spinner-success-color-light` and `--mbx-spinner-succes
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div> |
 | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-color](#-mbx-spinner-success-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-color](#-mbx-spinner-success-color)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |
 
 <br>
 
@@ -61,7 +61,7 @@ Spinner success color when dark mode is off
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div> |
 | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-color](#-mbx-spinner-success-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-color](#-mbx-spinner-success-color)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |
 
 <br>
 
@@ -75,7 +75,7 @@ Spinner success color when dark mode is on
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 
@@ -89,7 +89,7 @@ Fallback value for `--mbx-spinner-error-color-light` and `--mbx-spinner-error-co
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div> |
 | -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-error-color](#-mbx-spinner-error-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-error-color](#-mbx-spinner-error-color)</div> | <div style='text-align:center;margin:auto;'>#ff0000</div> |
 
 <br>
 
@@ -103,7 +103,7 @@ Spinner error color when dark mode is off
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div> |
 | -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-error-color](#-mbx-spinner-error-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-error-color](#-mbx-spinner-error-color)</div> | <div style='text-align:center;margin:auto;'>#ff0000</div> |
 
 <br>
 
@@ -117,7 +117,7 @@ Spinner error color when dark mode is on
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
 
 <br>
 
@@ -131,7 +131,7 @@ Fallback value for `--mbx-spinner-loading-color-light` and `--mbx-spinner-loadin
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div> |
 | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading-color](#-mbx-spinner-loading-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading-color](#-mbx-spinner-loading-color)</div> | <div style='text-align:center;margin:auto;'>#202020</div> |
 
 <br>
 
@@ -145,7 +145,7 @@ Spinner loading color when dark mode is off
 
 | <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div> |
 | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading-color](#-mbx-spinner-loading-color)</div> | <div style='text-align:center;margin:auto;'>DEFAULT</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading-color](#-mbx-spinner-loading-color)</div> | <div style='text-align:center;margin:auto;'>#202020</div> |
 
 <br>
 

@@ -95,21 +95,17 @@ try {
       ) {
         const externalComponent =
           componentCssVars[cssVar].defaultExternal.component;
-        const propNameIndex = componentCssVars[
-          cssVar
-        ].defaultExternal.prop.replace("--mbx", "-mbx");
         const propName = componentCssVars[cssVar].defaultExternal.prop;
-        defaultValue = `[${propName}](../../${componentCssVars[cssVar].defaultExternal.type}/${externalComponent}/css-vars.md#${propNameIndex})`;
+        defaultValue = `[${propName}](https://cianciarusocataldo.github.io/mobrix-ui/docs/${componentCssVars[cssVar].defaultExternal.type}/${externalComponent}/css-vars.md#${propName.replace("--mbx", "-mbx")})`;
       } else if (componentCssVars[cssVar].default) {
-        const defaultInline = componentCssVars[cssVar].default;
-        defaultValue = defaultInline;
+        defaultValue = componentCssVars[cssVar].default;
       }
 
       outputCssTable += `${CSS_TABLE_ROW.replace("PROP_NAME", propName).replace("FALLBACK", fallback).replace("DEFAULT", defaultValue)}`;
       readmeCssTable += `${CSS_TABLE_ROW.replace("PROP_NAME", readmePropName).replace("FALLBACK", readmeFallback).replace("DEFAULT", defaultValue)}`;
       outputCssList += `\n\n\<br>\n\n### ${cssVar}\n\n`;
       outputCssList += `${CSS_TEMPLATE_TABLE_HEADER_MINI}`;
-      outputCssList += `${CSS_TEMPLATE_TABLE_ROW_MINI.replace("FALLBACK", fallback)}\n\n<br>\n\n`;
+      outputCssList += `${CSS_TEMPLATE_TABLE_ROW_MINI.replace("FALLBACK", fallback).replace("DEFAULT", defaultValue)}\n\n<br>\n\n`;
       outputCssList += `${componentCssVars[cssVar].description}\n\n<br>\n\n`;
     });
 

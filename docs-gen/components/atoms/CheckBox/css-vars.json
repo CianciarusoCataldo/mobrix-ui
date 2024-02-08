@@ -3,12 +3,12 @@
     "description": "Fallback value for `mbx-checkbox-background-light` and `mbx-checkbox-background-dark`"
   },
   "--mbx-checkbox-background-light": {
-    "description": "CheckBox background when dark mode is off",
+    "description": "CheckBox background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "fallback": "--mbx-checkbox-background",
     "defaultGlobal": "--mbx-background-light"
   },
   "--mbx-checkbox-background-dark": {
-    "description": "CheckBox background when dark mode is on",
+    "description": "CheckBox background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "fallback": "--mbx-checkbox-background",
     "defaultGlobal": "--mbx-background-dark"
   },
@@ -16,12 +16,12 @@
     "description": "Fallback value for `mbx-checkbox-background-hover-light` and `mbx-checkbox-background-hover-dark`"
   },
   "--mbx-checkbox-background-hover-light": {
-    "description": "CheckBox background when dark mode is off, on hover",
+    "description": "CheckBox background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/#hover)",
     "fallback": "--mbx-checkbox-background-hover",
     "defaultGlobal": "--mbx-background-hover-light"
   },
   "--mbx-checkbox-background-hover-dark": {
-    "description": "CheckBox background when dark mode is on, on hover",
+    "description": "CheckBox background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/#hover)",
     "fallback": "--mbx-checkbox-background-hover",
     "defaultGlobal": "--mbx-background-hover-dark"
   },
@@ -29,12 +29,12 @@
     "description": "Fallback value for `mbx-checkbox-tick-color-light` and `mbx-checkbox-tick-color-dark`"
   },
   "--mbx-checkbox-tick-color-light": {
-    "description": "CheckBox tick color when dark mode is off",
+    "description": "CheckBox tick color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "fallback": "--mbx-checkbox-tick-color",
     "defaultColor": "rgb(37, 99, 235)"
   },
   "--mbx-checkbox-tick-color-dark": {
-    "description": "CheckBox tick color when dark mode is on",
+    "description": "CheckBox tick color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "fallback": "--mbx-checkbox-tick-color",
     "defaultColor": "white"
   }
