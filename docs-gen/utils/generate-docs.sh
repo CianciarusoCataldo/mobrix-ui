@@ -58,6 +58,9 @@ for type in $(
         export COMPONENT_NAME="$component"
         export COMPONENT_TYPE="$type"
 
+        node "$SCRIPTS_DIR/update-props.js"
+        node "$SCRIPTS_DIR/update-css-vars.js"
+
         echo " - [$component](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/$type/$component/)" >>"$typeDir"/index.md
 
         cp "$TEMPLATE_DIR"/index-component.md "$COMPONENT_DIR"/index.md
@@ -74,12 +77,10 @@ for type in $(
 
 done
 
-npm run docs:format
-
 rm -rf README.md
 rm -rf "$OUTPUT_ROOT_DIR"/index.md
 rm -rf "$OUTPUT_ROOT_DIR"/Changelog.md
-rm -rf  "$OUTPUT_ROOT_DIR"/License.md
+rm -rf "$OUTPUT_ROOT_DIR"/License.md
 rm -rf playground/public/docs
 mkdir playground/public/docs
 
@@ -118,6 +119,8 @@ rm -rf README_TEMP.md
 
 cp -a CHANGELOG.md "$OUTPUT_ROOT_DIR"/Changelog.md
 cp -a LICENSE "$OUTPUT_ROOT_DIR"/License.md
+
+npx prettier --log-level silent --write src/components/*/*/*.ts src/components/*/*/*.tsx README.md "$OUTPUT_ROOT_DIR"/index.md "$OUTPUT_ROOT_DIR"/**/*.md "$OUTPUT_ROOT_DIR"/*/**/*.md "$OUTPUT_ROOT_DIR"/*/*/*.md "$OUTPUT_ROOT_DIR"/*/*/*/*.md "$COMPONENTS_SETTINGS_DIR"/*/*/*.json
 
 python3 -m mkdocs build --quiet -d playground/public/docs
 

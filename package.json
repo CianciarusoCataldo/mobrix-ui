@@ -84,15 +84,7 @@
     "predeploy": "sh ./scripts/pre-deploy.sh",
     "deploy": "sh ./scripts/deploy.sh",
     "test": "sh ./scripts/start-tests.sh",
-    "docs:setup": "sh ./docs-gen/utils/setup-docs.sh",
-    "docs:format": "prettier --log-level silent --write docs/**/*.md docs/*/**/*.md docs/*/*/*.md docs/*/*/*/*.md docs-gen/components/*/*/*.json",
-    "docs:generate-props": "npm run update:props && sh ./docs-gen/props/generate-props.sh",
-    "docs:generate-css-vars": "npm run update:css-vars && sh ./docs-gen/css-vars/generate-css-vars-list.sh",
-    "docs:generate-readme": "sh ./docs-gen/readme/generate-readme.sh && prettier --write README.md",
-    "update:props": "sh ./docs-gen/utils/update-props.sh && prettier --log-level silent --write docs-gen/components/*/*/props.json",
-    "update:css-vars": "sh ./docs-gen/utils/update-css-vars.sh && prettier --log-level silent --write docs-gen/components/*/*/css-vars.json",
-    "update:comments": "sh ./docs-gen/utils/update-comments.sh && npm run format:code",
-    "format:code": "prettier --log-level silent --write src/components/*/*/*.ts src/components/*/*/*.tsx",
+    "generate-docs": "sh docs-gen/utils/generate-docs.sh",
     "update:package-json": "json -I -f package.json -e"
   }
 }
