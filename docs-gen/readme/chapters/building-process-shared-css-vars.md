@@ -1,10 +1,10 @@
-### Shared Properties
+### CSS variables
 
 <br>
 
+MoBrix-ui is globally configurable, with CSS variables. By defining some specific custom CSS variables into your app css, you'll change the UI of all components:
 
-<!-- prettier-ignore -->
-| <div style='text-align:center;margin:auto;'>Prop</div> | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| <div style='text-align:center;margin:auto;'>Css variable</div> | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ------------------------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-background](https://cianciarusocataldo.github.io/mobrix-ui/docs/undefined/undefined/#-mbx-background)</div> | <div style='text-align:center;margin:auto;'>/</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/undefined/undefined/#-mbx-background-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>linear-gradient(to right, #fff, #ededee, #e6e7e7)</div><div style='text-align:center;margin-auto;'><div style='background:linear-gradient(to right, #fff, #ededee, #e6e7e7);margin:auto; width:15px; height:15px;'/></div></div></div> |
@@ -31,4 +31,4 @@
 
 <br>
 
-Check out the [complete properties list](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/props/) for more details
+Check out the [complete css variables list](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/css-vars/) for more details

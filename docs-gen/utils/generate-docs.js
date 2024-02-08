@@ -1,9 +1,5 @@
 const fs = require("fs");
 
-const OUTPUT_ROOT_DIR = process.env["OUTPUT_ROOT_DIR"];
-const COMPONENTS_FILES_DIR = process.env["COMPONENTS_FILES_DIR"];
-const COMPONENTS_DOCS_DIR = process.env["COMPONENTS_DOCS_DIR"];
-const COMPONENT_INDEX_EXTENSION = process.env["COMPONENT_INDEX_EXT"];
 const COMPONENT_NAME = process.env["COMPONENT_NAME"];
 const COMPONENT_TYPE = process.env["COMPONENT_TYPE"];
 const COMPONENT_DIR = process.env["COMPONENT_DIR"];
@@ -162,6 +158,11 @@ try {
       "utf8"
     );
 
+    let componentMainPage = fs.readFileSync(
+      COMPONENT_DIR + "/index.md",
+      "utf8"
+    );
+
     const componentSettings = require(
       "../../" +
         COMPONENTS_SETTINGS_DIR +
@@ -202,8 +203,14 @@ try {
     componentPropsPage = componentPropsPage
       .replace("COMPONENT_TABLE", propsTable)
       .replace("COMPONENT_LIST", propsList);
+
+    componentMainPage = componentMainPage.replace(
+      "DESCRIPTION",
+      componentSettings.description || ""
+    );
     fs.writeFileSync(COMPONENT_DIR + "/css-vars.md", componentCssPage);
     fs.writeFileSync(COMPONENT_DIR + "/props.md", componentPropsPage);
+    fs.writeFileSync(COMPONENT_DIR + "/index.md", componentMainPage);
   } else if (process.env["PARSE_MODE"] === "global") {
     const TEMPLATE_README_CSS_VARS = fs.readFileSync(
       TEMPLATE_DIR + "/building-process-shared-css-vars.md",
@@ -228,6 +235,7 @@ try {
     );
 
     let sharedPropsPage = fs.readFileSync(SHARED_DIR + "/props.md", "utf8");
+    let sharedMainPage = fs.readFileSync(SHARED_DIR + "/index.md", "utf8");
 
     const { propsList, propsTable, readmePropsTable } = parseProps(sharedProps);
     const { cssVarsList, cssVarsTable, readmeCssTable } =
@@ -247,13 +255,18 @@ try {
     );
 
     fs.writeFileSync(
+      SHARED_DIR + "/index.md",
+      sharedMainPage.replace("DESCRIPTION", "")
+    );
+
+    fs.writeFileSync(
       README_CHAPTERS_DIR + "/building-process-shared-props.md",
       TEMPLATE_README_PROPS.replace("SHARED_PROPS", readmePropsTable)
     );
 
     fs.writeFileSync(
       README_CHAPTERS_DIR + "/building-process-shared-css-vars.md",
-      TEMPLATE_README_PROPS.replace("SHARED_PROPS", readmeCssTable)
+      TEMPLATE_README_CSS_VARS.replace("SHARED_CSS_VARS", readmeCssTable)
     );
   }
 } catch (e) {

@@ -1,4 +1,4 @@
-### CSS variables
+### Shared CSS variables
 
 <br>
 

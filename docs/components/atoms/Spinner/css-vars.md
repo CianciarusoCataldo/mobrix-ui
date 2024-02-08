@@ -11,7 +11,7 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Prop</div>                                                                   | <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div> |
+| <div style='text-align:center;margin:auto;'>Css variable</div>                                                           | <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div> |
 | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
 | <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-color](#-mbx-spinner-success-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                          | <div style='text-align:center;margin:auto;'>/</div>       |
 | <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-color-light](#-mbx-spinner-success-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-color](#-mbx-spinner-success-color)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |

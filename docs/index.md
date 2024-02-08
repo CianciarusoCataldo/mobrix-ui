@@ -92,7 +92,7 @@ Check out the [complete properties list](https://cianciarusocataldo.github.io/mo
 
 <br>
 
-### CSS variables
+### Shared CSS variables
 
 <br>
 

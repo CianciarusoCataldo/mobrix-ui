@@ -46,7 +46,7 @@ Smart React components for every app, easily customizable for every purpose.
 - [Components building process](#components-building-process)
   - [Shared Properties](#shared-properties)
   - [Accessibility properties](#accessibility-properties)
-  - [CSS variables](#css-variables)
+  - [Shared CSS variables](#shared-css-variables)
   - [Reactive components](#reactive-components)
 - [Getting started](#getting-started)
   - [Installation](#installation)
@@ -119,7 +119,7 @@ Check out the [complete properties list](https://cianciarusocataldo.github.io/mo
 
 <br>
 
-### CSS variables
+### Shared CSS variables
 
 <br>
 
