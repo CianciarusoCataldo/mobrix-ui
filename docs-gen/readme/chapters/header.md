@@ -11,16 +11,11 @@ Smart React components for every app, easily customizable for every purpose.
 ![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/mobrix-ui?label=Package%20size&style=for-the-badge&logo=npm)
 ![Maintenance](https://img.shields.io/maintenance/yes/2025?label=Maintained&style=for-the-badge)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg?logo=jest&style=for-the-badge)](https://github.com/facebook/jest)
+<a href="https://snyk.io/test/github/CianciarusoCataldo/mobrix-ui">
+<img src="https://snyk.io/test/github/CianciarusoCataldo/mobrix-ui/badge.svg?targetFile=package.json&style=for-the-badge" height="27px"/>
+</a>
 
 <br>
-
----
-
-## Status
-
-<a href="https://snyk.io/test/github/CianciarusoCataldo/mobrix-ui">
-<img src="https://snyk.io/test/github/CianciarusoCataldo/mobrix-ui/badge.svg?targetFile=package.json&style=flat-square" height="27px"/>
-</a>
 
 ---
 
