@@ -4,7 +4,7 @@ import { IconButtonComponent } from "../../../types/components/atoms/icon-button
 import { buildMbxStandardComponent } from "../../../tools/utils";
 
 /**
- *
+ * An empty button, without additional styles, to make an icon clickable
  *
  * @param {JSX.Element | string} children Button content - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Button Button}
  * @param {() => void} onMouseEnter This callback is triggered everytime the cursor enter the button area - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Button Button}
@@ -30,7 +30,7 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/IconButton
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
- * @since
+ * @since 3.0.0
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *

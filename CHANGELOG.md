@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.3.0](#330)
 - [3.2.0](#320)
 - [3.1.0](#310)
 - [3.0.0](#300)
@@ -19,10 +20,17 @@
 
 <br>
 
+### 3.3.0
+
+- Slider fix
+- IconButton highlight fix on mobile
+- All components now use new building functions (`buildMbxReactiveComponent` and `buildMbxStandardComponent`)
+
+<br>
+
 ### 3.2.0
 
 - New DatePicker css vars, to customize its internal modal
-
   - `--mbx-datepicker-modal-background-light`,
   - `--mbx-datepicker-modal-background-dark`,
   - `--mbx-datepicker-modal-x-color-light`,

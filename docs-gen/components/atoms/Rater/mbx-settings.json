@@ -1,6 +1,6 @@
 {
   "since": "1.0.0",
-  "description": "",
+  "description": "A modern rater component, to let the user leave a review within your app",
   "see": [],
   "examples": [],
   "extend": {

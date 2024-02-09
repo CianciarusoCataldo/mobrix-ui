@@ -1,7 +1,1 @@
-export {
-  buildMobrixUiReactiveComponent,
-  buildMobrixUiStandardComponent,
-  parseCommonProps,
-  buildMbxReactiveComponent,
-  buildMbxStandardComponent,
-} from "./utils";
+export { buildMbxReactiveComponent, buildMbxStandardComponent } from "./utils";

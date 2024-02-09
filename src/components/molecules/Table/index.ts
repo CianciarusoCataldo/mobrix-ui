@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { TableComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "../../../tools";
+import { buildMbxStandardComponent } from "../../../tools";
 
 import tableComponent from "./component";
 
@@ -58,7 +58,7 @@ const Table: TableComponent = ({
   additionalProps,
   ...commonProps
 }) =>
-  buildMobrixUiStandardComponent({
+  buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "table",
     Component: tableComponent({
       propsCallback,
@@ -71,11 +71,11 @@ const Table: TableComponent = ({
       cellProps,
       rowProps,
       headersProps,
-      ...commonProps,
+      ...sharedProps,
     }),
-    commonProps,
+    commonProps: sharedProps,
     additionalProps,
     wrapper: "table",
-  });
+  }));
 
 export default Table;

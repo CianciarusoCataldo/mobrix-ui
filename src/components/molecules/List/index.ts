@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { ListComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "../../../tools";
+import { buildMbxStandardComponent } from "../../../tools";
 
 import listComponent from "./component";
 
@@ -43,11 +43,11 @@ const List: ListComponent = ({
   additionalProps,
   ...commonProps
 }) =>
-  buildMobrixUiStandardComponent({
+  buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "list",
     Component: listComponent({ elements, onClick, ...commonProps }),
     additionalProps,
-    commonProps: { ...commonProps, shadow: false },
-  });
+    commonProps: { ...sharedProps, shadow: false },
+  }));
 
 export default List;

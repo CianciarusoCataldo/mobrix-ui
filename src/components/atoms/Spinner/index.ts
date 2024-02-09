@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { SpinnerComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "../../../tools";
+import { buildMbxStandardComponent } from "../../../tools";
 
 import defaultIcons from "./icons";
 
@@ -43,14 +43,14 @@ const Spinner: SpinnerComponent = ({
   additionalProps,
   ...commonProps
 }) =>
-  buildMobrixUiStandardComponent({
+  buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "spinner",
-    commonProps,
+    commonProps: sharedProps,
     additionalProps,
     Component:
       value && statuses[value]
         ? statuses[value]
         : statuses.loading || defaultIcons.loading,
-  });
+  }));
 
 export default Spinner;

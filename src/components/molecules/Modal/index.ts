@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { ModalComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "../../../tools";
+import { buildMbxStandardComponent } from "../../../tools";
 
 import modalComponent from "./component";
 import React from "react";
@@ -58,7 +58,7 @@ const Modal: ModalComponent = ({
     }, 200);
   };
 
-  return buildMobrixUiStandardComponent({
+  return buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "modal",
     Component: modalComponent({
       children,
@@ -68,7 +68,7 @@ const Modal: ModalComponent = ({
       ...commonProps,
     }),
     commonProps: {
-      ...commonProps,
+      ...sharedProps,
       hide: value.length === 0 && hide,
     },
     additionalProps: {
@@ -76,7 +76,7 @@ const Modal: ModalComponent = ({
       "data-mbx-modal-animation":
         value.length === 0 ? (hide ? "" : "ease-in") : value,
     },
-  });
+  }));
 };
 
 export default Modal;
