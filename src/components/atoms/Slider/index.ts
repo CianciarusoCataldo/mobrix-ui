@@ -55,12 +55,13 @@ const Slider: SliderComponent = ({
     defaultValue: 0,
     wrapper: "input",
     props: (value, setValue) => {
-      const callback = (e: any) => {
-        if (parsedProps.disabled && !readOnly) {
-          onChange(e.target.value);
-          setValue(e.target.value);
-        }
-      };
+      const callback =
+        !parsedProps.disabled && !readOnly
+          ? (e: any) => {
+              onChange(e.target.value);
+              setValue(e.target.value);
+            }
+          : () => {};
       return {
         additionalProps: {
           ...additionalProps,
