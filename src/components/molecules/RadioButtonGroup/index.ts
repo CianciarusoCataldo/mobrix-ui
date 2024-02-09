@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { RadioButtonGroupComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 import radioButtonGroupComponent from "./component";
 
@@ -57,11 +57,11 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
   defaultPosition,
   ...commonProps
 }) =>
-  buildMobrixUiReactiveComponent<number>({
+  buildMbxReactiveComponent<number>(commonProps, (sharedProps) => ({
     name: "radio-button-group",
     defaultValue: -1,
     inputValue,
-    commonProps,
+    commonProps: sharedProps,
     additionalProps: {
       ...additionalProps,
       "data-mbx-orientation": horizontal,
@@ -76,8 +76,8 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
         horizontal,
         radioProps,
         defaultPosition,
-        ...commonProps,
+        ...sharedProps,
       }),
-  });
+  }));
 
 export default RadioButtonGroup;

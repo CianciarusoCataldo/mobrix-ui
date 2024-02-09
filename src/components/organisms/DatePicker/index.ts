@@ -2,11 +2,11 @@ import "./styles.css";
 
 import { CalendarDate, DatePickerComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
+import { buildMbxReactiveComponent } from "../../../tools";
+
 import { today } from "../Calendar/utils";
 
 import datePickerComponent from "./components";
-import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
  *  A smart date-picker, with an internal Calendar accessible to choose a date
@@ -72,31 +72,34 @@ const DatePicker: DatePickerComponent = ({
 }) => {
   const todayDate = today();
 
-  return buildMbxReactiveComponent<CalendarDate>(commonProps, (props) => ({
-    name: "date-picker",
-    commonProps: props,
-    Component: ({ value, setValue }) =>
-      datePickerComponent({
-        today: todayDate,
-        onChange,
-        setValue,
-        value,
-        months,
-        days,
-        startMonth,
-        startYear,
-        hideArrows,
-        fromToday,
-        dayLabel,
-        onViewChange,
-        calendarProps,
-        onClose,
-        ...props,
-      }),
-    inputValue,
-    defaultValue: todayDate,
-    additionalProps,
-  }));
+  return buildMbxReactiveComponent<CalendarDate>(
+    commonProps,
+    (sharedProps) => ({
+      name: "date-picker",
+      commonProps: sharedProps,
+      Component: ({ value, setValue }) =>
+        datePickerComponent({
+          today: todayDate,
+          onChange,
+          setValue,
+          value,
+          months,
+          days,
+          startMonth,
+          startYear,
+          hideArrows,
+          fromToday,
+          dayLabel,
+          onViewChange,
+          calendarProps,
+          onClose,
+          ...sharedProps,
+        }),
+      inputValue,
+      defaultValue: todayDate,
+      additionalProps,
+    }),
+  );
 };
 
 export default DatePicker;

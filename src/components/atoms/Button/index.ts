@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { ButtonComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "../../../tools";
+import { buildMbxStandardComponent } from "../../../tools";
 
 /**
  * A button component, designed for a lot of scenarios.
@@ -45,7 +45,7 @@ const Button: ButtonComponent = ({
   additionalProps = {},
   ...commonProps
 }) =>
-  buildMobrixUiStandardComponent({
+  buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "button",
     wrapper: "button",
     additionalProps: {
@@ -56,7 +56,7 @@ const Button: ButtonComponent = ({
       onMouseLeave,
     },
     Component: children,
-    commonProps,
-  });
+    commonProps: sharedProps,
+  }));
 
 export default Button;

@@ -2,10 +2,7 @@ import "./styles.css";
 
 import { CheckBoxComponent } from "../../../types";
 
-import {
-  buildMbxReactiveComponent,
-  buildMobrixUiReactiveComponent,
-} from "../../../tools";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 import { DefaultCheckIcon } from "./icons";
 

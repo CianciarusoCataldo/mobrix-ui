@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { SelectorComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 import selectorComponent from "./component";
 
@@ -47,16 +47,16 @@ const Selector: SelectorComponent = ({
   optionClassName,
   ...commonProps
 }) =>
-  buildMobrixUiReactiveComponent<number | undefined>({
+  buildMbxReactiveComponent<number | undefined>(commonProps, (sharedProps) => ({
     wrapper: "select",
     name: "selector",
     defaultValue: undefined,
     inputValue,
-    commonProps,
+    commonProps: sharedProps,
     props: (value, setValue) => ({
       additionalProps: {
         ...additionalProps,
-        disabled: commonProps.disabled,
+        disabled: sharedProps.disabled,
         value,
         onChange: (e) => {
           onChange(e.target.value);
@@ -66,6 +66,6 @@ const Selector: SelectorComponent = ({
     }),
     Component: ({ value, setValue }) =>
       selectorComponent({ elements, value, setValue, optionClassName }),
-  });
+  }));
 
 export default Selector;

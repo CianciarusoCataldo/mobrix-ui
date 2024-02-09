@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { DismissableCardComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 import dismissableCardInternalComponent from "./component";
 
@@ -70,7 +70,7 @@ const DismissableCard: DismissableCardComponent = ({
   footerProps,
   ...commonProps
 }) =>
-  buildMobrixUiReactiveComponent({
+  buildMbxReactiveComponent(commonProps, (sharedProps) => ({
     name: "dismissable-card",
     inputValue: hide,
     defaultValue: false,
@@ -87,18 +87,18 @@ const DismissableCard: DismissableCardComponent = ({
         dark: commonProps.dark,
         alwaysVisible,
         onClose,
-        disabled: commonProps.disabled,
         headerClassName,
         bodyClassName,
         footerClassName,
         headerProps,
         bodyProps,
         footerProps,
+        ...sharedProps,
       }),
     additionalProps,
     props: (value, setValue) => ({
-      commonProps: { ...commonProps, hide: alwaysVisible ? hide : value },
+      commonProps: { ...sharedProps, hide: alwaysVisible ? hide : value },
     }),
-  });
+  }));
 
 export default DismissableCard;

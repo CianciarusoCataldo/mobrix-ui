@@ -2,12 +2,12 @@ import "./styles.css";
 
 import { RaterComponent } from "../../../types";
 
-import { buildMobrixUiReactiveComponent } from "../../../tools";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 import raterComponent from "./component";
 
 /**
- *
+ * A modern rater component, to let the user leave a review within your app
  *
  * @param {number} value actual vote
  * @param {number} max max vote (max number of icons displayed)
@@ -52,7 +52,7 @@ const Rater: RaterComponent = ({
   additionalProps = {},
   ...commonProps
 }) =>
-  buildMobrixUiReactiveComponent<number>({
+  buildMbxReactiveComponent<number>(commonProps, (sharedProps) => ({
     name: "rater",
     inputValue,
     defaultValue: 0,
@@ -64,13 +64,13 @@ const Rater: RaterComponent = ({
         onChange,
         value,
         setValue,
-        disabled: commonProps.disabled,
+        ...sharedProps,
       }),
     additionalProps: {
       ...additionalProps,
       "data-mbx-vertical": vertical,
     },
-    commonProps,
-  });
+    commonProps: sharedProps,
+  }));
 
 export default Rater;

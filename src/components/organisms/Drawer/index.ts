@@ -4,10 +4,9 @@ import "./styles.css";
 
 import { DrawerComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "../../../tools";
+import { buildMbxStandardComponent } from "../../../tools/utils";
 
 import drawerComponent from "./component";
-import { buildMbxStandardComponent } from "../../../tools/utils";
 
 const ALLOWED_POSITIONS = [
   "right",

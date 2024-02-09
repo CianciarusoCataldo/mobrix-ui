@@ -60,6 +60,7 @@ for type in $(
 
         node "$SCRIPTS_DIR/update-props.js"
         node "$SCRIPTS_DIR/update-css-vars.js"
+        node "$SCRIPTS_DIR/update-comments.js"
 
         echo " - [$component](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/$type/$component/)" >>"$typeDir"/index.md
 

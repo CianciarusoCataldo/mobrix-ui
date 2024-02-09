@@ -31,6 +31,7 @@ import {
   Dropdown,
   Link,
   Toggle,
+  IconButton,
 } from "mobrix-ui-preview";
 
 const HeaderContent = () => {
@@ -51,18 +52,17 @@ const HeaderContent = () => {
       dark={dark}
       expanded={
         <div className="flex flex-row mt-6" key="expanded_header">
-          <Button
+          <IconButton
             aria-label="drawer button"
             onClick={() => {
               dispatch(openDrawer());
             }}
-            unstyled
             dark={dark}
             a11y
             className="rounded-full my-auto"
           >
             {BurgerIcon}
-          </Button>
+          </IconButton>
           <Button
             aria-label="back button"
             onClick={() => {

@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { ContainerComponent } from "../../../types";
 
-import { buildMobrixUiStandardComponent } from "../../../tools";
+import { buildMbxStandardComponent } from "../../../tools";
 
 /**
  * A simple but smart container, enhanced with MoBrix-ui common props
@@ -42,12 +42,12 @@ const Container: ContainerComponent = ({
   additionalProps,
   ...commonProps
 }) =>
-  buildMobrixUiStandardComponent({
+  buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "container",
     Component: children,
-    commonProps,
+    commonProps: sharedProps,
     additionalProps,
     wrapper,
-  });
+  }));
 
 export default Container;

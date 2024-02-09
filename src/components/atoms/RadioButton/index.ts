@@ -2,11 +2,7 @@ import "./styles.css";
 
 import { RadioButtonComponent } from "../../../types";
 
-import {
-  buildMbxReactiveComponent,
-  buildMobrixUiReactiveComponent,
-  parseCommonProps,
-} from "../../../tools";
+import { buildMbxReactiveComponent } from "../../../tools";
 
 import component from "./component";
 
