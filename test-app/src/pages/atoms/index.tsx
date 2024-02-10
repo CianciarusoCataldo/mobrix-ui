@@ -6,6 +6,7 @@ import {
   Container,
   Counter,
   Divider,
+  GithubWidget,
   Input,
   Label,
   Link,
@@ -211,6 +212,17 @@ const AtomsPage = () => {
           </div>
         }
         name="Divider"
+      />
+      <ComponentDemo
+        Component={
+          <div
+            style={{ display: "flex", flexDirection: "column", width: "100%" }}
+          >
+            <p></p>
+            <GithubWidget repository="mobrix-ui" owner="cianciarusocataldo" />
+          </div>
+        }
+        name="GithubWidget"
       />
       <ComponentDemo
         Component={
