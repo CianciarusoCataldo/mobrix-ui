@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/main.90987923.css",
-    "main.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/main.e1c1d2a5.js",
+    "main.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/main.1acc68ae.js",
     "static/js/47.b07e437c.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/47.b07e437c.chunk.js",
-    "static/js/319.ee7409b3.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/319.ee7409b3.chunk.js",
+    "static/js/319.cd0051f3.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/319.cd0051f3.chunk.js",
     "static/js/350.b537fdf5.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/350.b537fdf5.chunk.js",
     "static/css/395.aac77d95.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/395.aac77d95.chunk.css",
     "static/js/395.5dcd555c.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/395.5dcd555c.chunk.js",
@@ -102,6 +102,6 @@
   },
   "entrypoints": [
     "static/css/main.90987923.css",
-    "static/js/main.e1c1d2a5.js"
+    "static/js/main.1acc68ae.js"
   ]
 }
