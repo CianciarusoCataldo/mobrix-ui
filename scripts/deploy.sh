@@ -1,2 +1,2 @@
 #!/bin/sh
-gh-pages -d playground/build
+npx gh-pages -d playground/build

@@ -15,8 +15,8 @@ jobs:
           always-auth: "true"
       - run: |
           npm ci
-          npm run update:package-json "this.name=\"@cianciarusocataldo/mobrix-ui\""
-          npm run update:package-json "this.publishConfig={\"registry\": \"https://npm.pkg.github.com\"}"
+          npx --yes json -I -f package.json -e "this.name=\"@cianciarusocataldo/mobrix-ui\""
+          npx --yes json -I -f package.json -e "this.publishConfig={\"registry\": \"https://npm.pkg.github.com\"}"
           npm run build
           npm publish --access public
         env:

@@ -63,7 +63,7 @@ export const parseCommonProps = (props: CommonProps): CommonProps => ({
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export const buildMobrixUiStandardComponent = ({
+const buildMobrixUiStandardComponent = ({
   name,
   Component,
   /* istanbul ignore next */
@@ -71,37 +71,32 @@ export const buildMobrixUiStandardComponent = ({
   additionalProps = {},
   wrapper: SelectedWrapper = "div",
 }: BuilderProps) => {
-  let a11y = commonProps.a11y !== undefined ? commonProps.a11y : true;
-
-  let inputCommonProps = parseCommonProps(commonProps);
-
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,
-    "data-mbx-dark": !!inputCommonProps.dark,
-    "data-mbx-mode": inputCommonProps.dark ? "dark" : "light",
-    "data-mbx-styled": !inputCommonProps.unstyled,
-    "data-mbx-shadow": !!inputCommonProps.shadow,
-    "data-mbx-animated":
-      inputCommonProps.animated && !inputCommonProps.disabled,
-    "data-mbx-hide": inputCommonProps.hide,
-    "data-mbx-a11y": inputCommonProps.a11y,
-    "data-mbx-background": inputCommonProps.background,
-    "data-mbx-hover": inputCommonProps.hover && !inputCommonProps.disabled,
-    "data-mbx-enabled": !inputCommonProps.disabled,
+    "data-mbx-dark": !!commonProps.dark,
+    "data-mbx-mode": commonProps.dark ? "dark" : "light",
+    "data-mbx-styled": !commonProps.unstyled,
+    "data-mbx-shadow": !!commonProps.shadow,
+    "data-mbx-animated": commonProps.animated && !commonProps.disabled,
+    "data-mbx-hide": commonProps.hide,
+    "data-mbx-a11y": commonProps.a11y,
+    "data-mbx-background": commonProps.background,
+    "data-mbx-hover": commonProps.hover && !commonProps.disabled,
+    "data-mbx-enabled": !commonProps.disabled,
     "data-mbx-a11y-dark":
-      a11y &&
+      commonProps.a11y &&
       (commonProps.a11yDark !== undefined
         ? commonProps.a11yDark
         : commonProps.dark),
     id: commonProps.id,
-    "aria-label": a11y ? commonProps.a11yLabel : "",
-    tabIndex: a11y ? "0" : "-1",
+    "aria-label": commonProps.a11y ? commonProps.a11yLabel : "",
+    tabIndex: commonProps.a11y ? "0" : "-1",
     className: commonProps.className,
     style: commonProps.style,
     onFocus: commonProps.onFocus,
     onKeyDown: commonProps.onKeyDown,
     ...additionalProps,
-    ...inputCommonProps.additionalProps,
+    ...commonProps.additionalProps,
   };
 
   const wrapperRef = useRef(null);
@@ -135,14 +130,13 @@ export const buildMobrixUiStandardComponent = ({
  * @copyright 2023 Cataldo Cianciaruso
  */
 // prettier-ignore
-export const buildMobrixUiReactiveComponent = <T=any>({
+const buildMobrixUiReactiveComponent = <T=any>({
   name,
   additionalProps,
   wrapper,
   commonProps,
   defaultValue,
   inputValue,
-  render,
   props,
   Component,
 }: BuilderProps<
@@ -153,10 +147,6 @@ export const buildMobrixUiReactiveComponent = <T=any>({
 > & {
   inputValue?: T;
   defaultValue: T;
-  render?: (
-    value: T,
-    setValue: React.Dispatch<React.SetStateAction<T>>
-  ) => BuilderProps["Component"];
   props?: (
     value: T,
     setValue: React.Dispatch<React.SetStateAction<T>>

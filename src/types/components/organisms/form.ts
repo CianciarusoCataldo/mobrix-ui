@@ -1,9 +1,9 @@
 import {
   ComponentWithChildren,
   MoBrixUiComponent,
-} from "../../../types/global";
+} from "../../global";
 
-import { FormFieldProps } from "./form-field";
+import { FormFieldProps } from "../molecules/form-field";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Form component props

@@ -8,6 +8,8 @@ export { default as Counter } from "./Counter";
 
 export { default as Divider } from "./Divider";
 
+export { default as EmbeddedVideo } from "./EmbeddedVideo";
+
 export { default as IconButton } from "./IconButton";
 
 export { default as Input } from "./Input";
