@@ -36,7 +36,7 @@ export const ComponentPage = ({
       <AppLabel className="text-4xl mt-12 mb-5 ml-3">{headerLabel}</AppLabel>
       <div className="flex flex-col p-3 items-center">
         <iframe
-          className="w-full h-[30rem]"
+          className="w-full h-[30rem] mb-2"
           title={`${componentName} page`}
           src={`https://cianciarusocataldo.github.io/${PATHS[
             componentName
