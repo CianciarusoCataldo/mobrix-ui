@@ -4,3 +4,4 @@ site_author: Cataldo Cianciaruso
 copyright: 2023 Cataldo Cianciaruso
 theme:
   name: material
+  custom_dir: docs-gen/templates/published
