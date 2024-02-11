@@ -1,0 +1,15 @@
+[data-mbx-id="embedded-video"]:not([class]) {
+  width: fit-content;
+  height: fit-content;
+}
+
+[data-mbx-id="embedded-video"] iframe {
+  display: block;
+  width: 100%;
+}
+
+@media (hover) {
+  [data-mbx-id="embedded-video"][data-mbx-hover="true"] iframe:hover {
+    opacity: 0.9;
+  }
+}

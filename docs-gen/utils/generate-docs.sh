@@ -122,7 +122,7 @@ rm -rf README_TEMP.md
 cp -a CHANGELOG.md "$OUTPUT_ROOT_DIR"/Changelog.md
 cp -a LICENSE "$OUTPUT_ROOT_DIR"/License.md
 
-npx prettier --log-level silent --write src/components/*/*/*.ts src/components/*/*/*.tsx README.md "$OUTPUT_ROOT_DIR"/index.md "$OUTPUT_ROOT_DIR"/**/*.md "$OUTPUT_ROOT_DIR"/*/**/*.md "$OUTPUT_ROOT_DIR"/*/*/*.md "$OUTPUT_ROOT_DIR"/*/*/*/*.md "$COMPONENTS_SETTINGS_DIR"/*/*/*.json
+npx --yes prettier --log-level silent --write src/components/*/*/*.ts src/components/*/*/*.tsx README.md "$OUTPUT_ROOT_DIR"/index.md "$OUTPUT_ROOT_DIR"/**/*.md "$OUTPUT_ROOT_DIR"/*/**/*.md "$OUTPUT_ROOT_DIR"/*/*/*.md "$OUTPUT_ROOT_DIR"/*/*/*/*.md "$COMPONENTS_SETTINGS_DIR"/*/*/*.json
 
 python3 -m mkdocs build --quiet -d playground/public/docs
 

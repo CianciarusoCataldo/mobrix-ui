@@ -40,6 +40,7 @@ const engineConfig = {
       Divider: "/components/atoms/Divider",
       Drawer: "/components/organisms/Drawer",
       Dropdown: "/components/molecules/Dropdown",
+      EmbeddedVideo: "/components/molecules/EmbeddedVideo",
       ExpandableContainer: "/components/molecules/ExpandableContainer",
       Form: "/components/organisms/Form",
       FormField: "/components/molecules/FormField",

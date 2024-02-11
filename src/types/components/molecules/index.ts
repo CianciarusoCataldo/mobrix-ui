@@ -4,7 +4,7 @@ export * from "./container";
 export * from "./dismissable-card";
 export * from "./dropdown";
 export * from "./expandable-container";
-export * from "./form";
+export * from "./form-field";
 export * from "./list";
 export * from "./modal";
 export * from "./popup";

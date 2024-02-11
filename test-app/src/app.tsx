@@ -1,5 +1,11 @@
 import React from "react";
-import { TabViewer, Drawer, DrawerProps, Button } from "./mobrix-ui-preview";
+import {
+  TabViewer,
+  Drawer,
+  DrawerProps,
+  Button,
+  EmbeddedVideo,
+} from "./mobrix-ui-preview";
 import AtomsPage from "./pages/atoms";
 import MoleculesPage from "./pages/molecules";
 import OrganismsPage from "./pages/organisms";
@@ -61,14 +67,22 @@ const App = () => {
           ))}
         </div>
       </Drawer>
-      <div>
+      <div style={{ display: "flex", flexDirection: "column" }}>
         <Button
+          key="drawer-btn"
           onClick={() => {
             setVisible(!isVisible);
           }}
         >
           Toggle drawer
         </Button>
+        <EmbeddedVideo url="https://www.youtube.com/watch?v=QZXc39hT8t4" />
+        <EmbeddedVideo
+          dark
+          hover={false}
+          url="https://www.dailymotion.com/video/x2nfpl3"
+        />
+        <EmbeddedVideo url="https://www.facebook.com/watch/?v=762618565361911" />
         {tabs}
       </div>
     </>

@@ -3,7 +3,7 @@ export * from "./check-box";
 export * from "./code-box";
 export * from "./counter";
 export * from "./divider";
-export * from "../molecules/form-field";
+export * from "./embedded-video";
 export * from "./input";
 export * from "./label";
 export * from "./link";

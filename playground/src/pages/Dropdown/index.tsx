@@ -24,26 +24,6 @@ const DropdownPage = () => (
           rows={[["value"], ...demoRows]}
           startColor="#ebe5e2"
           parseProps={(props) => {
-            const icon = (
-              <div
-                style={{
-                  marginTop: "auto",
-                  marginBottom: "auto",
-                  marginLeft: "0.25rem",
-                  marginRight: "0.25rem",
-                }}
-              >
-                <i
-                  style={{
-                    border: "solid",
-                    borderWidth: "0 3px 3px 0",
-                    display: "block",
-                    padding: "3px",
-                  }}
-                ></i>
-              </div>
-            );
-
             return {
               ...props,
               elements: [

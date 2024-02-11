@@ -26,6 +26,10 @@ body #preview {
   margin: 0.6rem;
 }
 
+.test-class{
+  width: 2rem;
+}
+
 @media (max-width: 400px) {
   body .previewer-container {
     margin: 0.3rem;
