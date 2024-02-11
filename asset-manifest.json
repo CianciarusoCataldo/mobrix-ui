@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/main.07ac6cb8.css",
-    "main.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/main.cd31c9b3.js",
+    "main.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/main.4212403e.css",
+    "main.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/main.7d6c38fe.js",
     "static/js/47.b07e437c.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/47.b07e437c.chunk.js",
-    "static/js/319.d6881ac3.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/319.d6881ac3.chunk.js",
+    "static/js/319.d76ce59e.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/319.d76ce59e.chunk.js",
     "static/js/350.b537fdf5.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/350.b537fdf5.chunk.js",
-    "static/css/395.58effa06.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/395.58effa06.chunk.css",
-    "static/js/395.7d193f9e.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/395.7d193f9e.chunk.js",
+    "static/css/395.aac77d95.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/395.aac77d95.chunk.css",
+    "static/js/395.2801d292.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/395.2801d292.chunk.js",
     "static/js/168.9d291a04.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/168.9d291a04.chunk.js",
     "static/css/244.efa21e80.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/244.efa21e80.chunk.css",
     "static/js/244.94f776e7.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/244.94f776e7.chunk.js",
@@ -35,6 +35,8 @@
     "static/js/967.fe61a4ea.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/967.fe61a4ea.chunk.js",
     "static/css/550.efa21e80.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/550.efa21e80.chunk.css",
     "static/js/550.3184df10.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/550.3184df10.chunk.js",
+    "static/css/645.efa21e80.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/645.efa21e80.chunk.css",
+    "static/js/645.94ada8d9.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/645.94ada8d9.chunk.js",
     "static/css/438.efa21e80.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/438.efa21e80.chunk.css",
     "static/js/438.0af27de3.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/438.0af27de3.chunk.js",
     "static/css/858.efa21e80.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/858.efa21e80.chunk.css",
@@ -99,7 +101,7 @@
     "static/media/it.svg": "https://cianciarusocataldo.github.io/mobrix-ui/static/media/it.7ee7a27e030791474f5325883a3a0b5d.svg"
   },
   "entrypoints": [
-    "static/css/main.07ac6cb8.css",
-    "static/js/main.cd31c9b3.js"
+    "static/css/main.4212403e.css",
+    "static/js/main.7d6c38fe.js"
   ]
 }
