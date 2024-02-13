@@ -14,17 +14,15 @@ import {
  *
  * @copyright 2023 Cataldo Cianciaruso
  * */
-export type ButtonProps = ComponentWithChildren<
-  BuilderComponent | BuilderComponent[]
-> &
-  ClickableComponent & {
-    /**callback triggered when the cursor enter the component */
-    onMouseEnter?: () => void;
+export type ButtonProps<T = BuilderComponent | BuilderComponent[]> =
+  ComponentWithChildren<T> &
+    ClickableComponent & {
+      /**callback triggered when the cursor enter the component */
+      onMouseEnter?: () => void;
 
-    /** callback triggered when the cursor exit the component */
-    onMouseLeave?: () => void;
-
-  };
+      /** callback triggered when the cursor exit the component */
+      onMouseLeave?: () => void;
+    };
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Button component

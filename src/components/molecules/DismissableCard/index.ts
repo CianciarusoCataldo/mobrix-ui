@@ -4,6 +4,7 @@ import { DismissableCardComponent } from "../../../types";
 
 import { buildMbxReactiveComponent } from "../../../tools";
 
+import cardComponent from "../Card/component";
 import dismissableCardInternalComponent from "./component";
 
 /**
@@ -48,56 +49,35 @@ import dismissableCardInternalComponent from "./component";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 const DismissableCard: DismissableCardComponent = ({
-  onClose,
-  noBottomDivider,
-  noDividers,
-  noTopDivider,
-  header,
-  body,
-  footer,
-  hide,
-  children,
+  onClose = () => {},
   alwaysVisible,
-  additionalProps,
-  headerClassName,
-  bodyClassName,
-  footerClassName,
-  headerProps,
-  bodyProps,
-  footerProps,
-  ...commonProps
+  ...props
 }) =>
-  buildMbxReactiveComponent(commonProps, (sharedProps) => ({
+  buildMbxReactiveComponent(props, (sharedProps) => ({
     name: "dismissable-card",
-    inputValue: hide,
+    inputValue: sharedProps.hide,
     defaultValue: false,
     Component: ({ value, setValue }) =>
-      dismissableCardInternalComponent({
-        value,
-        setValue,
-        noBottomDivider,
-        noDividers,
-        noTopDivider,
-        header,
-        body,
-        footer,
-        dark: commonProps.dark,
-        alwaysVisible,
-        onClose,
-        headerClassName,
-        bodyClassName,
-        footerClassName,
-        headerProps,
-        bodyProps,
-        footerProps,
+      cardComponent({
+        ...props,
         ...sharedProps,
+        header: dismissableCardInternalComponent({
+          onClose: () => {
+            onClose();
+            !alwaysVisible && setValue(true);
+          },
+          ...sharedProps,
+        }),
       }),
-    additionalProps,
+    additionalProps: sharedProps.additionalProps,
     props: (value, setValue) => ({
-      commonProps: { ...sharedProps, hide: alwaysVisible ? hide : value },
+      commonProps: {
+        ...sharedProps,
+        hide: alwaysVisible ? sharedProps.hide : value,
+      },
     }),
   }));
 

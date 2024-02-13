@@ -32,7 +32,7 @@ import { buildMbxStandardComponent } from "../../../tools";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 const Label: LabelComponent = ({ children, additionalProps, ...commonProps }) =>
   buildMbxStandardComponent(commonProps, (props) => ({

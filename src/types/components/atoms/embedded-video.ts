@@ -1,4 +1,4 @@
-import { ClickableComponent, MoBrixUiComponent } from "../../../types/global";
+import { MoBrixUiComponent } from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} EmbeddedVideo component props

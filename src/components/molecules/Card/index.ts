@@ -1,6 +1,11 @@
 import "./styles.css";
 
-import { CardComponent } from "../../../types";
+import {
+  BuilderProps,
+  CardComponent,
+  CardProps,
+  MobrixUiProps,
+} from "../../../types";
 
 import { buildMbxStandardComponent } from "../../../tools";
 
@@ -47,9 +52,15 @@ import cardComponent from "./component";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
-const Card: CardComponent = ({
+const Card: CardComponent = (inputProps) =>
+  buildMbxStandardComponent(inputProps, (sharedProps) => ({
+    name: "card",
+    ...buildComponent({ ...inputProps, ...sharedProps }),
+  }));
+
+export const buildComponent = ({
   header,
   body,
   footer,
@@ -65,28 +76,26 @@ const Card: CardComponent = ({
   headerProps,
   bodyProps,
   footerProps,
-  ...commonProps
-}) =>
-  buildMbxStandardComponent(commonProps, (sharedProps) => ({
-    name: "card",
-    Component: cardComponent({
-      header,
-      body,
-      children,
-      footer,
-      noDividers,
-      noBottomDivider,
-      noTopDivider,
-      headerClassName,
-      bodyClassName,
-      footerClassName,
-      headerProps,
-      bodyProps,
-      footerProps,
-      ...sharedProps,
-    }),
-    commonProps: sharedProps,
-    additionalProps,
-  }));
+  ...sharedProps
+}: MobrixUiProps<CardProps>): Omit<BuilderProps, "name"> => ({
+  Component: cardComponent({
+    header,
+    body,
+    children,
+    footer,
+    noDividers,
+    noBottomDivider,
+    noTopDivider,
+    headerClassName,
+    bodyClassName,
+    footerClassName,
+    headerProps,
+    bodyProps,
+    footerProps,
+    ...sharedProps,
+  }),
+  commonProps: sharedProps,
+  additionalProps,
+});
 
 export default Card;

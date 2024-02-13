@@ -2,6 +2,7 @@ import "./styles.css";
 
 import { IconButtonComponent } from "../../../types/components/atoms/icon-button";
 import { buildMbxStandardComponent } from "../../../tools/utils";
+import { buildComponent } from "../Button";
 
 /**
  * An empty button, without additional styles, to make an icon clickable
@@ -34,29 +35,14 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
-const IconButton: IconButtonComponent = ({
-  children,
-  onClick,
-  onMouseEnter,
-  onMouseLeave,
-  additionalProps = {},
-  ...commonProps
-}) =>
-  buildMbxStandardComponent(commonProps, (props) => ({
-    name: "icon-button",
-    wrapper: "button",
-    additionalProps: {
-      ...additionalProps,
-      ...(!props.disabled && {
-        onClick,
-        onMouseEnter,
-        onMouseLeave,
-      }),
-    },
-    Component: children,
-    commonProps: { ...props, shadow: false },
-  }));
+const IconButton: IconButtonComponent = (inputProps) =>
+  buildMbxStandardComponent(inputProps, (sharedProps) => {
+    return {
+      name: "icon-button",
+      ...buildComponent({ ...inputProps, ...sharedProps, shadow: false }),
+    };
+  });
 
 export default IconButton;

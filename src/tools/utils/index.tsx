@@ -56,7 +56,6 @@ export const parseCommonProps = (props: CommonProps): CommonProps => ({
  * @returns built component, ready to be rendered
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=components-building-process
- * @see https://github.com/CianciarusoCataldo/mobrix-ui-tools/
  * @see https://cianciarusocataldo.github.io/mobrix-ui/
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
@@ -122,7 +121,6 @@ const buildMobrixUiStandardComponent = ({
  * @returns built component, ready to be rendered, enhanced with some functionalities
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=reactive-components
- * @see https://github.com/CianciarusoCataldo/mobrix-ui-tools/
  * @see https://cianciarusocataldo.github.io/mobrix-ui/
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>

@@ -1,6 +1,11 @@
 import "./styles.css";
 
-import { ButtonComponent } from "../../../types";
+import {
+  BuilderProps,
+  ButtonComponent,
+  ButtonProps,
+  MobrixUiProps,
+} from "../../../types";
 
 import { buildMbxStandardComponent } from "../../../tools";
 
@@ -35,28 +40,32 @@ import { buildMbxStandardComponent } from "../../../tools";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
-const Button: ButtonComponent = ({
+const Button: ButtonComponent = (inputProps) =>
+  buildMbxStandardComponent(inputProps, (sharedProps) => ({
+    name: "button",
+    ...buildComponent({ ...inputProps, ...sharedProps }),
+  }));
+
+export const buildComponent = ({
   children,
   onClick,
   onMouseEnter,
   onMouseLeave,
   additionalProps = {},
-  ...commonProps
-}) =>
-  buildMbxStandardComponent(commonProps, (sharedProps) => ({
-    name: "button",
-    wrapper: "button",
-    additionalProps: {
-      ...additionalProps,
-      disabled: commonProps.disabled,
-      onClick,
-      onMouseEnter,
-      onMouseLeave,
-    },
-    Component: children,
-    commonProps: sharedProps,
-  }));
+  ...sharedProps
+}: MobrixUiProps<ButtonProps>): Omit<BuilderProps, "name"> => ({
+  wrapper: "button",
+  additionalProps: {
+    ...additionalProps,
+    disabled: sharedProps.disabled,
+    onClick,
+    onMouseEnter,
+    onMouseLeave,
+  },
+  Component: children,
+  commonProps: sharedProps,
+});
 
 export default Button;

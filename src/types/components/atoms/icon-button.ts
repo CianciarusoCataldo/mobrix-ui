@@ -1,9 +1,5 @@
-import {
-  BuilderComponent,
-  ClickableComponent,
-  ComponentWithChildren,
-  MoBrixUiComponent,
-} from "../../../types/global";
+import { BuilderComponent, MoBrixUiComponent } from "../../../types/global";
+import { ButtonProps } from "./button";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} IconButton component props
@@ -14,14 +10,7 @@ import {
  *
  * @copyright 2023 Cataldo Cianciaruso
  * */
-export type IconButtonProps = ComponentWithChildren<BuilderComponent> &
-  ClickableComponent & {
-    /**callback triggered when the cursor enter the component */
-    onMouseEnter?: () => void;
-
-    /** callback triggered when the cursor exit the component */
-    onMouseLeave?: () => void;
-  };
+export type IconButtonProps = ButtonProps<BuilderComponent>;
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} IconButton component

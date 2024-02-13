@@ -35,7 +35,7 @@ import popupComponent from "./component";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 const Popup: PopupComponent = ({ children, ...commonProps }) =>
   buildMbxStandardComponent(commonProps, (props) => ({
