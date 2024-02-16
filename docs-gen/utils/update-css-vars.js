@@ -3,11 +3,8 @@ const path = require("path");
 
 const COMPONENT_NAME = process.env["COMPONENT_NAME"];
 const COMPONENT_TYPE = process.env["COMPONENT_TYPE"];
-const COMPONENT_DIR = process.env["COMPONENT_DIR"];
 const COMPONENTS_SETTINGS_DIR = process.env["COMPONENTS_SETTINGS_DIR"];
-const TEMPLATE_DIR = process.env["TEMPLATE_DIR"];
-const SHARED_DIR = process.env["SHARED_DIR"];
-const README_CHAPTERS_DIR = process.env["README_CHAPTERS_DIR"];
+
 let executed = true;
 
 try {

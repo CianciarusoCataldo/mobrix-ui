@@ -2,6 +2,7 @@
 
 export OUTPUT_ROOT_DIR=docs
 export OUTPUT_STATIC_DOCS_DIR=playground/public/docs
+export DOCS_GEN_DIR=docs-gen
 export COMPONENTS_FILES_DIR=src/components
 export COMPONENTS_DOCS_DIR="$OUTPUT_ROOT_DIR"/components
 export GLOBAL_SETTINGS_DIR=docs-gen/global
@@ -18,6 +19,10 @@ globalPageTitle="MoBrix-ui shared"
 rm -rf "$OUTPUT_ROOT_DIR"/shared
 
 mkdir "$OUTPUT_ROOT_DIR"/shared
+
+rm -rf CHANGELOG.md
+
+node "$SCRIPTS_DIR/generate-changelog.js"
 
 cp "$TEMPLATE_DIR"/index-component.md "$OUTPUT_ROOT_DIR"/shared/index.md
 cp "$TEMPLATE_DIR"/props-page.md "$OUTPUT_ROOT_DIR"/shared/props.md
@@ -124,7 +129,7 @@ rm -rf README_TEMP.md
 cp -a CHANGELOG.md "$OUTPUT_ROOT_DIR"/Changelog.md
 cp -a LICENSE "$OUTPUT_ROOT_DIR"/License.md
 
-npx --yes prettier --log-level silent --write src/components/*/*/*.ts src/components/*/*/*.tsx README.md "$OUTPUT_ROOT_DIR"/index.md "$OUTPUT_ROOT_DIR"/**/*.md "$OUTPUT_ROOT_DIR"/*/**/*.md "$OUTPUT_ROOT_DIR"/*/*/*.md "$OUTPUT_ROOT_DIR"/*/*/*/*.md "$COMPONENTS_SETTINGS_DIR"/*/*/*.json
+npx --yes prettier --log-level silent --write CHANGELOG.md src/components/*/*/*.ts src/components/*/*/*.tsx README.md "$OUTPUT_ROOT_DIR"/index.md "$OUTPUT_ROOT_DIR"/**/*.md "$OUTPUT_ROOT_DIR"/*/**/*.md "$OUTPUT_ROOT_DIR"/*/*/*.md "$OUTPUT_ROOT_DIR"/*/*/*/*.md "$COMPONENTS_SETTINGS_DIR"/*/*/*.json
 
 python3 -m mkdocs build --quiet -d "$OUTPUT_STATIC_DOCS_DIR"
 

@@ -62,12 +62,8 @@ try {
       const type = settings.extend.component.type || COMPONENT_TYPE;
       externalProps = JSON.parse(
         fs.readFileSync(
-          path.join(
-            COMPONENTS_SETTINGS_DIR,
-            COMPONENT_TYPE,
-            COMPONENT_NAME,
-            "props.json"
-          )
+          path.join(COMPONENTS_SETTINGS_DIR, type, component, "props.json"),
+          "utf8"
         )
       );
 
