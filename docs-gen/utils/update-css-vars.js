@@ -1,20 +1,41 @@
 const fs = require("fs");
+const path = require("path");
+
 const COMPONENT_NAME = process.env["COMPONENT_NAME"];
 const COMPONENT_TYPE = process.env["COMPONENT_TYPE"];
+const COMPONENT_DIR = process.env["COMPONENT_DIR"];
+const COMPONENTS_SETTINGS_DIR = process.env["COMPONENTS_SETTINGS_DIR"];
+const TEMPLATE_DIR = process.env["TEMPLATE_DIR"];
+const SHARED_DIR = process.env["SHARED_DIR"];
+const README_CHAPTERS_DIR = process.env["README_CHAPTERS_DIR"];
 let executed = true;
 
 try {
-  const cssVars = require(
-    "../components/" + COMPONENT_TYPE + "/" + COMPONENT_NAME + "/css-vars.json"
+  const cssVars = JSON.parse(
+    fs.readFileSync(
+      path.join(
+        COMPONENTS_SETTINGS_DIR,
+        COMPONENT_TYPE,
+        COMPONENT_NAME,
+        "css-vars.json"
+      ),
+      "utf8"
+    )
   );
+
   let extendedCssVars = {};
-  const settings = require(
-    "../components/" +
-      COMPONENT_TYPE +
-      "/" +
-      COMPONENT_NAME +
-      "/mbx-settings.json"
+  const settings = JSON.parse(
+    fs.readFileSync(
+      path.join(
+        COMPONENTS_SETTINGS_DIR,
+        COMPONENT_TYPE,
+        COMPONENT_NAME,
+        "mbx-settings.json"
+      ),
+      "utf8"
+    )
   );
+
   if (settings.cssVars && settings.cssVars.cssName) {
     const componentsToExtend = settings.cssVars.extend.components || [];
 
@@ -29,14 +50,17 @@ try {
         const component = componentToExtend.name;
         const componentType = componentToExtend.type || COMPONENT_TYPE;
 
-        const externalCssVars = require(
-          "../components/" + componentType + "/" + component + "/css-vars.json"
-        );
+        const externalCssVars = require("../components/" +
+          componentType +
+          "/" +
+          component +
+          "/css-vars.json");
         Object.keys(externalCssVars).forEach((externalCssVar) => {
           const cssVarName = replaceCallback(externalCssVar);
           extendedCssVars[cssVarName] = {};
-          extendedCssVars[cssVarName].description =
-            `Extended from [${component}](../../${componentType}/${component}/index.md) - ${externalCssVars[externalCssVar].description}`;
+          extendedCssVars[
+            cssVarName
+          ].description = `Extended from [${component}](../../${componentType}/${component}/index.md) - ${externalCssVars[externalCssVar].description}`;
 
           if (!cssVarName.endsWith("-dark") && !cssVarName.endsWith("-light")) {
             extendedCssVars[cssVarName].description = replaceCallback(
@@ -60,11 +84,12 @@ try {
 
   if (executed) {
     fs.writeFileSync(
-      "docs-gen/components/" +
-        COMPONENT_TYPE +
-        "/" +
-        COMPONENT_NAME +
-        "/css-vars.json",
+      path.join(
+        COMPONENTS_SETTINGS_DIR,
+        COMPONENT_TYPE,
+        COMPONENT_NAME,
+        "css-vars.json"
+      ),
       JSON.stringify({ ...cssVariables })
     );
   }

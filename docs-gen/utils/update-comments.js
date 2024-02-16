@@ -23,21 +23,39 @@ const DEFAULT_SETTINGS = {
 };
 
 const fs = require("fs");
+const path = require("path");
 const COMPONENT_NAME = process.env["COMPONENT_NAME"];
 const COMPONENT_TYPE = process.env["COMPONENT_TYPE"];
 const EXTENSION = process.env["COMPONENT_INDEX_EXT"];
+const COMPONENTS_FILES_DIR = process.env["COMPONENTS_FILES_DIR"];
+const COMPONENTS_SETTINGS_DIR = process.env["COMPONENTS_SETTINGS_DIR"];
+
 try {
-  const props = require(
-    "../components/" + COMPONENT_TYPE + "/" + COMPONENT_NAME + "/props.json"
+  const props = JSON.parse(
+    fs.readFileSync(
+      path.join(
+        COMPONENTS_SETTINGS_DIR,
+        COMPONENT_TYPE,
+        COMPONENT_NAME,
+        "props.json"
+      )
+    )
   );
-  const sharedProps = require("../components/shared-props.json");
-  const globalSettings = require("../components/settings.json");
+  const sharedProps = JSON.parse(
+    fs.readFileSync(path.join(COMPONENTS_SETTINGS_DIR, "shared-props.json"))
+  );
+
+  const globalSettings = JSON.parse(
+    fs.readFileSync(path.join(COMPONENTS_SETTINGS_DIR, "settings.json"))
+  );
 
   let parameters = "";
 
   Object.keys(props).forEach((propName) => {
     if (props[propName].type && props[propName].description) {
-      parameters += `@param {${props[propName].type}} ${propName} ${props[propName].comment || props[propName].description}\n* `;
+      parameters += `@param {${props[propName].type}} ${propName} ${
+        props[propName].comment || props[propName].description
+      }\n* `;
     }
   });
 
@@ -47,23 +65,27 @@ try {
     }
   });
 
-  const settingsJson = require(
-    "../components/" +
-      COMPONENT_TYPE +
-      "/" +
-      COMPONENT_NAME +
-      "/mbx-settings.json"
+  const settingsJson = JSON.parse(
+    fs.readFileSync(
+      path.join(
+        COMPONENTS_SETTINGS_DIR,
+        COMPONENT_TYPE,
+        COMPONENT_NAME,
+        "mbx-settings.json"
+      ),
+      "utf8"
+    )
   );
 
   const settings = { ...DEFAULT_SETTINGS, ...settingsJson };
 
   let componentFile = fs.readFileSync(
-    "src/components/" +
-      COMPONENT_TYPE +
-      "/" +
-      COMPONENT_NAME +
-      "/index." +
-      EXTENSION,
+    path.join(
+      COMPONENTS_FILES_DIR,
+      COMPONENT_TYPE,
+      COMPONENT_NAME,
+      "index." + EXTENSION
+    ),
     "utf8"
   );
 
@@ -108,12 +130,12 @@ try {
 
     if (executed) {
       fs.writeFileSync(
-        "src/components/" +
-          COMPONENT_TYPE +
-          "/" +
-          COMPONENT_NAME +
-          "/index." +
-          EXTENSION,
+        path.join(
+          COMPONENTS_FILES_DIR,
+          COMPONENT_TYPE,
+          COMPONENT_NAME,
+          "index." + EXTENSION
+        ),
         finalString
       );
     }

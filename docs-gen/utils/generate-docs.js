@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 
 const COMPONENT_NAME = process.env["COMPONENT_NAME"];
 const COMPONENT_TYPE = process.env["COMPONENT_TYPE"];
@@ -10,42 +11,42 @@ const README_CHAPTERS_DIR = process.env["README_CHAPTERS_DIR"];
 
 try {
   const CSS_TABLE_HEADER = fs.readFileSync(
-    TEMPLATE_DIR + "/css-vars-table-header.md",
+    path.join(TEMPLATE_DIR, "css-vars-table-header.md"),
     "utf8"
   );
 
   const CSS_TABLE_ROW = fs.readFileSync(
-    TEMPLATE_DIR + "/css-vars-table-row.md",
+    path.join(TEMPLATE_DIR, "css-vars-table-row.md"),
     "utf8"
   );
 
   const CSS_TEMPLATE_TABLE_HEADER_MINI = fs.readFileSync(
-    TEMPLATE_DIR + "/css-vars-table-header-mini.md",
+    path.join(TEMPLATE_DIR, "css-vars-table-header-mini.md"),
     "utf8"
   );
 
   const CSS_TEMPLATE_TABLE_ROW_MINI = fs.readFileSync(
-    TEMPLATE_DIR + "/css-vars-table-row-mini.md",
+    path.join(TEMPLATE_DIR, "css-vars-table-row-mini.md"),
     "utf8"
   );
 
   const PROPS_TEMPLATE_TABLE_HEADER = fs.readFileSync(
-    TEMPLATE_DIR + "/props-table-header.md",
+    path.join(TEMPLATE_DIR, "props-table-header.md"),
     "utf8"
   );
 
   const PROPS_TEMPLATE_TABLE_ROW = fs.readFileSync(
-    TEMPLATE_DIR + "/props-table-row.md",
+    path.join(TEMPLATE_DIR, "props-table-row.md"),
     "utf8"
   );
 
   const PROPS_TEMPLATE_TABLE_HEADER_MINI = fs.readFileSync(
-    TEMPLATE_DIR + "/props-table-header-mini.md",
+    path.join(TEMPLATE_DIR, "props-table-header-mini.md"),
     "utf8"
   );
 
   const PROPS_TEMPLATE_TABLE_ROW_MINI = fs.readFileSync(
-    TEMPLATE_DIR + "/props-table-row-mini.md",
+    path.join(TEMPLATE_DIR, "props-table-row-mini.md"),
     "utf8"
   );
 
@@ -59,22 +60,37 @@ try {
 
     Object.keys(componentCssVars).forEach((cssVar) => {
       const propName = `[${cssVar}](#${cssVar.replace("--mbx", "-mbx")})`;
-      const readmePropName = `[${cssVar}](https://cianciarusocataldo.github.io/mobrix-ui/docs/${COMPONENT_TYPE}/${COMPONENT_NAME}/#${cssVar.replace("--mbx", "-mbx")})`;
+      const readmePropName = `[${cssVar}](https://cianciarusocataldo.github.io/mobrix-ui/docs/${COMPONENT_TYPE}/${COMPONENT_NAME}/#${cssVar.replace(
+        "--mbx",
+        "-mbx"
+      )})`;
 
       const fallback = componentCssVars[cssVar].fallback
-        ? `[${componentCssVars[cssVar].fallback}](#${componentCssVars[cssVar].fallback.replace("--mbx", "-mbx")})`
+        ? `[${componentCssVars[cssVar].fallback}](#${componentCssVars[
+            cssVar
+          ].fallback.replace("--mbx", "-mbx")})`
         : "/";
       const readmeFallback = componentCssVars[cssVar].fallback
-        ? `[${componentCssVars[cssVar].fallback}](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#${componentCssVars[cssVar].fallback.replace("--mbx", "-mbx")})`
+        ? `[${
+            componentCssVars[cssVar].fallback
+          }](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#${componentCssVars[
+            cssVar
+          ].fallback.replace("--mbx", "-mbx")})`
         : "/";
       let defaultValue = "/";
 
       if (componentCssVars[cssVar].defaultInternal) {
         const defaultInternal = componentCssVars[cssVar].defaultInternal;
-        defaultValue = `[${defaultInternal}](#${defaultInternal.replace("--mbx", "-mbx")})`;
+        defaultValue = `[${defaultInternal}](#${defaultInternal.replace(
+          "--mbx",
+          "-mbx"
+        )})`;
       } else if (componentCssVars[cssVar].defaultGlobal) {
         const defaultGlobal = componentCssVars[cssVar].defaultGlobal;
-        defaultValue = `[${defaultGlobal}](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#${defaultGlobal.replace("--mbx", "-mbx")})`;
+        defaultValue = `[${defaultGlobal}](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#${defaultGlobal.replace(
+          "--mbx",
+          "-mbx"
+        )})`;
       } else if (componentCssVars[cssVar].defaultColor) {
         const defaultColor =
           "<div><div style='text-align:center;margin-auto;'>" +
@@ -92,16 +108,28 @@ try {
         const externalComponent =
           componentCssVars[cssVar].defaultExternal.component;
         const propName = componentCssVars[cssVar].defaultExternal.prop;
-        defaultValue = `[${propName}](https://cianciarusocataldo.github.io/mobrix-ui/docs/${componentCssVars[cssVar].defaultExternal.type}/${externalComponent}/css-vars.md#${propName.replace("--mbx", "-mbx")})`;
+        defaultValue = `[${propName}](https://cianciarusocataldo.github.io/mobrix-ui/docs/${
+          componentCssVars[cssVar].defaultExternal.type
+        }/${externalComponent}/css-vars.md#${propName.replace(
+          "--mbx",
+          "-mbx"
+        )})`;
       } else if (componentCssVars[cssVar].default) {
         defaultValue = componentCssVars[cssVar].default;
       }
 
-      outputCssTable += `${CSS_TABLE_ROW.replace("PROP_NAME", propName).replace("FALLBACK", fallback).replace("DEFAULT", defaultValue)}`;
-      readmeCssTable += `${CSS_TABLE_ROW.replace("PROP_NAME", readmePropName).replace("FALLBACK", readmeFallback).replace("DEFAULT", defaultValue)}`;
+      outputCssTable += `${CSS_TABLE_ROW.replace("PROP_NAME", propName)
+        .replace("FALLBACK", fallback)
+        .replace("DEFAULT", defaultValue)}`;
+      readmeCssTable += `${CSS_TABLE_ROW.replace("PROP_NAME", readmePropName)
+        .replace("FALLBACK", readmeFallback)
+        .replace("DEFAULT", defaultValue)}`;
       outputCssList += `\n\n\<br>\n\n### ${cssVar}\n\n`;
       outputCssList += `${CSS_TEMPLATE_TABLE_HEADER_MINI}`;
-      outputCssList += `${CSS_TEMPLATE_TABLE_ROW_MINI.replace("FALLBACK", fallback).replace("DEFAULT", defaultValue)}\n\n<br>\n\n`;
+      outputCssList += `${CSS_TEMPLATE_TABLE_ROW_MINI.replace(
+        "FALLBACK",
+        fallback
+      ).replace("DEFAULT", defaultValue)}\n\n<br>\n\n`;
       outputCssList += `${componentCssVars[cssVar].description}\n\n<br>\n\n`;
     });
 
@@ -132,12 +160,25 @@ try {
 
       const outputDescription = componentProps[parsedProp].description || "";
 
-      outputPropsTable += `${PROPS_TEMPLATE_TABLE_ROW.replace("PROP_NAME", propName).replace("PROP_TYPE", outputType).replace("PROP_DEFAULT", outputDefault)}`;
-      readmePropsTable += `${PROPS_TEMPLATE_TABLE_ROW.replace("PROP_NAME", propNameReadme).replace("PROP_TYPE", outputType).replace("PROP_DEFAULT", outputDefault)}`;
+      outputPropsTable += `${PROPS_TEMPLATE_TABLE_ROW.replace(
+        "PROP_NAME",
+        propName
+      )
+        .replace("PROP_TYPE", outputType)
+        .replace("PROP_DEFAULT", outputDefault)}`;
+      readmePropsTable += `${PROPS_TEMPLATE_TABLE_ROW.replace(
+        "PROP_NAME",
+        propNameReadme
+      )
+        .replace("PROP_TYPE", outputType)
+        .replace("PROP_DEFAULT", outputDefault)}`;
 
       outputPropsList += `\n\n\<br>\n\n### ${parsedProp}\n\n`;
       outputPropsList += `${PROPS_TEMPLATE_TABLE_HEADER_MINI}`;
-      outputPropsList += `${PROPS_TEMPLATE_TABLE_ROW_MINI.replace("PROP_TYPE", outputType).replace("PROP_DEFAULT", outputDefault)}\n\n<br>\n\n`;
+      outputPropsList += `${PROPS_TEMPLATE_TABLE_ROW_MINI.replace(
+        "PROP_TYPE",
+        outputType
+      ).replace("PROP_DEFAULT", outputDefault)}\n\n<br>\n\n`;
       outputPropsList += `${outputDescription}\n\n<br>\n\n`;
     });
 
@@ -150,47 +191,53 @@ try {
 
   if (process.env["PARSE_MODE"] === "components") {
     let componentPropsPage = fs.readFileSync(
-      COMPONENT_DIR + "/props.md",
+      path.join(COMPONENT_DIR, "props.md"),
       "utf8"
     );
     let componentCssPage = fs.readFileSync(
-      COMPONENT_DIR + "/css-vars.md",
+      path.join(COMPONENT_DIR, "css-vars.md"),
       "utf8"
     );
 
     let componentMainPage = fs.readFileSync(
-      COMPONENT_DIR + "/index.md",
+      path.join(COMPONENT_DIR, "index.md"),
       "utf8"
     );
 
-    const componentSettings = require(
-      "../../" +
-        COMPONENTS_SETTINGS_DIR +
-        "/" +
-        COMPONENT_TYPE +
-        "/" +
-        COMPONENT_NAME +
-        "/mbx-settings.json"
+    const componentSettings = JSON.parse(
+      fs.readFileSync(
+        path.join(
+          COMPONENTS_SETTINGS_DIR,
+          COMPONENT_TYPE,
+          COMPONENT_NAME,
+          "mbx-settings.json"
+        ),
+        "utf8"
+      )
     );
 
-    const componentCssVars = require(
-      "../../" +
-        COMPONENTS_SETTINGS_DIR +
-        "/" +
-        COMPONENT_TYPE +
-        "/" +
-        COMPONENT_NAME +
-        "/css-vars.json"
+    const componentCssVars = JSON.parse(
+      fs.readFileSync(
+        path.join(
+          COMPONENTS_SETTINGS_DIR,
+          COMPONENT_TYPE,
+          COMPONENT_NAME,
+          "css-vars.json"
+        ),
+        "utf8"
+      )
     );
 
-    const componentProps = require(
-      "../../" +
-        COMPONENTS_SETTINGS_DIR +
-        "/" +
-        COMPONENT_TYPE +
-        "/" +
-        COMPONENT_NAME +
-        "/props.json"
+    const componentProps = JSON.parse(
+      fs.readFileSync(
+        path.join(
+          COMPONENTS_SETTINGS_DIR,
+          COMPONENT_TYPE,
+          COMPONENT_NAME,
+          "props.json"
+        ),
+        "utf8"
+      )
     );
 
     const { propsList, propsTable } = parseProps(componentProps);
@@ -208,64 +255,76 @@ try {
       "DESCRIPTION",
       componentSettings.description || ""
     );
-    fs.writeFileSync(COMPONENT_DIR + "/css-vars.md", componentCssPage);
-    fs.writeFileSync(COMPONENT_DIR + "/props.md", componentPropsPage);
-    fs.writeFileSync(COMPONENT_DIR + "/index.md", componentMainPage);
+    fs.writeFileSync(path.join(COMPONENT_DIR, "css-vars.md"), componentCssPage);
+    fs.writeFileSync(path.join(COMPONENT_DIR, "props.md"), componentPropsPage);
+    fs.writeFileSync(path.join(COMPONENT_DIR, "index.md"), componentMainPage);
   } else if (process.env["PARSE_MODE"] === "global") {
     const TEMPLATE_README_CSS_VARS = fs.readFileSync(
-      TEMPLATE_DIR + "/building-process-shared-css-vars.md",
+      path.join(TEMPLATE_DIR, "building-process-shared-css-vars.md"),
       "utf8"
     );
 
     const TEMPLATE_README_PROPS = fs.readFileSync(
-      TEMPLATE_DIR + "/building-process-shared-props.md",
+      path.join(TEMPLATE_DIR, "building-process-shared-props.md"),
       "utf8"
     );
 
-    const sharedCssVars = require(
-      "../../" + COMPONENTS_SETTINGS_DIR + "/global-css-vars.json"
+    const sharedCssVars = JSON.parse(
+      fs.readFileSync(
+        path.join(COMPONENTS_SETTINGS_DIR, "global-css-vars.json"),
+        "utf8"
+      )
     );
-    const sharedProps = require(
-      "../../" + COMPONENTS_SETTINGS_DIR + "/shared-props.json"
+    const sharedProps = JSON.parse(
+      fs.readFileSync(
+        path.join(COMPONENTS_SETTINGS_DIR, "shared-props.json"),
+        "utf8"
+      )
     );
 
     let sharedCssVarsPage = fs.readFileSync(
-      SHARED_DIR + "/css-vars.md",
+      path.join(SHARED_DIR, "css-vars.md"),
       "utf8"
     );
 
-    let sharedPropsPage = fs.readFileSync(SHARED_DIR + "/props.md", "utf8");
-    let sharedMainPage = fs.readFileSync(SHARED_DIR + "/index.md", "utf8");
+    let sharedPropsPage = fs.readFileSync(
+      path.join(SHARED_DIR, "props.md"),
+      "utf8"
+    );
+    let sharedMainPage = fs.readFileSync(
+      path.join(SHARED_DIR, "index.md"),
+      "utf8"
+    );
 
     const { propsList, propsTable, readmePropsTable } = parseProps(sharedProps);
     const { cssVarsList, cssVarsTable, readmeCssTable } =
       parseCssVars(sharedCssVars);
 
     fs.writeFileSync(
-      SHARED_DIR + "/props.md",
+      path.join(SHARED_DIR, "props.md"),
       sharedPropsPage
         .replace("COMPONENT_TABLE", propsTable)
         .replace("COMPONENT_LIST", propsList)
     );
     fs.writeFileSync(
-      SHARED_DIR + "/css-vars.md",
+      path.join(SHARED_DIR, "css-vars.md"),
       sharedCssVarsPage
         .replace("COMPONENT_TABLE", cssVarsTable)
         .replace("COMPONENT_LIST", cssVarsList)
     );
 
     fs.writeFileSync(
-      SHARED_DIR + "/index.md",
+      path.join(SHARED_DIR, "index.md"),
       sharedMainPage.replace("DESCRIPTION", "")
     );
 
     fs.writeFileSync(
-      README_CHAPTERS_DIR + "/building-process-shared-props.md",
+      path.join(README_CHAPTERS_DIR, "building-process-shared-props.md"),
       TEMPLATE_README_PROPS.replace("SHARED_PROPS", readmePropsTable)
     );
 
     fs.writeFileSync(
-      README_CHAPTERS_DIR + "/building-process-shared-css-vars.md",
+      path.join(README_CHAPTERS_DIR, "building-process-shared-css-vars.md"),
       TEMPLATE_README_CSS_VARS.replace("SHARED_CSS_VARS", readmeCssTable)
     );
   }

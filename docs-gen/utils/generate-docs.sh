@@ -1,6 +1,7 @@
 #!/bin/sh
 
 export OUTPUT_ROOT_DIR=docs
+export OUTPUT_STATIC_DOCS_DIR=playground/public/docs
 export COMPONENTS_FILES_DIR=src/components
 export COMPONENTS_DOCS_DIR="$OUTPUT_ROOT_DIR"/components
 export GLOBAL_SETTINGS_DIR=docs-gen/global
@@ -8,7 +9,7 @@ export SHARED_DIR="$OUTPUT_ROOT_DIR"/shared
 export COMPONENTS_SETTINGS_DIR=docs-gen/components
 export TEMPLATE_DIR=docs-gen/templates
 export SCRIPTS_DIR=docs-gen/utils
-export README_CHAPTERS_DIR=docs-gen/readme/chapters
+export README_CHAPTERS_DIR=docs-gen/templates/readme/chapters
 
 export PARSE_MODE=global
 
@@ -47,6 +48,7 @@ for type in $(
     cp "$TEMPLATE_DIR"/index-group.md "$typeDir"/index.md
     sed -i "s/COMPONENTS_TYPE/$type/g" "$typeDir"/index.md
     echo "[$(python3 -c "print(\"$type\".capitalize())")](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/$type/)\n" >>"$COMPONENTS_DOCS_DIR"/index.md
+
     for component in $(
         ls -p -- "$COMPONENTS_FILES_DIR"/"$type"/ | grep / | tr -d '/'
     ); do
@@ -82,40 +84,40 @@ rm -rf README.md
 rm -rf "$OUTPUT_ROOT_DIR"/index.md
 rm -rf "$OUTPUT_ROOT_DIR"/Changelog.md
 rm -rf "$OUTPUT_ROOT_DIR"/License.md
-rm -rf playground/public/docs
-mkdir playground/public/docs
+rm -rf "$OUTPUT_STATIC_DOCS_DIR"
+mkdir "$OUTPUT_STATIC_DOCS_DIR"
 
 touch README.md
 touch "$OUTPUT_ROOT_DIR"/index.md
 touch README_TEMP.md
 
-cat docs-gen/readme/chapters/header.md >>README.md
-cat docs-gen/readme/chapters/header.md >>"$OUTPUT_ROOT_DIR"/index.md
+cat "$README_CHAPTERS_DIR"/header.md >>README.md
+cat "$README_CHAPTERS_DIR"/header.md >>"$OUTPUT_ROOT_DIR"/index.md
 
-cat docs-gen/readme/chapters/summary.md >>README.md
-cat docs-gen/readme/chapters/mbx-intro-extra.md >>README.md
+cat "$README_CHAPTERS_DIR"/summary.md >>README.md
+cat "$README_CHAPTERS_DIR"/mbx-intro-extra.md >>README.md
 
-cat docs-gen/readme/chapters/mbx-intro.md >>README_TEMP.md
+cat "$README_CHAPTERS_DIR"/mbx-intro.md >>README_TEMP.md
 
-cat docs-gen/readme/chapters/building-process-heading.md >>README_TEMP.md
-cat docs-gen/readme/chapters/building-process-shared-props.md >>README_TEMP.md
-
-echo -n "\n\n<br>\n\n" >>README_TEMP.md
-
-cat docs-gen/readme/chapters/building-process-css-global-vars.md >>README_TEMP.md
+cat "$README_CHAPTERS_DIR"/building-process-heading.md >>README_TEMP.md
+cat "$README_CHAPTERS_DIR"/building-process-shared-props.md >>README_TEMP.md
 
 echo -n "\n\n<br>\n\n" >>README_TEMP.md
 
-cat docs-gen/readme/chapters/building-process-reactive-components.md >>README_TEMP.md
+cat "$README_CHAPTERS_DIR"/building-process-css-global-vars.md >>README_TEMP.md
+
 echo -n "\n\n<br>\n\n" >>README_TEMP.md
 
-cat docs-gen/readme/chapters/getting-started.md >>README_TEMP.md
+cat "$README_CHAPTERS_DIR"/building-process-reactive-components.md >>README_TEMP.md
 echo -n "\n\n<br>\n\n" >>README_TEMP.md
 
-cat docs-gen/readme/chapters/footer.md >>README_TEMP.md
+cat "$README_CHAPTERS_DIR"/getting-started.md >>README_TEMP.md
+echo -n "\n\n<br>\n\n" >>README_TEMP.md
+
+cat "$README_CHAPTERS_DIR"/footer.md >>README_TEMP.md
 
 cat README_TEMP.md >>README.md
-cat docs-gen/readme/chapters/license-section.md >>README.md
+cat "$README_CHAPTERS_DIR"/license-section.md >>README.md
 cat README_TEMP.md >>"$OUTPUT_ROOT_DIR"/index.md
 rm -rf README_TEMP.md
 
@@ -124,7 +126,7 @@ cp -a LICENSE "$OUTPUT_ROOT_DIR"/License.md
 
 npx --yes prettier --log-level silent --write src/components/*/*/*.ts src/components/*/*/*.tsx README.md "$OUTPUT_ROOT_DIR"/index.md "$OUTPUT_ROOT_DIR"/**/*.md "$OUTPUT_ROOT_DIR"/*/**/*.md "$OUTPUT_ROOT_DIR"/*/*/*.md "$OUTPUT_ROOT_DIR"/*/*/*/*.md "$COMPONENTS_SETTINGS_DIR"/*/*/*.json
 
-python3 -m mkdocs build --quiet -d playground/public/docs
+python3 -m mkdocs build --quiet -d "$OUTPUT_STATIC_DOCS_DIR"
 
-rm -rf docs/Changelog.md
-rm -rf docs/License.md
+rm -rf "$OUTPUT_ROOT_DIR"/Changelog.md
+rm -rf "$OUTPUT_ROOT_DIR"/License.md
