@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmobrix_ui_app=self.webpackChunkmobrix_ui_app||[]).push([[881],{3881:(p,e,s)=>{p.exports=s.p+"static/media/off.f7e860b06fd0d8b59a26.svg"}}]);
