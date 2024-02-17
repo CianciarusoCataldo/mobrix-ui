@@ -25,9 +25,12 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           scope: "@cianciarusocataldo"
           always-auth: "true"
-      - run: |
+      - name: Publish to github registry
+        run: |
           npx --yes json -I -f package.json -e "this.name=\"@cianciarusocataldo/mobrix-ui\""
           npx --yes json -I -f package.json -e "this.publishConfig={\"registry\": \"https://npm.pkg.github.com\"}"
+          npm i
+          npm run build
           npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
