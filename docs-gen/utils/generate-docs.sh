@@ -100,7 +100,7 @@ cat "$README_CHAPTERS_DIR"/building-process-shared-props.md >>README_TEMP.md
 
 echo -n "\n\n<br>\n\n" >>README_TEMP.md
 
-cat "$README_CHAPTERS_DIR"/building-process-css-global-vars.md >>README_TEMP.md
+cat "$README_CHAPTERS_DIR"/building-process-shared-css-vars.md >>README_TEMP.md
 
 echo -n "\n\n<br>\n\n" >>README_TEMP.md
 
