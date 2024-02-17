@@ -8,4 +8,4 @@ SHARED_CSS_VARS
 
 <br>
 
-Check out the [complete css variables list](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/css-vars/) for more details
+Check out the [complete components list](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/) for more details

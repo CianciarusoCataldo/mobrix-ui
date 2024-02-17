@@ -87,6 +87,8 @@ Some properties are shared between all components, for a smoother dev experience
 
 <br>
 
+MoBrix-ui components shares some properties:
+
 <!-- prettier-ignore -->
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Parameter</div> | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
@@ -107,7 +109,7 @@ Some properties are shared between all components, for a smoother dev experience
 
 <br>
 
-Check out the [complete properties list](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/props/) for more details
+Check out the [complete components list](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/) for more details
 
 <br>
 
