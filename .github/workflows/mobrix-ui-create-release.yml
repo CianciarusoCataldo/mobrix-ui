@@ -6,6 +6,13 @@ jobs:
   create-release:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@cianciarusocataldo"
+          always-auth: "true"
       - name: Prepare release notes
         run: |
           touch RELEASE_NOTES.md
