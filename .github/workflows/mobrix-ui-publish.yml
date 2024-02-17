@@ -1,0 +1,56 @@
+name: Publish MoBrix-ui package
+
+on: workflow_dispatch
+
+jobs:
+  publish-mobrix-ui-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          registry-url: "https://registry.npmjs.org/"
+          always-auth: "true"
+      - name: Publish to npm registry
+        run: |
+          npm ci
+          npm run build
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@cianciarusocataldo"
+          always-auth: "true"
+      - run: |
+          npx --yes json -I -f package.json -e "this.name=\"@cianciarusocataldo/mobrix-ui\""
+          npx --yes json -I -f package.json -e "this.publishConfig={\"registry\": \"https://npm.pkg.github.com\"}"
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
+      - name: Prepare release notes
+        id: notes
+        run: |
+          rm -rf RELEASE_NOTES.md
+          touch RELEASE_NOTES.md
+          export GENERATE_RELEASE_NOTES="true";
+          . docs-gen/utils/init-env.sh
+          node docs-gen/utils/generate-changelog.js
+          echo "package_json_version=$(cat package.json | jq -r '.version')" >> $GITHUB_OUTPUT
+      - name: Create Release
+        id: create_release
+        uses: comnoco/create-release-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.notes.outputs.package_json_version }}
+          release_name: mobrix-ui-v${{ steps.notes.outputs.package_json_version }}
+          body_path: RELEASE_NOTES.md
+          draft: false
+          prerelease: false
+      - name: Clean-up
+        run: |
+          rm -rf RELEASE_NOTES.md
