@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 export OUTPUT_ROOT_DIR=docs
 export OUTPUT_STATIC_DOCS_DIR=playground/public/docs

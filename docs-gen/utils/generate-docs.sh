@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sh docs-gen/utils/init-env.sh
+. docs-gen/utils/init-env.sh
 
 export PARSE_MODE=global
 

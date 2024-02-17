@@ -19,7 +19,7 @@ jobs:
           rm -rf RELEASE_NOTES.md
           touch RELEASE_NOTES.md
           export GENERATE_RELEASE_NOTES=true;
-          sh docs-gen/utils/init-env.sh
+          . docs-gen/utils/init-env.sh
           node docs-gen/utils/generate-changelog.js
           echo "release_notes=$(cat package.json | jq -r '.version')" >> $GITHUB_OUTPUT
       - name: Create Release
