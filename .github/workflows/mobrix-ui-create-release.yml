@@ -21,7 +21,6 @@ jobs:
           export GENERATE_RELEASE_NOTES="true";
           . docs-gen/utils/init-env.sh
           node docs-gen/utils/generate-changelog.js
-          cat RELEASE_NOTES.md
           echo "package_json_version=$(cat package.json | jq -r '.version')" >> $GITHUB_OUTPUT
       - name: Create Release
         id: create_release

@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.4.1](#341)
 - [3.4.0](#340)
 - [3.3.0](#330)
 - [3.2.0](#320)
@@ -18,6 +19,13 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.4.1
+
+- Dependencies updated
+- Docs updated
 
 <br>
 
