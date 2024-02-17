@@ -3,6 +3,7 @@
 . docs-gen/utils/init-env.sh
 
 export PARSE_MODE=global
+export GENERATE_RELEASE_NOTES="false"
 
 globalPageTitle="MoBrix-ui shared"
 

@@ -18,7 +18,7 @@ jobs:
         run: |
           rm -rf RELEASE_NOTES.md
           touch RELEASE_NOTES.md
-          export GENERATE_RELEASE_NOTES=true;
+          export GENERATE_RELEASE_NOTES="true";
           . docs-gen/utils/init-env.sh
           node docs-gen/utils/generate-changelog.js
           cat RELEASE_NOTES.md

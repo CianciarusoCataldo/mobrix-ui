@@ -40,7 +40,8 @@ try {
     )
   );
 
-  if (process.env["GENERATE_RELEASE_NOTES"] === true) {
+  if (process.env["GENERATE_RELEASE_NOTES"] === "true") {
+    console.log("Creating release notes...");
     const packageSettings = JSON.parse(fs.readFileSync("package.json", "utf8"));
     fs.writeFileSync(
       "RELEASE_NOTES.md",
