@@ -60,7 +60,7 @@ try {
 
     Object.keys(componentCssVars).forEach((cssVar) => {
       const propName = `[${cssVar}](#${cssVar.replace("--mbx", "-mbx")})`;
-      const readmePropName = `[${cssVar}](https://cianciarusocataldo.github.io/mobrix-ui/docs/${COMPONENT_TYPE}/${COMPONENT_NAME}/#${cssVar.replace(
+      const readmePropName = `[${cssVar}](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#${cssVar.replace(
         "--mbx",
         "-mbx"
       )})`;
