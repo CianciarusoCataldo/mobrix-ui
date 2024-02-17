@@ -1,6 +1,6 @@
 {
   "name": "mobrix-ui",
-  "version": "3.4.0",
+  "version": "3.4.1",
   "description": "React components for every app, easy to use and customize",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -78,7 +78,6 @@
     "build-playground": "cd playground && npm run build",
     "serve:test-app": "npm-run-all --parallel \"watch\" \"start:test-app\"",
     "start:test-app": "cd test-app && npm run start",
-    "predeploy": "sh ./scripts/pre-deploy.sh",
     "deploy": "sh ./scripts/deploy.sh",
     "test": "sh ./scripts/start-tests.sh",
     "generate-docs": "sh docs-gen/utils/generate-docs.sh"

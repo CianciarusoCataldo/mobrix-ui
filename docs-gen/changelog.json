@@ -1,0 +1,51 @@
+{
+  "3.4.0": ["`EmbeddedVideo` component", "Clean-up"],
+  "3.3.0": [
+    "Slider fix",
+    "IconButton highlight fix on mobile",
+    "All components now use new building functions (`buildMbxReactiveComponent` and `buildMbxStandardComponent`)"
+  ],
+  "3.2.0": [
+    "New DatePicker css vars, to customize its internal modal\n  - `--mbx-datepicker-modal-background-light`,\n  - `--mbx-datepicker-modal-background-dark`,\n  - `--mbx-datepicker-modal-x-color-light`,\n  - `--mbx-datepicker-modal-x-color-dark`,\n  - `--mbx-datepicker-modal-x-color-hover-light`,\n  - `--mbx-datepicker-modal-x-color-hover-dark`",
+    "Clean-up",
+    "New CI workflow to publish MoBrix-ui package to github registry",
+    "Automatic css variables docs generation"
+  ],
+  "3.1.0": [
+    "New Card properties (`headerClassName`, `headerProps`, `bodyClassName`, `bodyProps`, `footerClassName`, `footerProps`)",
+    "Clean-up",
+    "Minor improvements"
+  ],
+  "3.0.0": [
+    "No more external dependencies",
+    "Totally re-designed css variables system, to fully customize every component at once",
+    "Docs and comments generator",
+    "Global refactoring and huge clean-up"
+  ],
+  "2.1.0": ["`TabViewer` component", "Minor fixes"],
+  "2.0.0": [
+    "`Calendar` component",
+    "`DatePicker` component",
+    "`Popup` component",
+    "`Selector` component",
+    "`Slider` component",
+    "`RadioButtonGroup` component",
+    "`RadioButton` component",
+    "`Reactive components` replace old `Box Components`, mantaining only the automatic input value sync with actual value set",
+    "Better overall performance",
+    "Huge cleanup",
+    "Deep refactoring",
+    "Minor fixes"
+  ],
+  "1.2.0": [
+    "`Carousel` arrow fix",
+    "`ExpandableContainer` arrow fix",
+    "`FacebookButtons` component"
+  ],
+  "1.1.0": [
+    "`readonly` support for `Rater` component",
+    "`Review` component",
+    "Clean-up"
+  ],
+  "1.0.0": ["MoBrix-ui-components library setup"]
+}

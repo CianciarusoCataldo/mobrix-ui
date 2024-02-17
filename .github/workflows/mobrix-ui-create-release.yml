@@ -1,0 +1,27 @@
+name: Create MoBrix-ui release
+
+on: workflow_dispatch
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prepare release notes
+        run: |
+          touch RELEASE_NOTES.md
+          export GENERATE_RELEASE_NOTES=true;
+          node docs-gen/utils/generate-changelog.js
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: mobrix-ui-${{ github.ref }}
+          body_path: RELEASE_NOTES.md
+          draft: false
+          prerelease: false
+      - name: Clean-up
+        run: |
+          rm -rf RELEASE_NOTES.md

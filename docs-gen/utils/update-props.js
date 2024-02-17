@@ -1,20 +1,42 @@
 const fs = require("fs");
+const path = require("path");
+
 const COMPONENT_NAME = process.env["COMPONENT_NAME"];
 const COMPONENT_TYPE = process.env["COMPONENT_TYPE"];
+const COMPONENTS_SETTINGS_DIR = process.env["COMPONENTS_SETTINGS_DIR"];
 
 try {
   let externalProps = {};
   let groupProps = {};
-  const groups = require("../components/props-groups.json");
-  const settings = require(
-    "../components/" +
-      COMPONENT_TYPE +
-      "/" +
-      COMPONENT_NAME +
-      "/mbx-settings.json"
+  const groups = JSON.parse(
+    fs.readFileSync(
+      path.join(COMPONENTS_SETTINGS_DIR, "props-groups.json"),
+      "utf8"
+    )
   );
-  let props = require(
-    "../components/" + COMPONENT_TYPE + "/" + COMPONENT_NAME + "/props.json"
+
+  const settings = JSON.parse(
+    fs.readFileSync(
+      path.join(
+        COMPONENTS_SETTINGS_DIR,
+        COMPONENT_TYPE,
+        COMPONENT_NAME,
+        "mbx-settings.json"
+      ),
+      "utf8"
+    )
+  );
+
+  let props = JSON.parse(
+    fs.readFileSync(
+      path.join(
+        COMPONENTS_SETTINGS_DIR,
+        COMPONENT_TYPE,
+        COMPONENT_NAME,
+        "props.json"
+      ),
+      "utf8"
+    )
   );
 
   if (settings.extend) {
@@ -38,8 +60,11 @@ try {
     if (settings.extend.component) {
       const component = settings.extend.component.name;
       const type = settings.extend.component.type || COMPONENT_TYPE;
-      externalProps = require(
-        "../components/" + type + "/" + component + "/props.json"
+      externalProps = JSON.parse(
+        fs.readFileSync(
+          path.join(COMPONENTS_SETTINGS_DIR, type, component, "props.json"),
+          "utf8"
+        )
       );
 
       if (settings.extend.component.exclude) {
@@ -65,18 +90,20 @@ try {
           externalProps[externalProp].description +
           ` - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/${type}/${component} ${component}}`;
 
-        externalProps[externalProp].description +=
-          ` - extended from [${component} component](../../${type}/${component}/props.md#${externalProp})`;
+        externalProps[
+          externalProp
+        ].description += ` - extended from [${component} component](../../${type}/${component}/props.md#${externalProp})`;
       });
     }
   }
 
   fs.writeFileSync(
-    "docs-gen/components/" +
-      COMPONENT_TYPE +
-      "/" +
-      COMPONENT_NAME +
-      "/props.json",
+    path.join(
+      COMPONENTS_SETTINGS_DIR,
+      COMPONENT_TYPE,
+      COMPONENT_NAME,
+      "props.json"
+    ),
     JSON.stringify({ ...props, ...externalProps, ...groupProps })
   );
 } catch (e) {

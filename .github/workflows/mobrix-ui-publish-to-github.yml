@@ -1,4 +1,4 @@
-name: Publish to github registry
+name: Publish MoBrix-ui to github registry
 
 on: workflow_dispatch
 

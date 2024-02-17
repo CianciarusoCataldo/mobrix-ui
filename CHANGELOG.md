@@ -24,7 +24,7 @@
 ### 3.4.0
 
 - `EmbeddedVideo` component
-- clean-up
+- Clean-up
 
 <br>
 
@@ -44,7 +44,7 @@
   - `--mbx-datepicker-modal-x-color-light`,
   - `--mbx-datepicker-modal-x-color-dark`,
   - `--mbx-datepicker-modal-x-color-hover-light`,
-  - `--mbx-datepicker-modal-x-color-hover-dark`,
+  - `--mbx-datepicker-modal-x-color-hover-dark`
 - Clean-up
 - New CI workflow to publish MoBrix-ui package to github registry
 - Automatic css variables docs generation
