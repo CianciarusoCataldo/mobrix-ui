@@ -1,6 +1,6 @@
 {
   "name": "mobrix-ui",
-  "version": "3.4.5",
+  "version": "3.4.6",
   "description": "React components for every app, easy to use and customize",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -61,6 +61,7 @@
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-typescript2": "^0.31.2",
     "rollup-plugin-visualizer": "^5.5.4",
+    "semver": "^7.6.0",
     "ts-jest": "^29.x.x",
     "typescript": ">4.X.X"
   },

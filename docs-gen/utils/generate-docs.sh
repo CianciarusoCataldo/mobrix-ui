@@ -11,10 +11,6 @@ rm -rf "$OUTPUT_ROOT_DIR"/shared
 
 mkdir "$OUTPUT_ROOT_DIR"/shared
 
-rm -rf CHANGELOG.md
-
-node "$SCRIPTS_DIR/generate-changelog.js"
-
 cp "$TEMPLATE_DIR"/index-component.md "$OUTPUT_ROOT_DIR"/shared/index.md
 cp "$TEMPLATE_DIR"/props-page.md "$OUTPUT_ROOT_DIR"/shared/props.md
 cp "$TEMPLATE_DIR"/css-vars-page.md "$OUTPUT_ROOT_DIR"/shared/css-vars.md
