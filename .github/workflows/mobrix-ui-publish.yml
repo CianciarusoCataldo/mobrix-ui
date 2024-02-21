@@ -12,28 +12,6 @@ jobs:
           node-version-file: ".nvmrc"
           registry-url: "https://registry.npmjs.org/"
           always-auth: "true"
-      - name: Publish to npm registry
-        run: |
-          npm ci
-          npm run build
-          npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: ".nvmrc"
-          registry-url: "https://npm.pkg.github.com"
-          scope: "@cianciarusocataldo"
-          always-auth: "true"
-      - name: Publish to github registry
-        run: |
-          npx --yes json -I -f package.json -e "this.name=\"@cianciarusocataldo/mobrix-ui\""
-          npx --yes json -I -f package.json -e "this.publishConfig={\"registry\": \"https://npm.pkg.github.com\"}"
-          npm i
-          npm run build
-          npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
       - name: Create release
         run: |
           export PACKAGE_JSON_VERSION=$(cat package.json | jq -r '.version')
@@ -57,3 +35,25 @@ jobs:
           else
             echo "Not a minor or major version bump, release won't be created"
           fi
+      - name: Publish to npm registry
+        run: |
+          npm ci
+          npm run build
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@cianciarusocataldo"
+          always-auth: "true"
+      - name: Publish to github registry
+        run: |
+          npx --yes json -I -f package.json -e "this.name=\"@cianciarusocataldo/mobrix-ui\""
+          npx --yes json -I -f package.json -e "this.publishConfig={\"registry\": \"https://npm.pkg.github.com\"}"
+          npm i
+          npm run build
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
