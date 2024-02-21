@@ -34,7 +34,7 @@ import embeddedVideoComponent from "./component";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 const EmbeddedVideo: EmbeddedVideoComponent = ({ url, ...shared }) =>
   buildMbxStandardComponent(shared, (sharedProps) => ({

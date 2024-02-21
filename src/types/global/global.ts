@@ -224,7 +224,8 @@ export type Wrappers =
   | "select"
   | "table"
   | "textarea"
-  | "span";
+  | "span"
+  | "img";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} components builder props

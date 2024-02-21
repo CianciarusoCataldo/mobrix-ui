@@ -47,7 +47,7 @@ import cardComponent from "./component";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 const Card: CardComponent = (props) =>
   buildMbxStandardComponent(props, (sharedProps) => ({
