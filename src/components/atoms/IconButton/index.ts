@@ -27,7 +27,7 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/IconButton
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/IconButton
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 3.0.0

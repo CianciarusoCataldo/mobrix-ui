@@ -28,7 +28,7 @@ import popupComponent from "./component";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/Popup
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Popup
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 2.0.0
@@ -38,10 +38,10 @@ import popupComponent from "./component";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const Popup: PopupComponent = ({ children, ...commonProps }) =>
-  buildMbxStandardComponent(commonProps, (props) => ({
+  buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "popup",
-    commonProps: { ...props, className: "" },
-    Component: popupComponent({ ...props, children }),
+    commonProps: { ...sharedProps, className: "" },
+    Component: popupComponent({ ...sharedProps, children }),
   }));
 
 export default Popup;

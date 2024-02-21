@@ -27,7 +27,7 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Link
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Link
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -36,26 +36,25 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Link: LinkComponent = ({
-  to,
-  children,
-  newTab,
-  additionalProps = {},
-  ...commonProps
-}) =>
-  buildMbxStandardComponent({ ...commonProps, shadow: false }, (props) => ({
-    name: "link",
-    Component: children,
-    commonProps: props,
-    additionalProps: {
-      ...additionalProps,
-      "data-mbx-opacityhover": props.hover && !props.disabled,
-      ...(!props.disabled && {
-        href: to,
-        target: newTab ? "_blank" : undefined,
-      }),
-    },
-    wrapper: props.disabled ? "span" : "a",
-  }));
+const Link: LinkComponent = ({ to, children, newTab, ...commonProps }) =>
+  buildMbxStandardComponent(
+    { ...commonProps, shadow: false },
+    (sharedProps) => ({
+      name: "link",
+      Component: children,
+      commonProps: {
+        ...sharedProps,
+        additionalProps: {
+          ...sharedProps.additionalProps,
+          "data-mbx-opacityhover": sharedProps.hover && !sharedProps.disabled,
+          ...(!sharedProps.disabled && {
+            href: to,
+            target: newTab ? "_blank" : undefined,
+          }),
+        },
+      },
+      wrapper: sharedProps.disabled ? "span" : "a",
+    }),
+  );
 
 export default Link;

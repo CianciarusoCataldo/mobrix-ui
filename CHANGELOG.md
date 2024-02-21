@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.5.0](#350)
 - [3.4.0](#340)
 - [3.3.0](#330)
 - [3.2.0](#320)
@@ -18,6 +19,17 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.5.0
+
+- Clean-up
+- Refactoring
+- Reduced bundle size
+- Comments generator fix
+- New automatic release creation system
+- New automatic publish system
 
 <br>
 

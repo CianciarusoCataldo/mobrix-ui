@@ -28,7 +28,7 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/CodeBox
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/CodeBox
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -37,24 +37,13 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const CodeBox: CodeBoxComponent = ({
-  value,
-  highlight,
-  environment,
-  noCopyButton,
-  additionalProps,
-  ...commonProps
-}) =>
-  buildMbxStandardComponent(commonProps, (props) => ({
+const CodeBox: CodeBoxComponent = (props) =>
+  buildMbxStandardComponent(props, (sharedProps) => ({
     name: "codebox",
-    additionalProps,
-    commonProps: props,
+    commonProps: sharedProps,
     Component: codeboxComponent({
-      highlight,
-      environment,
-      value,
-      noCopyButton,
       ...props,
+      ...sharedProps,
     }),
   }));
 

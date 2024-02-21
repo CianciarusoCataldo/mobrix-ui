@@ -24,7 +24,7 @@ import { buildMbxStandardComponent } from "../../../tools";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Divider
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Divider
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -33,11 +33,10 @@ import { buildMbxStandardComponent } from "../../../tools";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Divider: DividerComponent = ({ additionalProps, ...commonProps }) =>
-  buildMbxStandardComponent(commonProps, (sharedProps) => ({
+const Divider: DividerComponent = (props) =>
+  buildMbxStandardComponent(props, (sharedProps) => ({
     name: "divider",
     commonProps: { ...sharedProps, a11y: false },
-    additionalProps,
   }));
 
 export default Divider;

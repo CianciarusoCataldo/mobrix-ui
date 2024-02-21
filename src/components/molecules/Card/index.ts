@@ -40,7 +40,7 @@ import cardComponent from "./component";
  * @example <caption>undefined</caption>
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/Card
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -49,44 +49,14 @@ import cardComponent from "./component";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Card: CardComponent = ({
-  header,
-  body,
-  footer,
-  children,
-  hide,
-  noDividers,
-  noBottomDivider,
-  noTopDivider,
-  additionalProps,
-  headerClassName,
-  bodyClassName,
-  footerClassName,
-  headerProps,
-  bodyProps,
-  footerProps,
-  ...commonProps
-}) =>
-  buildMbxStandardComponent(commonProps, (sharedProps) => ({
+const Card: CardComponent = (props) =>
+  buildMbxStandardComponent(props, (sharedProps) => ({
     name: "card",
     Component: cardComponent({
-      header,
-      body,
-      children,
-      footer,
-      noDividers,
-      noBottomDivider,
-      noTopDivider,
-      headerClassName,
-      bodyClassName,
-      footerClassName,
-      headerProps,
-      bodyProps,
-      footerProps,
+      ...props,
       ...sharedProps,
     }),
     commonProps: sharedProps,
-    additionalProps,
   }));
 
 export default Card;

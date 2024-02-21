@@ -28,7 +28,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Input
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -43,22 +43,18 @@ const Input: InputComponent = ({
   value: inputValue,
   placeholder,
   readOnly,
-  additionalProps = {},
   autoresizable,
   ...commonProps
 }) =>
-  buildMbxReactiveComponent<string | undefined>(
-    commonProps,
-    (parsedCommonProps) => ({
+  buildMbxReactiveComponent<string | undefined>(commonProps, (sharedProps) => ({
+    name: "inputbox",
+    wrapper: "input",
+    props: (value, setValue) => ({
       commonProps: {
-        ...parsedCommonProps,
-        hover: parsedCommonProps.hover && !readOnly,
-      },
-      name: "inputbox",
-      wrapper: "input",
-      props: (value, setValue) => ({
+        ...sharedProps,
+        hover: sharedProps.hover && !readOnly,
         additionalProps: {
-          ...additionalProps,
+          ...sharedProps.additionalProps,
           ...(autoresizable && {
             "data-mbx-autoresizable": !!autoresizable,
             size: Math.ceil(value.length / 2) + (value.length > 0 ? 0 : 1),
@@ -66,20 +62,20 @@ const Input: InputComponent = ({
           type: "text",
           value,
           placeholder,
-          disabled: parsedCommonProps.disabled,
-          readOnly: readOnly || parsedCommonProps.disabled,
+          disabled: sharedProps.disabled,
+          readOnly: readOnly || sharedProps.disabled,
           onChange: (e) => {
-            if (!readOnly && !parsedCommonProps.disabled) {
+            if (!readOnly && !sharedProps.disabled) {
               const newValue = e.target.value ? e.target.value : "";
               onChange(newValue);
               setValue(newValue);
             }
           },
         },
-      }),
-      inputValue,
-      defaultValue: "",
+      },
     }),
-  );
+    inputValue,
+    defaultValue: "",
+  }));
 
 export default Input;

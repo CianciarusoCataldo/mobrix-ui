@@ -26,7 +26,6 @@ import { useTranslation } from "react-i18next";
 import { getAppName } from "mobrix-engine-tools";
 
 import {
-  Button,
   ExpandableContainer,
   Dropdown,
   Link,
@@ -63,7 +62,7 @@ const HeaderContent = () => {
           >
             {BurgerIcon}
           </IconButton>
-          <Button
+          <IconButton
             aria-label="back button"
             onClick={() => {
               dispatch(goTo(HOME));
@@ -87,7 +86,7 @@ const HeaderContent = () => {
               <path d="M8.681.196l2.121 2.12-8.484 8.487-2.12-2.12z" />
               <path d="M10.803 15.047l-2.121 2.121L.197 8.683l2.121-2.121z" />
             </svg>
-          </Button>
+          </IconButton>
           <div className="m-auto flex flex-row p-2">
             <div className="mr-2 my-auto"> {LogoIcon}</div>
             <div className="flex flex-col my-auto">
@@ -139,7 +138,12 @@ const HeaderContent = () => {
               onChange={(lang: number) => {
                 dispatch(changeLanguage(LANGUAGES[lang]));
               }}
-              elements={Object.keys(LANGUAGES_ICONS).map(lang => <div className="flex flex-row">{LANGUAGES_ICONS[lang]}{` ${lang}`}</div>)}
+              elements={Object.keys(LANGUAGES_ICONS).map((lang) => (
+                <div className="flex flex-row">
+                  {LANGUAGES_ICONS[lang]}
+                  {` ${lang}`}
+                </div>
+              ))}
             />
             <Toggle
               onIcon={LightModeIcon}

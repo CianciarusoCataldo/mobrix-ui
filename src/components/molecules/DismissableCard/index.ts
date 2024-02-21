@@ -41,7 +41,7 @@ import dismissableCardInternalComponent from "./component";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/DismissableCard
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/DismissableCard
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 3.0.0
@@ -51,53 +51,30 @@ import dismissableCardInternalComponent from "./component";
  * @copyright 2023 Cataldo Cianciaruso
  */
 const DismissableCard: DismissableCardComponent = ({
-  onClose,
-  noBottomDivider,
-  noDividers,
-  noTopDivider,
-  header,
-  body,
-  footer,
-  hide,
-  children,
+  /* istanbul ignore next */
+  onClose = () => {},
   alwaysVisible,
-  additionalProps,
-  headerClassName,
-  bodyClassName,
-  footerClassName,
-  headerProps,
-  bodyProps,
-  footerProps,
-  ...commonProps
+  ...props
 }) =>
-  buildMbxReactiveComponent(commonProps, (sharedProps) => ({
+  buildMbxReactiveComponent(props, (sharedProps) => ({
     name: "dismissable-card",
-    inputValue: hide,
+    inputValue: sharedProps.hide,
     defaultValue: false,
     Component: ({ value, setValue }) =>
       dismissableCardInternalComponent({
-        value,
-        setValue,
-        noBottomDivider,
-        noDividers,
-        noTopDivider,
-        header,
-        body,
-        footer,
-        dark: commonProps.dark,
-        alwaysVisible,
-        onClose,
-        headerClassName,
-        bodyClassName,
-        footerClassName,
-        headerProps,
-        bodyProps,
-        footerProps,
+        ...props,
         ...sharedProps,
+        alwaysVisible,
+        onClose: () => {
+          onClose();
+          !alwaysVisible && setValue(true);
+        },
       }),
-    additionalProps,
     props: (value, setValue) => ({
-      commonProps: { ...sharedProps, hide: alwaysVisible ? hide : value },
+      commonProps: {
+        ...sharedProps,
+        hide: alwaysVisible ? sharedProps.hide : value,
+      },
     }),
   }));
 

@@ -30,7 +30,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Counter
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Counter
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -47,19 +47,18 @@ const Counter: CounterComponent = ({
   readOnly,
   max,
   min,
-  additionalProps = {},
   ...commonProps
 }) =>
-  buildMbxReactiveComponent<number | undefined>(
-    commonProps,
-    (parsedCommonProps) => ({
-      wrapper: "input",
-      name: "counterbox",
-      inputValue,
-      defaultValue: 0,
-      props: (value, setValue) => ({
+  buildMbxReactiveComponent<number | undefined>(commonProps, (sharedProps) => ({
+    wrapper: "input",
+    name: "counterbox",
+    inputValue,
+    defaultValue: 0,
+    props: (value, setValue) => ({
+      commonProps: {
+        ...sharedProps,
         additionalProps: {
-          ...additionalProps,
+          ...sharedProps.additionalProps,
           disabled: commonProps.disabled,
           type: "number",
           value: value,
@@ -68,18 +67,15 @@ const Counter: CounterComponent = ({
           max,
           min,
           onChange: (e) => {
-            if (!readOnly && !parsedCommonProps.disabled) {
+            if (!readOnly && !sharedProps.disabled) {
               onChange(e.target.value);
               setValue(e.target.value);
             }
           },
         },
-      }),
-      commonProps: {
-        ...parsedCommonProps,
-        hover: parsedCommonProps.hover && !readOnly,
+        hover: sharedProps.hover && !readOnly,
       },
     }),
-  );
+  }));
 
 export default Counter;

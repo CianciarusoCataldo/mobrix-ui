@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { DropdownComponent } from "../../../types";
 
-import dropdownComponentBuilder from "./component";
+import dropdownComponent from "./component";
 import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
@@ -29,7 +29,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/Dropdown
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Dropdown
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -38,28 +38,18 @@ import { buildMbxReactiveComponent } from "../../../tools";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Dropdown: DropdownComponent = ({
-  elements,
-  onChange,
-  value: inputValue,
-  hideArrow,
-  additionalProps,
-  ...commonProps
-}) =>
-  buildMbxReactiveComponent(commonProps, (props) => ({
+const Dropdown: DropdownComponent = (props) =>
+  buildMbxReactiveComponent(props, (sharedProps) => ({
     name: "dropdown",
     defaultValue: 0,
-    inputValue,
-    additionalProps,
-    commonProps: props,
+    inputValue: props.value,
+    commonProps: sharedProps,
     props: (value, setValue) =>
-      dropdownComponentBuilder({
-        elements,
-        onChange,
-        value,
-        hideArrow,
-        setValue,
+      dropdownComponent({
         ...props,
+        ...sharedProps,
+        value,
+        setValue,
       }),
   }));
 

@@ -16,7 +16,6 @@ const tabViewerComponent: MobrixUiReactiveComponent<number, TabViewerProps> = ({
   tabs = [],
   shadow,
   value,
-  hover,
   disabled,
 }) => [
   <div data-mbx-class="tabs-list" key="tabs_list">

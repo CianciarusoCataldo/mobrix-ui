@@ -29,7 +29,7 @@ import { DefaultCheckIcon } from "./icons";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/CheckBox
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/CheckBox
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -43,7 +43,6 @@ const Checkbox: CheckBoxComponent = ({
   onChange = () => {},
   icon,
   onKeyDown = () => {},
-  additionalProps = {},
   ...commonProps
 }) =>
   buildMbxReactiveComponent<boolean>(commonProps, (sharedProps) => ({
@@ -52,6 +51,15 @@ const Checkbox: CheckBoxComponent = ({
     props: (actualValue, setValue) => ({
       commonProps: {
         ...sharedProps,
+        additionalProps: {
+          ...sharedProps.additionalProps,
+          ...(!sharedProps.disabled && {
+            onClick: () => {
+              onChange(!actualValue);
+              setValue(!actualValue);
+            },
+          }),
+        },
         ...(!sharedProps.disabled && {
           onKeyDown: (e) => {
             onKeyDown(e);
@@ -59,15 +67,6 @@ const Checkbox: CheckBoxComponent = ({
               onChange(!actualValue);
               setValue(!actualValue);
             }
-          },
-        }),
-      },
-      additionalProps: {
-        ...additionalProps,
-        ...(!sharedProps.disabled && {
-          onClick: () => {
-            onChange(!actualValue);
-            setValue(!actualValue);
           },
         }),
       },

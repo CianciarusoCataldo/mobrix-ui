@@ -29,7 +29,7 @@ import React from "react";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/Modal
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Modal
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -41,7 +41,6 @@ import React from "react";
 const Modal: ModalComponent = ({
   children,
   closeOutside,
-  additionalProps = {},
   /* istanbul ignore next */
   onClose = () => {},
   hide,
@@ -65,16 +64,16 @@ const Modal: ModalComponent = ({
       closeOutside,
       onClose: onCloseCallback,
       hide,
-      ...commonProps,
+      ...sharedProps,
     }),
     commonProps: {
       ...sharedProps,
       hide: value.length === 0 && hide,
-    },
-    additionalProps: {
-      ...additionalProps,
-      "data-mbx-modal-animation":
-        value.length === 0 ? (hide ? "" : "ease-in") : value,
+      additionalProps: {
+        ...sharedProps.additionalProps,
+        "data-mbx-modal-animation":
+          value.length === 0 ? (hide ? "" : "ease-in") : value,
+      },
     },
   }));
 };

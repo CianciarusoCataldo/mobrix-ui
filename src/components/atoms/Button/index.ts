@@ -28,7 +28,7 @@ import { buildMbxStandardComponent } from "../../../tools";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Button
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Button
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -42,21 +42,22 @@ const Button: ButtonComponent = ({
   onClick,
   onMouseEnter,
   onMouseLeave,
-  additionalProps = {},
   ...commonProps
 }) =>
   buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "button",
     wrapper: "button",
-    additionalProps: {
-      ...additionalProps,
-      disabled: commonProps.disabled,
-      onClick,
-      onMouseEnter,
-      onMouseLeave,
-    },
     Component: children,
-    commonProps: sharedProps,
+    commonProps: {
+      ...sharedProps,
+      additionalProps: {
+        ...sharedProps.additionalProps,
+        disabled: sharedProps.disabled,
+        onClick,
+        onMouseEnter,
+        onMouseLeave,
+      },
+    },
   }));
 
 export default Button;

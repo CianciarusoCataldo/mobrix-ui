@@ -43,7 +43,7 @@ const ALLOWED_POSITIONS = [
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/organisms/Drawer
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Drawer
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -55,7 +55,6 @@ const ALLOWED_POSITIONS = [
 const Drawer: DrawerComponent = ({
   position,
   hide,
-  animated,
   children,
   /* istanbul ignore next */
   onClose = () => {},
@@ -89,10 +88,10 @@ const Drawer: DrawerComponent = ({
     animation: value.length === 0 ? (hide ? "" : "ease-in") : value,
   };
 
-  return buildMbxStandardComponent(commonProps, (props) => ({
+  return buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "drawer",
     commonProps: {
-      ...props,
+      ...sharedProps,
       hide: value.length === 0 && hide,
       onFocusLost: customProps.onFocusLost,
     },
@@ -104,7 +103,7 @@ const Drawer: DrawerComponent = ({
       children,
       hide,
       onClose: onCloseCallback,
-      ...props,
+      ...sharedProps,
     }),
   }));
 };

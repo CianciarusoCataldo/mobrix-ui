@@ -31,7 +31,7 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/organisms/Form
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Form
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -40,28 +40,14 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Form: FormComponent = ({
-  title,
-  fields,
-  onSubmit,
-  submitLabel,
-  children,
-  fieldClassName,
-  validate,
-  ...commonProps
-}) =>
-  buildMbxStandardComponent(commonProps, (props) => ({
+const Form: FormComponent = (props) =>
+  buildMbxStandardComponent(props, (sharedProps) => ({
     name: "form",
     Component: formComponent({
-      title,
-      fields,
-      onSubmit,
-      submitLabel,
-      children,
-      fieldClassName,
       ...props,
+      ...sharedProps,
     }),
-    commonProps: props,
+    commonProps: sharedProps,
   }));
 
 export default Form;

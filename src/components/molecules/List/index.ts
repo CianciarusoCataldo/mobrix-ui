@@ -28,7 +28,7 @@ import listComponent from "./component";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/List
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/List
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -37,16 +37,10 @@ import listComponent from "./component";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const List: ListComponent = ({
-  elements,
-  onClick,
-  additionalProps,
-  ...commonProps
-}) =>
-  buildMbxStandardComponent(commonProps, (sharedProps) => ({
+const List: ListComponent = (props) =>
+  buildMbxStandardComponent(props, (sharedProps) => ({
     name: "list",
-    Component: listComponent({ elements, onClick, ...commonProps }),
-    additionalProps,
+    Component: listComponent({ ...props, ...sharedProps }),
     commonProps: { ...sharedProps, shadow: false },
   }));
 

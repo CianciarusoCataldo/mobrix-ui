@@ -35,7 +35,7 @@ import tableComponent from "./component";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/Table
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Table
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -44,37 +44,14 @@ import tableComponent from "./component";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Table: TableComponent = ({
-  propsCallback,
-  onClick,
-  headers,
-  rows,
-  rowClassName,
-  cellClassName,
-  headerClassName,
-  headersProps,
-  cellProps,
-  rowProps,
-  additionalProps,
-  ...commonProps
-}) =>
-  buildMbxStandardComponent(commonProps, (sharedProps) => ({
+const Table: TableComponent = (props) =>
+  buildMbxStandardComponent(props, (sharedProps) => ({
     name: "table",
     Component: tableComponent({
-      propsCallback,
-      onClick,
-      headers,
-      rows,
-      cellClassName,
-      headerClassName,
-      rowClassName,
-      cellProps,
-      rowProps,
-      headersProps,
+      ...props,
       ...sharedProps,
     }),
     commonProps: sharedProps,
-    additionalProps,
     wrapper: "table",
   }));
 

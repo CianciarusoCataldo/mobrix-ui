@@ -162,7 +162,7 @@ Some components are designed with a specific structure, to sync their internal s
 So, we have 2 scenarios:
 
 - If you change the component value
-  using the component(without changing the `value` parameter), it will be updated internally.
+  using the component (without changing the `value` parameter), it will be updated internally.
 
 - If you change the passed `value` parameter, the component will sync its value with the given one.
 

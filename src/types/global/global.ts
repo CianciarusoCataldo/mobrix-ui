@@ -56,6 +56,7 @@ export interface CommonProps {
   /** If true, disable the component. The effect may vary depending on the component type */
   disabled?: boolean;
 
+  /** Custom additional properties, applied to the component */
   additionalProps?: Record<string, any>;
 
   /** If `true`, the component is selectable by navigating with tab key (default `true`) */
@@ -180,7 +181,7 @@ export interface ClickableComponent<T = () => void> {
  * @copyright 2023 Cataldo Cianciaruso
  */
 export interface ComponentWithChildren<
-  T = JSX.Element | JSX.Element[] | undefined,
+  T = JSX.Element | JSX.Element[] | undefined
 > {
   /** Component children */
   children?: T;
@@ -300,7 +301,7 @@ export type MobrixUiReactiveComponentProps<T = any, K = any> = {
  */
 export type MobrixUiReactiveComponentBuilder<
   T = any,
-  K = any,
+  K = any
 > = MoBrixUiComponent<
   MobrixUiReactiveComponentProps<T, K>,
   Omit<BuilderProps, "name">
@@ -318,7 +319,7 @@ export type MobrixUiReactiveComponentBuilder<
 export type MobrixUiReactiveComponent<
   T = any,
   K = any,
-  ReturnType = BuilderComponent | BuilderComponent[],
+  ReturnType = BuilderComponent | BuilderComponent[]
 > = MoBrixUiComponent<MobrixUiReactiveComponentProps<T, K>, ReturnType>;
 
 export type DeepPartial<T> = {

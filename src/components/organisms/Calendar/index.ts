@@ -39,7 +39,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/organisms/Calendar
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 2.0.0
@@ -48,53 +48,27 @@ import { buildMbxReactiveComponent } from "../../../tools";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Calendar: CalendarComponent = ({
-  value: inputValue,
-  hideArrows,
-  days,
-  months,
-  onViewChange,
-  onChange,
-  startYear,
-  startMonth,
-  fromToday,
-  dayLabel,
-  labelClassName,
-  labelProps,
-  additionalProps,
-  ...commonProps
-}) => {
+const Calendar: CalendarComponent = ({ value: inputValue, ...props }) => {
   const todayDate = today();
 
   return buildMbxReactiveComponent<DeepPartial<CalendarDate>>(
-    commonProps,
-    (props) => ({
+    props,
+    (sharedProps) => ({
       name: "calendar",
-      commonProps: { ...props, shadow: false },
+      commonProps: { ...sharedProps, shadow: false },
       inputValue,
       defaultValue: {
         year: todayDate.year,
         month: todayDate.month,
         day: todayDate.dayOfTheMonth,
       },
-      additionalProps,
       Component: ({ value, setValue }) =>
         calendarComponent({
           today: todayDate,
           value,
           setValue,
-          hideArrows,
-          days,
-          months,
-          onViewChange,
-          onChange,
-          startYear,
-          startMonth,
-          fromToday,
-          dayLabel,
-          labelClassName,
-          labelProps,
           ...props,
+          ...sharedProps,
         }),
     }),
   );
