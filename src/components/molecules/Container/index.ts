@@ -27,7 +27,7 @@ import { buildMbxStandardComponent } from "../../../tools";
  * @example <caption>undefined</caption>
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/Container
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Container
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -36,18 +36,12 @@ import { buildMbxStandardComponent } from "../../../tools";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Container: ContainerComponent = ({
-  children,
-  wrapper,
-  additionalProps,
-  ...commonProps
-}) =>
-  buildMbxStandardComponent(commonProps, (sharedProps) => ({
+const Container: ContainerComponent = (props) =>
+  buildMbxStandardComponent(props, (sharedProps) => ({
     name: "container",
-    Component: children,
+    Component: props.children,
     commonProps: sharedProps,
-    additionalProps,
-    wrapper,
+    wrapper: props.wrapper,
   }));
 
 export default Container;

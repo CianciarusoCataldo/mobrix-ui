@@ -2,8 +2,9 @@ import "./styles.css";
 
 import { FormFieldComponent } from "../../../types";
 
-import FormFieldInternalComponent from "./component";
 import { buildMbxReactiveComponent } from "../../../tools";
+
+import FormFieldInternalComponent from "./component";
 
 /**
 * A single form field. Depending on its `type`, a different input component is used inside
@@ -42,7 +43,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
 *
 * 
 *
-* @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/FormField
+* @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/FormField
 * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
 *
 * @since 3.0.0
@@ -54,24 +55,15 @@ import { buildMbxReactiveComponent } from "../../../tools";
 const FormField: FormFieldComponent = ({
   value: inputValue,
   type,
-  onChange,
-  placeholder,
-  required,
-  validate,
-  header,
-  className,
-  headerClassName,
-  headerProps,
-  errorLabel,
-  ...sharedProps
+  ...props
 }) => {
-  return buildMbxReactiveComponent(sharedProps, (props) => ({
+  return buildMbxReactiveComponent(props, (sharedProps) => ({
     name: "form-field",
     commonProps: {
-      ...props,
+      ...sharedProps,
       shadow: false,
       additionalProps: {
-        ...props.additionalProps,
+        ...sharedProps.additionalProps,
         "data-mbx-field-type": type,
       },
     },
@@ -80,16 +72,8 @@ const FormField: FormFieldComponent = ({
         value,
         setValue,
         type,
-        onChange,
-        placeholder,
-        required,
-        validate,
-        header,
-        headerProps,
-        className,
-        errorLabel,
-        headerClassName,
         ...props,
+        ...sharedProps,
       }),
     inputValue,
     defaultValue: null,

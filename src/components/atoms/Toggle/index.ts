@@ -30,7 +30,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Toggle
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Toggle
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -45,26 +45,28 @@ const Toggle: ToggleComponent = ({
   offIcon,
   onIcon,
   onChange = () => {},
-  additionalProps = {},
   ...commonProps
 }) =>
-  buildMbxReactiveComponent<boolean>(commonProps, (props) => ({
+  buildMbxReactiveComponent<boolean>(commonProps, (sharedProps) => ({
     name: "toggle",
     props: (status, setStatus) => ({
-      additionalProps: {
-        ...additionalProps,
-        ...(!props.disabled && {
-          onClick: () => {
-            onChange(!status);
-            setStatus(!status);
-          },
-          onKeyDown: (e) => {
-            if (e.code === "Enter") {
+      commonProps: {
+        ...sharedProps,
+        additionalProps: {
+          ...sharedProps.additionalProps,
+          ...(!sharedProps.disabled && {
+            onClick: () => {
               onChange(!status);
               setStatus(!status);
-            }
-          },
-        }),
+            },
+            onKeyDown: (e) => {
+              if (e.code === "Enter") {
+                onChange(!status);
+                setStatus(!status);
+              }
+            },
+          }),
+        },
       },
     }),
     Component: ({ value, setValue }) =>
@@ -74,11 +76,10 @@ const Toggle: ToggleComponent = ({
         icon,
         offIcon,
         onIcon,
-        ...props,
+        ...sharedProps,
       }),
     defaultValue: true,
     inputValue,
-    commonProps: props,
   }));
 
 export default Toggle;

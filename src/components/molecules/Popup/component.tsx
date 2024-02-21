@@ -1,15 +1,8 @@
 import React from "react";
 
-import {
-  BuilderComponent,
-  MoBrixUiComponent,
-  PopupProps,
-} from "../../../types";
+import { PopupComponent } from "../../../types";
 
-const popupComponent: MoBrixUiComponent<PopupProps, BuilderComponent> = ({
-  className,
-  children,
-}) => (
+const popupComponent: PopupComponent = ({ className, children }) => (
   <div data-mbx-class="popup-content" className={className}>
     {children}
   </div>

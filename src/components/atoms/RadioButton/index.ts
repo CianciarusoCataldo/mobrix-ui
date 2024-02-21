@@ -29,7 +29,7 @@ import component from "./component";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/RadioButton
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/RadioButton
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 2.0.0
@@ -43,10 +43,9 @@ const RadioButton: RadioButtonComponent = ({
   onChange = () => {},
   deselectable = true,
   onKeyDown = () => {},
-  additionalProps = {},
   ...commonProps
 }) =>
-  buildMbxReactiveComponent<boolean>(commonProps, (parsedProps) => ({
+  buildMbxReactiveComponent<boolean>(commonProps, (sharedProps) => ({
     name: "radio-button",
     Component: ({ value, setValue }) => (value ? component : ""),
     defaultValue: false,
@@ -61,8 +60,8 @@ const RadioButton: RadioButtonComponent = ({
 
       return {
         commonProps: {
-          ...parsedProps,
-          ...(!parsedProps.disabled && {
+          ...sharedProps,
+          ...(!sharedProps.disabled && {
             onKeyDown: (e) => {
               if (e.code === "Enter") {
                 callBack();
@@ -70,13 +69,13 @@ const RadioButton: RadioButtonComponent = ({
               onKeyDown(e);
             },
           }),
-        },
-        additionalProps: {
-          ...additionalProps,
-          ...(!parsedProps.disabled && {
-            onClick: callBack,
-            "data-mbx-opacityhover": parsedProps.hover,
-          }),
+          additionalProps: {
+            ...sharedProps.additionalProps,
+            ...(!sharedProps.disabled && {
+              onClick: callBack,
+              "data-mbx-opacityhover": sharedProps.hover,
+            }),
+          },
         },
       };
     },

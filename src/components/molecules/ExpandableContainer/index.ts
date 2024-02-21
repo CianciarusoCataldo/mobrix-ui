@@ -30,7 +30,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/ExpandableContainer
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/ExpandableContainer
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -45,16 +45,13 @@ const ExpandableContainer: ExpandableContainerComponent = ({
   children,
   wrapper,
   onChange,
-  additionalProps,
   ...commonProps
 }) => {
-  return buildMbxReactiveComponent(commonProps, (props) => ({
+  return buildMbxReactiveComponent(commonProps, (sharedProps) => ({
     name: "expandable-container",
     defaultValue: false,
-    commonProps: props,
     wrapper,
     inputValue: startCompact,
-    additionalProps,
     Component: ({ value, setValue }) =>
       expandableContainerComponent({
         value,
@@ -62,11 +59,15 @@ const ExpandableContainer: ExpandableContainerComponent = ({
         expanded,
         children,
         onChange,
-        ...props,
+        ...sharedProps,
       }),
     props: (value, setValue) => ({
-      additionalProps: {
-        "data-mbx-compact": value,
+      commonProps: {
+        ...sharedProps,
+        additionalProps: {
+          ...sharedProps.additionalProps,
+          "data-mbx-compact": value,
+        },
       },
     }),
   }));

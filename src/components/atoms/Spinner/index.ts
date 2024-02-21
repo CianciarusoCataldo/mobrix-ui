@@ -28,7 +28,7 @@ import defaultIcons from "./icons";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Spinner
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Spinner
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -40,13 +40,11 @@ import defaultIcons from "./icons";
 const Spinner: SpinnerComponent = ({
   value,
   statuses = defaultIcons,
-  additionalProps,
   ...commonProps
 }) =>
   buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "spinner",
     commonProps: sharedProps,
-    additionalProps,
     Component:
       value && statuses[value]
         ? statuses[value]

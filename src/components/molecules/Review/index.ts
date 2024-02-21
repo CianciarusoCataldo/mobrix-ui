@@ -35,7 +35,7 @@ import reviewComponent from "./component";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/Review
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Review
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.1.0
@@ -44,32 +44,13 @@ import reviewComponent from "./component";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Review: ReviewComponent = ({
-  user,
-  description,
-  rate,
-  max,
-  icon,
-  url,
-  logo,
-  rateType,
-  additionalProps,
-  ...commonProps
-}) =>
-  buildMbxStandardComponent(commonProps, (props) => ({
+const Review: ReviewComponent = (props) =>
+  buildMbxStandardComponent(props, (sharedProps) => ({
     name: "review",
-    commonProps: props,
-    additionalProps,
+    commonProps: sharedProps,
     Component: reviewComponent({
-      user,
-      description,
-      rate,
-      max,
-      icon,
-      url,
-      logo,
-      rateType,
       ...props,
+      ...sharedProps,
     }),
   }));
 

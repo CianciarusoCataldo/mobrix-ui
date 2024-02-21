@@ -47,9 +47,9 @@ export const parseCommonProps = (props: CommonProps): CommonProps => ({
 /**
  * Build a standard {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component, providing shared functionalities and props, to optimize the process.
  *
- * @param name component name (will be its id)
+ * @param name component name
  * @param Component component to render
- * @param commonProps shared common props (like `className`, `hide` or `dark`)
+ * @param commonProps {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#shared-properties shared MoBrix-ui properties}
  * @param additionalProps additional props applied on rendered component
  * @param wrapper component external wrapper (like `button`, `a` or `p`, if not set will be `div`)
  *

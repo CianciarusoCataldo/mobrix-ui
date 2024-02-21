@@ -30,7 +30,7 @@ import selectorComponent from "./component";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Selector
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Selector
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 2.0.0
@@ -52,15 +52,17 @@ const Selector: SelectorComponent = ({
     name: "selector",
     defaultValue: undefined,
     inputValue,
-    commonProps: sharedProps,
     props: (value, setValue) => ({
-      additionalProps: {
-        ...additionalProps,
-        disabled: sharedProps.disabled,
-        value,
-        onChange: (e) => {
-          onChange(e.target.value);
-          setValue(e.target.value);
+      commonProps: {
+        ...sharedProps,
+        additionalProps: {
+          ...sharedProps.additionalProps,
+          disabled: sharedProps.disabled,
+          value,
+          onChange: (e) => {
+            onChange(e.target.value);
+            setValue(e.target.value);
+          },
         },
       },
     }),

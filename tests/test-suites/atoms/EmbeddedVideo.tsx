@@ -17,6 +17,12 @@ const embeddedVideoTest = () => {
         <EmbeddedVideo url="https://www.dailymotion.com/video/x2nfpl3" />
       );
       expect(wrapper);
+
+      wrapper = mount(
+        <EmbeddedVideo url="https://www.facebook.com/watch/?v=762618565361911" />
+      );
+
+      expect(wrapper);
     });
   });
 };

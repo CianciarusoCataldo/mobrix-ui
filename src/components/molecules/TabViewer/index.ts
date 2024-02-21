@@ -37,7 +37,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
 *
 * 
 *
-* @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/TabViewer
+* @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/TabViewer
 * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
 *
 * @since 2.1.0
@@ -46,41 +46,21 @@ import { buildMbxReactiveComponent } from "../../../tools";
 *
 * @copyright 2023 Cataldo Cianciaruso
 */
-const TabViewer: TabViewerComponent = ({
-  onChange,
-  selected,
-  tabs,
-  tabClassName,
-  tabSelectedClassName,
-  tabUnselectedClassName,
-  tabViewClassName,
-  additionalProps,
-  tabProps,
-  tabSelectedProps,
-  tabUnselectedProps,
-  tabViewProps,
-  ...commonProps
-}) =>
-  buildMbxReactiveComponent(commonProps, (props) => ({
+const TabViewer: TabViewerComponent = (props) =>
+  buildMbxReactiveComponent(props, (sharedProps) => ({
     commonProps: {
-      ...props,
+      ...sharedProps,
       shadow: false,
     },
-    additionalProps,
     defaultValue: 0,
-    inputValue: selected,
+    inputValue: props.selected,
     name: "tab-viewer",
     Component: ({ value, setValue }) =>
       tabViewerComponent({
-        onChange,
         setValue,
-        tabClassName,
-        tabSelectedClassName,
-        tabUnselectedClassName,
-        tabViewClassName,
-        tabs,
         value: Number(value),
         ...props,
+        ...sharedProps,
       }),
   }));
 

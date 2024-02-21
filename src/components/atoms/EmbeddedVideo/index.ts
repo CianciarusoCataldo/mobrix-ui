@@ -27,7 +27,7 @@ import embeddedVideoComponent from "./component";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/EmbeddedVideo
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/EmbeddedVideo
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 3.4.0

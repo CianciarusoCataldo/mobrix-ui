@@ -29,7 +29,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Slider
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Slider
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 2.0.0
@@ -45,34 +45,35 @@ const Slider: SliderComponent = ({
   min,
   max,
   readOnly,
-  additionalProps,
   ...commonProps
 }) =>
-  buildMbxReactiveComponent<number>(commonProps, (parsedProps) => ({
+  buildMbxReactiveComponent<number>(commonProps, (sharedProps) => ({
     name: "slider",
-    commonProps: parsedProps,
     inputValue,
     defaultValue: 0,
     wrapper: "input",
     props: (value, setValue) => {
       const callback =
-        !parsedProps.disabled && !readOnly
+        !sharedProps.disabled && !readOnly
           ? (e: any) => {
               onChange(e.target.value);
               setValue(e.target.value);
             }
           : () => {};
       return {
-        additionalProps: {
-          ...additionalProps,
-          type: "range",
-          min,
-          max,
-          readOnly,
-          disabled: parsedProps.disabled,
-          value: String(value),
-          onChange: callback,
-          onInput: callback,
+        commonProps: {
+          ...sharedProps,
+          additionalProps: {
+            ...sharedProps.additionalProps,
+            type: "range",
+            min,
+            max,
+            readOnly,
+            disabled: sharedProps.disabled,
+            value: String(value),
+            onChange: callback,
+            onInput: callback,
+          },
         },
       };
     },

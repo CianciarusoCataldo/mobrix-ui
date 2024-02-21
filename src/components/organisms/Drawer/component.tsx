@@ -11,16 +11,7 @@ import IconButton from "../../atoms/IconButton";
 const DrawerInternalComponent: MoBrixUiComponent<
   DrawerProps,
   BuilderComponent[]
-> = ({
-  onClose,
-  children,
-  dark,
-  hide,
-  animated,
-  disabled,
-  hover,
-  closeOnClickOutside,
-}) => {
+> = ({ onClose, children, dark, animated, disabled, hover }) => {
   return [
     <IconButton
       disabled={disabled}

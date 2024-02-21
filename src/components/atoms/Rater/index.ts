@@ -32,7 +32,7 @@ import raterComponent from "./component";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Rater
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -43,34 +43,29 @@ import raterComponent from "./component";
  */
 const Rater: RaterComponent = ({
   value: inputValue,
-  type,
-  max,
-  readonly,
   onChange,
-  value,
   vertical = false,
-  additionalProps = {},
-  ...commonProps
+  ...props
 }) =>
-  buildMbxReactiveComponent<number>(commonProps, (sharedProps) => ({
+  buildMbxReactiveComponent<number>(props, (sharedProps) => ({
     name: "rater",
     inputValue,
     defaultValue: 0,
     Component: ({ value, setValue }) =>
       raterComponent({
-        type,
-        max,
-        readonly,
         onChange,
         value,
         setValue,
+        ...props,
         ...sharedProps,
       }),
-    additionalProps: {
-      ...additionalProps,
-      "data-mbx-vertical": vertical,
+    commonProps: {
+      ...sharedProps,
+      additionalProps: {
+        ...sharedProps.additionalProps,
+        "data-mbx-vertical": vertical,
+      },
     },
-    commonProps: sharedProps,
   }));
 
 export default Rater;

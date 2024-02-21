@@ -1,61 +1,30 @@
 import React from "react";
 
 import { DismissableCardProps } from "../../../types/components";
-import { MobrixUiReactiveComponent } from "../../../types/global";
+import { BuilderComponent, MoBrixUiComponent } from "../../../types/global";
 
 import { IconButton } from "../../atoms";
 import { x_icon } from "../../../icons";
 
 import cardComponent from "../Card/component";
 
-const DismissableCardComponent: MobrixUiReactiveComponent<
-  boolean,
-  DismissableCardProps
-> = ({
-  children,
-  noBottomDivider,
-  noDividers,
-  noTopDivider,
-  setValue,
-  body,
-  footer,
-  header,
-  dark,
-  /* istanbul ignore next */
-  onClose = () => {},
-  alwaysVisible,
-  disabled,
-  headerClassName,
-  bodyClassName,
-  footerClassName,
-  headerProps,
-  bodyProps,
-  footerProps,
-}) =>
+const DismissableCardInternalComponent: MoBrixUiComponent<
+  DismissableCardProps,
+  BuilderComponent[]
+> = ({ onClose, header, ...props }) =>
   cardComponent({
-    children,
-    noBottomDivider,
-    noDividers,
-    noTopDivider,
-    dark,
-    headerClassName,
-    bodyClassName,
-    footerClassName,
-    headerProps,
-    bodyProps,
-    footerProps,
+    ...props,
     header: (
       <div data-mbx-class="header-container">
         <div data-mbx-class="dismiss-container">
           <IconButton
-            dark={dark}
+            dark={props.dark}
             additionalProps={{
               "data-mbx-class": "dismiss-button",
             }}
-            disabled={disabled}
+            disabled={props.disabled}
             onClick={() => {
               onClose();
-              !alwaysVisible && setValue(true);
             }}
           >
             {x_icon}
@@ -64,8 +33,6 @@ const DismissableCardComponent: MobrixUiReactiveComponent<
         {header && <div data-mbx-class="header-element">{header}</div>}
       </div>
     ),
-    body,
-    footer,
   });
 
-export default DismissableCardComponent;
+export default DismissableCardInternalComponent;

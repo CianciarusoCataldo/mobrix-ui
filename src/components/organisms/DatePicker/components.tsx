@@ -35,8 +35,10 @@ const DatePickerInternalComponent: MobrixUiReactiveComponent<
   animated,
   disabled,
   calendarProps,
-  onChange,
-  onClose,
+  /* istanbul ignore next */
+  onChange = () => {},
+  /* istanbul ignore next */
+  onClose = () => {},
   ...commonProps
 }) => {
   const [isVisible, setVisible] = React.useState<boolean>(false);

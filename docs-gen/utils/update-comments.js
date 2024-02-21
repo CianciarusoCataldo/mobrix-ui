@@ -114,7 +114,7 @@ try {
     customTemplate = customTemplate.replace("MBX_PROPS", parameters);
     customTemplate = customTemplate.replace(
       "MBX_SEE",
-      `@see https://cianciarusocataldo.github.io/mobrix-ui/${COMPONENT_TYPE}/${COMPONENT_NAME}\n* @see https://cianciarusocataldo.github.io/mobrix-ui/docs`
+      `@see https://cianciarusocataldo.github.io/mobrix-ui/components/${COMPONENT_TYPE}/${COMPONENT_NAME}\n* @see https://cianciarusocataldo.github.io/mobrix-ui/docs`
     );
 
     let examples = "";

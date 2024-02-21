@@ -41,7 +41,7 @@ import datePickerComponent from "./components";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/organisms/DatePicker
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/DatePicker
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 2.0.0
@@ -50,56 +50,23 @@ import datePickerComponent from "./components";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const DatePicker: DatePickerComponent = ({
-  /* istanbul ignore next */
-  onClose = () => {},
-  /* istanbul ignore next */
-  onChange = () => {},
-  value: inputValue,
-  months,
-  days,
-  startMonth,
-  startYear,
-  hideArrows,
-  fromToday,
-  dayLabel,
-  onViewChange,
-  calendarProps = {},
-  additionalProps,
-  labelClassName,
-  labelProps,
-  ...commonProps
-}) => {
+const DatePicker: DatePickerComponent = (props) => {
   const todayDate = today();
 
-  return buildMbxReactiveComponent<CalendarDate>(
-    commonProps,
-    (sharedProps) => ({
-      name: "date-picker",
-      commonProps: sharedProps,
-      Component: ({ value, setValue }) =>
-        datePickerComponent({
-          today: todayDate,
-          onChange,
-          setValue,
-          value,
-          months,
-          days,
-          startMonth,
-          startYear,
-          hideArrows,
-          fromToday,
-          dayLabel,
-          onViewChange,
-          calendarProps,
-          onClose,
-          ...sharedProps,
-        }),
-      inputValue,
-      defaultValue: todayDate,
-      additionalProps,
-    }),
-  );
+  return buildMbxReactiveComponent<CalendarDate>(props, (sharedProps) => ({
+    name: "date-picker",
+    commonProps: sharedProps,
+    Component: ({ value, setValue }) =>
+      datePickerComponent({
+        today: todayDate,
+        setValue,
+        value,
+        ...props,
+        ...sharedProps,
+      }),
+    inputValue: props.value,
+    defaultValue: todayDate,
+  }));
 };
 
 export default DatePicker;

@@ -29,7 +29,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  * @example <caption>undefined</caption>
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/Carousel
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Carousel
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -38,26 +38,18 @@ import { buildMbxReactiveComponent } from "../../../tools";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Carousel: CarouselComponent = ({
-  elements: actualElements,
-  onChange,
-  value,
-  additionalProps,
-  ...commonProps
-}) => {
-  return buildMbxReactiveComponent<number>(commonProps, (props) => ({
+const Carousel: CarouselComponent = (props) => {
+  return buildMbxReactiveComponent<number>(props, (sharedProps) => ({
     name: "carousel",
     commonProps: props,
     defaultValue: 0,
-    inputValue: value,
-    additionalProps,
+    inputValue: props.value,
     Component: ({ value, setValue }) =>
       carouselComponent({
+        ...props,
+        ...sharedProps,
         value,
         setValue,
-        onChange,
-        elements: actualElements,
-        ...props,
       }),
   }));
 };

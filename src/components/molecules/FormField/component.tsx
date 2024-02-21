@@ -15,7 +15,6 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
   type = "text",
   /* istanbul ignore next */
   onChange = (newvalue: any) => {},
-  placeholder,
   required,
   validate = (newvalue: any) => true,
   header,

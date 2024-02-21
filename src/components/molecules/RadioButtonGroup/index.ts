@@ -37,7 +37,7 @@ import radioButtonGroupComponent from "./component";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/molecules/RadioButtonGroup
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/RadioButtonGroup
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 2.0.0
@@ -48,34 +48,26 @@ import radioButtonGroupComponent from "./component";
  */
 const RadioButtonGroup: RadioButtonGroupComponent = ({
   value: inputValue,
-  buttons,
-  elementClassName,
-  onChange,
   horizontal,
-  additionalProps = {},
-  radioProps,
-  defaultPosition,
-  ...commonProps
+  ...props
 }) =>
-  buildMbxReactiveComponent<number>(commonProps, (sharedProps) => ({
+  buildMbxReactiveComponent<number>(props, (sharedProps) => ({
     name: "radio-button-group",
     defaultValue: -1,
     inputValue,
-    commonProps: sharedProps,
-    additionalProps: {
-      ...additionalProps,
-      "data-mbx-orientation": horizontal,
+    commonProps: {
+      ...sharedProps,
+      additionalProps: {
+        ...sharedProps.additionalProps,
+        "data-mbx-orientation": horizontal,
+      },
     },
     Component: ({ value, setValue }) =>
       radioButtonGroupComponent({
         value,
-        onChange,
         setValue,
-        buttons,
-        elementClassName,
         horizontal,
-        radioProps,
-        defaultPosition,
+        ...props,
         ...sharedProps,
       }),
   }));

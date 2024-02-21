@@ -25,7 +25,7 @@ import { buildMbxStandardComponent } from "../../../tools";
  *
  *
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/atoms/Label
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Label
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs
  *
  * @since 1.0.0
@@ -34,13 +34,12 @@ import { buildMbxStandardComponent } from "../../../tools";
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-const Label: LabelComponent = ({ children, additionalProps, ...commonProps }) =>
-  buildMbxStandardComponent(commonProps, (props) => ({
+const Label: LabelComponent = ({ children, ...commonProps }) =>
+  buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "label",
     Component: children,
     wrapper: "p",
-    commonProps: { ...props, shadow: false },
-    additionalProps,
+    commonProps: { ...sharedProps, shadow: false },
   }));
 
 export default Label;
