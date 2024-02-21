@@ -18,6 +18,8 @@ jobs:
 
           export LATEST_VERSION=$(curl -s https://registry.npmjs.org/mobrix-ui/latest -H "Accept: application/json" | jq -r '.version')
 
+          npm ci
+
           output=$(node ./scripts/ci/check-version.js)
 
           if [ $output -eq 1 ]; then
@@ -37,7 +39,6 @@ jobs:
           fi
       - name: Publish to npm registry
         run: |
-          npm ci
           npm run build
           npm publish --access public
         env:
