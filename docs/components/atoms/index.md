@@ -9,6 +9,7 @@
 - [Divider](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Divider/)
 - [EmbeddedVideo](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/EmbeddedVideo/)
 - [IconButton](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/IconButton/)
+- [Image](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Image/)
 - [Input](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Input/)
 - [Label](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Label/)
 - [Link](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Link/)

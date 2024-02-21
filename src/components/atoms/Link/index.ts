@@ -34,7 +34,7 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 const Link: LinkComponent = ({ to, children, newTab, ...commonProps }) =>
   buildMbxStandardComponent(

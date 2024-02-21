@@ -12,6 +12,8 @@ export { default as EmbeddedVideo } from "./EmbeddedVideo";
 
 export { default as IconButton } from "./IconButton";
 
+export { default as Image } from "./Image";
+
 export { default as Input } from "./Input";
 
 export { default as Label } from "./Label";
