@@ -1,5 +1,5 @@
 import { Button } from "mobrix-ui-preview";
-import { BooleanProp, StringProp } from "@cianciarusocataldo/demo-ui";
+import { StringProp } from "@cianciarusocataldo/demo-ui";
 import { ComponentPage } from "components/ComponentPage";
 import { demoRows, demoProps } from "constants/demo-props";
 import DemoComponent from "components/DemoComponent";
@@ -18,7 +18,6 @@ const ButtonPage = () => (
           startColor="#BFBABA"
           props={{
             children: StringProp(contentLabel),
-            disabled: BooleanProp(false),
             ...demoProps,
           }}
           rows={[["children", "disabled"], ...demoRows]}

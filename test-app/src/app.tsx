@@ -5,6 +5,7 @@ import {
   DrawerProps,
   Button,
   EmbeddedVideo,
+  Image,
 } from "./mobrix-ui-preview";
 import AtomsPage from "./pages/atoms";
 import MoleculesPage from "./pages/molecules";
@@ -83,6 +84,18 @@ const App = () => {
           url="https://www.dailymotion.com/video/x2nfpl3"
         />
         <EmbeddedVideo url="https://www.facebook.com/watch/?v=762618565361911" />
+        <Image
+          width={250}
+          height={250}
+          alt="test-image"
+          src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
+        />
+        <Image
+          hover={true}
+          shadow={true}
+          alt="test-image"
+          src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
+        />
         {tabs}
       </div>
     </>

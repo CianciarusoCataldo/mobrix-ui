@@ -34,13 +34,22 @@ import { buildMbxStandardComponent } from "../../../tools";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const Image: ImageComponent = ({ src, width, height, ...props }) =>
-  buildMbxStandardComponent(props, (sharedProps) => ({
+const Image: ImageComponent = ({
+  src,
+  width,
+  height,
+  hover = false,
+  shadow=false,
+  ...props
+}) =>
+  buildMbxStandardComponent({ ...props, hover, shadow }, (sharedProps) => ({
     name: "image",
     commonProps: {
       ...sharedProps,
       additionalProps: {
         ...sharedProps.additionalProps,
+        "data-mbx-opacityhover": sharedProps.hover && !sharedProps.disabled,
+        draggable: !sharedProps.disabled,
         src,
         width: `${width}`,
         height: `${height}`,
