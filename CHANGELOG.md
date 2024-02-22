@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.6.0](#360)
 - [3.5.0](#350)
 - [3.4.0](#340)
 - [3.3.0](#330)
@@ -19,6 +20,15 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.6.0
+
+- `Image` component
+- Clean-up
+- Better automatic release system
+- Docs updated
 
 <br>
 

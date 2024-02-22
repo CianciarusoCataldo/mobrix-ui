@@ -39,7 +39,7 @@ const Image: ImageComponent = ({
   width,
   height,
   hover = false,
-  shadow=false,
+  shadow = false,
   ...props
 }) =>
   buildMbxStandardComponent({ ...props, hover, shadow }, (sharedProps) => ({
