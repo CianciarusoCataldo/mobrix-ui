@@ -1,13 +1,21 @@
 {
-  "value": { "type": "string", "description": "code to display" },
+  "value": {
+    "type": "string",
+    "description": "code to display - multiline strings is supported"
+  },
   "highlight": {
     "type": "boolean",
     "description": "Enable/disable  text highlight, based on selected environment",
-    "default": ""
+    "default": "true"
   },
   "environment": {
     "type": "'javascript' | 'python' | 'terminal' | 'common'",
     "description": "environment for text highlight feature, default to 'terminal' (only enabled when 'highlight' is true)",
     "default": "'terminal'"
+  },
+  "multiline": {
+    "type": "string",
+    "default": "true",
+    "description": "if `true`, parse the line breaks inside input string (if `false`, the input string will be displayed into one line)"
   }
 }

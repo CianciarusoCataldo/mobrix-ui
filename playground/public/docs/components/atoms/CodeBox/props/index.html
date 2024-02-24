@@ -794,6 +794,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#multiline" class="md-nav__link">
+    <span class="md-ellipsis">
+      multiline
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4714,6 +4723,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#multiline" class="md-nav__link">
+    <span class="md-ellipsis">
+      multiline
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -4764,12 +4782,17 @@
 <tr>
 <td><div style='text-align:center;margin:auto;'><a href="#highlight">highlight</a></div></td>
 <td><div style='text-align:center;margin:auto;'>boolean</div></td>
-<td><div style='text-align:center;margin:auto;'>/</div></td>
+<td><div style='text-align:center;margin:auto;'>true</div></td>
 </tr>
 <tr>
 <td><div style='text-align:center;margin:auto;'><a href="#environment">environment</a></div></td>
 <td><div style='text-align:center;margin:auto;'><code>javascript</code> &#124; <code>python</code> &#124; <code>terminal</code> &#124; <code>common</code></div></td>
 <td><div style='text-align:center;margin:auto;'>'terminal'</div></td>
+</tr>
+<tr>
+<td><div style='text-align:center;margin:auto;'><a href="#multiline">multiline</a></div></td>
+<td><div style='text-align:center;margin:auto;'>string</div></td>
+<td><div style='text-align:center;margin:auto;'>true</div></td>
 </tr>
 </tbody>
 </table>
@@ -4794,7 +4817,7 @@
 </tbody>
 </table>
 <p><br></p>
-<p>code to display</p>
+<p>code to display - multiline strings is supported</p>
 <p><br></p>
 <p><br></p>
 <h3 id="highlight">highlight</h3>
@@ -4809,7 +4832,7 @@
 <tbody>
 <tr>
 <td><div style='text-align:center;margin:auto;'>boolean</div></td>
-<td><div style='text-align:center;margin:auto;'>/</div></td>
+<td><div style='text-align:center;margin:auto;'>true</div></td>
 </tr>
 </tbody>
 </table>
@@ -4835,6 +4858,26 @@
 </table>
 <p><br></p>
 <p>environment for text highlight feature, default to 'terminal' (only enabled when 'highlight' is true)</p>
+<p><br></p>
+<p><br></p>
+<h3 id="multiline">multiline</h3>
+<!-- prettier-ignore -->
+<table>
+<thead>
+<tr>
+<th><div style='text-align:center;margin:auto;'>Type</div></th>
+<th><div style='text-align:center;margin:auto;'>Default</div></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div style='text-align:center;margin:auto;'>string</div></td>
+<td><div style='text-align:center;margin:auto;'>true</div></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>if <code>true</code>, parse the line breaks inside input string (if <code>false</code>, the input string will be displayed into one line)</p>
 <p><br></p>
 
 

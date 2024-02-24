@@ -16,6 +16,9 @@ const imageTest = () => {
           height={25}
           alt="test-image"
           src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
+          hover={true}
+          shadow={true}
+          disabled={true}
         />
       );
       expect(wrapper);

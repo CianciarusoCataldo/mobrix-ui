@@ -1,7 +1,4 @@
-import {
-  ComponentWithValue,
-  MoBrixUiComponent,
-} from "../../../types/global";
+import { ComponentWithValue, MoBrixUiComponent } from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Codebox supported environments
@@ -27,9 +24,9 @@ export type SupportedEnvironment =
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export interface CodeBlock<T = string | null> {
+export interface CodeBlock {
   /** Highlight color */
-  color: T;
+  color: string | null;
 
   /** Code block */
   code: string;
@@ -52,7 +49,10 @@ export type CodeBoxProps = ComponentWithValue<string> & {
   environment?: SupportedEnvironment;
 
   /** if `true`, hide the copy button */
-  noCopyButton?: boolean;
+  copyButton?: boolean;
+
+  /** if `true`, parse the line breaks inside input string (if `false`, the input string will be displayed into one line) */
+  multiline?: boolean;
 };
 
 /**

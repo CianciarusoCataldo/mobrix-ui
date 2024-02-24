@@ -18,7 +18,6 @@
 }
 
 [data-mbx-id="codebox"] [data-mbx-class="codebox-code"] {
-  margin-top: 0.7rem;
   padding: 1rem;
   line-height: 1.5rem;
   overflow: auto;
@@ -28,4 +27,11 @@
   [data-mbx-class="codebox-copy-icon"]
   > [data-mbx-id="icon-button"]:active {
   opacity: 0.3;
+}
+
+[data-mbx-id="codebox"]
+  [data-mbx-class="codebox-code"]
+  [data-mbx-class="codeline"] {
+  margin-top: 0;
+  margin-bottom: 0;
 }

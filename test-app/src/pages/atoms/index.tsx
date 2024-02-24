@@ -158,13 +158,22 @@ const AtomsPage = () => {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <CodeBox />
             <div style={{ marginTop: "20px" }} />
-            <CodeBox noCopyButton value="npm i mobrix ui" />
+            <CodeBox copyButton={false} value="npm i mobrix ui" />
             <div style={{ marginTop: "20px" }} />
-            <CodeBox highlight value="npm i mobrix ui" />
+            <CodeBox
+              highlight
+              value={`npm i mobrix ui
+"string" 'kkk'"string"'
+npx
+apt update
+apt-get install
+aws s3 sync
+npx`}
+            />
             <div style={{ marginTop: "20px" }} />
             <CodeBox dark />
             <div style={{ marginTop: "20px" }} />
-            <CodeBox dark noCopyButton value="npm i mobrix ui" />
+            <CodeBox dark copyButton={false} value="npm i mobrix ui" />
             <div style={{ marginTop: "20px" }} />
             <CodeBox highlight dark value="npm i mobrix ui" />
             <div style={{ marginTop: "20px" }} />
@@ -172,7 +181,11 @@ const AtomsPage = () => {
             <div style={{ marginTop: "20px" }} />
             <CodeBox highlight disabled dark value="npm i mobrix ui" />
             <div style={{ marginTop: "20px" }} />
-            <CodeBox noCopyButton background={false} value="npm i mobrix ui" />
+            <CodeBox
+              copyButton={false}
+              background={false}
+              value="npm i mobrix ui"
+            />
             <div style={{ marginTop: "20px" }} />
             <CodeBox highlight background={false} value="npm i mobrix ui" />
           </div>
