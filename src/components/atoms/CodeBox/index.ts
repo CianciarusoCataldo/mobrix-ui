@@ -6,7 +6,7 @@ import codeboxComponent from "./component";
 import { buildMbxStandardComponent } from "../../../tools/utils";
 
 /**
- * A smart code box, to display code text as a compiler. Optionally, can highlight code text, with a selectable environment
+ * A smart code box, to display code text as a compiler. Supports code highlight, with a selectable environment, and multiline strings
  *
  * @param {string} value code to display - multiline strings is supported
  * @param {boolean} highlight Enable/disable  text highlight, based on selected environment
