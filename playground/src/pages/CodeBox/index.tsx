@@ -22,7 +22,8 @@ const CodeBoxPage = () => (
           label={componentLabel}
           props={{
             value: StringProp("npm i mobrix-ui"),
-            enhanced: BooleanProp(true),
+            highlight: BooleanProp(true),
+            copyButton: BooleanProp(true),
             environment: SelectProp({
               [terminalText]: "terminal",
               Javascript: "javascript",
@@ -30,7 +31,10 @@ const CodeBoxPage = () => (
             }),
             ...demoProps,
           }}
-          rows={[["value", "enhanced", "environment"], ...demoRows]}
+          rows={[
+            ["value", "highlight", "copyButton", "environment"],
+            ...demoRows,
+          ]}
         >
           {CodeBox}
         </DemoComponent>
