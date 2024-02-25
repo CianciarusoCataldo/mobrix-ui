@@ -7,17 +7,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: ".nvmrc"
-          registry-url: "https://registry.npmjs.org/"
-          always-auth: "true"
-      - name: Setup env
-        run: |
+      - run: |
           index_version=$(echo "$PACKAGE_JSON_VERSION" | tr -d .)
           export LATEST_VERSION=$(curl -s https://registry.npmjs.org/mobrix-ui/latest -H "Accept: application/json" | jq -r '.version')
           echo "PACKAGE_VERSION=$(cat package.json | jq -r '.version')" >> "$GITHUB_ENV"
           echo "CHANGELOG_INDEX_VERSION=${index_version}" >> "$GITHUB_ENV"
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          registry-url: "https://registry.npmjs.org/"
+          always-auth: "true"      
       - name: Create release
         run: |
           export PACKAGE_JSON_VERSION=${{ env.PACKAGE_VERSION }}
