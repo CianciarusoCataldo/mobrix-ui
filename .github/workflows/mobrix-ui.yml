@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x, 17.x, 18.x]
+        node-version: [18.x]
     steps:
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
@@ -36,4 +36,3 @@ jobs:
         cache: 'npm'
     - run: npm i
     - run: npm run test --verbose
-    - run: echo "Tests step completed"
