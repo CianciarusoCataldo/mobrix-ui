@@ -8,10 +8,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          index_version=$(echo "$PACKAGE_JSON_VERSION" | tr -d .)
           echo "LATEST_VERSION=$(curl -s https://registry.npmjs.org/mobrix-ui/latest -H "Accept: application/json" | jq -r '.version')" >> "$GITHUB_ENV"
           echo "PACKAGE_JSON_VERSION=$(cat package.json | jq -r '.version')" >> "$GITHUB_ENV"
-          echo "CHANGELOG_INDEX_VERSION=${index_version}" >> "$GITHUB_ENV"
+          echo "CHANGELOG_INDEX_VERSION=$(cat package.json | jq -r '.version' | tr -d .)" >> "$GITHUB_ENV"
       - uses: actions/setup-node@v4
         with:
           node-version-file: ".nvmrc"
