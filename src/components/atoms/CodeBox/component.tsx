@@ -21,12 +21,7 @@ const codeboxComponent: MoBrixUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   highlight = true,
   environment = "terminal",
   copyButton = true,
-  multiline = true,
 }) => {
-  let parseCodeFunction: (inputCode: string) => string[] = multiline
-    ? (inputCode: string) => inputCode.split("\n")
-    : (inputCode: string) => [inputCode];
-
   let parseCodeLineFunction: (
     inputCode: string,
     environment: SupportedEnvironment,
@@ -49,7 +44,7 @@ const codeboxComponent: MoBrixUiComponent<CodeBoxProps, BuilderComponent[]> = ({
       </IconButton>
     </div>,
     <div key="codebox_code" data-mbx-class="codebox-code">
-      {parseCodeFunction(code).map((codeLine, lineIndex) => (
+      {code.split("\n").map((codeLine, lineIndex) => (
         <p data-mbx-class="codeline" key={`codeline_${lineIndex}`}>
           {parseCodeLineFunction(codeLine, environment).map(
             (codeBlock, blockIndex) =>

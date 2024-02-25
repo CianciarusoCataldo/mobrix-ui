@@ -42,17 +42,14 @@ export interface CodeBlock {
  * @copyright 2023 Cataldo Cianciaruso
  */
 export type CodeBoxProps = ComponentWithValue<string> & {
-  /** Enable/disable  text highlight, based on selected environment */
+  /** Enable/disable text highlight, based on selected environment */
   highlight?: boolean;
 
-  /** Environment for text highlight feature, default to "terminal" (only enabled into enhanced mode) */
+  /** Environment for text highlight feature, default to "terminal" (only enabled into highlight mode) */
   environment?: SupportedEnvironment;
 
-  /** if `true`, hide the copy button */
+  /** Enable/disable the copy button */
   copyButton?: boolean;
-
-  /** if `true`, parse the line breaks inside input string (if `false`, the input string will be displayed into one line) */
-  multiline?: boolean;
 };
 
 /**

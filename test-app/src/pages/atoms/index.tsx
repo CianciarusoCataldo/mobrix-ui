@@ -171,6 +171,11 @@ aws s3 sync
 npx`}
             />
             <div style={{ marginTop: "20px" }} />
+            <CodeBox
+              highlight
+              value={`npm i mobrix ui\n "string" 'kkk'"string"' npx apt update apt-get install aws s3 sync npx`}
+            />
+            <div style={{ marginTop: "20px" }} />
             <CodeBox dark />
             <div style={{ marginTop: "20px" }} />
             <CodeBox dark copyButton={false} value="npm i mobrix ui" />

@@ -24,7 +24,6 @@ const codeBoxTest = () => {
         <CodeBox
           highlight={false}
           copyButton={false}
-          multiline={false}
           value={`npm i 'mobrix-ui' "mobrix-engine"`}
         />
       );

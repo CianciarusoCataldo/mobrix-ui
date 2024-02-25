@@ -1,7 +1,7 @@
 {
   "value": {
     "type": "string",
-    "description": "code to display - multiline strings is supported"
+    "description": "code to display - multiline string is supported"
   },
   "highlight": {
     "type": "boolean",
@@ -13,9 +13,9 @@
     "description": "environment for text highlight feature, default to 'terminal' (only enabled when 'highlight' is true)",
     "default": "'terminal'"
   },
-  "multiline": {
-    "type": "string",
-    "default": "true",
-    "description": "if `true`, parse the line breaks inside input string (if `false`, the input string will be displayed into one line)"
+  "copyButton": {
+    "description": "Enable/disable the copy button",
+    "type": "boolean",
+    "default": "true"
   }
 }
