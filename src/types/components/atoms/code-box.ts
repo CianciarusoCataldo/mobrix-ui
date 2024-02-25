@@ -1,7 +1,4 @@
-import {
-  ComponentWithValue,
-  MoBrixUiComponent,
-} from "../../../types/global";
+import { ComponentWithValue, MoBrixUiComponent } from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Codebox supported environments
@@ -27,9 +24,9 @@ export type SupportedEnvironment =
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export interface CodeBlock<T = string | null> {
+export interface CodeBlock {
   /** Highlight color */
-  color: T;
+  color: string | null;
 
   /** Code block */
   code: string;
@@ -45,14 +42,14 @@ export interface CodeBlock<T = string | null> {
  * @copyright 2023 Cataldo Cianciaruso
  */
 export type CodeBoxProps = ComponentWithValue<string> & {
-  /** Enable/disable  text highlight, based on selected environment */
+  /** Enable/disable text highlight, based on selected environment */
   highlight?: boolean;
 
-  /** Environment for text highlight feature, default to "terminal" (only enabled into enhanced mode) */
+  /** Environment for text highlight feature, default to "terminal" (only enabled into highlight mode) */
   environment?: SupportedEnvironment;
 
-  /** if `true`, hide the copy button */
-  noCopyButton?: boolean;
+  /** Enable/disable the copy button */
+  copyButton?: boolean;
 };
 
 /**

@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.7.0](#370)
 - [3.6.0](#360)
 - [3.5.0](#350)
 - [3.4.0](#340)
@@ -20,6 +21,16 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.7.0
+
+- `CodeBox` component refactoring:
+  - `noCopyButton` properties removed
+  - `copyButton` properties used instead (enable/disable copy button)
+  - Multiline strings are now supported
+- Clean-up
 
 <br>
 

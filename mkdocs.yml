@@ -1,7 +1,21 @@
 site_name: MoBrix-ui documentation
 repo_url: https://github.com/CianciarusoCataldo/mobrix-ui
 site_author: Cataldo Cianciaruso
-copyright: 2023 Cataldo Cianciaruso
+copyright: 2024 Cataldo Cianciaruso
 theme:
+  icon:
+    repo: fontawesome/brands/github 
   name: material
+  features:
+   - navigation.instant
   custom_dir: docs-gen/templates/published
+  palette: 
+    - scheme: default
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue grey
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode

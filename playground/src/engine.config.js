@@ -44,6 +44,7 @@ const engineConfig = {
       ExpandableContainer: "/components/molecules/ExpandableContainer",
       Form: "/components/organisms/Form",
       FormField: "/components/molecules/FormField",
+      IconButton: "/components/atoms/IconButton",
       Image: "/components/atoms/Image",
       Input: "/components/atoms/Input",
       Label: "/components/atoms/Label",

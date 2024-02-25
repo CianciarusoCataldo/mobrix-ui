@@ -1,6 +1,6 @@
 {
   "since": "1.0.0",
-  "description": "A smart code box, to display code text as a compiler. Optionally, can highlight code text, with a selectable environment",
+  "description": "A smart code box, to display code text as a compiler. Supports code highlight, with a selectable environment, and multiline strings",
   "see": [],
   "examples": []
 }

@@ -2,49 +2,69 @@ import React from "react";
 
 import {
   BuilderComponent,
+  CodeBlock,
   CodeBoxProps,
   MoBrixUiComponent,
+  SupportedEnvironment,
 } from "../../../types";
 
-import { parseCode } from "./parser";
+import { parseCode } from "./utils";
 
 import { CopyIcon } from "./icons";
 
 import IconButton from "../IconButton";
 
 const codeboxComponent: MoBrixUiComponent<CodeBoxProps, BuilderComponent[]> = ({
-  value: code,
-  highlight,
-  environment = "terminal",
-  noCopyButton,
   disabled,
   hover,
-}) => [
-  <div key="codebox_copy_icon" data-mbx-class="codebox-copy-icon">
-    <IconButton
-      onClick={() => code && navigator.clipboard.writeText(code)}
-      hide={noCopyButton}
-      disabled={disabled}
-      additionalProps={{
-        "data-mbx-opacityhover": hover && !disabled,
-      }}
-    >
-      {CopyIcon}
-    </IconButton>
-  </div>,
-  <code key="codebox_code" data-mbx-class="codebox-code">
-    {code &&
-      (highlight
-        ? parseCode(code, environment).map((part, index) => (
-            <span
-              key={`code-block_${environment}_${index}`}
-              style={{
-                color: /* istanbul ignore next */ part.color || "",
-              }}
-            >{`${part.code}`}</span>
-          ))
-        : code)}
-  </code>,
-];
+  value: code = "",
+  highlight = true,
+  environment = "terminal",
+  copyButton = true,
+}) => {
+  let parseCodeLineFunction: (
+    inputCode: string,
+    environment: SupportedEnvironment,
+  ) => CodeBlock[] =
+    highlight && code.length > 0
+      ? parseCode
+      : (inputCode, environment) => [{ code: inputCode }];
+
+  return [
+    <div key="codebox_copy_icon" data-mbx-class="codebox-copy-icon">
+      <IconButton
+        onClick={() => code && navigator.clipboard.writeText(code)}
+        hide={!copyButton}
+        disabled={disabled}
+        additionalProps={{
+          "data-mbx-opacityhover": hover && !disabled,
+        }}
+      >
+        {CopyIcon}
+      </IconButton>
+    </div>,
+    <div key="codebox_code" data-mbx-class="codebox-code">
+      {code.split("\n").map((codeLine, lineIndex) => (
+        <p data-mbx-class="codeline" key={`codeline_${lineIndex}`}>
+          {parseCodeLineFunction(codeLine, environment).map(
+            (codeBlock, blockIndex) =>
+              codeBlock.code === " " ? (
+                ` `
+              ) : (
+                <span
+                  key={`codeblock_${blockIndex}`}
+                  {...(codeBlock.color && {
+                    style: { color: codeBlock.color },
+                  })}
+                >
+                  {codeBlock.code}
+                </span>
+              ),
+          )}
+        </p>
+      ))}
+    </div>,
+  ];
+};
 
 export default codeboxComponent;

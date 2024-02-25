@@ -5,8 +5,16 @@ import { CodeBox } from "../../../src";
 const codeBoxTest = () => {
   describe("CodeBox", () => {
     test("Rendering test", () => {
-      const wrapper = mount(
+      let wrapper = mount(<CodeBox />);
+      expect(wrapper);
+
+      wrapper = mount(
         <CodeBox environment="javascript" value="import {} from 'mobrix-ui';" />
+      );
+      expect(wrapper);
+
+      wrapper = mount(
+        <CodeBox environment="javascript" value='import {} from "mobrix-ui";' />
       );
       expect(wrapper);
     });
@@ -14,8 +22,8 @@ const codeBoxTest = () => {
       const copyStub = jest.fn();
       const wrapper = mount(
         <CodeBox
-          highlight
-          noCopyButton
+          highlight={false}
+          copyButton={false}
           value={`npm i 'mobrix-ui' "mobrix-engine"`}
         />
       );

@@ -1,6 +1,7 @@
 # MoBrix-ui - V1 guide
 
-![Maintenance](https://img.shields.io/maintenance/yes/2025?label=Maintained&style=for-the-badge)
+![NPM](https://img.shields.io/npm/l/mobrix-ui?label=License&style=for-the-badge)
+![Maintenance](https://img.shields.io/maintenance/no/2024?label=Maintained&style=for-the-badge)
 
 ---
 

@@ -6,11 +6,12 @@ import codeboxComponent from "./component";
 import { buildMbxStandardComponent } from "../../../tools/utils";
 
 /**
- * A smart code box, to display code text as a compiler. Optionally, can highlight code text, with a selectable environment
+ * A smart code box, to display code text as a compiler. Supports code highlight, with a selectable environment, and multiline strings
  *
- * @param {string} value code to display
+ * @param {string} value code to display - multiline string is supported
  * @param {boolean} highlight Enable/disable  text highlight, based on selected environment
  * @param {'javascript' | 'python' | 'terminal' | 'common'} environment environment for text highlight feature, default to 'terminal' (only enabled when 'highlight' is true)
+ * @param {boolean} copyButton Enable/disable the copy button
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode
