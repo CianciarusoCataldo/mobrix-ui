@@ -51,3 +51,7 @@ code {
   border-color: #ff8007;
   border-style: solid;
 }
+
+.test-card{
+  width: 90%;
+}

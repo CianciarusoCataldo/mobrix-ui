@@ -4,9 +4,6 @@
   background-color: transparent;
   background: var(--mbx-c-card-bg);
   color: var(--mbx-c-card-txt);
-}
-
-[data-mbx-id*="card"] {
   padding: 0.25rem;
 }
 

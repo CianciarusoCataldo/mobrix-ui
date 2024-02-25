@@ -29,7 +29,7 @@
 - `CodeBox` component refactoring:
   - `noCopyButton` properties removed
   - `copyButton` properties used instead (enable/disable copy button)
-- Multiline support for `CodeBox` component
+  - Multiline strings are now supported
 - Clean-up
 
 <br>

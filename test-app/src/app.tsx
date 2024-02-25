@@ -4,8 +4,7 @@ import {
   Drawer,
   DrawerProps,
   Button,
-  EmbeddedVideo,
-  Image,
+  Card,
 } from "./mobrix-ui-preview";
 import AtomsPage from "./pages/atoms";
 import MoleculesPage from "./pages/molecules";
@@ -77,6 +76,7 @@ const App = () => {
         >
           Toggle drawer
         </Button>
+        <Card className="test-card" header="header" body="body" footer="footer" />
         {tabs}
       </div>
     </>

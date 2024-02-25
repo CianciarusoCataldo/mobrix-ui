@@ -42,7 +42,7 @@ render(
 );
 ```
 
-[![Edit MoBrix-ui playground](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/mobrix-ui-playground-gfpbb?file=/src/index.tsx?fontsize=14&hidenavigation=1&theme=dark&view=preview)
+[![Try it !](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/devbox/mobrix-ui-sandbox-y83g7f?file=%2Fsrc%2FApp.js&embed=1)
 
 <br>
 
