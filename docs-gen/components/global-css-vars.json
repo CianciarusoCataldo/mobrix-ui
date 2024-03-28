@@ -77,6 +77,9 @@
     "fallback": "--mbx-text-color-hover",
     "defaultColor": "#dfeaf8"
   },
+  "--mbx-shadow": {
+    "description": "Fallback value for `--mbx-shadow-light` and `--mbx-shadow-dark` variables"
+  },
   "--mbx-shadow-light": {
     "description": "Global MoBrix-ui shadow color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "fallback": "--mbx-shadow",
