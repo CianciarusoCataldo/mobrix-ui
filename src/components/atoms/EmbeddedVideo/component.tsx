@@ -1,11 +1,11 @@
 import React from "react";
 
-import { BuilderComponent, MoBrixUiComponent } from "../../../types";
+import { BuilderComponent, MbxUiComponent } from "../../../types";
 import { EmbeddedVideoProps } from "../../../types";
 
 import { parseEmbedUrl } from "./utils";
 
-const embeddedVideoComponent: MoBrixUiComponent<
+const embeddedVideoComponent: MbxUiComponent<
   EmbeddedVideoProps,
   BuilderComponent
 > = ({ url = "" }) => {

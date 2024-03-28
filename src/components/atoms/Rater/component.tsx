@@ -1,11 +1,11 @@
 import React from "react";
 
-import { MobrixUiReactiveComponent, RaterProps } from "../../../types";
+import { MbxUiReactiveComponent, RaterProps } from "../../../types";
 
 import { ICONS } from "./icons";
 import IconButton from "../IconButton";
 
-const RaterComponent: MobrixUiReactiveComponent<number, RaterProps> = ({
+const RaterComponent: MbxUiReactiveComponent<number, RaterProps> = ({
   type = "star",
   max,
   readonly,

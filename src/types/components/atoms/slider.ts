@@ -1,7 +1,7 @@
 import {
   ComponentWithCallback,
   ComponentWithValue,
-  MoBrixUiComponent,
+  MbxUiComponent,
   NumericInputComponent,
 } from "../../../types/global";
 
@@ -27,4 +27,4 @@ export type SliderProps = ComponentWithValue<number> &
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type SliderComponent = MoBrixUiComponent<SliderProps>;
+export type SliderComponent = MbxUiComponent<SliderProps>;

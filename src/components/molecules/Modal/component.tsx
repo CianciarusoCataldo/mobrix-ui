@@ -1,14 +1,10 @@
 import React from "react";
 
-import {
-  BuilderComponent,
-  MoBrixUiComponent,
-  ModalProps,
-} from "../../../types";
+import { BuilderComponent, MbxUiComponent, ModalProps } from "../../../types";
 
 import DismissableCard from "../DismissableCard";
 
-const modalComponent: MoBrixUiComponent<ModalProps, BuilderComponent> = ({
+const modalComponent: MbxUiComponent<ModalProps, BuilderComponent> = ({
   children,
   className,
   dark,

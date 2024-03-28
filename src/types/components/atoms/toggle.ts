@@ -3,7 +3,7 @@ import {
   ComponentWithCallback,
   ComponentWithIcon,
   ComponentWithValue,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -34,4 +34,4 @@ export type ToggleProps = ComponentWithValue<boolean> &
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type ToggleComponent = MoBrixUiComponent<ToggleProps>;
+export type ToggleComponent = MbxUiComponent<ToggleProps>;

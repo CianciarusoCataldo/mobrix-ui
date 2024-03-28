@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.8.0](#380)
 - [3.7.0](#370)
 - [3.6.0](#360)
 - [3.5.0](#350)
@@ -23,6 +24,17 @@
 ## Changes
 
 <br>
+
+### 3.8.0
+
+- Ui improvements
+- Refactoring
+- Bundle size reduced
+- New shared property, `animation`, to customize components animation when they are rendered
+- New global css variables, to customize shadow colors:
+  - `--mbx-shadow`
+  - `--mbx-shadow-light`
+  - `--mbx-shadow-dark`
 
 ### 3.7.0
 

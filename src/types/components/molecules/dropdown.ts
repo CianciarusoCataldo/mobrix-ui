@@ -3,7 +3,7 @@ import {
   CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -24,4 +24,4 @@ export type DropdownProps = ComponentWithValue<number> &
     hideArrow?: boolean;
   };
 
-export type DropdownComponent = MoBrixUiComponent<DropdownProps>;
+export type DropdownComponent = MbxUiComponent<DropdownProps>;

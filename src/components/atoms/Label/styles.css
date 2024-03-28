@@ -1,9 +1,9 @@
-[data-mbx-id="label"][data-mbx-styled="true"] {
+[data-mbx-id="label"] {
   color: var(--mbx-c-lab-txt);
   background: transparent;
 }
 
-[data-mbx-id="label"][data-mbx-styled="true"][data-mbx-a11y="true"]:focus-visible {
+[data-mbx-id="label"][data-mbx-a11y="true"]:focus-visible {
   color: var(--mbx-c-fc);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;

@@ -1,7 +1,7 @@
 import {
   ComponentWithCallback,
   ComponentWithValue,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -37,4 +37,4 @@ export type RaterProps = ComponentWithValue<number> &
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type RaterComponent = MoBrixUiComponent<RaterProps>;
+export type RaterComponent = MbxUiComponent<RaterProps>;

@@ -29,9 +29,36 @@
   -o-animation: fadein 0.4s;
 }
 
-[data-mbx-id][data-mbx-enabled="false"] {
-  opacity: 0.6;
+[data-mbx-id][data-mbx-animated="true"][data-mbx-animation="slide-in-left"],
+[data-mbx-id][data-mbx-animated="true"]
+  [data-mbx-animated="true"][data-mbx-animation="slide-in-left"] {
+  animation: slideLeft 0.4s;
+  -webkit-animation: slideLeft 0.4s;
+  -moz-animation: slideLeft 0.4s;
+  -ms-animation: slideLeft 0.4s;
+  -o-animation: slideLeft 0.4s;
 }
+
+[data-mbx-id][data-mbx-animated="true"][data-mbx-animation="slide-in-right"],
+[data-mbx-id][data-mbx-animated="true"]
+  [data-mbx-animated="true"][data-mbx-animation="slide-in-right"] {
+  animation: slideRight 0.4s;
+  -webkit-animation: slideRight 0.4s;
+  -moz-animation: slideRight 0.4s;
+  -ms-animation: slideRight 0.4s;
+  -o-animation: slideRight 0.4s;
+}
+
+[data-mbx-id][data-mbx-animated="true"][data-mbx-animation="slide-in-top"],
+[data-mbx-id][data-mbx-animated="true"]
+  [data-mbx-animated="true"][data-mbx-animation="slide-in-top"] {
+  animation: slideTop 0.4s;
+  -webkit-animation: slideTop 0.4s;
+  -moz-animation: slideTop 0.4s;
+  -ms-animation: slideTop 0.4s;
+  -o-animation: slideTop 0.4s;
+}
+
 
 [data-mbx-id][data-mbx-animated="true"][data-mbx-animation="fade-out"],
 [data-mbx-id][data-mbx-animated="true"] [data-mbx-animation="fade-out"] {
@@ -40,6 +67,10 @@
   -moz-animation: fadeOut 0.3s;
   -ms-animation: fadeOut 0.3s;
   -o-animation: fadeOut 0.3s;
+}
+
+[data-mbx-id][data-mbx-enabled="false"] {
+  opacity: 0.6;
 }
 
 [data-mbx-id][data-mbx-animated="true"][data-mbx-animation="shake"],
@@ -54,10 +85,10 @@
 
 [data-mbx-id][data-mbx-shadow="true"],
 [data-mbx-id] [data-mbx-shadow="true"] {
-  box-shadow: 0 5px 13px -1px #464545;
-  -webkit-box-shadow: 0 5px 13px -1px #464545;
-  -moz-box-shadow: 0 5px 13px -1px #464545;
-  -o-box-shadow: 0 5px 13px -1px #464545;
+  box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
+  -webkit-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
+  -moz-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
+  -o-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
 }
 
 [data-mbx-id][data-mbx-background="false"],
@@ -67,7 +98,7 @@
 }
 
 @media (hover: hover) {
-  [data-mbx-id][data-mbx-a11y="true"][data-mbx-styled="true"]:focus-visible {
+  [data-mbx-id][data-mbx-a11y="true"]:focus-visible {
     box-shadow: 0 5px 13px -1px var(--mbx-c-fc);
     -webkit-box-shadow: 0 5px 13px -1px var(--mbx-c-fc);
     -moz-box-shadow: 0 5px 13px -1px var(--mbx-c-fc);

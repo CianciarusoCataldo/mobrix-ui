@@ -1,10 +1,10 @@
 import React from "react";
 
-import { MobrixUiReactiveComponent, ToggleProps } from "../../../types";
+import { MbxUiReactiveComponent, ToggleProps } from "../../../types";
 
 import { defaultIcon } from "./icons";
 
-const toggleComponent: MobrixUiReactiveComponent<boolean, ToggleProps> = ({
+const toggleComponent: MbxUiReactiveComponent<boolean, ToggleProps> = ({
   value: status,
   icon = defaultIcon,
   offIcon,

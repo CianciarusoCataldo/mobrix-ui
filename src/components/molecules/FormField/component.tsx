@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-import { FormFieldProps, MobrixUiReactiveComponent } from "../../../types";
+import { FormFieldProps, MbxUiReactiveComponent } from "../../../types";
 
 import { fieldFormatters } from "./utils";
 
 import Container from "../Container";
 
-const FormFieldInternalComponent: MobrixUiReactiveComponent<
+const FormFieldInternalComponent: MbxUiReactiveComponent<
   any,
   FormFieldProps
 > = ({
@@ -60,7 +60,7 @@ const FormFieldInternalComponent: MobrixUiReactiveComponent<
     );
   }
 
-  const FieldComponent: MobrixUiReactiveComponent =
+  const FieldComponent: MbxUiReactiveComponent =
     fieldFormatters[type].component;
 
   components.push(

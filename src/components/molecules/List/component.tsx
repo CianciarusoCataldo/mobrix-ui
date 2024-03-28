@@ -1,10 +1,10 @@
 import React from "react";
 
-import { BuilderComponent, ListProps, MoBrixUiComponent } from "../../../types";
+import { BuilderComponent, ListProps, MbxUiComponent } from "../../../types";
 
 import Button from "../../atoms/Button";
 
-const listComponent: MoBrixUiComponent<ListProps, BuilderComponent[]> = ({
+const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
   elements = [],
   onClick,
 }) => {

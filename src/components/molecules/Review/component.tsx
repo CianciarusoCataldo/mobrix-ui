@@ -1,10 +1,6 @@
 import React from "react";
 
-import {
-  BuilderComponent,
-  MoBrixUiComponent,
-  ReviewProps,
-} from "../../../types";
+import { BuilderComponent, MbxUiComponent, ReviewProps } from "../../../types";
 
 import { icons } from "./icons";
 import Link from "../../atoms/Link";
@@ -12,7 +8,7 @@ import Rater from "../../atoms/Rater";
 
 const allowedLogoTypes = Object.keys(icons);
 
-const reviewComponent: MoBrixUiComponent<ReviewProps, BuilderComponent[]> = ({
+const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
   user,
   description,
   rate,

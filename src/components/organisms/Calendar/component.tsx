@@ -4,7 +4,7 @@ import {
   CalendarDate,
   CalendarProps,
   DeepPartial,
-  MobrixUiReactiveComponent,
+  MbxUiReactiveComponent,
 } from "../../../types";
 
 import { defaultDays, defaultMonths } from "./constants";
@@ -16,7 +16,7 @@ import { arrowIcon } from "../../molecules/Carousel/icons";
 import { Button, IconButton, Label } from "../../atoms";
 import { Table } from "../../molecules";
 
-const CalendarComponent: MobrixUiReactiveComponent<
+const CalendarComponent: MbxUiReactiveComponent<
   DeepPartial<CalendarDate>,
   CalendarProps & { today: CalendarDate & { dayOfTheMonth: number } }
 > = ({

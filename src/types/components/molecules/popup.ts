@@ -1,7 +1,7 @@
 import {
   BuilderComponent,
   ComponentWithChildren,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -17,4 +17,4 @@ export type PopupProps = ComponentWithChildren<
   BuilderComponent | BuilderComponent[]
 >;
 
-export type PopupComponent = MoBrixUiComponent<PopupProps>;
+export type PopupComponent = MbxUiComponent<PopupProps>;

@@ -1,7 +1,7 @@
 import {
   BuilderComponent,
   ComponentWithValue,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -27,6 +27,6 @@ export type SpinnerProps<T extends string = string> = ComponentWithValue<T> & {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type SpinnerComponent<T extends string = string> = MoBrixUiComponent<
+export type SpinnerComponent<T extends string = string> = MbxUiComponent<
   SpinnerProps<T>
 >;

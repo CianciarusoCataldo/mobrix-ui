@@ -3,7 +3,7 @@ import {
   CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../global";
 
 /**
@@ -75,4 +75,4 @@ export type FormFieldProps<T = any> = ComponentWithValue &
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type FormFieldComponent = MoBrixUiComponent<FormFieldProps>;
+export type FormFieldComponent = MbxUiComponent<FormFieldProps>;

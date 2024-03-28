@@ -3,7 +3,7 @@ import {
   BuilderProps,
   ClickableComponent,
   CommonProps,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -55,4 +55,4 @@ export type TableProps = ClickableComponent<
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type TableComponent = MoBrixUiComponent<TableProps>;
+export type TableComponent = MbxUiComponent<TableProps>;

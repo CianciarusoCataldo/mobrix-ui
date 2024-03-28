@@ -1,7 +1,7 @@
 import {
   ComponentWithCallback,
   ComponentWithValue,
-  MoBrixUiComponent,
+  MbxUiComponent,
   NumericInputComponent,
 } from "../../../types/global";
 
@@ -27,4 +27,4 @@ export type CounterProps = NumericInputComponent &
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type CounterComponent = MoBrixUiComponent<CounterProps>;
+export type CounterComponent = MbxUiComponent<CounterProps>;

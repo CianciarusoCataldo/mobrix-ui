@@ -1,11 +1,11 @@
 import React from "react";
-import { CarouselProps, MobrixUiReactiveComponent } from "../../../types";
+import { CarouselProps, MbxUiReactiveComponent } from "../../../types";
 
 import { arrowIcon } from "./icons";
 
 import { Button, IconButton } from "../../atoms";
 
-const CarouselComponent: MobrixUiReactiveComponent<number, CarouselProps> = ({
+const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
   value: selectedItem,
   setValue: setItem,
   onChange = () => {},

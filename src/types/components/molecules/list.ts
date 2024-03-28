@@ -1,7 +1,7 @@
 import {
   BuilderComponent,
   ClickableComponent,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -27,4 +27,4 @@ export type ListProps = ClickableComponent<(index: number) => void> & {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type ListComponent = MoBrixUiComponent<ListProps>;
+export type ListComponent = MbxUiComponent<ListProps>;

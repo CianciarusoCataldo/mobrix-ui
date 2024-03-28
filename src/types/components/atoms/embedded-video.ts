@@ -1,4 +1,4 @@
-import { ClickableComponent, MoBrixUiComponent } from "../../../types/global";
+import { ClickableComponent, MbxUiComponent } from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} EmbeddedVideo component props
@@ -23,4 +23,4 @@ export type EmbeddedVideoProps = {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type EmbeddedVideoComponent = MoBrixUiComponent<EmbeddedVideoProps>;
+export type EmbeddedVideoComponent = MbxUiComponent<EmbeddedVideoProps>;

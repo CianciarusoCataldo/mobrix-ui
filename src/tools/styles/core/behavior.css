@@ -6,6 +6,8 @@
   --mbx-c-txt: var(--mbx-c-txt-l);
 
   --mbx-c-fc: var(--mbx-c-fc-l);
+
+  --mbx-c-sh: var(--mbx-c-sh-l);
 }
 
 [data-mbx-id][data-mbx-dark="true"] {
@@ -16,4 +18,6 @@
   --mbx-c-txt: var(--mbx-c-txt-d);
 
   --mbx-c-fc: var(--mbx-c-fc-d);
+
+  --mbx-c-sh: var(--mbx-c-sh-d);
 }

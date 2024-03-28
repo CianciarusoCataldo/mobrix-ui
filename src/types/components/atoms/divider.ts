@@ -1,4 +1,4 @@
-import { MoBrixUiComponent } from "../../../types/global";
+import { MbxUiComponent } from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Divider component props
@@ -20,4 +20,4 @@ export type DividerProps = {};
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type DividerComponent = MoBrixUiComponent<DividerProps>;
+export type DividerComponent = MbxUiComponent<DividerProps>;

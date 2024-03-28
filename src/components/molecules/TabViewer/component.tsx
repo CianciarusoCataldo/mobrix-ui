@@ -1,11 +1,11 @@
 import React from "react";
 
-import { MobrixUiReactiveComponent, TabViewerProps } from "../../../types";
+import { MbxUiReactiveComponent, TabViewerProps } from "../../../types";
 
 import Container from "../Container";
 import Button from "../../atoms/Button";
 
-const tabViewerComponent: MobrixUiReactiveComponent<number, TabViewerProps> = ({
+const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
   dark,
   onChange = () => {},
   setValue,

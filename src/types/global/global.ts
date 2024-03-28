@@ -29,29 +29,25 @@ export interface CommonProps {
   /** Css inline properties applied on main container */
   style?: CSSProperties;
 
-  /** If `false`, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons) (default `false`) */
-  styled?: boolean;
-
   /** If `true`, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons) (default `false`) */
   unstyled?: boolean;
 
   /** Enable/disable component animations (default `true`) */
   animated?: boolean;
 
-  /** If true, disable component animations */
-  noAnimation?: boolean;
+  /** If `animated`=`true`, this parameter specifies which animation is used when component is rendered */
+  animation?:
+    | "fade-in"
+    | "slide-in-left"
+    | "slide-in-right"
+    | "slide-in-top"
+    | "shake";
 
   /** If false, disable component background */
   background?: boolean;
 
-  /** If `true`, disable component hover standard styles (default `true`) */
-  noHover?: boolean;
-
   /** If `false`, disable component hover standard styles (default `true`) */
   hover?: boolean;
-
-  /** If false, disable the component. The effect may vary depending on the component type */
-  enabled?: boolean;
 
   /** If true, disable the component. The effect may vary depending on the component type */
   disabled?: boolean;
@@ -76,6 +72,8 @@ export interface CommonProps {
 
   /** callback called when a key is pressed when inside the component */
   onKeyDown?: (keyEvent: any) => void;
+
+  busy?: boolean;
 }
 
 /**
@@ -246,9 +244,6 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
   /** Shared {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/?id=ui-properties MoBrix-ui props} */
   commonProps?: CommonProps;
 
-  /** Additional props applied on main container (default `{}`) */
-  additionalProps?: Record<string, any>;
-
   /** Component wrapper (default `div`) */
   wrapper?: Wrappers;
 };
@@ -262,8 +257,8 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type MoBrixUiComponent<T = any, K = JSX.Element> = (
-  props: MobrixUiProps<T>
+export type MbxUiComponent<T = any, K = JSX.Element> = (
+  props: MbxUiProps<T>
 ) => K;
 
 /**
@@ -275,7 +270,7 @@ export type MoBrixUiComponent<T = any, K = JSX.Element> = (
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type MobrixUiProps<T = any> = T & CommonProps;
+export type MbxUiProps<T = any> = T & CommonProps;
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} reactive component props
@@ -286,7 +281,7 @@ export type MobrixUiProps<T = any> = T & CommonProps;
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type MobrixUiReactiveComponentProps<T = any, K = any> = {
+export type MbxUiReactiveComponentProps<T = any, K = any> = {
   value: T;
   setValue: React.Dispatch<React.SetStateAction<T>>;
 } & K;
@@ -300,11 +295,8 @@ export type MobrixUiReactiveComponentProps<T = any, K = any> = {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type MobrixUiReactiveComponentBuilder<
-  T = any,
-  K = any
-> = MoBrixUiComponent<
-  MobrixUiReactiveComponentProps<T, K>,
+export type MbxUiReactiveComponentBuilder<T = any, K = any> = MbxUiComponent<
+  MbxUiReactiveComponentProps<T, K>,
   Omit<BuilderProps, "name">
 >;
 
@@ -317,11 +309,11 @@ export type MobrixUiReactiveComponentBuilder<
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type MobrixUiReactiveComponent<
+export type MbxUiReactiveComponent<
   T = any,
   K = any,
   ReturnType = BuilderComponent | BuilderComponent[]
-> = MoBrixUiComponent<MobrixUiReactiveComponentProps<T, K>, ReturnType>;
+> = MbxUiComponent<MbxUiReactiveComponentProps<T, K>, ReturnType>;
 
 export type DeepPartial<T> = {
   [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K];

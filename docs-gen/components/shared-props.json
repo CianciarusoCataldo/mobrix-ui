@@ -49,6 +49,11 @@
     "type": "boolean"
   },
 
+  "animation": {
+    "description": "If `animated`=`true`, this parameter specifies which animation is used when component is rendered",
+    "type": "'fade-in' | 'slide-in-left' | 'slide-in-right' | 'slide-in-top' | 'shake'"
+  },
+
   "background": {
     "description": "Enable/disable component background",
     "default": "true",

@@ -2,12 +2,12 @@ import React from "react";
 
 import {
   ExpandableContainerProps,
-  MobrixUiReactiveComponent,
+  MbxUiReactiveComponent,
 } from "../../../types";
 
 import IconButton from "../../atoms/IconButton";
 
-const expandableContainerComponent: MobrixUiReactiveComponent<
+const expandableContainerComponent: MbxUiReactiveComponent<
   boolean,
   ExpandableContainerProps
 > = ({

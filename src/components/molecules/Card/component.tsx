@@ -1,11 +1,11 @@
 import React from "react";
 
-import { MoBrixUiComponent, CardProps, BuilderComponent } from "../../../types";
+import { MbxUiComponent, CardProps, BuilderComponent } from "../../../types";
 
 import { generateElementsArray } from "../../../tools/utils";
 import { Divider } from "../../atoms";
 
-const cardComponent: MoBrixUiComponent<CardProps, BuilderComponent[]> = ({
+const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
   header,
   body,
   children,

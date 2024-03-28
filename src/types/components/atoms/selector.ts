@@ -1,7 +1,7 @@
 import {
   ComponentWithCallback,
   ComponentWithValue,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -30,4 +30,4 @@ export type SelectorProps = ComponentWithValue<number> &
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type SelectorComponent = MoBrixUiComponent<SelectorProps>;
+export type SelectorComponent = MbxUiComponent<SelectorProps>;

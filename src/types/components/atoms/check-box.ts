@@ -1,6 +1,6 @@
 import {
   ComponentWithCallback,
-  MoBrixUiComponent,
+  MbxUiComponent,
   ComponentWithValue,
   ComponentWithIcon,
 } from "../../../types/global";
@@ -27,4 +27,4 @@ export type CheckBoxProps = ComponentWithValue<boolean> &
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type CheckBoxComponent = MoBrixUiComponent<CheckBoxProps>;
+export type CheckBoxComponent = MbxUiComponent<CheckBoxProps>;

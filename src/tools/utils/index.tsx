@@ -7,10 +7,11 @@ import React, { useEffect, useRef } from "react";
 import {
   BuilderComponent,
   BuilderProps,
+  BuilderPropsReactive,
   CommonProps,
 } from "../../types/global";
+
 import { DEFAULT_COMMON_PROPS } from "./constants";
-import { BuilderPropsReactive } from "../../types/global";
 
 /* istanbul ignore next */
 const useOutsideAlerter = (ref: any, callback: () => void) => {
@@ -68,16 +69,17 @@ const buildMobrixUiStandardComponent = ({
   Component,
   /* istanbul ignore next */
   commonProps = {},
-  additionalProps = {},
   wrapper: SelectedWrapper = "div",
 }: BuilderProps) => {
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,
     "data-mbx-dark": !!commonProps.dark,
-    "data-mbx-mode": commonProps.dark ? "dark" : "light",
-    "data-mbx-styled": !commonProps.unstyled,
     "data-mbx-shadow": !!commonProps.shadow,
     "data-mbx-animated": commonProps.animated && !commonProps.disabled,
+    ...(commonProps.animation &&
+      commonProps.animated && {
+        "data-mbx-animation": commonProps.animation,
+      }),
     "data-mbx-hide": commonProps.hide,
     "data-mbx-a11y": commonProps.a11y,
     "data-mbx-background": commonProps.background,
@@ -95,7 +97,6 @@ const buildMobrixUiStandardComponent = ({
     style: commonProps.style,
     onFocus: commonProps.onFocus,
     onKeyDown: commonProps.onKeyDown,
-    ...additionalProps,
     ...commonProps.additionalProps,
   };
 
@@ -130,9 +131,8 @@ const buildMobrixUiStandardComponent = ({
  * @copyright 2023 Cataldo Cianciaruso
  */
 // prettier-ignore
-const buildMobrixUiReactiveComponent = <T=any>({
+const buildMbxUiReactiveComponent = <T=any>({
   name,
-  additionalProps,
   wrapper,
   commonProps,
   defaultValue,
@@ -169,7 +169,6 @@ const buildMobrixUiReactiveComponent = <T=any>({
 
   return buildMobrixUiStandardComponent({
     name,
-    additionalProps,
     commonProps,
     Component: Component && Component({ value, setValue }),
     wrapper,
@@ -204,7 +203,7 @@ export const buildMbxReactiveComponent = <T=any>(
 
   const builderProps = callback(inputCommonProps);
 
-  return buildMobrixUiReactiveComponent<T>({
+  return buildMbxUiReactiveComponent<T>({
     commonProps: inputCommonProps,
     ...builderProps,
   });

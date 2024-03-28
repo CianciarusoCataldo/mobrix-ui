@@ -31,6 +31,8 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover](#-mbx-text-color-hover)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                            | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
 | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](#-mbx-text-color-hover-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover](#-mbx-text-color-hover)</div>             | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#413c5c</div><div style='text-align:center;margin-auto;'><div style='background:#413c5c;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](#-mbx-text-color-hover-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover](#-mbx-text-color-hover)</div>             | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#dfeaf8</div><div style='text-align:center;margin-auto;'><div style='background:#dfeaf8;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-shadow-light](#-mbx-shadow-light)</div>                                 | <div style='text-align:center;margin:auto;'>[--mbx-shadow](#-mbx-shadow)</div>                                 | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#464545</div><div style='text-align:center;margin-auto;'><div style='background:#464545;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-shadow-dark](#-mbx-shadow-dark)</div>                                   | <div style='text-align:center;margin:auto;'>[--mbx-shadow](#-mbx-shadow)</div>                                 | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#464545</div><div style='text-align:center;margin-auto;'><div style='background:#464545;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](#-mbx-focus-color)</div>                                   | <div style='text-align:center;margin:auto;'>/</div>                                                            | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                       |
 | <div style='text-align:center;margin:auto;'>[--mbx-focus-color-light](#-mbx-focus-color-light)</div>                       | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](#-mbx-focus-color)</div>                       | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#7785ff</div><div style='text-align:center;margin-auto;'><div style='background:#7785ff;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-focus-color-dark](#-mbx-focus-color-dark)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-focus-color](#-mbx-focus-color)</div>                       | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#fb7a10</div><div style='text-align:center;margin-auto;'><div style='background:#fb7a10;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                           |
@@ -288,6 +290,34 @@ Global MoBrix-ui text color, when [dark mode](https://cianciarusocataldo.github.
 <br>
 
 Global MoBrix-ui text color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)
+
+<br>
+
+<br>
+
+### --mbx-shadow-light
+
+| <div style='text-align:center;margin:auto;'>Fallback</div>                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-shadow](#-mbx-shadow)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#464545</div><div style='text-align:center;margin-auto;'><div style='background:#464545;margin:auto; width:15px; height:15px;'/></div></div></div> |
+
+<br>
+
+Global MoBrix-ui shadow color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
+
+<br>
+
+<br>
+
+### --mbx-shadow-dark
+
+| <div style='text-align:center;margin:auto;'>Fallback</div>                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-shadow](#-mbx-shadow)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#464545</div><div style='text-align:center;margin-auto;'><div style='background:#464545;margin:auto; width:15px; height:15px;'/></div></div></div> |
+
+<br>
+
+Global MoBrix-ui shadow color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>
 

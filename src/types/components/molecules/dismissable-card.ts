@@ -1,6 +1,6 @@
 import {
   ClosableComponent,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 import { CardProps } from "./card";
@@ -27,4 +27,4 @@ export type DismissableCardProps = CardProps & ClosableComponent & {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type DismissableCardComponent = MoBrixUiComponent<DismissableCardProps>;
+export type DismissableCardComponent = MbxUiComponent<DismissableCardProps>;

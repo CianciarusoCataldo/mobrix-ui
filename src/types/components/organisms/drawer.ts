@@ -2,7 +2,7 @@ import {
   BuilderComponent,
   ClosableComponent,
   ComponentWithChildren,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -42,4 +42,4 @@ export type DrawerProps = ComponentWithChildren<
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type DrawerComponent = MoBrixUiComponent<DrawerProps>;
+export type DrawerComponent = MbxUiComponent<DrawerProps>;

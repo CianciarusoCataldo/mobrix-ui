@@ -23,6 +23,7 @@
 | <div style='text-align:center;margin:auto;'>[style](#style)</div> | <div style='text-align:center;margin:auto;'>CSSProperties</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[unstyled](#unstyled)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
 | <div style='text-align:center;margin:auto;'>[animated](#animated)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[animation](#animation)</div> | <div style='text-align:center;margin:auto;'>`fade-in` &#124; `slide-in-left` &#124; `slide-in-right` &#124; `slide-in-top` &#124; `shake`</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[background](#background)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
 | <div style='text-align:center;margin:auto;'>[hover](#hover)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
 | <div style='text-align:center;margin:auto;'>[disabled](#disabled)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
@@ -166,6 +167,21 @@ If `true`, no standard MoBrix-ui styles will be applied on the components (usefu
 <br>
 
 Enable/disable component animations
+
+<br>
+
+<br>
+
+### animation
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>`fade-in` &#124; `slide-in-left` &#124; `slide-in-right` &#124; `slide-in-top` &#124; `shake`</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+<br>
+
+If `animated`=`true`, this parameter specifies which animation is used when component is rendered
 
 <br>
 

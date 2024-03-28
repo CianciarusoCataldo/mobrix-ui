@@ -1,14 +1,10 @@
 import React from "react";
 
-import {
-  BuilderComponent,
-  DrawerProps,
-  MoBrixUiComponent,
-} from "../../../types";
+import { BuilderComponent, DrawerProps, MbxUiComponent } from "../../../types";
 
 import IconButton from "../../atoms/IconButton";
 
-const DrawerInternalComponent: MoBrixUiComponent<
+const DrawerInternalComponent: MbxUiComponent<
   DrawerProps,
   BuilderComponent[]
 > = ({ onClose, children, dark, animated, disabled, hover }) => {

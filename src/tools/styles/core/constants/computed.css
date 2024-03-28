@@ -70,4 +70,8 @@
     --mbx-background-hover-light,
     var(--mbx-background-hover, var(--mbx-d-bg-h-l))
   );
+
+  --mbx-c-sh-l: var(--mbx-shadow-light, var(--mbx-shadow, var(--mbx-d-sh)));
+
+  --mbx-c-sh-d: var(--mbx-shadow-dark, var(--mbx-shadow, var(--mbx-d-sh)));
 }
