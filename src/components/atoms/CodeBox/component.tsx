@@ -4,7 +4,7 @@ import {
   BuilderComponent,
   CodeBlock,
   CodeBoxProps,
-  MoBrixUiComponent,
+  MbxUiComponent,
   SupportedEnvironment,
 } from "../../../types";
 
@@ -14,7 +14,7 @@ import { CopyIcon } from "./icons";
 
 import IconButton from "../IconButton";
 
-const codeboxComponent: MoBrixUiComponent<CodeBoxProps, BuilderComponent[]> = ({
+const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   disabled,
   hover,
   value: code = "",

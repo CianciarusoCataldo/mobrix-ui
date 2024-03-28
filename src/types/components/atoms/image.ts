@@ -1,4 +1,4 @@
-import { MoBrixUiComponent } from "../../global";
+import { MbxUiComponent } from "../../global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Image component props
@@ -32,4 +32,4 @@ export type ImageProps = {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type ImageComponent = MoBrixUiComponent<ImageProps>;
+export type ImageComponent = MbxUiComponent<ImageProps>;

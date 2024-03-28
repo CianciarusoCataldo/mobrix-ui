@@ -1,7 +1,7 @@
 import {
   ClosableComponent,
   ComponentWithCallback,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -76,4 +76,4 @@ export type TabViewerProps = ClosableComponent & {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type TabViewerComponent = MoBrixUiComponent<TabViewerProps>;
+export type TabViewerComponent = MbxUiComponent<TabViewerProps>;

@@ -1,6 +1,6 @@
 import {
   ComponentWithChildren,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -26,4 +26,4 @@ export type ContainerProps = ComponentWithChildren<any> & {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type ContainerComponent = MoBrixUiComponent<ContainerProps>;
+export type ContainerComponent = MbxUiComponent<ContainerProps>;

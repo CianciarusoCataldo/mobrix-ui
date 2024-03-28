@@ -1,7 +1,7 @@
 import {
   ComponentWithCallback,
   ComponentWithValue,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -28,4 +28,4 @@ export type RadioButtonProps = ComponentWithValue<boolean> &
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type RadioButtonComponent = MoBrixUiComponent<RadioButtonProps>;
+export type RadioButtonComponent = MbxUiComponent<RadioButtonProps>;

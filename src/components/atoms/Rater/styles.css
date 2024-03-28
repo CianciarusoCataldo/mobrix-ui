@@ -5,6 +5,7 @@
   background: var(--mbx-c-rat-bg);
   border-radius: 8px;
   padding: 0.4rem;
+  width: fit-content;
 }
 
 [data-mbx-id="rater"][data-mbx-vertical="false"] {

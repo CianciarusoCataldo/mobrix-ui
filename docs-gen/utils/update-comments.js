@@ -4,8 +4,6 @@ const TEMPLATE = `
 *
 * MBX_PROPS
 *
-* MBX_EXAMPLE
-*
 * MBX_SEE
 *
 * @since MBX_SINCE

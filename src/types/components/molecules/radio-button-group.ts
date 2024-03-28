@@ -2,7 +2,7 @@ import {
   CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 import { RadioButtonProps } from "../atoms";
 
@@ -72,4 +72,4 @@ export type RadioButtonGroupProps = ComponentWithCallback<number> &
  * @copyright 2023 Cataldo Cianciaruso
  */
 export type RadioButtonGroupComponent =
-  MoBrixUiComponent<RadioButtonGroupProps>;
+  MbxUiComponent<RadioButtonGroupProps>;

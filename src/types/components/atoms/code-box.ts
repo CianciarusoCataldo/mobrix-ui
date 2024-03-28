@@ -1,4 +1,4 @@
-import { ComponentWithValue, MoBrixUiComponent } from "../../../types/global";
+import { ComponentWithValue, MbxUiComponent } from "../../../types/global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Codebox supported environments
@@ -61,4 +61,4 @@ export type CodeBoxProps = ComponentWithValue<string> & {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type CodeBoxComponent = MoBrixUiComponent<CodeBoxProps>;
+export type CodeBoxComponent = MbxUiComponent<CodeBoxProps>;

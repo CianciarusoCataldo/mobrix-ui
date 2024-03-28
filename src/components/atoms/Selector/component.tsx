@@ -1,8 +1,8 @@
 import React from "react";
 
-import { MobrixUiReactiveComponent, SelectorProps } from "../../../types";
+import { MbxUiReactiveComponent, SelectorProps } from "../../../types";
 
-const selectorComponent: MobrixUiReactiveComponent<
+const selectorComponent: MbxUiReactiveComponent<
   number | undefined,
   SelectorProps
 > = ({ elements = [], optionClassName }) => {

@@ -1,6 +1,6 @@
 import {
   ComponentWithChildren,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../global";
 
 import { FormFieldProps } from "../molecules/form-field";
@@ -49,4 +49,4 @@ export type FormProps = ComponentWithChildren<JSX.Element> & {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type FormComponent = MoBrixUiComponent<FormProps>;
+export type FormComponent = MbxUiComponent<FormProps>;

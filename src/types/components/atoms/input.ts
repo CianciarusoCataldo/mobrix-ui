@@ -2,7 +2,7 @@ import {
   ComponentWithCallback,
   ComponentWithValue,
   GenericInputComponent,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 import { AutoResizableComponent } from "../../global/global";
 
@@ -28,4 +28,4 @@ export type InputProps = GenericInputComponent & AutoResizableComponent &
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type InputComponent = MoBrixUiComponent<InputProps>;
+export type InputComponent = MbxUiComponent<InputProps>;

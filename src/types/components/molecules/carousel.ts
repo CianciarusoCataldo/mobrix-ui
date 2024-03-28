@@ -2,7 +2,7 @@ import {
   BuilderComponent,
   ComponentWithCallback,
   ComponentWithValue,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -29,4 +29,4 @@ export type CarouselProps = ComponentWithValue<number> &
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type CarouselComponent = MoBrixUiComponent<CarouselProps>;
+export type CarouselComponent = MbxUiComponent<CarouselProps>;

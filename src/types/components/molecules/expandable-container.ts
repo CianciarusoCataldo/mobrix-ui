@@ -1,7 +1,7 @@
 import {
   BuilderComponent,
   ComponentWithCallback,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 import { ContainerProps } from "./container";
@@ -32,4 +32,4 @@ export type ExpandableContainerProps = ContainerProps &
  * @copyright 2023 Cataldo Cianciaruso
  */
 export type ExpandableContainerComponent =
-  MoBrixUiComponent<ExpandableContainerProps>;
+  MbxUiComponent<ExpandableContainerProps>;

@@ -77,6 +77,16 @@
     "fallback": "--mbx-text-color-hover",
     "defaultColor": "#dfeaf8"
   },
+  "--mbx-shadow-light": {
+    "description": "Global MoBrix-ui shadow color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
+    "fallback": "--mbx-shadow",
+    "defaultColor": "#464545"
+  },
+  "--mbx-shadow-dark": {
+    "description": "Global MoBrix-ui shadow color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
+    "fallback": "--mbx-shadow",
+    "defaultColor": "#464545"
+  },
   "--mbx-focus-color": {
     "description": "Fallback value for `--mbx-focus-color-light` and `--mbx-focus-color-dark` variables"
   },

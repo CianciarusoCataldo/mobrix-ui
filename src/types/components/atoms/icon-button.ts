@@ -2,7 +2,7 @@ import {
   BuilderComponent,
   ClickableComponent,
   ComponentWithChildren,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -32,4 +32,4 @@ export type IconButtonProps = ComponentWithChildren<BuilderComponent> &
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type IconButtonComponent = MoBrixUiComponent<IconButtonProps>;
+export type IconButtonComponent = MbxUiComponent<IconButtonProps>;

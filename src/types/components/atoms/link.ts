@@ -1,7 +1,7 @@
 import {
   BuilderComponent,
   ComponentWithChildren,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -30,4 +30,4 @@ export type LinkProps = ComponentWithChildren<BuilderComponent> & {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type LinkComponent = MoBrixUiComponent<LinkProps>;
+export type LinkComponent = MbxUiComponent<LinkProps>;

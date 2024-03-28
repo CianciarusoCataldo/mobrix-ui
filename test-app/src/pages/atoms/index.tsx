@@ -69,7 +69,7 @@ const AtomsPage = () => {
               Button dark no background
             </Button>
             <div style={{ marginTop: "20px" }} />
-            <Button animated>Button light animated</Button>
+            <Button>Button light animated</Button>
             <div style={{ marginTop: "20px" }} />
             <Button animated dark>
               Button dark animated

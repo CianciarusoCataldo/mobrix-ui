@@ -1,10 +1,10 @@
 import React from "react";
 
-import { MoBrixUiComponent, TableProps } from "../../../types";
+import { MbxUiComponent, TableProps } from "../../../types";
 
 const parseClassName = (className: string) => (className ? { className } : {});
 
-const tableComponent: MoBrixUiComponent<TableProps, JSX.Element> = ({
+const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
   headers,
   rows = [],
   cellClassName,

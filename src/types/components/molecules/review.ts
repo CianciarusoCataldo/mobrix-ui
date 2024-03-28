@@ -1,4 +1,4 @@
-import { ComponentWithIcon, MoBrixUiComponent } from "../../../types/global";
+import { ComponentWithIcon, MbxUiComponent } from "../../../types/global";
 
 import { RaterProps } from "./rater";
 
@@ -61,4 +61,4 @@ export type ReviewProps = ComponentWithIcon & {
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type ReviewComponent = MoBrixUiComponent<ReviewProps>;
+export type ReviewComponent = MbxUiComponent<ReviewProps>;

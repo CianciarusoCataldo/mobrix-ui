@@ -1,6 +1,6 @@
 import {
   ComponentWithChildren,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -23,4 +23,4 @@ export type LabelProps = ComponentWithChildren<string | string[]>;
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type LabelComponent = MoBrixUiComponent<LabelProps>;
+export type LabelComponent = MbxUiComponent<LabelProps>;

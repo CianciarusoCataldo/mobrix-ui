@@ -3,7 +3,7 @@ import React from "react";
 import {
   CalendarDate,
   DatePickerProps,
-  MobrixUiReactiveComponent,
+  MbxUiReactiveComponent,
 } from "../../../types";
 
 import { defaultDays, defaultMonths } from "../Calendar/constants";
@@ -17,7 +17,7 @@ import Calendar from "../Calendar";
 import IconButton from "../../atoms/IconButton";
 import Label from "../../atoms/Label";
 
-const DatePickerInternalComponent: MobrixUiReactiveComponent<
+const DatePickerInternalComponent: MbxUiReactiveComponent<
   CalendarDate,
   DatePickerProps & { today: CalendarDate & { dayOfTheMonth: number } }
 > = ({

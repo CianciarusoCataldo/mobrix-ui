@@ -1,14 +1,14 @@
 import React from "react";
 
 import { DismissableCardProps } from "../../../types/components";
-import { BuilderComponent, MoBrixUiComponent } from "../../../types/global";
+import { BuilderComponent, MbxUiComponent } from "../../../types/global";
 
 import { IconButton } from "../../atoms";
 import { x_icon } from "../../../icons";
 
 import cardComponent from "../Card/component";
 
-const DismissableCardInternalComponent: MoBrixUiComponent<
+const DismissableCardInternalComponent: MbxUiComponent<
   DismissableCardProps,
   BuilderComponent[]
 > = ({ onClose, header, ...props }) =>

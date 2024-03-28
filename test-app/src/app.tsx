@@ -5,6 +5,7 @@ import {
   DrawerProps,
   Button,
   Card,
+  Slider,
 } from "./mobrix-ui-preview";
 import AtomsPage from "./pages/atoms";
 import MoleculesPage from "./pages/molecules";
@@ -68,6 +69,7 @@ const App = () => {
         </div>
       </Drawer>
       <div style={{ display: "flex", flexDirection: "column" }}>
+        <Slider animation="slide-in-top" className="test-slider"/>
         <Button
           key="drawer-btn"
           onClick={() => {
@@ -76,7 +78,7 @@ const App = () => {
         >
           Toggle drawer
         </Button>
-        <Card className="test-card" header="header" body="body" footer="footer" />
+        <Card animation="slide-in-left" className="test-card" header="header" body="body" footer="footer" />
         {tabs}
       </div>
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-  MobrixUiReactiveComponent,
+  MbxUiReactiveComponent,
   RadioButtonGroupProps,
   RadioElement,
 } from "../../../types";
@@ -9,7 +9,7 @@ import {
 import Label from "../../atoms/Label";
 import RadioButton from "../../atoms/RadioButton";
 
-const radioButtonGroupComponent: MobrixUiReactiveComponent<
+const radioButtonGroupComponent: MbxUiReactiveComponent<
   number,
   RadioButtonGroupProps
 > = ({

@@ -1,12 +1,12 @@
 import React from "react";
 
-import { BuilderComponent, FormProps, MoBrixUiComponent } from "../../../types";
+import { BuilderComponent, FormProps, MbxUiComponent } from "../../../types";
 
 import Button from "../../atoms/Button";
 import FormField from "../../molecules/FormField";
 import { Label } from "../../atoms";
 
-const formComponent: MoBrixUiComponent<FormProps, BuilderComponent[]> = ({
+const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
   title,
   fields,
   onSubmit,

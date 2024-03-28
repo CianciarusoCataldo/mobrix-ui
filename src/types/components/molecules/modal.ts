@@ -2,7 +2,7 @@ import {
   BuilderComponent,
   ClosableComponent,
   ComponentWithChildren,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -29,4 +29,4 @@ export type ModalProps = ComponentWithChildren<BuilderComponent> &
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type ModalComponent = MoBrixUiComponent<ModalProps>;
+export type ModalComponent = MbxUiComponent<ModalProps>;

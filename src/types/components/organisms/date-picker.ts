@@ -3,7 +3,7 @@ import {
   CommonProps,
   ComponentWithCallback,
   ComponentWithValue,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 import { CalendarDate, CalendarProps } from "./calendar";
@@ -34,4 +34,4 @@ export type DatePickerProps = ComponentWithCallback<CalendarDate> &
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type DatePickerComponent = MoBrixUiComponent<DatePickerProps>;
+export type DatePickerComponent = MbxUiComponent<DatePickerProps>;

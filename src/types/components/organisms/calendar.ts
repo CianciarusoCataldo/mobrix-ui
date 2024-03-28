@@ -2,7 +2,7 @@ import {
   ComponentWithCallback,
   ComponentWithValue,
   DeepPartial,
-  MoBrixUiComponent,
+  MbxUiComponent,
 } from "../../../types/global";
 
 /**
@@ -91,4 +91,4 @@ export type CalendarProps = ComponentWithValue<DeepPartial<CalendarDate>> &
  *
  * @copyright 2023 Cataldo Cianciaruso
  */
-export type CalendarComponent = MoBrixUiComponent<CalendarProps>;
+export type CalendarComponent = MbxUiComponent<CalendarProps>;

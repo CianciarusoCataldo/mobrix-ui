@@ -1,15 +1,12 @@
 import React from "react";
 
-import {
-  DropdownProps,
-  MobrixUiReactiveComponentBuilder,
-} from "../../../types";
+import { DropdownProps, MbxUiReactiveComponentBuilder } from "../../../types";
 
 import { Button, IconButton } from "../../atoms";
 import Popup from "../Popup";
 import Container from "../Container";
 
-const DropdownInternalComponent: MobrixUiReactiveComponentBuilder<
+const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
   number,
   DropdownProps
 > = ({
