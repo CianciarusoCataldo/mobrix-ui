@@ -27,7 +27,7 @@
 
 ### 3.8.0
 
-- Ui improvements
+- Ui improvements and fix
 - Refactoring
 - Bundle size reduced
 - New shared property, `animation`, to customize components animation when they are rendered

@@ -42,7 +42,6 @@ const Selector: SelectorComponent = ({
   elements,
   value: inputValue,
   onChange = () => {},
-  additionalProps = {},
   optionClassName,
   ...commonProps
 }) =>

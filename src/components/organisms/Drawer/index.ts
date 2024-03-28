@@ -91,12 +91,13 @@ const Drawer: DrawerComponent = ({
     name: "drawer",
     commonProps: {
       ...sharedProps,
+      additionalProps: {
+        ...commonProps.additionalProps,
+        "data-mbx-drawer-location": drawerLocation,
+        "data-mbx-drawer-animation": customProps.animation,
+      },
       hide: value.length === 0 && hide,
       onFocusLost: customProps.onFocusLost,
-    },
-    additionalProps: {
-      "data-mbx-drawer-location": drawerLocation,
-      "data-mbx-drawer-animation": customProps.animation,
     },
     Component: drawerComponent({
       children,
