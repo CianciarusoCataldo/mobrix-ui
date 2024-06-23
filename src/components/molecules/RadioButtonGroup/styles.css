@@ -5,7 +5,7 @@
   width: fit-content;
 }
 
-[data-mbx-id="radio-button-group"][data-mbx-background="true"] {
+[data-mbx-id="radio-button-group"][data-mbx-attributes*="background"] {
   background: var(--mbx-c-radg-bg);
   color: var(--mbx-c-radg-txt);
 }

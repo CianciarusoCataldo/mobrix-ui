@@ -19,5 +19,14 @@ export const FEATURES_PROPS: Record<
   (props: CommonProps) => boolean
 > = {
   opacityOnHover: (props) => !props.disabled && props.hover,
+};
+
+export const MBX_ATTRIBUTES: Partial<
+  Record<keyof CommonProps, (props: CommonProps) => boolean>
+> = {
   dark: (props) => props.dark,
+  shadow: (props) => props.shadow,
+  hide: (props) => props.hide,
+  hover: (props) => props.hover && !props.disabled,
+  background: (props) => props.background,
 };

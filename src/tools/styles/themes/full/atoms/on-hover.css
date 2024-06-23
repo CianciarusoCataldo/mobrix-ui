@@ -1,5 +1,5 @@
 @media (hover) {
-  [data-mbx-id][data-mbx-hover="true"][data-mbx-background="true"][data-mbx-enabled="true"]:hover {
+  [data-mbx-id][data-mbx-attributes*="hover"][data-mbx-attributes*="background"][data-mbx-enabled="true"]:hover {
     /** Button **/
     --mbx-c-btn-bg: var(--mbx-c-btn-bg-h);
 
@@ -10,7 +10,7 @@
     --mbx-c-rad-bg: var(--mbx-c-rad-bg-h);
   }
 
-  [data-mbx-id][data-mbx-hover="true"][data-mbx-enabled="true"]:hover {
+  [data-mbx-id][data-mbx-attributes*="hover"][data-mbx-enabled="true"]:hover {
     /** Button **/
     --mbx-c-btn-txt: var(--mbx-c-btn-txt-h);
 
@@ -18,7 +18,7 @@
     --mbx-c-link-txt: var(--mbx-c-link-txt-h);
   }
 
-  [data-mbx-id][data-mbx-hover="true"][data-mbx-background="true"][data-mbx-enabled="true"]:hover:not(
+  [data-mbx-id][data-mbx-attributes*="hover"][data-mbx-attributes*="background"][data-mbx-enabled="true"]:hover:not(
       :focus-visible
     ) {
     /** Counter **/
@@ -31,7 +31,7 @@
     --mbx-c-in-txt: var(--mbx-c-in-txt-h);
   }
 
-  [data-mbx-id="selector"][data-mbx-hover="true"]:hover,
+  [data-mbx-id="selector"][data-mbx-attributes*="hover"]:hover,
   [data-mbx-id="selector"] [data-mbx-class="selector-option"]:hover {
     background: var(--mbx-c-sel-bg-h);
     color: var(--mbx-c-sel-txt-h);

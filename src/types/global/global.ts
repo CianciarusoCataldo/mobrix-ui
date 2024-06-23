@@ -5,6 +5,12 @@ export type MobBrixAnimation = "fadeIn" | "fadeOut" | "slideIn" | "slideOut";
 export type MbxAttributes = {
   /** Enable/disable dark mode (default `false`) */
   dark?: boolean;
+
+  /** Enable/disable shadow behind component (default `true`) */
+  shadow?: boolean;
+
+  /** Enable/disable component animations (default `true`) */
+  animated?: boolean;
 };
 
 /**
@@ -25,17 +31,11 @@ export type CommonProps = MbxAttributes & {
   /** {@link https://www.w3schools.com/html/html_id.asp id parameter} (for styling/testing purpose, to easily find the component into the DOM) */
   id?: string;
 
-  /** Enable/disable shadow behind component (default `true`) */
-  shadow?: boolean;
-
   /** Css inline properties applied on main container */
   style?: CSSProperties;
 
   /** If `true`, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons) (default `false`) */
   unstyled?: boolean;
-
-  /** Enable/disable component animations (default `true`) */
-  animated?: boolean;
 
   /** If `animated`=`true`, this parameter specifies which animation is used when component is rendered */
   animation?:
@@ -230,7 +230,6 @@ export type Wrappers =
 export interface Features {
   /** If `true`, reduce component opacity when component is hovered (and `hover` = `true`) */
   opacityOnHover?: boolean;
-  dark?: boolean;
 }
 
 /**

@@ -104,12 +104,12 @@
 
   --mbx-c-sel-bg-h-l: var(
     --mbx-selector-background-hover-light,
-    var(--mbx-selector-background-hover, var(--mbx-c-bg-h-l))
+    var(--mbx-selector-background-hover, var(--mbx-c-sel-bg-l))
   );
 
   --mbx-c-sel-bg-h-d: var(
     --mbx-selector-background-hover-dark,
-    var(--mbx-selector-background-hover, var(--mbx-c-bg-h-d))
+    var(--mbx-selector-background-hover, var(--mbx-c-sel-bg-d))
   );
   --mbx-c-sel-txt-h-l: var(
     --mbx-selector-text-color-hover-light,

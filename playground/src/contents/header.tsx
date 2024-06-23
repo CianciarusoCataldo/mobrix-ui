@@ -52,6 +52,7 @@ const HeaderContent = () => {
       expanded={
         <div className="flex flex-row mt-6" key="expanded_header">
           <IconButton
+            hover
             aria-label="drawer button"
             onClick={() => {
               dispatch(openDrawer());
@@ -63,6 +64,7 @@ const HeaderContent = () => {
             {BurgerIcon}
           </IconButton>
           <IconButton
+            hover
             aria-label="back button"
             onClick={() => {
               dispatch(goTo(HOME));
@@ -112,7 +114,6 @@ const HeaderContent = () => {
             <div className="flex flex-row pr-4">
               <Link
                 dark={dark}
-                unstyled
                 to="https://cianciarusocataldo.github.io/mobrix-ui/docs"
                 className="m-auto"
                 newTab

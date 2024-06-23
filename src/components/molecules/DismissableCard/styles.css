@@ -25,7 +25,7 @@
   margin-top: 0;
 }
 
-[data-mbx-id="dismissable-card"][data-mbx-hover="true"]
+[data-mbx-id="dismissable-card"][data-mbx-attributes*="hover"]
   [data-mbx-class="dismiss-button"]
   svg
   path {
@@ -33,7 +33,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="dismissable-card"][data-mbx-hover="true"][data-mbx-enabled="true"]
+  [data-mbx-id="dismissable-card"][data-mbx-attributes*="hover"][data-mbx-enabled="true"]
     [data-mbx-class="dismiss-button"]
     svg:hover
     path {

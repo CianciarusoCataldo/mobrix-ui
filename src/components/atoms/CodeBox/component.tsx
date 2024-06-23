@@ -24,7 +24,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
 }) => {
   let parseCodeLineFunction: (
     inputCode: string,
-    environment: SupportedEnvironment
+    environment: SupportedEnvironment,
   ) => CodeBlock[] =
     highlight && code.length > 0
       ? parseCode
@@ -57,7 +57,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
                 >
                   {codeBlock.code}
                 </span>
-              )
+              ),
           )}
         </p>
       ))}

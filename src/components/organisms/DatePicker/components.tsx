@@ -42,7 +42,6 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
   ...commonProps
 }) => {
   const [isVisible, setVisible] = React.useState<boolean>(false);
-
   const year = value.year && value.year > 0 ? value.year : todayDate.year;
   const month =
     value.month !== undefined && value.month >= 0 && value.month <= 11

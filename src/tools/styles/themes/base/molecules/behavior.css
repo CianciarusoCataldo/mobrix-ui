@@ -1,6 +1,6 @@
 @import url("constants/computed.css");
 
-[data-mbx-id][data-mbx-dark="false"] {
+[data-mbx-id]:not([data-mbx-attributes*="dark"]) {
   /** Card **/
   --mbx-c-card-bg: var(--mbx-c-card-bg-l);
   --mbx-c-card-txt: var(--mbx-c-card-txt-l);
@@ -73,7 +73,7 @@
   --mbx-c-tabv-off-txt-h: var(--mbx-c-tabv-off-txt-h-l);
 }
 
-[data-mbx-id][data-mbx-dark="true"] {
+[data-mbx-id][data-mbx-attributes*="dark"] {
   /** Card **/
   --mbx-c-card-bg: var(--mbx-c-card-bg-d);
 

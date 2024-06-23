@@ -32,7 +32,9 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
       elementsArray.push(
         <div
           key={`carousel_element_${index}`}
-          data-mbx-hide={index !== item}
+          {...(index !== item && {
+            "data-mbx-attributes": "hide;",
+          })}
           data-mbx-class="element"
           data-mbx-animation={index === item ? activeClassName : ""}
         >

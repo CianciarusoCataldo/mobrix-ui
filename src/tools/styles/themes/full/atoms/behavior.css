@@ -1,6 +1,6 @@
 @import url("computed.css");
 
-[data-mbx-id][data-mbx-dark="false"] {
+[data-mbx-id]:not([data-mbx-attributes*="dark"]) {
   /** Button */
   --mbx-c-btn-bg-h: var(--mbx-c-btn-bg-h-l);
 
@@ -36,7 +36,7 @@
   --mbx-c-sel-txt-h: var(--mbx-c-sel-txt-h-l);
 }
 
-[data-mbx-id][data-mbx-dark="true"] {
+[data-mbx-id][data-mbx-attributes*="dark"] {
   /** Button */
   --mbx-c-btn-bg-h: var(--mbx-c-btn-bg-h-d);
 

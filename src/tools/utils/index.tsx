@@ -11,7 +11,11 @@ import {
   CommonProps,
 } from "../../types/global";
 
-import { DEFAULT_COMMON_PROPS, FEATURES_PROPS } from "./constants";
+import {
+  DEFAULT_COMMON_PROPS,
+  FEATURES_PROPS,
+  MBX_ATTRIBUTES,
+} from "./constants";
 import { Features } from "../../types/global/global";
 
 /* istanbul ignore next */
@@ -63,6 +67,19 @@ export const getEnabledFeatures = (
   return enabledFeatures;
 };
 
+export const getMbxAttributes = (commonProps: CommonProps) => {
+  let mbxAttributes = "";
+  Object.keys(MBX_ATTRIBUTES)
+    .filter((mbxAttribute: keyof CommonProps, index) =>
+      MBX_ATTRIBUTES[mbxAttribute](commonProps)
+    )
+    .forEach((mbxAttribute, index) => {
+      mbxAttributes += `${mbxAttribute};`;
+    });
+
+  return mbxAttributes;
+};
+
 /**
  * Build a standard {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component, providing shared functionalities and props, to optimize the process.
  *
@@ -91,20 +108,22 @@ const buildMobrixUiStandardComponent = ({
   features = {},
 }: BuilderProps) => {
   let enabledFeatures = getEnabledFeatures(features, commonProps);
+  let mbxAttributes = getMbxAttributes(commonProps);
+
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,
-    "data-mbx-dark": !!commonProps.dark,
-    "data-mbx-shadow": !!commonProps.shadow,
     "data-mbx-animated": commonProps.animated && !commonProps.disabled,
     ...(commonProps.animation &&
       commonProps.animated && {
         "data-mbx-animation": commonProps.animation,
       }),
-    "data-mbx-features": enabledFeatures,
-    "data-mbx-hide": commonProps.hide,
+    ...(mbxAttributes.length > 0 && {
+      "data-mbx-attributes": mbxAttributes,
+    }),
+    ...(enabledFeatures.length > 0 && {
+      "data-mbx-features": enabledFeatures,
+    }),
     "data-mbx-a11y": commonProps.a11y,
-    "data-mbx-background": commonProps.background,
-    "data-mbx-hover": commonProps.hover && !commonProps.disabled,
     "data-mbx-enabled": !commonProps.disabled,
     "data-mbx-a11y-dark":
       commonProps.a11y &&

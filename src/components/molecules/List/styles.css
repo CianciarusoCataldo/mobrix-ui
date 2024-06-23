@@ -33,7 +33,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="list"][data-mbx-hover="true"]
+  [data-mbx-id="list"][data-mbx-attributes*="hover"]
     [data-mbx-list-element="clickable"]:hover {
     cursor: pointer;
   }

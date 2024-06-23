@@ -1,4 +1,4 @@
-[data-mbx-id]:not([data-mbx-dark="true"]) {
+[data-mbx-id]:not([data-mbx-attributes*="dark"]) {
   --mbx-c-bgc: var(--mbx-c-bgc-l);
 
   --mbx-c-bg: var(--mbx-c-bg-l);
@@ -10,7 +10,7 @@
   --mbx-c-sh: var(--mbx-c-sh-l);
 }
 
-[data-mbx-id][data-mbx-dark="true"] {
+[data-mbx-id][data-mbx-attributes*="dark"] {
   --mbx-c-bgc: var(--mbx-c-bgc-d);
 
   --mbx-c-bg: var(--mbx-c-bg-d);

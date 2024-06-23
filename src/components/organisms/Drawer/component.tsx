@@ -18,6 +18,7 @@ const DrawerInternalComponent: MbxUiComponent<
 }) => {
   return [
     <IconButton
+      hover={hover}
       className={arrowClassName}
       disabled={disabled}
       animated={animated}

@@ -16,7 +16,10 @@ const listTest = () => {
       const wrapper = mount(
         <List
           onClick={onChangeStub}
-          elements={["Test element 1", "Test element 2"]}
+          elements={[
+            <div data-mbx-test="list_element_0">Test element 1</div>,
+            "Test element 2",
+          ]}
         />
       );
       wrapper.find('[data-mbx-test="list_element_0"]').simulate("click");
