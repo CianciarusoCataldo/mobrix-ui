@@ -59,7 +59,6 @@
   -o-animation: slideTop 0.4s;
 }
 
-
 [data-mbx-id][data-mbx-animated="true"][data-mbx-animation="fade-out"],
 [data-mbx-id][data-mbx-animated="true"] [data-mbx-animation="fade-out"] {
   animation: fadeOut 0.3s;
@@ -105,8 +104,8 @@
     -o-box-shadow: 0 5px 13px -1px var(--mbx-c-fc);
   }
 
-  [data-mbx-id][data-mbx-opacityhover="true"]:hover,
-  [data-mbx-id] [data-mbx-opacityhover="true"]:hover {
+  [data-mbx-id][data-mbx-features*="opacityOnHover"]:hover,
+  [data-mbx-id] [data-mbx-features*="opacityOnHover"]:hover {
     opacity: 0.7;
   }
 }

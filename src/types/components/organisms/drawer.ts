@@ -31,6 +31,9 @@ export type DrawerProps = ComponentWithChildren<
 
     /** if `false`, the drawer won't be closed when clicking outside of it */
     closeOnClickOutside?: boolean;
+
+    /** Custom classname applied on the arrow button */
+    arrowClassName?: string;
   };
 
 /**

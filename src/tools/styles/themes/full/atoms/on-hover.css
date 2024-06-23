@@ -26,8 +26,14 @@
     --mbx-c-cnt-txt: var(--mbx-c-cnt-txt-h);
 
     /** Inputbox **/
-    --mbx-c-inb-bgc: var(--mbx-c-inb-bgc-h);
+    --mbx-c-in-bgc: var(--mbx-c-in-bgc-h);
 
-    --mbx-c-inb-txt: var(--mbx-c-inb-txt-h);
+    --mbx-c-in-txt: var(--mbx-c-in-txt-h);
+  }
+
+  [data-mbx-id="selector"][data-mbx-hover="true"]:hover,
+  [data-mbx-id="selector"] [data-mbx-class="selector-option"]:hover {
+    background: var(--mbx-c-sel-bg-h);
+    color: var(--mbx-c-sel-txt-h);
   }
 }

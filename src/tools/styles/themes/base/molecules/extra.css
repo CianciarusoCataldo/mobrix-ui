@@ -1,0 +1,14 @@
+[data-mbx-id*="card"] {
+  background-color: transparent;
+  background: var(--mbx-c-card-bg);
+  color: var(--mbx-c-card-txt);
+}
+
+[data-mbx-id*="container"] {
+  background: var(--mbx-c-con-bg);
+  color: var(--mbx-c-con-txt);
+}
+
+[data-mbx-id="expandable-container"] [data-mbx-class="arrow"] {
+  fill: var(--mbx-c-con-txt);
+}

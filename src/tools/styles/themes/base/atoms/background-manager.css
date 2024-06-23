@@ -20,7 +20,7 @@
 
 [data-mbx-id="inputbox"][data-mbx-background="false"],
 [data-mbx-id="inputbox"][data-mbx-background="false"]:hover {
-  --mbx-c-inb-bgc: transparent !important;
+  --mbx-c-in-bgc: transparent !important;
 }
 
 [data-mbx-id="radio-button"][data-mbx-background="false"],

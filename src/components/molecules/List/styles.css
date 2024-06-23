@@ -35,6 +35,6 @@
 @media (hover) {
   [data-mbx-id="list"][data-mbx-hover="true"]
     [data-mbx-list-element="clickable"]:hover {
-    color: var(--mbx-c-lst-txt-h);
+    cursor: pointer;
   }
 }

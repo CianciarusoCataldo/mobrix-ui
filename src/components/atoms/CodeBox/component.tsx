@@ -24,7 +24,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
 }) => {
   let parseCodeLineFunction: (
     inputCode: string,
-    environment: SupportedEnvironment,
+    environment: SupportedEnvironment
   ) => CodeBlock[] =
     highlight && code.length > 0
       ? parseCode
@@ -36,9 +36,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
         onClick={() => code && navigator.clipboard.writeText(code)}
         hide={!copyButton}
         disabled={disabled}
-        additionalProps={{
-          "data-mbx-opacityhover": hover && !disabled,
-        }}
+        hover={hover}
       >
         {CopyIcon}
       </IconButton>
@@ -59,7 +57,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
                 >
                   {codeBlock.code}
                 </span>
-              ),
+              )
           )}
         </p>
       ))}

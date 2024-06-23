@@ -51,6 +51,9 @@ const Counter: CounterComponent = ({
   buildMbxReactiveComponent<number | undefined>(commonProps, (sharedProps) => ({
     wrapper: "input",
     name: "counterbox",
+    features: {
+      opacityOnHover: true,
+    },
     inputValue,
     defaultValue: 0,
     props: (value, setValue) => ({
@@ -58,7 +61,7 @@ const Counter: CounterComponent = ({
         ...sharedProps,
         additionalProps: {
           ...sharedProps.additionalProps,
-          disabled: commonProps.disabled,
+          disabled: sharedProps.disabled,
           type: "number",
           value: value,
           placeholder,

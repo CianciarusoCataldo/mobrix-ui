@@ -18,5 +18,9 @@
     "type": "`boolean`",
     "default": true,
     "description": "If `false`, the drawer won't be closed when clicking outside of it"
+  },
+  "arrowClassName": {
+    "type": "string",
+    "description": "Custom classname applied on the arrow button"
   }
 }

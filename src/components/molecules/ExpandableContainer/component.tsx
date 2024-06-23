@@ -29,6 +29,7 @@ const expandableContainerComponent: MbxUiReactiveComponent<
   );
   components.push(
     <IconButton
+      hover={hover}
       disabled={disabled}
       onClick={() => {
         onChange(!compact);
@@ -36,7 +37,6 @@ const expandableContainerComponent: MbxUiReactiveComponent<
       }}
       additionalProps={{
         "data-mbx-class": "container-arrow-button",
-        "data-mbx-opacityhover": hover && !disabled,
       }}
       key="arrow_button"
       dark={dark}

@@ -2,20 +2,22 @@ import { CSSProperties } from "react";
 
 export type MobBrixAnimation = "fadeIn" | "fadeOut" | "slideIn" | "slideOut";
 
+export type MbxAttributes = {
+  /** Enable/disable dark mode (default `false`) */
+  dark?: boolean;
+};
+
 /**
  * Props shared between all {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} components
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=components-building-process
  * */
-export interface CommonProps {
+export type CommonProps = MbxAttributes & {
   /** React key, the standard {@link https://reactjs.org/docs/lists-and-keys.html key parameter} */
   key?: string;
 
   /** custom className applied on main container */
   className?: string;
-
-  /** Enable/disable dark mode (default `false`) */
-  dark?: boolean;
 
   /** Hide/show component (default `false`) */
   hide?: boolean;
@@ -74,7 +76,7 @@ export interface CommonProps {
   onKeyDown?: (keyEvent: any) => void;
 
   busy?: boolean;
-}
+};
 
 /**
  * A MoBrix-ui component driven by an input value
@@ -225,6 +227,12 @@ export type Wrappers =
   | "span"
   | "img";
 
+export interface Features {
+  /** If `true`, reduce component opacity when component is hovered (and `hover` = `true`) */
+  opacityOnHover?: boolean;
+  dark?: boolean;
+}
+
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} components builder props
  *
@@ -246,6 +254,8 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
 
   /** Component wrapper (default `div`) */
   wrapper?: Wrappers;
+
+  features?: Features;
 };
 
 /**

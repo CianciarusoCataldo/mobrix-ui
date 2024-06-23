@@ -18,6 +18,7 @@
 | <div style='text-align:center;margin:auto;'>[onClose](#onclose)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 | <div style='text-align:center;margin:auto;'>[children](#children)</div> | <div style='text-align:center;margin:auto;'>`(JSX.Element` &#124; `string`) &#124; (JSX.Element` &#124; `string`)[]</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[closeOnClickOutside](#closeonclickoutside)</div> | <div style='text-align:center;margin:auto;'>`boolean`</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[arrowClassName](#arrowclassname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -82,5 +83,20 @@ Drawer content
 <br>
 
 If `false`, the drawer won't be closed when clicking outside of it
+
+<br>
+
+<br>
+
+### arrowClassName
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+<br>
+
+Custom classname applied on the arrow button
 
 <br>

@@ -17,6 +17,8 @@
 | <div style='text-align:center;margin:auto;'>[elements](#elements)</div> | <div style='text-align:center;margin:auto;'>(JSX.Element &#124; string)[]</div> | <div style='text-align:center;margin:auto;'>[]</div> |
 | <div style='text-align:center;margin:auto;'>[onChange](#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: number) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 | <div style='text-align:center;margin:auto;'>[value](#value)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>0</div> |
+| <div style='text-align:center;margin:auto;'>[arrowClassName](#arrowclassname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[dotClassName](#dotclassname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -66,5 +68,35 @@ Callback triggered when Carousel component input value is changed by the user
 <br>
 
 Initial element to show (as index)
+
+<br>
+
+<br>
+
+### arrowClassName
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+<br>
+
+Custom classname applied on the Carousel arrows
+
+<br>
+
+<br>
+
+### dotClassName
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+<br>
+
+Custom classname applied on every Carousel dot
 
 <br>

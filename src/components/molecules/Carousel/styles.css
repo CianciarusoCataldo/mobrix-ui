@@ -86,10 +86,4 @@
   background: var(--mbx-c-car-dot-e);
 }
 
-@media (hover) {
-  [data-mbx-id="carousel"][data-mbx-hover="true"]
-    [data-mbx-arrow][data-mbx-enabled="true"]:hover
-    svg {
-    fill: var(--mbx-c-car-arr-h);
-  }
-}
+

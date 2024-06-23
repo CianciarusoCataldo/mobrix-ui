@@ -22,6 +22,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  * @param {string} labelClassName Custom className applied on the day label component
  * @param {Record<string, any>} labelProps Custom props applied on the day label component
  * @param {(newValue: CalendarDate) => void} onChange Callback triggered when Calendar component input value is changed by the user
+ * @param {string} arrowClassName Custom classname applied on the arrow button
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode

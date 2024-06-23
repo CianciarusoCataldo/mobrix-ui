@@ -26,6 +26,7 @@ const ALLOWED_POSITIONS = [
  * @param {() => void} onClose callback triggered when Drawer is closed
  * @param {`(JSX.Element` | `string`) | (JSX.Element` | `string`)[]} children Drawer content
  * @param {`boolean`} closeOnClickOutside If `false`, the drawer won't be closed when clicking outside of it
+ * @param {string} arrowClassName Custom classname applied on the arrow button
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode
@@ -60,6 +61,7 @@ const Drawer: DrawerComponent = ({
   /* istanbul ignore next */
   onFocusLost = () => {},
   closeOnClickOutside = true,
+  arrowClassName,
   ...commonProps
 }) => {
   const drawerLocation =
@@ -103,6 +105,7 @@ const Drawer: DrawerComponent = ({
       children,
       hide,
       onClose: onCloseCallback,
+      arrowClassName,
       ...sharedProps,
     }),
   }));

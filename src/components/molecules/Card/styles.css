@@ -1,9 +1,6 @@
 [data-mbx-id*="card"] {
   display: flex;
   flex-direction: column;
-  background-color: transparent;
-  background: var(--mbx-c-card-bg);
-  color: var(--mbx-c-card-txt);
   padding: 0.25rem;
 }
 

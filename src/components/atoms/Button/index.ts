@@ -46,6 +46,9 @@ const Button: ButtonComponent = ({
   buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "button",
     wrapper: "button",
+    features: {
+      opacityOnHover: true,
+    },
     Component: children,
     commonProps: {
       ...sharedProps,

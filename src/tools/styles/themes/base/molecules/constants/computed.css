@@ -36,14 +36,6 @@
     --mbx-carousel-arrow-color-dark,
     var(--mbx-carousel-arrow-color, var(--mbx-c-txt-d))
   );
-  --mbx-c-car-arr-h-l: var(
-    --mbx-carousel-arrow-color-hover-light,
-    var(--mbx-carousel-arrow-color-hover, var(--mbx-d-car-arr-h-l))
-  );
-  --mbx-c-car-arr-h-d: var(
-    --mbx-carousel-arrow-color-hover-dark,
-    var(--mbx-carousel-arrow-color-hover, var(--mbx-d-car-arr-h-d))
-  );
   --mbx-c-car-dot-f-l: var(
     --mbx-carousel-dot-full-background-light,
     var(--mbx-carousel-dot-background, var(--mbx-d-car-dot-f-bg))
@@ -80,22 +72,6 @@
   );
 
   /* DismissableCard */
-  --mbx-c-dcard-bg-l: var(
-    --mbx-dismissablecard-background-light,
-    var(--mbx-dismissablecard-background, var(--mbx-c-card-bg-l))
-  );
-  --mbx-c-dcard-bg-d: var(
-    --mbx-dismissablecard-background-dark,
-    var(--mbx-dismissablecard-background, var(--mbx-c-card-bg-d))
-  );
-  --mbx-c-dcard-txt-l: var(
-    --mbx-dismissablecard-text-color-light,
-    var(--mbx-dismissablecard-text-color, var(--mbx-c-card-txt-l))
-  );
-  --mbx-c-dcard-txt-d: var(
-    --mbx-dismissablecard-text-color-dark,
-    var(--mbx-dismissablecard-text-color, var(--mbx-c-card-txt-d))
-  );
   --mbx-c-dcard-x-l: var(
     --mbx-dismissablecard-x-color-light,
     var(--mbx-dismissablecard-x-color, var(--mbx-c-dcard-txt-l))
@@ -163,40 +139,6 @@
     var(--mbx-dropdown-arrow-color-hover, var(--mbx-c-drop-arr-d))
   );
 
-  /** ExpandableContainer **/
-  --mbx-c-exp-bg-l: var(
-    --mbx-expandablecontainer-background-light,
-    var(--mbx-expandablecontainer-background, var(--mbx-c-con-bg-l))
-  );
-  --mbx-c-exp-bg-d: var(
-    --mbx-expandablecontainer-background-dark,
-    var(--mbx-expandablecontainer-background, var(--mbx-c-con-bg-d))
-  );
-  --mbx-c-exp-txt-l: var(
-    --mbx-expandablecontainer-text-color-light,
-    var(--mbx-expandablecontainer-text-color, var(--mbx-c-con-txt-l))
-  );
-  --mbx-c-exp-txt-d: var(
-    --mbx-expandablecontainer-text-color-dark,
-    var(--mbx-expandablecontainer-text-color, var(--mbx-c-con-txt-d))
-  );
-  --mbx-c-exp-arr-l: var(
-    --mbx-expandablecontainer-arrow-color-light,
-    var(--mbx-expandablecontainer-arrow-color, var(--mbx-c-exp-txt-l))
-  );
-  --mbx-c-exp-arr-d: var(
-    --mbx-expandablecontainer-arrow-color-dark,
-    var(--mbx-expandablecontainer-arrow-color, var(--mbx-c-exp-txt-d))
-  );
-  --mbx-c-exp-arr-h-l: var(
-    --mbx-expandablecontainer-arrow-color-hover-light,
-    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-exp-arr-l))
-  );
-  --mbx-c-exp-arr-h-d: var(
-    --mbx-expandablecontainer-arrow-color-hover-dark,
-    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-exp-arr-d))
-  );
-
   /** FormField **/
   --mbx-c-field-bg-l: var(
     --mbx-formfield-background-light,
@@ -255,14 +197,6 @@
   --mbx-c-lst-txt-d: var(
     --mbx-list-text-color-dark,
     var(--mbx-list-text-color, var(--mbx-c-txt-d))
-  );
-  --mbx-c-lst-txt-h-l: var(
-    --mbx-list-text-color-hover-light,
-    var(--mbx-list-text-color-hover, var(--mbx-c-txt-h-l))
-  );
-  --mbx-c-lst-txt-h-d: var(
-    --mbx-list-text-color-hover-dark,
-    var(--mbx-list-text-color-hover, var(--mbx-c-txt-h-d))
   );
 
   /** Modal **/

@@ -1,5 +1,4 @@
 @import url("constants/computed.css");
-@import url("on-hover.css");
 
 [data-mbx-id][data-mbx-dark="false"] {
   /** Button **/
@@ -7,14 +6,8 @@
 
   --mbx-c-btn-txt: var(--mbx-c-btn-txt-l);
 
-  --mbx-c-btn-bg-h: var(--mbx-c-btn-bg-h-l);
-
-  --mbx-c-btn-txt-h: var(--mbx-c-btn-txt-h-l);
-
   /** Checkbox **/
   --mbx-c-chk-bg: var(--mbx-c-chk-bg-l);
-
-  --mbx-c-chk-bg-h: var(--mbx-c-chk-bg-h-l);
 
   --mbx-c-chk-tk: var(--mbx-c-chk-tk-l);
 
@@ -28,31 +21,22 @@
 
   --mbx-c-cnt-txt: var(--mbx-c-cnt-txt-l);
 
-  --mbx-c-cnt-bg-h: var(--mbx-c-cnt-bgc-h-l);
-
-  --mbx-c-cnt-txt-h: var(--mbx-c-cnt-txt-h-l);
-
   /** Divider **/
   --mbx-c-dv-bgc: var(--mbx-c-dv-bgc-l);
 
   /** Input **/
-  --mbx-c-inb-bgc: var(--mbx-c-inb-bgc-l);
+  --mbx-c-in-bgc: var(--mbx-c-in-bgc-l);
 
-  --mbx-c-inb-txt: var(--mbx-c-inb-txt-l);
-  --mbx-c-inb-bgc-h: var(--mbx-c-inb-bgc-h-l);
-
-  --mbx-c-inb-txt-h: var(--mbx-c-inb-txt-h-l);
+  --mbx-c-in-txt: var(--mbx-c-in-txt-l);
 
   /** Label **/
   --mbx-c-lab-txt: var(--mbx-c-lab-txt-l);
 
   /** Link **/
   --mbx-c-link-txt: var(--mbx-c-link-txt-l);
-  --mbx-c-link-txt-h: var(--mbx-c-link-txt-h-l);
 
   /** Radio Button **/
   --mbx-c-rad-bg: var(--mbx-c-rad-bg-l);
-  --mbx-c-rad-bg-h: var(--mbx-c-rad-bg-h-l);
   --mbx-c-rad-ic-bg: var(--mbx-c-rad-ic-bg-l);
 
   /** Rater **/
@@ -60,9 +44,7 @@
 
   /** Selector **/
   --mbx-c-sel-bg: var(--mbx-c-sel-bg-l);
-  --mbx-c-sel-bg-h: var(--mbx-c-sel-bg-h-l);
   --mbx-c-sel-txt: var(--mbx-c-sel-txt-l);
-  --mbx-c-sel-txt-h: var(--mbx-c-sel-txt-h-l);
 
   /** Slider **/
   --mbx-c-sld-bg: var(--mbx-c-sld-bg-l);
@@ -89,14 +71,9 @@
   --mbx-c-btn-bg: var(--mbx-c-btn-bg-d);
 
   --mbx-c-btn-txt: var(--mbx-c-btn-txt-d);
-  --mbx-c-btn-bg-h: var(--mbx-c-btn-bg-h-d);
-
-  --mbx-c-btn-txt-h: var(--mbx-c-btn-txt-h-d);
 
   /** Checkbox **/
   --mbx-c-chk-bg: var(--mbx-c-chk-bg-d);
-
-  --mbx-c-chk-bg-h: var(--mbx-c-chk-bg-h-d);
 
   --mbx-c-chk-tk: var(--mbx-c-chk-tk-d);
 
@@ -110,32 +87,22 @@
 
   --mbx-c-cnt-txt: var(--mbx-c-cnt-txt-d);
 
-  --mbx-c-cnt-bg-h: var(--mbx-c-cnt-bgc-h-d);
-
-  --mbx-c-cnt-txt-h: var(--mbx-c-cnt-txt-h-d);
-
   /** Divider **/
   --mbx-c-dv-bgc: var(--mbx-c-dv-bgc-d);
 
   /** Input **/
-  --mbx-c-inb-bgc: var(--mbx-c-inb-bgc-d);
+  --mbx-c-in-bgc: var(--mbx-c-in-bgc-d);
 
-  --mbx-c-inb-txt: var(--mbx-c-inb-txt-d);
-
-  --mbx-c-inb-bgc-h: var(--mbx-c-inb-bgc-h-d);
-
-  --mbx-c-inb-txt-h: var(--mbx-c-inb-txt-h-d);
+  --mbx-c-in-txt: var(--mbx-c-in-txt-d);
 
   /** Label **/
   --mbx-c-lab-txt: var(--mbx-c-lab-txt-d);
 
   /** Link **/
   --mbx-c-link-txt: var(--mbx-c-link-txt-d);
-  --mbx-c-link-txt-h: var(--mbx-c-link-txt-h-d);
 
   /** Radio Button **/
   --mbx-c-rad-bg: var(--mbx-c-rad-bg-d);
-  --mbx-c-rad-bg-h: var(--mbx-c-rad-bg-h-d);
   --mbx-c-rad-ic-bg: var(--mbx-c-rad-ic-bg-d);
 
   /** Rater **/
@@ -143,9 +110,7 @@
 
   /** Selector **/
   --mbx-c-sel-bg: var(--mbx-c-sel-bg-d);
-  --mbx-c-sel-bg-h: var(--mbx-c-sel-bg-h-d);
   --mbx-c-sel-txt: var(--mbx-c-sel-txt-d);
-  --mbx-c-sel-txt-h: var(--mbx-c-sel-txt-h-d);
 
   /** Slider **/
   --mbx-c-sld-bg: var(--mbx-c-sld-bg-d);

@@ -13,6 +13,7 @@ body {
   --mbx-datepicker-calendar-text-color-selected-light: green;
   --mbx-formfield-text-color-light: orange;
   --mbx-formfield-text-color-dark: blue;
+  --mbx-card-background: green;
 }
 
 code {
@@ -22,6 +23,14 @@ code {
 
 .test-class {
   background: white;
+}
+
+.test-class2 {
+  background: purple;
+}
+
+.test-dcard {
+  --mbx-dismissablecard-background: red;
 }
 
 .calendar-test-label {
@@ -52,10 +61,10 @@ code {
   border-style: solid;
 }
 
-.test-card{
+.test-card {
   width: 90%;
 }
 
-.test-slider{
+.test-slider {
   width: 90%;
 }

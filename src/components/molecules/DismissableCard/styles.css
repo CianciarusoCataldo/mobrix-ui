@@ -1,8 +1,3 @@
-[data-mbx-id="dismissable-card"] {
-  background: var(--mbx-c-dcard-bg);
-  color: var(--mbx-c-dcard-txt);
-}
-
 [data-mbx-id="dismissable-card"] [data-mbx-class="header-container"] {
   display: flex;
   flex-direction: column;

@@ -18,6 +18,12 @@ export type CarouselProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {
     /** Carousel elements */
     elements?: BuilderComponent[];
+
+    /** Custom classname applied on the Carousel arrows */
+    arrowClassName?: string;
+
+    /** Custom classname applied on every Carousel dot */
+    dotClassName?: string;
   };
 
 /**

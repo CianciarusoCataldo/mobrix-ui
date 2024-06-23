@@ -1,0 +1,17 @@
+@media (hover) {
+  [data-mbx-id="carousel"][data-mbx-hover="true"]
+    [data-mbx-arrow][data-mbx-enabled="true"]:hover
+    svg {
+    fill: var(--mbx-c-car-arr-h);
+  }
+
+  [data-mbx-id="expandable-container"][data-mbx-enabled="true"]
+    [data-mbx-class="arrow"]:hover {
+    fill: var(--mbx-c-exp-arr-h);
+  }
+
+  [data-mbx-id="list"][data-mbx-hover="true"]
+    [data-mbx-list-element="clickable"]:hover {
+    color: var(--mbx-c-lst-txt-h);
+  }
+}

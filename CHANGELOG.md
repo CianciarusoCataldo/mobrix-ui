@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.9.0](#390)
 - [3.8.0](#380)
 - [3.7.0](#370)
 - [3.6.0](#360)
@@ -22,6 +23,14 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.9.0
+
+- `arrowClassName` parameter for `Calendar`, `Carousel` and `Drawer` components
+- css variables splitted into full theme (for future v4 updates)
+- Opacity reduced on hover instead of specific hover colors, to optimize overall library size and in preparation for v4 update
 
 <br>
 

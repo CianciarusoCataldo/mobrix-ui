@@ -47,6 +47,9 @@ const Checkbox: CheckBoxComponent = ({
   buildMbxReactiveComponent<boolean>(commonProps, (sharedProps) => ({
     name: "checkbox",
     Component: ({ value, setValue }) => (value ? icon || DefaultCheckIcon : ""),
+    features: {
+      opacityOnHover: true,
+    },
     props: (actualValue, setValue) => ({
       commonProps: {
         ...sharedProps,
