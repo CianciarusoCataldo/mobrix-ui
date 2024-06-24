@@ -28,7 +28,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         uses: actions/upload-pages-artifact@v3.0.1
         with:
-          path: build
+          path: playground/build
 
   # Deploy job
   deploy:
