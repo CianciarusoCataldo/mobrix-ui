@@ -13,4 +13,5 @@ jobs:
       - name: Deploy playground app
         run: |
           npm ci
+          npm run init:playground
           npm run deploy:playground
