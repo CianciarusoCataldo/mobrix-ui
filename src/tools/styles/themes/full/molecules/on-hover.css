@@ -1,11 +1,11 @@
 @media (hover) {
   [data-mbx-id="carousel"][data-mbx-attributes*="hover"]
-    [data-mbx-arrow][data-mbx-enabled="true"]:hover
+    [data-mbx-arrow]:not([data-mbx-attributes*="disabled"]):hover
     svg {
     fill: var(--mbx-c-car-arr-h);
   }
 
-  [data-mbx-id="expandable-container"][data-mbx-enabled="true"]
+  [data-mbx-id="expandable-container"]:not([data-mbx-attributes*="disabled"])
     [data-mbx-class="arrow"]:hover {
     fill: var(--mbx-c-exp-arr-h);
   }

@@ -112,19 +112,18 @@ const buildMobrixUiStandardComponent = ({
 
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,
-    "data-mbx-animated": commonProps.animated && !commonProps.disabled,
-    ...(commonProps.animation &&
-      commonProps.animated && {
-        "data-mbx-animation": commonProps.animation,
-      }),
     ...(mbxAttributes.length > 0 && {
       "data-mbx-attributes": mbxAttributes,
     }),
     ...(enabledFeatures.length > 0 && {
       "data-mbx-features": enabledFeatures,
     }),
+    "data-mbx-animated": commonProps.animated && !commonProps.disabled,
+    ...(commonProps.animation &&
+      commonProps.animated && {
+        "data-mbx-animation": commonProps.animation,
+      }),
     "data-mbx-a11y": commonProps.a11y,
-    "data-mbx-enabled": !commonProps.disabled,
     "data-mbx-a11y-dark":
       commonProps.a11y &&
       (commonProps.a11yDark !== undefined

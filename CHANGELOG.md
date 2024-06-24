@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.10.0](#3100)
 - [3.9.0](#390)
 - [3.8.0](#380)
 - [3.7.0](#370)
@@ -23,6 +24,12 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.10.0
+
+- `data-mb-enabled` migrated to `data-mbx-attributes` field. If the component is disabled, the `data-mbx-attributes` contains `disabled` string
 
 <br>
 

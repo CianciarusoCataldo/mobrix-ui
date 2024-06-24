@@ -6,6 +6,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-[data-mbx-id="icon-button"][data-mbx-enabled="false"] {
+[data-mbx-id="icon-button"][data-mbx-attributes*="disabled"] {
   cursor: unset;
 }

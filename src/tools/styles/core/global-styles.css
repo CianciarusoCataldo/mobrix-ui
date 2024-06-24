@@ -68,7 +68,13 @@
   -o-animation: fadeOut 0.3s;
 }
 
-[data-mbx-id][data-mbx-enabled="false"] {
+/** @TODO: To be removed */
+[data-mbx-id][data-mbx-attributes*="disabled"] {
+  opacity: 0.6;
+}
+
+/** New styles */
+[data-mbx-id][data-mbx-attributes*="disabled"] {
   opacity: 0.6;
 }
 

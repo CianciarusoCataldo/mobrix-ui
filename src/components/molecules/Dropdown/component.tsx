@@ -137,7 +137,12 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           }}
         >
           <p tabIndex={-1}>
-            <i data-mbx-class="arrow-icon" data-mbx-enabled={!disabled}></i>
+            <i
+              data-mbx-class="arrow-icon"
+              {...(disabled && {
+                "data-mbx-attributes": "disabled",
+              })}
+            ></i>
           </p>
         </Container>
       </Button>,

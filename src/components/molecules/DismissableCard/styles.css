@@ -33,7 +33,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="dismissable-card"][data-mbx-attributes*="hover"][data-mbx-enabled="true"]
+  [data-mbx-id="dismissable-card"][data-mbx-attributes*="hover"]:not([data-mbx-attributes*="disabled"])
     [data-mbx-class="dismiss-button"]
     svg:hover
     path {

@@ -29,8 +29,8 @@
   fill: var(--mbx-c-car-arr);
 }
 
-[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-enabled="false"] svg,
-[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-enabled="false"]:hover svg {
+[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-attributes*="disabled"] svg,
+[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-attributes*="disabled"]:hover svg {
   fill: none;
 }
 

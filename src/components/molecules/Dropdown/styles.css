@@ -148,22 +148,22 @@
 }
 
 @media (hover) {
-  [data-mbx-id="dropdown"][data-mbx-enabled="true"][data-mbx-attributes*="hover"]
-    [data-mbx-class="button"][data-mbx-enabled="true"]:hover,
-  [data-mbx-id="dropdown"][data-mbx-attributes*="hover"][data-mbx-enabled="true"][data-mbx-attributes*="hover"]
+  [data-mbx-id="dropdown"]:not([data-mbx-attributes*="disabled"])[data-mbx-attributes*="hover"]
+    [data-mbx-class="button"]:not([data-mbx-attributes*="disabled"]):hover,
+  [data-mbx-id="dropdown"][data-mbx-attributes*="hover"]:not([data-mbx-attributes*="disabled"])[data-mbx-attributes*="hover"]
     [data-mbx-class="regular"]:hover {
     color: var(--mbx-c-drop-txt-h);
   }
 
-  [data-mbx-id="dropdown"][data-mbx-enabled="true"][data-mbx-attributes*="background"][data-mbx-attributes*="hover"]
-    [data-mbx-class="button"][data-mbx-enabled="true"]:hover,
-  [data-mbx-id="dropdown"][data-mbx-attributes*="hover"][data-mbx-enabled="true"][data-mbx-attributes*="background"][data-mbx-attributes*="hover"]
+  [data-mbx-id="dropdown"]:not([data-mbx-attributes*="disabled"])[data-mbx-attributes*="background"][data-mbx-attributes*="hover"]
+    [data-mbx-class="button"]:not([data-mbx-attributes*="disabled"]):hover,
+  [data-mbx-id="dropdown"][data-mbx-attributes*="hover"]:not([data-mbx-attributes*="disabled"])[data-mbx-attributes*="background"][data-mbx-attributes*="hover"]
     [data-mbx-class="regular"]:hover {
     background: var(--mbx-c-drop-bg-h);
   }
 
-  [data-mbx-id="dropdown"][data-mbx-enabled="true"][data-mbx-attributes*="hover"]
-    [data-mbx-class="arrow-icon"][data-mbx-enabled="true"]:hover {
+  [data-mbx-id="dropdown"]:not([data-mbx-attributes*="disabled"])[data-mbx-attributes*="hover"]
+    [data-mbx-class="arrow-icon"]:not([data-mbx-attributes*="disabled"]):hover {
     border-color: var(--mbx-c-drop-arr-h);
     opacity: 0.5;
   }
