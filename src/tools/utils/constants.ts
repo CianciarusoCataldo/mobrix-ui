@@ -31,5 +31,5 @@ export const MBX_ATTRIBUTES: Partial<
   background: (props) => props.background,
   disabled: (props) => props.disabled,
   a11y: (props) => props.a11y,
-  animated: (props) => props.animated,
+  animated: (props) => props.animated && !props.disabled,
 };

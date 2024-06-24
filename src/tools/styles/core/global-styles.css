@@ -19,9 +19,9 @@
   display: none !important;
 }
 
-[data-mbx-id][data-mbx-animated="true"][data-mbx-animation="fade-in"],
-[data-mbx-id][data-mbx-animated="true"]
-  [data-mbx-animated="true"][data-mbx-animation="fade-in"] {
+[data-mbx-id][data-mbx-attributes*="animated"][data-mbx-animation="fade-in"],
+[data-mbx-id][data-mbx-attributes*="animated"]
+  [data-mbx-attributes*="animated"][data-mbx-animation="fade-in"] {
   animation: fadein 0.4s;
   -webkit-animation: fadein 0.4s;
   -moz-animation: fadein 0.4s;
@@ -29,9 +29,9 @@
   -o-animation: fadein 0.4s;
 }
 
-[data-mbx-id][data-mbx-animated="true"][data-mbx-animation="slide-in-left"],
-[data-mbx-id][data-mbx-animated="true"]
-  [data-mbx-animated="true"][data-mbx-animation="slide-in-left"] {
+[data-mbx-id][data-mbx-attributes*="animated"][data-mbx-animation="slide-in-left"],
+[data-mbx-id][data-mbx-attributes*="animated"]
+  [data-mbx-attributes*="animated"][data-mbx-animation="slide-in-left"] {
   animation: slideLeft 0.4s;
   -webkit-animation: slideLeft 0.4s;
   -moz-animation: slideLeft 0.4s;
@@ -39,9 +39,9 @@
   -o-animation: slideLeft 0.4s;
 }
 
-[data-mbx-id][data-mbx-animated="true"][data-mbx-animation="slide-in-right"],
-[data-mbx-id][data-mbx-animated="true"]
-  [data-mbx-animated="true"][data-mbx-animation="slide-in-right"] {
+[data-mbx-id][data-mbx-attributes*="animated"][data-mbx-animation="slide-in-right"],
+[data-mbx-id][data-mbx-attributes*="animated"]
+  [data-mbx-attributes*="animated"][data-mbx-animation="slide-in-right"] {
   animation: slideRight 0.4s;
   -webkit-animation: slideRight 0.4s;
   -moz-animation: slideRight 0.4s;
@@ -49,9 +49,9 @@
   -o-animation: slideRight 0.4s;
 }
 
-[data-mbx-id][data-mbx-animated="true"][data-mbx-animation="slide-in-top"],
-[data-mbx-id][data-mbx-animated="true"]
-  [data-mbx-animated="true"][data-mbx-animation="slide-in-top"] {
+[data-mbx-id][data-mbx-attributes*="animated"][data-mbx-animation="slide-in-top"],
+[data-mbx-id][data-mbx-attributes*="animated"]
+  [data-mbx-attributes*="animated"][data-mbx-animation="slide-in-top"] {
   animation: slideTop 0.4s;
   -webkit-animation: slideTop 0.4s;
   -moz-animation: slideTop 0.4s;
@@ -59,8 +59,8 @@
   -o-animation: slideTop 0.4s;
 }
 
-[data-mbx-id][data-mbx-animated="true"][data-mbx-animation="fade-out"],
-[data-mbx-id][data-mbx-animated="true"] [data-mbx-animation="fade-out"] {
+[data-mbx-id][data-mbx-attributes*="animated"][data-mbx-animation="fade-out"],
+[data-mbx-id][data-mbx-attributes*="animated"] [data-mbx-animation="fade-out"] {
   animation: fadeOut 0.3s;
   -webkit-animation: fadeOut 0.3s;
   -moz-animation: fadeOut 0.3s;
@@ -72,8 +72,8 @@
   opacity: 0.6;
 }
 
-[data-mbx-id][data-mbx-animated="true"][data-mbx-animation="shake"],
-[data-mbx-id][data-mbx-animated="true"] [data-mbx-animation="shake"] {
+[data-mbx-id][data-mbx-attributes*="animated"][data-mbx-animation="shake"],
+[data-mbx-id][data-mbx-attributes*="animated"] [data-mbx-animation="shake"] {
   animation: shake 0.5s;
   -webkit-animation: shake 0.5s;
   -moz-animation: shake 0.5s;

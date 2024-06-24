@@ -11,7 +11,7 @@
   padding: 0.1rem;
 }
 
-[data-mbx-id="modal"][data-mbx-animated="true"] {
+[data-mbx-id="modal"][data-mbx-attributes*="animated"] {
   --mbx-modal-animation-in: fadein 0.3s forwards;
   --mbx-modal-animation-out: fadeOut 0.3s forwards;
   animation: var(--mbx-modal-animation);
@@ -20,15 +20,15 @@
   -o-animation: var(--mbx-modal-animation);
 }
 
-[data-mbx-id="modal"][data-mbx-animated="true"][data-mbx-modal-animation="ease-in"] {
+[data-mbx-id="modal"][data-mbx-attributes*="animated"][data-mbx-modal-animation="ease-in"] {
   --mbx-modal-animation: var(--mbx-modal-animation-in);
 }
 
-[data-mbx-id="modal"][data-mbx-animated="true"][data-mbx-modal-animation="ease-in"] {
+[data-mbx-id="modal"][data-mbx-attributes*="animated"][data-mbx-modal-animation="ease-in"] {
   --mbx-modal-animation: var(--mbx-modal-animation-in);
 }
 
-[data-mbx-id="modal"][data-mbx-animated="true"][data-mbx-modal-animation="ease-out"] {
+[data-mbx-id="modal"][data-mbx-attributes*="animated"][data-mbx-modal-animation="ease-out"] {
   --mbx-modal-animation: var(--mbx-modal-animation-out);
 }
 

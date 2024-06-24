@@ -118,7 +118,6 @@ const buildMobrixUiStandardComponent = ({
     ...(enabledFeatures.length > 0 && {
       "data-mbx-features": enabledFeatures,
     }),
-    "data-mbx-animated": commonProps.animated && !commonProps.disabled,
     ...(commonProps.animation &&
       commonProps.animated && {
         "data-mbx-animation": commonProps.animation,
