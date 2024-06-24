@@ -19,6 +19,6 @@ jobs:
           npm run init:playground
           npm run build:playground
           git remote set-url origin https://git:${{ secrets.GITHUB_TOKEN }}@github.com/CianciarusoCataldo/mobrix-ui.git
-          npx gh-pages -d playground/build
+          npx gh-pages -d playground/build -u "github-actions-bot"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
