@@ -17,4 +17,7 @@ jobs:
         run: |
           npm ci
           npm run init:playground
-          npm run deploy:playground
+          npm run build:playground
+          npx gh-pages -d playground/build -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
