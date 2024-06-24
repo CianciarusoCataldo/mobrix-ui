@@ -100,6 +100,6 @@
     "prebuild:playground": "npm run build",
     "build:playground": "cd playground && npm run build",
     "predeploy:playground": "npm run build:playground",
-    "deploy:playground": "sh ./scripts/deploy-playground.sh"
+    "deploy:playground": "npx gh-pages -d playground/build"
   }
 }

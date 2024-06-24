@@ -3,7 +3,10 @@ name: Deploy MoBrix-ui playground app
 on: workflow_dispatch
 
 jobs:
-  publish-mobrix-ui-package:
+  deploy-mobrix-ui-playground-app:
+    permissions:
+      pages: write
+      id-token: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
