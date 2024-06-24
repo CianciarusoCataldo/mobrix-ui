@@ -11,6 +11,21 @@ export type MbxAttributes = {
 
   /** Enable/disable component animations (default `true`) */
   animated?: boolean;
+
+  /** Hide/show component (default `false`) */
+  hide?: boolean;
+
+  /** If false, disable component background */
+  background?: boolean;
+
+  /** If `false`, disable component hover standard styles (default `true`) */
+  hover?: boolean;
+
+  /** If true, disable the component. The effect may vary depending on the component type */
+  disabled?: boolean;
+
+  /** If `true`, the component is selectable by navigating with tab key (default `true`) */
+  a11y?: boolean;
 };
 
 /**
@@ -24,9 +39,6 @@ export type CommonProps = MbxAttributes & {
 
   /** custom className applied on main container */
   className?: string;
-
-  /** Hide/show component (default `false`) */
-  hide?: boolean;
 
   /** {@link https://www.w3schools.com/html/html_id.asp id parameter} (for styling/testing purpose, to easily find the component into the DOM) */
   id?: string;
@@ -45,23 +57,14 @@ export type CommonProps = MbxAttributes & {
     | "slide-in-top"
     | "shake";
 
-  /** If false, disable component background */
-  background?: boolean;
-
-  /** If `false`, disable component hover standard styles (default `true`) */
-  hover?: boolean;
-
-  /** If true, disable the component. The effect may vary depending on the component type */
-  disabled?: boolean;
-
   /** Custom additional properties, applied to the component */
   additionalProps?: Record<string, any>;
 
-  /** If `true`, the component is selectable by navigating with tab key (default `true`) */
-  a11y?: boolean;
-
-  /** if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label} */
+  /** if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label} ARIA parameter */
   a11yLabel?: string;
+
+  /**   /** if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex tabindex} parameter **/
+  tabIndex?: number | string;
 
   /** callback called when component is focused */
   onFocus?: () => void;

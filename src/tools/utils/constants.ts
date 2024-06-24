@@ -15,10 +15,17 @@ export const DEFAULT_COMMON_PROPS: CommonProps = {
 };
 
 export const FEATURES_PROPS: Record<
-  keyof Features,
-  (props: CommonProps) => boolean
+  keyof Features & CommonProps,
+  (props: CommonProps) => { enabled: boolean; featureKey: string }
 > = {
-  opacityOnHover: (props) => !props.disabled && props.hover,
+  opacityOnHover: (props) => ({
+    enabled: !props.disabled && props.hover,
+    featureKey: "opHov",
+  }),
+  animation: (props) => ({
+    enabled: props.animated && props.animation,
+    featureKey: `anim-${props.animation}`,
+  }),
 };
 
 export const MBX_ATTRIBUTES: Partial<

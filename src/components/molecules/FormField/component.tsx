@@ -71,13 +71,11 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       additionalProps={{
         "data-mbx-class": "form-field-component",
         "data-mbx-form-field-error": error,
-        .../* istanbul ignore next */
-        (animate && {
-          ...{
-            "data-mbx-animation": "shake",
-          },
-        }),
       }}
+      /* istanbul ignore next */
+      {...(animate && {
+        animation: "shake",
+      })}
       key="form_field_component"
       value={fieldFormatters[type].format(value)}
       shadow={shadow}

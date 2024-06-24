@@ -59,8 +59,9 @@ export const getEnabledFeatures = (
   Object.keys({ ...features, ...commonProps })
     .filter((feature, index) => FEATURES_PROPS[feature])
     .forEach((feature, index) => {
-      enabledFeatures += FEATURES_PROPS[feature](commonProps)
-        ? `${feature};`
+      const enabledFeature = FEATURES_PROPS[feature](commonProps);
+      enabledFeatures += enabledFeature.enabled
+        ? `${enabledFeature.featureKey};`
         : "";
     });
 
@@ -118,23 +119,20 @@ const buildMobrixUiStandardComponent = ({
     ...(enabledFeatures.length > 0 && {
       "data-mbx-features": enabledFeatures,
     }),
-    ...(commonProps.animation &&
-      commonProps.animated && {
-        "data-mbx-animation": commonProps.animation,
-      }),
-    tabIndex: "-1",
     id: commonProps.id,
     className: commonProps.className,
     style: commonProps.style,
     onFocus: commonProps.onFocus,
     onKeyDown: commonProps.onKeyDown,
+    tabIndex: "-1",
+    ...(commonProps.a11y && {
+      tabIndex: commonProps.tabIndex ? String(commonProps.tabIndex) : "0",
+      ...(commonProps.a11yLabel && {
+        "aria-label": commonProps.a11yLabel,
+      }),
+    }),
     ...commonProps.additionalProps,
   };
-
-  if (commonProps.a11y) {
-    props["tabIndex"] = "0";
-    props["aria-label"] = commonProps.a11yLabel;
-  }
 
   const wrapperRef = useRef(null);
   commonProps.onFocusLost &&
@@ -142,7 +140,12 @@ const buildMobrixUiStandardComponent = ({
 
   if (SelectedWrapper === "input") {
     return (
-      <SelectedWrapper ref={wrapperRef} {...props} key={commonProps.key} />
+      <SelectedWrapper
+        ref={wrapperRef}
+        {...props}
+        tabIndex={Number(props.tabIndex)}
+        key={commonProps.key}
+      />
     );
   } else {
     return (

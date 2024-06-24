@@ -24,10 +24,6 @@
   --mbx-modal-animation: var(--mbx-modal-animation-in);
 }
 
-[data-mbx-id="modal"][data-mbx-attributes*="animated"][data-mbx-modal-animation="ease-in"] {
-  --mbx-modal-animation: var(--mbx-modal-animation-in);
-}
-
 [data-mbx-id="modal"][data-mbx-attributes*="animated"][data-mbx-modal-animation="ease-out"] {
   --mbx-modal-animation: var(--mbx-modal-animation-out);
 }

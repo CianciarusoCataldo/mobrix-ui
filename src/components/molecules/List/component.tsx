@@ -14,7 +14,7 @@ const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
       data-mbx-list-element={onClick ? "clickable" : ""}
       {...(!disabled &&
         hover && {
-          "data-mbx-features": "opacityOnHover",
+          "data-mbx-features": "opHov",
         })}
       {...(!disabled &&
         onClick && {

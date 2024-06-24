@@ -85,29 +85,13 @@ MoBrix-ui components shares some properties:
 | <div style='text-align:center;margin:auto;'>[onFocus](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#onfocus)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[onFocusLost](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#onfocuslost)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[additionalProps](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#additionalprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[a11y](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#a11y)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[a11yLabel](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#a11ylabel)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[tabIndex](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#tabindex)</div> | <div style='text-align:center;margin:auto;'>number &#124; string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
 Check out the [complete components list](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/) for more details
-
-<br>
-
-### Accessibility properties
-
-<br>
-
-Some accessibility properties are shared between all components, for a better and smoother user experience, in any scenario:
-
-| Property    | Type      | Description                                                                                                                                                | Default value |
-| ----------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
-| `a11y`      | `boolean` | Enable/disable accessibility features.                                                                                                                     | `true`        |
-| `a11yLabel` | `string`  | If `a11y` = `true`, is used as [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) accessibility parameter | `/`           |
-
-<br>
-
----
-
----
 
 <br>
 

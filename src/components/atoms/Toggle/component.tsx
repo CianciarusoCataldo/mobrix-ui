@@ -20,7 +20,7 @@ const toggleComponent: MbxUiReactiveComponent<boolean, ToggleProps> = ({
       data-mbx-class="toggle-icon"
       {...(!disabled &&
         hover && {
-          "data-mbx-features": `opacityOnHover;flip${status}`,
+          "data-mbx-features": `opHov;flip${status}`,
         })}
     >
       {status === true ? iconOn : iconOff}

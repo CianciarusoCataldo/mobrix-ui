@@ -93,8 +93,6 @@ cat "$README_CHAPTERS_DIR"/mbx-intro.md >>README_TEMP.md
 
 cat "$README_CHAPTERS_DIR"/building-process-heading.md >>README_TEMP.md
 cat "$README_CHAPTERS_DIR"/building-process-shared-props.md >>README_TEMP.md
-echo -n "\n\n<br>\n\n" >>README_TEMP.md
-cat "$README_CHAPTERS_DIR"/building-process-accessibility-props.md >>README_TEMP.md
 
 echo -n "\n\n<br>\n\n" >>README_TEMP.md
 
