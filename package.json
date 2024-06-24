@@ -88,11 +88,16 @@
     "start": "npm-run-all --parallel \"watch\" \"start:playground\"",
     "init": "sh ./scripts/init.sh",
     "serve:test-app": "npm-run-all --parallel \"watch\" \"start:test-app\"",
+    "prestart:test-app": "npm run build",
     "start:test-app": "cd test-app && npm run start",
-    "deploy": "sh ./scripts/deploy.sh",
+    "deploy": "npm run deploy:playground",
     "test": "sh ./scripts/start-tests.sh",
     "generate-docs": "sh docs-gen/utils/generate-docs.sh",
+    "prestart:playground": "npm run build",
     "start:playground": "cd playground && npm run start",
-    "build:playground": "cd playground && npm run build"
+    "prebuild:playground": "npm run build",
+    "build:playground": "cd playground && npm run build",
+    "predeploy:playground": "npm run build:playground",
+    "deploy:playground": "sh ./scripts/deploy-playground.sh"
   }
 }
