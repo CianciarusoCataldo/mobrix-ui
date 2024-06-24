@@ -12,7 +12,7 @@ const datePickerTest = () => {
       let wrapper = mount(<DatePicker />);
       expect(wrapper);
       wrapper = mount(
-        <DatePicker a11yDark={true} months={defaultMonths} days={defaultDays} />
+        <DatePicker months={defaultMonths} days={defaultDays} />
       );
       expect(wrapper.props().months).toBe(defaultMonths);
       wrapper = mount(<DatePicker value={{ month: -1, year: -1, day: -1 }} />);

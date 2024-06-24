@@ -123,21 +123,19 @@ const buildMobrixUiStandardComponent = ({
       commonProps.animated && {
         "data-mbx-animation": commonProps.animation,
       }),
-    "data-mbx-a11y": commonProps.a11y,
-    "data-mbx-a11y-dark":
-      commonProps.a11y &&
-      (commonProps.a11yDark !== undefined
-        ? commonProps.a11yDark
-        : commonProps.dark),
+    tabIndex: "-1",
     id: commonProps.id,
-    "aria-label": commonProps.a11y ? commonProps.a11yLabel : "",
-    tabIndex: commonProps.a11y ? "0" : "-1",
     className: commonProps.className,
     style: commonProps.style,
     onFocus: commonProps.onFocus,
     onKeyDown: commonProps.onKeyDown,
     ...commonProps.additionalProps,
   };
+
+  if (commonProps.a11y) {
+    props["tabIndex"] = "0";
+    props["aria-label"] = commonProps.a11yLabel;
+  }
 
   const wrapperRef = useRef(null);
   commonProps.onFocusLost &&

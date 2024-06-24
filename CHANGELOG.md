@@ -30,6 +30,9 @@
 ### 3.10.0
 
 - `data-mb-enabled` migrated to `data-mbx-attributes` field. If the component is disabled, the `data-mbx-attributes` contains `disabled` string
+- `data-mbx-a11y` migrated to `data-mbx-attributes` field. If a11y=true, the `data-mbx-attributes` contains `a11y` string
+- `data-mbx-animated` migrated to `data-mbx-attributes` field. If the component is disabled, the `data-mbx-attributes` contains `animated` string
+- `data-mbx-a11y-dark` removed
 
 <br>
 

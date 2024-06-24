@@ -71,7 +71,18 @@
     "default": "false",
     "type": "boolean"
   },
-
+  "onKeyDown": {
+    "type": "(keyEvent : any) => void",
+    "description": "Custom callback triggered when a key is pressed while using the component (for example, when writing text inside an `Input` component)."
+  },
+  "onFocus": {
+    "type": "() => void",
+    "description": "Custom callback triggered when the component get the focus (for example, through tab key)"
+  },
+  "onFocusLost": {
+    "type": "() => void",
+    "description": "Custom callback triggered when the component lose the focus (for example, when user clicks outside it)"
+  },
   "additionalProps": {
     "description": "Custom additional properties, applied to the component",
     "type": "Record<string, any>"

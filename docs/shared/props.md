@@ -27,6 +27,9 @@
 | <div style='text-align:center;margin:auto;'>[background](#background)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
 | <div style='text-align:center;margin:auto;'>[hover](#hover)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
 | <div style='text-align:center;margin:auto;'>[disabled](#disabled)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
+| <div style='text-align:center;margin:auto;'>[onKeyDown](#onkeydown)</div> | <div style='text-align:center;margin:auto;'>(keyEvent : any) => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onFocus](#onfocus)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onFocusLost](#onfocuslost)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[additionalProps](#additionalprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
@@ -227,6 +230,51 @@ Enable/disable component hover standard styles
 <br>
 
 If true, disable the component. The effect may vary depending on the component type
+
+<br>
+
+<br>
+
+### onKeyDown
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>(keyEvent : any) => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+<br>
+
+Custom callback triggered when a key is pressed while using the component (for example, when writing text inside an `Input` component).
+
+<br>
+
+<br>
+
+### onFocus
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+<br>
+
+Custom callback triggered when the component get the focus (for example, through tab key)
+
+<br>
+
+<br>
+
+### onFocusLost
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+<br>
+
+Custom callback triggered when the component lose the focus (for example, when user clicks outside it)
 
 <br>
 

@@ -30,4 +30,6 @@ export const MBX_ATTRIBUTES: Partial<
   hover: (props) => props.hover && !props.disabled,
   background: (props) => props.background,
   disabled: (props) => props.disabled,
+  a11y: (props) => props.a11y,
+  animated: (props) => props.animated,
 };

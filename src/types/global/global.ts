@@ -60,9 +60,6 @@ export type CommonProps = MbxAttributes & {
   /** If `true`, the component is selectable by navigating with tab key (default `true`) */
   a11y?: boolean;
 
-  /** if the `a11y` parameter is `true`, override standard focus color style with/without dark mode (normally, the color changes accordingly to the `dark` parameter) */
-  a11yDark?: boolean;
-
   /** if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label} */
   a11yLabel?: string;
 

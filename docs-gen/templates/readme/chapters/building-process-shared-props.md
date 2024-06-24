@@ -21,6 +21,9 @@ MoBrix-ui components shares some properties:
 | <div style='text-align:center;margin:auto;'>[background](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#background)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
 | <div style='text-align:center;margin:auto;'>[hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
 | <div style='text-align:center;margin:auto;'>[disabled](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#disabled)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
+| <div style='text-align:center;margin:auto;'>[onKeyDown](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#onkeydown)</div> | <div style='text-align:center;margin:auto;'>(keyEvent : any) => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onFocus](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#onfocus)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[onFocusLost](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#onfocuslost)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[additionalProps](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#additionalprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 
