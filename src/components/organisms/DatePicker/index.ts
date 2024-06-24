@@ -24,6 +24,7 @@ import datePickerComponent from "./components";
  * @param {Record<string, any>} labelProps Custom props applied on the day label component - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
  * @param {(newValue: CalendarDate) => void} onChange Callback triggered when Calendar component input value is changed by the user - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
  * @param {() => void} onClose Callback triggered when DatePicker modal is closed
+ * @param {string} arrowClassName Custom classname applied on the arrow button - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode

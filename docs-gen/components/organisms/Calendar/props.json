@@ -56,5 +56,9 @@
     "type": "(newValue: CalendarDate) => void",
     "default": "() => {}",
     "description": "Callback triggered when Calendar component input value is changed by the user"
+  },
+  "arrowClassName": {
+    "type": "string",
+    "description": "Custom classname applied on the arrow button"
   }
 }

@@ -19,14 +19,16 @@
   -ms-transition: all 0.2s;
 }
 
-[data-mbx-id="toggle"] [data-mbx-class="toggle-icon"][data-mbx-flip="true"] {
+[data-mbx-id="toggle"]
+  [data-mbx-class="toggle-icon"][data-mbx-features*="fliptrue"] {
   transform: translate(0%);
 
   --svginternalcolor: var(--mbx-c-tog-ic-on-int);
   --svgexternalcolor: var(--mbx-c-tog-ic-on-ext);
 }
 
-[data-mbx-id="toggle"] [data-mbx-class="toggle-icon"][data-mbx-flip="false"] {
+[data-mbx-id="toggle"]
+  [data-mbx-class="toggle-icon"]:not([data-mbx-features*="flipfalse"]) {
   transform: translate(35px);
   --svginternalcolor: var(--mbx-c-tog-ic-off-int);
   --svgexternalcolor: var(--mbx-c-tog-ic-off-ext);

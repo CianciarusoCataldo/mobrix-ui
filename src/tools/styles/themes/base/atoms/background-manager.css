@@ -1,0 +1,50 @@
+[data-mbx-id="button"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="button"]:not([data-mbx-attributes*="background"]):hover {
+  --mbx-c-btn-bg: transparent !important;
+}
+
+[data-mbx-id="checkbox"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="checkbox"]:not([data-mbx-attributes*="background"]):hover {
+  --mbx-c-chk-bg: transparent !important;
+}
+
+[data-mbx-id="codebox"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="codebox"]:not([data-mbx-attributes*="background"]):hover {
+  --mbx-c-cdb-bg: transparent !important;
+}
+
+[data-mbx-id="counterbox"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="counterbox"]:not([data-mbx-attributes*="background"]):hover {
+  --mbx-c-cnt-bg: transparent !important;
+}
+
+[data-mbx-id="inputbox"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="inputbox"]:not([data-mbx-attributes*="background"]):hover {
+  --mbx-c-in-bgc: transparent !important;
+}
+
+[data-mbx-id="radio-button"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="radio-button"]:not([data-mbx-attributes*="background"]):hover {
+  --mbx-c-rad-bg: transparent !important;
+}
+
+[data-mbx-id="rater"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="rater"]:not([data-mbx-attributes*="background"]):hover {
+  --mbx-c-rat-bg: transparent !important;
+}
+
+[data-mbx-id="selector"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="selector"]:not([data-mbx-attributes*="background"]):hover {
+  --mbx-c-sel-bg: transparent !important;
+  --mbx-c-sel-bg-h: transparent !important;
+}
+
+[data-mbx-id="slider"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="slider"]:not([data-mbx-attributes*="background"]):hover {
+  --mbx-c-sld-bg: transparent !important;
+}
+
+[data-mbx-id="toggle"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="toggle"]:not([data-mbx-attributes*="background"]):hover {
+  --mbx-c-tog-bg: transparent !important;
+}

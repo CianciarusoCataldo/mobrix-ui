@@ -3,7 +3,7 @@ import { CarouselProps, MbxUiReactiveComponent } from "../../../types";
 
 import { arrowIcon } from "./icons";
 
-import { Button, IconButton } from "../../atoms";
+import { IconButton } from "../../atoms";
 
 const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
   value: selectedItem,
@@ -12,6 +12,8 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
   elements = [],
   dark,
   disabled,
+  arrowClassName,
+  dotClassName,
 }) => {
   const [activeClassName, setActiveClassname] = React.useState("");
   const [hoveredDot, setHoveredDot] = React.useState<number | null>(null);
@@ -30,7 +32,9 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
       elementsArray.push(
         <div
           key={`carousel_element_${index}`}
-          data-mbx-hide={index !== item}
+          {...(index !== item && {
+            "data-mbx-attributes": "hide;",
+          })}
           data-mbx-class="element"
           data-mbx-animation={index === item ? activeClassName : ""}
         >
@@ -44,6 +48,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
             "data-mbx-class": "dot",
             "data-mbx-test": `dot_${index}`,
           }}
+          className={dotClassName}
           disabled={disabled}
           key={`dot_${index}`}
           onMouseEnter={() => setHoveredDot(index)}
@@ -67,11 +72,13 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
   return [
     <div data-mbx-class="elements" key="mobrix_ui_carousel_elements">
       <IconButton
+        hover
         dark={dark}
         additionalProps={{
           "data-mbx-arrow": "prev",
         }}
         disabled={item === 0 || disabled}
+        className={arrowClassName}
         onClick={() => {
           setActiveClassname("from-left");
           updateItem(item - 1);
@@ -81,10 +88,12 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
       </IconButton>
       {elementsArray}
       <IconButton
+        hover
         dark={dark}
         additionalProps={{
           "data-mbx-arrow": "next",
         }}
+        className={arrowClassName}
         disabled={item === elements.length - 1 || disabled}
         onClick={() => {
           setActiveClassname("from-right");

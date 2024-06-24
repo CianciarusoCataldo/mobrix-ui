@@ -11,7 +11,7 @@ const AppPage = ({
 }) => {
   return (
     <ScrollToTop>
-      <Container animated unstyled className={classNames("m-2", className)}>
+      <Container animated background={false} className={classNames("m-2", className)} animation="fade-in">
         {children}
       </Container>
     </ScrollToTop>

@@ -1,6 +1,6 @@
 {
   "name": "mobrix-ui",
-  "version": "3.8.1",
+  "version": "3.9.0",
   "description": "Smart React components for every app, easily customizable for every purpose",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -85,14 +85,14 @@
     "watch": "chokidar \"src/**/*.css\" \"src/**/*.tsx\" \"src/**/*.ts\" -c \"npm run build:dev\"",
     "check-types": "tsc",
     "prestart": "npm run build:dev",
-    "start": "npm-run-all --parallel \"watch\" \"start-playground\"",
+    "start": "npm-run-all --parallel \"watch\" \"start:playground\"",
     "init": "sh ./scripts/init.sh",
-    "start-playground": "cd playground && npm run start",
-    "build-playground": "cd playground && npm run build",
     "serve:test-app": "npm-run-all --parallel \"watch\" \"start:test-app\"",
     "start:test-app": "cd test-app && npm run start",
     "deploy": "sh ./scripts/deploy.sh",
     "test": "sh ./scripts/start-tests.sh",
-    "generate-docs": "sh docs-gen/utils/generate-docs.sh"
+    "generate-docs": "sh docs-gen/utils/generate-docs.sh",
+    "start:playground": "cd playground && npm run start",
+    "build:playground": "cd playground && npm run build"
   }
 }

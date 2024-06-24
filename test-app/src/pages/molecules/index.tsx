@@ -548,6 +548,17 @@ const MoleculesPage = () => {
             <List elements={["el 1", "el 2", "el 3"]} />
             <div style={{ marginTop: "20px" }} />
             <List dark elements={["el 1", "el 2", "el 3"]} />
+            <div style={{ marginTop: "20px" }} />
+            <List
+              onClick={(index) => console.log(index)}
+              elements={["el 1", "el 2", "el 3"]}
+            />
+            <div style={{ marginTop: "20px" }} />
+            <List
+              onClick={(index) => console.log(index)}
+              elements={["el 1", "el 2", "el 3"]}
+              dark
+            />
           </>
         }
       />

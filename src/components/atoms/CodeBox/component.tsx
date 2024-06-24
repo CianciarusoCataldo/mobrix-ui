@@ -36,9 +36,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
         onClick={() => code && navigator.clipboard.writeText(code)}
         hide={!copyButton}
         disabled={disabled}
-        additionalProps={{
-          "data-mbx-opacityhover": hover && !disabled,
-        }}
+        hover={hover}
       >
         {CopyIcon}
       </IconButton>

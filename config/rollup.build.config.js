@@ -56,6 +56,6 @@ module.exports = [
         clean: true,
       }),
     ],
-    external: Object.keys(pkg.peerDependencies || []),
+    external: Object.keys(pkg.peerDependencies || [])
   },
 ];

@@ -40,12 +40,14 @@ const Link: LinkComponent = ({ to, children, newTab, ...commonProps }) =>
     { ...commonProps, shadow: false },
     (sharedProps) => ({
       name: "link",
+      features: {
+        opacityOnHover: true,
+      },
       Component: children,
       commonProps: {
         ...sharedProps,
         additionalProps: {
           ...sharedProps.additionalProps,
-          "data-mbx-opacityhover": sharedProps.hover && !sharedProps.disabled,
           ...(!sharedProps.disabled && {
             href: to,
             target: newTab ? "_blank" : undefined,

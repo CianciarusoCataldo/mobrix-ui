@@ -12,10 +12,4 @@
   padding: 1rem;
 }
 
-@media (hover) {
-  [data-mbx-id="selector"][data-mbx-hover="true"]:hover,
-  [data-mbx-id="selector"] [data-mbx-class="selector-option"]:hover {
-    background: var(--mbx-c-sel-bg-h);
-    color: var(--mbx-c-sel-txt-h);
-  }
-}
+

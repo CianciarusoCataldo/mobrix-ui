@@ -49,6 +49,9 @@ const RadioButton: RadioButtonComponent = ({
     Component: ({ value, setValue }) => (value ? component : ""),
     defaultValue: false,
     inputValue,
+    features: {
+      opacityOnHover: true,
+    },
     props: (value, setValue) => {
       const callBack = () => {
         if (!value || deselectable) {
@@ -72,7 +75,6 @@ const RadioButton: RadioButtonComponent = ({
             ...sharedProps.additionalProps,
             ...(!sharedProps.disabled && {
               onClick: callBack,
-              "data-mbx-opacityhover": sharedProps.hover,
             }),
           },
         },

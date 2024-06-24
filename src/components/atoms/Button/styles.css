@@ -19,7 +19,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="button"][data-mbx-enabled="true"][data-mbx-animated="true"][data-mbx-hover="true"]:hover {
+  [data-mbx-id="button"][data-mbx-enabled="true"][data-mbx-animated="true"][data-mbx-attributes*="hover"]:hover {
     position: relative;
     transform: scaleX(1.15) scaleY(1.1);
   }

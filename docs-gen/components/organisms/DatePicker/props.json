@@ -73,5 +73,10 @@
     "type": "() => void",
     "default": "() => {}",
     "description": "Callback triggered when DatePicker modal is closed"
+  },
+  "arrowClassName": {
+    "type": "string",
+    "description": "Custom classname applied on the arrow button - extended from [Calendar component](../../organisms/Calendar/props.md#arrowClassName)",
+    "comment": "Custom classname applied on the arrow button - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/organisms/Calendar Calendar}"
   }
 }

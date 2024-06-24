@@ -1,6 +1,6 @@
 @import url("constants/computed.css");
 
-[data-mbx-id]:not([data-mbx-dark="true"]) {
+[data-mbx-id]:not([data-mbx-attributes*="dark"]) {
   /** Calendar **/
   --mbx-c-cal-bg: var(--mbx-c-cal-bg-l);
   --mbx-c-cal-txt: var(--mbx-c-cal-txt-l);
@@ -33,7 +33,7 @@
   --mbx-c-form-field-txt: var(--mbx-c-form-field-txt-l);
 }
 
-[data-mbx-id][data-mbx-dark="true"] {
+[data-mbx-id][data-mbx-attributes*="dark"] {
   /** Calendar **/
   --mbx-c-cal-bg: var(--mbx-c-cal-bg-d);
   --mbx-c-cal-txt: var(--mbx-c-cal-txt-d);

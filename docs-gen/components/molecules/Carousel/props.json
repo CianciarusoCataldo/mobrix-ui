@@ -14,5 +14,13 @@
     "type": "number",
     "description": "Initial element to show (as index)",
     "default": "0"
+  },
+  "arrowClassName": {
+    "type": "string",
+    "description": "Custom classname applied on the Carousel arrows"
+  },
+  "dotClassName": {
+    "type": "string",
+    "description": "Custom classname applied on every Carousel dot"
   }
 }

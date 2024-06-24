@@ -9,7 +9,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="embedded-video"][data-mbx-hover="true"] iframe:hover {
+  [data-mbx-id="embedded-video"][data-mbx-attributes*="hover"] iframe:hover {
     opacity: 0.9;
   }
 }

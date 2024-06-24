@@ -14,8 +14,8 @@
   outline: none;
 }
 
-[data-mbx-id] [data-mbx-hide="true"],
-[data-mbx-id][data-mbx-hide="true"] {
+[data-mbx-id] [data-mbx-attributes*="hide"],
+[data-mbx-id][data-mbx-attributes*="hide"] {
   display: none !important;
 }
 
@@ -59,7 +59,6 @@
   -o-animation: slideTop 0.4s;
 }
 
-
 [data-mbx-id][data-mbx-animated="true"][data-mbx-animation="fade-out"],
 [data-mbx-id][data-mbx-animated="true"] [data-mbx-animation="fade-out"] {
   animation: fadeOut 0.3s;
@@ -83,16 +82,16 @@
   animation-iteration-count: 1;
 }
 
-[data-mbx-id][data-mbx-shadow="true"],
-[data-mbx-id] [data-mbx-shadow="true"] {
+[data-mbx-id][data-mbx-attributes*="shadow"],
+[data-mbx-id] [data-mbx-attributes*="shadow"] {
   box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
   -webkit-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
   -moz-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
   -o-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
 }
 
-[data-mbx-id][data-mbx-background="false"],
-[data-mbx-id][data-mbx-background="false"]:hover {
+[data-mbx-id]:not([data-mbx-attributes*="background"]),
+[data-mbx-id]:not([data-mbx-attributes*="background"]):hover {
   --mbx-c-bg: transparent;
   --mbx-c-bgc: transparent;
 }
@@ -105,8 +104,8 @@
     -o-box-shadow: 0 5px 13px -1px var(--mbx-c-fc);
   }
 
-  [data-mbx-id][data-mbx-opacityhover="true"]:hover,
-  [data-mbx-id] [data-mbx-opacityhover="true"]:hover {
+  [data-mbx-id][data-mbx-features*="opacityOnHover"]:hover,
+  [data-mbx-id] [data-mbx-features*="opacityOnHover"]:hover {
     opacity: 0.7;
   }
 }

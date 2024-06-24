@@ -37,10 +37,11 @@ const CalendarComponent: MbxUiReactiveComponent<
   labelClassName,
   labelProps = {},
   hover,
+  arrowClassName,
   ...commonProps
 }) => {
   const customProps = labelClassName
-    ? { className: labelClassName, ...labelProps }
+    ? { className: arrowClassName, ...labelProps }
     : labelProps;
   const year = startYear && startYear > 0 ? startYear : todayDate.year;
   const month =
@@ -100,7 +101,6 @@ const CalendarComponent: MbxUiReactiveComponent<
       key={"arrow_" + direction}
       additionalProps={{
         "data-mbx-calendar-arrow": direction,
-        "data-mbx-opacityhover": hover && !disabled,
       }}
       {...customProps}
     >

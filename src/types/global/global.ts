@@ -2,20 +2,28 @@ import { CSSProperties } from "react";
 
 export type MobBrixAnimation = "fadeIn" | "fadeOut" | "slideIn" | "slideOut";
 
+export type MbxAttributes = {
+  /** Enable/disable dark mode (default `false`) */
+  dark?: boolean;
+
+  /** Enable/disable shadow behind component (default `true`) */
+  shadow?: boolean;
+
+  /** Enable/disable component animations (default `true`) */
+  animated?: boolean;
+};
+
 /**
  * Props shared between all {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} components
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=components-building-process
  * */
-export interface CommonProps {
+export type CommonProps = MbxAttributes & {
   /** React key, the standard {@link https://reactjs.org/docs/lists-and-keys.html key parameter} */
   key?: string;
 
   /** custom className applied on main container */
   className?: string;
-
-  /** Enable/disable dark mode (default `false`) */
-  dark?: boolean;
 
   /** Hide/show component (default `false`) */
   hide?: boolean;
@@ -23,17 +31,11 @@ export interface CommonProps {
   /** {@link https://www.w3schools.com/html/html_id.asp id parameter} (for styling/testing purpose, to easily find the component into the DOM) */
   id?: string;
 
-  /** Enable/disable shadow behind component (default `true`) */
-  shadow?: boolean;
-
   /** Css inline properties applied on main container */
   style?: CSSProperties;
 
   /** If `true`, no standard MoBrix-ui styles will be applied on the components (useful for example, with image buttons) (default `false`) */
   unstyled?: boolean;
-
-  /** Enable/disable component animations (default `true`) */
-  animated?: boolean;
 
   /** If `animated`=`true`, this parameter specifies which animation is used when component is rendered */
   animation?:
@@ -74,7 +76,7 @@ export interface CommonProps {
   onKeyDown?: (keyEvent: any) => void;
 
   busy?: boolean;
-}
+};
 
 /**
  * A MoBrix-ui component driven by an input value
@@ -225,6 +227,11 @@ export type Wrappers =
   | "span"
   | "img";
 
+export interface Features {
+  /** If `true`, reduce component opacity when component is hovered (and `hover` = `true`) */
+  opacityOnHover?: boolean;
+}
+
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} components builder props
  *
@@ -246,6 +253,8 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
 
   /** Component wrapper (default `div`) */
   wrapper?: Wrappers;
+
+  features?: Features;
 };
 
 /**

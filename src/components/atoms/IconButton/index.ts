@@ -40,17 +40,21 @@ const IconButton: IconButtonComponent = ({
   onClick,
   onMouseEnter,
   onMouseLeave,
+  hover = false,
   ...commonProps
 }) =>
-  buildMbxStandardComponent(commonProps, (props) => ({
+  buildMbxStandardComponent({ ...commonProps, hover }, (sharedProps) => ({
     name: "icon-button",
     wrapper: "button",
+    features: {
+      opacityOnHover: true,
+    },
     Component: children,
     commonProps: {
-      ...props,
+      ...sharedProps,
       additionalProps: {
         ...commonProps.additionalProps,
-        ...(!props.disabled && {
+        ...(!sharedProps.disabled && {
           onClick,
           onMouseEnter,
           onMouseLeave,

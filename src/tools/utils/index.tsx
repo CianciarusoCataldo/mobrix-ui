@@ -1,5 +1,5 @@
 import "../styles/core/index.css";
-import "../styles/components/index.css";
+import "../styles/themes/base/index.css";
 import "../styles/themes/full/index.css";
 
 import React, { useEffect, useRef } from "react";
@@ -11,7 +11,12 @@ import {
   CommonProps,
 } from "../../types/global";
 
-import { DEFAULT_COMMON_PROPS } from "./constants";
+import {
+  DEFAULT_COMMON_PROPS,
+  FEATURES_PROPS,
+  MBX_ATTRIBUTES,
+} from "./constants";
+import { Features } from "../../types/global/global";
 
 /* istanbul ignore next */
 const useOutsideAlerter = (ref: any, callback: () => void) => {
@@ -45,6 +50,36 @@ export const parseCommonProps = (props: CommonProps): CommonProps => ({
     hover: false,
   }),
 });
+
+export const getEnabledFeatures = (
+  features: Features,
+  commonProps: CommonProps
+) => {
+  let enabledFeatures = "";
+  Object.keys({ ...features, ...commonProps })
+    .filter((feature, index) => FEATURES_PROPS[feature])
+    .forEach((feature, index) => {
+      enabledFeatures += FEATURES_PROPS[feature](commonProps)
+        ? `${feature};`
+        : "";
+    });
+
+  return enabledFeatures;
+};
+
+export const getMbxAttributes = (commonProps: CommonProps) => {
+  let mbxAttributes = "";
+  Object.keys(MBX_ATTRIBUTES)
+    .filter((mbxAttribute: keyof CommonProps, index) =>
+      MBX_ATTRIBUTES[mbxAttribute](commonProps)
+    )
+    .forEach((mbxAttribute, index) => {
+      mbxAttributes += `${mbxAttribute};`;
+    });
+
+  return mbxAttributes;
+};
+
 /**
  * Build a standard {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component, providing shared functionalities and props, to optimize the process.
  *
@@ -70,20 +105,25 @@ const buildMobrixUiStandardComponent = ({
   /* istanbul ignore next */
   commonProps = {},
   wrapper: SelectedWrapper = "div",
+  features = {},
 }: BuilderProps) => {
+  let enabledFeatures = getEnabledFeatures(features, commonProps);
+  let mbxAttributes = getMbxAttributes(commonProps);
+
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,
-    "data-mbx-dark": !!commonProps.dark,
-    "data-mbx-shadow": !!commonProps.shadow,
     "data-mbx-animated": commonProps.animated && !commonProps.disabled,
     ...(commonProps.animation &&
       commonProps.animated && {
         "data-mbx-animation": commonProps.animation,
       }),
-    "data-mbx-hide": commonProps.hide,
+    ...(mbxAttributes.length > 0 && {
+      "data-mbx-attributes": mbxAttributes,
+    }),
+    ...(enabledFeatures.length > 0 && {
+      "data-mbx-features": enabledFeatures,
+    }),
     "data-mbx-a11y": commonProps.a11y,
-    "data-mbx-background": commonProps.background,
-    "data-mbx-hover": commonProps.hover && !commonProps.disabled,
     "data-mbx-enabled": !commonProps.disabled,
     "data-mbx-a11y-dark":
       commonProps.a11y &&
@@ -110,6 +150,7 @@ const buildMobrixUiStandardComponent = ({
     );
   } else {
     return (
+      // @ts-ignore
       <SelectedWrapper ref={wrapperRef} {...props} key={commonProps.key}>
         {Component}
       </SelectedWrapper>
@@ -139,6 +180,7 @@ const buildMbxUiReactiveComponent = <T=any>({
   inputValue,
   props,
   Component,
+  features
 }: BuilderProps<
   (props: {
     value: T;
@@ -173,6 +215,7 @@ const buildMbxUiReactiveComponent = <T=any>({
     Component: Component && Component({ value, setValue }),
     wrapper,
     ...processedProps,
+    features,
   });
 };
 

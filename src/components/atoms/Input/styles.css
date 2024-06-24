@@ -1,6 +1,6 @@
 [data-mbx-id="inputbox"] {
-  background-color: var(--mbx-c-inb-bgc);
-  color: var(--mbx-c-inb-txt);
+  background-color: var(--mbx-c-in-bgc);
+  color: var(--mbx-c-in-txt);
   border-radius: 5px;
   padding: 0.5rem;
   border-color: transparent;

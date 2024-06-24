@@ -11,6 +11,8 @@ import { buildMbxReactiveComponent } from "../../../tools";
  * @param {(JSX.Element | string)[]} elements Carousel elements
  * @param {(newValue: number) => void} onChange Callback triggered when Carousel component input value is changed by the user
  * @param {number} value Initial element to show (as index)
+ * @param {string} arrowClassName Custom classname applied on the Carousel arrows
+ * @param {string} dotClassName Custom classname applied on every Carousel dot
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode

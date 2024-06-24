@@ -1,6 +1,6 @@
 @import url("constants/computed.css");
 
-[data-mbx-id][data-mbx-dark="false"] {
+[data-mbx-id]:not([data-mbx-attributes*="dark"]) {
   /** Card **/
   --mbx-c-card-bg: var(--mbx-c-card-bg-l);
   --mbx-c-card-txt: var(--mbx-c-card-txt-l);
@@ -8,7 +8,6 @@
   /** Carousel **/
   --mbx-c-car-bg: var(--mbx-c-car-bg-l);
   --mbx-c-car-arr: var(--mbx-c-car-arr-l);
-  --mbx-c-car-arr-h: var(--mbx-c-car-arr-h-l);
   --mbx-c-car-dot-f: var(--mbx-c-car-dot-f-l);
   --mbx-c-car-dot-e: var(--mbx-c-car-dot-e-l);
 
@@ -17,8 +16,6 @@
   --mbx-c-con-txt: var(--mbx-c-con-txt-l);
 
   /** DismissableCard **/
-  --mbx-c-dcard-bg: var(--mbx-c-dcard-bg-l);
-  --mbx-c-dcard-txt: var(--mbx-c-dcard-txt-l);
   --mbx-c-dcard-x: var(--mbx-c-dcard-x-l);
   --mbx-c-dcard-x-h: var(--mbx-c-dcard-x-h-l);
 
@@ -30,12 +27,6 @@
   --mbx-c-drop-txt: var(--mbx-c-drop-txt-l);
   --mbx-c-drop-txt-h: var(--mbx-c-drop-txt-h-l);
 
-  /** ExpandableContainer **/
-  --mbx-c-exp-bg: var(--mbx-c-exp-bg-l);
-  --mbx-c-exp-text: var(--mbx-c-exp-txt-l);
-  --mbx-c-exp-arr: var(--mbx-c-exp-arr-l);
-  --mbx-c-exp-arr-h: var(--mbx-c-exp-arr-h-l);
-
   /** FormField **/
   --mbx-c-field-bg: var(--mbx-c-field-bg-l);
   --mbx-c-field-txt: var(--mbx-c-field-txt-l);
@@ -46,7 +37,6 @@
 
   /** List **/
   --mbx-c-lst-txt: var(--mbx-c-lst-txt-l);
-  --mbx-c-lst-txt-h: var(--mbx-c-lst-txt-h-l);
 
   /** Modal **/
   --mbx-c-mod-bg: var(--mbx-c-mod-bg-l);
@@ -83,7 +73,7 @@
   --mbx-c-tabv-off-txt-h: var(--mbx-c-tabv-off-txt-h-l);
 }
 
-[data-mbx-id][data-mbx-dark="true"] {
+[data-mbx-id][data-mbx-attributes*="dark"] {
   /** Card **/
   --mbx-c-card-bg: var(--mbx-c-card-bg-d);
 
@@ -92,7 +82,6 @@
   /** Carousel **/
   --mbx-c-car-bg: var(--mbx-c-car-bg-d);
   --mbx-c-car-arr: var(--mbx-c-car-arr-d);
-  --mbx-c-car-arr-h: var(--mbx-c-car-arr-h-d);
   --mbx-c-car-dot-f: var(--mbx-c-car-dot-f-d);
 
   --mbx-c-car-dot-e: var(--mbx-c-car-dot-e-d);
@@ -102,8 +91,6 @@
   --mbx-c-con-txt: var(--mbx-c-con-txt-d);
 
   /** DismissableCard **/
-  --mbx-c-dcard-bg: var(--mbx-c-dcard-bg-d);
-  --mbx-c-dcard-txt: var(--mbx-c-dcard-txt-d);
   --mbx-c-dcard-x: var(--mbx-c-dcard-x-d);
   --mbx-c-dcard-x-h: var(--mbx-c-dcard-x-h-d);
 
@@ -118,12 +105,6 @@
   --mbx-c-drop-txt: var(--mbx-c-drop-txt-d);
   --mbx-c-drop-txt-h: var(--mbx-c-drop-txt-h-d);
 
-  /** ExpandableContainer **/
-  --mbx-c-exp-bg: var(--mbx-c-exp-bg-d);
-  --mbx-c-exp-text: var(--mbx-c-exp-txt-d);
-  --mbx-c-exp-arr: var(--mbx-c-exp-arr-d);
-  --mbx-c-exp-arr-h: var(--mbx-c-exp-arr-h-d);
-
   /** FormField **/
   --mbx-c-field-bg: var(--mbx-c-field-bg-d);
   --mbx-c-field-txt: var(--mbx-c-field-txt-d);
@@ -134,8 +115,6 @@
 
   /** List **/
   --mbx-c-lst-txt: var(--mbx-c-lst-txt-d);
-
-  --mbx-c-lst-txt-h: var(--mbx-c-lst-txt-h-d);
 
   /** Modal **/
   --mbx-c-mod-bg: var(--mbx-c-mod-bg-d);

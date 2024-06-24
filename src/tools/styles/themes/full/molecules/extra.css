@@ -1,3 +1,23 @@
+[data-mbx-id="dismissable-card"] {
+  background: var(--mbx-c-dcard-bg);
+  color: var(--mbx-c-dcard-txt);
+}
+
+[data-mbx-id="expandable-container"] {
+  background: var(--mbx-c-exp-bg);
+  color: var(--mbx-c-exp-text);
+}
+
+[data-mbx-id="expandable-container"] [data-mbx-class="arrow"] {
+  fill: var(--mbx-c-exp-arr);
+}
+
+[data-mbx-id="expandable-container"][data-mbx-a11y="true"]
+  [data-mbx-class="container-arrow-button"]:focus-visible
+  svg {
+  fill: var(--mbx-c-exp-arr-h);
+}
+
 [data-mbx-id="radio-button-group"] [data-mbx-id="radio-button"] {
   --mbx-radio-background: var(--mbx-c-radg-rad-bg);
   --mbx-radio-background-hover: var(--mbx-c-radg-rad-bg-h);

@@ -66,6 +66,9 @@ const Selector: SelectorComponent = ({
     }),
     Component: ({ value, setValue }) =>
       selectorComponent({ elements, value, setValue, optionClassName }),
+    features: {
+      opacityOnHover: true,
+    },
   }));
 
 export default Selector;

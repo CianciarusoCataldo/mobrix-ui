@@ -47,12 +47,14 @@ const Image: ImageComponent = ({
       ...sharedProps,
       additionalProps: {
         ...sharedProps.additionalProps,
-        "data-mbx-opacityhover": sharedProps.hover && !sharedProps.disabled,
         draggable: !sharedProps.disabled,
         src,
         width: `${width}`,
         height: `${height}`,
       },
+    },
+    features: {
+      opacityOnHover: true,
     },
     wrapper: "img",
   }));

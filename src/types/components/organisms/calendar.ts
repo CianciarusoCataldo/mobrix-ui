@@ -80,6 +80,9 @@ export type CalendarProps = ComponentWithValue<DeepPartial<CalendarDate>> &
 
     /** Custom props applied on the day label component */
     labelProps?: Record<string, any>;
+
+    /** Custom classname applied on the arrow button */
+    arrowClassName?: string;
   };
 
 /**

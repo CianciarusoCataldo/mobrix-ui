@@ -65,7 +65,7 @@ const AtomsPage = () => {
               Button dark not animated
             </Button>
             <div style={{ marginTop: "20px" }} />
-            <Button background={false} dark>
+            <Button background={false} shadow={false} dark>
               Button dark no background
             </Button>
             <div style={{ marginTop: "20px" }} />
@@ -142,6 +142,7 @@ const AtomsPage = () => {
             />
             <CheckBox
               background={false}
+              shadow={false}
               icon={<img alt="" src={tick} width="30px" />}
             />
             <div style={{ marginTop: "20px" }} />
@@ -189,6 +190,7 @@ npx`}
             <CodeBox
               copyButton={false}
               background={false}
+              shadow={false}
               value="npm i mobrix ui"
             />
             <div style={{ marginTop: "20px" }} />

@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.9.0](#390)
 - [3.8.0](#380)
 - [3.7.0](#370)
 - [3.6.0](#360)
@@ -22,6 +23,16 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.9.0
+
+- `arrowClassName` parameter for `Calendar`, `Carousel` and `Drawer` components
+- css variables splitted into full theme (for future v4 updates)
+- Opacity reduced on hover instead of specific hover colors, to optimize overall library size and in preparation for v4 update
+- `data-mbx-features` field, to easily handle multiple features through css selectors
+- `data-mbx-hover`, `data-mbx-shadow`, `data-mbx-background` and `data-mbx-dark` unified in a single field, `data-mbx-attributes`
 
 <br>
 

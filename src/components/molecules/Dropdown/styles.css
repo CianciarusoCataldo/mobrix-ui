@@ -4,7 +4,7 @@
   border-color: var(--mbx-c-drop-txt);
 }
 
-[data-mbx-id="dropdown"][data-mbx-background="true"] {
+[data-mbx-id="dropdown"][data-mbx-attributes*="background"] {
   color: var(--mbx-text-color);
   background-image: var(--mbx-c-drop-bg);
 }
@@ -148,21 +148,21 @@
 }
 
 @media (hover) {
-  [data-mbx-id="dropdown"][data-mbx-enabled="true"][data-mbx-hover="true"]
+  [data-mbx-id="dropdown"][data-mbx-enabled="true"][data-mbx-attributes*="hover"]
     [data-mbx-class="button"][data-mbx-enabled="true"]:hover,
-  [data-mbx-id="dropdown"][data-mbx-hover="true"][data-mbx-enabled="true"][data-mbx-hover="true"]
+  [data-mbx-id="dropdown"][data-mbx-attributes*="hover"][data-mbx-enabled="true"][data-mbx-attributes*="hover"]
     [data-mbx-class="regular"]:hover {
     color: var(--mbx-c-drop-txt-h);
   }
 
-  [data-mbx-id="dropdown"][data-mbx-enabled="true"][data-mbx-background="true"][data-mbx-hover="true"]
+  [data-mbx-id="dropdown"][data-mbx-enabled="true"][data-mbx-attributes*="background"][data-mbx-attributes*="hover"]
     [data-mbx-class="button"][data-mbx-enabled="true"]:hover,
-  [data-mbx-id="dropdown"][data-mbx-hover="true"][data-mbx-enabled="true"][data-mbx-background="true"][data-mbx-hover="true"]
+  [data-mbx-id="dropdown"][data-mbx-attributes*="hover"][data-mbx-enabled="true"][data-mbx-attributes*="background"][data-mbx-attributes*="hover"]
     [data-mbx-class="regular"]:hover {
     background: var(--mbx-c-drop-bg-h);
   }
 
-  [data-mbx-id="dropdown"][data-mbx-enabled="true"][data-mbx-hover="true"]
+  [data-mbx-id="dropdown"][data-mbx-enabled="true"][data-mbx-attributes*="hover"]
     [data-mbx-class="arrow-icon"][data-mbx-enabled="true"]:hover {
     border-color: var(--mbx-c-drop-arr-h);
     opacity: 0.5;

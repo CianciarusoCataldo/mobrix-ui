@@ -27,6 +27,7 @@
 | <div style='text-align:center;margin:auto;'>[labelProps](#labelprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[onChange](#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: CalendarDate) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 | <div style='text-align:center;margin:auto;'>[onClose](#onclose)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
+| <div style='text-align:center;margin:auto;'>[arrowClassName](#arrowclassname)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -226,5 +227,20 @@ Callback triggered when Calendar component input value is changed by the user - 
 <br>
 
 Callback triggered when DatePicker modal is closed
+
+<br>
+
+<br>
+
+### arrowClassName
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+<br>
+
+Custom classname applied on the arrow button - extended from [Calendar component](../../organisms/Calendar/props.md#arrowClassName)
 
 <br>

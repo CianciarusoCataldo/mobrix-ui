@@ -7,9 +7,19 @@ import IconButton from "../../atoms/IconButton";
 const DrawerInternalComponent: MbxUiComponent<
   DrawerProps,
   BuilderComponent[]
-> = ({ onClose, children, dark, animated, disabled, hover }) => {
+> = ({
+  onClose,
+  children,
+  dark,
+  animated,
+  disabled,
+  hover,
+  arrowClassName,
+}) => {
   return [
     <IconButton
+      hover={hover}
+      className={arrowClassName}
       disabled={disabled}
       animated={animated}
       key="drawer_buttons_panel"
@@ -19,7 +29,6 @@ const DrawerInternalComponent: MbxUiComponent<
       }}
       additionalProps={{
         "data-mbx-class": "drawer-close-button",
-        "data-mbx-opacityhover": hover && !disabled,
       }}
       a11yLabel="drawer-close-button"
     >

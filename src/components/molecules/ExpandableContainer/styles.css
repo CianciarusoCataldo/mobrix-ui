@@ -1,8 +1,3 @@
-[data-mbx-id="expandable-container"] {
-  background: var(--mbx-c-exp-bg);
-  color: var(--mbx-c-exp-text);
-}
-
 [data-mbx-id="expandable-container"][data-mbx-compact="true"]
   [data-mbx-class="expanded-area"] {
   max-height: 0;
@@ -37,12 +32,6 @@
   box-shadow: none;
 }
 
-[data-mbx-id="expandable-container"][data-mbx-a11y="true"]
-  [data-mbx-class="container-arrow-button"]:focus-visible
-  svg {
-  fill: var(--mbx-c-exp-arr-h);
-}
-
 [data-mbx-id="expandable-container"][data-mbx-compact="false"]
   [data-mbx-class="arrow"] {
   transform: rotate(0deg);
@@ -51,15 +40,4 @@
 [data-mbx-id="expandable-container"][data-mbx-compact="true"]
   [data-mbx-class="arrow"] {
   transform: rotate(180deg);
-}
-
-[data-mbx-id="expandable-container"] [data-mbx-class="arrow"] {
-  fill: var(--mbx-c-exp-arr);
-}
-
-@media (hover) {
-  [data-mbx-id="expandable-container"][data-mbx-enabled="true"]
-    [data-mbx-class="arrow"]:hover {
-    fill: var(--mbx-c-exp-arr-h);
-  }
 }

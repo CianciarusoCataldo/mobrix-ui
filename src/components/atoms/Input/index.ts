@@ -48,6 +48,9 @@ const Input: InputComponent = ({
   buildMbxReactiveComponent<string | undefined>(commonProps, (sharedProps) => ({
     name: "inputbox",
     wrapper: "input",
+    features: {
+      opacityOnHover: true,
+    },
     props: (value, setValue) => ({
       commonProps: {
         ...sharedProps,
