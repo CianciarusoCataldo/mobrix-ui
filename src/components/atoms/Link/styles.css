@@ -4,7 +4,7 @@
   color: var(--mbx-c-link-txt);
 }
 
-[data-mbx-id="link"][data-mbx-a11y="true"][data-mbx-enabled="true"]:focus-visible {
+[data-mbx-id="link"][data-mbx-attributes*="a11y"]:not([data-mbx-attributes*="disabled"]):focus-visible {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
@@ -12,10 +12,10 @@
   color: var(--mbx-c-fc);
 }
 
-[data-mbx-id="link"][data-mbx-enabled="true"]:active {
+[data-mbx-id="link"]:not([data-mbx-attributes*="disabled"]):active {
   font-weight: 700;
 }
 
-[data-mbx-id="link"][data-mbx-enabled="false"] {
+[data-mbx-id="link"][data-mbx-attributes*="disabled"] {
   text-decoration: underline;
 }

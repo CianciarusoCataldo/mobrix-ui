@@ -41,6 +41,9 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
 
   const components: JSX.Element[] = [];
 
+  const FieldComponent: MbxUiReactiveComponent =
+    fieldFormatters[type].component;
+
   if (header) {
     components.push(
       <Container
@@ -60,8 +63,12 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
     );
   }
 
-  const FieldComponent: MbxUiReactiveComponent =
-    fieldFormatters[type].component;
+  /* istanbul ignore next */
+  let extraProps = {
+    ...(animate && {
+      animation: "shake",
+    }),
+  };
 
   components.push(
     <FieldComponent
@@ -71,13 +78,8 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       additionalProps={{
         "data-mbx-class": "form-field-component",
         "data-mbx-form-field-error": error,
-        .../* istanbul ignore next */
-        (animate && {
-          ...{
-            "data-mbx-animation": "shake",
-          },
-        }),
       }}
+      {...extraProps}
       key="form_field_component"
       value={fieldFormatters[type].format(value)}
       shadow={shadow}

@@ -13,13 +13,13 @@
   width: fit-content;
 }
 
-[data-mbx-id="button"][data-mbx-animated="true"][data-mbx-enabled="true"] {
+[data-mbx-id="button"][data-mbx-attributes*="animated"] {
   transition-duration: 0.1s;
   transition-property: transform;
 }
 
 @media (hover) {
-  [data-mbx-id="button"][data-mbx-enabled="true"][data-mbx-animated="true"][data-mbx-attributes*="hover"]:hover {
+  [data-mbx-id="button"][data-mbx-attributes*="animated"][data-mbx-attributes*="hover"]:hover {
     position: relative;
     transform: scaleX(1.15) scaleY(1.1);
   }

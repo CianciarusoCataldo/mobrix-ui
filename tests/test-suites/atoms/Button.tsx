@@ -6,7 +6,7 @@ const buttonTest = () => {
   describe("Button", () => {
     test("Clicking on the button triggers the onClick callback", () => {
       const onClickStub = jest.fn();
-      const wrapper = mount(<Button onClick={onClickStub}>Test button</Button>);
+      const wrapper = mount(<Button tabIndex={2} onClick={onClickStub}>Test button</Button>);
       wrapper.find("button").simulate("click");
       expect(onClickStub).toBeCalled;
     });

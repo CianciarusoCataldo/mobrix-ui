@@ -45,7 +45,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="date-picker"][data-mbx-enabled="true"]
+  [data-mbx-id="date-picker"]:not([data-mbx-attributes*="disabled"])
     [data-mbx-class="calendar-icon"]:hover
     path {
     fill: var(--mbx-c-dtp-ic-h);

@@ -6,7 +6,7 @@
   border-width: 0;
 }
 
-[data-mbx-id="toggle"][data-mbx-enabled="false"] {
+[data-mbx-id="toggle"][data-mbx-attributes*="disabled"] {
   opacity: 0.7;
 }
 

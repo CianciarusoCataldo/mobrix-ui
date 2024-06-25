@@ -7,9 +7,3 @@
   display: block;
   width: 100%;
 }
-
-@media (hover) {
-  [data-mbx-id="embedded-video"][data-mbx-attributes*="hover"] iframe:hover {
-    opacity: 0.9;
-  }
-}

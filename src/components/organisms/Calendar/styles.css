@@ -96,7 +96,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="calendar"][data-mbx-enabled="true"]
+  [data-mbx-id="calendar"]:not([data-mbx-attributes*="disabled"])
     [data-mbx-calendar-table="true"]
     tr[data-mbx-table-row="true"]
     td[data-mbx-table-cell="true"]:not([data-mbx-selected="true"]):not(
@@ -106,7 +106,7 @@
     color: var(--mbx-c-cal-txt-h);
   }
 
-  [data-mbx-id="calendar"][data-mbx-enabled="true"]
+  [data-mbx-id="calendar"]:not([data-mbx-attributes*="disabled"])
     [data-mbx-calendar-arrow]:hover
     svg {
     fill: var(--mbx-c-cal-arr-h);

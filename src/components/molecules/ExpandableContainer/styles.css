@@ -24,7 +24,7 @@
   outline: none;
 }
 
-[data-mbx-id="expandable-container"][data-mbx-a11y="true"]
+[data-mbx-id="expandable-container"][data-mbx-attributes*="a11y"]
   [data-mbx-class="container-arrow-button"]:focus-visible {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;

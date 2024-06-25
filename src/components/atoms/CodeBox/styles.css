@@ -23,7 +23,7 @@
   overflow: auto;
 }
 
-[data-mbx-id="codebox"][data-mbx-enabled="true"]
+[data-mbx-id="codebox"]:not([data-mbx-attributes*="disabled"])
   [data-mbx-class="codebox-copy-icon"]
   > [data-mbx-id="icon-button"]:active {
   opacity: 0.3;

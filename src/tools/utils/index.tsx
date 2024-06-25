@@ -59,8 +59,9 @@ export const getEnabledFeatures = (
   Object.keys({ ...features, ...commonProps })
     .filter((feature, index) => FEATURES_PROPS[feature])
     .forEach((feature, index) => {
-      enabledFeatures += FEATURES_PROPS[feature](commonProps)
-        ? `${feature};`
+      const enabledFeature = FEATURES_PROPS[feature](commonProps);
+      enabledFeatures += enabledFeature.enabled
+        ? `${enabledFeature.featureKey};`
         : "";
     });
 
@@ -112,31 +113,24 @@ const buildMobrixUiStandardComponent = ({
 
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,
-    "data-mbx-animated": commonProps.animated && !commonProps.disabled,
-    ...(commonProps.animation &&
-      commonProps.animated && {
-        "data-mbx-animation": commonProps.animation,
-      }),
     ...(mbxAttributes.length > 0 && {
       "data-mbx-attributes": mbxAttributes,
     }),
     ...(enabledFeatures.length > 0 && {
       "data-mbx-features": enabledFeatures,
     }),
-    "data-mbx-a11y": commonProps.a11y,
-    "data-mbx-enabled": !commonProps.disabled,
-    "data-mbx-a11y-dark":
-      commonProps.a11y &&
-      (commonProps.a11yDark !== undefined
-        ? commonProps.a11yDark
-        : commonProps.dark),
     id: commonProps.id,
-    "aria-label": commonProps.a11y ? commonProps.a11yLabel : "",
-    tabIndex: commonProps.a11y ? "0" : "-1",
     className: commonProps.className,
     style: commonProps.style,
     onFocus: commonProps.onFocus,
     onKeyDown: commonProps.onKeyDown,
+    tabIndex: "-1",
+    ...(commonProps.a11y && {
+      tabIndex: commonProps.tabIndex ? String(commonProps.tabIndex) : "0",
+      ...(commonProps.a11yLabel && {
+        "aria-label": commonProps.a11yLabel,
+      }),
+    }),
     ...commonProps.additionalProps,
   };
 
@@ -146,7 +140,12 @@ const buildMobrixUiStandardComponent = ({
 
   if (SelectedWrapper === "input") {
     return (
-      <SelectedWrapper ref={wrapperRef} {...props} key={commonProps.key} />
+      <SelectedWrapper
+        ref={wrapperRef}
+        {...props}
+        tabIndex={Number(props.tabIndex)}
+        key={commonProps.key}
+      />
     );
   } else {
     return (

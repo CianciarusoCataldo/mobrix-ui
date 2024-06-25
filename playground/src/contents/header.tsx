@@ -93,7 +93,6 @@ const HeaderContent = () => {
             <div className="mr-2 my-auto"> {LogoIcon}</div>
             <div className="flex flex-col my-auto">
               <Link
-                a11yDark={true}
                 a11y
                 dark={dark}
                 newTab
@@ -130,7 +129,6 @@ const HeaderContent = () => {
               </Link>
             </div>
             <Dropdown
-              a11yDark={dark}
               a11y
               className="p-0"
               dark={false}

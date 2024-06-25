@@ -10,7 +10,7 @@
   display: flex;
 }
 
-[data-mbx-id="drawer"][data-mbx-enabled="true"] {
+[data-mbx-id="drawer"]:not([data-mbx-attributes*="disabled"]) {
   animation: var(--mbx-drawer-animation);
   -moz-animation: var(--mbx-drawer-animation);
   -ms-animation: var(--mbx-drawer-animation);
@@ -119,7 +119,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="drawer"][data-mbx-enabled="true"]
+  [data-mbx-id="drawer"]:not([data-mbx-attributes*="disabled"])
     [data-mbx-class="drawer-close-button"]
     svg:hover {
     fill: var(--mbx-c-draw-arr-h);

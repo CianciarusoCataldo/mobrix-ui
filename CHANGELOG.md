@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.10.0](#3100)
 - [3.9.0](#390)
 - [3.8.0](#380)
 - [3.7.0](#370)
@@ -23,6 +24,17 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.10.0
+
+- `data-mb-enabled` migrated to `data-mbx-attributes` field. If the component is disabled, the `data-mbx-attributes` contains `disabled` string
+- `data-mbx-a11y` migrated to `data-mbx-attributes` field. If `a11y = true`, the `data-mbx-attributes` contains `a11y` string
+- `data-mbx-animated` migrated to `data-mbx-attributes` field. If `animated = true`, the `data-mbx-attributes` contains `animated` string
+- `data-mbx-animation` migrated to `data-mbx-features` field. If `animated = true` and `animation` prop is set, the `data-mbx-features` contains it (with `anim-` prefix, ex. `anim-fade-in`)
+- `data-mbx-a11y-dark` removed
+- Clean-up
 
 <br>
 

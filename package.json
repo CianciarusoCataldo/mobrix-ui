@@ -1,6 +1,6 @@
 {
   "name": "mobrix-ui",
-  "version": "3.9.0",
+  "version": "3.10.0",
   "description": "Smart React components for every app, easily customizable for every purpose",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -84,6 +84,7 @@
     "build-watch": "rollup -c ./config/rollup.dev.config.js -w",
     "watch": "chokidar \"src/**/*.css\" \"src/**/*.tsx\" \"src/**/*.ts\" -c \"npm run build:dev\"",
     "check-types": "tsc",
+    "typecheck:watch": "tsc -w",
     "prestart": "npm run build:dev",
     "start": "npm-run-all --parallel \"watch\" \"start:playground\"",
     "init": "sh ./scripts/init.sh",
