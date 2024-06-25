@@ -1,3 +1,17 @@
 {
-  "a11y": ""
+  "a11y": {
+    "description": "Enable/disable accessibility features",
+    "default": "true",
+    "type": "boolean"
+  },
+
+  "a11yLabel": {
+    "description": "If `a11y` = `true`, is used as [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) accessibility parameter",
+    "type": "string"
+  },
+
+  "tabIndex": {
+    "description": "Regular [tabIndex a11y parameter](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex). If `a11y` = `true`, this parameter is passed as `tabIndex` prop to the component (if not set, its value will be `0`). If `a11y` = `false`, it is set to `-1` (so the component is not focusable through `tab` key`)",
+    "type": "number | string"
+  }
 }

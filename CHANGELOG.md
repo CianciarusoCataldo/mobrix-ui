@@ -34,6 +34,7 @@
 - `data-mbx-animated` migrated to `data-mbx-attributes` field. If `animated = true`, the `data-mbx-attributes` contains `animated` string
 - `data-mbx-animation` migrated to `data-mbx-features` field. If `animated = true` and `animation` prop is set, the `data-mbx-features` contains it (with `anim-` prefix, ex. `anim-fade-in`)
 - `data-mbx-a11y-dark` removed
+- Clean-up
 
 <br>
 

@@ -1,7 +1,7 @@
 const SUPPORTED_VIDEO_PLATFORMS = [
+  /** Youtube */
   {
     startsWith: "https://www.youtube.com/watch?v=",
-    platform: "youtube",
     extraProps: { frameBorder: "0", allowFullScreen: "" },
     allowedFeatures:
       "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
@@ -11,9 +11,9 @@ const SUPPORTED_VIDEO_PLATFORMS = [
         "https://www.youtube-nocookie.com/embed/"
       ),
   },
+  /** DailyMotion */
   {
     startsWith: "https://www.dailymotion.com/video/",
-    platform: "dailymotion",
     extraProps: { frameBorder: "0", allowFullScreen: true },
     allowedFeatures:
       "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
@@ -23,9 +23,9 @@ const SUPPORTED_VIDEO_PLATFORMS = [
         "https://www.dailymotion.com/embed/video/"
       ),
   },
+  /** Facebook Watch */
   {
     startsWith: "https://www.facebook.com/watch/?v=",
-    platform: "fb_watch",
     extraProps: { frameBorder: "0", allowFullScreen: true },
     allowedFeatures:
       "accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
