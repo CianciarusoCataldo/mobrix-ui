@@ -16,7 +16,7 @@ const dropdownTest = () => {
       wrapper.find('[data-mbx-test="dropdown_option_1"]').simulate("focus");
       wrapper.find('[data-mbx-test="dropdown_option_1"]').simulate("click");
       expect(wrapper);
-      wrapper = mount(<Dropdown />);
+      wrapper = mount(<Dropdown disabled />);
       expect(wrapper);
     });
 

@@ -17,6 +17,8 @@ const formFieldTest = () => {
 
       wrapper.find("input").simulate("change", undefined);
 
+      wrapper.find("input").simulate("keydown", { keyCode: 13, code: "Enter" });
+
       wrapper.find("input").simulate("change", "32");
 
       // @ts-ignore
