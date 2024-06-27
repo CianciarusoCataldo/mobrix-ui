@@ -12,30 +12,31 @@
 }
 
 [data-mbx-id="modal"][data-mbx-attributes*="animated"] {
-  --mbx-modal-animation-in: fadein 0.3s forwards;
-  --mbx-modal-animation-out: fadeOut 0.3s forwards;
-  animation: var(--mbx-modal-animation);
-  -moz-animation: var(--mbx-modal-animation);
-  -ms-animation: var(--mbx-modal-animation);
-  -o-animation: var(--mbx-modal-animation);
+  --mbx-md-an-in: fadein 0.3s forwards;
+  --mbx-md-an-out: fadeOut 0.3s forwards;
+  animation: var(--mbx-md-an);
+  -moz-animation: var(--mbx-md-an);
+  -ms-animation: var(--mbx-md-an);
+  -o-animation: var(--mbx-md-an);
 }
 
 [data-mbx-id="modal"][data-mbx-attributes*="animated"][data-mbx-modal-animation="ease-in"] {
-  --mbx-modal-animation: var(--mbx-modal-animation-in);
+  --mbx-md-an: var(--mbx-md-an-in);
 }
 
 [data-mbx-id="modal"][data-mbx-attributes*="animated"][data-mbx-modal-animation="ease-out"] {
-  --mbx-modal-animation: var(--mbx-modal-animation-out);
+  --mbx-md-an: var(--mbx-md-an-out);
 }
 
-[data-mbx-id="modal"] > [data-mbx-class="modal-window"] {
+[data-mbx-id="modal"] > [data-mbx-id="dismissable-card"] {
   display: flex;
   flex-direction: column;
   align-items: center;
+  --mbx-dismissablecard-x-color: var(--mbx-c-mod-x);
 }
 
 [data-mbx-id="modal"]
-  > [data-mbx-class="modal-window"]
+  > [data-mbx-id="dismissable-card"]
   [data-mbx-class="body"] {
   margin: 0;
 }
