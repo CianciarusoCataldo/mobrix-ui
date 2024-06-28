@@ -1,0 +1,23 @@
+{
+  "name": {
+    "type": "() => void",
+    "description": "Library name (it is used as repo name when `source = github`)"
+  },
+  "source": {
+    "type": "npm | github-release | github",
+    "description": "Package location (actually, NPM, Github and Github release are supported)"
+  },
+  "user": {
+    "type": "string",
+    "description": "Library owner (it is used as repo owner username when `source = github` or `source = github-release`)"
+  },
+  "branch": {
+    "type": "string",
+    "description": "Github repo default branch (used when `source = github`)"
+  },
+  "onClick": {
+    "type": "() => void",
+    "default": "() => {}",
+    "description": "Callback triggered when PackageVersion component is clicked"
+  }
+}

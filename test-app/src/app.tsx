@@ -7,7 +7,7 @@ import {
   Card,
   Slider,
   DismissableCard,
-  GithubWidget,
+  PackageVersion,
 } from "./mobrix-ui-preview";
 import AtomsPage from "./pages/atoms";
 import MoleculesPage from "./pages/molecules";
@@ -96,7 +96,11 @@ const App = () => {
           body="body"
           footer="footer"
         />
-        <GithubWidget repo="mobrix-ui" user="CianciarusoCataldo" />
+        <PackageVersion
+          name="mobrix-ui"
+          user="CianciarusoCataldo"
+          source="github-release"
+        />
         {tabs}
       </div>
     </>

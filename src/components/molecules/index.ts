@@ -12,8 +12,6 @@ export { default as ExpandableContainer } from "./ExpandableContainer";
 
 export { default as FormField } from "../molecules/FormField";
 
-export { default as GithubWidget } from "../molecules/GithubWidget";
-
 export { default as List } from "./List";
 
 export { default as Modal } from "./Modal";
