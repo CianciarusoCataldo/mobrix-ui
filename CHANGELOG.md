@@ -30,7 +30,7 @@
 
 ### 3.11.0
 
-- `GithubWidget` component
+- `PackageVersion` component
 - Clean-up
 
 <br>
