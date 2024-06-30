@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.12.0](#3120)
 - [3.11.0](#3110)
 - [3.10.0](#3100)
 - [3.9.0](#390)
@@ -25,6 +26,14 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.12.0
+
+- `PackageVersion` component improved, now supports auto-update it when any relevant prop is changed (like a MoBrix-ui Reactive component)
+- Clean-up
+- Styles re-grouped into appropriate theme folders
 
 <br>
 

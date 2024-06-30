@@ -27,6 +27,17 @@ const packageVersionTest = () => {
         />
       );
       expect(wrapper);
+
+      wrapper = mount(
+        <PackageVersion
+          shadow
+          branch=""
+          name="mobrix-ui"
+          source="github"
+          user="CianciarusoCataldo"
+        />
+      );
+      expect(wrapper);
     });
 
     test("with fetch error", () => {
