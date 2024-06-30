@@ -7,7 +7,7 @@ const labelTest = () => {
     test("Rendering test", () => {
       let wrapper = mount(<Label />);
       expect(wrapper);
-      wrapper = mount(<Label>Test label</Label>);
+      wrapper = mount(<Label shadow>Test label</Label>);
       expect(wrapper);
     });
   });

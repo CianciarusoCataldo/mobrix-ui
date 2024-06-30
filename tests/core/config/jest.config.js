@@ -4,7 +4,8 @@ module.exports = {
   preset: "ts-jest",
   moduleFileExtensions: ["js", "jsx", "json", "ts", "tsx"],
   moduleNameMapper: {
-    "\\.(css|less|sass|scss)$": "<rootDir>/tests/core/utils/__mocks__/fileMock.js",
+    "\\.(css|less|sass|scss)$":
+      "<rootDir>/tests/core/utils/__mocks__/fileMock.js",
   },
   transform: {
     ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$":
@@ -21,4 +22,9 @@ module.exports = {
   coveragePathIgnorePatterns: ["/tests/test-suites/", "/tests/core/utils/"],
   collectCoverage: true,
   verbose: true,
+  coverageThreshold: {
+    global: {
+      lines: 100,
+    },
+  },
 };

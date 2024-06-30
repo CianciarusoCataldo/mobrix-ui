@@ -12,7 +12,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  * */
 export type IconButtonProps = ComponentWithChildren<BuilderComponent> &
   ClickableComponent & {
@@ -30,6 +30,6 @@ export type IconButtonProps = ComponentWithChildren<BuilderComponent> &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type IconButtonComponent = MbxUiComponent<IconButtonProps>;

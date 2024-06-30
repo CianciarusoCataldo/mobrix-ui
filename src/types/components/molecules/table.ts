@@ -13,7 +13,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type TableProps = ClickableComponent<
   (row: number, column: number) => void
@@ -53,6 +53,6 @@ export type TableProps = ClickableComponent<
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type TableComponent = MbxUiComponent<TableProps>;

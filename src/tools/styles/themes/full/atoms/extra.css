@@ -1,0 +1,3 @@
+[data-mbx-id="package-version-label"] {
+  --mbx-label-text-color: var(--mbx-packageversion-text-color);
+}

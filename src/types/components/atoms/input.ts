@@ -13,7 +13,7 @@ import { AutoResizableComponent } from "../../global/global";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type InputProps = GenericInputComponent & AutoResizableComponent &
   ComponentWithValue<string> &
@@ -26,6 +26,6 @@ export type InputProps = GenericInputComponent & AutoResizableComponent &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type InputComponent = MbxUiComponent<InputProps>;

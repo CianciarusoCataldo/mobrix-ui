@@ -12,7 +12,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type SliderProps = ComponentWithValue<number> &
   ComponentWithCallback<number> &
@@ -25,6 +25,6 @@ export type SliderProps = ComponentWithValue<number> &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type SliderComponent = MbxUiComponent<SliderProps>;

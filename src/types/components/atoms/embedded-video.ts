@@ -7,7 +7,7 @@ import { ClickableComponent, MbxUiComponent } from "../../../types/global";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  * */
 export type EmbeddedVideoProps = {
   /** external video url */
@@ -21,6 +21,6 @@ export type EmbeddedVideoProps = {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type EmbeddedVideoComponent = MbxUiComponent<EmbeddedVideoProps>;

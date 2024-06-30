@@ -8,7 +8,7 @@ import {
   SupportedPackageSource,
 } from "../../../types";
 
-const PackageVersionComponent: MbxUiComponent<PackageVersionProps> = ({
+const PackageVersionComponent: MbxUiComponent<PackageVersionProps, string> = ({
   dark,
   name,
   source = "npm",
@@ -20,9 +20,9 @@ const PackageVersionComponent: MbxUiComponent<PackageVersionProps> = ({
 
   const REGISTRIES_CALLBACKS: Record<
     SupportedPackageSource,
-    (name: string, user: string) => void
+    (name: string, user: string, onError: (er) => void) => void
   > = {
-    github: (name, user) => {
+    github: (name, user, onError) => {
       user &&
         fetch(
           `https://raw.githubusercontent.com/${user}/${name}/${branch}/package.json`,
@@ -30,42 +30,43 @@ const PackageVersionComponent: MbxUiComponent<PackageVersionProps> = ({
           .then((res) => res.json())
           .then((resJson) => {
             setVersion(resJson.version || "");
-          });
+          })
+          .catch(onError);
     },
-    "github-release": (name, user) => {
+    "github-release": (name, user, onError) => {
       user &&
-        fetch(`https://github.com/${user}/${name}/releases/latest`).then(
-          (res) => {
+        fetch(`https://github.com/${user}/${name}/releases/latest`)
+          .then((res) => {
             setVersion(
               res.url
                 ? res.url.replace(
-                    `https://github.com/${user}/${name}/releases/tag/v`,
+                    `https://github.com/${user}/${name}/releases/tag/`,
                     "",
                   )
                 : "",
             );
-          },
-        );
+          })
+          .catch(onError);
     },
-    npm: (name, user) => {
+    npm: (name, user, onError) => {
       fetch(`https://registry.npmjs.org/${name}/latest`)
         .then((res) => res.json())
         .then((res) => {
           setVersion(res.version || "");
-        });
+        })
+        .catch(onError);
     },
   };
 
   React.useEffect(() => {
     try {
-      name && REGISTRIES_CALLBACKS[source](name, user);
+      name && REGISTRIES_CALLBACKS[source](name, user, (err) => setVersion(""));
     } catch (er) {
-      console.log(er);
       setVersion("");
     }
   }, []);
 
-  return <Label shadow={false}>v{version}</Label>;
+  return version;
 };
 
 export default PackageVersionComponent;

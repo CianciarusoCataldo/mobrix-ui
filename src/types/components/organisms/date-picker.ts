@@ -15,7 +15,7 @@ import { CalendarDate, CalendarProps } from "./calendar";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type DatePickerProps = ComponentWithCallback<CalendarDate> &
   ComponentWithValue<CalendarDate> &
@@ -32,6 +32,6 @@ export type DatePickerProps = ComponentWithCallback<CalendarDate> &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type DatePickerComponent = MbxUiComponent<DatePickerProps>;

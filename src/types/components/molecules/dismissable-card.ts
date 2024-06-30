@@ -12,7 +12,7 @@ import { CardProps } from "./card";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type DismissableCardProps = CardProps & ClosableComponent & {
   alwaysVisible?:boolean;
@@ -25,6 +25,6 @@ export type DismissableCardProps = CardProps & ClosableComponent & {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type DismissableCardComponent = MbxUiComponent<DismissableCardProps>;

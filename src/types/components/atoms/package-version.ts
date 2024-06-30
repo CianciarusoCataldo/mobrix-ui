@@ -1,4 +1,4 @@
-import { ComponentWithChildren, MbxUiComponent } from "../../global";
+import { ClickableComponent, MbxUiComponent } from "../../global";
 
 export type SupportedPackageSource = "npm" | "github" | "github-release";
 
@@ -9,9 +9,9 @@ export type SupportedPackageSource = "npm" | "github" | "github-release";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
-export type PackageVersionProps = ComponentWithChildren<any> & {
+export type PackageVersionProps = ClickableComponent & {
   /** Package location (actually, NPM, Github and Github release are supported) */
   source?: SupportedPackageSource;
 
@@ -26,12 +26,12 @@ export type PackageVersionProps = ComponentWithChildren<any> & {
 };
 
 /**
- * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Container component props
+ * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} PackageVersion component props
  *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Container
+ * @see https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/PackageVersion
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type PackageVersionComponent = MbxUiComponent<PackageVersionProps>;

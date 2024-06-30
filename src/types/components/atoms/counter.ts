@@ -12,7 +12,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type CounterProps = NumericInputComponent &
   ComponentWithValue<number> &
@@ -25,6 +25,6 @@ export type CounterProps = NumericInputComponent &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type CounterComponent = MbxUiComponent<CounterProps>;

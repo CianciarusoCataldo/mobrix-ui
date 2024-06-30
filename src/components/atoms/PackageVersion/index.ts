@@ -4,7 +4,7 @@ import { buildMbxStandardComponent } from "../../../tools";
 import component from "./component";
 
 /**
- * A button component, designed for a lot of scenarios.
+ * A tiny and smart component, to show a package version from many sources (like NPM registry or directly from Github repo). Can be easily integrated into more complex components.
  *
  * @param {() => void} name Library name (it is used as repo name when `source = github`)
  * @param {npm | github-release | github} source Package location (actually, NPM, Github and Github release are supported)
@@ -47,12 +47,17 @@ const PackageVersion: PackageVersionComponent = ({
   source,
   user,
   branch,
+  shadow = false,
   ...props
 }) =>
   buildMbxStandardComponent(props, (sharedProps) => ({
-    name: "container",
+    name: "package-version-label",
+    wrapper: "p",
     Component: component({ ...sharedProps, name, source, user, branch }),
-    commonProps: sharedProps,
+    commonProps: {
+      ...sharedProps,
+      shadow,
+    },
   }));
 
 export default PackageVersion;
