@@ -31,7 +31,7 @@
 
 ### 3.12.0
 
-- `PackageVersion` component improved, now supports auto-update it when any relevant prop is changed (like a MoBrix-ui Reactive component)
+- `PackageVersion` component improved, now it auto-updates itself when any relevant prop is changed (like a MoBrix-ui Reactive component)
 - Clean-up
 - Styles re-grouped into appropriate theme folders
 
