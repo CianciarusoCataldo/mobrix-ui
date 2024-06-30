@@ -88,6 +88,18 @@
     var(--mbx-link-color-hover, var(--mbx-c-link-txt-d))
   );
 
+  /** PackageVersion */
+
+  --mbx-c-pkgv-txt-l: var(
+    --mbx-packageversion-text-color-light,
+    var(--mbx-packageversion-text-color)
+  );
+
+  --mbx-c-pkgv-txt-d: var(
+    --mbx-packageversion-text-color-dark,
+    var(--mbx-packageversion-text-color)
+  );
+
   /* Radio Button */
 
   --mbx-c-rad-bg-h-l: var(

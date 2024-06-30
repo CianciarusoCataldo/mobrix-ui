@@ -7,7 +7,7 @@ import { MbxUiComponent } from "../../global";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  * */
 export type ImageProps = {
   /** Image {@link https://www.w3schools.com/tags/att_img_src.asp src attribute} */
@@ -30,6 +30,6 @@ export type ImageProps = {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type ImageComponent = MbxUiComponent<ImageProps>;

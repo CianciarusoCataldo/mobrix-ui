@@ -7,6 +7,8 @@ import {
   Card,
   Slider,
   DismissableCard,
+  PackageVersion,
+  Label,
 } from "./mobrix-ui-preview";
 import AtomsPage from "./pages/atoms";
 import MoleculesPage from "./pages/molecules";
@@ -94,6 +96,12 @@ const App = () => {
           header="header"
           body="body"
           footer="footer"
+        />
+        <Label>Test</Label>
+        <PackageVersion
+          name="mobrix-ui"
+          user="CianciarusoCataldo"
+          source="github-release"
         />
         {tabs}
       </div>

@@ -12,7 +12,7 @@ import { FormFieldProps } from "../molecules/form-field";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type FormProps = ComponentWithChildren<JSX.Element> & {
   /** Form title */
@@ -47,6 +47,6 @@ export type FormProps = ComponentWithChildren<JSX.Element> & {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type FormComponent = MbxUiComponent<FormProps>;

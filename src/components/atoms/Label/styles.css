@@ -1,9 +1,10 @@
-[data-mbx-id="label"] {
+[data-mbx-id*="label"] {
   color: var(--mbx-c-lab-txt);
   background: transparent;
+  width: fit-content;
 }
 
-[data-mbx-id="label"][data-mbx-attributes*="a11y"]:focus-visible {
+[data-mbx-id*="label"][data-mbx-attributes*="a11y"]:focus-visible {
   color: var(--mbx-c-fc);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;

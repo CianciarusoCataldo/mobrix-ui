@@ -85,7 +85,7 @@ export type CommonProps = MbxAttributes & {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export interface ComponentWithValue<T = any> {
   /** Actual component value */
@@ -99,7 +99,7 @@ export interface ComponentWithValue<T = any> {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export interface ComponentWithIcon<T = JSX.Element> {
   /** Icon showed inside the component */
@@ -113,7 +113,7 @@ export interface ComponentWithIcon<T = JSX.Element> {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export interface GenericInputComponent {
   /** if true, the input content won't be editable */
@@ -134,7 +134,7 @@ export interface AutoResizableComponent {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type NumericInputComponent = GenericInputComponent & {
   min?: number;
@@ -148,7 +148,7 @@ export type NumericInputComponent = GenericInputComponent & {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  *
  */
 export interface ComponentWithCallback<T = string> {
@@ -163,7 +163,7 @@ export interface ComponentWithCallback<T = string> {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  *
  */
 export interface ClickableComponent<T = () => void> {
@@ -178,7 +178,7 @@ export interface ClickableComponent<T = () => void> {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export interface ComponentWithChildren<
   T = JSX.Element | JSX.Element[] | undefined
@@ -194,7 +194,7 @@ export interface ComponentWithChildren<
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export interface ClosableComponent {
   /** Callback called when component is closed */
@@ -208,7 +208,7 @@ export interface ClosableComponent {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type BuilderComponent = JSX.Element | string;
 
@@ -239,7 +239,7 @@ export interface Features {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
   /** Component name, required */
@@ -264,7 +264,7 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type MbxUiComponent<T = any, K = JSX.Element> = (
   props: MbxUiProps<T>
@@ -277,7 +277,7 @@ export type MbxUiComponent<T = any, K = JSX.Element> = (
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type MbxUiProps<T = any> = T & CommonProps;
 
@@ -288,7 +288,7 @@ export type MbxUiProps<T = any> = T & CommonProps;
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type MbxUiReactiveComponentProps<T = any, K = any> = {
   value: T;
@@ -302,7 +302,7 @@ export type MbxUiReactiveComponentProps<T = any, K = any> = {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type MbxUiReactiveComponentBuilder<T = any, K = any> = MbxUiComponent<
   MbxUiReactiveComponentProps<T, K>,
@@ -316,7 +316,7 @@ export type MbxUiReactiveComponentBuilder<T = any, K = any> = MbxUiComponent<
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type MbxUiReactiveComponent<
   T = any,

@@ -29,9 +29,6 @@ const modalComponent: MbxUiComponent<ModalProps, BuilderComponent> = ({
       disabled={disabled}
       alwaysVisible
       noTopDivider
-      additionalProps={{
-        "data-mbx-class": "modal-window",
-      }}
       className={className}
       dark={dark}
       hide={false}

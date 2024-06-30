@@ -13,7 +13,7 @@ import { ContainerProps } from "./container";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type ExpandableContainerProps = ContainerProps &
   ComponentWithCallback<boolean> & {
@@ -29,7 +29,7 @@ export type ExpandableContainerProps = ContainerProps &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type ExpandableContainerComponent =
   MbxUiComponent<ExpandableContainerProps>;

@@ -12,5 +12,11 @@ global.navigator.clipboard = {
   removeEventListener: jest.fn(),
 };
 
+global.fetch = jest.fn(() =>
+  Promise.resolve({
+    json: () => Promise.resolve({ rates: { CAD: 1.42 } }),
+  })
+);
+
 /* eslint-disable */
 configure({ adapter: new Adapter() });

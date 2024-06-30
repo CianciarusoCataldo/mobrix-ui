@@ -39,12 +39,15 @@ import { buildMbxStandardComponent } from "../../../tools";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const Label: LabelComponent = ({ children, ...commonProps }) =>
+const Label: LabelComponent = ({ children, shadow = false, ...commonProps }) =>
   buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "label",
     Component: children,
     wrapper: "p",
-    commonProps: { ...sharedProps, shadow: false },
+    commonProps: {
+      ...sharedProps,
+      shadow,
+    },
   }));
 
 export default Label;

@@ -13,7 +13,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type FormFieldProps<T = any> = ComponentWithValue &
   ComponentWithCallback<T> & {
@@ -73,6 +73,6 @@ export type FormFieldProps<T = any> = ComponentWithValue &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type FormFieldComponent = MbxUiComponent<FormFieldProps>;

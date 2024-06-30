@@ -20,6 +20,8 @@ export { default as Label } from "./Label";
 
 export { default as Link } from "./Link";
 
+export { default as PackageVersion } from "./PackageVersion";
+
 export { default as RadioButton } from "./RadioButton";
 
 export { default as Rater } from "./Rater";

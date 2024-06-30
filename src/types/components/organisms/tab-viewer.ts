@@ -11,7 +11,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type Tab = {
   /** Tab label */
@@ -30,7 +30,7 @@ export type Tab = {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type TabViewerProps = ClosableComponent & {
   /** If `true`, every tab is dismissable (except the ones with `dismissable` property explicitly set to `false`) */
@@ -74,6 +74,6 @@ export type TabViewerProps = ClosableComponent & {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type TabViewerComponent = MbxUiComponent<TabViewerProps>;

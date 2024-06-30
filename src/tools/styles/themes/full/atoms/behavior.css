@@ -26,6 +26,10 @@
 
   --mbx-c-link-txt-h: var(--mbx-c-link-txt-h-l);
 
+  /** PackageVersion */
+
+  --mbx-c-pkgv-txt: var(--mbx-c-pkgv-txt-l);
+
   /* Radio Button */
 
   --mbx-c-rad-bg-h: var(--mbx-c-rad-bg-h-l);
@@ -61,6 +65,10 @@
   /** Link */
 
   --mbx-c-link-txt-h: var(--mbx-c-link-txt-h-d);
+
+  /** PackageVersion */
+
+  --mbx-c-pkgv-txt: var(--mbx-c-pkgv-txt-d);
 
   /* Radio Button */
 

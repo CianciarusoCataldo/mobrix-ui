@@ -11,7 +11,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type ListProps = ClickableComponent<(index: number) => void> & {
   /** List elements (if unstyled == `false`, every element will include a dot at its start) */
@@ -25,6 +25,6 @@ export type ListProps = ClickableComponent<(index: number) => void> & {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type ListComponent = MbxUiComponent<ListProps>;

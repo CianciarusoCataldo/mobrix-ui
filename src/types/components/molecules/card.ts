@@ -11,7 +11,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type CardProps = ComponentWithChildren<BuilderComponent> & {
   /** Card header content */
@@ -58,6 +58,6 @@ export type CardProps = ComponentWithChildren<BuilderComponent> & {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type CardComponent = MbxUiComponent<CardProps>;

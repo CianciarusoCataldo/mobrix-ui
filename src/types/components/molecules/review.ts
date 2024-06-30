@@ -9,7 +9,7 @@ import { RaterProps } from "./rater";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type ReviewLogo =
   | "default"
@@ -27,7 +27,7 @@ export type ReviewLogo =
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type ReviewProps = ComponentWithIcon & {
   /** username showed above the review description, at the right of the icon */
@@ -59,6 +59,6 @@ export type ReviewProps = ComponentWithIcon & {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type ReviewComponent = MbxUiComponent<ReviewProps>;

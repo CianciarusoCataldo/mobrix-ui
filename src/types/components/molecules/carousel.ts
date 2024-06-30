@@ -12,7 +12,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type CarouselProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {
@@ -33,6 +33,6 @@ export type CarouselProps = ComponentWithValue<number> &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type CarouselComponent = MbxUiComponent<CarouselProps>;

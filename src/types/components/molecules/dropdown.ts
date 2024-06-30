@@ -13,7 +13,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type DropdownProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {

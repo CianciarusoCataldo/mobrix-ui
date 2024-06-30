@@ -13,7 +13,7 @@ import { RadioButtonProps } from "../atoms";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type RadioElement = {
   /** Radio button text */
@@ -36,7 +36,7 @@ export type RadioElement = {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type RadioButtonGroupProps = ComponentWithCallback<number> &
   ComponentWithValue<number> & {
@@ -69,7 +69,7 @@ export type RadioButtonGroupProps = ComponentWithCallback<number> &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type RadioButtonGroupComponent =
   MbxUiComponent<RadioButtonGroupProps>;

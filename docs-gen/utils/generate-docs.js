@@ -108,9 +108,9 @@ try {
         const externalComponent =
           componentCssVars[cssVar].defaultExternal.component;
         const propName = componentCssVars[cssVar].defaultExternal.prop;
-        defaultValue = `[${propName}](https://cianciarusocataldo.github.io/mobrix-ui/docs/${
+        defaultValue = `[${propName}](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/${
           componentCssVars[cssVar].defaultExternal.type
-        }/${externalComponent}/css-vars.md#${propName.replace(
+        }/${externalComponent}/css-vars/#${propName.replace(
           "--mbx",
           "-mbx"
         )})`;

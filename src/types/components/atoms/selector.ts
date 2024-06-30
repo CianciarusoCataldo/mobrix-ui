@@ -11,7 +11,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type SelectorProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {
@@ -28,6 +28,6 @@ export type SelectorProps = ComponentWithValue<number> &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type SelectorComponent = MbxUiComponent<SelectorProps>;

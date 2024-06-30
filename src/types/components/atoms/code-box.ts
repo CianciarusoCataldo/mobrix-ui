@@ -7,7 +7,7 @@ import { ComponentWithValue, MbxUiComponent } from "../../../types/global";
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type SupportedEnvironment =
   | "javascript"
@@ -22,7 +22,7 @@ export type SupportedEnvironment =
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export interface CodeBlock {
   /** Highlight color */
@@ -39,7 +39,7 @@ export interface CodeBlock {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type CodeBoxProps = ComponentWithValue<string> & {
   /** Enable/disable text highlight, based on selected environment */
@@ -59,6 +59,6 @@ export type CodeBoxProps = ComponentWithValue<string> & {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type CodeBoxComponent = MbxUiComponent<CodeBoxProps>;

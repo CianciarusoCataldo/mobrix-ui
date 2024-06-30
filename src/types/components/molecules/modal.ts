@@ -12,7 +12,7 @@ import {
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type ModalProps = ComponentWithChildren<BuilderComponent> &
   ClosableComponent & {
@@ -27,6 +27,6 @@ export type ModalProps = ComponentWithChildren<BuilderComponent> &
  *
  * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
  *
- * @copyright 2023 Cataldo Cianciaruso
+ * @copyright 2024 Cataldo Cianciaruso
  */
 export type ModalComponent = MbxUiComponent<ModalProps>;
