@@ -10,7 +10,6 @@ import component from "./component";
  * @param {npm | github-release | github} source Package location (actually, NPM, Github and Github release are supported)
  * @param {string} user Library owner (it is used as repo owner username when `source = github` or `source = github-release`)
  * @param {string} branch Github repo default branch (used when `source = github`)
- * @param {() => void} onClick Callback triggered when PackageVersion component is clicked
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode

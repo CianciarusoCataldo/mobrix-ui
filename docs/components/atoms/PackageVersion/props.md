@@ -18,7 +18,6 @@
 | <div style='text-align:center;margin:auto;'>[source](#source)</div> | <div style='text-align:center;margin:auto;'>npm &#124; github-release &#124; github</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[user](#user)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[branch](#branch)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[onClick](#onclick)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
 <br>
 
@@ -83,20 +82,5 @@ Library owner (it is used as repo owner username when `source = github` or `sour
 <br>
 
 Github repo default branch (used when `source = github`)
-
-<br>
-
-<br>
-
-### onClick
-
-<!-- prettier-ignore -->
-| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
-| ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
-
-<br>
-
-Callback triggered when PackageVersion component is clicked
 
 <br>

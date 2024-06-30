@@ -14,10 +14,5 @@
   "branch": {
     "type": "string",
     "description": "Github repo default branch (used when `source = github`)"
-  },
-  "onClick": {
-    "type": "() => void",
-    "default": "() => {}",
-    "description": "Callback triggered when PackageVersion component is clicked"
   }
 }

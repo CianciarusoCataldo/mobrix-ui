@@ -1,10 +1,5 @@
 {
   "since": "3.11.0",
   "description": "A tiny and smart component, to show a package version from many sources (like NPM registry or directly from Github repo). Can be easily integrated into more complex components.",
-  "examples": [],
-  "extend": {
-    "group": {
-      "ClickableComponent": {}
-    }
-  }
+  "examples": []
 }
