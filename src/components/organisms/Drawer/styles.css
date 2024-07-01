@@ -30,7 +30,8 @@
 [data-mbx-id="drawer"] > [data-mbx-class="drawer-close-button"] {
   border: 0;
   background: transparent;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location^="bottom"]

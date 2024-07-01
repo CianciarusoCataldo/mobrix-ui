@@ -22,7 +22,7 @@ const PackageVersionComponent: MbxUiComponent<PackageVersionProps, string> = ({
           user,
           branch,
           (version) => setVersion(version),
-          (err) => setVersion("")
+          (err) => setVersion(""),
         );
     } catch (er) {
       setVersion("");

@@ -34,6 +34,7 @@
 - `PackageVersion` component improved, now it auto-updates itself when any relevant prop is changed (like a MoBrix-ui Reactive component)
 - Clean-up
 - Styles re-grouped into appropriate theme folders
+- `Drawer` height fix
 
 <br>
 
