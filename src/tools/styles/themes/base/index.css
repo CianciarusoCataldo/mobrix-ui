@@ -1,6 +1,3 @@
 @import url("atoms/index.css");
-@import url("molecules/behavior.css");
-@import url("molecules/background-manager.css");
-@import url("molecules/extra.css");
-@import url("organisms/behavior.css");
-@import url("organisms/background-manager.css");
+@import url("molecules/index.css");
+@import url("organisms/index.css");
