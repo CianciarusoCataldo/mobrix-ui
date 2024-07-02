@@ -230,6 +230,9 @@ export type Wrappers =
 export interface Features {
   /** If `true`, reduce component opacity when component is hovered (and `hover` = `true`) */
   opacityOnHover?: boolean;
+
+  /** If `true`, reduce component opacity when component is clicked */
+  opacityOnActive?: boolean;
 }
 
 /**

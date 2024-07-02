@@ -22,6 +22,10 @@ export const FEATURES_PROPS: Record<
     enabled: !props.disabled && props.hover,
     featureKey: "opHov",
   }),
+  opacityOnActive: (props) => ({
+    enabled: !props.disabled,
+    featureKey: "opAct",
+  }),
   animation: (props) => ({
     enabled: props.animated && props.animation,
     featureKey: `anim-${props.animation}`,

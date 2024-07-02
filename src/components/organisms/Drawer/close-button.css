@@ -1,0 +1,97 @@
+[data-mbx-id="drawer"] > [data-mbx-class="drawer-close-button"] {
+  border: 0;
+  background: transparent;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location^="top"]
+  > [data-mbx-class="drawer-close-button"],
+[data-mbx-id="drawer"][data-mbx-drawer-location^="bottom"]
+  > [data-mbx-class="drawer-close-button"] {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location^="bottom"]
+  > [data-mbx-class="drawer-close-button"] {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding-top: 0.1rem;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location^="top"]
+  > [data-mbx-class="drawer-close-button"] {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding-bottom: 0.1rem;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location="right"]
+  > [data-mbx-class="drawer-close-button"],
+[data-mbx-id="drawer"][data-mbx-drawer-location="left"]
+  > [data-mbx-class="drawer-close-button"] {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location="right"]
+  > [data-mbx-class="drawer-close-button"] {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  padding-left: 0.1rem;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location="left"]
+  > [data-mbx-class="drawer-close-button"] {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding-right: 0.1rem;
+}
+
+[data-mbx-id="drawer"] > [data-mbx-class="drawer-close-button"]:focus-visible {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+}
+
+[data-mbx-id="drawer"] > [data-mbx-class="drawer-close-button"] svg {
+  fill: var(--mbx-c-draw-arr);
+  margin: auto;
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location^="top"]
+  > [data-mbx-class="drawer-close-button"]
+  svg {
+  transform: rotate(90deg);
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location^="bottom"]
+  > [data-mbx-class="drawer-close-button"]
+  svg {
+  transform: rotate(-90deg);
+}
+
+[data-mbx-id="drawer"][data-mbx-drawer-location="right"]
+  > [data-mbx-class="drawer-close-button"]
+  svg {
+  transform: rotate(180deg);
+}
+
+[data-mbx-id="drawer"]
+  > [data-mbx-class="drawer-close-button"]:focus-visible
+  svg {
+  fill: var(--mbx-c-draw-arr-h);
+}
+
+@media (hover) {
+  [data-mbx-id="drawer"]:not([data-mbx-attributes*="disabled"])
+    [data-mbx-class="drawer-close-button"]
+    svg:hover {
+    fill: var(--mbx-c-draw-arr-h);
+  }
+}

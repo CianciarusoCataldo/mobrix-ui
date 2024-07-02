@@ -49,3 +49,8 @@
     opacity: 0.7;
   }
 }
+
+[data-mbx-id][data-mbx-features*="opAct"]:active,
+[data-mbx-id] [data-mbx-features*="opAct"]:active {
+  opacity: 0.3;
+}
