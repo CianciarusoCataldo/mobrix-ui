@@ -54,6 +54,7 @@ const IconButton: IconButtonComponent = ({
     wrapper: "button",
     features: {
       opacityOnHover: true,
+      opacityOnActive: true,
     },
     Component: children,
     commonProps: {

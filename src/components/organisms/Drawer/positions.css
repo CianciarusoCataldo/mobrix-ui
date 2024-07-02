@@ -16,7 +16,7 @@
 
 [data-mbx-id="drawer"][data-mbx-drawer-location^="top"],
 [data-mbx-id="drawer"][data-mbx-drawer-location^="bottom"] {
-  height: 95%;
+  max-height: 95%;
 }
 
 [data-mbx-id="drawer"][data-mbx-drawer-location="top"],

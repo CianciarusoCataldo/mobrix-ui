@@ -45,7 +45,7 @@ const DrawerPage = () => {
                   <List
                     dark={props.dark}
                     className="p-4"
-                    elements={new Array(6)
+                    elements={new Array(10)
                       .fill("Element ")
                       .map((el, index) => el + index)}
                   />

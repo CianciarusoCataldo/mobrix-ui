@@ -46,7 +46,7 @@ const ListPage = () => (
             }
 
             if (props[clickableElementsLabel]) {
-              newProps["onChange"] = (index: number) => console.log(index);
+              newProps["onClick"] = (index: number) => console.log(index);
             }
             return newProps;
           }}

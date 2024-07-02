@@ -13,7 +13,8 @@ const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
       key={`element_${index}`}
       data-mbx-list-element={onClick ? "clickable" : ""}
       {...(!disabled &&
-        hover && {
+        hover &&
+        onClick && {
           "data-mbx-features": "opHov",
         })}
       {...(!disabled &&

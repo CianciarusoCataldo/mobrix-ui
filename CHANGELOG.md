@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.12.0](#3120)
 - [3.11.0](#3110)
 - [3.10.0](#3100)
 - [3.9.0](#390)
@@ -25,6 +26,17 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.12.0
+
+- `PackageVersion` component improved, now it auto-updates itself when any relevant prop is changed (like a MoBrix-ui Reactive component)
+- Clean-up
+- Styles re-grouped into appropriate theme folders
+- `Drawer` component height fix and close button fix
+- `List` component hover fix, nopw disabled when `onClick` is not set
+- New `opacityOnActive` feature, to reduce opacity when a component is clicked (lower than `opacityOnHover` feature)
 
 <br>
 
