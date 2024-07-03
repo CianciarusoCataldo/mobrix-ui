@@ -116,7 +116,8 @@ const HomePage = () => {
                     dispatch(goTo(PATHS[componentsList[index]]));
                     dispatch(closeDrawer());
                   }}
-                ></List></>
+                ></List>
+              </>
             }
           />
         </div>

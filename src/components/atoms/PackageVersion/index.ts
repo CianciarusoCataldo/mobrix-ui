@@ -53,6 +53,10 @@ const PackageVersion: PackageVersionComponent = ({
     name: "package-version-label",
     wrapper: "p",
     Component: component({ ...sharedProps, name, source, user, branch }),
+    features: {
+      textcolorOnFocus: true,
+      noShadowOnFocus: true,
+    },
     commonProps: {
       ...sharedProps,
       shadow,

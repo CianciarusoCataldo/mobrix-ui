@@ -1,6 +1,5 @@
 import { CommonProps } from "../../types";
 import { Features } from "../../types/global/global";
-
 export const DEFAULT_COMMON_PROPS: CommonProps = {
   background: true,
   hover: true,
@@ -13,7 +12,6 @@ export const DEFAULT_COMMON_PROPS: CommonProps = {
   unstyled: false,
   busy: false,
 };
-
 export const FEATURES_PROPS: Record<
   keyof Features & CommonProps,
   (props: CommonProps) => { enabled: boolean; featureKey: string }
@@ -22,9 +20,21 @@ export const FEATURES_PROPS: Record<
     enabled: !props.disabled && props.hover,
     featureKey: "opHov",
   }),
+  opacityOnActive: (props) => ({
+    enabled: !props.disabled,
+    featureKey: "opAct",
+  }),
   animation: (props) => ({
     enabled: props.animated && props.animation,
     featureKey: `anim-${props.animation}`,
+  }),
+  textcolorOnFocus: (props) => ({
+    enabled: !props.disabled && props.a11y,
+    featureKey: "colFc",
+  }),
+  noShadowOnFocus: (props) => ({
+    enabled: true,
+    featureKey: "noShFc",
   }),
 };
 

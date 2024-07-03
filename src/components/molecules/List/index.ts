@@ -46,7 +46,7 @@ const List: ListComponent = (props) =>
   buildMbxStandardComponent(props, (sharedProps) => ({
     name: "list",
     Component: listComponent({ ...props, ...sharedProps }),
-    commonProps: { ...sharedProps, shadow: false },
+    commonProps: { ...sharedProps, shadow: false, a11y: false },
   }));
 
 export default List;

@@ -60,7 +60,8 @@
 }
 
 [data-mbx-id][data-mbx-attributes*="animated"][data-mbx-features*="anim-fade-out"],
-[data-mbx-id][data-mbx-attributes*="animated"] [data-mbx-features*="anim-fade-out"] {
+[data-mbx-id][data-mbx-attributes*="animated"]
+  [data-mbx-features*="anim-fade-out"] {
   animation: fadeOut 0.3s;
   -webkit-animation: fadeOut 0.3s;
   -moz-animation: fadeOut 0.3s;
@@ -73,7 +74,8 @@
 }
 
 [data-mbx-id][data-mbx-attributes*="animated"][data-mbx-features*="anim-shake"],
-[data-mbx-id][data-mbx-attributes*="animated"] [data-mbx-features*="anim-shake"] {
+[data-mbx-id][data-mbx-attributes*="animated"]
+  [data-mbx-features*="anim-shake"] {
   animation: shake 0.5s;
   -webkit-animation: shake 0.5s;
   -moz-animation: shake 0.5s;
@@ -108,4 +110,22 @@
   [data-mbx-id] [data-mbx-features*="opHov"]:hover {
     opacity: 0.7;
   }
+}
+
+[data-mbx-id][data-mbx-features*="opAct"]:active,
+[data-mbx-id] [data-mbx-features*="opAct"]:active {
+  opacity: 0.3;
+}
+
+[data-mbx-id][data-mbx-features*="colFc"]:focus-visible,
+[data-mbx-id] [data-mbx-features*="colFc"]:focus-visible {
+  color: var(--mbx-c-fc);
+}
+
+[data-mbx-id][data-mbx-features*="noShFc"]:focus-visible,
+[data-mbx-id] [data-mbx-features*="noShFc"]:focus-visible {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
 }

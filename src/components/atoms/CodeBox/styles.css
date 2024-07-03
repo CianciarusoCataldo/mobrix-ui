@@ -5,9 +5,6 @@
   flex-direction: column;
   justify-content: center;
   background: var(--mbx-c-cdb-bg);
-}
-
-[data-mbx-id="codebox"] {
   color: var(--mbx-c-cdb-txt);
 }
 
