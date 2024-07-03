@@ -38,9 +38,7 @@
 }
 
 [data-mbx-id="slider"][data-mbx-attributes*="shadow"]::-webkit-slider-thumb {
-  box-shadow:
-    0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media (hover) {
@@ -72,4 +70,12 @@
     -webkit-appearance: none;
     opacity: 0.8;
   }
+}
+
+[data-mbx-id="slider"][data-mbx-attributes*="hover"]::-moz-range-thumb:active {
+  opacity: 0.6;
+}
+
+[data-mbx-id="slider"][data-mbx-attributes*="hover"]::-webkit-slider-thumb:active {
+  opacity: 0.6;
 }
