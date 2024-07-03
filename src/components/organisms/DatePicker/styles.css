@@ -18,15 +18,6 @@
   flex-direction: row;
 }
 
-[data-mbx-id="date-picker"]
-  [data-mbx-class="date-picker-element"]:focus-visible {
-  color: var(--mbx-c-fc);
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
-}
-
 [data-mbx-id="date-picker"] [data-mbx-class="date-picker-element"] {
   vertical-align: middle;
   display: inline-block;

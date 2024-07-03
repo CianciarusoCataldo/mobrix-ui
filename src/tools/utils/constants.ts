@@ -30,6 +30,14 @@ export const FEATURES_PROPS: Record<
     enabled: props.animated && props.animation,
     featureKey: `anim-${props.animation}`,
   }),
+  textcolorOnFocus: (props) => ({
+    enabled: !props.disabled && props.a11y,
+    featureKey: "colFc",
+  }),
+  noShadowOnFocus: (props) => ({
+    enabled: true,
+    featureKey: "noShFc",
+  }),
 };
 
 export const MBX_ATTRIBUTES: Partial<

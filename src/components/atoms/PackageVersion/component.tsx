@@ -14,15 +14,13 @@ const PackageVersionComponent: MbxUiComponent<PackageVersionProps, string> = ({
 
   React.useEffect(() => {
     try {
-      console.log("effect");
-
       name &&
         REGISTRIES_HANDLERS[source](
           name,
           user,
           branch,
           (version) => setVersion(version),
-          (err) => setVersion(""),
+          (err) => setVersion("")
         );
     } catch (er) {
       setVersion("");

@@ -9,8 +9,6 @@ export const parseCode = (code: string, environment: SupportedEnvironment) => {
     } else {
       codeBlock.split(/(\'.+?\')/g).forEach((codeInternalBlock, secIndex) => {
         if (secIndex % 2 !== 0) {
-          console.log(codeInternalBlock, secIndex);
-
           codeParts.push({
             code: codeInternalBlock,
             color: CODE_LANGUAGES.common.STRING,

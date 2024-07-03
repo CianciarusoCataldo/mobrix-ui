@@ -44,6 +44,10 @@ const Label: LabelComponent = ({ children, shadow = false, ...commonProps }) =>
     name: "label",
     Component: children,
     wrapper: "p",
+    features: {
+      textcolorOnFocus: true,
+      noShadowOnFocus: true,
+    },
     commonProps: {
       ...sharedProps,
       shadow,

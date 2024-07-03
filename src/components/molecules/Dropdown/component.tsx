@@ -174,6 +174,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
             }}
             key={`item_${index}`}
             additionalProps={{
+              "data-mbx-features": "noShFc",
               "data-mbx-class": "regular",
               "data-mbx-first": index === 0,
               "data-mbx-last": index === elements.length - 1,

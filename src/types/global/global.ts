@@ -233,6 +233,11 @@ export interface Features {
 
   /** If `true`, reduce component opacity when component is clicked */
   opacityOnActive?: boolean;
+
+  /** If `true`, when focused, the component text-color will change instead of the box shadow (that will be transparent) */
+  textcolorOnFocus?: boolean;
+
+  noShadowOnFocus?: boolean;
 }
 
 /**

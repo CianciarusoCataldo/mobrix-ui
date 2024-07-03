@@ -9,7 +9,7 @@ export const REGISTRIES_HANDLERS: Record<
     user: string,
     branch: string,
     onSuccess: (version: string) => void,
-    onError: (er: any) => void,
+    onError: (er: any) => void
   ) => void
 > = {
   github: (name, user, branch, onSuccess, onError) => {
@@ -17,7 +17,7 @@ export const REGISTRIES_HANDLERS: Record<
       fetch(
         `https://raw.githubusercontent.com/${user}/${name}/${
           branch.length > 0 ? branch : DEFAULT_BRANCH
-        }/package.json`,
+        }/package.json`
       )
         .then((res) => res.json())
         .then((resJson) => {
@@ -30,12 +30,15 @@ export const REGISTRIES_HANDLERS: Record<
       fetch(`https://github.com/${user}/${name}/releases/latest`)
         .then((res) => {
           onSuccess(
-            res.url
+            res.url &&
+              res.url.startsWith(
+                `https://github.com/${user}/${name}/releases/tag/`
+              )
               ? res.url.replace(
                   `https://github.com/${user}/${name}/releases/tag/`,
-                  "",
+                  ""
                 )
-              : "",
+              : ""
           );
         })
         .catch(onError);

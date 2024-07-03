@@ -54,3 +54,16 @@
 [data-mbx-id] [data-mbx-features*="opAct"]:active {
   opacity: 0.3;
 }
+
+[data-mbx-id][data-mbx-features*="colFc"]:focus-visible,
+[data-mbx-id] [data-mbx-features*="colFc"]:focus-visible {
+  color: var(--mbx-c-fc);
+}
+
+[data-mbx-id][data-mbx-features*="noShFc"]:focus-visible,
+[data-mbx-id] [data-mbx-features*="noShFc"]:focus-visible {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}

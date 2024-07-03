@@ -48,6 +48,8 @@ const Link: LinkComponent = ({ to, children, newTab, ...commonProps }) =>
       name: "link",
       features: {
         opacityOnHover: true,
+        textcolorOnFocus: true,
+        noShadowOnFocus: true,
       },
       Component: children,
       commonProps: {
@@ -61,7 +63,7 @@ const Link: LinkComponent = ({ to, children, newTab, ...commonProps }) =>
         },
       },
       wrapper: sharedProps.disabled ? "span" : "a",
-    }),
+    })
   );
 
 export default Link;

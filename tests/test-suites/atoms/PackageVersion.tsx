@@ -4,26 +4,26 @@ import { PackageVersion } from "../../../src";
 
 const packageVersionTest = () => {
   describe("PackageVersion", () => {
+    const userName = "CianciarusoCataldo";
+    const branch = "main";
+    const repo = "mobrix-ui";
+
     test("rendering test", () => {
       let wrapper = mount(<PackageVersion />);
       expect(wrapper);
-      wrapper = mount(<PackageVersion name="mobrix-ui" />);
+      wrapper = mount(<PackageVersion name={repo} />);
       expect(wrapper);
       wrapper = mount(
-        <PackageVersion
-          name="mobrix-ui"
-          source="github"
-          user="CianciarusoCataldo"
-        />
+        <PackageVersion name={repo} user={userName} source="github" />
       );
       expect(wrapper);
 
       wrapper = mount(
         <PackageVersion
           shadow
-          name="mobrix-ui"
+          name={repo}
+          user={userName}
           source="github-release"
-          user="CianciarusoCataldo"
         />
       );
       expect(wrapper);
@@ -32,9 +32,9 @@ const packageVersionTest = () => {
         <PackageVersion
           shadow
           branch=""
-          name="mobrix-ui"
           source="github"
-          user="CianciarusoCataldo"
+          name={repo}
+          user={userName}
         />
       );
       expect(wrapper);
@@ -44,7 +44,7 @@ const packageVersionTest = () => {
       (fetch as jest.Mock<any, any>).mockImplementationOnce(() =>
         Promise.reject("API is down")
       );
-      const wrapper = mount(<PackageVersion name="mobrix-ui" />);
+      const wrapper = mount(<PackageVersion name={repo} />);
       expect(wrapper);
     });
 
@@ -52,12 +52,27 @@ const packageVersionTest = () => {
       (fetch as jest.Mock<any, any>).mockImplementationOnce(() =>
         Promise.resolve({ url: "redirect-url" })
       );
-      const wrapper = mount(
+      let wrapper = mount(
         <PackageVersion
           source="github-release"
-          name="mobrix-ui"
-          user="CianciarusoCataldo"
-          branch="main"
+          name={repo}
+          user={userName}
+          branch={branch}
+        />
+      );
+      expect(wrapper);
+
+      (fetch as jest.Mock<any, any>).mockImplementationOnce(() =>
+        Promise.resolve({
+          url: `https://github.com/${userName}/${repo}/releases/tag/`,
+        })
+      );
+      wrapper = mount(
+        <PackageVersion
+          source="github-release"
+          name={repo}
+          user={userName}
+          branch={branch}
         />
       );
       expect(wrapper);
@@ -66,7 +81,7 @@ const packageVersionTest = () => {
     test("with compiler error", () => {
       const wrapper = mount(
         <PackageVersion
-          name="mobrix-ui"
+          name={repo}
           // @ts-ignore
           source="invalid-source"
         />

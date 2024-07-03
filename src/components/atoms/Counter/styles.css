@@ -1,7 +1,4 @@
 [data-mbx-id="counterbox"] {
   background-color: var(--mbx-c-cnt-bg);
-  border-radius: 5px;
-  padding: 0.5rem;
   color: var(--mbx-c-cnt-txt);
-  border-color: transparent;
 }

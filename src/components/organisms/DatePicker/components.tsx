@@ -69,6 +69,7 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
         "data-mbx-class": "date-picker-element",
       }}
       dark={commonProps.dark}
+      disabled={disabled}
     >
       {children}
     </Label>

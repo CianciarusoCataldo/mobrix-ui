@@ -3,11 +3,3 @@
   background: transparent;
   width: fit-content;
 }
-
-[data-mbx-id*="label"][data-mbx-attributes*="a11y"]:focus-visible {
-  color: var(--mbx-c-fc);
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
-}
