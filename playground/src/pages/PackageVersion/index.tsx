@@ -14,9 +14,9 @@ const PackageVersionPage = () => (
           label={componentLabel}
           startColor="#BFBABA"
           props={{
-            name: StringProp(""),
+            name: StringProp("mobrix-ui"),
             branch: StringProp(""),
-            user: StringProp(""),
+            user: StringProp("CianciarusoCataldo"),
             source: SelectProp({
               npm: "npm",
               github: "github",
