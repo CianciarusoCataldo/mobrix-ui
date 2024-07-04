@@ -36,6 +36,10 @@ export const FEATURES_PROPS: Record<
     enabled: true,
     featureKey: "noShFc",
   }),
+  fillOnFocus: (props) => ({
+    enabled: !props.disabled && props.a11y,
+    featureKey: "fillFc",
+  }),
 };
 
 export const MBX_ATTRIBUTES: Partial<

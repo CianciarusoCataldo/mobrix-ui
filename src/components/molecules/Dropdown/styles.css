@@ -130,13 +130,6 @@
   color: var(--mbx-c-drop-txt);
 }
 
-[data-mbx-id="dropdown"] [data-mbx-class="regular"]:focus-visible {
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-}
-
 [data-mbx-id="dropdown"] [data-mbx-last="true"] {
   border-bottom-right-radius: 0.375rem;
   border-bottom-left-radius: 0.375rem;
@@ -148,23 +141,40 @@
 }
 
 @media (hover) {
-  [data-mbx-id="dropdown"]:not([data-mbx-attributes*="disabled"])[data-mbx-attributes*="hover"]
+  [data-mbx-id="dropdown"]:not(
+      [data-mbx-attributes*="disabled"]
+    )[data-mbx-attributes*="hover"]
     [data-mbx-class="button"]:not([data-mbx-attributes*="disabled"]):hover,
-  [data-mbx-id="dropdown"][data-mbx-attributes*="hover"]:not([data-mbx-attributes*="disabled"])[data-mbx-attributes*="hover"]
+  [data-mbx-id="dropdown"][data-mbx-attributes*="hover"]:not(
+      [data-mbx-attributes*="disabled"]
+    )[data-mbx-attributes*="hover"]
     [data-mbx-class="regular"]:hover {
     color: var(--mbx-c-drop-txt-h);
   }
 
-  [data-mbx-id="dropdown"]:not([data-mbx-attributes*="disabled"])[data-mbx-attributes*="background"][data-mbx-attributes*="hover"]
+  [data-mbx-id="dropdown"]:not(
+      [data-mbx-attributes*="disabled"]
+    )[data-mbx-attributes*="background"][data-mbx-attributes*="hover"]
     [data-mbx-class="button"]:not([data-mbx-attributes*="disabled"]):hover,
-  [data-mbx-id="dropdown"][data-mbx-attributes*="hover"]:not([data-mbx-attributes*="disabled"])[data-mbx-attributes*="background"][data-mbx-attributes*="hover"]
+  [data-mbx-id="dropdown"][data-mbx-attributes*="hover"]:not(
+      [data-mbx-attributes*="disabled"]
+    )[data-mbx-attributes*="background"][data-mbx-attributes*="hover"]
     [data-mbx-class="regular"]:hover {
     background: var(--mbx-c-drop-bg-h);
   }
 
-  [data-mbx-id="dropdown"]:not([data-mbx-attributes*="disabled"])[data-mbx-attributes*="hover"]
+  [data-mbx-id="dropdown"]:not(
+      [data-mbx-attributes*="disabled"]
+    )[data-mbx-attributes*="hover"]
     [data-mbx-class="arrow-icon"]:not([data-mbx-attributes*="disabled"]):hover {
     border-color: var(--mbx-c-drop-arr-h);
     opacity: 0.5;
   }
+}
+
+[data-mbx-id="dropdown"][data-mbx-attributes*="hover"]:not(
+    [data-mbx-attributes*="disabled"]
+  )[data-mbx-attributes*="background"]
+  [data-mbx-class="regular"]:focus-visible {
+  background: var(--mbx-c-drop-bg-h);
 }

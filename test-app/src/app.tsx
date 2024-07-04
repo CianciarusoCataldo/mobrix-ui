@@ -9,6 +9,8 @@ import {
   DismissableCard,
   PackageVersion,
   Label,
+  Counter,
+  ExpandableContainer,
 } from "./mobrix-ui-preview";
 import AtomsPage from "./pages/atoms";
 import MoleculesPage from "./pages/molecules";
@@ -73,6 +75,23 @@ const App = () => {
           ))}
         </div>
       </Drawer>
+      <ExpandableContainer
+        expanded={
+          <div>
+            <p>Expanded area</p>
+            <p>Expanded area</p>
+            <p>Expanded area</p>
+            <p>Expanded area</p>
+          </div>
+        }
+      >
+        <div>
+          <p>Content</p>
+          <p>Content</p>
+          <p>Content</p>
+          <p>Content</p>
+        </div>
+      </ExpandableContainer>
       <div style={{ display: "flex", flexDirection: "column" }}>
         <Slider animation="slide-in-top" className="test-slider" />
         <Button

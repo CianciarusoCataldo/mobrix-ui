@@ -238,6 +238,8 @@ export interface Features {
   textcolorOnFocus?: boolean;
 
   noShadowOnFocus?: boolean;
+
+  fillOnFocus?: boolean;
 }
 
 /**

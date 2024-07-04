@@ -57,6 +57,7 @@ const RadioButton: RadioButtonComponent = ({
     inputValue,
     features: {
       opacityOnHover: true,
+      opacityOnActive: true,
     },
     props: (value, setValue) => {
       const callBack = () => {

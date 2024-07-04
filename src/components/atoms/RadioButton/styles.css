@@ -9,10 +9,10 @@
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background: var(--mbx-c-rad-bg);
   padding: 0.1rem;
   border-color: transparent;
   border-style: hidden;
+  background: var(--mbx-c-rad-bg);
 }
 
 [data-mbx-id="radio-button"] [data-mbx-class="icon"] {

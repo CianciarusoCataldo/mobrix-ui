@@ -24,14 +24,6 @@
   outline: none;
 }
 
-[data-mbx-id="expandable-container"][data-mbx-attributes*="a11y"]
-  [data-mbx-class="container-arrow-button"]:focus-visible {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
-}
-
 [data-mbx-id="expandable-container"][data-mbx-compact="false"]
   [data-mbx-class="arrow"] {
   transform: rotate(0deg);

@@ -37,14 +37,15 @@ const expandableContainerComponent: MbxUiReactiveComponent<
       }}
       additionalProps={{
         "data-mbx-class": "container-arrow-button",
+        "data-mbx-features": "noShFc;opAct;opHov",
       }}
       key="arrow_button"
       dark={dark}
     >
       <svg
-        data-mbx-dark={dark}
         data-mbx-compact={compact}
         data-mbx-class="arrow"
+        data-mbx-features="fillFc;"
         tabIndex={0}
         width="1.5rem"
         fillRule="evenodd"

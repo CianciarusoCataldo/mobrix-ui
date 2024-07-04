@@ -44,7 +44,7 @@ import { buildMbxStandardComponent } from "../../../tools";
  */
 const Button: ButtonComponent = ({
   children,
-  onClick,
+  onClick = () => {},
   onMouseEnter,
   onMouseLeave,
   ...commonProps

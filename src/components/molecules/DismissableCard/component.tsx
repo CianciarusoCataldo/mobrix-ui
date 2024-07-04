@@ -21,6 +21,7 @@ const DismissableCardInternalComponent: MbxUiComponent<
             dark={props.dark}
             additionalProps={{
               "data-mbx-class": "dismiss-button",
+              "data-mbx-features": "opAct;noShFc;fillFc",
             }}
             disabled={props.disabled}
             onClick={() => {
