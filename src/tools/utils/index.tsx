@@ -56,7 +56,10 @@ export const getEnabledFeatures = (
   commonProps: CommonProps
 ) => {
   let enabledFeatures = "";
-  Object.keys({ ...features, ...commonProps })
+  const featureProps = Object.keys(features).filter(
+    (feature) => features[feature]
+  );
+  [...featureProps, ...Object.keys(commonProps)]
     .filter((feature, index) => FEATURES_PROPS[feature])
     .forEach((feature, index) => {
       const enabledFeature = FEATURES_PROPS[feature](commonProps);
@@ -103,6 +106,7 @@ export const getMbxAttributes = (commonProps: CommonProps) => {
 const buildMobrixUiStandardComponent = ({
   name,
   Component,
+  sharedCssClasses,
   /* istanbul ignore next */
   commonProps = {},
   wrapper: SelectedWrapper = "div",
@@ -119,18 +123,22 @@ const buildMobrixUiStandardComponent = ({
     ...(enabledFeatures.length > 0 && {
       "data-mbx-features": enabledFeatures,
     }),
+    ...(sharedCssClasses && {
+      "data-mbx-scl": sharedCssClasses,
+    }),
     id: commonProps.id,
     className: commonProps.className,
     style: commonProps.style,
     onFocus: commonProps.onFocus,
     onKeyDown: commonProps.onKeyDown,
     tabIndex: "-1",
-    ...(commonProps.a11y && {
-      tabIndex: commonProps.tabIndex ? String(commonProps.tabIndex) : "0",
-      ...(commonProps.a11yLabel && {
-        "aria-label": commonProps.a11yLabel,
+    ...(commonProps.a11y &&
+      !commonProps.disabled && {
+        tabIndex: commonProps.tabIndex ? String(commonProps.tabIndex) : "0",
+        ...(commonProps.a11yLabel && {
+          "aria-label": commonProps.a11yLabel,
+        }),
       }),
-    }),
     ...commonProps.additionalProps,
   };
 
@@ -179,7 +187,8 @@ const buildMbxUiReactiveComponent = <T=any>({
   inputValue,
   props,
   Component,
-  features
+  features,
+  sharedCssClasses
 }: BuilderProps<
   (props: {
     value: T;
@@ -215,6 +224,7 @@ const buildMbxUiReactiveComponent = <T=any>({
     wrapper,
     ...processedProps,
     features,
+    sharedCssClasses
   });
 };
 

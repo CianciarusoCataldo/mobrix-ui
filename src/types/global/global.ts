@@ -265,6 +265,8 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
   wrapper?: Wrappers;
 
   features?: Features;
+
+  sharedCssClasses?: string;
 };
 
 /**

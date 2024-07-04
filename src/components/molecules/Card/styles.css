@@ -1,6 +1,4 @@
 [data-mbx-id*="card"] {
-  display: flex;
-  flex-direction: column;
   padding: 0.25rem;
 }
 

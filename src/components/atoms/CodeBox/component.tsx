@@ -24,14 +24,18 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
 }) => {
   let parseCodeLineFunction: (
     inputCode: string,
-    environment: SupportedEnvironment,
+    environment: SupportedEnvironment
   ) => CodeBlock[] =
     highlight && code.length > 0
       ? parseCode
       : (inputCode, environment) => [{ code: inputCode }];
 
   return [
-    <div key="codebox_copy_icon" data-mbx-class="codebox-copy-icon">
+    <div
+      key="codebox_copy_icon"
+      data-mbx-class="codebox-copy-icon"
+      data-mbx-scl="flxc"
+    >
       <IconButton
         onClick={() => code && navigator.clipboard.writeText(code)}
         hide={!copyButton}
@@ -57,7 +61,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
                 >
                   {codeBlock.code}
                 </span>
-              ),
+              )
           )}
         </p>
       ))}

@@ -1,4 +1,5 @@
 import pkg from "../package.json";
+import test from "./test-suites/core";
 
 const fs = require("fs");
 
@@ -19,6 +20,9 @@ const getTests = (group: string) => {
 };
 
 describe(`Mobrix-ui v${pkg.version}`, () => {
+  describe("\n      MoBrix-ui core\n", () => {
+    test();
+  });
   describe("\n      Atoms\n", () => {
     getTests("atoms").forEach((singleTest) => {
       singleTest();

@@ -59,6 +59,7 @@ const RadioButton: RadioButtonComponent = ({
       opacityOnHover: true,
       opacityOnActive: true,
     },
+    sharedCssClasses: "flxc",
     props: (value, setValue) => {
       const callBack = () => {
         if (!value || deselectable) {

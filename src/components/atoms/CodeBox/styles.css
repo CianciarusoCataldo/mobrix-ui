@@ -1,16 +1,12 @@
 [data-mbx-id="codebox"] {
   overflow: hidden;
   padding: 0.1rem;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   background: var(--mbx-c-cdb-bg);
   color: var(--mbx-c-cdb-txt);
 }
 
 [data-mbx-id="codebox"] [data-mbx-class="codebox-copy-icon"] {
-  display: flex;
-  flex-direction: column;
   align-items: flex-end;
 }
 

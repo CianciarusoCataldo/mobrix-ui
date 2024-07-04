@@ -40,6 +40,7 @@ const RaterComponent: MbxUiReactiveComponent<number, RaterProps> = ({
     iconArray.push(
       <IconButton
         key={`vote_${i}`}
+        unstyled
         disabled={disabled}
         additionalProps={{
           "data-mbx-test": `vote_${i}`,
@@ -59,7 +60,7 @@ const RaterComponent: MbxUiReactiveComponent<number, RaterProps> = ({
         })}
       >
         {ICONS[type][iconToShow]}
-      </IconButton>,
+      </IconButton>
     );
   }
 

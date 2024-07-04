@@ -2,7 +2,7 @@
   position: relative;
 }
 
-[data-mbx-id="popup"] [data-mbx-class="popup-content"] {
+[data-mbx-id="popup"] [data-mbx-scl*="pop-c"] {
   position: absolute;
   scroll-behavior: smooth;
   animation-duration: 0.2s;

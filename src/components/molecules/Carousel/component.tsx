@@ -39,7 +39,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
           data-mbx-animation={index === item ? activeClassName : ""}
         >
           {element}
-        </div>,
+        </div>
       );
 
       dots.push(
@@ -47,6 +47,8 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
           additionalProps={{
             "data-mbx-class": "dot",
             "data-mbx-test": `dot_${index}`,
+            "data-mbx-icon-full":
+              index === item || (hoveredDot != null && index === hoveredDot),
           }}
           className={dotClassName}
           disabled={disabled}
@@ -57,25 +59,23 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
             setActiveClassname(index > item ? "from-right" : "from-left");
             updateItem(index);
           }}
-        >
-          <div
-            data-mbx-class="carousel-dot-icon"
-            data-mbx-icon-full={
-              index === item || (hoveredDot != null && index === hoveredDot)
-            }
-          />
-        </IconButton>,
+        />
       );
     });
   }
 
   return [
-    <div data-mbx-class="elements" key="mobrix_ui_carousel_elements">
+    <div
+      data-mbx-class="elements"
+      key="mobrix_ui_carousel_elements"
+      data-mbx-scl="flxr"
+    >
       <IconButton
         hover
         dark={dark}
         additionalProps={{
           "data-mbx-arrow": "prev",
+          "data-mbx-features": "noShFc;fillFc;opHov;opAct",
         }}
         disabled={item === 0 || disabled}
         className={arrowClassName}
@@ -92,6 +92,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         dark={dark}
         additionalProps={{
           "data-mbx-arrow": "next",
+          "data-mbx-features": "noShFc;fillFc;opHov;opAct",
         }}
         className={arrowClassName}
         disabled={item === elements.length - 1 || disabled}
@@ -103,7 +104,11 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         {arrowIcon}
       </IconButton>
     </div>,
-    <div key="mobrix_ui_carousel_dots" data-mbx-class="dots">
+    <div
+      key="mobrix_ui_carousel_dots"
+      data-mbx-class="dots"
+      data-mbx-scl="flxr"
+    >
       {dots}
     </div>,
   ];

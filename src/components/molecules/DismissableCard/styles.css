@@ -1,21 +1,12 @@
-[data-mbx-id="dismissable-card"] [data-mbx-class="header-container"] {
-  display: flex;
-  flex-direction: column;
-}
-
-[data-mbx-id="dismissable-card"] [data-mbx-class="header-element"] {
+[data-mbx-id="dismissable-card"] [data-mbx-scl*="hd-el"] {
   margin: auto;
 }
 
-[data-mbx-id="dismissable-card"] [data-mbx-class="dismiss-container"] {
+[data-mbx-id="dismissable-card"] [data-mbx-scl*="dis-cn"] {
   width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
 }
 
-[data-mbx-id="dismissable-card"] [data-mbx-class="dismiss-button"] {
-  display: flex;
-  flex-direction: row-reverse;
+[data-mbx-id="dismissable-card"] [data-mbx-scl*="dis-bt"] {
   padding: 0;
   margin: 0;
   width: fit-content;
@@ -25,7 +16,7 @@
   margin-top: 0;
 }
 
-[data-mbx-id="dismissable-card"] [data-mbx-class="dismiss-button"] svg path {
+[data-mbx-id="dismissable-card"] [data-mbx-scl*="dis-bt"] svg path {
   fill: var(--mbx-c-dcard-x);
 }
 
@@ -33,7 +24,7 @@
   [data-mbx-id="dismissable-card"][data-mbx-attributes*="hover"]:not(
       [data-mbx-attributes*="disabled"]
     )
-    [data-mbx-class="dismiss-button"]
+    [data-mbx-scl*="dis-bt"]
     svg:hover
     path {
     fill: var(--mbx-c-dcard-x-h);

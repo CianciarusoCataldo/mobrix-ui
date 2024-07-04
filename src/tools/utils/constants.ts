@@ -1,5 +1,6 @@
 import { CommonProps } from "../../types";
 import { Features } from "../../types/global/global";
+
 export const DEFAULT_COMMON_PROPS: CommonProps = {
   background: true,
   hover: true,

@@ -131,6 +131,8 @@
 }
 
 [data-mbx-id][data-mbx-features*="fillFc"]:focus-visible,
-[data-mbx-id] [data-mbx-features*="fillFc"]:focus-visible {
+[data-mbx-id][data-mbx-features*="fillFc"]:focus-visible svg,
+[data-mbx-id] [data-mbx-features*="fillFc"]:focus-visible,
+[data-mbx-id] [data-mbx-features*="fillFc"]:focus-visible svg {
   fill: var(--mbx-c-fc);
 }

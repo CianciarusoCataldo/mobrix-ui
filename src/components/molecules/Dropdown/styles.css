@@ -12,8 +12,6 @@
 [data-mbx-id="dropdown"] [data-mbx-class="options"] {
   font-size: 1rem;
   line-height: 1.5rem;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   max-height: 12rem;
   scrollbar-width: thin;
@@ -68,8 +66,6 @@
 
 [data-mbx-id="dropdown"] [data-mbx-class="dropdown-selected-element"] {
   padding-right: 0.25rem;
-  display: flex;
-  flex-direction: row;
   outline: none;
   margin: auto;
   color: var(--mbx-c-drop-txt);
@@ -113,8 +109,6 @@
 
 [data-mbx-id="dropdown"] [data-mbx-class="regular"] {
   padding: 0.25rem;
-  display: flex;
-  flex-direction: column;
   background-color: transparent;
   color: var(--mbx-c-drop-txt);
   width: 100%;
@@ -123,8 +117,6 @@
 [data-mbx-id="dropdown"]
   [data-mbx-class="regular"]
   [data-mbx-class="dropdown-element"] {
-  display: flex;
-  flex-direction: row;
   margin-top: auto;
   margin-bottom: auto;
   color: var(--mbx-c-drop-txt);

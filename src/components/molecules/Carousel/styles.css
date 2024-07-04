@@ -1,7 +1,5 @@
 [data-mbx-id="carousel"] {
   color: var(--mbx-text-color);
-  display: flex;
-  flex-direction: column;
   align-items: center;
   width: fit-content;
   background: var(--mbx-c-car-bg);
@@ -25,12 +23,14 @@
   -o-animation: var(--mbx-carousel-animation);
 }
 
-[data-mbx-id="carousel"] [data-mbx-arrow] svg {
+[data-mbx-id="carousel"] [data-mbx-arrow]:not(:focus-visible) svg {
   fill: var(--mbx-c-car-arr);
 }
 
 [data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-attributes*="disabled"] svg,
-[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-attributes*="disabled"]:hover svg {
+[data-mbx-id="carousel"]
+  [data-mbx-arrow][data-mbx-attributes*="disabled"]:hover
+  svg {
   fill: none;
 }
 
@@ -46,8 +46,6 @@
 
 [data-mbx-id="carousel"] [data-mbx-class="elements"],
 [data-mbx-id="carousel"] [data-mbx-class="dots"] {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   overflow: hidden;
   padding: 0.5rem;
@@ -60,30 +58,15 @@
 [data-mbx-id="carousel"] [data-mbx-class="dots"] [data-mbx-class="dot"] {
   margin-left: 0.3rem;
   margin-right: 0.3rem;
-}
-
-[data-mbx-id="carousel"]
-  [data-mbx-class="dots"]
-  [data-mbx-class="dot"]
-  [data-mbx-class="carousel-dot-icon"] {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border-color: transparent;
-}
-
-[data-mbx-id="carousel"]
-  [data-mbx-class="dots"]
-  [data-mbx-class="dot"]
-  [data-mbx-class="carousel-dot-icon"][data-mbx-icon-full="true"] {
-  background: var(--mbx-c-car-dot-f);
-}
-
-[data-mbx-id="carousel"]
-  [data-mbx-class="dots"]
-  [data-mbx-class="dot"]
-  [data-mbx-class="carousel-dot-icon"][data-mbx-icon-full="false"] {
   background: var(--mbx-c-car-dot-e);
 }
 
-
+[data-mbx-id="carousel"]
+  [data-mbx-class="dots"]
+  [data-mbx-class="dot"][data-mbx-icon-full="true"] {
+  background: var(--mbx-c-car-dot-f);
+}

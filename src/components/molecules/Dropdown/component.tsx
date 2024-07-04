@@ -119,6 +119,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           tabIndex={-1}
           key="dropdown_selected_element_label"
           data-mbx-class="dropdown-selected-element"
+          data-mbx-scl="flxr"
         >
           {selectedItem}
         </div>
@@ -156,6 +157,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
         a11y={false}
         additionalProps={{
           "data-mbx-class": "options",
+          "data-mbx-slc": "flxc",
         }}
       >
         {elements.map((item, index) => (
@@ -174,6 +176,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
             }}
             key={`item_${index}`}
             additionalProps={{
+              "data-mbx-slc": "flxc",
               "data-mbx-features": "noShFc;colFc",
               "data-mbx-class": "regular",
               "data-mbx-first": index === 0,
@@ -189,6 +192,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
               dark={dark}
               additionalProps={{
                 "data-mbx-class": "dropdown-element",
+                "data-mbx-scl": "flxr",
               }}
             >
               {item}

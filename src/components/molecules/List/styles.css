@@ -1,13 +1,9 @@
 [data-mbx-id="list"] {
-  display: flex;
-  flex-direction: column;
   background: transparent;
   padding: 0.6rem;
 }
 
 [data-mbx-id="list"] [data-mbx-list-element] {
-  display: flex;
-  flex-direction: row;
   color: var(--mbx-c-lst-txt);
   outline: none;
   margin-top: 0.2rem;

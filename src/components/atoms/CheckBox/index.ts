@@ -56,6 +56,7 @@ const Checkbox: CheckBoxComponent = ({
     features: {
       opacityOnHover: true,
     },
+    sharedCssClasses: "flxc",
     props: (actualValue, setValue) => ({
       commonProps: {
         ...sharedProps,

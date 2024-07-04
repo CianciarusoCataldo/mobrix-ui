@@ -60,13 +60,8 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
     name: "radio-button-group",
     defaultValue: -1,
     inputValue,
-    commonProps: {
-      ...sharedProps,
-      additionalProps: {
-        ...sharedProps.additionalProps,
-        "data-mbx-orientation": horizontal,
-      },
-    },
+    sharedCssClasses: horizontal ? "or-h;flxr;" : "flxc;",
+    commonProps: sharedProps,
     Component: ({ value, setValue }) =>
       radioButtonGroupComponent({
         value,

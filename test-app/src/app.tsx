@@ -4,13 +4,8 @@ import {
   Drawer,
   DrawerProps,
   Button,
-  Card,
-  Slider,
-  DismissableCard,
   PackageVersion,
-  Label,
-  Counter,
-  ExpandableContainer,
+  RadioButtonGroup,
 } from "./mobrix-ui-preview";
 import AtomsPage from "./pages/atoms";
 import MoleculesPage from "./pages/molecules";
@@ -25,7 +20,7 @@ const tabs = (
     tabSelectedClassName="demo-tab-selected"
     tabUnselectedClassName="demo-tab-unselected"
     //dark
-    selected={0}
+    selected={1}
     tabs={[
       {
         label: "Atoms",
@@ -75,25 +70,7 @@ const App = () => {
           ))}
         </div>
       </Drawer>
-      <ExpandableContainer
-        expanded={
-          <div>
-            <p>Expanded area</p>
-            <p>Expanded area</p>
-            <p>Expanded area</p>
-            <p>Expanded area</p>
-          </div>
-        }
-      >
-        <div>
-          <p>Content</p>
-          <p>Content</p>
-          <p>Content</p>
-          <p>Content</p>
-        </div>
-      </ExpandableContainer>
       <div style={{ display: "flex", flexDirection: "column" }}>
-        <Slider animation="slide-in-top" className="test-slider" />
         <Button
           key="drawer-btn"
           onClick={() => {
@@ -102,21 +79,24 @@ const App = () => {
         >
           Toggle drawer
         </Button>
-        <Card
-          animation="slide-in-left"
-          className="test-card"
-          header="header"
-          body="body"
-          footer="footer"
+        <RadioButtonGroup
+          buttons={[
+            { text: "textPosition = left", textPosition: "left" },
+            { text: "textPosition = top", textPosition: "top" },
+            { text: "textPosition = right", textPosition: "right" },
+            { text: "textPosition = bottom", textPosition: "bottom" },
+          ]}
         />
-        <DismissableCard
-          animation="slide-in-left"
-          className="test-card test-dcard"
-          header="header"
-          body="body"
-          footer="footer"
+        <RadioButtonGroup
+          dark
+          horizontal
+          buttons={[
+            { text: "textPosition = left", textPosition: "left" },
+            { text: "textPosition = top", textPosition: "top" },
+            { text: "textPosition = right", textPosition: "right" },
+            { text: "textPosition = bottom", textPosition: "bottom" },
+          ]}
         />
-        <Label>Test</Label>
         <PackageVersion
           name="mobrix-ui"
           user="CianciarusoCataldo"
