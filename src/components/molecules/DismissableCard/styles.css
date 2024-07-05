@@ -12,7 +12,7 @@
   width: fit-content;
 }
 
-[data-mbx-id*="dis-card"] [data-mbx-scl="head"] {
+[data-mbx-id*="dis-card"] [data-mbx-scl*="head"] {
   margin-top: 0;
 }
 

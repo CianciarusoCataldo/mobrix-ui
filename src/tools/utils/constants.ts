@@ -11,7 +11,7 @@ export const DEFAULT_COMMON_PROPS: CommonProps = {
   additionalProps: {},
   a11y: true,
   unstyled: false,
-  busy: false,
+  debug: { scl: "", features: {} },
 };
 export const FEATURES_PROPS: Record<
   keyof Features & CommonProps,

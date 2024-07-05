@@ -24,7 +24,7 @@
   --mbx-radio-icon-background: var(--mbx-c-radg-rad-ic-bg);
 }
 
-[data-mbx-id="form-field"] {
+[data-mbx-id="field"] {
   --mbx-counterbox-background: var(--mbx-c-field-bg);
   --mbx-counterbox-text-color: var(--mbx-c-field-txt);
   --mbx-counterbox-background-hover: var(--mbx-c-field-bg-h);
@@ -53,7 +53,7 @@
 
 [data-mbx-id="modal"]
   > [data-mbx-class="modal-window"]
-  > [data-mbx-scl="head"] {
+  > [data-mbx-scl*="head"] {
   --mbx-dismissablecard-x-color: var(--mbx-c-mod-x);
   --mbx-dismissablecard-x-color-hover: var(--mbx-c-mod-x-h);
 }

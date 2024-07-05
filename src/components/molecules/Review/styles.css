@@ -1,6 +1,4 @@
 [data-mbx-id="review"] {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 0.6rem;
   background: var(--mbx-c-rev-bg);
@@ -9,31 +7,24 @@
   width: fit-content;
 }
 
-[data-mbx-id="review"] [data-mbx-class="review-photo"],
-[data-mbx-id="review"] [data-mbx-class="review-photo"] img {
+[data-mbx-id="review"] [data-mbx-scl*="rev-ph"],
+[data-mbx-id="review"] [data-mbx-scl*="rev-ph"] img {
   border-radius: 9999px;
 }
 
-[data-mbx-id="review"] [data-mbx-class="review-url-container"] {
+[data-mbx-id="review"] [data-mbx-scl*="rev-url-c"] {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-[data-mbx-id="review"] [data-mbx-class="review-info-box"] {
-  display: flex;
-  flex-direction: column;
+[data-mbx-id="review"] [data-mbx-scl*="rev-inf-b"] {
   margin-bottom: 0.4rem;
 }
 
-[data-mbx-id="review"] [data-mbx-class="review-user-info"] {
-  display: flex;
-  flex-direction: row;
-}
-
 [data-mbx-id="review"]
-  [data-mbx-class="review-user-info"]
-  [data-mbx-class="review-username"] {
+  [data-mbx-scl*="rev-inf-b"]
+  [data-mbx-scl*="rev-us-name"] {
   margin-left: 0.5rem;
   font-weight: 600;
   font-size: 1.125rem;
@@ -42,9 +33,7 @@
   margin-bottom: auto;
 }
 
-[data-mbx-id="review"]
-  [data-mbx-class="review-info-box"]
-  [data-mbx-class="review-description"] {
+[data-mbx-id="review"] [data-mbx-scl*="rev-inf-b"] [data-mbx-scl*="rev-ds"] {
   margin-top: 1rem;
   overflow-wrap: break-word;
   padding-left: 0.3rem;
@@ -52,13 +41,13 @@
 }
 
 [data-mbx-id="review"]
-  [data-mbx-class="review-url-container"]
+  [data-mbx-scl*="rev-url-c"]
   [data-mbx-class="default-icon"] {
   fill: var(--mbx-c-rev-link);
 }
 
 [data-mbx-id="review"]
-  [data-mbx-class="review-url-container"]
+  [data-mbx-scl*="rev-url-c"]
   [data-mbx-class="github-icon"] {
   fill: var(--mbx-c-rev-gh);
 }

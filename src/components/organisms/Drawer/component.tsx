@@ -22,13 +22,13 @@ const DrawerInternalComponent: MbxUiComponent<
       className={arrowClassName}
       disabled={disabled}
       animated={animated}
-      key="drawer_buttons_panel"
+      key="drw_bts_p"
       dark={dark}
       onClick={() => {
         onClose!();
       }}
-      additionalProps={{
-        "data-mbx-class": "drawer-close-button",
+      debug={{
+        scl: "drw-close",
       }}
       a11yLabel="drawer-close-button"
     >

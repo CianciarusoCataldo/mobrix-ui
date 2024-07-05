@@ -76,10 +76,10 @@ const Modal: ModalComponent = ({
       hide: value.length === 0 && hide,
       additionalProps: {
         ...sharedProps.additionalProps,
-        "data-mbx-modal-animation":
-          value.length === 0 ? (hide ? "" : "ease-in") : value,
+        "data-mbx-mod-an": value.length === 0 ? (hide ? "" : "ease-in") : value,
       },
     },
+    sharedCssClasses: "flxc",
   }));
 };
 

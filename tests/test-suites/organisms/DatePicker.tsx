@@ -27,7 +27,7 @@ const datePickerTest = () => {
         />
       );
 
-      wrapper.find('[data-mbx-test="calendar-button"]').simulate("click");
+      wrapper.find('[data-mbx-id="icon-button"]').at(0).simulate("click");
       wrapper
         .find('[data-mbx-id="calendar"]')
         .find(`[data-mbx-calendar-day=4]`)
@@ -42,7 +42,7 @@ const datePickerTest = () => {
         <DatePicker onClose={onCloseStub} fromToday={false} />
       );
 
-      wrapper.find('[data-mbx-test="calendar-button"]').simulate("click");
+      wrapper.find('[data-mbx-id="icon-button"]').at(0).simulate("click");
 
       wrapper.find('[data-mbx-scl*="dis-bt"]').simulate("click");
 

@@ -53,6 +53,7 @@ const Review: ReviewComponent = (props) =>
   buildMbxStandardComponent(props, (sharedProps) => ({
     name: "review",
     commonProps: sharedProps,
+    sharedCssClasses: "flxc",
     Component: reviewComponent({
       ...props,
       ...sharedProps,

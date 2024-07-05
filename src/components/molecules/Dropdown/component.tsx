@@ -190,9 +190,9 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
               background={false}
               shadow={false}
               dark={dark}
+              debug={{ scl: "flxr" }}
               additionalProps={{
                 "data-mbx-class": "dropdown-element",
-                "data-mbx-scl": "flxr",
               }}
             >
               {item}

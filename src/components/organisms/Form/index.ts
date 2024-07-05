@@ -52,6 +52,7 @@ const Form: FormComponent = (props) =>
       ...props,
       ...sharedProps,
     }),
+    sharedCssClasses: "flxc",
     commonProps: sharedProps,
   }));
 

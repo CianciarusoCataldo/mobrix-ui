@@ -1,53 +1,55 @@
-[data-mbx-id="form-field"] {
-  display: flex;
-  flex-direction: column;
+[data-mbx-id="field"] {
   align-items: flex-start;
   width: fit-content;
 }
 
-[data-mbx-id="form-field"] [data-mbx-class="form-field-box"] {
+[data-mbx-id="field"] [data-mbx-class="field-box"] {
   background: transparent;
 }
 
-[data-mbx-id="form-field"] [data-mbx-form-field-header-box="true"] {
+[data-mbx-id="field"] [data-mbx-field-header="true"] {
   font-weight: 600;
   padding-bottom: 0.2rem;
 }
 
-[data-mbx-id="form-field"] [data-mbx-form-field-error-box="true"] {
+[data-mbx-id="field"] [data-mbx-field-error-box="true"] {
   color: var(--mbx-c-field-err-txt);
   transition: all 0.3s ease-out;
   padding-top: 0.2rem;
 }
 
-[data-mbx-id="form-field"] [data-mbx-form-field-error="true"] {
-  border-color: var(--mbx-c-field-err-b);
+[data-mbx-id="field"] [data-mbx-field-error] {
+  border-color: transparent;
   border-width: 2px;
   border-style: ridge;
 }
 
-[data-mbx-id="form-field"] [data-mbx-form-field-header-box="true"] {
+[data-mbx-id="field"] [data-mbx-field-error="true"] {
+  border-color: var(--mbx-c-field-err-b);
+}
+
+[data-mbx-id="field"] [data-mbx-field-header="true"] {
   --mbx-container-text-color: var(--mbx-c-field-txt);
   width: 100%;
 }
 
-[data-mbx-id="form-field"]:is(
-    [data-mbx-field-type="checkbox"],
-    [data-mbx-field-type="radio"],
-    [data-mbx-field-type="boolean"],
-    [data-mbx-field-type="toggle"]
+[data-mbx-id="field"]:is(
+    [data-mbx-slc*="t-checkbox"],
+    [data-mbx-slc*="t-radio"],
+    [data-mbx-slc*="t-boolean"],
+    [data-mbx-slc*="t-toggle"]
   )
-  [data-mbx-form-field-header-box="true"] {
+  [data-mbx-field-header="true"] {
   text-align: center;
 }
 
-[data-mbx-id="form-field"]:is(
-    [data-mbx-field-type="checkbox"],
-    [data-mbx-field-type="radio"],
-    [data-mbx-field-type="boolean"],
-    [data-mbx-field-type="toggle"]
+[data-mbx-id="field"]:is(
+    [data-mbx-slc*="t-checkbox"],
+    [data-mbx-slc*="t-radio"],
+    [data-mbx-slc*="t-boolean"],
+    [data-mbx-slc*="t-toggle"]
   )
-  [data-mbx-class="form-field-component"] {
+  [data-mbx-class="field-component"] {
   margin-left: auto;
   margin-right: auto;
 }

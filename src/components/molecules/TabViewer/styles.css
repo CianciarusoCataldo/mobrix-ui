@@ -1,13 +1,3 @@
-[data-mbx-id="tab-viewer"] {
-  display: flex;
-  flex-direction: column;
-}
-
-[data-mbx-id="tab-viewer"] [data-mbx-class="tabs-list"] {
-  display: flex;
-  flex-direction: row;
-}
-
 [data-mbx-id="tab-viewer"] [data-mbx-class="tabs-list"] [data-mbx-class="tab"] {
   padding: 0.7rem 1rem;
   border-top-left-radius: 6px;

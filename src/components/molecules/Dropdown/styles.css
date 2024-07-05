@@ -20,7 +20,7 @@
 
 [data-mbx-id="dropdown"]
   [data-mbx-class="options"]
-  [data-mbx-class="popup-content"] {
+  [data-mbx-scl*="pop-c"] {
   width: 100%;
   align-items: center;
 }

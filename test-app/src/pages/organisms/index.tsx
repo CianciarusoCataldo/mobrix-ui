@@ -95,7 +95,6 @@ const AtomsPage = () => {
         Component={
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Form
-              busy
               title="Test Form"
               submitLabel={"submit"}
               fields={{

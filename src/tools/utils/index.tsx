@@ -106,13 +106,19 @@ export const getMbxAttributes = (commonProps: CommonProps) => {
 const buildMobrixUiStandardComponent = ({
   name,
   Component,
-  sharedCssClasses,
+  sharedCssClasses = "",
   /* istanbul ignore next */
   commonProps = {},
   wrapper: SelectedWrapper = "div",
   features = {},
 }: BuilderProps) => {
-  let enabledFeatures = getEnabledFeatures(features, commonProps);
+  let enabledFeatures = getEnabledFeatures(
+    {
+      ...features,
+      ...(commonProps.debug?.features ? commonProps.debug.features : {}),
+    },
+    commonProps
+  );
   let mbxAttributes = getMbxAttributes(commonProps);
 
   let props: CommonProps & Record<string, any> = {
@@ -123,9 +129,9 @@ const buildMobrixUiStandardComponent = ({
     ...(enabledFeatures.length > 0 && {
       "data-mbx-features": enabledFeatures,
     }),
-    ...(sharedCssClasses && {
-      "data-mbx-scl": sharedCssClasses,
-    }),
+    "data-mbx-scl": `${sharedCssClasses};${
+      commonProps.debug?.scl ? commonProps.debug.scl : ""
+    };`,
     id: commonProps.id,
     className: commonProps.className,
     style: commonProps.style,

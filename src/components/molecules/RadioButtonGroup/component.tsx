@@ -35,11 +35,11 @@ const radioButtonGroupComponent: MbxUiReactiveComponent<
     return (
       <div
         className={elementClassName}
-        key={"radio_group_element_" + index}
+        key={"rgr_el_" + index}
         data-mbx-scl={`t-${txtPosition};${textPositionCssClasses[txtPosition]};rdg-el-${index};`}
       >
         {element.text && (
-          <Label disabled={disabled} key="radio_text" dark={dark}>
+          <Label disabled={disabled} key="rd_txt" dark={dark}>
             {element.text}
           </Label>
         )}
@@ -47,8 +47,7 @@ const radioButtonGroupComponent: MbxUiReactiveComponent<
         <RadioButton
           disabled={disabled}
           deselectable={false}
-          additionalProps={{ "data-mbx-test": "radio_component_" + index }}
-          key={`radio_component_${index}`}
+          key={`rd_cm_${index}`}
           value={value === index}
           onChange={() => {
             onChange(index);

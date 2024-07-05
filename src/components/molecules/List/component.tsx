@@ -19,17 +19,16 @@ const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
 
   return elements.map((element, index) => (
     <div
-      key={`element_${index}`}
+      key={`el_${index}`}
       onClick={onClick && (() => onClick(index))}
       data-mbx-features={features}
-      data-mbx-scl="flxr"
-      data-mbx-list-element={onClick ? "clickable" : ""}
+      data-mbx-scl={`flxr;lis-el;${onClick ? "click;" : ""}`}
       tabIndex={0}
     >
-      <svg viewBox="0 0 9 9" key="list_dot" data-mbx-class="dot">
+      <svg viewBox="0 0 9 9" key="lst_dot" data-mbx-scl="dot">
         <circle cx={4.5} cy={4.5} r={3.5} />
       </svg>
-      <div key={"list_element_" + index}>{element}</div>
+      <div key={"lst_el_" + index}>{element}</div>
     </div>
   ));
 };

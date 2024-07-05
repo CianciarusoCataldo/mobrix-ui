@@ -57,7 +57,7 @@
   --mbx-c-radg-bg: transparent !important;
 }
 
-[data-mbx-id="form-field"]:not([data-mbx-attributes*="background"]),
-[data-mbx-id="form-field"]:not([data-mbx-attributes*="background"]):hover {
+[data-mbx-id="field"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="field"]:not([data-mbx-attributes*="background"]):hover {
   --mbx-c-field-bg: transparent !important;
 }

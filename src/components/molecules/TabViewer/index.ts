@@ -60,6 +60,7 @@ const TabViewer: TabViewerComponent = (props) =>
     defaultValue: 0,
     inputValue: props.selected,
     name: "tab-viewer",
+    sharedCssClasses: "flxc",
     Component: ({ value, setValue }) =>
       tabViewerComponent({
         setValue,

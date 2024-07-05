@@ -18,7 +18,7 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
   value,
   disabled,
 }) => [
-  <div data-mbx-class="tabs-list" key="tabs_list">
+  <div data-mbx-class="tabs-list" key="tabs_list" data-mbx-scl="flxr;">
     {tabs.map((tab, index) => (
       <Button
         shadow={shadow}

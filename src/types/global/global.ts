@@ -75,7 +75,10 @@ export type CommonProps = MbxAttributes & {
   /** callback called when a key is pressed when inside the component */
   onKeyDown?: (keyEvent: any) => void;
 
-  busy?: boolean;
+  debug?: {
+    scl?: string;
+    features?: Features;
+  };
 };
 
 /**

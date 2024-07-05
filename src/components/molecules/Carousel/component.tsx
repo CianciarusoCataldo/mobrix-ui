@@ -31,7 +31,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
     elements.forEach((element, index) => {
       elementsArray.push(
         <div
-          key={`carousel_element_${index}`}
+          key={`car_el_${index}`}
           {...(index !== item && {
             "data-mbx-attributes": "hide;",
           })}
@@ -46,7 +46,6 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         <IconButton
           additionalProps={{
             "data-mbx-class": "dot",
-            "data-mbx-test": `dot_${index}`,
             "data-mbx-icon-full":
               index === item || (hoveredDot != null && index === hoveredDot),
           }}
@@ -65,17 +64,16 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
   }
 
   return [
-    <div
-      data-mbx-class="elements"
-      key="mobrix_ui_carousel_elements"
-      data-mbx-scl="flxr"
-    >
+    <div data-mbx-class="elements" key="car_els" data-mbx-scl="flxr">
       <IconButton
+        key="prev-ar"
         hover
         dark={dark}
         additionalProps={{
           "data-mbx-arrow": "prev",
-          "data-mbx-features": "noShFc;fillFc;opHov;opAct",
+        }}
+        debug={{
+          features: { noShadowOnFocus: true, fillOnFocus: true },
         }}
         disabled={item === 0 || disabled}
         className={arrowClassName}
@@ -89,10 +87,13 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
       {elementsArray}
       <IconButton
         hover
+        key="next-ar"
         dark={dark}
         additionalProps={{
           "data-mbx-arrow": "next",
-          "data-mbx-features": "noShFc;fillFc;opHov;opAct",
+        }}
+        debug={{
+          features: { noShadowOnFocus: true, fillOnFocus: true },
         }}
         className={arrowClassName}
         disabled={item === elements.length - 1 || disabled}

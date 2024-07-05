@@ -43,7 +43,7 @@ import embeddedVideoComponent from "./component";
  */
 const EmbeddedVideo: EmbeddedVideoComponent = ({ url, ...shared }) =>
   buildMbxStandardComponent(shared, (sharedProps) => ({
-    name: "embedded-video",
+    name: "em-vd",
     commonProps: sharedProps,
     features: {
       opacityOnHover: true,

@@ -23,7 +23,7 @@ const expandableContainerComponent: MbxUiReactiveComponent<
   let components = [children];
 
   components.push(
-    <div key="expanded_area" data-mbx-class="expanded-area">
+    <div key="expanded_area" data-mbx-scl="exp-area">
       {expanded}
     </div>,
   );
@@ -41,6 +41,9 @@ const expandableContainerComponent: MbxUiReactiveComponent<
       }}
       key="arrow_button"
       dark={dark}
+      debug={{
+        scl: "con-arr-bt",
+      }}
     >
       <svg
         data-mbx-compact={compact}

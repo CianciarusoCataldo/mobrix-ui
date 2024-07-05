@@ -50,7 +50,7 @@ const PackageVersion: PackageVersionComponent = ({
   ...props
 }) =>
   buildMbxStandardComponent(props, (sharedProps) => ({
-    name: "package-version-label",
+    name: "pkgv-label",
     wrapper: "p",
     Component: component({ ...sharedProps, name, source, user, branch }),
     features: {
