@@ -6,7 +6,11 @@ const cardTest = () => {
   describe("DismissableCard", () => {
     test("Rendering test", () => {
       const wrapper = mount(
-        <DismissableCard header="Test header" body="Test body" footer="Test footer">
+        <DismissableCard
+          header="Test header"
+          body="Test body"
+          footer="Test footer"
+        >
           Test label
         </DismissableCard>
       );
@@ -18,7 +22,7 @@ const cardTest = () => {
 
       const wrapper = mount(<DismissableCard onClose={onCloseStub} />);
 
-      wrapper.find('[data-mbx-class="dismiss-button"]').at(0).simulate("click");
+      wrapper.find('[data-mbx-scl*="dis-bt"]').at(0).simulate("click");
       expect(onCloseStub).toBeCalled;
     });
   });

@@ -31,11 +31,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
       : (inputCode, environment) => [{ code: inputCode }];
 
   return [
-    <div
-      key="codebox_copy_icon"
-      data-mbx-class="codebox-copy-icon"
-      data-mbx-scl="flxc"
-    >
+    <div key="codebox_copy_icon" data-mbx-scl="flxc;cd-cp">
       <IconButton
         onClick={() => code && navigator.clipboard.writeText(code)}
         hide={!copyButton}
@@ -45,9 +41,9 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
         {CopyIcon}
       </IconButton>
     </div>,
-    <div key="codebox_code" data-mbx-class="codebox-code">
+    <div key="codebox_code" data-mbx-scl="cd-cd">
       {code.split("\n").map((codeLine, lineIndex) => (
-        <p data-mbx-class="codeline" key={`codeline_${lineIndex}`}>
+        <p data-mbx-scl="cdl" key={`codeline_${lineIndex}`}>
           {parseCodeLineFunction(codeLine, environment).map(
             (codeBlock, blockIndex) =>
               codeBlock.code === " " ? (

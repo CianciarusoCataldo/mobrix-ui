@@ -57,6 +57,7 @@ const Input: InputComponent = ({
     features: {
       opacityOnHover: true,
     },
+    sharedCssClasses: autoresizable && "a-res",
     props: (value, setValue) => ({
       commonProps: {
         ...sharedProps,
@@ -64,7 +65,6 @@ const Input: InputComponent = ({
         additionalProps: {
           ...sharedProps.additionalProps,
           ...(autoresizable && {
-            "data-mbx-autoresizable": !!autoresizable,
             size: Math.ceil(value.length / 2) + (value.length > 0 ? 0 : 1),
           }),
           type: "text",

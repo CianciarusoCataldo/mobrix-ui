@@ -11,9 +11,7 @@ const datePickerTest = () => {
     test("Rendering test", () => {
       let wrapper = mount(<DatePicker />);
       expect(wrapper);
-      wrapper = mount(
-        <DatePicker months={defaultMonths} days={defaultDays} />
-      );
+      wrapper = mount(<DatePicker months={defaultMonths} days={defaultDays} />);
       expect(wrapper.props().months).toBe(defaultMonths);
       wrapper = mount(<DatePicker value={{ month: -1, year: -1, day: -1 }} />);
       expect(wrapper.props().value.day).toBe(-1);
@@ -46,7 +44,7 @@ const datePickerTest = () => {
 
       wrapper.find('[data-mbx-test="calendar-button"]').simulate("click");
 
-      wrapper.find('[data-mbx-class="dismiss-button"]').simulate("click");
+      wrapper.find('[data-mbx-scl*="dis-bt"]').simulate("click");
 
       expect(onCloseStub).toBeCalled;
     });

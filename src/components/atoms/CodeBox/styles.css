@@ -6,19 +6,17 @@
   color: var(--mbx-c-cdb-txt);
 }
 
-[data-mbx-id="codebox"] [data-mbx-class="codebox-copy-icon"] {
+[data-mbx-id="codebox"] [data-mbx-scl*="cd-cp"] {
   align-items: flex-end;
 }
 
-[data-mbx-id="codebox"] [data-mbx-class="codebox-code"] {
+[data-mbx-id="codebox"] [data-mbx-scl*="cd-cd"] {
   padding: 1rem;
   line-height: 1.5rem;
   overflow: auto;
 }
 
-[data-mbx-id="codebox"]
-  [data-mbx-class="codebox-code"]
-  [data-mbx-class="codeline"] {
+[data-mbx-id="codebox"] [data-mbx-class="cd-cd"] [data-mbx-scl*="cdl"] {
   margin-top: 0;
   margin-bottom: 0;
 }

@@ -5,7 +5,7 @@ import {
   DrawerProps,
   Button,
   PackageVersion,
-  RadioButtonGroup,
+  Input,
 } from "./mobrix-ui-preview";
 import AtomsPage from "./pages/atoms";
 import MoleculesPage from "./pages/molecules";
@@ -79,24 +79,9 @@ const App = () => {
         >
           Toggle drawer
         </Button>
-        <RadioButtonGroup
-          buttons={[
-            { text: "textPosition = left", textPosition: "left" },
-            { text: "textPosition = top", textPosition: "top" },
-            { text: "textPosition = right", textPosition: "right" },
-            { text: "textPosition = bottom", textPosition: "bottom" },
-          ]}
-        />
-        <RadioButtonGroup
-          dark
-          horizontal
-          buttons={[
-            { text: "textPosition = left", textPosition: "left" },
-            { text: "textPosition = top", textPosition: "top" },
-            { text: "textPosition = right", textPosition: "right" },
-            { text: "textPosition = bottom", textPosition: "bottom" },
-          ]}
-        />
+        <Input autoresizable />
+        <div style={{ marginTop: "20px" }} />
+        <Input value="text" onChange={(value) => console.log(value)} />
         <PackageVersion
           name="mobrix-ui"
           user="CianciarusoCataldo"

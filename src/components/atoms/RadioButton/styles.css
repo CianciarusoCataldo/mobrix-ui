@@ -13,7 +13,7 @@
   background: var(--mbx-c-rad-bg);
 }
 
-[data-mbx-id="radio-button"] [data-mbx-class="icon"] {
+[data-mbx-id="radio-button"] [data-mbx-scl*="ic"] {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;

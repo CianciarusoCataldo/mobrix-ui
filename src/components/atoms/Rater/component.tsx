@@ -42,9 +42,6 @@ const RaterComponent: MbxUiReactiveComponent<number, RaterProps> = ({
         key={`vote_${i}`}
         unstyled
         disabled={disabled}
-        additionalProps={{
-          "data-mbx-test": `vote_${i}`,
-        }}
         {...(!(readonly || disabled) && {
           onClick: () => {
             let newVote: number = i + 1;
