@@ -5,7 +5,7 @@
 }
 
 [data-mbx-id="spinner"]:not([data-mbx-attributes*="disabled"])
-  [data-mbx-class="rotating"] {
+  [data-mbx-scl*="rotating"] {
   -webkit-animation: rotating 2s linear infinite;
   -moz-animation: rotating 2s linear infinite;
   -ms-animation: rotating 2s linear infinite;

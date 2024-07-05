@@ -9,12 +9,7 @@ const selectorComponent: MbxUiReactiveComponent<
   const optionProps = optionClassName ? { className: optionClassName } : {};
 
   return elements.map((el, index) => (
-    <option
-      data-mbx-class="selector-option"
-      key={"selector_option_" + index}
-      value={index}
-      {...optionProps}
-    >
+    <option key={"sel_opt_" + index} value={index} {...optionProps}>
       {el}
     </option>
   ));
