@@ -18,7 +18,7 @@ const radioButtonGroupTest = () => {
         />
       );
       wrapper
-        .find('[data-mbx-scl*="rdg-el-0"] [data-mbx-id="radio-button"]')
+        .find('[data-mbx-scl*="rdg-el-0"] [data-mbx-id="radio"]')
         .simulate("click");
       expect(wrapper);
     });
@@ -35,7 +35,7 @@ const radioButtonGroupTest = () => {
         />
       );
       wrapper
-        .find('[data-mbx-scl*="rdg-el-0"] [data-mbx-id="radio-button"]')
+        .find('[data-mbx-scl*="rdg-el-0"] [data-mbx-id="radio"]')
         .simulate("click");
       expect(onChangeStub).toBeCalledWith(0);
     });

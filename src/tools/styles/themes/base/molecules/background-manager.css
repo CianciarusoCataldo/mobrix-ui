@@ -1,5 +1,5 @@
-[data-mbx-id="dismissable-card"]:not([data-mbx-attributes*="background"]),
-[data-mbx-id="dismissable-card"]:not([data-mbx-attributes*="background"]):hover {
+[data-mbx-id="dis-card"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="dis-card"]:not([data-mbx-attributes*="background"]):hover {
   --mbx-c-dcard-bg: transparent !important;
 }
 
@@ -42,8 +42,8 @@
   --mbx-c-rev-bg: transparent !important;
 }
 
-[data-mbx-id="expandable-container"]:not([data-mbx-attributes*="background"]),
-[data-mbx-id="expandable-container"]:not([data-mbx-attributes*="background"]):hover {
+[data-mbx-id="exp-cont"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="exp-cont"]:not([data-mbx-attributes*="background"]):hover {
   --mbx-c-exp-bg: transparent !important;
 }
 
@@ -52,8 +52,8 @@
   --mbx-c-pop-bg: transparent !important;
 }
 
-[data-mbx-id="radio-button-group"]:not([data-mbx-attributes*="background"]),
-[data-mbx-id="radio-button-group"]:not([data-mbx-attributes*="background"]):hover {
+[data-mbx-id="radio-group"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="radio-group"]:not([data-mbx-attributes*="background"]):hover {
   --mbx-c-radg-bg: transparent !important;
 }
 

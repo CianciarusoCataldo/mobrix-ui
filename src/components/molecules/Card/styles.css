@@ -2,7 +2,7 @@
   padding: 0.25rem;
 }
 
-[data-mbx-id*="card"] [data-mbx-class="header"] {
+[data-mbx-id*="card"] [data-mbx-scl*="head"] {
   margin: auto;
   text-align: center;
   width: 100%;
@@ -10,14 +10,14 @@
   margin-bottom: 0.3rem;
 }
 
-[data-mbx-id*="card"] [data-mbx-class="body"] {
+[data-mbx-id*="card"] [data-mbx-scl*="body"] {
   padding: 0.25rem;
   margin: 0.5rem;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-[data-mbx-id*="card"] [data-mbx-class="footer"] {
+[data-mbx-id*="card"] [data-mbx-scl*="footer"] {
   margin-top: 0.3rem;
   padding: 0.3rem;
   font-size: 1rem;

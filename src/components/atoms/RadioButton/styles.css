@@ -1,4 +1,4 @@
-[data-mbx-id="radio-button"] {
+[data-mbx-id="radio"] {
   width: 30px;
   height: 30px;
   min-width: 30px;
@@ -13,7 +13,7 @@
   background: var(--mbx-c-rad-bg);
 }
 
-[data-mbx-id="radio-button"] [data-mbx-scl*="ic"] {
+[data-mbx-id="radio"] [data-mbx-scl*="ic"] {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;

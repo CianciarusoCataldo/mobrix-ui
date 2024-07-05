@@ -39,7 +39,7 @@
 
 [data-mbx-id="date-picker"]
   [data-mbx-class="date-picker-modal"]
-  [data-mbx-class="body"] {
+  [data-mbx-scl*="body"] {
   width: 80%;
   padding: 0;
 }
@@ -55,7 +55,7 @@
 @media (max-width: 600px) {
   [data-mbx-id="date-picker"]
     [data-mbx-class="date-picker-modal"]
-    [data-mbx-class="body"] {
+    [data-mbx-scl*="body"] {
     width: 90%;
   }
 }
@@ -63,7 +63,7 @@
 @media (max-width: 500px) {
   [data-mbx-id="date-picker"]
     [data-mbx-class="date-picker-modal"]
-    [data-mbx-class="body"] {
+    [data-mbx-scl*="body"] {
     width: 95%;
   }
 }
@@ -71,7 +71,7 @@
 @media (max-width: 400px) {
   [data-mbx-id="date-picker"]
     [data-mbx-class="date-picker-modal"]
-    [data-mbx-class="body"] {
+    [data-mbx-scl*="body"] {
     width: 100%;
   }
 }

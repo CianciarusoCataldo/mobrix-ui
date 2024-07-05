@@ -33,6 +33,7 @@
 ### 3.13.0
 
 - Styles optimized
+- Unified shared classes, to optimize bundle size
 - Clean-up
 - New `fillOnFocus` feature, to fill icons when focused (similar to `textcolorOnFocus` feature)
 

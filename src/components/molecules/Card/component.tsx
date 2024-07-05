@@ -28,7 +28,7 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
         <div
           className={headerClassName}
           key="card_header"
-          data-mbx-class="header"
+          data-mbx-scl="head;"
           {...headerProps}
         >
           {header}
@@ -42,7 +42,7 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
           key="card_top_divider"
           dark={dark}
           additionalProps={{
-            "data-mbx-class": "top-divider",
+            "data-mbx-scl": "top-divider",
           }}
         />
       ),
@@ -52,7 +52,7 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
       component: (
         <div
           className={bodyClassName}
-          data-mbx-class="body"
+          data-mbx-scl="body"
           key="card_body"
           {...bodyProps}
         >
@@ -74,7 +74,7 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
           key="card_bottom_divider"
           dark={dark}
           additionalProps={{
-            "data-mbx-class": "bottom-divider",
+            "data-mbx-scl": "bottom-divider",
           }}
         />
       ),
@@ -85,7 +85,7 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
         <div
           className={footerClassName}
           key="card_footer"
-          data-mbx-class="footer"
+          data-mbx-scl="footer"
           {...footerProps}
         >
           {footer}

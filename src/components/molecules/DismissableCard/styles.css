@@ -1,27 +1,27 @@
-[data-mbx-id="dismissable-card"] [data-mbx-scl*="hd-el"] {
+[data-mbx-id="dis-card"] [data-mbx-scl*="hd-el"] {
   margin: auto;
 }
 
-[data-mbx-id="dismissable-card"] [data-mbx-scl*="dis-cn"] {
+[data-mbx-id="dis-card"] [data-mbx-scl*="dis-cn"] {
   width: 100%;
 }
 
-[data-mbx-id="dismissable-card"] [data-mbx-scl*="dis-bt"] {
+[data-mbx-id="dis-card"] [data-mbx-scl*="dis-bt"] {
   padding: 0;
   margin: 0;
   width: fit-content;
 }
 
-[data-mbx-id*="dismissable-card"] [data-mbx-class="header"] {
+[data-mbx-id*="dis-card"] [data-mbx-scl="head"] {
   margin-top: 0;
 }
 
-[data-mbx-id="dismissable-card"] [data-mbx-scl*="dis-bt"] svg path {
+[data-mbx-id="dis-card"] [data-mbx-scl*="dis-bt"] svg path {
   fill: var(--mbx-c-dcard-x);
 }
 
 @media (hover) {
-  [data-mbx-id="dismissable-card"][data-mbx-attributes*="hover"]:not(
+  [data-mbx-id="dis-card"][data-mbx-attributes*="hover"]:not(
       [data-mbx-attributes*="disabled"]
     )
     [data-mbx-scl*="dis-bt"]

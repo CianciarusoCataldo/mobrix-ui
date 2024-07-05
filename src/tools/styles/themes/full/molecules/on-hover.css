@@ -5,7 +5,7 @@
     fill: var(--mbx-c-car-arr-h);
   }
 
-  [data-mbx-id="expandable-container"]:not([data-mbx-attributes*="disabled"])
+  [data-mbx-id="exp-cont"]:not([data-mbx-attributes*="disabled"])
     [data-mbx-class="arrow"]:hover {
     fill: var(--mbx-c-exp-arr-h);
   }

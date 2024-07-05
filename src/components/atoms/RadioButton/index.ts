@@ -51,7 +51,7 @@ const RadioButton: RadioButtonComponent = ({
   ...commonProps
 }) =>
   buildMbxReactiveComponent<boolean>(commonProps, (sharedProps) => ({
-    name: "radio-button",
+    name: "radio",
     Component: ({ value, setValue }) => (value ? component : ""),
     defaultValue: false,
     inputValue,

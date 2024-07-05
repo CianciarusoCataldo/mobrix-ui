@@ -28,7 +28,7 @@
   --mbx-md-an: var(--mbx-md-an-out);
 }
 
-[data-mbx-id="modal"] > [data-mbx-id="dismissable-card"] {
+[data-mbx-id="modal"] > [data-mbx-id="dis-card"] {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,8 +36,8 @@
 }
 
 [data-mbx-id="modal"]
-  > [data-mbx-id="dismissable-card"]
-  [data-mbx-class="body"] {
+  > [data-mbx-id="dis-card"]
+  [data-mbx-scl*="body"] {
   margin: 0;
 }
 

@@ -57,7 +57,7 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
   ...props
 }) =>
   buildMbxReactiveComponent<number>(props, (sharedProps) => ({
-    name: "radio-button-group",
+    name: "radio-group",
     defaultValue: -1,
     inputValue,
     sharedCssClasses: horizontal ? "or-h;flxr;" : "flxc;",
