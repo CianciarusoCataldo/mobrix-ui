@@ -1,9 +1,9 @@
-[data-mbx-id="exp-cont"][data-mbx-compact="true"] [data-mbx-scl*="exp-area"] {
+[data-mbx-id="exp-cont"][data-mbx-scl*="cmp-true"] [data-mbx-scl*="exp-area"] {
   max-height: 0;
   transition: max-height 0.3s ease-out;
   overflow: hidden;
 }
-[data-mbx-id="exp-cont"][data-mbx-compact="false"] [data-mbx-scl*="exp-area"] {
+[data-mbx-id="exp-cont"][data-mbx-scl*="cmp-false"] [data-mbx-scl*="exp-area"] {
   max-height: 100vh;
   transition: max-height 0.3s ease-in;
   overflow: hidden;
@@ -22,13 +22,13 @@
   outline: none;
 }
 
-[data-mbx-id="exp-cont"][data-mbx-compact="false"]
+[data-mbx-id="exp-cont"][data-mbx-scl*="cmp-false"]
   [data-mbx-scl*="con-arr-bt"]
   svg {
   transform: rotate(0deg);
 }
 
-[data-mbx-id="exp-cont"][data-mbx-compact="true"]
+[data-mbx-id="exp-cont"][data-mbx-scl*="cmp-true"]
   [data-mbx-scl*="con-arr-bt"]
   svg {
   transform: rotate(180deg);

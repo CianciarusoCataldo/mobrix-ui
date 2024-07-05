@@ -34,20 +34,20 @@
 }
 
 [data-mbx-id="field"]:is(
-    [data-mbx-slc*="t-checkbox"],
-    [data-mbx-slc*="t-radio"],
-    [data-mbx-slc*="t-boolean"],
-    [data-mbx-slc*="t-toggle"]
+    [data-mbx-scl*="t-checkbox"],
+    [data-mbx-scl*="t-radio"],
+    [data-mbx-scl*="t-boolean"],
+    [data-mbx-scl*="t-toggle"]
   )
   [data-mbx-field-header="true"] {
   text-align: center;
 }
 
 [data-mbx-id="field"]:is(
-    [data-mbx-slc*="t-checkbox"],
-    [data-mbx-slc*="t-radio"],
-    [data-mbx-slc*="t-boolean"],
-    [data-mbx-slc*="t-toggle"]
+    [data-mbx-scl*="t-checkbox"],
+    [data-mbx-scl*="t-radio"],
+    [data-mbx-scl*="t-boolean"],
+    [data-mbx-scl*="t-toggle"]
   )
   [data-mbx-class="field-component"] {
   margin-left: auto;

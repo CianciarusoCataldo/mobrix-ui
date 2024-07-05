@@ -69,9 +69,9 @@ const HeaderContent = () => {
             onClick={() => {
               dispatch(goTo(HOME));
             }}
-            unstyled
             a11y={false}
             className="my-auto overflow-auto ml-1"
+            debug={{ features: { noShadowOnFocus: true } }}
             hide={hideHomeButton}
           >
             <svg
@@ -81,7 +81,7 @@ const HeaderContent = () => {
                   "fill-[white]": dark,
                   "fill-[black]": !dark,
                 },
-                "w-8 h-8 hover:fill-[#ff9f51] active:fill-[#fb7a10] focus-visible:fill-[#fb7a10] xsm:w-12 xsm:h-12"
+                "w-8 h-8 hover:fill-[#ff9f51] active:fill-[#fb7a10] focus-visible:fill-[#fb7a10] xsm:w-12 xsm:h-12 focus:outline-none"
               )}
               viewBox="0 0 11 18"
             >

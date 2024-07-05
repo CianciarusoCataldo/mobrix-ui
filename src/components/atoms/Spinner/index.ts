@@ -45,11 +45,12 @@ import defaultIcons from "./icons";
 const Spinner: SpinnerComponent = ({
   value,
   statuses = defaultIcons,
+  shadow = false,
   ...commonProps
 }) =>
   buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "spinner",
-    commonProps: sharedProps,
+    commonProps: { ...sharedProps, shadow },
     Component:
       value && statuses[value]
         ? statuses[value]

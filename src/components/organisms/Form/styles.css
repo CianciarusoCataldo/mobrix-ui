@@ -16,9 +16,9 @@
 
 [data-mbx-id="form"]
   [data-mbx-scl*="f-field"]:is(
-    [data-mbx-slc*="t-checkbox"],
-    [data-mbx-slc*="t-radio"],
-    [data-mbx-slc*="t-boolean"]
+    [data-mbx-scl*="t-checkbox"],
+    [data-mbx-scl*="t-radio"],
+    [data-mbx-scl*="t-boolean"]
   ) {
   margin-left: auto;
   margin-right: auto;

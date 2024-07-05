@@ -10,7 +10,7 @@ export const defaultIcon = (
     height="30px"
   >
     <circle cx={32} cy={32} r={32} fill="var(--svgexternalcolor)" />
-    <g className="wrapper">
+    <g data-mbx-scl="wrapper">
       <path
         data-mbx-scl="external"
         d="M32 52c-9.9 0-18-8.1-18-18 0-6.4 3.4-12.3 8.9-15.5 1-.6 2.2-.2 2.7.7.6 1 .2 2.2-.7 2.7C20.7 24.4 18 29.1 18 34c0 7.7 6.3 14 14 14s14-6.3 14-14c0-5.1-2.7-9.7-7.2-12.2-1-.5-1.3-1.8-.8-2.7.5-1 1.8-1.3 2.7-.8C46.5 21.5 50 27.5 50 34c0 9.9-8.1 18-18 18z"

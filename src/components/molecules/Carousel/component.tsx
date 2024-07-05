@@ -35,7 +35,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
           {...(index !== item && {
             "data-mbx-attributes": "hide;",
           })}
-          data-mbx-class="element"
+          data-mbx-scl="el"
           data-mbx-animation={index === item ? activeClassName : ""}
         >
           {element}
@@ -44,11 +44,9 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
 
       dots.push(
         <IconButton
-          additionalProps={{
-            "data-mbx-class": "dot",
-            "data-mbx-icon-full":
-              index === item || (hoveredDot != null && index === hoveredDot),
-          }}
+          data-mbx-scl={`dot;full-${
+            index === item || (hoveredDot != null && index === hoveredDot)
+          }`}
           className={dotClassName}
           disabled={disabled}
           key={`dot_${index}`}
@@ -64,7 +62,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
   }
 
   return [
-    <div data-mbx-class="elements" key="car_els" data-mbx-scl="flxr">
+    <div key="car_els" data-mbx-scl="flxr;car-els">
       <IconButton
         key="prev-ar"
         hover
@@ -105,11 +103,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         {arrowIcon}
       </IconButton>
     </div>,
-    <div
-      key="mobrix_ui_carousel_dots"
-      data-mbx-class="dots"
-      data-mbx-scl="flxr"
-    >
+    <div key="car_dots" data-mbx-scl="flxr;dots;">
       {dots}
     </div>,
   ];

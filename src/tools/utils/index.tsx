@@ -228,9 +228,9 @@ const buildMbxUiReactiveComponent = <T=any>({
     commonProps,
     Component: Component && Component({ value, setValue }),
     wrapper,
-    ...processedProps,
     features,
-    sharedCssClasses
+    sharedCssClasses,
+    ...processedProps,
   });
 };
 

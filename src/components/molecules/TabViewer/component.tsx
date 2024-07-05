@@ -18,7 +18,7 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
   value,
   disabled,
 }) => [
-  <div data-mbx-class="tabs-list" key="tabs_list" data-mbx-scl="flxr;">
+  <div key="tabs_list" data-mbx-scl="flxr;">
     {tabs.map((tab, index) => (
       <Button
         shadow={shadow}
@@ -26,10 +26,8 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
         animated={false}
         disabled={disabled}
         dark={dark}
-        additionalProps={{
-          "data-mbx-class": "tab",
-          "data-mbx-test": `tab_${index}`,
-          "data-mbx-tab-viewer-selected": index === value,
+        debug={{
+          scl: `tab;${index === value ? "sel;" : ""}`,
         }}
         className={`${tabClassName} ${
           index === value ? tabSelectedClassName : tabUnselectedClassName
@@ -45,8 +43,8 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
     ))}
   </div>,
   <Container
-    additionalProps={{
-      "data-mbx-class": "tab-view",
+    debug={{
+      scl: "tb-v",
     }}
     className={tabViewClassName}
     dark={dark}

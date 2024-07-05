@@ -120,7 +120,7 @@
   );
   --mbx-c-drop-txt-h-d: var(
     --mbx-dropdown-text-color-hover-dark,
-    var(--mbx-dropdown-text-color-hover, var(--mbx-c-txt-h-d))
+    var(--mbx-dropdown-text-color-hover, var(--mbx-c-txt-h-l))
   );
   --mbx-c-drop-arr-l: var(
     --mbx-dropdown-arrow-color-light,

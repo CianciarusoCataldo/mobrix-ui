@@ -2,7 +2,7 @@ import React from "react";
 
 import { DropdownProps, MbxUiReactiveComponentBuilder } from "../../../types";
 
-import { Button, IconButton } from "../../atoms";
+import { Button } from "../../atoms";
 import Popup from "../Popup";
 import Container from "../Container";
 
@@ -109,18 +109,13 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           keyDownCallback(!isVisible);
         }}
         dark={dark}
-        additionalProps={{
-          "data-mbx-class": "button",
+        debug={{
+          scl: "drop-bt",
         }}
         key="options-menu"
         a11y={false}
       >
-        <div
-          tabIndex={-1}
-          key="dropdown_selected_element_label"
-          data-mbx-class="dropdown-selected-element"
-          data-mbx-scl="flxr"
-        >
+        <div tabIndex={-1} key="drop_sel_el_lb" data-mbx-scl="flxr;drop-sel-el">
           {selectedItem}
         </div>
         <Container
@@ -132,14 +127,13 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           key="icon"
           disabled={disabled}
           a11y={false}
-          additionalProps={{
-            "data-mbx-class": "icon",
-            "data-mbx-rotate": isVisible,
+          debug={{
+            scl: `ic;rot-${isVisible}`,
           }}
         >
           <p tabIndex={-1}>
             <i
-              data-mbx-class="arrow-icon"
+              data-mbx-scl="arr-ic"
               {...(disabled && {
                 "data-mbx-attributes": "disabled",
               })}
@@ -155,9 +149,8 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
         dark={dark}
         hide={!isVisible}
         a11y={false}
-        additionalProps={{
-          "data-mbx-class": "options",
-          "data-mbx-slc": "flxc",
+        debug={{
+          scl: "flxc;opts",
         }}
       >
         {elements.map((item, index) => (
@@ -175,14 +168,13 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
               keyDownCallback(false);
             }}
             key={`item_${index}`}
+            debug={{
+              scl: `flxc;reg;${selected === index ? "selected" : ""}`,
+            }}
             additionalProps={{
-              "data-mbx-slc": "flxc",
-              "data-mbx-features": "noShFc;colFc",
-              "data-mbx-class": "regular",
               "data-mbx-first": index === 0,
               "data-mbx-last": index === elements.length - 1,
-              "data-mbx-selected": selected === index,
-              "data-mbx-test": `dropdown_option_${index}`,
+              "data-mbx-features": "noShFc;colFc;",
             }}
           >
             <Container
@@ -190,10 +182,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
               background={false}
               shadow={false}
               dark={dark}
-              debug={{ scl: "flxr" }}
-              additionalProps={{
-                "data-mbx-class": "dropdown-element",
-              }}
+              debug={{ scl: "flxr;drop-el;" }}
             >
               {item}
             </Container>
