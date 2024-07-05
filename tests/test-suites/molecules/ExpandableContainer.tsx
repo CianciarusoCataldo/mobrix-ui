@@ -9,7 +9,7 @@ const expandableContainerTest = () => {
         <ExpandableContainer>Test Container</ExpandableContainer>
       );
       wrapper
-        .find('[data-mbx-class="container-arrow-button"]')
+        .find('[data-mbx-scl*="con-arr-bt"]')
         .simulate("click");
       expect(wrapper);
     });
@@ -23,9 +23,7 @@ const expandableContainerTest = () => {
           Test Container
         </ExpandableContainer>
       );
-      wrapper
-        .find('[data-mbx-class="container-arrow-button"]')
-        .simulate("click");
+      wrapper.find('[data-mbx-scl*="con-arr-bt"]').simulate("click");
       expect(onChangeStub).toBeCalled;
     });
   });
