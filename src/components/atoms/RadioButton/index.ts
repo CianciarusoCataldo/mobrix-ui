@@ -51,13 +51,15 @@ const RadioButton: RadioButtonComponent = ({
   ...commonProps
 }) =>
   buildMbxReactiveComponent<boolean>(commonProps, (sharedProps) => ({
-    name: "radio-button",
+    name: "radio",
     Component: ({ value, setValue }) => (value ? component : ""),
     defaultValue: false,
     inputValue,
     features: {
       opacityOnHover: true,
+      opacityOnActive: true,
     },
+    sharedCssClasses: "flxc",
     props: (value, setValue) => {
       const callBack = () => {
         if (!value || deselectable) {

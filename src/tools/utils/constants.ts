@@ -1,5 +1,6 @@
 import { CommonProps } from "../../types";
 import { Features } from "../../types/global/global";
+
 export const DEFAULT_COMMON_PROPS: CommonProps = {
   background: true,
   hover: true,
@@ -10,7 +11,7 @@ export const DEFAULT_COMMON_PROPS: CommonProps = {
   additionalProps: {},
   a11y: true,
   unstyled: false,
-  busy: false,
+  debug: { scl: "", features: {} },
 };
 export const FEATURES_PROPS: Record<
   keyof Features & CommonProps,
@@ -35,6 +36,10 @@ export const FEATURES_PROPS: Record<
   noShadowOnFocus: (props) => ({
     enabled: true,
     featureKey: "noShFc",
+  }),
+  fillOnFocus: (props) => ({
+    enabled: !props.disabled && props.a11y,
+    featureKey: "fillFc",
   }),
 };
 

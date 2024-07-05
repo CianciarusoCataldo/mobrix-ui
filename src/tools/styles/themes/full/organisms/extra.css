@@ -18,7 +18,7 @@
   --mbx-modal-x-color-hover-dark: var(--mbx-c-dtp-mod-x-h-d);
 }
 
-[data-mbx-id="form"] [data-mbx-class="field"] {
+[data-mbx-id="form"] [data-mbx-scl*="f-field"] {
   --mbx-formfield-background-light: var(--mbx-c-form-field-bg-l);
   --mbx-formfield-background-dark: var(--mbx-c-form-field-bg-d);
   --mbx-formfield-text-color-light: var(--mbx-c-form-field-txt-l);

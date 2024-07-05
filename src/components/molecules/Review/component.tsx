@@ -25,7 +25,7 @@ const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
     logo && allowedLogoTypes.includes(logo) ? logo : "default";
 
   return [
-    <div key="url" data-mbx-class="review-url-container">
+    <div key="url" data-mbx-scl="rev-url-c">
       <Link
         dark={dark}
         hover={hover && !disabled}
@@ -36,14 +36,12 @@ const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
         {icons[selectedLogo]}
       </Link>
     </div>,
-    <div data-mbx-class="review-info-box" key="info">
-      <div data-mbx-class="review-user-info">
-        <div data-mbx-class="review-photo">{icon}</div>
-        {user && <span data-mbx-class="review-username">{user}</span>}
+    <div data-mbx-scl="rev-inf-b;flxc;" key="info">
+      <div data-mbx-scl="flxr">
+        <div data-mbx-scl="rev-ph">{icon}</div>
+        {user && <span data-mbx-scl="rev-us-name">{user}</span>}
       </div>
-      {description && (
-        <span data-mbx-class="review-description">{description}</span>
-      )}
+      {description && <span data-mbx-scl="rev-ds">{description}</span>}
     </div>,
     <Rater
       disabled={disabled}

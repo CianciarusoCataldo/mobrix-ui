@@ -70,6 +70,7 @@ const DatePicker: DatePickerComponent = (props) => {
         ...props,
         ...sharedProps,
       }),
+    sharedCssClasses: "flxr",
     inputValue: props.value,
     defaultValue: todayDate,
   }));

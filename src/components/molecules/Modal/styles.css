@@ -5,8 +5,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: var(--mbx-c-mod-bg);
   padding: 0.1rem;
 }
@@ -20,24 +18,20 @@
   -o-animation: var(--mbx-md-an);
 }
 
-[data-mbx-id="modal"][data-mbx-attributes*="animated"][data-mbx-modal-animation="ease-in"] {
+[data-mbx-id="modal"][data-mbx-attributes*="animated"][data-mbx-mod-an="ease-in"] {
   --mbx-md-an: var(--mbx-md-an-in);
 }
 
-[data-mbx-id="modal"][data-mbx-attributes*="animated"][data-mbx-modal-animation="ease-out"] {
+[data-mbx-id="modal"][data-mbx-attributes*="animated"][data-mbx-mod-an="ease-out"] {
   --mbx-md-an: var(--mbx-md-an-out);
 }
 
-[data-mbx-id="modal"] > [data-mbx-id="dismissable-card"] {
-  display: flex;
-  flex-direction: column;
+[data-mbx-id="modal"] > [data-mbx-id="dis-card"] {
   align-items: center;
   --mbx-dismissablecard-x-color: var(--mbx-c-mod-x);
 }
 
-[data-mbx-id="modal"]
-  > [data-mbx-id="dismissable-card"]
-  [data-mbx-class="body"] {
+[data-mbx-id="modal"] > [data-mbx-id="dis-card"] [data-mbx-scl*="body"] {
   margin: 0;
 }
 

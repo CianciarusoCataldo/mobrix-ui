@@ -51,15 +51,11 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
 
       return (
         <div
-          data-mbx-class="field"
-          data-mbx-field-type={type}
+          data-mbx-scl={`${type};f-field`}
           className={fieldClassName}
-          key={`form_field_${index}`}
+          key={`f_field_${index}`}
         >
           <FormField
-            additionalProps={{
-              "data-mbx-test": `form_field_${field}`,
-            }}
             shadow={shadow}
             disabled={disabled}
             value={values[field]}
@@ -82,14 +78,12 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
       animated={false}
       hover={hover}
       shadow={shadow}
-      key="mobrix_ui_form_submit_button"
+      key="form_s_bt"
       dark={!dark}
-      additionalProps={{
-        "data-mbx-class": "submit-button",
-      }}
       onClick={() => {
         onSubmit && onSubmit(values);
       }}
+      debug={{ scl: "s-bt" }}
     >
       {submitLabel}
     </Button>,

@@ -11,7 +11,7 @@ const DEFAULT_ICONS: Record<string, JSX.Element> = {
       x="0"
       y="0"
       xmlSpace="preserve"
-      data-mbx-class="rotating"
+      data-mbx-scl="rotating"
       fill="var(--mbx-c-spn-load)"
     >
       <path

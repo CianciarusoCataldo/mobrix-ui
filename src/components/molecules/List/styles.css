@@ -1,19 +1,15 @@
 [data-mbx-id="list"] {
-  display: flex;
-  flex-direction: column;
   background: transparent;
   padding: 0.6rem;
 }
 
-[data-mbx-id="list"] [data-mbx-list-element] {
-  display: flex;
-  flex-direction: row;
+[data-mbx-id="list"] [data-mbx-scl*="lis-el"] {
   color: var(--mbx-c-lst-txt);
   outline: none;
   margin-top: 0.2rem;
 }
 
-[data-mbx-id="list"] [data-mbx-list-element] [data-mbx-class="dot"] {
+[data-mbx-id="list"] [data-mbx-scl*="lis-el"] [data-mbx-scl*="dot"] {
   width: 6px;
   height: 6px;
   fill: var(--mbx-c-lst-txt);
@@ -25,7 +21,7 @@
 
 @media (hover) {
   [data-mbx-id="list"][data-mbx-attributes*="hover"]
-    [data-mbx-list-element="clickable"]:hover {
+    [data-mbx-scl*="click"]:hover {
     cursor: pointer;
   }
 }

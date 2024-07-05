@@ -5,13 +5,14 @@
     fill: var(--mbx-c-car-arr-h);
   }
 
-  [data-mbx-id="expandable-container"]:not([data-mbx-attributes*="disabled"])
-    [data-mbx-class="arrow"]:hover {
+  [data-mbx-id="exp-cont"]:not([data-mbx-attributes*="disabled"])
+    [data-mbx-scl*="con-arr-bt"]
+    svg:hover {
     fill: var(--mbx-c-exp-arr-h);
   }
 
   [data-mbx-id="list"][data-mbx-attributes*="hover"]
-    [data-mbx-list-element="clickable"]:hover {
+    [data-mbx-scl*="click"]:hover {
     color: var(--mbx-c-lst-txt-h);
   }
 }

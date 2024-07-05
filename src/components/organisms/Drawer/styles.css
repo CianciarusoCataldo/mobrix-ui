@@ -8,7 +8,6 @@
   display: flex;
   background: var(--mbx-c-draw-bg);
   color: var(--mbx-c-draw-txt);
-  display: flex;
 }
 
 [data-mbx-id="drawer"]:not([data-mbx-attributes*="disabled"]) {
@@ -28,10 +27,10 @@
   scrollbar-width: none !important;
 }
 
-[data-mbx-id="drawer"][data-mbx-drawer-animation="ease-in"] {
+[data-mbx-id="drawer"][data-mbx-drw-an="ease-in"] {
   --mbx-drawer-animation: var(--mbx-drawer-animation-in);
 }
 
-[data-mbx-id="drawer"][data-mbx-drawer-animation="ease-out"] {
+[data-mbx-id="drawer"][data-mbx-drw-an="ease-out"] {
   --mbx-drawer-animation: var(--mbx-drawer-animation-out);
 }

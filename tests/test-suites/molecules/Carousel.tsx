@@ -7,6 +7,7 @@ const carouselTest = () => {
     <p>Test element 1</p>,
     <p>Test element 2</p>,
     <p>Test element 3</p>,
+    <p>Test element 4</p>,
   ];
 
   describe("Carousel", () => {
@@ -35,13 +36,22 @@ const carouselTest = () => {
       let wrapper = mount(
         <Carousel elements={testElements} onChange={onChangeStub} />
       );
-      wrapper.find("[data-mbx-test='dot_2']").simulate("mouseenter");
-      wrapper.find("[data-mbx-test='dot_2']").simulate("mouseleave");
-      wrapper.find("[data-mbx-test='dot_2']").simulate("click");
+      wrapper
+        .find("[data-mbx-scl*='dots'] [data-mbx-scl*='dot']")
+        .at(2)
+        .simulate("mouseenter");
+      wrapper
+        .find("[data-mbx-scl*='dots'] [data-mbx-scl*='dot']")
+        .at(2)
+        .simulate("mouseleave");
+      wrapper
+        .find("[data-mbx-scl*='dots'] [data-mbx-scl*='dot']")
+        .at(2)
+        .simulate("click");
 
       expect(onChangeStub).toBeCalledWith(2);
 
-      wrapper.find("[data-mbx-test='dot_1']").simulate("click");
+      wrapper.find("[data-mbx-scl*='dots'] [data-mbx-scl*='dot']").at(1).simulate("click");
 
       expect(onChangeStub).toBeCalledWith(1);
     });

@@ -4,11 +4,8 @@ import {
   Drawer,
   DrawerProps,
   Button,
-  Card,
-  Slider,
-  DismissableCard,
   PackageVersion,
-  Label,
+  Input,
 } from "./mobrix-ui-preview";
 import AtomsPage from "./pages/atoms";
 import MoleculesPage from "./pages/molecules";
@@ -74,7 +71,6 @@ const App = () => {
         </div>
       </Drawer>
       <div style={{ display: "flex", flexDirection: "column" }}>
-        <Slider animation="slide-in-top" className="test-slider" />
         <Button
           key="drawer-btn"
           onClick={() => {
@@ -83,21 +79,9 @@ const App = () => {
         >
           Toggle drawer
         </Button>
-        <Card
-          animation="slide-in-left"
-          className="test-card"
-          header="header"
-          body="body"
-          footer="footer"
-        />
-        <DismissableCard
-          animation="slide-in-left"
-          className="test-card test-dcard"
-          header="header"
-          body="body"
-          footer="footer"
-        />
-        <Label>Test</Label>
+        <Input autoresizable />
+        <div style={{ marginTop: "20px" }} />
+        <Input value="text" onChange={(value) => console.log(value)} />
         <PackageVersion
           name="mobrix-ui"
           user="CianciarusoCataldo"

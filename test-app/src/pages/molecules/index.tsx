@@ -634,6 +634,7 @@ const MoleculesPage = () => {
             />
             <RadioButtonGroup
               background={false}
+              shadow={false}
               buttons={[
                 { text: "textPosition = left", textPosition: "left" },
                 { text: "textPosition = top", textPosition: "top" },
@@ -643,6 +644,7 @@ const MoleculesPage = () => {
             />
             <RadioButtonGroup
               background={false}
+              shadow={false}
               dark
               horizontal
               buttons={[

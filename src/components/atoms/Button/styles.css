@@ -2,12 +2,12 @@
   border: 0;
   background: var(--mbx-c-btn-bg);
   color: var(--mbx-c-btn-txt);
-  text-align: center;
   font-weight: 800;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   display: inline-flex;
   align-items: center;
+  text-align: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
   width: fit-content;

@@ -1,9 +1,9 @@
-[data-mbx-id="embedded-video"]:not([class]) {
+[data-mbx-id="em-vd"]:not([class]) {
   width: fit-content;
   height: fit-content;
 }
 
-[data-mbx-id="embedded-video"] iframe {
+[data-mbx-id="em-vd"] iframe {
   display: block;
   width: 100%;
 }

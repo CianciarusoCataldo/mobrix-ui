@@ -6,7 +6,7 @@ const drawerTest = () => {
   describe("Drawer", () => {
     test("Rendering test", () => {
       let wrapper = mount(<Drawer position="left" closeOnClickOutside />);
-      wrapper.find('[data-mbx-class="drawer-close-button"]').simulate("click");
+      wrapper.find('[data-mbx-scl*="drw-close"]').simulate("click");
       expect(wrapper);
     });
 
@@ -21,7 +21,7 @@ const drawerTest = () => {
           <p>Test drawer content</p>
         </Drawer>
       );
-      wrapper.find('[data-mbx-class="drawer-close-button"]').simulate("click");
+      wrapper.find('[data-mbx-scl*="drw-close"]').simulate("click");
       expect(onCloseStub).toBeCalled;
 
       wrapper = mount(

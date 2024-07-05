@@ -12,9 +12,15 @@ const dropdownTest = () => {
           value={2}
         />
       );
-      wrapper.find('[data-mbx-class="button"]').simulate("click");
-      wrapper.find('[data-mbx-test="dropdown_option_1"]').simulate("focus");
-      wrapper.find('[data-mbx-test="dropdown_option_1"]').simulate("click");
+      wrapper.find('[data-mbx-scl*="drop-bt"]').simulate("click");
+      wrapper
+        .find('[data-mbx-id="popup"] [data-mbx-id="button"]')
+        .at(1)
+        .simulate("focus");
+      wrapper
+        .find('[data-mbx-id="popup"] [data-mbx-id="button"]')
+        .at(1)
+        .simulate("click");
       expect(wrapper);
       wrapper = mount(<Dropdown disabled />);
       expect(wrapper);
@@ -28,10 +34,15 @@ const dropdownTest = () => {
           elements={["Dropdown element 1", "Dropdown element 2"]}
         />
       );
-      wrapper.find('[data-mbx-class="button"]').simulate("click");
-      wrapper.find('[data-mbx-test="dropdown_option_1"]').simulate("focus");
-
-      wrapper.find('[data-mbx-test="dropdown_option_1"]').simulate("click");
+      wrapper.find('[data-mbx-scl*="drop-bt"]').simulate("click");
+      wrapper
+        .find('[data-mbx-id="popup"] [data-mbx-id="button"]')
+        .at(1)
+        .simulate("focus");
+      wrapper
+        .find('[data-mbx-id="popup"] [data-mbx-id="button"]')
+        .at(1)
+        .simulate("click");
 
       expect(onChangeStub).lastCalledWith(1);
     });

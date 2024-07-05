@@ -17,10 +17,10 @@ const toggleComponent: MbxUiReactiveComponent<boolean, ToggleProps> = ({
 
   return (
     <div
-      data-mbx-class="toggle-icon"
+      data-mbx-scl={`tg-ic;flip${status};`}
       {...(!disabled &&
         hover && {
-          "data-mbx-features": `opHov;flip${status}`,
+          "data-mbx-features": `opHov;`,
         })}
     >
       {status === true ? iconOn : iconOff}

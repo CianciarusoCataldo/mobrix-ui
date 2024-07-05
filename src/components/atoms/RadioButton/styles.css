@@ -1,21 +1,19 @@
-[data-mbx-id="radio-button"] {
+[data-mbx-id="radio"] {
   width: 30px;
   height: 30px;
   min-width: 30px;
   min-height: 30px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background: var(--mbx-c-rad-bg);
   padding: 0.1rem;
   border-color: transparent;
   border-style: hidden;
+  background: var(--mbx-c-rad-bg);
 }
 
-[data-mbx-id="radio-button"] [data-mbx-class="icon"] {
+[data-mbx-id="radio"] [data-mbx-scl*="ic"] {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;

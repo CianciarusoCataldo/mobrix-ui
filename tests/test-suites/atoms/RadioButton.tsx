@@ -12,9 +12,9 @@ const radioButtonTest = () => {
     test("Clicking on the radio button trigger the onChange callback", () => {
       const onChangeStub = jest.fn();
       const wrapper = mount(<RadioButton onChange={onChangeStub} />);
-      wrapper.find('[data-mbx-id="radio-button"]').simulate("click");
+      wrapper.find('[data-mbx-id="radio"]').simulate("click");
       wrapper
-        .find('[data-mbx-id="radio-button"]')
+        .find('[data-mbx-id="radio"]')
         .simulate("keyDown", { keyCode: 13, code: "Alt" });
       expect(onChangeStub).toBeCalledWith(true);
     });
@@ -29,7 +29,7 @@ const radioButtonTest = () => {
         />
       );
       wrapper
-        .find('[data-mbx-id="radio-button"]')
+        .find('[data-mbx-id="radio"]')
         .simulate("keyDown", { keyCode: 13, code: "Enter" });
       expect(onChangeStub).not.toBeCalled;
     });
@@ -39,7 +39,7 @@ const radioButtonTest = () => {
       const wrapper = mount(<RadioButton onKeyDown={() => {}} />);
 
       wrapper
-        .find('[data-mbx-id="radio-button"]')
+        .find('[data-mbx-id="radio"]')
         .simulate("keyDown", { keyCode: 13, code: "Enter" });
 
       expect(onChangeStub).toBeCalled;

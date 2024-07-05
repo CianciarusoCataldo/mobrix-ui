@@ -52,10 +52,12 @@ const IconButton: IconButtonComponent = ({
   buildMbxStandardComponent({ ...commonProps, hover }, (sharedProps) => ({
     name: "icon-button",
     wrapper: "button",
-    features: {
-      opacityOnHover: true,
-      opacityOnActive: true,
-    },
+    ...(!sharedProps.unstyled && {
+      features: {
+        opacityOnHover: true,
+        opacityOnActive: onClick !== undefined,
+      },
+    }),
     Component: children,
     commonProps: {
       ...sharedProps,

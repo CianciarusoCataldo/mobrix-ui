@@ -6,10 +6,8 @@
   border-radius: 6px;
 }
 
-[data-mbx-id="selector"] [data-mbx-class="selector-option"] {
+[data-mbx-id="selector"] > option {
   background-color: var(--mbx-c-sel-bg);
   color: var(--mbx-c-sel-txt);
   padding: 1rem;
 }
-
-

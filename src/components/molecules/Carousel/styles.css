@@ -1,7 +1,5 @@
 [data-mbx-id="carousel"] {
   color: var(--mbx-text-color);
-  display: flex;
-  flex-direction: column;
   align-items: center;
   width: fit-content;
   background: var(--mbx-c-car-bg);
@@ -16,7 +14,7 @@
   --mbx-carousel-animation: slideRight 0.3s forwards;
 }
 
-[data-mbx-id="carousel"] [data-mbx-class="element"] {
+[data-mbx-id="carousel"] [data-mbx-scl*="el"] {
   position: relative;
   -webkit-animation: var(--mbx-carousel-animation);
   animation: var(--mbx-carousel-animation);
@@ -25,12 +23,14 @@
   -o-animation: var(--mbx-carousel-animation);
 }
 
-[data-mbx-id="carousel"] [data-mbx-arrow] svg {
+[data-mbx-id="carousel"] [data-mbx-arrow]:not(:focus-visible) svg {
   fill: var(--mbx-c-car-arr);
 }
 
 [data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-attributes*="disabled"] svg,
-[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-attributes*="disabled"]:hover svg {
+[data-mbx-id="carousel"]
+  [data-mbx-arrow][data-mbx-attributes*="disabled"]:hover
+  svg {
   fill: none;
 }
 
@@ -44,46 +44,29 @@
   margin-left: 0.6rem;
 }
 
-[data-mbx-id="carousel"] [data-mbx-class="elements"],
-[data-mbx-id="carousel"] [data-mbx-class="dots"] {
-  display: flex;
-  flex-direction: row;
+[data-mbx-id="carousel"] [data-mbx-scl*="car-els"],
+[data-mbx-id="carousel"] [data-mbx-scl*="dots"] {
   align-items: center;
   overflow: hidden;
   padding: 0.5rem;
 }
 
-[data-mbx-id="carousel"] [data-mbx-class="dots"] {
+[data-mbx-id="carousel"] [data-mbx-scl*="dots"] {
   justify-content: center;
 }
 
-[data-mbx-id="carousel"] [data-mbx-class="dots"] [data-mbx-class="dot"] {
+[data-mbx-id="carousel"] [data-mbx-scl*="dots"] [data-mbx-scl*="dot"] {
   margin-left: 0.3rem;
   margin-right: 0.3rem;
-}
-
-[data-mbx-id="carousel"]
-  [data-mbx-class="dots"]
-  [data-mbx-class="dot"]
-  [data-mbx-class="carousel-dot-icon"] {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border-color: transparent;
-}
-
-[data-mbx-id="carousel"]
-  [data-mbx-class="dots"]
-  [data-mbx-class="dot"]
-  [data-mbx-class="carousel-dot-icon"][data-mbx-icon-full="true"] {
-  background: var(--mbx-c-car-dot-f);
-}
-
-[data-mbx-id="carousel"]
-  [data-mbx-class="dots"]
-  [data-mbx-class="dot"]
-  [data-mbx-class="carousel-dot-icon"][data-mbx-icon-full="false"] {
   background: var(--mbx-c-car-dot-e);
 }
 
-
+[data-mbx-id="carousel"]
+  [data-mbx-scl*="dots"]
+  [data-mbx-scl*="dot"][data-mbx-scl*="full-true"] {
+  background: var(--mbx-c-car-dot-f);
+}

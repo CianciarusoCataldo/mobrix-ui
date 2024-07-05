@@ -63,7 +63,7 @@ const FormField: FormFieldComponent = ({
   ...props
 }) => {
   return buildMbxReactiveComponent(props, (sharedProps) => ({
-    name: "form-field",
+    name: "field",
     commonProps: {
       ...sharedProps,
       shadow: false,
@@ -82,6 +82,7 @@ const FormField: FormFieldComponent = ({
       }),
     inputValue,
     defaultValue: null,
+    sharedCssClasses: `flxc;f-${type}`,
   }));
 };
 

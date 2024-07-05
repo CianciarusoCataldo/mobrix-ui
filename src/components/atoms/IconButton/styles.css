@@ -4,6 +4,11 @@
   border: 0;
   background: transparent;
   -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+[data-mbx-id="icon-button"]:focus {
+  outline: none;
 }
 
 [data-mbx-id="icon-button"][data-mbx-attributes*="disabled"] {

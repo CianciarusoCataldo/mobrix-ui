@@ -64,13 +64,8 @@ const Rater: RaterComponent = ({
         ...props,
         ...sharedProps,
       }),
-    commonProps: {
-      ...sharedProps,
-      additionalProps: {
-        ...sharedProps.additionalProps,
-        "data-mbx-vertical": vertical,
-      },
-    },
+    sharedCssClasses: vertical ? "flxc" : "flxr",
+    commonProps: sharedProps,
   }));
 
 export default Rater;

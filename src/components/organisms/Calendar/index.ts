@@ -68,6 +68,7 @@ const Calendar: CalendarComponent = ({ value: inputValue, ...props }) => {
         month: todayDate.month,
         day: todayDate.dayOfTheMonth,
       },
+      sharedCssClasses: "flxc",
       Component: ({ value, setValue }) =>
         calendarComponent({
           today: todayDate,

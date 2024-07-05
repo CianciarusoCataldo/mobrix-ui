@@ -1,0 +1,23 @@
+[data-mbx-id][data-mbx-scl*="flxc"],
+[data-mbx-id] [data-mbx-scl*="flxc"] {
+  display: flex;
+  flex-direction: column;
+}
+
+[data-mbx-id][data-mbx-scl*="flxr"],
+[data-mbx-id] [data-mbx-scl*="flxr"] {
+  display: flex;
+  flex-direction: row;
+}
+
+[data-mbx-id][data-mbx-scl*="flxcr"],
+[data-mbx-id] [data-mbx-scl*="flxcr"] {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+[data-mbx-id][data-mbx-scl*="flxrr"],
+[data-mbx-id] [data-mbx-scl*="flxrr"] {
+  display: flex;
+  flex-direction: row-reverse;
+}

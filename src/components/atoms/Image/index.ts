@@ -60,7 +60,7 @@ const Image: ImageComponent = ({
       },
     },
     features: {
-      opacityOnHover: true,
+      opacityOnHover: hover,
     },
     wrapper: "img",
   }));

@@ -8,6 +8,8 @@ const toggleTest = () => {
       let wrapper = mount(<Toggle />);
       wrapper.find('[data-mbx-id="toggle"]').simulate("click");
       expect(wrapper);
+      wrapper = mount(<Toggle disabled />);
+      expect(wrapper);
     });
 
     test("Clicking on the toggle switch its status and trigger the onChange callback", () => {

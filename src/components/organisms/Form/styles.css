@@ -1,7 +1,5 @@
 [data-mbx-id="form"] {
   border-color: transparent;
-  display: flex;
-  flex-direction: column;
   padding: 0.75rem;
   border-radius: 0.7rem;
   background: var(--mbx-c-form-bg);
@@ -17,16 +15,16 @@
 }
 
 [data-mbx-id="form"]
-  [data-mbx-class="field"]:is(
-    [data-mbx-field-type="checkbox"],
-    [data-mbx-field-type="radio"],
-    [data-mbx-field-type="boolean"]
+  [data-mbx-scl*="f-field"]:is(
+    [data-mbx-scl*="t-checkbox"],
+    [data-mbx-scl*="t-radio"],
+    [data-mbx-scl*="t-boolean"]
   ) {
   margin-left: auto;
   margin-right: auto;
 }
 
-[data-mbx-id="form"] [data-mbx-class="field"] {
+[data-mbx-id="form"] [data-mbx-scl*="f-field"] {
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;
 }
@@ -48,12 +46,12 @@
     min-width: 3%;
   }
 
-  [data-mbx-id="form"] [data-mbx-class="field"] {
+  [data-mbx-id="form"] [data-mbx-scl*="f-field"] {
     max-width: 65%;
   }
 }
 
-[data-mbx-id="form"] [data-mbx-class="submit-button"] {
+[data-mbx-id="form"] [data-mbx-scl*="s-bt"] {
   margin-top: 0.9rem;
   margin-left: auto;
   margin-right: auto;

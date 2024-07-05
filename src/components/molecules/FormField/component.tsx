@@ -48,13 +48,13 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
     components.push(
       <Container
         additionalProps={{
-          "data-mbx-class": "form-field-box",
-          "data-mbx-form-field-header-box": true,
+          "data-mbx-class": "field-box",
+          "data-mbx-field-header-box": true,
         }}
         shadow={false}
         animated={false}
         background={false}
-        key="form_field_header_box"
+        key="field_header_box"
         dark={dark}
         {...headerProps}
       >
@@ -76,11 +76,11 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       disabled={disabled}
       animated={animated}
       additionalProps={{
-        "data-mbx-class": "form-field-component",
-        "data-mbx-form-field-error": error,
+        "data-mbx-class": "field-component",
+        "data-mbx-field-error": error,
       }}
       {...extraProps}
-      key="form_field_component"
+      key="field_component"
       value={fieldFormatters[type].format(value)}
       shadow={shadow}
       dark={dark}
@@ -113,13 +113,13 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
   components.push(
     <Container
       additionalProps={{
-        "data-mbx-class": "form-field-box",
-        "data-mbx-form-field-error-box": true,
+        "data-mbx-class": "field-box",
+        "data-mbx-field-error-box": true,
       }}
       animated={true}
       dark={dark}
       hide={!error}
-      key="form_field_error_box"
+      key="field_err_box"
     >
       {errorLabel}
     </Container>,

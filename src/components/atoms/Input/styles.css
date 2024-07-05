@@ -1,11 +1,8 @@
 [data-mbx-id="inputbox"] {
   background-color: var(--mbx-c-in-bgc);
   color: var(--mbx-c-in-txt);
-  border-radius: 5px;
-  padding: 0.5rem;
-  border-color: transparent;
 }
 
-[data-mbx-id="inputbox"][data-mbx-autoresizable="true"] {
+[data-mbx-id="inputbox"][data-mbx-scl*="a-res"] {
   width: fit-content;
 }

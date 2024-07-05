@@ -15,12 +15,13 @@ const DismissableCardInternalComponent: MbxUiComponent<
   cardComponent({
     ...props,
     header: (
-      <div data-mbx-class="header-container">
-        <div data-mbx-class="dismiss-container">
+      <div data-mbx-scl="flxc">
+        <div data-mbx-scl="dis-cn;flxrr;">
           <IconButton
             dark={props.dark}
-            additionalProps={{
-              "data-mbx-class": "dismiss-button",
+            debug={{
+              scl: "dis-bt;flxrr",
+              features: { fillOnFocus: true },
             }}
             disabled={props.disabled}
             onClick={() => {
@@ -30,7 +31,7 @@ const DismissableCardInternalComponent: MbxUiComponent<
             {x_icon}
           </IconButton>
         </div>
-        {header && <div data-mbx-class="header-element">{header}</div>}
+        {header && <div data-mbx-scl="hd-el">{header}</div>}
       </div>
     ),
   });

@@ -3,8 +3,8 @@
   --mbx-c-btn-bg: transparent !important;
 }
 
-[data-mbx-id="checkbox"]:not([data-mbx-attributes*="background"]),
-[data-mbx-id="checkbox"]:not([data-mbx-attributes*="background"]):hover {
+[data-mbx-id="check"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="check"]:not([data-mbx-attributes*="background"]):hover {
   --mbx-c-chk-bg: transparent !important;
 }
 
@@ -23,8 +23,8 @@
   --mbx-c-in-bgc: transparent !important;
 }
 
-[data-mbx-id="radio-button"]:not([data-mbx-attributes*="background"]),
-[data-mbx-id="radio-button"]:not([data-mbx-attributes*="background"]):hover {
+[data-mbx-id="radio"]:not([data-mbx-attributes*="background"]),
+[data-mbx-id="radio"]:not([data-mbx-attributes*="background"]):hover {
   --mbx-c-rad-bg: transparent !important;
 }
 

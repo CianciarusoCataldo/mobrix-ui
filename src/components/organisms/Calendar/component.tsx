@@ -112,11 +112,11 @@ const CalendarComponent: MbxUiReactiveComponent<
 
   dayLabel &&
     components.push(
-      <div data-mbx-class="top-selector" key="date_top_selector">
+      <div data-mbx-class="top-selector" key="cal_top_sel" data-mbx-scl="flxr">
         {getArrowButton("left")}
         <Label
-          additionalProps={{
-            "data-mbx-class": "actual-date",
+          debug={{
+            scl: "act-dt",
           }}
           dark={commonProps.dark}
           {...customProps}
@@ -128,10 +128,7 @@ const CalendarComponent: MbxUiReactiveComponent<
   components.push(
     <Table
       disabled={disabled}
-      key="calendar_table"
-      additionalProps={{
-        "data-mbx-calendar-table": "true",
-      }}
+      key="cal_tb"
       propsCallback={(row, column) => {
         if (row > 0) {
           const isDisabled = fromToday

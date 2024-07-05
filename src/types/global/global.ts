@@ -75,7 +75,10 @@ export type CommonProps = MbxAttributes & {
   /** callback called when a key is pressed when inside the component */
   onKeyDown?: (keyEvent: any) => void;
 
-  busy?: boolean;
+  debug?: {
+    scl?: string;
+    features?: Features;
+  };
 };
 
 /**
@@ -238,6 +241,8 @@ export interface Features {
   textcolorOnFocus?: boolean;
 
   noShadowOnFocus?: boolean;
+
+  fillOnFocus?: boolean;
 }
 
 /**
@@ -263,6 +268,8 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
   wrapper?: Wrappers;
 
   features?: Features;
+
+  sharedCssClasses?: string;
 };
 
 /**

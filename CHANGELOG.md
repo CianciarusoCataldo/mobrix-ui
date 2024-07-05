@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.13.0](#3130)
 - [3.12.0](#3120)
 - [3.11.0](#3110)
 - [3.10.0](#3100)
@@ -26,6 +27,15 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.13.0
+
+- Styles optimized
+- Unified shared classes, to optimize bundle size
+- Clean-up
+- New `fillOnFocus` feature, to fill icons when focused (similar to `textcolorOnFocus` feature)
 
 <br>
 
