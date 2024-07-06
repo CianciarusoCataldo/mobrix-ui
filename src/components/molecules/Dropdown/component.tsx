@@ -174,7 +174,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
             additionalProps={{
               "data-mbx-first": index === 0,
               "data-mbx-last": index === elements.length - 1,
-              "data-mbx-features": "noShFc;colFc;",
+              "data-mbx-fts": "noShFc;colFc;",
             }}
           >
             <Container

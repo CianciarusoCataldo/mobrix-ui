@@ -55,7 +55,7 @@ export const getEnabledFeatures = (
   features: Features,
   commonProps: CommonProps
 ) => {
-  let enabledFeatures = "";
+  let mbxFts = "";
   const featureProps = Object.keys(features).filter(
     (feature) => features[feature]
   );
@@ -63,12 +63,10 @@ export const getEnabledFeatures = (
     .filter((feature, index) => FEATURES_PROPS[feature])
     .forEach((feature, index) => {
       const enabledFeature = FEATURES_PROPS[feature](commonProps);
-      enabledFeatures += enabledFeature.enabled
-        ? `${enabledFeature.featureKey};`
-        : "";
+      mbxFts += enabledFeature.enabled ? `${enabledFeature.featureKey};` : "";
     });
 
-  return enabledFeatures;
+  return mbxFts;
 };
 
 export const getMbxAttributes = (commonProps: CommonProps) => {
@@ -112,23 +110,22 @@ const buildMobrixUiStandardComponent = ({
   wrapper: SelectedWrapper = "div",
   features = {},
 }: BuilderProps) => {
-  let enabledFeatures = getEnabledFeatures(
+  let mbxFts = getEnabledFeatures(
     {
       ...features,
       ...(commonProps.debug?.features ? commonProps.debug.features : {}),
     },
     commonProps
   );
-  let mbxAttributes = getMbxAttributes(commonProps);
+  let mbxAtts = getMbxAttributes(commonProps);
 
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,
-    ...(mbxAttributes.length > 0 && {
-      "data-mbx-atts": mbxAttributes,
+    ...(mbxAtts.length > 0 && {
+      "data-mbx-atts": mbxAtts,
     }),
-    ...(enabledFeatures.length > 0 && {
-      "data-mbx-features": enabledFeatures,
-      "data-mbx-fts": enabledFeatures,
+    ...(mbxFts.length > 0 && {
+      "data-mbx-fts": mbxFts,
     }),
     "data-mbx-scl": `${sharedCssClasses};${
       commonProps.debug?.scl ? commonProps.debug.scl : ""

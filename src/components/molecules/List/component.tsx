@@ -21,7 +21,7 @@ const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
     <div
       key={`el_${index}`}
       onClick={onClick && (() => onClick(index))}
-      data-mbx-features={features}
+      data-mbx-fts={features}
       data-mbx-scl={`flxr;lis-el;${onClick ? "click;" : ""}`}
       tabIndex={0}
     >

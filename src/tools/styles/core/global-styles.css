@@ -19,9 +19,9 @@
   display: none !important;
 }
 
-[data-mbx-id][data-mbx-atts*="animated"][data-mbx-features*="anim-fade-in"],
+[data-mbx-id][data-mbx-atts*="animated"][data-mbx-fts*="anim-fade-in"],
 [data-mbx-id][data-mbx-atts*="animated"]
-  [data-mbx-atts*="animated"][data-mbx-features*="anim-fade-in"] {
+  [data-mbx-atts*="animated"][data-mbx-fts*="anim-fade-in"] {
   animation: fadein 0.4s;
   -webkit-animation: fadein 0.4s;
   -moz-animation: fadein 0.4s;
@@ -29,9 +29,9 @@
   -o-animation: fadein 0.4s;
 }
 
-[data-mbx-id][data-mbx-atts*="animated"][data-mbx-features*="anim-slide-in-left"],
+[data-mbx-id][data-mbx-atts*="animated"][data-mbx-fts*="anim-slide-in-left"],
 [data-mbx-id][data-mbx-atts*="animated"]
-  [data-mbx-atts*="animated"][data-mbx-features*="anim-slide-in-left"] {
+  [data-mbx-atts*="animated"][data-mbx-fts*="anim-slide-in-left"] {
   animation: slideLeft 0.4s;
   -webkit-animation: slideLeft 0.4s;
   -moz-animation: slideLeft 0.4s;
@@ -39,9 +39,9 @@
   -o-animation: slideLeft 0.4s;
 }
 
-[data-mbx-id][data-mbx-atts*="animated"][data-mbx-features*="anim-slide-in-right"],
+[data-mbx-id][data-mbx-atts*="animated"][data-mbx-fts*="anim-slide-in-right"],
 [data-mbx-id][data-mbx-atts*="animated"]
-  [data-mbx-atts*="animated"][data-mbx-features*="anim-slide-in-right"] {
+  [data-mbx-atts*="animated"][data-mbx-fts*="anim-slide-in-right"] {
   animation: slideRight 0.4s;
   -webkit-animation: slideRight 0.4s;
   -moz-animation: slideRight 0.4s;
@@ -49,9 +49,9 @@
   -o-animation: slideRight 0.4s;
 }
 
-[data-mbx-id][data-mbx-atts*="animated"][data-mbx-features*="anim-slide-in-top"],
+[data-mbx-id][data-mbx-atts*="animated"][data-mbx-fts*="anim-slide-in-top"],
 [data-mbx-id][data-mbx-atts*="animated"]
-  [data-mbx-atts*="animated"][data-mbx-features*="anim-slide-in-top"] {
+  [data-mbx-atts*="animated"][data-mbx-fts*="anim-slide-in-top"] {
   animation: slideTop 0.4s;
   -webkit-animation: slideTop 0.4s;
   -moz-animation: slideTop 0.4s;
@@ -59,9 +59,8 @@
   -o-animation: slideTop 0.4s;
 }
 
-[data-mbx-id][data-mbx-atts*="animated"][data-mbx-features*="anim-fade-out"],
-[data-mbx-id][data-mbx-atts*="animated"]
-  [data-mbx-features*="anim-fade-out"] {
+[data-mbx-id][data-mbx-atts*="animated"][data-mbx-fts*="anim-fade-out"],
+[data-mbx-id][data-mbx-atts*="animated"] [data-mbx-fts*="anim-fade-out"] {
   animation: fadeOut 0.3s;
   -webkit-animation: fadeOut 0.3s;
   -moz-animation: fadeOut 0.3s;
@@ -73,9 +72,8 @@
   opacity: 0.6;
 }
 
-[data-mbx-id][data-mbx-atts*="animated"][data-mbx-features*="anim-shake"],
-[data-mbx-id][data-mbx-atts*="animated"]
-  [data-mbx-features*="anim-shake"] {
+[data-mbx-id][data-mbx-atts*="animated"][data-mbx-fts*="anim-shake"],
+[data-mbx-id][data-mbx-atts*="animated"] [data-mbx-fts*="anim-shake"] {
   animation: shake 0.5s;
   -webkit-animation: shake 0.5s;
   -moz-animation: shake 0.5s;
@@ -106,33 +104,33 @@
     -o-box-shadow: 0 5px 13px -1px var(--mbx-c-fc);
   }
 
-  [data-mbx-id][data-mbx-features*="opHov"]:hover,
-  [data-mbx-id] [data-mbx-features*="opHov"]:hover {
+  [data-mbx-id][data-mbx-fts*="opHov"]:hover,
+  [data-mbx-id] [data-mbx-fts*="opHov"]:hover {
     opacity: 0.7;
   }
 }
 
-[data-mbx-id][data-mbx-features*="opAct"]:active,
-[data-mbx-id] [data-mbx-features*="opAct"]:active {
+[data-mbx-id][data-mbx-fts*="opAct"]:active,
+[data-mbx-id] [data-mbx-fts*="opAct"]:active {
   opacity: 0.3;
 }
 
-[data-mbx-id][data-mbx-features*="colFc"]:focus-visible,
-[data-mbx-id] [data-mbx-features*="colFc"]:focus-visible {
+[data-mbx-id][data-mbx-fts*="colFc"]:focus-visible,
+[data-mbx-id] [data-mbx-fts*="colFc"]:focus-visible {
   color: var(--mbx-c-fc);
 }
 
-[data-mbx-id][data-mbx-features*="noShFc"]:focus-visible,
-[data-mbx-id] [data-mbx-features*="noShFc"]:focus-visible {
+[data-mbx-id][data-mbx-fts*="noShFc"]:focus-visible,
+[data-mbx-id] [data-mbx-fts*="noShFc"]:focus-visible {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
 }
 
-[data-mbx-id][data-mbx-features*="fillFc"]:focus-visible,
-[data-mbx-id][data-mbx-features*="fillFc"]:focus-visible svg,
-[data-mbx-id] [data-mbx-features*="fillFc"]:focus-visible,
-[data-mbx-id] [data-mbx-features*="fillFc"]:focus-visible svg {
+[data-mbx-id][data-mbx-fts*="fillFc"]:focus-visible,
+[data-mbx-id][data-mbx-fts*="fillFc"]:focus-visible svg,
+[data-mbx-id] [data-mbx-fts*="fillFc"]:focus-visible,
+[data-mbx-id] [data-mbx-fts*="fillFc"]:focus-visible svg {
   fill: var(--mbx-c-fc);
 }

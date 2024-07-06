@@ -44,7 +44,7 @@ const expandableContainerComponent: MbxUiReactiveComponent<
     >
       <svg
         data-mbx-compact={compact}
-        data-mbx-features="fillFc;"
+        data-mbx-fts="fillFc;"
         tabIndex={0}
         width="1.5rem"
         fillRule="evenodd"
