@@ -1,15 +1,15 @@
-[data-mbx-id="calendar"]:not([data-mbx-attributes*="background"]) {
+[data-mbx-id="calendar"]:not([data-mbx-atts*="background"]) {
   --mbx-c-cal-bg: transparent !important;
 }
 
-[data-mbx-id="date-picker"]:not([data-mbx-attributes*="background"]) {
+[data-mbx-id="date-picker"]:not([data-mbx-atts*="background"]) {
   --mbx-c-dtp-bg: transparent !important;
 }
 
-[data-mbx-id="drawer"]:not([data-mbx-attributes*="background"]) {
+[data-mbx-id="drawer"]:not([data-mbx-atts*="background"]) {
   --mbx-c-draw-bg: transparent !important;
 }
 
-[data-mbx-id="form"]:not([data-mbx-attributes*="background"]) {
+[data-mbx-id="form"]:not([data-mbx-atts*="background"]) {
   --mbx-c-form-bg: transparent !important;
 }

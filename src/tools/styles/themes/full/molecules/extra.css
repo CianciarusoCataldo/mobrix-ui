@@ -12,7 +12,7 @@
   fill: var(--mbx-c-exp-arr);
 }
 
-[data-mbx-id="exp-cont"][data-mbx-attributes*="a11y"]
+[data-mbx-id="exp-cont"][data-mbx-atts*="a11y"]
   [data-mbx-scl*="con-arr-bt"]:focus-visible
   svg {
   fill: var(--mbx-c-exp-arr-h);

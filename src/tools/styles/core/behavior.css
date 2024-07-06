@@ -1,23 +1,15 @@
-[data-mbx-id]:not([data-mbx-attributes*="dark"]) {
+[data-mbx-id]:not([data-mbx-atts*="dark"]) {
   --mbx-c-bgc: var(--mbx-c-bgc-l);
-
   --mbx-c-bg: var(--mbx-c-bg-l);
-
   --mbx-c-txt: var(--mbx-c-txt-l);
-
   --mbx-c-fc: var(--mbx-c-fc-l);
-
   --mbx-c-sh: var(--mbx-c-sh-l);
 }
 
-[data-mbx-id][data-mbx-attributes*="dark"] {
+[data-mbx-id][data-mbx-atts*="dark"] {
   --mbx-c-bgc: var(--mbx-c-bgc-d);
-
   --mbx-c-bg: var(--mbx-c-bg-d);
-
   --mbx-c-txt: var(--mbx-c-txt-d);
-
   --mbx-c-fc: var(--mbx-c-fc-d);
-
   --mbx-c-sh: var(--mbx-c-sh-d);
 }

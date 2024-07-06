@@ -3,7 +3,7 @@
   width: fit-content;
 }
 
-[data-mbx-id="radio-group"][data-mbx-attributes*="background"] {
+[data-mbx-id="radio-group"][data-mbx-atts*="background"] {
   background: var(--mbx-c-radg-bg);
   color: var(--mbx-c-radg-txt);
 }
@@ -14,8 +14,7 @@
   justify-content: center;
 }
 
-[data-mbx-id="radio-group"][data-mbx-scl*="or-h"]
-  [data-mbx-scl*="rdg-el"] {
+[data-mbx-id="radio-group"][data-mbx-scl*="or-h"] [data-mbx-scl*="rdg-el"] {
   margin: 0.3rem 1rem 0.3rem 1rem;
 }
 
@@ -24,28 +23,20 @@
   margin: 1rem 0.3rem 1rem 0.3rem;
 }
 
-[data-mbx-id="radio-group"]
-  [data-mbx-scl*="t-left"]
-  > [data-mbx-id="label"] {
+[data-mbx-id="radio-group"] [data-mbx-scl*="t-left"] > [data-mbx-id="label"] {
   margin-right: 0.7rem;
 }
 
-[data-mbx-id="radio-group"]
-  [data-mbx-scl*="t-right"]
-  > [data-mbx-id="label"] {
+[data-mbx-id="radio-group"] [data-mbx-scl*="t-right"] > [data-mbx-id="label"] {
   margin-left: 0.7rem;
 }
 
-[data-mbx-id="radio-group"]
-  [data-mbx-scl*="t-top"]
-  > [data-mbx-id="label"] {
+[data-mbx-id="radio-group"] [data-mbx-scl*="t-top"] > [data-mbx-id="label"] {
   margin-bottom: 0.7rem;
   margin-top: 0;
 }
 
-[data-mbx-id="radio-group"]
-  [data-mbx-scl*="t-bottom"]
-  > [data-mbx-id="label"] {
+[data-mbx-id="radio-group"] [data-mbx-scl*="t-bottom"] > [data-mbx-id="label"] {
   margin-top: 0.7rem;
   margin-bottom: 0;
 }
@@ -55,8 +46,7 @@
     flex-direction: column;
   }
 
-  [data-mbx-id="radio-group"][data-mbx-scl*="or-h"]
-    [data-mbx-scl*="rdg-el"] {
+  [data-mbx-id="radio-group"][data-mbx-scl*="or-h"] [data-mbx-scl*="rdg-el"] {
     margin: 1rem 0.3rem 1rem 0.3rem;
   }
 }

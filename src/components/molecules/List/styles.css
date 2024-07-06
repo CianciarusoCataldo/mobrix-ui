@@ -20,8 +20,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="list"][data-mbx-attributes*="hover"]
-    [data-mbx-scl*="click"]:hover {
+  [data-mbx-id="list"][data-mbx-atts*="hover"] [data-mbx-scl*="click"]:hover {
     cursor: pointer;
   }
 }

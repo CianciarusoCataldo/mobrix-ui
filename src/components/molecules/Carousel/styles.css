@@ -27,10 +27,8 @@
   fill: var(--mbx-c-car-arr);
 }
 
-[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-attributes*="disabled"] svg,
-[data-mbx-id="carousel"]
-  [data-mbx-arrow][data-mbx-attributes*="disabled"]:hover
-  svg {
+[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-atts*="disabled"] svg,
+[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-atts*="disabled"]:hover svg {
   fill: none;
 }
 

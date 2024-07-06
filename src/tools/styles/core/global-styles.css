@@ -14,14 +14,14 @@
   outline: none;
 }
 
-[data-mbx-id] [data-mbx-attributes*="hide"],
-[data-mbx-id][data-mbx-attributes*="hide"] {
+[data-mbx-id] [data-mbx-atts*="hide"],
+[data-mbx-id][data-mbx-atts*="hide"] {
   display: none !important;
 }
 
-[data-mbx-id][data-mbx-attributes*="animated"][data-mbx-features*="anim-fade-in"],
-[data-mbx-id][data-mbx-attributes*="animated"]
-  [data-mbx-attributes*="animated"][data-mbx-features*="anim-fade-in"] {
+[data-mbx-id][data-mbx-atts*="animated"][data-mbx-features*="anim-fade-in"],
+[data-mbx-id][data-mbx-atts*="animated"]
+  [data-mbx-atts*="animated"][data-mbx-features*="anim-fade-in"] {
   animation: fadein 0.4s;
   -webkit-animation: fadein 0.4s;
   -moz-animation: fadein 0.4s;
@@ -29,9 +29,9 @@
   -o-animation: fadein 0.4s;
 }
 
-[data-mbx-id][data-mbx-attributes*="animated"][data-mbx-features*="anim-slide-in-left"],
-[data-mbx-id][data-mbx-attributes*="animated"]
-  [data-mbx-attributes*="animated"][data-mbx-features*="anim-slide-in-left"] {
+[data-mbx-id][data-mbx-atts*="animated"][data-mbx-features*="anim-slide-in-left"],
+[data-mbx-id][data-mbx-atts*="animated"]
+  [data-mbx-atts*="animated"][data-mbx-features*="anim-slide-in-left"] {
   animation: slideLeft 0.4s;
   -webkit-animation: slideLeft 0.4s;
   -moz-animation: slideLeft 0.4s;
@@ -39,9 +39,9 @@
   -o-animation: slideLeft 0.4s;
 }
 
-[data-mbx-id][data-mbx-attributes*="animated"][data-mbx-features*="anim-slide-in-right"],
-[data-mbx-id][data-mbx-attributes*="animated"]
-  [data-mbx-attributes*="animated"][data-mbx-features*="anim-slide-in-right"] {
+[data-mbx-id][data-mbx-atts*="animated"][data-mbx-features*="anim-slide-in-right"],
+[data-mbx-id][data-mbx-atts*="animated"]
+  [data-mbx-atts*="animated"][data-mbx-features*="anim-slide-in-right"] {
   animation: slideRight 0.4s;
   -webkit-animation: slideRight 0.4s;
   -moz-animation: slideRight 0.4s;
@@ -49,9 +49,9 @@
   -o-animation: slideRight 0.4s;
 }
 
-[data-mbx-id][data-mbx-attributes*="animated"][data-mbx-features*="anim-slide-in-top"],
-[data-mbx-id][data-mbx-attributes*="animated"]
-  [data-mbx-attributes*="animated"][data-mbx-features*="anim-slide-in-top"] {
+[data-mbx-id][data-mbx-atts*="animated"][data-mbx-features*="anim-slide-in-top"],
+[data-mbx-id][data-mbx-atts*="animated"]
+  [data-mbx-atts*="animated"][data-mbx-features*="anim-slide-in-top"] {
   animation: slideTop 0.4s;
   -webkit-animation: slideTop 0.4s;
   -moz-animation: slideTop 0.4s;
@@ -59,8 +59,8 @@
   -o-animation: slideTop 0.4s;
 }
 
-[data-mbx-id][data-mbx-attributes*="animated"][data-mbx-features*="anim-fade-out"],
-[data-mbx-id][data-mbx-attributes*="animated"]
+[data-mbx-id][data-mbx-atts*="animated"][data-mbx-features*="anim-fade-out"],
+[data-mbx-id][data-mbx-atts*="animated"]
   [data-mbx-features*="anim-fade-out"] {
   animation: fadeOut 0.3s;
   -webkit-animation: fadeOut 0.3s;
@@ -69,12 +69,12 @@
   -o-animation: fadeOut 0.3s;
 }
 
-[data-mbx-id][data-mbx-attributes*="disabled"] {
+[data-mbx-id][data-mbx-atts*="disabled"] {
   opacity: 0.6;
 }
 
-[data-mbx-id][data-mbx-attributes*="animated"][data-mbx-features*="anim-shake"],
-[data-mbx-id][data-mbx-attributes*="animated"]
+[data-mbx-id][data-mbx-atts*="animated"][data-mbx-features*="anim-shake"],
+[data-mbx-id][data-mbx-atts*="animated"]
   [data-mbx-features*="anim-shake"] {
   animation: shake 0.5s;
   -webkit-animation: shake 0.5s;
@@ -84,22 +84,22 @@
   animation-iteration-count: 1;
 }
 
-[data-mbx-id][data-mbx-attributes*="shadow"],
-[data-mbx-id] [data-mbx-attributes*="shadow"] {
+[data-mbx-id][data-mbx-atts*="shadow"],
+[data-mbx-id] [data-mbx-atts*="shadow"] {
   box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
   -webkit-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
   -moz-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
   -o-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
 }
 
-[data-mbx-id]:not([data-mbx-attributes*="background"]),
-[data-mbx-id]:not([data-mbx-attributes*="background"]):hover {
+[data-mbx-id]:not([data-mbx-atts*="background"]),
+[data-mbx-id]:not([data-mbx-atts*="background"]):hover {
   --mbx-c-bg: transparent;
   --mbx-c-bgc: transparent;
 }
 
 @media (hover: hover) {
-  [data-mbx-id][data-mbx-attributes*="a11y"]:focus-visible {
+  [data-mbx-id][data-mbx-atts*="a11y"]:focus-visible {
     box-shadow: 0 5px 13px -1px var(--mbx-c-fc);
     -webkit-box-shadow: 0 5px 13px -1px var(--mbx-c-fc);
     -moz-box-shadow: 0 5px 13px -1px var(--mbx-c-fc);

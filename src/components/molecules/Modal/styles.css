@@ -9,7 +9,7 @@
   padding: 0.1rem;
 }
 
-[data-mbx-id="modal"][data-mbx-attributes*="animated"] {
+[data-mbx-id="modal"][data-mbx-atts*="animated"] {
   --mbx-md-an-in: fadein 0.3s forwards;
   --mbx-md-an-out: fadeOut 0.3s forwards;
   animation: var(--mbx-md-an);
@@ -18,11 +18,11 @@
   -o-animation: var(--mbx-md-an);
 }
 
-[data-mbx-id="modal"][data-mbx-attributes*="animated"][data-mbx-mod-an="ease-in"] {
+[data-mbx-id="modal"][data-mbx-atts*="animated"][data-mbx-mod-an="ease-in"] {
   --mbx-md-an: var(--mbx-md-an-in);
 }
 
-[data-mbx-id="modal"][data-mbx-attributes*="animated"][data-mbx-mod-an="ease-out"] {
+[data-mbx-id="modal"][data-mbx-atts*="animated"][data-mbx-mod-an="ease-out"] {
   --mbx-md-an: var(--mbx-md-an-out);
 }
 

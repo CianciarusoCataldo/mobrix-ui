@@ -124,10 +124,11 @@ const buildMobrixUiStandardComponent = ({
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,
     ...(mbxAttributes.length > 0 && {
-      "data-mbx-attributes": mbxAttributes,
+      "data-mbx-atts": mbxAttributes,
     }),
     ...(enabledFeatures.length > 0 && {
       "data-mbx-features": enabledFeatures,
+      "data-mbx-fts": enabledFeatures,
     }),
     "data-mbx-scl": `${sharedCssClasses};${
       commonProps.debug?.scl ? commonProps.debug.scl : ""

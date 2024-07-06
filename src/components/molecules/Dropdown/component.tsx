@@ -135,7 +135,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
             <i
               data-mbx-scl="arr-ic"
               {...(disabled && {
-                "data-mbx-attributes": "disabled",
+                "data-mbx-atts": "disabled",
               })}
             ></i>
           </p>
