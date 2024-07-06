@@ -3,10 +3,6 @@
   width: fit-content;
 }
 
-[data-mbx-id="field"] [data-mbx-class="field-box"] {
-  background: transparent;
-}
-
 [data-mbx-id="field"] [data-mbx-field-header="true"] {
   font-weight: 600;
   padding-bottom: 0.2rem;

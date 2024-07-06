@@ -16,7 +16,7 @@
   overflow: auto;
 }
 
-[data-mbx-id="codebox"] [data-mbx-class="cd-cd"] [data-mbx-scl*="cdl"] {
+[data-mbx-id="codebox"] [data-mbx-scl*="cd-cd"] [data-mbx-scl*="cdl"] {
   margin-top: 0;
   margin-bottom: 0;
 }

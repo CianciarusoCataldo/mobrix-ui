@@ -112,7 +112,7 @@ const CalendarComponent: MbxUiReactiveComponent<
 
   dayLabel &&
     components.push(
-      <div data-mbx-class="top-selector" key="cal_top_sel" data-mbx-scl="flxr">
+      <div key="cal_top_sel" data-mbx-scl="flxr:t-sel">
         {getArrowButton("left")}
         <Label
           debug={{
@@ -122,7 +122,7 @@ const CalendarComponent: MbxUiReactiveComponent<
           {...customProps}
         >{`${customMonths[onScreenDate.month]} ${onScreenDate.year}`}</Label>
         {getArrowButton("right")}
-      </div>,
+      </div>
     );
 
   components.push(
@@ -185,10 +185,10 @@ const CalendarComponent: MbxUiReactiveComponent<
       rows={[
         days.map((dayName) => dayName.slice(0, 3)),
         ...basicMatrix.map((row) =>
-          row.map((element) => (element > 0 ? String(element) : "")),
+          row.map((element) => (element > 0 ? String(element) : ""))
         ),
       ]}
-    />,
+    />
   );
 
   return components;

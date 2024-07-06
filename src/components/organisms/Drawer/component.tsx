@@ -44,7 +44,7 @@ const DrawerInternalComponent: MbxUiComponent<
         </svg>
       }
     </IconButton>,
-    <div key="drawer_content" data-mbx-class="drawer-content">
+    <div key="drw_cont" data-mbx-scl="drw-cont">
       {children}
     </div>,
   ];

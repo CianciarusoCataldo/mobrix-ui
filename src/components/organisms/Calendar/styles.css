@@ -54,7 +54,7 @@
   color: var(--mbx-c-cal-s-txt);
 }
 
-[data-mbx-id="calendar"] [data-mbx-class="top-selector"] {
+[data-mbx-id="calendar"] [data-mbx-scl*="t-sel"] {
   margin: auto;
   margin-bottom: 1.2rem;
   width: 100%;

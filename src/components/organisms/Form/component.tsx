@@ -24,7 +24,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
           ...o,
           [key]: undefined,
         }),
-        {},
+        {}
       )
     : {};
 
@@ -34,9 +34,9 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
   const components = [
     <Label
       disabled={disabled}
-      key="mobrix_ui_form_title"
-      additionalProps={{ "data-mbx-class": "title" }}
+      key="form_title"
       dark={dark}
+      debug={{ scl: "title" }}
     >
       {title}
     </Label>,
@@ -86,7 +86,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
       debug={{ scl: "s-bt" }}
     >
       {submitLabel}
-    </Button>,
+    </Button>
   );
 
   return components;

@@ -6,7 +6,7 @@
   color: var(--mbx-c-form-txt);
 }
 
-[data-mbx-id="form"] [data-mbx-class="title"] {
+[data-mbx-id="form"] [data-mbx-scl*="title"] {
   text-align: center;
   margin-bottom: 0.9rem;
   font-size: 1.35rem;
