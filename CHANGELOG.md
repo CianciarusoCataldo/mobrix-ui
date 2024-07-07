@@ -36,6 +36,9 @@
 - Styles optimized
 - Big Clean-up, bundle size reduced
 - Code refactoring, with more efficent naming
+- More styles unified to `data-mbx-scl`
+- `Card` and `DismissableCard` better styled
+- New `size` prop to specify `Divider` component height
 
 <br>
 

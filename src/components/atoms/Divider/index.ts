@@ -7,6 +7,7 @@ import { buildMbxStandardComponent } from "../../../tools";
 /**
  * A simple divider, useful to separate sections and paragraphs
  *
+ * @param {string} size Divider size. Can be used any unit (like rem, em or pixels, for example `4px`)
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode
