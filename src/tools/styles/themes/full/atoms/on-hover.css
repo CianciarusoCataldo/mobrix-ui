@@ -36,6 +36,6 @@
   }
 
   [data-mbx-id="radio"][data-mbx-atts*="hv"]:hover {
-    --mbx-rater-background: var(--mbx-c-rad-bg-h);
+    --mbx-radio-background: var(--mbx-c-rad-bg-h);
   }
 }

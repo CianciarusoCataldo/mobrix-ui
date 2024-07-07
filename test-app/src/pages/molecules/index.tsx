@@ -186,7 +186,11 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />{" "}
             <DismissableCard header="header" body="body" footer="footer" />
             <div style={{ marginTop: "20px" }} />
-            <DismissableCard header="loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong header" body="body" footer="footer" />
+            <DismissableCard
+              header="loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong header"
+              body="body"
+              footer="footer"
+            />
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
               alwaysVisible
@@ -418,18 +422,18 @@ const MoleculesPage = () => {
               dark
               expanded={
                 <div>
-                  <p>Expanded area</p>
-                  <p>Expanded area</p>
-                  <p>Expanded area</p>
-                  <p>Expanded area</p>
+                  <Label dark>Expanded area</Label>
+                  <Label dark>Expanded area</Label>
+                  <Label dark>Expanded area</Label>
+                  <Label dark>Expanded area</Label>
                 </div>
               }
             >
               <div>
-                <p>Content</p>
-                <p>Content</p>
-                <p>Content</p>
-                <p>Content</p>
+                <Label dark>Expanded area</Label>
+                <Label dark>Expanded area</Label>
+                <Label dark>Expanded area</Label>
+                <Label dark>Expanded area</Label>
               </div>
             </ExpandableContainer>
 

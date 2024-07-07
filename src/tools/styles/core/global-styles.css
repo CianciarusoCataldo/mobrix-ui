@@ -1,5 +1,6 @@
 @import url("constants/computed.css");
 @import url("animation-manager/index.css");
+@import url("background-manager/index.css");
 
 [data-mbx-id],
 [data-mbx-id]:hover,

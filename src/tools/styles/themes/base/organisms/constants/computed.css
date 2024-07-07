@@ -94,35 +94,34 @@
     --mbx-datepicker-background-light,
     var(--mbx-datepicker-background, var(--mbx-c-bg-l))
   );
-  --mbx-c-dtp-bg-d: var(
-    --mbx-datepicker-background-dark,
-    var(--mbx-datepicker-background, var(--mbx-c-bg-d))
-  );
   --mbx-c-dtp-txt-l: var(
     --mbx-datepicker-text-color-light,
     var(--mbx-datepicker-text-color, var(--mbx-c-txt-l))
+  );
+  ---mbx-c-dtp-ic-l: var(
+    --mbx-datepicker-icon-light,
+    var(--mbx-datepicker-icon, var(--mbx-c-dtp-txt-l))
+  );
+  --mbx-c-dtp-ic-h-l: var(
+    --mbx-datepicker-icon-hover-light,
+    var(--mbx-datepicker-icon-hover, blue)
+  );
+
+  --mbx-c-dtp-bg-d: var(
+    --mbx-datepicker-background-dark,
+    var(--mbx-datepicker-background, var(--mbx-c-bg-d))
   );
   --mbx-c-dtp-txt-d: var(
     --mbx-datepicker-text-color-dark,
     var(--mbx-datepicker-text-color, var(--mbx-c-txt-d))
   );
-
-  ---mbx-c-dtp-ic-l: var(
-    --mbx-datepicker-icon-light,
-    var(--mbx-datepicker-icon, var(--mbx-c-dtp-txt-l))
-  );
   ---mbx-c-dtp-ic-d: var(
     --mbx-datepicker-icon-dark,
     var(--mbx-datepicker-icon, var(--mbx-c-dtp-txt-d))
   );
-
-  --mbx-c-dtp-ic-h-l: var(
-    --mbx-datepicker-icon-hover-light,
-    var(--mbx-datepicker-icon-hover, var(--mbx-d-dtp-ic-h-l))
-  );
   --mbx-c-dtp-ic-h-d: var(
     --mbx-datepicker-icon-hover-dark,
-    var(--mbx-datepicker-icon-hover, var(--mbx-d-dtp-ic-h-d))
+    var(--mbx-datepicker-icon-hover, orange)
   );
 
   /** Drawer **/
