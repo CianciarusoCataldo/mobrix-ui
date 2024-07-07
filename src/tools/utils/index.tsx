@@ -1,3 +1,4 @@
+
 import "../styles/core/index.css";
 import "../styles/themes/base/index.css";
 import "../styles/themes/full/index.css";
@@ -113,7 +114,7 @@ const buildMobrixUiStandardComponent = ({
     }),
     "data-mbx-scl": `${scl};${
       commonProps.debug?.scl ? commonProps.debug.scl : ""
-    };`,
+    };${commonProps.scl ? commonProps.scl : ""}`,
     id: commonProps.id,
     className: commonProps.className,
     style: commonProps.style,

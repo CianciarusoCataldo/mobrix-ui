@@ -79,6 +79,8 @@ export type CommonProps = MbxAttributes & {
     scl?: string;
     features?: Features;
   };
+
+  scl?: string;
 };
 
 /**

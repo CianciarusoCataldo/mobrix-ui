@@ -1,49 +1,114 @@
-@import url("computed.css");
-
 [data-mbx-id]:not([data-mbx-atts*="dk"]) {
   /** Carousel */
-  --mbx-c-car-arr-h: var(--mbx-c-car-arr-h-l);
+  --mbx-c-car-arr-h: var(
+    --mbx-carousel-arrow-color-hover-light,
+    var(--mbx-carousel-arrow-color-hover, #287dfd)
+  );
 
   /** DismissableCard **/
-  --mbx-c-dcard-bg: var(--mbx-c-dcard-bg-l);
-  --mbx-c-dcard-txt: var(--mbx-c-dcard-txt-l);
+  --mbx-c-dcard-bg: var(
+    --mbx-dismissablecard-background-light,
+    var(--mbx-dismissablecard-background, var(--mbx-c-card-bg))
+  );
+  --mbx-c-dcard-txt: var(
+    --mbx-dismissablecard-text-color-light,
+    var(--mbx-dismissablecard-text-color, var(--mbx-c-card-txt))
+  );
 
   /** ExpandableContainer **/
-  --mbx-c-exp-bg: var(--mbx-c-exp-bg-l);
-  --mbx-c-exp-text: var(--mbx-c-exp-txt-l);
-  --mbx-c-exp-arr: var(--mbx-c-exp-arr-l);
-  --mbx-c-exp-arr-h: var(--mbx-c-exp-arr-h-l);
+  --mbx-c-exp-bg: var(
+    --mbx-expandablecontainer-background-light,
+    var(--mbx-expandablecontainer-background, var(--mbx-c-con-bg))
+  );
+
+  --mbx-c-exp-txt: var(
+    --mbx-expandablecontainer-text-color-light,
+    var(--mbx-expandablecontainer-text-color, var(--mbx-c-con-txt))
+  );
+  --mbx-c-exp-arr-h: var(
+    --mbx-expandablecontainer-arrow-color-hover-light,
+    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-exp-txt))
+  );
+
+  --mbx-c-exp-arr: var(
+    --mbx-expandablecontainer-arrow-color-light,
+    var(--mbx-expandablecontainer-arrow-color, var(--mbx-c-exp-txt))
+  );
 
   /** List */
-
-  --mbx-c-lst-txt-h: var(--mbx-c-lst-txt-h-l);
+  --mbx-c-lst-txt-h: var(
+    --mbx-list-text-color-hover-light,
+    var(--mbx-list-text-color-hover, var(--mbx-c-txt-h-l))
+  );
 
   /** RadioButton Group */
-  --mbx-c-radg-rad-bg: var(--mbx-c-radg-rad-bg-l);
-  --mbx-c-radg-rad-bg-h: var(--mbx-c-radg-rad-bg-h-l);
-  --mbx-c-radg-rad-ic-bg: var(--mbx-c-radg-rad-ic-bg-l);
+  --mbx-c-radg-rad-bg: var(
+    --mbx-radiogroup-radio-background-light,
+    var(--mbx-radiogroup-radio-background)
+  );
+  --mbx-c-radg-rad-bg-h: var(
+    --mbx-radiogroup-radio-background-hover-light,
+    var(--mbx-radiogroup-radio-background-hover)
+  );
+  --mbx-c-radg-rad-ic-bg: var(
+    --mbx-radiogroup-radio-icon-background-light,
+    var(--mbx-radiogroup-radio-icon-background)
+  );
 }
 
 [data-mbx-id][data-mbx-atts*="dk"] {
   /** Carousel */
-  --mbx-c-car-arr-h: var(--mbx-c-car-arr-h-d);
+  --mbx-c-car-arr-h: var(
+    --mbx-carousel-arrow-color-hover-dark,
+    var(--mbx-carousel-arrow-color-hover, #ff8007)
+  );
 
   /** DismissableCard **/
-  --mbx-c-dcard-bg: var(--mbx-c-dcard-bg-d);
-  --mbx-c-dcard-txt: var(--mbx-c-dcard-txt-d);
+  --mbx-c-dcard-bg: var(
+    --mbx-dismissablecard-background-dark,
+    var(--mbx-dismissablecard-background, var(--mbx-c-card-bg))
+  );
+  --mbx-c-dcard-txt: var(
+    --mbx-dismissablecard-text-color-dark,
+    var(--mbx-dismissablecard-text-color, var(--mbx-c-card-txt))
+  );
 
   /** ExpandableContainer **/
-  --mbx-c-exp-bg: var(--mbx-c-exp-bg-d);
-  --mbx-c-exp-text: var(--mbx-c-exp-txt-d);
-  --mbx-c-exp-arr: var(--mbx-c-exp-arr-d);
-  --mbx-c-exp-arr-h: var(--mbx-c-exp-arr-h-d);
+  --mbx-c-exp-arr: var(
+    --mbx-expandablecontainer-arrow-color-dark,
+    var(--mbx-expandablecontainer-arrow-color, var(--mbx-c-exp-txt))
+  );
+
+  --mbx-c-exp-arr-h: var(
+    --mbx-expandablecontainer-arrow-color-hover-dark,
+    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-exp-txt))
+  );
+  --mbx-c-exp-bg: var(
+    --mbx-expandablecontainer-background-dark,
+    var(--mbx-expandablecontainer-background, var(--mbx-c-con-bg))
+  );
+  --mbx-c-exp-txt: var(
+    --mbx-expandablecontainer-text-color-dark,
+    var(--mbx-expandablecontainer-text-color, var(--mbx-c-con-txt))
+  );
 
   /** List */
-
-  --mbx-c-lst-txt-h: var(--mbx-c-lst-txt-h-d);
+  --mbx-c-lst-txt-h: var(
+    --mbx-list-text-color-hover-dark,
+    var(--mbx-list-text-color-hover, var(--mbx-c-txt-h-d))
+  );
 
   /** RadioButton Group */
-  --mbx-c-radg-rad-bg: var(--mbx-c-radg-rad-bg-d);
-  --mbx-c-radg-rad-bg-h: var(--mbx-c-radg-rad-bg-h-d);
-  --mbx-c-radg-rad-ic-bg: var(--mbx-c-radg-rad-ic-bg-d);
+  --mbx-c-radg-rad-bg: var(
+    --mbx-radiogroup-radio-background-dark,
+    var(--mbx-radiogroup-radio-background)
+  );
+  --mbx-c-radg-rad-bg-h: var(
+    --mbx-radiogroup-radio-background-hover-dark,
+    var(--mbx-radiogroup-radio-background-hover)
+  );
+  --mbx-c-radg-rad-ic-bg: var(
+    --mbx-radiogroup-radio-icon-background-dark,
+    var(--mbx-radiogroup-radio-icon-background)
+  );
 }

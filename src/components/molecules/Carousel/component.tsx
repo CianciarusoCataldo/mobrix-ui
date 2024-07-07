@@ -44,7 +44,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
 
       dots.push(
         <IconButton
-          data-mbx-scl={`dot;full-${
+          scl={`dot;full-${
             index === item || (hoveredDot != null && index === hoveredDot)
           }`}
           className={dotClassName}

@@ -12,3 +12,12 @@
 [data-mbx-id="econ"] [data-mbx-scl*="econ-b"] svg {
   fill: var(--mbx-c-con-txt);
 }
+
+[data-mbx-id="carousel"] [data-mbx-arrow] svg {
+  fill: var(--mbx-c-car-arr);
+}
+
+[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-atts*="dsb"] svg,
+[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-atts*="dsb"]:hover svg {
+  fill: none;
+}

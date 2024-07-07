@@ -21,15 +21,6 @@
   -o-animation: var(--mbx-carousel-animation);
 }
 
-[data-mbx-id="carousel"] [data-mbx-arrow]:not(:focus-visible) svg {
-  fill: var(--mbx-c-car-arr);
-}
-
-[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-atts*="dsb"] svg,
-[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-atts*="dsb"]:hover svg {
-  fill: none;
-}
-
 [data-mbx-id="carousel"] [data-mbx-arrow="prev"] {
   margin-right: 0.6rem;
 }
@@ -66,3 +57,4 @@
   [data-mbx-scl*="dot"][data-mbx-scl*="full-true"] {
   background: var(--mbx-c-car-dot-f);
 }
+
