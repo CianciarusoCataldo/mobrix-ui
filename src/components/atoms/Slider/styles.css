@@ -1,6 +1,5 @@
 [data-mbx-id="slider"] {
   appearance: none;
-  width: fit-content;
   border-radius: 12px;
   background: var(--mbx-c-sld-bg);
   -webkit-appearance: none;

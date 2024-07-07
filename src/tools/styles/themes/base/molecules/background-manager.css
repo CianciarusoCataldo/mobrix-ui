@@ -32,8 +32,8 @@
   --mbx-c-tabv-off-bg-h: transparent !important;
 }
 
-[data-mbx-id="container"]:not([data-mbx-atts*="background"]),
-[data-mbx-id="container"]:not([data-mbx-atts*="background"]):hover {
+[data-mbx-id="cont"]:not([data-mbx-atts*="background"]),
+[data-mbx-id="cont"]:not([data-mbx-atts*="background"]):hover {
   --mbx-c-con-bg: transparent !important;
 }
 

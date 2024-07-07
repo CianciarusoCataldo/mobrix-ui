@@ -4,7 +4,6 @@
   background: var(--mbx-c-rev-bg);
   color: var(--mbx-c-rev-txt);
   border-radius: 3px;
-  width: fit-content;
 }
 
 [data-mbx-id="review"] [data-mbx-scl*="rev-ph"],

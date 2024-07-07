@@ -1,19 +1,14 @@
-[data-mbx-id="dis-card"] [data-mbx-scl*="hd-el"] {
-  margin: auto;
+[data-mbx-id="dis-card"] {
+  padding-top: 0;
 }
 
 [data-mbx-id="dis-card"] [data-mbx-scl*="dis-cn"] {
   width: 100%;
+  padding-bottom: 0.1rem;
 }
 
 [data-mbx-id="dis-card"] [data-mbx-scl*="dis-bt"] {
   padding: 0;
-  margin: 0;
-  width: fit-content;
-}
-
-[data-mbx-id*="dis-card"] [data-mbx-scl*="head"] {
-  margin-top: 0;
 }
 
 [data-mbx-id="dis-card"] [data-mbx-scl*="dis-bt"] svg path {

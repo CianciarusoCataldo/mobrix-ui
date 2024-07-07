@@ -49,9 +49,9 @@ export const MBX_ATTRIBUTES: Partial<
   dark: (props) => props.dark,
   shadow: (props) => props.shadow,
   hide: (props) => props.hide,
-  hover: (props) => props.hover && !props.disabled,
   background: (props) => props.background,
   disabled: (props) => props.disabled,
   a11y: (props) => props.a11y,
+  hover: (props) => props.hover && !props.disabled,
   animated: (props) => props.animated && !props.disabled,
 };

@@ -1,6 +1,5 @@
 [data-mbx-id="field"] {
   align-items: flex-start;
-  width: fit-content;
 }
 
 [data-mbx-id="field"] [data-mbx-field-header="true"] {

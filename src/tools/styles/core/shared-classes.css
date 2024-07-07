@@ -21,3 +21,14 @@
   display: flex;
   flex-direction: row-reverse;
 }
+
+[data-mbx-id][data-mbx-scl*="wfit"],
+[data-mbx-id] [data-mbx-scl*="wfit"] {
+  width: fit-content;
+}
+
+[data-mbx-id][data-mbx-scl*="act"],
+[data-mbx-id] [data-mbx-scl*="act"] {
+  align-items: center;
+  text-align: center;
+}

@@ -48,6 +48,7 @@ const Label: LabelComponent = ({ children, shadow = false, ...commonProps }) =>
       textcolorOnFocus: true,
       noShadowOnFocus: true,
     },
+    sharedCssClasses: "wfit",
     commonProps: {
       ...sharedProps,
       shadow,

@@ -33,13 +33,6 @@ const useOutsideAlerter = (ref: any, callback: () => void) => {
   });
 };
 
-export const generateElementsArray = (
-  components: { condition: boolean; component: BuilderComponent }[]
-) =>
-  components
-    .filter((component) => component.condition)
-    .map((component, index) => component.component);
-
 export const parseCommonProps = (props: CommonProps): CommonProps => ({
   ...DEFAULT_COMMON_PROPS,
   ...props,

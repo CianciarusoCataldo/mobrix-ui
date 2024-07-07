@@ -15,7 +15,7 @@ import {
  */
 export type CardProps = ComponentWithChildren<BuilderComponent> & {
   /** Card header content */
-  header?: BuilderComponent;
+  header?: BuilderComponent | BuilderComponent[];
 
   /** Custom classname applied on the Card header */
   headerClassName?: string;

@@ -4,7 +4,7 @@
   color: var(--mbx-c-card-txt);
 }
 
-[data-mbx-id*="container"] {
+[data-mbx-id*="cont"] {
   background: var(--mbx-c-con-bg);
   color: var(--mbx-c-con-txt);
 }

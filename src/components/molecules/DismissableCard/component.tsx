@@ -14,26 +14,24 @@ const DismissableCardInternalComponent: MbxUiComponent<
 > = ({ onClose, header, ...props }) =>
   cardComponent({
     ...props,
-    header: (
-      <div data-mbx-scl="flxc">
-        <div data-mbx-scl="dis-cn;flxrr;">
-          <IconButton
-            dark={props.dark}
-            debug={{
-              scl: "dis-bt;flxrr",
-              features: { fillOnFocus: true },
-            }}
-            disabled={props.disabled}
-            onClick={() => {
-              onClose();
-            }}
-          >
-            {x_icon}
-          </IconButton>
-        </div>
-        {header && <div data-mbx-scl="hd-el">{header}</div>}
-      </div>
-    ),
+    header: [
+      <div data-mbx-scl="dis-cn;flxrr;" key="dis-x">
+        <IconButton
+          dark={props.dark}
+          debug={{
+            scl: "dis-bt;flxrr;wfit",
+            features: { fillOnFocus: true },
+          }}
+          disabled={props.disabled}
+          onClick={onClose}
+        >
+          {x_icon}
+        </IconButton>
+      </div>,
+      <div data-mbx-scl="cardc-head" key="dis-h">
+        {header}
+      </div>,
+    ],
   });
 
 export default DismissableCardInternalComponent;

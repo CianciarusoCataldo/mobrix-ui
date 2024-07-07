@@ -59,6 +59,7 @@ const IconButton: IconButtonComponent = ({
       },
     }),
     Component: children,
+    sharedCssClasses: "wfit",
     commonProps: {
       ...sharedProps,
       additionalProps: {

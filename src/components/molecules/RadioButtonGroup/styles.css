@@ -1,6 +1,5 @@
 [data-mbx-id="radio-group"] {
   padding: 0.3rem;
-  width: fit-content;
 }
 
 [data-mbx-id="radio-group"][data-mbx-atts*="background"] {
@@ -9,8 +8,6 @@
 }
 
 [data-mbx-id="radio-group"] [data-mbx-scl*="rdg-el"] {
-  text-align: center;
-  align-items: center;
   justify-content: center;
 }
 

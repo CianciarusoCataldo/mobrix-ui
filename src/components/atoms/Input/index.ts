@@ -57,7 +57,7 @@ const Input: InputComponent = ({
     features: {
       opacityOnHover: true,
     },
-    sharedCssClasses: autoresizable && "a-res",
+    sharedCssClasses: autoresizable && "wfit",
     props: (value, setValue) => ({
       commonProps: {
         ...sharedProps,

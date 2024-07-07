@@ -9,7 +9,9 @@ import { MbxUiComponent } from "../../../types/global";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-export type DividerProps = {};
+export type DividerProps = {
+  size?: string;
+};
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Divider component

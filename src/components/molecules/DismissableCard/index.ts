@@ -59,6 +59,7 @@ const DismissableCard: DismissableCardComponent = ({
   /* istanbul ignore next */
   onClose = () => {},
   alwaysVisible,
+  headerProps = {},
   ...props
 }) =>
   buildMbxReactiveComponent(props, (sharedProps) => ({
@@ -74,6 +75,7 @@ const DismissableCard: DismissableCardComponent = ({
           onClose();
           !alwaysVisible && setValue(true);
         },
+        headerProps: { ...headerProps, "data-mbx-scl": "flxc" },
       }),
     props: (value, setValue) => ({
       commonProps: {

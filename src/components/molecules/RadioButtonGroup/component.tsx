@@ -5,10 +5,7 @@ import { MbxUiReactiveComponent, RadioButtonGroupProps } from "../../../types";
 import Label from "../../atoms/Label";
 import RadioButton from "../../atoms/RadioButton";
 
-const textPositionCssClasses: Record<
-  RadioButtonGroupProps["defaultPosition"],
-  string
-> = {
+const cssClasses: Record<RadioButtonGroupProps["defaultPosition"], string> = {
   top: "flxc",
   bottom: "flxcr",
   left: "flxr",
@@ -36,7 +33,7 @@ const radioButtonGroupComponent: MbxUiReactiveComponent<
       <div
         className={elementClassName}
         key={"rgr_el_" + index}
-        data-mbx-scl={`t-${txtPosition};${textPositionCssClasses[txtPosition]};rdg-el-${index};`}
+        data-mbx-scl={`t-${txtPosition};${cssClasses[txtPosition]};rdg-el-${index};act`}
       >
         {element.text && (
           <Label disabled={disabled} key="rd_txt" dark={dark}>

@@ -63,3 +63,8 @@ code {
 .test-card {
   width: 90%;
 }
+
+.custom-f{
+  align-items: flex-start;
+  text-align: right;
+}

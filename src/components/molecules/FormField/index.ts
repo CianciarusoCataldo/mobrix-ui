@@ -82,7 +82,7 @@ const FormField: FormFieldComponent = ({
       }),
     inputValue,
     defaultValue: null,
-    sharedCssClasses: `flxc;f-${type}`,
+    sharedCssClasses: `wfit;flxc;f-${type}`,
   }));
 };
 

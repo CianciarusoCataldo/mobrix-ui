@@ -49,6 +49,7 @@ const Dropdown: DropdownComponent = (props) =>
     defaultValue: 0,
     inputValue: props.value,
     commonProps: sharedProps,
+    sharedCssClasses: "wfit",
     props: (value, setValue) =>
       dropdownComponent({
         ...props,

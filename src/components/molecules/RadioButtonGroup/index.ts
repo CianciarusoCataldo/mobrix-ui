@@ -60,7 +60,7 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
     name: "radio-group",
     defaultValue: -1,
     inputValue,
-    sharedCssClasses: horizontal ? "or-h;flxr;" : "flxc;",
+    sharedCssClasses: `wfit;${horizontal ? "or-h;flxr;" : "flxc;"}`,
     commonProps: sharedProps,
     Component: ({ value, setValue }) =>
       radioButtonGroupComponent({

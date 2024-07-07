@@ -1,5 +1,4 @@
 [data-mbx-id="calendar"] {
-  width: fit-content;
   align-items: center;
   --mbx-table-background: var(--mbx-c-cal-bg);
   --mbx-table-text-color: var(--mbx-c-cal-txt);

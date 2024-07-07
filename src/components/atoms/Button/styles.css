@@ -6,11 +6,8 @@
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   display: inline-flex;
-  align-items: center;
-  text-align: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  width: fit-content;
 }
 
 [data-mbx-id="button"][data-mbx-atts*="animated"] {

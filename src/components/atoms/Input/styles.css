@@ -2,7 +2,3 @@
   background-color: var(--mbx-c-in-bgc);
   color: var(--mbx-c-in-txt);
 }
-
-[data-mbx-id="inputbox"][data-mbx-scl*="a-res"] {
-  width: fit-content;
-}

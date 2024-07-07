@@ -56,6 +56,7 @@ const Button: ButtonComponent = ({
       opacityOnHover: true,
       opacityOnActive: true,
     },
+    sharedCssClasses: "wfit;act",
     Component: children,
     commonProps: {
       ...sharedProps,
