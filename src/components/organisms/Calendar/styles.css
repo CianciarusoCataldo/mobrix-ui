@@ -53,8 +53,6 @@
 
 [data-mbx-id="calendar"] [data-mbx-carr] {
   height: fit-content;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 [data-mbx-id="calendar"] [data-mbx-carr] svg {
