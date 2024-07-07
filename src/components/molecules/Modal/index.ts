@@ -79,7 +79,7 @@ const Modal: ModalComponent = ({
         "data-mbx-mod-an": value.length === 0 ? (hide ? "" : "ease-in") : value,
       },
     },
-    sharedCssClasses: "flxc",
+    scl: "flxc",
   }));
 };
 

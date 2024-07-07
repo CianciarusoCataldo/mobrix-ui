@@ -59,7 +59,7 @@ const Card: CardComponent = (props) =>
       ...props,
       ...sharedProps,
     }),
-    sharedCssClasses: "flxc",
+    scl: "flxc",
     commonProps: sharedProps,
   }));
 

@@ -55,11 +55,11 @@ const IconButton: IconButtonComponent = ({
     ...(!sharedProps.unstyled && {
       features: {
         opHov: true,
-        opacityOnActive: onClick !== undefined,
+        opAct: onClick !== undefined,
       },
     }),
     Component: children,
-    sharedCssClasses: "wfit;nout",
+    scl: "wfit;nout",
     commonProps: {
       ...sharedProps,
       additionalProps: {

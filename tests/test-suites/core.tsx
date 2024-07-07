@@ -8,7 +8,7 @@ export default () =>
     const Component = (props: MbxUiProps) =>
       buildMbxStandardComponent(props, (sharedProps) => ({
         name: "test-mbx-component",
-        features: { opacityOnActive: true, fillOnFocus: true },
+        features: { opAct: true, fillFc: true },
       }));
 
     const Wrapper = mount(<Component animated animation="fade-in" />);

@@ -41,12 +41,12 @@
 
 [data-mbx-id="review"]
   [data-mbx-scl*="rev-url-c"]
-  [data-mbx-class="default-icon"] {
+  [data-mbx-revimg="def"] {
   fill: var(--mbx-c-rev-link);
 }
 
 [data-mbx-id="review"]
   [data-mbx-scl*="rev-url-c"]
-  [data-mbx-class="github-icon"] {
+  [data-mbx-revimg="git"] {
   fill: var(--mbx-c-rev-gh);
 }

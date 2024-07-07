@@ -57,9 +57,9 @@ const RadioButton: RadioButtonComponent = ({
     inputValue,
     features: {
       opHov: true,
-      opacityOnActive: true,
+      opAct: true,
     },
-    sharedCssClasses: "flxc;act",
+    scl: "flxc;act",
     props: (value, setValue) => {
       const callBack = () => {
         if (!value || deselectable) {

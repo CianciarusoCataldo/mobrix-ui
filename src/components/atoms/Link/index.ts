@@ -48,8 +48,8 @@ const Link: LinkComponent = ({ to, children, newTab, ...commonProps }) =>
       name: "link",
       features: {
         opHov: true,
-        textcolorOnFocus: true,
-        noShadowOnFocus: true,
+        colFc: true,
+        noShFc: true,
       },
       Component: children,
       commonProps: {

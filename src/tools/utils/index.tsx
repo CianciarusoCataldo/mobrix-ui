@@ -10,16 +10,11 @@ import {
   CommonProps,
 } from "../../types/global";
 
-import {
-  DEFAULT_COMMON_PROPS,
-  FEATURES_PROPS,
-  MBX_ATTRIBUTES,
-  MBX_ATTS_MAP,
-} from "./constants";
+import { DEFAULT_COMMON_PROPS, FEATURES_PROPS, parseAtts } from "./constants";
 import { Features } from "../../types/global/global";
 
 /* istanbul ignore next */
-const useOutsideAlerter = (ref: any, callback: () => void) => {
+const useOutAlert = (ref: any, callback: () => void) => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (ref.current && !ref.current.contains(event.target)) {
@@ -44,10 +39,7 @@ export const parseCommonProps = (props: CommonProps): CommonProps => ({
   }),
 });
 
-export const getEnabledFeatures = (
-  features: Features,
-  commonProps: CommonProps
-) => {
+const getMbxFts = (features: Features, commonProps: CommonProps) => {
   let mbxFts = "";
   const featureProps = Object.keys(features).filter(
     (feature) => features[feature]
@@ -62,14 +54,13 @@ export const getEnabledFeatures = (
   return mbxFts;
 };
 
-export const getMbxAttributes = (commonProps: CommonProps) => {
+const getMbxAtts = (commonProps: CommonProps) => {
   let mbxAttributes = "";
-  Object.keys(MBX_ATTRIBUTES)
-    .filter((mbxAttribute: keyof CommonProps, index) =>
-      MBX_ATTRIBUTES[mbxAttribute](commonProps)
-    )
+  const ATTS = parseAtts(commonProps);
+  Object.keys(ATTS)
+    .filter((mbxAttribute: keyof CommonProps, index) => ATTS[mbxAttribute])
     .forEach((mbxAttribute, index) => {
-      mbxAttributes += `${MBX_ATTS_MAP[mbxAttribute]};`;
+      mbxAttributes += `${ATTS[mbxAttribute]};`;
     });
 
   return mbxAttributes;
@@ -97,20 +88,20 @@ export const getMbxAttributes = (commonProps: CommonProps) => {
 const buildMobrixUiStandardComponent = ({
   name,
   Component,
-  sharedCssClasses = "",
+  scl = "",
   /* istanbul ignore next */
   commonProps = {},
   wrapper: SelectedWrapper = "div",
   features = {},
 }: BuilderProps) => {
-  let mbxFts = getEnabledFeatures(
+  let mbxFts = getMbxFts(
     {
       ...features,
       ...(commonProps.debug?.features ? commonProps.debug.features : {}),
     },
     commonProps
   );
-  let mbxAtts = getMbxAttributes(commonProps);
+  let mbxAtts = getMbxAtts(commonProps);
 
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,
@@ -120,7 +111,7 @@ const buildMobrixUiStandardComponent = ({
     ...(mbxFts.length > 0 && {
       "data-mbx-fts": mbxFts,
     }),
-    "data-mbx-scl": `${sharedCssClasses};${
+    "data-mbx-scl": `${scl};${
       commonProps.debug?.scl ? commonProps.debug.scl : ""
     };`,
     id: commonProps.id,
@@ -140,8 +131,7 @@ const buildMobrixUiStandardComponent = ({
   };
 
   const wrapperRef = useRef(null);
-  commonProps.onFocusLost &&
-    useOutsideAlerter(wrapperRef, commonProps.onFocusLost);
+  commonProps.onFocusLost && useOutAlert(wrapperRef, commonProps.onFocusLost);
 
   if (SelectedWrapper === "input") {
     return (
@@ -185,7 +175,7 @@ const buildMbxUiReactiveComponent = <T=any>({
   props,
   Component,
   features,
-  sharedCssClasses
+  scl
 }: BuilderProps<
   (props: {
     value: T;
@@ -220,7 +210,7 @@ const buildMbxUiReactiveComponent = <T=any>({
     Component: Component && Component({ value, setValue }),
     wrapper,
     features,
-    sharedCssClasses,
+    scl,
     ...processedProps,
   });
 };

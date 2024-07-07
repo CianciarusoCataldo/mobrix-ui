@@ -103,7 +103,7 @@ const CalendarComponent: MbxUiReactiveComponent<
         "data-mbx-carr": direction,
       }}
       debug={{
-        features: { fillOnFocus: true, noShadowOnFocus: true },
+        features: { fillFc: true, noShFc: true },
       }}
       {...customProps}
     >

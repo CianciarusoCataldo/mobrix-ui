@@ -54,8 +54,8 @@ const PackageVersion: PackageVersionComponent = ({
     wrapper: "p",
     Component: component({ ...sharedProps, name, source, user, branch }),
     features: {
-      textcolorOnFocus: true,
-      noShadowOnFocus: true,
+      colFc: true,
+      noShFc: true,
     },
     commonProps: {
       ...sharedProps,

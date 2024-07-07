@@ -39,7 +39,7 @@ const expandableContainerComponent: MbxUiReactiveComponent<
       dark={dark}
       debug={{
         scl: "econ-b;mauto;flxc",
-        features: { noShadowOnFocus: true },
+        features: { noShFc: true },
       }}
     >
       <svg

@@ -17,13 +17,13 @@
   margin-right: 0.3rem;
 }
 
-[data-mbx-id="date-picker"] [data-mbx-class="calendar-icon"] path {
+[data-mbx-id="date-picker"] [data-mbx-img="cld"] path {
   fill: var(--mbx-c-dtp-ic);
 }
 
 @media (hover) {
   [data-mbx-id="date-picker"]:not([data-mbx-atts*="dsb"])
-    [data-mbx-class="calendar-icon"]:hover
+    [data-mbx-img="cld"]:hover
     path {
     fill: var(--mbx-c-dtp-ic-h);
   }

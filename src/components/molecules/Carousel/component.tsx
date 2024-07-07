@@ -71,7 +71,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
           "data-mbx-arrow": "prev",
         }}
         debug={{
-          features: { noShadowOnFocus: true, fillOnFocus: true },
+          features: { noShFc: true, fillFc: true },
         }}
         disabled={item === 0 || disabled}
         className={arrowClassName}
@@ -91,7 +91,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
           "data-mbx-arrow": "next",
         }}
         debug={{
-          features: { noShadowOnFocus: true, fillOnFocus: true },
+          features: { noShFc: true, fillFc: true },
         }}
         className={arrowClassName}
         disabled={item === elements.length - 1 || disabled}

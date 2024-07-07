@@ -20,7 +20,7 @@ const DismissableCardInternalComponent: MbxUiComponent<
           dark={props.dark}
           debug={{
             scl: "dis-bt;flxrr;wfit",
-            features: { fillOnFocus: true },
+            features: { fillFc: true },
           }}
           disabled={props.disabled}
           onClick={onClose}

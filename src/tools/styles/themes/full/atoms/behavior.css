@@ -1,81 +1,132 @@
-@import url("computed.css");
-
 [data-mbx-id]:not([data-mbx-atts*="dk"]) {
   /** Button */
-  --mbx-c-btn-bg-h: var(--mbx-c-btn-bg-h-l);
-
-  --mbx-c-btn-txt-h: var(--mbx-c-btn-txt-h-l);
+  --mbx-c-btn-bg-h: var(
+    --mbx-checkbox-background-hover-light,
+    var(--mbx-checkbox-background-hover, var(--mbx-c-bg-h-l))
+  );
+  --mbx-c-btn-txt-h: var(
+    --mbx-button-text-color-hover-light,
+    var(--mbx-button-text-color-hover, var(--mbx-c-txt-l))
+  );
 
   /** CheckBox */
-
-  --mbx-c-chk-bg-h: var(--mbx-c-chk-bg-h-l);
+  --mbx-c-chk-bg-h: var(
+    --mbx-checkbox-background-hover-light,
+    var(--mbx-checkbox-background-hover, var(--mbx-c-bg-h-l))
+  );
 
   /** Counter */
-
-  --mbx-c-cnt-bg-h: var(--mbx-c-cnt-bgc-h-l);
-
-  --mbx-c-cnt-txt-h: var(--mbx-c-cnt-txt-h-l);
+  --mbx-c-cnt-bg-h: var(
+    --mbx-counterbox-background-hover-light,
+    var(--mbx-counterbox-background-hover, var(--mbx-c-bgc-h-l))
+  );
+  --mbx-c-cnt-txt-h: var(
+    --mbx-counterbox-text-color-hover-light,
+    var(--mbx-counterbox-text-color-hover, var(--mbx-c-txt-h-l))
+  );
 
   /** Input */
-
-  --mbx-c-in-bgc-h: var(--mbx-c-in-bgc-h-l);
-
-  --mbx-c-in-txt-h: var(--mbx-c-in-txt-h-l);
+  --mbx-c-in-bgc-h: var(
+    --mbx-inputbox-background-hover-light,
+    var(--mbx-inputbox-background-hover, var(--mbx-c-bgc-h-l))
+  );
+  --mbx-c-in-txt-h: var(
+    --mbx-inputbox-text-color-hover-light,
+    var(--mbx-inputbox-text-color-hover, var(--mbx-c-txt-h-l))
+  );
 
   /** Link */
-
-  --mbx-c-link-txt-h: var(--mbx-c-link-txt-h-l);
+  --mbx-c-link-txt-h: var(
+    --mbx-link-color-hover-light,
+    var(--mbx-link-color-hover, var(--mbx-c-link-txt-l))
+  );
 
   /** PackageVersion */
-
-  --mbx-c-pkgv-txt: var(--mbx-c-pkgv-txt-l);
+  --mbx-c-pkgv-txt: var(
+    --mbx-packageversion-text-color-light,
+    var(--mbx-packageversion-text-color)
+  );
 
   /* Radio Button */
-
-  --mbx-c-rad-bg-h: var(--mbx-c-rad-bg-h-l);
+  --mbx-c-rad-bg-h: var(
+    --mbx-radio-background-hover-light,
+    var(--mbx-radio-background-hover, var(--mbx-c-rad-bg))
+  );
 
   /** Selector **/
-
-  --mbx-c-sel-bg-h: var(--mbx-c-sel-bg-h-l);
-  --mbx-c-sel-txt-h: var(--mbx-c-sel-txt-h-l);
+  --mbx-c-sel-bg-h: var(
+    --mbx-selector-background-hover-light,
+    var(--mbx-selector-background-hover)
+  );
+  --mbx-c-sel-txt-h: var(
+    --mbx-selector-text-color-hover-light,
+    var(--mbx-selector-text-color-hover)
+  );
 }
 
 [data-mbx-id][data-mbx-atts*="dk"] {
   /** Button */
-  --mbx-c-btn-bg-h: var(--mbx-c-btn-bg-h-d);
+  --mbx-c-btn-bg-h: var(
+    --mbx-button-background-hover-dark,
+    var(--mbx-button-background-hover, var(--mbx-d-bg-d))
+  );
 
-  --mbx-c-btn-txt-h: var(--mbx-c-btn-txt-h-d);
+  --mbx-c-btn-txt-h: var(
+    --mbx-button-text-color-hover-dark,
+    var(--mbx-button-text-color-hover, var(--mbx-c-txt-d))
+  );
 
   /** CheckBox */
-
-  --mbx-c-chk-bg-h: var(--mbx-c-chk-bg-h-d);
+  --mbx-c-chk-bg-h: var(
+    --mbx-checkbox-background-hover-dark,
+    var(--mbx-checkbox-background-hover, var(--mbx-c-bg-h-d))
+  );
 
   /** Counter */
-
-  --mbx-c-cnt-bg-h: var(--mbx-c-cnt-bgc-h-d);
-
-  --mbx-c-cnt-txt-h: var(--mbx-c-cnt-txt-h-d);
+  --mbx-c-cnt-bg-h: var(
+    --mbx-counterbox-background-hover-dark,
+    var(--mbx-counterbox-background-hover, var(--mbx-c-bgc-h-d))
+  );
+  --mbx-c-cnt-txt-h: var(
+    --mbx-counterbox-text-color-hover-dark,
+    var(--mbx-counterbox-text-color-hover, var(--mbx-c-txt-h-d))
+  );
 
   /** Input */
-
-  --mbx-c-in-bgc-h: var(--mbx-c-in-bgc-h-d);
-
-  --mbx-c-in-txt-h: var(--mbx-c-in-txt-h-d);
+  --mbx-c-in-bgc-h: var(
+    --mbx-inputbox-background-hover-dark,
+    var(--mbx-inputbox-background-hover, var(--mbx-c-bgc-h-d))
+  );
+  --mbx-c-in-txt-h: var(
+    --mbx-inputbox-text-color-hover-dark,
+    var(--mbx-inputbox-text-color-hover, var(--mbx-c-txt-h-d))
+  );
 
   /** Link */
-
-  --mbx-c-link-txt-h: var(--mbx-c-link-txt-h-d);
+  --mbx-c-link-txt-h: var(
+    --mbx-link-color-hover-dark,
+    var(--mbx-link-color-hover, var(--mbx-c-link-txt-d))
+  );
 
   /** PackageVersion */
-
-  --mbx-c-pkgv-txt: var(--mbx-c-pkgv-txt-d);
+  --mbx-c-pkgv-txt: var(
+    --mbx-packageversion-text-color-dark,
+    var(--mbx-packageversion-text-color)
+  );
 
   /* Radio Button */
-
-  --mbx-c-rad-bg-h: var(--mbx-c-rad-bg-h-d);
+  --mbx-c-rad-bg-h: var(
+    --mbx-radio-background-hover-dark,
+    var(--mbx-radio-background-hover)
+  );
 
   /** Selector **/
-
-  --mbx-c-sel-bg-h: var(--mbx-c-sel-bg-h-d);
-  --mbx-c-sel-txt-h: var(--mbx-c-sel-txt-h-d);
+  --mbx-c-sel-bg-h: var(
+    --mbx-selector-background-hover-dark,
+    var(--mbx-selector-background-hover)
+  );
+  --mbx-c-sel-txt-h: var(
+    --mbx-selector-text-color-hover-dark,
+    var(--mbx-selector-text-color-hover)
+  );
 }

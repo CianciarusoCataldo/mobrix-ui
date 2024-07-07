@@ -54,9 +54,9 @@ const Button: ButtonComponent = ({
     wrapper: "button",
     features: {
       opHov: true,
-      opacityOnActive: true,
+      opAct: true,
     },
-    sharedCssClasses: "wfit;act",
+    scl: "wfit;act",
     Component: children,
     commonProps: {
       ...sharedProps,

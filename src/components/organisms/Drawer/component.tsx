@@ -29,7 +29,7 @@ const DrawerInternalComponent: MbxUiComponent<
       }}
       debug={{
         scl: "drw-close",
-        features: { noShadowOnFocus: true },
+        features: { noShFc: true },
       }}
       a11yLabel="drawer-close-button"
     >

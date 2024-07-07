@@ -64,7 +64,7 @@ const Rater: RaterComponent = ({
         ...props,
         ...sharedProps,
       }),
-    sharedCssClasses: `wfit;${vertical ? "flxc" : "flxr"};act`,
+    scl: `wfit;${vertical ? "flxc" : "flxr"};act`,
     commonProps: sharedProps,
   }));
 

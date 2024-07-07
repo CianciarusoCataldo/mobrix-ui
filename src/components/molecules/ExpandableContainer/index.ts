@@ -67,7 +67,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
         ...sharedProps,
       }),
     props: (value, setValue) => ({
-      sharedCssClasses: `cmp-${value}`,
+      scl: `cmp-${value}`,
       commonProps: sharedProps,
     }),
   }));

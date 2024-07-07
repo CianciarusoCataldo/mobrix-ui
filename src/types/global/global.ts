@@ -235,14 +235,16 @@ export interface Features {
   opHov?: boolean;
 
   /** If `true`, reduce component opacity when component is clicked */
-  opacityOnActive?: boolean;
+  opAct?: boolean;
 
   /** If `true`, when focused, the component text-color will change instead of the box shadow (that will be transparent) */
-  textcolorOnFocus?: boolean;
+  colFc?: boolean;
 
-  noShadowOnFocus?: boolean;
+  /** If `true`, when focused, the component box shadow will be transparent */
+  noShFc?: boolean;
 
-  fillOnFocus?: boolean;
+  /** If `true`, when focused, the component fill color (along with child svg) will change instead of the box shadow (that will be transparent) */
+  fillFc?: boolean;
 }
 
 /**
@@ -269,7 +271,7 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
 
   features?: Features;
 
-  sharedCssClasses?: string;
+  scl?: string;
 };
 
 /**

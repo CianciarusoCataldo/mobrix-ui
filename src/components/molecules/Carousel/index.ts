@@ -50,7 +50,7 @@ const Carousel: CarouselComponent = (props) => {
     commonProps: props,
     defaultValue: 0,
     inputValue: props.value,
-    sharedCssClasses: "flxc;wfit;act",
+    scl: "flxc;wfit;act",
     Component: ({ value, setValue }) =>
       carouselComponent({
         ...props,

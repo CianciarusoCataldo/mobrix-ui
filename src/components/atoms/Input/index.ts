@@ -57,7 +57,7 @@ const Input: InputComponent = ({
     features: {
       opHov: true,
     },
-    sharedCssClasses: autoresizable && "wfit",
+    scl: autoresizable && "wfit",
     props: (value, setValue) => ({
       commonProps: {
         ...sharedProps,

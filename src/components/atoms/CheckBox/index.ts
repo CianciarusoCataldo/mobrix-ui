@@ -56,7 +56,7 @@ const Checkbox: CheckBoxComponent = ({
     features: {
       opHov: true,
     },
-    sharedCssClasses: "flxc;act",
+    scl: "flxc;act",
     props: (actualValue, setValue) => ({
       commonProps: {
         ...sharedProps,

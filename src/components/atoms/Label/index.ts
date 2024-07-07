@@ -45,10 +45,10 @@ const Label: LabelComponent = ({ children, shadow = false, ...commonProps }) =>
     Component: children,
     wrapper: "p",
     features: {
-      textcolorOnFocus: true,
-      noShadowOnFocus: true,
+      colFc: true,
+      noShFc: true,
     },
-    sharedCssClasses: "wfit",
+    scl: "wfit",
     commonProps: {
       ...sharedProps,
       shadow,
