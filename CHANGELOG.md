@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.15.0](#3150)
 - [3.14.0](#3140)
 - [3.13.0](#3130)
 - [3.12.0](#3120)
@@ -28,6 +29,14 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.15.0
+
+- Atoms css totally re-defined and cleaned up
+- Refactoring
+- Bundle size reduced
 
 <br>
 

@@ -58,7 +58,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
         {...headerProps}
       >
         {header}
-      </Container>
+      </Container>,
     );
   }
 
@@ -105,7 +105,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
 
         setValue(formattedValue);
       }}
-    />
+    />,
   );
 
   components.push(
@@ -119,7 +119,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       key="fld_eb"
     >
       {errorLabel}
-    </Container>
+    </Container>,
   );
 
   return components;
