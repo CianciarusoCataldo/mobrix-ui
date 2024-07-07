@@ -59,12 +59,12 @@ export const MBX_ATTRIBUTES: Partial<
 export const MBX_ATTS_MAP: Partial<
   Record<keyof typeof MBX_ATTRIBUTES, string>
 > = {
-  dark: "dark",
-  shadow: "shadow",
+  dark: "dk",
+  shadow: "sh",
   hide: "hide",
   background: "bg",
-  disabled: "disabled",
+  disabled: "dsb",
   a11y: "a11y",
-  hover: "hover",
-  animated: "animated",
+  hover: "hv",
+  animated: "anm",
 };

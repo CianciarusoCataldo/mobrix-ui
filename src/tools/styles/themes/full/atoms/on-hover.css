@@ -1,6 +1,6 @@
 @media (hover) {
-  [data-mbx-id][data-mbx-atts*="hover"][data-mbx-atts*="bg"]:not(
-      [data-mbx-atts*="disabled"]
+  [data-mbx-id][data-mbx-atts*="hv"][data-mbx-atts*="bg"]:not(
+      [data-mbx-atts*="dsb"]
     ):hover {
     /** Button **/
     --mbx-c-btn-bg: var(--mbx-c-btn-bg-h);
@@ -12,7 +12,7 @@
     --mbx-c-rad-bg: var(--mbx-c-rad-bg-h);
   }
 
-  [data-mbx-id][data-mbx-atts*="hover"]:not([data-mbx-atts*="disabled"]):hover {
+  [data-mbx-id][data-mbx-atts*="hv"]:not([data-mbx-atts*="dsb"]):hover {
     /** Button **/
     --mbx-c-btn-txt: var(--mbx-c-btn-txt-h);
 
@@ -20,8 +20,8 @@
     --mbx-c-link-txt: var(--mbx-c-link-txt-h);
   }
 
-  [data-mbx-id][data-mbx-atts*="hover"][data-mbx-atts*="bg"]:not(
-      [data-mbx-atts*="disabled"]
+  [data-mbx-id][data-mbx-atts*="hv"][data-mbx-atts*="bg"]:not(
+      [data-mbx-atts*="dsb"]
     ):hover:not(:focus-visible) {
     /** Counter **/
     --mbx-c-cnt-bg: var(--mbx-c-cnt-bg-h);
@@ -33,7 +33,7 @@
     --mbx-c-in-txt: var(--mbx-c-in-txt-h);
   }
 
-  [data-mbx-id="selector"][data-mbx-atts*="hover"]:hover,
+  [data-mbx-id="selector"][data-mbx-atts*="hv"]:hover,
   [data-mbx-id="selector"] [data-mbx-class="selector-option"]:hover {
     background: var(--mbx-c-sel-bg-h);
     color: var(--mbx-c-sel-txt-h);

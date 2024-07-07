@@ -10,13 +10,13 @@
   line-height: 1.25rem;
 }
 
-[data-mbx-id="button"][data-mbx-atts*="animated"] {
+[data-mbx-id="button"][data-mbx-atts*="anm"] {
   transition-duration: 0.1s;
   transition-property: transform;
 }
 
 @media (hover) {
-  [data-mbx-id="button"][data-mbx-atts*="animated"][data-mbx-atts*="hover"]:hover {
+  [data-mbx-id="button"][data-mbx-atts*="anm"][data-mbx-atts*="hv"]:hover {
     position: relative;
     transform: scaleX(1.15) scaleY(1.1);
   }

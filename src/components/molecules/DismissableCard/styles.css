@@ -16,8 +16,8 @@
 }
 
 @media (hover) {
-  [data-mbx-id="dis-card"][data-mbx-atts*="hover"]:not(
-      [data-mbx-atts*="disabled"]
+  [data-mbx-id="dis-card"][data-mbx-atts*="hv"]:not(
+      [data-mbx-atts*="dsb"]
     )
     [data-mbx-scl*="dis-bt"]
     svg:hover

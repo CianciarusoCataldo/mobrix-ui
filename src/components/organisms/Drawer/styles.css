@@ -10,7 +10,7 @@
   color: var(--mbx-c-draw-txt);
 }
 
-[data-mbx-id="drawer"]:not([data-mbx-atts*="disabled"]) {
+[data-mbx-id="drawer"]:not([data-mbx-atts*="dsb"]) {
   animation: var(--mbx-drawer-animation);
   -moz-animation: var(--mbx-drawer-animation);
   -ms-animation: var(--mbx-drawer-animation);

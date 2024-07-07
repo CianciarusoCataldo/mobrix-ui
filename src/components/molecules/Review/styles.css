@@ -1,5 +1,4 @@
 [data-mbx-id="review"] {
-  align-items: center;
   padding: 0.6rem;
   background: var(--mbx-c-rev-bg);
   color: var(--mbx-c-rev-txt);
@@ -37,6 +36,7 @@
   overflow-wrap: break-word;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
+  width: 100%;
 }
 
 [data-mbx-id="review"]

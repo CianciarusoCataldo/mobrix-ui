@@ -4,7 +4,7 @@
   min-width: 4rem;
 }
 
-[data-mbx-id="spinner"]:not([data-mbx-atts*="disabled"])
+[data-mbx-id="spinner"]:not([data-mbx-atts*="dsb"])
   [data-mbx-scl*="rotating"] {
   -webkit-animation: rotating 2s linear infinite;
   -moz-animation: rotating 2s linear infinite;

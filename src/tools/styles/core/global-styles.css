@@ -19,12 +19,13 @@
   display: none !important;
 }
 
-[data-mbx-id][data-mbx-atts*="disabled"] {
+[data-mbx-id][data-mbx-atts*="dsb"],
+[data-mbx-id] [data-mbx-atts*="dsb"] {
   opacity: 0.6;
 }
 
-[data-mbx-id][data-mbx-atts*="shadow"],
-[data-mbx-id] [data-mbx-atts*="shadow"] {
+[data-mbx-id][data-mbx-atts*="sh"],
+[data-mbx-id] [data-mbx-atts*="sh"] {
   box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
   -webkit-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
   -moz-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);

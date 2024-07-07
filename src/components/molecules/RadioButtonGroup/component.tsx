@@ -35,11 +35,14 @@ const radioButtonGroupComponent: MbxUiReactiveComponent<
         key={"rgr_el_" + index}
         data-mbx-scl={`t-${txtPosition};${cssClasses[txtPosition]};rdg-el-${index};act`}
       >
-        {element.text && (
-          <Label disabled={disabled} key="rd_txt" dark={dark}>
-            {element.text}
-          </Label>
-        )}
+        <Label
+          hide={!element.text}
+          disabled={disabled}
+          key="rd_txt"
+          dark={dark}
+        >
+          {element.text}
+        </Label>
         {element.component}
         <RadioButton
           disabled={disabled}

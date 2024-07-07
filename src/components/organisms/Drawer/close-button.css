@@ -81,7 +81,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="drawer"]:not([data-mbx-atts*="disabled"])
+  [data-mbx-id="drawer"]:not([data-mbx-atts*="dsb"])
     [data-mbx-scl*="drw-close"]
     svg:hover {
     fill: var(--mbx-c-draw-arr-h);

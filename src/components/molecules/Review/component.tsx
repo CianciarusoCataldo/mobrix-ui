@@ -37,7 +37,7 @@ const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
       </Link>
     </div>,
     <div data-mbx-scl="rev-inf-b;flxc;" key="info">
-      <div data-mbx-scl="flxr">
+      <div data-mbx-scl="flxr;mauto">
         <div data-mbx-scl="rev-ph">{icon}</div>
         {user && <span data-mbx-scl="rev-us-name">{user}</span>}
       </div>

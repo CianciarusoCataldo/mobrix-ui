@@ -10,6 +10,6 @@
   outline: none;
 }
 
-[data-mbx-id="icon-button"][data-mbx-atts*="disabled"] {
+[data-mbx-id="icon-button"][data-mbx-atts*="dsb"] {
   cursor: unset;
 }
