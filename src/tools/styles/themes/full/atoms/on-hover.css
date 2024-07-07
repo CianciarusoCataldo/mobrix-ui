@@ -1,5 +1,5 @@
 @media (hover) {
-  [data-mbx-id][data-mbx-atts*="hover"][data-mbx-atts*="background"]:not(
+  [data-mbx-id][data-mbx-atts*="hover"][data-mbx-atts*="bg"]:not(
       [data-mbx-atts*="disabled"]
     ):hover {
     /** Button **/
@@ -20,7 +20,7 @@
     --mbx-c-link-txt: var(--mbx-c-link-txt-h);
   }
 
-  [data-mbx-id][data-mbx-atts*="hover"][data-mbx-atts*="background"]:not(
+  [data-mbx-id][data-mbx-atts*="hover"][data-mbx-atts*="bg"]:not(
       [data-mbx-atts*="disabled"]
     ):hover:not(:focus-visible) {
     /** Counter **/

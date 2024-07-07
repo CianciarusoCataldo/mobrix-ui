@@ -31,8 +31,8 @@
   -o-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
 }
 
-[data-mbx-id]:not([data-mbx-atts*="background"]),
-[data-mbx-id]:not([data-mbx-atts*="background"]):hover {
+[data-mbx-id]:not([data-mbx-atts*="bg"]),
+[data-mbx-id]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-bg: transparent;
   --mbx-c-bgc: transparent;
 }

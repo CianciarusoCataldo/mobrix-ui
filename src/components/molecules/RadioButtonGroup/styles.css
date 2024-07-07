@@ -2,7 +2,7 @@
   padding: 0.3rem;
 }
 
-[data-mbx-id="radio-group"][data-mbx-atts*="background"] {
+[data-mbx-id="radio-group"][data-mbx-atts*="bg"] {
   background: var(--mbx-c-radg-bg);
   color: var(--mbx-c-radg-txt);
 }

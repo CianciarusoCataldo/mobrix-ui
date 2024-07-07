@@ -55,3 +55,16 @@ export const MBX_ATTRIBUTES: Partial<
   hover: (props) => props.hover && !props.disabled,
   animated: (props) => props.animated && !props.disabled,
 };
+
+export const MBX_ATTS_MAP: Partial<
+  Record<keyof typeof MBX_ATTRIBUTES, string>
+> = {
+  dark: "dark",
+  shadow: "shadow",
+  hide: "hide",
+  background: "bg",
+  disabled: "disabled",
+  a11y: "a11y",
+  hover: "hover",
+  animated: "animated",
+};

@@ -5,7 +5,6 @@ import "../styles/themes/full/index.css";
 import React, { useEffect, useRef } from "react";
 
 import {
-  BuilderComponent,
   BuilderProps,
   BuilderPropsReactive,
   CommonProps,
@@ -15,6 +14,7 @@ import {
   DEFAULT_COMMON_PROPS,
   FEATURES_PROPS,
   MBX_ATTRIBUTES,
+  MBX_ATTS_MAP,
 } from "./constants";
 import { Features } from "../../types/global/global";
 
@@ -69,7 +69,7 @@ export const getMbxAttributes = (commonProps: CommonProps) => {
       MBX_ATTRIBUTES[mbxAttribute](commonProps)
     )
     .forEach((mbxAttribute, index) => {
-      mbxAttributes += `${mbxAttribute};`;
+      mbxAttributes += `${MBX_ATTS_MAP[mbxAttribute]};`;
     });
 
   return mbxAttributes;
