@@ -115,7 +115,13 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} /> <Card footer="footer" />{" "}
             <br />
             <div style={{ marginTop: "20px" }} />{" "}
-            <Card header="header" body="body" footer="footer" /> <br />
+            <Card
+              header="header"
+              body="body"
+              footer="footer"
+              footerClassName="custom-f"
+            />{" "}
+            <br />
             <div style={{ marginTop: "20px" }} />{" "}
             <Card noDividers header="header" body="body" footer="footer" />{" "}
             <div style={{ marginTop: "20px" }} />
@@ -160,6 +166,119 @@ const MoleculesPage = () => {
             <Card disabled header="header" body="body" footer="footer" />{" "}
             <div style={{ marginTop: "20px" }} />
             <Card dark disabled header="header" body="body" footer="footer" />
+            <div style={{ marginTop: "20px" }} />
+            <Button
+              animated
+              onClick={() => {
+                setHide(hide === false ? null : false);
+              }}
+              style={{ marginBottom: "2rem" }}
+            >
+              Reset
+            </Button>
+            <DismissableCard /> <br />
+            <div style={{ marginTop: "20px" }} />{" "}
+            <DismissableCard header="header" /> <br />
+            <div style={{ marginTop: "20px" }} />{" "}
+            <DismissableCard body="body" /> <br />
+            <div style={{ marginTop: "20px" }} />{" "}
+            <DismissableCard footer="footer" /> <br />
+            <div style={{ marginTop: "20px" }} />{" "}
+            <DismissableCard header="header" body="body" footer="footer" />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard header="loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong header" body="body" footer="footer" />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              alwaysVisible
+              header="Always visible"
+              body="body"
+              footer="footer"
+            />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              noDividers
+              header="header"
+              body="body"
+              footer="footer"
+            />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              noBottomDivider
+              header="header"
+              body="body"
+              footer="footer"
+            />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              noTopDivider
+              header="header"
+              body="body"
+              footer="footer"
+            />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard dark />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard dark header="header" />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard dark body="body" />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard dark footer="footer" />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard dark header="header" body="body" footer="footer" />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              dark
+              noDividers
+              header="header"
+              body="body"
+              footer="footer"
+            />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              dark
+              noTopDivider
+              header="header"
+              body="body"
+              footer="footer"
+            />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              dark
+              noBottomDivider
+              header="header"
+              body="body"
+              footer="footer"
+            />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              disabled
+              header="header"
+              body="body"
+              footer="footer"
+            />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              disabled
+              dark
+              header="header"
+              body="body"
+              footer="footer"
+            />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              header="header"
+              body="body"
+              footer="footer"
+              background={false}
+            />
+            <div style={{ marginTop: "20px" }} />
+            <DismissableCard
+              header="header"
+              body="body"
+              footer="footer"
+              background={false}
+              dark
+            />
           </div>
         }
         name="Card"
@@ -268,118 +387,7 @@ const MoleculesPage = () => {
               display: "flex",
               flexDirection: "column",
             }}
-          >
-            <Button
-              animated
-              onClick={() => {
-                setHide(hide === false ? null : false);
-              }}
-              style={{ marginBottom: "2rem" }}
-            >
-              Reset
-            </Button>
-            <DismissableCard /> <br />
-            <div style={{ marginTop: "20px" }} />{" "}
-            <DismissableCard header="header" /> <br />
-            <div style={{ marginTop: "20px" }} />{" "}
-            <DismissableCard body="body" /> <br />
-            <div style={{ marginTop: "20px" }} />{" "}
-            <DismissableCard footer="footer" /> <br />
-            <div style={{ marginTop: "20px" }} />{" "}
-            <DismissableCard header="header" body="body" footer="footer" />{" "}
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              alwaysVisible
-              header="Always visible"
-              body="body"
-              footer="footer"
-            />{" "}
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              noDividers
-              header="header"
-              body="body"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              noBottomDivider
-              header="header"
-              body="body"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              noTopDivider
-              header="header"
-              body="body"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard dark />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard dark header="header" />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard dark body="body" />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard dark footer="footer" />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard dark header="header" body="body" footer="footer" />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              dark
-              noDividers
-              header="header"
-              body="body"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              dark
-              noTopDivider
-              header="header"
-              body="body"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              dark
-              noBottomDivider
-              header="header"
-              body="body"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              disabled
-              header="header"
-              body="body"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              disabled
-              dark
-              header="header"
-              body="body"
-              footer="footer"
-            />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              header="header"
-              body="body"
-              footer="footer"
-              background={false}
-            />
-            <div style={{ marginTop: "20px" }} />
-            <DismissableCard
-              header="header"
-              body="body"
-              footer="footer"
-              background={false}
-              dark
-            />
-          </div>
+          ></div>
         }
         name="DismissableCard"
       />

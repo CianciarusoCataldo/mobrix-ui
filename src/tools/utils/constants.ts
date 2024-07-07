@@ -17,7 +17,7 @@ export const FEATURES_PROPS: Record<
   keyof Features & CommonProps,
   (props: CommonProps) => { enabled: boolean; featureKey: string }
 > = {
-  opacityOnHover: (props) => ({
+  opHov: (props) => ({
     enabled: !props.disabled && props.hover,
     featureKey: "opHov",
   }),
@@ -49,9 +49,22 @@ export const MBX_ATTRIBUTES: Partial<
   dark: (props) => props.dark,
   shadow: (props) => props.shadow,
   hide: (props) => props.hide,
-  hover: (props) => props.hover && !props.disabled,
   background: (props) => props.background,
   disabled: (props) => props.disabled,
   a11y: (props) => props.a11y,
+  hover: (props) => props.hover && !props.disabled,
   animated: (props) => props.animated && !props.disabled,
+};
+
+export const MBX_ATTS_MAP: Partial<
+  Record<keyof typeof MBX_ATTRIBUTES, string>
+> = {
+  dark: "dk",
+  shadow: "sh",
+  hide: "hide",
+  background: "bg",
+  disabled: "dsb",
+  a11y: "a11y",
+  hover: "hv",
+  animated: "anm",
 };

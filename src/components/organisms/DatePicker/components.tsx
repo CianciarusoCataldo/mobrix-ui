@@ -75,7 +75,7 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
   );
 
   return [
-    <div key="d-pick_selectors" data-mbx-scl="flxr;date-s">
+    <div key="d-pick_sels" data-mbx-scl="flxr;date-s">
       <DateLabel>{String(day)}</DateLabel>
       <DateLabel>{String(customMonths[month])}</DateLabel>
       <DateLabel>{String(year)}</DateLabel>
@@ -99,6 +99,7 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
       }}
     >
       <Calendar
+        debug={{ scl: "mauto" }}
         shadow={false}
         days={customDays}
         months={customMonths}

@@ -4,11 +4,11 @@
   color: var(--mbx-c-card-txt);
 }
 
-[data-mbx-id*="container"] {
+[data-mbx-id*="cont"] {
   background: var(--mbx-c-con-bg);
   color: var(--mbx-c-con-txt);
 }
 
-[data-mbx-id="exp-cont"] [data-mbx-scl*="con-arr-bt"] svg {
+[data-mbx-id="econ"] [data-mbx-scl*="econ-b"] svg {
   fill: var(--mbx-c-con-txt);
 }

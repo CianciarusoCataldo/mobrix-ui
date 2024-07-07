@@ -58,29 +58,29 @@ const dropdownTest = () => {
         );
 
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "Enter" });
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "Enter" });
 
-        wrapper.find('[data-mbx-id="dropdown"]').simulate("focus");
+        wrapper.find('[data-mbx-id="dd"]').simulate("focus");
 
         //Selecting an item
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "Enter" });
 
         expect(onChangeStub).lastCalledWith(1);
@@ -95,12 +95,12 @@ const dropdownTest = () => {
           />
         );
 
-        wrapper.find('[data-mbx-id="dropdown"]').simulate("focus");
+        wrapper.find('[data-mbx-id="dd"]').simulate("focus");
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "Enter" });
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "Escape" });
         expect(onChangeStub).not.toBeCalled;
       });
@@ -114,35 +114,35 @@ const dropdownTest = () => {
           />
         );
 
-        wrapper.find('[data-mbx-id="dropdown"]').simulate("focus");
+        wrapper.find('[data-mbx-id="dd"]').simulate("focus");
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "Enter" });
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "Escape" });
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "ArrowDown" });
 
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "ArrowUp" });
 
         wrapper
-          .find('[data-mbx-id="dropdown"]')
+          .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "ArrowUp" });
 
         expect(onChangeStub).not.toBeCalled;

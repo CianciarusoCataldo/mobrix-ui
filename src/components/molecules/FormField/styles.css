@@ -1,10 +1,5 @@
 [data-mbx-id="field"] {
   align-items: flex-start;
-  width: fit-content;
-}
-
-[data-mbx-id="field"] [data-mbx-class="field-box"] {
-  background: transparent;
 }
 
 [data-mbx-id="field"] [data-mbx-field-header="true"] {
@@ -33,23 +28,7 @@
   width: 100%;
 }
 
-[data-mbx-id="field"]:is(
-    [data-mbx-scl*="t-checkbox"],
-    [data-mbx-scl*="t-radio"],
-    [data-mbx-scl*="t-boolean"],
-    [data-mbx-scl*="t-toggle"]
-  )
-  [data-mbx-field-header="true"] {
+[data-mbx-id="field"][data-mbx-scl*="fbox"] {
+  align-items: center;
   text-align: center;
-}
-
-[data-mbx-id="field"]:is(
-    [data-mbx-scl*="t-checkbox"],
-    [data-mbx-scl*="t-radio"],
-    [data-mbx-scl*="t-boolean"],
-    [data-mbx-scl*="t-toggle"]
-  )
-  [data-mbx-class="field-component"] {
-  margin-left: auto;
-  margin-right: auto;
 }

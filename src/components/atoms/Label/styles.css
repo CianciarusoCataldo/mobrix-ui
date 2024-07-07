@@ -1,5 +1,4 @@
 [data-mbx-id*="label"] {
   color: var(--mbx-c-lab-txt);
   background: transparent;
-  width: fit-content;
 }

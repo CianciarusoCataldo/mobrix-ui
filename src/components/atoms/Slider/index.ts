@@ -57,6 +57,7 @@ const Slider: SliderComponent = ({
     inputValue,
     defaultValue: 0,
     wrapper: "input",
+    sharedCssClasses: "wfit",
     props: (value, setValue) => {
       const callback =
         !sharedProps.disabled && !readOnly

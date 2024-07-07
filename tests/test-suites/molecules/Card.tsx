@@ -5,7 +5,15 @@ import { Card } from "../../../src";
 const cardTest = () => {
   describe("Card", () => {
     test("Rendering test", () => {
-      const wrapper = mount(
+      let wrapper = mount(
+        <Card
+        >
+          Test label
+        </Card>
+      );
+      expect(wrapper);
+
+      wrapper = mount(
         <Card
           headerProps={{}}
           bodyProps={{}}

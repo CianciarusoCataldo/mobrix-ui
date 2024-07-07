@@ -1,7 +1,5 @@
 [data-mbx-id="carousel"] {
   color: var(--mbx-text-color);
-  align-items: center;
-  width: fit-content;
   background: var(--mbx-c-car-bg);
   padding: 0.4rem;
 }
@@ -27,10 +25,8 @@
   fill: var(--mbx-c-car-arr);
 }
 
-[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-attributes*="disabled"] svg,
-[data-mbx-id="carousel"]
-  [data-mbx-arrow][data-mbx-attributes*="disabled"]:hover
-  svg {
+[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-atts*="dsb"] svg,
+[data-mbx-id="carousel"] [data-mbx-arrow][data-mbx-atts*="dsb"]:hover svg {
   fill: none;
 }
 

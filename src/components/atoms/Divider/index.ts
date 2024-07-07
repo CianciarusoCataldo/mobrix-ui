@@ -7,6 +7,7 @@ import { buildMbxStandardComponent } from "../../../tools";
 /**
  * A simple divider, useful to separate sections and paragraphs
  *
+ * @param {string} size Divider size. Can be used any unit (like rem, em or pixels, for example `4px`)
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode
@@ -38,10 +39,17 @@ import { buildMbxStandardComponent } from "../../../tools";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const Divider: DividerComponent = (props) =>
+const Divider: DividerComponent = ({ size = "2px", ...props }) =>
   buildMbxStandardComponent(props, (sharedProps) => ({
     name: "divider",
-    commonProps: { ...sharedProps, a11y: false },
+    commonProps: {
+      ...sharedProps,
+      a11y: false,
+      style: {
+        ...sharedProps.style,
+        height: size,
+      },
+    },
   }));
 
 export default Divider;

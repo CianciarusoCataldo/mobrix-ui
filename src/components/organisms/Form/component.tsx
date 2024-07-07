@@ -5,6 +5,7 @@ import { BuilderComponent, FormProps, MbxUiComponent } from "../../../types";
 import Button from "../../atoms/Button";
 import FormField from "../../molecules/FormField";
 import { Label } from "../../atoms";
+import { fieldFormatters } from "../../molecules/FormField/utils";
 
 const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
   title,
@@ -34,9 +35,9 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
   const components = [
     <Label
       disabled={disabled}
-      key="mobrix_ui_form_title"
-      additionalProps={{ "data-mbx-class": "title" }}
+      key="form_title"
       dark={dark}
+      debug={{ scl: "title" }}
     >
       {title}
     </Label>,
@@ -64,6 +65,9 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
             onChange={callBack}
             hover={hover}
             headerProps={{ dark }}
+            debug={{
+              scl: fieldFormatters[type].scl.frm,
+            }}
           />
         </div>
       );

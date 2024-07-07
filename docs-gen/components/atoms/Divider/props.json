@@ -1,1 +1,7 @@
-{}
+{
+  "size": {
+    "type": "string",
+    "default": "`2px`",
+    "description": "Divider size. Can be used any unit (like rem, em or pixels, for example `4px`)"
+  }
+}

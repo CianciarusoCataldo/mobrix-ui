@@ -6,7 +6,7 @@
   color: var(--mbx-c-form-txt);
 }
 
-[data-mbx-id="form"] [data-mbx-class="title"] {
+[data-mbx-id="form"] [data-mbx-scl*="title"] {
   text-align: center;
   margin-bottom: 0.9rem;
   font-size: 1.35rem;
@@ -14,12 +14,7 @@
   --mbx-label-text-color: var(--mbx-c-form-txt);
 }
 
-[data-mbx-id="form"]
-  [data-mbx-scl*="f-field"]:is(
-    [data-mbx-scl*="t-checkbox"],
-    [data-mbx-scl*="t-radio"],
-    [data-mbx-scl*="t-boolean"]
-  ) {
+[data-mbx-id="form"] [data-mbx-scl*="frbox"] {
   margin-left: auto;
   margin-right: auto;
 }

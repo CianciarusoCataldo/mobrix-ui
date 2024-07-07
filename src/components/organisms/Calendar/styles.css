@@ -1,5 +1,4 @@
 [data-mbx-id="calendar"] {
-  width: fit-content;
   align-items: center;
   --mbx-table-background: var(--mbx-c-cal-bg);
   --mbx-table-text-color: var(--mbx-c-cal-txt);
@@ -13,107 +12,93 @@
   margin-right: auto;
 }
 
-[data-mbx-id="calendar"] table {
+[data-mbx-id="calendar"] [data-mbx-id="table"] {
   width: 100%;
-  margin: auto;
 }
 
-[data-mbx-id="calendar"]
-  table
-  tr[data-mbx-table-row="true"]
-  [data-mbx-table-cell="true"] {
+[data-mbx-id="calendar"] [data-mbx-tcell="true"] {
   font-size: medium;
   font-weight: 700;
 }
 
-[data-mbx-id="calendar"]
-  table
-  tr[data-mbx-table-row="true"]
-  td[data-mbx-table-cell="true"] {
+[data-mbx-id="calendar"] td[data-mbx-tcell="true"] {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   font-size: larger;
   transition: 0.3s;
 }
 
-[data-mbx-id="calendar"]
-  table
-  tr[data-mbx-table-row="true"]
-  th[data-mbx-table-cell="true"] {
+[data-mbx-id="calendar"] th[data-mbx-tcell="true"] {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: x-large;
 }
 
-[data-mbx-id="calendar"]
-  table
-  tr[data-mbx-table-row="true"]
-  [data-mbx-table-cell="true"][data-mbx-selected="true"] {
+[data-mbx-id="calendar"] [data-mbx-tcell="true"][data-mbx-selected="true"] {
   cursor: default;
   background: var(--mbx-c-cal-s-bg);
   color: var(--mbx-c-cal-s-txt);
 }
 
-[data-mbx-id="calendar"] [data-mbx-class="top-selector"] {
-  margin: auto;
+[data-mbx-id="calendar"] [data-mbx-scl*="t-sel"] {
   margin-bottom: 1.2rem;
   width: 100%;
   color: var(--mbx-c-cal-txt);
 }
 
-[data-mbx-id="calendar"] [data-mbx-calendar-arrow="right"] {
+[data-mbx-id="calendar"] [data-mbx-carr="right"] {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-[data-mbx-id="calendar"] [data-mbx-calendar-arrow] {
+[data-mbx-id="calendar"] [data-mbx-carr] {
   height: fit-content;
   margin-top: auto;
   margin-bottom: auto;
 }
 
-[data-mbx-id="calendar"] [data-mbx-calendar-arrow] svg {
+[data-mbx-id="calendar"] [data-mbx-carr] svg {
   fill: var(--mbx-c-cal-arr);
   width: 3rem;
   height: 3rem;
   transition: 0.3s;
 }
 
-[data-mbx-id="calendar"]
-  table
-  tr[data-mbx-table-row="true"]
-  [data-mbx-table-cell="true"][data-mbx-calendar-today="true"] {
+[data-mbx-id="calendar"] [data-mbx-tcell="true"][data-mbx-ctoday="true"] {
   color: var(--mbx-c-cal-t);
   font-weight: 800;
 }
 
-[data-mbx-id="calendar"] [data-mbx-calendar-arrow]:active svg {
+[data-mbx-id="calendar"] [data-mbx-carr]:active svg {
   fill: var(--mbx-c-cal-arr-h);
 }
 
+[data-mbx-id="calendar"] [data-mbx-scl*="dsb"] {
+  opacity: 0.4;
+}
+
+[data-mbx-id="calendar"]:not([data-mbx-atts*="dsb"])
+  td:not([data-mbx-scl="dsb"]):focus-visible {
+  background: var(--mbx-c-cal-bg-h);
+  color: var(--mbx-c-cal-txt-h);
+}
+
 @media (hover) {
-  [data-mbx-id="calendar"]:not([data-mbx-attributes*="disabled"])
-    table
-    tr[data-mbx-table-row="true"]
-    td[data-mbx-table-cell="true"]:not([data-mbx-selected="true"]):not(
-      [data-mbx-disabled="true"]
-    ):hover {
+  [data-mbx-id="calendar"]:not([data-mbx-atts*="dsb"])
+    td:not([data-mbx-scl="dsb"]):hover {
     background: var(--mbx-c-cal-bg-h);
     color: var(--mbx-c-cal-txt-h);
   }
 
-  [data-mbx-id="calendar"]:not([data-mbx-attributes*="disabled"])
-    [data-mbx-calendar-arrow]:hover
+  [data-mbx-id="calendar"]:not([data-mbx-atts*="dsb"])
+    [data-mbx-carr]:hover
     svg {
     fill: var(--mbx-c-cal-arr-h);
   }
 }
 
 @media (max-width: 500px) {
-  [data-mbx-id="calendar"]
-    table
-    tr[data-mbx-table-row="true"]
-    th[data-mbx-table-cell="true"] {
+  [data-mbx-id="calendar"] th[data-mbx-tcell="true"] {
     margin: 0;
     font-size: larger;
     padding: 0.3rem;
@@ -121,10 +106,7 @@
     padding-bottom: 0.4rem;
   }
 
-  [data-mbx-id="calendar"]
-    table
-    tr[data-mbx-table-row="true"]
-    td[data-mbx-table-cell="true"] {
+  [data-mbx-id="calendar"] td[data-mbx-tcell="true"] {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
@@ -139,10 +121,7 @@
 }
 
 @media (max-width: 400px) {
-  [data-mbx-id="calendar"]
-    table
-    tr[data-mbx-table-row="true"]
-    th[data-mbx-table-cell="true"] {
+  [data-mbx-id="calendar"] th[data-mbx-tcell="true"] {
     margin: 0;
     font-size: large;
     padding: 0.2rem;
@@ -156,10 +135,7 @@
 }
 
 @media (max-width: 340px) {
-  [data-mbx-id="calendar"]
-    table
-    tr[data-mbx-table-row="true"]
-    th[data-mbx-table-cell="true"] {
+  [data-mbx-id="calendar"] th[data-mbx-tcell="true"] {
     padding: 0.1rem;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
@@ -172,18 +148,12 @@
   }
 }
 
-@media (max-width: 310px) {
-  [data-mbx-id="calendar"]
-    table
-    tr[data-mbx-table-row="true"]
-    th[data-mbx-table-cell="true"] {
+@media (max-width: 320px) {
+  [data-mbx-id="calendar"] th[data-mbx-tcell="true"] {
     display: none;
   }
 
-  [data-mbx-id="calendar"]
-    table
-    tr[data-mbx-table-row="true"]
-    td[data-mbx-table-cell="true"] {
+  [data-mbx-id="calendar"] td[data-mbx-tcell="true"] {
     padding: 0;
     margin: 0;
   }

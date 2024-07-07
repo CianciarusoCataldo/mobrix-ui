@@ -5,7 +5,6 @@ import "../styles/themes/full/index.css";
 import React, { useEffect, useRef } from "react";
 
 import {
-  BuilderComponent,
   BuilderProps,
   BuilderPropsReactive,
   CommonProps,
@@ -15,6 +14,7 @@ import {
   DEFAULT_COMMON_PROPS,
   FEATURES_PROPS,
   MBX_ATTRIBUTES,
+  MBX_ATTS_MAP,
 } from "./constants";
 import { Features } from "../../types/global/global";
 
@@ -33,13 +33,6 @@ const useOutsideAlerter = (ref: any, callback: () => void) => {
   });
 };
 
-export const generateElementsArray = (
-  components: { condition: boolean; component: BuilderComponent }[]
-) =>
-  components
-    .filter((component) => component.condition)
-    .map((component, index) => component.component);
-
 export const parseCommonProps = (props: CommonProps): CommonProps => ({
   ...DEFAULT_COMMON_PROPS,
   ...props,
@@ -55,7 +48,7 @@ export const getEnabledFeatures = (
   features: Features,
   commonProps: CommonProps
 ) => {
-  let enabledFeatures = "";
+  let mbxFts = "";
   const featureProps = Object.keys(features).filter(
     (feature) => features[feature]
   );
@@ -63,12 +56,10 @@ export const getEnabledFeatures = (
     .filter((feature, index) => FEATURES_PROPS[feature])
     .forEach((feature, index) => {
       const enabledFeature = FEATURES_PROPS[feature](commonProps);
-      enabledFeatures += enabledFeature.enabled
-        ? `${enabledFeature.featureKey};`
-        : "";
+      mbxFts += enabledFeature.enabled ? `${enabledFeature.featureKey};` : "";
     });
 
-  return enabledFeatures;
+  return mbxFts;
 };
 
 export const getMbxAttributes = (commonProps: CommonProps) => {
@@ -78,7 +69,7 @@ export const getMbxAttributes = (commonProps: CommonProps) => {
       MBX_ATTRIBUTES[mbxAttribute](commonProps)
     )
     .forEach((mbxAttribute, index) => {
-      mbxAttributes += `${mbxAttribute};`;
+      mbxAttributes += `${MBX_ATTS_MAP[mbxAttribute]};`;
     });
 
   return mbxAttributes;
@@ -112,22 +103,22 @@ const buildMobrixUiStandardComponent = ({
   wrapper: SelectedWrapper = "div",
   features = {},
 }: BuilderProps) => {
-  let enabledFeatures = getEnabledFeatures(
+  let mbxFts = getEnabledFeatures(
     {
       ...features,
       ...(commonProps.debug?.features ? commonProps.debug.features : {}),
     },
     commonProps
   );
-  let mbxAttributes = getMbxAttributes(commonProps);
+  let mbxAtts = getMbxAttributes(commonProps);
 
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,
-    ...(mbxAttributes.length > 0 && {
-      "data-mbx-attributes": mbxAttributes,
+    ...(mbxAtts.length > 0 && {
+      "data-mbx-atts": mbxAtts,
     }),
-    ...(enabledFeatures.length > 0 && {
-      "data-mbx-features": enabledFeatures,
+    ...(mbxFts.length > 0 && {
+      "data-mbx-fts": mbxFts,
     }),
     "data-mbx-scl": `${sharedCssClasses};${
       commonProps.debug?.scl ? commonProps.debug.scl : ""

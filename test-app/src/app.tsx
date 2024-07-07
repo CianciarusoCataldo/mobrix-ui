@@ -16,11 +16,12 @@ const Molecules = <MoleculesPage />;
 const Organisms = <OrganismsPage />;
 const tabs = (
   <TabViewer
+    animated
     tabClassName="demo-tab"
     tabSelectedClassName="demo-tab-selected"
     tabUnselectedClassName="demo-tab-unselected"
     //dark
-    selected={0}
+    selected={1}
     tabs={[
       {
         label: "Atoms",
@@ -49,7 +50,7 @@ const App = () => {
       <Drawer
         //dark
         hide={!isVisible}
-        background={false}
+        background={true}
         className="test-class2"
         animated
         onClose={() => {

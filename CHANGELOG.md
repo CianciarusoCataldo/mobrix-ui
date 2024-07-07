@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [3.14.0](#3140)
 - [3.13.0](#3130)
 - [3.12.0](#3120)
 - [3.11.0](#3110)
@@ -27,6 +28,17 @@
 ---
 
 ## Changes
+
+<br>
+
+### 3.14.0
+
+- Styles optimized
+- Big Clean-up, bundle size reduced
+- Code refactoring, with more efficent naming
+- More styles unified to `data-mbx-scl`
+- `Card` and `DismissableCard` better styled
+- New `size` prop to specify `Divider` component height
 
 <br>
 

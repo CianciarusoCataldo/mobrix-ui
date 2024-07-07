@@ -6,20 +6,21 @@
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   display: inline-flex;
-  align-items: center;
-  text-align: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  width: fit-content;
 }
 
-[data-mbx-id="button"][data-mbx-attributes*="animated"] {
+[data-mbx-id="button"][data-mbx-atts*="anm"] {
   transition-duration: 0.1s;
   transition-property: transform;
 }
 
+[data-mbx-id*="button"][data-mbx-atts*="dsb"] {
+  cursor: unset;
+}
+
 @media (hover) {
-  [data-mbx-id="button"][data-mbx-attributes*="animated"][data-mbx-attributes*="hover"]:hover {
+  [data-mbx-id="button"][data-mbx-atts*="hv;anm"]:hover {
     position: relative;
     transform: scaleX(1.15) scaleY(1.1);
   }

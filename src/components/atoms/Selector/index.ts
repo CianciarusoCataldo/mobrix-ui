@@ -73,7 +73,7 @@ const Selector: SelectorComponent = ({
     Component: ({ value, setValue }) =>
       selectorComponent({ elements, value, setValue, optionClassName }),
     features: {
-      opacityOnHover: true,
+      opHov: true,
     },
   }));
 

@@ -3,17 +3,17 @@
   color: var(--mbx-c-dcard-txt);
 }
 
-[data-mbx-id="exp-cont"] {
+[data-mbx-id="econ"] {
   background: var(--mbx-c-exp-bg);
   color: var(--mbx-c-exp-text);
 }
 
-[data-mbx-id="exp-cont"] [data-mbx-scl*="con-arr-bt"] svg {
+[data-mbx-id="econ"] [data-mbx-scl*="econ-b"] svg {
   fill: var(--mbx-c-exp-arr);
 }
 
-[data-mbx-id="exp-cont"][data-mbx-attributes*="a11y"]
-  [data-mbx-scl*="con-arr-bt"]:focus-visible
+[data-mbx-id="econ"][data-mbx-atts*="a11y"]
+  [data-mbx-scl*="econ-b"]:focus-visible
   svg {
   fill: var(--mbx-c-exp-arr-h);
 }

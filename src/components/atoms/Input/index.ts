@@ -55,9 +55,9 @@ const Input: InputComponent = ({
     name: "inputbox",
     wrapper: "input",
     features: {
-      opacityOnHover: true,
+      opHov: true,
     },
-    sharedCssClasses: autoresizable && "a-res",
+    sharedCssClasses: autoresizable && "wfit",
     props: (value, setValue) => ({
       commonProps: {
         ...sharedProps,

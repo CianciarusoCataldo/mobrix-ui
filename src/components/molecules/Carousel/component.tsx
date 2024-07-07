@@ -33,7 +33,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         <div
           key={`car_el_${index}`}
           {...(index !== item && {
-            "data-mbx-attributes": "hide;",
+            "data-mbx-atts": "hide;",
           })}
           data-mbx-scl="el"
           data-mbx-animation={index === item ? activeClassName : ""}

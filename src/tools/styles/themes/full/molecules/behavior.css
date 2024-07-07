@@ -1,6 +1,6 @@
 @import url("computed.css");
 
-[data-mbx-id]:not([data-mbx-attributes*="dark"]) {
+[data-mbx-id]:not([data-mbx-atts*="dk"]) {
   /** Carousel */
   --mbx-c-car-arr-h: var(--mbx-c-car-arr-h-l);
 
@@ -24,7 +24,7 @@
   --mbx-c-radg-rad-ic-bg: var(--mbx-c-radg-rad-ic-bg-l);
 }
 
-[data-mbx-id][data-mbx-attributes*="dark"] {
+[data-mbx-id][data-mbx-atts*="dk"] {
   /** Carousel */
   --mbx-c-car-arr-h: var(--mbx-c-car-arr-h-d);
 

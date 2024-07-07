@@ -100,7 +100,10 @@ const CalendarComponent: MbxUiReactiveComponent<
       dark={commonProps.dark}
       key={"arrow_" + direction}
       additionalProps={{
-        "data-mbx-calendar-arrow": direction,
+        "data-mbx-carr": direction,
+      }}
+      debug={{
+        features: { fillOnFocus: true, noShadowOnFocus: true },
       }}
       {...customProps}
     >
@@ -112,7 +115,7 @@ const CalendarComponent: MbxUiReactiveComponent<
 
   dayLabel &&
     components.push(
-      <div data-mbx-class="top-selector" key="cal_top_sel" data-mbx-scl="flxr">
+      <div key="cal_top_sel" data-mbx-scl="flxr:t-sel;mauto">
         {getArrowButton("left")}
         <Label
           debug={{
@@ -129,6 +132,7 @@ const CalendarComponent: MbxUiReactiveComponent<
     <Table
       disabled={disabled}
       key="cal_tb"
+      debug={{ scl: "mauto" }}
       propsCallback={(row, column) => {
         if (row > 0) {
           const isDisabled = fromToday
@@ -142,20 +146,27 @@ const CalendarComponent: MbxUiReactiveComponent<
 
           const isNotDay = basicMatrix[row - 1][column] <= 0;
 
+          const onClick = () => {
+            onChange({
+              ...onScreenDate,
+              dayOfTheMonth: basicMatrix[row - 1][column],
+              day: basicMatrix[row - 1][column],
+            });
+            setValue({
+              month: onScreenDate.month,
+              year: onScreenDate.year,
+              day: basicMatrix[row - 1][column],
+            });
+          };
+
           const extraProps =
             !disabled && !isDisabled && !isNotDay
               ? {
-                  onClick: () => {
-                    onChange({
-                      ...onScreenDate,
-                      dayOfTheMonth: basicMatrix[row - 1][column],
-                      day: basicMatrix[row - 1][column],
-                    });
-                    setValue({
-                      month: onScreenDate.month,
-                      year: onScreenDate.year,
-                      day: basicMatrix[row - 1][column],
-                    });
+                  onClick,
+                  onKeyDown: (e) => {
+                    if (e.key === "Enter") {
+                      onClick();
+                    }
                   },
                 }
               : {};
@@ -164,7 +175,7 @@ const CalendarComponent: MbxUiReactiveComponent<
             ...(basicMatrix[row - 1][column] > 0 && {
               "data-mbx-calendar-day": basicMatrix[row - 1][column],
             }),
-            "data-mbx-calendar-today":
+            "data-mbx-ctoday":
               fromToday &&
               basicMatrix[row - 1][column] === todayDate.dayOfTheMonth &&
               onScreenDate.month === todayDate.month &&
@@ -173,7 +184,7 @@ const CalendarComponent: MbxUiReactiveComponent<
               value.year === onScreenDate.year &&
               value.month === onScreenDate.month &&
               value.day === basicMatrix[row - 1][column],
-            "data-mbx-disabled": isDisabled || isNotDay,
+            ...((isDisabled || isNotDay) && { "data-mbx-scl": "dsb" }),
             ...extraProps,
           };
         } else return {};

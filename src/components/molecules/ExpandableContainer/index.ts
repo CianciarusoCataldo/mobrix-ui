@@ -53,7 +53,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
   ...commonProps
 }) => {
   return buildMbxReactiveComponent(commonProps, (sharedProps) => ({
-    name: "exp-cont",
+    name: "econ",
     defaultValue: false,
     wrapper,
     inputValue: startCompact,

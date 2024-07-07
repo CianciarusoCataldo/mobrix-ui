@@ -18,7 +18,7 @@ const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
 }) => {
   const props = {
     row: { ...parseClassName(rowClassName), ...rowProps },
-    cell: { ...parseClassName(cellClassName), ...cellProps },
+    cell: { ...parseClassName(cellClassName), ...cellProps, tabIndex: 0 },
   };
 
   let wrappers: {
@@ -37,19 +37,20 @@ const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
       ...parseClassName(headerClassName),
       ...headersProps,
       ...wrappers[0].cellProps,
+      tabIndex: -1,
     };
   }
 
   return (
     <tbody key="table_body">
       {rows.map((row, rowIndex) => (
-        <tr data-mbx-table-row="true" key={`row_${rowIndex}`} {...rowProps}>
+        <tr key={`row_${rowIndex}`} {...rowProps}>
           {row.map((element, index) => {
             const Wrapper = wrappers[rowIndex].wrapper;
 
             return (
               <Wrapper
-                data-mbx-table-cell="true"
+                data-mbx-tcell="true"
                 key={`element_${rowIndex}_${index}`}
                 align="center"
                 onClick={() => onClick(rowIndex, index)}

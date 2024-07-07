@@ -47,7 +47,7 @@ const Link: LinkComponent = ({ to, children, newTab, ...commonProps }) =>
     (sharedProps) => ({
       name: "link",
       features: {
-        opacityOnHover: true,
+        opHov: true,
         textcolorOnFocus: true,
         noShadowOnFocus: true,
       },

@@ -5,11 +5,10 @@
 
 [data-mbx-id="list"] [data-mbx-scl*="lis-el"] {
   color: var(--mbx-c-lst-txt);
-  outline: none;
   margin-top: 0.2rem;
 }
 
-[data-mbx-id="list"] [data-mbx-scl*="lis-el"] [data-mbx-scl*="dot"] {
+[data-mbx-id="list"] [data-mbx-scl*="lis-el"] [data-mbx-scl="dot"] {
   width: 6px;
   height: 6px;
   fill: var(--mbx-c-lst-txt);
@@ -20,8 +19,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="list"][data-mbx-attributes*="hover"]
-    [data-mbx-scl*="click"]:hover {
+  [data-mbx-id="list"][data-mbx-atts*="hv"] [data-mbx-scl*="click"]:hover {
     cursor: pointer;
   }
 }

@@ -29,6 +29,7 @@ const DrawerInternalComponent: MbxUiComponent<
       }}
       debug={{
         scl: "drw-close",
+        features: { noShadowOnFocus: true },
       }}
       a11yLabel="drawer-close-button"
     >
@@ -38,13 +39,15 @@ const DrawerInternalComponent: MbxUiComponent<
           width="30"
           height="37"
           viewBox="0 0 11 18"
+          fill="var(--mbx-c-draw-arr)"
+          data-mbx-scl="mauto;fillFc"
         >
           <path d="M8.6812.1963l2.1208928 2.120293-8.484 8.4864L.1972 8.6827z" />
           <path d="M10.8032656 15.0470656l-2.1213 2.1213-8.4852-8.4852 2.1213-2.1213z" />
         </svg>
       }
     </IconButton>,
-    <div key="drawer_content" data-mbx-class="drawer-content">
+    <div key="drw_cont" data-mbx-scl="drw-cont">
       {children}
     </div>,
   ];

@@ -1,12 +1,8 @@
 [data-mbx-id="check"] {
   height: 30px;
   width: 30px;
-  align-items: center;
-  text-align: center;
-  vertical-align: baseline;
   background: var(--mbx-c-chk-bg);
   padding: 0.2rem;
-  margin: auto;
 }
 
 [data-mbx-id="check"] > *:first-child {

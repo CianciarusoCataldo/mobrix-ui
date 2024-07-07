@@ -24,8 +24,8 @@ const calendarTest = () => {
           fromToday={false}
         />
       );
-      wrapper.find('[data-mbx-calendar-day=3]').simulate("click");
-      wrapper.find('[data-mbx-calendar-arrow="left"]').simulate("click");
+      wrapper.find("[data-mbx-calendar-day=3]").simulate("click");
+      wrapper.find('[data-mbx-carr="left"]').simulate("click");
       expect(wrapper);
     });
 
@@ -36,9 +36,34 @@ const calendarTest = () => {
         <Calendar fromToday={false} onChange={onChangeStub} />
       );
       wrapper.update();
-      wrapper.find('[data-mbx-calendar-day=4]').simulate("click");
+      wrapper.find("[data-mbx-calendar-day=4]").simulate("click");
 
       expect(onChangeStub).toBeCalled;
+    });
+
+    test("Focusing a day and pressing Enter key trigger the onChange callback", () => {
+      const onChangeKeyStub = jest.fn();
+
+      let wrapper = mount(
+        <Calendar
+          startYear={1993}
+          startMonth={2}
+          fromToday={false}
+          onChange={onChangeKeyStub}
+        />
+      );
+      wrapper.update();
+      wrapper.find("[data-mbx-calendar-day=4]").simulate("focus");
+      wrapper
+        .find("[data-mbx-calendar-day=19]")
+        .simulate("keyDown", { keyCode: 13, code: "Enter", key: "Enter" });
+
+      expect(onChangeKeyStub).toBeCalledWith({
+        dayOfTheMonth: 19,
+        year: 1993,
+        month: 2,
+        day: 19,
+      });
     });
 
     test("Changing the showed month (actual view) trigger the onViewChange callback", () => {
@@ -49,11 +74,11 @@ const calendarTest = () => {
       );
 
       for (let i = 0; i < 12; i++) {
-        wrapper.find('[data-mbx-calendar-arrow="right"]').simulate("click");
+        wrapper.find('[data-mbx-carr="right"]').simulate("click");
       }
 
       for (let i = 0; i < 11; i++) {
-        wrapper.find('[data-mbx-calendar-arrow="left"]').simulate("click");
+        wrapper.find('[data-mbx-carr="left"]').simulate("click");
       }
       expect(onViewChangeStub).toBeCalled;
     });

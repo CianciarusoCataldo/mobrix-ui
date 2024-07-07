@@ -46,8 +46,9 @@ const EmbeddedVideo: EmbeddedVideoComponent = ({ url, ...shared }) =>
     name: "em-vd",
     commonProps: sharedProps,
     features: {
-      opacityOnHover: true,
+      opHov: true,
     },
+    sharedCssClasses: !sharedProps.className && "wfit",
     Component: embeddedVideoComponent({
       url,
       ...sharedProps,

@@ -1,18 +1,17 @@
 @media (hover) {
-  [data-mbx-id="carousel"][data-mbx-attributes*="hover"]
-    [data-mbx-arrow]:not([data-mbx-attributes*="disabled"]):hover
+  [data-mbx-id="carousel"][data-mbx-atts*="hv"]
+    [data-mbx-arrow]:not([data-mbx-atts*="dsb"]):hover
     svg {
     fill: var(--mbx-c-car-arr-h);
   }
 
-  [data-mbx-id="exp-cont"]:not([data-mbx-attributes*="disabled"])
-    [data-mbx-scl*="con-arr-bt"]
+  [data-mbx-id="econ"]:not([data-mbx-atts*="dsb"])
+    [data-mbx-scl*="econ-b"]
     svg:hover {
     fill: var(--mbx-c-exp-arr-h);
   }
 
-  [data-mbx-id="list"][data-mbx-attributes*="hover"]
-    [data-mbx-scl*="click"]:hover {
+  [data-mbx-id="list"][data-mbx-atts*="hv"] [data-mbx-scl*="click"]:hover {
     color: var(--mbx-c-lst-txt-h);
   }
 }
