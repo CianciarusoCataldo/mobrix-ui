@@ -18,10 +18,8 @@ const DismissableCardInternalComponent: MbxUiComponent<
       <div data-mbx-scl="dis-cn;flxrr;" key="dis-x">
         <IconButton
           dark={props.dark}
-          debug={{
-            scl: "dis-bt;flxrr;wfit",
-            features: { fillFc: true },
-          }}
+          features={{ fillFc: true }}
+          scl="dis-bt;flxrr;wfit"
           disabled={props.disabled}
           onClick={onClose}
         >

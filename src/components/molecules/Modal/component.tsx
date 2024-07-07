@@ -38,7 +38,7 @@ const modalComponent: MbxUiComponent<ModalProps, BuilderComponent> = ({
       onClose={onClose}
       animated={animated}
       body={children}
-      debug={{ scl: "flxc" }}
+      scl="flxc"
     />
   );
 };

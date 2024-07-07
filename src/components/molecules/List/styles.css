@@ -12,8 +12,6 @@
   width: 6px;
   height: 6px;
   fill: var(--mbx-c-lst-txt);
-  margin-top: auto;
-  margin-bottom: auto;
   margin-right: 0.3rem;
   display: block;
 }

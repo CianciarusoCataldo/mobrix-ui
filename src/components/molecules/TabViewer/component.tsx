@@ -26,9 +26,7 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
         animated={false}
         disabled={disabled}
         dark={dark}
-        debug={{
-          scl: `tab;${index === value ? "sel;" : ""}`,
-        }}
+        scl={`tab;${index === value ? "sel;" : ""}`}
         className={`${tabClassName} ${
           index === value ? tabSelectedClassName : tabUnselectedClassName
         }`}
@@ -43,9 +41,7 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
     ))}
   </div>,
   <Container
-    debug={{
-      scl: "tb-v",
-    }}
+    scl="tb-v"
     className={tabViewClassName}
     dark={dark}
     key="tabs_view"

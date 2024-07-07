@@ -75,12 +75,11 @@ export type CommonProps = MbxAttributes & {
   /** callback called when a key is pressed when inside the component */
   onKeyDown?: (keyEvent: any) => void;
 
-  debug?: {
-    scl?: string;
-    features?: Features;
-  };
-
   scl?: string;
+
+  fts?: string;
+
+  features?: Features;
 };
 
 /**
@@ -274,6 +273,8 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
   features?: Features;
 
   scl?: string;
+
+  fts?: string;
 };
 
 /**

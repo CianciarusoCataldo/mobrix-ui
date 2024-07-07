@@ -64,12 +64,7 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
   };
 
   const DateLabel = ({ children }) => (
-    <Label
-      debug={{
-        scl: "dpick-el",
-      }}
-      dark={commonProps.dark}
-    >
+    <Label scl="dpick-el" dark={commonProps.dark}>
       {children}
     </Label>
   );
@@ -94,12 +89,10 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
       key="d-pick_mod"
       animated={animated}
       onClose={onCloseCallback}
-      debug={{
-        scl: "dpick-mod",
-      }}
+      scl="dpick-mod"
     >
       <Calendar
-        debug={{ scl: "mauto" }}
+        scl="mauto"
         shadow={false}
         days={customDays}
         months={customMonths}

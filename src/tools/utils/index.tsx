@@ -1,4 +1,3 @@
-
 import "../styles/core/index.css";
 import "../styles/themes/base/index.css";
 import "../styles/themes/full/index.css";
@@ -40,9 +39,12 @@ export const parseCommonProps = (props: CommonProps): CommonProps => ({
   }),
 });
 
-const getMbxFts = (features: Features, commonProps: CommonProps) => {
-  let mbxFts = "";
-  const featureProps = Object.keys(features).filter(
+const getMbxFts = (
+  features: Features,
+  { features: ftrs = {}, fts = "", ...commonProps }: CommonProps
+) => {
+  let mbxFts = `${fts}`;
+  const featureProps = Object.keys({ ...features, ...ftrs }).filter(
     (feature) => features[feature]
   );
   [...featureProps, ...Object.keys(commonProps)]
@@ -96,10 +98,7 @@ const buildMobrixUiStandardComponent = ({
   features = {},
 }: BuilderProps) => {
   let mbxFts = getMbxFts(
-    {
-      ...features,
-      ...(commonProps.debug?.features ? commonProps.debug.features : {}),
-    },
+    features,
     commonProps
   );
   let mbxAtts = getMbxAtts(commonProps);
@@ -112,9 +111,7 @@ const buildMobrixUiStandardComponent = ({
     ...(mbxFts.length > 0 && {
       "data-mbx-fts": mbxFts,
     }),
-    "data-mbx-scl": `${scl};${
-      commonProps.debug?.scl ? commonProps.debug.scl : ""
-    };${commonProps.scl ? commonProps.scl : ""}`,
+    "data-mbx-scl": `${scl};${commonProps.scl ? commonProps.scl : ""}`,
     id: commonProps.id,
     className: commonProps.className,
     style: commonProps.style,

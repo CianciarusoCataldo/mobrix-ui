@@ -100,8 +100,6 @@
 }
 
 [data-mbx-id="dd"] [data-mbx-scl*="reg"] [data-mbx-scl*="drop-el"] {
-  margin-top: auto;
-  margin-bottom: auto;
   color: var(--mbx-c-drop-txt);
 }
 

@@ -25,7 +25,7 @@ const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
       data-mbx-scl={`flxr;nout;lis-el;${onClick ? "click;" : ""}`}
       tabIndex={0}
     >
-      <svg viewBox="0 0 9 9" key="lst_dot" data-mbx-scl="dot">
+      <svg viewBox="0 0 9 9" key="lst_dot" data-mbx-scl="dot;myauto">
         <circle cx={4.5} cy={4.5} r={3.5} />
       </svg>
       <div key={"lst_el_" + index}>{element}</div>

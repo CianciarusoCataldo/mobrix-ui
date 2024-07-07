@@ -35,3 +35,8 @@
 [data-mbx-scl*="nout"]:focus-visible {
   outline: none;
 }
+
+[data-mbx-scl*="myauto"] {
+  margin-top: auto;
+  margin-bottom: auto;
+}

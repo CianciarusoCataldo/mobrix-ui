@@ -25,7 +25,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
           ...o,
           [key]: undefined,
         }),
-        {},
+        {}
       )
     : {};
 
@@ -33,12 +33,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
     React.useState<Record<string, string | boolean | number>>(dropdownFields);
 
   const components = [
-    <Label
-      disabled={disabled}
-      key="form_title"
-      dark={dark}
-      debug={{ scl: "title" }}
-    >
+    <Label disabled={disabled} key="form_title" dark={dark} scl="title">
       {title}
     </Label>,
     ...Object.keys(dropdownFields).map((field, index) => {
@@ -65,9 +60,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
             onChange={callBack}
             hover={hover}
             headerProps={{ dark }}
-            debug={{
-              scl: fieldFormatters[type].scl.frm,
-            }}
+            scl={fieldFormatters[type].scl.frm}
           />
         </div>
       );
@@ -87,10 +80,10 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
       onClick={() => {
         onSubmit && onSubmit(values);
       }}
-      debug={{ scl: "s-bt" }}
+      scl="s-bt"
     >
       {submitLabel}
-    </Button>,
+    </Button>
   );
 
   return components;

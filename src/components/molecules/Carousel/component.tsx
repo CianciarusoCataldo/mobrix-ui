@@ -39,7 +39,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
           data-mbx-animation={index === item ? activeClassName : ""}
         >
           {element}
-        </div>,
+        </div>
       );
 
       dots.push(
@@ -56,7 +56,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
             setActiveClassname(index > item ? "from-right" : "from-left");
             updateItem(index);
           }}
-        />,
+        />
       );
     });
   }
@@ -70,9 +70,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         additionalProps={{
           "data-mbx-arrow": "prev",
         }}
-        debug={{
-          features: { noShFc: true, fillFc: true },
-        }}
+        features={{ noShFc: true, fillFc: true }}
         disabled={item === 0 || disabled}
         className={arrowClassName}
         onClick={() => {
@@ -90,9 +88,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         additionalProps={{
           "data-mbx-arrow": "next",
         }}
-        debug={{
-          features: { noShFc: true, fillFc: true },
-        }}
+        features={{ noShFc: true, fillFc: true }}
         className={arrowClassName}
         disabled={item === elements.length - 1 || disabled}
         onClick={() => {

@@ -109,9 +109,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           keyDownCallback(!isVisible);
         }}
         dark={dark}
-        debug={{
-          scl: "drop-bt;nout",
-        }}
+        scl="drop-bt;nout"
         key="options-menu"
         a11y={false}
       >
@@ -131,9 +129,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           key="icon"
           disabled={disabled}
           a11y={false}
-          debug={{
-            scl: `ic;nout;rot-${isVisible}`,
-          }}
+          scl={`ic;nout;rot-${isVisible}`}
         >
           <p tabIndex={-1}>
             <i
@@ -153,9 +149,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
         dark={dark}
         hide={!isVisible}
         a11y={false}
-        debug={{
-          scl: "flxc;opts",
-        }}
+        scl="flxc;opts"
       >
         {elements.map((item, index) => (
           <Button
@@ -172,9 +166,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
               keyDownCallback(false);
             }}
             key={`item_${index}`}
-            debug={{
-              scl: `flxc;reg;${selected === index ? "selected" : ""}`,
-            }}
+            scl={`flxc;reg;${selected === index ? "selected" : ""}`}
             additionalProps={{
               "data-mbx-first": index === 0,
               "data-mbx-last": index === elements.length - 1,
@@ -186,7 +178,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
               background={false}
               shadow={false}
               dark={dark}
-              debug={{ scl: "flxr;drop-el;" }}
+              scl="flxr;drop-el;mauto"
             >
               {item}
             </Container>
