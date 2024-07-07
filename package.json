@@ -1,6 +1,6 @@
 {
   "name": "mobrix-ui",
-  "version": "3.14.0",
+  "version": "3.14.1",
   "description": "Smart React components for every app, easily customizable for every purpose",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -96,6 +96,7 @@
     "test": "sh ./scripts/start-tests.sh",
     "generate-docs": "sh docs-gen/utils/generate-docs.sh",
     "init:playground": "cd playground && npm ci",
+    "analyze:playground": "cd playground && npm run analyze",
     "prestart:playground": "npm run build",
     "start:playground": "cd playground && npm run start",
     "prebuild:playground": "npm run build",
