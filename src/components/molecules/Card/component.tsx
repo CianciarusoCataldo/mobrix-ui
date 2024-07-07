@@ -30,7 +30,7 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
     {header}
   </div>,
   <Divider
-    hide={!body || !header || noDividers || noTopDivider}
+    hide={!header || noDividers || noTopDivider}
     size="1px"
     key="card_t_d"
     dark={dark}
@@ -42,7 +42,6 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
     className={bodyClassName}
     data-mbx-scl="cardc-body"
     key="card_b"
-    {...(!body && { "data-mbx-atts": "hide" })}
     {...bodyProps}
   >
     {body}
@@ -61,6 +60,7 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
     className={footerClassName}
     key="card_f"
     data-mbx-scl="cardc-footer"
+    {...(!footer && { "data-mbx-atts": "hide" })}
     {...footerProps}
   >
     {footer}

@@ -99,6 +99,7 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
       }}
     >
       <Calendar
+        debug={{ scl: "mauto" }}
         shadow={false}
         days={customDays}
         months={customMonths}

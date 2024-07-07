@@ -58,7 +58,7 @@ const Counter: CounterComponent = ({
     wrapper: "input",
     name: "counterbox",
     features: {
-      opacityOnHover: true,
+      opHov: true,
     },
     inputValue,
     defaultValue: 0,

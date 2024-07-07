@@ -9,6 +9,6 @@
   color: var(--mbx-c-con-txt);
 }
 
-[data-mbx-id="exp-cont"] [data-mbx-scl*="con-arr-bt"] svg {
+[data-mbx-id="econ"] [data-mbx-scl*="econ-b"] svg {
   fill: var(--mbx-c-con-txt);
 }

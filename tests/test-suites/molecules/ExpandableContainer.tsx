@@ -9,7 +9,7 @@ const expandableContainerTest = () => {
         <ExpandableContainer>Test Container</ExpandableContainer>
       );
       wrapper
-        .find('[data-mbx-scl*="con-arr-bt"]')
+        .find('[data-mbx-scl*="econ-b"]')
         .simulate("click");
       expect(wrapper);
     });
@@ -23,7 +23,7 @@ const expandableContainerTest = () => {
           Test Container
         </ExpandableContainer>
       );
-      wrapper.find('[data-mbx-scl*="con-arr-bt"]').simulate("click");
+      wrapper.find('[data-mbx-scl*="econ-b"]').simulate("click");
       expect(onChangeStub).toBeCalled;
     });
   });

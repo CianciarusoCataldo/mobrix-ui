@@ -115,7 +115,7 @@ const CalendarComponent: MbxUiReactiveComponent<
 
   dayLabel &&
     components.push(
-      <div key="cal_top_sel" data-mbx-scl="flxr:t-sel">
+      <div key="cal_top_sel" data-mbx-scl="flxr:t-sel;mauto">
         {getArrowButton("left")}
         <Label
           debug={{
@@ -125,13 +125,14 @@ const CalendarComponent: MbxUiReactiveComponent<
           {...customProps}
         >{`${customMonths[onScreenDate.month]} ${onScreenDate.year}`}</Label>
         {getArrowButton("right")}
-      </div>
+      </div>,
     );
 
   components.push(
     <Table
       disabled={disabled}
       key="cal_tb"
+      debug={{ scl: "mauto" }}
       propsCallback={(row, column) => {
         if (row > 0) {
           const isDisabled = fromToday
@@ -195,10 +196,10 @@ const CalendarComponent: MbxUiReactiveComponent<
       rows={[
         days.map((dayName) => dayName.slice(0, 3)),
         ...basicMatrix.map((row) =>
-          row.map((element) => (element > 0 ? String(element) : ""))
+          row.map((element) => (element > 0 ? String(element) : "")),
         ),
       ]}
-    />
+    />,
   );
 
   return components;

@@ -53,7 +53,7 @@ const Button: ButtonComponent = ({
     name: "button",
     wrapper: "button",
     features: {
-      opacityOnHover: true,
+      opHov: true,
       opacityOnActive: true,
     },
     sharedCssClasses: "wfit;act",

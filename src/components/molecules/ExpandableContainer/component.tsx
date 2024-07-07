@@ -38,13 +38,14 @@ const expandableContainerComponent: MbxUiReactiveComponent<
       key="arr_bt"
       dark={dark}
       debug={{
-        scl: "con-arr-bt",
+        scl: "econ-b;mauto;flxc",
         features: { noShadowOnFocus: true },
       }}
     >
       <svg
         data-mbx-compact={compact}
         data-mbx-fts="fillFc;"
+        data-mbx-scl="nout"
         tabIndex={0}
         width="1.5rem"
         fillRule="evenodd"

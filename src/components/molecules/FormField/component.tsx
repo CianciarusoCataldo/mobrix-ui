@@ -12,7 +12,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
 > = ({
   value,
   setValue,
-  type = "text",
+  type,
   /* istanbul ignore next */
   onChange = (newvalue: any) => {},
   required,
@@ -76,7 +76,6 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       disabled={disabled}
       animated={animated}
       additionalProps={{
-        "data-mbx-class": "field-component",
         "data-mbx-field-error": error,
       }}
       {...extraProps}

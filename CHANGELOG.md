@@ -34,7 +34,8 @@
 ### 3.14.0
 
 - Styles optimized
-- Clean-up
+- Big Clean-up, bundle size reduced
+- Code refactoring, with more efficent naming
 
 <br>
 

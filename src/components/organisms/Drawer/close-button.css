@@ -46,18 +46,6 @@
   padding-right: 0.1rem;
 }
 
-[data-mbx-id="drawer"] > [data-mbx-scl*="drw-close"]:focus-visible {
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-}
-
-[data-mbx-id="drawer"] > [data-mbx-scl*="drw-close"] svg {
-  fill: var(--mbx-c-draw-arr);
-  margin: auto;
-}
-
 [data-mbx-id="drawer"][data-mbx-drw-lc^="top"]
   > [data-mbx-scl*="drw-close"]
   svg {

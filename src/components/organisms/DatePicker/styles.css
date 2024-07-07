@@ -8,7 +8,6 @@
 }
 
 [data-mbx-id="date-picker"] [data-mbx-id="calendar"] {
-  margin: auto;
   max-width: 80%;
 }
 

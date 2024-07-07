@@ -15,8 +15,12 @@
   transition-property: transform;
 }
 
+[data-mbx-id*="button"][data-mbx-atts*="dsb"] {
+  cursor: unset;
+}
+
 @media (hover) {
-  [data-mbx-id="button"][data-mbx-atts*="anm"][data-mbx-atts*="hv"]:hover {
+  [data-mbx-id="button"][data-mbx-atts*="hv;anm"]:hover {
     position: relative;
     transform: scaleX(1.15) scaleY(1.1);
   }

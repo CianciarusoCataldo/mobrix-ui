@@ -54,7 +54,7 @@ const Checkbox: CheckBoxComponent = ({
     name: "check",
     Component: ({ value, setValue }) => (value ? icon || DefaultCheckIcon : ""),
     features: {
-      opacityOnHover: true,
+      opHov: true,
     },
     sharedCssClasses: "flxc;act",
     props: (actualValue, setValue) => ({

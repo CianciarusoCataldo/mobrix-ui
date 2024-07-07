@@ -1,20 +1,13 @@
 [data-mbx-id*="card"] {
-  padding: 0.25rem 0.1rem;
+  padding: 0 0.1rem;
 }
 
-[data-mbx-id*="card"] [data-mbx-scl*="cardc-head"] {
-  padding: 0 0.3rem 0.2rem;
-}
-
-[data-mbx-id*="card"] [data-mbx-scl*="cardc-footer"] {
-  padding: 0.2rem 0.3rem 0;
+[data-mbx-id*="card"] [data-mbx-scl*="cardc-"] {
+  padding: 0.5rem 0.3rem;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 [data-mbx-id*="card"] [data-mbx-scl*="cardc-body"] {
-  padding: 0.25rem;
-}
-
-[data-mbx-id*="card"] [data-mbx-scl*="cardc"] {
-  word-wrap: break-word;
-  word-break: break-all;
+  padding: 0.7rem 0.3rem;
 }

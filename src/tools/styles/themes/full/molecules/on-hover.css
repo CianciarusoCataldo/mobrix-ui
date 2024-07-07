@@ -5,8 +5,8 @@
     fill: var(--mbx-c-car-arr-h);
   }
 
-  [data-mbx-id="exp-cont"]:not([data-mbx-atts*="dsb"])
-    [data-mbx-scl*="con-arr-bt"]
+  [data-mbx-id="econ"]:not([data-mbx-atts*="dsb"])
+    [data-mbx-scl*="econ-b"]
     svg:hover {
     fill: var(--mbx-c-exp-arr-h);
   }

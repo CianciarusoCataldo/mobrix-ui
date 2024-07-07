@@ -1,6 +1,5 @@
 [data-mbx-id="carousel"] {
   color: var(--mbx-text-color);
-  align-items: center;
   background: var(--mbx-c-car-bg);
   padding: 0.4rem;
 }

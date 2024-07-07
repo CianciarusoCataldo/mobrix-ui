@@ -17,7 +17,6 @@
 
 [data-mbx-id="toggle"] [data-mbx-scl*="tg-ic"][data-mbx-scl*="fliptrue"] {
   transform: translate(0%);
-
   --svginternalcolor: var(--mbx-c-tog-ic-on-int);
   --svgexternalcolor: var(--mbx-c-tog-ic-on-ext);
 }

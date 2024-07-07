@@ -45,7 +45,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  */
 const Dropdown: DropdownComponent = (props) =>
   buildMbxReactiveComponent(props, (sharedProps) => ({
-    name: "dropdown",
+    name: "dd",
     defaultValue: 0,
     inputValue: props.value,
     commonProps: sharedProps,

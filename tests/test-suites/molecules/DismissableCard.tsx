@@ -10,6 +10,7 @@ const cardTest = () => {
           header="Test header"
           body="Test body"
           footer="Test footer"
+          headerProps={{}}
         >
           Test label
         </DismissableCard>

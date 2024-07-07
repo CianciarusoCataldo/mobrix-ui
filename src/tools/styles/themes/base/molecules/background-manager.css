@@ -3,8 +3,8 @@
   --mbx-c-dcard-bg: transparent !important;
 }
 
-[data-mbx-id="dropdown"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="dropdown"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="dd"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="dd"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-drop-bg: transparent !important;
   --mbx-c-drop-bg-h: transparent !important;
 }
@@ -42,8 +42,8 @@
   --mbx-c-rev-bg: transparent !important;
 }
 
-[data-mbx-id="exp-cont"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="exp-cont"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="econ"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="econ"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-exp-bg: transparent !important;
 }
 

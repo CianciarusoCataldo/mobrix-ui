@@ -14,7 +14,6 @@
 
 [data-mbx-id="calendar"] [data-mbx-id="table"] {
   width: 100%;
-  margin: auto;
 }
 
 [data-mbx-id="calendar"] [data-mbx-tcell="true"] {
@@ -42,7 +41,6 @@
 }
 
 [data-mbx-id="calendar"] [data-mbx-scl*="t-sel"] {
-  margin: auto;
   margin-bottom: 1.2rem;
   width: 100%;
   color: var(--mbx-c-cal-txt);

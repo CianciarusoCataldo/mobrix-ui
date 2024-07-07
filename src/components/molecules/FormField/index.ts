@@ -3,6 +3,7 @@ import "./styles.css";
 import { FormFieldComponent } from "../../../types";
 
 import { buildMbxReactiveComponent } from "../../../tools";
+import { fieldFormatters } from "./utils";
 
 import FormFieldInternalComponent from "./component";
 
@@ -59,7 +60,7 @@ import FormFieldInternalComponent from "./component";
 */
 const FormField: FormFieldComponent = ({
   value: inputValue,
-  type,
+  type = "text",
   ...props
 }) => {
   return buildMbxReactiveComponent(props, (sharedProps) => ({
@@ -69,7 +70,7 @@ const FormField: FormFieldComponent = ({
       shadow: false,
       additionalProps: {
         ...sharedProps.additionalProps,
-        "data-mbx-field-type": type,
+        "data-mbx-ftype": type,
       },
     },
     Component: ({ value, setValue }) =>
@@ -82,7 +83,7 @@ const FormField: FormFieldComponent = ({
       }),
     inputValue,
     defaultValue: null,
-    sharedCssClasses: `wfit;flxc;f-${type}`,
+    sharedCssClasses: `wfit;flxc;${fieldFormatters[type].scl.fld}`,
   }));
 };
 

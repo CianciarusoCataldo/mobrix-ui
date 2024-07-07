@@ -110,12 +110,16 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
         }}
         dark={dark}
         debug={{
-          scl: "drop-bt",
+          scl: "drop-bt;nout",
         }}
         key="options-menu"
         a11y={false}
       >
-        <div tabIndex={-1} key="drop_sel_el_lb" data-mbx-scl="flxr;drop-sel-el">
+        <div
+          tabIndex={-1}
+          key="drop_sel_el_lb"
+          data-mbx-scl="flxr;drop-sel-el;mauto;nout"
+        >
           {selectedItem}
         </div>
         <Container
@@ -128,12 +132,12 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           disabled={disabled}
           a11y={false}
           debug={{
-            scl: `ic;rot-${isVisible}`,
+            scl: `ic;nout;rot-${isVisible}`,
           }}
         >
           <p tabIndex={-1}>
             <i
-              data-mbx-scl="arr-ic"
+              data-mbx-scl="arr-ic;nout"
               {...(disabled && {
                 "data-mbx-atts": "disabled",
               })}

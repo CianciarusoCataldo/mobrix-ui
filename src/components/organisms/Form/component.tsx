@@ -5,6 +5,7 @@ import { BuilderComponent, FormProps, MbxUiComponent } from "../../../types";
 import Button from "../../atoms/Button";
 import FormField from "../../molecules/FormField";
 import { Label } from "../../atoms";
+import { fieldFormatters } from "../../molecules/FormField/utils";
 
 const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
   title,
@@ -24,7 +25,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
           ...o,
           [key]: undefined,
         }),
-        {}
+        {},
       )
     : {};
 
@@ -64,6 +65,9 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
             onChange={callBack}
             hover={hover}
             headerProps={{ dark }}
+            debug={{
+              scl: fieldFormatters[type].scl.frm,
+            }}
           />
         </div>
       );
@@ -86,7 +90,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
       debug={{ scl: "s-bt" }}
     >
       {submitLabel}
-    </Button>
+    </Button>,
   );
 
   return components;

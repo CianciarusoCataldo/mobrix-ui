@@ -6,7 +6,11 @@
 }
 
 [data-mbx-id="slider"]::-webkit-slider-thumb {
+  border-radius: 50%;
   appearance: none;
+  width: 30px;
+  height: 30px;
+  background: var(--mbx-c-sld-tb);
   -webkit-appearance: none;
 }
 
@@ -25,15 +29,6 @@
   width: 30px;
   height: 30px;
   background: var(--mbx-c-sld-tb);
-}
-
-[data-mbx-id="slider"]::-webkit-slider-thumb {
-  border-radius: 50%;
-  appearance: none;
-  width: 30px;
-  height: 30px;
-  background: var(--mbx-c-sld-tb);
-  -webkit-appearance: none;
 }
 
 [data-mbx-id="slider"][data-mbx-atts*="sh"]::-webkit-slider-thumb {

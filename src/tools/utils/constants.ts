@@ -17,7 +17,7 @@ export const FEATURES_PROPS: Record<
   keyof Features & CommonProps,
   (props: CommonProps) => { enabled: boolean; featureKey: string }
 > = {
-  opacityOnHover: (props) => ({
+  opHov: (props) => ({
     enabled: !props.disabled && props.hover,
     featureKey: "opHov",
   }),
