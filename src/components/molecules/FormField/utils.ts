@@ -38,17 +38,17 @@ export const fieldFormatters = {
   boolean: {
     component: CheckBox,
     format: valueFormatters.boolean,
-    scl: { fld: "fbox", frm: "frbox" },
+    scl: { fld: "fbox", frm: "mxauto" },
   },
   checkbox: {
     component: CheckBox,
     format: valueFormatters.boolean,
-    scl: { fld: "fbox", frm: "frbox" },
+    scl: { fld: "fbox", frm: "mxauto" },
   },
   radio: {
     component: RadioButton,
     format: valueFormatters.boolean,
-    scl: { fld: "fbox", frm: "frbox" },
+    scl: { fld: "fbox", frm: "mxauto" },
   },
   toggle: {
     component: Toggle,

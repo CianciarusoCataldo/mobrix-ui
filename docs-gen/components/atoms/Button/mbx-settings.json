@@ -1,6 +1,6 @@
 {
   "since": "1.0.0",
-  "description": "A button component, designed for a lot of scenarios.",
+  "description": "A tiny and smart button component.",
   "examples": [],
   "extend": {
     "group": {

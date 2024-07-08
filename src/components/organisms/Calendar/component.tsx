@@ -116,7 +116,7 @@ const CalendarComponent: MbxUiReactiveComponent<
     components.push(
       <div key="cal_top_sel" data-mbx-scl="flxr:t-sel;mauto">
         {getArrowButton("left")}
-        <Label scl="act-dt" dark={commonProps.dark} {...customProps}>{`${
+        <Label scl="act-dt;mxauto" dark={commonProps.dark} {...customProps}>{`${
           customMonths[onScreenDate.month]
         } ${onScreenDate.year}`}</Label>
         {getArrowButton("right")}

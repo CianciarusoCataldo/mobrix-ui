@@ -5,7 +5,7 @@ import { ButtonComponent } from "../../../types";
 import { buildMbxStandardComponent } from "../../../tools";
 
 /**
- * A button component, designed for a lot of scenarios.
+ * A tiny and smart button component.
  *
  * @param {() => void} onMouseEnter This callback is triggered everytime the cursor enter the button area
  * @param {() => void} onMouseLeave This callback is triggered everytime the cursor exit the button area

@@ -8,7 +8,7 @@ import calendarComponent from "./component";
 import { buildMbxReactiveComponent } from "../../../tools";
 
 /**
- * A ready to use Calendar, designed to be used in many scenarios.
+ * A ready to use Calendar, designed for a lot of scenarios.
  *
  * @param {CalendarDate} value Actual selected date
  * @param {boolean} hideArrows If `true`, hide arrow buttons near the date label

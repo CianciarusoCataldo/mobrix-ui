@@ -118,9 +118,13 @@ export const BurgerIcon = (
   </svg>
 );
 
-export const DarkModeIcon = <img alt="" src={DarkMode} width={30} />;
+export const DarkModeIcon = (
+  <img data-mbx-scl="nosel" alt="" src={DarkMode} width={30} />
+);
 
-export const LightModeIcon = <img alt="" src={LightMode} width={30} />;
+export const LightModeIcon = (
+  <img data-mbx-scl="nosel" alt="" src={LightMode} width={30} />
+);
 
 export const LANGUAGES_ICONS: Record<string, JSX.Element> = {
   it: <img className="mr-2" alt="" width={15} height={15} src={IT_FLAG} />,

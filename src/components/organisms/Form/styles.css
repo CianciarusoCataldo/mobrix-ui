@@ -14,11 +14,6 @@
   --mbx-label-text-color: var(--mbx-c-form-txt);
 }
 
-[data-mbx-id="form"] [data-mbx-scl*="frbox"] {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 [data-mbx-id="form"] [data-mbx-scl*="f-field"] {
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;

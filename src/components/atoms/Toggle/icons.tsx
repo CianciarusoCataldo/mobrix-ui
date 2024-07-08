@@ -8,6 +8,7 @@ export const defaultIcon = (
     xmlSpace="preserve"
     width="30px"
     height="30px"
+    data-mbx-scl="nosel"
   >
     <circle cx={32} cy={32} r={32} fill="var(--svgexternalcolor)" />
     <g data-mbx-scl="wrapper">

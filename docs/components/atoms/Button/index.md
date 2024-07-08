@@ -1,6 +1,6 @@
 # Button page
 
-A button component, designed for a lot of scenarios.
+A tiny and smart button component.
 
 - [Properties](props.md)
 - [Css Variables](css-vars.md)

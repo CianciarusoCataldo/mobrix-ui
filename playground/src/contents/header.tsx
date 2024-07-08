@@ -71,7 +71,7 @@ const HeaderContent = () => {
             }}
             a11y={false}
             className="my-auto overflow-auto ml-1"
-            debug={{ features: { noShadowOnFocus: true } }}
+            features={{ noShFc: true }}
             hide={hideHomeButton}
           >
             <svg
