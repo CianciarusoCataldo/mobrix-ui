@@ -275,15 +275,15 @@
   /** Spinner **/
   --mbx-c-spn-suc: var(
     --mbx-spinner-success-color-dark,
-    var(--mbx-spinner-success-color, var(--mbx-d-spn-suc))
+    var(--mbx-spinner-success-color, #05bc29)
   );
   --mbx-c-spn-err: var(
     --mbx-spinner-error-color-dark,
-    var(--mbx-spinner-error-color, var(--mbx-d-spn-err))
+    var(--mbx-spinner-error-color, #ff0000)
   );
   --mbx-c-spn-load: var(
     --mbx-spinner-loading-color-dark,
-    var(--mbx-spinner-loading-color, var(--mbx-d-spn-load))
+    var(--mbx-spinner-loading-color, #202020)
   );
 
   /** Toggle **/

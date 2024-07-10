@@ -54,3 +54,7 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+[data-mbx-scl*="wfu"] {
+  width: 100%;
+}

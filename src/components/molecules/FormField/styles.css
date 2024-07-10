@@ -6,7 +6,6 @@
   font-weight: 600;
   padding-bottom: 0.2rem;
   --mbx-container-text-color: var(--mbx-c-field-txt);
-  width: 100%;
 }
 
 [data-mbx-id="field"] [data-mbx-fld-eb="true"] {

@@ -53,12 +53,13 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
         shadow={false}
         animated={false}
         background={false}
-        key="field_header_box"
+        key="fld_h_b"
         dark={dark}
+        scl="wfu"
         {...headerProps}
       >
         {header}
-      </Container>,
+      </Container>
     );
   }
 
@@ -105,7 +106,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
 
         setValue(formattedValue);
       }}
-    />,
+    />
   );
 
   components.push(
@@ -119,7 +120,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       key="fld_eb"
     >
       {errorLabel}
-    </Container>,
+    </Container>
   );
 
   return components;

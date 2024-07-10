@@ -50,6 +50,7 @@ const Divider: DividerComponent = ({ size = "2px", ...props }) =>
         height: size,
       },
     },
+    scl: "wfu",
   }));
 
 export default Divider;

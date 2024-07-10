@@ -40,7 +40,7 @@
   --mbx-inputbox-background-hover: var(--mbx-c-field-bg-h);
   --mbx-inputbox-text-color-hover: var(--mbx-c-field-txt-h);
 
-  --mbx-radio-background: var(--mbx-c-field-bg-l);
+  --mbx-radio-background: var(--mbx-c-field-bg);
   --mbx-radio-background-hover: var(--mbx-c-field-bg-h);
 
   --mbx-rater-background: var(--mbx-c-field-bg);

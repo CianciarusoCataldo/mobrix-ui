@@ -16,7 +16,12 @@ const embeddedVideoComponent: MbxUiComponent<
   } = parseEmbedUrl(url);
 
   return embeddedLink ? (
-    <iframe src={embeddedLink} allow={allowedFeatures} {...extraProps} />
+    <iframe
+      src={embeddedLink}
+      allow={allowedFeatures}
+      data-mbx-scl="wfu"
+      {...extraProps}
+    />
   ) : (
     <div />
   );

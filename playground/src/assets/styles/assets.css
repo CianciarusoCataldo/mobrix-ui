@@ -26,8 +26,12 @@ body #preview {
   margin: 0.6rem;
 }
 
-.test-class{
+.test-class {
   width: 2rem;
+}
+
+body {
+  overflow: hidden;
 }
 
 @media (max-width: 400px) {

@@ -7,13 +7,12 @@ export const leapYear = (year: number) => {
 export const today = () => {
   const dateobj = new Date();
 
-  const todayDate = {
+  return {
     year: dateobj.getFullYear(),
     month: dateobj.getMonth(),
     dayOfTheMonth: dateobj.getDate(),
     day: dateobj.getDay(),
   };
-  return todayDate;
 };
 
 export const getMonthsDuration = (year: number) => [

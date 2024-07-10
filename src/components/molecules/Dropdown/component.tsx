@@ -109,7 +109,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           keyDownCallback(!isVisible);
         }}
         dark={dark}
-        scl="drop-bt;nout"
+        scl="drop-bt;nout;wfu"
         key="options-menu"
         a11y={false}
       >
@@ -149,7 +149,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
         dark={dark}
         hide={!isVisible}
         a11y={false}
-        scl="flxc;opts"
+        scl="flxc;opts;wfu"
       >
         {elements.map((item, index) => (
           <Button
@@ -165,15 +165,16 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
               setValue(index);
               keyDownCallback(false);
             }}
+            fts="noShFc;colFc;"
             key={`item_${index}`}
-            scl={`flxc;reg;${selected === index ? "selected" : ""}`}
+            scl={`flxc;reg;wfu`}
             additionalProps={{
               "data-mbx-first": index === 0,
               "data-mbx-last": index === elements.length - 1,
-              "data-mbx-fts": "noShFc;colFc;",
             }}
           >
             <Container
+              disabled={disabled || selected === index}
               a11y={false}
               background={false}
               shadow={false}

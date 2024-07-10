@@ -11,8 +11,6 @@
 }
 
 [data-mbx-id="review"] [data-mbx-scl*="rev-url-c"] {
-  width: 100%;
-  display: flex;
   justify-content: flex-end;
 }
 
@@ -34,17 +32,12 @@
   overflow-wrap: break-word;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
-  width: 100%;
 }
 
-[data-mbx-id="review"]
-  [data-mbx-scl*="rev-url-c"]
-  [data-mbx-revimg="def"] {
+[data-mbx-id="review"] [data-mbx-revimg="def"] {
   fill: var(--mbx-c-rev-link);
 }
 
-[data-mbx-id="review"]
-  [data-mbx-scl*="rev-url-c"]
-  [data-mbx-revimg="git"] {
+[data-mbx-id="review"] [data-mbx-revimg="git"] {
   fill: var(--mbx-c-rev-gh);
 }

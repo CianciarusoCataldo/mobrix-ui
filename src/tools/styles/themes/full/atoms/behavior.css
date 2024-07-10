@@ -50,7 +50,7 @@
   /* Radio Button */
   --mbx-c-rad-bg-h: var(
     --mbx-radio-background-hover-light,
-    var(--mbx-radio-background-hover, var(--mbx-c-rad-bg))
+    var(--mbx-radio-background-hover)
   );
 
   /** Selector **/

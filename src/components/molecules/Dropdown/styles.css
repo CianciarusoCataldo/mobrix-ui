@@ -11,7 +11,6 @@
 [data-mbx-id="dd"] [data-mbx-scl*="opts"] {
   font-size: 1rem;
   line-height: 1.5rem;
-  width: 100%;
   max-height: 12rem;
   scrollbar-width: thin;
   scrollbar-color: var(--mbx-c-drop-txt);
@@ -42,7 +41,6 @@
   display: inline-flex;
   flex-direction: row;
   vertical-align: middle;
-  width: 100%;
   height: 100%;
   font-weight: 500;
   border-radius: 0.375rem;
@@ -95,8 +93,7 @@
 [data-mbx-id="dd"] [data-mbx-scl*="reg"] {
   padding: 0.25rem;
   background-color: transparent;
-  color: var(--mbx-c-drop-txt);
-  width: 100%;
+  --mbx-button-text-color: var(--mbx-c-drop-txt);
 }
 
 [data-mbx-id="dd"] [data-mbx-scl*="reg"] [data-mbx-scl*="drop-el"] {

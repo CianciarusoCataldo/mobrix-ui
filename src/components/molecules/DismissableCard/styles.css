@@ -3,7 +3,6 @@
 }
 
 [data-mbx-id="dis-card"] [data-mbx-scl*="dis-cn"] {
-  width: 100%;
   padding-bottom: 0.1rem;
 }
 
@@ -16,9 +15,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="dis-card"][data-mbx-atts*="hv"]:not(
-      [data-mbx-atts*="dsb"]
-    )
+  [data-mbx-id="dis-card"][data-mbx-atts*="hv"]:not([data-mbx-atts*="dsb"])
     [data-mbx-scl*="dis-bt"]
     svg:hover
     path {

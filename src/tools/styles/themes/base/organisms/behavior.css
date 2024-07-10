@@ -13,24 +13,58 @@
   --mbx-c-cal-t: var(--mbx-c-cal-t-l);
 
   /** DatePicker **/
-  --mbx-c-dtp-bg: var(--mbx-c-dtp-bg-l);
-  --mbx-c-dtp-txt: var(--mbx-c-dtp-txt-l);
-  --mbx-c-dtp-ic-h: var(--mbx-c-dtp-ic-h-l);
-  --mbx-c-dtp-ic: var(---mbx-c-dtp-ic-l);
+  --mbx-c-dtp-bg: var(
+    --mbx-datepicker-background-light,
+    var(--mbx-datepicker-background, var(--mbx-c-bg-l))
+  );
+  --mbx-c-dtp-txt: var(
+    --mbx-datepicker-text-color-light,
+    var(--mbx-datepicker-text-color, var(--mbx-c-txt-l))
+  );
+  ---mbx-c-dtp-ic: var(
+    --mbx-datepicker-icon-light,
+    var(--mbx-datepicker-icon, var(--mbx-c-dtp-txt))
+  );
+  --mbx-c-dtp-ic-h: var(
+    --mbx-datepicker-icon-hover-light,
+    var(--mbx-datepicker-icon-hover, blue)
+  );
 
   /** Drawer **/
-  --mbx-c-draw-bg: var(--mbx-c-draw-bg-l);
-  --mbx-c-draw-txt: var(--mbx-c-draw-txt-l);
-  --mbx-c-draw-arr: var(--mbx-c-draw-arr-l);
-  --mbx-c-draw-arr-h: var(--mbx-c-draw-arr-h-l);
+  --mbx-c-draw-bg: var(
+    --mbx-drawer-background-light,
+    var(--mbx-drawer-background, var(--mbx-c-bg-l))
+  );
+  --mbx-c-draw-txt: var(
+    --mbx-drawer-text-color-light,
+    var(--mbx-drawer-text-color, var(--mbx-c-txt-l))
+  );
+  --mbx-c-draw-arr: var(
+    --mbx-drawer-arrow-light,
+    var(--mbx-drawer-arrow, var(--mbx-c-draw-txt))
+  );
+  --mbx-c-draw-arr-h: var(
+    --mbx-drawer-arrow-hover-light,
+    var(--mbx-drawer-arrow-hover, var(--mbx-c-draw-arr))
+  );
 
   /** Form **/
-  --mbx-c-form-bg: var(--mbx-c-form-bg-l);
-  --mbx-c-form-txt: var(--mbx-c-form-txt-l);
-  --mbx-c-form-sub-bg: var(--mbx-c-form-sub-bg-l);
-  --mbx-c-form-sub-txt: var(--mbx-c-form-sub-txt-l);
-  --mbx-c-form-field-bg: var(--mbx-c-form-field-bg-l);
-  --mbx-c-form-field-txt: var(--mbx-c-form-field-txt-l);
+  --mbx-c-form-bg: var(
+    --mbx-form-background-light,
+    var(--mbx-form-background, var(--mbx-c-bg-l))
+  );
+  --mbx-c-form-txt: var(
+    --mbx-form-text-color-light,
+    var(--mbx-form-text-color)
+  );
+  --mbx-c-form-sub-bg: var(
+    --mbx-form-submit-background-light,
+    var(--mbx-form-submit-background)
+  );
+  --mbx-c-form-sub-txt: var(
+    --mbx-form-submit-text-color-light,
+    var(--mbx-form-submit-text-color)
+  );
 }
 
 [data-mbx-id][data-mbx-atts*="dk"] {
@@ -46,23 +80,53 @@
   --mbx-c-cal-t: var(--mbx-c-cal-t-d);
 
   /** DatePicker **/
-  --mbx-c-dtp-bg: var(--mbx-c-dtp-bg-d);
-  --mbx-c-dtp-txt: var(--mbx-c-dtp-txt-d);
-  --mbx-c-dtp-ic: var(---mbx-c-dtp-ic-d);
-
-  --mbx-c-dtp-ic-h: var(--mbx-c-dtp-ic-h-d);
+  --mbx-c-dtp-bg: var(
+    --mbx-datepicker-background-dark,
+    var(--mbx-datepicker-background, var(--mbx-c-bg-d))
+  );
+  --mbx-c-dtp-txt: var(
+    --mbx-datepicker-text-color-dark,
+    var(--mbx-datepicker-text-color, var(--mbx-c-txt-d))
+  );
+  ---mbx-c-dtp-ic: var(
+    --mbx-datepicker-icon-dark,
+    var(--mbx-datepicker-icon, var(--mbx-c-dtp-txt))
+  );
+  --mbx-c-dtp-ic-h: var(
+    --mbx-datepicker-icon-hover-dark,
+    var(--mbx-datepicker-icon-hover, orange)
+  );
 
   /** Drawer **/
-  --mbx-c-draw-bg: var(--mbx-c-draw-bg-d);
-  --mbx-c-draw-txt: var(--mbx-c-draw-txt-d);
-  --mbx-c-draw-arr: var(--mbx-c-draw-arr-d);
-  --mbx-c-draw-arr-h: var(--mbx-c-draw-arr-h-d);
+  --mbx-c-draw-bg: var(
+    --mbx-drawer-background-dark,
+    var(--mbx-drawer-background, var(--mbx-c-bg-d))
+  );
+  --mbx-c-draw-txt: var(
+    --mbx-drawer-text-color-dark,
+    var(--mbx-drawer-text-color, var(--mbx-c-txt-d))
+  );
+  --mbx-c-draw-arr: var(
+    --mbx-drawer-arrow-dark,
+    var(--mbx-drawer-arrow, var(--mbx-c-draw-txt))
+  );
+  --mbx-c-draw-arr-h: var(
+    --mbx-drawer-arrow-hover-dark,
+    var(--mbx-drawer-arrow-hover, var(--mbx-c-draw-arr))
+  );
 
   /** Form **/
-  --mbx-c-form-bg: var(--mbx-c-form-bg-d);
-  --mbx-c-form-txt: var(--mbx-c-form-txt-d);
-  --mbx-c-form-sub-bg: var(--mbx-c-form-sub-bg-d);
-  --mbx-c-form-sub-txt: var(--mbx-c-form-sub-txt-d);
-  --mbx-c-form-field-bg: var(--mbx-c-form-field-bg-d);
-  --mbx-c-form-field-txt: var(--mbx-c-form-field-txt-d);
+  --mbx-c-form-bg: var(
+    --mbx-form-background-dark,
+    var(--mbx-form-background, var(--mbx-c-bg-d))
+  );
+  --mbx-c-form-sub-bg: var(
+    --mbx-form-submit-background-dark,
+    var(--mbx-form-submit-background)
+  );
+  --mbx-c-form-txt: var(--mbx-form-text-color-dark, var(--mbx-form-text-color));
+  --mbx-c-form-sub-txt: var(
+    --mbx-form-submit-text-color-dark,
+    var(--mbx-form-submit-text-color)
+  );
 }

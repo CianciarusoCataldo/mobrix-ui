@@ -15,7 +15,7 @@ const DismissableCardInternalComponent: MbxUiComponent<
   cardComponent({
     ...props,
     header: [
-      <div data-mbx-scl="dis-cn;flxrr;" key="dis-x">
+      <div data-mbx-scl="dis-cn;flxrr;wfu" key="dis-x">
         <IconButton
           dark={props.dark}
           features={{ fillFc: true }}

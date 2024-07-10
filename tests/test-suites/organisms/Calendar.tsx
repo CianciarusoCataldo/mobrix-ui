@@ -24,7 +24,7 @@ const calendarTest = () => {
           fromToday={false}
         />
       );
-      wrapper.find("[data-mbx-calendar-day=3]").simulate("click");
+      wrapper.find("[data-mbx-ctoday]").at(2).simulate("click");
       wrapper.find('[data-mbx-carr="left"]').simulate("click");
       expect(wrapper);
     });
@@ -36,7 +36,7 @@ const calendarTest = () => {
         <Calendar fromToday={false} onChange={onChangeStub} />
       );
       wrapper.update();
-      wrapper.find("[data-mbx-calendar-day=4]").simulate("click");
+      wrapper.find("[data-mbx-ctoday]").at(3).simulate("click");
 
       expect(onChangeStub).toBeCalled;
     });
@@ -53,9 +53,10 @@ const calendarTest = () => {
         />
       );
       wrapper.update();
-      wrapper.find("[data-mbx-calendar-day=4]").simulate("focus");
+      wrapper.find("[data-mbx-ctoday]").at(3).simulate("focus");
       wrapper
-        .find("[data-mbx-calendar-day=19]")
+        .find("[data-mbx-ctoday]")
+        .at(19)
         .simulate("keyDown", { keyCode: 13, code: "Enter", key: "Enter" });
 
       expect(onChangeKeyStub).toBeCalledWith({

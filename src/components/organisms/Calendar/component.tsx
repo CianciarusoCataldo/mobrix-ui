@@ -13,7 +13,7 @@ import { getMonthsDuration, getDateMatrix } from "./utils";
 
 import { arrowIcon } from "../../molecules/Carousel/icons";
 
-import { Button, IconButton, Label } from "../../atoms";
+import { IconButton, Label } from "../../atoms";
 import { Table } from "../../molecules";
 
 const CalendarComponent: MbxUiReactiveComponent<
@@ -114,7 +114,7 @@ const CalendarComponent: MbxUiReactiveComponent<
 
   dayLabel &&
     components.push(
-      <div key="cal_top_sel" data-mbx-scl="flxr:t-sel;mauto">
+      <div key="cal_top_sel" data-mbx-scl="flxr:t-sel;mauto;wfu">
         {getArrowButton("left")}
         <Label scl="act-dt;mxauto" dark={commonProps.dark} {...customProps}>{`${
           customMonths[onScreenDate.month]
@@ -127,7 +127,7 @@ const CalendarComponent: MbxUiReactiveComponent<
     <Table
       disabled={disabled}
       key="cal_tb"
-      scl="mauto"
+      scl="mauto;wfu"
       propsCallback={(row, column) => {
         if (row > 0) {
           const isDisabled = fromToday
@@ -167,9 +167,6 @@ const CalendarComponent: MbxUiReactiveComponent<
               : {};
 
           return {
-            ...(basicMatrix[row - 1][column] > 0 && {
-              "data-mbx-calendar-day": basicMatrix[row - 1][column],
-            }),
             "data-mbx-ctoday":
               fromToday &&
               basicMatrix[row - 1][column] === todayDate.dayOfTheMonth &&
