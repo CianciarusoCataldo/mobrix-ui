@@ -2,14 +2,20 @@
   --mbx-c-bgc: var(--mbx-c-bgc-l);
   --mbx-c-bg: var(--mbx-c-bg-l);
   --mbx-c-txt: var(--mbx-c-txt-l);
-  --mbx-c-fc: var(--mbx-c-fc-l);
-  --mbx-c-sh: var(--mbx-c-sh-l);
+  --mbx-c-fc: var(
+    --mbx-focus-color-light,
+    var(--mbx-focus-color, var(--mbx-d-fc-l))
+  );
+  --mbx-c-sh: var(--mbx-shadow-light, var(--mbx-shadow, var(--mbx-d-sh)));
 }
 
 [data-mbx-id][data-mbx-atts*="dk"] {
   --mbx-c-bgc: var(--mbx-c-bgc-d);
   --mbx-c-bg: var(--mbx-c-bg-d);
   --mbx-c-txt: var(--mbx-c-txt-d);
-  --mbx-c-fc: var(--mbx-c-fc-d);
-  --mbx-c-sh: var(--mbx-c-sh-d);
+  --mbx-c-fc: var(
+    --mbx-focus-color-dark,
+    var(--mbx-focus-color, var(--mbx-d-fc-d))
+  );
+  --mbx-c-sh: var(--mbx-shadow-dark, var(--mbx-shadow, var(--mbx-d-sh)));
 }

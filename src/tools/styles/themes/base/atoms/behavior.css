@@ -2,17 +2,17 @@
   /** Button **/
   --mbx-c-btn-bg: var(
     --mbx-button-background-light,
-    var(--mbx-button-background, var(--mbx-c-bg-l))
+    var(--mbx-button-background, var(--mbx-c-bg))
   );
   --mbx-c-btn-txt: var(
     --mbx-button-text-color-light,
-    var(--mbx-button-text-color, var(--mbx-c-txt-l))
+    var(--mbx-button-text-color, var(--mbx-c-txt))
   );
 
   /** Checkbox **/
   --mbx-c-chk-bg: var(
     --mbx-checkbox-background-light,
-    var(--mbx-checkbox-background, var(--mbx-c-bg-l))
+    var(--mbx-checkbox-background, var(--mbx-c-bg))
   );
 
   --mbx-c-chk-tk: var(
@@ -23,50 +23,50 @@
   /** Codebox **/
   --mbx-c-cdb-bg: var(
     --mbx-codebox-background-light,
-    var(--mbx-codebox-background, var(--mbx-c-bg-l))
+    var(--mbx-codebox-background, var(--mbx-c-bg))
   );
 
   --mbx-c-cdb-txt: var(
     --mbx-codebox-text-color-light,
-    var(--mbx-codebox-text-color, var(--mbx-c-txt-l))
+    var(--mbx-codebox-text-color, var(--mbx-c-txt))
   );
 
   /** Counter **/
   --mbx-c-cnt-bg: var(
     --mbx-counterbox-background-light,
-    var(--mbx-counterbox-background, var(--mbx-c-bgc-l))
+    var(--mbx-counterbox-background, var(--mbx-c-bgc))
   );
   --mbx-c-cnt-txt: var(
     --mbx-counterbox-text-color-light,
-    var(--mbx-counterbox-text-color, var(--mbx-c-txt-l))
+    var(--mbx-counterbox-text-color, var(--mbx-c-txt))
   );
 
   /** Divider **/
   --mbx-c-dv-bgc: var(
     --mbx-divider-color-light,
-    var(--mbx-divider-color, var(--mbx-c-txt-l))
+    var(--mbx-divider-color, var(--mbx-c-txt))
   );
 
   /** Input **/
   --mbx-c-in-bgc: var(
     --mbx-inputbox-background-light,
-    var(--mbx-inputbox-background, var(--mbx-c-bgc-l))
+    var(--mbx-inputbox-background, var(--mbx-c-bgc))
   );
   --mbx-c-in-txt: var(
     --mbx-inputbox-text-color-light,
-    var(--mbx-inputbox-text-color, var(--mbx-c-txt-l))
+    var(--mbx-inputbox-text-color, var(--mbx-c-txt))
   );
 
   /** Label **/
   --mbx-c-lab-txt: var(
     --mbx-label-text-color-light,
-    var(--mbx-label-text-color, var(--mbx-c-txt-l))
+    var(--mbx-label-text-color, var(--mbx-c-txt))
   );
 
   /** Link **/
   --mbx-c-link-txt: var(
     --mbx-link-color-light,
-    var(--mbx-link-color, var(--mbx-c-txt-l))
+    var(--mbx-link-color, var(--mbx-c-txt))
   );
 
   /** Radio Button **/
@@ -88,23 +88,23 @@
   /** Rater **/
   --mbx-c-rat-bg: var(
     --mbx-rater-background-light,
-    var(--mbx-rater-background, var(--mbx-c-bg-l))
+    var(--mbx-rater-background, var(--mbx-c-bg))
   );
 
   /** Selector **/
   --mbx-c-sel-bg: var(
     --mbx-selector-background-light,
-    var(--mbx-selector-background, var(--mbx-c-bgc-l))
+    var(--mbx-selector-background, var(--mbx-c-bgc))
   );
   --mbx-c-sel-txt: var(
     --mbx-selector-text-color-light,
-    var(--mbx-selector-text-color, var(--mbx-c-txt-l))
+    var(--mbx-selector-text-color, var(--mbx-c-txt))
   );
 
   /** Slider **/
   --mbx-c-sld-bg: var(
     --mbx-slider-background-light,
-    var(--mbx-slider-background, var(--mbx-c-bg-l))
+    var(--mbx-slider-background, var(--mbx-c-bg))
   );
   --mbx-c-sld-tb: var(
     --mbx-slider-thumb-color-light,
@@ -132,7 +132,7 @@
   /** Toggle **/
   --mbx-c-tog-bg: var(
     --mbx-toggle-background-light,
-    var(--mbx-toggle-background, var(--mbx-c-bg-l))
+    var(--mbx-toggle-background, var(--mbx-c-bg))
   );
   --mbx-c-tog-ic-on-int: var(
     --mbx-toggle-icon-on-internal-color-light,
@@ -156,17 +156,17 @@
   /** Button **/
   --mbx-c-btn-bg: var(
     --mbx-button-background-dark,
-    var(--mbx-button-background, var(--mbx-c-bg-d))
+    var(--mbx-button-background, var(--mbx-c-bg))
   );
   --mbx-c-btn-txt: var(
     --mbx-button-text-color-dark,
-    var(--mbx-button-text-color, var(--mbx-c-txt-d))
+    var(--mbx-button-text-color, var(--mbx-c-txt))
   );
 
   /** Checkbox **/
   --mbx-c-chk-bg: var(
     --mbx-checkbox-background-dark,
-    var(--mbx-checkbox-background, var(--mbx-c-bg-d))
+    var(--mbx-checkbox-background, var(--mbx-c-bg))
   );
   --mbx-c-chk-tk: var(
     --mbx-checkbox-tick-color-dark,
@@ -176,49 +176,49 @@
   /** Codebox **/
   --mbx-c-cdb-bg: var(
     --mbx-codebox-background-dark,
-    var(--mbx-codebox-background, var(--mbx-c-bg-d))
+    var(--mbx-codebox-background, var(--mbx-c-bg))
   );
   --mbx-c-cdb-txt: var(
     --mbx-codebox-text-color-dark,
-    var(--mbx-codebox-text-color, var(--mbx-c-txt-d))
+    var(--mbx-codebox-text-color, var(--mbx-c-txt))
   );
 
   /** Counter **/
   --mbx-c-cnt-bg: var(
     --mbx-counterbox-background-dark,
-    var(--mbx-counterbox-background, var(--mbx-c-bgc-d))
+    var(--mbx-counterbox-background, var(--mbx-c-bgc))
   );
   --mbx-c-cnt-txt: var(
     --mbx-counterbox-text-color-dark,
-    var(--mbx-counterbox-text-color, var(--mbx-c-txt-d))
+    var(--mbx-counterbox-text-color, var(--mbx-c-txt))
   );
 
   /** Divider **/
   --mbx-c-dv-bgc: var(
     --mbx-divider-color-dark,
-    var(--mbx-divider-color, var(--mbx-c-txt-d))
+    var(--mbx-divider-color, var(--mbx-c-txt))
   );
 
   /** Input **/
   --mbx-c-in-bgc: var(
     --mbx-inputbox-background-dark,
-    var(--mbx-inputbox-background, var(--mbx-c-bgc-d))
+    var(--mbx-inputbox-background, var(--mbx-c-bgc))
   );
   --mbx-c-in-txt: var(
     --mbx-inputbox-text-color-dark,
-    var(--mbx-inputbox-text-color, var(--mbx-c-txt-d))
+    var(--mbx-inputbox-text-color, var(--mbx-c-txt))
   );
 
   /** Label **/
   --mbx-c-lab-txt: var(
     --mbx-label-text-color-dark,
-    var(--mbx-label-text-color, var(--mbx-c-txt-d))
+    var(--mbx-label-text-color, var(--mbx-c-txt))
   );
 
   /** Link **/
   --mbx-c-link-txt: var(
     --mbx-link-color-dark,
-    var(--mbx-link-color, var(--mbx-c-txt-d))
+    var(--mbx-link-color, var(--mbx-c-txt))
   );
 
   /** Radio Button **/
@@ -246,22 +246,22 @@
   /** Rater **/
   --mbx-c-rat-bg: var(
     --mbx-rater-background-dark,
-    var(--mbx-rater-background, var(--mbx-c-bg-d))
+    var(--mbx-rater-background, var(--mbx-c-bg))
   );
   /** Selector **/
   --mbx-c-sel-bg: var(
     --mbx-selector-background-dark,
-    var(--mbx-selector-background, var(--mbx-c-bgc-d))
+    var(--mbx-selector-background, var(--mbx-c-bgc))
   );
   --mbx-c-sel-txt: var(
     --mbx-selector-text-color-dark,
-    var(--mbx-selector-text-color, var(--mbx-c-txt-d))
+    var(--mbx-selector-text-color, var(--mbx-c-txt))
   );
 
   /** Slider **/
   --mbx-c-sld-bg: var(
     --mbx-slider-background-dark,
-    var(--mbx-slider-background, var(--mbx-c-bg-d))
+    var(--mbx-slider-background, var(--mbx-c-bg))
   );
   --mbx-c-sld-tb: var(
     --mbx-slider-thumb-color-dark,
@@ -289,7 +289,7 @@
   /** Toggle **/
   --mbx-c-tog-bg: var(
     --mbx-toggle-background-dark,
-    var(--mbx-toggle-background, var(--mbx-c-bg-d))
+    var(--mbx-toggle-background, var(--mbx-c-bg))
   );
   --mbx-c-tog-ic-off-int: var(
     --mbx-toggle-icon-off-internal-color-dark,

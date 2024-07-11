@@ -1,16 +1,6 @@
 @import url("default.css");
 
 [data-mbx-id] {
-  --mbx-c-fc-l: var(
-    --mbx-focus-color-light,
-    var(--mbx-focus-color, var(--mbx-d-fc-l))
-  );
-
-  --mbx-c-fc-d: var(
-    --mbx-focus-color-dark,
-    var(--mbx-focus-color, var(--mbx-d-fc-d))
-  );
-
   --mbx-c-bg-l: var(
     --mbx-background-light,
     var(--mbx-background, var(--mbx-d-bg-l))
@@ -70,8 +60,4 @@
     --mbx-background-hover-light,
     var(--mbx-background-hover, var(--mbx-d-bg-h-l))
   );
-
-  --mbx-c-sh-l: var(--mbx-shadow-light, var(--mbx-shadow, var(--mbx-d-sh)));
-
-  --mbx-c-sh-d: var(--mbx-shadow-dark, var(--mbx-shadow, var(--mbx-d-sh)));
 }
