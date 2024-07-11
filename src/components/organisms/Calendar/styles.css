@@ -30,8 +30,8 @@
 
 [data-mbx-id="calendar"] [data-mbx-tcell="true"][data-mbx-selected="true"] {
   cursor: default;
-  background: var(--mbx-c-cal-s-bg);
-  color: var(--mbx-c-cal-s-txt);
+  background: var(--mbx-c-cal-bg-s);
+  color: var(--mbx-c-cal-txt-s);
 }
 
 [data-mbx-id="calendar"] [data-mbx-scl*="t-sel"] {
