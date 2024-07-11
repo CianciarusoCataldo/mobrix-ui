@@ -1,8 +1,8 @@
-body.light .left-arrow {
-  fill: black;
+body.light .arrow {
+  fill: rgb(77, 77, 77);
 }
 
-body.dark .left-arrow {
+body.dark .arrow {
   fill: white;
 }
 

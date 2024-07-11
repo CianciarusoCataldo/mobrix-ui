@@ -1,5 +1,4 @@
 [data-mbx-id="codebox"] {
-  overflow: hidden;
   padding: 0.1rem;
   justify-content: center;
   background: var(--mbx-c-cdb-bg);
@@ -16,7 +15,7 @@
   overflow: auto;
 }
 
-[data-mbx-id="codebox"] [data-mbx-scl*="cd-cd"] [data-mbx-scl*="cdl"] {
+[data-mbx-id="codebox"] [data-mbx-scl*="cd-cb"] {
   margin-top: 0;
   margin-bottom: 0;
 }

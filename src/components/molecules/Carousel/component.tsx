@@ -44,7 +44,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
 
       dots.push(
         <IconButton
-          scl={`dot;full-${
+          scl={`dot;bdtran;full-${
             index === item || (hoveredDot != null && index === hoveredDot)
           }`}
           className={dotClassName}
@@ -99,7 +99,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         {arrowIcon}
       </IconButton>
     </div>,
-    <div key="car_dots" data-mbx-scl="flxr;dots;">
+    <div key="car_dots" data-mbx-scl="flxr;dots;ovhid">
       {dots}
     </div>,
   ];

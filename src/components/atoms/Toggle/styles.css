@@ -7,7 +7,6 @@
 }
 
 [data-mbx-id="toggle"] [data-mbx-scl*="tg-ic"] {
-  overflow: hidden;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;

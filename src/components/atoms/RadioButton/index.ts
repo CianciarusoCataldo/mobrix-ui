@@ -59,7 +59,7 @@ const RadioButton: RadioButtonComponent = ({
       opHov: true,
       opAct: true,
     },
-    scl: "flxc;act",
+    scl: "flxc;act;bdtran",
     props: (value, setValue) => {
       const callBack = () => {
         if (!value || deselectable) {

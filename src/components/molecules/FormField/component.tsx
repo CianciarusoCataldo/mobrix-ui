@@ -59,7 +59,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
         {...headerProps}
       >
         {header}
-      </Container>
+      </Container>,
     );
   }
 
@@ -68,6 +68,10 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
     ...(animate && {
       animation: "shake",
     }),
+    ...(error && {
+      "data-mbx-fld-e": error,
+      scl: "bdtran",
+    }),
   };
 
   components.push(
@@ -75,9 +79,6 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       className={className}
       disabled={disabled}
       animated={animated}
-      additionalProps={{
-        "data-mbx-fld-e": error,
-      }}
       {...extraProps}
       key="fld_comp"
       value={fieldFormatters[type].format(value)}
@@ -101,26 +102,25 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
         } else {
           setError(false);
         }
-
         onChange(formattedValue);
-
         setValue(formattedValue);
       }}
-    />
+    />,
   );
 
   components.push(
     <Container
-      additionalProps={{
-        "data-mbx-fld-eb": true,
-      }}
+      scl="fld-eb"
       animated={true}
+      animation="fade-in"
       dark={dark}
       hide={!error}
+      background={false}
       key="fld_eb"
+      shadow={false}
     >
       {errorLabel}
-    </Container>
+    </Container>,
   );
 
   return components;

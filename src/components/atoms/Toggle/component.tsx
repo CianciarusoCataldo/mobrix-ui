@@ -17,7 +17,7 @@ const toggleComponent: MbxUiReactiveComponent<boolean, ToggleProps> = ({
 
   return (
     <div
-      data-mbx-scl={`tg-ic;flip${status};`}
+      data-mbx-scl={`tg-ic;ovhid;flip${status};`}
       {...(!disabled &&
         hover && {
           "data-mbx-fts": `opHov;`,

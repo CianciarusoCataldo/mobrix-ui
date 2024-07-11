@@ -8,6 +8,7 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  * A re-defined `<a>` component, designed to be better used with links
  *
  * @param {string} to Link url
+ * @param {boolean} underline if true, the link will be displayed underlined (default=`true`)
  * @param {string} newTab f true, the link will be opened in a new tab
  * @param {`JSX.Element` | `string`} children Link content
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
@@ -41,7 +42,13 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const Link: LinkComponent = ({ to, children, newTab, ...commonProps }) =>
+const Link: LinkComponent = ({
+  to,
+  children,
+  newTab,
+  underline = true,
+  ...commonProps
+}) =>
   buildMbxStandardComponent(
     { ...commonProps, shadow: false },
     (sharedProps) => ({
@@ -51,6 +58,7 @@ const Link: LinkComponent = ({ to, children, newTab, ...commonProps }) =>
         colFc: true,
         noShFc: true,
       },
+      ...(underline && { scl: "under" }),
       Component: children,
       commonProps: {
         ...sharedProps,

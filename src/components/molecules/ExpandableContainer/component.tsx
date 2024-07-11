@@ -23,7 +23,7 @@ const expandableContainerComponent: MbxUiReactiveComponent<
   let components = [children];
 
   components.push(
-    <div key="exp_a" data-mbx-scl="exp-area">
+    <div key="exp_a" data-mbx-scl="exp-area;ovhid">
       {expanded}
     </div>,
   );

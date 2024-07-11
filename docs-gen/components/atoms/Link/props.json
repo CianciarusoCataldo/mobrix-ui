@@ -1,5 +1,10 @@
 {
   "to": { "description": "Link url", "type": "string" },
+  "underline": {
+    "description": "if true, the link will be displayed underlined (default=`true`)",
+    "type": "boolean",
+    "default": "true"
+  },
   "newTab": {
     "type": "string",
     "description": "f true, the link will be opened in a new tab",

@@ -43,7 +43,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
     </div>,
     <div key="cd_cd" data-mbx-scl="cd-cd">
       {code.split("\n").map((codeLine, lineIndex) => (
-        <p data-mbx-scl="cdl" key={`codeline_${lineIndex}`}>
+        <p data-mbx-scl="cd-cb" key={`codeline_${lineIndex}`}>
           {parseCodeLineFunction(codeLine, environment).map(
             (codeBlock, blockIndex) =>
               codeBlock.code === " " ? (

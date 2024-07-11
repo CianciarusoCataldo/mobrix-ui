@@ -34,7 +34,6 @@
 [data-mbx-id="carousel"] [data-mbx-scl*="car-els"],
 [data-mbx-id="carousel"] [data-mbx-scl*="dots"] {
   align-items: center;
-  overflow: hidden;
   padding: 0.5rem;
 }
 
@@ -48,7 +47,6 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border-color: transparent;
   background: var(--mbx-c-car-dot-e);
 }
 

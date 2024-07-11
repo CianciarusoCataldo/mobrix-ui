@@ -47,7 +47,7 @@ const CodeBox: CodeBoxComponent = (props) =>
   buildMbxStandardComponent(props, (sharedProps) => ({
     name: "codebox",
     commonProps: sharedProps,
-    scl: "flxc",
+    scl: "flxc;ovhid",
     Component: codeboxComponent({
       ...props,
       ...sharedProps,

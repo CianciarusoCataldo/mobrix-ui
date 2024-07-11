@@ -1,5 +1,3 @@
-import "assets/styles";
-
 if ("serviceWorker" in navigator && process.env.NODE_ENV === "production") {
   navigator.serviceWorker
     .register("./serviceWorker.js", { scope: "/mobrix-ui/" })
@@ -58,3 +56,5 @@ const check = () => {
 };
 
 check();
+
+export {};

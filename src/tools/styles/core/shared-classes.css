@@ -58,3 +58,11 @@
 [data-mbx-scl*="wfu"] {
   width: 100%;
 }
+
+[data-mbx-scl*="ovhid"] {
+  overflow: hidden;
+}
+
+[data-mbx-scl*="bdtran"] {
+  border-color: transparent;
+}

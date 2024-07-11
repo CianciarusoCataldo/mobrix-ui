@@ -57,6 +57,7 @@ const Counter: CounterComponent = ({
   buildMbxReactiveComponent<number | undefined>(commonProps, (sharedProps) => ({
     wrapper: "input",
     name: "counterbox",
+    scl: "bdtran",
     features: {
       opHov: true,
     },

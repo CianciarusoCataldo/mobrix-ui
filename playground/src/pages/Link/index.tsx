@@ -16,9 +16,10 @@ const LinkPage = () => (
           to: StringProp("https://github.com/CianciarusoCataldo/mobrix-ui"),
           children: StringProp("children"),
           newTab: BooleanProp(true),
+          underline: BooleanProp(true),
           ...demoProps,
         }}
-        rows={[["to", "children"], ...demoRows]}
+        rows={[["to", "children", "underline"], ...demoRows]}
       >
         {(props: any) => (
           <div className="m-auto flex flex-col items-center text-xl">

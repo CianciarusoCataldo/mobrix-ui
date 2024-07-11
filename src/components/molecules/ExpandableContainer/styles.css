@@ -1,12 +1,10 @@
 [data-mbx-id="econ"][data-mbx-scl*="cmp-true"] [data-mbx-scl*="exp-area"] {
   max-height: 0;
   transition: max-height 0.3s ease-out;
-  overflow: hidden;
 }
 [data-mbx-id="econ"][data-mbx-scl*="cmp-false"] [data-mbx-scl*="exp-area"] {
   max-height: 100vh;
   transition: max-height 0.3s ease-in;
-  overflow: hidden;
 }
 
 [data-mbx-id="econ"] [data-mbx-scl*="econ-b"] svg {
