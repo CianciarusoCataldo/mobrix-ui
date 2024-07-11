@@ -51,7 +51,7 @@
   --mbx-toggle-background: var(--mbx-c-field-bg);
 }
 
-[data-mbx-id="modal"] > [data-mbx-id="dis-card"] > [data-mbx-scl*="head"] {
+[data-mbx-id="mod"] > [data-mbx-id="dis-card"] > [data-mbx-scl*="head"] {
   --mbx-dismissablecard-x-color: var(--mbx-c-mod-x);
   --mbx-dismissablecard-x-color-hover: var(--mbx-c-mod-x-h);
 }

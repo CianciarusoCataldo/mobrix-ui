@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { CodeBoxComponent } from "../../../types";
 
-import codeboxComponent from "./component";
+import component from "./component";
 import { buildMbxStandardComponent } from "../../../tools/utils";
 
 /**
@@ -45,10 +45,10 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  */
 const CodeBox: CodeBoxComponent = (props) =>
   buildMbxStandardComponent(props, (sharedProps) => ({
-    name: "codebox",
+    name: "code",
     commonProps: sharedProps,
     scl: "flxc;ovhid",
-    Component: codeboxComponent({
+    Component: component({
       ...props,
       ...sharedProps,
     }),

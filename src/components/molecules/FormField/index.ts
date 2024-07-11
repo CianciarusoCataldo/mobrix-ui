@@ -5,7 +5,7 @@ import { FormFieldComponent } from "../../../types";
 import { buildMbxReactiveComponent } from "../../../tools";
 import { fieldFormatters } from "./utils";
 
-import FormFieldInternalComponent from "./component";
+import component from "./component";
 
 /**
 * A single form field. Depending on its `type`, a different input component is used inside
@@ -74,7 +74,7 @@ const FormField: FormFieldComponent = ({
       },
     },
     Component: ({ value, setValue }) =>
-      FormFieldInternalComponent({
+      component({
         value,
         setValue,
         type,

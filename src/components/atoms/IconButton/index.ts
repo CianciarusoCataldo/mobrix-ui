@@ -50,7 +50,7 @@ const IconButton: IconButtonComponent = ({
   ...commonProps
 }) =>
   buildMbxStandardComponent({ ...commonProps, hover }, (sharedProps) => ({
-    name: "icon-button",
+    name: "icb",
     wrapper: "button",
     ...(!sharedProps.unstyled && {
       features: {

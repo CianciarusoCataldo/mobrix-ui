@@ -8,18 +8,18 @@
   --mbx-c-chk-bg: transparent !important;
 }
 
-[data-mbx-id="codebox"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="codebox"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="code"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="code"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-cdb-bg: transparent !important;
 }
 
-[data-mbx-id="counterbox"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="counterbox"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="count"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="count"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-cnt-bg: transparent !important;
 }
 
-[data-mbx-id="inputbox"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="inputbox"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="input"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="input"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-in-bgc: transparent !important;
 }
 

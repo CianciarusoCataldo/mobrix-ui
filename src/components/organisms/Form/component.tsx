@@ -19,7 +19,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
   hover,
   shadow,
 }) => {
-  const dropdownFields: Record<string, string | boolean | number> = fields
+  const d_fields: Record<string, string | boolean | number> = fields
     ? Object.keys(fields).reduce(
         (o, key) => ({
           ...o,
@@ -30,18 +30,13 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
     : {};
 
   const [values, setValues] =
-    React.useState<Record<string, string | boolean | number>>(dropdownFields);
+    React.useState<Record<string, string | boolean | number>>(d_fields);
 
   const components = [
-    <Label
-      disabled={disabled}
-      key="form_title"
-      dark={dark}
-      scl="title;mxauto"
-    >
+    <Label disabled={disabled} key="form_title" dark={dark} scl="title;mxauto">
       {title}
     </Label>,
-    ...Object.keys(dropdownFields).map((field, index) => {
+    ...Object.keys(d_fields).map((field, index) => {
       const fieldSettings = fields![field];
 
       const type = fieldSettings.type || "text";

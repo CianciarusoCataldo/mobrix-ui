@@ -19,7 +19,6 @@ export const valueFormatters = {
     }
   },
   number: (value: any) => value as number,
-
   boolean: (value: any) => value as boolean,
 };
 

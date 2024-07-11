@@ -22,9 +22,9 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   environment = "terminal",
   copyButton = true,
 }) => {
-  let parseCodeLineFunction: (
+  let parseLine: (
     inputCode: string,
-    environment: SupportedEnvironment,
+    environment: SupportedEnvironment
   ) => CodeBlock[] =
     highlight && code.length > 0
       ? parseCode
@@ -44,20 +44,19 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
     <div key="cd_cd" data-mbx-scl="cd-cd">
       {code.split("\n").map((codeLine, lineIndex) => (
         <p data-mbx-scl="cd-cb" key={`codeline_${lineIndex}`}>
-          {parseCodeLineFunction(codeLine, environment).map(
-            (codeBlock, blockIndex) =>
-              codeBlock.code === " " ? (
-                ` `
-              ) : (
-                <span
-                  key={`codeblock_${blockIndex}`}
-                  {...(codeBlock.color && {
-                    style: { color: codeBlock.color },
-                  })}
-                >
-                  {codeBlock.code}
-                </span>
-              ),
+          {parseLine(codeLine, environment).map((codeBlock, blockIndex) =>
+            codeBlock.code === " " ? (
+              ` `
+            ) : (
+              <span
+                key={`codeblock_${blockIndex}`}
+                {...(codeBlock.color && {
+                  style: { color: codeBlock.color },
+                })}
+              >
+                {codeBlock.code}
+              </span>
+            )
           )}
         </p>
       ))}

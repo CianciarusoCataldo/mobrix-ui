@@ -4,7 +4,7 @@ import { ReviewComponent } from "../../../types";
 
 import { buildMbxStandardComponent } from "../../../tools";
 
-import reviewComponent from "./component";
+import component from "./component";
 
 /**
  * A smart review container, useful to show reviews on your web app with custom data inside. Optionally, an external link can be set to redirect user to the platform where the review is located
@@ -54,7 +54,7 @@ const Review: ReviewComponent = (props) =>
     name: "review",
     commonProps: sharedProps,
     scl: "flxc;wfit;",
-    Component: reviewComponent({
+    Component: component({
       ...props,
       ...sharedProps,
     }),

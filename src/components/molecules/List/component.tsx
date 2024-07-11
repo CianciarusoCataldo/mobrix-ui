@@ -8,12 +8,12 @@ const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
   hover,
   disabled,
 }) => {
-  let features = "";
+  let fts = "";
 
   if (!disabled) {
-    features += "colFc;";
+    fts += "colFc;";
     if (onClick && hover) {
-      features += "opHov;";
+      fts += "opHov;";
     }
   }
 
@@ -21,7 +21,7 @@ const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
     <div
       key={`el_${index}`}
       onClick={onClick && (() => onClick(index))}
-      data-mbx-fts={features}
+      data-mbx-fts={fts}
       data-mbx-scl={`flxr;nout;lis-el;${onClick ? "click;" : ""}`}
       tabIndex={0}
     >

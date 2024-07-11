@@ -29,7 +29,7 @@ const codeBoxTest = () => {
       );
       navigator.clipboard.writeText = copyStub;
       wrapper
-        .find('[data-mbx-scl*="cd-cp"] [data-mbx-id="icon-button"]')
+        .find('[data-mbx-scl*="cd-cp"] [data-mbx-id="icb"]')
         .simulate("click");
       expect(copyStub).toBeCalled;
     });

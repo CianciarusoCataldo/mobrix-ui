@@ -27,7 +27,7 @@ const datePickerTest = () => {
         />
       );
 
-      wrapper.find('[data-mbx-id="icon-button"]').at(0).simulate("click");
+      wrapper.find('[data-mbx-id="icb"]').at(0).simulate("click");
       wrapper
         .find('[data-mbx-id="cal"]')
         .find("[data-mbx-ctoday]")
@@ -43,7 +43,7 @@ const datePickerTest = () => {
         <DatePicker onClose={onCloseStub} fromToday={false} />
       );
 
-      wrapper.find('[data-mbx-id="icon-button"]').at(0).simulate("click");
+      wrapper.find('[data-mbx-id="icb"]').at(0).simulate("click");
 
       wrapper.find('[data-mbx-scl*="dis-bt"]').simulate("click");
 

@@ -52,7 +52,7 @@ const Input: InputComponent = ({
   ...commonProps
 }) =>
   buildMbxReactiveComponent<string | undefined>(commonProps, (sharedProps) => ({
-    name: "inputbox",
+    name: "input",
     wrapper: "input",
     features: {
       opHov: true,

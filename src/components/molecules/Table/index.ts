@@ -4,7 +4,7 @@ import { TableComponent } from "../../../types";
 
 import { buildMbxStandardComponent } from "../../../tools";
 
-import tableComponent from "./component";
+import component from "./component";
 
 /**
  * A re-invented Table component. It follows a CSV-like format for its content.
@@ -52,7 +52,7 @@ import tableComponent from "./component";
 const Table: TableComponent = (props) =>
   buildMbxStandardComponent(props, (sharedProps) => ({
     name: "table",
-    Component: tableComponent({
+    Component: component({
       ...props,
       ...sharedProps,
     }),

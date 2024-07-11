@@ -1,11 +1,12 @@
 import "./styles.css";
 
+import React from "react";
+
 import { ModalComponent } from "../../../types";
 
 import { buildMbxStandardComponent } from "../../../tools";
 
-import modalComponent from "./component";
-import React from "react";
+import component from "./component";
 
 /**
  * A Modal component, with an optional close button
@@ -63,8 +64,8 @@ const Modal: ModalComponent = ({
   };
 
   return buildMbxStandardComponent(commonProps, (sharedProps) => ({
-    name: "modal",
-    Component: modalComponent({
+    name: "mod",
+    Component: component({
       children,
       closeOutside,
       onClose: onCloseCallback,

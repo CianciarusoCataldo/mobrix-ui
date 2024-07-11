@@ -4,7 +4,7 @@ import { RadioButtonGroupComponent } from "../../../types";
 
 import { buildMbxReactiveComponent } from "../../../tools";
 
-import radioButtonGroupComponent from "./component";
+import component from "./component";
 
 /**
  * A flexible and fully customizable radio buttons group
@@ -63,7 +63,7 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
     scl: `wfit;${horizontal ? "or-h;flxr;" : "flxc;"}`,
     commonProps: sharedProps,
     Component: ({ value, setValue }) =>
-      radioButtonGroupComponent({
+      component({
         value,
         setValue,
         horizontal,

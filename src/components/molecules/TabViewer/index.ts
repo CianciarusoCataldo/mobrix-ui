@@ -2,8 +2,9 @@ import "./styles.css";
 
 import { TabViewerComponent } from "../../../types";
 
-import tabViewerComponent from "./component";
 import { buildMbxReactiveComponent } from "../../../tools";
+
+import component from "./component";
 
 /**
 * A Tab viewer component, to organize elements with tabs and show them on demand
@@ -62,7 +63,7 @@ const TabViewer: TabViewerComponent = (props) =>
     name: "tview",
     scl: "flxc",
     Component: ({ value, setValue }) =>
-      tabViewerComponent({
+      component({
         setValue,
         value: Number(value),
         ...props,

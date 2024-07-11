@@ -1,4 +1,4 @@
-[data-mbx-id="inputbox"] {
+[data-mbx-id="input"] {
   background-color: var(--mbx-c-in-bgc);
   color: var(--mbx-c-in-txt);
 }

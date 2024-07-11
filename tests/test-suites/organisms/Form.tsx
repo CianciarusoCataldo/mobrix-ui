@@ -39,7 +39,7 @@ const formTest = () => {
         />
       );
       wrapper
-        .find('[data-mbx-scl*="f-field"] [data-mbx-id="inputbox"]')
+        .find('[data-mbx-scl*="f-field"] [data-mbx-id="input"]')
         .simulate("change", "new test text");
       wrapper
         .find('[data-mbx-scl*="f-field"] [data-mbx-id="check"]')

@@ -97,10 +97,7 @@ const buildMobrixUiStandardComponent = ({
   wrapper: SelectedWrapper = "div",
   features = {},
 }: BuilderProps) => {
-  let mbxFts = getMbxFts(
-    features,
-    commonProps
-  );
+  let mbxFts = getMbxFts(features, commonProps);
   let mbxAtts = getMbxAtts(commonProps);
 
   let props: CommonProps & Record<string, any> = {
@@ -116,7 +113,7 @@ const buildMobrixUiStandardComponent = ({
     className: commonProps.className,
     style: commonProps.style,
     onFocus: commonProps.onFocus,
-    onKeyDown: commonProps.onKeyDown,
+    ...(commonProps.onKeyDown && { onKeyDown: commonProps.onKeyDown }),
     tabIndex: "-1",
     ...(commonProps.a11y &&
       !commonProps.disabled && {

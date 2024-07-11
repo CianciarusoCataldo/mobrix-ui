@@ -2,8 +2,9 @@ import "./styles.css";
 
 import { ExpandableContainerComponent } from "../../../types";
 
-import expandableContainerComponent from "./component";
 import { buildMbxReactiveComponent } from "../../../tools";
+
+import component from "./component";
 
 /**
  * An exapandable container, to hide/show some content on demand.
@@ -58,7 +59,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
     wrapper,
     inputValue: startCompact,
     Component: ({ value, setValue }) =>
-      expandableContainerComponent({
+      component({
         value,
         setValue,
         expanded,

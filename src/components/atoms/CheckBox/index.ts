@@ -57,29 +57,29 @@ const Checkbox: CheckBoxComponent = ({
       opHov: true,
     },
     scl: "flxc;act",
-    props: (actualValue, setValue) => ({
-      commonProps: {
-        ...sharedProps,
-        additionalProps: {
-          ...sharedProps.additionalProps,
-          ...(!sharedProps.disabled && {
-            onClick: () => {
-              onChange(!actualValue);
-              setValue(!actualValue);
-            },
-          }),
-        },
-        ...(!sharedProps.disabled && {
-          onKeyDown: (e) => {
-            onKeyDown(e);
-            if (e.code === "Enter" || e.code === "Space") {
-              onChange(!actualValue);
-              setValue(!actualValue);
-            }
+    props: (actualValue, setValue) => {
+      const callback = () => {
+        onChange(!actualValue);
+        setValue(!actualValue);
+      };
+      return {
+        commonProps: {
+          ...sharedProps,
+          additionalProps: {
+            ...sharedProps.additionalProps,
+            ...(!sharedProps.disabled && { onClick: callback }),
           },
-        }),
-      },
-    }),
+          onKeyDown:
+            !sharedProps.disabled &&
+            ((e) => {
+              onKeyDown(e);
+              if (e.code === "Enter" || e.code === "Space") {
+                callback();
+              }
+            }),
+        },
+      };
+    },
     inputValue,
     defaultValue: false,
   }));

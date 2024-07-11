@@ -4,7 +4,7 @@ import { PopupComponent } from "../../../types";
 
 import { buildMbxStandardComponent } from "../../../tools";
 
-import popupComponent from "./component";
+import component from "./component";
 
 /**
  * A Popup container, displayed upon every other component, overlayed
@@ -46,7 +46,7 @@ const Popup: PopupComponent = ({ children, ...commonProps }) =>
   buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "popup",
     commonProps: { ...sharedProps, className: "" },
-    Component: popupComponent({ ...sharedProps, children }),
+    Component: component({ ...sharedProps, children }),
   }));
 
 export default Popup;

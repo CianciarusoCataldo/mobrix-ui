@@ -4,7 +4,7 @@ import { ListComponent } from "../../../types";
 
 import { buildMbxStandardComponent } from "../../../tools";
 
-import listComponent from "./component";
+import component from "./component";
 
 /**
  * A custom bullet list, that support any type of elements
@@ -45,7 +45,7 @@ import listComponent from "./component";
 const List: ListComponent = (props) =>
   buildMbxStandardComponent(props, (sharedProps) => ({
     name: "list",
-    Component: listComponent({ ...props, ...sharedProps }),
+    Component: component({ ...props, ...sharedProps }),
     commonProps: { ...sharedProps, shadow: false, a11y: false },
     scl: "flxc",
   }));
