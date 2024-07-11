@@ -37,6 +37,8 @@
 - Css totally re-defined and cleaned up
 - Refactoring
 - Bundle size reduced
+- New `underline` prop for `Link` component
+- UI partially re-designed
 
 <br>
 
