@@ -1,87 +1,86 @@
-[data-mbx-id="calendar"] {
-  align-items: center;
+[data-mbx-id="cal"] {
   --mbx-table-background: var(--mbx-c-cal-bg);
   --mbx-table-text-color: var(--mbx-c-cal-txt);
 }
 
-[data-mbx-id="calendar"] [data-mbx-scl*="act-dt"] {
+[data-mbx-id="cal"] [data-mbx-scl*="act-dt"] {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 400;
 }
 
-[data-mbx-id="calendar"] [data-mbx-tcell="true"] {
+[data-mbx-id="cal"] [data-mbx-tcell="true"] {
   font-size: medium;
   font-weight: 700;
 }
 
-[data-mbx-id="calendar"] td[data-mbx-tcell="true"] {
+[data-mbx-id="cal"] td[data-mbx-tcell="true"] {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   font-size: larger;
   transition: 0.3s;
 }
 
-[data-mbx-id="calendar"] th[data-mbx-tcell="true"] {
+[data-mbx-id="cal"] th[data-mbx-tcell="true"] {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: x-large;
 }
 
-[data-mbx-id="calendar"] [data-mbx-tcell="true"][data-mbx-selected="true"] {
+[data-mbx-id="cal"] [data-mbx-selected="true"] {
   cursor: default;
   background: var(--mbx-c-cal-bg-s);
   color: var(--mbx-c-cal-txt-s);
 }
 
-[data-mbx-id="calendar"] [data-mbx-scl*="t-sel"] {
+[data-mbx-id="cal"] [data-mbx-scl*="t-sel"] {
   margin-bottom: 1.2rem;
   color: var(--mbx-c-cal-txt);
 }
 
-[data-mbx-id="calendar"] [data-mbx-carr="right"] {
+[data-mbx-id="cal"] [data-mbx-carr="right"] {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-[data-mbx-id="calendar"] [data-mbx-carr] {
+[data-mbx-id="cal"] [data-mbx-carr] {
   height: fit-content;
 }
 
-[data-mbx-id="calendar"] [data-mbx-carr] svg {
+[data-mbx-id="cal"] [data-mbx-carr] svg {
   fill: var(--mbx-c-cal-arr);
   width: 3rem;
   height: 3rem;
   transition: 0.3s;
 }
 
-[data-mbx-id="calendar"] [data-mbx-tcell="true"][data-mbx-ctoday="true"] {
+[data-mbx-id="cal"] [data-mbx-ctoday="true"] {
   color: var(--mbx-c-cal-t);
   font-weight: 800;
 }
 
-[data-mbx-id="calendar"] [data-mbx-carr]:active svg {
+[data-mbx-id="cal"] [data-mbx-carr]:active svg {
   fill: var(--mbx-c-cal-arr-h);
 }
 
-[data-mbx-id="calendar"] [data-mbx-scl*="dsb"] {
+[data-mbx-id="cal"] [data-mbx-scl*="dsb"] {
   opacity: 0.4;
 }
 
-[data-mbx-id="calendar"]:not([data-mbx-atts*="dsb"])
+[data-mbx-id="cal"]:not([data-mbx-atts*="dsb"])
   td:not([data-mbx-scl="dsb"]):focus-visible {
   background: var(--mbx-c-cal-bg-h);
   color: var(--mbx-c-cal-txt-h);
 }
 
 @media (hover) {
-  [data-mbx-id="calendar"]:not([data-mbx-atts*="dsb"])
+  [data-mbx-id="cal"]:not([data-mbx-atts*="dsb"])
     td:not([data-mbx-scl="dsb"]):hover {
     background: var(--mbx-c-cal-bg-h);
     color: var(--mbx-c-cal-txt-h);
   }
 
-  [data-mbx-id="calendar"]:not([data-mbx-atts*="dsb"])
+  [data-mbx-id="cal"]:not([data-mbx-atts*="dsb"])
     [data-mbx-carr]:hover
     svg {
     fill: var(--mbx-c-cal-arr-h);
@@ -89,7 +88,7 @@
 }
 
 @media (max-width: 500px) {
-  [data-mbx-id="calendar"] th[data-mbx-tcell="true"] {
+  [data-mbx-id="cal"] th[data-mbx-tcell="true"] {
     margin: 0;
     font-size: larger;
     padding: 0.3rem;
@@ -97,22 +96,22 @@
     padding-bottom: 0.4rem;
   }
 
-  [data-mbx-id="calendar"] td[data-mbx-tcell="true"] {
+  [data-mbx-id="cal"] td[data-mbx-tcell="true"] {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 
-  [data-mbx-id="calendar"] table {
+  [data-mbx-id="cal"] table {
     width: 100%;
   }
 
-  [data-mbx-id="calendar"] [data-mbx-scl*="act-dt"] {
+  [data-mbx-id="cal"] [data-mbx-scl*="act-dt"] {
     font-size: 1.5rem;
   }
 }
 
 @media (max-width: 400px) {
-  [data-mbx-id="calendar"] th[data-mbx-tcell="true"] {
+  [data-mbx-id="cal"] th[data-mbx-tcell="true"] {
     margin: 0;
     font-size: large;
     padding: 0.2rem;
@@ -120,13 +119,13 @@
     padding-bottom: 0.4rem;
   }
 
-  [data-mbx-id="calendar"] [data-mbx-scl*="act-dt"] {
+  [data-mbx-id="cal"] [data-mbx-scl*="act-dt"] {
     font-size: 1.4rem;
   }
 }
 
 @media (max-width: 340px) {
-  [data-mbx-id="calendar"] th[data-mbx-tcell="true"] {
+  [data-mbx-id="cal"] th[data-mbx-tcell="true"] {
     padding: 0.1rem;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
@@ -134,17 +133,17 @@
     font-size: medium;
   }
 
-  [data-mbx-id="calendar"] [data-mbx-scl*="act-dt"] {
+  [data-mbx-id="cal"] [data-mbx-scl*="act-dt"] {
     font-size: 1.3rem;
   }
 }
 
 @media (max-width: 320px) {
-  [data-mbx-id="calendar"] th[data-mbx-tcell="true"] {
+  [data-mbx-id="cal"] th[data-mbx-tcell="true"] {
     display: none;
   }
 
-  [data-mbx-id="calendar"] td[data-mbx-tcell="true"] {
+  [data-mbx-id="cal"] td[data-mbx-tcell="true"] {
     padding: 0;
     margin: 0;
   }

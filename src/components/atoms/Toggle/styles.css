@@ -1,4 +1,4 @@
-[data-mbx-id="toggle"] {
+[data-mbx-id="tgl"] {
   width: 65px;
   height: 30px;
   background: var(--mbx-c-tog-bg);
@@ -6,7 +6,7 @@
   border-width: 0;
 }
 
-[data-mbx-id="toggle"] [data-mbx-scl*="tg-ic"] {
+[data-mbx-id="tgl"] [data-mbx-scl*="tg-ic"] {
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -14,28 +14,28 @@
   -ms-transition: all 0.2s;
 }
 
-[data-mbx-id="toggle"] [data-mbx-scl*="tg-ic"][data-mbx-scl*="fliptrue"] {
+[data-mbx-id="tgl"] [data-mbx-scl*="tg-ic"][data-mbx-scl*="fliptrue"] {
   transform: translate(0%);
   --svginternalcolor: var(--mbx-c-tog-ic-on-int);
   --svgexternalcolor: var(--mbx-c-tog-ic-on-ext);
 }
 
-[data-mbx-id="toggle"] [data-mbx-scl*="tg-ic"][data-mbx-scl*="flipfalse"] {
+[data-mbx-id="tgl"] [data-mbx-scl*="tg-ic"][data-mbx-scl*="flipfalse"] {
   transform: translate(35px);
   --svginternalcolor: var(--mbx-c-tog-ic-off-int);
   --svgexternalcolor: var(--mbx-c-tog-ic-off-ext);
 }
 
-[data-mbx-id="toggle"] [data-mbx-scl*="tg-ic"] [data-mbx-scl*="wrapper"] {
+[data-mbx-id="tgl"] [data-mbx-scl*="tg-ic"] [data-mbx-scl*="wrapper"] {
   opacity: 0.2;
 }
 
-[data-mbx-id="toggle"] [data-mbx-scl*="tg-ic"] [data-mbx-scl*="external"] {
+[data-mbx-id="tgl"] [data-mbx-scl*="tg-ic"] [data-mbx-scl*="external"] {
   background-color: var(--svgexternalcolor);
   fill: var(--svgexternalcolor);
 }
 
-[data-mbx-id="toggle"] [data-mbx-scl*="tg-ic"] [data-mbx-scl*="internal"] {
+[data-mbx-id="tgl"] [data-mbx-scl*="tg-ic"] [data-mbx-scl*="internal"] {
   fill: var(--svgexternalcolor);
   stroke: var(--svginternalcolor);
   stroke-width: 4;

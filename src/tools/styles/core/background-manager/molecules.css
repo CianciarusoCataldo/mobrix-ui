@@ -14,8 +14,8 @@
   --mbx-c-card-bg: transparent !important;
 }
 
-[data-mbx-id="carousel"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="carousel"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="crsel"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="crsel"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-car-bg: transparent !important;
 }
 
@@ -25,8 +25,8 @@
   --mbx-c-table-head-bg: transparent !important;
 }
 
-[data-mbx-id="tab-viewer"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="tab-viewer"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="tview"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="tview"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-tabv-bg: transparent !important;
   --mbx-c-tabv-off-bg: transparent !important;
   --mbx-c-tabv-off-bg-h: transparent !important;
@@ -52,8 +52,8 @@
   --mbx-c-pop-bg: transparent !important;
 }
 
-[data-mbx-id="radio-group"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="radio-group"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="rgroup"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="rgroup"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-radg-bg: transparent !important;
 }
 

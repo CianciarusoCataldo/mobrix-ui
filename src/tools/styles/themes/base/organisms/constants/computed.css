@@ -8,7 +8,6 @@
     --mbx-calendar-text-color-light,
     var(--mbx-calendar-text-color, var(--mbx-c-txt-l))
   );
-
   --mbx-c-cal-bg-d: var(
     --mbx-calendar-background-dark,
     var(--mbx-calendar-background, var(--mbx-c-bg-d))

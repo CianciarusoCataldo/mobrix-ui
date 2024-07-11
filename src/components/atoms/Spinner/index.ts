@@ -49,7 +49,7 @@ const Spinner: SpinnerComponent = ({
   ...commonProps
 }) =>
   buildMbxStandardComponent(commonProps, (sharedProps) => ({
-    name: "spinner",
+    name: "spn",
     commonProps: { ...sharedProps, shadow },
     Component:
       value && statuses[value]

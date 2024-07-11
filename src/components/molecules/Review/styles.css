@@ -18,16 +18,14 @@
   margin-bottom: 0.4rem;
 }
 
-[data-mbx-id="review"]
-  [data-mbx-scl*="rev-inf-b"]
-  [data-mbx-scl*="rev-us-name"] {
+[data-mbx-id="review"] [data-mbx-scl*="rev-us-name"] {
   margin-left: 0.5rem;
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-[data-mbx-id="review"] [data-mbx-scl*="rev-inf-b"] [data-mbx-scl*="rev-ds"] {
+[data-mbx-id="review"] [data-mbx-scl*="rev-ds"] {
   margin-top: 1rem;
   overflow-wrap: break-word;
   padding-left: 0.3rem;

@@ -6,7 +6,7 @@ const toggleTest = () => {
   describe("Toggle", () => {
     test("Rendering test", () => {
       let wrapper = mount(<Toggle />);
-      wrapper.find('[data-mbx-id="toggle"]').simulate("click");
+      wrapper.find('[data-mbx-id="tgl"]').simulate("click");
       expect(wrapper);
       wrapper = mount(<Toggle disabled />);
       expect(wrapper);
@@ -20,7 +20,7 @@ const toggleTest = () => {
           onChange={onChangeStub}
         />
       );
-      wrapper.find('[data-mbx-id="toggle"]').simulate("click");
+      wrapper.find('[data-mbx-id="tgl"]').simulate("click");
       expect(onChangeStub).toBeCalled;
     });
 
@@ -31,7 +31,7 @@ const toggleTest = () => {
       );
 
       wrapper
-        .find('[data-mbx-id="toggle"]')
+        .find('[data-mbx-id="tgl"]')
         .simulate("keyDown", { keyCode: 13, code: "Enter" });
 
       expect(onChangeStub).toBeCalled;

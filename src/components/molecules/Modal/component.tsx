@@ -15,32 +15,30 @@ const modalComponent: MbxUiComponent<ModalProps, BuilderComponent> = ({
   disabled,
   /* istanbul ignore next */
   onFocusLost = () => {},
-}) => {
-  /* istanbul ignore next */
-  const onFocusLostCallback = () => {
-    if (!hide) {
-      onFocusLost();
-      closeOutside && onClose();
+}) => (
+  <DismissableCard
+    disabled={disabled}
+    alwaysVisible
+    noTopDivider
+    className={className}
+    dark={dark}
+    hide={false}
+    onFocusLost={
+      /* istanbul ignore next */
+      () => {
+        if (!hide) {
+          onFocusLost();
+          closeOutside && onClose();
+        }
+      }
     }
-  };
-
-  return (
-    <DismissableCard
-      disabled={disabled}
-      alwaysVisible
-      noTopDivider
-      className={className}
-      dark={dark}
-      hide={false}
-      onFocusLost={onFocusLostCallback}
-      background={false}
-      shadow={false}
-      onClose={onClose}
-      animated={animated}
-      body={children}
-      scl="flxc"
-    />
-  );
-};
+    background={false}
+    shadow={false}
+    onClose={onClose}
+    animated={animated}
+    body={children}
+    scl="flxc"
+  />
+);
 
 export default modalComponent;

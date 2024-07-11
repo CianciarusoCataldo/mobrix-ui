@@ -30,7 +30,7 @@
     --mbx-c-in-txt: var(--mbx-c-in-txt-h);
   }
 
-  [data-mbx-id="selector"][data-mbx-atts*="hv"]:hover {
+  [data-mbx-id="selt"][data-mbx-atts*="hv"]:hover {
     --mbx-selector-background: var(--mbx-c-sel-bg-h);
     --mbx-selector-text-color: var(--mbx-c-sel-txt-h);
   }

@@ -8,7 +8,7 @@
   margin-top: 0.2rem;
 }
 
-[data-mbx-id="list"] [data-mbx-scl*="lis-el"] [data-mbx-scl*="dot"] {
+[data-mbx-id="list"] [data-mbx-scl*="dot"] {
   width: 6px;
   height: 6px;
   fill: var(--mbx-c-lst-txt);

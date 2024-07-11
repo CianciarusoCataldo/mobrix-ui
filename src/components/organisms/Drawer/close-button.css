@@ -1,13 +1,6 @@
-[data-mbx-id="drawer"] > [data-mbx-scl*="drw-close"] {
-  border: 0;
-  background: transparent;
-}
-
 [data-mbx-id="drawer"][data-mbx-drw-lc^="top"] > [data-mbx-scl*="drw-close"],
 [data-mbx-id="drawer"][data-mbx-drw-lc^="bottom"]
   > [data-mbx-scl*="drw-close"] {
-  margin-left: auto;
-  margin-right: auto;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 }
@@ -30,8 +23,6 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   height: fit-content;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 [data-mbx-id="drawer"][data-mbx-drw-lc="right"] > [data-mbx-scl*="drw-close"] {

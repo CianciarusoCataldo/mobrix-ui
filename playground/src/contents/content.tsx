@@ -11,10 +11,7 @@ const AppContent = () => {
     <Button
       animated={false}
       scl="myauto"
-      className="p-0 py-2 absolute top-[50%] left-0 -translate-x-1/4 opacity-60"
-      style={{
-        left: "0",
-      }}
+      className="p-0 py-2 absolute top-[50%] -left-2 opacity-60 hover:-left-1"
       onClick={() => {
         dispatch(openDrawer());
       }}

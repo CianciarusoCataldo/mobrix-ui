@@ -7,8 +7,9 @@ import { DrawerComponent } from "../../../types";
 import { buildMbxStandardComponent } from "../../../tools/utils";
 
 import drawerComponent from "./component";
+import { locationCss } from "./constants";
 
-const ALLOWED_POSITIONS = [
+const positions = [
   "right",
   "left",
   "top",
@@ -71,12 +72,12 @@ const Drawer: DrawerComponent = ({
   ...commonProps
 }) => {
   const drawerLocation =
-    position && ALLOWED_POSITIONS.includes(position) ? position : "left";
+    position && positions.includes(position) ? position : "left";
 
   const [value, setValue] = React.useState("");
 
   /* istanbul ignore next */
-  const onCloseCallback = () => {
+  const callback = () => {
     setValue("ease-out");
     setTimeout(() => {
       setValue("");
@@ -89,7 +90,7 @@ const Drawer: DrawerComponent = ({
     onFocusLost: () => {
       if (!hide) {
         onFocusLost();
-        closeOnClickOutside && onCloseCallback();
+        closeOnClickOutside && callback();
       }
     },
     animation: value.length === 0 ? (hide ? "" : "ease-in") : value,
@@ -107,11 +108,13 @@ const Drawer: DrawerComponent = ({
       hide: value.length === 0 && hide,
       onFocusLost: customProps.onFocusLost,
     },
+    scl: `drw-close;${locationCss[drawerLocation].main}`,
     Component: drawerComponent({
       children,
       hide,
-      onClose: onCloseCallback,
+      onClose: callback,
       arrowClassName,
+      position: drawerLocation,
       ...sharedProps,
     }),
   }));

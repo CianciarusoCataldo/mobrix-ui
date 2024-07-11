@@ -60,7 +60,7 @@ const Calendar: CalendarComponent = ({ value: inputValue, ...props }) => {
   return buildMbxReactiveComponent<DeepPartial<CalendarDate>>(
     props,
     (sharedProps) => ({
-      name: "calendar",
+      name: "cal",
       commonProps: { ...sharedProps, shadow: false },
       inputValue,
       defaultValue: {
@@ -68,7 +68,7 @@ const Calendar: CalendarComponent = ({ value: inputValue, ...props }) => {
         month: todayDate.month,
         day: todayDate.dayOfTheMonth,
       },
-      scl: "flxc;wfit",
+      scl: "flxc;wfit;act",
       Component: ({ value, setValue }) =>
         calendarComponent({
           today: todayDate,

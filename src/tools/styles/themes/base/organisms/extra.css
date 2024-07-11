@@ -1,0 +1,6 @@
+@media (hover) {
+  [data-mbx-id="dpick"]:not([data-mbx-atts*="dsb"])
+    [data-mbx-img="cld"]:hover {
+    --mbx-c-dtp-ic: var(--mbx-c-dtp-ic-h);
+  }
+}

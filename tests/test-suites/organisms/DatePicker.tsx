@@ -29,7 +29,7 @@ const datePickerTest = () => {
 
       wrapper.find('[data-mbx-id="icon-button"]').at(0).simulate("click");
       wrapper
-        .find('[data-mbx-id="calendar"]')
+        .find('[data-mbx-id="cal"]')
         .find("[data-mbx-ctoday]")
         .at(3)
         .simulate("click");

@@ -1,10 +1,10 @@
-[data-mbx-id="spinner"],
-[data-mbx-id="spinner"] svg {
+[data-mbx-id="spn"],
+[data-mbx-id="spn"] svg {
   background: transparent;
   min-width: 4rem;
 }
 
-[data-mbx-id="spinner"]:not([data-mbx-atts*="dsb"])
+[data-mbx-id="spn"]:not([data-mbx-atts*="dsb"])
   [data-mbx-scl*="rotating"] {
   -webkit-animation: rotating 2s linear infinite;
   -moz-animation: rotating 2s linear infinite;

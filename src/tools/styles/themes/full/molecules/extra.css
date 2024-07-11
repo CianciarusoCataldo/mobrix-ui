@@ -18,7 +18,7 @@
   fill: var(--mbx-c-exp-arr-h);
 }
 
-[data-mbx-id="radio-group"] [data-mbx-id="radio"] {
+[data-mbx-id="rgroup"] [data-mbx-id="radio"] {
   --mbx-radio-background: var(--mbx-c-radg-rad-bg);
   --mbx-radio-background-hover: var(--mbx-c-radg-rad-bg-h);
   --mbx-radio-icon-background: var(--mbx-c-radg-rad-ic-bg);

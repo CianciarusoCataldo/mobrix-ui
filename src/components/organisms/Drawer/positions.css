@@ -3,7 +3,6 @@
   bottom: 0;
   --mbx-drawer-animation-in: slideBottom 0.3s forwards;
   --mbx-drawer-animation-out: slideOutBottom 0.3s forwards;
-  flex-direction: column;
 }
 
 [data-mbx-id="drawer"][data-mbx-drw-lc^="top"] {
@@ -11,7 +10,6 @@
   top: 0;
   --mbx-drawer-animation-in: slideTop 0.3s forwards;
   --mbx-drawer-animation-out: slideOutTop 0.3s forwards;
-  flex-direction: column-reverse;
 }
 
 [data-mbx-id="drawer"][data-mbx-drw-lc^="top"],
@@ -21,7 +19,6 @@
 
 [data-mbx-id="drawer"][data-mbx-drw-lc="top"],
 [data-mbx-id="drawer"][data-mbx-drw-lc="bottom"] {
-  width: 100%;
   left: 0;
   right: 0;
 }
@@ -36,13 +33,11 @@
 [data-mbx-id="drawer"][data-mbx-drw-lc="left"] {
   --mbx-drawer-animation-in: slideLeft 0.3s forwards;
   --mbx-drawer-animation-out: slideOutLeft 0.3s forwards;
-  flex-direction: row-reverse;
 }
 
 [data-mbx-id="drawer"][data-mbx-drw-lc="right"] {
   --mbx-drawer-animation-in: slideRight 0.3s forwards;
   --mbx-drawer-animation-out: slideOutRight 0.3s forwards;
-  flex-direction: row;
 }
 
 [data-mbx-id="drawer"][data-mbx-drw-lc*="left"] {

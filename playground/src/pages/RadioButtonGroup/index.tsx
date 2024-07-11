@@ -11,6 +11,7 @@ import { RadioButtonGroup } from "mobrix-ui-preview";
 const RadioButtonsPage = () => (
   <ComponentPage name="RadioButtonGroup">
     <DemoComponent
+      label="RadioButtonGroup"
       props={{
         value: NumberProp(-1),
         elementClassName: StringProp(""),

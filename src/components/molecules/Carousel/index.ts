@@ -46,7 +46,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  */
 const Carousel: CarouselComponent = (props) => {
   return buildMbxReactiveComponent<number>(props, (sharedProps) => ({
-    name: "carousel",
+    name: "crsel",
     commonProps: props,
     defaultValue: 0,
     inputValue: props.value,

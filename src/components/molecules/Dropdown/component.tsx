@@ -26,7 +26,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
   const [selected, selectItem] = React.useState<number>(-2);
   const selectedItem = elements[value] || <div />;
 
-  const keyDownCallback = (visibility: boolean) => {
+  const keyDown = (visibility: boolean) => {
     isVisible !== visibility && setVisible(visibility);
     selectItem(-1);
   };
@@ -34,7 +34,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
   /* istanbul ignore next */
   const onFocusLostCallback = () => {
     onFocusLost();
-    keyDownCallback(false);
+    keyDown(false);
   };
 
   return {
@@ -52,7 +52,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
               (e.shiftKey && actualSelected === 0) ||
               actualSelected === elements.length - 1
             ) {
-              keyDownCallback(false);
+              keyDown(false);
             }
             break;
           }
@@ -60,7 +60,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
             if (selected > -1) {
               onChange(selected);
               setValue(selected);
-              keyDownCallback(false);
+              keyDown(false);
               return;
             } else {
               setVisible(!isVisible);
@@ -70,13 +70,13 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           }
 
           case "Escape": {
-            keyDownCallback(false);
+            keyDown(false);
             return;
           }
 
           case "ArrowUp": {
             if (actualSelected === 0) {
-              keyDownCallback(false);
+              keyDown(false);
               return;
             }
             actualSelected -= 1;
@@ -85,7 +85,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
 
           case "ArrowDown": {
             if (actualSelected === elements.length - 1) {
-              keyDownCallback(false);
+              keyDown(false);
               return;
             }
             if (!isVisible) {
@@ -106,11 +106,11 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
         background={commonProps.background}
         disabled={disabled}
         onClick={() => {
-          keyDownCallback(!isVisible);
+          keyDown(!isVisible);
         }}
         dark={dark}
         scl="drop-bt;nout;wfu"
-        key="options-menu"
+        key="opts-m"
         a11y={false}
       >
         <div
@@ -143,7 +143,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
       </Button>,
       <Popup
         background={commonProps.background}
-        key="options"
+        key="opts"
         shadow={shadow}
         disabled={disabled}
         dark={dark}
@@ -163,7 +163,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
             onClick={() => {
               onChange(index);
               setValue(index);
-              keyDownCallback(false);
+              keyDown(false);
             }}
             fts="noShFc;colFc;"
             key={`item_${index}`}

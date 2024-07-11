@@ -53,7 +53,7 @@ const Selector: SelectorComponent = ({
 }) =>
   buildMbxReactiveComponent<number | undefined>(commonProps, (sharedProps) => ({
     wrapper: "select",
-    name: "selector",
+    name: "selt",
     defaultValue: undefined,
     inputValue,
     props: (value, setValue) => ({

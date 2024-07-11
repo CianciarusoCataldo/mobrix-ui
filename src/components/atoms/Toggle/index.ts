@@ -53,7 +53,7 @@ const Toggle: ToggleComponent = ({
   ...commonProps
 }) =>
   buildMbxReactiveComponent<boolean>(commonProps, (sharedProps) => ({
-    name: "toggle",
+    name: "tgl",
     props: (status, setStatus) => ({
       commonProps: {
         ...sharedProps,

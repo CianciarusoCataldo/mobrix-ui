@@ -23,6 +23,18 @@ const modalTest = () => {
       wrapper.find('[data-mbx-scl*="dis-bt"]').simulate("click");
       expect(onCloseStub).toBeCalled;
     });
+
+    test("Focus lost test", () => {
+      const onCloseStub = jest.fn();
+
+      let wrapper = mount(
+        <Modal onClose={onCloseStub} closeOutside>
+          <p>Modal content</p>
+        </Modal>
+      );
+      wrapper.find('[data-mbx-scl="cardc-head"]').simulate("click");
+      expect(wrapper);
+    });
   });
 };
 

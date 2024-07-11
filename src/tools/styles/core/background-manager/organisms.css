@@ -1,8 +1,8 @@
-[data-mbx-id="calendar"]:not([data-mbx-atts*="bg"]) {
+[data-mbx-id="cal"]:not([data-mbx-atts*="bg"]) {
   --mbx-c-cal-bg: transparent !important;
 }
 
-[data-mbx-id="date-picker"]:not([data-mbx-atts*="bg"]) {
+[data-mbx-id="dpick"]:not([data-mbx-atts*="bg"]) {
   --mbx-c-dtp-bg: transparent !important;
 }
 

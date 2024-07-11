@@ -59,16 +59,16 @@ import datePickerComponent from "./components";
 const DatePicker: DatePickerComponent = (props) => {
   const todayDate = today();
 
-  return buildMbxReactiveComponent<CalendarDate>(props, (sharedProps) => ({
-    name: "date-picker",
-    commonProps: sharedProps,
+  return buildMbxReactiveComponent<CalendarDate>(props, (commonProps) => ({
+    name: "dpick",
+    commonProps,
     Component: ({ value, setValue }) =>
       datePickerComponent({
         today: todayDate,
         setValue,
         value,
         ...props,
-        ...sharedProps,
+        ...commonProps,
       }),
     scl: "flxr",
     inputValue: props.value,

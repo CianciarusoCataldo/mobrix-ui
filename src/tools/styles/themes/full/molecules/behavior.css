@@ -38,7 +38,7 @@
   /** List */
   --mbx-c-lst-txt-h: var(
     --mbx-list-text-color-hover-light,
-    var(--mbx-list-text-color-hover, var(--mbx-c-txt-h-l))
+    var(--mbx-list-text-color-hover, var(--mbx-c-txt-h))
   );
 
   /** RadioButton Group */
@@ -95,7 +95,7 @@
   /** List */
   --mbx-c-lst-txt-h: var(
     --mbx-list-text-color-hover-dark,
-    var(--mbx-list-text-color-hover, var(--mbx-c-txt-h-d))
+    var(--mbx-list-text-color-hover, var(--mbx-c-txt-h))
   );
 
   /** RadioButton Group */

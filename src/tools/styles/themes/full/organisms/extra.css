@@ -1,4 +1,4 @@
-[data-mbx-id="date-picker"] {
+[data-mbx-id="dpick"] {
   --mbx-calendar-background-light: var(
     --mbx-datepicker-calendar-background-light,
     var(--mbx-datepicker-calendar-background)

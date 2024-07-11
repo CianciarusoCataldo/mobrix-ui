@@ -55,11 +55,11 @@
   /** Container **/
   --mbx-c-con-bg: var(
     --mbx-container-background-light,
-    var(--mbx-container-background, var(--mbx-c-bg-l))
+    var(--mbx-container-background, var(--mbx-c-bg))
   );
   --mbx-c-con-txt: var(
     --mbx-container-text-color-light,
-    var(--mbx-container-text-color, var(--mbx-c-txt-l))
+    var(--mbx-container-text-color, var(--mbx-c-txt))
   );
 
   /** DismissableCard **/
@@ -75,19 +75,19 @@
   /** Dropdown **/
   --mbx-c-drop-bg: var(
     --mbx-dropdown-background-light,
-    var(--mbx-dropdown-background, var(--mbx-c-bg-l))
+    var(--mbx-dropdown-background, var(--mbx-c-bg))
   );
   --mbx-c-drop-bg-h: var(
     --mbx-dropdown-background-hover-light,
-    var(--mbx-dropdown-background-hover, var(--mbx-c-bg-h-l))
+    var(--mbx-dropdown-background-hover, var(--mbx-c-bg-h))
   );
   --mbx-c-drop-txt: var(
     --mbx-dropdown-text-color-light,
-    var(--mbx-dropdown-text-color, var(--mbx-c-txt-l))
+    var(--mbx-dropdown-text-color, var(--mbx-c-txt))
   );
   --mbx-c-drop-txt-h: var(
     --mbx-dropdown-text-color-hover-light,
-    var(--mbx-dropdown-text-color-hover, var(--mbx-c-txt-h-l))
+    var(--mbx-dropdown-text-color-hover, var(--mbx-c-txt-h))
   );
   --mbx-c-drop-arr: var(
     --mbx-dropdown-arrow-color-light,
@@ -127,7 +127,7 @@
   /** List **/
   --mbx-c-lst-txt: var(
     --mbx-list-text-color-light,
-    var(--mbx-list-text-color, var(--mbx-c-txt-l))
+    var(--mbx-list-text-color, var(--mbx-c-txt))
   );
 
   /** Modal **/
@@ -147,29 +147,29 @@
   /** Popup **/
   --mbx-c-pop-bg: var(
     --mbx-popup-background-light,
-    var(--mbx-popup-background, var(--mbx-c-bg-l))
+    var(--mbx-popup-background, var(--mbx-c-bg))
   );
   --mbx-c-pop-txt: var(
     --mbx-popup-text-color-light,
-    var(--mbx-popup-text-color, var(--mbx-c-txt-l))
+    var(--mbx-popup-text-color, var(--mbx-c-txt))
   );
   /** RadioButtonGroup **/
   --mbx-c-radg-bg: var(
     --mbx-radiogroup-background-light,
-    var(--mbx-radiogroup-background, var(--mbx-c-bg-l))
+    var(--mbx-radiogroup-background, var(--mbx-c-bg))
   );
   --mbx-c-radg-txt: var(
     --mbx-radiogroup-text-color-light,
-    var(--mbx-radiogroup-text-color, var(--mbx-c-txt-l))
+    var(--mbx-radiogroup-text-color, var(--mbx-c-txt))
   );
   /** Review **/
   --mbx-c-rev-bg: var(
     --mbx-review-background-light,
-    var(--mbx-review-background, var(--mbx-c-bg-l))
+    var(--mbx-review-background, var(--mbx-c-bg))
   );
   --mbx-c-rev-txt: var(
     --mbx-review-text-color-light,
-    var(--mbx-review-text-color, var(--mbx-c-txt-l))
+    var(--mbx-review-text-color, var(--mbx-c-txt))
   );
   --mbx-c-rev-link: var(
     --mbx-review-link-color-light,
@@ -183,11 +183,11 @@
   /** Table **/
   --mbx-c-table-bg: var(
     --mbx-table-background-light,
-    var(--mbx-table-background, var(--mbx-c-bg-l))
+    var(--mbx-table-background, var(--mbx-c-bg))
   );
   --mbx-c-table-txt: var(
     --mbx-table-text-color-light,
-    var(--mbx-table-text-color, var(--mbx-c-txt-l))
+    var(--mbx-table-text-color, var(--mbx-c-txt))
   );
   --mbx-c-table-bord: var(
     --mbx-table-border-color-light,
@@ -212,7 +212,7 @@
   );
   --mbx-c-tabv-txt: var(
     --mbx-tabviewer-text-color-light,
-    var(--mbx-tabviewer-text-color, var(--mbx-c-txt-l))
+    var(--mbx-tabviewer-text-color, var(--mbx-c-txt))
   );
   --mbx-c-tabv-off-bg: var(
     --mbx-tabviewer-inactive-background-light,
@@ -234,7 +234,7 @@
   );
   --mbx-c-tabv-off-txt-h: var(
     --mbx-tabviewer-inactive-text-color-hover-light,
-    var(--mbx-tabviewer-inactive-text-color-hover, var(--mbx-c-txt-h-l))
+    var(--mbx-tabviewer-inactive-text-color-hover, var(--mbx-c-txt-h))
   );
 }
 
@@ -292,11 +292,11 @@
   /** Container **/
   --mbx-c-con-bg: var(
     --mbx-container-background-dark,
-    var(--mbx-container-background, var(--mbx-c-bg-d))
+    var(--mbx-container-background, var(--mbx-c-bg))
   );
   --mbx-c-con-txt: var(
     --mbx-container-text-color-dark,
-    var(--mbx-container-text-color, var(--mbx-c-txt-d))
+    var(--mbx-container-text-color, var(--mbx-c-txt))
   );
 
   /** DismissableCard **/
@@ -312,19 +312,19 @@
   /** Dropdown **/
   --mbx-c-drop-bg: var(
     --mbx-dropdown-background-dark,
-    var(--mbx-dropdown-background, var(--mbx-c-bg-d))
+    var(--mbx-dropdown-background, var(--mbx-c-bg))
   );
   --mbx-c-drop-bg-h: var(
     --mbx-dropdown-background-hover-dark,
-    var(--mbx-dropdown-background-hover, var(--mbx-c-bg-h-d))
+    var(--mbx-dropdown-background-hover, var(--mbx-c-bg-h))
   );
   --mbx-c-drop-txt: var(
     --mbx-dropdown-text-color-dark,
-    var(--mbx-dropdown-text-color, var(--mbx-c-txt-d))
+    var(--mbx-dropdown-text-color, var(--mbx-c-txt))
   );
   --mbx-c-drop-txt-h: var(
     --mbx-dropdown-text-color-hover-dark,
-    var(--mbx-dropdown-text-color-hover, var(--mbx-c-txt-h-l))
+    var(--mbx-dropdown-text-color-hover, var(--mbx-c-txt-h))
   );
   --mbx-c-drop-arr: var(
     --mbx-dropdown-arrow-color-dark,
@@ -364,7 +364,7 @@
   /** List **/
   --mbx-c-lst-txt: var(
     --mbx-list-text-color-dark,
-    var(--mbx-list-text-color, var(--mbx-c-txt-d))
+    var(--mbx-list-text-color, var(--mbx-c-txt))
   );
 
   /** Modal **/
@@ -381,31 +381,31 @@
   /** Popup **/
   --mbx-c-pop-bg: var(
     --mbx-popup-background-dark,
-    var(--mbx-popup-background, var(--mbx-c-bg-d))
+    var(--mbx-popup-background, var(--mbx-c-bg))
   );
   --mbx-c-pop-txt: var(
     --mbx-popup-text-color-dark,
-    var(--mbx-popup-text-color, var(--mbx-c-txt-d))
+    var(--mbx-popup-text-color, var(--mbx-c-txt))
   );
 
   /** RadioButtonGroup **/
   --mbx-c-radg-bg: var(
     --mbx-radiogroup-background-dark,
-    var(--mbx-radiogroup-background, var(--mbx-c-bg-d))
+    var(--mbx-radiogroup-background, var(--mbx-c-bg))
   );
   --mbx-c-radg-txt: var(
     --mbx-radiogroup-text-color-dark,
-    var(--mbx-radiogroup-text-color, var(--mbx-c-txt-d))
+    var(--mbx-radiogroup-text-color, var(--mbx-c-txt))
   );
 
   /** Review **/
   --mbx-c-rev-bg: var(
     --mbx-review-background-dark,
-    var(--mbx-review-background, var(--mbx-c-bg-d))
+    var(--mbx-review-background, var(--mbx-c-bg))
   );
   --mbx-c-rev-txt: var(
     --mbx-review-text-color-dark,
-    var(--mbx-review-text-color, var(--mbx-c-txt-d))
+    var(--mbx-review-text-color, var(--mbx-c-txt))
   );
   --mbx-c-rev-link: var(
     --mbx-review-link-color-dark,
@@ -419,11 +419,11 @@
   /** Table **/
   --mbx-c-table-bg: var(
     --mbx-table-background-dark,
-    var(--mbx-table-background, var(--mbx-c-bg-d))
+    var(--mbx-table-background, var(--mbx-c-bg))
   );
   --mbx-c-table-txt: var(
     --mbx-table-text-color-dark,
-    var(--mbx-table-text-color, var(--mbx-c-txt-d))
+    var(--mbx-table-text-color, var(--mbx-c-txt))
   );
   --mbx-c-table-head-bg: var(
     --mbx-table-header-background-dark,
@@ -455,7 +455,7 @@
   );
   --mbx-c-tabv-txt: var(
     --mbx-tabviewer-text-color-dark,
-    var(--mbx-tabviewer-text-color, var(--mbx-c-txt-d))
+    var(--mbx-tabviewer-text-color, var(--mbx-c-txt))
   );
   --mbx-c-tabv-off-bg-h: var(
     --mbx-tabviewer-inactive-background-hover-dark,
@@ -470,6 +470,6 @@
   );
   --mbx-c-tabv-off-txt-h: var(
     --mbx-tabviewer-inactive-text-color-hover-dark,
-    var(--mbx-tabviewer-inactive-text-color-hover, var(--mbx-c-txt-h-d))
+    var(--mbx-tabviewer-inactive-text-color-hover, var(--mbx-c-txt-h))
   );
 }

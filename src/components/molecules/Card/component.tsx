@@ -34,7 +34,6 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
     size="1px"
     key="card_t_d"
     dark={dark}
-    scl="top-divider"
   />,
   <div
     className={bodyClassName}
@@ -50,7 +49,6 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
     key="card_b_d"
     dark={dark}
     hide={!footer || noDividers || noBottomDivider}
-    scl="bottom-divider"
   />,
   <div
     className={footerClassName}

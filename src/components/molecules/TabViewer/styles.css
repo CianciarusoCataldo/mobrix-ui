@@ -1,4 +1,4 @@
-[data-mbx-id="tab-viewer"] [data-mbx-scl*="tab"] {
+[data-mbx-id="tview"] [data-mbx-scl*="tab"] {
   padding: 0.7rem 1rem;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -7,19 +7,19 @@
   color: var(--mbx-c-tabv-txt);
 }
 
-[data-mbx-id="tab-viewer"] [data-mbx-scl*="tab"][data-mbx-scl*="sel"] {
+[data-mbx-id="tview"] [data-mbx-scl*="tab"][data-mbx-scl*="sel"] {
   --mbx-button-background: var(--mbx-c-tabv-bg);
   --mbx-button-text-color: var(--mbx-c-tabv-txt);
 }
 
-[data-mbx-id="tab-viewer"] [data-mbx-scl*="tab"]:not([data-mbx-scl*="sel"]) {
+[data-mbx-id="tview"] [data-mbx-scl*="tab"]:not([data-mbx-scl*="sel"]) {
   --mbx-button-background: var(--mbx-c-tabv-off-bg);
   --mbx-button-text-color: var(--mbx-c-tabv-off-txt);
   --mbx-button-background-hover: var(--mbx-c-tabv-off-bg-h);
   --mbx-button-text-color-hover: var(--mbx-c-tabv-off-txt-h);
 }
 
-[data-mbx-id="tab-viewer"] [data-mbx-scl*="tb-v"] {
+[data-mbx-id="tview"] [data-mbx-scl*="tb-v"] {
   padding: 0.7rem 1rem;
   background: var(--mbx-c-tabv-bg);
 }

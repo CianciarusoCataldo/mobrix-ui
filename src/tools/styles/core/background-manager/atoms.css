@@ -33,8 +33,8 @@
   --mbx-c-rat-bg: transparent !important;
 }
 
-[data-mbx-id="selector"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="selector"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="selt"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="selt"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-sel-bg: transparent !important;
   --mbx-c-sel-bg-h: transparent !important;
 }
@@ -44,7 +44,7 @@
   --mbx-c-sld-bg: transparent !important;
 }
 
-[data-mbx-id="toggle"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="toggle"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="tgl"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="tgl"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-tog-bg: transparent !important;
 }

@@ -1,8 +1,7 @@
 @import url("animations.css");
 
-[data-mbx-id][data-mbx-atts*="anm"][data-mbx-fts*="anim-fade-in"],
-[data-mbx-id][data-mbx-atts*="anm"]
-  [data-mbx-atts*="anm"][data-mbx-fts*="anim-fade-in"] {
+[data-mbx-atts*="anm"][data-mbx-fts*="anim-fade-in"],
+[data-mbx-atts*="anm"] [data-mbx-fts*="anim-fade-in"] {
   animation: fadein 0.4s;
   -webkit-animation: fadein 0.4s;
   -moz-animation: fadein 0.4s;
@@ -10,9 +9,8 @@
   -o-animation: fadein 0.4s;
 }
 
-[data-mbx-id][data-mbx-atts*="anm"][data-mbx-fts*="anim-slide-in-left"],
-[data-mbx-id][data-mbx-atts*="anm"]
-  [data-mbx-atts*="anm"][data-mbx-fts*="anim-slide-in-left"] {
+[data-mbx-atts*="anm"][data-mbx-fts*="anim-slide-in-left"],
+[data-mbx-atts*="anm"] [data-mbx-fts*="anim-slide-in-left"] {
   animation: slideLeft 0.4s;
   -webkit-animation: slideLeft 0.4s;
   -moz-animation: slideLeft 0.4s;
@@ -20,9 +18,8 @@
   -o-animation: slideLeft 0.4s;
 }
 
-[data-mbx-id][data-mbx-atts*="anm"][data-mbx-fts*="anim-slide-in-right"],
-[data-mbx-id][data-mbx-atts*="anm"]
-  [data-mbx-atts*="anm"][data-mbx-fts*="anim-slide-in-right"] {
+[data-mbx-atts*="anm"][data-mbx-fts*="anim-slide-in-right"],
+[data-mbx-atts*="anm"] [data-mbx-fts*="anim-slide-in-right"] {
   animation: slideRight 0.4s;
   -webkit-animation: slideRight 0.4s;
   -moz-animation: slideRight 0.4s;
@@ -30,9 +27,8 @@
   -o-animation: slideRight 0.4s;
 }
 
-[data-mbx-id][data-mbx-atts*="anm"][data-mbx-fts*="anim-slide-in-top"],
-[data-mbx-id][data-mbx-atts*="anm"]
-  [data-mbx-atts*="anm"][data-mbx-fts*="anim-slide-in-top"] {
+[data-mbx-atts*="anm"][data-mbx-fts*="anim-slide-in-top"],
+[data-mbx-atts*="anm"] [data-mbx-fts*="anim-slide-in-top"] {
   animation: slideTop 0.4s;
   -webkit-animation: slideTop 0.4s;
   -moz-animation: slideTop 0.4s;
@@ -40,8 +36,8 @@
   -o-animation: slideTop 0.4s;
 }
 
-[data-mbx-id][data-mbx-atts*="anm"][data-mbx-fts*="anim-fade-out"],
-[data-mbx-id][data-mbx-atts*="anm"] [data-mbx-fts*="anim-fade-out"] {
+[data-mbx-atts*="anm"][data-mbx-fts*="anim-fade-out"],
+[data-mbx-atts*="anm"] [data-mbx-fts*="anim-fade-out"] {
   animation: fadeOut 0.3s;
   -webkit-animation: fadeOut 0.3s;
   -moz-animation: fadeOut 0.3s;
@@ -49,8 +45,8 @@
   -o-animation: fadeOut 0.3s;
 }
 
-[data-mbx-id][data-mbx-atts*="anm"][data-mbx-fts*="anim-shake"],
-[data-mbx-id][data-mbx-atts*="anm"] [data-mbx-fts*="anim-shake"] {
+[data-mbx-atts*="anm"][data-mbx-fts*="anim-shake"],
+[data-mbx-atts*="anm"] [data-mbx-fts*="anim-shake"] {
   animation: shake 0.5s;
   -webkit-animation: shake 0.5s;
   -moz-animation: shake 0.5s;
