@@ -1,11 +1,22 @@
 import React from "react";
 
 import { PopupComponent } from "../../../types";
+import Container from "../Container";
 
-const popupComponent: PopupComponent = ({ className, children }) => (
-  <div data-mbx-scl="flxc;pop-c;" className={className}>
+const popupComponent: PopupComponent = ({
+  animated,
+  className,
+  children,
+  scl = "",
+}) => (
+  <Container
+    animated={animated}
+    animation="fade-in"
+    scl={`flxc;${scl}`}
+    className={className}
+  >
     {children}
-  </div>
+  </Container>
 );
 
 export default popupComponent;

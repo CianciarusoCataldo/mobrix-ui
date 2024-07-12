@@ -7,6 +7,10 @@ const listTest = () => {
     test("Rendering test", () => {
       let wrapper = mount(<List />);
       expect(wrapper);
+      wrapper = mount(
+        <List disabled elements={["Test element 1", "Test element 2"]} />
+      );
+      expect(wrapper);
       wrapper = mount(<List elements={["Test element 1", "Test element 2"]} />);
       expect(wrapper);
     });

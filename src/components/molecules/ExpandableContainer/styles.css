@@ -13,14 +13,15 @@
   transition: all 0.2s;
 }
 
+
 [data-mbx-id="econ"][data-mbx-scl*="cmp-false"]
   [data-mbx-scl*="econ-b"]
   svg {
-  transform: rotate(0deg);
+  transform: rotate(90deg);
 }
 
 [data-mbx-id="econ"][data-mbx-scl*="cmp-true"]
   [data-mbx-scl*="econ-b"]
   svg {
-  transform: rotate(180deg);
+  transform: rotate(270deg);
 }

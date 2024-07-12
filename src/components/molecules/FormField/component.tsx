@@ -5,6 +5,7 @@ import { FormFieldProps, MbxUiReactiveComponent } from "../../../types";
 import { fieldFormatters } from "./utils";
 
 import Container from "../Container";
+import { Label } from "../../atoms";
 
 const FormFieldInternalComponent: MbxUiReactiveComponent<
   any,
@@ -46,7 +47,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
 
   if (header) {
     components.push(
-      <Container
+      <Label
         additionalProps={{
           "data-mbx-fld-h": true,
         }}
@@ -59,7 +60,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
         {...headerProps}
       >
         {header}
-      </Container>,
+      </Label>
     );
   }
 
@@ -105,7 +106,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
         onChange(formattedValue);
         setValue(formattedValue);
       }}
-    />,
+    />
   );
 
   components.push(
@@ -120,7 +121,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       shadow={false}
     >
       {errorLabel}
-    </Container>,
+    </Container>
   );
 
   return components;

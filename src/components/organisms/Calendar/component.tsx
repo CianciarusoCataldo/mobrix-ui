@@ -11,10 +11,9 @@ import { defaultDays, defaultMonths } from "./constants";
 
 import { getMonthsDuration, getDateMatrix } from "./utils";
 
-import { arrowIcon } from "../../molecules/Carousel/icons";
-
 import { IconButton, Label } from "../../atoms";
 import { Table } from "../../molecules";
+import { ArrowIcon } from "../../../icons";
 
 const CalendarComponent: MbxUiReactiveComponent<
   DeepPartial<CalendarDate>,
@@ -106,7 +105,7 @@ const CalendarComponent: MbxUiReactiveComponent<
       features={{ fillFc: true, noShFc: true }}
       {...customProps}
     >
-      {arrowIcon}
+      <ArrowIcon />
     </IconButton>
   );
 
@@ -116,11 +115,14 @@ const CalendarComponent: MbxUiReactiveComponent<
     components.push(
       <div key="cal_top_sel" data-mbx-scl="flxr:t-sel;mauto;wfu">
         {getArrowButton("left")}
-        <Label scl="act-dt;mxauto" dark={commonProps.dark} {...customProps}>{`${
-          customMonths[onScreenDate.month]
-        } ${onScreenDate.year}`}</Label>
+        <Label
+          disabled={disabled}
+          scl="act-dt;mxauto"
+          dark={commonProps.dark}
+          {...customProps}
+        >{`${customMonths[onScreenDate.month]} ${onScreenDate.year}`}</Label>
         {getArrowButton("right")}
-      </div>,
+      </div>
     );
 
   components.push(
@@ -188,10 +190,10 @@ const CalendarComponent: MbxUiReactiveComponent<
       rows={[
         days.map((dayName) => dayName.slice(0, 3)),
         ...basicMatrix.map((row) =>
-          row.map((element) => (element > 0 ? String(element) : "")),
+          row.map((element) => (element > 0 ? String(element) : ""))
         ),
       ]}
-    />,
+    />
   );
 
   return components;

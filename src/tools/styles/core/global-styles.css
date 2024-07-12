@@ -64,6 +64,7 @@
 }
 
 [data-mbx-fts*="fillFc"]:focus-visible,
-[data-mbx-fts*="fillFc"]:focus-visible svg {
+[data-mbx-fts*="fillFc"]:focus-visible svg,
+[data-mbx-fts*="fillFc"]:focus-visible svg path {
   fill: var(--mbx-c-fc);
 }

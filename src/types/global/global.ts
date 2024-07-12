@@ -275,6 +275,8 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
   scl?: string;
 
   fts?: string;
+
+  group?: "atom" | "molecule" | "organism";
 };
 
 /**

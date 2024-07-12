@@ -5,13 +5,25 @@ import { Table } from "../../../src";
 const tableTest = () => {
   describe("Table", () => {
     test("Rendering test", () => {
-      const onClickStub = jest.fn()
+      const onClickStub = jest.fn();
       let wrapper = mount(<Table />);
       expect(wrapper);
 
       wrapper = mount(
         <Table
-        onClick={onClickStub}
+          disabled
+          rows={[
+            ["Test element 1", "Test element 2"],
+            ["Test element 3", "Test element 4"],
+          ]}
+        />
+      );
+
+      expect(wrapper);
+
+      wrapper = mount(
+        <Table
+          onClick={onClickStub}
           rows={[
             ["Test element 1", "Test element 2"],
             ["Test element 3", "Test element 4"],

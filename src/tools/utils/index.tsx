@@ -43,9 +43,9 @@ const getMbxFts = (
   features: Features,
   { features: ftrs = {}, fts = "", ...commonProps }: CommonProps
 ) => {
-  let mbxFts = `${fts}`;
+  let mbxFts = `${fts};`;
   const featureProps = Object.keys({ ...features, ...ftrs }).filter(
-    (feature) => features[feature]
+    (feature) => features[feature] || ftrs[feature]
   );
   [...featureProps, ...Object.keys(commonProps)]
     .filter((feature, index) => FEATURES_PROPS[feature])
@@ -96,8 +96,10 @@ const buildMobrixUiStandardComponent = ({
   commonProps = {},
   wrapper: SelectedWrapper = "div",
   features = {},
+  fts = "",
+  group,
 }: BuilderProps) => {
-  let mbxFts = getMbxFts(features, commonProps);
+  let mbxFts = `${getMbxFts(features, commonProps)};${fts}`;
   let mbxAtts = getMbxAtts(commonProps);
 
   let props: CommonProps & Record<string, any> = {
@@ -108,7 +110,8 @@ const buildMobrixUiStandardComponent = ({
     ...(mbxFts.length > 0 && {
       "data-mbx-fts": mbxFts,
     }),
-    "data-mbx-scl": `${scl};${commonProps.scl ? commonProps.scl : ""}`,
+    "data-mbx-group": group,
+    "data-mbx-scl": `${scl};${commonProps.scl || ""}`,
     id: commonProps.id,
     className: commonProps.className,
     style: commonProps.style,
@@ -170,7 +173,8 @@ const buildMbxUiReactiveComponent = <T=any>({
   props,
   Component,
   features,
-  scl
+  scl,
+  fts
 }: BuilderProps<
   (props: {
     value: T;
@@ -206,6 +210,7 @@ const buildMbxUiReactiveComponent = <T=any>({
     wrapper,
     features,
     scl,
+    fts,
     ...processedProps,
   });
 };

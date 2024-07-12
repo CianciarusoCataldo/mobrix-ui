@@ -12,12 +12,6 @@
   fill: var(--mbx-c-exp-arr);
 }
 
-[data-mbx-id="econ"][data-mbx-atts*="a11y"]
-  [data-mbx-scl*="econ-b"]:focus-visible
-  svg {
-  fill: var(--mbx-c-exp-arr-h);
-}
-
 [data-mbx-id="rgroup"] [data-mbx-id="radio"] {
   --mbx-radio-background: var(--mbx-c-radg-rad-bg);
   --mbx-radio-background-hover: var(--mbx-c-radg-rad-bg-h);

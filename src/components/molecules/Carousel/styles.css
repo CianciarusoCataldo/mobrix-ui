@@ -32,16 +32,16 @@
 }
 
 [data-mbx-id="crsel"] [data-mbx-scl*="car-els"],
-[data-mbx-id="crsel"] [data-mbx-scl*="dots"] {
+[data-mbx-id="crsel"] [data-mbx-scl*="cdots"] {
   align-items: center;
   padding: 0.5rem;
 }
 
-[data-mbx-id="crsel"] [data-mbx-scl*="dots"] {
+[data-mbx-id="crsel"] [data-mbx-scl*="cdots"] {
   justify-content: center;
 }
 
-[data-mbx-id="crsel"] [data-mbx-scl*="dots"] [data-mbx-scl*="dot"] {
+[data-mbx-id="crsel"] [data-mbx-scl*="csdot"] {
   margin-left: 0.3rem;
   margin-right: 0.3rem;
   width: 30px;
@@ -51,7 +51,6 @@
 }
 
 [data-mbx-id="crsel"]
-  [data-mbx-scl*="dots"]
   [data-mbx-scl*="dot"][data-mbx-scl*="full-true"] {
   background: var(--mbx-c-car-dot-f);
 }

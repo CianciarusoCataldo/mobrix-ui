@@ -15,10 +15,15 @@ const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
   headersProps = {},
   onClick = () => {},
   propsCallback = () => ({}),
+  disabled,
 }) => {
   const props = {
     row: { ...parseClassName(rowClassName), ...rowProps },
-    cell: { ...parseClassName(cellClassName), ...cellProps, tabIndex: 0 },
+    cell: {
+      ...parseClassName(cellClassName),
+      ...cellProps,
+      tabIndex: disabled ? -1 : 0,
+    },
   };
 
   let wrappers: {
@@ -54,9 +59,7 @@ const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
                 key={`element_${rowIndex}_${index}`}
                 align="center"
                 onClick={() => onClick(rowIndex, index)}
-                {...{
-                  "data-mbx-test": `cell_${rowIndex}_${index}`,
-                }}
+                data-mbx-test={`cell_${rowIndex}_${index}`}
                 {...wrappers[rowIndex].cellProps}
                 {...propsCallback(rowIndex, index)}
               >

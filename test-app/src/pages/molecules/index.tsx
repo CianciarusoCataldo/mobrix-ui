@@ -103,6 +103,7 @@ const MoleculesPage = () => {
       shadow={false}
       background={false}
       className="App"
+      a11y={false}
       style={{ height: "110%" }}
     >
       <ComponentDemo
@@ -887,6 +888,33 @@ const MoleculesPage = () => {
               <div style={{ marginTop: "20px" }} />
               <Table
                 background={false}
+                dark
+                headers
+                rows={[
+                  ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                ]}
+              />
+              <div style={{ marginTop: "20px" }} />
+              <Table
+                disabled
+                headers
+                rows={[
+                  ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                ]}
+              />
+              <div style={{ marginTop: "20px" }} />
+              <Table
+                disabled
                 dark
                 headers
                 rows={[

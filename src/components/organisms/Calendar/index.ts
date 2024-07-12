@@ -4,8 +4,9 @@ import { CalendarComponent, CalendarDate, DeepPartial } from "../../../types";
 
 import { today } from "./utils";
 
-import calendarComponent from "./component";
 import { buildMbxReactiveComponent } from "../../../tools";
+
+import component from "./component";
 
 /**
  * A ready to use Calendar, designed for a lot of scenarios.
@@ -69,15 +70,16 @@ const Calendar: CalendarComponent = ({ value: inputValue, ...props }) => {
         day: todayDate.dayOfTheMonth,
       },
       scl: "flxc;wfit;act",
+      fts: "noShFc",
       Component: ({ value, setValue }) =>
-        calendarComponent({
+        component({
           today: todayDate,
           value,
           setValue,
           ...props,
           ...sharedProps,
         }),
-    }),
+    })
   );
 };
 

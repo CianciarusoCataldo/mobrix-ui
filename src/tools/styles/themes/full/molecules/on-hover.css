@@ -1,14 +1,12 @@
 @media (hover) {
-  [data-mbx-id="crsel"]
-    [data-mbx-arrow]:not([data-mbx-atts*="dsb"]):hover
-    svg {
+  [data-mbx-id="crsel"] [data-mbx-arrow]:not([data-mbx-atts*="dsb"]):hover svg {
     fill: var(--mbx-c-car-arr-h) !important;
   }
 
   [data-mbx-id="econ"]:not([data-mbx-atts*="dsb"])
     [data-mbx-scl*="econ-b"]
     svg:hover {
-    fill: var(--mbx-c-exp-arr-h);
+    --mbx-c-exp-arr: var(--mbx-c-exp-arr-h);
   }
 
   [data-mbx-id="list"][data-mbx-atts*="hv"] [data-mbx-scl*="click"]:hover {

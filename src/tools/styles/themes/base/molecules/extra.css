@@ -9,10 +9,6 @@
   color: var(--mbx-c-con-txt);
 }
 
-[data-mbx-id="econ"] [data-mbx-scl*="econ-b"] svg {
-  fill: var(--mbx-c-con-txt);
-}
-
 [data-mbx-id="crsel"] [data-mbx-arrow] svg {
   fill: var(--mbx-c-car-arr);
 }

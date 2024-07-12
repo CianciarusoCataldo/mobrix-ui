@@ -1,9 +1,8 @@
 import React from "react";
 import { CarouselProps, MbxUiReactiveComponent } from "../../../types";
 
-import { arrowIcon } from "./icons";
-
 import { IconButton } from "../../atoms";
+import { ArrowIcon } from "../../../icons";
 
 const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
   value: selectedItem,
@@ -14,6 +13,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
   disabled,
   arrowClassName,
   dotClassName,
+  hover,
 }) => {
   const [activeClassName, setActiveClassname] = React.useState("");
   const [hoveredDot, setHoveredDot] = React.useState<number | null>(null);
@@ -39,12 +39,12 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
           data-mbx-animation={index === item ? activeClassName : ""}
         >
           {element}
-        </div>,
+        </div>
       );
 
       dots.push(
         <IconButton
-          scl={`dot;bdtran;full-${
+          scl={`csdot;bdtran;full-${
             index === item || (hoveredDot != null && index === hoveredDot)
           }`}
           className={dotClassName}
@@ -56,50 +56,51 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
             setActiveClassname(index > item ? "from-right" : "from-left");
             updateItem(index);
           }}
-        />,
+        />
       );
     });
   }
+
+  const arrowProps = {
+    dark,
+    hover,
+    features: { noShFc: true, fillFc: true },
+    className: arrowClassName,
+  };
 
   return [
     <div key="car_els" data-mbx-scl="flxr;car-els">
       <IconButton
         key="prev-ar"
-        hover
-        dark={dark}
         additionalProps={{
           "data-mbx-arrow": "prev",
         }}
-        features={{ noShFc: true, fillFc: true }}
         disabled={item === 0 || disabled}
-        className={arrowClassName}
         onClick={() => {
           setActiveClassname("from-left");
           updateItem(item - 1);
         }}
+        {...arrowProps}
       >
-        {arrowIcon}
+        <ArrowIcon />
       </IconButton>
       {elementsArray}
       <IconButton
-        hover
         key="next-ar"
-        dark={dark}
         additionalProps={{
           "data-mbx-arrow": "next",
         }}
-        features={{ noShFc: true, fillFc: true }}
-        className={arrowClassName}
         disabled={item === elements.length - 1 || disabled}
         onClick={() => {
           setActiveClassname("from-right");
           updateItem(item + 1);
         }}
+        {...arrowProps}
       >
-        {arrowIcon}
+        <ArrowIcon />
       </IconButton>
     </div>,
-    <div key="car_dots" data-mbx-scl="flxr;dots;ovhid">
+    <div key="car_dots" data-mbx-scl="flxr;cdots;ovhid">
       {dots}
     </div>,
   ];

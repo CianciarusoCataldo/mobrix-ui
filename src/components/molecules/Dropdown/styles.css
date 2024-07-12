@@ -1,24 +1,18 @@
 [data-mbx-id="dd"] {
   border-radius: 0.375rem;
   border-color: var(--mbx-c-drop-txt);
-}
-
-[data-mbx-id="dd"][data-mbx-atts*="bg"] {
   color: var(--mbx-c-drop-txt);
   background-image: var(--mbx-c-drop-bg);
 }
 
-[data-mbx-id="dd"] [data-mbx-scl*="opts"] {
+[data-mbx-id="dd"] [data-mbx-id="popup"] {
   font-size: 1rem;
   line-height: 1.5rem;
   max-height: 12rem;
   scrollbar-width: thin;
   scrollbar-color: var(--mbx-c-drop-txt);
-}
-
-[data-mbx-id="dd"] [data-mbx-scl*="opts"] [data-mbx-scl*="pop-c"] {
-  width: 100%;
-  align-items: center;
+  --mbx-popup-text-color: var(--mbx-c-drop-txt);
+  --mbx-popup-background: var(--mbx-c-drop-bg);
 }
 
 [data-mbx-id="dd"] [data-mbx-scl*="opts"]::-webkit-scrollbar {

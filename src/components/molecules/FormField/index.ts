@@ -68,6 +68,7 @@ const FormField: FormFieldComponent = ({
     commonProps: {
       ...sharedProps,
       shadow: false,
+      tabIndex: -1,
       additionalProps: {
         ...sharedProps.additionalProps,
         "data-mbx-ftype": type,
@@ -84,6 +85,7 @@ const FormField: FormFieldComponent = ({
     inputValue,
     defaultValue: null,
     scl: `wfit;flxc;${fieldFormatters[type].scl.fld}`,
+    fts: "noShFc",
   }));
 };
 

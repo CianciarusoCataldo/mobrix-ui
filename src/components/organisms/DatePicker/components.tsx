@@ -80,6 +80,7 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
       dark={commonProps.dark}
       onClick={() => setVisible(true)}
       key="d-pick_cal_bt"
+      features={{ noShFc: true, fillFc: true }}
     >
       {CalendarIcon}
     </IconButton>,

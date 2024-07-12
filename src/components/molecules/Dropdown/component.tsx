@@ -149,7 +149,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
         dark={dark}
         hide={!isVisible}
         a11y={false}
-        scl="flxc;opts;wfu"
+        scl="flxc;opts;wfu;act"
       >
         {elements.map((item, index) => (
           <Button
@@ -178,6 +178,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
               a11y={false}
               background={false}
               shadow={false}
+              animated={false}
               dark={dark}
               scl="flxr;drop-el;mauto"
             >

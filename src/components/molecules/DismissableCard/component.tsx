@@ -4,7 +4,7 @@ import { DismissableCardProps } from "../../../types/components";
 import { BuilderComponent, MbxUiComponent } from "../../../types/global";
 
 import { IconButton } from "../../atoms";
-import { x_icon } from "../../../icons";
+import { Xicon } from "../../../icons";
 
 import cardComponent from "../Card/component";
 
@@ -18,12 +18,12 @@ const DismissableCardInternalComponent: MbxUiComponent<
       <div data-mbx-scl="dis-cn;flxrr;wfu" key="dis-x">
         <IconButton
           dark={props.dark}
-          features={{ fillFc: true }}
+          features={{ fillFc: true, noShFc: true }}
           scl="dis-bt;flxrr;wfit"
           disabled={props.disabled}
           onClick={onClose}
         >
-          {x_icon}
+          <Xicon fill="var(--mbx-c-dcard-x)" />
         </IconButton>
       </div>,
       <div data-mbx-scl="cardc-head" key="dis-h">
