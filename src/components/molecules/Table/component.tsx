@@ -59,7 +59,6 @@ const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
                 key={`element_${rowIndex}_${index}`}
                 align="center"
                 onClick={() => onClick(rowIndex, index)}
-                data-mbx-test={`cell_${rowIndex}_${index}`}
                 {...wrappers[rowIndex].cellProps}
                 {...propsCallback(rowIndex, index)}
               >

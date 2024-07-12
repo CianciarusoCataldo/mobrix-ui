@@ -31,7 +31,7 @@ const tableTest = () => {
         />
       );
 
-      wrapper.find('[data-mbx-test="cell_0_0"]').simulate("click");
+      wrapper.find("td").at(0).simulate("click");
       expect(onClickStub).toBeCalled;
 
       wrapper = mount(
@@ -49,7 +49,7 @@ const tableTest = () => {
         />
       );
 
-      wrapper.find('[data-mbx-test="cell_0_0"]').simulate("click");
+      wrapper.find("td").at(0).simulate("click");
       expect(wrapper);
     });
   });

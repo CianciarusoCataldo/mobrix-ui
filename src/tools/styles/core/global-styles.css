@@ -56,6 +56,10 @@
   color: var(--mbx-c-fc);
 }
 
+[data-mbx-fts*="opFc"]:focus-visible {
+  opacity: 0.5;
+}
+
 [data-mbx-fts*="noShFc"]:focus-visible {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;

@@ -10,7 +10,7 @@ import {
   CommonProps,
 } from "../../types/global";
 
-import { DEFAULT_COMMON_PROPS, FEATURES_PROPS, parseAtts } from "./constants";
+import { DEFAULT_COMMON_PROPS, parseFts, parseAtts } from "./constants";
 import { Features } from "../../types/global/global";
 
 /* istanbul ignore next */
@@ -47,11 +47,11 @@ const getMbxFts = (
   const featureProps = Object.keys({ ...features, ...ftrs }).filter(
     (feature) => features[feature] || ftrs[feature]
   );
+  const mbxfts = parseFts(commonProps);
   [...featureProps, ...Object.keys(commonProps)]
-    .filter((feature, index) => FEATURES_PROPS[feature])
+    .filter((feature, index) => mbxfts[feature])
     .forEach((feature, index) => {
-      const enabledFeature = FEATURES_PROPS[feature](commonProps);
-      mbxFts += enabledFeature.enabled ? `${enabledFeature.featureKey};` : "";
+      mbxFts += `${mbxfts[feature]};`;
     });
 
   return mbxFts;

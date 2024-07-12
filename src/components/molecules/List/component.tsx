@@ -8,29 +8,33 @@ const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
   hover,
   disabled,
 }) => {
-  let fts = "";
+  let fts = `${!disabled && "colFc"};${onClick && hover && "opHov"}`;
 
-  if (!disabled) {
-    fts += "colFc;";
-    if (onClick && hover) {
-      fts += "opHov;";
-    }
-  }
+  return elements.map((element, index) => {
+    const callback = onClick && (() => onClick(index));
 
-  return elements.map((element, index) => (
-    <div
-      key={`el_${index}`}
-      onClick={onClick && (() => onClick(index))}
-      data-mbx-fts={fts}
-      data-mbx-scl={`flxr;nout;lis-el;${onClick ? "click;" : ""}`}
-      tabIndex={disabled ? -1 : 0}
-    >
-      <svg viewBox="0 0 9 9" key="lst_dot" data-mbx-scl="dot;myauto">
-        <circle cx={4.5} cy={4.5} r={3.5} />
-      </svg>
-      <div key={"lst_el_" + index}>{element}</div>
-    </div>
-  ));
+    return (
+      <div
+        key={`el_${index}`}
+        {...(callback && {
+          onClick: callback,
+          onKeyDown: (e) => {
+            if (e.code === "Enter") {
+              callback();
+            }
+          },
+        })}
+        data-mbx-fts={fts}
+        data-mbx-scl={`flxr;nout;lis-el;${onClick ? "click;" : ""}`}
+        tabIndex={disabled ? -1 : 0}
+      >
+        <svg viewBox="0 0 9 9" key="lst_dot" data-mbx-scl="dot;myauto">
+          <circle cx={4.5} cy={4.5} r={3.5} />
+        </svg>
+        <div key={"lst_el_" + index}>{element}</div>
+      </div>
+    );
+  });
 };
 
 export default listComponent;

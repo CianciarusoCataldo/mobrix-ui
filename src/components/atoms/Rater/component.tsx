@@ -14,6 +14,8 @@ const RaterComponent: MbxUiReactiveComponent<number, RaterProps> = ({
   value: actualValue,
   setValue,
   disabled,
+  a11y,
+  dark,
 }) => {
   let startMax = max || 5;
 
@@ -40,8 +42,10 @@ const RaterComponent: MbxUiReactiveComponent<number, RaterProps> = ({
     iconArray.push(
       <IconButton
         key={`vote_${i}`}
-        unstyled
+        dark={dark}
+        a11y={a11y && !readonly}
         disabled={disabled}
+        features={{ noShFc: true, opFc: true }}
         {...(!(readonly || disabled) && {
           onClick: () => {
             let newVote: number = i + 1;
@@ -57,7 +61,7 @@ const RaterComponent: MbxUiReactiveComponent<number, RaterProps> = ({
         })}
       >
         {ICONS[type][iconToShow]}
-      </IconButton>,
+      </IconButton>
     );
   }
 

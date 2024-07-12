@@ -32,7 +32,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
   };
 
   /* istanbul ignore next */
-  const onFocusLostCallback = () => {
+  const focusLost = () => {
     onFocusLost();
     keyDown(false);
   };
@@ -42,7 +42,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
       ...commonProps,
       dark,
       shadow,
-      onFocusLost: onFocusLostCallback,
+      onFocusLost: focusLost,
       onKeyDown: (e) => {
         let actualSelected = selected;
         switch (e.code) {
@@ -115,7 +115,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
       >
         <div
           tabIndex={-1}
-          key="drop_sel_el_lb"
+          key="drop_s_e_b"
           data-mbx-scl="flxr;drop-sel-el;mauto;nout"
         >
           {selectedItem}

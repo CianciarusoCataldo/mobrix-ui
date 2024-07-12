@@ -336,6 +336,12 @@ npx`}
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Rater />
             <div style={{ marginTop: "20px" }} />
+            <Rater dark />
+            <div style={{ marginTop: "20px" }} />
+            <Rater type="circle" />
+            <div style={{ marginTop: "20px" }} />
+            <Rater type="circle" dark />
+            <div style={{ marginTop: "20px" }} />
             <Rater dark value={4} readonly />
             <div style={{ marginTop: "20px" }} />
             <Rater vertical />

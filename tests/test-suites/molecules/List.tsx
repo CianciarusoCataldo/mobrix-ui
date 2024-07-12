@@ -23,11 +23,18 @@ const listTest = () => {
           elements={[
             <div data-mbx-test="list_element_0">Test element 1</div>,
             "Test element 2",
+            <div data-mbx-test="list_element_3">Test element 3</div>,
           ]}
         />
       );
       wrapper.find('[data-mbx-test="list_element_0"]').simulate("click");
       expect(onChangeStub).toBeCalledWith(0);
+
+      wrapper
+        .find('[data-mbx-test="list_element_3"]')
+        .simulate("keyDown", { code: "Enter" });
+
+      expect(onChangeStub).toBeCalledWith(2);
     });
   });
 };

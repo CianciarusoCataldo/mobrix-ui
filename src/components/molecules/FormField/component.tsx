@@ -40,29 +40,8 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
     }
   }, [required]);
 
-  const components: JSX.Element[] = [];
-
   const FieldComponent: MbxUiReactiveComponent =
     fieldFormatters[type].component;
-
-  if (header) {
-    components.push(
-      <Label
-        additionalProps={{
-          "data-mbx-fld-h": true,
-        }}
-        shadow={false}
-        animated={false}
-        background={false}
-        key="fld_h_b"
-        dark={dark}
-        scl="wfu"
-        {...headerProps}
-      >
-        {header}
-      </Label>
-    );
-  }
 
   /* istanbul ignore next */
   let extraProps = {
@@ -75,7 +54,22 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
     }),
   };
 
-  components.push(
+  return [
+    <Label
+      additionalProps={{
+        "data-mbx-fld-h": true,
+      }}
+      hide={!header}
+      shadow={false}
+      animated={false}
+      background={false}
+      key="fld_h_b"
+      dark={dark}
+      scl="wfu"
+      {...headerProps}
+    >
+      {header}
+    </Label>,
     <FieldComponent
       className={className}
       disabled={disabled}
@@ -106,10 +100,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
         onChange(formattedValue);
         setValue(formattedValue);
       }}
-    />
-  );
-
-  components.push(
+    />,
     <Container
       scl="fld-eb"
       animated={true}
@@ -121,10 +112,8 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       shadow={false}
     >
       {errorLabel}
-    </Container>
-  );
-
-  return components;
+    </Container>,
+  ];
 };
 
 export default FormFieldInternalComponent;

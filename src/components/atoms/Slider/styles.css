@@ -66,10 +66,7 @@
   }
 }
 
-[data-mbx-id="slider"][data-mbx-atts*="hv"]::-moz-range-thumb:active {
-  opacity: 0.6;
-}
-
+[data-mbx-id="slider"][data-mbx-atts*="hv"]::-moz-range-thumb:active,
 [data-mbx-id="slider"][data-mbx-atts*="hv"]::-webkit-slider-thumb:active {
   opacity: 0.6;
 }

@@ -4,7 +4,6 @@
 }
 
 [data-mbx-id="list"] [data-mbx-scl*="lis-el"] {
-  color: var(--mbx-c-lst-txt);
   margin-top: 0.2rem;
 }
 
@@ -14,6 +13,10 @@
   fill: var(--mbx-c-lst-txt);
   margin-right: 0.3rem;
   display: block;
+}
+
+[data-mbx-id="list"] [data-mbx-scl*="lis-el"]:not(:focus-visible) {
+  color: var(--mbx-c-lst-txt);
 }
 
 @media (hover) {

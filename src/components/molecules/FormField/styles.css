@@ -1,7 +1,8 @@
 [data-mbx-id="field"] [data-mbx-fld-h="true"] {
   font-weight: 600;
-  padding-bottom: 0.2rem;
-  --mbx-container-text-color: var(--mbx-c-field-txt);
+  margin-bottom: 0.2rem;
+  margin-top: 0;
+  --mbx-label-text-color: var(--mbx-c-field-txt);
 }
 
 [data-mbx-id="field"] [data-mbx-scl*="fld-eb"] {

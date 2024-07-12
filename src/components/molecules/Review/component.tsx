@@ -20,6 +20,7 @@ const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
   disabled,
   hover,
   dark,
+  a11y,
 }) => {
   const selectedLogo =
     logo && allowedLogoTypes.includes(logo) ? logo : "default";
@@ -32,6 +33,7 @@ const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
         newTab
         to={url}
         disabled={disabled}
+        features={{ noShFc: true, opFc: true }}
       >
         {icons[selectedLogo]}
       </Link>

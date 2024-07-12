@@ -15,35 +15,17 @@ export const DEFAULT_COMMON_PROPS: CommonProps = {
   fts: "",
   features: {},
 };
-export const FEATURES_PROPS: Record<
-  keyof Features & CommonProps,
-  (props: CommonProps) => { enabled: boolean; featureKey: string }
-> = {
-  opHov: (props) => ({
-    enabled: !props.disabled && props.hover,
-    featureKey: "opHov",
-  }),
-  opAct: (props) => ({
-    enabled: !props.disabled,
-    featureKey: "opAct",
-  }),
-  animation: (props) => ({
-    enabled: props.animated && props.animation,
-    featureKey: `anim-${props.animation}`,
-  }),
-  colFc: (props) => ({
-    enabled: !props.disabled && props.a11y,
-    featureKey: "colFc",
-  }),
-  noShFc: (props) => ({
-    enabled: true,
-    featureKey: "noShFc",
-  }),
-  fillFc: (props) => ({
-    enabled: !props.disabled && props.a11y,
-    featureKey: "fillFc",
-  }),
-};
+export const parseFts: (
+  props: CommonProps
+) => Record<keyof Features & CommonProps, string | undefined> = (props) => ({
+  opHov: !props.disabled && props.hover && "opHov",
+  opAct: !props.disabled && "opAct",
+  animation: props.animated && props.animation && `anim-${props.animation}`,
+  colFc: !props.disabled && props.a11y && "colFc",
+  noShFc: "noShFc",
+  fillFc: !props.disabled && props.a11y && "fillFc",
+  opFc: !props.disabled && props.a11y && "opFc",
+});
 
 export const parseAtts: (
   props: CommonProps

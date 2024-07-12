@@ -246,6 +246,8 @@ export interface Features {
 
   /** If `true`, when focused, the component fill color (along with child svg) will change instead of the box shadow (that will be transparent) */
   fillFc?: boolean;
+
+  opFc?: boolean;
 }
 
 /**
