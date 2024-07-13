@@ -57,6 +57,7 @@ const Input: InputComponent = ({
     features: {
       opHov: true,
     },
+    group: "atom",
     scl: `bdtran;${autoresizable && "wfit"}`,
     props: (value, setValue) => ({
       commonProps: {

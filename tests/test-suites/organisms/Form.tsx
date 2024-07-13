@@ -20,7 +20,7 @@ const formTest = () => {
         </Form>
       );
       wrapper
-        .find('[data-mbx-scl*="f-field"] [data-mbx-id="field"]')
+        .find('[data-mbx-cls="f-field"] [data-mbx-id="field"]')
         .at(2)
         .simulate("change", "new test text");
       expect(wrapper);
@@ -39,13 +39,13 @@ const formTest = () => {
         />
       );
       wrapper
-        .find('[data-mbx-scl*="f-field"] [data-mbx-id="input"]')
+        .find('[data-mbx-cls="f-field"] [data-mbx-id="input"]')
         .simulate("change", "new test text");
       wrapper
-        .find('[data-mbx-scl*="f-field"] [data-mbx-id="check"]')
+        .find('[data-mbx-cls="f-field"] [data-mbx-id="check"]')
         .simulate("click");
 
-      wrapper.find('[data-mbx-scl*="s-bt"]').simulate("click");
+      wrapper.find('[data-mbx-cls="s-bt"]').simulate("click");
       expect(submitStub).toBeCalledWith({
         testField1: true,
         testField2: undefined,

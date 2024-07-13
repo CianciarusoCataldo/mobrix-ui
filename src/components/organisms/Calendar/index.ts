@@ -71,6 +71,7 @@ const Calendar: CalendarComponent = ({ value: inputValue, ...props }) => {
       },
       scl: "flxc;wfit;act",
       fts: "noShFc",
+      group: "organism",
       Component: ({ value, setValue }) =>
         component({
           today: todayDate,

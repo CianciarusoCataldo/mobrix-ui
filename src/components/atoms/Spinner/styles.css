@@ -4,8 +4,7 @@
   min-width: 4rem;
 }
 
-[data-mbx-id="spn"]:not([data-mbx-atts*="dsb"])
-  [data-mbx-scl*="rotating"] {
+[data-mbx-id="spn"]:not([data-mbx-atts*="dsb"]) [data-mbx-cls="rotating"] {
   -webkit-animation: rotating 2s linear infinite;
   -moz-animation: rotating 2s linear infinite;
   -ms-animation: rotating 2s linear infinite;

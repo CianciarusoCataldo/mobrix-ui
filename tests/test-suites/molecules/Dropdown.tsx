@@ -12,7 +12,7 @@ const dropdownTest = () => {
           value={2}
         />
       );
-      wrapper.find('[data-mbx-scl*="drop-bt"]').simulate("click");
+      wrapper.find('[data-mbx-cls="drop-bt"]').simulate("click");
       wrapper
         .find('[data-mbx-id="popup"] [data-mbx-id="button"]')
         .at(1)
@@ -34,7 +34,7 @@ const dropdownTest = () => {
           elements={["Dropdown element 1", "Dropdown element 2"]}
         />
       );
-      wrapper.find('[data-mbx-scl*="drop-bt"]').simulate("click");
+      wrapper.find('[data-mbx-cls="drop-bt"]').simulate("click");
       wrapper
         .find('[data-mbx-id="popup"] [data-mbx-id="button"]')
         .at(1)

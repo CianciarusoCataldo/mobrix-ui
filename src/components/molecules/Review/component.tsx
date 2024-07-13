@@ -20,13 +20,12 @@ const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
   disabled,
   hover,
   dark,
-  a11y,
 }) => {
   const selectedLogo =
     logo && allowedLogoTypes.includes(logo) ? logo : "default";
 
   return [
-    <div key="url" data-mbx-scl="rev-url-c;wfu;flxr">
+    <div key="url" data-mbx-scl="wfu;flxr" data-mbx-cls="rev-url-c">
       <Link
         dark={dark}
         hover={hover && !disabled}
@@ -38,12 +37,20 @@ const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
         {icons[selectedLogo]}
       </Link>
     </div>,
-    <div data-mbx-scl="rev-inf-b;flxc;" key="info">
+    <div data-mbx-scl="flxc" data-mbx-cls="rev-inf-b" key="info">
       <div data-mbx-scl="flxr;mauto">
-        <div data-mbx-scl="rev-ph">{icon}</div>
-        {user && <span data-mbx-scl="rev-us-name;myauto">{user}</span>}
+        <div data-mbx-cls="rev-ph">{icon}</div>
+        {user && (
+          <span data-mbx-cls="rev-us-name" data-mbx-scl="myauto">
+            {user}
+          </span>
+        )}
       </div>
-      {description && <span data-mbx-scl="rev-ds;wfu">{description}</span>}
+      {description && (
+        <span data-mbx-cls="rev-ds" data-mbx-scl="wfu">
+          {description}
+        </span>
+      )}
     </div>,
     <Rater
       disabled={disabled}

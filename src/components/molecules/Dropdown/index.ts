@@ -50,6 +50,7 @@ const Dropdown: DropdownComponent = (props) =>
     inputValue: props.value,
     commonProps: sharedProps,
     scl: "wfit",
+    group: "molecule",
     props: (value, setValue) =>
       dropdownComponent({
         ...props,

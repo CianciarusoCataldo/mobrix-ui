@@ -7,43 +7,42 @@
   color: var(--mbx-c-radg-txt);
 }
 
-[data-mbx-id="rgroup"] [data-mbx-scl*="rdg-el"] {
+[data-mbx-id="rgroup"] [data-mbx-cls="rdg-el"] {
   justify-content: center;
 }
 
-[data-mbx-id="rgroup"][data-mbx-scl*="or-h"] [data-mbx-scl*="rdg-el"] {
+[data-mbx-id="rgroup"][data-mbx-rdgh="true"] [data-mbx-cls="rdg-el"] {
   margin: 0.3rem 1rem 0.3rem 1rem;
 }
 
-[data-mbx-id="rgroup"]:not([data-mbx-scl*="or-h"])
-  [data-mbx-scl*="rdg-el"] {
+[data-mbx-id="rgroup"]:not([data-mbx-rdgh="true"]) [data-mbx-cls="rdg-el"] {
   margin: 1rem 0.3rem 1rem 0.3rem;
 }
 
-[data-mbx-id="rgroup"] [data-mbx-scl*="t-left"] > [data-mbx-id="label"] {
+[data-mbx-id="rgroup"] [data-mbx-rdgp="left"] > [data-mbx-id="label"] {
   margin-right: 0.7rem;
 }
 
-[data-mbx-id="rgroup"] [data-mbx-scl*="t-right"] > [data-mbx-id="label"] {
+[data-mbx-id="rgroup"] [data-mbx-rdgp="right"] > [data-mbx-id="label"] {
   margin-left: 0.7rem;
 }
 
-[data-mbx-id="rgroup"] [data-mbx-scl*="t-top"] > [data-mbx-id="label"] {
+[data-mbx-id="rgroup"] [data-mbx-rdgp="top"] > [data-mbx-id="label"] {
   margin-bottom: 0.7rem;
   margin-top: 0;
 }
 
-[data-mbx-id="rgroup"] [data-mbx-scl*="t-bottom"] > [data-mbx-id="label"] {
+[data-mbx-id="rgroup"] [data-mbx-rdgp="bottom"] > [data-mbx-id="label"] {
   margin-top: 0.7rem;
   margin-bottom: 0;
 }
 
 @media (max-width: 600px) {
-  [data-mbx-id="rgroup"][data-mbx-scl*="or-h"] {
+  [data-mbx-id="rgroup"][data-mbx-rdgh="true"] {
     flex-direction: column;
   }
 
-  [data-mbx-id="rgroup"][data-mbx-scl*="or-h"] [data-mbx-scl*="rdg-el"] {
+  [data-mbx-id="rgroup"][data-mbx-rdgh="true"] [data-mbx-cls="rdg-el"] {
     margin: 1rem 0.3rem 1rem 0.3rem;
   }
 }

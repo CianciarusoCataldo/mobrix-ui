@@ -109,14 +109,16 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           keyDown(!isVisible);
         }}
         dark={dark}
-        scl="drop-bt;nout;wfu"
+        scl="nout;wfu"
         key="opts-m"
+        mbxClass="drop-bt"
         a11y={false}
       >
         <div
           tabIndex={-1}
           key="drop_s_e_b"
-          data-mbx-scl="flxr;drop-sel-el;mauto;nout"
+          data-mbx-scl="flxr;mauto;nout"
+          data-mbx-cls="drop-sel-el"
         >
           {selectedItem}
         </div>
@@ -129,15 +131,12 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           key="icon"
           disabled={disabled}
           a11y={false}
-          scl={`ic;nout;rot-${isVisible}`}
+          mbxClass="ic"
+          scl="nout"
+          additionalProps={{ "data-mbx-drt": isVisible }}
         >
           <p tabIndex={-1}>
-            <i
-              data-mbx-scl="arr-ic;nout"
-              {...(disabled && {
-                "data-mbx-atts": "disabled",
-              })}
-            ></i>
+            <i data-mbx-cls="arr-ic" data-mbx-scl="nout"></i>
           </p>
         </Container>
       </Button>,
@@ -149,7 +148,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
         dark={dark}
         hide={!isVisible}
         a11y={false}
-        scl="flxc;opts;wfu;act"
+        scl="flxc;wfu;act"
       >
         {elements.map((item, index) => (
           <Button
@@ -165,12 +164,14 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
               setValue(index);
               keyDown(false);
             }}
-            fts="noShFc;colFc;"
+            features={{ noShFc: true, colFc: true }}
             key={`item_${index}`}
-            scl={`flxc;reg;wfu`}
+            scl="flxc;wfu"
+            mbxClass="reg"
             additionalProps={{
-              "data-mbx-first": index === 0,
-              "data-mbx-last": index === elements.length - 1,
+              "data-mbx-dpos": `${index === 0}-${
+                index === elements.length - 1
+              }`,
             }}
           >
             <Container
@@ -180,7 +181,8 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
               shadow={false}
               animated={false}
               dark={dark}
-              scl="flxr;drop-el;mauto"
+              mbxClass="drop-el"
+              scl="flxr;mauto"
             >
               {item}
             </Container>

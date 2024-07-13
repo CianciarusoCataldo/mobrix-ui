@@ -62,3 +62,5 @@ export const getDateMatrix = (onScreenDate: CalendarDate, months: number[]) => {
 
   return [...matrix.filter((row, index) => row.some((el) => el > 0))];
 };
+
+

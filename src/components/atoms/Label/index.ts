@@ -48,6 +48,7 @@ const Label: LabelComponent = ({ children, shadow = false, ...commonProps }) =>
       colFc: true,
       noShFc: true,
     },
+    group: "atom",
     scl: "wfit",
     commonProps: {
       ...sharedProps,

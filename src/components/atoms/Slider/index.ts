@@ -49,7 +49,7 @@ const Slider: SliderComponent = ({
   value: inputValue,
   min,
   max,
-  readOnly,
+  readOnly = false,
   ...commonProps
 }) =>
   buildMbxReactiveComponent<number>(commonProps, (sharedProps) => ({
@@ -58,6 +58,7 @@ const Slider: SliderComponent = ({
     defaultValue: 0,
     wrapper: "input",
     scl: "wfit",
+    group: "atom",
     props: (value, setValue) => {
       const callback =
         !sharedProps.disabled && !readOnly
@@ -69,8 +70,10 @@ const Slider: SliderComponent = ({
       return {
         commonProps: {
           ...sharedProps,
+          hover: sharedProps.hover && !readOnly,
           additionalProps: {
             ...sharedProps.additionalProps,
+            "data-mbx-readonly": readOnly,
             type: "range",
             min,
             max,

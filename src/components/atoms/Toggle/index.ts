@@ -2,8 +2,9 @@ import "./styles.css";
 
 import { ToggleComponent } from "../../../types";
 
-import toggleComponent from "./component";
 import { buildMbxReactiveComponent } from "../../../tools";
+
+import { defaultIcon } from "./icons";
 
 /**
  * A compact Toggle switcher, customized to reflect its actual status
@@ -46,7 +47,7 @@ import { buildMbxReactiveComponent } from "../../../tools";
  */
 const Toggle: ToggleComponent = ({
   value: inputValue,
-  icon,
+  icon = defaultIcon,
   offIcon,
   onIcon,
   onChange = () => {},
@@ -54,11 +55,13 @@ const Toggle: ToggleComponent = ({
 }) =>
   buildMbxReactiveComponent<boolean>(commonProps, (sharedProps) => ({
     name: "tgl",
+    group: "atom",
     props: (status, setStatus) => ({
       commonProps: {
         ...sharedProps,
         additionalProps: {
           ...sharedProps.additionalProps,
+          "data-mbx-flip": status,
           ...(!sharedProps.disabled && {
             onClick: () => {
               onChange(!status);
@@ -74,15 +77,12 @@ const Toggle: ToggleComponent = ({
         },
       },
     }),
-    Component: ({ value, setValue }) =>
-      toggleComponent({
-        value,
-        setValue,
-        icon,
-        offIcon,
-        onIcon,
-        ...sharedProps,
-      }),
+    Component: ({ value, setValue }) => {
+      const iconOn = onIcon || icon;
+      const iconOff = offIcon || icon;
+
+      return value === true ? iconOn : iconOff;
+    },
     defaultValue: true,
     inputValue,
   }));

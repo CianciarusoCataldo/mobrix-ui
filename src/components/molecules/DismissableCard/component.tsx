@@ -15,18 +15,19 @@ const DismissableCardInternalComponent: MbxUiComponent<
   cardComponent({
     ...props,
     header: [
-      <div data-mbx-scl="dis-cn;flxrr;wfu" key="dis-x">
+      <div data-mbx-cls="dis-cn" data-mbx-scl="flxrr;wfu" key="dis-x">
         <IconButton
           dark={props.dark}
           features={{ fillFc: true, noShFc: true }}
-          scl="dis-bt;flxrr;wfit"
+          scl="flxrr;wfit"
+          mbxClass="dis-bt"
           disabled={props.disabled}
           onClick={onClose}
         >
           <Xicon fill="var(--mbx-c-dcard-x)" />
         </IconButton>
       </div>,
-      <div data-mbx-scl="cardc-head" key="dis-h">
+      <div data-mbx-cls="cardc-head" key="dis-h">
         {header}
       </div>,
     ],

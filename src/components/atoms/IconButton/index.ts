@@ -60,6 +60,7 @@ const IconButton: IconButtonComponent = ({
     }),
     Component: children,
     scl: "wfit;nout",
+    group: "atom",
     commonProps: {
       ...sharedProps,
       additionalProps: {

@@ -62,6 +62,7 @@ const TabViewer: TabViewerComponent = (props) =>
     inputValue: props.selected,
     name: "tview",
     scl: "flxc",
+    group: "molecule",
     Component: ({ value, setValue }) =>
       component({
         setValue,

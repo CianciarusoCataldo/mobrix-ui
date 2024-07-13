@@ -47,7 +47,7 @@ const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
   }
 
   return (
-    <tbody key="table_body">
+    <tbody key="tbl_b">
       {rows.map((row, rowIndex) => (
         <tr key={`row_${rowIndex}`} {...rowProps}>
           {row.map((element, index) => {
@@ -56,7 +56,7 @@ const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
             return (
               <Wrapper
                 data-mbx-tcell="true"
-                key={`element_${rowIndex}_${index}`}
+                key={`el_${rowIndex}_${index}`}
                 align="center"
                 onClick={() => onClick(rowIndex, index)}
                 {...wrappers[rowIndex].cellProps}

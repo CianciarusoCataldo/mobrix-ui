@@ -5,14 +5,14 @@
   color: var(--mbx-c-form-txt);
 }
 
-[data-mbx-id="form"] [data-mbx-scl*="title"] {
+[data-mbx-id="form"] [data-mbx-cls="title"] {
   margin-bottom: 0.9rem;
   font-size: 1.35rem;
   line-height: 1.75rem;
   --mbx-label-text-color: var(--mbx-c-form-txt);
 }
 
-[data-mbx-id="form"] [data-mbx-scl*="f-field"] {
+[data-mbx-id="form"] [data-mbx-cls="f-field"] {
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;
 }
@@ -34,12 +34,12 @@
     min-width: 3%;
   }
 
-  [data-mbx-id="form"] [data-mbx-scl*="f-field"] {
+  [data-mbx-id="form"] [data-mbx-cls="f-field"] {
     max-width: 65%;
   }
 }
 
-[data-mbx-id="form"] [data-mbx-scl*="s-bt"] {
+[data-mbx-id="form"] [data-mbx-cls="s-bt"] {
   margin-top: 0.9rem;
   --mbx-button-text-color: var(--mbx-c-form-sub-txt);
   --mbx-button-background: var(--mbx-c-form-sub-bg);

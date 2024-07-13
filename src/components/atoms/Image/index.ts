@@ -49,6 +49,7 @@ const Image: ImageComponent = ({
 }) =>
   buildMbxStandardComponent({ ...props, hover, shadow }, (sharedProps) => ({
     name: "image",
+    group: "atom",
     commonProps: {
       ...sharedProps,
       additionalProps: {

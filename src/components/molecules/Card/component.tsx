@@ -3,6 +3,7 @@ import React from "react";
 import { MbxUiComponent, CardProps, BuilderComponent } from "../../../types";
 
 import { Divider } from "../../atoms";
+import Container from "../Container";
 
 const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
   header,
@@ -20,29 +21,33 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
   bodyProps = {},
   footerProps = {},
 }) => [
-  <div
+  <Container
+    dark={dark}
+    unstyled
     className={headerClassName}
     key="card_h"
-    data-mbx-scl="cardc-head"
-    {...(!header && { "data-mbx-atts": "hide" })}
-    {...headerProps}
+    mbxClass="cardc-head"
+    hide={!header}
+    additionalProps={headerProps}
   >
     {header}
-  </div>,
+  </Container>,
   <Divider
     hide={!header || noDividers || noTopDivider}
     size="1px"
     key="card_t_d"
     dark={dark}
   />,
-  <div
+  <Container
+    dark={dark}
+    unstyled
     className={bodyClassName}
-    data-mbx-scl="cardc-body"
+    mbxClass="cardc-body"
     key="card_b"
-    {...bodyProps}
+    additionalProps={bodyProps}
   >
     {body}
-  </div>,
+  </Container>,
   children,
   <Divider
     size="1px"
@@ -50,15 +55,17 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
     dark={dark}
     hide={!footer || noDividers || noBottomDivider}
   />,
-  <div
+  <Container
+    dark={dark}
+    unstyled
     className={footerClassName}
     key="card_f"
-    data-mbx-scl="cardc-footer"
-    {...(!footer && { "data-mbx-atts": "hide" })}
-    {...footerProps}
+    mbxClass="cardc-footer"
+    hide={!footer}
+    additionalProps={footerProps}
   >
     {footer}
-  </div>,
+  </Container>,
 ];
 
 export default cardComponent;

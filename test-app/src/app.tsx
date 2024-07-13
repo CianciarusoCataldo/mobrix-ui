@@ -7,13 +7,7 @@ import {
   PackageVersion,
   Input,
 } from "./mobrix-ui-preview";
-import AtomsPage from "./pages/atoms";
-import MoleculesPage from "./pages/molecules";
-import OrganismsPage from "./pages/organisms";
 
-const Atoms = <AtomsPage />;
-const Molecules = <MoleculesPage />;
-const Organisms = <OrganismsPage />;
 const tabs = (
   <TabViewer
     animated
@@ -21,20 +15,20 @@ const tabs = (
     tabSelectedClassName="demo-tab-selected"
     tabUnselectedClassName="demo-tab-unselected"
     //dark
-    selected={1}
+    selected={0}
     tabs={[
       {
         label: "Atoms",
-        content: Atoms,
+        lazy: React.lazy(() => import("./pages/atoms")),
         dismissable: true,
       },
       {
         label: "Molecules",
-        content: Molecules,
+        lazy: React.lazy(() => import("./pages/molecules")),
       },
       {
         label: "Organisms",
-        content: Organisms,
+        lazy: React.lazy(() => import("./pages/organisms")),
       },
     ]}
   />

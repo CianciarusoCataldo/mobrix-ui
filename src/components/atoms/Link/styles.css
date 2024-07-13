@@ -8,6 +8,6 @@
   font-weight: 700;
 }
 
-[data-mbx-id="link"][data-mbx-scl*="under"] {
+[data-mbx-id="link"][data-mbx-cls="under"] {
   text-decoration: underline;
 }

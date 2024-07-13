@@ -2,18 +2,11 @@
   background-color: transparent;
   background: var(--mbx-c-card-bg);
   color: var(--mbx-c-card-txt);
+  --mbx-container-background: var(--mbx-c-card-bg);
+  --mbx-container-text-color: var(--mbx-c-card-txt);
 }
 
 [data-mbx-id*="cont"] {
   background: var(--mbx-c-con-bg);
   color: var(--mbx-c-con-txt);
-}
-
-[data-mbx-id="crsel"] [data-mbx-arrow] svg {
-  fill: var(--mbx-c-car-arr);
-}
-
-[data-mbx-id="crsel"] [data-mbx-arrow][data-mbx-atts*="dsb"] svg,
-[data-mbx-id="crsel"] [data-mbx-arrow][data-mbx-atts*="dsb"]:hover svg {
-  fill: none;
 }

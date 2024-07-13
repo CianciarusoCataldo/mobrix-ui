@@ -15,21 +15,21 @@
   --mbx-popup-background: var(--mbx-c-drop-bg);
 }
 
-[data-mbx-id="dd"] [data-mbx-scl*="opts"]::-webkit-scrollbar {
+[data-mbx-id="dd"] [data-mbx-id="popup"]::-webkit-scrollbar {
   width: 12px;
 }
 
-[data-mbx-id="dd"] [data-mbx-scl*="opts"]::-webkit-scrollbar-track {
+[data-mbx-id="dd"] [data-mbx-id="popup"]::-webkit-scrollbar-track {
   background: var(--mbx-c-drop-bg);
 }
 
-[data-mbx-id="dd"] [data-mbx-scl*="opts"]::-webkit-scrollbar-thumb {
+[data-mbx-id="dd"] [data-mbx-id="popup"]::-webkit-scrollbar-thumb {
   background-color: var(--mbx-c-drop-txt);
   border-radius: 20px;
   border: 3px solid transparent;
 }
 
-[data-mbx-id="dd"] [data-mbx-scl*="drop-bt"] {
+[data-mbx-id="dd"] [data-mbx-cls="drop-bt"] {
   font-size: 1.125rem;
   line-height: 1.75rem;
   display: inline-flex;
@@ -41,20 +41,20 @@
   padding: 0 0.4rem;
 }
 
-[data-mbx-id="dd"] [data-mbx-scl*="opts"] [data-mbx-id="button"] {
+[data-mbx-id="dd"] [data-mbx-cls="opts"] [data-mbx-id="button"] {
   --mbx-button-text-color: var(--mbx-c-drop-txt);
 }
 
-[data-mbx-id="dd"] [data-mbx-scl*="drop-sel-el"] {
+[data-mbx-id="dd"] [data-mbx-cls="drop-sel-el"] {
   padding-right: 0.25rem;
   color: var(--mbx-c-drop-txt);
 }
 
-[data-mbx-id="dd"] [data-mbx-scl*="ic"] {
+[data-mbx-id="dd"] [data-mbx-cls="ic"] {
   margin: auto 0.25rem;
 }
 
-[data-mbx-id="dd"] [data-mbx-scl*="arr-ic"] {
+[data-mbx-id="dd"] [data-mbx-cls="arr-ic"] {
   border: solid;
   border-width: 0 3px 3px 0;
   display: block;
@@ -66,7 +66,7 @@
   -webkit-transform: rotate(45deg);
 }
 
-[data-mbx-id="dd"] [data-mbx-scl*="ic"][data-mbx-scl*="rot-true"] {
+[data-mbx-id="dd"] [data-mbx-cls="ic"][data-mbx-drt="true"] {
   transition: transform 0.3s ease-in-out;
   transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -75,7 +75,7 @@
   -ms-transition: -ms-transform 0.3s ease-in-out;
 }
 
-[data-mbx-id="dd"] [data-mbx-scl*="ic"][data-mbx-scl*="rot-false"] {
+[data-mbx-id="dd"] [data-mbx-cls="ic"][data-mbx-drt="false"] {
   transition: transform 0.3s ease-in-out;
   transform: rotate(360deg);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
@@ -84,48 +84,48 @@
   -webkit-transform: rotate(360deg);
 }
 
-[data-mbx-id="dd"] [data-mbx-scl*="reg"] {
+[data-mbx-id="dd"] [data-mbx-cls="reg"] {
   padding: 0.25rem;
   background-color: transparent;
   --mbx-button-text-color: var(--mbx-c-drop-txt);
 }
 
-[data-mbx-id="dd"] [data-mbx-scl*="reg"] [data-mbx-scl*="drop-el"] {
+[data-mbx-id="dd"] [data-mbx-cls="reg"] [data-mbx-cls="drop-el"] {
   color: var(--mbx-c-drop-txt);
 }
 
-[data-mbx-id="dd"] [data-mbx-last="true"] {
+[data-mbx-id="dd"] [data-mbx-dpos="false-true"] {
   border-bottom-right-radius: 0.375rem;
   border-bottom-left-radius: 0.375rem;
 }
 
-[data-mbx-id="dd"] [data-mbx-first="true"] {
+[data-mbx-id="dd"] [data-mbx-dpos="true-false"] {
   border-top-right-radius: 0.375rem;
   border-top-left-radius: 0.375rem;
 }
 
 @media (hover) {
   [data-mbx-id="dd"]:not([data-mbx-atts*="dsb"])[data-mbx-atts*="hv"]
-    [data-mbx-scl*="drop-bt"]:not([data-mbx-atts*="dsb"]):hover,
+    [data-mbx-cls="drop-bt"]:not([data-mbx-atts*="dsb"]):hover,
   [data-mbx-id="dd"][data-mbx-atts*="hv"]:not([data-mbx-atts*="dsb"])
-    [data-mbx-scl*="reg"]:hover
-    [data-mbx-scl*="drop-el"] {
+    [data-mbx-cls="reg"]:hover
+    [data-mbx-cls="drop-el"] {
     color: var(--mbx-c-drop-txt-h);
   }
 
   [data-mbx-id="dd"]:not(
       [data-mbx-atts*="dsb"]
     )[data-mbx-atts*="bg"][data-mbx-atts*="hv"]
-    [data-mbx-scl*="drop-bt"]:not([data-mbx-atts*="dsb"]):hover,
+    [data-mbx-cls="drop-bt"]:not([data-mbx-atts*="dsb"]):hover,
   [data-mbx-id="dd"][data-mbx-atts*="hv"]:not(
       [data-mbx-atts*="dsb"]
     )[data-mbx-atts*="bg"]
-    [data-mbx-scl*="reg"]:hover {
+    [data-mbx-cls="reg"]:hover {
     background: var(--mbx-c-drop-bg-h);
   }
 
   [data-mbx-id="dd"]:not([data-mbx-atts*="dsb"])[data-mbx-atts*="hv"]
-    [data-mbx-scl*="arr-ic"]:not([data-mbx-atts*="dsb"]):hover {
+    [data-mbx-cls="arr-ic"]:not([data-mbx-atts*="dsb"]):hover {
     border-color: var(--mbx-c-drop-arr-h);
     opacity: 0.5;
   }
@@ -134,6 +134,6 @@
 [data-mbx-id="dd"][data-mbx-atts*="hv"]:not(
     [data-mbx-atts*="dsb"]
   )[data-mbx-atts*="bg"]
-  [data-mbx-scl*="reg"]:focus-visible {
+  [data-mbx-cls="reg"]:focus-visible {
   background: var(--mbx-c-drop-bg-h);
 }

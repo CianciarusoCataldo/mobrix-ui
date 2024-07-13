@@ -48,7 +48,7 @@ const CalendarComponent: MbxUiReactiveComponent<
       ? startMonth
       : todayDate.month;
 
-  const [onScreenDate, displayDate] = React.useState<{
+  const [scrDate, show] = React.useState<{
     month: number;
     year: number;
   }>({
@@ -63,28 +63,28 @@ const CalendarComponent: MbxUiReactiveComponent<
         ? startMonth
         : todayDate.month;
 
-    displayDate({ month: actualMonth, year: actualYear });
+    show({ month: actualMonth, year: actualYear });
   }, [startMonth, startYear]);
 
-  const months = getMonthsDuration(onScreenDate.year);
+  const months = getMonthsDuration(scrDate.year);
 
-  const basicMatrix = getDateMatrix({ ...onScreenDate, day: 1 }, months);
+  const basicMatrix = getDateMatrix({ ...scrDate, day: 1 }, months);
 
   const arrowActions: Record<"left" | "right", () => void> = {
     left: () =>
-      onScreenDate.month > 0
-        ? displayDate({
-            ...onScreenDate,
-            month: onScreenDate.month - 1,
+      scrDate.month > 0
+        ? show({
+            ...scrDate,
+            month: scrDate.month - 1,
           })
-        : displayDate({ year: onScreenDate.year - 1, month: 11 }),
+        : show({ year: scrDate.year - 1, month: 11 }),
     right: () =>
-      onScreenDate.month < 11
-        ? displayDate({
-            ...onScreenDate,
-            month: onScreenDate.month + 1,
+      scrDate.month < 11
+        ? show({
+            ...scrDate,
+            month: scrDate.month + 1,
           })
-        : displayDate({ year: onScreenDate.year + 1, month: 0 }),
+        : show({ year: scrDate.year + 1, month: 0 }),
   };
 
   const getArrowButton = (direction: "left" | "right") => (
@@ -92,7 +92,7 @@ const CalendarComponent: MbxUiReactiveComponent<
       disabled={disabled}
       onClick={() => {
         arrowActions[direction]();
-        onViewChange({ ...onScreenDate, day: 1 });
+        onViewChange({ ...scrDate, day: 1 });
       }}
       hide={hideArrows}
       hover={hover}
@@ -113,14 +113,15 @@ const CalendarComponent: MbxUiReactiveComponent<
 
   dayLabel &&
     components.push(
-      <div key="cal_top_sel" data-mbx-scl="flxr:t-sel;mauto;wfu">
+      <div key="cal_top_sel" data-mbx-scl="flxr:mauto;wfu" data-mbx-cls="t-sel">
         {getArrowButton("left")}
         <Label
           disabled={disabled}
-          scl="act-dt;mxauto"
+          scl="mxauto"
+          mbxClass="act-dt"
           dark={commonProps.dark}
           {...customProps}
-        >{`${customMonths[onScreenDate.month]} ${onScreenDate.year}`}</Label>
+        >{`${customMonths[scrDate.month]} ${scrDate.year}`}</Label>
         {getArrowButton("right")}
       </div>
     );
@@ -133,11 +134,11 @@ const CalendarComponent: MbxUiReactiveComponent<
       propsCallback={(row, column) => {
         if (row > 0) {
           const isDisabled = fromToday
-            ? onScreenDate.year < todayDate.year ||
-              (onScreenDate.year === todayDate.year &&
-                onScreenDate.month < todayDate.month) ||
-              (onScreenDate.year === todayDate.year &&
-                onScreenDate.month === todayDate.month &&
+            ? scrDate.year < todayDate.year ||
+              (scrDate.year === todayDate.year &&
+                scrDate.month < todayDate.month) ||
+              (scrDate.year === todayDate.year &&
+                scrDate.month === todayDate.month &&
                 basicMatrix[row - 1][column] < todayDate.dayOfTheMonth)
             : false;
 
@@ -145,13 +146,13 @@ const CalendarComponent: MbxUiReactiveComponent<
 
           const onClick = () => {
             onChange({
-              ...onScreenDate,
+              ...scrDate,
               dayOfTheMonth: basicMatrix[row - 1][column],
               day: basicMatrix[row - 1][column],
             });
             setValue({
-              month: onScreenDate.month,
-              year: onScreenDate.year,
+              month: scrDate.month,
+              year: scrDate.year,
               day: basicMatrix[row - 1][column],
             });
           };
@@ -172,13 +173,13 @@ const CalendarComponent: MbxUiReactiveComponent<
             "data-mbx-ctoday":
               fromToday &&
               basicMatrix[row - 1][column] === todayDate.dayOfTheMonth &&
-              onScreenDate.month === todayDate.month &&
-              onScreenDate.year === todayDate.year,
-            "data-mbx-selected":
-              value.year === onScreenDate.year &&
-              value.month === onScreenDate.month &&
+              scrDate.month === todayDate.month &&
+              scrDate.year === todayDate.year,
+            "data-mbx-scal":
+              value.year === scrDate.year &&
+              value.month === scrDate.month &&
               value.day === basicMatrix[row - 1][column],
-            ...((isDisabled || isNotDay) && { "data-mbx-scl": "dsb" }),
+            ...((isDisabled || isNotDay) && { "data-mbx-cls": "dsb" }),
             ...extraProps,
           };
         } else return {};

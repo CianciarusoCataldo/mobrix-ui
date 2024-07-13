@@ -33,7 +33,9 @@ const radioButtonGroupComponent: MbxUiReactiveComponent<
       <div
         className={elementClassName}
         key={"rgr_el_" + index}
-        data-mbx-scl={`t-${txtPosition};${cssClasses[txtPosition]};rdg-el-${index};act`}
+        data-mbx-scl={`${cssClasses[txtPosition]};act`}
+        data-mbx-cls="rdg-el"
+        data-mbx-rdgp={txtPosition}
       >
         <Label
           hide={!element.text}

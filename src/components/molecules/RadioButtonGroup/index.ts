@@ -60,8 +60,9 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
     name: "rgroup",
     defaultValue: -1,
     inputValue,
-    scl: `wfit;${horizontal ? "or-h;flxr;" : "flxc;"}`,
-    commonProps: sharedProps,
+    group: "molecule",
+    scl: `wfit;${horizontal ? "flxr;" : "flxc;"}`,
+    commonProps: { ...sharedProps, "data-mbx-rdgh": horizontal },
     Component: ({ value, setValue }) =>
       component({
         value,

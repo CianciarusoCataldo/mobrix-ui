@@ -12,7 +12,7 @@ const modalTest = () => {
           <p>Modal content</p>
         </Modal>
       );
-      wrapper.find('[data-mbx-scl*="dis-bt"]').simulate("click");
+      wrapper.find('[data-mbx-cls="dis-bt"]').simulate("click");
       expect(wrapper);
 
       wrapper = mount(
@@ -20,7 +20,7 @@ const modalTest = () => {
           <p>Modal content</p>
         </Modal>
       );
-      wrapper.find('[data-mbx-scl*="dis-bt"]').simulate("click");
+      wrapper.find('[data-mbx-cls="dis-bt"]').simulate("click");
       expect(onCloseStub).toBeCalled;
     });
 
@@ -32,7 +32,7 @@ const modalTest = () => {
           <p>Modal content</p>
         </Modal>
       );
-      wrapper.find('[data-mbx-scl="cardc-head"]').simulate("click");
+      wrapper.find('[data-mbx-cls="cardc-head"]').simulate("click");
       expect(wrapper);
     });
   });

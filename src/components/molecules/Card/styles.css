@@ -2,12 +2,12 @@
   padding: 0 0.1rem;
 }
 
-[data-mbx-id*="card"] [data-mbx-scl*="cardc-"] {
+[data-mbx-id*="card"] [data-mbx-cls*="cardc-"] {
   padding: 0.5rem 0.3rem;
   word-wrap: break-word;
   word-break: break-word;
 }
 
-[data-mbx-id*="card"] [data-mbx-scl*="cardc-body"] {
+[data-mbx-id*="card"] [data-mbx-cls="cardc-body"] {
   padding: 0.7rem 0.3rem;
 }

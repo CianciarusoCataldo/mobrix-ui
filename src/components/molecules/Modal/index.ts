@@ -81,6 +81,7 @@ const Modal: ModalComponent = ({
       },
     },
     scl: "flxc;wfu",
+    group: "molecule",
   }));
 };
 

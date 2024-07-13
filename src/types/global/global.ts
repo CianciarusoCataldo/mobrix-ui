@@ -80,6 +80,8 @@ export type CommonProps = MbxAttributes & {
   fts?: string;
 
   features?: Features;
+
+  mbxClass?: string;
 };
 
 /**

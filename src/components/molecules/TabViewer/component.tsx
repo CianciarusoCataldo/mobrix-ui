@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 
 import { MbxUiReactiveComponent, TabViewerProps } from "../../../types";
 
@@ -17,40 +17,57 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
   shadow,
   value,
   disabled,
-}) => [
-  <div key="tabs_list" data-mbx-scl="flxr;">
-    {tabs.map((tab, index) => (
-      <Button
-        shadow={shadow}
-        hover={!(index === value)}
-        animated={false}
-        disabled={disabled}
-        dark={dark}
-        scl={`tab;${index === value ? "sel;" : ""}`}
-        className={`${tabClassName} ${
-          index === value ? tabSelectedClassName : tabUnselectedClassName
-        }`}
-        key={`tab_${index}`}
-        onClick={() => {
-          setValue(index);
-          onChange(index);
-        }}
-      >
-        {tab.label}
-      </Button>
-    ))}
-  </div>,
-  <Container
-    scl="tb-v"
-    className={tabViewClassName}
-    dark={dark}
-    key="tabs_view"
-    shadow={shadow}
-    background={false}
-    disabled={disabled}
-  >
-    {tabs.length > 0 && tabs.length > value ? tabs[value].content : <div />}
-  </Container>,
-];
+}) => {
+  const Render = tabs[value]?.lazy || (() => <div />);
+
+  return [
+    <div key="tabs_list" data-mbx-scl="flxr">
+      {tabs.map((tab, index) => {
+        const isTabSel = index === value;
+        return (
+          <Button
+            shadow={false}
+            hover={!isTabSel}
+            animated={false}
+            disabled={disabled}
+            dark={dark}
+            mbxClass="tab"
+            features={{ opAct: !isTabSel, opHov: !isTabSel, colFc: true }}
+            additionalProps={{ "data-mbx-tbvsel": isTabSel }}
+            className={`${tabClassName} ${
+              index === value ? tabSelectedClassName : tabUnselectedClassName
+            }`}
+            key={`tab_${index}`}
+            onClick={() => {
+              setValue(index);
+              onChange(index);
+            }}
+            data-mbx-gg="gg"
+          >
+            {tab.label}
+          </Button>
+        );
+      })}
+    </div>,
+    <Container
+      mbxClass="tb-v"
+      className={tabViewClassName}
+      dark={dark}
+      key="tabs_view"
+      shadow={shadow}
+      disabled={disabled}
+    >
+      {tabs.length > 0 && tabs.length > value ? (
+        tabs[value]?.content || (
+          <Suspense fallback={<div />}>
+            <Render />
+          </Suspense>
+        )
+      ) : (
+        <div />
+      )}
+    </Container>,
+  ];
+};
 
 export default tabViewerComponent;

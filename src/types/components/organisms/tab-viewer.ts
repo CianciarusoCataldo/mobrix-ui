@@ -1,3 +1,4 @@
+import { LazyExoticComponent, JSX } from "react";
 import {
   ClosableComponent,
   ComponentWithCallback,
@@ -18,7 +19,9 @@ export type Tab = {
   label: string;
 
   /** Tab content */
-  content: JSX.Element;
+  content?: JSX.Element;
+
+  lazy?: LazyExoticComponent<() => JSX.Element>;
 
   dismissable?: boolean;
 };

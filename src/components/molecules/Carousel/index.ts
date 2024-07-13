@@ -48,6 +48,7 @@ const Carousel: CarouselComponent = (props) => {
   return buildMbxReactiveComponent<number>(props, (sharedProps) => ({
     name: "crsel",
     commonProps: props,
+    group: "molecule",
     defaultValue: 0,
     inputValue: props.value,
     scl: "flxc;wfit;act",

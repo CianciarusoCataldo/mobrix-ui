@@ -19,7 +19,13 @@ const DemoComponent = <T extends Record<string, any> = {}>({
   ) => Record<string, any> & T;
 }) => {
   return (
-    <Demo props={inputProps} rows={rows} label={label} startColor={startColor}>
+    <Demo
+      id={label}
+      props={inputProps}
+      rows={rows}
+      label={label}
+      startColor={startColor}
+    >
       {(props: Record<string, any> & T, setProps: any) => {
         let newProps = { ...props };
         if (parseProps) {

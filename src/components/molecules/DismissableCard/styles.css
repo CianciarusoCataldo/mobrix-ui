@@ -2,17 +2,17 @@
   padding-top: 0;
 }
 
-[data-mbx-id="dis-card"] [data-mbx-scl*="dis-cn"] {
+[data-mbx-id="dis-card"] [data-mbx-cls="dis-cn"] {
   padding-bottom: 0.1rem;
 }
 
-[data-mbx-id="dis-card"] [data-mbx-scl*="dis-bt"] {
+[data-mbx-id="dis-card"] [data-mbx-cls="dis-bt"] {
   padding: 0;
 }
 
 @media (hover) {
   [data-mbx-id="dis-card"][data-mbx-atts*="hv"]:not([data-mbx-atts*="dsb"])
-    [data-mbx-scl*="dis-bt"]
+    [data-mbx-cls="dis-bt"]
     svg:hover
     path {
     fill: var(--mbx-c-dcard-x-h);

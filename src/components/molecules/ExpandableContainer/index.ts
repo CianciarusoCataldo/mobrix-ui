@@ -58,6 +58,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
     defaultValue: false,
     wrapper,
     inputValue: startCompact,
+    group: "molecule",
     Component: ({ value, setValue }) =>
       component({
         value,
@@ -68,8 +69,14 @@ const ExpandableContainer: ExpandableContainerComponent = ({
         ...sharedProps,
       }),
     props: (value, setValue) => ({
-      scl: `cmp-${value}`,
-      commonProps: sharedProps,
+      mbxClass: `cmp-${value}`,
+      commonProps: {
+        ...sharedProps,
+        additionalProps: {
+          ...sharedProps.additionalProps,
+          "data-mbx-ecmp": value,
+        },
+      },
     }),
   }));
 };

@@ -11,7 +11,7 @@
   background: var(--mbx-c-rad-bg);
 }
 
-[data-mbx-id="radio"] [data-mbx-scl*="ic"] {
+[data-mbx-id="radio"] div {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;

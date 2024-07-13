@@ -37,36 +37,25 @@
 
 @media (hover) {
   [data-mbx-id="slider"][data-mbx-atts*="hv"]::-ms-track:hover {
-    width: 100%;
     background: var(--mbx-c-sld-tb-h);
-    border-color: transparent;
-    color: transparent;
     opacity: 0.8;
   }
 
   [data-mbx-id="slider"][data-mbx-atts*="hv"]::-moz-range-thumb:hover {
-    border-color: transparent;
-    color: transparent;
-    border-radius: 50%;
-    appearance: none;
-    width: 30px;
-    height: 30px;
     opacity: 0.8;
     background: var(--mbx-c-sld-tb-h);
   }
 
   [data-mbx-id="slider"][data-mbx-atts*="hv"]::-webkit-slider-thumb:hover {
-    border-radius: 50%;
-    appearance: none;
-    width: 30px;
-    height: 30px;
     background: var(--mbx-c-sld-tb-h);
-    -webkit-appearance: none;
     opacity: 0.8;
   }
 }
 
-[data-mbx-id="slider"][data-mbx-atts*="hv"]::-moz-range-thumb:active,
-[data-mbx-id="slider"][data-mbx-atts*="hv"]::-webkit-slider-thumb:active {
-  opacity: 0.6;
+[data-mbx-id="slider"][data-mbx-readonly="false"]::-moz-range-thumb:active {
+  opacity: 0.5;
+}
+
+[data-mbx-id="slider"][data-mbx-readonly="false"]::-webkit-slider-thumb:active {
+  opacity: 0.5;
 }

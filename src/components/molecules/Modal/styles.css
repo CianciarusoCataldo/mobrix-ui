@@ -29,7 +29,7 @@
   --mbx-dismissablecard-x-color: var(--mbx-c-mod-x);
 }
 
-[data-mbx-id="mod"] > [data-mbx-id="dis-card"] [data-mbx-scl*="body"] {
+[data-mbx-id="mod"] > [data-mbx-id="dis-card"] [data-mbx-cls="card-body"] {
   align-items: center;
   margin: 0;
 }

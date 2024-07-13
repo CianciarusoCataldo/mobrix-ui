@@ -57,6 +57,7 @@ const Table: TableComponent = (props) =>
       ...sharedProps,
     }),
     commonProps: sharedProps,
+    group: "molecule",
     wrapper: "table",
   }));
 

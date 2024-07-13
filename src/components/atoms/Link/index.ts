@@ -53,12 +53,12 @@ const Link: LinkComponent = ({
     { ...commonProps, shadow: false },
     (sharedProps) => ({
       name: "link",
+      group: "atom",
       features: {
         opHov: true,
         colFc: true,
         noShFc: true,
       },
-      ...(underline && { scl: "under" }),
       Component: children,
       commonProps: {
         ...sharedProps,
@@ -68,10 +68,11 @@ const Link: LinkComponent = ({
             href: to,
             target: newTab ? "_blank" : undefined,
           }),
+          ...(underline && { "data-mbx-cls": "under" }),
         },
       },
       wrapper: sharedProps.disabled ? "span" : "a",
-    }),
+    })
   );
 
 export default Link;

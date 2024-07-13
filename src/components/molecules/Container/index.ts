@@ -43,6 +43,7 @@ import { buildMbxStandardComponent } from "../../../tools";
 const Container: ContainerComponent = (props) =>
   buildMbxStandardComponent(props, (sharedProps) => ({
     name: "cont",
+    group: "molecule",
     Component: props.children,
     commonProps: sharedProps,
     wrapper: props.wrapper,

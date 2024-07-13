@@ -64,6 +64,7 @@ const DismissableCard: DismissableCardComponent = ({
 }) =>
   buildMbxReactiveComponent(props, (sharedProps) => ({
     name: "dis-card",
+    group: "molecule",
     inputValue: sharedProps.hide,
     defaultValue: false,
     Component: ({ value, setValue }) =>
@@ -75,7 +76,11 @@ const DismissableCard: DismissableCardComponent = ({
           onClose();
           !alwaysVisible && setValue(true);
         },
-        headerProps: { ...headerProps, "data-mbx-scl": "flxc" },
+        headerProps: {
+          ...headerProps,
+          "data-mbx-scl": "flxc",
+          "data-mbx-cls": "",
+        },
       }),
     props: (value, setValue) => ({
       commonProps: {

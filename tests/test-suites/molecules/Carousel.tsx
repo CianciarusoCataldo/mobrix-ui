@@ -13,7 +13,12 @@ const carouselTest = () => {
   describe("Carousel", () => {
     test("Rendering test", () => {
       let wrapper = mount(<Carousel />);
-      wrapper.find('[data-mbx-arrow="next"]').simulate("click");
+
+      expect(wrapper);
+
+      wrapper = mount(<Carousel elements={testElements} />);
+      wrapper.find('[data-mbx-cls="anext"]').simulate("click");
+
       expect(wrapper);
     });
 
@@ -22,13 +27,18 @@ const carouselTest = () => {
       let wrapper = mount(
         <Carousel elements={testElements} onChange={onChangeStub} />
       );
-      wrapper.find('[data-mbx-arrow="next"]').simulate("click");
+      wrapper.find('[data-mbx-cls="anext"]').simulate("click");
 
       expect(onChangeStub).toBeCalledWith(1);
 
-      wrapper.find('[data-mbx-arrow="prev"]').simulate("click");
+      wrapper.find('[data-mbx-cls="aprev"]').simulate("click");
 
       expect(onChangeStub).toBeCalledWith(0);
+
+      wrapper.find('[data-mbx-cls="anext"]').simulate("click");
+      wrapper.find('[data-mbx-cls="anext"]').simulate("click");
+      wrapper.find('[data-mbx-cls="anext"]').simulate("click");
+      expect(onChangeStub).toBeCalledWith(3);
     });
 
     test("Clicking on the dots buttons trigger the onChange callback", () => {
@@ -36,22 +46,13 @@ const carouselTest = () => {
       let wrapper = mount(
         <Carousel elements={testElements} onChange={onChangeStub} />
       );
-      wrapper
-        .find("[data-mbx-scl*='dots'] [data-mbx-scl*='dot']")
-        .at(2)
-        .simulate("mouseenter");
-      wrapper
-        .find("[data-mbx-scl*='dots'] [data-mbx-scl*='dot']")
-        .at(2)
-        .simulate("mouseleave");
-      wrapper
-        .find("[data-mbx-scl*='dots'] [data-mbx-scl*='dot']")
-        .at(2)
-        .simulate("click");
+      wrapper.find("[data-mbx-cls='csdot']").at(2).simulate("mouseenter");
+      wrapper.find("[data-mbx-cls='csdot']").at(2).simulate("mouseleave");
+      wrapper.find("[data-mbx-cls='csdot']").at(2).simulate("click");
 
       expect(onChangeStub).toBeCalledWith(2);
 
-      wrapper.find("[data-mbx-scl*='dots'] [data-mbx-scl*='dot']").at(1).simulate("click");
+      wrapper.find("[data-mbx-cls='csdot']").at(1).simulate("click");
 
       expect(onChangeStub).toBeCalledWith(1);
     });

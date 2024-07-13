@@ -52,6 +52,7 @@ const Button: ButtonComponent = ({
   buildMbxStandardComponent(commonProps, (sharedProps) => ({
     name: "button",
     wrapper: "button",
+    group: "atom",
     features: {
       opHov: true,
       opAct: true,

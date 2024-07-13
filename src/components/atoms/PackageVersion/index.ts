@@ -52,6 +52,7 @@ const PackageVersion: PackageVersionComponent = ({
   buildMbxStandardComponent(props, (sharedProps) => ({
     name: "pkgv-label",
     wrapper: "p",
+    group: "atom",
     Component: component({ ...sharedProps, name, source, user, branch }),
     features: {
       colFc: true,

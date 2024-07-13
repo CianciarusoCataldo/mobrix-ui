@@ -1,6 +1,8 @@
 [data-mbx-id="dis-card"] {
   background: var(--mbx-c-dcard-bg);
   color: var(--mbx-c-dcard-txt);
+  --mbx-card-background: var(--mbx-c-dcard-bg);
+  --mbx-card-text-color: var(--mbx-c-dcard-txt);
 }
 
 [data-mbx-id="econ"] {
@@ -8,7 +10,7 @@
   color: var(--mbx-c-exp-text);
 }
 
-[data-mbx-id="econ"] [data-mbx-scl*="econ-b"] svg {
+[data-mbx-id="econ"] [data-mbx-cls="econ-b"] svg {
   fill: var(--mbx-c-exp-arr);
 }
 
@@ -45,7 +47,7 @@
   --mbx-toggle-background: var(--mbx-c-field-bg);
 }
 
-[data-mbx-id="mod"] > [data-mbx-id="dis-card"] > [data-mbx-scl*="head"] {
+[data-mbx-id="mod"] > [data-mbx-id="dis-card"] > [data-mbx-cls="head"] {
   --mbx-dismissablecard-x-color: var(--mbx-c-mod-x);
   --mbx-dismissablecard-x-color-hover: var(--mbx-c-mod-x-h);
 }

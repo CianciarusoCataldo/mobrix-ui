@@ -33,7 +33,13 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
     React.useState<Record<string, string | boolean | number>>(d_fields);
 
   const components = [
-    <Label disabled={disabled} key="form_title" dark={dark} scl="title;mxauto">
+    <Label
+      disabled={disabled}
+      key="frm_tl"
+      dark={dark}
+      mbxClass="title"
+      scl="mxauto"
+    >
       {title}
     </Label>,
     ...Object.keys(d_fields).map((field, index) => {
@@ -47,9 +53,9 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
 
       return (
         <div
-          data-mbx-scl={`${type};f-field`}
+          data-mbx-cls="f-field"
           className={fieldClassName}
-          key={`f_field_${index}`}
+          key={`f_fld_${index}`}
         >
           <FormField
             shadow={shadow}
@@ -80,7 +86,8 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
       onClick={() => {
         onSubmit && onSubmit(values);
       }}
-      scl="s-bt;mxauto"
+      scl="mxauto"
+      mbxClass="s-bt"
     >
       {submitLabel}
     </Button>

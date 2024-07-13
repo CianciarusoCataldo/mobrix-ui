@@ -54,6 +54,7 @@ const Rater: RaterComponent = ({
 }) =>
   buildMbxReactiveComponent<number>(props, (sharedProps) => ({
     name: "rater",
+    group: "atom",
     inputValue,
     defaultValue: 0,
     Component: ({ value, setValue }) =>

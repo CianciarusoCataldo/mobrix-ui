@@ -4,7 +4,7 @@
   padding: 0.4rem;
 }
 
-[data-mbx-id="rater"] [data-mbx-scl*="rt-ic"] {
+[data-mbx-id="rater"] svg {
   margin-left: 0.2rem;
   margin-right: 0.2rem;
 }

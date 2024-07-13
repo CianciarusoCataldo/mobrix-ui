@@ -35,10 +35,12 @@ export const ArrowIcon = ({
   fill = "inherit",
   scl = "",
   fts,
+  disabled,
 }: {
   scl?: string;
   fts?: string;
   fill?: string;
+  disabled?: boolean;
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +49,7 @@ export const ArrowIcon = ({
     viewBox="0 0 11 18"
     fill={fill}
     data-mbx-scl={scl}
-    data-mbx-img="arr"
+    data-mbx-img={disabled ? "arr-dis" : "arr"}
     data-mbx-fts={`noShFc;fillFc;${fts}`}
   >
     <path d="M8.6812.1963l2.1208928 2.120293-8.484 8.4864L.1972 8.6827z" />

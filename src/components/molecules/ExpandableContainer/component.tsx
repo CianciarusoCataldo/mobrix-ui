@@ -24,7 +24,7 @@ const expandableContainerComponent: MbxUiReactiveComponent<
   let components = [children];
 
   components.push(
-    <div key="exp_a" data-mbx-scl="exp-area;ovhid">
+    <div key="exp_a" data-mbx-cls="exp-area" data-mbx-scl="ovhid">
       {expanded}
     </div>
   );
@@ -38,7 +38,8 @@ const expandableContainerComponent: MbxUiReactiveComponent<
       }}
       key="arr_bt"
       dark={dark}
-      scl="econ-b;mauto;flxc"
+      scl="mauto;flxc"
+      mbxClass="econ-b"
       features={{ noShFc: true, fillFc: true }}
     >
       <ArrowIcon scl="nout" fill="var(--mbx-c-con-txt)" />

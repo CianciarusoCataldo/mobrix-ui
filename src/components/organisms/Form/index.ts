@@ -53,6 +53,7 @@ const Form: FormComponent = (props) =>
       ...sharedProps,
     }),
     scl: "flxc;bdtran",
+    group: "organism",
     commonProps: sharedProps,
   }));
 

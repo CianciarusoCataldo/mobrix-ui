@@ -54,6 +54,7 @@ const Review: ReviewComponent = (props) =>
     name: "review",
     commonProps: sharedProps,
     scl: "flxc;wfit;",
+    group: "molecule",
     Component: component({
       ...props,
       ...sharedProps,

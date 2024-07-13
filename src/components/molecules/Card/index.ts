@@ -55,6 +55,7 @@ import cardComponent from "./component";
 const Card: CardComponent = (props) =>
   buildMbxStandardComponent(props, (sharedProps) => ({
     name: "card",
+    group: "molecule",
     Component: cardComponent({
       ...props,
       ...sharedProps,

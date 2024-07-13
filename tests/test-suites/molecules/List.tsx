@@ -27,11 +27,12 @@ const listTest = () => {
           ]}
         />
       );
-      wrapper.find('[data-mbx-test="list_element_0"]').simulate("click");
+      wrapper.find('[data-mbx-cls="lis-el"]').at(0).simulate("click");
       expect(onChangeStub).toBeCalledWith(0);
 
       wrapper
-        .find('[data-mbx-test="list_element_3"]')
+        .find('[data-mbx-cls="lis-el"]')
+        .at(2)
         .simulate("keyDown", { code: "Enter" });
 
       expect(onChangeStub).toBeCalledWith(2);

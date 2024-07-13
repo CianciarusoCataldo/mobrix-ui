@@ -3,11 +3,11 @@
   padding: 0.6rem;
 }
 
-[data-mbx-id="list"] [data-mbx-scl*="lis-el"] {
+[data-mbx-id="list"] [data-mbx-cls="lis-el"] {
   margin-top: 0.2rem;
 }
 
-[data-mbx-id="list"] [data-mbx-scl*="dot"] {
+[data-mbx-id="list"] [data-mbx-cls="dot"] {
   width: 6px;
   height: 6px;
   fill: var(--mbx-c-lst-txt);
@@ -15,12 +15,6 @@
   display: block;
 }
 
-[data-mbx-id="list"] [data-mbx-scl*="lis-el"]:not(:focus-visible) {
+[data-mbx-id="list"] [data-mbx-cls="lis-el"]:not(:focus-visible) {
   color: var(--mbx-c-lst-txt);
-}
-
-@media (hover) {
-  [data-mbx-id="list"][data-mbx-atts*="hv"] [data-mbx-scl*="click"]:hover {
-    cursor: pointer;
-  }
 }

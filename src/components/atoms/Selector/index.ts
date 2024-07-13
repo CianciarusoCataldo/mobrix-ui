@@ -54,6 +54,7 @@ const Selector: SelectorComponent = ({
   buildMbxReactiveComponent<number | undefined>(commonProps, (sharedProps) => ({
     wrapper: "select",
     name: "selt",
+    group: "atom",
     defaultValue: undefined,
     inputValue,
     props: (value, setValue) => ({

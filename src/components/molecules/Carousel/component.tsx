@@ -3,6 +3,7 @@ import { CarouselProps, MbxUiReactiveComponent } from "../../../types";
 
 import { IconButton } from "../../atoms";
 import { ArrowIcon } from "../../../icons";
+import Container from "../Container";
 
 const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
   value: selectedItem,
@@ -30,23 +31,30 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
   if (elements.length > 0) {
     elements.forEach((element, index) => {
       elementsArray.push(
-        <div
+        <Container
+          unstyled
+          dark={dark}
           key={`car_el_${index}`}
-          {...(index !== item && {
-            "data-mbx-atts": "hide;",
-          })}
-          data-mbx-scl="el"
-          data-mbx-animation={index === item ? activeClassName : ""}
+          hide={index !== item}
+          mbxClass="el"
+          additionalProps={{
+            "data-mbx-animation": index === item ? activeClassName : "",
+          }}
         >
           {element}
-        </div>
+        </Container>
       );
 
       dots.push(
         <IconButton
-          scl={`csdot;bdtran;full-${
-            index === item || (hoveredDot != null && index === hoveredDot)
-          }`}
+          dark={dark}
+          scl="bdtran"
+          features={{ noShFc: true, fillFc: true }}
+          additionalProps={{
+            "data-mbx-cdot":
+              index === item || (hoveredDot != null && index === hoveredDot),
+          }}
+          mbxClass="csdot"
           className={dotClassName}
           disabled={disabled}
           key={`dot_${index}`}
@@ -69,38 +77,42 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
   };
 
   return [
-    <div key="car_els" data-mbx-scl="flxr;car-els">
+    <div key="car_els" data-mbx-cls="car-els" data-mbx-scl="flxr">
       <IconButton
+        dark={dark}
         key="prev-ar"
-        additionalProps={{
-          "data-mbx-arrow": "prev",
-        }}
-        disabled={item === 0 || disabled}
+        mbxClass="aprev"
+        disabled={disabled || item === 0}
         onClick={() => {
           setActiveClassname("from-left");
           updateItem(item - 1);
         }}
         {...arrowProps}
       >
-        <ArrowIcon />
+        <ArrowIcon
+          disabled={item === 0}
+          fill={item === 0 ? "none" : "var(--mbx-c-car-arr)"}
+        />
       </IconButton>
       {elementsArray}
       <IconButton
+        dark={dark}
         key="next-ar"
-        additionalProps={{
-          "data-mbx-arrow": "next",
-        }}
-        disabled={item === elements.length - 1 || disabled}
+        mbxClass="anext"
+        disabled={disabled || item === elements.length - 1}
         onClick={() => {
           setActiveClassname("from-right");
           updateItem(item + 1);
         }}
         {...arrowProps}
       >
-        <ArrowIcon />
+        <ArrowIcon
+          disabled={item === elements.length - 1}
+          fill={item === elements.length - 1 ? "none" : "var(--mbx-c-car-arr)"}
+        />
       </IconButton>
     </div>,
-    <div key="car_dots" data-mbx-scl="flxr;cdots;ovhid">
+    <div key="car_dots" data-mbx-cls="cdots" data-mbx-scl="flxr;ovhid">
       {dots}
     </div>,
   ];

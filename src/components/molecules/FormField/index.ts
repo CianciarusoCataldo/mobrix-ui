@@ -86,6 +86,7 @@ const FormField: FormFieldComponent = ({
     defaultValue: null,
     scl: `wfit;flxc;${fieldFormatters[type].scl.fld}`,
     fts: "noShFc",
+    group: "molecule",
   }));
 };
 

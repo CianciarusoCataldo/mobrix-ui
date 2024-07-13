@@ -56,6 +56,7 @@ const Checkbox: CheckBoxComponent = ({
     features: {
       opHov: true,
     },
+    group: "atom",
     scl: "flxc;act",
     props: (actualValue, setValue) => {
       const callback = () => {

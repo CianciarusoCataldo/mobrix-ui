@@ -43,9 +43,10 @@ const getMbxFts = (
   features: Features,
   { features: ftrs = {}, fts = "", ...commonProps }: CommonProps
 ) => {
+  const selectedFts = { ...features, ...ftrs };
   let mbxFts = `${fts};`;
-  const featureProps = Object.keys({ ...features, ...ftrs }).filter(
-    (feature) => features[feature] || ftrs[feature]
+  const featureProps = Object.keys(selectedFts).filter(
+    (feature) => selectedFts[feature]
   );
   const mbxfts = parseFts(commonProps);
   [...featureProps, ...Object.keys(commonProps)]
@@ -107,11 +108,14 @@ const buildMobrixUiStandardComponent = ({
     ...(mbxAtts.length > 0 && {
       "data-mbx-atts": mbxAtts,
     }),
-    ...(mbxFts.length > 0 && {
+    ...(mbxFts.length > 2 && {
       "data-mbx-fts": mbxFts,
     }),
     "data-mbx-group": group,
     "data-mbx-scl": `${scl};${commonProps.scl || ""}`,
+    ...(commonProps.mbxClass && {
+      "data-mbx-cls": commonProps.mbxClass,
+    }),
     id: commonProps.id,
     className: commonProps.className,
     style: commonProps.style,

@@ -1,5 +1,4 @@
 [data-mbx-id="crsel"] {
-  color: var(--mbx-text-color);
   background: var(--mbx-c-car-bg);
   padding: 0.4rem;
 }
@@ -12,7 +11,7 @@
   --mbx-carousel-animation: slideRight 0.3s forwards;
 }
 
-[data-mbx-id="crsel"] [data-mbx-scl*="el"] {
+[data-mbx-id="crsel"] [data-mbx-cls="el"] {
   position: relative;
   -webkit-animation: var(--mbx-carousel-animation);
   animation: var(--mbx-carousel-animation);
@@ -21,27 +20,27 @@
   -o-animation: var(--mbx-carousel-animation);
 }
 
-[data-mbx-id="crsel"] [data-mbx-arrow="prev"] {
+[data-mbx-id="crsel"] [data-mbx-cls="aprev"] {
   margin-right: 0.6rem;
 }
 
-[data-mbx-id="crsel"] [data-mbx-arrow="next"] {
+[data-mbx-id="crsel"] [data-mbx-cls="anext"] {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   margin-left: 0.6rem;
 }
 
-[data-mbx-id="crsel"] [data-mbx-scl*="car-els"],
-[data-mbx-id="crsel"] [data-mbx-scl*="cdots"] {
+[data-mbx-id="crsel"] [data-mbx-cls="car-els"],
+[data-mbx-id="crsel"] [data-mbx-cls="cdots"] {
   align-items: center;
   padding: 0.5rem;
 }
 
-[data-mbx-id="crsel"] [data-mbx-scl*="cdots"] {
+[data-mbx-id="crsel"] [data-mbx-cls="cdots"] {
   justify-content: center;
 }
 
-[data-mbx-id="crsel"] [data-mbx-scl*="csdot"] {
+[data-mbx-id="crsel"] [data-mbx-cls="csdot"] {
   margin-left: 0.3rem;
   margin-right: 0.3rem;
   width: 30px;
@@ -50,8 +49,6 @@
   background: var(--mbx-c-car-dot-e);
 }
 
-[data-mbx-id="crsel"]
-  [data-mbx-scl*="dot"][data-mbx-scl*="full-true"] {
+[data-mbx-id="crsel"] [data-mbx-cdot="true"] {
   background: var(--mbx-c-car-dot-f);
 }
-

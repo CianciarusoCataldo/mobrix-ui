@@ -1,27 +1,23 @@
-[data-mbx-id="econ"][data-mbx-scl*="cmp-true"] [data-mbx-scl*="exp-area"] {
+[data-mbx-id="econ"][data-mbx-ecmp="true"] [data-mbx-cls="exp-area"] {
   max-height: 0;
   transition: max-height 0.3s ease-out;
 }
-[data-mbx-id="econ"][data-mbx-scl*="cmp-false"] [data-mbx-scl*="exp-area"] {
+
+[data-mbx-id="econ"][data-mbx-ecmp="false"] [data-mbx-cls="exp-area"] {
   max-height: 100vh;
   transition: max-height 0.3s ease-in;
 }
 
-[data-mbx-id="econ"] [data-mbx-scl*="econ-b"] svg {
+[data-mbx-id="econ"] [data-mbx-cls="econ-b"] svg {
   margin-bottom: 0.3rem;
   padding-top: 0.2rem;
   transition: all 0.2s;
 }
 
-
-[data-mbx-id="econ"][data-mbx-scl*="cmp-false"]
-  [data-mbx-scl*="econ-b"]
-  svg {
+[data-mbx-id="econ"][data-mbx-ecmp="false"] [data-mbx-cls="econ-b"] svg {
   transform: rotate(90deg);
 }
 
-[data-mbx-id="econ"][data-mbx-scl*="cmp-true"]
-  [data-mbx-scl*="econ-b"]
-  svg {
+[data-mbx-id="econ"][data-mbx-ecmp="true"] [data-mbx-cls="econ-b"] svg {
   transform: rotate(270deg);
 }

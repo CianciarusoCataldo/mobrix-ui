@@ -48,6 +48,7 @@ const CodeBox: CodeBoxComponent = (props) =>
     name: "code",
     commonProps: sharedProps,
     scl: "flxc;ovhid",
+    group: "atom",
     Component: component({
       ...props,
       ...sharedProps,

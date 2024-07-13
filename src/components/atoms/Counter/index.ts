@@ -58,6 +58,7 @@ const Counter: CounterComponent = ({
     wrapper: "input",
     name: "count",
     scl: "bdtran",
+    group: "atom",
     features: {
       opHov: true,
     },

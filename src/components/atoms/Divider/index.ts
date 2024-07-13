@@ -42,6 +42,7 @@ import { buildMbxStandardComponent } from "../../../tools";
 const Divider: DividerComponent = ({ size = "2px", ...props }) =>
   buildMbxStandardComponent(props, (sharedProps) => ({
     name: "divider",
+    group: "atom",
     commonProps: {
       ...sharedProps,
       a11y: false,

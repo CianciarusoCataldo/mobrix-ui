@@ -109,6 +109,7 @@ const Drawer: DrawerComponent = ({
       onFocusLost: customProps.onFocusLost,
     },
     scl: `drw-close;${locationCss[drawerLocation].main}`,
+    group: "organism",
     Component: drawerComponent({
       children,
       hide,
