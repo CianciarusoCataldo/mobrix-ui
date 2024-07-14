@@ -18,8 +18,8 @@
   --mbx-c-cnt-bg: transparent !important;
 }
 
-[data-mbx-id="input"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="input"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="inp"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="inp"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-in-bgc: transparent !important;
 }
 
@@ -28,8 +28,8 @@
   --mbx-c-rad-bg: transparent !important;
 }
 
-[data-mbx-id="rater"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="rater"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="rat"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="rat"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-rat-bg: transparent !important;
 }
 
@@ -39,8 +39,8 @@
   --mbx-c-sel-bg-h: transparent !important;
 }
 
-[data-mbx-id="slider"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="slider"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="sld"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="sld"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-sld-bg: transparent !important;
 }
 

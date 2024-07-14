@@ -1,41 +1,41 @@
-[data-mbx-id="review"] {
+[data-mbx-id="rev"] {
   padding: 0.6rem;
   background: var(--mbx-c-rev-bg);
   color: var(--mbx-c-rev-txt);
   border-radius: 3px;
 }
 
-[data-mbx-id="review"] [data-mbx-cls="rev-ph"],
-[data-mbx-id="review"] [data-mbx-cls="rev-ph"] img {
+[data-mbx-id="rev"] [data-mbx-cls="rev-ph"],
+[data-mbx-id="rev"] [data-mbx-cls="rev-ph"] img {
   border-radius: 9999px;
 }
 
-[data-mbx-id="review"] [data-mbx-cls="rev-url-c"] {
+[data-mbx-id="rev"] [data-mbx-cls="rev-url-c"] {
   justify-content: flex-end;
 }
 
-[data-mbx-id="review"] [data-mbx-cls="rev-inf-b"] {
+[data-mbx-id="rev"] [data-mbx-cls="rev-inf-b"] {
   margin-bottom: 0.4rem;
 }
 
-[data-mbx-id="review"] [data-mbx-cls="rev-us-name"] {
+[data-mbx-id="rev"] [data-mbx-cls="rev-us-name"] {
   margin-left: 0.5rem;
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-[data-mbx-id="review"] [data-mbx-cls="rev-ds"] {
+[data-mbx-id="rev"] [data-mbx-cls="rev-ds"] {
   margin-top: 1rem;
   overflow-wrap: break-word;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
 }
 
-[data-mbx-id="review"] [data-mbx-revimg="def"] {
+[data-mbx-id="rev"] [data-mbx-revimg="def"] {
   fill: var(--mbx-c-rev-link);
 }
 
-[data-mbx-id="review"] [data-mbx-revimg="git"] {
+[data-mbx-id="rev"] [data-mbx-revimg="git"] {
   fill: var(--mbx-c-rev-gh);
 }

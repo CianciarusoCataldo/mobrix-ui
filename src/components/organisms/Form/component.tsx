@@ -25,7 +25,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
           ...o,
           [key]: undefined,
         }),
-        {}
+        {},
       )
     : {};
 
@@ -90,7 +90,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
       mbxClass="s-bt"
     >
       {submitLabel}
-    </Button>
+    </Button>,
   );
 
   return components;

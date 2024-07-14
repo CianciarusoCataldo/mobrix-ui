@@ -58,7 +58,7 @@ export type CommonProps = MbxAttributes & {
     | "shake";
 
   /** Custom additional properties, applied to the component */
-  additionalProps?: Record<string, any>;
+  props?: Record<string, any>;
 
   /** if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label} ARIA parameter */
   a11yLabel?: string;

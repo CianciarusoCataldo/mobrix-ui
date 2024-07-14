@@ -11,7 +11,7 @@
   max-width: 80%;
 }
 
-[data-mbx-id="dpick"] [data-mbx-scl*="dpick-el"] {
+[data-mbx-id="dpick"] [data-mbx-cls="dpick-el"] {
   vertical-align: middle;
   display: inline-block;
   margin-right: 0.3rem;
@@ -43,7 +43,7 @@
 }
 
 @media (max-width: 260px) {
-  [data-mbx-id="dpick"] [data-mbx-scl*="date-s"] {
+  [data-mbx-id="dpick"] [data-mbx-cls="date-s"] {
     flex-direction: column;
     align-items: center;
   }

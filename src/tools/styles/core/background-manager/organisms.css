@@ -6,7 +6,7 @@
   --mbx-c-dtp-bg: transparent !important;
 }
 
-[data-mbx-id="drawer"]:not([data-mbx-atts*="bg"]) {
+[data-mbx-id="drw"]:not([data-mbx-atts*="bg"]) {
   --mbx-c-draw-bg: transparent !important;
 }
 

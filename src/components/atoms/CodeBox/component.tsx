@@ -24,7 +24,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
 }) => {
   let parseLine: (
     inputCode: string,
-    environment: SupportedEnvironment
+    environment: SupportedEnvironment,
   ) => CodeBlock[] =
     highlight && code.length > 0
       ? parseCode
@@ -42,21 +42,21 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
       </IconButton>
     </div>,
     <div key="cd_cd" data-mbx-cls="cd-cd">
-      {code.split("\n").map((codeLine, lineIndex) => (
-        <p data-mbx-cls="cd-cb" key={`cd_l_${lineIndex}`}>
-          {parseLine(codeLine, environment).map((codeBlock, blockIndex) =>
-            codeBlock.code === " " ? (
+      {code.split("\n").map((codeLine, lIndex) => (
+        <p data-mbx-cls="cd-cb" key={`cd_l_${lIndex}`}>
+          {parseLine(codeLine, environment).map((cBlock, bIndex) =>
+            cBlock.code === " " ? (
               ` `
             ) : (
               <span
-                key={`cdb_bl_${blockIndex}`}
-                {...(codeBlock.color && {
-                  style: { color: codeBlock.color },
+                key={`cdb_bl_${bIndex}`}
+                {...(cBlock.color && {
+                  style: { color: cBlock.color },
                 })}
               >
-                {codeBlock.code}
+                {cBlock.code}
               </span>
-            )
+            ),
           )}
         </p>
       ))}

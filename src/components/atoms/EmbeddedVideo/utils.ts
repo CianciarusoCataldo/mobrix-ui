@@ -39,12 +39,12 @@ const SUPPORTED_VIDEO_PLATFORMS = [
 
 export const parseEmbedUrl: (url: string) => {
   extraProps?: Record<string, any>;
-  embeddedLink?: string;
+  link?: string;
   allowedFeatures?: string;
 } = (url) => {
   const platform = SUPPORTED_VIDEO_PLATFORMS.find((el) =>
     url.startsWith(el.startsWith),
   );
 
-  return { ...platform, embeddedLink: platform?.parse(url) };
+  return { ...platform, link: platform?.parse(url) };
 };

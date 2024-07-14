@@ -44,7 +44,7 @@ export type FormFieldProps<T = any> = ComponentWithValue &
       | "toggle"
       | "rater"
       | "slider"
-      | "input"
+      | "inp"
       | "counter";
 
     /** Placeholder value showed when the input field is empty */

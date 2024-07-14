@@ -1,1 +1,1 @@
-export { buildMbxReactiveComponent, buildMbxStandardComponent } from "./utils";
+export { buildMbxReactive, buildMbxStandard } from "./utils";

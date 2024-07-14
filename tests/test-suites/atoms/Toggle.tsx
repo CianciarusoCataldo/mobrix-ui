@@ -16,7 +16,7 @@ const toggleTest = () => {
       const onChangeStub = jest.fn();
       let wrapper = mount(
         <Toggle
-          additionalProps={{ "data-mbx-test-class": "test" }}
+          props={{ "data-mbx-test-class": "test" }}
           onChange={onChangeStub}
         />
       );

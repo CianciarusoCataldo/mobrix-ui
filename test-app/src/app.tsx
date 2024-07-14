@@ -71,6 +71,7 @@ const App = () => {
           onClick={() => {
             setVisible(!isVisible);
           }}
+          data-mbx="2"
         >
           Toggle drawer
         </Button>

@@ -18,7 +18,7 @@ const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
       hover={hover}
       key={`el_${index}`}
       {...(onClick !== undefined && {
-        additionalProps: { onClick: () => onClick(index) },
+        props: { onClick: () => onClick(index) },
         style: { cursor: "pointer" },
         onKeyDown: (e) => {
           if (e.code === "Enter") {

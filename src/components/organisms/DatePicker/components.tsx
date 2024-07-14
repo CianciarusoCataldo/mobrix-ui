@@ -63,17 +63,17 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
     setVisible(false);
   };
 
-  const DateLabel = ({ children }) => (
-    <Label scl="dpick-el" dark={commonProps.dark}>
+  const DateLabel = ({ children, key }) => (
+    <Label key={key} mbxClass="dpick-el" dark={commonProps.dark}>
       {children}
     </Label>
   );
 
   return [
-    <div key="d-pick_sels" data-mbx-scl="flxr;date-s">
-      <DateLabel>{String(day)}</DateLabel>
-      <DateLabel>{String(customMonths[month])}</DateLabel>
-      <DateLabel>{String(year)}</DateLabel>
+    <div key="d-pick_sels" data-mbx-cls="date-s" data-mbx-scl="flxr">
+      <DateLabel key="day">{String(day)}</DateLabel>
+      <DateLabel key="month">{String(customMonths[month])}</DateLabel>
+      <DateLabel key="year">{String(year)}</DateLabel>
     </div>,
     <IconButton
       disabled={disabled}
@@ -90,7 +90,6 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
       key="d-pick_mod"
       animated={animated}
       onClose={onCloseCallback}
-      scl="dpick-mod"
     >
       <Calendar
         scl="mauto"

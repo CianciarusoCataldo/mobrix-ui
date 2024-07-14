@@ -37,12 +37,12 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
           key={`car_el_${index}`}
           hide={index !== item}
           mbxClass="el"
-          additionalProps={{
+          props={{
             "data-mbx-animation": index === item ? activeClassName : "",
           }}
         >
           {element}
-        </Container>
+        </Container>,
       );
 
       dots.push(
@@ -50,7 +50,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
           dark={dark}
           scl="bdtran"
           features={{ noShFc: true, fillFc: true }}
-          additionalProps={{
+          props={{
             "data-mbx-cdot":
               index === item || (hoveredDot != null && index === hoveredDot),
           }}
@@ -64,7 +64,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
             setActiveClassname(index > item ? "from-right" : "from-left");
             updateItem(index);
           }}
-        />
+        />,
       );
     });
   }

@@ -33,7 +33,7 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
             dark={dark}
             mbxClass="tab"
             features={{ opAct: !isTabSel, opHov: !isTabSel, colFc: true }}
-            additionalProps={{ "data-mbx-tbvsel": isTabSel }}
+            props={{ "data-mbx-tbvsel": isTabSel }}
             className={`${tabClassName} ${
               index === value ? tabSelectedClassName : tabUnselectedClassName
             }`}
@@ -42,7 +42,6 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
               setValue(index);
               onChange(index);
             }}
-            data-mbx-gg="gg"
           >
             {tab.label}
           </Button>

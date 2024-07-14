@@ -133,7 +133,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           a11y={false}
           mbxClass="ic"
           scl="nout"
-          additionalProps={{ "data-mbx-drt": isVisible }}
+          props={{ "data-mbx-drt": isVisible }}
         >
           <p tabIndex={-1}>
             <i data-mbx-cls="arr-ic" data-mbx-scl="nout"></i>
@@ -168,7 +168,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
             key={`item_${index}`}
             scl="flxc;wfu"
             mbxClass="reg"
-            additionalProps={{
+            props={{
               "data-mbx-dpos": `${index === 0}-${
                 index === elements.length - 1
               }`,

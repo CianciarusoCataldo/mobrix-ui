@@ -26,7 +26,7 @@ const expandableContainerComponent: MbxUiReactiveComponent<
   components.push(
     <div key="exp_a" data-mbx-cls="exp-area" data-mbx-scl="ovhid">
       {expanded}
-    </div>
+    </div>,
   );
   components.push(
     <IconButton
@@ -43,7 +43,7 @@ const expandableContainerComponent: MbxUiReactiveComponent<
       features={{ noShFc: true, fillFc: true }}
     >
       <ArrowIcon scl="nout" fill="var(--mbx-c-con-txt)" />
-    </IconButton>
+    </IconButton>,
   );
   return components;
 };

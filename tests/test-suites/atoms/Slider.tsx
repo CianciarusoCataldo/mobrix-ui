@@ -8,7 +8,7 @@ const sliderTest = () => {
       const wrapper = mount(
         <Slider
           value={12}
-          additionalProps={{
+          props={{
             "data-mbx-test-class": "test",
           }}
         />

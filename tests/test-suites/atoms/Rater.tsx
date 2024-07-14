@@ -11,7 +11,7 @@ const raterTest = () => {
         <Rater
           type="circle"
           vertical
-          additionalProps={{ "data-mbx-test-class": "test" }}
+          props={{ "data-mbx-test-class": "test" }}
           value={2}
         />
       );

@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { LinkComponent } from "../../../types";
 
-import { buildMbxStandardComponent } from "../../../tools/utils";
+import { buildMbxStandard } from "../../../tools/utils";
 
 /**
  * A re-defined `<a>` component, designed to be better used with links
@@ -27,7 +27,7 @@ import { buildMbxStandardComponent } from "../../../tools/utils";
  * @param {(keyEvent : any) => void} onKeyDown - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when a key is pressed while using the component (for example, when writing text inside an `Input` component).
  * @param {() => void} onFocus - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when the component get the focus (for example, through tab key)
  * @param {() => void} onFocusLost - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when the component lose the focus (for example, when user clicks outside it)
- * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
+ * @param {Record<string, any>} props - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
  * @param {boolean} a11y - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable accessibility features
  * @param {string} a11yLabel - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If `a11y` = `true`, is used as [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) accessibility parameter
  * @param {number | string} tabIndex - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Regular [tabIndex a11y parameter](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex). If `a11y` = `true`, this parameter is passed as `tabIndex` prop to the component (if not set, its value will be `0`). If `a11y` = `false`, it is set to `-1` (so the component is not focusable through `tab` key`)
@@ -49,30 +49,26 @@ const Link: LinkComponent = ({
   underline = true,
   ...commonProps
 }) =>
-  buildMbxStandardComponent(
-    { ...commonProps, shadow: false },
-    (sharedProps) => ({
-      name: "link",
-      group: "atom",
-      features: {
-        opHov: true,
-        colFc: true,
-        noShFc: true,
+  buildMbxStandard({ ...commonProps, shadow: false }, (sharedProps) => ({
+    name: "link",
+    features: {
+      opHov: true,
+      colFc: true,
+      noShFc: true,
+    },
+    Component: children,
+    commonProps: {
+      ...sharedProps,
+      props: {
+        ...sharedProps.props,
+        ...(!sharedProps.disabled && {
+          href: to,
+          target: newTab ? "_blank" : undefined,
+        }),
+        ...(underline && { "data-mbx-cls": "under" }),
       },
-      Component: children,
-      commonProps: {
-        ...sharedProps,
-        additionalProps: {
-          ...sharedProps.additionalProps,
-          ...(!sharedProps.disabled && {
-            href: to,
-            target: newTab ? "_blank" : undefined,
-          }),
-          ...(underline && { "data-mbx-cls": "under" }),
-        },
-      },
-      wrapper: sharedProps.disabled ? "span" : "a",
-    })
-  );
+    },
+    wrapper: sharedProps.disabled ? "span" : "a",
+  }));
 
 export default Link;

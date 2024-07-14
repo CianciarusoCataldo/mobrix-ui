@@ -22,7 +22,7 @@ const CalendarComponent: MbxUiReactiveComponent<
   value,
   shadow,
   disabled,
-  today: todayDate,
+  today: todayDt,
   hideArrows,
   days = defaultDays,
   months: customMonths = defaultMonths,
@@ -42,11 +42,11 @@ const CalendarComponent: MbxUiReactiveComponent<
   const customProps = labelClassName
     ? { className: arrowClassName, ...labelProps }
     : labelProps;
-  const year = startYear && startYear > 0 ? startYear : todayDate.year;
+  const year = startYear && startYear > 0 ? startYear : todayDt.year;
   const month =
     startMonth !== undefined && startMonth >= 0 && startMonth <= 11
       ? startMonth
-      : todayDate.month;
+      : todayDt.month;
 
   const [scrDate, show] = React.useState<{
     month: number;
@@ -57,11 +57,11 @@ const CalendarComponent: MbxUiReactiveComponent<
   });
 
   React.useEffect(() => {
-    const actualYear = startYear && startYear > 0 ? startYear : todayDate.year;
+    const actualYear = startYear && startYear > 0 ? startYear : todayDt.year;
     const actualMonth =
       startMonth !== undefined && startMonth >= 0 && startMonth <= 11
         ? startMonth
-        : todayDate.month;
+        : todayDt.month;
 
     show({ month: actualMonth, year: actualYear });
   }, [startMonth, startYear]);
@@ -87,7 +87,7 @@ const CalendarComponent: MbxUiReactiveComponent<
         : show({ year: scrDate.year + 1, month: 0 }),
   };
 
-  const getArrowButton = (direction: "left" | "right") => (
+  const getArrow = (direction: "left" | "right") => (
     <IconButton
       disabled={disabled}
       onClick={() => {
@@ -98,7 +98,7 @@ const CalendarComponent: MbxUiReactiveComponent<
       hover={hover}
       dark={commonProps.dark}
       key={"arrow_" + direction}
-      additionalProps={{
+      props={{
         "data-mbx-carr": direction,
       }}
       scl="myauto"
@@ -114,7 +114,7 @@ const CalendarComponent: MbxUiReactiveComponent<
   dayLabel &&
     components.push(
       <div key="cal_top_sel" data-mbx-scl="flxr:mauto;wfu" data-mbx-cls="t-sel">
-        {getArrowButton("left")}
+        {getArrow("left")}
         <Label
           disabled={disabled}
           scl="mxauto"
@@ -122,8 +122,8 @@ const CalendarComponent: MbxUiReactiveComponent<
           dark={commonProps.dark}
           {...customProps}
         >{`${customMonths[scrDate.month]} ${scrDate.year}`}</Label>
-        {getArrowButton("right")}
-      </div>
+        {getArrow("right")}
+      </div>,
     );
 
   components.push(
@@ -134,12 +134,12 @@ const CalendarComponent: MbxUiReactiveComponent<
       propsCallback={(row, column) => {
         if (row > 0) {
           const isDisabled = fromToday
-            ? scrDate.year < todayDate.year ||
-              (scrDate.year === todayDate.year &&
-                scrDate.month < todayDate.month) ||
-              (scrDate.year === todayDate.year &&
-                scrDate.month === todayDate.month &&
-                basicMatrix[row - 1][column] < todayDate.dayOfTheMonth)
+            ? scrDate.year < todayDt.year ||
+              (scrDate.year === todayDt.year &&
+                scrDate.month < todayDt.month) ||
+              (scrDate.year === todayDt.year &&
+                scrDate.month === todayDt.month &&
+                basicMatrix[row - 1][column] < todayDt.dayOfTheMonth)
             : false;
 
           const isNotDay = basicMatrix[row - 1][column] <= 0;
@@ -172,9 +172,9 @@ const CalendarComponent: MbxUiReactiveComponent<
           return {
             "data-mbx-ctoday":
               fromToday &&
-              basicMatrix[row - 1][column] === todayDate.dayOfTheMonth &&
-              scrDate.month === todayDate.month &&
-              scrDate.year === todayDate.year,
+              basicMatrix[row - 1][column] === todayDt.dayOfTheMonth &&
+              scrDate.month === todayDt.month &&
+              scrDate.year === todayDt.year,
             "data-mbx-scal":
               value.year === scrDate.year &&
               value.month === scrDate.month &&
@@ -191,10 +191,10 @@ const CalendarComponent: MbxUiReactiveComponent<
       rows={[
         days.map((dayName) => dayName.slice(0, 3)),
         ...basicMatrix.map((row) =>
-          row.map((element) => (element > 0 ? String(element) : ""))
+          row.map((element) => (element > 0 ? String(element) : "")),
         ),
       ]}
-    />
+    />,
   );
 
   return components;

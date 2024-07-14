@@ -10,26 +10,26 @@ import {
   CommonProps,
 } from "../../types/global";
 
-import { DEFAULT_COMMON_PROPS, parseFts, parseAtts } from "./constants";
+import { SHARED_PROPS, parseFts, parseAtts } from "./constants";
 import { Features } from "../../types/global/global";
 
 /* istanbul ignore next */
 const useOutAlert = (ref: any, callback: () => void) => {
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const handler = (event) => {
       if (ref.current && !ref.current.contains(event.target)) {
         callback();
       }
     };
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("mousedown", handler);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mousedown", handler);
     };
   });
 };
 
-export const parseCommonProps = (props: CommonProps): CommonProps => ({
-  ...DEFAULT_COMMON_PROPS,
+export const parseProps = (props: CommonProps): CommonProps => ({
+  ...SHARED_PROPS,
   ...props,
   ...(props.unstyled && {
     shadow: false,
@@ -41,33 +41,31 @@ export const parseCommonProps = (props: CommonProps): CommonProps => ({
 
 const getMbxFts = (
   features: Features,
-  { features: ftrs = {}, fts = "", ...commonProps }: CommonProps
+  { features: ftrs = {}, fts = "", ...props }: CommonProps
 ) => {
-  const selectedFts = { ...features, ...ftrs };
-  let mbxFts = `${fts};`;
-  const featureProps = Object.keys(selectedFts).filter(
-    (feature) => selectedFts[feature]
-  );
-  const mbxfts = parseFts(commonProps);
-  [...featureProps, ...Object.keys(commonProps)]
+  const sFts = { ...features, ...ftrs };
+  let res = `${fts};`;
+  const fProps = Object.keys(sFts).filter((feature) => sFts[feature]);
+  const mbxfts = parseFts(props);
+  [...fProps, ...Object.keys(props)]
     .filter((feature, index) => mbxfts[feature])
     .forEach((feature, index) => {
-      mbxFts += `${mbxfts[feature]};`;
+      res += `${mbxfts[feature]};`;
     });
 
-  return mbxFts;
+  return res;
 };
 
-const getMbxAtts = (commonProps: CommonProps) => {
-  let mbxAttributes = "";
-  const ATTS = parseAtts(commonProps);
+const getMbxAtts = (props: CommonProps) => {
+  let mbxAtts = "";
+  const ATTS = parseAtts(props);
   Object.keys(ATTS)
-    .filter((mbxAttribute: keyof CommonProps, index) => ATTS[mbxAttribute])
-    .forEach((mbxAttribute, index) => {
-      mbxAttributes += `${ATTS[mbxAttribute]};`;
+    .filter((attr: keyof CommonProps, index) => ATTS[attr])
+    .forEach((attr, index) => {
+      mbxAtts += `${ATTS[attr]};`;
     });
 
-  return mbxAttributes;
+  return mbxAtts;
 };
 
 /**
@@ -76,7 +74,7 @@ const getMbxAtts = (commonProps: CommonProps) => {
  * @param name component name
  * @param Component component to render
  * @param commonProps {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#shared-properties shared MoBrix-ui properties}
- * @param additionalProps additional props applied on rendered component
+ * @param props additional props applied on rendered component
  * @param wrapper component external wrapper (like `button`, `a` or `p`, if not set will be `div`)
  *
  * @returns built component, ready to be rendered
@@ -89,19 +87,18 @@ const getMbxAtts = (commonProps: CommonProps) => {
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const buildMobrixUiStandardComponent = ({
+const getMbxUiStandard = ({
   name,
   Component,
   scl = "",
   /* istanbul ignore next */
-  commonProps = {},
-  wrapper: SelectedWrapper = "div",
+  commonProps: cprops = {},
+  wrapper: Wrapper = "div",
   features = {},
   fts = "",
-  group,
 }: BuilderProps) => {
-  let mbxFts = `${getMbxFts(features, commonProps)};${fts}`;
-  let mbxAtts = getMbxAtts(commonProps);
+  let mbxFts = `${getMbxFts(features, cprops)};${fts}`;
+  let mbxAtts = getMbxAtts(cprops);
 
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,
@@ -111,45 +108,44 @@ const buildMobrixUiStandardComponent = ({
     ...(mbxFts.length > 2 && {
       "data-mbx-fts": mbxFts,
     }),
-    "data-mbx-group": group,
-    "data-mbx-scl": `${scl};${commonProps.scl || ""}`,
-    ...(commonProps.mbxClass && {
-      "data-mbx-cls": commonProps.mbxClass,
+    "data-mbx-scl": `${scl};${cprops.scl || ""}`,
+    ...(cprops.mbxClass && {
+      "data-mbx-cls": cprops.mbxClass,
     }),
-    id: commonProps.id,
-    className: commonProps.className,
-    style: commonProps.style,
-    onFocus: commonProps.onFocus,
-    ...(commonProps.onKeyDown && { onKeyDown: commonProps.onKeyDown }),
+    id: cprops.id,
+    className: cprops.className,
+    style: cprops.style,
+    onFocus: cprops.onFocus,
+    ...(cprops.onKeyDown && { onKeyDown: cprops.onKeyDown }),
     tabIndex: "-1",
-    ...(commonProps.a11y &&
-      !commonProps.disabled && {
-        tabIndex: commonProps.tabIndex ? String(commonProps.tabIndex) : "0",
-        ...(commonProps.a11yLabel && {
-          "aria-label": commonProps.a11yLabel,
+    ...(cprops.a11y &&
+      !cprops.disabled && {
+        tabIndex: cprops.tabIndex ? String(cprops.tabIndex) : "0",
+        ...(cprops.a11yLabel && {
+          "aria-label": cprops.a11yLabel,
         }),
       }),
-    ...commonProps.additionalProps,
+    ...cprops.props,
   };
 
-  const wrapperRef = useRef(null);
-  commonProps.onFocusLost && useOutAlert(wrapperRef, commonProps.onFocusLost);
+  const wRef = useRef(null);
+  cprops.onFocusLost && useOutAlert(wRef, cprops.onFocusLost);
 
-  if (SelectedWrapper === "input") {
+  if (Wrapper === "input") {
     return (
-      <SelectedWrapper
-        ref={wrapperRef}
+      <Wrapper
+        ref={wRef}
         {...props}
         tabIndex={Number(props.tabIndex)}
-        key={commonProps.key}
+        key={cprops.key}
       />
     );
   } else {
     return (
       // @ts-ignore
-      <SelectedWrapper ref={wrapperRef} {...props} key={commonProps.key}>
+      <Wrapper ref={wRef} {...props} key={cprops.key}>
         {Component}
-      </SelectedWrapper>
+      </Wrapper>
     );
   }
 };
@@ -168,7 +164,7 @@ const buildMobrixUiStandardComponent = ({
  * @copyright 2024 Cataldo Cianciaruso
  */
 // prettier-ignore
-const buildMbxUiReactiveComponent = <T=any>({
+const getMbxUiReactive = <T=any>({
   name,
   wrapper,
   commonProps,
@@ -194,7 +190,7 @@ const buildMbxUiReactiveComponent = <T=any>({
 }) => {
   const [value, setValue] = React.useState<T>(inputValue || defaultValue);
 
-  const processedProps = props ? props(value, setValue) : {};
+  const processed = props ? props(value, setValue) : {};
 
   /* istanbul ignore next */
   React.useEffect(() => {
@@ -207,7 +203,7 @@ const buildMbxUiReactiveComponent = <T=any>({
     }
   }, [JSON.stringify(inputValue)]);
 
-  return buildMobrixUiStandardComponent({
+  return getMbxUiStandard({
     name,
     commonProps,
     Component: Component && Component({ value, setValue }),
@@ -215,38 +211,33 @@ const buildMbxUiReactiveComponent = <T=any>({
     features,
     scl,
     fts,
-    ...processedProps,
+    ...processed,
   });
 };
 
-export const buildMbxStandardComponent: (
-  props: CommonProps,
-  callback: (props: CommonProps) => BuilderProps
-) => React.JSX.Element = (
+export const buildMbxStandard = (
   /* istanbul ignore next */
-  commonProps,
-  callback
+  props: Record<string, any>,
+  callback: (props: CommonProps) => BuilderProps
 ) => {
-  const inputCommonProps = parseCommonProps(commonProps);
-
+  const inputCommonProps = parseProps(props);
   const builderProps = callback(inputCommonProps);
 
-  return buildMobrixUiStandardComponent({
+  return getMbxUiStandard({
     commonProps: inputCommonProps,
     ...builderProps,
   });
 };
 
 // prettier-ignore
-export const buildMbxReactiveComponent = <T=any>(
-  sharedProps: CommonProps,
+export const buildMbxReactive = <T=any>(
+  props: Record<string, any>,
   callback: (props:CommonProps) => BuilderPropsReactive<T>
 ) => {
-  const inputCommonProps = parseCommonProps(sharedProps);
-
+  const inputCommonProps = parseProps(props);
   const builderProps = callback(inputCommonProps);
 
-  return buildMbxUiReactiveComponent<T>({
+  return getMbxUiReactive<T>({
     commonProps: inputCommonProps,
     ...builderProps,
   });

@@ -10,14 +10,14 @@ const embeddedVideoComponent: MbxUiComponent<
   BuilderComponent
 > = ({ url = "" }) => {
   const {
-    embeddedLink = "",
+    link = "",
     allowedFeatures = "",
     extraProps = {},
   } = parseEmbedUrl(url);
 
-  return embeddedLink ? (
+  return link ? (
     <iframe
-      src={embeddedLink}
+      src={link}
       allow={allowedFeatures}
       data-mbx-scl="wfu"
       {...extraProps}

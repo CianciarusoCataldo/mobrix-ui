@@ -4,7 +4,3 @@
   background: var(--mbx-c-chk-bg);
   padding: 0.2rem;
 }
-
-[data-mbx-id="check"] > *:first-child {
-  fill: var(--mbx-c-chk-tk);
-}

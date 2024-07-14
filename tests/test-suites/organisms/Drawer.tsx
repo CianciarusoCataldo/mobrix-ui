@@ -29,7 +29,7 @@ const drawerTest = () => {
           unstyled
           // @ts-ignore
           position="fhgdjhsl"
-          additionalProps={{}}
+          props={{}}
           onClose={onCloseStub}
         >
           <p>Test drawer content</p>

@@ -28,7 +28,7 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
     key="card_h"
     mbxClass="cardc-head"
     hide={!header}
-    additionalProps={headerProps}
+    props={headerProps}
   >
     {header}
   </Container>,
@@ -44,7 +44,7 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
     className={bodyClassName}
     mbxClass="cardc-body"
     key="card_b"
-    additionalProps={bodyProps}
+    props={bodyProps}
   >
     {body}
   </Container>,
@@ -62,7 +62,7 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
     key="card_f"
     mbxClass="cardc-footer"
     hide={!footer}
-    additionalProps={footerProps}
+    props={footerProps}
   >
     {footer}
   </Container>,

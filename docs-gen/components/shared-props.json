@@ -87,7 +87,7 @@
     "description": "Custom callback triggered when the component lose the focus (for example, when user clicks outside it)"
   },
 
-  "additionalProps": {
+  "props": {
     "description": "Custom additional properties, applied to the component",
     "type": "Record<string, any>"
   },

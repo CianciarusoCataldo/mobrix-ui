@@ -10,7 +10,7 @@ const radioButtonGroupTest = () => {
       wrapper = mount(
         <RadioButtonGroup
           horizontal
-          additionalProps={{ "data-mbx-test-class": "test" }}
+          props={{ "data-mbx-test-class": "test" }}
           elementClassName="test"
           radioProps={{}}
           defaultPosition="right"

@@ -1,14 +1,14 @@
 import { CommonProps } from "../../types";
 import { Features } from "../../types/global/global";
 
-export const DEFAULT_COMMON_PROPS: CommonProps = {
+export const SHARED_PROPS: CommonProps = {
   background: true,
   hover: true,
   disabled: false,
   dark: false,
   animated: true,
   shadow: true,
-  additionalProps: {},
+  props: {},
   a11y: true,
   unstyled: false,
   scl: "",

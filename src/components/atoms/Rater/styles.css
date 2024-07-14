@@ -1,10 +1,10 @@
-[data-mbx-id="rater"] {
+[data-mbx-id="rat"] {
   background: var(--mbx-c-rat-bg);
   border-radius: 8px;
   padding: 0.4rem;
 }
 
-[data-mbx-id="rater"] svg {
+[data-mbx-id="rat"] svg {
   margin-left: 0.2rem;
   margin-right: 0.2rem;
 }

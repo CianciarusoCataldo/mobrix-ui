@@ -37,8 +37,8 @@
   --mbx-c-con-bg: transparent !important;
 }
 
-[data-mbx-id="review"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="review"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="rev"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="rev"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-rev-bg: transparent !important;
 }
 
