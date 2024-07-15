@@ -10,7 +10,7 @@ import {
 
 import { parseCode } from "./utils";
 
-import { CopyIcon } from "./icons";
+import { CopyIcon } from "../../../icons/generic";
 
 import IconButton from "../IconButton";
 
@@ -24,26 +24,25 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
 }) => {
   let parseLine: (
     inputCode: string,
-    environment: SupportedEnvironment,
+    environment: SupportedEnvironment
   ) => CodeBlock[] =
     highlight && code.length > 0
       ? parseCode
       : (inputCode, environment) => [{ code: inputCode }];
 
   return [
-    <div key="cd_cp" data-mbx-scl="flxc" data-mbx-cls="cd-cp">
-      <IconButton
-        onClick={() => code && navigator.clipboard.writeText(code)}
-        hide={!copyButton}
-        disabled={disabled}
-        hover={hover}
-      >
-        {CopyIcon}
-      </IconButton>
-    </div>,
+    <IconButton
+      key="cd_cp"
+      onClick={() => code && navigator.clipboard.writeText(code)}
+      hide={!copyButton}
+      disabled={disabled}
+      hover={hover}
+    >
+      {CopyIcon}
+    </IconButton>,
     <div key="cd_cd" data-mbx-cls="cd-cd">
       {code.split("\n").map((codeLine, lIndex) => (
-        <p data-mbx-cls="cd-cb" key={`cd_l_${lIndex}`}>
+        <p data-mbx-scl="myauto" key={`cd_l_${lIndex}`}>
           {parseLine(codeLine, environment).map((cBlock, bIndex) =>
             cBlock.code === " " ? (
               ` `
@@ -56,7 +55,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
               >
                 {cBlock.code}
               </span>
-            ),
+            )
           )}
         </p>
       ))}

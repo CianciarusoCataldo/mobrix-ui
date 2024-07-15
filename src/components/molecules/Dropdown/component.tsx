@@ -133,10 +133,17 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           a11y={false}
           mbxClass="ic"
           scl="nout"
-          props={{ "data-mbx-drt": isVisible }}
         >
           <p tabIndex={-1}>
-            <i data-mbx-cls="arr-ic" data-mbx-scl="nout"></i>
+            <i
+              data-mbx-cls="arr-ic"
+              data-mbx-scl="nout"
+              style={
+                {
+                  "MbxDdRot": isVisible ? "180deg" : "360deg",
+                } as React.CSSProperties
+              }
+            ></i>
           </p>
         </Container>
       </Button>,

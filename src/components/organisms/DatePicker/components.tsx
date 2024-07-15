@@ -10,7 +10,7 @@ import { defaultDays, defaultMonths } from "../Calendar/constants";
 
 import { getMonthsDuration } from "../Calendar/utils";
 
-import { CalendarIcon } from "./icons";
+import { CalendarIcon } from "../../../icons/generic";
 
 import Modal from "../../molecules/Modal";
 import Calendar from "../Calendar";
@@ -82,7 +82,7 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
       key="d-pick_cal_bt"
       features={{ noShFc: true, fillFc: true }}
     >
-      {CalendarIcon}
+      <CalendarIcon fill="var(--mbx-c-dtp-ic)" />
     </IconButton>,
     <Modal
       disabled={disabled}

@@ -63,7 +63,7 @@ const IconButton: IconButtonComponent = ({
     commonProps: {
       ...sharedProps,
       props: {
-        ...commonProps.props,
+        ...sharedProps.props,
         ...(!sharedProps.disabled && {
           onClick,
           onMouseEnter,

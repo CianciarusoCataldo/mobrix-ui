@@ -2,8 +2,9 @@ import "./styles.css";
 
 import { FormComponent } from "../../../types";
 
-import formComponent from "./component";
 import { buildMbxStandard } from "../../../tools/utils";
+
+import component from "./component";
 
 /**
  * A totally configurable Form, with a submit button to let the user submit data from your web-app
@@ -48,7 +49,7 @@ import { buildMbxStandard } from "../../../tools/utils";
 const Form: FormComponent = (props) =>
   buildMbxStandard(props, (sharedProps) => ({
     name: "form",
-    Component: formComponent({
+    Component: component({
       ...props,
       ...sharedProps,
     }),

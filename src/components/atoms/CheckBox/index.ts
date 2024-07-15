@@ -4,7 +4,7 @@ import { CheckBoxComponent } from "../../../types";
 
 import { buildMbxReactive } from "../../../tools";
 
-import { DefaultCheckIcon } from "./icons";
+import { CheckIcon } from "../../../icons/generic";
 
 /**
  * A checkbox element, totally customizable.
@@ -52,7 +52,8 @@ const Checkbox: CheckBoxComponent = ({
 }) =>
   buildMbxReactive<boolean>(commonProps, (sProps) => ({
     name: "check",
-    Component: ({ value, setValue }) => (value ? icon || DefaultCheckIcon : ""),
+    Component: ({ value, setValue }) =>
+      value ? icon || CheckIcon({ fill: "var(--mbx-c-chk-tk)" }) : "",
     features: {
       opHov: true,
     },

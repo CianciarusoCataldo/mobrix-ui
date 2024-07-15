@@ -293,7 +293,9 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
  * @copyright 2024 Cataldo Cianciaruso
  */
 export type MbxUiComponent<T = any, K = JSX.Element> = (
-  props: MbxUiProps<T>
+  props: MbxUiProps<T> & {
+    [key: `data-${string}`]: unknown;
+  }
 ) => K;
 
 /**
@@ -372,3 +374,10 @@ export type BuilderPropsReactive<T = BuilderComponent | BuilderComponent[]> =
       setValue: React.Dispatch<React.SetStateAction<T>>
     ) => Omit<BuilderProps, "name">;
   };
+
+export type MbxIcon = (props: {
+  scl?: string;
+  fts?: string;
+  fill?: string;
+  disabled?: boolean;
+}) => React.JSX.Element;

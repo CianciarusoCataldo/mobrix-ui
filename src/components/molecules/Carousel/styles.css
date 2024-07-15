@@ -3,21 +3,13 @@
   padding: 0.4rem;
 }
 
-[data-mbx-id="crsel"] [data-mbx-animation="from-left"] {
-  --mbx-carousel-animation: slideLeft 0.3s forwards;
-}
-
-[data-mbx-id="crsel"] [data-mbx-animation="from-right"] {
-  --mbx-carousel-animation: slideRight 0.3s forwards;
-}
-
 [data-mbx-id="crsel"] [data-mbx-cls="el"] {
   position: relative;
-  -webkit-animation: var(--mbx-carousel-animation);
-  animation: var(--mbx-carousel-animation);
-  -moz-animation: var(--mbx-carousel-animation);
-  -ms-animation: var(--mbx-carousel-animation);
-  -o-animation: var(--mbx-carousel-animation);
+  -webkit-animation: var(--mbx-car-an) 0.3s forwards;
+  animation: var(--mbx-car-an) 0.3s forwards;
+  -moz-animation: var(--mbx-car-an) 0.3s forwards;
+  -ms-animation: var(--mbx-car-an) 0.3s forwards;
+  -o-animation: var(--mbx-car-an) 0.3s forwards;
 }
 
 [data-mbx-id="crsel"] [data-mbx-cls="aprev"] {

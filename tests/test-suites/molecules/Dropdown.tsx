@@ -14,11 +14,11 @@ const dropdownTest = () => {
       );
       wrapper.find('[data-mbx-cls="drop-bt"]').simulate("click");
       wrapper
-        .find('[data-mbx-id="popup"] [data-mbx-id="button"]')
+        .find('[data-mbx-id="popup"] [data-mbx-id="btn"]')
         .at(1)
         .simulate("focus");
       wrapper
-        .find('[data-mbx-id="popup"] [data-mbx-id="button"]')
+        .find('[data-mbx-id="popup"] [data-mbx-id="btn"]')
         .at(1)
         .simulate("click");
       expect(wrapper);
@@ -36,11 +36,11 @@ const dropdownTest = () => {
       );
       wrapper.find('[data-mbx-cls="drop-bt"]').simulate("click");
       wrapper
-        .find('[data-mbx-id="popup"] [data-mbx-id="button"]')
+        .find('[data-mbx-id="popup"] [data-mbx-id="btn"]')
         .at(1)
         .simulate("focus");
       wrapper
-        .find('[data-mbx-id="popup"] [data-mbx-id="button"]')
+        .find('[data-mbx-id="popup"] [data-mbx-id="btn"]')
         .at(1)
         .simulate("click");
 

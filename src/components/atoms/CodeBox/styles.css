@@ -5,17 +5,12 @@
   color: var(--mbx-c-cdb-txt);
 }
 
-[data-mbx-id="code"] [data-mbx-cls="cd-cp"] {
-  align-items: flex-end;
+[data-mbx-id="code"] > [data-mbx-id="icb"] {
+  margin-left: auto;
 }
 
-[data-mbx-id="code"] [data-mbx-cls="cd-cd"] {
+[data-mbx-id="code"] > [data-mbx-cls="cd-cd"] {
   padding: 1rem;
   line-height: 1.5rem;
   overflow: auto;
-}
-
-[data-mbx-id="code"] [data-mbx-cls="cd-cb"] {
-  margin-top: 0;
-  margin-bottom: 0;
 }

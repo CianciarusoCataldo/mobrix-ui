@@ -1,8 +1,7 @@
 [data-mbx-id="dis-card"] {
   background: var(--mbx-c-dcard-bg);
   color: var(--mbx-c-dcard-txt);
-  --mbx-card-background: var(--mbx-c-dcard-bg);
-  --mbx-card-text-color: var(--mbx-c-dcard-txt);
+  --mbx-container-text-color: var(--mbx-c-dcard-txt);
 }
 
 [data-mbx-id="econ"] {
@@ -15,9 +14,30 @@
 }
 
 [data-mbx-id="rgroup"] [data-mbx-id="radio"] {
-  --mbx-radio-background: var(--mbx-c-radg-rad-bg);
-  --mbx-radio-background-hover: var(--mbx-c-radg-rad-bg-h);
-  --mbx-radio-icon-background: var(--mbx-c-radg-rad-ic-bg);
+  --mbx-radio-background-light: var(
+    --mbx-radiogroup-radio-background-light,
+    var(--mbx-radiogroup-radio-background)
+  );
+  --mbx-radio-background-hover-light: var(
+    --mbx-radiogroup-radio-background-hover-light,
+    var(--mbx-radiogroup-radio-background-hover)
+  );
+  --mbx-radio-icon-background-light: var(
+    --mbx-radiogroup-radio-icon-background-light,
+    var(--mbx-radiogroup-radio-icon-background)
+  );
+  --mbx-radio-background-dark: var(
+    --mbx-radiogroup-radio-background-dark,
+    var(--mbx-radiogroup-radio-background)
+  );
+  --mbx-radio-background-hover-dark: var(
+    --mbx-radiogroup-radio-background-hover-dark,
+    var(--mbx-radiogroup-radio-background-hover)
+  );
+  --mbx-radio-icon-background-dark: var(
+    --mbx-radiogroup-radio-icon-background-dark,
+    var(--mbx-radiogroup-radio-icon-background)
+  );
 }
 
 [data-mbx-id="field"] {

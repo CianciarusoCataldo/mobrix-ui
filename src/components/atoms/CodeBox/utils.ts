@@ -2,25 +2,25 @@ import { SupportedEnvironment } from "../../../types";
 import { CODE_LANGUAGES } from "./languages";
 
 export const parseCode = (code: string, environment: SupportedEnvironment) => {
-  let codeParts = [];
+  let parts = [];
   code.split(/(\".+?\")/g).forEach((codeBlock, index) => {
     if (index % 2 !== 0) {
-      codeParts.push({ code: codeBlock, color: CODE_LANGUAGES.common.STRING });
+      parts.push({ code: codeBlock, color: CODE_LANGUAGES.common.STRING });
     } else {
-      codeBlock.split(/(\'.+?\')/g).forEach((codeInternalBlock, secIndex) => {
+      codeBlock.split(/(\'.+?\')/g).forEach((inBlock, secIndex) => {
         if (secIndex % 2 !== 0) {
-          codeParts.push({
-            code: codeInternalBlock,
+          parts.push({
+            code: inBlock,
             color: CODE_LANGUAGES.common.STRING,
           });
         } else {
-          codeInternalBlock.split(" ").forEach((codePart, partIndex) => {
-            codeParts.push({
-              code: codePart,
-              color: CODE_LANGUAGES[environment][codePart],
+          inBlock.split(" ").forEach((part, piInd) => {
+            parts.push({
+              code: part,
+              color: CODE_LANGUAGES[environment][part],
             });
 
-            codeParts.push({
+            parts.push({
               code: " ",
             });
           });
@@ -29,9 +29,9 @@ export const parseCode = (code: string, environment: SupportedEnvironment) => {
     }
   });
 
-  if (codeParts[codeParts.length - 1].code === " ") {
-    codeParts.pop();
+  if (parts[parts.length - 1].code === " ") {
+    parts.pop();
   }
 
-  return codeParts;
+  return parts;
 };

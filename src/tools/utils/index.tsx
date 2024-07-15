@@ -28,16 +28,32 @@ const useOutAlert = (ref: any, callback: () => void) => {
   });
 };
 
-export const parseProps = (props: CommonProps): CommonProps => ({
-  ...SHARED_PROPS,
-  ...props,
-  ...(props.unstyled && {
-    shadow: false,
-    background: false,
-    animated: false,
-    hover: false,
-  }),
-});
+export const parseProps = (props: CommonProps): CommonProps => {
+  let res = {
+    ...SHARED_PROPS,
+    ...props,
+    ...(props.unstyled && {
+      shadow: false,
+      background: false,
+      animated: false,
+      hover: false,
+    }),
+  };
+
+  if (!res["datas"]) {
+    res["datas"] = {};
+  }
+
+  const riserved = ["id", "atts", "fts"].map((ris) => `data-mbx-${ris}`);
+
+  Object.keys(props)
+    .filter((prop) => prop.startsWith("data-") && !riserved.includes(prop))
+    .forEach((prop) => {
+      res["datas"][prop] = props[prop];
+    });
+
+  return res;
+};
 
 const getMbxFts = (
   features: Features,
@@ -112,9 +128,14 @@ const getMbxUiStandard = ({
     ...(cprops.mbxClass && {
       "data-mbx-cls": cprops.mbxClass,
     }),
+    // "data-mbxbg": cprops.background,
+    // "data-mbxhv": cprops.hover,
+    // "data-mbxsh": cprops.shadow,
+    // ...(cprops.disabled && {
+    //   "data-mbxdsb": true,
+    // }),
     id: cprops.id,
     className: cprops.className,
-    style: cprops.style,
     onFocus: cprops.onFocus,
     ...(cprops.onKeyDown && { onKeyDown: cprops.onKeyDown }),
     tabIndex: "-1",
@@ -126,7 +147,16 @@ const getMbxUiStandard = ({
         }),
       }),
     ...cprops.props,
+    ...cprops["datas"],
   };
+
+  let cstyles = cprops.style;
+  if (cprops.hide) {
+    if (!cstyles) {
+      cstyles = {};
+    }
+    cstyles["display"] = "none";
+  }
 
   const wRef = useRef(null);
   cprops.onFocusLost && useOutAlert(wRef, cprops.onFocusLost);
@@ -137,13 +167,14 @@ const getMbxUiStandard = ({
         ref={wRef}
         {...props}
         tabIndex={Number(props.tabIndex)}
+        style={cstyles}
         key={cprops.key}
       />
     );
   } else {
     return (
       // @ts-ignore
-      <Wrapper ref={wRef} {...props} key={cprops.key}>
+      <Wrapper ref={wRef} style={cstyles} {...props} key={cprops.key}>
         {Component}
       </Wrapper>
     );

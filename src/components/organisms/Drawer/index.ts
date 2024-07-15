@@ -4,10 +4,11 @@ import "./styles.css";
 
 import { DrawerComponent } from "../../../types";
 
+import { locationCss } from "./constants";
+
 import { buildMbxStandard } from "../../../tools/utils";
 
-import drawerComponent from "./component";
-import { locationCss } from "./constants";
+import component from "./component";
 
 const positions = [
   "right",
@@ -108,7 +109,7 @@ const Drawer: DrawerComponent = ({
       onFocusLost: customProps.onFocusLost,
     },
     scl: locationCss[location].main,
-    Component: drawerComponent({
+    Component: component({
       children,
       hide,
       onClose: callback,

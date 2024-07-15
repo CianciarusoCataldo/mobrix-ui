@@ -15,7 +15,7 @@ const tabs = (
     tabSelectedClassName="demo-tab-selected"
     tabUnselectedClassName="demo-tab-unselected"
     //dark
-    selected={0}
+    selected={1}
     tabs={[
       {
         label: "Atoms",
@@ -71,7 +71,7 @@ const App = () => {
           onClick={() => {
             setVisible(!isVisible);
           }}
-          data-mbx="2"
+          data-mbx-t="2"
         >
           Toggle drawer
         </Button>
@@ -79,6 +79,12 @@ const App = () => {
         <div style={{ marginTop: "20px" }} />
         <Input value="text" onChange={(value) => console.log(value)} />
         <PackageVersion
+          name="mobrix-ui"
+          user="CianciarusoCataldo"
+          source="github-release"
+        />
+        <PackageVersion
+          dark
           name="mobrix-ui"
           user="CianciarusoCataldo"
           source="github-release"

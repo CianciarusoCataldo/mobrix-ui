@@ -30,19 +30,24 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
 
   if (elements.length > 0) {
     elements.forEach((element, index) => {
+      const estyle =
+        index === item && activeClassName.length > 0
+          ? ({
+              "--mbx-car-an": activeClassName,
+            } as React.CSSProperties)
+          : undefined;
+
       elementsArray.push(
         <Container
           unstyled
           dark={dark}
           key={`car_el_${index}`}
           hide={index !== item}
-          mbxClass="el"
-          props={{
-            "data-mbx-animation": index === item ? activeClassName : "",
-          }}
+          data-mbx-cls="el"
+          style={estyle}
         >
           {element}
-        </Container>,
+        </Container>
       );
 
       dots.push(
@@ -54,17 +59,17 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
             "data-mbx-cdot":
               index === item || (hoveredDot != null && index === hoveredDot),
           }}
-          mbxClass="csdot"
+          data-mbx-cls="csdot"
           className={dotClassName}
           disabled={disabled}
           key={`dot_${index}`}
           onMouseEnter={() => setHoveredDot(index)}
           onMouseLeave={() => setHoveredDot(null)}
           onClick={() => {
-            setActiveClassname(index > item ? "from-right" : "from-left");
+            setActiveClassname(index > item ? "slideRight" : "slideLeft");
             updateItem(index);
           }}
-        />,
+        />
       );
     });
   }
@@ -81,10 +86,10 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
       <IconButton
         dark={dark}
         key="prev-ar"
-        mbxClass="aprev"
+        data-mbx-cls="aprev"
         disabled={disabled || item === 0}
         onClick={() => {
-          setActiveClassname("from-left");
+          setActiveClassname("slideLeft");
           updateItem(item - 1);
         }}
         {...arrowProps}
@@ -98,10 +103,10 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
       <IconButton
         dark={dark}
         key="next-ar"
-        mbxClass="anext"
+        data-mbx-cls="anext"
         disabled={disabled || item === elements.length - 1}
         onClick={() => {
-          setActiveClassname("from-right");
+          setActiveClassname("slideRight");
           updateItem(item + 1);
         }}
         {...arrowProps}

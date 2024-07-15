@@ -32,7 +32,7 @@ const modalTest = () => {
           <p>Modal content</p>
         </Modal>
       );
-      wrapper.find('[data-mbx-cls="cardc-head"]').simulate("click");
+      wrapper.find('[data-mbx-cls="cardc"]').simulate("click");
       expect(wrapper);
     });
   });

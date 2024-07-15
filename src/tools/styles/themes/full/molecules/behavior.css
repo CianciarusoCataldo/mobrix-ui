@@ -40,20 +40,6 @@
     --mbx-list-text-color-hover-light,
     var(--mbx-list-text-color-hover, var(--mbx-c-txt-h))
   );
-
-  /** RadioButton Group */
-  --mbx-c-radg-rad-bg: var(
-    --mbx-radiogroup-radio-background-light,
-    var(--mbx-radiogroup-radio-background)
-  );
-  --mbx-c-radg-rad-bg-h: var(
-    --mbx-radiogroup-radio-background-hover-light,
-    var(--mbx-radiogroup-radio-background-hover)
-  );
-  --mbx-c-radg-rad-ic-bg: var(
-    --mbx-radiogroup-radio-icon-background-light,
-    var(--mbx-radiogroup-radio-icon-background)
-  );
 }
 
 [data-mbx-id][data-mbx-atts*="dk"] {
@@ -96,19 +82,5 @@
   --mbx-c-lst-txt-h: var(
     --mbx-list-text-color-hover-dark,
     var(--mbx-list-text-color-hover, var(--mbx-c-txt-h))
-  );
-
-  /** RadioButton Group */
-  --mbx-c-radg-rad-bg: var(
-    --mbx-radiogroup-radio-background-dark,
-    var(--mbx-radiogroup-radio-background)
-  );
-  --mbx-c-radg-rad-bg-h: var(
-    --mbx-radiogroup-radio-background-hover-dark,
-    var(--mbx-radiogroup-radio-background-hover)
-  );
-  --mbx-c-radg-rad-ic-bg: var(
-    --mbx-radiogroup-radio-icon-background-dark,
-    var(--mbx-radiogroup-radio-icon-background)
   );
 }

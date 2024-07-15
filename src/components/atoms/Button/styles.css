@@ -1,4 +1,4 @@
-[data-mbx-id="button"] {
+[data-mbx-id="btn"] {
   border: 0;
   background: var(--mbx-c-btn-bg);
   color: var(--mbx-c-btn-txt);
@@ -10,7 +10,7 @@
   line-height: 1.25rem;
 }
 
-[data-mbx-id="button"][data-mbx-atts*="anm"] {
+[data-mbx-id="btn"][data-mbx-atts*="anm"] {
   transition-duration: 0.1s;
   transition-property: transform;
 }
@@ -20,7 +20,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="button"][data-mbx-atts*="hv;anm"]:hover {
+  [data-mbx-id="btn"][data-mbx-atts*="hv;anm"]:hover {
     position: relative;
     transform: scaleX(1.15) scaleY(1.1);
   }

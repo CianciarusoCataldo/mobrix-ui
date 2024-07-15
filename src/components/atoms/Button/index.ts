@@ -50,7 +50,7 @@ const Button: ButtonComponent = ({
   ...commonProps
 }) =>
   buildMbxStandard(commonProps, (sProps) => ({
-    name: "button",
+    name: "btn",
     wrapper: "button",
     features: {
       opHov: true,

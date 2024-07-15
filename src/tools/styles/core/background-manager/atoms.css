@@ -1,5 +1,5 @@
-[data-mbx-id="button"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="button"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="btn"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="btn"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-btn-bg: transparent !important;
 }
 

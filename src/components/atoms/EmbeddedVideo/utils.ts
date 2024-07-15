@@ -3,7 +3,7 @@ const SUPPORTED_VIDEO_PLATFORMS = [
   {
     startsWith: "https://www.youtube.com/watch?v=",
     extraProps: { frameBorder: "0", allowFullScreen: "" },
-    allowedFeatures:
+    features:
       "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
     parse: (url: string) =>
       url.replace(
@@ -15,7 +15,7 @@ const SUPPORTED_VIDEO_PLATFORMS = [
   {
     startsWith: "https://www.dailymotion.com/video/",
     extraProps: { frameBorder: "0", allowFullScreen: true },
-    allowedFeatures:
+    features:
       "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
     parse: (url: string) =>
       url.replace(
@@ -27,7 +27,7 @@ const SUPPORTED_VIDEO_PLATFORMS = [
   {
     startsWith: "https://www.facebook.com/watch/?v=",
     extraProps: { frameBorder: "0", allowFullScreen: true },
-    allowedFeatures:
+    features:
       "accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
     parse: (url: string) =>
       url.replace(
@@ -40,7 +40,7 @@ const SUPPORTED_VIDEO_PLATFORMS = [
 export const parseEmbedUrl: (url: string) => {
   extraProps?: Record<string, any>;
   link?: string;
-  allowedFeatures?: string;
+  features?: string;
 } = (url) => {
   const platform = SUPPORTED_VIDEO_PLATFORMS.find((el) =>
     url.startsWith(el.startsWith),

@@ -14,10 +14,6 @@
   outline: none;
 }
 
-[data-mbx-atts*="hide"] {
-  display: none !important;
-}
-
 [data-mbx-atts*="dsb"] {
   opacity: 0.6;
 }

@@ -8,6 +8,7 @@
 
 [data-mbx-id="dis-card"] [data-mbx-cls="dis-bt"] {
   padding: 0;
+  margin-left: auto;
 }
 
 @media (hover) {

@@ -58,9 +58,17 @@ const Toggle: ToggleComponent = ({
     props: (status, setStatus) => ({
       commonProps: {
         ...sProps,
+        style: {
+          ...sProps.style,
+          ...(status &&
+            ({
+              "--svginternalcolor": "var(--mbx-c-tog-ic-on-int)",
+              "--svgexternalcolor": "var(--mbx-c-tog-ic-on-ext)",
+              "--mbx-tgl-tr": " 0%",
+            } as React.CSSProperties)),
+        },
         props: {
           ...sProps.props,
-          "data-mbx-flip": status,
           ...(!sProps.disabled && {
             onClick: () => {
               onChange(!status);
