@@ -6,6 +6,22 @@
   --mbx-container-text-color: var(--mbx-c-card-txt);
 }
 
+[data-mbx-id="tview"] [data-mbx-tbvsel="true"] {
+  --mbx-button-background: var(--mbx-c-tabv-bg);
+  --mbx-button-text-color: var(--mbx-c-tabv-txt);
+}
+
+[data-mbx-id="tview"] [data-mbx-tbvsel="false"] {
+  --mbx-button-background: var(--mbx-c-tabv-off-bg);
+  --mbx-button-text-color: var(--mbx-c-tabv-off-txt);
+  --mbx-button-background-hover: var(--mbx-c-tabv-off-bg-h);
+  --mbx-button-text-color-hover: var(--mbx-c-tabv-off-txt-h);
+}
+
+[data-mbx-id="econt"] {
+  --mbx-arr: var(--mbx-c-con-txt);
+}
+
 [data-mbx-id*="cont"] {
   background: var(--mbx-c-con-bg);
   color: var(--mbx-c-con-txt);

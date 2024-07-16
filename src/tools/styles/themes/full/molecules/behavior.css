@@ -18,21 +18,21 @@
   /** ExpandableContainer **/
   --mbx-c-exp-bg: var(
     --mbx-expandablecontainer-background-light,
-    var(--mbx-expandablecontainer-background, var(--mbx-c-con-bg))
+    var(--mbx-expandablecontainer-background)
   );
 
   --mbx-c-exp-txt: var(
     --mbx-expandablecontainer-text-color-light,
-    var(--mbx-expandablecontainer-text-color, var(--mbx-c-con-txt))
+    var(--mbx-expandablecontainer-text-color)
   );
   --mbx-c-exp-arr-h: var(
     --mbx-expandablecontainer-arrow-color-hover-light,
-    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-exp-txt))
+    var(--mbx-expandablecontainer-arrow-color-hover)
   );
 
   --mbx-c-exp-arr: var(
     --mbx-expandablecontainer-arrow-color-light,
-    var(--mbx-expandablecontainer-arrow-color, var(--mbx-c-exp-txt))
+    var(--mbx-expandablecontainer-arrow-color)
   );
 
   /** List */
@@ -60,22 +60,21 @@
   );
 
   /** ExpandableContainer **/
-  --mbx-c-exp-arr: var(
-    --mbx-expandablecontainer-arrow-color-dark,
-    var(--mbx-expandablecontainer-arrow-color, var(--mbx-c-exp-txt))
-  );
-
-  --mbx-c-exp-arr-h: var(
-    --mbx-expandablecontainer-arrow-color-hover-dark,
-    var(--mbx-expandablecontainer-arrow-color-hover, var(--mbx-c-exp-txt))
-  );
   --mbx-c-exp-bg: var(
     --mbx-expandablecontainer-background-dark,
-    var(--mbx-expandablecontainer-background, var(--mbx-c-con-bg))
+    var(--mbx-expandablecontainer-background)
   );
   --mbx-c-exp-txt: var(
     --mbx-expandablecontainer-text-color-dark,
-    var(--mbx-expandablecontainer-text-color, var(--mbx-c-con-txt))
+    var(--mbx-expandablecontainer-text-color)
+  );
+  --mbx-c-exp-arr: var(
+    --mbx-expandablecontainer-arrow-color-dark,
+    var(--mbx-expandablecontainer-arrow-color)
+  );
+  --mbx-c-exp-arr-h: var(
+    --mbx-expandablecontainer-arrow-color-hover-dark,
+    var(--mbx-expandablecontainer-arrow-color-hover)
   );
 
   /** List */

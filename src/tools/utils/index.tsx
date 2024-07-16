@@ -125,15 +125,6 @@ const getMbxUiStandard = ({
       "data-mbx-fts": mbxFts,
     }),
     "data-mbx-scl": `${scl};${cprops.scl || ""}`,
-    ...(cprops.mbxClass && {
-      "data-mbx-cls": cprops.mbxClass,
-    }),
-    // "data-mbxbg": cprops.background,
-    // "data-mbxhv": cprops.hover,
-    // "data-mbxsh": cprops.shadow,
-    // ...(cprops.disabled && {
-    //   "data-mbxdsb": true,
-    // }),
     id: cprops.id,
     className: cprops.className,
     onFocus: cprops.onFocus,

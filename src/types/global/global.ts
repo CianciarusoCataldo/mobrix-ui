@@ -80,8 +80,6 @@ export type CommonProps = MbxAttributes & {
   fts?: string;
 
   features?: Features;
-
-  mbxClass?: string;
 };
 
 /**
@@ -380,4 +378,5 @@ export type MbxIcon = (props: {
   fts?: string;
   fill?: string;
   disabled?: boolean;
+  transform?: string;
 }) => React.JSX.Element;

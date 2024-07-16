@@ -55,9 +55,12 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
           dark={dark}
           scl="bdtran"
           features={{ noShFc: true, fillFc: true }}
-          props={{
-            "data-mbx-cdot":
-              index === item || (hoveredDot != null && index === hoveredDot),
+          style={{
+            background: `var(--mbx-c-car-dot-${
+              index === item || (hoveredDot != null && index === hoveredDot)
+                ? "f"
+                : "e"
+            })`,
           }}
           data-mbx-cls="csdot"
           className={dotClassName}
@@ -95,8 +98,8 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         {...arrowProps}
       >
         <ArrowIcon
-          disabled={item === 0}
-          fill={item === 0 ? "none" : "var(--mbx-c-car-arr)"}
+          disabled={item === 0 || disabled}
+          fill={item === 0 ? "none" : undefined}
         />
       </IconButton>
       {elementsArray}
@@ -112,8 +115,8 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         {...arrowProps}
       >
         <ArrowIcon
-          disabled={item === elements.length - 1}
-          fill={item === elements.length - 1 ? "none" : "var(--mbx-c-car-arr)"}
+          disabled={item === elements.length - 1 || disabled}
+          fill={item === elements.length - 1 ? "none" : undefined}
         />
       </IconButton>
     </div>,

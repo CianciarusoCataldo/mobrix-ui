@@ -1,6 +1,7 @@
 [data-mbx-id="crsel"] {
   background: var(--mbx-c-car-bg);
   padding: 0.4rem;
+  --mbx-arr: var(--mbx-c-car-arr);
 }
 
 [data-mbx-id="crsel"] [data-mbx-cls="el"] {
@@ -24,12 +25,7 @@
 
 [data-mbx-id="crsel"] [data-mbx-cls="car-els"],
 [data-mbx-id="crsel"] [data-mbx-cls="cdots"] {
-  align-items: center;
   padding: 0.5rem;
-}
-
-[data-mbx-id="crsel"] [data-mbx-cls="cdots"] {
-  justify-content: center;
 }
 
 [data-mbx-id="crsel"] [data-mbx-cls="csdot"] {
@@ -38,9 +34,4 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--mbx-c-car-dot-e);
-}
-
-[data-mbx-id="crsel"] [data-mbx-cdot="true"] {
-  background: var(--mbx-c-car-dot-f);
 }

@@ -64,7 +64,7 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
   };
 
   const DateLabel = ({ children, key }) => (
-    <Label key={key} mbxClass="dpick-el" dark={commonProps.dark}>
+    <Label key={key} data-mbx-cls="dpick-el" dark={commonProps.dark}>
       {children}
     </Label>
   );

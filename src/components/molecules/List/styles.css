@@ -1,20 +1,21 @@
 [data-mbx-id="list"] {
   background: transparent;
   padding: 0.6rem;
+  color: var(--mbx-c-lst-txt);
 }
 
-[data-mbx-id="list"] [data-mbx-cls="lis-el"] {
+[data-mbx-id="list"] > [data-mbx-id="cont"] {
   margin-top: 0.2rem;
+  display: flex;
+  flex-direction: row;
 }
 
-[data-mbx-id="list"] [data-mbx-cls="dot"] {
+[data-mbx-id="list"] > [data-mbx-id="cont"] > svg {
+  margin-right: 0.3rem;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
   width: 6px;
   height: 6px;
   fill: var(--mbx-c-lst-txt);
-  margin-right: 0.3rem;
-  display: block;
-}
-
-[data-mbx-id="list"] [data-mbx-cls="lis-el"]:not(:focus-visible) {
-  color: var(--mbx-c-lst-txt);
 }

@@ -32,7 +32,7 @@ const DrawerInternalComponent: MbxUiComponent<
       onClick={() => {
         onClose!();
       }}
-      mbxClass="drw-close"
+      data-mbx-cls="drw-close"
       scl={locationCss[position].btn}
       features={{ noShFc: true }}
       a11yLabel="drawer-close-button"

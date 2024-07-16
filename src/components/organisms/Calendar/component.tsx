@@ -98,9 +98,7 @@ const CalendarComponent: MbxUiReactiveComponent<
       hover={hover}
       dark={commonProps.dark}
       key={"arrow_" + direction}
-      props={{
-        "data-mbx-carr": direction,
-      }}
+      data-mbx-carr={direction}
       scl="myauto"
       features={{ fillFc: true, noShFc: true }}
       {...customProps}
@@ -118,12 +116,12 @@ const CalendarComponent: MbxUiReactiveComponent<
         <Label
           disabled={disabled}
           scl="mxauto"
-          mbxClass="act-dt"
+          data-mbx-cls="act-dt"
           dark={commonProps.dark}
           {...customProps}
         >{`${customMonths[scrDate.month]} ${scrDate.year}`}</Label>
         {getArrow("right")}
-      </div>,
+      </div>
     );
 
   components.push(
@@ -191,10 +189,10 @@ const CalendarComponent: MbxUiReactiveComponent<
       rows={[
         days.map((dayName) => dayName.slice(0, 3)),
         ...basicMatrix.map((row) =>
-          row.map((element) => (element > 0 ? String(element) : "")),
+          row.map((element) => (element > 0 ? String(element) : ""))
         ),
       ]}
-    />,
+    />
   );
 
   return components;

@@ -33,10 +33,11 @@ export const Xicon: MbxIcon = ({ fill }) => (
 );
 
 export const ArrowIcon: MbxIcon = ({
-  fill = "inherit",
+  fill = "var(--mbx-arr)",
   scl = "",
   fts,
   disabled,
+  transform,
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -45,8 +46,9 @@ export const ArrowIcon: MbxIcon = ({
     viewBox="0 0 11 18"
     fill={fill}
     data-mbx-scl={scl}
-    data-mbx-img={disabled ? "arr-dis" : "arr"}
+    data-mbx-img={disabled ? "" : "arr"}
     data-mbx-fts={`noShFc;fillFc;${fts}`}
+    {...(transform && { transform })}
   >
     <path d="M8.6812.1963l2.1208928 2.120293-8.484 8.4864L.1972 8.6827z" />
     <path d="M10.8032656 15.0470656l-2.1213 2.1213-8.4852-8.4852 2.1213-2.1213z" />

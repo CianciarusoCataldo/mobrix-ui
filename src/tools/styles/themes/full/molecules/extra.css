@@ -4,15 +4,6 @@
   --mbx-container-text-color: var(--mbx-c-dcard-txt);
 }
 
-[data-mbx-id="econ"] {
-  background: var(--mbx-c-exp-bg);
-  color: var(--mbx-c-exp-text);
-}
-
-[data-mbx-id="econ"] [data-mbx-cls="econ-b"] svg {
-  fill: var(--mbx-c-exp-arr);
-}
-
 [data-mbx-id="rgroup"] [data-mbx-id="radio"] {
   --mbx-radio-background-light: var(
     --mbx-radiogroup-radio-background-light,

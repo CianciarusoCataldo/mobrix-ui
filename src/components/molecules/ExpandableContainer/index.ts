@@ -54,7 +54,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
   ...commonProps
 }) => {
   return buildMbxReactive(commonProps, (sharedProps) => ({
-    name: "econ",
+    name: "econt",
     defaultValue: false,
     wrapper,
     inputValue: startCompact,
@@ -67,16 +67,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
         onChange,
         ...sharedProps,
       }),
-    props: (value, setValue) => ({
-      mbxClass: `cmp-${value}`,
-      commonProps: {
-        ...sharedProps,
-        props: {
-          ...sharedProps.props,
-          "data-mbx-ecmp": value,
-        },
-      },
-    }),
+    commonProps: sharedProps,
   }));
 };
 

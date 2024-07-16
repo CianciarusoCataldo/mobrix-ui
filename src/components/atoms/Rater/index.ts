@@ -64,8 +64,15 @@ const Rater: RaterComponent = ({
         ...props,
         ...sharedProps,
       }),
-    scl: `wfit;mxauto;${vertical ? "flxc" : "flxr"};act`,
-    commonProps: sharedProps,
+    scl: `wfit;mxauto;act`,
+
+    commonProps: {
+      ...sharedProps,
+      style: {
+        ...sharedProps.style,
+        flexDirection: vertical ? "column" : "row",
+      },
+    },
   }));
 
 export default Rater;

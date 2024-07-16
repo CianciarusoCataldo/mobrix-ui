@@ -61,7 +61,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       key="fld_h_b"
       dark={dark}
       scl="wfu"
-      mbxClass="fld-h"
+      data-mbx-cls="fld-h"
       {...headerProps}
     >
       {header}
@@ -98,7 +98,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       }}
     />,
     <Container
-      mbxClass="fld-eb"
+      data-mbx-cls="fld-eb"
       animated={true}
       animation="fade-in"
       dark={dark}

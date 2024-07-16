@@ -25,18 +25,13 @@ const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
             onClick(index);
           }
         },
+        "data-mbx-cls": "clk",
       })}
       features={{ colFc: true, opHov: onClick !== undefined, noShFc: true }}
-      scl="flxr;nout"
+      scl="nout"
       disabled={disabled}
-      mbxClass="lis-el"
     >
-      <svg
-        viewBox="0 0 9 9"
-        key="lst_dot"
-        data-mbx-cls="dot"
-        data-mbx-scl="myauto"
-      >
+      <svg viewBox="0 0 9 9" key="lst_dot">
         <circle cx={4.5} cy={4.5} r={3.5} />
       </svg>
       <div key={"lst_el_" + index}>{element}</div>

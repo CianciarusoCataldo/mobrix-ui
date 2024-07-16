@@ -111,7 +111,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
         dark={dark}
         scl="nout;wfu"
         key="opts-m"
-        mbxClass="drop-bt"
+        data-mbx-cls="drop-bt"
         a11y={false}
       >
         <div
@@ -131,7 +131,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           key="icon"
           disabled={disabled}
           a11y={false}
-          mbxClass="ic"
+          data-mbx-cls="ic"
           scl="nout"
         >
           <p tabIndex={-1}>
@@ -140,7 +140,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
               data-mbx-scl="nout"
               style={
                 {
-                  "MbxDdRot": isVisible ? "180deg" : "360deg",
+                  MbxDdRot: isVisible ? "180deg" : "360deg",
                 } as React.CSSProperties
               }
             ></i>
@@ -174,12 +174,8 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
             features={{ noShFc: true, colFc: true }}
             key={`item_${index}`}
             scl="flxc;wfu"
-            mbxClass="reg"
-            props={{
-              "data-mbx-dpos": `${index === 0}-${
-                index === elements.length - 1
-              }`,
-            }}
+            data-mbx-cls="reg"
+            data-mbx-dpos={`${index === 0}-${index === elements.length - 1}`}
           >
             <Container
               disabled={disabled || selected === index}
@@ -188,7 +184,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
               shadow={false}
               animated={false}
               dark={dark}
-              mbxClass="drop-el"
+              data-mbx-cls="drop-el"
               scl="flxr;mauto"
             >
               {item}

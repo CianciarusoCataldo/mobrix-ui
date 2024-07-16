@@ -24,9 +24,16 @@ const expandableContainerComponent: MbxUiReactiveComponent<
   let components = [children];
 
   components.push(
-    <div key="exp_a" data-mbx-cls="exp-area" data-mbx-scl="ovhid">
+    <div
+      key="exp_a"
+      data-mbx-scl="ovhid"
+      style={{
+        maxHeight: compact ? "0" : "100vh",
+        transition: `max-height 0.3s ease-${compact ? "out" : "in"}`,
+      }}
+    >
       {expanded}
-    </div>,
+    </div>
   );
   components.push(
     <IconButton
@@ -39,11 +46,15 @@ const expandableContainerComponent: MbxUiReactiveComponent<
       key="arr_bt"
       dark={dark}
       scl="mauto;flxc"
-      mbxClass="econ-b"
+      data-mbx-cls="econ-b"
       features={{ noShFc: true, fillFc: true }}
     >
-      <ArrowIcon scl="nout" fill="var(--mbx-c-con-txt)" />
-    </IconButton>,
+      <ArrowIcon
+        transform={`rotate(${compact ? "270" : "90"})`}
+        scl="nout"
+        disabled={disabled}
+      />
+    </IconButton>
   );
   return components;
 };

@@ -1,15 +1,17 @@
 @media (hover) {
   [data-mbx-id="crsel"] [data-mbx-img="arr"]:hover {
-    fill: var(--mbx-c-car-arr-h);
+    --mbx-arr: var(--mbx-c-car-arr-h);
   }
 
-  [data-mbx-id="econ"]:not([data-mbx-atts*="dsb"])
-    [data-mbx-cls="econ-b"]
-    svg:hover {
-    --mbx-c-exp-arr: var(--mbx-c-exp-arr-h);
+  [data-mbx-id="econt"] [data-mbx-id="icb"]:hover > [data-mbx-img="arr"] {
+    --mbx-econt-arr: var(
+      --mbx-c-exp-arr-h,
+      var(--mbx-c-exp-arr, var(--mbx-c-con-txt))
+    );
   }
 
-  [data-mbx-id="list"][data-mbx-atts*="hv"] [data-mbx-scl*="click"]:hover {
+  [data-mbx-id="list"][data-mbx-atts*="hv"]
+    > [data-mbx-id="cont"][data-mbx-cls="clk"]:hover {
     color: var(--mbx-c-lst-txt-h);
   }
 }

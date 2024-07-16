@@ -42,8 +42,8 @@
   --mbx-c-rev-bg: transparent !important;
 }
 
-[data-mbx-id="econ"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="econ"]:not([data-mbx-atts*="bg"]):hover {
+[data-mbx-id="econt"]:not([data-mbx-atts*="bg"]),
+[data-mbx-id="econt"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-exp-bg: transparent !important;
 }
 
