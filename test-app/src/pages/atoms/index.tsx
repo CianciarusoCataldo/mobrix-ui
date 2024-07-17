@@ -382,7 +382,9 @@ npx`}
             <div style={{ marginTop: "20px" }} />
             <Slider dark />
             <div style={{ marginTop: "20px" }} />
-            <Slider dark value={32} />
+            <Slider readOnly value={32} />
+            <div style={{ marginTop: "20px" }} />
+            <Slider readOnly dark />
             <div style={{ marginTop: "20px" }} />
             <Slider disabled value={32} />
             <div style={{ marginTop: "20px" }} />

@@ -58,6 +58,7 @@ const Checkbox: CheckBoxComponent = ({
       opHov: true,
     },
     scl: "flxc;act",
+    bgCssProps: ["--mbx-c-chk-bg"],
     props: (actualValue, setValue) => {
       const callback = () => {
         onChange(!actualValue);

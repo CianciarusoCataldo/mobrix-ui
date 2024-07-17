@@ -1,18 +1,3 @@
-[data-mbx-id="btn"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="btn"]:not([data-mbx-atts*="bg"]):hover {
-  --mbx-c-btn-bg: transparent !important;
-}
-
-[data-mbx-id="check"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="check"]:not([data-mbx-atts*="bg"]):hover {
-  --mbx-c-chk-bg: transparent !important;
-}
-
-[data-mbx-id="code"]:not([data-mbx-atts*="bg"]),
-[data-mbx-id="code"]:not([data-mbx-atts*="bg"]):hover {
-  --mbx-c-cdb-bg: transparent !important;
-}
-
 [data-mbx-id="count"]:not([data-mbx-atts*="bg"]),
 [data-mbx-id="count"]:not([data-mbx-atts*="bg"]):hover {
   --mbx-c-cnt-bg: transparent !important;

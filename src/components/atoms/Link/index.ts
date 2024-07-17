@@ -59,13 +59,13 @@ const Link: LinkComponent = ({
     Component: children,
     commonProps: {
       ...sharedProps,
+      style: { ...sharedProps.style, textDecoration: "underline" },
       props: {
         ...sharedProps.props,
         ...(!sharedProps.disabled && {
           href: to,
           target: newTab ? "_blank" : undefined,
         }),
-        ...(underline && { "data-mbx-cls": "under" }),
       },
     },
     wrapper: sharedProps.disabled ? "span" : "a",

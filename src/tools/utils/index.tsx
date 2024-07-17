@@ -55,21 +55,28 @@ export const parseProps = (props: CommonProps): CommonProps => {
   return res;
 };
 
-const getMbxFts = (
+const getMbxFts: (
   features: Features,
-  { features: ftrs = {}, fts = "", ...props }: CommonProps
+  props: CommonProps
 ) => {
+  fts: string;
+  styles: Record<string, any>;
+} = (features, { features: ftrs = {}, fts = "", ...props }) => {
   const sFts = { ...features, ...ftrs };
   let res = `${fts};`;
+  let styles = {};
   const fProps = Object.keys(sFts).filter((feature) => sFts[feature]);
   const mbxfts = parseFts(props);
   [...fProps, ...Object.keys(props)]
     .filter((feature, index) => mbxfts[feature])
     .forEach((feature, index) => {
       res += `${mbxfts[feature]};`;
+      if (mbxfts[feature].var) {
+        styles[`--mbx-${mbxfts[feature].var}`] = mbxfts[feature].val;
+      }
     });
 
-  return res;
+  return { fts: res, styles };
 };
 
 const getMbxAtts = (props: CommonProps) => {
@@ -112,8 +119,10 @@ const getMbxUiStandard = ({
   wrapper: Wrapper = "div",
   features = {},
   fts = "",
+  bgCssProps = [],
 }: BuilderProps) => {
-  let mbxFts = `${getMbxFts(features, cprops)};${fts}`;
+  const parsedFts = getMbxFts(features, cprops);
+  let mbxFts = `${parsedFts.fts};${fts}`;
   let mbxAtts = getMbxAtts(cprops);
 
   let props: CommonProps & Record<string, any> = {
@@ -142,11 +151,40 @@ const getMbxUiStandard = ({
   };
 
   let cstyles = cprops.style;
+  if (!cstyles) {
+    cstyles = {};
+  }
+
   if (cprops.hide) {
-    if (!cstyles) {
-      cstyles = {};
-    }
     cstyles["display"] = "none";
+  }
+
+  if (!cprops.background) {
+    cstyles["--mbx-c-bg"] = "transparent";
+    cstyles["--mbx-c-bgc"] = "transparent";
+    bgCssProps.forEach((css) => (cstyles[css] = "transparent"));
+  }
+
+  if (!cprops.disabled) {
+    if (cprops.a11y) {
+      cstyles["--mbx-sh-fc"] = "var(--mbx-c-fc)";
+    }
+
+    if (cprops.shadow) {
+      cstyles["boxShadow"] = "var(--mbx-sh)";
+      cstyles["WebkitBoxShadow"] = "var(--mbx-sh)";
+      cstyles["MozBoxShadow"] = "var(--mbx-sh)";
+      cstyles["OBoxShadow"] = "var(--mbx-sh)";
+    }
+
+    cstyles = { ...cstyles, ...parsedFts.styles };
+
+    if (!cprops.hover) {
+      cstyles["--mbx-op-hov"] = 1;
+    }
+  } else {
+    cstyles["cursor"] = "unset";
+    cstyles["opacity"] = 0.6;
   }
 
   const wRef = useRef(null);

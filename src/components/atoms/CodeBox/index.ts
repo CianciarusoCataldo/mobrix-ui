@@ -48,6 +48,7 @@ const CodeBox: CodeBoxComponent = (props) =>
     name: "code",
     commonProps: sProps,
     scl: "flxc;ovhid",
+    bgCssProps: ["--mbx-c-cdb-bg"],
     Component: component({
       ...props,
       ...sProps,

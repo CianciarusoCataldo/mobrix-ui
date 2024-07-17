@@ -69,10 +69,19 @@ const Slider: SliderComponent = ({
       return {
         commonProps: {
           ...sharedProps,
+          style: {
+            ...sharedProps.style,
+            ...(sharedProps.hover &&
+              !readOnly && {
+                "--mbx-sld-op": "0.6",
+              }),
+            ...(!sharedProps.disabled && {
+              "--mbx-sld-act": "0.4",
+            }),
+          },
           hover: sharedProps.hover && !readOnly,
           props: {
             ...sharedProps.props,
-            "data-mbx-readonly": readOnly,
             type: "range",
             min,
             max,

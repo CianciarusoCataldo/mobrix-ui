@@ -4,10 +4,6 @@
   color: var(--mbx-c-link-txt);
 }
 
-[data-mbx-id="link"]:not([data-mbx-atts*="dsb"]):active {
+a[data-mbx-id="link"]:active {
   font-weight: 700;
-}
-
-[data-mbx-id="link"][data-mbx-cls="under"] {
-  text-decoration: underline;
 }

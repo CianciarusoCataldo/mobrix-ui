@@ -40,9 +40,9 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
     >
       {CopyIcon}
     </IconButton>,
-    <div key="cd_cd" data-mbx-cls="cd-cd">
+    <div key="cd_cd">
       {code.split("\n").map((codeLine, lIndex) => (
-        <p data-mbx-scl="myauto" key={`cd_l_${lIndex}`}>
+        <p style={{ margin: 0 }} key={`cd_l_${lIndex}`}>
           {parseLine(codeLine, environment).map((cBlock, bIndex) =>
             cBlock.code === " " ? (
               ` `

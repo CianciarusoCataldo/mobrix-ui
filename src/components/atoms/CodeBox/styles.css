@@ -9,7 +9,7 @@
   margin-left: auto;
 }
 
-[data-mbx-id="code"] > [data-mbx-cls="cd-cd"] {
+[data-mbx-id="code"] > div {
   padding: 1rem;
   line-height: 1.5rem;
   overflow: auto;

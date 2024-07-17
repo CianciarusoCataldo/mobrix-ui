@@ -1,6 +1,12 @@
 @import url("animation-manager/index.css");
 @import url("background-manager/index.css");
 
+[data-mbx-id] {
+  --mbx-op: 1;
+  --mbx-sh: 0 5px 13px -1px var(--mbx-c-sh);
+  opacity: var(--mbx-op);
+}
+
 [data-mbx-id],
 [data-mbx-id]:hover,
 [data-mbx-id]:active {
@@ -14,53 +20,24 @@
   outline: none;
 }
 
-[data-mbx-atts*="dsb"] {
-  opacity: 0.6;
-}
-
-[data-mbx-atts*="sh"] {
-  box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
-  -webkit-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
-  -moz-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
-  -o-box-shadow: 0 5px 13px -1px var(--mbx-c-sh);
-}
-
-[data-mbx-id]:not([data-mbx-atts*="bg"]),
-[data-mbx-id]:not([data-mbx-atts*="bg"]):hover {
-  --mbx-c-bg: transparent;
-  --mbx-c-bgc: transparent;
-}
-
 @media (hover: hover) {
-  [data-mbx-atts*="a11y"]:focus-visible {
-    box-shadow: 0 5px 13px -1px var(--mbx-c-fc);
-    -webkit-box-shadow: 0 5px 13px -1px var(--mbx-c-fc);
-    -moz-box-shadow: 0 5px 13px -1px var(--mbx-c-fc);
-    -o-box-shadow: 0 5px 13px -1px var(--mbx-c-fc);
-  }
-
-  [data-mbx-fts*="opHov"]:hover {
-    opacity: 0.7;
+  [data-mbx-id]:hover {
+    opacity: var(--mbx-op-hov, var(--mbx-op));
   }
 }
 
-[data-mbx-fts*="opAct"]:active {
-  opacity: 0.3;
+[data-mbx-id]:focus-visible {
+  --mbx-sh-tf: 0 5px 13px -1px var(--mbx-sh-fc, var(--mbx-c-sh));
+  --mbx-sh: var(--mbx-sh-def, var(--mbx-sh-tf));
+  opacity: var(--mbx-op-f, var(--mbx-op));
+}
+
+[data-mbx-id]:active {
+  opacity: var(--mbx-op-act, var(--mbx-op));
 }
 
 [data-mbx-fts*="colFc"]:focus-visible {
   color: var(--mbx-c-fc);
-}
-
-[data-mbx-fts*="opFc"]:focus-visible {
-  opacity: 0.5;
-}
-
-[data-mbx-fts*="noShFc"]:focus-visible {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
 }
 
 [data-mbx-fts*="fillFc"]:focus-visible,

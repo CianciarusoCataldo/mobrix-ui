@@ -279,6 +279,8 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
   fts?: string;
 
   group?: "atom" | "molecule" | "organism";
+
+  bgCssProps?: string[];
 };
 
 /**
