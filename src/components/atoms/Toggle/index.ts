@@ -55,6 +55,7 @@ const Toggle: ToggleComponent = ({
 }) =>
   buildMbxReactive<boolean>(commonProps, (sProps) => ({
     name: "tgl",
+    cssBg: ["c-tog-bg"],
     props: (status, setStatus) => ({
       commonProps: {
         ...sProps,

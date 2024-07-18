@@ -38,6 +38,10 @@ export const parseProps = (props: CommonProps): CommonProps => {
       animated: false,
       hover: false,
     }),
+    ...(props.disabled && {
+      animated: false,
+      hover: false,
+    }),
   };
 
   if (!res["datas"]) {
@@ -61,16 +65,16 @@ const getMbxFts: (
 ) => {
   fts: string;
   styles: Record<string, any>;
-} = (features, { features: ftrs = {}, fts = "", ...props }) => {
+} = (features, { features: ftrs = {}, ...props }) => {
   const sFts = { ...features, ...ftrs };
-  let res = `${fts};`;
+  let res = "";
   let styles = {};
   const fProps = Object.keys(sFts).filter((feature) => sFts[feature]);
   const mbxfts = parseFts(props);
   [...fProps, ...Object.keys(props)]
     .filter((feature, index) => mbxfts[feature])
     .forEach((feature, index) => {
-      res += `${mbxfts[feature]};`;
+      res += `${mbxfts[feature].fkey};`;
       if (mbxfts[feature].var) {
         styles[`--mbx-${mbxfts[feature].var}`] = mbxfts[feature].val;
       }
@@ -118,11 +122,10 @@ const getMbxUiStandard = ({
   commonProps: cprops = {},
   wrapper: Wrapper = "div",
   features = {},
-  fts = "",
-  bgCssProps = [],
+  cssBg = [],
 }: BuilderProps) => {
   const parsedFts = getMbxFts(features, cprops);
-  let mbxFts = `${parsedFts.fts};${fts}`;
+  let mbxFts = `${parsedFts.fts}`;
   let mbxAtts = getMbxAtts(cprops);
 
   let props: CommonProps & Record<string, any> = {
@@ -162,19 +165,16 @@ const getMbxUiStandard = ({
   if (!cprops.background) {
     cstyles["--mbx-c-bg"] = "transparent";
     cstyles["--mbx-c-bgc"] = "transparent";
-    bgCssProps.forEach((css) => (cstyles[css] = "transparent"));
+    cssBg.forEach((css) => (cstyles[`--mbx-${css}`] = "transparent"));
+  }
+
+  if (!cprops.shadow) {
+    cstyles["--mbx-sh"] = "none";
   }
 
   if (!cprops.disabled) {
     if (cprops.a11y) {
       cstyles["--mbx-sh-fc"] = "var(--mbx-c-fc)";
-    }
-
-    if (cprops.shadow) {
-      cstyles["boxShadow"] = "var(--mbx-sh)";
-      cstyles["WebkitBoxShadow"] = "var(--mbx-sh)";
-      cstyles["MozBoxShadow"] = "var(--mbx-sh)";
-      cstyles["OBoxShadow"] = "var(--mbx-sh)";
     }
 
     cstyles = { ...cstyles, ...parsedFts.styles };
@@ -184,7 +184,7 @@ const getMbxUiStandard = ({
     }
   } else {
     cstyles["cursor"] = "unset";
-    cstyles["opacity"] = 0.6;
+    cstyles["--mbx-op"] = 0.6;
   }
 
   const wRef = useRef(null);
@@ -234,7 +234,7 @@ const getMbxUiReactive = <T=any>({
   Component,
   features,
   scl,
-  fts
+  cssBg
 }: BuilderProps<
   (props: {
     value: T;
@@ -270,7 +270,7 @@ const getMbxUiReactive = <T=any>({
     wrapper,
     features,
     scl,
-    fts,
+    cssBg,
     ...processed,
   });
 };

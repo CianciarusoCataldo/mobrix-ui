@@ -74,6 +74,7 @@ const FormField: FormFieldComponent = ({
         "data-mbx-ftype": type,
       },
     },
+    cssBg: ["c-field-bg"],
     Component: ({ value, setValue }) =>
       component({
         value,

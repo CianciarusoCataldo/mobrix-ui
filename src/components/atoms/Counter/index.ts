@@ -61,6 +61,7 @@ const Counter: CounterComponent = ({
     features: {
       opHov: true,
     },
+    cssBg: ["c-cnt-bg"],
     inputValue,
     defaultValue: 0,
     props: (value, setValue) => ({

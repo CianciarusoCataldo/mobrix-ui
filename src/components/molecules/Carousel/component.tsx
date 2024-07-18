@@ -54,7 +54,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         <IconButton
           dark={dark}
           scl="bdtran"
-          features={{ noShFc: true, fillFc: true }}
+          features={{ noShFc: true, fillFc: true, opFc: true }}
           style={{
             background: `var(--mbx-c-car-dot-${
               index === item || (hoveredDot != null && index === hoveredDot)

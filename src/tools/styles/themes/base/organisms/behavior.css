@@ -1,6 +1,6 @@
 @import url("constants/computed.css");
 
-[data-mbx-id]:not([data-mbx-atts*="dk"]) {
+[data-mbx-id] {
   /** Calendar **/
   --mbx-c-cal-bg: var(--mbx-c-cal-bg-l);
   --mbx-c-cal-txt: var(--mbx-c-cal-txt-l);

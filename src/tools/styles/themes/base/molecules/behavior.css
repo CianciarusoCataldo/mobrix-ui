@@ -1,4 +1,4 @@
-[data-mbx-id]:not([data-mbx-atts*="dk"]) {
+[data-mbx-id] {
   /** Card **/
   --mbx-c-card-bg: var(
     --mbx-card-background-light,

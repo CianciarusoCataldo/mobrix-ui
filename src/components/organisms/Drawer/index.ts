@@ -98,6 +98,7 @@ const Drawer: DrawerComponent = ({
 
   return buildMbxStandard(commonProps, (sharedProps) => ({
     name: "drw",
+    cssBg: ["c-draw-bg"],
     commonProps: {
       ...sharedProps,
       props: {

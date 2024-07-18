@@ -1,4 +1,4 @@
-[data-mbx-id]:not([data-mbx-atts*="dk"]) {
+[data-mbx-id] {
   /** Carousel */
   --mbx-c-car-arr-h: var(
     --mbx-carousel-arrow-color-hover-light,

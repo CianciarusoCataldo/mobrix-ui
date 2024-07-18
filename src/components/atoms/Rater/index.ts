@@ -65,7 +65,7 @@ const Rater: RaterComponent = ({
         ...sharedProps,
       }),
     scl: `wfit;mxauto;act`,
-
+    cssBg: ["c-rat-bg"],
     commonProps: {
       ...sharedProps,
       style: {

@@ -54,6 +54,7 @@ const Review: ReviewComponent = (props) =>
     name: "rev",
     commonProps: sharedProps,
     scl: "flxc;wfit;",
+    cssBg: ["c-rev-bg"],
     Component: component({
       ...props,
       ...sharedProps,

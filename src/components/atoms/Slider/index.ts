@@ -58,6 +58,7 @@ const Slider: SliderComponent = ({
     defaultValue: 0,
     wrapper: "input",
     scl: "wfit",
+    cssBg: ["c-sld-bg"],
     props: (value, setValue) => {
       const callback =
         !sharedProps.disabled && !readOnly
@@ -66,6 +67,9 @@ const Slider: SliderComponent = ({
               setValue(e.target.value);
             }
           : () => {};
+      if (sharedProps.disabled) {
+        console.log(sharedProps);
+      }
       return {
         commonProps: {
           ...sharedProps,
@@ -73,11 +77,13 @@ const Slider: SliderComponent = ({
             ...sharedProps.style,
             ...(sharedProps.hover &&
               !readOnly && {
-                "--mbx-sld-op": "0.6",
+                "--mbx-sld-op-hov": "0.6",
+                "--mbx-sld-bg-h": "var(--mbx-c-sld-tb-h)",
               }),
-            ...(!sharedProps.disabled && {
-              "--mbx-sld-act": "0.4",
-            }),
+            ...(!sharedProps.disabled &&
+              !readOnly && {
+                "--mbx-sld-op-act": "0.4",
+              }),
           },
           hover: sharedProps.hover && !readOnly,
           props: {

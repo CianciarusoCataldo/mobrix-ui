@@ -1,4 +1,4 @@
-[data-mbx-id]:not([data-mbx-atts*="dk"]) {
+[data-mbx-id] {
   /** Button **/
   --mbx-c-btn-bg: var(
     --mbx-button-background-light,

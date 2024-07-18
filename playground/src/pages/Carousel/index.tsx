@@ -20,7 +20,7 @@ const CarouselPage = () => (
           value: NumberProp(0),
           ...demoProps,
         }}
-        rows={[["value", "className"], demoRows[0], demoRows[2]]}
+        rows={[["value", "className"], ...demoRows]}
         parseProps={(props) => ({
           ...props,
           elements: [

@@ -57,6 +57,7 @@ const Input: InputComponent = ({
     features: {
       opHov: true,
     },
+    cssBg: ["c-in-bgc"],
     scl: `bdtran;${autoresizable && "wfit"}`,
     props: (value, setValue) => ({
       commonProps: {

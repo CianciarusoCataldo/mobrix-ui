@@ -15,7 +15,7 @@ const tabs = (
     tabSelectedClassName="demo-tab-selected"
     tabUnselectedClassName="demo-tab-unselected"
     //dark
-    selected={1}
+    selected={0}
     tabs={[
       {
         label: "Atoms",

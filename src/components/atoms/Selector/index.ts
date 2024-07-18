@@ -56,6 +56,7 @@ const Selector: SelectorComponent = ({
     name: "selt",
     defaultValue: undefined,
     inputValue,
+    cssBg: ["c-sel-bg", "c-sel-bg-h"],
     props: (value, setValue) => ({
       commonProps: {
         ...sharedProps,

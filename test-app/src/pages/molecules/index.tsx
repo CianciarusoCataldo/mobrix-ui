@@ -271,14 +271,14 @@ const MoleculesPage = () => {
             />
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
-              header="header"
+              header="no bg"
               body="body"
               footer="footer"
               background={false}
             />
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
-              header="header"
+              header="no bg"
               body="body"
               footer="footer"
               background={false}

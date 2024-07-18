@@ -36,9 +36,9 @@ export const Xicon: MbxIcon = ({ fill, disabled }) => (
 export const ArrowIcon: MbxIcon = ({
   fill = "var(--mbx-arr)",
   scl = "",
-  fts,
   disabled,
   transform,
+  hover,
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ export const ArrowIcon: MbxIcon = ({
     fill={fill}
     data-mbx-scl={scl}
     data-mbx-img={disabled ? "" : "arr"}
-    data-mbx-fts={`fillFc;${fts}`}
+    data-mbx-fts="fillFc"
     {...(transform && { transform })}
   >
     <path d="M8.6812.1963l2.1208928 2.120293-8.484 8.4864L.1972 8.6827z" />

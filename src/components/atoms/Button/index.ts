@@ -56,7 +56,7 @@ const Button: ButtonComponent = ({
       opHov: true,
       opAct: true,
     },
-    bgCssProps: ["--mbx-c-btn-bg"],
+    cssBg: ["c-btn-bg"],
     scl: "wfit;act",
     Component: children,
     commonProps: {

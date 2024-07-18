@@ -1,10 +1,13 @@
 @import url("animation-manager/index.css");
-@import url("background-manager/index.css");
 
 [data-mbx-id] {
   --mbx-op: 1;
   --mbx-sh: 0 5px 13px -1px var(--mbx-c-sh);
   opacity: var(--mbx-op);
+  box-shadow: var(--mbx-sh);
+  -webkit-box-shadow: var(--mbx-sh);
+  -moz-box-shadow: var(--mbx-sh);
+  -o-box-shadow: var(--mbx-sh);
 }
 
 [data-mbx-id],
@@ -28,8 +31,11 @@
 
 [data-mbx-id]:focus-visible {
   --mbx-sh-tf: 0 5px 13px -1px var(--mbx-sh-fc, var(--mbx-c-sh));
-  --mbx-sh: var(--mbx-sh-def, var(--mbx-sh-tf));
   opacity: var(--mbx-op-f, var(--mbx-op));
+  box-shadow: var(--mbx-sh-def, var(--mbx-sh-tf));
+  -webkit-box-shadow: var(--mbx-sh-def, var(--mbx-sh-tf));
+  -moz-box-shadow: var(--mbx-sh-def, var(--mbx-sh-tf));
+  -o-box-shadow: var(--mbx-sh-def, var(--mbx-sh-tf));
 }
 
 [data-mbx-id]:active {

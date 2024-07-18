@@ -62,6 +62,7 @@ const DatePicker: DatePickerComponent = (props) => {
   return buildMbxReactive<CalendarDate>(props, (commonProps) => ({
     name: "dpick",
     commonProps,
+    cssBg: ["c-dtp-bg"],
     Component: ({ value, setValue }) =>
       datePickerComponent({
         today: todayDate,

@@ -77,8 +77,6 @@ export type CommonProps = MbxAttributes & {
 
   scl?: string;
 
-  fts?: string;
-
   features?: Features;
 };
 
@@ -276,11 +274,9 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
 
   scl?: string;
 
-  fts?: string;
-
   group?: "atom" | "molecule" | "organism";
 
-  bgCssProps?: string[];
+  cssBg?: string[];
 };
 
 /**
@@ -377,8 +373,8 @@ export type BuilderPropsReactive<T = BuilderComponent | BuilderComponent[]> =
 
 export type MbxIcon = (props: {
   scl?: string;
-  fts?: string;
   fill?: string;
   disabled?: boolean;
   transform?: string;
+  hover?: boolean;
 }) => React.JSX.Element;

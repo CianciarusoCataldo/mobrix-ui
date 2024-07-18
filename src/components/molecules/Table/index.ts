@@ -56,6 +56,7 @@ const Table: TableComponent = (props) =>
       ...props,
       ...sharedProps,
     }),
+    cssBg: ["c-table-bg", "c-table-head-bg"],
     commonProps: sharedProps,
     wrapper: "table",
   }));

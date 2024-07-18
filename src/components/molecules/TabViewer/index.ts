@@ -54,13 +54,14 @@ import component from "./component";
 */
 const TabViewer: TabViewerComponent = (props) =>
   buildMbxReactive(props, (sharedProps) => ({
+    name: "tview",
+    cssBg: ["c-tabv-bg", "c-tabv-off-bg", "c-tabv-off-bg-h"],
     commonProps: {
       ...sharedProps,
       shadow: false,
     },
     defaultValue: 0,
     inputValue: props.selected,
-    name: "tview",
     scl: "flxc",
     Component: ({ value, setValue }) =>
       component({

@@ -37,6 +37,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
       hide={!copyButton}
       disabled={disabled}
       hover={hover}
+      features={{ opFc: true }}
     >
       {CopyIcon}
     </IconButton>,

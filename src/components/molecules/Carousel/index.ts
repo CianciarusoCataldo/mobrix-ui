@@ -52,6 +52,7 @@ const Carousel: CarouselComponent = (props) => {
     defaultValue: 0,
     inputValue: props.value,
     scl: "flxc;wfit;act",
+    cssBg: ["c-car-bg"],
     Component: ({ value, setValue }) =>
       component({
         ...props,

@@ -1,6 +1,6 @@
 @import url("constants/computed.css");
 
-[data-mbx-id]:not([data-mbx-atts*="dk"]) {
+[data-mbx-id] {
   --mbx-c-bgc: var(
     --mbx-background-color-light,
     var(--mbx-background-color, #e9e9e9)

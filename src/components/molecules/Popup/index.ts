@@ -47,6 +47,7 @@ const Popup: PopupComponent = ({ children, scl, ...commonProps }) =>
     name: "popup",
     commonProps: { ...sharedProps, scl: "", className: "" },
     Component: component({ ...sharedProps, scl, children }),
+    cssBg: ["c-pop-bg"],
   }));
 
 export default Popup;

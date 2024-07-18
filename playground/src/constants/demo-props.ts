@@ -9,12 +9,13 @@ export const demoProps = {
   animated: BooleanProp(true),
   disabled: BooleanProp(false),
   hover: BooleanProp(true),
+  background: BooleanProp(true),
   a11y: BooleanProp(true),
   a11yLabel: StringProp(""),
 };
 
 export const demoRows = [
-  ["animated", "dark", "shadow"],
+  ["animated", "dark", "shadow", "background"],
   ["className", "unstyled", "hover", "disabled"],
   ["hide", "a11y", "a11yLabel"],
 ];

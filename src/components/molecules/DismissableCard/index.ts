@@ -81,6 +81,7 @@ const DismissableCard: DismissableCardComponent = ({
           "data-mbx-cls": "",
         },
       }),
+    cssBg: ["c-card-bg", "c-dcard-bg"],
     props: (value, setValue) => ({
       commonProps: {
         ...sharedProps,

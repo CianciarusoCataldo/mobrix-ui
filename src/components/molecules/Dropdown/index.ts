@@ -50,6 +50,7 @@ const Dropdown: DropdownComponent = (props) =>
     inputValue: props.value,
     commonProps: sharedProps,
     scl: "wfit",
+    cssBg: ["c-drop-bg", "c-drop-bg-h"],
     props: (value, setValue) =>
       dropdownComponent({
         ...props,

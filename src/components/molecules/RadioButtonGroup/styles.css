@@ -1,8 +1,5 @@
 [data-mbx-id="rgroup"] {
   padding: 0.3rem;
-}
-
-[data-mbx-id="rgroup"][data-mbx-atts*="bg"] {
   background: var(--mbx-c-radg-bg);
   color: var(--mbx-c-radg-txt);
 }

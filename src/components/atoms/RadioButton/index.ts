@@ -59,6 +59,7 @@ const RadioButton: RadioButtonComponent = ({
       opHov: true,
       opAct: true,
     },
+    cssBg: ["c-rad-bg"],
     scl: "flxc;act;bdtran",
     props: (value, setValue) => {
       const callBack = () => {

@@ -12,7 +12,6 @@ export const SHARED_PROPS: CommonProps = {
   a11y: true,
   unstyled: false,
   scl: "",
-  fts: "",
   features: {},
 };
 export const parseFts: (
@@ -25,7 +24,7 @@ export const parseFts: (
     props.hover && { var: "op-hov", val: 0.7, fkey: "_" },
   opAct: !props.disabled && { var: "op-act", val: 0.3, fkey: "_" },
   noShFc: { var: "sh-def", val: "none", fkey: "_" },
-  opFc: !props.disabled && props.a11y && "_",
+  opFc: !props.disabled && props.a11y && { fkey: "_", var: "op-f", val: 0.4 },
   fillFc: !props.disabled && props.a11y && { fkey: "fillFc" },
   animation: props.animated &&
     props.animation && { fkey: `anim-${props.animation}` },
