@@ -3,18 +3,30 @@
   border-radius: 0.7rem;
   background: var(--mbx-c-form-bg);
   color: var(--mbx-c-form-txt);
+  display: flex;
+  flex-direction: column;
+  border-color: transparent;
 }
 
-[data-mbx-id="form"] [data-mbx-cls="title"] {
+[data-mbx-id="form"] > [data-mbx-cls="title"] {
   margin-bottom: 0.9rem;
   font-size: 1.35rem;
   line-height: 1.75rem;
   --mbx-label-text-color: var(--mbx-c-form-txt);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-[data-mbx-id="form"] [data-mbx-cls="f-field"] {
+[data-mbx-id="form"] > div {
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;
+}
+
+[data-mbx-id="form"] [data-mbx-id="field"][data-mbx-ftype="boolean"],
+[data-mbx-id="form"] [data-mbx-id="field"][data-mbx-ftype="checkbox"],
+[data-mbx-id="form"] [data-mbx-id="field"][data-mbx-ftype="radio"] {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 330px) {
@@ -34,13 +46,15 @@
     min-width: 3%;
   }
 
-  [data-mbx-id="form"] [data-mbx-cls="f-field"] {
+  [data-mbx-id="form"] > div {
     max-width: 65%;
   }
 }
 
 [data-mbx-id="form"] [data-mbx-cls="s-bt"] {
   margin-top: 0.9rem;
+  margin-left: auto;
+  margin-right: auto;
   --mbx-button-text-color: var(--mbx-c-form-sub-txt);
   --mbx-button-background: var(--mbx-c-form-sub-bg);
 }

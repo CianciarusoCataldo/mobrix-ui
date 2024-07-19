@@ -2,20 +2,20 @@
   padding-top: 0;
 }
 
-[data-mbx-id="dis-card"] [data-mbx-cls="dis-cn"] {
-  padding-bottom: 0.1rem;
+[data-mbx-id="dis-card"] > [data-mbx-cls="dchead"] {
+  padding: 0;
 }
 
-[data-mbx-id="dis-card"] [data-mbx-cls="dis-bt"] {
+[data-mbx-id="dis-card"] > [data-mbx-cls="dchead"] > div {
+  padding: 0.5rem 0.3rem;
+}
+
+[data-mbx-id="dis-card"] > [data-mbx-cls="dchead"] > [data-mbx-id="icb"] {
   padding: 0;
   margin-left: auto;
-}
-
-@media (hover) {
-  [data-mbx-id="dis-card"][data-mbx-atts*="hv"]:not([data-mbx-atts*="dsb"])
-    [data-mbx-cls="dis-bt"]
-    svg:hover
-    path {
-    fill: var(--mbx-c-dcard-x-h);
-  }
+  display: flex;
+  flex-direction: row-reverse;
+  width: fit-content;
+  --mbx-ic-x: var(--mbx-c-dcard-x);
+  --mbx-ic-x-h: var(--mbx-c-dcard-x-h);
 }

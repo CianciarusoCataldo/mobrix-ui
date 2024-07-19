@@ -1,0 +1,28 @@
+[data-mbx-img="arr"] {
+  --mbx-arr-c: var(--mbx-ic-arr, var(--mbx-c-txt));
+  fill: var(--mbx-arr-c);
+}
+
+[data-mbx-img="x"] {
+  --mbx-x-c: var(--mbx-ic-x, var(--mbx-c-txt));
+  fill: var(--mbx-x-c);
+}
+
+[data-mbx-img="cal"] {
+  --mbx-iccal-c: var(--mbx-ic-cal, var(--mbx-c-txt));
+  fill: var(--mbx-iccal-c);
+}
+
+@media (hover: hover) {
+  [data-mbx-img="arr"]:hover {
+    fill: var(--mbx-ic-arr-h, var(--mbx-arr-c));
+  }
+
+  [data-mbx-img="x"]:hover {
+    fill: var(--mbx-ic-x-h, var(--mbx-x-c));
+  }
+
+  [data-mbx-img="cal"]:hover {
+    fill: var(--mbx-ic-cal-h, var(--mbx-iccal-c));
+  }
+}

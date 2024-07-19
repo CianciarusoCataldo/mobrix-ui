@@ -1,9 +1,19 @@
-[data-mbx-id="tview"] [data-mbx-cls="tab"] {
+[data-mbx-id="tview"] {
+  display: flex;
+  flex-direction: column;
+}
+
+[data-mbx-id="tview"] > div > [data-mbx-id="btn"] {
   padding: 0.7rem 1rem;
   border-radius: 6px 6px 0 0;
 }
 
-[data-mbx-id="tview"] [data-mbx-cls="tb-v"] {
+[data-mbx-id="tview"] > [data-mbx-id="cont"] {
   padding: 0.7rem 1rem;
   background: var(--mbx-c-tabv-bg);
+}
+
+[data-mbx-id="tview"] > [data-mbx-cls="tabls"] {
+  display: flex;
+  flex-direction: row;
 }

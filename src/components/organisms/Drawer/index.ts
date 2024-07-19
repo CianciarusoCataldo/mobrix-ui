@@ -4,8 +4,6 @@ import "./styles.css";
 
 import { DrawerComponent } from "../../../types";
 
-import { locationCss } from "./constants";
-
 import { buildMbxStandard } from "../../../tools/utils";
 
 import component from "./component";
@@ -78,7 +76,7 @@ const Drawer: DrawerComponent = ({
 
   /* istanbul ignore next */
   const callback = () => {
-    setValue("ease-out");
+    setValue("out");
     setTimeout(() => {
       setValue("");
       onClose();
@@ -93,7 +91,7 @@ const Drawer: DrawerComponent = ({
         closeOnClickOutside && callback();
       }
     },
-    animation: value.length === 0 ? (hide ? "" : "ease-in") : value,
+    animation: value.length === 0 ? "in" : value,
   };
 
   return buildMbxStandard(commonProps, (sharedProps) => ({
@@ -104,12 +102,17 @@ const Drawer: DrawerComponent = ({
       props: {
         ...commonProps.props,
         "data-mbx-drw-lc": location,
-        "data-mbx-drw-an": sharedProps.animated && customProps.animation,
       },
       hide: value.length === 0 && hide,
       onFocusLost: customProps.onFocusLost,
     },
-    scl: locationCss[location].main,
+    styles: {
+      ...(sharedProps.animated && {
+        "--mbx-drw-an": hide
+          ? "none"
+          : `var(--mbx-drw-an-${customProps.animation})`,
+      }),
+    },
     Component: component({
       children,
       hide,

@@ -77,8 +77,7 @@ const DismissableCard: DismissableCardComponent = ({
         },
         headerProps: {
           ...headerProps,
-          "data-mbx-scl": "flxc",
-          "data-mbx-cls": "",
+          "data-mbx-cls": "dchead",
         },
       }),
     cssBg: ["c-card-bg", "c-dcard-bg"],

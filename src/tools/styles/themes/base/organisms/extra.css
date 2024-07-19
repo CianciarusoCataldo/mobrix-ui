@@ -1,6 +1,9 @@
-@media (hover) {
-  [data-mbx-id="dpick"]:not([data-mbx-atts*="dsb"])
-    [data-mbx-img="cld"]:hover {
-    --mbx-c-dtp-ic: var(--mbx-c-dtp-ic-h);
-  }
+[data-mbx-id="cal"] > [data-mbx-cls="t-sel"] {
+  --mbx-ic-arr: var(--mbx-c-cal-arr);
+  --mbx-ic-arr-h: var(--mbx-c-cal-arr-h);
+}
+
+[data-mbx-id="dpick"] > [data-mbx-id="icb"] {
+  --mbx-ic-cal: var(--mbx-c-dtp-ic);
+  --mbx-ic-cal-h: var(--mbx-c-dtp-ic-h);
 }

@@ -1,6 +1,6 @@
 /* Fade in  effect */
 
-@keyframes fadein {
+@keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -10,7 +10,7 @@
   }
 }
 
-@-moz-keyframes fadein {
+@-moz-keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -20,7 +20,7 @@
   }
 }
 
-@-webkit-keyframes fadein {
+@-webkit-keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -30,7 +30,7 @@
   }
 }
 
-@-ms-keyframes fadein {
+@-ms-keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -40,7 +40,7 @@
   }
 }
 
-@-o-keyframes fadein {
+@-o-keyframes fade-in {
   from {
     opacity: 0;
   }
@@ -52,7 +52,7 @@
 
 /* Fade out effect */
 
-@keyframes fadeOut {
+@keyframes fade-out {
   from {
     opacity: 1;
   }
@@ -62,7 +62,7 @@
   }
 }
 
-@-moz-keyframes fadeOut {
+@-moz-keyframes fade-out {
   from {
     opacity: 1;
   }
@@ -72,7 +72,7 @@
   }
 }
 
-@-webkit-keyframes fadeOut {
+@-webkit-keyframes fade-out {
   from {
     opacity: 1;
   }
@@ -82,7 +82,7 @@
   }
 }
 
-@-ms-keyframes fadeOut {
+@-ms-keyframes fade-out {
   from {
     opacity: 1;
   }
@@ -92,7 +92,7 @@
   }
 }
 
-@-o-keyframes fadeOut {
+@-o-keyframes fade-out {
   from {
     opacity: 1;
   }
@@ -104,7 +104,7 @@
 
 /* Slide in to left effect */
 
-@-webkit-keyframes slideLeft {
+@-webkit-keyframes slide-in-left {
   0% {
     transform: translateX(-100%);
   }
@@ -114,7 +114,7 @@
   }
 }
 
-@-moz-keyframes slideLeft {
+@-moz-keyframes slide-in-left {
   0% {
     transform: translateX(-100%);
   }
@@ -124,7 +124,7 @@
   }
 }
 
-@keyframes slideLeft {
+@keyframes slide-in-left {
   0% {
     transform: translateX(-100%);
   }
@@ -136,7 +136,7 @@
 
 /* Slide out to left effect */
 
-@-webkit-keyframes slideOutLeft {
+@-webkit-keyframes slide-out-left {
   0% {
     transform: translateX(0);
   }
@@ -146,7 +146,7 @@
   }
 }
 
-@-moz-keyframes slideOutLeft {
+@-moz-keyframes slide-out-left {
   0% {
     transform: translateX(0);
   }
@@ -156,7 +156,7 @@
   }
 }
 
-@keyframes slideOutLeft {
+@keyframes slide-out-left {
   0% {
     transform: translateX(0);
   }
@@ -168,7 +168,7 @@
 
 /* Slide in to right effect */
 
-@-webkit-keyframes slideRight {
+@-webkit-keyframes slide-in-right {
   0% {
     transform: translateX(100%);
   }
@@ -178,7 +178,7 @@
   }
 }
 
-@-moz-keyframes slideRight {
+@-moz-keyframes slide-in-right {
   0% {
     transform: translateX(100%);
   }
@@ -188,7 +188,7 @@
   }
 }
 
-@keyframes slideRight {
+@keyframes slide-in-right {
   0% {
     transform: translateX(100%);
   }
@@ -198,7 +198,9 @@
   }
 }
 
-@-webkit-keyframes slideOutRight {
+/* Slide out to right effect */
+
+@-webkit-keyframes slide-out-right {
   0% {
     transform: translateX(0);
   }
@@ -208,7 +210,7 @@
   }
 }
 
-@-moz-keyframes slideOutRight {
+@-moz-keyframes slide-out-right {
   0% {
     transform: translateX(0);
   }
@@ -218,7 +220,7 @@
   }
 }
 
-@keyframes slideOutRight {
+@keyframes slide-out-right {
   0% {
     transform: translateX(0);
   }
@@ -228,9 +230,9 @@
   }
 }
 
-/** Slide from top effect **/
+/** Slide in from top effect **/
 
-@-webkit-keyframes slideTop {
+@-webkit-keyframes slide-in-top {
   0% {
     transform: translateY(-100%);
   }
@@ -240,7 +242,7 @@
   }
 }
 
-@-moz-keyframes slideTop {
+@-moz-keyframes slide-in-top {
   0% {
     transform: translateY(-100%);
   }
@@ -250,7 +252,7 @@
   }
 }
 
-@keyframes slideTop {
+@keyframes slide-in-top {
   0% {
     transform: translateY(-100%);
   }
@@ -260,7 +262,9 @@
   }
 }
 
-@-webkit-keyframes slideOutTop {
+/** Slide out to top effect **/
+
+@-webkit-keyframes slide-out-top {
   0% {
     transform: translateY(0);
   }
@@ -270,7 +274,7 @@
   }
 }
 
-@-moz-keyframes slideOutTop {
+@-moz-keyframes slide-out-top {
   0% {
     transform: translateY(0);
   }
@@ -280,7 +284,7 @@
   }
 }
 
-@keyframes slideOutTop {
+@keyframes slide-out-top {
   0% {
     transform: translateY(0);
   }

@@ -139,6 +139,7 @@ const getMbxUiStandard = ({
       "data-mbx-fts": mbxFts,
     }),
     "data-mbx-scl": `${scl};${cprops.scl || ""}`,
+    ...(cprops.dark && { "data-mbx-dk": "" }),
     id: cprops.id,
     className: cprops.className,
     onFocus: cprops.onFocus,
@@ -183,6 +184,13 @@ const getMbxUiStandard = ({
 
     if (!cprops.hover) {
       cstyles["--mbx-op-hov"] = 1;
+    }
+
+    if (cprops.animated && cprops.animation) {
+      cstyles["--mbx-an"] = `var(${cprops.animation})`;
+      if (cprops.animation === "shake") {
+        cstyles["animationIterationCount"] = 1;
+      }
     }
   } else {
     cstyles["cursor"] = "unset";

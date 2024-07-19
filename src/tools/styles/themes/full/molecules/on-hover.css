@@ -1,17 +1,5 @@
 @media (hover) {
-  [data-mbx-id="econt"] [data-mbx-id="icb"]:hover > [data-mbx-img="arr"] {
-    --mbx-econt-arr: var(
-      --mbx-c-exp-arr-h,
-      var(--mbx-c-exp-arr, var(--mbx-c-con-txt))
-    );
-  }
-
-  [data-mbx-id="list"][data-mbx-atts*="hv"]
-    > [data-mbx-id="cont"][data-mbx-cls="clk"]:hover {
+  [data-mbx-id="list"] > [data-mbx-id="cont"][data-mbx-cls="clk"]:hover {
     color: var(--mbx-c-lst-txt-h);
-  }
-
-  [data-mbx-id="list"][data-mbx-atts*="hv"]:not([data-mbx-atts*="dsb"]):hover {
-    --mbx-c-link-txt: var(--mbx-c-link-txt-h);
   }
 }

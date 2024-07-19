@@ -1,5 +1,5 @@
 import React from "react";
 
-const radioButtonComponent = <div data-mbx-scl="mauto;bdtran" />;
+const component = <div />;
 
-export default radioButtonComponent;
+export default component;

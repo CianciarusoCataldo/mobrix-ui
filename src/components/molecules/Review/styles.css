@@ -3,33 +3,47 @@
   background: var(--mbx-c-rev-bg);
   color: var(--mbx-c-rev-txt);
   border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
 }
 
-[data-mbx-id="rev"] [data-mbx-cls="rev-ph"],
-[data-mbx-id="rev"] [data-mbx-cls="rev-ph"] img {
-  border-radius: 9999px;
+[data-mbx-id="rev"] > [data-mbx-id="link"] {
+  margin-left: auto;
 }
 
-[data-mbx-id="rev"] [data-mbx-cls="rev-url-c"] {
-  justify-content: flex-end;
-}
-
-[data-mbx-id="rev"] [data-mbx-cls="rev-inf-b"] {
+[data-mbx-id="rev"] > div {
   margin-bottom: 0.4rem;
+  display: flex;
+  flex-direction: column;
 }
 
-[data-mbx-id="rev"] [data-mbx-cls="rev-us-name"] {
-  margin-left: 0.5rem;
-  font-weight: 600;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-[data-mbx-id="rev"] [data-mbx-cls="rev-ds"] {
+[data-mbx-id="rev"] > div > [data-mbx-id="label"] {
   margin-top: 1rem;
   overflow-wrap: break-word;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
+  width: 100%;
+}
+
+[data-mbx-id="rev"] > div > div {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+[data-mbx-id="rev"] > div > div > [data-mbx-id="label"] {
+  margin-left: 0.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+[data-mbx-id="rev"] div > div > div,
+[data-mbx-id="rev"] div > div > div img {
+  border-radius: 9999px;
 }
 
 [data-mbx-id="rev"] [data-mbx-revimg="def"] {

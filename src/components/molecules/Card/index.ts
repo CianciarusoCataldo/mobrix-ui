@@ -59,7 +59,6 @@ const Card: CardComponent = (props) =>
       ...props,
       ...sharedProps,
     }),
-    scl: "flxc",
     cssBg: ["c-card-bg"],
     commonProps: sharedProps,
   }));

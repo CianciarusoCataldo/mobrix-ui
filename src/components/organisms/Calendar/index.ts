@@ -67,7 +67,6 @@ const Calendar: CalendarComponent = ({ value: inputValue, ...props }) => {
       month: todayDate.month,
       day: todayDate.dayOfTheMonth,
     },
-    scl: "flxc;wfit;act",
     cssBg: ["c-cal-bg"],
     features: { noShFc: true },
     Component: ({ value, setValue }) =>

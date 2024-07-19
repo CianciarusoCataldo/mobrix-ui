@@ -26,8 +26,8 @@ const expandableContainerComponent: MbxUiReactiveComponent<
   components.push(
     <div
       key="exp_a"
-      data-mbx-scl="ovhid"
       style={{
+        overflow: "hidden",
         maxHeight: compact ? "0" : "100vh",
         transition: `max-height 0.3s ease-${compact ? "out" : "in"}`,
       }}
@@ -45,8 +45,6 @@ const expandableContainerComponent: MbxUiReactiveComponent<
       }}
       key="arr_bt"
       dark={dark}
-      scl="mauto;flxc"
-      data-mbx-cls="econ-b"
       features={{ noShFc: true, fillFc: true }}
     >
       <ArrowIcon

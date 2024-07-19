@@ -50,7 +50,6 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
     }),
     ...(error && {
       "data-mbx-fld-e": error,
-      scl: "bdtran",
     }),
   };
 
@@ -60,7 +59,6 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       unstyled
       key="fld_h_b"
       dark={dark}
-      scl="wfu"
       data-mbx-cls="fld-h"
       {...headerProps}
     >

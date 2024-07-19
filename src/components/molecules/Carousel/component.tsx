@@ -53,7 +53,6 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
       dots.push(
         <IconButton
           dark={dark}
-          scl="bdtran"
           features={{ noShFc: true, fillFc: true, opFc: true }}
           style={{
             background: `var(--mbx-c-car-dot-${
@@ -62,14 +61,13 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
                 : "e"
             })`,
           }}
-          data-mbx-cls="csdot"
           className={dotClassName}
           disabled={disabled}
           key={`dot_${index}`}
           onMouseEnter={() => setHoveredDot(index)}
           onMouseLeave={() => setHoveredDot(null)}
           onClick={() => {
-            setActiveClassname(index > item ? "slideRight" : "slideLeft");
+            setActiveClassname(index > item ? "slide-in-right" : "slide-in-left");
             updateItem(index);
           }}
         />
@@ -85,14 +83,14 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
   };
 
   return [
-    <div key="car_els" data-mbx-cls="car-els" data-mbx-scl="flxr">
+    <div key="car_els" data-mbx-cls="car-els">
       <IconButton
         dark={dark}
         key="prev-ar"
         data-mbx-cls="aprev"
         disabled={disabled || item === 0}
         onClick={() => {
-          setActiveClassname("slideLeft");
+          setActiveClassname("slide-in-left");
           updateItem(item - 1);
         }}
         {...arrowProps}
@@ -110,19 +108,23 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         data-mbx-cls="anext"
         disabled={disabled || item === elements.length - 1}
         onClick={() => {
-          setActiveClassname("slideRight");
+          setActiveClassname("slide-in-right");
           updateItem(item + 1);
         }}
         {...arrowProps}
       >
         <ArrowIcon
+          style={{
+            WebkitTransform: "scaleX(-1)",
+          }}
+          transform="scaleX(-1)"
           hover={hover}
           disabled={item === elements.length - 1 || disabled}
           hide={item === elements.length - 1}
         />
       </IconButton>
     </div>,
-    <div key="car_dots" data-mbx-cls="cdots" data-mbx-scl="flxr;ovhid">
+    <div key="car_dots" data-mbx-cls="cdots">
       {dots}
     </div>,
   ];

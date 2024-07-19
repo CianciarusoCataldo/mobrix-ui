@@ -85,7 +85,6 @@ const FormField: FormFieldComponent = ({
       }),
     inputValue,
     defaultValue: null,
-    scl: `wfit;flxc;${fieldFormatters[type].scl.fld}`,
     features: { noShFc: true },
   }));
 };

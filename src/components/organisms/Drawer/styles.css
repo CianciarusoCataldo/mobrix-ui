@@ -7,13 +7,10 @@
   padding: 0;
   background: var(--mbx-c-draw-bg);
   color: var(--mbx-c-draw-txt);
-}
-
-[data-mbx-id="drw"][data-mbx-drw-an] {
-  animation: var(--mbx-drawer-animation);
-  -moz-animation: var(--mbx-drawer-animation);
-  -ms-animation: var(--mbx-drawer-animation);
-  -o-animation: var(--mbx-drawer-animation);
+  animation: var(--mbx-drw-an);
+  -moz-animation: var(--mbx-drw-an);
+  -ms-animation: var(--mbx-drw-an);
+  -o-animation: var(--mbx-drw-an);
 }
 
 [data-mbx-id="drw"] > div::-webkit-scrollbar {
@@ -24,14 +21,6 @@
   overflow-y: auto;
   -ms-overflow-style: none !important;
   scrollbar-width: none !important;
-}
-
-[data-mbx-id="drw"][data-mbx-drw-an="ease-in"] {
-  --mbx-drawer-animation: var(--mbx-drawer-animation-in);
-}
-
-[data-mbx-id="drw"][data-mbx-drw-an="ease-out"] {
-  --mbx-drawer-animation: var(--mbx-drawer-animation-out);
 }
 
 [data-mbx-id="drw"] > [data-mbx-id="icb"] {

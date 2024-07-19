@@ -9,7 +9,7 @@
   );
   --mbx-calendar-arrow-light: var(
     --mbx-datepicker-calendar-arrow-light,
-    var(--mbx-datepicker-calendar-arrow)
+    var(--mbx-datepicker-calendar-arrow, white)
   );
   --mbx-calendar-background-hover-light: var(
     --mbx-datepicker-calendar-background-hover-light,
@@ -58,7 +58,7 @@
   );
   --mbx-calendar-arrow-dark: var(
     --mbx-datepicker-calendar-arrow-dark,
-    var(--mbx-datepicker-calendar-arrow)
+    var(--mbx-datepicker-calendar-arrow, white)
   );
   --mbx-calendar-arrow-hover-dark: var(
     --mbx-datepicker-calendar-arrow-hover-dark,
@@ -98,7 +98,7 @@
   );
 }
 
-[data-mbx-id="form"] [data-mbx-scl*="f-field"] {
+[data-mbx-id="form"] > div {
   --mbx-formfield-background-light: var(
     --mbx-form-formfield-background-light,
     var(--mbx-form-formfield-background)

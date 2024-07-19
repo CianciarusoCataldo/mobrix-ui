@@ -25,7 +25,7 @@ const calendarTest = () => {
         />
       );
       wrapper.find("[data-mbx-ctoday]").at(2).simulate("click");
-      wrapper.find('[data-mbx-carr="left"]').simulate("click");
+      wrapper.find('div [data-mbx-id="icb"]').at(0).simulate("click");
       expect(wrapper);
     });
 
@@ -75,11 +75,11 @@ const calendarTest = () => {
       );
 
       for (let i = 0; i < 12; i++) {
-        wrapper.find('[data-mbx-carr="right"]').simulate("click");
+        wrapper.find('div [data-mbx-id="icb"]').at(1).simulate("click");
       }
 
       for (let i = 0; i < 11; i++) {
-        wrapper.find('[data-mbx-carr="left"]').simulate("click");
+        wrapper.find('div [data-mbx-id="icb"]').at(0).simulate("click");
       }
       expect(onViewChangeStub).toBeCalled;
     });

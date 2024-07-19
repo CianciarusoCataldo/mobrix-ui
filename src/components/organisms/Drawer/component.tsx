@@ -2,8 +2,6 @@ import React from "react";
 
 import { BuilderComponent, DrawerProps, MbxUiComponent } from "../../../types";
 
-import { locationCss } from "./constants";
-
 import { ArrowIcon } from "../../../icons";
 
 import IconButton from "../../atoms/IconButton";
@@ -19,7 +17,6 @@ const DrawerInternalComponent: MbxUiComponent<
   disabled,
   hover,
   arrowClassName,
-  position,
 }) => {
   return [
     <IconButton
@@ -32,11 +29,10 @@ const DrawerInternalComponent: MbxUiComponent<
       onClick={() => {
         onClose!();
       }}
-      scl={locationCss[position].btn}
       features={{ noShFc: true }}
       a11yLabel="drawer-close-button"
     >
-      <ArrowIcon hover={hover} />
+      <ArrowIcon hover={hover} disabled={disabled} />
     </IconButton>,
     <div key="drw_cont">{children}</div>,
   ];

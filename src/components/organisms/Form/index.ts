@@ -54,7 +54,6 @@ const Form: FormComponent = (props) =>
       ...sharedProps,
     }),
     cssBg: ["c-form-bg"],
-    scl: "flxc;bdtran",
     commonProps: sharedProps,
   }));
 

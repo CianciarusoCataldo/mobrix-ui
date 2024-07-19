@@ -55,7 +55,7 @@ const Modal: ModalComponent = ({
   const [value, setValue] = React.useState("");
 
   const onCloseCallback = () => {
-    setValue("ease-out");
+    setValue("out");
     /* istanbul ignore next */
     setTimeout(() => {
       setValue("");
@@ -72,15 +72,17 @@ const Modal: ModalComponent = ({
       hide,
       ...sharedProps,
     }),
+    styles: {
+      ...(sharedProps.animated && {
+        "--mbx-md-an": `var(--mbx-md-an-${
+          value.length === 0 ? (hide ? "none" : "in") : value
+        })`,
+      }),
+    },
     commonProps: {
       ...sharedProps,
       hide: value.length === 0 && hide,
-      props: {
-        ...sharedProps.props,
-        "data-mbx-mod-an": value.length === 0 ? (hide ? "" : "ease-in") : value,
-      },
     },
-    scl: "flxc;wfu",
   }));
 };
 

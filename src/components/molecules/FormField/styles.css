@@ -1,7 +1,14 @@
+[data-mbx-id="field"] {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
 [data-mbx-id="field"] [data-mbx-cls="fld-h"] {
   font-weight: 600;
   margin-bottom: 0.2rem;
   margin-top: 0;
+  width: 100%;
   --mbx-label-text-color: var(--mbx-c-field-txt);
 }
 
@@ -14,8 +21,19 @@
 [data-mbx-id="field"] [data-mbx-fld-e] {
   border-width: 2px;
   border-style: ridge;
+  border-color: transparent;
 }
 
 [data-mbx-id="field"] [data-mbx-fld-e="true"] {
   border-color: var(--mbx-c-field-err-b);
+}
+
+[data-mbx-id="field"][data-mbx-ftype="checkbox"],
+[data-mbx-id="field"][data-mbx-ftype="boolean"],
+[data-mbx-id="field"][data-mbx-ftype="radio"],
+[data-mbx-id="field"][data-mbx-ftype="rater"],
+[data-mbx-id="field"][data-mbx-ftype="slider"],
+[data-mbx-id="field"][data-mbx-ftype="toggle"] {
+  align-items: center;
+  text-align: center;
 }

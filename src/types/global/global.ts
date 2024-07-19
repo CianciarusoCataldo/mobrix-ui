@@ -1,6 +1,6 @@
 import { CSSProperties } from "react";
 
-export type MobBrixAnimation = "fadeIn" | "fadeOut" | "slideIn" | "slideOut";
+export type MobBrixAnimation = "fadeIn" | "fade-out" | "slideIn" | "slideOut";
 
 export type MbxAttributes = {
   /** Enable/disable dark mode (default `false`) */
@@ -52,6 +52,7 @@ export type CommonProps = MbxAttributes & {
   /** If `animated`=`true`, this parameter specifies which animation is used when component is rendered */
   animation?:
     | "fade-in"
+    | "fade-out"
     | "slide-in-left"
     | "slide-in-right"
     | "slide-in-top"
@@ -382,5 +383,6 @@ export type MbxIcon = (
     height?: string;
     colorVar?: string;
     hoverVar?: string;
+    style?: Record<string, any>;
   }
 ) => React.JSX.Element;

@@ -5,13 +5,21 @@
   width: max-content;
   background: var(--mbx-c-dtp-bg);
   color: var(--mbx-c-dtp-txt);
+  display: flex;
+  flex-direction: row;
+}
+
+[data-mbx-id="dpick"] > [data-mbx-cls="date-s"] {
+  display: flex;
+  flex-direction: row;
 }
 
 [data-mbx-id="dpick"] [data-mbx-id="cal"] {
   max-width: 80%;
+  margin: auto;
 }
 
-[data-mbx-id="dpick"] [data-mbx-cls="dpick-el"] {
+[data-mbx-id="dpick"] > [data-mbx-cls="date-s"] > [data-mbx-id="label"] {
   vertical-align: middle;
   display: inline-block;
   margin-right: 0.3rem;
@@ -43,7 +51,7 @@
 }
 
 @media (max-width: 260px) {
-  [data-mbx-id="dpick"] [data-mbx-cls="date-s"] {
+  [data-mbx-id="dpick"] > [data-mbx-cls="date-s"] {
     flex-direction: column;
     align-items: center;
   }

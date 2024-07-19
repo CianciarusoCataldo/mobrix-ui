@@ -5,7 +5,6 @@ import { BuilderComponent, FormProps, MbxUiComponent } from "../../../types";
 import Button from "../../atoms/Button";
 import FormField from "../../molecules/FormField";
 import { Label } from "../../atoms";
-import { fieldFormatters } from "../../molecules/FormField/utils";
 
 const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
   title,
@@ -33,13 +32,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
     React.useState<Record<string, string | boolean | number>>(d_fields);
 
   const components = [
-    <Label
-      disabled={disabled}
-      key="frm_tl"
-      dark={dark}
-      data-mbx-cls="title"
-      scl="mxauto"
-    >
+    <Label disabled={disabled} key="frm_tl" dark={dark} data-mbx-cls="title">
       {title}
     </Label>,
     ...Object.keys(d_fields).map((field, index) => {
@@ -53,7 +46,6 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
 
       return (
         <div
-          data-mbx-cls="f-field"
           className={fieldClassName}
           key={`f_fld_${index}`}
         >
@@ -66,7 +58,6 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
             onChange={callBack}
             hover={hover}
             headerProps={{ dark }}
-            scl={fieldFormatters[type].scl.frm}
           />
         </div>
       );
@@ -86,7 +77,6 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
       onClick={() => {
         onSubmit && onSubmit(values);
       }}
-      scl="mxauto"
       data-mbx-cls="s-bt"
     >
       {submitLabel}

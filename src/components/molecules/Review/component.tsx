@@ -5,6 +5,7 @@ import { BuilderComponent, MbxUiComponent, ReviewProps } from "../../../types";
 import { icons } from "./icons";
 import Link from "../../atoms/Link";
 import Rater from "../../atoms/Rater";
+import { Label } from "../../atoms";
 
 const allowedLogoTypes = Object.keys(icons);
 
@@ -25,31 +26,32 @@ const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
     logo && allowedLogoTypes.includes(logo) ? logo : "default";
 
   return [
-    <div key="url" data-mbx-scl="wfu;flxr" data-mbx-cls="rev-url-c">
-      <Link
-        dark={dark}
-        hover={hover && !disabled}
-        newTab
-        to={url}
-        disabled={disabled}
-        features={{ noShFc: true, opFc: true }}
-      >
-        {icons[selectedLogo]}
-      </Link>
-    </div>,
-    <div data-mbx-scl="flxc" data-mbx-cls="rev-inf-b" key="info">
-      <div data-mbx-scl="flxr;mauto">
-        <div data-mbx-cls="rev-ph">{icon}</div>
+    <Link
+      key="rev_link"
+      dark={dark}
+      hover={hover && !disabled}
+      newTab
+      to={url}
+      disabled={disabled}
+      features={{ noShFc: true, opFc: true }}
+    >
+      {icons[selectedLogo]}
+    </Link>,
+    <div key="info">
+      <div key="topc">
+        <div key="ph" data-mbx-cls="rev-ph">
+          {icon}
+        </div>
         {user && (
-          <span data-mbx-cls="rev-us-name" data-mbx-scl="myauto">
+          <Label key="user" disabled={disabled} dark={dark}>
             {user}
-          </span>
+          </Label>
         )}
       </div>
       {description && (
-        <span data-mbx-cls="rev-ds" data-mbx-scl="wfu">
+        <Label key="desc" disabled={disabled} dark={dark}>
           {description}
-        </span>
+        </Label>
       )}
     </div>,
     <Rater

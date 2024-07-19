@@ -24,4 +24,6 @@
   width: 22px;
   height: 22px;
   background: var(--mbx-c-rad-ic-bg);
+  margin: auto;
+  border-color: transparent;
 }

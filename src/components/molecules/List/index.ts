@@ -47,7 +47,6 @@ const List: ListComponent = (props) =>
     name: "list",
     Component: component({ ...props, ...sharedProps }),
     commonProps: { ...sharedProps, shadow: false, a11y: false },
-    scl: "flxc",
   }));
 
 export default List;

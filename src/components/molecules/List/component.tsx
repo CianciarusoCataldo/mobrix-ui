@@ -28,7 +28,6 @@ const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
         "data-mbx-cls": "clk",
       })}
       features={{ colFc: true, opHov: onClick !== undefined, noShFc: true }}
-      scl="nout"
       disabled={disabled}
     >
       <svg viewBox="0 0 9 9" key="lst_dot">

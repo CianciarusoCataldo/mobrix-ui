@@ -5,11 +5,11 @@ import { MbxUiReactiveComponent, RadioButtonGroupProps } from "../../../types";
 import Label from "../../atoms/Label";
 import RadioButton from "../../atoms/RadioButton";
 
-const cssClasses: Record<RadioButtonGroupProps["defaultPosition"], string> = {
-  top: "flxc",
-  bottom: "flxcr",
-  left: "flxr",
-  right: "flxrr",
+const cssClasses: Record<RadioButtonGroupProps["defaultPosition"], any> = {
+  top: "column",
+  bottom: "column-reverse",
+  left: "row",
+  right: "row-reverse",
 };
 
 const radioButtonGroupComponent: MbxUiReactiveComponent<
@@ -33,9 +33,10 @@ const radioButtonGroupComponent: MbxUiReactiveComponent<
       <div
         className={elementClassName}
         key={"rgr_el_" + index}
-        data-mbx-scl={`${cssClasses[txtPosition]};act`}
-        data-mbx-cls="rdg-el"
         data-mbx-rdgp={txtPosition}
+        style={{
+          flexDirection: cssClasses[txtPosition],
+        }}
       >
         <Label
           hide={!element.text}

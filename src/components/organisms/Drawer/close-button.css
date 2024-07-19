@@ -2,6 +2,8 @@
 [data-mbx-id="drw"][data-mbx-drw-lc^="bottom"] > [data-mbx-id="icb"] {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 [data-mbx-id="drw"][data-mbx-drw-lc^="bottom"] > [data-mbx-id="icb"] {
@@ -21,6 +23,8 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 [data-mbx-id="drw"][data-mbx-drw-lc="right"] > [data-mbx-id="icb"] {

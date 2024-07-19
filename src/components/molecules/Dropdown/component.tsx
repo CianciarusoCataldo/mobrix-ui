@@ -113,7 +113,6 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           keyDown(!isVisible);
         }}
         dark={dark}
-        scl="nout;wfu"
         key="opts-m"
         a11y={false}
         style={
@@ -122,12 +121,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           } as React.CSSProperties
         }
       >
-        <div
-          tabIndex={-1}
-          key="drop_s_e_b"
-          data-mbx-scl="flxr;mauto;nout"
-          data-mbx-cls="drop-sel-el"
-        >
+        <div tabIndex={-1} key="drop_s_e_b">
           {selectedItem}
         </div>
         <ArrowIcon width="15" height="12" disabled={disabled} hover={hover} />
@@ -140,7 +134,6 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
         dark={dark}
         hide={!isVisible}
         a11y={false}
-        scl="flxc;wfu;act"
       >
         {elements.map((item, index) => (
           <Button
@@ -158,9 +151,6 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
             dark={dark}
             features={{ noShFc: true, colFc: true }}
             key={`item_${index}`}
-            scl="flxc;wfu"
-            data-mbx-cls="reg"
-            data-mbx-dpos={`${index === 0}-${index === elements.length - 1}`}
           >
             {item}
           </Button>

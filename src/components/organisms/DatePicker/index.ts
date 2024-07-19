@@ -71,7 +71,6 @@ const DatePicker: DatePickerComponent = (props) => {
         ...props,
         ...commonProps,
       }),
-    scl: "flxr",
     inputValue: props.value,
     defaultValue: todayDate,
   }));

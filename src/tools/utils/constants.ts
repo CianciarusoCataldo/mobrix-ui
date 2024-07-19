@@ -26,8 +26,6 @@ export const parseFts: (
   noShFc: { var: "sh-def", val: "none", fkey: "_" },
   opFc: !props.disabled && props.a11y && { fkey: "_", var: "op-f", val: 0.4 },
   fillFc: !props.disabled && props.a11y && { fkey: "fillFc" },
-  animation: props.animated &&
-    props.animation && { fkey: `anim-${props.animation}` },
   colFc: !props.disabled && props.a11y && { fkey: "colFc" },
 });
 
@@ -35,8 +33,4 @@ export const parseAtts: (
   props: CommonProps
 ) => Partial<Record<keyof CommonProps, string | undefined>> = (props) => ({
   dark: props.dark && "dk",
-  disabled: props.disabled && "dsb",
-  a11y: props.a11y && "a11y",
-  hover: props.hover && !props.disabled && "hv",
-  animated: props.animated && !props.disabled && "anm",
 });

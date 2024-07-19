@@ -5,4 +5,5 @@
 
 [data-mbx-id="em-vd"] iframe {
   display: block;
+  width: 100%;
 }

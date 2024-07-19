@@ -1,18 +1,20 @@
-@import url("animation-manager/index.css");
+@import url("animations.css");
+@import url("icons.css");
 
 [data-mbx-id] {
   --mbx-op: 1;
   --mbx-sh: 0 5px 13px -1px var(--mbx-c-sh);
+  --mbx-an: none;
   opacity: var(--mbx-op);
   box-shadow: var(--mbx-sh);
   -webkit-box-shadow: var(--mbx-sh);
   -moz-box-shadow: var(--mbx-sh);
   -o-box-shadow: var(--mbx-sh);
-}
-
-[data-mbx-img="arr"] {
-  --mbx-arr-c: var(--mbx-ic-arr, --mbx-c-txt);
-  fill: var(--mbx-arr-c);
+  animation: var(--mbx-an) 0.4s;
+  -webkit-animation: var(--mbx-an) 0.4s;
+  -moz-animation: var(--mbx-an) 0.4s;
+  -ms-animation: var(--mbx-an) 0.4s;
+  -o-animation: var(--mbx-an) 0.4s;
 }
 
 [data-mbx-id],
@@ -30,10 +32,6 @@
 }
 
 @media (hover: hover) {
-  [data-mbx-img="arr"]:hover {
-    fill: var(--mbx-ic-arr-h, --mbx-arr-c);
-  }
-
   [data-mbx-id]:hover {
     opacity: var(--mbx-op-hov, var(--mbx-op));
   }

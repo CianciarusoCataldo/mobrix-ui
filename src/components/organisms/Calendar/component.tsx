@@ -98,12 +98,16 @@ const CalendarComponent: MbxUiReactiveComponent<
       hover={hover}
       dark={commonProps.dark}
       key={"arrow_" + direction}
-      data-mbx-carr={direction}
-      scl="myauto"
       features={{ fillFc: true, noShFc: true }}
       {...customProps}
+      style={{
+        ...(direction === "right" && {
+          WwebkitTransform: "scaleX(-1)",
+          transform: "scaleX(-1)",
+        }),
+      }}
     >
-      <ArrowIcon disabled={disabled} />
+      <ArrowIcon width="3rem" height="3rem" disabled={disabled} hover={hover} />
     </IconButton>
   );
 
@@ -111,15 +115,11 @@ const CalendarComponent: MbxUiReactiveComponent<
 
   dayLabel &&
     components.push(
-      <div key="cal_top_sel" data-mbx-scl="flxr:mauto;wfu" data-mbx-cls="t-sel">
+      <div key="cal_top_sel" data-mbx-cls="t-sel">
         {getArrow("left")}
-        <Label
-          disabled={disabled}
-          scl="mxauto"
-          data-mbx-cls="act-dt"
-          dark={commonProps.dark}
-          {...customProps}
-        >{`${customMonths[scrDate.month]} ${scrDate.year}`}</Label>
+        <Label disabled={disabled} dark={commonProps.dark} {...customProps}>{`${
+          customMonths[scrDate.month]
+        } ${scrDate.year}`}</Label>
         {getArrow("right")}
       </div>
     );
@@ -128,7 +128,6 @@ const CalendarComponent: MbxUiReactiveComponent<
     <Table
       disabled={disabled}
       key="cal_tb"
-      scl="mauto;wfu"
       propsCallback={(row, column) => {
         if (row > 0) {
           const isDisabled = fromToday
@@ -168,6 +167,7 @@ const CalendarComponent: MbxUiReactiveComponent<
               : {};
 
           return {
+            tabIndex: isDisabled || isNotDay ? -1 : 0,
             "data-mbx-ctoday":
               fromToday &&
               basicMatrix[row - 1][column] === todayDt.dayOfTheMonth &&
@@ -177,7 +177,9 @@ const CalendarComponent: MbxUiReactiveComponent<
               value.year === scrDate.year &&
               value.month === scrDate.month &&
               value.day === basicMatrix[row - 1][column],
-            ...((isDisabled || isNotDay) && { "data-mbx-cls": "dsb" }),
+            ...((disabled || isDisabled || isNotDay) && {
+              "data-mbx-cls": "dsb",
+            }),
             ...extraProps,
           };
         } else return {};

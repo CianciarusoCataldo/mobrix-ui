@@ -7,12 +7,10 @@ const popupComponent: PopupComponent = ({
   animated,
   className,
   children,
-  scl = "",
 }) => (
   <Container
     animated={animated}
     animation="fade-in"
-    scl={`flxc;${scl}`}
     className={className}
   >
     {children}

@@ -20,7 +20,7 @@ const formTest = () => {
         </Form>
       );
       wrapper
-        .find('[data-mbx-cls="f-field"] [data-mbx-id="field"]')
+        .find('div [data-mbx-id="field"]')
         .at(2)
         .simulate("change", "new test text");
       expect(wrapper);
@@ -39,11 +39,9 @@ const formTest = () => {
         />
       );
       wrapper
-        .find('[data-mbx-cls="f-field"] [data-mbx-id="inp"]')
+        .find('div [data-mbx-id="inp"]')
         .simulate("change", "new test text");
-      wrapper
-        .find('[data-mbx-cls="f-field"] [data-mbx-id="check"]')
-        .simulate("click");
+      wrapper.find('div [data-mbx-id="check"]').simulate("click");
 
       wrapper.find('[data-mbx-cls="s-bt"]').simulate("click");
       expect(submitStub).toBeCalledWith({

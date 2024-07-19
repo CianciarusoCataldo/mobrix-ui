@@ -62,7 +62,6 @@ const TabViewer: TabViewerComponent = (props) =>
     },
     defaultValue: 0,
     inputValue: props.selected,
-    scl: "flxc",
     Component: ({ value, setValue }) =>
       component({
         setValue,

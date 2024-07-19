@@ -2,7 +2,6 @@ import React from "react";
 
 export const facebook = (
   <svg
-    data-id="facebook-logo"
     height="30px"
     width="30px"
     viewBox="0 0 14222 14222"
@@ -17,12 +16,7 @@ export const facebook = (
 );
 
 export const google = (
-  <svg
-    data-id="google-logo"
-    height="30px"
-    width="30px"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg">
     <path
       d="m23.7 12.3-.1-2.3H12.3v4.5h6.4a5.6 5.6 0 0 1-2.4 3.6v3h3.9a12 12 0 0 0 3.5-8.8Z"
       fill="#4285F4"
@@ -43,7 +37,6 @@ export const google = (
 );
 export const twitter = (
   <svg
-    data-id="twitter-logo"
     height="30px"
     width="30px"
     viewBox="126.4 2.3 589 589"

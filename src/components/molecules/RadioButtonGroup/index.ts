@@ -61,8 +61,10 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
     defaultValue: -1,
     inputValue,
     cssBg: ["c-radg-bg"],
-    scl: `wfit;${horizontal ? "flxr;" : "flxc;"}`,
-    commonProps: { ...sharedProps, "data-mbx-rdgh": horizontal },
+    styles: {
+      flexDirection: horizontal ? "row" : "column",
+    },
+    commonProps: { ...sharedProps, props: { "data-mbx-rdgh": horizontal } },
     Component: ({ value, setValue }) =>
       component({
         value,

@@ -2,6 +2,8 @@
   background: transparent;
   padding: 0.6rem;
   color: var(--mbx-c-lst-txt);
+  display: flex;
+  flex-direction: column;
 }
 
 [data-mbx-id="list"] > [data-mbx-id="cont"] {

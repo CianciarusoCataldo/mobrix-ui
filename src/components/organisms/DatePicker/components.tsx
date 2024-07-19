@@ -63,36 +63,29 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
     setVisible(false);
   };
 
-  const DateLabel = ({ children, dkey }: { children: string; dkey: string }) => (
-    <Label key={dkey} data-mbx-cls="dpick-el" dark={commonProps.dark}>
-      {children}
-    </Label>
-  );
-
   return [
-    <div key="d-pick_sels" data-mbx-cls="date-s" data-mbx-scl="flxr">
-      <DateLabel dkey="day">{String(day)}</DateLabel>
-      <DateLabel dkey="month">{String(customMonths[month])}</DateLabel>
-      <DateLabel dkey="year">{String(year)}</DateLabel>
+    <div key="dpk_sels" data-mbx-cls="date-s">
+      <Label key="day">{String(day)}</Label>
+      <Label key="month">{String(customMonths[month])}</Label>
+      <Label key="year">{String(year)}</Label>
     </div>,
     <IconButton
       disabled={disabled}
       dark={commonProps.dark}
       onClick={() => setVisible(true)}
-      key="d-pick_cal_bt"
+      key="dpk_cal_bt"
       features={{ noShFc: true, fillFc: true }}
     >
-      <CalendarIcon fill="var(--mbx-c-dtp-ic)" />
+      <CalendarIcon hover={commonProps.hover} disabled={disabled} />
     </IconButton>,
     <Modal
       disabled={disabled}
       hide={!isVisible}
-      key="d-pick_mod"
+      key="dpk_mod"
       animated={animated}
       onClose={onCloseCallback}
     >
       <Calendar
-        scl="mauto"
         shadow={false}
         days={customDays}
         months={customMonths}
