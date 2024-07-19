@@ -2,7 +2,13 @@ import React from "react";
 import { buildMbxStandard } from "../../src/tools";
 import { MbxUiProps } from "../../src";
 import { mount } from "enzyme";
-import { ArrowIcon, CalendarIcon, CheckIcon, Xicon } from "../../src/icons";
+import {
+  ArrowIcon,
+  CalendarIcon,
+  CheckIcon,
+  CopyIcon,
+  Xicon,
+} from "../../src/icons";
 
 export default () =>
   describe("MoBrix-ui general tests", () => {
@@ -64,6 +70,34 @@ export default () =>
           height="20px"
           transform="scaleX(1)"
           hide
+        />
+      );
+      expect(wrapper);
+
+      wrapper = mount(
+        <CheckIcon
+          animated
+          disabled
+          width="20px"
+          height="20px"
+          transform="scaleX(1)"
+          hide
+          dark
+          fill="none"
+        />
+      );
+      expect(wrapper);
+
+      wrapper = mount(
+        <CopyIcon
+          animated
+          disabled
+          width="20px"
+          height="20px"
+          transform="scaleX(1)"
+          hide
+          dark
+          fill="none"
         />
       );
       expect(wrapper);

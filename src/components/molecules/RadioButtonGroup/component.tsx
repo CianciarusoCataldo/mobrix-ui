@@ -5,12 +5,12 @@ import { MbxUiReactiveComponent, RadioButtonGroupProps } from "../../../types";
 import Label from "../../atoms/Label";
 import RadioButton from "../../atoms/RadioButton";
 
-const cssClasses: Record<RadioButtonGroupProps["defaultPosition"], any> = {
-  top: "column",
-  bottom: "column-reverse",
-  left: "row",
-  right: "row-reverse",
-};
+const cssClasses = {
+  top: { dir: "column", rev: "bottom" },
+  bottom: { dir: "column-reverse", rev: "top" },
+  left: { dir: "row", rev: "right" },
+  right: { dir: "row-reverse", rev: "left" },
+} as const;
 
 const radioButtonGroupComponent: MbxUiReactiveComponent<
   number,
@@ -26,6 +26,13 @@ const radioButtonGroupComponent: MbxUiReactiveComponent<
   defaultPosition = "left",
   disabled,
 }) => {
+  const getMargins = (position: string) => ({
+    [`margin${position.replace(/\b\w/g, (l) => l.toUpperCase())}`]: 0,
+    [`margin${cssClasses[position].rev.replace(/\b\w/g, (l) =>
+      l.toUpperCase()
+    )}`]: "0.7rem",
+  });
+
   return buttons.map((element, index) => {
     const txtPosition = element.textPosition || defaultPosition;
 
@@ -35,7 +42,7 @@ const radioButtonGroupComponent: MbxUiReactiveComponent<
         key={"rgr_el_" + index}
         data-mbx-rdgp={txtPosition}
         style={{
-          flexDirection: cssClasses[txtPosition],
+          flexDirection: cssClasses[txtPosition].dir,
         }}
       >
         <Label
@@ -43,6 +50,9 @@ const radioButtonGroupComponent: MbxUiReactiveComponent<
           disabled={disabled}
           key="rd_txt"
           dark={dark}
+          style={{
+            ...getMargins(txtPosition),
+          }}
         >
           {element.text}
         </Label>

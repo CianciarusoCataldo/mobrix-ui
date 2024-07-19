@@ -13,10 +13,8 @@
 }
 
 [data-mbx-id="list"] > [data-mbx-id="cont"] > svg {
-  margin-right: 0.3rem;
   display: block;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto 0.3rem auto 0;
   width: 6px;
   height: 6px;
   fill: var(--mbx-c-lst-txt);

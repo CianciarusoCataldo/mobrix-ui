@@ -20,14 +20,6 @@
     --mbx-calendar-text-color-hover-light,
     var(--mbx-calendar-text-color-hover, var(--mbx-c-cal-txt-s))
   );
-  --mbx-c-cal-arr: var(
-    --mbx-calendar-arrow-light,
-    var(--mbx-calendar-arrow, var(--mbx-c-cal-txt))
-  );
-  --mbx-c-cal-arr-h: var(
-    --mbx-calendar-arrow-hover-light,
-    var(--mbx-calendar-arrow-hover, var(--mbx-c-cal-arr))
-  );
   --mbx-c-cal-t: var(
     --mbx-calendar-today-color-light,
     var(--mbx-calendar-today-color, red)
@@ -42,14 +34,6 @@
     --mbx-datepicker-text-color-light,
     var(--mbx-datepicker-text-color, var(--mbx-c-txt))
   );
-  --mbx-c-dtp-ic: var(
-    --mbx-datepicker-icon-light,
-    var(--mbx-datepicker-icon, var(--mbx-c-dtp-txt))
-  );
-  --mbx-c-dtp-ic-h: var(
-    --mbx-datepicker-icon-hover-light,
-    var(--mbx-datepicker-icon-hover, var(--mbx-c-fc))
-  );
 
   /** Drawer **/
   --mbx-c-draw-bg: var(
@@ -60,14 +44,6 @@
     --mbx-drawer-text-color-light,
     var(--mbx-drawer-text-color, var(--mbx-c-txt))
   );
-  --mbx-c-draw-arr: var(
-    --mbx-drawer-arrow-light,
-    var(--mbx-drawer-arrow, var(--mbx-c-draw-txt))
-  );
-  --mbx-c-draw-arr-h: var(
-    --mbx-drawer-arrow-hover-light,
-    var(--mbx-drawer-arrow-hover, var(--mbx-c-draw-arr))
-  );
 
   /** Form **/
   --mbx-c-form-bg: var(
@@ -77,14 +53,6 @@
   --mbx-c-form-txt: var(
     --mbx-form-text-color-light,
     var(--mbx-form-text-color)
-  );
-  --mbx-c-form-sub-bg: var(
-    --mbx-form-submit-background-light,
-    var(--mbx-form-submit-background)
-  );
-  --mbx-c-form-sub-txt: var(
-    --mbx-form-submit-text-color-light,
-    var(--mbx-form-submit-text-color)
   );
 }
 
@@ -108,14 +76,6 @@
     --mbx-calendar-text-color-hover-dark,
     var(--mbx-calendar-text-color-hover, var(--mbx-c-cal-txt-s))
   );
-  --mbx-c-cal-arr: var(
-    --mbx-calendar-arrow-dark,
-    var(--mbx-calendar-arrow, var(--mbx-c-cal-txt))
-  );
-  --mbx-c-cal-arr-h: var(
-    --mbx-calendar-arrow-hover-dark,
-    var(--mbx-calendar-arrow-hover, var(--mbx-c-cal-arr))
-  );
   --mbx-c-cal-t: var(
     --mbx-calendar-today-color-dark,
     var(--mbx-calendar-today-color, red)
@@ -130,14 +90,6 @@
     --mbx-datepicker-text-color-dark,
     var(--mbx-datepicker-text-color, var(--mbx-c-txt))
   );
-  --mbx-c-dtp-ic: var(
-    --mbx-datepicker-icon-dark,
-    var(--mbx-datepicker-icon, var(--mbx-c-dtp-txt))
-  );
-  --mbx-c-dtp-ic-h: var(
-    --mbx-datepicker-icon-hover-dark,
-    var(--mbx-datepicker-icon-hover, var(--mbx-c-fc))
-  );
 
   /** Drawer **/
   --mbx-c-draw-bg: var(
@@ -148,27 +100,11 @@
     --mbx-drawer-text-color-dark,
     var(--mbx-drawer-text-color, var(--mbx-c-txt))
   );
-  --mbx-c-draw-arr: var(
-    --mbx-drawer-arrow-dark,
-    var(--mbx-drawer-arrow, var(--mbx-c-draw-txt))
-  );
-  --mbx-c-draw-arr-h: var(
-    --mbx-drawer-arrow-hover-dark,
-    var(--mbx-drawer-arrow-hover, var(--mbx-c-draw-arr))
-  );
 
   /** Form **/
   --mbx-c-form-bg: var(
     --mbx-form-background-dark,
     var(--mbx-form-background, var(--mbx-c-bg))
   );
-  --mbx-c-form-sub-bg: var(
-    --mbx-form-submit-background-dark,
-    var(--mbx-form-submit-background)
-  );
   --mbx-c-form-txt: var(--mbx-form-text-color-dark, var(--mbx-form-text-color));
-  --mbx-c-form-sub-txt: var(
-    --mbx-form-submit-text-color-dark,
-    var(--mbx-form-submit-text-color)
-  );
 }

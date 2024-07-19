@@ -371,15 +371,12 @@ export type BuilderPropsReactive<T = BuilderComponent | BuilderComponent[]> =
     ) => Omit<BuilderProps, "name">;
   };
 
-export type MbxIcon = (
-  props: CommonProps & {
-    scl?: string;
-    fill?: string;
-    transform?: string;
-    width?: string;
-    height?: string;
-    colorVar?: string;
-    hoverVar?: string;
-    style?: Record<string, any>;
-  }
-) => React.JSX.Element;
+export type MbxIconProps = Omit<CommonProps, "tabIndex"> & {
+  fill?: string;
+  transform?: string;
+  width?: string;
+  height?: string;
+  style?: Record<string, any>;
+};
+
+export type MbxIcon = (props: MbxIconProps) => React.JSX.Element;

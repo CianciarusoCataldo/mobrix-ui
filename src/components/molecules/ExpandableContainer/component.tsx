@@ -51,6 +51,7 @@ const expandableContainerComponent: MbxUiReactiveComponent<
         transform={`rotate(${compact ? "270" : "90"})`}
         disabled={disabled}
         hover={hover}
+        dark={dark}
       />
     </IconButton>
   );

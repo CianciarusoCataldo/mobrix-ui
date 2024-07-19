@@ -11,9 +11,9 @@ export const D_PROPS: CommonProps = {
   props: {},
   a11y: true,
   unstyled: false,
-  scl: "",
   features: {},
 };
+
 export const parseFts: (
   props: CommonProps
 ) => Record<keyof Features, { var?: string; val?: any } | undefined> = (

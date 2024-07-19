@@ -22,7 +22,11 @@ const DismissableCardInternalComponent: MbxUiComponent<
         onClick={onClose}
         key="dis-x"
       >
-        <Xicon hover={props.hover} disabled={props.disabled} />
+        <Xicon
+          dark={props.dark}
+          hover={props.hover}
+          disabled={props.disabled}
+        />
       </IconButton>,
       <div key="dis-h">{header}</div>,
     ],

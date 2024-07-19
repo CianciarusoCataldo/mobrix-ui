@@ -10,7 +10,6 @@
   text-align: center;
 }
 
-[data-mbx-id="rat"] svg {
-  margin-left: 0.2rem;
-  margin-right: 0.2rem;
+[data-mbx-id="rat"] > [data-mbx-id="icb"] > svg {
+  margin: 0 0.2rem;
 }

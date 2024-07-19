@@ -15,11 +15,6 @@
     var(--mbx-checkbox-background, var(--mbx-c-bg))
   );
 
-  --mbx-c-chk-tk: var(
-    --mbx-checkbox-tick-color-light,
-    var(--mbx-checkbox-tick-color, rgb(37, 99, 235))
-  );
-
   /** Codebox **/
   --mbx-c-cdb-bg: var(
     --mbx-codebox-background-light,
@@ -171,10 +166,6 @@
   --mbx-c-chk-bg: var(
     --mbx-checkbox-background-dark,
     var(--mbx-checkbox-background, var(--mbx-c-bg))
-  );
-  --mbx-c-chk-tk: var(
-    --mbx-checkbox-tick-color-dark,
-    var(--mbx-checkbox-tick-color, white)
   );
 
   /** Codebox **/

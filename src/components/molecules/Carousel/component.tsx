@@ -89,7 +89,6 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
       <IconButton
         dark={dark}
         key="prev-ar"
-        data-mbx-cls="aprev"
         disabled={disabled || item === 0}
         onClick={() => {
           setActiveClassname("slide-in-left");
@@ -99,6 +98,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
       >
         <ArrowIcon
           hover={hover}
+          dark={dark}
           disabled={item === 0 || disabled}
           hide={item === 0}
         />
@@ -107,7 +107,6 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
       <IconButton
         dark={dark}
         key="next-ar"
-        data-mbx-cls="anext"
         disabled={disabled || item === elements.length - 1}
         onClick={() => {
           setActiveClassname("slide-in-right");
@@ -118,8 +117,9 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         <ArrowIcon
           style={{
             WebkitTransform: "scaleX(-1)",
+            transform: "scaleX(-1)",
           }}
-          transform="scaleX(-1)"
+          dark={dark}
           hover={hover}
           disabled={item === elements.length - 1 || disabled}
           hide={item === elements.length - 1}

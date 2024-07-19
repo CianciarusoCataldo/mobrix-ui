@@ -167,7 +167,7 @@ const getMbxUiStandard = ({
     }
 
     if (cprops.animated && cprops.animation) {
-      cstyles["--mbx-an"] = `var(${cprops.animation})`;
+      cstyles["--mbx-an"] = cprops.animation;
       if (cprops.animation === "shake") {
         cstyles["animationIterationCount"] = 1;
       }

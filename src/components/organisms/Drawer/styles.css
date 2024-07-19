@@ -23,7 +23,21 @@
   scrollbar-width: none !important;
 }
 
-[data-mbx-id="drw"] > [data-mbx-id="icb"] {
-  --mbx-ic-arr: var(--mbx-c-draw-arr);
-  --mbx-ic-arr-h: var(--mbx-c-draw-arr-h);
+[data-mbx-id="drw"] > [data-mbx-id="icb"] > [data-mbx-img] {
+  --mbx-icon-light: var(
+    --mbx-drawer-arrow-light,
+    var(--mbx-drawer-arrow, var(--mbx-c-draw-txt))
+  );
+  --mbx-icon-hover-light: var(
+    --mbx-drawer-arrow-hover-light,
+    var(--mbx-drawer-arrow-hover)
+  );
+  --mbx-icon-dark: var(
+    --mbx-drawer-arrow-dark,
+    var(--mbx-drawer-arrow, var(--mbx-c-draw-txt))
+  );
+  --mbx-icon-hover-dark: var(
+    --mbx-drawer-arrow-hover-dark,
+    var(--mbx-drawer-arrow-hover)
+  );
 }

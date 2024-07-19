@@ -21,8 +21,7 @@
 [data-mbx-id="rev"] > div > [data-mbx-id="label"] {
   margin-top: 1rem;
   overflow-wrap: break-word;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
+  padding: 0 0.3rem;
   width: 100%;
 }
 
@@ -33,12 +32,10 @@
 }
 
 [data-mbx-id="rev"] > div > div > [data-mbx-id="label"] {
-  margin-left: 0.5rem;
+  margin: auto 0 auto 0.5rem;
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 [data-mbx-id="rev"] div > div > div,
@@ -46,7 +43,7 @@
   border-radius: 9999px;
 }
 
-[data-mbx-id="rev"] [data-mbx-revimg="def"] {
+[data-mbx-id="rev"] [data-mbx-img="link"] {
   fill: var(--mbx-c-rev-link);
 }
 

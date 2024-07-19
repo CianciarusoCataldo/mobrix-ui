@@ -1,8 +1,7 @@
 [data-mbx-id="crsel"] {
   background: var(--mbx-c-car-bg);
   padding: 0.4rem;
-  --mbx-ic-arr: var(--mbx-c-car-arr);
-  --mbx-ic-arr-h: var(--mbx-c-car-arr-h);
+
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -35,8 +34,7 @@
 }
 
 [data-mbx-id="crsel"] > [data-mbx-cls="cdots"] > [data-mbx-id="icb"] {
-  margin-left: 0.3rem;
-  margin-right: 0.3rem;
+  margin: 0 0.3rem;
   width: 30px;
   height: 30px;
   border-radius: 50%;

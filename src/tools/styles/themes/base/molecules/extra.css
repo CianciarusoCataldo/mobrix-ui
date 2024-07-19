@@ -18,11 +18,45 @@
   --mbx-button-text-color-hover: var(--mbx-c-tabv-off-txt-h);
 }
 
-[data-mbx-id="econt"] {
-  --mbx-arr: var(--mbx-c-con-txt);
-}
-
 [data-mbx-id*="cont"] {
   background: var(--mbx-c-con-bg);
   color: var(--mbx-c-con-txt);
+}
+
+[data-mbx-id="popup"] > [data-mbx-id="cont"] {
+  --mbx-container-background-light: var(
+    --mbx-popup-background-light,
+    var(--mbx-popup-background)
+  );
+  --mbx-container-text-color-light: var(
+    --mbx-popup-text-color-light,
+    var(--mbx-popup-text-color)
+  );
+  --mbx-container-background-dark: var(
+    --mbx-popup-background-dark,
+    var(--mbx-popup-background)
+  );
+  --mbx-container-text-color-dark: var(
+    --mbx-popup-text-color-dark,
+    var(--mbx-popup-text-color)
+  );
+}
+
+[data-mbx-id="econt"] {
+  --mbx-container-background-light: var(
+    --mbx-expandablecontainer-background-light,
+    var(--mbx-expandablecontainer-background)
+  );
+  --mbx-container-text-color-light: var(
+    --mbx-expandablecontainer-text-color-light,
+    var(--mbx-expandablecontainer-text-color)
+  );
+  --mbx-container-background-dark: var(
+    --mbx-expandablecontainer-background-dark,
+    var(--mbx-expandablecontainer-background)
+  );
+  --mbx-container-text-color-dark: var(
+    --mbx-expandablecontainer-text-color-dark,
+    var(--mbx-expandablecontainer-text-color)
+  );
 }

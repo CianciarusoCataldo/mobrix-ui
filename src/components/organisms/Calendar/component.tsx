@@ -102,12 +102,18 @@ const CalendarComponent: MbxUiReactiveComponent<
       {...customProps}
       style={{
         ...(direction === "right" && {
-          WwebkitTransform: "scaleX(-1)",
+          WebkitTransform: "scaleX(-1)",
           transform: "scaleX(-1)",
         }),
       }}
     >
-      <ArrowIcon width="3rem" height="3rem" disabled={disabled} hover={hover} />
+      <ArrowIcon
+        dark={commonProps.dark}
+        width="3rem"
+        height="3rem"
+        disabled={disabled}
+        hover={hover}
+      />
     </IconButton>
   );
 
@@ -115,7 +121,7 @@ const CalendarComponent: MbxUiReactiveComponent<
 
   dayLabel &&
     components.push(
-      <div key="cal_top_sel" data-mbx-cls="t-sel">
+      <div key="t_sel">
         {getArrow("left")}
         <Label disabled={disabled} dark={commonProps.dark} {...customProps}>{`${
           customMonths[scrDate.month]

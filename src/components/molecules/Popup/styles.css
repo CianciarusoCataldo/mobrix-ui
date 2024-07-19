@@ -10,6 +10,4 @@
   border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
-  --mbx-container-background: var(--mbx-c-pop-bg);
-  --mbx-container-text-color: var(--mbx-c-pop-txt);
 }

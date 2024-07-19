@@ -47,7 +47,6 @@
     --mbx-datepicker-calendar-today-light,
     var(--mbx-datepicker-calendar-today)
   );
-
   --mbx-calendar-background-dark: var(
     --mbx-datepicker-calendar-background-dark,
     var(--mbx-datepicker-calendar-background)

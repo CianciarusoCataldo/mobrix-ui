@@ -19,7 +19,12 @@ const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
       key={`el_${index}`}
       {...(onClick !== undefined && {
         props: { onClick: () => onClick(index) },
-        style: { cursor: "pointer" },
+        style: {
+          cursor: "pointer",
+          ...(hover && {
+            "--mbx-list-h": "var(--mbx-c-lst-txt-h)",
+          }),
+        } as React.CSSProperties,
         onKeyDown: (e) => {
           if (e.code === "Enter") {
             onClick(index);

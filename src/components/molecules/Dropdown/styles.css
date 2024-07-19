@@ -1,9 +1,6 @@
 [data-mbx-id="dd"] {
   border-radius: 0.375rem;
   width: fit-content;
-  border-color: var(--mbx-c-drop-txt);
-  color: var(--mbx-c-drop-txt);
-  background-image: var(--mbx-c-drop-bg);
 }
 
 [data-mbx-id="dd"] > [data-mbx-id="popup"] {
@@ -12,8 +9,6 @@
   max-height: 12rem;
   scrollbar-width: thin;
   scrollbar-color: var(--mbx-c-drop-txt);
-  --mbx-popup-text-color: var(--mbx-c-drop-txt);
-  --mbx-popup-background: var(--mbx-c-drop-bg);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -49,10 +44,6 @@
   font-weight: 500;
   border-radius: 0.375rem;
   padding: 0 0.4rem;
-  --mbx-button-background-hover: var(--mbx-c-drop-bg-h);
-  --mbx-button-text-color-hover: var(--mbx-c-drop-txt-h);
-  --mbx-ic-arr: var(--mbx-c-drop-arr);
-  --mbx-ic-arr-h: var(--mbx-c-drop-arr-h);
   width: 100%;
 }
 
@@ -73,6 +64,7 @@
   -webkit-transform: rotate(var(--mbx-dd-rot));
   transform: rotate(var(--mbx-dd-rot));
   -ms-transform: rotate(var(--mbx-dd-rot));
+  -o-transform: rotate(var(--mbx-dd-rot));
 }
 
 [data-mbx-id="dd"]
@@ -80,11 +72,6 @@
   > [data-mbx-id="cont"]
   > [data-mbx-id="btn"] {
   padding: 0.25rem;
-  background-color: transparent;
-  --mbx-button-text-color: var(--mbx-c-drop-txt);
-  --mbx-button-background-hover: var(--mbx-c-drop-bg-h);
-  --mbx-button-text-color-hover: var(--mbx-c-drop-txt-h);
-  --mbx-button-background: transparent;
   display: flex;
   flex-direction: column;
   width: 100%;

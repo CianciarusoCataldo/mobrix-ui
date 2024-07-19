@@ -25,6 +25,8 @@
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
 }
+
+[data-mbx-img],
 [data-mbx-id],
 [data-mbx-id]:focus,
 [data-mbx-id]:focus-visible {

@@ -1,9 +1,60 @@
-[data-mbx-id="cal"] > [data-mbx-cls="t-sel"] {
-  --mbx-ic-arr: var(--mbx-c-cal-arr);
-  --mbx-ic-arr-h: var(--mbx-c-cal-arr-h);
+[data-mbx-id="cal"] > div > [data-mbx-id="icb"] > [data-mbx-img] {
+  --mbx-icon-light: var(
+    --mbx-calendar-arrow-light,
+    var(--mbx-calendar-arrow, var(--mbx-c-cal-txt))
+  );
+  --mbx-icon-hover-light: var(
+    --mbx-calendar-arrow-hover-light,
+    var(--mbx-calendar-arrow-hover)
+  );
+  --mbx-icon-dark: var(
+    --mbx-calendar-arrow-dark,
+    var(--mbx-calendar-arrow, var(--mbx-c-cal-txt))
+  );
+  --mbx-icon-hover-dark: var(
+    --mbx-calendar-arrow-hover-dark,
+    var(--mbx-calendar-arrow-hover)
+  );
 }
 
 [data-mbx-id="dpick"] > [data-mbx-id="icb"] {
-  --mbx-ic-cal: var(--mbx-c-dtp-ic);
-  --mbx-ic-cal-h: var(--mbx-c-dtp-ic-h);
+  --mbx-icon-light: var(
+    --mbx-datepicker-icon-light,
+    var(--mbx-datepicker-icon, var(--mbx-c-dtp-txt))
+  );
+  --mbx-icon-hover-light: var(
+    --mbx-datepicker-icon-hover-light,
+    var(--mbx-datepicker-icon-hover, var(--mbx-c-fc))
+  );
+  --mbx-icon-dark: var(
+    --mbx-datepicker-icon-dark,
+    var(--mbx-datepicker-icon, var(--mbx-c-dtp-txt))
+  );
+  --mbx-icon-hover-dark: var(
+    --mbx-datepicker-icon-hover-dark,
+    var(--mbx-datepicker-icon-hover, var(--mbx-c-fc))
+  );
+}
+
+[data-mbx-id="form"] [data-mbx-cls="s-bt"] {
+  margin-top: 0.9rem;
+  margin-left: auto;
+  margin-right: auto;
+  --mbx-button-background-light: var(
+    --mbx-form-submit-background-light,
+    var(--mbx-form-submit-background)
+  );
+  --mbx-button-text-color-light: var(
+    --mbx-form-submit-text-color-light,
+    var(--mbx-form-submit-text-color)
+  );
+
+  --mbx-button-background-dark: var(
+    --mbx-form-submit-background-dark,
+    var(--mbx-form-submit-background)
+  );
+  --mbx-button-text-color-dark: var(
+    --mbx-form-submit-text-color-dark,
+    var(--mbx-form-submit-text-color)
+  );
 }

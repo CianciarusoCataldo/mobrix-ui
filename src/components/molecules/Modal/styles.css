@@ -17,10 +17,6 @@
   -o-animation: var(--mbx-md-an);
 }
 
-[data-mbx-id="mod"] > [data-mbx-id="dis-card"] {
-  --mbx-dismissablecard-x-color: var(--mbx-c-mod-x);
-}
-
 [data-mbx-id="mod"] > [data-mbx-id="dis-card"] > [data-mbx-cls="cardc-body"] {
   align-items: center;
   margin: 0;

@@ -597,7 +597,7 @@ const MoleculesPage = () => {
             <button onClick={() => setPopupVisible(!isPopupVisible)}>
               toggle popups
             </button>
-            <Popup hide={!isPopupVisible}>
+            <Popup hide={!isPopupVisible} background={false}>
               <div>Content</div>
             </Popup>
           </div>

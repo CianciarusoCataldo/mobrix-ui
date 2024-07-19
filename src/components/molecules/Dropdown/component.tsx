@@ -2,9 +2,8 @@ import React from "react";
 
 import { DropdownProps, MbxUiReactiveComponentBuilder } from "../../../types";
 
-import { Button, IconButton } from "../../atoms";
+import { Button } from "../../atoms";
 import Popup from "../Popup";
-import Container from "../Container";
 import { ArrowIcon } from "../../../icons";
 
 const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
@@ -124,9 +123,16 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
         <div tabIndex={-1} key="drop_s_e_b">
           {selectedItem}
         </div>
-        <ArrowIcon width="15" height="12" disabled={disabled} hover={hover} />
+        <ArrowIcon
+          dark={dark}
+          width="15"
+          height="12"
+          disabled={disabled}
+          hover={hover}
+        />
       </Button>,
       <Popup
+        hover={hover}
         background={background}
         key="opts"
         shadow={shadow}
@@ -140,6 +146,7 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
             animated={false}
             shadow={false}
             disabled={disabled}
+            hover={hover}
             onFocus={() => {
               selectItem(index);
             }}

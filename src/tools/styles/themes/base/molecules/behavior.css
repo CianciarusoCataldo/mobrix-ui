@@ -17,10 +17,6 @@
     --mbx-carousel-background-light,
     var(--mbx-carousel-background, var(--mbx-c-bg))
   );
-  --mbx-c-car-arr: var(
-    --mbx-carousel-arrow-color-light,
-    var(--mbx-carousel-arrow-color, var(--mbx-c-txt))
-  );
   --mbx-c-car-dot-f: var(
     --mbx-carousel-dot-full-background-light,
     var(
@@ -62,42 +58,6 @@
     var(--mbx-container-text-color, var(--mbx-c-txt))
   );
 
-  /** DismissableCard **/
-  --mbx-c-dcard-x: var(
-    --mbx-dismissablecard-x-color-light,
-    var(--mbx-dismissablecard-x-color, var(--mbx-c-dcard-txt))
-  );
-  --mbx-c-dcard-x-h: var(
-    --mbx-dismissablecard-x-color-hover-light,
-    var(--mbx-dismissablecard-x-color-hover, red)
-  );
-
-  /** Dropdown **/
-  --mbx-c-drop-bg: var(
-    --mbx-dropdown-background-light,
-    var(--mbx-dropdown-background, var(--mbx-c-bg))
-  );
-  --mbx-c-drop-bg-h: var(
-    --mbx-dropdown-background-hover-light,
-    var(--mbx-dropdown-background-hover, var(--mbx-c-bg-h))
-  );
-  --mbx-c-drop-txt: var(
-    --mbx-dropdown-text-color-light,
-    var(--mbx-dropdown-text-color, var(--mbx-c-txt))
-  );
-  --mbx-c-drop-txt-h: var(
-    --mbx-dropdown-text-color-hover-light,
-    var(--mbx-dropdown-text-color-hover, var(--mbx-c-txt-h))
-  );
-  --mbx-c-drop-arr: var(
-    --mbx-dropdown-arrow-color-light,
-    var(--mbx-dropdown-arrow-color, var(--mbx-c-drop-txt))
-  );
-  --mbx-c-drop-arr-h: var(
-    --mbx-dropdown-arrow-color-hover-light,
-    var(--mbx-dropdown-arrow-color-hover, var(--mbx-c-drop-arr))
-  );
-
   /** FormField **/
   --mbx-c-field-bg: var(
     --mbx-formfield-background-light,
@@ -135,24 +95,7 @@
     --mbx-modal-background-light,
     var(--mbx-modal-background, rgba(0, 0, 0, 0.8))
   );
-  --mbx-c-mod-x: var(
-    --mbx-modal-x-color-light,
-    var(--mbx-modal-x-color, white)
-  );
-  --mbx-c-mod-x-h: var(
-    --mbx-modal-x-color-hover-light,
-    var(--mbx-modal-x-color-hover)
-  );
 
-  /** Popup **/
-  --mbx-c-pop-bg: var(
-    --mbx-popup-background-light,
-    var(--mbx-popup-background, var(--mbx-c-bg))
-  );
-  --mbx-c-pop-txt: var(
-    --mbx-popup-text-color-light,
-    var(--mbx-popup-text-color, var(--mbx-c-txt))
-  );
   /** RadioButtonGroup **/
   --mbx-c-radg-bg: var(
     --mbx-radiogroup-background-light,
@@ -254,10 +197,7 @@
     --mbx-carousel-background-dark,
     var(--mbx-carousel-background, var(--mbx-c-bg))
   );
-  --mbx-c-car-arr: var(
-    --mbx-carousel-arrow-color-dark,
-    var(--mbx-carousel-arrow-color, var(--mbx-c-txt))
-  );
+
   --mbx-c-car-dot-f: var(
     --mbx-carousel-dot-full-background-dark,
     var(
@@ -299,42 +239,6 @@
     var(--mbx-container-text-color, var(--mbx-c-txt))
   );
 
-  /** DismissableCard **/
-  --mbx-c-dcard-x: var(
-    --mbx-dismissablecard-x-color-dark,
-    var(--mbx-dismissablecard-x-color, var(--mbx-c-dcard-txt))
-  );
-  --mbx-c-dcard-x-h: var(
-    --mbx-dismissablecard-x-color-hover-dark,
-    var(--mbx-dismissablecard-x-color-hover, red)
-  );
-
-  /** Dropdown **/
-  --mbx-c-drop-bg: var(
-    --mbx-dropdown-background-dark,
-    var(--mbx-dropdown-background, var(--mbx-c-bg))
-  );
-  --mbx-c-drop-bg-h: var(
-    --mbx-dropdown-background-hover-dark,
-    var(--mbx-dropdown-background-hover, var(--mbx-c-bg-h))
-  );
-  --mbx-c-drop-txt: var(
-    --mbx-dropdown-text-color-dark,
-    var(--mbx-dropdown-text-color, var(--mbx-c-txt))
-  );
-  --mbx-c-drop-txt-h: var(
-    --mbx-dropdown-text-color-hover-dark,
-    var(--mbx-dropdown-text-color-hover, var(--mbx-c-bg-h))
-  );
-  --mbx-c-drop-arr: var(
-    --mbx-dropdown-arrow-color-dark,
-    var(--mbx-dropdown-arrow-color, var(--mbx-c-drop-txt))
-  );
-  --mbx-c-drop-arr-h: var(
-    --mbx-dropdown-arrow-color-hover-dark,
-    var(--mbx-dropdown-arrow-color-hover, var(--mbx-c-drop-arr))
-  );
-
   /** FormField **/
   --mbx-c-field-bg: var(
     --mbx-formfield-background-dark,
@@ -371,21 +275,6 @@
   --mbx-c-mod-bg: var(
     --mbx-modal-background-dark,
     var(--mbx-modal-background, rgba(0, 0, 0, 0.8))
-  );
-  --mbx-c-mod-x: var(--mbx-modal-x-color-dark, var(--mbx-modal-x-color, white));
-  --mbx-c-mod-x-h: var(
-    --mbx-modal-x-color-hover-dark,
-    var(--mbx-modal-x-color-hover)
-  );
-
-  /** Popup **/
-  --mbx-c-pop-bg: var(
-    --mbx-popup-background-dark,
-    var(--mbx-popup-background, var(--mbx-c-bg))
-  );
-  --mbx-c-pop-txt: var(
-    --mbx-popup-text-color-dark,
-    var(--mbx-popup-text-color, var(--mbx-c-txt))
   );
 
   /** RadioButtonGroup **/

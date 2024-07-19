@@ -56,7 +56,7 @@ const Button: ButtonComponent = ({
       opHov: true,
       opAct: true,
     },
-    cssBg: ["c-btn-bg"],
+    cssBg: ["btn-bg"],
     styles: {
       ...(sProps.hover && {
         "--mbx-btn-bg-h": "var(--mbx-c-btn-bg-h)",

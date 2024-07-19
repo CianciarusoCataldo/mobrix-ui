@@ -9,13 +9,3 @@
 [data-mbx-id="dis-card"] > [data-mbx-cls="dchead"] > div {
   padding: 0.5rem 0.3rem;
 }
-
-[data-mbx-id="dis-card"] > [data-mbx-cls="dchead"] > [data-mbx-id="icb"] {
-  padding: 0;
-  margin-left: auto;
-  display: flex;
-  flex-direction: row-reverse;
-  width: fit-content;
-  --mbx-ic-x: var(--mbx-c-dcard-x);
-  --mbx-ic-x-h: var(--mbx-c-dcard-x-h);
-}

@@ -39,7 +39,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
       hover={hover}
       features={{ opFc: true }}
     >
-      {CopyIcon}
+      <CopyIcon />
     </IconButton>,
     <div key="cd_cd">
       {code.split("\n").map((codeLine, lIndex) => (
