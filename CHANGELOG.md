@@ -34,11 +34,11 @@
 
 ### 4.0.0
 
-- Css totally re-defined and cleaned up
+- Css totally re-defined and cleaned up, with more efficent rules and with less data as possible, to keep a smooth dev experience
 - Refactoring
 - Bundle size reduced
 - New `underline` prop for `Link` component
-- UI partially re-designed
+- UI re-designed for all components
 
 <br>
 
