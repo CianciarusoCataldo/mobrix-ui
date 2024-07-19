@@ -4,7 +4,7 @@
   width: fit-content;
 }
 
-[data-mbx-id="field"] [data-mbx-cls="fld-h"] {
+[data-mbx-id="field"] > [data-mbx-id="label"] {
   font-weight: 600;
   margin-bottom: 0.2rem;
   margin-top: 0;
@@ -12,7 +12,7 @@
   --mbx-label-text-color: var(--mbx-c-field-txt);
 }
 
-[data-mbx-id="field"] [data-mbx-cls="fld-eb"] {
+[data-mbx-id="field"] > [data-mbx-id="cont"] {
   color: var(--mbx-c-field-err-txt);
   transition: all 0.3s ease-out;
   padding-top: 0.2rem;

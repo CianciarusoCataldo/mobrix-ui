@@ -24,7 +24,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
           ...o,
           [key]: undefined,
         }),
-        {}
+        {},
       )
     : {};
 
@@ -45,10 +45,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
       };
 
       return (
-        <div
-          className={fieldClassName}
-          key={`f_fld_${index}`}
-        >
+        <div className={fieldClassName} key={`f_fld_${index}`}>
           <FormField
             shadow={shadow}
             disabled={disabled}
@@ -80,7 +77,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
       data-mbx-cls="s-bt"
     >
       {submitLabel}
-    </Button>
+    </Button>,
   );
 
   return components;

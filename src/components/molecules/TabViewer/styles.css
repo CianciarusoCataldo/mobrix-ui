@@ -10,7 +10,22 @@
 
 [data-mbx-id="tview"] > [data-mbx-id="cont"] {
   padding: 0.7rem 1rem;
-  background: var(--mbx-c-tabv-bg);
+  --mbx-container-background-light: var(
+    --mbx-tabviewer-background-light,
+    var(--mbx-tabviewer-background, linear-gradient(to right, #cccccc, #c7c7c7))
+  );
+  --mbx-container-text-color-light: var(
+    --mbx-tabviewer-text-color-light,
+    var(--mbx-tabviewer-text-color, var(--mbx-c-txt))
+  );
+  --mbx-container-background-dark: var(
+    --mbx-tabviewer-background-dark,
+    var(--mbx-tabviewer-background, linear-gradient(to right, #2d3748, #1d232e))
+  );
+  --mbx-container-text-color-dark: var(
+    --mbx-tabviewer-text-color-dark,
+    var(--mbx-tabviewer-text-color, var(--mbx-c-txt))
+  );
 }
 
 [data-mbx-id="tview"] > [data-mbx-cls="tabls"] {

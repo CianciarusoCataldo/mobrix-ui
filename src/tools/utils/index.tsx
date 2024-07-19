@@ -84,25 +84,6 @@ const getMbxFts: (
   return { styles, fts };
 };
 
-/**
- * Build a standard {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component, providing shared functionalities and props, to optimize the process.
- *
- * @param name component name
- * @param Component component to render
- * @param commonProps {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#shared-properties shared MoBrix-ui properties}
- * @param props additional props applied on rendered component
- * @param wrapper component external wrapper (like `button`, `a` or `p`, if not set will be `div`)
- *
- * @returns built component, ready to be rendered
- *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=components-building-process
- * @see https://github.com/CianciarusoCataldo/mobrix-ui-tools/
- * @see https://cianciarusocataldo.github.io/mobrix-ui/
- *
- * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
- *
- * @copyright 2024 Cataldo Cianciaruso
- */
 const getMbxUiStandard = ({
   name,
   Component,
@@ -121,7 +102,7 @@ const getMbxUiStandard = ({
     ...(parsedFts.fts.colFc && { "data-mbx-cfc": "" }),
     id: cprops.id,
     className: cprops.className,
-    onFocus: cprops.onFocus,
+    ...(cprops.onFocus && { onFocus: cprops.onFocus }),
     ...(cprops.onKeyDown && { onKeyDown: cprops.onKeyDown }),
     tabIndex: "-1",
     ...(cprops.a11y &&
@@ -176,6 +157,8 @@ const getMbxUiStandard = ({
     cstyles["cursor"] = "unset";
     cstyles["--mbx-op"] = 0.6;
     cstyles["--mbx-op-hov"] = 0.6;
+    cstyles["--mbx-sh-fc"] = "none";
+    cstyles["--mbx-c-fc"] = "none";
   }
 
   const wRef = useRef(null);
@@ -201,19 +184,6 @@ const getMbxUiStandard = ({
   }
 };
 
-/**
- * Build a reactive {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} component, with some extra functionalities.
- *
- * @returns built component, ready to be rendered, enhanced with some functionalities
- *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=reactive-components
- * @see https://github.com/CianciarusoCataldo/mobrix-ui-tools/
- * @see https://cianciarusocataldo.github.io/mobrix-ui/
- *
- * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
- *
- * @copyright 2024 Cataldo Cianciaruso
- */
 // prettier-ignore
 const getMbxUiReactive = <T=any>({
   name,

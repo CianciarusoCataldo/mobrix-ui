@@ -127,7 +127,7 @@ const CalendarComponent: MbxUiReactiveComponent<
           customMonths[scrDate.month]
         } ${scrDate.year}`}</Label>
         {getArrow("right")}
-      </div>
+      </div>,
     );
 
   components.push(
@@ -197,10 +197,10 @@ const CalendarComponent: MbxUiReactiveComponent<
       rows={[
         days.map((dayName) => dayName.slice(0, 3)),
         ...basicMatrix.map((row) =>
-          row.map((element) => (element > 0 ? String(element) : ""))
+          row.map((element) => (element > 0 ? String(element) : "")),
         ),
       ]}
-    />
+    />,
   );
 
   return components;

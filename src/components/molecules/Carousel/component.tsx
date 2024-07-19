@@ -43,11 +43,10 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
           dark={dark}
           key={`car_el_${index}`}
           hide={index !== item}
-          data-mbx-cls="el"
           style={estyle}
         >
           {element}
-        </Container>
+        </Container>,
       );
 
       dots.push(
@@ -68,11 +67,11 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
           onMouseLeave={() => setHoveredDot(null)}
           onClick={() => {
             setActiveClassname(
-              index > item ? "slide-in-right" : "slide-in-left"
+              index > item ? "slide-in-right" : "slide-in-left",
             );
             updateItem(index);
           }}
-        />
+        />,
       );
     });
   }
@@ -89,6 +88,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
       <IconButton
         dark={dark}
         key="prev-ar"
+        features={{ noShFc: true, opFc: true }}
         disabled={disabled || item === 0}
         onClick={() => {
           setActiveClassname("slide-in-left");
@@ -107,6 +107,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
       <IconButton
         dark={dark}
         key="next-ar"
+        features={{ noShFc: true, opFc: true }}
         disabled={disabled || item === elements.length - 1}
         onClick={() => {
           setActiveClassname("slide-in-right");

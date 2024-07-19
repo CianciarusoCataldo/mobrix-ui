@@ -33,7 +33,7 @@ const expandableContainerComponent: MbxUiReactiveComponent<
       }}
     >
       {expanded}
-    </div>
+    </div>,
   );
   components.push(
     <IconButton
@@ -53,7 +53,7 @@ const expandableContainerComponent: MbxUiReactiveComponent<
         hover={hover}
         dark={dark}
       />
-    </IconButton>
+    </IconButton>,
   );
   return components;
 };

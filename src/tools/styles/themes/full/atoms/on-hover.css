@@ -19,7 +19,7 @@
   }
 
   [data-mbx-id="inp"]:hover {
-    --mbx-inp-bg: var(--mbx-inp-bg-h, var(--mbx-c-in-bg));
+    --mbx-inp-bg: var(--mbx-inp-bg-h, var(--mbx-c-in-bgc));
     --mbx-inp-txt: var(--mbx-inp-txt-h, var(--mbx-c-in-txt));
   }
 

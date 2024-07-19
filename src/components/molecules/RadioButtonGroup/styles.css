@@ -19,11 +19,11 @@
 }
 
 @media (max-width: 600px) {
-  [data-mbx-id="rgroup"][data-mbx-rdgh="true"] {
+  [data-mbx-id="rgroup"] {
     flex-direction: column !important;
   }
 
-  [data-mbx-id="rgroup"][data-mbx-rdgh="true"] > div {
+  [data-mbx-id="rgroup"] > div {
     margin: 1rem 0.3rem !important;
   }
 }

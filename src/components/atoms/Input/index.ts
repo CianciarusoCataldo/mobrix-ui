@@ -57,12 +57,12 @@ const Input: InputComponent = ({
     features: {
       opHov: true,
     },
-    cssBg: ["c-in-bgc"],
+    cssBg: ["c-in-bgc", "c-in-bgc-h"],
     styles: {
       ...(autoresizable && { width: "fit-content" }),
       ...(sharedProps.hover &&
         !readOnly && {
-          "--mbx-inp-bg-h": "var(--mbx-c-in-bg-h)",
+          "--mbx-inp-bg-h": "var(--mbx-c-in-bgc-h)",
           "--mbx-inp-txt-h": "var(--mbx-c-in-txt-h)",
         }),
     },

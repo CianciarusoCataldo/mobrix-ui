@@ -66,7 +66,7 @@ const RaterComponent: MbxUiReactiveComponent<number, RaterProps> = ({
         })}
       >
         {ICONS[type][iconToShow]}
-      </IconButton>
+      </IconButton>,
     );
   }
 

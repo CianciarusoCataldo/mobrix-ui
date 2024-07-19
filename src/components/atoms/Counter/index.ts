@@ -67,7 +67,7 @@ const Counter: CounterComponent = ({
           "--mbx-cnt-txt-h": "var(--mbx-c-cnt-txt-h)",
         }),
     },
-    cssBg: ["c-cnt-bg"],
+    cssBg: ["c-cnt-bg", "c-cnt-bg-h"],
     inputValue,
     defaultValue: 0,
     props: (value, setValue) => ({

@@ -147,38 +147,6 @@
     --mbx-table-header-text-color-light,
     var(--mbx-table-header-text-color, whitesmoke)
   );
-
-  /** TabViewer **/
-  --mbx-c-tabv-bg: var(
-    --mbx-tabviewer-background-light,
-    var(--mbx-tabviewer-background, linear-gradient(to right, #cccccc, #c7c7c7))
-  );
-  --mbx-c-tabv-txt: var(
-    --mbx-tabviewer-text-color-light,
-    var(--mbx-tabviewer-text-color, var(--mbx-c-txt))
-  );
-  --mbx-c-tabv-off-bg: var(
-    --mbx-tabviewer-inactive-background-light,
-    var(
-      --mbx-tabviewer-inactive-background,
-      linear-gradient(to right, #a1a0a0, #797979)
-    )
-  );
-  --mbx-c-tabv-off-bg-h: var(
-    --mbx-tabviewer-inactive-background-hover-light,
-    var(
-      --mbx-tabviewer-inactive-background-hover,
-      linear-gradient(to right, #b6b4b4, #999797)
-    )
-  );
-  --mbx-c-tabv-off-txt: var(
-    --mbx-tabviewer-inactive-text-color-light,
-    var(--mbx-tabviewer-inactive-text-color, #c2c2c2)
-  );
-  --mbx-c-tabv-off-txt-h: var(
-    --mbx-tabviewer-inactive-text-color-hover-light,
-    var(--mbx-tabviewer-inactive-text-color-hover, var(--mbx-c-txt-h))
-  );
 }
 
 [data-mbx-id][data-mbx-dk] {
@@ -328,37 +296,5 @@
   --mbx-c-table-bord: var(
     --mbx-table-border-color-dark,
     var(--mbx-table-border-color, rgb(219, 219, 219))
-  );
-
-  /** TabViewer **/
-  --mbx-c-tabv-bg: var(
-    --mbx-tabviewer-background-dark,
-    var(--mbx-tabviewer-background, linear-gradient(to right, #2d3748, #1d232e))
-  );
-  --mbx-c-tabv-off-bg: var(
-    --mbx-tabviewer-inactive-background-dark,
-    var(
-      --mbx-tabviewer-inactive-background,
-      linear-gradient(to right, #3e4b63, #3f4858)
-    )
-  );
-  --mbx-c-tabv-txt: var(
-    --mbx-tabviewer-text-color-dark,
-    var(--mbx-tabviewer-text-color, var(--mbx-c-txt))
-  );
-  --mbx-c-tabv-off-bg-h: var(
-    --mbx-tabviewer-inactive-background-hover-dark,
-    var(
-      --mbx-tabviewer-inactive-background-hover,
-      linear-gradient(to right, #566888, #3c465a)
-    )
-  );
-  --mbx-c-tabv-off-txt: var(
-    --mbx-tabviewer-inactive-text-color-dark,
-    var(--mbx-tabviewer-inactive-text-color, #c2c2c2)
-  );
-  --mbx-c-tabv-off-txt-h: var(
-    --mbx-tabviewer-inactive-text-color-hover-dark,
-    var(--mbx-tabviewer-inactive-text-color-hover, var(--mbx-c-txt-h))
   );
 }

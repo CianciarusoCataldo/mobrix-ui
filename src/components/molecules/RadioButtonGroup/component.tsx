@@ -29,7 +29,7 @@ const radioButtonGroupComponent: MbxUiReactiveComponent<
   const getMargins = (position: string) => ({
     [`margin${position.replace(/\b\w/g, (l) => l.toUpperCase())}`]: 0,
     [`margin${cssClasses[position].rev.replace(/\b\w/g, (l) =>
-      l.toUpperCase()
+      l.toUpperCase(),
     )}`]: "0.7rem",
   });
 

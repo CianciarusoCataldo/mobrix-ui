@@ -54,14 +54,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
   };
 
   return [
-    <Label
-      hide={!header}
-      unstyled
-      key="fld_h_b"
-      dark={dark}
-      data-mbx-cls="fld-h"
-      {...headerProps}
-    >
+    <Label hide={!header} unstyled key="fld_h_b" dark={dark} {...headerProps}>
       {header}
     </Label>,
     <FieldComponent
@@ -96,7 +89,6 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       }}
     />,
     <Container
-      data-mbx-cls="fld-eb"
       animated={true}
       animation="fade-in"
       dark={dark}
