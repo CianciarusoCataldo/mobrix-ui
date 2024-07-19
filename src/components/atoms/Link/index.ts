@@ -57,9 +57,14 @@ const Link: LinkComponent = ({
       noShFc: true,
     },
     Component: children,
+    styles: {
+      ...(underline && { textDecoration: "underline" }),
+      ...(sharedProps.hover && {
+        "--mbx-lnk-txt-h": "var(--mbx-c-link-txt-h)",
+      }),
+    },
     commonProps: {
       ...sharedProps,
-      style: { ...sharedProps.style, textDecoration: "underline" },
       props: {
         ...sharedProps.props,
         ...(!sharedProps.disabled && {

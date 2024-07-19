@@ -1,3 +1,4 @@
 [data-mbx-id="dvd"] {
   background-color: var(--mbx-c-dv-bgc);
+  width: 100%;
 }

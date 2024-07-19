@@ -58,7 +58,14 @@ const Input: InputComponent = ({
       opHov: true,
     },
     cssBg: ["c-in-bgc"],
-    scl: `bdtran;${autoresizable && "wfit"}`,
+    styles: {
+      ...(autoresizable && { width: "fit-content" }),
+      ...(sharedProps.hover &&
+        !readOnly && {
+          "--mbx-inp-bg-h": "var(--mbx-c-in-bg-h)",
+          "--mbx-inp-txt-h": "var(--mbx-c-in-txt-h)",
+        }),
+    },
     props: (value, setValue) => ({
       commonProps: {
         ...sharedProps,

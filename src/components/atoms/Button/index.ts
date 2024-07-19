@@ -57,7 +57,17 @@ const Button: ButtonComponent = ({
       opAct: true,
     },
     cssBg: ["c-btn-bg"],
-    scl: "wfit;act",
+    styles: {
+      ...(sProps.hover && {
+        "--mbx-btn-bg-h": "var(--mbx-c-btn-bg-h)",
+        "--mbx-btn-txt-h": "var(--mbx-c-btn-txt-h)",
+        ...(sProps.animated && {
+          "--mbx-btn-scale": "scaleX(1.15) scaleY(1.1)",
+          transitionDuration: "0.1s",
+          transitionProperty: "transform",
+        }),
+      }),
+    },
     Component: children,
     commonProps: {
       ...sProps,

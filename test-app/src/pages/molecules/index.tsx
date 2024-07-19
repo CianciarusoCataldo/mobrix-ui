@@ -324,7 +324,7 @@ const MoleculesPage = () => {
                 <img alt="" src={Elem2} width="250px" height="250px" />,
               ]}
             />
-
+            <p>No hover</p>
             <Carousel
               hover={false}
               elements={[
@@ -342,7 +342,7 @@ const MoleculesPage = () => {
                 <img alt="" src={Elem2} width="250px" height="250px" />,
               ]}
             />
-
+            <p>No Background</p>
             <Carousel
               background={false}
               elements={[

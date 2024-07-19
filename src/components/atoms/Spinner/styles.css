@@ -4,10 +4,11 @@
   min-width: 4rem;
 }
 
-[data-mbx-id="spn"]:not([data-mbx-atts*="dsb"]) [data-mbx-cls="rotating"] {
-  -webkit-animation: rotating 2s linear infinite;
-  -moz-animation: rotating 2s linear infinite;
-  -ms-animation: rotating 2s linear infinite;
-  -o-animation: rotating 2s linear infinite;
-  animation: rotating 2s linear infinite;
+[data-mbx-id="spn"] > [data-mbx-cls="rotating"] {
+  --mbx-spn-an: var(--mbx-spn-rot, none);
+  -webkit-animation: var(--mbx-spn-an);
+  -moz-animation: var(--mbx-spn-an);
+  -ms-animation: var(--mbx-spn-an);
+  -o-animation: var(--mbx-spn-an);
+  animation: var(--mbx-spn-an);
 }

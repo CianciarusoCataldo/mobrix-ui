@@ -16,4 +16,10 @@
   -o-transition: all 0.2s;
   -ms-transition: all 0.2s;
   transform: translate(var(--mbx-tgl-tr));
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

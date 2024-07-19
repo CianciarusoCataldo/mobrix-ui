@@ -110,6 +110,10 @@
     --mbx-slider-thumb-color-light,
     var(--mbx-slider-thumb-color, radial-gradient(#2d3748, #1d232e))
   );
+  --mbx-c-sld-bg-h: var(
+    --mbx-slider-background-hover-light,
+    var(--mbx-slider-background-hover, var(--mbx-c-sld-bg))
+  );
   --mbx-c-sld-tb-h: var(
     --mbx-slider-thumb-color-hover-light,
     var(--mbx-slider-thumb-color-hover, var(--mbx-c-sld-tb))

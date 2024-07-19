@@ -10,6 +10,11 @@
   -o-box-shadow: var(--mbx-sh);
 }
 
+[data-mbx-img="arr"] {
+  --mbx-arr-c: var(--mbx-ic-arr, --mbx-c-txt);
+  fill: var(--mbx-arr-c);
+}
+
 [data-mbx-id],
 [data-mbx-id]:hover,
 [data-mbx-id]:active {
@@ -18,12 +23,17 @@
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
 }
-
-[data-mbx-id]:focus {
+[data-mbx-id],
+[data-mbx-id]:focus,
+[data-mbx-id]:focus-visible {
   outline: none;
 }
 
 @media (hover: hover) {
+  [data-mbx-img="arr"]:hover {
+    fill: var(--mbx-ic-arr-h, --mbx-arr-c);
+  }
+
   [data-mbx-id]:hover {
     opacity: var(--mbx-op-hov, var(--mbx-op));
   }

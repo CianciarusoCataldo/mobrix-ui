@@ -1,8 +1,4 @@
 @media (hover) {
-  [data-mbx-id="crsel"] [data-mbx-img="arr"]:hover {
-    --mbx-arr: var(--mbx-c-car-arr-h);
-  }
-
   [data-mbx-id="econt"] [data-mbx-id="icb"]:hover > [data-mbx-img="arr"] {
     --mbx-econt-arr: var(
       --mbx-c-exp-arr-h,
@@ -13,5 +9,9 @@
   [data-mbx-id="list"][data-mbx-atts*="hv"]
     > [data-mbx-id="cont"][data-mbx-cls="clk"]:hover {
     color: var(--mbx-c-lst-txt-h);
+  }
+
+  [data-mbx-id="list"][data-mbx-atts*="hv"]:not([data-mbx-atts*="dsb"]):hover {
+    --mbx-c-link-txt: var(--mbx-c-link-txt-h);
   }
 }

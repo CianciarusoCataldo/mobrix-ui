@@ -1,7 +1,9 @@
 [data-mbx-id="selt"] {
   padding: 0.2rem;
-  background: var(--mbx-c-sel-bg);
-  color: var(--mbx-c-sel-txt);
+  --mbx-sel-bg: var(--mbx-c-sel-bg);
+  --mbx-sel-txt: var(--mbx-c-sel-txt);
+  background: var(--mbx-sel-bg);
+  color: var(--mbx-sel-txt);
   border: 0;
   border-radius: 6px;
 }

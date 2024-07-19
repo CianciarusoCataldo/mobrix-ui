@@ -35,7 +35,6 @@ export const parseAtts: (
   props: CommonProps
 ) => Partial<Record<keyof CommonProps, string | undefined>> = (props) => ({
   dark: props.dark && "dk",
-  background: props.background && "bg",
   disabled: props.disabled && "dsb",
   a11y: props.a11y && "a11y",
   hover: props.hover && !props.disabled && "hv",

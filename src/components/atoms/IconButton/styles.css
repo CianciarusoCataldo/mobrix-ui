@@ -3,4 +3,5 @@
   border: 0;
   background: transparent;
   -webkit-tap-highlight-color: transparent;
+  width: fit-content;
 }

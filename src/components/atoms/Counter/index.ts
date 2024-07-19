@@ -57,9 +57,15 @@ const Counter: CounterComponent = ({
   buildMbxReactive<number | undefined>(commonProps, (sProps) => ({
     wrapper: "input",
     name: "count",
-    scl: "bdtran",
     features: {
       opHov: true,
+    },
+    styles: {
+      ...(sProps.hover &&
+        !readOnly && {
+          "--mbx-cnt-bg-h": "var(--mbx-c-cnt-bg-h)",
+          "--mbx-cnt-txt-h": "var(--mbx-c-cnt-txt-h)",
+        }),
     },
     cssBg: ["c-cnt-bg"],
     inputValue,

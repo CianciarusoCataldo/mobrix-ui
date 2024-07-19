@@ -104,7 +104,7 @@ const Drawer: DrawerComponent = ({
       props: {
         ...commonProps.props,
         "data-mbx-drw-lc": location,
-        "data-mbx-drw-an": customProps.animation,
+        "data-mbx-drw-an": sharedProps.animated && customProps.animation,
       },
       hide: value.length === 0 && hide,
       onFocusLost: customProps.onFocusLost,

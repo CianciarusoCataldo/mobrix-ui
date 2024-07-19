@@ -60,7 +60,11 @@ const RadioButton: RadioButtonComponent = ({
       opAct: true,
     },
     cssBg: ["c-rad-bg"],
-    scl: "flxc;act;bdtran",
+    styles: {
+      ...(sharedProps.hover && {
+        "--mbx-rd-bg-h": "var(--mbx-c-rad-bg-h)",
+      }),
+    },
     props: (value, setValue) => {
       const callBack = () => {
         if (!value || deselectable) {

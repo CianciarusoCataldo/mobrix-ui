@@ -57,8 +57,10 @@ const Checkbox: CheckBoxComponent = ({
     features: {
       opHov: true,
     },
-    scl: "flxc;act",
     cssBg: ["c-chk-bg"],
+    styles: {
+      ...(sProps.hover && { "--mbx-chk-bg-h": "var(--mbx-c-chk-bg-h)" }),
+    },
     props: (actualValue, setValue) => {
       const callback = () => {
         onChange(!actualValue);

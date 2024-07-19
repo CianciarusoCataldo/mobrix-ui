@@ -51,6 +51,11 @@ const Spinner: SpinnerComponent = ({
   buildMbxStandard(commonProps, (sharedProps) => ({
     name: "spn",
     commonProps: { ...sharedProps, shadow },
+    styles: {
+      ...(sharedProps.animated && {
+        "--mbx-spn-rot": "rotating 2s linear infinite",
+      }),
+    },
     Component:
       value && statuses[value]
         ? statuses[value]

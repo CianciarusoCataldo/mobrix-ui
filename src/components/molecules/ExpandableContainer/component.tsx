@@ -51,8 +51,8 @@ const expandableContainerComponent: MbxUiReactiveComponent<
     >
       <ArrowIcon
         transform={`rotate(${compact ? "270" : "90"})`}
-        scl="nout"
         disabled={disabled}
+        hover={hover}
       />
     </IconButton>
   );

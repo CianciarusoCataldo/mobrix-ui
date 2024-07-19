@@ -1,27 +1,17 @@
 [data-mbx-id="btn"] {
+  width: fit-content;
+  align-items: center;
+  text-align: center;
   border: 0;
-  background: var(--mbx-c-btn-bg);
-  color: var(--mbx-c-btn-txt);
   font-weight: 800;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   display: inline-flex;
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-[data-mbx-id="btn"][data-mbx-atts*="anm"] {
-  transition-duration: 0.1s;
-  transition-property: transform;
-}
-
-[data-mbx-id*="button"][data-mbx-atts*="dsb"] {
-  cursor: unset;
-}
-
-@media (hover) {
-  [data-mbx-id="btn"][data-mbx-atts*="hv;anm"]:hover {
-    position: relative;
-    transform: scaleX(1.15) scaleY(1.1);
-  }
+  --mbx-btn-scale: none;
+  --mbx-btn-bg: var(--mbx-c-btn-bg);
+  --mbx-btn-txt: var(--mbx-c-btn-txt);
+  background: var(--mbx-btn-bg);
+  color: var(--mbx-btn-txt);
 }

@@ -32,16 +32,13 @@ const DrawerInternalComponent: MbxUiComponent<
       onClick={() => {
         onClose!();
       }}
-      data-mbx-cls="drw-close"
       scl={locationCss[position].btn}
       features={{ noShFc: true }}
       a11yLabel="drawer-close-button"
     >
-      <ArrowIcon scl="mauto" fill="var(--mbx-c-draw-arr)" />
+      <ArrowIcon hover={hover} />
     </IconButton>,
-    <div key="drw_cont" data-mbx-cls="drw-cont">
-      {children}
-    </div>,
+    <div key="drw_cont">{children}</div>,
   ];
 };
 

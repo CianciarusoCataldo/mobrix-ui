@@ -1,4 +1,7 @@
 [data-mbx-id="inp"] {
-  background-color: var(--mbx-c-in-bgc);
-  color: var(--mbx-c-in-txt);
+  --mbx-inp-bg: var(--mbx-c-in-bgc);
+  --mbx-inp-txt: var(--mbx-c-in-txt);
+  background-color: var(--mbx-inp-bg);
+  color: var(--mbx-inp-txt);
+  border-color: transparent;
 }

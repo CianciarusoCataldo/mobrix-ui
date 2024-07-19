@@ -41,6 +41,7 @@ export const parseProps = (props: CommonProps): CommonProps => {
     ...(props.disabled && {
       animated: false,
       hover: false,
+      a11y: false,
     }),
   };
 
@@ -123,6 +124,7 @@ const getMbxUiStandard = ({
   wrapper: Wrapper = "div",
   features = {},
   cssBg = [],
+  styles = {},
 }: BuilderProps) => {
   const parsedFts = getMbxFts(features, cprops);
   let mbxFts = `${parsedFts.fts}`;
@@ -152,10 +154,10 @@ const getMbxUiStandard = ({
     ...cprops.props,
     ...cprops["datas"],
   };
+  let cstyles = styles;
 
-  let cstyles = cprops.style;
-  if (!cstyles) {
-    cstyles = {};
+  if (cprops.style) {
+    cstyles = { ...cprops.style, ...cstyles };
   }
 
   if (cprops.hide) {
@@ -185,6 +187,7 @@ const getMbxUiStandard = ({
   } else {
     cstyles["cursor"] = "unset";
     cstyles["--mbx-op"] = 0.6;
+    cstyles["--mbx-op-hov"] = 0.6;
   }
 
   const wRef = useRef(null);
@@ -234,7 +237,8 @@ const getMbxUiReactive = <T=any>({
   Component,
   features,
   scl,
-  cssBg
+  cssBg,
+  styles
 }: BuilderProps<
   (props: {
     value: T;
@@ -271,6 +275,7 @@ const getMbxUiReactive = <T=any>({
     features,
     scl,
     cssBg,
+    styles,
     ...processed,
   });
 };

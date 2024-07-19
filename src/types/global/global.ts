@@ -277,6 +277,8 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
   group?: "atom" | "molecule" | "organism";
 
   cssBg?: string[];
+
+  styles?: Record<string, any>;
 };
 
 /**
@@ -371,10 +373,14 @@ export type BuilderPropsReactive<T = BuilderComponent | BuilderComponent[]> =
     ) => Omit<BuilderProps, "name">;
   };
 
-export type MbxIcon = (props: {
-  scl?: string;
-  fill?: string;
-  disabled?: boolean;
-  transform?: string;
-  hover?: boolean;
-}) => React.JSX.Element;
+export type MbxIcon = (
+  props: CommonProps & {
+    scl?: string;
+    fill?: string;
+    transform?: string;
+    width?: string;
+    height?: string;
+    colorVar?: string;
+    hoverVar?: string;
+  }
+) => React.JSX.Element;

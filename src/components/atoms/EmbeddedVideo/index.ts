@@ -48,7 +48,6 @@ const EmbeddedVideo: EmbeddedVideoComponent = ({ url, ...shared }) =>
     features: {
       opHov: true,
     },
-    scl: !sProps.className && "wfit",
     Component: component({
       url,
       ...sProps,

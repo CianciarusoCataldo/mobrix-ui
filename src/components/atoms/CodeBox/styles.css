@@ -3,6 +3,9 @@
   justify-content: center;
   background: var(--mbx-c-cdb-bg);
   color: var(--mbx-c-cdb-txt);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 [data-mbx-id="code"] > [data-mbx-id="icb"] {

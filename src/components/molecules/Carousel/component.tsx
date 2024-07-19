@@ -98,8 +98,9 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         {...arrowProps}
       >
         <ArrowIcon
+          hover={hover}
           disabled={item === 0 || disabled}
-          fill={item === 0 ? "none" : undefined}
+          hide={item === 0}
         />
       </IconButton>
       {elementsArray}
@@ -115,8 +116,9 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
         {...arrowProps}
       >
         <ArrowIcon
+          hover={hover}
           disabled={item === elements.length - 1 || disabled}
-          fill={item === elements.length - 1 ? "none" : undefined}
+          hide={item === elements.length - 1}
         />
       </IconButton>
     </div>,

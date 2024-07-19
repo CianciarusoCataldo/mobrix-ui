@@ -35,20 +35,33 @@ export const Xicon: MbxIcon = ({ fill, disabled }) => (
 
 export const ArrowIcon: MbxIcon = ({
   fill = "var(--mbx-arr)",
-  scl = "",
   disabled,
+  hide,
   transform,
   hover,
+  width = "30",
+  height = "37",
+  hoverVar = "--mbx-ic-arr",
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="30"
-    height="37"
+    width={width}
+    height={height}
     viewBox="0 0 11 18"
     fill={fill}
-    data-mbx-scl={scl}
-    data-mbx-img={disabled ? "" : "arr"}
+    data-mbx-img="arr"
     data-mbx-fts="fillFc"
+    style={
+      {
+        ...(hide && {
+          "--mbx-ic-arr": "none",
+          "--mbx-ic-arr-h": "none",
+        }),
+        ...((!hover || disabled) && {
+          "--mbx-ic-arr-h": "var(--mbx-ic-arr)",
+        }),
+      } as React.CSSProperties
+    }
     {...(transform && { transform })}
   >
     <path d="M8.6812.1963l2.1208928 2.120293-8.484 8.4864L.1972 8.6827z" />

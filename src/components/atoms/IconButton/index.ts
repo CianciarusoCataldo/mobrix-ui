@@ -54,12 +54,12 @@ const IconButton: IconButtonComponent = ({
     wrapper: "button",
     ...(!sharedProps.unstyled && {
       features: {
-        opHov: true,
+        opHov: hover,
         opAct: onClick !== undefined,
+        noShFc: true,
       },
     }),
     Component: children,
-    scl: "wfit;nout",
     commonProps: {
       ...sharedProps,
       props: {

@@ -3,6 +3,11 @@
   border-radius: 8px;
   padding: 0.4rem;
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+  align-items: center;
+  text-align: center;
 }
 
 [data-mbx-id="rat"] svg {

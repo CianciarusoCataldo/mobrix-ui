@@ -2,7 +2,7 @@
   /** Button */
   --mbx-c-btn-bg-h: var(
     --mbx-button-background-hover-light,
-    var(--mbx-checkbox-background-hover, var(--mbx-c-bg-h))
+    var(--mbx-button-background-hover, var(--mbx-c-bg-h))
   );
   --mbx-c-btn-txt-h: var(
     --mbx-button-text-color-hover-light,
@@ -38,7 +38,7 @@
   /** Link */
   --mbx-c-link-txt-h: var(
     --mbx-link-color-hover-light,
-    var(--mbx-link-color-hover, var(--mbx-c-link-txt-l))
+    var(--mbx-link-color-hover, var(--mbx-c-link-txt))
   );
 
   /* Radio Button */
@@ -99,7 +99,7 @@
   /** Link */
   --mbx-c-link-txt-h: var(
     --mbx-link-color-hover-dark,
-    var(--mbx-link-color-hover, var(--mbx-c-link-txt-d))
+    var(--mbx-link-color-hover, var(--mbx-c-link-txt))
   );
 
   /* Radio Button */

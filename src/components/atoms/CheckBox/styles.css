@@ -1,6 +1,11 @@
 [data-mbx-id="check"] {
   height: 30px;
   width: 30px;
-  background: var(--mbx-c-chk-bg);
   padding: 0.2rem;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  --mbx-chk-bg: var(--mbx-c-chk-bg);
+  background: var(--mbx-chk-bg);
 }

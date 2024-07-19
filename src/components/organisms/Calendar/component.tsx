@@ -103,7 +103,7 @@ const CalendarComponent: MbxUiReactiveComponent<
       features={{ fillFc: true, noShFc: true }}
       {...customProps}
     >
-      <ArrowIcon />
+      <ArrowIcon disabled={disabled} />
     </IconButton>
   );
 

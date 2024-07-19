@@ -1,7 +1,8 @@
 [data-mbx-id="crsel"] {
   background: var(--mbx-c-car-bg);
   padding: 0.4rem;
-  --mbx-arr: var(--mbx-c-car-arr);
+  --mbx-ic-arr: var(--mbx-c-car-arr);
+  --mbx-ic-arr-h: var(--mbx-c-car-arr-h);
 }
 
 [data-mbx-id="crsel"] [data-mbx-cls="el"] {

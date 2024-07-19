@@ -2,9 +2,10 @@ import React from "react";
 
 import { DropdownProps, MbxUiReactiveComponentBuilder } from "../../../types";
 
-import { Button } from "../../atoms";
+import { Button, IconButton } from "../../atoms";
 import Popup from "../Popup";
 import Container from "../Container";
+import { ArrowIcon } from "../../../icons";
 
 const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
   number,
@@ -18,6 +19,8 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
   disabled,
   setValue,
   shadow,
+  hover,
+  background,
   /* istanbul ignore next */
   onFocusLost = () => {},
   ...commonProps
@@ -103,7 +106,8 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
       <Button
         animated={false}
         shadow={false}
-        background={commonProps.background}
+        hover={hover}
+        background={background}
         disabled={disabled}
         onClick={() => {
           keyDown(!isVisible);
@@ -111,8 +115,12 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
         dark={dark}
         scl="nout;wfu"
         key="opts-m"
-        data-mbx-cls="drop-bt"
         a11y={false}
+        style={
+          {
+            "--mbx-dd-rot": isVisible ? "90deg" : "270deg",
+          } as React.CSSProperties
+        }
       >
         <div
           tabIndex={-1}
@@ -122,33 +130,10 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
         >
           {selectedItem}
         </div>
-        <Container
-          background={false}
-          animated={false}
-          shadow={false}
-          hide={hideArrow}
-          dark={dark}
-          key="icon"
-          disabled={disabled}
-          a11y={false}
-          data-mbx-cls="ic"
-          scl="nout"
-        >
-          <p tabIndex={-1}>
-            <i
-              data-mbx-cls="arr-ic"
-              data-mbx-scl="nout"
-              style={
-                {
-                  MbxDdRot: isVisible ? "180deg" : "360deg",
-                } as React.CSSProperties
-              }
-            ></i>
-          </p>
-        </Container>
+        <ArrowIcon width="15" height="12" disabled={disabled} hover={hover} />
       </Button>,
       <Popup
-        background={commonProps.background}
+        background={background}
         key="opts"
         shadow={shadow}
         disabled={disabled}
@@ -161,7 +146,6 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           <Button
             animated={false}
             shadow={false}
-            background={false}
             disabled={disabled}
             onFocus={() => {
               selectItem(index);
@@ -171,24 +155,14 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
               setValue(index);
               keyDown(false);
             }}
+            dark={dark}
             features={{ noShFc: true, colFc: true }}
             key={`item_${index}`}
             scl="flxc;wfu"
             data-mbx-cls="reg"
             data-mbx-dpos={`${index === 0}-${index === elements.length - 1}`}
           >
-            <Container
-              disabled={disabled || selected === index}
-              a11y={false}
-              background={false}
-              shadow={false}
-              animated={false}
-              dark={dark}
-              data-mbx-cls="drop-el"
-              scl="flxr;mauto"
-            >
-              {item}
-            </Container>
+            {item}
           </Button>
         ))}
       </Popup>,

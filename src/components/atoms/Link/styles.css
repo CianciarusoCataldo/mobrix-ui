@@ -1,9 +1,6 @@
 [data-mbx-id="link"] {
   font-size: 1rem;
   line-height: 1.5rem;
-  color: var(--mbx-c-link-txt);
-}
-
-a[data-mbx-id="link"]:active {
-  font-weight: 700;
+  --mbx-lnk-txt: var(--mbx-c-link-txt);
+  color: var(--mbx-lnk-txt);
 }

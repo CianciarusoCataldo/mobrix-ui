@@ -38,7 +38,7 @@
   --mbx-c-bg: var(--mbx-c-bg-d);
   --mbx-c-bg-h: var(
     --mbx-background-hover-dark,
-    var(--mbx-background-hover, linear-gradient(to right, #364257, #252d3b))
+    var(--mbx-background-hover, linear-gradient(to right, #414f68, #313b4d))
   );
   --mbx-c-txt: var(--mbx-c-txt-d);
   --mbx-c-txt-h: var(

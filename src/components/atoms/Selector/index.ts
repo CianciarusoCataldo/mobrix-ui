@@ -71,6 +71,12 @@ const Selector: SelectorComponent = ({
         },
       },
     }),
+    styles: {
+      ...(sharedProps.hover && {
+        "--mbx-sel-bg-h": "var(--mbx-c-sel-bg-h)",
+        "--mbx-sel-txt-h": "var(--mbx-c-sel-txt-h)",
+      }),
+    },
     Component: ({ value, setValue }) =>
       selectorComponent({ elements, value, setValue, optionClassName }),
     features: {

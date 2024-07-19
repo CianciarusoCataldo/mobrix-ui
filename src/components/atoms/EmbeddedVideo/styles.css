@@ -1,5 +1,6 @@
-[data-mbx-id="em-vd"]:not([class]) {
+[data-mbx-id="em-vd"] {
   height: fit-content;
+  width: fit-content;
 }
 
 [data-mbx-id="em-vd"] iframe {

@@ -57,17 +57,15 @@ const Toggle: ToggleComponent = ({
     name: "tgl",
     cssBg: ["c-tog-bg"],
     props: (status, setStatus) => ({
+      styles: {
+        ...(status && {
+          "--svginternalcolor": "var(--mbx-c-tog-ic-on-int)",
+          "--svgexternalcolor": "var(--mbx-c-tog-ic-on-ext)",
+          "--mbx-tgl-tr": " 0%",
+        }),
+      },
       commonProps: {
         ...sProps,
-        style: {
-          ...sProps.style,
-          ...(status &&
-            ({
-              "--svginternalcolor": "var(--mbx-c-tog-ic-on-int)",
-              "--svgexternalcolor": "var(--mbx-c-tog-ic-on-ext)",
-              "--mbx-tgl-tr": " 0%",
-            } as React.CSSProperties)),
-        },
         props: {
           ...sProps.props,
           ...(!sProps.disabled && {

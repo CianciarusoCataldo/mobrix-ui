@@ -9,18 +9,18 @@
   color: var(--mbx-c-draw-txt);
 }
 
-[data-mbx-id="drw"]:not([data-mbx-atts*="dsb"]) {
+[data-mbx-id="drw"][data-mbx-drw-an] {
   animation: var(--mbx-drawer-animation);
   -moz-animation: var(--mbx-drawer-animation);
   -ms-animation: var(--mbx-drawer-animation);
   -o-animation: var(--mbx-drawer-animation);
 }
 
-[data-mbx-id="drw"] > [data-mbx-cls="drw-cont"]::-webkit-scrollbar {
+[data-mbx-id="drw"] > div::-webkit-scrollbar {
   display: none !important;
 }
 
-[data-mbx-id="drw"] > [data-mbx-cls="drw-cont"] {
+[data-mbx-id="drw"] > div {
   overflow-y: auto;
   -ms-overflow-style: none !important;
   scrollbar-width: none !important;
@@ -32,4 +32,9 @@
 
 [data-mbx-id="drw"][data-mbx-drw-an="ease-out"] {
   --mbx-drawer-animation: var(--mbx-drawer-animation-out);
+}
+
+[data-mbx-id="drw"] > [data-mbx-id="icb"] {
+  --mbx-ic-arr: var(--mbx-c-draw-arr);
+  --mbx-ic-arr-h: var(--mbx-c-draw-arr-h);
 }
