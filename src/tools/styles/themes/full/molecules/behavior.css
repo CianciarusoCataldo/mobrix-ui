@@ -42,7 +42,7 @@
   );
 }
 
-[data-mbx-id][data-mbx-atts*="dk"] {
+[data-mbx-id][data-mbx-dk] {
   /** Carousel */
   --mbx-c-car-arr-h: var(
     --mbx-carousel-arrow-color-hover-dark,

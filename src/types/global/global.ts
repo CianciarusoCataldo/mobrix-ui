@@ -243,9 +243,7 @@ export interface Features {
   /** If `true`, when focused, the component box shadow will be transparent */
   noShFc?: boolean;
 
-  /** If `true`, when focused, the component fill color (along with child svg) will change instead of the box shadow (that will be transparent) */
-  fillFc?: boolean;
-
+  /** If `true`, reduce component opacity when component is focused */
   opFc?: boolean;
 }
 
@@ -273,13 +271,12 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
 
   features?: Features;
 
-  scl?: string;
-
-  group?: "atom" | "molecule" | "organism";
-
   cssBg?: string[];
 
   styles?: Record<string, any>;
+
+  /** Custom additional properties, applied to the component */
+  addProps?: Record<string, any>;
 };
 
 /**

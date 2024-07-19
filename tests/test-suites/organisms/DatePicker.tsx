@@ -45,8 +45,8 @@ const datePickerTest = () => {
 
       wrapper.find('[data-mbx-id="icb"]').at(0).simulate("click");
 
-      wrapper.find('[data-mbx-cls="dis-bt"]').simulate("click");
-
+      wrapper.find('[data-mbx-cls="dchead"]').simulate("click");
+      
       expect(onCloseStub).toBeCalled;
     });
   });

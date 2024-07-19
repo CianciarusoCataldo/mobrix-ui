@@ -238,7 +238,7 @@
   );
 }
 
-[data-mbx-id][data-mbx-atts*="dk"] {
+[data-mbx-id][data-mbx-dk] {
   /** Card **/
   --mbx-c-card-bg: var(
     --mbx-card-background-dark,

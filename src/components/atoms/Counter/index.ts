@@ -71,24 +71,23 @@ const Counter: CounterComponent = ({
     inputValue,
     defaultValue: 0,
     props: (value, setValue) => ({
+      addProps: {
+        disabled: sProps.disabled,
+        type: "number",
+        value: value,
+        placeholder,
+        readOnly,
+        max,
+        min,
+        onChange: (e) => {
+          if (!readOnly && !sProps.disabled) {
+            onChange(e.target.value);
+            setValue(e.target.value);
+          }
+        },
+      },
       commonProps: {
         ...sProps,
-        props: {
-          ...sProps.props,
-          disabled: sProps.disabled,
-          type: "number",
-          value: value,
-          placeholder,
-          readOnly,
-          max,
-          min,
-          onChange: (e) => {
-            if (!readOnly && !sProps.disabled) {
-              onChange(e.target.value);
-              setValue(e.target.value);
-            }
-          },
-        },
         hover: sProps.hover && !readOnly,
       },
     }),

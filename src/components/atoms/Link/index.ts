@@ -63,16 +63,13 @@ const Link: LinkComponent = ({
         "--mbx-lnk-txt-h": "var(--mbx-c-link-txt-h)",
       }),
     },
-    commonProps: {
-      ...sharedProps,
-      props: {
-        ...sharedProps.props,
-        ...(!sharedProps.disabled && {
-          href: to,
-          target: newTab ? "_blank" : undefined,
-        }),
-      },
+    addProps: {
+      ...(!sharedProps.disabled && {
+        href: to,
+        target: newTab ? "_blank" : undefined,
+      }),
     },
+    commonProps: sharedProps,
     wrapper: sharedProps.disabled ? "span" : "a",
   }));
 

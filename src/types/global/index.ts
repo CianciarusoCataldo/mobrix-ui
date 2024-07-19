@@ -19,4 +19,5 @@ export {
   MbxUiReactiveComponentBuilder,
   NumericInputComponent,
   Wrappers,
+  Features,
 } from "./global";

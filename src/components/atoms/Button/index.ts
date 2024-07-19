@@ -68,17 +68,14 @@ const Button: ButtonComponent = ({
         }),
       }),
     },
-    Component: children,
-    commonProps: {
-      ...sProps,
-      props: {
-        ...sProps.props,
-        disabled: sProps.disabled,
-        onClick,
-        onMouseEnter,
-        onMouseLeave,
-      },
+    addProps: {
+      disabled: sProps.disabled,
+      onClick,
+      onMouseEnter,
+      onMouseLeave,
     },
+    Component: children,
+    commonProps: sProps,
   }));
 
 export default Button;

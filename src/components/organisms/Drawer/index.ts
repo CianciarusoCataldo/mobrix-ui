@@ -97,12 +97,11 @@ const Drawer: DrawerComponent = ({
   return buildMbxStandard(commonProps, (sharedProps) => ({
     name: "drw",
     cssBg: ["c-draw-bg"],
+    addProps: {
+      "data-mbx-drw-lc": location,
+    },
     commonProps: {
       ...sharedProps,
-      props: {
-        ...commonProps.props,
-        "data-mbx-drw-lc": location,
-      },
       hide: value.length === 0 && hide,
       onFocusLost: customProps.onFocusLost,
     },

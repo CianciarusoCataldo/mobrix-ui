@@ -65,14 +65,13 @@ const FormField: FormFieldComponent = ({
 }) => {
   return buildMbxReactive(props, (sharedProps) => ({
     name: "field",
+    addProps: {
+      "data-mbx-ftype": type,
+    },
     commonProps: {
       ...sharedProps,
       shadow: false,
       tabIndex: -1,
-      props: {
-        ...sharedProps.props,
-        "data-mbx-ftype": type,
-      },
     },
     cssBg: ["c-field-bg"],
     Component: ({ value, setValue }) =>

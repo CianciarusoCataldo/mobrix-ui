@@ -67,12 +67,11 @@ const Checkbox: CheckBoxComponent = ({
         setValue(!actualValue);
       };
       return {
+        addProps: {
+          ...(!sProps.disabled && { onClick: callback }),
+        },
         commonProps: {
           ...sProps,
-          props: {
-            ...sProps.props,
-            ...(!sProps.disabled && { onClick: callback }),
-          },
           onKeyDown:
             !sProps.disabled &&
             ((e) => {

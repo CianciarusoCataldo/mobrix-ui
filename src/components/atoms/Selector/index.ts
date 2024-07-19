@@ -58,19 +58,16 @@ const Selector: SelectorComponent = ({
     inputValue,
     cssBg: ["c-sel-bg", "c-sel-bg-h"],
     props: (value, setValue) => ({
-      commonProps: {
-        ...sharedProps,
-        props: {
-          ...sharedProps.props,
-          disabled: sharedProps.disabled,
-          value,
-          onChange: (e) => {
-            onChange(e.target.value);
-            setValue(e.target.value);
-          },
+      addProps: {
+        disabled: sharedProps.disabled,
+        value,
+        onChange: (e) => {
+          onChange(e.target.value);
+          setValue(e.target.value);
         },
       },
     }),
+    commonProps: sharedProps,
     styles: {
       ...(sharedProps.hover && {
         "--mbx-sel-bg-h": "var(--mbx-c-sel-bg-h)",

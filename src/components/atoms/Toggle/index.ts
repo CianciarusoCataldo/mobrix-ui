@@ -64,24 +64,21 @@ const Toggle: ToggleComponent = ({
           "--mbx-tgl-tr": " 0%",
         }),
       },
-      commonProps: {
-        ...sProps,
-        props: {
-          ...sProps.props,
-          ...(!sProps.disabled && {
-            onClick: () => {
+      addProps: {
+        ...(!sProps.disabled && {
+          onClick: () => {
+            onChange(!status);
+            setStatus(!status);
+          },
+          onKeyDown: (e) => {
+            if (e.code === "Enter") {
               onChange(!status);
               setStatus(!status);
-            },
-            onKeyDown: (e) => {
-              if (e.code === "Enter") {
-                onChange(!status);
-                setStatus(!status);
-              }
-            },
-          }),
-        },
+            }
+          },
+        }),
       },
+      commonProps: sProps,
     }),
     Component: ({ value, setValue }) => {
       const iconOn = onIcon || icon;

@@ -156,7 +156,7 @@
   );
 }
 
-[data-mbx-id][data-mbx-atts*="dk"] {
+[data-mbx-id][data-mbx-dk] {
   /** Button **/
   --mbx-c-btn-bg: var(
     --mbx-button-background-dark,

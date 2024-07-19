@@ -1,3 +1,9 @@
+[data-mbx-id="icb"]:focus-visible > [data-mbx-img],
+[data-mbx-id="icb"]:focus-visible > [data-mbx-img] path {
+  --mbx-ic-f: var(--mbx-c-fc);
+  fill: var(--mbx-ic-f);
+}
+
 [data-mbx-img="arr"] {
   --mbx-arr-c: var(--mbx-ic-arr, var(--mbx-c-txt));
   fill: var(--mbx-arr-c);

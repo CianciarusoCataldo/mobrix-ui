@@ -26,7 +26,7 @@
   --mbx-c-sh: var(--mbx-shadow-light, var(--mbx-shadow, #464545));
 }
 
-[data-mbx-id][data-mbx-atts*="dk"] {
+[data-mbx-id][data-mbx-dk] {
   --mbx-c-bgc: var(
     --mbx-background-color-dark,
     var(--mbx-background-color, #1d232e)

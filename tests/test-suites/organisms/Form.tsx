@@ -43,7 +43,7 @@ const formTest = () => {
         .simulate("change", "new test text");
       wrapper.find('div [data-mbx-id="check"]').simulate("click");
 
-      wrapper.find('[data-mbx-cls="s-bt"]').simulate("click");
+      wrapper.find('[data-mbx-id="btn"]').simulate("click");
       expect(submitStub).toBeCalledWith({
         testField1: true,
         testField2: undefined,

@@ -8,10 +8,10 @@ import {
   BuilderProps,
   BuilderPropsReactive,
   CommonProps,
+  Features,
 } from "../../types/global";
 
-import { SHARED_PROPS, parseFts, parseAtts } from "./constants";
-import { Features } from "../../types/global/global";
+import { D_PROPS, parseFts } from "./constants";
 
 /* istanbul ignore next */
 const useOutAlert = (ref: any, callback: () => void) => {
@@ -30,7 +30,7 @@ const useOutAlert = (ref: any, callback: () => void) => {
 
 export const parseProps = (props: CommonProps): CommonProps => {
   let res = {
-    ...SHARED_PROPS,
+    ...D_PROPS,
     ...props,
     ...(props.unstyled && {
       shadow: false,
@@ -49,7 +49,7 @@ export const parseProps = (props: CommonProps): CommonProps => {
     res["datas"] = {};
   }
 
-  const riserved = ["id", "atts", "fts"].map((ris) => `data-mbx-${ris}`);
+  const riserved = ["id", "dk", "fts"].map((ris) => `data-mbx-${ris}`);
 
   Object.keys(props)
     .filter((prop) => prop.startsWith("data-") && !riserved.includes(prop))
@@ -64,36 +64,24 @@ const getMbxFts: (
   features: Features,
   props: CommonProps
 ) => {
-  fts: string;
   styles: Record<string, any>;
+  fts?: Partial<Record<keyof Features, boolean>>;
 } = (features, { features: ftrs = {}, ...props }) => {
   const sFts = { ...features, ...ftrs };
-  let res = "";
+  let fts = {};
   let styles = {};
   const fProps = Object.keys(sFts).filter((feature) => sFts[feature]);
   const mbxfts = parseFts(props);
   [...fProps, ...Object.keys(props)]
     .filter((feature, index) => mbxfts[feature])
     .forEach((feature, index) => {
-      res += `${mbxfts[feature].fkey};`;
+      fts[feature] = true;
       if (mbxfts[feature].var) {
         styles[`--mbx-${mbxfts[feature].var}`] = mbxfts[feature].val;
       }
     });
 
-  return { fts: res, styles };
-};
-
-const getMbxAtts = (props: CommonProps) => {
-  let mbxAtts = "";
-  const ATTS = parseAtts(props);
-  Object.keys(ATTS)
-    .filter((attr: keyof CommonProps, index) => ATTS[attr])
-    .forEach((attr, index) => {
-      mbxAtts += `${ATTS[attr]};`;
-    });
-
-  return mbxAtts;
+  return { styles, fts };
 };
 
 /**
@@ -118,28 +106,19 @@ const getMbxAtts = (props: CommonProps) => {
 const getMbxUiStandard = ({
   name,
   Component,
-  scl = "",
   /* istanbul ignore next */
   commonProps: cprops = {},
   wrapper: Wrapper = "div",
   features = {},
   cssBg = [],
   styles = {},
+  addProps = {},
 }: BuilderProps) => {
   const parsedFts = getMbxFts(features, cprops);
-  let mbxFts = `${parsedFts.fts}`;
-  let mbxAtts = getMbxAtts(cprops);
-
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,
-    ...(mbxAtts.length > 0 && {
-      "data-mbx-atts": mbxAtts,
-    }),
-    ...(mbxFts.length > 2 && {
-      "data-mbx-fts": mbxFts,
-    }),
-    "data-mbx-scl": `${scl};${cprops.scl || ""}`,
     ...(cprops.dark && { "data-mbx-dk": "" }),
+    ...(parsedFts.fts.colFc && { "data-mbx-cfc": "" }),
     id: cprops.id,
     className: cprops.className,
     onFocus: cprops.onFocus,
@@ -153,6 +132,7 @@ const getMbxUiStandard = ({
         }),
       }),
     ...cprops.props,
+    ...addProps,
     ...cprops["datas"],
   };
   let cstyles = styles;
@@ -244,9 +224,9 @@ const getMbxUiReactive = <T=any>({
   props,
   Component,
   features,
-  scl,
   cssBg,
-  styles
+  styles,
+  addProps
 }: BuilderProps<
   (props: {
     value: T;
@@ -281,9 +261,9 @@ const getMbxUiReactive = <T=any>({
     Component: Component && Component({ value, setValue }),
     wrapper,
     features,
-    scl,
     cssBg,
     styles,
+    addProps,
     ...processed,
   });
 };

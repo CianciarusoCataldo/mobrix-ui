@@ -1,4 +1,5 @@
 import {
+  BooleanProp,
   HiddenProp,
   NumberProp,
   StringProp,
@@ -15,6 +16,7 @@ const RadioButtonsPage = () => (
       props={{
         value: NumberProp(-1),
         elementClassName: StringProp(""),
+        horizontal: BooleanProp(false),
         buttons: HiddenProp([
           { text: "textPosition = left", textPosition: "left" },
           { text: "textPosition = top", textPosition: "top" },
@@ -23,7 +25,7 @@ const RadioButtonsPage = () => (
         ]),
         ...demoProps,
       }}
-      rows={[["value", "elementClassName"], ...demoRows]}
+      rows={[["value", "elementClassName", "horizontal"], ...demoRows]}
       children={RadioButtonGroup}
     />
   </ComponentPage>

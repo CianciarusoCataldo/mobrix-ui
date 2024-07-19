@@ -60,16 +60,15 @@ const IconButton: IconButtonComponent = ({
       },
     }),
     Component: children,
+    addProps: {
+      ...(!sharedProps.disabled && {
+        onClick,
+        onMouseEnter,
+        onMouseLeave,
+      }),
+    },
     commonProps: {
       ...sharedProps,
-      props: {
-        ...sharedProps.props,
-        ...(!sharedProps.disabled && {
-          onClick,
-          onMouseEnter,
-          onMouseLeave,
-        }),
-      },
       shadow: false,
     },
   }));

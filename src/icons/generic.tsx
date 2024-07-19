@@ -35,6 +35,9 @@ export const Xicon: MbxIcon = ({
     style={
       {
         ...style,
+        ...(disabled && {
+          "--mbx-ic-f": "var(--mbx-ic-x)",
+        }),
         ...((!hover || disabled) && {
           "--mbx-ic-x-h": "var(--mbx-ic-x)",
         }),
@@ -48,7 +51,6 @@ export const Xicon: MbxIcon = ({
   >
     <path
       fill={fill}
-      data-mbx-fts="fillFc"
       d="m119.7496 67.5187-52.186 52.186 69.5301 69.5012c5.9668 5.9667 5.9668 15.5958 0 21.5625l-69.53 69.53 52.186 52.186 69.53-69.53c5.9667-5.9668 15.5958-5.9668 21.5625 0l69.53 69.53 52.186-52.186-69.53-69.53c-5.9668-5.9667-5.9668-15.5958 0-21.5625l69.53-69.5013-52.186-52.186-69.53 69.5013c-5.9667 5.9667-15.5958 5.9667-21.5625 0l-69.53-69.5012z"
     />
   </svg>
@@ -71,10 +73,12 @@ export const ArrowIcon: MbxIcon = ({
     viewBox="0 0 11 18"
     fill={fill}
     data-mbx-img="arr"
-    data-mbx-fts="fillFc"
     style={
       {
         ...style,
+        ...(disabled && {
+          "--mbx-ic-f": "var(--mbx-ic-arr)",
+        }),
         ...((!hover || disabled) && {
           "--mbx-ic-arr-h": "var(--mbx-ic-arr)",
         }),
@@ -107,12 +111,14 @@ export const CalendarIcon: MbxIcon = ({
     data-mbx-img="cal"
     viewBox="0 -256 1850 1850"
     xmlns="http://www.w3.org/2000/svg"
-    data-mbx-fts="fillFc"
     style={
       {
         ...style,
         ...((!hover || disabled) && {
           "--mbx-ic-cal-h": "var(--mbx-ic-cal)",
+        }),
+        ...(disabled && {
+          "--mbx-ic-f": "var(--mbx-ic-cal)",
         }),
         ...(hide && {
           "--mbx-ic-cal": "none",

@@ -47,17 +47,14 @@ const Image: ImageComponent = ({
   shadow = false,
   ...props
 }) =>
-  buildMbxStandard({ ...props, hover, shadow }, (sharedProps) => ({
+  buildMbxStandard({ ...props, hover, shadow }, (commonProps) => ({
     name: "img",
-    commonProps: {
-      ...sharedProps,
-      props: {
-        ...sharedProps.props,
-        draggable: !sharedProps.disabled,
-        src,
-        width: `${width}`,
-        height: `${height}`,
-      },
+    commonProps,
+    addProps: {
+      draggable: !commonProps.disabled,
+      src,
+      width: `${width}`,
+      height: `${height}`,
     },
     features: {
       opHov: hover,

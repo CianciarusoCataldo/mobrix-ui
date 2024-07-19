@@ -5,7 +5,9 @@ import { Drawer } from "../../../src";
 const drawerTest = () => {
   describe("Drawer", () => {
     test("Rendering test", () => {
-      let wrapper = mount(<Drawer position="left" closeOnClickOutside />);
+      let wrapper = mount(
+        <Drawer animated hide position="left" closeOnClickOutside />
+      );
       wrapper.find('[data-mbx-id="icb"]').simulate("click");
       expect(wrapper);
     });

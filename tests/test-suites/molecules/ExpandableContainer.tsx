@@ -8,9 +8,7 @@ const expandableContainerTest = () => {
       let wrapper = mount(
         <ExpandableContainer>Test Container</ExpandableContainer>
       );
-      wrapper
-        .find('[data-mbx-cls="econ-b"]')
-        .simulate("click");
+      wrapper.find('[data-mbx-id="icb"]').simulate("click");
       expect(wrapper);
     });
     test("Clicking on the arrow button trigger the onChange callback", () => {
@@ -23,7 +21,7 @@ const expandableContainerTest = () => {
           Test Container
         </ExpandableContainer>
       );
-      wrapper.find('[data-mbx-cls="econ-b"]').simulate("click");
+      wrapper.find('[data-mbx-id="icb"]').simulate("click");
       expect(onChangeStub).toBeCalled;
     });
   });

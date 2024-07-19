@@ -77,24 +77,21 @@ const Slider: SliderComponent = ({
               setValue(e.target.value);
             }
           : () => {};
-      if (sharedProps.disabled) {
-        console.log(sharedProps);
-      }
+
       return {
+        addProps: {
+          type: "range",
+          min,
+          max,
+          readOnly,
+          disabled: sharedProps.disabled,
+          value: String(value),
+          onChange: callback,
+          onInput: callback,
+        },
         commonProps: {
           ...sharedProps,
           hover: sharedProps.hover && !readOnly,
-          props: {
-            ...sharedProps.props,
-            type: "range",
-            min,
-            max,
-            readOnly,
-            disabled: sharedProps.disabled,
-            value: String(value),
-            onChange: callback,
-            onInput: callback,
-          },
         },
       };
     },

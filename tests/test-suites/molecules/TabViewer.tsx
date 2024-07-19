@@ -32,7 +32,10 @@ const drawerTest = () => {
     test("Clicking on a tab trigger the onChange callback", () => {
       const onChangeStub = jest.fn();
       let wrapper = mount(<TabViewer tabs={testTabs} />);
-      wrapper.find('[data-mbx-cls="tab"]').at(1).simulate("click");
+      wrapper
+        .find('[data-mbx-cls="tabls"] [data-mbx-id="btn"]')
+        .at(1)
+        .simulate("click");
       expect(wrapper.find('[data-id="test-tab-2"]').length).toBe(1);
 
       wrapper = mount(
@@ -46,7 +49,10 @@ const drawerTest = () => {
           tabs={testTabs}
         />
       );
-      wrapper.find('[data-mbx-cls="tab"]').at(1).simulate("click");
+      wrapper
+        .find('[data-mbx-cls="tabls"] [data-mbx-id="btn"]')
+        .at(1)
+        .simulate("click");
       expect(onChangeStub).toBeCalledWith(1);
     });
   });

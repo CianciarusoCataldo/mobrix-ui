@@ -59,6 +59,7 @@ const RadioButton: RadioButtonComponent = ({
       opHov: true,
       opAct: true,
     },
+
     cssBg: ["c-rad-bg"],
     styles: {
       ...(sharedProps.hover && {
@@ -74,6 +75,11 @@ const RadioButton: RadioButtonComponent = ({
       };
 
       return {
+        addProps: {
+          ...(!sharedProps.disabled && {
+            onClick: callBack,
+          }),
+        },
         commonProps: {
           ...sharedProps,
           ...(!sharedProps.disabled && {
@@ -84,12 +90,6 @@ const RadioButton: RadioButtonComponent = ({
               onKeyDown(e);
             },
           }),
-          props: {
-            ...sharedProps.props,
-            ...(!sharedProps.disabled && {
-              onClick: callBack,
-            }),
-          },
         },
       };
     },

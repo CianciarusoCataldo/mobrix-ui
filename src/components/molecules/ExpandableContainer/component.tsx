@@ -45,7 +45,7 @@ const expandableContainerComponent: MbxUiReactiveComponent<
       }}
       key="arr_bt"
       dark={dark}
-      features={{ noShFc: true, fillFc: true }}
+      features={{ noShFc: true }}
     >
       <ArrowIcon
         transform={`rotate(${compact ? "270" : "90"})`}

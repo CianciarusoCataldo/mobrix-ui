@@ -88,7 +88,7 @@
   );
 }
 
-[data-mbx-id][data-mbx-atts*="dk"] {
+[data-mbx-id][data-mbx-dk] {
   /** Calendar **/
   --mbx-c-cal-bg: var(--mbx-c-cal-bg-d);
   --mbx-c-cal-txt: var(--mbx-c-cal-txt-d);

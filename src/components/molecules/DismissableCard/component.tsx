@@ -17,7 +17,7 @@ const DismissableCardInternalComponent: MbxUiComponent<
     header: [
       <IconButton
         dark={props.dark}
-        features={{ fillFc: true, noShFc: true }}
+        features={{ noShFc: true }}
         disabled={props.disabled}
         onClick={onClose}
         key="dis-x"

@@ -53,7 +53,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
       dots.push(
         <IconButton
           dark={dark}
-          features={{ noShFc: true, fillFc: true, opFc: true }}
+          features={{ noShFc: true, opFc: true }}
           style={{
             background: `var(--mbx-c-car-dot-${
               index === item || (hoveredDot != null && index === hoveredDot)
@@ -67,7 +67,9 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
           onMouseEnter={() => setHoveredDot(index)}
           onMouseLeave={() => setHoveredDot(null)}
           onClick={() => {
-            setActiveClassname(index > item ? "slide-in-right" : "slide-in-left");
+            setActiveClassname(
+              index > item ? "slide-in-right" : "slide-in-left"
+            );
             updateItem(index);
           }}
         />
@@ -78,7 +80,7 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
   const arrowProps = {
     dark,
     hover,
-    features: { noShFc: true, fillFc: true },
+    features: { noShFc: true },
     className: arrowClassName,
   };
 

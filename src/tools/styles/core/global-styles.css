@@ -46,16 +46,10 @@
   -o-box-shadow: var(--mbx-sh-def, var(--mbx-sh-tf));
 }
 
-[data-mbx-id]:active {
-  opacity: var(--mbx-op-act, var(--mbx-op));
-}
-
-[data-mbx-fts*="colFc"]:focus-visible {
+[data-mbx-id][data-mbx-cfc]:focus-visible {
   color: var(--mbx-c-fc);
 }
 
-[data-mbx-fts*="fillFc"]:focus-visible,
-[data-mbx-fts*="fillFc"]:focus-visible svg,
-[data-mbx-fts*="fillFc"]:focus-visible svg path {
-  fill: var(--mbx-c-fc);
+[data-mbx-id]:active {
+  opacity: var(--mbx-op-act, var(--mbx-op));
 }

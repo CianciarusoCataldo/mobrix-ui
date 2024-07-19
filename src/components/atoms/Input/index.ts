@@ -67,27 +67,26 @@ const Input: InputComponent = ({
         }),
     },
     props: (value, setValue) => ({
+      addProps: {
+        ...(autoresizable && {
+          size: Math.ceil(value.length / 2) + (value.length > 0 ? 0 : 1),
+        }),
+        type: "text",
+        value,
+        placeholder,
+        disabled: sharedProps.disabled,
+        readOnly: readOnly || sharedProps.disabled,
+        onChange: (e) => {
+          if (!readOnly && !sharedProps.disabled) {
+            const newValue = e.target.value ? e.target.value : "";
+            onChange(newValue);
+            setValue(newValue);
+          }
+        },
+      },
       commonProps: {
         ...sharedProps,
         hover: sharedProps.hover && !readOnly,
-        props: {
-          ...sharedProps.props,
-          ...(autoresizable && {
-            size: Math.ceil(value.length / 2) + (value.length > 0 ? 0 : 1),
-          }),
-          type: "text",
-          value,
-          placeholder,
-          disabled: sharedProps.disabled,
-          readOnly: readOnly || sharedProps.disabled,
-          onChange: (e) => {
-            if (!readOnly && !sharedProps.disabled) {
-              const newValue = e.target.value ? e.target.value : "";
-              onChange(newValue);
-              setValue(newValue);
-            }
-          },
-        },
       },
     }),
     inputValue,

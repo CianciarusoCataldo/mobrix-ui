@@ -98,7 +98,7 @@ const CalendarComponent: MbxUiReactiveComponent<
       hover={hover}
       dark={commonProps.dark}
       key={"arrow_" + direction}
-      features={{ fillFc: true, noShFc: true }}
+      features={{ noShFc: true }}
       {...customProps}
       style={{
         ...(direction === "right" && {
