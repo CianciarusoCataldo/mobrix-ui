@@ -5,7 +5,7 @@ import { RadioButton } from "../../../src";
 const radioButtonTest = () => {
   describe("RadioButton", () => {
     test("Rendering test", () => {
-      let wrapper = mount(<RadioButton />);
+      let wrapper = mount(<RadioButton active />);
       expect(wrapper);
     });
 

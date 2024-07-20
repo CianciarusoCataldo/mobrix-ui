@@ -15,7 +15,7 @@ import { IconButton, Label } from "../../atoms";
 import { Table } from "../../molecules";
 import { ArrowIcon } from "../../../icons";
 
-const CalendarComponent: MbxUiReactiveComponent<
+const Component: MbxUiReactiveComponent<
   DeepPartial<CalendarDate>,
   CalendarProps & { today: CalendarDate & { dayOfTheMonth: number } }
 > = ({
@@ -206,4 +206,4 @@ const CalendarComponent: MbxUiReactiveComponent<
   return components;
 };
 
-export default CalendarComponent;
+export default Component;

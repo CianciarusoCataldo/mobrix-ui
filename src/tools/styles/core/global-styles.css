@@ -53,5 +53,5 @@
 }
 
 [data-mbx-id]:active {
-  opacity: var(--mbx-op-act, var(--mbx-op));
+  opacity: var(--mbx-op-act, var(--mbx-op-hov, var(--mbx-op)));
 }

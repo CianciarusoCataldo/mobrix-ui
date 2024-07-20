@@ -1,7 +1,50 @@
 [data-mbx-id="count"] {
-  --mbx-cnt-bg: var(--mbx-c-cnt-bg);
-  --mbx-cnt-txt: var(--mbx-c-cnt-txt);
-  background-color: var(--mbx-cnt-bg);
+  --mbx-cnt-bg: var(
+    --mbx-counterbox-background-light,
+    var(--mbx-counterbox-background, var(--mbx-c-bgc))
+  );
+  --mbx-cnt-txt: var(
+    --mbx-counterbox-text-color-light,
+    var(--mbx-counterbox-text-color, var(--mbx-c-txt))
+  );
+  --mbx-cnt-bghov: var(
+    --mbx-counterbox-background-hover-light,
+    var(--mbx-counterbox-background-hover, var(--mbx-cnt-bg))
+  );
+  --mbx-cnt-txthov: var(
+    --mbx-counterbox-text-color-hover-light,
+    var(--mbx-counterbox-text-color-hover, var(--mbx-cnt-txt))
+  );
+  background: var(--mbx-cnt-bg);
   color: var(--mbx-cnt-txt);
   border-color: transparent;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+[data-mbx-id="count"][data-mbx-dk] {
+  --mbx-cnt-bg: var(
+    --mbx-counterbox-background-dark,
+    var(--mbx-counterbox-background, var(--mbx-c-bgc))
+  );
+  --mbx-cnt-txt: var(
+    --mbx-counterbox-text-color-dark,
+    var(--mbx-counterbox-text-color, var(--mbx-c-txt))
+  );
+  --mbx-cnt-bghov: var(
+    --mbx-counterbox-background-hover-dark,
+    var(--mbx-counterbox-background-hover, var(--mbx-cnt-bg))
+  );
+  --mbx-cnt-txthov: var(
+    --mbx-counterbox-text-color-hover-dark,
+    var(--mbx-counterbox-text-color-hover, var(--mbx-cnt-txt))
+  );
+}
+
+@media (hover) {
+  [data-mbx-id="count"]:hover,
+  [data-mbx-id="count"]:active {
+    background: var(--mbx-cnt-bg-h, var(--mbx-cnt-bg));
+    color: var(--mbx-cnt-txt-h, var(--mbx-cnt-txt));
+  }
 }

@@ -1,5 +1,0 @@
-@media (hover) {
-  [data-mbx-id="list"] > [data-mbx-id="cont"]:hover {
-    color: var(--mbx-list-h, var(--mbx-c-lst-txt));
-  }
-}

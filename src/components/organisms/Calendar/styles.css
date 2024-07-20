@@ -1,4 +1,42 @@
 [data-mbx-id="cal"] {
+  --mbx-c-cal-bg-l: var(
+    --mbx-calendar-background-light,
+    var(--mbx-calendar-background, var(--mbx-c-bg-l))
+  );
+  --mbx-c-cal-txt-l: var(
+    --mbx-calendar-text-color-light,
+    var(--mbx-calendar-text-color, var(--mbx-c-txt-l))
+  );
+  --mbx-c-cal-bg-d: var(
+    --mbx-calendar-background-dark,
+    var(--mbx-calendar-background, var(--mbx-c-bg-d))
+  );
+  --mbx-c-cal-txt-d: var(
+    --mbx-calendar-text-color-dark,
+    var(--mbx-calendar-text-color, var(--mbx-c-txt-d))
+  );
+  --mbx-c-cal-bg: var(--mbx-c-cal-bg-l);
+  --mbx-c-cal-txt: var(--mbx-c-cal-txt-l);
+  --mbx-c-cal-bg-s: var(
+    --mbx-calendar-selected-background-light,
+    var(--mbx-calendar-selected-background, var(--mbx-c-cal-bg-d))
+  );
+  --mbx-c-cal-txt-s: var(
+    --mbx-calendar-selected-text-color-light,
+    var(--mbx-calendar-selected-text-color, var(--mbx-c-cal-txt-d))
+  );
+  --mbx-c-cal-bg-h: var(
+    --mbx-calendar-background-hover-light,
+    var(--mbx-calendar-background-hover, var(--mbx-c-cal-bg-s))
+  );
+  --mbx-c-cal-txt-h: var(
+    --mbx-calendar-text-color-hover-light,
+    var(--mbx-calendar-text-color-hover, var(--mbx-c-cal-txt-s))
+  );
+  --mbx-c-cal-t: var(
+    --mbx-calendar-today-color-light,
+    var(--mbx-calendar-today-color, red)
+  );
   --mbx-table-background: var(--mbx-c-cal-bg);
   --mbx-table-text-color: var(--mbx-c-cal-txt);
   display: flex;
@@ -6,6 +44,31 @@
   width: fit-content;
   align-items: center;
   text-align: center;
+}
+
+[data-mbx-id="cal"][data-mbx-dk] {
+  --mbx-c-cal-bg: var(--mbx-c-cal-bg-d);
+  --mbx-c-cal-txt: var(--mbx-c-cal-txt-d);
+  --mbx-c-cal-bg-s: var(
+    --mbx-calendar-selected-background-dark,
+    var(--mbx-calendar-selected-background, var(--mbx-c-cal-bg-l))
+  );
+  --mbx-c-cal-txt-s: var(
+    --mbx-calendar-selected-text-color-dark,
+    var(--mbx-calendar-selected-text-color, var(--mbx-c-cal-txt-l))
+  );
+  --mbx-c-cal-bg-h: var(
+    --mbx-calendar-background-hover-dark,
+    var(--mbx-calendar-background-hover, var(--mbx-c-cal-bg-s))
+  );
+  --mbx-c-cal-txt-h: var(
+    --mbx-calendar-text-color-hover-dark,
+    var(--mbx-calendar-text-color-hover, var(--mbx-c-cal-txt-s))
+  );
+  --mbx-c-cal-t: var(
+    --mbx-calendar-today-color-dark,
+    var(--mbx-calendar-today-color, red)
+  );
 }
 
 [data-mbx-id="cal"] > div {
@@ -68,6 +131,25 @@
 
 [data-mbx-id="cal"] [data-mbx-cls="dsb"] {
   opacity: 0.4;
+}
+
+[data-mbx-id="cal"] > div > [data-mbx-id="icb"] > [data-mbx-img] {
+  --mbx-icon-light: var(
+    --mbx-calendar-arrow-light,
+    var(--mbx-calendar-arrow, var(--mbx-c-cal-txt))
+  );
+  --mbx-icon-hover-light: var(
+    --mbx-calendar-arrow-hover-light,
+    var(--mbx-calendar-arrow-hover)
+  );
+  --mbx-icon-dark: var(
+    --mbx-calendar-arrow-dark,
+    var(--mbx-calendar-arrow, var(--mbx-c-cal-txt))
+  );
+  --mbx-icon-hover-dark: var(
+    --mbx-calendar-arrow-hover-dark,
+    var(--mbx-calendar-arrow-hover)
+  );
 }
 
 [data-mbx-id="cal"] td:focus-visible {

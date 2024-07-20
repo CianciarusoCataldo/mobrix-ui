@@ -23,6 +23,7 @@ import { buildMbxReactive } from "../../../tools";
  * @param {'fade-in' | 'slide-in-left' | 'slide-in-right' | 'slide-in-top' | 'shake'} animation - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If `animated`=`true`, this parameter specifies which animation is used when component is rendered
  * @param {boolean} background - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component background
  * @param {boolean} hover - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component hover standard styles
+ * @param {boolean} active - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component click standard styles
  * @param {boolean} disabled - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If true, disable the component. The effect may vary depending on the component type
  * @param {(keyEvent : any) => void} onKeyDown - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when a key is pressed while using the component (for example, when writing text inside an `Input` component).
  * @param {() => void} onFocus - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when the component get the focus (for example, through tab key)
@@ -57,13 +58,13 @@ const Input: InputComponent = ({
     features: {
       opHov: true,
     },
-    cssBg: ["c-in-bgc", "c-in-bgc-h"],
+    cssBg: ["inp-bg", "inp-bg-h"],
     styles: {
       ...(autoresizable && { width: "fit-content" }),
       ...(sharedProps.hover &&
         !readOnly && {
-          "--mbx-inp-bg-h": "var(--mbx-c-in-bgc-h)",
-          "--mbx-inp-txt-h": "var(--mbx-c-in-txt-h)",
+          "--mbx-inp-bg-h": "var(--mbx-inp-bghov)",
+          "--mbx-inp-txt-h": "var(--mbx-inp-txthov)",
         }),
     },
     props: (value, setValue) => ({

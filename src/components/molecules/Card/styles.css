@@ -1,6 +1,33 @@
 [data-mbx-id*="card"] {
   display: flex;
   flex-direction: column;
+  padding: 0 0.1rem;
+  background-color: transparent;
+  --mbx-card-bg: var(
+    --mbx-card-background-light,
+    var(
+      --mbx-card-background,
+      linear-gradient(to right, #fff, #ededee, #e6e7e7)
+    )
+  );
+  --mbx-card-txt: var(
+    --mbx-card-text-color-light,
+    var(--mbx-card-text-color, var(--mbx-c-txt))
+  );
+  background: var(--mbx-card-bg);
+  color: var(--mbx-card-txt);
+  --mbx-container-text-color: var(--mbx-card-txt);
+}
+
+[data-mbx-id*="card"][data-mbx-dk] {
+  --mbx-card-bg: var(
+    --mbx-card-background-dark,
+    var(--mbx-card-background, linear-gradient(to right, #2d3748, #1d232e))
+  );
+  --mbx-card-txt: var(
+    --mbx-card-text-color-dark,
+    var(--mbx-card-text-color, var(--mbx-c-txt))
+  );
 }
 
 [data-mbx-id*="card"] > [data-mbx-id*="cont"] {

@@ -1,9 +1,28 @@
 [data-mbx-id="list"] {
   background: transparent;
   padding: 0.6rem;
-  color: var(--mbx-c-lst-txt);
   display: flex;
   flex-direction: column;
+  --mbx-c-lst-txt: var(
+    --mbx-list-text-color-light,
+    var(--mbx-list-text-color, var(--mbx-c-txt))
+  );
+  --mbx-c-lst-txt-h: var(
+    --mbx-list-text-color-hover-light,
+    var(--mbx-list-text-color-hover, var(--mbx-c-lst-txt))
+  );
+  color: var(--mbx-c-lst-txt);
+}
+
+[data-mbx-id="list"][data-mbx-dk] {
+  --mbx-c-lst-txt: var(
+    --mbx-list-text-color-dark,
+    var(--mbx-list-text-color, var(--mbx-c-txt))
+  );
+  --mbx-c-lst-txt-h: var(
+    --mbx-list-text-color-hover-dark,
+    var(--mbx-list-text-color-hover, var(--mbx-c-lst-txt))
+  );
 }
 
 [data-mbx-id="list"] > [data-mbx-id="cont"] {
@@ -18,4 +37,10 @@
   width: 6px;
   height: 6px;
   fill: var(--mbx-c-lst-txt);
+}
+
+@media (hover) {
+  [data-mbx-id="list"] > [data-mbx-id="cont"]:hover {
+    color: var(--mbx-list-h, var(--mbx-c-lst-txt));
+  }
 }

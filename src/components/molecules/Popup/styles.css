@@ -10,4 +10,20 @@
   border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
+  --mbx-container-background-light: var(
+    --mbx-popup-background-light,
+    var(--mbx-popup-background)
+  );
+  --mbx-container-text-color-light: var(
+    --mbx-popup-text-color-light,
+    var(--mbx-popup-text-color)
+  );
+  --mbx-container-background-dark: var(
+    --mbx-popup-background-dark,
+    var(--mbx-popup-background)
+  );
+  --mbx-container-text-color-dark: var(
+    --mbx-popup-text-color-dark,
+    var(--mbx-popup-text-color)
+  );
 }

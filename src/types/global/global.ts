@@ -21,6 +21,8 @@ export type MbxAttributes = {
   /** If `false`, disable component hover standard styles (default `true`) */
   hover?: boolean;
 
+  active?: boolean;
+
   /** If true, disable the component. The effect may vary depending on the component type */
   disabled?: boolean;
 
@@ -233,9 +235,6 @@ export type Wrappers =
 export interface Features {
   /** If `true`, reduce component opacity when component is hovered (and `hover` = `true`) */
   opHov?: boolean;
-
-  /** If `true`, reduce component opacity when component is clicked */
-  opAct?: boolean;
 
   /** If `true`, when focused, the component text-color will change instead of the box shadow (that will be transparent) */
   colFc?: boolean;

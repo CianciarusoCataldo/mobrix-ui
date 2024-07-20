@@ -14,7 +14,7 @@ const drawerTest = () => {
 
   describe("TabViewer", () => {
     test("Rendering test", () => {
-      let wrapper = mount(<TabViewer />);
+      let wrapper = mount(<TabViewer active />);
       expect(wrapper);
       wrapper = mount(
         <TabViewer

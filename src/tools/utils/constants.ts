@@ -12,6 +12,7 @@ export const D_PROPS: CommonProps = {
   a11y: true,
   unstyled: false,
   features: {},
+  active: false,
 };
 
 export const parseFts: (
@@ -20,7 +21,6 @@ export const parseFts: (
   props
 ) => ({
   opHov: !props.disabled && props.hover && { var: "op-hov", val: 0.7 },
-  opAct: !props.disabled && { var: "op-act", val: 0.3 },
   noShFc: { var: "sh-def", val: "none" },
   opFc: !props.disabled && props.a11y && { var: "op-f", val: 0.4 },
   colFc: !props.disabled && props.a11y && {},

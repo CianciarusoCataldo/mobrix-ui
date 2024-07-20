@@ -11,6 +11,7 @@ const RadioButtonsPage = () => (
         value: BooleanProp(false),
         deselectable: BooleanProp(true),
         ...demoProps,
+        active: BooleanProp(true),
       }}
       rows={[["value", "deselectable"], ...demoRows]}
       children={RadioButton}

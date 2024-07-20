@@ -48,12 +48,12 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
       ? value.month
       : todayDate.month;
 
-  const monthsDuration = getMonthsDuration(year);
+  const mDuration = getMonthsDuration(year);
 
   const day =
     value.dayOfTheMonth &&
     value.dayOfTheMonth > 0 &&
-    value.dayOfTheMonth <= monthsDuration[month]
+    value.dayOfTheMonth <= mDuration[month]
       ? value.dayOfTheMonth
       : todayDate.dayOfTheMonth;
 

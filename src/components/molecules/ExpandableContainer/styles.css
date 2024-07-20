@@ -7,4 +7,39 @@
 [data-mbx-id="econt"] > [data-mbx-id="icb"] > [data-mbx-img="arr"] {
   margin-bottom: 0.3rem;
   padding-top: 0.2rem;
+  --mbx-icon-light: var(
+    --mbx-expandablecontainer-arrow-color-light,
+    var(--mbx-expandablecontainer-arrow-color, var(--mbx-c-exp-txt))
+  );
+  --mbx-icon-hover-light: var(
+    --mbx-expandablecontainer-arrow-color-hover-light,
+    var(--mbx-expandablecontainer-arrow-color-hover)
+  );
+  --mbx-icon-dark: var(
+    --mbx-expandablecontainer-arrow-color-dark,
+    var(--mbx-expandablecontainer-arrow-color, var(--mbx-c-exp-txt))
+  );
+  --mbx-icon-hover-dark: var(
+    --mbx-expandablecontainer-arrow-color-hover-dark,
+    var(--mbx-expandablecontainer-arrow-color-hover)
+  );
+}
+
+[data-mbx-id="econt"] {
+  --mbx-container-background-light: var(
+    --mbx-expandablecontainer-background-light,
+    var(--mbx-expandablecontainer-background)
+  );
+  --mbx-container-text-color-light: var(
+    --mbx-expandablecontainer-text-color-light,
+    var(--mbx-expandablecontainer-text-color)
+  );
+  --mbx-container-background-dark: var(
+    --mbx-expandablecontainer-background-dark,
+    var(--mbx-expandablecontainer-background)
+  );
+  --mbx-container-text-color-dark: var(
+    --mbx-expandablecontainer-text-color-dark,
+    var(--mbx-expandablecontainer-text-color)
+  );
 }

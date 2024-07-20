@@ -1,12 +1,84 @@
 [data-mbx-id="crsel"] {
-  background: var(--mbx-c-car-bg);
   padding: 0.4rem;
-
   display: flex;
   flex-direction: column;
   width: fit-content;
   align-items: center;
   text-align: center;
+  --mbx-c-car-bg: var(
+    --mbx-carousel-background-light,
+    var(--mbx-carousel-background, var(--mbx-c-bg))
+  );
+  --mbx-c-car-dot-f: var(
+    --mbx-carousel-dot-full-background-light,
+    var(
+      --mbx-carousel-dot-background,
+      linear-gradient(
+        to top,
+        #ff8007,
+        #fd8616,
+        #fd9b3f,
+        #fd9c40,
+        #fcbb7f,
+        #fad6b4
+      )
+    )
+  );
+  --mbx-c-car-dot-e: var(
+    --mbx-carousel-dot-empty-background-light,
+    var(
+      --mbx-carousel-dot-background,
+      radial-gradient(
+        #000000,
+        #181818,
+        #282828,
+        #3a3a3a,
+        #4c4c4c,
+        #6b6a6a,
+        #858383
+      )
+    )
+  );
+  background: var(--mbx-c-car-bg);
+}
+
+[data-mbx-id="crsel"][data-mbx-dk] {
+  /** Carousel **/
+  --mbx-c-car-bg: var(
+    --mbx-carousel-background-dark,
+    var(--mbx-carousel-background, var(--mbx-c-bg))
+  );
+
+  --mbx-c-car-dot-f: var(
+    --mbx-carousel-dot-full-background-dark,
+    var(
+      --mbx-carousel-dot-background,
+      linear-gradient(
+        to top,
+        #ff8007,
+        #fd8616,
+        #fd9b3f,
+        #fd9c40,
+        #fcbb7f,
+        #fad6b4
+      )
+    )
+  );
+  --mbx-c-car-dot-e: var(
+    --mbx-carousel-dot-empty-background-dark,
+    var(
+      --mbx-carousel-dot-background,
+      radial-gradient(
+        #000000,
+        #181818,
+        #282828,
+        #3a3a3a,
+        #4c4c4c,
+        #6b6a6a,
+        #858383
+      )
+    )
+  );
 }
 
 [data-mbx-id="crsel"] > [data-mbx-cls="car-els"] > [data-mbx-id="cont"] {
@@ -21,6 +93,22 @@
 [data-mbx-id="crsel"] > [data-mbx-cls="car-els"] > [data-mbx-id="icb"] {
   margin-right: 0.6rem;
   margin-left: 0.6rem;
+  --mbx-icon-light: var(
+    --mbx-carousel-arrow-color-light,
+    var(--mbx-carousel-arrow-color, var(--mbx-c-txt))
+  );
+  --mbx-icon-dark: var(
+    --mbx-carousel-arrow-color-dark,
+    var(--mbx-carousel-arrow-color, var(--mbx-c-txt))
+  );
+  --mbx-icon-hover-light: var(
+    --mbx-carousel-arrow-color-hover-light,
+    var(--mbx-carousel-arrow-color-hover, #287dfd)
+  );
+  --mbx-icon-hover-dark: var(
+    --mbx-carousel-arrow-color-hover-dark,
+    var(--mbx-carousel-arrow-color-hover, #ff8007)
+  );
 }
 
 [data-mbx-id="crsel"] > div {

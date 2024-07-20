@@ -66,6 +66,12 @@
     "type": "boolean"
   },
 
+  "active": {
+    "default": "false",
+    "description": "Enable/disable component click standard styles",
+    "type": "boolean"
+  },
+
   "disabled": {
     "description": "If true, disable the component. The effect may vary depending on the component type",
     "default": "false",

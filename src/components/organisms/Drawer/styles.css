@@ -2,15 +2,34 @@
 @import url("close-button.css");
 
 [data-mbx-id="drw"] {
-  position: fixed;
-  z-index: 10;
-  padding: 0;
+  --mbx-c-draw-bg: var(
+    --mbx-drawer-background-light,
+    var(--mbx-drawer-background, var(--mbx-c-bg))
+  );
+  --mbx-c-draw-txt: var(
+    --mbx-drawer-text-color-light,
+    var(--mbx-drawer-text-color, var(--mbx-c-txt))
+  );
   background: var(--mbx-c-draw-bg);
   color: var(--mbx-c-draw-txt);
   animation: var(--mbx-drw-an);
   -moz-animation: var(--mbx-drw-an);
   -ms-animation: var(--mbx-drw-an);
   -o-animation: var(--mbx-drw-an);
+  position: fixed;
+  z-index: 10;
+  padding: 0;
+}
+
+[data-mbx-id="drw"][data-mbx-dk] {
+  --mbx-c-draw-bg: var(
+    --mbx-drawer-background-dark,
+    var(--mbx-drawer-background, var(--mbx-c-bg))
+  );
+  --mbx-c-draw-txt: var(
+    --mbx-drawer-text-color-dark,
+    var(--mbx-drawer-text-color, var(--mbx-c-txt))
+  );
 }
 
 [data-mbx-id="drw"] > div::-webkit-scrollbar {

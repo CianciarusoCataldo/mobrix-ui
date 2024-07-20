@@ -1,11 +1,64 @@
 [data-mbx-id="form"] {
-  padding: 0.75rem;
-  border-radius: 0.7rem;
+  --mbx-c-form-bg: var(
+    --mbx-form-background-light,
+    var(--mbx-form-background, var(--mbx-c-bg))
+  );
+  --mbx-c-form-txt: var(
+    --mbx-form-text-color-light,
+    var(--mbx-form-text-color)
+  );
   background: var(--mbx-c-form-bg);
   color: var(--mbx-c-form-txt);
+  padding: 0.75rem;
+  border-radius: 0.7rem;
   display: flex;
   flex-direction: column;
   border-color: transparent;
+}
+
+[data-mbx-id="form"][data-mbx-dk] {
+  --mbx-c-form-bg: var(
+    --mbx-form-background-dark,
+    var(--mbx-form-background, var(--mbx-c-bg))
+  );
+  --mbx-c-form-txt: var(--mbx-form-text-color-dark, var(--mbx-form-text-color));
+}
+
+[data-mbx-id="form"] > div {
+  --mbx-formfield-background-light: var(
+    --mbx-form-formfield-background-light,
+    var(--mbx-form-formfield-background)
+  );
+  --mbx-formfield-background-dark: var(
+    --mbx-form-formfield-background-dark,
+    var(--mbx-form-formfield-background)
+  );
+  --mbx-formfield-text-color-light: var(
+    --mbx-form-formfield-text-color-light,
+    var(--mbx-form-formfield-text-color)
+  );
+  --mbx-formfield-text-color-dark: var(
+    --mbx-form-formfield-text-color-dark,
+    var(--mbx-form-formfield-text-color)
+  );
+  --mbx-formfield-background-hover-light: var(
+    --mbx-form-formfield-background-hover-light,
+    var(--mbx-form-formfield-background-hover)
+  );
+  --mbx-formfield-background-hover-dark: var(
+    --mbx-form-formfield-background-hover-dark,
+    var(--mbx-form-formfield-background-hover)
+  );
+  --mbx-formfield-text-color-hover-light: var(
+    --mbx-form-formfield-text-color-hover-light,
+    var(--mbx-form-formfield-text-color-hover)
+  );
+  --mbx-formfield-text-color-hover-dark: var(
+    --mbx-form-formfield-text-color-hover-dark,
+    var(--mbx-form-formfield-text-color-hover)
+  );
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
 [data-mbx-id="form"] > [data-mbx-cls="title"] {
@@ -17,9 +70,27 @@
   margin-right: auto;
 }
 
-[data-mbx-id="form"] > div {
-  margin-top: 0.4rem;
-  margin-bottom: 0.4rem;
+[data-mbx-id="form"] [data-mbx-cls="s-bt"] {
+  margin-top: 0.9rem;
+  margin-left: auto;
+  margin-right: auto;
+  --mbx-button-background-light: var(
+    --mbx-form-submit-background-light,
+    var(--mbx-form-submit-background)
+  );
+  --mbx-button-text-color-light: var(
+    --mbx-form-submit-text-color-light,
+    var(--mbx-form-submit-text-color)
+  );
+
+  --mbx-button-background-dark: var(
+    --mbx-form-submit-background-dark,
+    var(--mbx-form-submit-background)
+  );
+  --mbx-button-text-color-dark: var(
+    --mbx-form-submit-text-color-dark,
+    var(--mbx-form-submit-text-color)
+  );
 }
 
 [data-mbx-id="form"] [data-mbx-id="field"][data-mbx-ftype="boolean"],

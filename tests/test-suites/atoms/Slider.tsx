@@ -26,7 +26,7 @@ const sliderTest = () => {
       wrapper.find("input").simulate("change", 32);
       wrapper.find("input").simulate("input", 22);
       expect(onChangeStub).not.toBeCalled;
-      wrapper = mount(<Slider readOnly value={12} onChange={onChangeStub} />);
+      wrapper = mount(<Slider active readOnly value={12} onChange={onChangeStub} />);
       wrapper.find("input").simulate("change", 32);
       wrapper.find("input").simulate("input", 22);
 

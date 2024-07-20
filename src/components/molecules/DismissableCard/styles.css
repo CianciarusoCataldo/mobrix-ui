@@ -1,5 +1,22 @@
 [data-mbx-id="dis-card"] {
   padding-top: 0;
+
+  --mbx-card-background-light: var(
+    --mbx-dismissablecard-background-light,
+    var(--mbx-dismissablecard-background)
+  );
+  --mbx-card-background-text-color-light: var(
+    --mbx-dismissablecard-text-color-light,
+    var(--mbx-dismissablecard-text-color)
+  );
+  --mbx-card-background-dark: var(
+    --mbx-dismissablecard-background-dark,
+    var(--mbx-dismissablecard-background)
+  );
+  --mbx-card-background-text-color-dark: var(
+    --mbx-dismissablecard-text-color-dark,
+    var(--mbx-dismissablecard-text-color)
+  );
 }
 
 [data-mbx-id="dis-card"] > [data-mbx-cls="dchead"] {
@@ -8,4 +25,28 @@
 
 [data-mbx-id="dis-card"] > [data-mbx-cls="dchead"] > div {
   padding: 0.5rem 0.3rem;
+}
+
+[data-mbx-id="dis-card"] > [data-mbx-cls="dchead"] > [data-mbx-id="icb"] {
+  padding: 0;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  width: fit-content;
+  --mbx-icon-light: var(
+    --mbx-dismissablecard-x-color-light,
+    var(--mbx-dismissablecard-x-color, var(--mbx-c-dcard-txt))
+  );
+  --mbx-icon-hover-light: var(
+    --mbx-dismissablecard-x-color-hover-light,
+    var(--mbx-dismissablecard-x-color-hover, red)
+  );
+  --mbx-icon-dark: var(
+    --mbx-dismissablecard-x-color-dark,
+    var(--mbx-dismissablecard-x-color, var(--mbx-c-dcard-txt))
+  );
+  --mbx-icon-hover-dark: var(
+    --mbx-dismissablecard-x-color-hover-dark,
+    var(--mbx-dismissablecard-x-color-hover, red)
+  );
 }

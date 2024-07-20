@@ -6,7 +6,7 @@ import Button from "../../atoms/Button";
 import FormField from "../../molecules/FormField";
 import { Label } from "../../atoms";
 
-const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
+const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
   title,
   fields,
   onSubmit,
@@ -31,17 +31,17 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
   const [values, setValues] =
     React.useState<Record<string, string | boolean | number>>(d_fields);
 
-  const components = [
+  const cmps = [
     <Label disabled={disabled} key="frm_tl" dark={dark} data-mbx-cls="title">
       {title}
     </Label>,
     ...Object.keys(d_fields).map((field, index) => {
-      const fieldSettings = fields![field];
+      const fSetts = fields![field];
 
-      const type = fieldSettings.type || "text";
+      const type = fSetts.type || "text";
 
-      const callBack = (newValue: any) => {
-        setValues({ ...values, [field]: newValue });
+      const callBack = (vl: any) => {
+        setValues({ ...values, [field]: vl });
       };
 
       return (
@@ -50,7 +50,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
             shadow={shadow}
             disabled={disabled}
             value={values[field]}
-            header={fieldSettings.header}
+            header={fSetts.header}
             type={type}
             onChange={callBack}
             hover={hover}
@@ -61,9 +61,9 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
     }),
   ];
 
-  children && components.push(children);
+  children && cmps.push(children);
 
-  components.push(
+  cmps.push(
     <Button
       disabled={disabled}
       animated={false}
@@ -80,7 +80,7 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
     </Button>,
   );
 
-  return components;
+  return cmps;
 };
 
-export default formComponent;
+export default Component;

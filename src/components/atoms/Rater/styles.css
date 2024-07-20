@@ -1,5 +1,9 @@
 [data-mbx-id="rat"] {
-  background: var(--mbx-c-rat-bg);
+  --mbx-rat-bg: var(
+    --mbx-rater-background-light,
+    var(--mbx-rater-background, var(--mbx-c-bg))
+  );
+  background: var(--mbx-rat-bg);
   border-radius: 8px;
   padding: 0.4rem;
   display: flex;
@@ -8,6 +12,12 @@
   width: fit-content;
   align-items: center;
   text-align: center;
+}
+[data-mbx-id="rat"][data-mbx-dk] {
+  --mbx-rat-bg: var(
+    --mbx-rater-background-dark,
+    var(--mbx-rater-background, var(--mbx-c-bg))
+  );
 }
 
 [data-mbx-id="rat"] > [data-mbx-id="icb"] > svg {

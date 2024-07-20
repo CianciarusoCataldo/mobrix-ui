@@ -1,6 +1,25 @@
 [data-mbx-id="tview"] {
   display: flex;
   flex-direction: column;
+  --mbx-tabv-bg: var(
+    --mbx-tabviewer-background-light,
+    var(--mbx-tabviewer-background, linear-gradient(to right, #cccccc, #c7c7c7))
+  );
+  --mbx-tabv-txt: var(
+    --mbx-tabviewer-text-color-light,
+    var(--mbx-tabviewer-text-color, var(--mbx-c-txt))
+  );
+}
+
+[data-mbx-id="tview"][data-mbx-dk] {
+  --mbx-tabv-bg: var(
+    --mbx-tabviewer-background-dark,
+    var(--mbx-tabviewer-background, linear-gradient(to right, #2d3748, #1d232e))
+  );
+  --mbx-tabv-txt: var(
+    --mbx-tabviewer-text-color-dark,
+    var(--mbx-tabviewer-text-color, var(--mbx-c-txt))
+  );
 }
 
 [data-mbx-id="tview"] > div > [data-mbx-id="btn"] {
@@ -10,25 +29,63 @@
 
 [data-mbx-id="tview"] > [data-mbx-id="cont"] {
   padding: 0.7rem 1rem;
-  --mbx-container-background-light: var(
-    --mbx-tabviewer-background-light,
-    var(--mbx-tabviewer-background, linear-gradient(to right, #cccccc, #c7c7c7))
-  );
-  --mbx-container-text-color-light: var(
-    --mbx-tabviewer-text-color-light,
-    var(--mbx-tabviewer-text-color, var(--mbx-c-txt))
-  );
-  --mbx-container-background-dark: var(
-    --mbx-tabviewer-background-dark,
-    var(--mbx-tabviewer-background, linear-gradient(to right, #2d3748, #1d232e))
-  );
-  --mbx-container-text-color-dark: var(
-    --mbx-tabviewer-text-color-dark,
-    var(--mbx-tabviewer-text-color, var(--mbx-c-txt))
-  );
+  --mbx-container-background: var(--mbx-tabv-bg);
+  --mbx-container-text-color: var(--mbx-tabv-txt);
 }
 
 [data-mbx-id="tview"] > [data-mbx-cls="tabls"] {
   display: flex;
   flex-direction: row;
+}
+
+[data-mbx-id="tview"] [data-mbx-tbvsel="true"] {
+  --mbx-button-background: var(--mbx-tabv-bg);
+  --mbx-button-text-color: var(--mbx-tabv-txt);
+}
+
+[data-mbx-id="tview"] [data-mbx-tbvsel="false"] {
+  --mbx-button-background-light: var(
+    --mbx-tabviewer-inactive-background-light,
+    var(
+      --mbx-tabviewer-inactive-background,
+      linear-gradient(to right, #a1a0a0, #797979)
+    )
+  );
+  --mbx-button-background-hover-light: var(
+    --mbx-tabviewer-inactive-background-hover-light,
+    var(
+      --mbx-tabviewer-inactive-background-hover,
+      linear-gradient(to right, #b6b4b4, #999797)
+    )
+  );
+  --mbx-button-text-color-light: var(
+    --mbx-tabviewer-inactive-text-color-light,
+    var(--mbx-tabviewer-inactive-text-color, #c2c2c2)
+  );
+  --mbx-button-text-color-hover-light: var(
+    --mbx-tabviewer-inactive-text-color-hover-light,
+    var(--mbx-tabviewer-inactive-text-color-hover, var(--mbx-c-txt-h))
+  );
+  --mbx-button-background-dark: var(
+    --mbx-tabviewer-inactive-background-dark,
+    var(
+      --mbx-tabviewer-inactive-background,
+      linear-gradient(to right, #3e4b63, #3f4858)
+    )
+  );
+  --mbx-button-background-hover-dark: var(
+    --mbx-tabviewer-inactive-background-hover-dark,
+    var(
+      --mbx-tabviewer-inactive-background-hover,
+      linear-gradient(to right, #566888, #3c465a)
+    )
+  );
+  --mbx-button-text-color-dark: var(
+    --mbx-tabviewer-inactive-text-color-dark,
+    var(--mbx-tabviewer-inactive-text-color, #c2c2c2)
+  );
+  --mbx-button-text-color-hover-dark: var(
+    --mbx-tabviewer-inactive-text-color-hover-dark,
+    var(--mbx-tabviewer-inactive-text-color-hover, var(--mbx-c-txt-h))
+  );
 }

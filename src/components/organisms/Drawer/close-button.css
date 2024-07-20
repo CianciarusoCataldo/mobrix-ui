@@ -50,7 +50,3 @@
 [data-mbx-id="drw"][data-mbx-drw-lc="right"] > [data-mbx-id="icb"] svg {
   transform: rotate(180deg);
 }
-
-[data-mbx-id="drw"] > [data-mbx-id="icb"]:focus-visible svg {
-  fill: var(--mbx-c-draw-arr-h);
-}

@@ -1,15 +1,56 @@
 [data-mbx-id="selt"] {
   padding: 0.2rem;
-  --mbx-sel-bg: var(--mbx-c-sel-bg);
-  --mbx-sel-txt: var(--mbx-c-sel-txt);
+  --mbx-sel-bg: var(
+    --mbx-selector-background-dark,
+    var(--mbx-selector-background, var(--mbx-c-bgc))
+  );
+  --mbx-sel-txt: var(
+    --mbx-selector-text-color-dark,
+    var(--mbx-selector-text-color, var(--mbx-c-txt))
+  );
+  --mbx-c-sel-bg-h: var(
+    --mbx-selector-background-hover-light,
+    var(--mbx-selector-background-hover, var(--mbx-sel-bg))
+  );
+  --mbx-c-sel-txt-h: var(
+    --mbx-selector-text-color-hover-light,
+    var(--mbx-selector-text-color-hover, var(--mbx-sel-txt))
+  );
   background: var(--mbx-sel-bg);
   color: var(--mbx-sel-txt);
   border: 0;
   border-radius: 6px;
 }
 
+[data-mbx-id="selt"][data-mbx-dk] {
+  --mbx-sel-bg: var(
+    --mbx-selector-background-light,
+    var(--mbx-selector-background, var(--mbx-c-bgc))
+  );
+  --mbx-sel-txt: var(
+    --mbx-selector-text-color-light,
+    var(--mbx-selector-text-color, var(--mbx-c-txt))
+  );
+  --mbx-sel-bghov: var(
+    --mbx-selector-background-hover-dark,
+    var(--mbx-selector-background-hover, var(--mbx-sel-bg))
+  );
+  --mbx-sel-txthov: var(
+    --mbx-selector-text-color-hover-dark,
+    var(--mbx-selector-text-color-hover, var(--mbx-sel-txt))
+  );
+}
+
 [data-mbx-id="selt"] > option {
-  background-color: var(--mbx-c-sel-bg);
-  color: var(--mbx-c-sel-txt);
+  background-color: var(--mbx-sel-bg);
+  color: var(--mbx-sel-txt);
   padding: 1rem;
+}
+
+@media (hover) {
+  [data-mbx-id="selt"]:hover,
+  [data-mbx-id="selt"] > option:hover {
+    background: var(--mbx-sel-bg-h, var(--mbx-sel-bg));
+    color: var(--mbx-sel-txt-h, var(--mbx-sel-txt));
+  }
 }

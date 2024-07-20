@@ -1,8 +1,16 @@
 [data-mbx-id="code"] {
   padding: 0.1rem;
   justify-content: center;
-  background: var(--mbx-c-cdb-bg);
-  color: var(--mbx-c-cdb-txt);
+  --mbx-cdb-bg: var(
+    --mbx-codebox-background-light,
+    var(--mbx-codebox-background, var(--mbx-c-bg))
+  );
+  --mbx-cdb-txt: var(
+    --mbx-codebox-text-color-light,
+    var(--mbx-codebox-text-color, var(--mbx-c-txt))
+  );
+  background: var(--mbx-cdb-bg);
+  color: var(--mbx-cdb-txt);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -10,6 +18,17 @@
 
 [data-mbx-id="code"] > [data-mbx-id="icb"] {
   margin-left: auto;
+}
+
+[data-mbx-id="code"][data-mbx-dk] {
+  --mbx-cdb-bg: var(
+    --mbx-codebox-background-dark,
+    var(--mbx-codebox-background, var(--mbx-c-bg))
+  );
+  --mbx-cdb-txt: var(
+    --mbx-codebox-text-color-dark,
+    var(--mbx-codebox-text-color, var(--mbx-c-txt))
+  );
 }
 
 [data-mbx-id="code"] > div {

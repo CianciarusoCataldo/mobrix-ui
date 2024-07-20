@@ -39,6 +39,7 @@ const positions = [
  * @param {'fade-in' | 'slide-in-left' | 'slide-in-right' | 'slide-in-top' | 'shake'} animation - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If `animated`=`true`, this parameter specifies which animation is used when component is rendered
  * @param {boolean} background - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component background
  * @param {boolean} hover - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component hover standard styles
+ * @param {boolean} active - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component click standard styles
  * @param {boolean} disabled - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If true, disable the component. The effect may vary depending on the component type
  * @param {(keyEvent : any) => void} onKeyDown - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when a key is pressed while using the component (for example, when writing text inside an `Input` component).
  * @param {() => void} onFocus - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when the component get the focus (for example, through tab key)
@@ -68,7 +69,7 @@ const Drawer: DrawerComponent = ({
   onFocusLost = () => {},
   closeOnClickOutside = true,
   arrowClassName,
-  ...commonProps
+  ...props
 }) => {
   const location = position && positions.includes(position) ? position : "left";
 
@@ -94,19 +95,19 @@ const Drawer: DrawerComponent = ({
     animation: value.length === 0 ? "in" : value,
   };
 
-  return buildMbxStandard(commonProps, (sharedProps) => ({
+  return buildMbxStandard(props, (commonProps) => ({
     name: "drw",
     cssBg: ["c-draw-bg"],
     addProps: {
       "data-mbx-drw-lc": location,
     },
     commonProps: {
-      ...sharedProps,
+      ...commonProps,
       hide: value.length === 0 && hide,
       onFocusLost: customProps.onFocusLost,
     },
     styles: {
-      ...(sharedProps.animated && {
+      ...(commonProps.animated && {
         "--mbx-drw-an": hide
           ? "none"
           : `var(--mbx-drw-an-${customProps.animation})`,
@@ -118,7 +119,7 @@ const Drawer: DrawerComponent = ({
       onClose: callback,
       arrowClassName,
       position: location,
-      ...sharedProps,
+      ...commonProps,
     }),
   }));
 };

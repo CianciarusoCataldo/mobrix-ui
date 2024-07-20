@@ -24,6 +24,7 @@ import { buildMbxReactive } from "../../../tools";
  * @param {'fade-in' | 'slide-in-left' | 'slide-in-right' | 'slide-in-top' | 'shake'} animation - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If `animated`=`true`, this parameter specifies which animation is used when component is rendered
  * @param {boolean} background - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component background
  * @param {boolean} hover - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component hover standard styles
+ * @param {boolean} active - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component click standard styles
  * @param {boolean} disabled - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If true, disable the component. The effect may vary depending on the component type
  * @param {(keyEvent : any) => void} onKeyDown - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when a key is pressed while using the component (for example, when writing text inside an `Input` component).
  * @param {() => void} onFocus - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when the component get the focus (for example, through tab key)
@@ -50,22 +51,25 @@ const Slider: SliderComponent = ({
   min,
   max,
   readOnly = false,
+  active = true,
   ...commonProps
 }) =>
-  buildMbxReactive<number>(commonProps, (sharedProps) => ({
+  buildMbxReactive<number>({ active, ...commonProps }, (sharedProps) => ({
     name: "sld",
     inputValue,
     defaultValue: 0,
     wrapper: "input",
-    cssBg: ["c-sld-bg"],
+    cssBg: ["sld-bg", "sld-bg-h"],
     styles: {
       ...(sharedProps.hover &&
         !readOnly && {
           "--mbx-sld-op-hov": "0.6",
-          "--mbx-sld-bg-h": "var(--mbx-c-sld-tb-h)",
+          "--mbx-sld-bg-h": "var(--mbx-sld-bghov)",
+          "--mbx-sld-tb-h": "var(--mbx-sld-tbhov)",
         }),
       ...(!sharedProps.disabled &&
-        !readOnly && {
+        !readOnly &&
+        active && {
           "--mbx-sld-op-act": "0.4",
         }),
     },

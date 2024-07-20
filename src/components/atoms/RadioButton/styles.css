@@ -13,8 +13,52 @@
   border-radius: 50%;
   padding: 0.1rem;
   border-style: hidden;
-  --mbx-rd-bg: var(--mbx-c-rad-bg);
+  --mbx-rd-bg: var(
+    --mbx-radio-background-light,
+    var(
+      --mbx-radio-background,
+      radial-gradient(#f1f1f1 20%, #e4e4e4 30%, #bebebe 55%, #f0f0f0 20%)
+    )
+  );
+  --mbx-rd-ic: var(
+    --mbx-radio-icon-background-light,
+    var(
+      --mbx-radio-icon-background,
+      radial-gradient(circle at 23px 23px, #2d3748, #191f29)
+    )
+  );
+  --mbx-rd-bghov: var(
+    --mbx-radio-background-hover-light,
+    var(--mbx-radio-background-hover)
+  );
   background: var(--mbx-rd-bg);
+}
+
+[data-mbx-id="radio"][data-mbx-dk] {
+  --mbx-rd-bg: var(
+    --mbx-radio-background-dark,
+    var(
+      --mbx-radio-background,
+      radial-gradient(
+        closest-side,
+        #2d3748 20%,
+        #232b38 30%,
+        #1d1f44 55%,
+        #191f29 20%
+      )
+    )
+  );
+  --mbx-rd-bghov: var(
+    --mbx-radio-background-hover-dark,
+    var(--mbx-radio-background-hover)
+  );
+  --mbx-rd-ic: var(
+    --mbx-radio-icon-background-dark,
+    var(
+      --mbx-radio-icon-background,
+      radial-gradient(circle at 23px 23px, #dbe0e6, #949494)
+    )
+  );
 }
 
 [data-mbx-id="radio"] > div {
@@ -23,7 +67,13 @@
   border-radius: 50%;
   width: 22px;
   height: 22px;
-  background: var(--mbx-c-rad-ic-bg);
+  background: var(--mbx-rd-ic);
   margin: auto;
   border-color: transparent;
+}
+
+@media (hover) {
+  [data-mbx-id="radio"]:hover {
+    background: var(--mbx-rd-bg-h, var(--mbx-rd-bg));
+  }
 }

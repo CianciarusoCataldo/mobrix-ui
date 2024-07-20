@@ -1,6 +1,5 @@
 import "../styles/core/index.css";
 import "../styles/themes/base/index.css";
-import "../styles/themes/full/index.css";
 
 import React, { useEffect, useRef } from "react";
 
@@ -42,6 +41,7 @@ export const parseProps = (props: CommonProps): CommonProps => {
       animated: false,
       hover: false,
       a11y: false,
+      active: false,
     }),
   };
 
@@ -98,13 +98,13 @@ const getMbxUiStandard = ({
   const parsedFts = getMbxFts(features, cprops);
   let props: CommonProps & Record<string, any> = {
     "data-mbx-id": name,
-    ...(cprops.dark && { "data-mbx-dk": "" }),
-    ...(parsedFts.fts.colFc && { "data-mbx-cfc": "" }),
     id: cprops.id,
     className: cprops.className,
+    tabIndex: "-1",
+    ...(cprops.dark && { "data-mbx-dk": "" }),
+    ...(parsedFts.fts.colFc && { "data-mbx-cfc": "" }),
     ...(cprops.onFocus && { onFocus: cprops.onFocus }),
     ...(cprops.onKeyDown && { onKeyDown: cprops.onKeyDown }),
-    tabIndex: "-1",
     ...(cprops.a11y &&
       !cprops.disabled && {
         tabIndex: cprops.tabIndex ? String(cprops.tabIndex) : "0",
@@ -127,9 +127,9 @@ const getMbxUiStandard = ({
   }
 
   if (!cprops.background) {
-    cstyles["--mbx-c-bg"] = "transparent";
-    cstyles["--mbx-c-bgc"] = "transparent";
-    cssBg.forEach((css) => (cstyles[`--mbx-${css}`] = "transparent"));
+    ["c-bg", "c-bgc", ...cssBg].forEach(
+      (css) => (cstyles[`--mbx-${css}`] = "transparent")
+    );
   }
 
   if (!cprops.shadow) {
@@ -147,6 +147,10 @@ const getMbxUiStandard = ({
       cstyles["--mbx-op-hov"] = 1;
     }
 
+    if (cprops.active) {
+      cstyles["--mbx-op-act"] = 0.4;
+    }
+
     if (cprops.animated && cprops.animation) {
       cstyles["--mbx-an"] = cprops.animation;
       if (cprops.animation === "shake") {
@@ -157,6 +161,7 @@ const getMbxUiStandard = ({
     cstyles["cursor"] = "unset";
     cstyles["--mbx-op"] = 0.6;
     cstyles["--mbx-op-hov"] = 0.6;
+    cstyles["--mbx-op-act"] = 0.6;
     cstyles["--mbx-sh-fc"] = "none";
     cstyles["--mbx-c-fc"] = "none";
   }

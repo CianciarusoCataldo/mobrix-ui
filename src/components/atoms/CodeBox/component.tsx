@@ -21,6 +21,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   highlight = true,
   environment = "terminal",
   copyButton = true,
+  dark,
 }) => {
   let parseLine: (
     inputCode: string,
@@ -50,9 +51,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
             ) : (
               <span
                 key={`cdb_bl_${bIndex}`}
-                {...(cBlock.color && {
-                  style: { color: cBlock.color },
-                })}
+                style={{ color: cBlock.color || "inherit" }}
               >
                 {cBlock.code}
               </span>

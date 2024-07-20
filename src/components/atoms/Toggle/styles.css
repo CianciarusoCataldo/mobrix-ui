@@ -1,12 +1,55 @@
 [data-mbx-id="tgl"] {
   width: 65px;
   height: 30px;
-  background: var(--mbx-c-tog-bg);
+  --mbx-tog-bg: var(
+    --mbx-toggle-background-light,
+    var(--mbx-toggle-background, var(--mbx-c-bg))
+  );
+  --mbx-tog-ic-on-int: var(
+    --mbx-toggle-icon-on-internal-color-light,
+    var(--mbx-toggle-icon-on-internal-color, #ffffff)
+  );
+  --mbx-tog-ic-on-ext: var(
+    --mbx-toggle-icon-on-external-color-light,
+    var(--mbx-toggle-icon-on-external-color, #adadad)
+  );
+  --mbx-tog-ic-off-int: var(
+    --mbx-toggle-icon-off-internal-color-light,
+    var(--mbx-toggle-icon-off-internal-color, #a5a5a5)
+  );
+  --mbx-tog-ic-off-ext: var(
+    --mbx-toggle-icon-off-external-color-light,
+    var(--mbx-toggle-icon-off-external-color, #7a7878)
+  );
+  background: var(--mbx-tog-bg);
   border-radius: 40px;
   border-width: 0;
   --mbx-tgl-tr: 35px;
-  --svginternalcolor: var(--mbx-c-tog-ic-off-int);
-  --svgexternalcolor: var(--mbx-c-tog-ic-off-ext);
+  --svginternalcolor: var(--mbx-tog-ic-off-int);
+  --svgexternalcolor: var(--mbx-tog-ic-off-ext);
+}
+
+[data-mbx-id="tgl"][data-mbx-dk] {
+  --mbx-tog-bg: var(
+    --mbx-toggle-background-dark,
+    var(--mbx-toggle-background, var(--mbx-c-bg))
+  );
+  --mbx-tog-ic-off-int: var(
+    --mbx-toggle-icon-off-internal-color-dark,
+    var(--mbx-toggle-icon-off-internal-color, #636363)
+  );
+  --mbx-tog-ic-off-ext: var(
+    --mbx-toggle-icon-off-external-color-light,
+    var(--mbx-toggle-icon-off-external-color, #a7a3a3)
+  );
+  --mbx-tog-ic-on-int: var(
+    --mbx-toggle-icon-on-internal-color-dark,
+    var(--mbx-toggle-icon-on-internal-color, #ffffff)
+  );
+  --mbx-tog-ic-on-ext: var(
+    --mbx-toggle-icon-on-external-color-light,
+    var(--mbx-toggle-icon-on-external-color, #adadad)
+  );
 }
 
 [data-mbx-id="tgl"] > :first-child {

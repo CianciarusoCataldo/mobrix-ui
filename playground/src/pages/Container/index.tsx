@@ -1,4 +1,4 @@
-import { StringProp } from "@cianciarusocataldo/demo-ui";
+import { BooleanProp, StringProp } from "@cianciarusocataldo/demo-ui";
 
 import { Container } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
@@ -15,6 +15,7 @@ const ContainerPage = () => (
         props={{
           children: StringProp(t("props_children")),
           ...demoProps,
+          active: BooleanProp(false),
         }}
         rows={[["children"], ...demoRows]}
       >

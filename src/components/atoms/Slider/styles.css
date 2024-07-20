@@ -3,9 +3,42 @@
   border-radius: 12px;
   -webkit-appearance: none;
   width: fit-content;
-  --mbx-sld-tb: var(--mbx-c-sld-tb);
-  --mbx-sld-bg: var(--mbx-c-sld-bg);
+  --mbx-sld-bg: var(
+    --mbx-slider-background-light,
+    var(--mbx-slider-background, var(--mbx-c-bg))
+  );
+  --mbx-sld-tb: var(
+    --mbx-slider-thumb-color-light,
+    var(--mbx-slider-thumb-color, radial-gradient(#2d3748, #1d232e))
+  );
+  --mbx-sld-bghov: var(
+    --mbx-slider-background-hover-light,
+    var(--mbx-slider-background-hover, var(--mbx-sld-bg))
+  );
+  --mbx-sld-tbhov: var(
+    --mbx-slider-thumb-color-hover-light,
+    var(--mbx-slider-thumb-color-hover, var(--mbx-sld-tb))
+  );
   background: var(--mbx-sld-bg);
+}
+
+[data-mbx-id="sld"][data-mbx-dk] {
+  --mbx-sld-bg: var(
+    --mbx-slider-background-dark,
+    var(--mbx-slider-background, var(--mbx-c-bg))
+  );
+  --mbx-sld-tb: var(
+    --mbx-slider-thumb-color-dark,
+    var(--mbx-slider-thumb-color, radial-gradient(#e3e4e9, #9b9999))
+  );
+  --mbx-sld-bghov: var(
+    --mbx-slider-background-hover-light,
+    var(--mbx-slider-background-hover, var(--mbx-sld-bg))
+  );
+  --mbx-sld-tbhov: var(
+    --mbx-slider-thumb-color-hover-dark,
+    var(--mbx-slider-thumb-color-hover, var(--mbx-sld-tb))
+  );
 }
 
 [data-mbx-id="sld"]::-webkit-slider-thumb {
@@ -42,6 +75,23 @@
   width: 30px;
   border-radius: 50%;
   background: var(--mbx-sld-tb);
+}
+
+@media (hover) {
+  [data-mbx-id="sld"]::-moz-range-thumb:hover {
+    opacity: var(--mbx-sld-op-hov, var(--mbx-op));
+    background: var(--mbx-sld-tb-h, var(--mbx-sld-tb));
+  }
+
+  [data-mbx-id="sld"]::-webkit-slider-thumb:hover {
+    background: var(--mbx-sld-tb-h, var(--mbx-sld-tb));
+    opacity: var(--mbx-sld-op-hov, var(--mbx-op));
+  }
+
+  [data-mbx-id="sld"]::-ms-thumb:hover {
+    background: var(--mbx-sld-tb-h, var(--mbx-sld-tb));
+    opacity: var(--mbx-sld-op-hov, var(--mbx-op));
+  }
 }
 
 [data-mbx-id="sld"]::-moz-range-thumb:active {

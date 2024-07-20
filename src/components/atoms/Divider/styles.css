@@ -1,4 +1,15 @@
 [data-mbx-id="dvd"] {
-  background-color: var(--mbx-c-dv-bgc);
+  --mbx-dvd-bg: var(
+    --mbx-divider-color-light,
+    var(--mbx-divider-color, var(--mbx-c-txt))
+  );
+  background-color: var(--mbx-dvd-bg);
   width: 100%;
+}
+
+[data-mbx-id="dvd"][data-mbx-dk] {
+  --mbx-dvd-bg: var(
+    --mbx-divider-color-dark,
+    var(--mbx-divider-color, var(--mbx-c-txt))
+  );
 }
