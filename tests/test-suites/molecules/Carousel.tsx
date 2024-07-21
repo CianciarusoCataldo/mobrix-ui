@@ -12,13 +12,13 @@ const carouselTest = () => {
 
   describe("Carousel", () => {
     test("Rendering test", () => {
-      let wrapper = mount(<Carousel />);
+      let wrapper = mount(<Carousel active />);
 
       expect(wrapper);
 
       wrapper = mount(<Carousel elements={testElements} />);
       wrapper
-        .find('[data-mbx-cls="car-els"] [data-mbx-id="icb"]')
+        .find('[data-mbx-car-els] [data-mbx-id="icb"]')
         .at(1)
         .simulate("click");
 
@@ -31,7 +31,7 @@ const carouselTest = () => {
         <Carousel elements={testElements} onChange={onChangeStub} />
       );
       wrapper
-        .find('[data-mbx-cls="car-els"] [data-mbx-id="icb"]')
+        .find('[data-mbx-car-els] [data-mbx-id="icb"]')
         .at(1)
         .simulate("click");
 
@@ -42,15 +42,15 @@ const carouselTest = () => {
       expect(onChangeStub).toBeCalledWith(0);
 
       wrapper
-        .find('[data-mbx-cls="car-els"] [data-mbx-id="icb"]')
+        .find('[data-mbx-car-els] [data-mbx-id="icb"]')
         .at(1)
         .simulate("click");
       wrapper
-        .find('[data-mbx-cls="car-els"] [data-mbx-id="icb"]')
+        .find('[data-mbx-car-els] [data-mbx-id="icb"]')
         .at(1)
         .simulate("click");
       wrapper
-        .find('[data-mbx-cls="car-els"] [data-mbx-id="icb"]')
+        .find('[data-mbx-car-els] [data-mbx-id="icb"]')
         .at(1)
         .simulate("click");
       expect(onChangeStub).toBeCalledWith(3);
@@ -62,22 +62,22 @@ const carouselTest = () => {
         <Carousel elements={testElements} onChange={onChangeStub} />
       );
       wrapper
-        .find("[data-mbx-cls='cdots'] [data-mbx-id='icb']")
+        .find("[data-mbx-cdots] [data-mbx-id='icb']")
         .at(2)
         .simulate("mouseenter");
       wrapper
-        .find("[data-mbx-cls='cdots'] [data-mbx-id='icb']")
+        .find("[data-mbx-cdots] [data-mbx-id='icb']")
         .at(2)
         .simulate("mouseleave");
       wrapper
-        .find("[data-mbx-cls='cdots'] [data-mbx-id='icb']")
+        .find("[data-mbx-cdots] [data-mbx-id='icb']")
         .at(2)
         .simulate("click");
 
       expect(onChangeStub).toBeCalledWith(2);
 
       wrapper
-        .find("[data-mbx-cls='cdots'] [data-mbx-id='icb']")
+        .find("[data-mbx-cdots] [data-mbx-id='icb']")
         .at(1)
         .simulate("click");
 

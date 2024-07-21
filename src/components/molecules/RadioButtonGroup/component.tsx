@@ -12,10 +12,7 @@ const cssClasses = {
   right: { dir: "row-reverse", rev: "left" },
 } as const;
 
-const radioButtonGroupComponent: MbxUiReactiveComponent<
-  number,
-  RadioButtonGroupProps
-> = ({
+const component: MbxUiReactiveComponent<number, RadioButtonGroupProps> = ({
   value,
   setValue,
   buttons = [],
@@ -74,4 +71,4 @@ const radioButtonGroupComponent: MbxUiReactiveComponent<
   });
 };
 
-export default radioButtonGroupComponent;
+export default component;

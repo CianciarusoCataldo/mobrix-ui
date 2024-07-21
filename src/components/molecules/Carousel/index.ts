@@ -46,18 +46,19 @@ import component from "./component";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const Carousel: CarouselComponent = (props) => {
-  return buildMbxReactive<number>(props, (sharedProps) => ({
+const Carousel: CarouselComponent = ({ active = true, ...props }) => {
+  return buildMbxReactive<number>(props, (mbxProps) => ({
     name: "crsel",
-    commonProps: sharedProps,
+    mbxProps,
     defaultValue: 0,
     inputValue: props.value,
-    cssBg: ["c-car-bg"],
+    cssBg: ["car-bg"],
     Component: ({ value, setValue }) =>
       component({
         ...props,
-        ...sharedProps,
+        ...mbxProps,
         value,
+        active,
         setValue,
       }),
   }));

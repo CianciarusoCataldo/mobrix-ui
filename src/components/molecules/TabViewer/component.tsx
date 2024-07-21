@@ -24,7 +24,7 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
   const Render = tabs[value]?.lazy || (() => <div />);
 
   return [
-    <div key="tabs_list" data-mbx-cls="tabls">
+    <div key="tabs_list" data-mbx-tbls="">
       {tabs.map((tab, index) => {
         const isTabSel = index === value;
         return (
@@ -38,7 +38,6 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
             active={!isTabSel && active}
             features={{ opHov: !isTabSel, colFc: true }}
             data-mbx-tbvsel={isTabSel}
-            style={{}}
             className={`${tabClassName} ${
               index === value ? tabSelectedClassName : tabUnselectedClassName
             }`}

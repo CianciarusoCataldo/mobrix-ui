@@ -8,13 +8,13 @@
     --mbx-selector-text-color-dark,
     var(--mbx-selector-text-color, var(--mbx-c-txt))
   );
-  --mbx-c-sel-bg-h: var(
+  --mbx-sel-bg-h: var(
     --mbx-selector-background-hover-light,
-    var(--mbx-selector-background-hover, var(--mbx-sel-bg))
+    var(--mbx-selector-background-hover)
   );
-  --mbx-c-sel-txt-h: var(
+  --mbx-sel-txt-h: var(
     --mbx-selector-text-color-hover-light,
-    var(--mbx-selector-text-color-hover, var(--mbx-sel-txt))
+    var(--mbx-selector-text-color-hover)
   );
   background: var(--mbx-sel-bg);
   color: var(--mbx-sel-txt);
@@ -31,13 +31,13 @@
     --mbx-selector-text-color-light,
     var(--mbx-selector-text-color, var(--mbx-c-txt))
   );
-  --mbx-sel-bghov: var(
+  --mbx-sel-bg-h: var(
     --mbx-selector-background-hover-dark,
-    var(--mbx-selector-background-hover, var(--mbx-sel-bg))
+    var(--mbx-selector-background-hover)
   );
-  --mbx-sel-txthov: var(
+  --mbx-sel-txt-h: var(
     --mbx-selector-text-color-hover-dark,
-    var(--mbx-selector-text-color-hover, var(--mbx-sel-txt))
+    var(--mbx-selector-text-color-hover)
   );
 }
 
@@ -48,8 +48,8 @@
 }
 
 @media (hover) {
-  [data-mbx-id="selt"]:hover,
-  [data-mbx-id="selt"] > option:hover {
+  [data-mbx-id="selt"][data-mbx-hv]:hover,
+  [data-mbx-id="selt"][data-mbx-hv] > option:hover {
     background: var(--mbx-sel-bg-h, var(--mbx-sel-bg));
     color: var(--mbx-sel-txt-h, var(--mbx-sel-txt));
   }

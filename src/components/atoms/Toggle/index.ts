@@ -52,9 +52,9 @@ const Toggle: ToggleComponent = ({
   offIcon,
   onIcon,
   onChange = () => {},
-  ...commonProps
+  ...props
 }) =>
-  buildMbxReactive<boolean>(commonProps, (sProps) => ({
+  buildMbxReactive<boolean>(props, (mbxProps) => ({
     name: "tgl",
     cssBg: ["tog-bg"],
     props: (status, setStatus) => ({
@@ -66,7 +66,7 @@ const Toggle: ToggleComponent = ({
         }),
       },
       addProps: {
-        ...(!sProps.disabled && {
+        ...(!mbxProps.disabled && {
           onClick: () => {
             onChange(!status);
             setStatus(!status);
@@ -79,9 +79,9 @@ const Toggle: ToggleComponent = ({
           },
         }),
       },
-      commonProps: sProps,
+      mbxProps,
     }),
-    Component: ({ value, setValue }) => {
+    Component: ({ value }) => {
       const iconOn = onIcon || icon;
       const iconOff = offIcon || icon;
 

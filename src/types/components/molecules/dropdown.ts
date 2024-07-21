@@ -1,6 +1,6 @@
 import {
   BuilderComponent,
-  CommonProps,
+  MbxSharedProps,
   ComponentWithCallback,
   ComponentWithValue,
   MbxUiComponent,

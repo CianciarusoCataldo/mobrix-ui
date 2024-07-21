@@ -57,23 +57,23 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
   horizontal,
   ...props
 }) =>
-  buildMbxReactive<number>(props, (commonProps) => ({
+  buildMbxReactive<number>(props, (mbxProps) => ({
     name: "rgroup",
     defaultValue: -1,
     inputValue,
-    cssBg: ["c-radg-bg"],
+    cssBg: ["radg-bg"],
     styles: {
       flexDirection: horizontal ? "row" : "column",
     },
-    addProps: { "data-mbx-rdgh": horizontal },
-    commonProps,
+    addProps: { ...(horizontal && { "data-mbx-rdgh": "" }) },
+    mbxProps,
     Component: ({ value, setValue }) =>
       component({
         value,
         setValue,
         horizontal,
         ...props,
-        ...commonProps,
+        ...mbxProps,
       }),
   }));
 

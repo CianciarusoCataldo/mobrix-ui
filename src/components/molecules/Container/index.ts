@@ -1,4 +1,4 @@
-//import "./styles.css";
+import "./styles.css";
 
 import { ContainerComponent } from "../../../types";
 
@@ -42,12 +42,12 @@ import { buildMbxStandard } from "../../../tools";
  * @copyright 2024 Cataldo Cianciaruso
  */
 const Container: ContainerComponent = (props) =>
-  buildMbxStandard(props, (sharedProps) => ({
+  buildMbxStandard(props, (mbxProps) => ({
     name: "cont",
     Component: props.children,
-    commonProps: sharedProps,
+    mbxProps,
     wrapper: props.wrapper,
-    cssBg: ["c-con-bg"],
+    cssBg: ["con-bg"],
   }));
 
 export default Container;

@@ -1,16 +1,74 @@
 import "../styles/core/index.css";
-import "../styles/themes/base/index.css";
 
 import React, { useEffect, useRef } from "react";
 
 import {
   BuilderProps,
   BuilderPropsReactive,
-  CommonProps,
+  MbxSharedProps,
   Features,
 } from "../../types/global";
 
-import { D_PROPS, parseFts } from "./constants";
+import { D_PROPS } from "./constants";
+
+const parseFts: (
+  props: MbxSharedProps & { cssBg: string[] }
+) => Record<keyof Features & MbxSharedProps, any> | undefined = ({
+  cssBg,
+  a11y,
+  a11yLabel,
+  hover,
+  hide,
+  background,
+  tabIndex,
+  active,
+  animated,
+  animation,
+  style,
+  onFocus,
+  onKeyDown,
+  shadow,
+  dark,
+  disabled,
+}) => ({
+  opHov: { styles: { "--mbx-op-hov": hover ? 0.7 : 1 } },
+  noShFc: { styles: { "--mbx-sh-def": "none" } },
+  opFc: a11y && { styles: { "--mbx-op-f": 0.4 } },
+  colFc: a11y && {
+    props: { "data-mbx-cfc": "" },
+  },
+  hide: hide && { styles: { display: "none" } },
+  background: !background && {
+    styles: cssBg.reduce((o, key) => ({ ...o, [key]: "transparent" }), {}),
+  },
+  shadow: !shadow && { styles: { "--mbx-sh": "none" } },
+  a11y: a11y && {
+    props: {
+      tabIndex: tabIndex ? String(tabIndex) : "0",
+      ...(a11yLabel && {
+        "aria-label": a11yLabel,
+      }),
+    },
+    styles: { "--mbx-sh-fc": "var(--mbx-c-fc)" },
+  },
+  hover: hover && { props: { "data-mbx-hv": "" } },
+  active: active && { styles: { "--mbx-op-act": 0.4 } },
+  animated: animated &&
+    animation && {
+      styles: {
+        "--mbx-an": animation,
+        ...(animation === "shake" && {
+          animationIterationCount: 1,
+        }),
+      },
+    },
+  disabled: disabled && {
+    props: { "data-mbx-dsb": "" },
+  },
+  dark: dark && { props: { "data-mbx-dk": "" } },
+  onFocus: onFocus && { props: { onFocus } },
+  onKeyDown: onKeyDown && { props: { onKeyDown } },
+});
 
 /* istanbul ignore next */
 const useOutAlert = (ref: any, callback: () => void) => {
@@ -27,7 +85,7 @@ const useOutAlert = (ref: any, callback: () => void) => {
   });
 };
 
-export const parseProps = (props: CommonProps): CommonProps => {
+export const parseProps = (props: MbxSharedProps): MbxSharedProps => {
   let res = {
     ...D_PROPS,
     ...props,
@@ -49,7 +107,7 @@ export const parseProps = (props: CommonProps): CommonProps => {
     res["datas"] = {};
   }
 
-  const riserved = ["id", "dk", "fts"].map((ris) => `data-mbx-${ris}`);
+  const riserved = ["id", "dk", "cfc", "hv"].map((ris) => `data-mbx-${ris}`);
 
   Object.keys(props)
     .filter((prop) => prop.startsWith("data-") && !riserved.includes(prop))
@@ -61,110 +119,62 @@ export const parseProps = (props: CommonProps): CommonProps => {
 };
 
 const getMbxFts: (
-  features: Features,
-  props: CommonProps
+  props: MbxSharedProps & {
+    cssBg: string[];
+    feats: Features;
+  }
 ) => {
-  styles: Record<string, any>;
-  fts?: Partial<Record<keyof Features, boolean>>;
-} = (features, { features: ftrs = {}, ...props }) => {
-  const sFts = { ...features, ...ftrs };
-  let fts = {};
-  let styles = {};
+  parS: Record<string, any>;
+  parP: Record<string, any>;
+} = ({ feats, features: ftrs = {}, cssBg, ...props }) => {
+  const sFts = { ...feats, ...ftrs, ...props };
+  let parS = {};
+  let parP = {};
   const fProps = Object.keys(sFts).filter((feature) => sFts[feature]);
-  const mbxfts = parseFts(props);
+  const mbxfts = parseFts({ ...props, cssBg });
   [...fProps, ...Object.keys(props)]
-    .filter((feature, index) => mbxfts[feature])
-    .forEach((feature, index) => {
-      fts[feature] = true;
-      if (mbxfts[feature].var) {
-        styles[`--mbx-${mbxfts[feature].var}`] = mbxfts[feature].val;
-      }
+    .filter((ft, i) => mbxfts[ft])
+    .forEach((ft, i) => {
+      const { styles: stls = {}, props: prps = {} } = mbxfts[ft];
+      parS = { ...parS, ...stls };
+      parP = { ...parP, ...prps };
     });
 
-  return { styles, fts };
+  return { parS, parP };
 };
 
 const getMbxUiStandard = ({
   name,
   Component,
   /* istanbul ignore next */
-  commonProps: cprops = {},
+  mbxProps: cprops = {},
   wrapper: Wrapper = "div",
   features = {},
   cssBg = [],
   styles = {},
   addProps = {},
 }: BuilderProps) => {
-  const parsedFts = getMbxFts(features, cprops);
-  let props: CommonProps & Record<string, any> = {
+  const { parP, parS } = getMbxFts({
+    ...cprops,
+    cssBg: ["c-bg", "c-bgc", ...cssBg].map((css) => `--mbx-${css}`),
+    feats: features,
+  });
+  const props: MbxSharedProps & Record<string, any> = {
     "data-mbx-id": name,
     id: cprops.id,
     className: cprops.className,
     tabIndex: "-1",
-    ...(cprops.dark && { "data-mbx-dk": "" }),
-    ...(parsedFts.fts.colFc && { "data-mbx-cfc": "" }),
-    ...(cprops.onFocus && { onFocus: cprops.onFocus }),
-    ...(cprops.onKeyDown && { onKeyDown: cprops.onKeyDown }),
-    ...(cprops.a11y &&
-      !cprops.disabled && {
-        tabIndex: cprops.tabIndex ? String(cprops.tabIndex) : "0",
-        ...(cprops.a11yLabel && {
-          "aria-label": cprops.a11yLabel,
-        }),
-      }),
     ...cprops.props,
     ...addProps,
     ...cprops["datas"],
+    ...parP,
   };
-  let cstyles = styles;
 
-  if (cprops.style) {
-    cstyles = { ...cprops.style, ...cstyles };
-  }
-
-  if (cprops.hide) {
-    cstyles["display"] = "none";
-  }
-
-  if (!cprops.background) {
-    ["c-bg", "c-bgc", ...cssBg].forEach(
-      (css) => (cstyles[`--mbx-${css}`] = "transparent")
-    );
-  }
-
-  if (!cprops.shadow) {
-    cstyles["--mbx-sh"] = "none";
-  }
-
-  if (!cprops.disabled) {
-    if (cprops.a11y) {
-      cstyles["--mbx-sh-fc"] = "var(--mbx-c-fc)";
-    }
-
-    cstyles = { ...cstyles, ...parsedFts.styles };
-
-    if (!cprops.hover) {
-      cstyles["--mbx-op-hov"] = 1;
-    }
-
-    if (cprops.active) {
-      cstyles["--mbx-op-act"] = 0.4;
-    }
-
-    if (cprops.animated && cprops.animation) {
-      cstyles["--mbx-an"] = cprops.animation;
-      if (cprops.animation === "shake") {
-        cstyles["animationIterationCount"] = 1;
-      }
-    }
-  } else {
-    cstyles["cursor"] = "unset";
-    cstyles["--mbx-op"] = 0.6;
-    cstyles["--mbx-op-hov"] = 0.6;
-    cstyles["--mbx-op-act"] = 0.6;
-    cstyles["--mbx-sh-fc"] = "none";
-    cstyles["--mbx-c-fc"] = "none";
-  }
+  const cstyles = {
+    ...styles,
+    ...parS,
+    ...(cprops.style && { ...cprops.style }),
+  };
 
   const wRef = useRef(null);
   cprops.onFocusLost && useOutAlert(wRef, cprops.onFocusLost);
@@ -181,8 +191,14 @@ const getMbxUiStandard = ({
     );
   } else {
     return (
-      // @ts-ignore
-      <Wrapper ref={wRef} style={cstyles} {...props} key={cprops.key}>
+      <Wrapper
+        // @ts-ignore
+        ref={wRef}
+        style={cstyles}
+        {...props}
+        key={cprops.key}
+        tabIndex={Number(props.tabIndex)}
+      >
         {Component}
       </Wrapper>
     );
@@ -191,30 +207,12 @@ const getMbxUiStandard = ({
 
 // prettier-ignore
 const getMbxUiReactive = <T=any>({
-  name,
-  wrapper,
-  commonProps,
   defaultValue,
   inputValue,
   props,
   Component,
-  features,
-  cssBg,
-  styles,
-  addProps
-}: BuilderProps<
-  (props: {
-    value: T;
-    setValue: React.Dispatch<React.SetStateAction<T>>;
-  }) => BuilderProps["Component"]
-> & {
-  inputValue?: T;
-  defaultValue: T;
-  props?: (
-    value: T,
-    setValue: React.Dispatch<React.SetStateAction<T>>
-  ) => Omit<BuilderProps, "name">;
-}) => {
+  ...bprops
+}: BuilderPropsReactive<T>) => {
   const [value, setValue] = React.useState<T>(inputValue || defaultValue);
 
   const processed = props ? props(value, setValue) : {};
@@ -231,42 +229,33 @@ const getMbxUiReactive = <T=any>({
   }, [JSON.stringify(inputValue)]);
 
   return getMbxUiStandard({
-    name,
-    commonProps,
     Component: Component && Component({ value, setValue }),
-    wrapper,
-    features,
-    cssBg,
-    styles,
-    addProps,
+    ...bprops,
     ...processed,
   });
+};
+
+export const parse = (
+  /* istanbul ignore next */
+  props,
+  callback
+) => {
+  const input = parseProps(props);
+  const bProps = callback(input);
+  return {
+    mbxProps: input,
+    ...bProps,
+  };
 };
 
 export const buildMbxStandard = (
   /* istanbul ignore next */
   props: Record<string, any>,
-  callback: (props: CommonProps) => BuilderProps
-) => {
-  const inputCommonProps = parseProps(props);
-  const builderProps = callback(inputCommonProps);
-
-  return getMbxUiStandard({
-    commonProps: inputCommonProps,
-    ...builderProps,
-  });
-};
+  callback: (props: MbxSharedProps) => BuilderProps
+) => getMbxUiStandard(parse(props, callback));
 
 // prettier-ignore
 export const buildMbxReactive = <T=any>(
   props: Record<string, any>,
-  callback: (props:CommonProps) => BuilderPropsReactive<T>
-) => {
-  const inputCommonProps = parseProps(props);
-  const builderProps = callback(inputCommonProps);
-
-  return getMbxUiReactive<T>({
-    commonProps: inputCommonProps,
-    ...builderProps,
-  });
-};
+  callback: (props:MbxSharedProps) => BuilderPropsReactive<T>
+) => getMbxUiReactive<T>(parse(props, callback));

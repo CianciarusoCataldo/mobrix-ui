@@ -27,7 +27,7 @@
       radial-gradient(circle at 23px 23px, #2d3748, #191f29)
     )
   );
-  --mbx-rd-bghov: var(
+  --mbx-rd-bg-h: var(
     --mbx-radio-background-hover-light,
     var(--mbx-radio-background-hover)
   );
@@ -48,7 +48,7 @@
       )
     )
   );
-  --mbx-rd-bghov: var(
+  --mbx-rd-bg-h: var(
     --mbx-radio-background-hover-dark,
     var(--mbx-radio-background-hover)
   );
@@ -73,7 +73,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="radio"]:hover {
+  [data-mbx-id="radio"][data-mbx-hv]:hover {
     background: var(--mbx-rd-bg-h, var(--mbx-rd-bg));
   }
 }

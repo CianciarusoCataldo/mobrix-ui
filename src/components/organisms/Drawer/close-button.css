@@ -1,42 +1,14 @@
 [data-mbx-id="drw"][data-mbx-drw-lc^="top"] > [data-mbx-id="icb"],
 [data-mbx-id="drw"][data-mbx-drw-lc^="bottom"] > [data-mbx-id="icb"] {
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-[data-mbx-id="drw"][data-mbx-drw-lc^="bottom"] > [data-mbx-id="icb"] {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  padding-top: 0.1rem;
-}
-
-[data-mbx-id="drw"][data-mbx-drw-lc^="top"] > [data-mbx-id="icb"] {
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  padding-bottom: 0.1rem;
-}
-
 [data-mbx-id="drw"][data-mbx-drw-lc="right"] > [data-mbx-id="icb"],
 [data-mbx-id="drw"][data-mbx-drw-lc="left"] > [data-mbx-id="icb"] {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   height: fit-content;
   margin-top: auto;
   margin-bottom: auto;
-}
-
-[data-mbx-id="drw"][data-mbx-drw-lc="right"] > [data-mbx-id="icb"] {
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-  padding-left: 0.1rem;
-}
-
-[data-mbx-id="drw"][data-mbx-drw-lc="left"] > [data-mbx-id="icb"] {
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  padding-right: 0.1rem;
 }
 
 [data-mbx-id="drw"][data-mbx-drw-lc^="top"] > [data-mbx-id="icb"] svg {

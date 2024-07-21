@@ -5,22 +5,22 @@ import { MbxUiReactiveComponent, RaterProps } from "../../../types";
 import { ICONS } from "./icons";
 import IconButton from "../IconButton";
 
-const RaterComponent: MbxUiReactiveComponent<number, RaterProps> = ({
+const Component: MbxUiReactiveComponent<number, RaterProps> = ({
   type = "star",
   max,
   readonly,
   /* istanbul ignore next */
   onChange = () => {},
-  value: actualValue,
+  value,
   setValue,
   disabled,
   a11y,
   dark,
+  hover,
 }) => {
-  let startMax = max || 5;
-
-  const [hoveredElement, setHover] = React.useState<number | null>(null);
-  const [maxValue, setMax] = React.useState<number>(startMax);
+  let start = max || 5;
+  const [hovEl, setHov] = React.useState<number | null>(null);
+  const [mVal, setMax] = React.useState<number>(start);
 
   React.useEffect(() => {
     if (max) {
@@ -28,29 +28,25 @@ const RaterComponent: MbxUiReactiveComponent<number, RaterProps> = ({
     }
   }, [max]);
 
-  let iconArray: JSX.Element[] = [];
+  return new Array(mVal).fill("").map((e, i) => {
+    let icon: "FULL" | "EMPTY" = "EMPTY";
 
-  for (let i: number = 0; i < maxValue; ++i) {
-    let iconToShow: "FULL" | "EMPTY" = "EMPTY";
-
-    if (hoveredElement || hoveredElement === 0) {
-      iconToShow = hoveredElement >= i ? "FULL" : "EMPTY";
+    if (hovEl || hovEl === 0) {
+      icon = hovEl >= i ? "FULL" : "EMPTY";
     } else {
-      iconToShow = i + 1 <= actualValue ? "FULL" : "EMPTY";
+      icon = i + 1 <= value ? "FULL" : "EMPTY";
     }
 
-    iconArray.push(
+    return (
       <IconButton
         key={`vote_${i}`}
         dark={dark}
         a11y={a11y && !readonly}
         disabled={disabled}
-        features={{ noShFc: true, opFc: true }}
-        style={{
-          ...(readonly && {
-            cursor: "unset",
-          }),
-        }}
+        hover={hover}
+        {...(readonly && {
+          style: { cursor: "unset" },
+        })}
         {...(!(readonly || disabled) && {
           onClick: () => {
             let newVote: number = i + 1;
@@ -58,19 +54,17 @@ const RaterComponent: MbxUiReactiveComponent<number, RaterProps> = ({
             onChange(i + 1);
           },
           onMouseEnter: () => {
-            setHover(i);
+            setHov(i);
           },
           onMouseLeave: () => {
-            setHover(null);
+            setHov(null);
           },
         })}
       >
-        {ICONS[type][iconToShow]}
-      </IconButton>,
+        {ICONS[type][icon]}
+      </IconButton>
     );
-  }
-
-  return iconArray;
+  });
 };
 
-export default RaterComponent;
+export default Component;

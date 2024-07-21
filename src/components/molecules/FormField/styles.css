@@ -2,78 +2,78 @@
   display: flex;
   flex-direction: column;
   width: fit-content;
-  --mbx-c-field-bg: var(
+  --mbx-fld-bg: var(
     --mbx-formfield-background-light,
     var(--mbx-formfield-background)
   );
-  --mbx-c-field-txt: var(
+  --mbx-fld-txt: var(
     --mbx-formfield-text-color-light,
     var(--mbx-formfield-text-color)
   );
-  --mbx-c-field-bg-h: var(
+  --mbx-fld-bg-h: var(
     --mbx-formfield-background-hover-light,
     var(--mbx-formfield-background-hover)
   );
-  --mbx-c-field-txt-h: var(
+  --mbx-fld-txt-h: var(
     --mbx-formfield-text-color-hover-light,
     var(--mbx-formfield-text-color-hover)
   );
-  --mbx-c-field-err-b: var(
+  --mbx-fld-err-b: var(
     --mbx-formfield-error-border-light,
     var(--mbx-formfield-error-border, red)
   );
-  --mbx-c-field-err-txt: var(
+  --mbx-fld-err-txt: var(
     --mbx-formfield-error-text-light,
     var(--mbx-formfield-error-text, red)
   );
-  --mbx-counterbox-background: var(--mbx-c-field-bg);
-  --mbx-counterbox-text-color: var(--mbx-c-field-txt);
-  --mbx-counterbox-background-hover: var(--mbx-c-field-bg-h);
-  --mbx-counterbox-text-color-hover: var(--mbx-c-field-txt-h);
+  --mbx-counterbox-background: var(--mbx-fld-bg);
+  --mbx-counterbox-text-color: var(--mbx-fld-txt);
+  --mbx-counterbox-background-hover: var(--mbx-fld-bg-h);
+  --mbx-counterbox-text-color-hover: var(--mbx-fld-txt-h);
 
-  --mbx-checkbox-background: var(--mbx-c-field-bg);
-  --mbx-checkbox-text-color: var(--mbx-c-field-txt);
-  --mbx-checkbox-background-hover: var(--mbx-c-field-bg-h);
-  --mbx-checkbox-text-color-hover: var(--mbx-c-field-txt-h);
+  --mbx-checkbox-background: var(--mbx-fld-bg);
+  --mbx-checkbox-text-color: var(--mbx-fld-txt);
+  --mbx-checkbox-background-hover: var(--mbx-fld-bg-h);
+  --mbx-checkbox-text-color-hover: var(--mbx-fld-txt-h);
 
-  --mbx-inputbox-background: var(--mbx-c-field-bg);
-  --mbx-inputbox-text-color: var(--mbx-c-field-txt);
-  --mbx-inputbox-background-hover: var(--mbx-c-field-bg-h);
-  --mbx-inputbox-text-color-hover: var(--mbx-c-field-txt-h);
+  --mbx-inputbox-background: var(--mbx-fld-bg);
+  --mbx-inputbox-text-color: var(--mbx-fld-txt);
+  --mbx-inputbox-background-hover: var(--mbx-fld-bg-h);
+  --mbx-inputbox-text-color-hover: var(--mbx-fld-txt-h);
 
-  --mbx-radio-background: var(--mbx-c-field-bg);
-  --mbx-radio-background-hover: var(--mbx-c-field-bg-h);
+  --mbx-radio-background: var(--mbx-fld-bg);
+  --mbx-radio-background-hover: var(--mbx-fld-bg-h);
 
-  --mbx-rater-background: var(--mbx-c-field-bg);
-  --mbx-rater-background-hover: var(--mbx-c-field-bg-h);
+  --mbx-rater-background: var(--mbx-fld-bg);
+  --mbx-rater-background-hover: var(--mbx-fld-bg-h);
 
-  --mbx-slider-background: var(--mbx-c-field-bg);
+  --mbx-slider-background: var(--mbx-fld-bg);
 
-  --mbx-toggle-background: var(--mbx-c-field-bg);
+  --mbx-toggle-background: var(--mbx-fld-bg);
 }
 
 [data-mbx-id="field"][data-mbx-dk] {
-  --mbx-c-field-bg: var(
+  --mbx-fld-bg: var(
     --mbx-formfield-background-dark,
     var(--mbx-formfield-background)
   );
-  --mbx-c-field-txt: var(
+  --mbx-fld-txt: var(
     --mbx-formfield-text-color-dark,
     var(--mbx-formfield-text-color)
   );
-  --mbx-c-field-bg-h: var(
+  --mbx-fld-bg-h: var(
     --mbx-formfield-background-hover-dark,
     var(--mbx-formfield-background-hover)
   );
-  --mbx-c-field-txt-h: var(
+  --mbx-fld-txt-h: var(
     --mbx-formfield-text-color-hover-dark,
     var(--mbx-formfield-text-color-hover)
   );
-  --mbx-c-field-err-b: var(
+  --mbx-fld-err-b: var(
     --mbx-formfield-error-border-dark,
     var(--mbx-formfield-error-border, red)
   );
-  --mbx-c-field-err-txt: var(
+  --mbx-fld-err-txt: var(
     --mbx-formfield-error-text-dark,
     var(--mbx-formfield-error-text, red)
   );
@@ -84,11 +84,11 @@
   margin-bottom: 0.2rem;
   margin-top: 0;
   width: 100%;
-  --mbx-label-text-color: var(--mbx-c-field-txt);
+  --mbx-label-text-color: var(--mbx-fld-txt);
 }
 
 [data-mbx-id="field"] > [data-mbx-id="cont"] {
-  color: var(--mbx-c-field-err-txt);
+  color: var(--mbx-fld-err-txt);
   transition: all 0.3s ease-out;
   padding-top: 0.2rem;
 }
@@ -100,7 +100,7 @@
 }
 
 [data-mbx-id="field"] [data-mbx-fld-e="true"] {
-  border-color: var(--mbx-c-field-err-b);
+  border-color: var(--mbx-fld-err-b);
 }
 
 [data-mbx-id="field"][data-mbx-ftype="checkbox"],

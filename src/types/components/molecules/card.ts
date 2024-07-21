@@ -49,6 +49,9 @@ export type CardProps = ComponentWithChildren<BuilderComponent> & {
 
   /** If `true`, hide the divider above the Card footer */
   noBottomDivider?: boolean;
+
+  /** Set the size of the top and the bottom divider (default `1px`) */
+  dividerSize?: string;
 };
 
 /**

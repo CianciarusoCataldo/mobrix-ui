@@ -49,45 +49,45 @@ const Checkbox: CheckBoxComponent = ({
   onChange = () => {},
   icon,
   onKeyDown = () => {},
-  ...commonProps
+  ...props
 }) =>
-  buildMbxReactive<boolean>(commonProps, (sProps) => ({
+  buildMbxReactive<boolean>(props, ({ disabled, hover, dark, ...mProps }) => ({
     name: "check",
-    Component: ({ value, setValue }) =>
+    Component: ({ value }) =>
       value
         ? icon ||
           CheckIcon({
-            disabled: sProps.disabled,
-            hover: sProps.hover,
-            dark: sProps.dark,
+            disabled,
+            hover,
+            dark,
           })
         : "",
     features: {
       opHov: true,
     },
     cssBg: ["chk-bg", "chk-bg-h"],
-    styles: {
-      ...(sProps.hover && { "--mbx-chk-bg-h": "var(--mbx-chk-bghov)" }),
-    },
     props: (actualValue, setValue) => {
-      const callback = () => {
+      const func = () => {
         onChange(!actualValue);
         setValue(!actualValue);
       };
       return {
         addProps: {
-          ...(!sProps.disabled && { onClick: callback }),
+          ...(!disabled && { onClick: func }),
         },
-        commonProps: {
-          ...sProps,
+        mbxProps: {
+          ...mProps,
           onKeyDown:
-            !sProps.disabled &&
+            !disabled &&
             ((e) => {
               onKeyDown(e);
               if (e.code === "Enter" || e.code === "Space") {
-                callback();
+                func();
               }
             }),
+          disabled,
+          hover,
+          dark,
         },
       };
     },

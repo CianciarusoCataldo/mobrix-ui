@@ -42,9 +42,6 @@ export interface CodeBlock {
  * @copyright 2024 Cataldo Cianciaruso
  */
 export type CodeBoxProps = ComponentWithValue<string> & {
-  /** Enable/disable text highlight, based on selected environment */
-  highlight?: boolean;
-
   /** Environment for text highlight feature, default to "terminal" (only enabled into highlight mode) */
   environment?: SupportedEnvironment;
 

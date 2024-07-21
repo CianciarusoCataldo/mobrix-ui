@@ -33,7 +33,7 @@
   --mbx-container-text-color: var(--mbx-tabv-txt);
 }
 
-[data-mbx-id="tview"] > [data-mbx-cls="tabls"] {
+[data-mbx-id="tview"] > [data-mbx-tbls] {
   display: flex;
   flex-direction: row;
 }

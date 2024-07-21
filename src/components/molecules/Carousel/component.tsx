@@ -6,38 +6,38 @@ import { ArrowIcon } from "../../../icons";
 import Container from "../Container";
 
 const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
-  value: selectedItem,
-  setValue: setItem,
+  value,
+  setValue,
   onChange = () => {},
   elements = [],
   dark,
   disabled,
-  arrowClassName,
-  dotClassName,
+  arrowClassName: arrCl,
+  dotClassName: dotCl,
   hover,
+  active,
 }) => {
-  const [activeClassName, setActiveClassname] = React.useState("");
+  const [anim, setAnim] = React.useState("");
   const [hoveredDot, setHoveredDot] = React.useState<number | null>(null);
 
   let dots: JSX.Element[] = [];
-  let elementsArray: JSX.Element[] = [];
-  const item =
-    Number(selectedItem) < elements.length ? Number(selectedItem) : 0;
-  const updateItem = (newItem: number) => {
+  let res: JSX.Element[] = [];
+  const item = Number(value) < elements.length ? Number(value) : 0;
+  const setItem = (newItem: number) => {
     onChange(newItem);
-    setItem(newItem);
+    setValue(newItem);
   };
 
   if (elements.length > 0) {
     elements.forEach((element, index) => {
       const estyle =
-        index === item && activeClassName.length > 0
+        index === item && anim.length > 0
           ? ({
-              "--mbx-car-an": activeClassName,
+              "--mbx-car-an": anim,
             } as React.CSSProperties)
           : undefined;
 
-      elementsArray.push(
+      res.push(
         <Container
           unstyled
           dark={dark}
@@ -48,86 +48,78 @@ const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
           {element}
         </Container>,
       );
-
       dots.push(
         <IconButton
           dark={dark}
-          features={{ noShFc: true, opFc: true }}
           style={{
-            background: `var(--mbx-c-car-dot-${
+            background: `var(--mbx-car-dot-${
               index === item || (hoveredDot != null && index === hoveredDot)
                 ? "f"
                 : "e"
             })`,
           }}
-          className={dotClassName}
+          hover={hover}
+          className={dotCl}
           disabled={disabled}
           key={`dot_${index}`}
           onMouseEnter={() => setHoveredDot(index)}
           onMouseLeave={() => setHoveredDot(null)}
           onClick={() => {
-            setActiveClassname(
-              index > item ? "slide-in-right" : "slide-in-left",
-            );
-            updateItem(index);
+            setAnim(index > item ? "slide-in-right" : "slide-in-left");
+            setItem(index);
           }}
         />,
       );
     });
   }
 
-  const arrowProps = {
-    dark,
-    hover,
-    features: { noShFc: true },
-    className: arrowClassName,
-  };
+  const Arrow = ({
+    cond = item === 0,
+    dir = "left",
+    onClick = () => {
+      setItem(item - 1);
+    },
+    arrStyle = {},
+  }) => (
+    <IconButton
+      key={`${dir}-arr`}
+      disabled={disabled || cond}
+      dark={dark}
+      hover={hover}
+      active={active}
+      className={arrCl}
+      onClick={() => {
+        setAnim(`slide-in-${dir}`);
+        onClick();
+      }}
+    >
+      <ArrowIcon
+        hover={hover}
+        dark={dark}
+        disabled={cond}
+        hide={cond}
+        style={arrStyle}
+      />
+    </IconButton>
+  );
 
   return [
-    <div key="car_els" data-mbx-cls="car-els">
-      <IconButton
-        dark={dark}
-        key="prev-ar"
-        features={{ noShFc: true, opFc: true }}
-        disabled={disabled || item === 0}
+    <div key="car_els" data-mbx-car-els="">
+      <Arrow />
+      {res}
+      <Arrow
+        dir="right"
+        cond={item === elements.length - 1}
         onClick={() => {
-          setActiveClassname("slide-in-left");
-          updateItem(item - 1);
+          setItem(item + 1);
         }}
-        {...arrowProps}
-      >
-        <ArrowIcon
-          hover={hover}
-          dark={dark}
-          disabled={item === 0 || disabled}
-          hide={item === 0}
-        />
-      </IconButton>
-      {elementsArray}
-      <IconButton
-        dark={dark}
-        key="next-ar"
-        features={{ noShFc: true, opFc: true }}
-        disabled={disabled || item === elements.length - 1}
-        onClick={() => {
-          setActiveClassname("slide-in-right");
-          updateItem(item + 1);
+        arrStyle={{
+          WebkitTransform: "scaleX(-1)",
+          transform: "scaleX(-1)",
         }}
-        {...arrowProps}
-      >
-        <ArrowIcon
-          style={{
-            WebkitTransform: "scaleX(-1)",
-            transform: "scaleX(-1)",
-          }}
-          dark={dark}
-          hover={hover}
-          disabled={item === elements.length - 1 || disabled}
-          hide={item === elements.length - 1}
-        />
-      </IconButton>
+      />
     </div>,
-    <div key="car_dots" data-mbx-cls="cdots">
+    <div key="car_dots" data-mbx-cdots="">
       {dots}
     </div>,
   ];

@@ -48,9 +48,10 @@ const Link: LinkComponent = ({
   children,
   newTab,
   underline = true,
-  ...commonProps
+  active = true,
+  ...props
 }) =>
-  buildMbxStandard({ ...commonProps, shadow: false }, (sharedProps) => ({
+  buildMbxStandard({ ...props, active, shadow: false }, (mbxProps) => ({
     name: "link",
     features: {
       opHov: true,
@@ -60,18 +61,15 @@ const Link: LinkComponent = ({
     Component: children,
     styles: {
       ...(underline && { textDecoration: "underline" }),
-      ...(sharedProps.hover && {
-        "--mbx-lnk-txt-h": "var(--mbx-link-txthov)",
-      }),
     },
     addProps: {
-      ...(!sharedProps.disabled && {
+      ...(!mbxProps.disabled && {
         href: to,
         target: newTab ? "_blank" : undefined,
       }),
     },
-    commonProps: sharedProps,
-    wrapper: sharedProps.disabled ? "span" : "a",
+    mbxProps,
+    wrapper: mbxProps.disabled ? "span" : "a",
   }));
 
 export default Link;

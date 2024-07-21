@@ -47,29 +47,26 @@ import component from "./component";
  * @copyright 2024 Cataldo Cianciaruso
  */
 const ExpandableContainer: ExpandableContainerComponent = ({
-  expanded,
-  compact: startCompact,
-  children,
+  compact,
   wrapper,
-  onChange,
-  ...commonProps
+  active,
+  ...props
 }) => {
-  return buildMbxReactive(commonProps, (sharedProps) => ({
+  return buildMbxReactive(props, (mbxProps) => ({
     name: "econt",
     defaultValue: false,
     wrapper,
-    inputValue: startCompact,
-    cssBg: ["c-con-bg"],
+    inputValue: compact,
+    cssBg: ["econt-bg"],
     Component: ({ value, setValue }) =>
       component({
         value,
         setValue,
-        expanded,
-        children,
-        onChange,
-        ...sharedProps,
+        ...props,
+        ...mbxProps,
+        active,
       }),
-    commonProps: sharedProps,
+    mbxProps,
   }));
 };
 

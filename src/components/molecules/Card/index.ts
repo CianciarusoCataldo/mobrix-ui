@@ -20,6 +20,7 @@ import cardComponent from "./component";
  * @param {boolean} noDivider If `true`, hide all dividers
  * @param {boolean} noTopDivider If `true`, hide the top divider, between header and body
  * @param {boolean} noBottomDivider If `true`, hide the top divider, between body and footer
+ * @param {string} dividerSize Set the size of the top and the bottom divider
  * @param {`JSX.Element` | `string`} children Card content
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
@@ -54,14 +55,14 @@ import cardComponent from "./component";
  * @copyright 2024 Cataldo Cianciaruso
  */
 const Card: CardComponent = (props) =>
-  buildMbxStandard(props, (sharedProps) => ({
+  buildMbxStandard(props, (mbxProps) => ({
     name: "card",
     Component: cardComponent({
       ...props,
-      ...sharedProps,
+      ...mbxProps,
     }),
     cssBg: ["card-bg"],
-    commonProps: sharedProps,
+    mbxProps,
   }));
 
 export default Card;

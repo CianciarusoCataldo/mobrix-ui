@@ -1,44 +1,44 @@
 [data-mbx-id="cal"] {
-  --mbx-c-cal-bg-l: var(
+  --mbx-cal-bg-l: var(
     --mbx-calendar-background-light,
     var(--mbx-calendar-background, var(--mbx-c-bg-l))
   );
-  --mbx-c-cal-txt-l: var(
+  --mbx-cal-txt-l: var(
     --mbx-calendar-text-color-light,
     var(--mbx-calendar-text-color, var(--mbx-c-txt-l))
   );
-  --mbx-c-cal-bg-d: var(
+  --mbx-cal-bg-d: var(
     --mbx-calendar-background-dark,
     var(--mbx-calendar-background, var(--mbx-c-bg-d))
   );
-  --mbx-c-cal-txt-d: var(
+  --mbx-cal-txt-d: var(
     --mbx-calendar-text-color-dark,
     var(--mbx-calendar-text-color, var(--mbx-c-txt-d))
   );
-  --mbx-c-cal-bg: var(--mbx-c-cal-bg-l);
-  --mbx-c-cal-txt: var(--mbx-c-cal-txt-l);
-  --mbx-c-cal-bg-s: var(
+  --mbx-cal-bg: var(--mbx-cal-bg-l);
+  --mbx-cal-txt: var(--mbx-cal-txt-l);
+  --mbx-cal-bg-s: var(
     --mbx-calendar-selected-background-light,
-    var(--mbx-calendar-selected-background, var(--mbx-c-cal-bg-d))
+    var(--mbx-calendar-selected-background, var(--mbx-cal-bg-d))
   );
-  --mbx-c-cal-txt-s: var(
+  --mbx-cal-txt-s: var(
     --mbx-calendar-selected-text-color-light,
-    var(--mbx-calendar-selected-text-color, var(--mbx-c-cal-txt-d))
+    var(--mbx-calendar-selected-text-color, var(--mbx-cal-txt-d))
   );
-  --mbx-c-cal-bg-h: var(
+  --mbx-cal-bg-h: var(
     --mbx-calendar-background-hover-light,
-    var(--mbx-calendar-background-hover, var(--mbx-c-cal-bg-s))
+    var(--mbx-calendar-background-hover, var(--mbx-cal-bg-s))
   );
-  --mbx-c-cal-txt-h: var(
+  --mbx-cal-txt-h: var(
     --mbx-calendar-text-color-hover-light,
-    var(--mbx-calendar-text-color-hover, var(--mbx-c-cal-txt-s))
+    var(--mbx-calendar-text-color-hover, var(--mbx-cal-txt-s))
   );
-  --mbx-c-cal-t: var(
+  --mbx-cal-t: var(
     --mbx-calendar-today-color-light,
     var(--mbx-calendar-today-color, red)
   );
-  --mbx-table-background: var(--mbx-c-cal-bg);
-  --mbx-table-text-color: var(--mbx-c-cal-txt);
+  --mbx-table-background: var(--mbx-cal-bg);
+  --mbx-table-text-color: var(--mbx-cal-txt);
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -47,25 +47,25 @@
 }
 
 [data-mbx-id="cal"][data-mbx-dk] {
-  --mbx-c-cal-bg: var(--mbx-c-cal-bg-d);
-  --mbx-c-cal-txt: var(--mbx-c-cal-txt-d);
-  --mbx-c-cal-bg-s: var(
+  --mbx-cal-bg: var(--mbx-cal-bg-d);
+  --mbx-cal-txt: var(--mbx-cal-txt-d);
+  --mbx-cal-bg-s: var(
     --mbx-calendar-selected-background-dark,
-    var(--mbx-calendar-selected-background, var(--mbx-c-cal-bg-l))
+    var(--mbx-calendar-selected-background, var(--mbx-cal-bg-l))
   );
-  --mbx-c-cal-txt-s: var(
+  --mbx-cal-txt-s: var(
     --mbx-calendar-selected-text-color-dark,
-    var(--mbx-calendar-selected-text-color, var(--mbx-c-cal-txt-l))
+    var(--mbx-calendar-selected-text-color, var(--mbx-cal-txt-l))
   );
-  --mbx-c-cal-bg-h: var(
+  --mbx-cal-bg-h: var(
     --mbx-calendar-background-hover-dark,
-    var(--mbx-calendar-background-hover, var(--mbx-c-cal-bg-s))
+    var(--mbx-calendar-background-hover, var(--mbx-cal-bg-s))
   );
-  --mbx-c-cal-txt-h: var(
+  --mbx-cal-txt-h: var(
     --mbx-calendar-text-color-hover-dark,
-    var(--mbx-calendar-text-color-hover, var(--mbx-c-cal-txt-s))
+    var(--mbx-calendar-text-color-hover, var(--mbx-cal-txt-s))
   );
-  --mbx-c-cal-t: var(
+  --mbx-cal-t: var(
     --mbx-calendar-today-color-dark,
     var(--mbx-calendar-today-color, red)
   );
@@ -73,7 +73,7 @@
 
 [data-mbx-id="cal"] > div {
   margin-bottom: 1.2rem;
-  color: var(--mbx-c-cal-txt);
+  color: var(--mbx-cal-txt);
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -100,43 +100,38 @@
   margin-top: 1rem;
 }
 
-[data-mbx-id="cal"] [data-mbx-tcell="true"] {
+[data-mbx-id="cal"] [data-mbx-tcell] {
   font-size: medium;
   font-weight: 700;
 }
 
-[data-mbx-id="cal"] td[data-mbx-tcell="true"] {
+[data-mbx-id="cal"] td[data-mbx-tcell] {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   font-size: larger;
   transition: 0.3s;
 }
 
-[data-mbx-id="cal"] th[data-mbx-tcell="true"] {
+[data-mbx-id="cal"] th[data-mbx-tcell] {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: x-large;
 }
 
-[data-mbx-id="cal"] [data-mbx-scal="true"] {
+[data-mbx-id="cal"] [data-mbx-scal] {
   cursor: default;
-  background: var(--mbx-c-cal-bg-s);
-  color: var(--mbx-c-cal-txt-s);
+  background: var(--mbx-cal-bg-s);
+  color: var(--mbx-cal-txt-s);
 }
 
-[data-mbx-id="cal"] [data-mbx-ctoday="true"] {
-  color: var(--mbx-c-cal-t);
-  font-weight: 800;
-}
-
-[data-mbx-id="cal"] [data-mbx-cls="dsb"] {
+[data-mbx-id="cal"] td[data-mbx-dsb] {
   opacity: 0.4;
 }
 
 [data-mbx-id="cal"] > div > [data-mbx-id="icb"] > [data-mbx-img] {
   --mbx-icon-light: var(
     --mbx-calendar-arrow-light,
-    var(--mbx-calendar-arrow, var(--mbx-c-cal-txt))
+    var(--mbx-calendar-arrow, var(--mbx-cal-txt))
   );
   --mbx-icon-hover-light: var(
     --mbx-calendar-arrow-hover-light,
@@ -144,7 +139,7 @@
   );
   --mbx-icon-dark: var(
     --mbx-calendar-arrow-dark,
-    var(--mbx-calendar-arrow, var(--mbx-c-cal-txt))
+    var(--mbx-calendar-arrow, var(--mbx-cal-txt))
   );
   --mbx-icon-hover-dark: var(
     --mbx-calendar-arrow-hover-dark,
@@ -153,29 +148,29 @@
 }
 
 [data-mbx-id="cal"] td:focus-visible {
-  background: var(--mbx-c-cal-bg-h);
-  color: var(--mbx-c-cal-txt-h);
+  background: var(--mbx-cal-bg-h);
+  color: var(--mbx-cal-txt-h);
 }
 
-[data-mbx-id="cal"] td[data-mbx-cls="dsb"]:focus-visible {
-  background: var(--mbx-c-cal-bg);
-  color: var(--mbx-c-cal-txt);
+[data-mbx-id="cal"] td[data-mbx-dsb]:focus-visible {
+  background: var(--mbx-cal-bg);
+  color: var(--mbx-cal-txt);
 }
 
 @media (hover) {
-  [data-mbx-id="cal"] td:hover {
-    background: var(--mbx-c-cal-bg-h);
-    color: var(--mbx-c-cal-txt-h);
+  [data-mbx-id="cal"][data-mbx-hv] td:hover {
+    background: var(--mbx-cal-bg-h);
+    color: var(--mbx-cal-txt-h);
   }
 
-  [data-mbx-id="cal"] td[data-mbx-cls="dsb"]:hover {
-    background: var(--mbx-c-cal-bg);
-    color: var(--mbx-c-cal-txt);
+  [data-mbx-id="cal"] td[data-mbx-dsb]:hover {
+    background: var(--mbx-cal-bg);
+    color: var(--mbx-cal-txt);
   }
 }
 
 @media (max-width: 500px) {
-  [data-mbx-id="cal"] th[data-mbx-tcell="true"] {
+  [data-mbx-id="cal"] th[data-mbx-tcell] {
     margin: 0;
     font-size: larger;
     padding: 0.3rem;
@@ -183,7 +178,7 @@
     padding-bottom: 0.4rem;
   }
 
-  [data-mbx-id="cal"] td[data-mbx-tcell="true"] {
+  [data-mbx-id="cal"] td[data-mbx-tcell] {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
@@ -198,7 +193,7 @@
 }
 
 @media (max-width: 400px) {
-  [data-mbx-id="cal"] th[data-mbx-tcell="true"] {
+  [data-mbx-id="cal"] th[data-mbx-tcell] {
     margin: 0;
     font-size: large;
     padding: 0.2rem;
@@ -212,7 +207,7 @@
 }
 
 @media (max-width: 340px) {
-  [data-mbx-id="cal"] th[data-mbx-tcell="true"] {
+  [data-mbx-id="cal"] th[data-mbx-tcell] {
     padding: 0.1rem;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
@@ -226,11 +221,11 @@
 }
 
 @media (max-width: 320px) {
-  [data-mbx-id="cal"] th[data-mbx-tcell="true"] {
+  [data-mbx-id="cal"] th[data-mbx-tcell] {
     display: none;
   }
 
-  [data-mbx-id="cal"] td[data-mbx-tcell="true"] {
+  [data-mbx-id="cal"] td[data-mbx-tcell] {
     padding: 0;
     margin: 0;
   }

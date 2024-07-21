@@ -11,22 +11,19 @@ import cardComponent from "../Card/component";
 const DismissableCardInternalComponent: MbxUiComponent<
   DismissableCardProps,
   BuilderComponent[]
-> = ({ onClose, header, ...props }) =>
+> = ({ onClose, header, dark, disabled, active, hover, ...props }) =>
   cardComponent({
     ...props,
     header: [
       <IconButton
-        dark={props.dark}
-        features={{ noShFc: true }}
-        disabled={props.disabled}
+        hover={hover}
+        dark={dark}
+        disabled={disabled}
+        active={active}
         onClick={onClose}
         key="dis-x"
       >
-        <Xicon
-          dark={props.dark}
-          hover={props.hover}
-          disabled={props.disabled}
-        />
+        <Xicon dark={dark} hover={hover} disabled={disabled} />
       </IconButton>,
       <div key="dis-h">{header}</div>,
     ],

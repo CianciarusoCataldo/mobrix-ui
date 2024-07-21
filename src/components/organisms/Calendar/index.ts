@@ -56,27 +56,31 @@ import component from "./component";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const Calendar: CalendarComponent = ({ value: inputValue, ...props }) => {
-  const todayDate = today();
+const Calendar: CalendarComponent = ({
+  value: inputValue,
+  active = true,
+  ...props
+}) => {
+  const tday = today();
 
-  return buildMbxReactive<DeepPartial<CalendarDate>>(props, (sharedProps) => ({
+  return buildMbxReactive<DeepPartial<CalendarDate>>(props, (mbxProps) => ({
     name: "cal",
-    commonProps: { ...sharedProps, shadow: false },
+    mbxProps: { ...mbxProps, shadow: false },
     inputValue,
     defaultValue: {
-      year: todayDate.year,
-      month: todayDate.month,
-      day: todayDate.dayOfTheMonth,
+      year: tday.year,
+      month: tday.month,
+      day: tday.dayOfTheMonth,
     },
-    cssBg: ["c-cal-bg"],
-    features: { noShFc: true },
+    cssBg: ["cal-bg"],
     Component: ({ value, setValue }) =>
       component({
-        today: todayDate,
+        today: tday,
         value,
         setValue,
         ...props,
-        ...sharedProps,
+        ...mbxProps,
+        active,
       }),
   }));
 };

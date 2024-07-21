@@ -1,0 +1,7 @@
+[data-mbx-id="count"],
+[data-mbx-id="inp"] {
+  border-color: transparent;
+  border-radius: 5px;
+  padding: 0.5rem;
+  --mbx-trdur: 0.1s !important;
+}

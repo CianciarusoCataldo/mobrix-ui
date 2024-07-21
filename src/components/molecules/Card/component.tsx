@@ -6,20 +6,21 @@ import { Divider } from "../../atoms";
 import Container from "../Container";
 
 const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
-  header,
-  body,
   children,
-  footer,
   dark,
-  noDividers,
-  noBottomDivider,
-  noTopDivider,
-  headerClassName,
-  bodyClassName,
-  footerClassName,
   headerProps = {},
   bodyProps = {},
   footerProps = {},
+  dividerSize = "1px",
+  header,
+  headerClassName,
+  noBottomDivider,
+  noDividers,
+  noTopDivider,
+  body,
+  bodyClassName,
+  footer,
+  footerClassName,
 }) => [
   <Container
     dark={dark}
@@ -33,7 +34,7 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
   </Container>,
   <Divider
     hide={!header || noDividers || noTopDivider}
-    size="1px"
+    size={dividerSize}
     key="card_t_d"
     dark={dark}
   />,
@@ -41,7 +42,7 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
     dark={dark}
     unstyled
     className={bodyClassName}
-    data-mbx-cls="cardc-body"
+    data-mbx-cbody=""
     key="card_b"
     props={bodyProps}
   >
@@ -49,7 +50,7 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
   </Container>,
   children,
   <Divider
-    size="1px"
+    size={dividerSize}
     key="card_b_d"
     dark={dark}
     hide={!footer || noDividers || noBottomDivider}

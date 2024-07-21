@@ -53,6 +53,11 @@
     "type": "boolean",
     "default": false
   },
+  "dividerSize": {
+    "description": "Set the size of the top and the bottom divider",
+    "default": "1px",
+    "type": "string"
+  },
   "children": {
     "type": "`JSX.Element` | `string`",
     "default": "",

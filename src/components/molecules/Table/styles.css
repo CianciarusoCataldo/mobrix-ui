@@ -3,55 +3,55 @@
   border-style: solid;
   border-collapse: collapse;
   table-layout: fixed;
-  --mbx-c-table-bg: var(
+  --mbx-tbl-bg: var(
     --mbx-table-background-light,
     var(--mbx-table-background, var(--mbx-c-bg))
   );
-  --mbx-c-table-txt: var(
+  --mbx-tbl-txt: var(
     --mbx-table-text-color-light,
     var(--mbx-table-text-color, var(--mbx-c-txt))
   );
-  --mbx-c-table-bord: var(
+  --mbx-tbl-bord: var(
     --mbx-table-border-color-light,
     var(--mbx-table-border-color, darkslategrey)
   );
-  --mbx-c-table-head-bg: var(
+  --mbx-tbl-head-bg: var(
     --mbx-table-header-background-light,
     var(
       --mbx-table-header-background,
       linear-gradient(to right, #354155, #2b3546)
     )
   );
-  --mbx-c-table-head-txt: var(
+  --mbx-tbl-head-txt: var(
     --mbx-table-header-text-color-light,
     var(--mbx-table-header-text-color, whitesmoke)
   );
-  color: var(--mbx-c-table-txt);
-  border-color: var(--mbx-c-table-bord);
-  background: var(--mbx-c-table-bg);
+  color: var(--mbx-tbl-txt);
+  border-color: var(--mbx-tbl-bord);
+  background: var(--mbx-tbl-bg);
 }
 
 [data-mbx-id="table"][data-mbx-dk] {
-  --mbx-c-table-bg: var(
+  --mbx-tbl-bg: var(
     --mbx-table-background-dark,
     var(--mbx-table-background, var(--mbx-c-bg))
   );
-  --mbx-c-table-txt: var(
+  --mbx-tbl-txt: var(
     --mbx-table-text-color-dark,
     var(--mbx-table-text-color, var(--mbx-c-txt))
   );
-  --mbx-c-table-head-bg: var(
+  --mbx-tbl-head-bg: var(
     --mbx-table-header-background-dark,
     var(
       --mbx-table-header-background,
       linear-gradient(to right, #4b5b77, #3e4c64)
     )
   );
-  --mbx-c-table-head-txt: var(
+  --mbx-tbl-head-txt: var(
     --mbx-table-header-text-color-dark,
     var(--mbx-table-header-text-color, rgb(255, 255, 255))
   );
-  --mbx-c-table-bord: var(
+  --mbx-tbl-bord: var(
     --mbx-table-border-color-dark,
     var(--mbx-table-border-color, rgb(219, 219, 219))
   );
@@ -61,17 +61,17 @@
   border-collapse: collapse;
 }
 
-[data-mbx-id="table"] [data-mbx-tcell="true"] {
+[data-mbx-id="table"] [data-mbx-tcell] {
   border-width: 2px;
   border-style: solid;
   border-collapse: collapse;
   padding: 0.4rem;
-  border-color: var(--mbx-c-table-bord);
-  color: var(--mbx-c-table-txt);
+  border-color: var(--mbx-tbl-bord);
+  color: var(--mbx-tbl-txt);
 }
 
-[data-mbx-id="table"] th[data-mbx-tcell="true"] {
+[data-mbx-id="table"] th[data-mbx-tcell] {
   font-size: large;
-  background: var(--mbx-c-table-head-bg);
-  color: var(--mbx-c-table-head-txt);
+  background: var(--mbx-tbl-head-bg);
+  color: var(--mbx-tbl-head-txt);
 }

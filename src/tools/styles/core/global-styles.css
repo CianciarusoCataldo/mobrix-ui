@@ -5,28 +5,41 @@
   --mbx-op: 1;
   --mbx-sh: 0 5px 13px -1px var(--mbx-c-sh);
   --mbx-an: none;
+  --mbx-tr: none;
+  --mbx-trdur: 0.2s;
+  --mbx-trprop: all;
+  --mbx-trtran: ease-in;
+  --mbx-andur: 0.3s;
   opacity: var(--mbx-op);
   box-shadow: var(--mbx-sh);
   -webkit-box-shadow: var(--mbx-sh);
   -moz-box-shadow: var(--mbx-sh);
   -o-box-shadow: var(--mbx-sh);
-  animation: var(--mbx-an) 0.4s;
-  -webkit-animation: var(--mbx-an) 0.4s;
-  -moz-animation: var(--mbx-an) 0.4s;
-  -ms-animation: var(--mbx-an) 0.4s;
-  -o-animation: var(--mbx-an) 0.4s;
+  animation: var(--mbx-an) var(--mbx-andur);
+  -webkit-animation: var(--mbx-an) var(--mbx-andur);
+  -moz-animation: var(--mbx-an) var(--mbx-andur);
+  -ms-animation: var(--mbx-an) var(--mbx-andur);
+  -o-animation: var(--mbx-an) var(--mbx-andur);
+}
+
+[data-mbx-img][data-mbx-dsb],
+[data-mbx-id][data-mbx-dsb] {
+  cursor: unset !important;
+  opacity: 0.6 !important;
 }
 
 [data-mbx-id],
 [data-mbx-id]:hover,
 [data-mbx-id]:active {
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
+  transition: var(--mbx-trprop) var(--mbx-trdur) var(--mbx-trtran);
+  -webkit-transition: var(--mbx-trprop) var(--mbx-trdur) var(--mbx-trtran);
+  -moz-transition: var(--mbx-trprop) var(--mbx-trdur) var(--mbx-trtran);
+  -o-transition: var(--mbx-trprop) var(--mbx-trdur) var(--mbx-trtran);
 }
 
 [data-mbx-img],
+[data-mbx-img]:focus,
+[data-mbx-img]:focus-visible,
 [data-mbx-id],
 [data-mbx-id]:focus,
 [data-mbx-id]:focus-visible {

@@ -1,20 +1,12 @@
 [data-mbx-img] {
   --mbx-ic-c: var(--mbx-icon-light, var(--mbx-icon, var(--mbx-c-txt)));
-  --mbx-ic-c-h: var(
-    --mbx-icon-hover-light,
-    var(--mbx-icon-hover, var(--mbx-ic-c))
-  );
+  --mbx-ic-c-h: var(--mbx-icon-hover-light, var(--mbx-icon-hover));
   fill: var(--mbx-ic-c);
-  transition-duration: 0.2s;
-  transition-property: transform;
 }
 
 [data-mbx-img][data-mbx-dk] {
   --mbx-ic-c: var(--mbx-icon-dark, var(--mbx-icon, var(--mbx-c-txt)));
-  --mbx-ic-c-h: var(
-    --mbx-icon-hover-dark,
-    var(--mbx-icon-hover, var(--mbx-ic-c))
-  );
+  --mbx-ic-c-h: var(--mbx-icon-hover-dark, var(--mbx-icon-hover));
 }
 
 [data-mbx-id="icb"]:focus-visible > [data-mbx-img],
@@ -23,8 +15,12 @@
   fill: var(--mbx-ic-f);
 }
 
+[data-mbx-id="icb"]:active > svg {
+  opacity: var(--mbx-op-act);
+}
+
 @media (hover: hover) {
-  [data-mbx-img]:hover {
-    fill: var(--mbx-ic-c-h);
+  [data-mbx-img][data-mbx-hv]:hover {
+    fill: var(--mbx-ic-c-h, var(--mbx-ic-c));
   }
 }

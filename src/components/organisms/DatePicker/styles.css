@@ -1,9 +1,9 @@
 [data-mbx-id="dpick"] {
-  --mbx-c-dtp-bg: var(
+  --mbx-dtp-bg: var(
     --mbx-datepicker-background-light,
     var(--mbx-datepicker-background, var(--mbx-c-bg))
   );
-  --mbx-c-dtp-txt: var(
+  --mbx-dtp-txt: var(
     --mbx-datepicker-text-color-light,
     var(--mbx-datepicker-text-color, var(--mbx-c-txt))
   );
@@ -108,22 +108,22 @@
   width: max-content;
   display: flex;
   flex-direction: row;
-  background: var(--mbx-c-dtp-bg);
-  color: var(--mbx-c-dtp-txt);
+  background: var(--mbx-dtp-bg);
+  color: var(--mbx-dtp-txt);
 }
 
 [data-mbx-id="dpick"][data-mbx-dk] {
-  --mbx-c-dtp-bg: var(
+  --mbx-dtp-bg: var(
     --mbx-datepicker-background-dark,
     var(--mbx-datepicker-background, var(--mbx-c-bg))
   );
-  --mbx-c-dtp-txt: var(
+  --mbx-dtp-txt: var(
     --mbx-datepicker-text-color-dark,
     var(--mbx-datepicker-text-color, var(--mbx-c-txt))
   );
 }
 
-[data-mbx-id="dpick"] > [data-mbx-cls="date-s"] {
+[data-mbx-id="dpick"] > [data-mbx-date-s] {
   display: flex;
   flex-direction: row;
 }
@@ -131,7 +131,7 @@
 [data-mbx-id="dpick"] > [data-mbx-id="icb"] {
   --mbx-icon-light: var(
     --mbx-datepicker-icon-light,
-    var(--mbx-datepicker-icon, var(--mbx-c-dtp-txt))
+    var(--mbx-datepicker-icon, var(--mbx-dtp-txt))
   );
   --mbx-icon-hover-light: var(
     --mbx-datepicker-icon-hover-light,
@@ -139,7 +139,7 @@
   );
   --mbx-icon-dark: var(
     --mbx-datepicker-icon-dark,
-    var(--mbx-datepicker-icon, var(--mbx-c-dtp-txt))
+    var(--mbx-datepicker-icon, var(--mbx-dtp-txt))
   );
   --mbx-icon-hover-dark: var(
     --mbx-datepicker-icon-hover-dark,
@@ -152,11 +152,11 @@
   margin: auto;
 }
 
-[data-mbx-id="dpick"] > [data-mbx-cls="date-s"] > [data-mbx-id="label"] {
+[data-mbx-id="dpick"] > [data-mbx-date-s] > [data-mbx-id="label"] {
   vertical-align: middle;
   display: inline-block;
   margin-right: 0.3rem;
-  --mbx-label-text-color: var(--mbx-c-dtp-txt);
+  --mbx-label-text-color: var(--mbx-dtp-txt);
 }
 
 @media (max-width: 600px) {
@@ -185,7 +185,7 @@
 }
 
 @media (max-width: 260px) {
-  [data-mbx-id="dpick"] > [data-mbx-cls="date-s"] {
+  [data-mbx-id="dpick"] > [data-mbx-date-s] {
     flex-direction: column;
     align-items: center;
   }

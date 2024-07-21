@@ -39,7 +39,7 @@
     var(--mbx-toggle-icon-off-internal-color, #636363)
   );
   --mbx-tog-ic-off-ext: var(
-    --mbx-toggle-icon-off-external-color-light,
+    --mbx-toggle-icon-off-external-color-dark,
     var(--mbx-toggle-icon-off-external-color, #a7a3a3)
   );
   --mbx-tog-ic-on-int: var(
@@ -47,7 +47,7 @@
     var(--mbx-toggle-icon-on-internal-color, #ffffff)
   );
   --mbx-tog-ic-on-ext: var(
-    --mbx-toggle-icon-on-external-color-light,
+    --mbx-toggle-icon-on-external-color-dark,
     var(--mbx-toggle-icon-on-external-color, #adadad)
   );
 }

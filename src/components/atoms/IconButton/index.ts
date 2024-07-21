@@ -48,13 +48,13 @@ const IconButton: IconButtonComponent = ({
   onMouseEnter,
   onMouseLeave,
   hover = false,
-  active,
-  ...commonProps
+  active = true,
+  ...props
 }) =>
-  buildMbxStandard({ ...commonProps, hover }, (sharedProps) => ({
+  buildMbxStandard({ ...props, active, hover }, (sProps) => ({
     name: "icb",
     wrapper: "button",
-    ...(!sharedProps.unstyled && {
+    ...(!sProps.unstyled && {
       features: {
         opHov: hover,
         noShFc: true,
@@ -62,15 +62,15 @@ const IconButton: IconButtonComponent = ({
     }),
     Component: children,
     addProps: {
-      ...(!sharedProps.disabled && {
+      ...(!sProps.disabled && {
         onClick,
         onMouseEnter,
         onMouseLeave,
       }),
     },
-    commonProps: {
-      ...sharedProps,
-      active: active || onClick !== undefined,
+    mbxProps: {
+      ...sProps,
+      active: sProps.active && onClick !== undefined,
       shadow: false,
     },
   }));

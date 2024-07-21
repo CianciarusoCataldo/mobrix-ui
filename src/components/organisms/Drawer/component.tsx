@@ -10,13 +10,14 @@ const DrawerInternalComponent: MbxUiComponent<
   DrawerProps,
   BuilderComponent[]
 > = ({
-  onClose,
-  children,
-  dark,
-  animated,
-  disabled,
   hover,
   arrowClassName,
+  dark,
+  active,
+  animated,
+  disabled,
+  children,
+  onClose,
 }) => {
   return [
     <IconButton
@@ -24,12 +25,12 @@ const DrawerInternalComponent: MbxUiComponent<
       className={arrowClassName}
       disabled={disabled}
       animated={animated}
+      active={active}
       key="drw_bts_p"
       dark={dark}
       onClick={() => {
         onClose!();
       }}
-      features={{ noShFc: true }}
       a11yLabel="drawer-close-button"
     >
       <ArrowIcon hover={hover} disabled={disabled} />

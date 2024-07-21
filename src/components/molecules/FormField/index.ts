@@ -3,7 +3,6 @@ import "./styles.css";
 import { FormFieldComponent } from "../../../types";
 
 import { buildMbxReactive } from "../../../tools";
-import { fieldFormatters } from "./utils";
 
 import component from "./component";
 
@@ -64,24 +63,24 @@ const FormField: FormFieldComponent = ({
   type = "text",
   ...props
 }) => {
-  return buildMbxReactive(props, (sharedProps) => ({
+  return buildMbxReactive(props, (mbxProps) => ({
     name: "field",
     addProps: {
       "data-mbx-ftype": type,
     },
-    commonProps: {
-      ...sharedProps,
+    mbxProps: {
+      ...mbxProps,
       shadow: false,
       tabIndex: -1,
     },
-    cssBg: ["c-field-bg"],
+    cssBg: ["field-bg"],
     Component: ({ value, setValue }) =>
       component({
         value,
         setValue,
         type,
         ...props,
-        ...sharedProps,
+        ...mbxProps,
       }),
     inputValue,
     defaultValue: null,

@@ -33,7 +33,7 @@ const drawerTest = () => {
       const onChangeStub = jest.fn();
       let wrapper = mount(<TabViewer tabs={testTabs} />);
       wrapper
-        .find('[data-mbx-cls="tabls"] [data-mbx-id="btn"]')
+        .find('[data-mbx-tbls] [data-mbx-id="btn"]')
         .at(1)
         .simulate("click");
       expect(wrapper.find('[data-id="test-tab-2"]').length).toBe(1);
@@ -50,7 +50,7 @@ const drawerTest = () => {
         />
       );
       wrapper
-        .find('[data-mbx-cls="tabls"] [data-mbx-id="btn"]')
+        .find('[data-mbx-tbls] [data-mbx-id="btn"]')
         .at(1)
         .simulate("click");
       expect(onChangeStub).toBeCalledWith(1);

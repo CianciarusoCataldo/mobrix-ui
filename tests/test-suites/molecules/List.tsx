@@ -11,7 +11,9 @@ const listTest = () => {
         <List disabled elements={["Test element 1", "Test element 2"]} />
       );
       expect(wrapper);
-      wrapper = mount(<List elements={["Test element 1", "Test element 2"]} />);
+      wrapper = mount(
+        <List active elements={["Test element 1", "Test element 2"]} />
+      );
       expect(wrapper);
     });
 

@@ -32,17 +32,11 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
     React.useState<Record<string, string | boolean | number>>(d_fields);
 
   const cmps = [
-    <Label disabled={disabled} key="frm_tl" dark={dark} data-mbx-cls="title">
+    <Label disabled={disabled} key="frm_tl" dark={dark} data-mbx-ftitle>
       {title}
     </Label>,
     ...Object.keys(d_fields).map((field, index) => {
       const fSetts = fields![field];
-
-      const type = fSetts.type || "text";
-
-      const callBack = (vl: any) => {
-        setValues({ ...values, [field]: vl });
-      };
 
       return (
         <div className={fieldClassName} key={`f_fld_${index}`}>
@@ -51,8 +45,10 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
             disabled={disabled}
             value={values[field]}
             header={fSetts.header}
-            type={type}
-            onChange={callBack}
+            type={fSetts.type || "text"}
+            onChange={(vl: any) => {
+              setValues({ ...values, [field]: vl });
+            }}
             hover={hover}
             headerProps={{ dark }}
           />
@@ -74,7 +70,7 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
       onClick={() => {
         onSubmit && onSubmit(values);
       }}
-      data-mbx-cls="s-bt"
+      data-mbx-sbt=""
     >
       {submitLabel}
     </Button>,

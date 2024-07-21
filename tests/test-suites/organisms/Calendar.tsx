@@ -15,6 +15,7 @@ const calendarTest = () => {
       const todayDate = today();
       wrapper = mount(
         <Calendar
+          active
           labelClassName="test"
           startMonth={todayDate.month}
           startYear={todayDate.year}
@@ -24,7 +25,7 @@ const calendarTest = () => {
           fromToday={false}
         />
       );
-      wrapper.find("[data-mbx-ctoday]").at(2).simulate("click");
+      wrapper.find("td:not([data-mbx-dsb])").at(2).simulate("click");
       wrapper.find('div [data-mbx-id="icb"]').at(0).simulate("click");
       expect(wrapper);
     });
@@ -36,7 +37,7 @@ const calendarTest = () => {
         <Calendar fromToday={false} onChange={onChangeStub} />
       );
       wrapper.update();
-      wrapper.find("[data-mbx-ctoday]").at(3).simulate("click");
+      wrapper.find("td:not([data-mbx-dsb])").at(3).simulate("click");
 
       expect(onChangeStub).toBeCalled;
     });
@@ -53,9 +54,9 @@ const calendarTest = () => {
         />
       );
       wrapper.update();
-      wrapper.find("[data-mbx-ctoday]").at(3).simulate("focus");
+      wrapper.find("td:not([data-mbx-dsb])").at(18).simulate("click");
       wrapper
-        .find("[data-mbx-ctoday]")
+        .find("td:not([data-mbx-dsb])")
         .at(19)
         .simulate("keyDown", { keyCode: 13, code: "Enter", key: "Enter" });
 

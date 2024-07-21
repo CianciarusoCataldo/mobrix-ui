@@ -24,6 +24,7 @@ import component from "./component";
  * @param {Record<string, any>} headerProps Custom props applied on the Card header - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}
  * @param {Record<string, any>} bodyProps Custom props applied on the Card body - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}
  * @param {Record<string, any>} footerProps Custom props applied on the Card footer - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}
+ * @param {string} dividerSize Set the size of the top and the bottom divider - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode
@@ -61,16 +62,18 @@ const DismissableCard: DismissableCardComponent = ({
   onClose = () => {},
   alwaysVisible,
   headerProps = {},
+  active,
   ...props
 }) =>
-  buildMbxReactive(props, (sharedProps) => ({
+  buildMbxReactive(props, (sProps) => ({
     name: "dis-card",
-    inputValue: sharedProps.hide,
+    inputValue: sProps.hide,
     defaultValue: false,
-    Component: ({ value, setValue }) =>
+    Component: ({ setValue }) =>
       component({
         ...props,
-        ...sharedProps,
+        ...sProps,
+        active,
         alwaysVisible,
         onClose: () => {
           onClose();
@@ -78,14 +81,14 @@ const DismissableCard: DismissableCardComponent = ({
         },
         headerProps: {
           ...headerProps,
-          "data-mbx-cls": "dchead",
+          "data-mbx-dchead": "",
         },
       }),
-    cssBg: ["card-bg", "c-dcard-bg"],
-    props: (value, setValue) => ({
-      commonProps: {
-        ...sharedProps,
-        hide: alwaysVisible ? sharedProps.hide : value,
+    cssBg: ["dismissablecard-background"],
+    props: (value, s) => ({
+      mbxProps: {
+        ...sProps,
+        hide: alwaysVisible ? sProps.hide : value,
       },
     }),
   }));

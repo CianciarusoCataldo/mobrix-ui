@@ -43,11 +43,11 @@ import component from "./component";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const List: ListComponent = (props) =>
-  buildMbxStandard(props, (sharedProps) => ({
+const List: ListComponent = ({ active = true, ...props }) =>
+  buildMbxStandard(props, (mbxProps) => ({
     name: "list",
-    Component: component({ ...props, ...sharedProps }),
-    commonProps: { ...sharedProps, shadow: false, a11y: false },
+    Component: component({ ...props, ...mbxProps, active }),
+    mbxProps: { ...mbxProps, shadow: false, a11y: false },
   }));
 
 export default List;

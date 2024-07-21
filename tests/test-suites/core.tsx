@@ -7,6 +7,8 @@ import {
   CalendarIcon,
   CheckIcon,
   CopyIcon,
+  GitLogo,
+  link,
   Xicon,
 } from "../../src/icons";
 
@@ -17,7 +19,7 @@ export default () =>
         buildMbxStandard(props, (sharedProps) => ({
           name: "test-mbx-component",
           features: undefined,
-          commonProps: { features: undefined },
+          mbxProps: { features: undefined },
         }));
 
       const Wrapper = mount(<Component animated animation="fade-in" />);
@@ -99,6 +101,34 @@ export default () =>
           dark
           fill="none"
         />
+      );
+      expect(wrapper);
+
+      wrapper = mount(
+        <GitLogo
+          animated
+          disabled
+          width="2px"
+          height="2px"
+          transform="scaleX(1)"
+          hide
+          dark
+          fill="none"
+        />
+      );
+      expect(wrapper);
+
+      wrapper = mount(
+        link({
+          animated: true,
+          disabled: true,
+          width: "20x",
+          height: "2px",
+          transform: "scaleX(1)",
+          hide: true,
+          dark: true,
+          fill: "none",
+        })
       );
       expect(wrapper);
     });

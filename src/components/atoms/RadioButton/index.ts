@@ -50,22 +50,17 @@ const RadioButton: RadioButtonComponent = ({
   deselectable = true,
   onKeyDown = () => {},
   active = true,
-  ...commonProps
+  ...props
 }) =>
-  buildMbxReactive<boolean>({ active, ...commonProps }, (sharedProps) => ({
+  buildMbxReactive<boolean>({ active, ...props }, (sProps) => ({
     name: "radio",
-    Component: ({ value, setValue }) => (value ? component : ""),
+    Component: ({ value }) => (value ? component : ""),
     defaultValue: false,
     inputValue,
     features: {
       opHov: true,
     },
     cssBg: ["rd-bg", "rd-bg-h"],
-    styles: {
-      ...(sharedProps.hover && {
-        "--mbx-rd-bg-h": "var(--mbx-c-rad-bg-h)",
-      }),
-    },
     props: (value, setValue) => {
       const callBack = () => {
         if (!value || deselectable) {
@@ -76,13 +71,13 @@ const RadioButton: RadioButtonComponent = ({
 
       return {
         addProps: {
-          ...(!sharedProps.disabled && {
+          ...(!sProps.disabled && {
             onClick: callBack,
           }),
         },
-        commonProps: {
-          ...sharedProps,
-          ...(!sharedProps.disabled && {
+        mbxProps: {
+          ...sProps,
+          ...(!sProps.disabled && {
             onKeyDown: (e) => {
               if (e.code === "Enter") {
                 callBack();

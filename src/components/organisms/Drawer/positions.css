@@ -3,8 +3,8 @@
   bottom: 0;
   display: flex;
   flex-direction: column;
-  --mbx-drw-an-in: slideBottom 0.3s forwards;
-  --mbx-drw-an-out: slideOutBottom 0.3s forwards;
+  --mbx-drw-an-in: slide-in-bottom 0.3s forwards;
+  --mbx-drw-an-out: slide-out-bottom 0.3s forwards;
 }
 
 [data-mbx-id="drw"][data-mbx-drw-lc^="top"] {

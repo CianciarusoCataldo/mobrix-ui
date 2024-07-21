@@ -8,44 +8,38 @@ import {
   SupportedEnvironment,
 } from "../../../types";
 
-import { parseCode } from "./utils";
+import { getCode } from "./utils";
 
 import { CopyIcon } from "../../../icons/generic";
 
 import IconButton from "../IconButton";
 
 const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
-  disabled,
-  hover,
-  value: code = "",
-  highlight = true,
+  value = "",
   environment = "terminal",
   copyButton = true,
-  dark,
+  disabled,
+  hover,
+  active,
 }) => {
-  let parseLine: (
-    inputCode: string,
-    environment: SupportedEnvironment,
-  ) => CodeBlock[] =
-    highlight && code.length > 0
-      ? parseCode
-      : (inputCode, environment) => [{ code: inputCode }];
+  const parse: (inp: string, env: SupportedEnvironment) => CodeBlock[] =
+    value.length > 0 ? getCode : (inp, e) => [{ value: inp }];
 
   return [
     <IconButton
       key="cd_cp"
-      onClick={() => code && navigator.clipboard.writeText(code)}
+      onClick={() => value && navigator.clipboard.writeText(value)}
       hide={!copyButton}
       disabled={disabled}
       hover={hover}
-      features={{ opFc: true }}
+      active={active}
     >
-      <CopyIcon />
+      <CopyIcon disabled={disabled} hover={hover} active={active} />
     </IconButton>,
     <div key="cd_cd">
-      {code.split("\n").map((codeLine, lIndex) => (
+      {value.split("\n").map((codl, lIndex) => (
         <p style={{ margin: 0 }} key={`cd_l_${lIndex}`}>
-          {parseLine(codeLine, environment).map((cBlock, bIndex) =>
+          {parse(codl, environment).map((cBlock, bIndex) =>
             cBlock.code === " " ? (
               ` `
             ) : (

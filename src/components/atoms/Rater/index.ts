@@ -53,7 +53,7 @@ const Rater: RaterComponent = ({
   vertical = false,
   ...props
 }) =>
-  buildMbxReactive<number>(props, (sharedProps) => ({
+  buildMbxReactive<number>(props, (mbxProps) => ({
     name: "rat",
     inputValue,
     defaultValue: 0,
@@ -63,13 +63,13 @@ const Rater: RaterComponent = ({
         value,
         setValue,
         ...props,
-        ...sharedProps,
+        ...mbxProps,
       }),
     cssBg: ["rat-bg"],
     styles: {
       flexDirection: vertical ? "column" : "row",
     },
-    commonProps: sharedProps,
+    mbxProps,
   }));
 
 export default Rater;

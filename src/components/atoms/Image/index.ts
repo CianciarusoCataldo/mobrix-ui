@@ -48,11 +48,11 @@ const Image: ImageComponent = ({
   shadow = false,
   ...props
 }) =>
-  buildMbxStandard({ ...props, hover, shadow }, (commonProps) => ({
+  buildMbxStandard({ ...props, hover, shadow }, (mbxProps) => ({
     name: "img",
-    commonProps,
+    mbxProps,
     addProps: {
-      draggable: !commonProps.disabled,
+      draggable: !mbxProps.disabled,
       src,
       width: `${width}`,
       height: `${height}`,

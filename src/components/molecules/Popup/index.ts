@@ -43,11 +43,11 @@ import component from "./component";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const Popup: PopupComponent = ({ children, ...commonProps }) =>
-  buildMbxStandard(commonProps, (sharedProps) => ({
+const Popup: PopupComponent = ({ children, className, ...props }) =>
+  buildMbxStandard(props, (mbxProps) => ({
     name: "popup",
-    commonProps: { ...sharedProps, className: "" },
-    Component: component({ ...sharedProps, children }),
+    mbxProps,
+    Component: component({ ...mbxProps, className, children }),
   }));
 
 export default Popup;

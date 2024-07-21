@@ -36,6 +36,6 @@
   word-break: break-word;
 }
 
-[data-mbx-id*="card"] > [data-mbx-cls="cardc-body"] {
+[data-mbx-id*="card"] > [data-mbx-cbody] {
   padding: 0.7rem 0.3rem;
 }

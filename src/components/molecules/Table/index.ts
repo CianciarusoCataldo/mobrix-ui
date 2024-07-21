@@ -51,14 +51,14 @@ import component from "./component";
  * @copyright 2024 Cataldo Cianciaruso
  */
 const Table: TableComponent = (props) =>
-  buildMbxStandard(props, (sharedProps) => ({
+  buildMbxStandard(props, (mbxProps) => ({
     name: "table",
     Component: component({
       ...props,
-      ...sharedProps,
+      ...mbxProps,
     }),
-    cssBg: ["c-table-bg", "c-table-head-bg"],
-    commonProps: sharedProps,
+    cssBg: ["tbl-bg", "tbl-head-bg"],
+    mbxProps,
     wrapper: "table",
   }));
 

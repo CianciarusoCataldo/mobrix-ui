@@ -54,11 +54,11 @@ import component from "./component";
 * @copyright 2024 Cataldo Cianciaruso
 */
 const TabViewer: TabViewerComponent = ({ active = true, ...props }) =>
-  buildMbxReactive({ active, ...props }, (sharedProps) => ({
+  buildMbxReactive(props, (mbxProps) => ({
     name: "tview",
-    cssBg: ["c-tabv-bg", "c-tabv-off-bg", "c-tabv-off-bg-h"],
-    commonProps: {
-      ...sharedProps,
+    cssBg: ["tabv-bg", "tabv-off-bg", "tabv-off-bg-h"],
+    mbxProps: {
+      ...mbxProps,
       shadow: false,
     },
     defaultValue: 0,
@@ -68,7 +68,8 @@ const TabViewer: TabViewerComponent = ({ active = true, ...props }) =>
         setValue,
         value: Number(value),
         ...props,
-        ...sharedProps,
+        ...mbxProps,
+        active,
       }),
   }));
 

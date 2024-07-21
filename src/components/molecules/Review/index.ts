@@ -51,13 +51,13 @@ import component from "./component";
  * @copyright 2024 Cataldo Cianciaruso
  */
 const Review: ReviewComponent = (props) =>
-  buildMbxStandard(props, (sharedProps) => ({
+  buildMbxStandard(props, (mbxProps) => ({
     name: "rev",
-    commonProps: sharedProps,
-    cssBg: ["c-rev-bg"],
+    mbxProps,
+    cssBg: ["rev-bg"],
     Component: component({
       ...props,
-      ...sharedProps,
+      ...mbxProps,
     }),
   }));
 

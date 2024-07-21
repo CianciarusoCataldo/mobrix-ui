@@ -1,5 +1,5 @@
 import {
-  CommonProps,
+  MbxSharedProps,
   ComponentWithCallback,
   ComponentWithValue,
   MbxUiComponent,
@@ -26,7 +26,7 @@ export type RadioElement = {
   textPosition?: "top" | "bottom" | "left" | "right";
 
   /** Radio button custom props */
-  props?: RadioButtonProps & CommonProps;
+  props?: RadioButtonProps & MbxSharedProps;
 };
 
 /**
@@ -59,7 +59,7 @@ export type RadioButtonGroupProps = ComponentWithCallback<number> &
     defaultPosition?: RadioElement["textPosition"];
 
     /** RadioButton props applied on every RadioButton element */
-    radioProps?: RadioButtonProps & CommonProps;
+    radioProps?: RadioButtonProps & MbxSharedProps;
   };
 
 /**

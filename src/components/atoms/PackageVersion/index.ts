@@ -52,18 +52,15 @@ const PackageVersion: PackageVersionComponent = ({
   shadow = false,
   ...props
 }) =>
-  buildMbxStandard(props, (sharedProps) => ({
+  buildMbxStandard({ shadow, ...props }, (mbxProps) => ({
     name: "pkgv-label",
     wrapper: "p",
-    Component: component({ ...sharedProps, name, source, user, branch }),
+    Component: component({ ...mbxProps, name, source, user, branch }),
     features: {
       colFc: true,
       noShFc: true,
     },
-    commonProps: {
-      ...sharedProps,
-      shadow,
-    },
+    mbxProps,
   }));
 
 export default PackageVersion;

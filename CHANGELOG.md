@@ -38,6 +38,7 @@
 - Refactoring
 - Bundle size reduced
 - New `underline` prop for `Link` component
+- `highlight` property removed from `CodeBox` component
 - UI re-designed for all components
 
 <br>

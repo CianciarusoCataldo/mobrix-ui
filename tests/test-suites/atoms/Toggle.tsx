@@ -7,6 +7,9 @@ const toggleTest = () => {
     test("Rendering test", () => {
       let wrapper = mount(<Toggle />);
       wrapper.find('[data-mbx-id="tgl"]').simulate("click");
+      wrapper
+        .find('[data-mbx-id="tgl"]')
+        .simulate("keyDown", { keyCode: 13, code: "Enter" });
       expect(wrapper);
       wrapper = mount(<Toggle disabled />);
       expect(wrapper);

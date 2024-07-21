@@ -1,4 +1,4 @@
-export const CODE_LANGUAGES = {
+export const C_LANGS = {
   common: {
     DEFAULT_VALUE: "#FFFFF",
     STRING: "#f6713c",

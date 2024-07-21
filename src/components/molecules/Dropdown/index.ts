@@ -44,16 +44,18 @@ import { buildMbxReactive } from "../../../tools";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const Dropdown: DropdownComponent = (props) =>
-  buildMbxReactive(props, (sharedProps) => ({
+const Dropdown: DropdownComponent = ({ active, ...props }) =>
+  buildMbxReactive(props, (mbxProps) => ({
     name: "dd",
     defaultValue: 0,
     inputValue: props.value,
-    commonProps: sharedProps,
+    cssBg: ["dd-bg", "dd-bg-h"],
+    mbxProps,
     props: (value, setValue) =>
       dropdownComponent({
+        ...mbxProps,
         ...props,
-        ...sharedProps,
+        active,
         value,
         setValue,
       }),

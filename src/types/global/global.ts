@@ -35,7 +35,7 @@ export type MbxAttributes = {
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=components-building-process
  * */
-export type CommonProps = MbxAttributes & {
+export type MbxSharedProps = MbxAttributes & {
   /** React key, the standard {@link https://reactjs.org/docs/lists-and-keys.html key parameter} */
   key?: string;
 
@@ -263,7 +263,10 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
   Component?: T;
 
   /** Shared {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/?id=ui-properties MoBrix-ui props} */
-  commonProps?: CommonProps;
+  commonProps?: MbxSharedProps;
+
+  /** Shared {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/?id=ui-properties MoBrix-ui properties} */
+  mbxProps?: MbxSharedProps;
 
   /** Component wrapper (default `div`) */
   wrapper?: Wrappers;
@@ -272,6 +275,7 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
 
   cssBg?: string[];
 
+  /** Component extra css styles */
   styles?: Record<string, any>;
 
   /** Custom additional properties, applied to the component */
@@ -302,7 +306,7 @@ export type MbxUiComponent<T = any, K = JSX.Element> = (
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-export type MbxUiProps<T = any> = T & CommonProps;
+export type MbxUiProps<T = any> = T & MbxSharedProps;
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} reactive component props
@@ -370,7 +374,21 @@ export type BuilderPropsReactive<T = BuilderComponent | BuilderComponent[]> =
     ) => Omit<BuilderProps, "name">;
   };
 
-export type MbxIconProps = Omit<CommonProps, "tabIndex"> & {
+export type MbxBuildReactiveProps<T = any> = BuilderProps<
+  (props: {
+    value: T;
+    setValue: React.Dispatch<React.SetStateAction<T>>;
+  }) => BuilderProps["Component"]
+> & {
+  inputValue?: T;
+  defaultValue: T;
+  props?: (
+    value: T,
+    setValue: React.Dispatch<React.SetStateAction<T>>
+  ) => Omit<BuilderProps, "name">;
+};
+
+export type MbxIconProps = Omit<MbxSharedProps, "tabIndex"> & {
   fill?: string;
   transform?: string;
   width?: string;

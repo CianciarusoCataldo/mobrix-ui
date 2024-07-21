@@ -1,23 +1,23 @@
 import { SupportedEnvironment } from "../../../types";
-import { CODE_LANGUAGES } from "./languages";
+import { C_LANGS } from "./languages";
 
-export const parseCode = (code: string, environment: SupportedEnvironment) => {
+export const getCode = (code: string, environment: SupportedEnvironment) => {
   let parts = [];
   code.split(/(\".+?\")/g).forEach((codeBlock, index) => {
     if (index % 2 !== 0) {
-      parts.push({ code: codeBlock, color: CODE_LANGUAGES.common.STRING });
+      parts.push({ code: codeBlock, color: C_LANGS.common.STRING });
     } else {
       codeBlock.split(/(\'.+?\')/g).forEach((inBlock, secIndex) => {
         if (secIndex % 2 !== 0) {
           parts.push({
             code: inBlock,
-            color: CODE_LANGUAGES.common.STRING,
+            color: C_LANGS.common.STRING,
           });
         } else {
           inBlock.split(" ").forEach((part, piInd) => {
             parts.push({
               code: part,
-              color: CODE_LANGUAGES[environment][part],
+              color: C_LANGS[environment][part],
             });
 
             parts.push({

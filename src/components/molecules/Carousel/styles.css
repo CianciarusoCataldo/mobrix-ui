@@ -5,11 +5,11 @@
   width: fit-content;
   align-items: center;
   text-align: center;
-  --mbx-c-car-bg: var(
+  --mbx-car-bg: var(
     --mbx-carousel-background-light,
     var(--mbx-carousel-background, var(--mbx-c-bg))
   );
-  --mbx-c-car-dot-f: var(
+  --mbx-car-dot-f: var(
     --mbx-carousel-dot-full-background-light,
     var(
       --mbx-carousel-dot-background,
@@ -24,7 +24,7 @@
       )
     )
   );
-  --mbx-c-car-dot-e: var(
+  --mbx-car-dot-e: var(
     --mbx-carousel-dot-empty-background-light,
     var(
       --mbx-carousel-dot-background,
@@ -39,17 +39,17 @@
       )
     )
   );
-  background: var(--mbx-c-car-bg);
+  background: var(--mbx-car-bg);
 }
 
 [data-mbx-id="crsel"][data-mbx-dk] {
   /** Carousel **/
-  --mbx-c-car-bg: var(
+  --mbx-car-bg: var(
     --mbx-carousel-background-dark,
     var(--mbx-carousel-background, var(--mbx-c-bg))
   );
 
-  --mbx-c-car-dot-f: var(
+  --mbx-car-dot-f: var(
     --mbx-carousel-dot-full-background-dark,
     var(
       --mbx-carousel-dot-background,
@@ -64,7 +64,7 @@
       )
     )
   );
-  --mbx-c-car-dot-e: var(
+  --mbx-car-dot-e: var(
     --mbx-carousel-dot-empty-background-dark,
     var(
       --mbx-carousel-dot-background,
@@ -81,7 +81,7 @@
   );
 }
 
-[data-mbx-id="crsel"] > [data-mbx-cls="car-els"] > [data-mbx-id="cont"] {
+[data-mbx-id="crsel"] > [data-mbx-car-els] > [data-mbx-id="cont"] {
   position: relative;
   -webkit-animation: var(--mbx-car-an) 0.3s forwards;
   animation: var(--mbx-car-an) 0.3s forwards;
@@ -90,7 +90,7 @@
   -o-animation: var(--mbx-car-an) 0.3s forwards;
 }
 
-[data-mbx-id="crsel"] > [data-mbx-cls="car-els"] > [data-mbx-id="icb"] {
+[data-mbx-id="crsel"] > [data-mbx-car-els] > [data-mbx-id="icb"] {
   margin-right: 0.6rem;
   margin-left: 0.6rem;
   --mbx-icon-light: var(
@@ -117,11 +117,11 @@
   flex-direction: row;
 }
 
-[data-mbx-id="crsel"] > [data-mbx-cls="cdots"] {
+[data-mbx-id="crsel"] > [data-mbx-cdots] {
   overflow: hidden;
 }
 
-[data-mbx-id="crsel"] > [data-mbx-cls="cdots"] > [data-mbx-id="icb"] {
+[data-mbx-id="crsel"] > [data-mbx-cdots] > [data-mbx-id="icb"] {
   margin: 0 0.3rem;
   width: 30px;
   height: 30px;

@@ -6,15 +6,15 @@ import DismissableCard from "../DismissableCard";
 
 const modalComponent: MbxUiComponent<ModalProps, BuilderComponent> = ({
   children,
-  className,
-  dark,
-  hide,
-  onClose,
-  closeOutside,
-  animated,
-  disabled,
   /* istanbul ignore next */
   onFocusLost = () => {},
+  disabled,
+  className,
+  hide,
+  dark,
+  closeOutside,
+  onClose,
+  animated,
 }) => (
   <DismissableCard
     disabled={disabled}

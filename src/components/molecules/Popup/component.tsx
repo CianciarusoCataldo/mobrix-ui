@@ -10,6 +10,7 @@ const popupComponent: PopupComponent = ({
   background,
   dark,
   hover,
+  shadow,
 }) => (
   <Container
     animated={animated}
@@ -18,6 +19,7 @@ const popupComponent: PopupComponent = ({
     background={background}
     dark={dark}
     hover={hover}
+    shadow={shadow}
   >
     {children}
   </Container>

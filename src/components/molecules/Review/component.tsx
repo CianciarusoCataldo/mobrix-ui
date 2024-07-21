@@ -9,7 +9,7 @@ import { Label } from "../../atoms";
 
 const allowedLogoTypes = Object.keys(icons);
 
-const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
+const component: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
   user,
   description,
   rate,
@@ -21,6 +21,7 @@ const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
   disabled,
   hover,
   dark,
+  active,
 }) => {
   const selectedLogo =
     logo && allowedLogoTypes.includes(logo) ? logo : "default";
@@ -33,15 +34,14 @@ const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
       newTab
       to={url}
       disabled={disabled}
-      features={{ noShFc: true, opFc: true }}
+      features={{ opFc: true }}
+      active={active}
     >
-      {icons[selectedLogo]}
+      {icons[selectedLogo]({ disabled, hover, dark })}
     </Link>,
     <div key="info">
       <div key="topc">
-        <div key="ph" data-mbx-cls="rev-ph">
-          {icon}
-        </div>
+        <div key="ph">{icon}</div>
         {user && (
           <Label key="user" disabled={disabled} dark={dark}>
             {user}
@@ -68,4 +68,4 @@ const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
   ];
 };
 
-export default reviewComponent;
+export default component;

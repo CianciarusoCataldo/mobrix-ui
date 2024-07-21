@@ -4,7 +4,7 @@ import { SelectorComponent } from "../../../types";
 
 import { buildMbxReactive } from "../../../tools";
 
-import selectorComponent from "./component";
+import sComponent from "./component";
 
 /**
  * A re-defined `select` component
@@ -50,17 +50,17 @@ const Selector: SelectorComponent = ({
   value: inputValue,
   onChange = () => {},
   optionClassName,
-  ...commonProps
+  ...props
 }) =>
-  buildMbxReactive<number | undefined>(commonProps, (sharedProps) => ({
+  buildMbxReactive<number | undefined>(props, (mbxProps) => ({
     wrapper: "select",
     name: "selt",
     defaultValue: undefined,
     inputValue,
-    cssBg: ["sel-bg", "sel-bghov"],
+    cssBg: ["sel-bg", "sel-bg-h"],
     props: (value, setValue) => ({
       addProps: {
-        disabled: sharedProps.disabled,
+        disabled: mbxProps.disabled,
         value,
         onChange: (e) => {
           onChange(e.target.value);
@@ -68,15 +68,9 @@ const Selector: SelectorComponent = ({
         },
       },
     }),
-    commonProps: sharedProps,
-    styles: {
-      ...(sharedProps.hover && {
-        "--mbx-sel-bg-h": "var(--mbx-c-sel-bg-h)",
-        "--mbx-sel-txt-h": "var(--mbx-c-sel-txt-h)",
-      }),
-    },
+    mbxProps,
     Component: ({ value, setValue }) =>
-      selectorComponent({ elements, value, setValue, optionClassName }),
+      sComponent({ elements, value, setValue, optionClassName }),
     features: {
       opHov: true,
     },

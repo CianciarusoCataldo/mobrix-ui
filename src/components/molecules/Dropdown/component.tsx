@@ -2,70 +2,74 @@ import React from "react";
 
 import { DropdownProps, MbxUiReactiveComponentBuilder } from "../../../types";
 
-import { Button } from "../../atoms";
 import Popup from "../Popup";
 import { ArrowIcon } from "../../../icons";
+import Container from "../Container";
+import IconButton from "../../atoms/IconButton";
+import Button from "../../atoms/Button";
 
-const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
-  number,
-  DropdownProps
-> = ({
-  elements = [],
-  onChange = () => {},
+const Component: MbxUiReactiveComponentBuilder<number, DropdownProps> = ({
   value,
-  hideArrow,
-  dark,
-  disabled,
   setValue,
-  shadow,
-  hover,
-  background,
+  onChange = () => {},
   /* istanbul ignore next */
   onFocusLost = () => {},
-  ...commonProps
+  dark,
+  background,
+  disabled,
+  hover,
+  active,
+  shadow,
+  elements = [],
+  ...props
 }) => {
-  const [isVisible, setVisible] = React.useState(false);
-  const [selected, selectItem] = React.useState<number>(-2);
-  const selectedItem = elements[value] || <div />;
+  const [vis, setVis] = React.useState(false);
+  const [sel, selEl] = React.useState<number>(-2);
 
-  const keyDown = (visibility: boolean) => {
-    isVisible !== visibility && setVisible(visibility);
-    selectItem(-1);
+  const keyDown = (v: boolean) => {
+    vis !== v && setVis(v);
+    selEl(-1);
+  };
+
+  const cProps = {
+    dark,
+    background,
+    disabled,
+    hover,
   };
 
   /* istanbul ignore next */
-  const focusLost = () => {
+  const fcFunc = () => {
     onFocusLost();
     keyDown(false);
   };
 
   return {
-    commonProps: {
-      ...commonProps,
-      dark,
+    mbxProps: {
+      ...cProps,
       shadow,
-      onFocusLost: focusLost,
+      onFocusLost: fcFunc,
       onKeyDown: (e) => {
-        let actualSelected = selected;
+        let actual = sel;
         switch (e.code) {
           /* istanbul ignore next */
           case "Tab": {
             if (
-              (e.shiftKey && actualSelected === 0) ||
-              actualSelected === elements.length - 1
+              (e.shiftKey && actual === 0) ||
+              actual === elements.length - 1
             ) {
               keyDown(false);
             }
             break;
           }
           case "Enter": {
-            if (selected > -1) {
-              onChange(selected);
-              setValue(selected);
+            if (sel > -1) {
+              onChange(sel);
+              setValue(sel);
               keyDown(false);
               return;
             } else {
-              setVisible(!isVisible);
+              setVis(!vis);
             }
             e.preventDefault();
             break;
@@ -77,87 +81,86 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
           }
 
           case "ArrowUp": {
-            if (actualSelected === 0) {
+            if (actual === 0) {
               keyDown(false);
               return;
             }
-            actualSelected -= 1;
+            actual -= 1;
             break;
           }
 
           case "ArrowDown": {
-            if (actualSelected === elements.length - 1) {
+            if (actual === elements.length - 1) {
               keyDown(false);
               return;
             }
-            if (!isVisible) {
-              setVisible(true);
+            if (!vis) {
+              setVis(true);
             }
-            actualSelected += 1;
+            actual += 1;
             break;
           }
         }
 
-        actualSelected !== selected && selectItem(actualSelected);
+        actual !== sel && selEl(actual);
       },
+      ...props,
     },
     Component: [
-      <Button
-        animated={false}
+      <Container
+        active={active}
+        key="t-bt"
+        dark={dark}
+        background={false}
         shadow={false}
-        hover={hover}
-        background={background}
-        disabled={disabled}
-        onClick={() => {
-          keyDown(!isVisible);
-        }}
-        dark={dark}
-        key="opts-m"
-        a11y={false}
-        style={
-          {
-            "--mbx-dd-rot": isVisible ? "90deg" : "270deg",
-          } as React.CSSProperties
-        }
       >
-        <div tabIndex={-1} key="drop_s_e_b">
-          {selectedItem}
-        </div>
-        <ArrowIcon
-          dark={dark}
-          width="15"
-          height="12"
-          disabled={disabled}
-          hover={hover}
-        />
-      </Button>,
-      <Popup
-        hover={hover}
-        background={background}
-        key="opts"
-        shadow={shadow}
-        disabled={disabled}
-        dark={dark}
-        hide={!isVisible}
-        a11y={false}
-      >
+        <IconButton
+          onClick={() => {
+            keyDown(!vis);
+          }}
+          key="opts-m"
+          a11y={false}
+          {...cProps}
+        >
+          <div tabIndex={-1} key="drop_s_e_b">
+            {elements[value] || <div />}
+          </div>
+        </IconButton>
+        <IconButton
+          active={active}
+          {...cProps}
+          onClick={() => {
+            keyDown(!vis);
+          }}
+          style={
+            {
+              transform: `rotate(${vis ? "180" : "0"}deg)`,
+              rotate: "-90deg",
+              "--mbx-trdur": "0.1s",
+            } as React.CSSProperties
+          }
+          key="arr-ic"
+        >
+          <ArrowIcon {...cProps} width="15" height="12" />
+        </IconButton>
+      </Container>,
+      <Popup key="opts" shadow={shadow} hide={!vis} a11y={false} {...cProps}>
         {elements.map((item, index) => (
           <Button
             animated={false}
             shadow={false}
-            disabled={disabled}
-            hover={hover}
+            active={active}
             onFocus={() => {
-              selectItem(index);
+              selEl(index);
             }}
             onClick={() => {
               onChange(index);
               setValue(index);
               keyDown(false);
             }}
-            dark={dark}
             features={{ noShFc: true, colFc: true }}
             key={`item_${index}`}
+            {...cProps}
           >
             {item}
           </Button>
@@ -167,4 +170,4 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
   };
 };
 
-export default DropdownInternalComponent;
+export default Component;

@@ -49,34 +49,39 @@ const Button: ButtonComponent = ({
   onMouseEnter,
   onMouseLeave,
   active = true,
-  ...commonProps
+  ...props
 }) =>
-  buildMbxStandard({ active, ...commonProps }, (sProps) => ({
-    name: "btn",
-    wrapper: "button",
-    features: {
-      opHov: true,
-    },
-    cssBg: ["btn-bg", "btn-bg-h"],
-    styles: {
-      ...(sProps.hover && {
-        "--mbx-btn-bg-h": "var(--mbx-btn-bhov)",
-        "--mbx-btn-txt-h": "var(--mbx-btn-thov)",
-        ...(sProps.animated && {
-          "--mbx-btn-scale": "scaleX(1.15) scaleY(1.1)",
-          transitionDuration: "0.1s",
-          transitionProperty: "transform",
-        }),
-      }),
-    },
-    addProps: {
-      disabled: sProps.disabled,
-      onClick,
-      onMouseEnter,
-      onMouseLeave,
-    },
-    Component: children,
-    commonProps: sProps,
-  }));
+  buildMbxStandard(
+    { active, ...props },
+    ({ animated, hover, disabled, ...mbxProps }) => ({
+      name: "btn",
+      wrapper: "button",
+      features: {
+        opHov: true,
+      },
+      cssBg: ["btn-bg", "btn-b-h"],
+      styles: {
+        ...(hover &&
+          animated && {
+            "--mbx-btn-scale": "scaleX(1.15) scaleY(1.1)",
+            transitionDuration: "0.1s",
+            transitionProperty: "transform",
+          }),
+      },
+      addProps: {
+        disabled,
+        onClick,
+        onMouseEnter,
+        onMouseLeave,
+      },
+      Component: children,
+      mbxProps: {
+        ...mbxProps,
+        animated,
+        hover,
+        disabled,
+      },
+    })
+  );
 
 export default Button;

@@ -2,16 +2,16 @@
 @import url("close-button.css");
 
 [data-mbx-id="drw"] {
-  --mbx-c-draw-bg: var(
+  --mbx-draw-bg: var(
     --mbx-drawer-background-light,
     var(--mbx-drawer-background, var(--mbx-c-bg))
   );
-  --mbx-c-draw-txt: var(
+  --mbx-draw-txt: var(
     --mbx-drawer-text-color-light,
     var(--mbx-drawer-text-color, var(--mbx-c-txt))
   );
-  background: var(--mbx-c-draw-bg);
-  color: var(--mbx-c-draw-txt);
+  background: var(--mbx-draw-bg);
+  color: var(--mbx-draw-txt);
   animation: var(--mbx-drw-an);
   -moz-animation: var(--mbx-drw-an);
   -ms-animation: var(--mbx-drw-an);
@@ -22,11 +22,11 @@
 }
 
 [data-mbx-id="drw"][data-mbx-dk] {
-  --mbx-c-draw-bg: var(
+  --mbx-draw-bg: var(
     --mbx-drawer-background-dark,
     var(--mbx-drawer-background, var(--mbx-c-bg))
   );
-  --mbx-c-draw-txt: var(
+  --mbx-draw-txt: var(
     --mbx-drawer-text-color-dark,
     var(--mbx-drawer-text-color, var(--mbx-c-txt))
   );
@@ -45,7 +45,7 @@
 [data-mbx-id="drw"] > [data-mbx-id="icb"] > [data-mbx-img] {
   --mbx-icon-light: var(
     --mbx-drawer-arrow-light,
-    var(--mbx-drawer-arrow, var(--mbx-c-draw-txt))
+    var(--mbx-drawer-arrow, var(--mbx-draw-txt))
   );
   --mbx-icon-hover-light: var(
     --mbx-drawer-arrow-hover-light,
@@ -53,7 +53,7 @@
   );
   --mbx-icon-dark: var(
     --mbx-drawer-arrow-dark,
-    var(--mbx-drawer-arrow, var(--mbx-c-draw-txt))
+    var(--mbx-drawer-arrow, var(--mbx-draw-txt))
   );
   --mbx-icon-hover-dark: var(
     --mbx-drawer-arrow-hover-dark,

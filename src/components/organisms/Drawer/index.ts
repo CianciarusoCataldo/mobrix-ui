@@ -60,7 +60,7 @@ const positions = [
  * @copyright 2024 Cataldo Cianciaruso
  */
 const Drawer: DrawerComponent = ({
-  position,
+  position = "left",
   hide,
   children,
   /* istanbul ignore next */
@@ -69,9 +69,10 @@ const Drawer: DrawerComponent = ({
   onFocusLost = () => {},
   closeOnClickOutside = true,
   arrowClassName,
+  active,
   ...props
 }) => {
-  const location = position && positions.includes(position) ? position : "left";
+  const location = positions.includes(position) ? position : "left";
 
   const [value, setValue] = React.useState("");
 
@@ -83,34 +84,30 @@ const Drawer: DrawerComponent = ({
       onClose();
     }, 200);
   };
-
   /* istanbul ignore next */
-  const customProps = {
-    onFocusLost: () => {
-      if (!hide) {
-        onFocusLost();
-        closeOnClickOutside && callback();
-      }
-    },
-    animation: value.length === 0 ? "in" : value,
+  const fcFunc = () => {
+    if (!hide) {
+      onFocusLost();
+      closeOnClickOutside && callback();
+    }
   };
 
-  return buildMbxStandard(props, (commonProps) => ({
+  return buildMbxStandard(props, (sProps) => ({
     name: "drw",
-    cssBg: ["c-draw-bg"],
+    cssBg: ["draw-bg"],
     addProps: {
       "data-mbx-drw-lc": location,
     },
-    commonProps: {
-      ...commonProps,
+    mbxProps: {
+      ...sProps,
       hide: value.length === 0 && hide,
-      onFocusLost: customProps.onFocusLost,
+      onFocusLost: fcFunc,
     },
     styles: {
-      ...(commonProps.animated && {
+      ...(sProps.animated && {
         "--mbx-drw-an": hide
           ? "none"
-          : `var(--mbx-drw-an-${customProps.animation})`,
+          : `var(--mbx-drw-an-${value.length === 0 ? "in" : value})`,
       }),
     },
     Component: component({
@@ -119,7 +116,8 @@ const Drawer: DrawerComponent = ({
       onClose: callback,
       arrowClassName,
       position: location,
-      ...commonProps,
+      ...sProps,
+      active,
     }),
   }));
 };

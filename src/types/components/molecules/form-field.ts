@@ -1,6 +1,6 @@
 import {
   BuilderComponent,
-  CommonProps,
+  MbxSharedProps,
   ComponentWithCallback,
   ComponentWithValue,
   MbxUiComponent,
@@ -60,7 +60,7 @@ export type FormFieldProps<T = any> = ComponentWithValue &
     headerClassName?: string;
 
     /** Custom props applied on every header element (including MoBrix-ui shared props) */
-    headerProps?: Record<string, any> & CommonProps;
+    headerProps?: Record<string, any> & MbxSharedProps;
 
     /** Custom error box content, displayed when FormField is in error state */
     errorLabel?: BuilderComponent;

@@ -12,47 +12,50 @@
   --mbx-btn-scale: none;
   --mbx-btn-bg: var(
     --mbx-button-background-light,
-    var(--mbx-button-background, var(--mbx-c-bg))
+    var(--mbx-button-background)
   );
   --mbx-btn-txt: var(
     --mbx-button-text-color-light,
-    var(--mbx-button-text-color, var(--mbx-c-txt))
+    var(--mbx-button-text-color)
   );
-  --mbx-btn-bhov: var(
-    --mbx-button-background-hover-light,
-    var(--mbx-button-background-hover, var(--mbx-btn-bg))
-  );
-  --mbx-btn-thov: var(
-    --mbx-button-text-color-hover-light,
-    var(--mbx-button-text-color-hover, var(--mbx-btn-txt))
-  );
-  background: var(--mbx-btn-bg);
-  color: var(--mbx-btn-txt);
+  background: var(--mbx-btn-bg, var(--mbx-c-bg));
+  color: var(--mbx-btn-txt, var(--mbx-c-txt));
 }
 
 [data-mbx-id="btn"][data-mbx-dk] {
-  --mbx-btn-bg: var(
-    --mbx-button-background-dark,
-    var(--mbx-button-background, var(--mbx-c-bg))
-  );
+  --mbx-btn-bg: var(--mbx-button-background-dark, var(--mbx-button-background));
   --mbx-btn-txt: var(
     --mbx-button-text-color-dark,
-    var(--mbx-button-text-color, var(--mbx-c-txt))
+    var(--mbx-button-text-color)
   );
-  --mbx-btn-bhov: var(
+}
+
+[data-mbx-id="btn"][data-mbx-hv] {
+  --mbx-btn-b-h: var(
+    --mbx-button-background-hover-light,
+    var(--mbx-button-background-hover)
+  );
+  --mbx-btn-t-h: var(
+    --mbx-button-text-color-hover-light,
+    var(--mbx-button-text-color-hover)
+  );
+}
+
+[data-mbx-id="btn"][data-mbx-dk][data-mbx-hv] {
+  --mbx-btn-b-h: var(
     --mbx-button-background-hover-dark,
-    var(--mbx-button-background-hover, var(--mbx-btn-bg))
+    var(--mbx-button-background-hover)
   );
-  --mbx-btn-thov: var(
+  --mbx-btn-t-h: var(
     --mbx-button-text-color-hover-dark,
-    var(--mbx-button-text-color-hover, var(--mbx-btn-txt))
+    var(--mbx-button-text-color-hover)
   );
 }
 
 @media (hover) {
   [data-mbx-id="btn"]:hover {
-    background: var(--mbx-btn-bg-h, var(--mbx-btn-bg));
-    color: var(--mbx-btn-txt-h, var(--mbx-btn-txt));
+    background: var(--mbx-btn-b-h, var(--mbx-btn-bg, var(--mbx-c-bg)));
+    color: var(--mbx-btn-txt-h, var(--mbx-btn-txt, var(--mbx-c-txt)));
     transform: var(--mbx-btn-scale);
   }
 }

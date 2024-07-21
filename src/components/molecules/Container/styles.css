@@ -1,4 +1,26 @@
+[data-mbx-id="cont"] {
+  background: var(--mbx-con-bg);
+  color: var(--mbx-con-txt);
+}
+
 [data-mbx-id*="cont"] {
-  background: var(--mbx-c-con-bg);
-  color: var(--mbx-c-con-txt);
+  --mbx-con-bg: var(
+    --mbx-container-background-light,
+    var(--mbx-container-background, var(--mbx-c-bg))
+  );
+  --mbx-con-txt: var(
+    --mbx-container-text-color-light,
+    var(--mbx-container-text-color, var(--mbx-c-txt))
+  );
+}
+
+[data-mbx-id*="cont"][data-mbx-dk] {
+  --mbx-con-bg: var(
+    --mbx-container-background-dark,
+    var(--mbx-container-background, var(--mbx-c-bg))
+  );
+  --mbx-con-txt: var(
+    --mbx-container-text-color-dark,
+    var(--mbx-container-text-color, var(--mbx-c-txt))
+  );
 }

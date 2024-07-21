@@ -80,5 +80,11 @@
     "description": "Custom props applied on the Card footer - extended from [Card component](../../molecules/Card/props.md#footerProps)",
     "type": "Record<string, any>",
     "comment": "Custom props applied on the Card footer - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
+  },
+  "dividerSize": {
+    "description": "Set the size of the top and the bottom divider - extended from [Card component](../../molecules/Card/props.md#dividerSize)",
+    "default": "1px",
+    "type": "string",
+    "comment": "Set the size of the top and the bottom divider - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Card Card}"
   }
 }

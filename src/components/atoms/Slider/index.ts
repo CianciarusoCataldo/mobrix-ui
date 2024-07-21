@@ -52,30 +52,22 @@ const Slider: SliderComponent = ({
   max,
   readOnly = false,
   active = true,
-  ...commonProps
+  ...props
 }) =>
-  buildMbxReactive<number>({ active, ...commonProps }, (sharedProps) => ({
+  buildMbxReactive<number>({ active, ...props }, ({ disabled, ...sProps }) => ({
     name: "sld",
     inputValue,
     defaultValue: 0,
     wrapper: "input",
     cssBg: ["sld-bg", "sld-bg-h"],
     styles: {
-      ...(sharedProps.hover &&
-        !readOnly && {
-          "--mbx-sld-op-hov": "0.6",
-          "--mbx-sld-bg-h": "var(--mbx-sld-bghov)",
-          "--mbx-sld-tb-h": "var(--mbx-sld-tbhov)",
-        }),
-      ...(!sharedProps.disabled &&
-        !readOnly &&
-        active && {
-          "--mbx-sld-op-act": "0.4",
-        }),
+      ...((disabled || readOnly || !active) && {
+        "--mbx-sld-op-act": "var(--mbx-sld-op-hov)",
+      }),
     },
     props: (value, setValue) => {
       const callback =
-        !sharedProps.disabled && !readOnly
+        !disabled && !readOnly
           ? (e: any) => {
               onChange(e.target.value);
               setValue(e.target.value);
@@ -88,14 +80,16 @@ const Slider: SliderComponent = ({
           min,
           max,
           readOnly,
-          disabled: sharedProps.disabled,
+          disabled,
           value: String(value),
           onChange: callback,
           onInput: callback,
         },
-        commonProps: {
-          ...sharedProps,
-          hover: sharedProps.hover && !readOnly,
+        mbxProps: {
+          ...sProps,
+          hover: sProps.hover && !readOnly,
+          disabled,
+          active: false,
         },
       };
     },

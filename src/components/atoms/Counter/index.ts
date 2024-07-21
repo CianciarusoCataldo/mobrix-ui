@@ -53,27 +53,20 @@ const Counter: CounterComponent = ({
   readOnly,
   max,
   min,
-  ...commonProps
+  ...props
 }) =>
-  buildMbxReactive<number | undefined>(commonProps, (sProps) => ({
+  buildMbxReactive<number | undefined>(props, (mProps) => ({
     wrapper: "input",
     name: "count",
     features: {
       opHov: true,
-    },
-    styles: {
-      ...(sProps.hover &&
-        !readOnly && {
-          "--mbx-cnt-bg-h": "var(--mbx-cnt-bghov)",
-          "--mbx-cnt-txt-h": "var(--mbx-cnt-txthov)",
-        }),
     },
     cssBg: ["cnt-bg", "cnt-bg-h"],
     inputValue,
     defaultValue: 0,
     props: (value, setValue) => ({
       addProps: {
-        disabled: sProps.disabled,
+        disabled: mProps.disabled,
         type: "number",
         value: value,
         placeholder,
@@ -81,15 +74,15 @@ const Counter: CounterComponent = ({
         max,
         min,
         onChange: (e) => {
-          if (!readOnly && !sProps.disabled) {
+          if (!readOnly && !mProps.disabled) {
             onChange(e.target.value);
             setValue(e.target.value);
           }
         },
       },
-      commonProps: {
-        ...sProps,
-        hover: sProps.hover && !readOnly,
+      mbxProps: {
+        ...mProps,
+        hover: mProps.hover && !readOnly,
       },
     }),
   }));

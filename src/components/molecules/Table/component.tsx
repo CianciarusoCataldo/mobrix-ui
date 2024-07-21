@@ -55,7 +55,7 @@ const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
 
             return (
               <Wrapper
-                data-mbx-tcell="true"
+                data-mbx-tcell=""
                 key={`el_${rowIndex}_${index}`}
                 align="center"
                 onClick={() => onClick(rowIndex, index)}

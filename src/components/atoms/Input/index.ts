@@ -50,9 +50,9 @@ const Input: InputComponent = ({
   placeholder,
   readOnly,
   autoresizable,
-  ...commonProps
+  ...props
 }) =>
-  buildMbxReactive<string | undefined>(commonProps, (sharedProps) => ({
+  buildMbxReactive<string | undefined>(props, (sPrps) => ({
     name: "inp",
     wrapper: "input",
     features: {
@@ -61,11 +61,6 @@ const Input: InputComponent = ({
     cssBg: ["inp-bg", "inp-bg-h"],
     styles: {
       ...(autoresizable && { width: "fit-content" }),
-      ...(sharedProps.hover &&
-        !readOnly && {
-          "--mbx-inp-bg-h": "var(--mbx-inp-bghov)",
-          "--mbx-inp-txt-h": "var(--mbx-inp-txthov)",
-        }),
     },
     props: (value, setValue) => ({
       addProps: {
@@ -75,19 +70,19 @@ const Input: InputComponent = ({
         type: "text",
         value,
         placeholder,
-        disabled: sharedProps.disabled,
-        readOnly: readOnly || sharedProps.disabled,
+        disabled: sPrps.disabled,
+        readOnly: readOnly || sPrps.disabled,
         onChange: (e) => {
-          if (!readOnly && !sharedProps.disabled) {
+          if (!readOnly && !sPrps.disabled) {
             const newValue = e.target.value ? e.target.value : "";
             onChange(newValue);
             setValue(newValue);
           }
         },
       },
-      commonProps: {
-        ...sharedProps,
-        hover: sharedProps.hover && !readOnly,
+      mbxProps: {
+        ...sPrps,
+        hover: sPrps.hover && !readOnly,
       },
     }),
     inputValue,

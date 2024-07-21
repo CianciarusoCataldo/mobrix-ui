@@ -9,7 +9,7 @@ import {
 } from "../../atoms";
 
 /* istanbul ignore next */
-export const valueFormatters = {
+export const vFormat = {
   text: (value: any) => {
     const result = value ? String(value) : "";
     if (result.length < 1) {
@@ -23,45 +23,45 @@ export const valueFormatters = {
 };
 
 /* istanbul ignore next */
-export const fieldFormatters = {
+export const formatters = {
   text: {
     component: Input,
-    format: valueFormatters.text,
+    format: vFormat.text,
   },
   numeric: {
     component: Counter,
-    format: valueFormatters.number,
+    format: vFormat.number,
   },
   boolean: {
     component: CheckBox,
-    format: valueFormatters.boolean,
+    format: vFormat.boolean,
   },
   checkbox: {
     component: CheckBox,
-    format: valueFormatters.boolean,
+    format: vFormat.boolean,
   },
   radio: {
     component: RadioButton,
-    format: valueFormatters.boolean,
+    format: vFormat.boolean,
   },
   toggle: {
     component: Toggle,
-    format: valueFormatters.boolean,
+    format: vFormat.boolean,
   },
   rater: {
     component: Rater,
-    format: valueFormatters.number,
+    format: vFormat.number,
   },
   slider: {
     component: Slider,
-    format: valueFormatters.number,
+    format: vFormat.number,
   },
   counter: {
     component: Counter,
-    format: valueFormatters.number,
+    format: vFormat.number,
   },
   input: {
     component: Input,
-    format: valueFormatters.text,
+    format: vFormat.text,
   },
 } as const;

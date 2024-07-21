@@ -2,8 +2,7 @@ import React from "react";
 import { PackageVersionProps, MbxUiComponent } from "../../../types";
 import { DEFAULT_BRANCH, REGISTRIES_HANDLERS } from "./handlers";
 
-const PackageVersionComponent: MbxUiComponent<PackageVersionProps, string> = ({
-  dark,
+const Component: MbxUiComponent<PackageVersionProps, string> = ({
   name,
   source = "npm",
   user,
@@ -29,4 +28,4 @@ const PackageVersionComponent: MbxUiComponent<PackageVersionProps, string> = ({
   return version;
 };
 
-export default PackageVersionComponent;
+export default Component;

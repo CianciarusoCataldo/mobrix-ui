@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { FormFieldProps, MbxUiReactiveComponent } from "../../../types";
 
-import { fieldFormatters } from "./utils";
+import { formatters } from "./utils";
 
 import Container from "../Container";
 import { Label } from "../../atoms";
@@ -15,9 +15,9 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
   setValue,
   type,
   /* istanbul ignore next */
-  onChange = (newvalue: any) => {},
+  onChange = () => {},
   required,
-  validate = (newvalue: any) => true,
+  validate = () => true,
   header,
   errorLabel,
   className,
@@ -30,7 +30,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
 }) => {
   const isError = (required && !value) || !validate(value);
   const [error, setError] = useState(isError);
-  const [animate, setAnimated] = useState(false);
+  const [anim, setAnim] = useState(false);
 
   useEffect(() => {
     if (validate(value) && !required && !value) {
@@ -40,18 +40,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
     }
   }, [required]);
 
-  const FieldComponent: MbxUiReactiveComponent =
-    fieldFormatters[type].component;
-
-  /* istanbul ignore next */
-  let extraProps = {
-    ...(animate && {
-      animation: "shake",
-    }),
-    ...(error && {
-      "data-mbx-fld-e": error,
-    }),
-  };
+  const FieldComponent: MbxUiReactiveComponent = formatters[type].component;
 
   return [
     <Label hide={!header} unstyled key="fld_h_b" dark={dark} {...headerProps}>
@@ -61,23 +50,31 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       className={className}
       disabled={disabled}
       animated={animated}
-      {...extraProps}
+      /* istanbul ignore next */
+      {...{
+        ...(anim && {
+          animation: "shake",
+        }),
+        ...(error && {
+          "data-mbx-fld-e": error,
+        }),
+      }}
       key="fld_comp"
-      value={fieldFormatters[type].format(value)}
+      value={formatters[type].format(value)}
       shadow={shadow}
       dark={dark}
       background={background}
       onKeyDown={(e) => {
         /* istanbul ignore next */
         if (e.code === "Enter" && error) {
-          setAnimated(true);
+          setAnim(true);
           setTimeout(() => {
-            setAnimated(false);
+            setAnim(false);
           }, 600);
         }
       }}
       onChange={(newValue) => {
-        const formattedValue = fieldFormatters[type].format(newValue);
+        const formattedValue = formatters[type].format(newValue);
 
         if (!validate(formattedValue) || (required && !newValue)) {
           setError(true);
@@ -89,7 +86,7 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
       }}
     />,
     <Container
-      animated={true}
+      animated={animated}
       animation="fade-in"
       dark={dark}
       hide={!error}

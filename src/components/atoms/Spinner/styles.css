@@ -34,7 +34,7 @@
   );
 }
 
-[data-mbx-id="spn"] > [data-mbx-cls="rotating"] {
+[data-mbx-id="spn"] > [data-mbx-rotim] {
   --mbx-spn-an: var(--mbx-spn-rot, none);
   -webkit-animation: var(--mbx-spn-an);
   -moz-animation: var(--mbx-spn-an);

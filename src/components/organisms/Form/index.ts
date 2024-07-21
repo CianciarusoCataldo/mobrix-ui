@@ -48,14 +48,14 @@ import component from "./component";
  * @copyright 2024 Cataldo Cianciaruso
  */
 const Form: FormComponent = (props) =>
-  buildMbxStandard(props, (commonProps) => ({
+  buildMbxStandard(props, (mbxProps) => ({
     name: "form",
     Component: component({
       ...props,
-      ...commonProps,
+      ...mbxProps,
     }),
-    cssBg: ["c-form-bg"],
-    commonProps,
+    cssBg: ["form-bg"],
+    mbxProps,
   }));
 
 export default Form;

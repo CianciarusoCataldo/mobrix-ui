@@ -1,46 +1,30 @@
 [data-mbx-id="rev"] {
   padding: 0.6rem;
   /** Review **/
-  --mbx-c-rev-bg: var(
+  --mbx-rev-bg: var(
     --mbx-review-background-light,
     var(--mbx-review-background, var(--mbx-c-bg))
   );
-  --mbx-c-rev-txt: var(
+  --mbx-rev-txt: var(
     --mbx-review-text-color-light,
     var(--mbx-review-text-color, var(--mbx-c-txt))
-  );
-  --mbx-c-rev-link: var(
-    --mbx-review-link-color-light,
-    var(--mbx-review-link-color, #615f5f)
-  );
-  --mbx-c-rev-gh: var(
-    --mbx-review-github-color-light,
-    var(--mbx-review-github-color, #615f5f)
   );
   border-radius: 3px;
   display: flex;
   flex-direction: column;
   width: fit-content;
-  background: var(--mbx-c-rev-bg);
-  color: var(--mbx-c-rev-txt);
+  background: var(--mbx-rev-bg);
+  color: var(--mbx-rev-txt);
 }
 
 [data-mbx-id="rev"][data-mbx-dk] {
-  --mbx-c-rev-bg: var(
+  --mbx-rev-bg: var(
     --mbx-review-background-dark,
     var(--mbx-review-background, var(--mbx-c-bg))
   );
-  --mbx-c-rev-txt: var(
+  --mbx-rev-txt: var(
     --mbx-review-text-color-dark,
     var(--mbx-review-text-color, var(--mbx-c-txt))
-  );
-  --mbx-c-rev-link: var(
-    --mbx-review-link-color-dark,
-    var(--mbx-review-link-color, white)
-  );
-  --mbx-c-rev-gh: var(
-    --mbx-review-github-color-dark,
-    var(--mbx-review-github-color, white)
   );
 }
 
@@ -79,10 +63,13 @@
   border-radius: 9999px;
 }
 
-[data-mbx-id="rev"] [data-mbx-img="link"] {
-  fill: var(--mbx-c-rev-link);
-}
-
-[data-mbx-id="rev"] [data-mbx-revimg="git"] {
-  fill: var(--mbx-c-rev-gh);
+[data-mbx-id="rev"] [data-mbx-img] {
+  --mbx-icon-light: var(
+    --mbx-review-icon-color-light,
+    var(--mbx-review-icon-color, #615f5f)
+  );
+  --mbx-icon-dark: var(
+    --mbx-review-icon-color-dark,
+    var(--mbx-review-icon-color, white)
+  );
 }

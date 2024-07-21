@@ -34,12 +34,14 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
   onViewChange,
   animated,
   disabled,
+  active,
   calendarProps,
   /* istanbul ignore next */
   onChange = () => {},
   /* istanbul ignore next */
   onClose = () => {},
-  ...commonProps
+  dark,
+  hover,
 }) => {
   const [isVisible, setVisible] = React.useState<boolean>(false);
   const year = value.year && value.year > 0 ? value.year : todayDate.year;
@@ -64,19 +66,26 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
   };
 
   return [
-    <div key="dpk_sels" data-mbx-cls="date-s">
-      <Label key="day">{String(day)}</Label>
-      <Label key="month">{String(customMonths[month])}</Label>
-      <Label key="year">{String(year)}</Label>
+    <div key="dpk_sels" data-mbx-date-s>
+      <Label disabled={disabled} key="day">
+        {String(day)}
+      </Label>
+      <Label disabled={disabled} key="month">
+        {String(customMonths[month])}
+      </Label>
+      <Label disabled={disabled} key="year">
+        {String(year)}
+      </Label>
     </div>,
     <IconButton
       disabled={disabled}
-      dark={commonProps.dark}
+      dark={dark}
       onClick={() => setVisible(true)}
       key="dpk_cal_bt"
-      features={{ noShFc: true }}
+      active={active}
+      hover={hover}
     >
-      <CalendarIcon hover={commonProps.hover} disabled={disabled} />
+      <CalendarIcon hover={hover} disabled={disabled} />
     </IconButton>,
     <Modal
       disabled={disabled}
@@ -101,7 +110,7 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
           onChange(date);
           setValue(date);
         }}
-        dark={commonProps.dark}
+        dark={dark}
         labelProps={{ dark: true }}
         {...calendarProps}
       />

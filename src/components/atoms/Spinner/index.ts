@@ -48,13 +48,13 @@ const Spinner: SpinnerComponent = ({
   statuses = defaultIcons,
   shadow = false,
   active = false,
-  ...commonProps
+  ...props
 }) =>
-  buildMbxStandard({ active, shadow, ...commonProps }, (sharedProps) => ({
+  buildMbxStandard({ active, shadow, ...props }, (mbxProps) => ({
     name: "spn",
-    commonProps: { ...sharedProps, shadow },
+    mbxProps,
     styles: {
-      ...(sharedProps.animated && {
+      ...(mbxProps.animated && {
         "--mbx-spn-rot": "rotating 2s linear infinite",
       }),
     },

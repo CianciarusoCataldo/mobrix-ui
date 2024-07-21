@@ -10,19 +10,24 @@
     --mbx-checkbox-background-light,
     var(--mbx-checkbox-background, var(--mbx-c-bg))
   );
-  --mbx-chk-bghov: var(
-    --mbx-checkbox-background-hover-light,
-    var(--mbx-checkbox-background-hover, var(--mbx-c-bg-h))
-  );
   background: var(--mbx-chk-bg);
 }
 
 [data-mbx-id="check"][data-mbx-dk] {
-  --mbx-c-chk-bg: var(
+  --mbx-chk-bg: var(
     --mbx-checkbox-background-dark,
     var(--mbx-checkbox-background, var(--mbx-c-bg))
   );
-  --mbx-chk-bghov: var(
+}
+
+[data-mbx-id="check"][data-mbx-hv] {
+  --mbx-chk-bg-h: var(
+    --mbx-checkbox-background-hover-light,
+    var(--mbx-checkbox-background-hover, var(--mbx-c-bg-h))
+  );
+}
+[data-mbx-id="check"][data-mbx-dk][data-mbx-hv] {
+  --mbx-chk-bg-h: var(
     --mbx-checkbox-background-hover-dark,
     var(--mbx-checkbox-background-hover, var(--mbx-c-bg-h))
   );

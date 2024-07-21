@@ -3,11 +3,6 @@
     "type": "string",
     "description": "code to display - multiline string is supported"
   },
-  "highlight": {
-    "type": "boolean",
-    "description": "Enable/disable  text highlight, based on selected environment",
-    "default": "true"
-  },
   "environment": {
     "type": "'javascript' | 'python' | 'terminal' | 'common'",
     "description": "environment for text highlight feature, default to 'terminal' (only enabled when 'highlight' is true)",

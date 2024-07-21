@@ -9,7 +9,7 @@ const reviewTest = () => {
       expect(wrapper);
       wrapper = mount(
         <Review
-          logo="github"
+          logo="facebook"
           rate={3}
           url="www.example.com"
           user="Test user"
@@ -19,6 +19,12 @@ const reviewTest = () => {
       );
       expect(wrapper);
       wrapper = mount(<Review logo="github" />);
+      expect(wrapper);
+      wrapper = mount(<Review logo="twitter" />);
+      expect(wrapper);
+      wrapper = mount(<Review logo="linkedin" />);
+      expect(wrapper);
+      wrapper = mount(<Review logo="google" />);
       expect(wrapper);
     });
     test("UI test", () => {

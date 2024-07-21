@@ -32,7 +32,7 @@ const modalTest = () => {
           <p>Modal content</p>
         </Modal>
       );
-      wrapper.find('[data-mbx-cls="dchead"]').simulate("click");
+      wrapper.find('[data-mbx-dchead]').simulate("click");
       expect(wrapper);
     });
   });

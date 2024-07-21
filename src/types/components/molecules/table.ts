@@ -1,8 +1,7 @@
 import {
   BuilderComponent,
-  BuilderProps,
   ClickableComponent,
-  CommonProps,
+  MbxSharedProps,
   MbxUiComponent,
 } from "../../../types/global";
 

@@ -42,16 +42,16 @@ import component from "./component";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const EmbeddedVideo: EmbeddedVideoComponent = ({ url, ...shared }) =>
-  buildMbxStandard(shared, (sProps) => ({
+const EmbeddedVideo: EmbeddedVideoComponent = ({ url, ...props }) =>
+  buildMbxStandard(props, (mbxProps) => ({
     name: "em-vd",
-    commonProps: sProps,
+    mbxProps,
     features: {
       opHov: true,
     },
     Component: component({
       url,
-      ...sProps,
+      ...mbxProps,
     }),
   }));
 

@@ -51,7 +51,7 @@ const Modal: ModalComponent = ({
   /* istanbul ignore next */
   onClose = () => {},
   hide,
-  ...commonProps
+  ...props
 }) => {
   const [value, setValue] = React.useState("");
 
@@ -64,24 +64,24 @@ const Modal: ModalComponent = ({
     }, 200);
   };
 
-  return buildMbxStandard(commonProps, (sharedProps) => ({
+  return buildMbxStandard(props, (mbxProps) => ({
     name: "mod",
     Component: component({
       children,
       closeOutside,
       onClose: onCloseCallback,
       hide,
-      ...sharedProps,
+      ...mbxProps,
     }),
     styles: {
-      ...(sharedProps.animated && {
+      ...(mbxProps.animated && {
         "--mbx-md-an": `var(--mbx-md-an-${
           value.length === 0 ? (hide ? "none" : "in") : value
         })`,
       }),
     },
-    commonProps: {
-      ...sharedProps,
+    mbxProps: {
+      ...mbxProps,
       hide: value.length === 0 && hide,
     },
   }));

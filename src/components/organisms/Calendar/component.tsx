@@ -20,10 +20,7 @@ const Component: MbxUiReactiveComponent<
   CalendarProps & { today: CalendarDate & { dayOfTheMonth: number } }
 > = ({
   value,
-  shadow,
-  disabled,
   today: todayDt,
-  hideArrows,
   days = defaultDays,
   months: customMonths = defaultMonths,
   onViewChange = () => {},
@@ -33,13 +30,18 @@ const Component: MbxUiReactiveComponent<
   fromToday = true,
   dayLabel = true,
   setValue,
-  labelClassName,
   labelProps = {},
-  hover,
+  disabled,
+  dark,
+  labelClassName,
   arrowClassName,
-  ...commonProps
+  hover,
+  background,
+  active,
+  hideArrows,
+  shadow,
 }) => {
-  const customProps = labelClassName
+  const cprops = labelClassName
     ? { className: arrowClassName, ...labelProps }
     : labelProps;
   const year = startYear && startYear > 0 ? startYear : todayDt.year;
@@ -56,21 +58,23 @@ const Component: MbxUiReactiveComponent<
     month,
   });
 
-  React.useEffect(() => {
-    const actualYear = startYear && startYear > 0 ? startYear : todayDt.year;
-    const actualMonth =
-      startMonth !== undefined && startMonth >= 0 && startMonth <= 11
-        ? startMonth
-        : todayDt.month;
-
-    show({ month: actualMonth, year: actualYear });
-  }, [startMonth, startYear]);
+  React.useEffect(
+    () =>
+      show({
+        month:
+          startMonth !== undefined && startMonth >= 0 && startMonth <= 11
+            ? startMonth
+            : todayDt.month,
+        year: startYear && startYear > 0 ? startYear : todayDt.year,
+      }),
+    [startMonth, startYear],
+  );
 
   const months = getMonthsDuration(scrDate.year);
 
-  const basicMatrix = getDateMatrix({ ...scrDate, day: 1 }, months);
+  const dMat = getDateMatrix({ ...scrDate, day: 1 }, months);
 
-  const arrowActions: Record<"left" | "right", () => void> = {
+  const arrAct: Record<"left" | "right", () => void> = {
     left: () =>
       scrDate.month > 0
         ? show({
@@ -91,24 +95,24 @@ const Component: MbxUiReactiveComponent<
     <IconButton
       disabled={disabled}
       onClick={() => {
-        arrowActions[direction]();
+        arrAct[direction]();
         onViewChange({ ...scrDate, day: 1 });
       }}
-      hide={hideArrows}
+      hide={hideArrows || !dayLabel}
+      active={active}
       hover={hover}
-      dark={commonProps.dark}
+      dark={dark}
       key={"arrow_" + direction}
-      features={{ noShFc: true }}
-      {...customProps}
-      style={{
-        ...(direction === "right" && {
+      {...cprops}
+      {...(direction === "right" && {
+        style: {
           WebkitTransform: "scaleX(-1)",
           transform: "scaleX(-1)",
-        }),
-      }}
+        },
+      })}
     >
       <ArrowIcon
-        dark={commonProps.dark}
+        dark={dark}
         width="3rem"
         height="3rem"
         disabled={disabled}
@@ -117,23 +121,27 @@ const Component: MbxUiReactiveComponent<
     </IconButton>
   );
 
-  let components: JSX.Element[] = [];
-
-  dayLabel &&
-    components.push(
-      <div key="t_sel">
-        {getArrow("left")}
-        <Label disabled={disabled} dark={commonProps.dark} {...customProps}>{`${
-          customMonths[scrDate.month]
-        } ${scrDate.year}`}</Label>
-        {getArrow("right")}
-      </div>,
-    );
-
-  components.push(
+  return [
+    <div key="t_sel">
+      {getArrow("left")}
+      <Label hide={!dayLabel} disabled={disabled} dark={dark} {...cprops}>{`${
+        customMonths[scrDate.month]
+      } ${scrDate.year}`}</Label>
+      {getArrow("right")}
+    </div>,
     <Table
       disabled={disabled}
       key="cal_tb"
+      background={background}
+      shadow={shadow}
+      dark={dark}
+      headers
+      rows={[
+        days.map((dayName) => dayName.slice(0, 3)),
+        ...dMat.map((row) =>
+          row.map((element) => (element > 0 ? String(element) : "")),
+        ),
+      ]}
       propsCallback={(row, column) => {
         if (row > 0) {
           const isDisabled = fromToday
@@ -142,68 +150,58 @@ const Component: MbxUiReactiveComponent<
                 scrDate.month < todayDt.month) ||
               (scrDate.year === todayDt.year &&
                 scrDate.month === todayDt.month &&
-                basicMatrix[row - 1][column] < todayDt.dayOfTheMonth)
+                dMat[row - 1][column] < todayDt.dayOfTheMonth)
             : false;
 
-          const isNotDay = basicMatrix[row - 1][column] <= 0;
+          const isNotDay = dMat[row - 1][column] <= 0;
 
           const onClick = () => {
             onChange({
               ...scrDate,
-              dayOfTheMonth: basicMatrix[row - 1][column],
-              day: basicMatrix[row - 1][column],
+              dayOfTheMonth: dMat[row - 1][column],
+              day: dMat[row - 1][column],
             });
             setValue({
               month: scrDate.month,
               year: scrDate.year,
-              day: basicMatrix[row - 1][column],
+              day: dMat[row - 1][column],
             });
           };
 
-          const extraProps =
-            !disabled && !isDisabled && !isNotDay
-              ? {
-                  onClick,
-                  onKeyDown: (e) => {
-                    if (e.key === "Enter") {
-                      onClick();
-                    }
-                  },
-                }
-              : {};
-
           return {
-            tabIndex: isDisabled || isNotDay ? -1 : 0,
-            "data-mbx-ctoday":
-              fromToday &&
-              basicMatrix[row - 1][column] === todayDt.dayOfTheMonth &&
+            ...(fromToday &&
+              dMat[row - 1][column] === todayDt.dayOfTheMonth &&
               scrDate.month === todayDt.month &&
-              scrDate.year === todayDt.year,
-            "data-mbx-scal":
-              value.year === scrDate.year &&
+              scrDate.year === todayDt.year && {
+                style: {
+                  color: "var(--mbx-cal-t)",
+                  fontWeight: "800",
+                },
+              }),
+            ...(value.year === scrDate.year &&
               value.month === scrDate.month &&
-              value.day === basicMatrix[row - 1][column],
+              value.day === dMat[row - 1][column] && {
+                "data-mbx-scal": "",
+              }),
             ...((disabled || isDisabled || isNotDay) && {
-              "data-mbx-cls": "dsb",
+              "data-mbx-dsb": "",
             }),
-            ...extraProps,
+            ...(!disabled &&
+              !isDisabled &&
+              !isNotDay && {
+                onClick,
+                onKeyDown: (e) => {
+                  if (e.key === "Enter") {
+                    onClick();
+                  }
+                },
+              }),
+            tabIndex: isDisabled || isNotDay ? -1 : 0,
           };
         } else return {};
       }}
-      background={commonProps.background}
-      shadow={shadow}
-      dark={commonProps.dark}
-      headers
-      rows={[
-        days.map((dayName) => dayName.slice(0, 3)),
-        ...basicMatrix.map((row) =>
-          row.map((element) => (element > 0 ? String(element) : "")),
-        ),
-      ]}
     />,
-  );
-
-  return components;
+  ];
 };
 
 export default Component;

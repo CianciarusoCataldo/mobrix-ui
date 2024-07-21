@@ -12,7 +12,8 @@ const dropdownTest = () => {
           value={2}
         />
       );
-      wrapper.find('[data-mbx-id="btn"]').at(0).simulate("click");
+
+      wrapper.find('[data-mbx-id="icb"]').at(0).simulate("click");
       wrapper
         .find('[data-mbx-id="popup"] [data-mbx-id="btn"]')
         .at(1)
@@ -28,13 +29,20 @@ const dropdownTest = () => {
 
     test("Selecting an element trigger the onChange callback", () => {
       const onChangeStub = jest.fn();
+      const onFocusLostStub = jest.fn();
+
       let wrapper = mount(
         <Dropdown
           onChange={onChangeStub}
+          onFocusLost={onFocusLostStub}
           elements={["Dropdown element 1", "Dropdown element 2"]}
         />
       );
-      wrapper.find('[data-mbx-id="btn"]').at(0).simulate("click");
+      wrapper.find('[data-mbx-id="dd"]').simulate("focus");
+      wrapper.find('[data-mbx-id="dd"]').simulate("blur");
+      expect(onFocusLostStub).toBeCalled;
+
+      wrapper.find('[data-mbx-id="icb"]').at(1).simulate("click");
       wrapper
         .find('[data-mbx-id="popup"] [data-mbx-id="btn"]')
         .at(1)
