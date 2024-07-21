@@ -81,7 +81,7 @@ const Button: ButtonComponent = ({
         hover,
         disabled,
       },
-    })
+    }),
   );
 
 export default Button;
