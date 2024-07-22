@@ -14,7 +14,7 @@ import { CopyIcon } from "../../../icons/generic";
 
 import IconButton from "../IconButton";
 
-const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
+const cdbComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   value = "",
   environment = "terminal",
   copyButton = true,
@@ -57,4 +57,4 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   ];
 };
 
-export default codeboxComponent;
+export default cdbComponent;

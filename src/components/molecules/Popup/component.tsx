@@ -3,7 +3,7 @@ import React from "react";
 import { PopupComponent } from "../../../types";
 import Container from "../Container";
 
-const popupComponent: PopupComponent = ({
+const ppComponent: PopupComponent = ({
   animated,
   className,
   children,
@@ -25,4 +25,4 @@ const popupComponent: PopupComponent = ({
   </Container>
 );
 
-export default popupComponent;
+export default ppComponent;

@@ -17,7 +17,7 @@
   },
   "vertical": {
     "default": "false",
-    "description": "if `true`, rate icons will be showed vertically",
+    "description": "if `true`, rate icons will be displayed vertically",
     "type": "boolean"
   },
   "onChange": {

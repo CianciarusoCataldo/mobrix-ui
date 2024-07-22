@@ -4,7 +4,7 @@ import { BuilderComponent, MbxUiComponent, ModalProps } from "../../../types";
 
 import DismissableCard from "../DismissableCard";
 
-const modalComponent: MbxUiComponent<ModalProps, BuilderComponent> = ({
+const mdComponent: MbxUiComponent<ModalProps, BuilderComponent> = ({
   children,
   /* istanbul ignore next */
   onFocusLost = () => {},
@@ -40,4 +40,4 @@ const modalComponent: MbxUiComponent<ModalProps, BuilderComponent> = ({
   />
 );
 
-export default modalComponent;
+export default mdComponent;

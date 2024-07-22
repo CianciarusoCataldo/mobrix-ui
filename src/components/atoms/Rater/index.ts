@@ -13,7 +13,7 @@ import raterComponent from "./component";
  * @param {number} max max vote (max number of icons displayed)
  * @param {boolean} readOnly if `true`, the rate can't be changed by clicking on the icons
  * @param {'star'|'circle'} type vote icons type
- * @param {boolean} vertical if `true`, rate icons will be showed vertically
+ * @param {boolean} vertical if `true`, rate icons will be displayed vertically
  * @param {(newValue: number) => void} onChange callback triggered when user select a vote
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container

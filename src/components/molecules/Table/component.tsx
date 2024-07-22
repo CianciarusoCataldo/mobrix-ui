@@ -4,7 +4,7 @@ import { MbxUiComponent, TableProps } from "../../../types";
 
 const parseClassName = (className: string) => (className ? { className } : {});
 
-const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
+const tComponent: MbxUiComponent<TableProps, JSX.Element> = ({
   headers,
   rows = [],
   cellClassName,
@@ -71,4 +71,4 @@ const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
   );
 };
 
-export default tableComponent;
+export default tComponent;

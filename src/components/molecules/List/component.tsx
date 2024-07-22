@@ -3,7 +3,7 @@ import React from "react";
 import { BuilderComponent, ListProps, MbxUiComponent } from "../../../types";
 import Container from "../Container";
 
-const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
+const lComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
   elements = [],
   dark,
   hover,
@@ -44,4 +44,4 @@ const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
     </Container>
   ));
 
-export default listComponent;
+export default lComponent;

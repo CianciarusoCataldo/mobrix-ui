@@ -6,10 +6,7 @@ import { ArrowIcon } from "../../../icons";
 
 import IconButton from "../../atoms/IconButton";
 
-const DrawerInternalComponent: MbxUiComponent<
-  DrawerProps,
-  BuilderComponent[]
-> = ({
+const DrwComponent: MbxUiComponent<DrawerProps, BuilderComponent[]> = ({
   hover,
   arrowClassName,
   dark,
@@ -41,4 +38,4 @@ const DrawerInternalComponent: MbxUiComponent<
   ];
 };
 
-export default DrawerInternalComponent;
+export default DrwComponent;

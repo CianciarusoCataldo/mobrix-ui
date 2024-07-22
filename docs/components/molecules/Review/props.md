@@ -71,7 +71,7 @@ Review description displayed below the review username, at the top of the rate
 
 <br>
 
-Icon showed inside the component
+Icon displayed inside the component
 
 <br>
 
@@ -86,7 +86,7 @@ Icon showed inside the component
 
 <br>
 
-Review external url. If set, an icon will be showed at the top right of the review
+Review external url. If set, an icon will be displayed at the top right of the review
 
 <br>
 
@@ -101,7 +101,7 @@ Review external url. If set, an icon will be showed at the top right of the revi
 
 <br>
 
-Top icon, showed at the top right of the container. If not provided, a default icon is displayed (if an url is provided too)
+Top icon, displayed at the top right of the container. If not provided, a default icon is displayed (if an url is provided too)
 
 <br>
 
@@ -131,7 +131,7 @@ max vote (max number of icons displayed) - extended from [Rater component](../..
 
 <br>
 
-if `true`, rate icons will be showed vertically - extended from [Rater component](../../atoms/Rater/props.md#vertical)
+if `true`, rate icons will be displayed vertically - extended from [Rater component](../../atoms/Rater/props.md#vertical)
 
 <br>
 

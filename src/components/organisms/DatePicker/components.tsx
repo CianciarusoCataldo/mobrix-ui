@@ -17,7 +17,7 @@ import Calendar from "../Calendar";
 import IconButton from "../../atoms/IconButton";
 import Label from "../../atoms/Label";
 
-const DatePickerInternalComponent: MbxUiReactiveComponent<
+const DpickComponent: MbxUiReactiveComponent<
   CalendarDate,
   DatePickerProps & { today: CalendarDate & { dayOfTheMonth: number } }
 > = ({
@@ -124,4 +124,4 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
   ];
 };
 
-export default DatePickerInternalComponent;
+export default DpickComponent;

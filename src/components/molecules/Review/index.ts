@@ -11,11 +11,11 @@ import component from "./component";
  *
  * @param {string} user Username displayed above the review description, at the right of the icon
  * @param {string} description Review description displayed below the review username, at the top of the rate
- * @param {JSX.Element} icon Icon showed inside the component
- * @param {string} url Review external url. If set, an icon will be showed at the top right of the review
- * @param {JSX.Element | string} logo Top icon, showed at the top right of the container. If not provided, a default icon is displayed (if an url is provided too)
+ * @param {JSX.Element} icon Icon displayed inside the component
+ * @param {string} url Review external url. If set, an icon will be displayed at the top right of the review
+ * @param {JSX.Element | string} logo Top icon, displayed at the top right of the container. If not provided, a default icon is displayed (if an url is provided too)
  * @param {number} max max vote (max number of icons displayed) - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
- * @param {boolean} vertical if `true`, rate icons will be showed vertically - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
+ * @param {boolean} vertical if `true`, rate icons will be displayed vertically - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
  * @param {number} rate actual vote - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
  * @param {'star'|'circle'} rateType vote icons type - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)

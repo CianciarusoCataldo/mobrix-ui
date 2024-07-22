@@ -98,7 +98,7 @@ vote icons type
 
 <br>
 
-if `true`, rate icons will be showed vertically
+if `true`, rate icons will be displayed vertically
 
 <br>
 

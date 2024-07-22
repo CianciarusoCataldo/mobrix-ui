@@ -5,7 +5,7 @@ import { MbxUiReactiveComponent, TabViewerProps } from "../../../types";
 import Container from "../Container";
 import Button from "../../atoms/Button";
 
-const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
+const tabVComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
   dark,
   onChange = () => {},
   setValue,
@@ -76,4 +76,4 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
   ];
 };
 
-export default tabViewerComponent;
+export default tabVComponent;

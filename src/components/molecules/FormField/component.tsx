@@ -7,10 +7,7 @@ import { formatters } from "./utils";
 import Container from "../Container";
 import { Label } from "../../atoms";
 
-const FormFieldInternalComponent: MbxUiReactiveComponent<
-  any,
-  FormFieldProps
-> = ({
+const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
   value,
   setValue,
   type,
@@ -99,4 +96,4 @@ const FormFieldInternalComponent: MbxUiReactiveComponent<
   ];
 };
 
-export default FormFieldInternalComponent;
+export default FrmComponent;
