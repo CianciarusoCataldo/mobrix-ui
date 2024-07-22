@@ -13,3 +13,4 @@ export * from "./radio-button-group";
 export * from "./rater";
 export * from "./review";
 export * from "./table";
+export * from "./tab-viewer";

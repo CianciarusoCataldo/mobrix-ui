@@ -13,7 +13,7 @@ import component from "./component";
  * @param {string} description Review description displayed below the review username, at the top of the rate
  * @param {JSX.Element} icon Icon showed inside the component
  * @param {string} url Review external url. If set, an icon will be showed at the top right of the review
- * @param {'default' | 'link' | 'facebook' | 'twitter' | 'google' | 'linkedin' | 'github'} logo Social icon type, showed at the top right of the container. Supports popular web services like Facebook, Twitter, Google and so on. Proviced icon list will grow up time by time and will be updated with the latest web services, to keep it usable for the future.
+ * @param {JSX.Element | string} logo Top icon, showed at the top right of the container. If not provided, a default icon is displayed (if an url is provided too)
  * @param {number} max max vote (max number of icons displayed) - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
  * @param {boolean} vertical if `true`, rate icons will be showed vertically - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
  * @param {number} rate actual vote - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}

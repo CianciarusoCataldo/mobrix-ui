@@ -5,7 +5,7 @@ import { MbxUiComponent, CardProps, BuilderComponent } from "../../../types";
 import { Divider } from "../../atoms";
 import Container from "../Container";
 
-const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
+const component: MbxUiComponent<CardProps, BuilderComponent[]> = ({
   children,
   dark,
   headerProps = {},
@@ -67,4 +67,4 @@ const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
   </Container>,
 ];
 
-export default cardComponent;
+export default component;

@@ -53,15 +53,7 @@ const Checkbox: CheckBoxComponent = ({
 }) =>
   buildMbxReactive<boolean>(props, ({ disabled, hover, dark, ...mProps }) => ({
     name: "check",
-    Component: ({ value }) =>
-      value
-        ? icon ||
-          CheckIcon({
-            disabled,
-            hover,
-            dark,
-          })
-        : "",
+    Component: ({ value }) => (value ? icon || CheckIcon({}) : ""),
     features: {
       opHov: true,
     },

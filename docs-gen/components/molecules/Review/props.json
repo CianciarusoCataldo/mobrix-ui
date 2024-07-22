@@ -16,8 +16,8 @@
     "description": "Review external url. If set, an icon will be showed at the top right of the review"
   },
   "logo": {
-    "type": "'default' | 'link' | 'facebook' | 'twitter' | 'google' | 'linkedin' | 'github'",
-    "description": "Social icon type, showed at the top right of the container. Supports popular web services like Facebook, Twitter, Google and so on. Proviced icon list will grow up time by time and will be updated with the latest web services, to keep it usable for the future."
+    "type": "JSX.Element | string",
+    "description": "Top icon, showed at the top right of the container. If not provided, a default icon is displayed (if an url is provided too)"
   },
   "max": {
     "default": "5",

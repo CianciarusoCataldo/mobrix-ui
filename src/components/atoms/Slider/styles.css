@@ -11,7 +11,6 @@
     --mbx-slider-thumb-color-light,
     var(--mbx-slider-thumb-color, radial-gradient(#2d3748, #1d232e))
   );
-
   background: var(--mbx-sld-bg);
   --mbx-sld-op-act: 0.4;
 }

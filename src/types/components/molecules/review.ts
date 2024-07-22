@@ -3,24 +3,6 @@ import { ComponentWithIcon, MbxUiComponent } from "../../../types/global";
 import { RaterProps } from "./rater";
 
 /**
- * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Review component logo types
- *
- * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Review
- *
- * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
- *
- * @copyright 2024 Cataldo Cianciaruso
- */
-export type ReviewLogo =
-  | "default"
-  | "link"
-  | "facebook"
-  | "twitter"
-  | "google"
-  | "linkedin"
-  | "github";
-
-/**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Review component props
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Review
@@ -42,8 +24,8 @@ export type ReviewProps = ComponentWithIcon & {
   /** review external url. If set, an icon will be showed at the top right of the review */
   url?: string;
 
-  /** Social icon type, showed at the top right of the container. Supports popular web services like Facebook, Twitter, Google and so on. Proviced icon list will grow up time by time and will be updated with the latest web services, to keep it usable for the future. */
-  logo?: ReviewLogo;
+  /** Top icon, displayed at the top right of the container. If not provided, a default icon is displayed (if an url is provided too) */
+  logo?: React.JSX.Element | string;
 
   /** review vote, showed at the bottom of the review */
   rate?: number;

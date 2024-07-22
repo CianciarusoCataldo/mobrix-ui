@@ -40,6 +40,7 @@ const Component: MbxUiReactiveComponent<
   active,
   hideArrows,
   shadow,
+  a11y,
 }) => {
   const cprops = labelClassName
     ? { className: arrowClassName, ...labelProps }
@@ -98,11 +99,12 @@ const Component: MbxUiReactiveComponent<
         arrAct[direction]();
         onViewChange({ ...scrDate, day: 1 });
       }}
-      hide={hideArrows || !dayLabel}
-      active={active}
-      hover={hover}
       dark={dark}
+      hide={hideArrows || !dayLabel}
+      hover={hover}
+      active={active}
       key={"arrow_" + direction}
+      a11y={a11y}
       {...cprops}
       {...(direction === "right" && {
         style: {
@@ -111,25 +113,24 @@ const Component: MbxUiReactiveComponent<
         },
       })}
     >
-      <ArrowIcon
-        dark={dark}
-        width="3rem"
-        height="3rem"
-        disabled={disabled}
-        hover={hover}
-      />
+      <ArrowIcon width="3rem" height="3rem" />
     </IconButton>
   );
 
   return [
     <div key="t_sel">
       {getArrow("left")}
-      <Label hide={!dayLabel} disabled={disabled} dark={dark} {...cprops}>{`${
-        customMonths[scrDate.month]
-      } ${scrDate.year}`}</Label>
+      <Label
+        a11y={a11y}
+        hide={!dayLabel}
+        disabled={disabled}
+        dark={dark}
+        {...cprops}
+      >{`${customMonths[scrDate.month]} ${scrDate.year}`}</Label>
       {getArrow("right")}
     </div>,
     <Table
+      a11y={a11y}
       disabled={disabled}
       key="cal_tb"
       background={background}
@@ -196,7 +197,7 @@ const Component: MbxUiReactiveComponent<
                   }
                 },
               }),
-            tabIndex: isDisabled || isNotDay ? -1 : 0,
+            tabIndex: isDisabled || isNotDay || !a11y ? -1 : 0,
           };
         } else return {};
       }}

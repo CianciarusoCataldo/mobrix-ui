@@ -141,7 +141,7 @@ const Component: MbxUiReactiveComponentBuilder<number, DropdownProps> = ({
           }
           key="arr-ic"
         >
-          <ArrowIcon {...cProps} width="15" height="12" />
+          <ArrowIcon width="15" height="12" />
         </IconButton>
       </Container>,
       <Popup key="opts" shadow={shadow} hide={!vis} a11y={false} {...cProps}>

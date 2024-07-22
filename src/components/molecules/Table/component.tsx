@@ -24,6 +24,7 @@ const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
       ...cellProps,
       tabIndex: disabled ? -1 : 0,
     },
+    head: { ...parseClassName(headerClassName), ...headersProps, tabIndex: -1 },
   };
 
   let wrappers: {
@@ -39,17 +40,15 @@ const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
   if (headers && rows.length > 0) {
     wrappers[0].wrapper = "th";
     wrappers[0].cellProps = {
-      ...parseClassName(headerClassName),
-      ...headersProps,
+      ...props.head,
       ...wrappers[0].cellProps,
-      tabIndex: -1,
     };
   }
 
   return (
     <tbody key="tbl_b">
       {rows.map((row, rowIndex) => (
-        <tr key={`row_${rowIndex}`} {...rowProps}>
+        <tr key={`row_${rowIndex}`} {...wrappers[rowIndex].rowProps}>
           {row.map((element, index) => {
             const Wrapper = wrappers[rowIndex].wrapper;
 

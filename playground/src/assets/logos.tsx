@@ -1,13 +1,33 @@
 import React from "react";
-import { MbxIcon } from "../types";
+import { MbxIcon, MbxIconProps } from "../mobrix-ui-preview";
 
-export const FbLogo: MbxIcon = () => (
+const BasicIcon: (properties: {
+  props: MbxIconProps;
+  Icon: MbxIcon;
+}) => JSX.Element = ({ props, Icon }) => {
+  return (
+    <Icon
+      height={props.height}
+      width={props.width}
+      style={
+        {
+          ...props.style,
+          ...(props.hide && {
+            "--mbx-ic-c": "none",
+          }),
+        } as React.CSSProperties
+      }
+      {...(props.transform && { transform: props.transform })}
+    />
+  );
+};
+
+export const FbLogo: MbxIcon = (props) => (
   <svg
-    height="30px"
-    width="30px"
     viewBox="0 0 14222 14222"
     xmlns="http://www.w3.org/2000/svg"
     data-mbx-img="face"
+    {...props}
   >
     <circle cx="7111" cy="7112" fill="#1977f3" r="7111" />
     <path
@@ -17,13 +37,8 @@ export const FbLogo: MbxIcon = () => (
   </svg>
 );
 
-export const Google: MbxIcon = () => (
-  <svg
-    data-mbx-img="google"
-    height="30px"
-    width="30px"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+export const Google: MbxIcon = (props) => (
+  <svg data-mbx-img="google" xmlns="http://www.w3.org/2000/svg" {...props}>
     <path
       d="m23.7 12.3-.1-2.3H12.3v4.5h6.4a5.6 5.6 0 0 1-2.4 3.6v3h3.9a12 12 0 0 0 3.5-8.8Z"
       fill="#4285F4"
@@ -42,13 +57,12 @@ export const Google: MbxIcon = () => (
     />
   </svg>
 );
-export const Twitter: MbxIcon = () => (
+export const Twitter: MbxIcon = (props) => (
   <svg
-    height="30px"
-    width="30px"
     viewBox="126.4 2.3 589 589"
     xmlns="http://www.w3.org/2000/svg"
     data-mbx-img="twt"
+    {...props}
   >
     <circle cx="420.9" cy="296.8" fill="#2daae1" r="294.5" />
     <path
@@ -57,14 +71,13 @@ export const Twitter: MbxIcon = () => (
     />
   </svg>
 );
-export const Linkedin: MbxIcon = () => (
+export const Linkedin: MbxIcon = (props) => (
   <svg
     data-mbx-revimg="ld"
-    height="30px"
-    width="30px"
     viewBox="0 0 72 72"
     xmlns="http://www.w3.org/2000/svg"
     data-mbx-img="lnkd"
+    {...props}
   >
     <g fill="none" fillRule="evenodd">
       <path d="M36 72a36 36 0 1 0 0-72 36 36 0 1 0 0 72Z" fill="#007EBB" />
@@ -74,4 +87,34 @@ export const Linkedin: MbxIcon = () => (
       />
     </g>
   </svg>
+);
+
+export const GitLogo: MbxIcon = ({
+  width = "30px",
+  height = "30px",
+  ...props
+}) => (
+  <BasicIcon
+    props={{
+      width,
+      height,
+      ...props,
+    }}
+    Icon={(props) => (
+      <svg
+        viewBox="0 0 1024 1024"
+        xmlns="http://www.w3.org/2000/svg"
+        data-mbx-img="git"
+        width="30px"
+        height="30px"
+        {...props}
+      >
+        <path
+          data-mbx-revimg="git"
+          d="M512 0A511.9 511.9 0 0 0 0 512c0 226.6 146.6 418 350 485.8 25.7 4.4 35.3-11 35.3-24.4 0-12.1-.7-52.4-.7-95.3-128.6 23.7-161.9-31.4-172.1-60.2-5.8-14.7-30.7-60.1-52.5-72.3-18-9.6-43.5-33.3-.6-34 40.3-.6 69 37.2 78.7 52.6 46 77.4 119.7 55.6 149.1 42.2 4.5-33.3 18-55.7 32.6-68.5-113.9-12.8-233-57-233-252.8 0-55.7 20-101.7 52.6-137.6-5.2-12.8-23-65.3 5-135.7 0 0 43-13.4 140.9 52.5a475 475 0 0 1 128-17.3c43.5 0 87 5.8 128 17.3 97.9-66.5 140.8-52.5 140.8-52.5 28.1 70.4 10.2 123 5.1 135.7a198.1 198.1 0 0 1 52.5 137.6c0 196.5-119.7 240-233.6 252.8 18.5 16 34.5 46.7 34.5 94.7 0 68.5-.6 123.6-.6 140.8 0 13.5 9.6 29.5 35.2 24.4A512.8 512.8 0 0 0 1024 512C1024 229.1 794.9 0 512 0Z"
+          fillRule="evenodd"
+        />
+      </svg>
+    )}
+  />
 );

@@ -9,41 +9,36 @@
     --mbx-carousel-background-light,
     var(--mbx-carousel-background, var(--mbx-c-bg))
   );
+  --mbx-car-dde: radial-gradient(
+    #000000,
+    #181818,
+    #282828,
+    #3a3a3a,
+    #4c4c4c,
+    #6b6a6a,
+    #858383
+  );
+  --mbx-car-ddf: linear-gradient(
+    to top,
+    #ff8007,
+    #fd8616,
+    #fd9b3f,
+    #fd9c40,
+    #fcbb7f,
+    #fad6b4
+  );
   --mbx-car-dot-f: var(
     --mbx-carousel-dot-full-background-light,
-    var(
-      --mbx-carousel-dot-background,
-      linear-gradient(
-        to top,
-        #ff8007,
-        #fd8616,
-        #fd9b3f,
-        #fd9c40,
-        #fcbb7f,
-        #fad6b4
-      )
-    )
+    var(--mbx-carousel-dot-full-background, var(--mbx-car-ddf))
   );
   --mbx-car-dot-e: var(
     --mbx-carousel-dot-empty-background-light,
-    var(
-      --mbx-carousel-dot-background,
-      radial-gradient(
-        #000000,
-        #181818,
-        #282828,
-        #3a3a3a,
-        #4c4c4c,
-        #6b6a6a,
-        #858383
-      )
-    )
+    var(--mbx-carousel-dot-empty-background, var(--mbx-car-dde))
   );
   background: var(--mbx-car-bg);
 }
 
 [data-mbx-id="crsel"][data-mbx-dk] {
-  /** Carousel **/
   --mbx-car-bg: var(
     --mbx-carousel-background-dark,
     var(--mbx-carousel-background, var(--mbx-c-bg))
@@ -51,33 +46,11 @@
 
   --mbx-car-dot-f: var(
     --mbx-carousel-dot-full-background-dark,
-    var(
-      --mbx-carousel-dot-background,
-      linear-gradient(
-        to top,
-        #ff8007,
-        #fd8616,
-        #fd9b3f,
-        #fd9c40,
-        #fcbb7f,
-        #fad6b4
-      )
-    )
+    var(--mbx-carousel-dot-full-background, var(--mbx-car-ddf))
   );
   --mbx-car-dot-e: var(
     --mbx-carousel-dot-empty-background-dark,
-    var(
-      --mbx-carousel-dot-background,
-      radial-gradient(
-        #000000,
-        #181818,
-        #282828,
-        #3a3a3a,
-        #4c4c4c,
-        #6b6a6a,
-        #858383
-      )
-    )
+    var(--mbx-carousel-dot-empty-background, var(--mbx-car-dde))
   );
 }
 
@@ -91,8 +64,7 @@
 }
 
 [data-mbx-id="crsel"] > [data-mbx-car-els] > [data-mbx-id="icb"] {
-  margin-right: 0.6rem;
-  margin-left: 0.6rem;
+  margin: auto 0.6rem;
   --mbx-icon-light: var(
     --mbx-carousel-arrow-color-light,
     var(--mbx-carousel-arrow-color, var(--mbx-c-txt))
@@ -122,9 +94,18 @@
 }
 
 [data-mbx-id="crsel"] > [data-mbx-cdots] > [data-mbx-id="icb"] {
+  background: var(--mbx-car-dot-e);
   margin: 0 0.3rem;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border-color: transparent;
+}
+
+@media (hover) {
+  [data-mbx-id="crsel"]
+    > [data-mbx-cdots]
+    > [data-mbx-id="icb"][data-mbx-hv]:hover {
+    background: var(--mbx-car-dot-f);
+  }
 }

@@ -17,6 +17,7 @@ const Component: MbxUiReactiveComponent<number, RaterProps> = ({
   a11y,
   dark,
   hover,
+  active,
 }) => {
   let start = max || 5;
   const [hovEl, setHov] = React.useState<number | null>(null);
@@ -39,6 +40,7 @@ const Component: MbxUiReactiveComponent<number, RaterProps> = ({
 
     return (
       <IconButton
+        active={active}
         key={`vote_${i}`}
         dark={dark}
         a11y={a11y && !readonly}

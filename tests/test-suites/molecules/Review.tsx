@@ -9,7 +9,6 @@ const reviewTest = () => {
       expect(wrapper);
       wrapper = mount(
         <Review
-          logo="facebook"
           rate={3}
           url="www.example.com"
           user="Test user"
@@ -18,33 +17,18 @@ const reviewTest = () => {
         />
       );
       expect(wrapper);
-      wrapper = mount(<Review logo="github" />);
-      expect(wrapper);
-      wrapper = mount(<Review logo="twitter" />);
-      expect(wrapper);
-      wrapper = mount(<Review logo="linkedin" />);
-      expect(wrapper);
-      wrapper = mount(<Review logo="google" />);
-      expect(wrapper);
     });
     test("UI test", () => {
       let wrapper = mount(<Review />);
       expect(wrapper);
-      wrapper = mount(
-        <Review
-          // @ts-ignore
-          logo="invalid-logo"
-          url="www.example.com"
-        />
-      );
+      wrapper = mount(<Review url="www.example.com" />);
       expect(wrapper.find('svg[data-mbx-img="link"]')).toHaveLength(1);
+      wrapper = mount(<Review logo={<div data-mbx-test="logo" />} />);
+      expect(wrapper);
       wrapper = mount(
-        <Review
-          // @ts-ignore
-          logo="invalid-logo"
-        />
+        <Review logo={<div data-mbx-test="logo" />} url="www.example.com" />
       );
-      expect(wrapper.find('svg[data-mbx-img="link"]')).toHaveLength(1);
+      expect(wrapper);
     });
   });
 };

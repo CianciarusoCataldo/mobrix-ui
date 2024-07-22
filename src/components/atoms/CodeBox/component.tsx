@@ -34,7 +34,7 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
       hover={hover}
       active={active}
     >
-      <CopyIcon disabled={disabled} hover={hover} active={active} />
+      <CopyIcon />
     </IconButton>,
     <div key="cd_cd">
       {value.split("\n").map((codl, lIndex) => (

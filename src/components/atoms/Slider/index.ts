@@ -61,7 +61,7 @@ const Slider: SliderComponent = ({
     wrapper: "input",
     cssBg: ["sld-bg", "sld-bg-h"],
     styles: {
-      ...((disabled || readOnly || !active) && {
+      ...((disabled || readOnly || !sProps.active) && {
         "--mbx-sld-op-act": "var(--mbx-sld-op-hov)",
       }),
     },

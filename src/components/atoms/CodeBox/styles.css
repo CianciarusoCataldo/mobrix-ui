@@ -16,10 +16,6 @@
   overflow: hidden;
 }
 
-[data-mbx-id="code"] > [data-mbx-id="icb"] {
-  margin-left: auto;
-}
-
 [data-mbx-id="code"][data-mbx-dk] {
   --mbx-cdb-bg: var(
     --mbx-codebox-background-dark,
@@ -35,4 +31,8 @@
   padding: 1rem;
   line-height: 1.5rem;
   overflow: auto;
+}
+
+[data-mbx-id="code"] > [data-mbx-id="icb"] {
+  margin-left: auto;
 }

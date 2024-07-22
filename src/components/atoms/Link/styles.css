@@ -5,10 +5,7 @@
     --mbx-link-color-light,
     var(--mbx-link-color, var(--mbx-c-txt))
   );
-  --mbx-lnk-txt-h: var(
-    --mbx-link-color-hover-light,
-    var(--mbx-link-color-hover, var(--mbx-lnk-txt))
-  );
+
   color: var(--mbx-lnk-txt);
 }
 
@@ -17,6 +14,16 @@
     --mbx-link-color-dark,
     var(--mbx-link-color, var(--mbx-c-txt))
   );
+}
+
+[data-mbx-id="link"][data-mbx-hv] {
+  --mbx-lnk-txt-h: var(
+    --mbx-link-color-hover-light,
+    var(--mbx-link-color-hover, var(--mbx-lnk-txt))
+  );
+}
+
+[data-mbx-id="link"][data-mbx-hv][data-mbx-dk] {
   --mbx-lnk-txt-h: var(
     --mbx-link-color-hover-dark,
     var(--mbx-link-color-hover)
@@ -24,7 +31,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="link"][data-mbx-hv]:hover {
+  [data-mbx-id="link"]:hover {
     color: var(--mbx-lnk-txt-h, var(--mbx-lnk-txt));
   }
 }

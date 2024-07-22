@@ -22,6 +22,8 @@ const component: MbxUiReactiveComponent<number, RadioButtonGroupProps> = ({
   onChange = () => {},
   defaultPosition = "left",
   disabled,
+  active,
+  hover,
 }) => {
   const getMargins = (position: string) => ({
     [`margin${position.replace(/\b\w/g, (l) => l.toUpperCase())}`]: 0,
@@ -55,6 +57,8 @@ const component: MbxUiReactiveComponent<number, RadioButtonGroupProps> = ({
         </Label>
         {element.component}
         <RadioButton
+          hover={hover}
+          active={active}
           disabled={disabled}
           deselectable={false}
           key={`rd_cm_${index}`}

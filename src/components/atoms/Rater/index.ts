@@ -69,7 +69,7 @@ const Rater: RaterComponent = ({
     styles: {
       flexDirection: vertical ? "column" : "row",
     },
-    mbxProps,
+    mbxProps: { ...mbxProps, active: false },
   }));
 
 export default Rater;

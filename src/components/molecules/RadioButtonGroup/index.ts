@@ -66,7 +66,7 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
       flexDirection: horizontal ? "row" : "column",
     },
     addProps: { ...(horizontal && { "data-mbx-rdgh": "" }) },
-    mbxProps,
+    mbxProps: { ...mbxProps, active: false },
     Component: ({ value, setValue }) =>
       component({
         value,

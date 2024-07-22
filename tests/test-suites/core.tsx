@@ -7,7 +7,6 @@ import {
   CalendarIcon,
   CheckIcon,
   CopyIcon,
-  GitLogo,
   link,
   Xicon,
 } from "../../src/icons";
@@ -96,20 +95,6 @@ export default () =>
           disabled
           width="20px"
           height="20px"
-          transform="scaleX(1)"
-          hide
-          dark
-          fill="none"
-        />
-      );
-      expect(wrapper);
-
-      wrapper = mount(
-        <GitLogo
-          animated
-          disabled
-          width="2px"
-          height="2px"
           transform="scaleX(1)"
           hide
           dark

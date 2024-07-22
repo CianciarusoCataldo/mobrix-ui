@@ -18,6 +18,7 @@ const drawerTest = () => {
       expect(wrapper);
       wrapper = mount(
         <TabViewer
+          a11y={false}
           tabs={[
             {
               label: "Tab 3",

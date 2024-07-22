@@ -36,10 +36,12 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
   disabled,
   active,
   calendarProps,
+  shadow,
   /* istanbul ignore next */
   onChange = () => {},
   /* istanbul ignore next */
   onClose = () => {},
+  a11y,
   dark,
   hover,
 }) => {
@@ -67,35 +69,39 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
 
   return [
     <div key="dpk_sels" data-mbx-date-s>
-      <Label disabled={disabled} key="day">
+      <Label a11y={a11y} disabled={disabled} key="day">
         {String(day)}
       </Label>
-      <Label disabled={disabled} key="month">
+      <Label a11y={a11y} disabled={disabled} key="month">
         {String(customMonths[month])}
       </Label>
-      <Label disabled={disabled} key="year">
+      <Label a11y={a11y} disabled={disabled} key="year">
         {String(year)}
       </Label>
     </div>,
     <IconButton
       disabled={disabled}
-      dark={dark}
       onClick={() => setVisible(true)}
       key="dpk_cal_bt"
       active={active}
       hover={hover}
+      dark={dark}
+      a11y={a11y}
     >
-      <CalendarIcon hover={hover} disabled={disabled} />
+      <CalendarIcon />
     </IconButton>,
     <Modal
       disabled={disabled}
       hide={!isVisible}
       key="dpk_mod"
+      a11y={a11y}
       animated={animated}
       onClose={onCloseCallback}
     >
       <Calendar
-        shadow={false}
+        a11y={a11y}
+        active={active}
+        shadow={shadow}
         days={customDays}
         months={customMonths}
         startMonth={startMonth}

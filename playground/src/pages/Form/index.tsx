@@ -1,6 +1,6 @@
 import { Demo, StringProp } from "@cianciarusocataldo/demo-ui";
 
-import { demoProps } from "constants/demo-props";
+import { demoProps, demoRows } from "constants/demo-props";
 
 import { Form } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
@@ -25,8 +25,7 @@ const FormPage = () => (
           rows={[
             ["title", "submitLabel"],
             ["children", "fieldClassName"],
-            ["className", "dark", "shadow"],
-            ["unstyled", "hide"],
+            ...demoRows,
           ]}
         >
           {(props: any) => (

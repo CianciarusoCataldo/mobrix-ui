@@ -31,7 +31,6 @@ const component: MbxUiReactiveComponent<boolean, ExpandableContainerProps> = ({
     {expanded}
   </div>,
   <IconButton
-    hover={hover}
     disabled={disabled}
     onClick={() => {
       onChange(!value);
@@ -41,10 +40,11 @@ const component: MbxUiReactiveComponent<boolean, ExpandableContainerProps> = ({
     style={{
       transform: `rotate(${value ? "0" : "180"}deg)`,
     }}
+    hover={hover}
     dark={dark}
     active={active}
   >
-    <ArrowIcon disabled={disabled} hover={hover} dark={dark} />
+    <ArrowIcon disabled={disabled} />
   </IconButton>,
 ];
 

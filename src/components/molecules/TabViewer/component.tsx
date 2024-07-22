@@ -20,15 +20,17 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
   hover,
   active,
   background,
+  a11y,
 }) => {
   const Render = tabs[value]?.lazy || (() => <div />);
 
   return [
-    <div key="tabs_list" data-mbx-tbls="">
+    <div {...(!a11y && { tabIndex: -1 })} key="tabs_list" data-mbx-tbls="">
       {tabs.map((tab, index) => {
         const isTabSel = index === value;
         return (
           <Button
+            a11y={a11y}
             shadow={false}
             background={background}
             hover={!isTabSel && hover}
@@ -59,6 +61,7 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
       shadow={shadow}
       disabled={disabled}
       background={background}
+      a11y={a11y}
     >
       {tabs.length > 0 && tabs.length > value ? (
         tabs[value]?.content || (

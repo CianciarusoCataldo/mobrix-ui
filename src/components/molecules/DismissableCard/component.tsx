@@ -6,27 +6,32 @@ import { BuilderComponent, MbxUiComponent } from "../../../types/global";
 import { IconButton } from "../../atoms";
 import { Xicon } from "../../../icons";
 
-import cardComponent from "../Card/component";
+import card from "../Card/component";
 
-const DismissableCardInternalComponent: MbxUiComponent<
-  DismissableCardProps,
-  BuilderComponent[]
-> = ({ onClose, header, dark, disabled, active, hover, ...props }) =>
-  cardComponent({
+const Component: MbxUiComponent<DismissableCardProps, BuilderComponent[]> = ({
+  onClose,
+  header,
+  dark,
+  disabled,
+  active,
+  hover,
+  ...props
+}) =>
+  card({
     ...props,
     header: [
       <IconButton
-        hover={hover}
         dark={dark}
+        hover={hover}
         disabled={disabled}
         active={active}
         onClick={onClose}
         key="dis-x"
       >
-        <Xicon dark={dark} hover={hover} disabled={disabled} />
+        <Xicon />
       </IconButton>,
       <div key="dis-h">{header}</div>,
     ],
   });
 
-export default DismissableCardInternalComponent;
+export default Component;

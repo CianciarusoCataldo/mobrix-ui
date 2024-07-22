@@ -39,6 +39,7 @@
 - Bundle size reduced
 - New `underline` prop for `Link` component
 - `highlight` property removed from `CodeBox` component
+- `Review` logo now can be customized, wihout choosing a predefined type (`logo` property now accept a standard JSX.Element)
 - UI re-designed for all components
 
 <br>

@@ -3,7 +3,7 @@ import { CardComponent } from "../../../types";
 import { buildMbxStandard } from "../../../tools";
 import "./styles.css";
 
-import cardComponent from "./component";
+import component from "./component";
 
 /**
  * A Card component. Its UI depends on given parameters (header, body and footer)
@@ -57,7 +57,7 @@ import cardComponent from "./component";
 const Card: CardComponent = (props) =>
   buildMbxStandard(props, (mbxProps) => ({
     name: "card",
-    Component: cardComponent({
+    Component: component({
       ...props,
       ...mbxProps,
     }),

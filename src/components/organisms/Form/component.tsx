@@ -17,6 +17,8 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
   disabled,
   hover,
   shadow,
+  background,
+  a11y,
 }) => {
   const d_fields: Record<string, string | boolean | number> = fields
     ? Object.keys(fields).reduce(
@@ -32,7 +34,13 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
     React.useState<Record<string, string | boolean | number>>(d_fields);
 
   const cmps = [
-    <Label disabled={disabled} key="frm_tl" dark={dark} data-mbx-ftitle>
+    <Label
+      a11y={a11y}
+      disabled={disabled}
+      key="frm_tl"
+      dark={dark}
+      data-mbx-ftitle
+    >
       {title}
     </Label>,
     ...Object.keys(d_fields).map((field, index) => {
@@ -41,7 +49,9 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
       return (
         <div className={fieldClassName} key={`f_fld_${index}`}>
           <FormField
+            a11y={a11y}
             shadow={shadow}
+            background={background}
             disabled={disabled}
             value={values[field]}
             header={fSetts.header}
@@ -61,6 +71,7 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
 
   cmps.push(
     <Button
+      a11y={a11y}
       disabled={disabled}
       animated={false}
       hover={hover}
