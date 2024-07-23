@@ -6,6 +6,7 @@ import {
   Button,
   PackageVersion,
   Input,
+  Password,
 } from "./mobrix-ui-preview";
 
 const tabs = (
@@ -75,7 +76,17 @@ const App = () => {
         >
           Toggle drawer
         </Button>
-        <Input autoresizable />
+        <Password
+          onChange={(e) => {
+            console.log(e);
+          }}
+        />
+        <Password
+          dark
+          onChange={(e) => {
+            console.log(e);
+          }}
+        />
         <div style={{ marginTop: "20px" }} />
         <Input value="text" onChange={(value) => console.log(value)} />
         <PackageVersion

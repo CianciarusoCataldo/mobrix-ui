@@ -22,6 +22,8 @@ export { default as Link } from "./Link";
 
 export { default as PackageVersion } from "./PackageVersion";
 
+export { default as Password } from "./Password";
+
 export { default as RadioButton } from "./RadioButton";
 
 export { default as Rater } from "./Rater";

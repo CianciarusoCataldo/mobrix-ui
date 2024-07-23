@@ -64,10 +64,11 @@ const Input: InputComponent = ({
     },
     props: (value, setValue) => ({
       addProps: {
+        type: "text",
+        ...sPrps.props,
         ...(autoresizable && {
           size: Math.ceil(value.length / 2) + (value.length > 0 ? 0 : 1),
         }),
-        type: "text",
         value,
         placeholder,
         disabled,

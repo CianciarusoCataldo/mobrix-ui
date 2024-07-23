@@ -2,9 +2,9 @@
   "value": { "description": "FormField input content" },
   "type": {
     "default": "'text'",
-    "description": "The field type. It determines the UI component to be used to render it. Allowed types are:\n- `boolean` (rendered as a CheckBox)\n- `numeric` (rendered as a Counter)\n- `text` (rendered as a Input)\n- `radio` (rendered as a RadioButton)\n- `checkbox` (rendered as a CheckBox)\n- `toggle` (rendered as a Toggle)\n- `rater` (rendered as a Rater)\n- `slider` (rendered as a Slider)\n- `input` (rendered as a Input)\n- `counter` (rendered as a Counter)",
+    "description": "The field type. It determines the UI component to be used to render it. Allowed types are:\n- `boolean` (rendered as a CheckBox)\n- `numeric` (rendered as a Counter)\n- `text` (rendered as a Input)\n- `radio` (rendered as a RadioButton)\n- `checkbox` (rendered as a CheckBox)\n- `toggle` (rendered as a Toggle)\n- `rater` (rendered as a Rater)\n- `slider` (rendered as a Slider)\n- `input` (rendered as a Input)\n- `counter` (rendered as a Counter)\n- `password` (rendered as a Password)",
     "typeOld": "`boolean` &#124; `text` &#124; `numeric` &#124; `radio` &#124; `checkbox` &#124; `toggle` &#124; `rater` &#124; `slider` &#124; `input` &#124; `counter`",
-    "type": "'boolean' | 'text' | 'numeric' | 'radio' | 'checkbox' | 'toggle' | 'rater' | 'slider' | 'input' | 'counter'"
+    "type": "'boolean' | 'text' | 'numeric' | 'radio' | 'checkbox' | 'toggle' | 'rater' | 'slider' | 'input' | 'counter' | 'password'"
   },
   "placeholder": { "type": "string", "description": "" },
   "required": {

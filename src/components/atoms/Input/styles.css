@@ -36,7 +36,7 @@
 [data-mbx-id="inp"][data-mbx-dk][data-mbx-hv] {
   --mbx-inp-bg-h: var(
     --mbx-inputbox-background-hover-dark,
-    var(--mbx-inputbox-background-hovervar(--mbx-c-bgc-h))
+    var(--mbx-inputbox-background-hover, var(--mbx-c-bgc-h))
   );
   --mbx-inp-txt-h: var(
     --mbx-inputbox-text-color-hover-dark,

@@ -1,0 +1,62 @@
+[data-mbx-id="psw"] {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  border-radius: 5px;
+  --mbx-psw-txt: var(
+    --mbx-password-text-color-light,
+    var(--mbx-password-text-color)
+  );
+  --mbx-psw-bg: var(
+    --mbx-password-background-light,
+    var(--mbx-password-background)
+  );
+
+  color: var(--mbx-psw-bg, var(--mbx-c-txt));
+  background: var(--mbx-psw-bg, var(--mbx-c-bg));
+}
+
+[data-mbx-id="psw"][data-mbx-dk] {
+  --mbx-psw-txt: var(
+    --mbx-password-text-color-dark,
+    var(--mbx-password-text-color)
+  );
+  --mbx-psw-bg: var(
+    --mbx-password-background-dark,
+    var(--mbx-password-background)
+  );
+}
+
+[data-mbx-id="psw"] > [data-mbx-id="inp"] {
+  --mbx-inputbox-text-color: var(--mbx-psw-txt);
+  --mbx-inputbox-background: var(--mbx-psw-bg);
+  --mbx-inputbox-background-hover-light: var(
+    --mbx-password-background-hover-light,
+    var(--mbx-password-background-hover)
+  );
+  --mbx-inputbox-background-hover-dark: var(
+    --mbx-password-background-hover-dark,
+    var(--mbx-password-background-hover)
+  );
+}
+
+[data-mbx-id="psw"] > [data-mbx-id="icb"] {
+  margin: auto 0.5rem;
+  width: fit-content;
+  --mbx-icon-light: var(
+    --mbx-password-icon-color-light,
+    var(--mbx-password-icon-color, var(--mbx-psw-txt))
+  );
+  --mbx-icon-dark: var(
+    --mbx-password-icon-color-dark,
+    var(--mbx-password-icon-color, var(--mbx-psw-txt))
+  );
+  --mbx-icon-hover-light: var(
+    --mbx-password-icon-color-hover-light,
+    var(--mbx-password-icon-color-hover, var(--mbx-psw-txt))
+  );
+  --mbx-icon-hover-dark: var(
+    --mbx-password-icon-color-hover-dark,
+    var(--mbx-password-icon-color-hover, var(--mbx-psw-txt))
+  );
+}

@@ -68,7 +68,7 @@ const Component: MbxUiReactiveComponent<
             : todayDt.month,
         year: startYear && startYear > 0 ? startYear : todayDt.year,
       }),
-    [startMonth, startYear]
+    [startMonth, startYear],
   );
 
   const months = durations(scrDate.year);
@@ -131,7 +131,7 @@ const Component: MbxUiReactiveComponent<
       rows={[
         days.map((dayName) => dayName.slice(0, 3)),
         ...dMat.map((row) =>
-          row.map((element) => (element > 0 ? String(element) : ""))
+          row.map((element) => (element > 0 ? String(element) : "")),
         ),
       ]}
       propsCallback={(row, column) => {

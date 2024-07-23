@@ -53,6 +53,7 @@ const engineConfig = {
       List: "/components/molecules/List",
       Modal: "/components/molecules/Modal",
       PackageVersion: "/components/atoms/PackageVersion",
+      Password: "/components/atoms/Password",
       RadioButton: "/components/atoms/RadioButton",
       RadioButtonGroup: "/components/molecules/RadioButtonGroup",
       Rater: "/components/atoms/Rater",

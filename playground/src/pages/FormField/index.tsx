@@ -36,6 +36,7 @@ const FormPage = () => (
               slider: "slider",
               input: "input",
               counter: "counter",
+              password: "password",
             }),
             value: StringProp(""),
             required: BooleanProp(true),

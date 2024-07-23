@@ -34,6 +34,8 @@ export type FormFieldProps<T = any> = ComponentWithValue &
      * - `slider` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Slider Slider})
      * - `input` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input Input})
      * - `counter` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Counter Counter})
+     * - `password` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Password Counter})
+
      */
     type?:
       | "boolean"
@@ -44,8 +46,9 @@ export type FormFieldProps<T = any> = ComponentWithValue &
       | "toggle"
       | "rater"
       | "slider"
-      | "inp"
-      | "counter";
+      | "input"
+      | "counter"
+      | "password";
 
     /** Placeholder value showed when the input field is empty */
     placeholder?: string;

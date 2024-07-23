@@ -37,7 +37,7 @@ const component: MbxUiReactiveComponent<number, RadioButtonGroupProps> = ({
   return buttons.map(
     (
       { textPosition = defaultPosition, text, component, props = {} },
-      index
+      index,
     ) => (
       <div
         className={elementClassName}
@@ -72,7 +72,7 @@ const component: MbxUiReactiveComponent<number, RadioButtonGroupProps> = ({
           {...props}
         />
       </div>
-    )
+    ),
   );
 };
 

@@ -2,6 +2,7 @@ import {
   CheckBox,
   Counter,
   Input,
+  Password,
   RadioButton,
   Rater,
   Slider,
@@ -62,6 +63,10 @@ export const formatters = {
   },
   input: {
     component: Input,
+    format: vFormat.text,
+  },
+  password: {
+    component: Password,
     format: vFormat.text,
   },
 } as const;

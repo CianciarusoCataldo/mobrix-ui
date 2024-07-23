@@ -51,7 +51,7 @@ const cdbComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
               >
                 {cBlock.code}
               </span>
-            )
+            ),
           )}
         </p>
       ))}

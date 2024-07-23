@@ -9,7 +9,7 @@ import component from "./component";
 /**
 * A single form field. Depending on its `type`, a different input component is used inside
 *
-* @param {'boolean' | 'text' | 'numeric' | 'radio' | 'checkbox' | 'toggle' | 'rater' | 'slider' | 'input' | 'counter'} type The field type. It determines the UI component to be used to render it. Allowed types are:
+* @param {'boolean' | 'text' | 'numeric' | 'radio' | 'checkbox' | 'toggle' | 'rater' | 'slider' | 'input' | 'counter' | 'password'} type The field type. It determines the UI component to be used to render it. Allowed types are:
 - `boolean` (rendered as a CheckBox)
 - `numeric` (rendered as a Counter)
 - `text` (rendered as a Input)
@@ -20,6 +20,7 @@ import component from "./component";
 - `slider` (rendered as a Slider)
 - `input` (rendered as a Input)
 - `counter` (rendered as a Counter)
+- `password` (rendered as a Password)
 * @param {boolean} required If true, the field switch to error state if its value is empty
 * @param {(fieldValue: any) => boolean} validate Custom validation function called on submit
 * @param {`JSX.Element` | `string`} header Form field header

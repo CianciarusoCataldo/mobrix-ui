@@ -1,20 +1,20 @@
 [data-mbx-img] {
-  --mbx-ic-c: var(--mbx-icon-light, var(--mbx-icon, var(--mbx-c-txt)));
+  --mbx-icc: var(--mbx-icon-light, var(--mbx-icon));
+  --mbx-ic-c: var(--mbx-icc, var(--mbx-c-txt));
   --mbx-ic-ch: var(--mbx-icon-hover-light, var(--mbx-icon-hover));
   --mbx-ic-op: 1;
-  fill: var(--mbx-ic-c);
   opacity: var(--mbx-ic-op);
 }
 
 [data-mbx-id][data-mbx-dk] > [data-mbx-img] {
-  --mbx-ic-c: var(--mbx-icon-dark, var(--mbx-icon, var(--mbx-c-txt)));
+  --mbx-icc: var(--mbx-icon-dark, var(--mbx-icon, var(--mbx-c-txt)));
   --mbx-ic-ch: var(--mbx-icon-hover-dark, var(--mbx-icon-hover));
 }
 
 [data-mbx-id]:focus-visible > [data-mbx-img],
 [data-mbx-id]:focus-visible > [data-mbx-img] path {
   --mbx-ic-f: var(--mbx-c-fc);
-  fill: var(--mbx-ic-f);
+  --mbx-ic-c: var(--mbx-ic-f);
 }
 
 [data-mbx-id]:active > svg {
@@ -27,11 +27,11 @@
 
 [data-mbx-id][data-mbx-dsb] > [data-mbx-img] {
   --mbx-ic-op: 0.6;
-  --mbx-ic-h: var(--mbx-ic-c);
+  --mbx-ic-h: var(--mbx-icc);
 }
 
 @media (hover: hover) {
   [data-mbx-id][data-mbx-hv]:hover > [data-mbx-img] {
-    fill: var(--mbx-ic-h, var(--mbx-ic-c));
+    --mbx-ic-c: var(--mbx-ic-h, var(--mbx-icc, var(--mbx-c-txt)));
   }
 }

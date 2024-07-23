@@ -5,13 +5,22 @@ const BasicIcon: (properties: {
   props: MbxIconProps;
   children: MbxIcon;
 }) => JSX.Element = ({
-  props: { height, width, hide, style, reverseX, disabled },
+  props: {
+    height,
+    width,
+    hide,
+    style,
+    reverseX,
+    disabled,
+    fill = "var(--mbx-ic-c)",
+  },
   children: Cmp,
 }) => {
   return (
     <Cmp
       height={height}
       width={width}
+      fill={fill}
       style={
         {
           ...style,
@@ -201,6 +210,47 @@ export const CopyIcon: MbxIcon = ({
           strokeWidth="3.125"
           fill="#7f7f7f"
           d="M10.971 22.475C19.445 41.064 33.797 36.69 33.934 36.69v-6.15l8.269 9.459-8.338 8.788v-6.219s-19.887 4.647-22.894-20.093z"
+        />
+      </svg>
+    )}
+  </BasicIcon>
+);
+
+export const EyeIcon: MbxIcon = ({ show = true, ...IcProps }) => (
+  <BasicIcon props={IcProps}>
+    {({ fill, ...props }) => (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        data-mbx-img="eye"
+        {...props}
+      >
+        {!show && (
+          <line
+            x1="0"
+            y1="0"
+            x2="100"
+            y2="100"
+            vectorEffect="non-scaling-stroke"
+            stroke="var(--mbx-ic-c)"
+          />
+        )}
+        <circle
+          cx={12}
+          cy={12}
+          r={2}
+          stroke="var(--mbx-ic-c)"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+        />
+        <path
+          stroke="var(--mbx-ic-c)"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M3 12c2.3659 2.7393 5.3133 5 9 5s6.6341-2.2607 9-5M21 12c-2.659-2.4653-5.3133-5-9-5s-6.6341 2.5347-9 5"
         />
       </svg>
     )}

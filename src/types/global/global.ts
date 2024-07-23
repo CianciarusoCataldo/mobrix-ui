@@ -396,4 +396,4 @@ export type MbxIconProps = Omit<MbxSharedProps, "tabIndex"> & {
   style?: Record<string, any>;
 };
 
-export type MbxIcon = (props: MbxIconProps) => React.JSX.Element;
+export type MbxIcon<T = any> = (props: MbxIconProps & T) => React.JSX.Element;

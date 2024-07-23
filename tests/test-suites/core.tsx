@@ -7,6 +7,7 @@ import {
   CalendarIcon,
   CheckIcon,
   CopyIcon,
+  EyeIcon,
   link,
   Xicon,
 } from "../../src/icons";
@@ -95,6 +96,15 @@ export default () =>
           fill: "none",
         })
       );
+
+      expect(wrapper);
+
+      wrapper = mount(<EyeIcon />);
+      expect(wrapper);
+
+      expect(wrapper);
+
+      wrapper = mount(<EyeIcon show />);
       expect(wrapper);
     });
   });
