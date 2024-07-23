@@ -236,7 +236,7 @@ export interface Features {
   /** If `true`, reduce component opacity when component is hovered (and `hover` = `true`) */
   opHov?: boolean;
 
-  /** If `true`, when focused, the component text-color will change instead of the box shadow (that will be transparent) */
+  /** If `true`, when focused, the component text color will change instead of the box shadow (that will be transparent) */
   colFc?: boolean;
 
   /** If `true`, when focused, the component box shadow will be transparent */
