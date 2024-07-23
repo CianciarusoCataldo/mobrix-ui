@@ -78,8 +78,6 @@ export type MbxSharedProps = MbxAttributes & {
   /** callback called when a key is pressed when inside the component */
   onKeyDown?: (keyEvent: any) => void;
 
-  scl?: string;
-
   features?: Features;
 };
 
@@ -280,6 +278,8 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
 
   /** Custom additional properties, applied to the component */
   addProps?: Record<string, any>;
+
+  withBg?: boolean;
 };
 
 /**
