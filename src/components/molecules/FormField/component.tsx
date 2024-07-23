@@ -41,14 +41,14 @@ const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
 
   const frmt = formatters[type] || formatters.text;
 
-  const FieldComponent: MbxUiReactiveComponent = frmt.component;
+  const FieldC: MbxUiReactiveComponent = frmt.component;
 
   const sProps = { dark, disabled, animated, hover, background, a11y };
   return [
     <Label hide={!header} unstyled key="f_h_b" {...headerProps} {...sProps}>
       {header}
     </Label>,
-    <FieldComponent
+    <FieldC
       {...sProps}
       animation={anim && "shake"}
       {...(error && {
