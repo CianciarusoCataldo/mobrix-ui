@@ -16,22 +16,28 @@ const PswC: MbxUiReactiveComponent<string, PasswordProps> = ({
   disabled,
   onChange,
   a11y,
+  value,
+  autoresizable,
+  animated,
 }) => {
-  const [hidden, hide] = React.useState(show);
+  const [hidden, hide] = React.useState(!show);
   /* istanbul ignore next */
   React.useEffect(() => {
     if (show !== undefined && show !== null && hidden !== show) {
-      hide(show);
+      hide(!show);
     }
   }, [show]);
-  const sProps = { a11y, background, active, dark, hover, disabled };
+  const sProps = { a11y, background, active, dark, hover, disabled, animated };
   return [
     <Input
+      autoresizable={autoresizable}
+      value={value}
       onChange={onChange}
       readOnly={readOnly}
       placeholder={placeholder}
       {...sProps}
       key="psw_in"
+      features={{ noShFc: true }}
       props={{ type: hidden ? "password" : "text" }}
       shadow={false}
     />,

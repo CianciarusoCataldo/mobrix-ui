@@ -19,9 +19,15 @@ const PasswordPage = () => (
           placeholder: StringProp(""),
           readOnly: BooleanProp(false),
           show: BooleanProp(false),
+          autoresizable: BooleanProp(false),
           ...demoProps,
+          active: BooleanProp(true),
         }}
-        rows={[["value", "readOnly"], ["show", "placeholder"], ...demoRows]}
+        rows={[
+          ["value", "readOnly"],
+          ["show", "placeholder", "autoresizable"],
+          ...demoRows,
+        ]}
       >
         {Password}
       </DemoComponent>

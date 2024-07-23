@@ -27,6 +27,7 @@
 
 [data-mbx-id][data-mbx-dsb] > [data-mbx-img] {
   --mbx-ic-op: 0.6;
+  --mbx-op-act: 0.6;
   --mbx-ic-h: var(--mbx-icc);
 }
 

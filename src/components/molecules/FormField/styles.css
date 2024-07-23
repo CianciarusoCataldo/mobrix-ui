@@ -47,6 +47,11 @@
   --mbx-rater-background: var(--mbx-fld-bg);
   --mbx-rater-background-hover: var(--mbx-fld-bg-h);
 
+  --mbx-password-background: var(--mbx-fld-bg);
+  --mbx-password-background-hover: var(--mbx-fld-bg-h);
+  --mbx-password-text-color: var(--mbx-fld-txt);
+  --mbx-password-text-color-hover: var(--mbx-fld-txt-h);
+
   --mbx-slider-background: var(--mbx-fld-bg);
 
   --mbx-toggle-background: var(--mbx-fld-bg);
