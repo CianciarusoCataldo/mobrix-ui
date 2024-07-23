@@ -29,19 +29,19 @@
   margin-bottom: 0.3rem;
   padding-top: 0.2rem;
   --mbx-icon-light: var(
-    --mbx-expandablecontainer-arrow-color-light,
-    var(--mbx-expandablecontainer-arrow-color, var(--mbx-txt))
+    --mbx-expandablecontainer-arrow-light,
+    var(--mbx-expandablecontainer-arrow, var(--mbx-txt))
   );
   --mbx-icon-hover-light: var(
-    --mbx-expandablecontainer-arrow-color-hover-light,
-    var(--mbx-expandablecontainer-arrow-color-hover)
+    --mbx-expandablecontainer-arrow-hover-light,
+    var(--mbx-expandablecontainer-arrow-hover)
   );
   --mbx-icon-dark: var(
-    --mbx-expandablecontainer-arrow-color-dark,
-    var(--mbx-expandablecontainer-arrow-color, var(--mbx-txt))
+    --mbx-expandablecontainer-arrow-dark,
+    var(--mbx-expandablecontainer-arrow, var(--mbx-txt))
   );
   --mbx-icon-hover-dark: var(
-    --mbx-expandablecontainer-arrow-color-hover-dark,
-    var(--mbx-expandablecontainer-arrow-color-hover)
+    --mbx-expandablecontainer-arrow-hover-dark,
+    var(--mbx-expandablecontainer-arrow-hover)
   );
 }

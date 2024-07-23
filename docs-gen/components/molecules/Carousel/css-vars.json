@@ -12,31 +12,31 @@
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-carousel-background"
   },
-  "--mbx-carousel-arrow-color": {
-    "description": "Fallback value for `--mbx-carousel-arrow-color-light` and `--mbx-carousel-arrow-color-dark`"
+  "--mbx-carousel-arrow": {
+    "description": "Fallback value for `--mbx-carousel-arrow-light` and `--mbx-carousel-arrow-dark`"
   },
-  "--mbx-carousel-arrow-color-light": {
+  "--mbx-carousel-arrow-light": {
     "description": "Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultColor": "#252525",
-    "fallback": "--mbx-carousel-arrow-color"
+    "fallback": "--mbx-carousel-arrow"
   },
-  "--mbx-carousel-arrow-color-dark": {
+  "--mbx-carousel-arrow-dark": {
     "description": "Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultColor": "#e2e2e2",
-    "fallback": "--mbx-carousel-arrow-color"
+    "fallback": "--mbx-carousel-arrow"
   },
-  "--mbx-carousel-arrow-color-hover": {
-    "description": "Fallback value for `--mbx-carousel-arrow-color-hover-light` and `--mbx-carousel-arrow-color-hover-dark`"
+  "--mbx-carousel-arrow-hover": {
+    "description": "Fallback value for `--mbx-carousel-arrow-hover-light` and `--mbx-carousel-arrow-hover-dark`"
   },
-  "--mbx-carousel-arrow-color-hover-light": {
+  "--mbx-carousel-arrow-hover-light": {
     "description": "Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultColor": "#287dfd",
-    "fallback": "--mbx-carousel-arrow-color-hover"
+    "fallback": "--mbx-carousel-arrow-hover"
   },
-  "--mbx-carousel-arrow-color-hover-dark": {
+  "--mbx-carousel-arrow-hover-dark": {
     "description": "Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultColor": "#ff8007",
-    "fallback": "--mbx-carousel-arrow-color-hover"
+    "fallback": "--mbx-carousel-arrow-hover"
   },
   "--mbx-carousel-dot-empty-background": {
     "description": "Fallback value for `--mbx-carousel-dot-empty-background-light` and `--mbx-carousel-dot-empty-background-dark`"

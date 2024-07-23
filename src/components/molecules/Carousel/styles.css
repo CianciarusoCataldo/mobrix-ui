@@ -26,20 +26,20 @@
 [data-mbx-id="crsel"] > [data-mbx-car-els] > [data-mbx-id="icb"] {
   margin: auto 0.6rem;
   --mbx-icon-light: var(
-    --mbx-carousel-arrow-color-light,
-    var(--mbx-carousel-arrow-color, var(--mbx-c-txt))
+    --mbx-carousel-arrow-light,
+    var(--mbx-carousel-arrow, var(--mbx-c-txt))
   );
   --mbx-icon-dark: var(
-    --mbx-carousel-arrow-color-dark,
-    var(--mbx-carousel-arrow-color, var(--mbx-c-txt))
+    --mbx-carousel-arrow-dark,
+    var(--mbx-carousel-arrow, var(--mbx-c-txt))
   );
   --mbx-icon-hover-light: var(
-    --mbx-carousel-arrow-color-hover-light,
-    var(--mbx-carousel-arrow-color-hover, #287dfd)
+    --mbx-carousel-arrow-hover-light,
+    var(--mbx-carousel-arrow-hover, #287dfd)
   );
   --mbx-icon-hover-dark: var(
-    --mbx-carousel-arrow-color-hover-dark,
-    var(--mbx-carousel-arrow-color-hover, #ff8007)
+    --mbx-carousel-arrow-hover-dark,
+    var(--mbx-carousel-arrow-hover, #ff8007)
   );
 }
 

@@ -16,12 +16,12 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-carousel-background](#-mbx-carousel-background)</div>                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                          | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-carousel-background-light](#-mbx-carousel-background-light)</div>                     | <div style='text-align:center;margin:auto;'>[--mbx-carousel-background](#-mbx-carousel-background)</div>                     | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div>                                                                                                                                                                                                                        |
 | <div style='text-align:center;margin:auto;'>[--mbx-carousel-background-dark](#-mbx-carousel-background-dark)</div>                       | <div style='text-align:center;margin:auto;'>[--mbx-carousel-background](#-mbx-carousel-background)</div>                     | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div>                                                                                                                                                                                                                          |
-| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-color](#-mbx-carousel-arrow-color)</div>                               | <div style='text-align:center;margin:auto;'>/</div>                                                                          | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-color-light](#-mbx-carousel-arrow-color-light)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-color](#-mbx-carousel-arrow-color)</div>                   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#252525</div><div style='text-align:center;margin-auto;'><div style='background:#252525;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                                                                               |
-| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-color-dark](#-mbx-carousel-arrow-color-dark)</div>                     | <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-color](#-mbx-carousel-arrow-color)</div>                   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#e2e2e2</div><div style='text-align:center;margin-auto;'><div style='background:#e2e2e2;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                                                                               |
-| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-color-hover](#-mbx-carousel-arrow-color-hover)</div>                   | <div style='text-align:center;margin:auto;'>/</div>                                                                          | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-color-hover-light](#-mbx-carousel-arrow-color-hover-light)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-color-hover](#-mbx-carousel-arrow-color-hover)</div>       | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#287dfd</div><div style='text-align:center;margin-auto;'><div style='background:#287dfd;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                                                                               |
-| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-color-hover-dark](#-mbx-carousel-arrow-color-hover-dark)</div>         | <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-color-hover](#-mbx-carousel-arrow-color-hover)</div>       | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ff8007</div><div style='text-align:center;margin-auto;'><div style='background:#ff8007;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                                                                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow](#-mbx-carousel-arrow)</div>                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                          | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-light](#-mbx-carousel-arrow-light)</div>                               | <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow](#-mbx-carousel-arrow)</div>                               | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#252525</div><div style='text-align:center;margin-auto;'><div style='background:#252525;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                                                                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-dark](#-mbx-carousel-arrow-dark)</div>                                 | <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow](#-mbx-carousel-arrow)</div>                               | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#e2e2e2</div><div style='text-align:center;margin-auto;'><div style='background:#e2e2e2;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                                                                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-hover](#-mbx-carousel-arrow-hover)</div>                               | <div style='text-align:center;margin:auto;'>/</div>                                                                          | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-hover-light](#-mbx-carousel-arrow-hover-light)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-hover](#-mbx-carousel-arrow-hover)</div>                   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#287dfd</div><div style='text-align:center;margin-auto;'><div style='background:#287dfd;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                                                                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-hover-dark](#-mbx-carousel-arrow-hover-dark)</div>                     | <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-hover](#-mbx-carousel-arrow-hover)</div>                   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ff8007</div><div style='text-align:center;margin-auto;'><div style='background:#ff8007;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                                                                                               |
 | <div style='text-align:center;margin:auto;'>[--mbx-carousel-dot-empty-background](#-mbx-carousel-dot-empty-background)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                          | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-carousel-dot-empty-background-light](#-mbx-carousel-dot-empty-background-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-carousel-dot-empty-background](#-mbx-carousel-dot-empty-background)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>radial-gradient(#000000, #181818, #282828, #3a3a3a, #4c4c4c, #6b6a6a, #858383)</div><div style='text-align:center;margin-auto;'><div style='background:radial-gradient(#000000, #181818, #282828, #3a3a3a, #4c4c4c, #6b6a6a, #858383);margin:auto; width:15px; height:15px;'/></div></div></div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-carousel-dot-empty-background-dark](#-mbx-carousel-dot-empty-background-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-carousel-dot-empty-background](#-mbx-carousel-dot-empty-background)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>radial-gradient(#000000, #181818, #282828, #3a3a3a, #4c4c4c, #6b6a6a, #858383)</div><div style='text-align:center;margin-auto;'><div style='background:radial-gradient(#000000, #181818, #282828, #3a3a3a, #4c4c4c, #6b6a6a, #858383);margin:auto; width:15px; height:15px;'/></div></div></div> |
@@ -77,7 +77,7 @@ Carousel background when [dark mode](https://cianciarusocataldo.github.io/mobrix
 
 <br>
 
-### --mbx-carousel-arrow-color
+### --mbx-carousel-arrow
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -85,17 +85,17 @@ Carousel background when [dark mode](https://cianciarusocataldo.github.io/mobrix
 
 <br>
 
-Fallback value for `--mbx-carousel-arrow-color-light` and `--mbx-carousel-arrow-color-dark`
+Fallback value for `--mbx-carousel-arrow-light` and `--mbx-carousel-arrow-dark`
 
 <br>
 
 <br>
 
-### --mbx-carousel-arrow-color-light
+### --mbx-carousel-arrow-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-color](#-mbx-carousel-arrow-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#252525</div><div style='text-align:center;margin-auto;'><div style='background:#252525;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow](#-mbx-carousel-arrow)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#252525</div><div style='text-align:center;margin-auto;'><div style='background:#252525;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
@@ -105,11 +105,11 @@ Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobri
 
 <br>
 
-### --mbx-carousel-arrow-color-dark
+### --mbx-carousel-arrow-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-color](#-mbx-carousel-arrow-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#e2e2e2</div><div style='text-align:center;margin-auto;'><div style='background:#e2e2e2;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow](#-mbx-carousel-arrow)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#e2e2e2</div><div style='text-align:center;margin-auto;'><div style='background:#e2e2e2;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
@@ -119,7 +119,7 @@ Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobri
 
 <br>
 
-### --mbx-carousel-arrow-color-hover
+### --mbx-carousel-arrow-hover
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -127,17 +127,17 @@ Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobri
 
 <br>
 
-Fallback value for `--mbx-carousel-arrow-color-hover-light` and `--mbx-carousel-arrow-color-hover-dark`
+Fallback value for `--mbx-carousel-arrow-hover-light` and `--mbx-carousel-arrow-hover-dark`
 
 <br>
 
 <br>
 
-### --mbx-carousel-arrow-color-hover-light
+### --mbx-carousel-arrow-hover-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-color-hover](#-mbx-carousel-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#287dfd</div><div style='text-align:center;margin-auto;'><div style='background:#287dfd;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-hover](#-mbx-carousel-arrow-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#287dfd</div><div style='text-align:center;margin-auto;'><div style='background:#287dfd;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
@@ -147,11 +147,11 @@ Carousel arrow color when [dark mode](https://cianciarusocataldo.github.io/mobri
 
 <br>
 
-### --mbx-carousel-arrow-color-hover-dark
+### --mbx-carousel-arrow-hover-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-color-hover](#-mbx-carousel-arrow-color-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ff8007</div><div style='text-align:center;margin-auto;'><div style='background:#ff8007;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-carousel-arrow-hover](#-mbx-carousel-arrow-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ff8007</div><div style='text-align:center;margin-auto;'><div style='background:#ff8007;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 

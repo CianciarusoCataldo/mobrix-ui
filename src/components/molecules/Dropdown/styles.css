@@ -92,20 +92,20 @@
   > [data-mbx-img="arr"] {
   margin: auto 0.15rem;
   --mbx-icon-light: var(
-    --mbx-dropdown-arrow-color-light,
-    var(--mbx-dropdown-arrow-color, var(--mbx-dd-txt))
+    --mbx-dropdown-arrow-light,
+    var(--mbx-dropdown-arrow, var(--mbx-dd-txt))
   );
   --mbx-icon-dark: var(
-    --mbx-dropdown-arrow-color-dark,
-    var(--mbx-dropdown-arrow-color, var(--mbx-dd-txt))
+    --mbx-dropdown-arrow-dark,
+    var(--mbx-dropdown-arrow, var(--mbx-dd-txt))
   );
   --mbx-icon-hover-light: var(
-    --mbx-dropdown-arrow-color-hover-light,
-    var(--mbx-dropdown-arrow-color-hover)
+    --mbx-dropdown-arrow-hover-light,
+    var(--mbx-dropdown-arrow-hover)
   );
   --mbx-icon-hover-dark: var(
-    --mbx-dropdown-arrow-color-hover-dark,
-    var(--mbx-dropdown-arrow-color-hover)
+    --mbx-dropdown-arrow-hover-dark,
+    var(--mbx-dropdown-arrow-hover)
   );
 }
 
