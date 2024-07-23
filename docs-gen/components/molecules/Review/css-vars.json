@@ -25,17 +25,17 @@
     "defaultGlobal": "--mbx-text-color-dark",
     "fallback": "--mbx-review-text-color"
   },
-  "--mbx-review-icon-color": {
+  "--mbx-review-icon": {
     "description": "Fallback value for `--mbx-review-github-color-light` and `--mbx-review-github-color-dark`"
   },
-  "--mbx-review-icon-color-light": {
+  "--mbx-review-icon-light": {
     "description": "Review icon icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultColor": "#615f5f",
-    "fallback": "--mbx-review-icon-color"
+    "fallback": "--mbx-review-icon"
   },
-  "--mbx-review-icon-color-dark": {
+  "--mbx-review-icon-dark": {
     "description": "Review icon icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultColor": "white",
-    "fallback": "--mbx-review-icon-color"
+    "fallback": "--mbx-review-icon"
   }
 }

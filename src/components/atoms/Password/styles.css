@@ -41,19 +41,19 @@
   --mbx-trdur: 0.1s;
   width: fit-content;
   --mbx-icon-light: var(
-    --mbx-password-icon-color-light,
-    var(--mbx-password-icon-color, var(--mbx-psw-txt))
+    --mbx-password-icon-light,
+    var(--mbx-password-icon, var(--mbx-psw-txt))
   );
   --mbx-icon-dark: var(
-    --mbx-password-icon-color-dark,
-    var(--mbx-password-icon-color, var(--mbx-psw-txt))
+    --mbx-password-icon-dark,
+    var(--mbx-password-icon, var(--mbx-psw-txt))
   );
   --mbx-icon-hover-light: var(
-    --mbx-password-icon-color-hover-light,
-    var(--mbx-password-icon-color-hover, var(--mbx-psw-txt))
+    --mbx-password-icon-hover-light,
+    var(--mbx-password-icon-hover, var(--mbx-psw-txt))
   );
   --mbx-icon-hover-dark: var(
-    --mbx-password-icon-color-hover-dark,
-    var(--mbx-password-icon-color-hover, var(--mbx-psw-txt))
+    --mbx-password-icon-hover-dark,
+    var(--mbx-password-icon-hover, var(--mbx-psw-txt))
   );
 }

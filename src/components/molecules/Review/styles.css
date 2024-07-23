@@ -51,11 +51,11 @@
 
 [data-mbx-id="rev"] [data-mbx-img] {
   --mbx-icon-light: var(
-    --mbx-review-icon-color-light,
-    var(--mbx-review-icon-color, #615f5f)
+    --mbx-review-icon-light,
+    var(--mbx-review-icon, #615f5f)
   );
   --mbx-icon-dark: var(
-    --mbx-review-icon-color-dark,
-    var(--mbx-review-icon-color, white)
+    --mbx-review-icon-dark,
+    var(--mbx-review-icon, white)
   );
 }

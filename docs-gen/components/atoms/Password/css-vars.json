@@ -51,30 +51,30 @@
     "defaultGlobal": "--mbx-text-color-hover-dark",
     "fallback": "--mbx-password-text-color-hover"
   },
-  "--mbx-password-icon-color": {
-    "description": "Fallback value for `--mbx-password-icon-color-light` and `--mbx-password-icon-color-dark`"
+  "--mbx-password-icon": {
+    "description": "Fallback value for `--mbx-password-icon-light` and `--mbx-password-icon-dark`"
   },
-  "--mbx-password-icon-color-light": {
+  "--mbx-password-icon-light": {
     "description": "Password eye icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultInternal": "--mbx-password-text-color-light",
-    "fallback": "--mbx-password-icon-color"
+    "fallback": "--mbx-password-icon"
   },
-  "--mbx-password-icon-color-dark": {
+  "--mbx-password-icon-dark": {
     "description": "Password eye icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultInternal": "--mbx-password-text-color-dark",
-    "fallback": "--mbx-password-icon-color"
+    "fallback": "--mbx-password-icon"
   },
-  "--mbx-password-icon-color-hover": {
-    "description": "Fallback value for `--mbx-password-icon-color-hover-light` and `--mbx-password-icon-color-hover-dark`"
+  "--mbx-password-icon-hover": {
+    "description": "Fallback value for `--mbx-password-icon-hover-light` and `--mbx-password-icon-hover-dark`"
   },
-  "--mbx-password-icon-color-hover-light": {
+  "--mbx-password-icon-hover-light": {
     "description": "Password eye icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultInternal": "--mbx-password-text-color-light",
-    "fallback": "--mbx-password-icon-color-hover"
+    "fallback": "--mbx-password-icon-hover"
   },
-  "--mbx-password-icon-color-hover-dark": {
+  "--mbx-password-icon-hover-dark": {
     "description": "Password eye icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultInternal": "--mbx-password-text-color-dark",
-    "fallback": "--mbx-password-icon-color-hover"
+    "fallback": "--mbx-password-icon-hover"
   }
 }
