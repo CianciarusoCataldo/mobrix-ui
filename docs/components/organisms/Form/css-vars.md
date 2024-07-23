@@ -16,27 +16,27 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-form-background-light](#-mbx-form-background-light)</div>                                 | <div style='text-align:center;margin:auto;'>[--mbx-form-background](#-mbx-form-background)</div>                                 | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div>                                                         |
 | <div style='text-align:center;margin:auto;'>[--mbx-form-background](#-mbx-form-background)</div>                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                            |
 | <div style='text-align:center;margin:auto;'>[--mbx-form-background-dark](#-mbx-form-background-dark)</div>                                   | <div style='text-align:center;margin:auto;'>[--mbx-form-background](#-mbx-form-background)</div>                                 | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div>                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-text-color](#-mbx-form-text-color)</div>                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-text-color-light](#-mbx-form-text-color-light)</div>                                 | <div style='text-align:center;margin:auto;'>[--mbx-form-text-color](#-mbx-form-text-color)</div>                                 | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div>                                                         |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-text-color-dark](#-mbx-form-text-color-dark)</div>                                   | <div style='text-align:center;margin:auto;'>[--mbx-form-text-color](#-mbx-form-text-color)</div>                                 | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div>                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-text](#-mbx-form-text)</div>                                                         | <div style='text-align:center;margin:auto;'>/</div>                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                            |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-text-light](#-mbx-form-text-light)</div>                                             | <div style='text-align:center;margin:auto;'>[--mbx-form-text](#-mbx-form-text)</div>                                             | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div>                                                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-text-dark](#-mbx-form-text-dark)</div>                                               | <div style='text-align:center;margin:auto;'>[--mbx-form-text](#-mbx-form-text)</div>                                             | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div>                                                                       |
 | <div style='text-align:center;margin:auto;'>[--mbx-form-submit-background](#-mbx-form-submit-background)</div>                               | <div style='text-align:center;margin:auto;'>/</div>                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                            |
 | <div style='text-align:center;margin:auto;'>[--mbx-form-submit-background-light](#-mbx-form-submit-background-light)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-form-submit-background](#-mbx-form-submit-background)</div>                   | <div style='text-align:center;margin:auto;'>[mbx-button-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Button/css-vars/#mbx-button-background-light)</div>                             |
 | <div style='text-align:center;margin:auto;'>[--mbx-form-submit-background-dark](#-mbx-form-submit-background-dark)</div>                     | <div style='text-align:center;margin:auto;'>[--mbx-form-submit-background](#-mbx-form-submit-background)</div>                   | <div style='text-align:center;margin:auto;'>[mbx-button-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Button/css-vars/#mbx-button-background-dark)</div>                               |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-submit-text-color](#-mbx-form-submit-text-color)</div>                               | <div style='text-align:center;margin:auto;'>/</div>                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-submit-text-color-light](#-mbx-form-submit-text-color-light)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-form-submit-text-color](#-mbx-form-submit-text-color)</div>                   | <div style='text-align:center;margin:auto;'>[mbx-button-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Button/css-vars/#mbx-button-text-color-light)</div>                             |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-submit-text-color-dark](#-mbx-form-submit-text-color-dark)</div>                     | <div style='text-align:center;margin:auto;'>[--mbx-form-submit-text-color](#-mbx-form-submit-text-color)</div>                   | <div style='text-align:center;margin:auto;'>[mbx-button-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Button/css-vars/#mbx-button-text-color-dark)</div>                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-submit-text](#-mbx-form-submit-text)</div>                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                            |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-submit-text-light](#-mbx-form-submit-text-light)</div>                               | <div style='text-align:center;margin:auto;'>[--mbx-form-submit-text](#-mbx-form-submit-text)</div>                               | <div style='text-align:center;margin:auto;'>[mbx-button-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Button/css-vars/#mbx-button-text-light)</div>                                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-submit-text-dark](#-mbx-form-submit-text-dark)</div>                                 | <div style='text-align:center;margin:auto;'>[--mbx-form-submit-text](#-mbx-form-submit-text)</div>                               | <div style='text-align:center;margin:auto;'>[mbx-button-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Button/css-vars/#mbx-button-text-dark)</div>                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-background](#-mbx-form-formfield-background)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                            |
 | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-background-dark](#-mbx-form-formfield-background-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-background](#-mbx-form-formfield-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-formfield-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-background-dark)</div>               |
 | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-background-light](#-mbx-form-formfield-background-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-background](#-mbx-form-formfield-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-formfield-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-background-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-color](#-mbx-form-formfield-text-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-color-light](#-mbx-form-formfield-text-color-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-color](#-mbx-form-formfield-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-color-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-color-dark](#-mbx-form-formfield-text-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-color](#-mbx-form-formfield-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-color-dark)</div>               |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text](#-mbx-form-formfield-text)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                            |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-light](#-mbx-form-formfield-text-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text](#-mbx-form-formfield-text)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-light)</div>                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-dark](#-mbx-form-formfield-text-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text](#-mbx-form-formfield-text)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-dark)</div>                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-background-hover](#-mbx-form-formfield-background-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                            |
 | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-background-hover-light](#-mbx-form-formfield-background-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-background-hover](#-mbx-form-formfield-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-background-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-background-hover-light)</div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-background-hover-dark](#-mbx-form-formfield-background-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-background-hover](#-mbx-form-formfield-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-background-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-background-hover-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-color-hover](#-mbx-form-formfield-text-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-color-hover-light](#-mbx-form-formfield-text-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-color-hover](#-mbx-form-formfield-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-color-hover-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-color-hover-dark](#-mbx-form-formfield-text-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-color-hover](#-mbx-form-formfield-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-color-hover-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-hover](#-mbx-form-formfield-text-hover)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                            |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-hover-light](#-mbx-form-formfield-text-hover-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-hover](#-mbx-form-formfield-text-hover)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-hover-light)</div>             |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-hover-dark](#-mbx-form-formfield-text-hover-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-hover](#-mbx-form-formfield-text-hover)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-hover-dark)</div>               |
 | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-error-border](#-mbx-form-formfield-error-border)</div>                     | <div style='text-align:center;margin:auto;'>/</div>                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                            |
 | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-error-border-light](#-mbx-form-formfield-error-border-light)</div>         | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-error-border](#-mbx-form-formfield-error-border)</div>         | <div style='text-align:center;margin:auto;'>[--mbx-formfield-error-border-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-error-border-light)</div>         |
 | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-error-border-dark](#-mbx-form-formfield-error-border-dark)</div>           | <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-error-border](#-mbx-form-formfield-error-border)</div>         | <div style='text-align:center;margin:auto;'>[--mbx-formfield-error-border-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-error-border-dark)</div>           |
@@ -92,7 +92,7 @@ Form background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/
 
 <br>
 
-### --mbx-form-text-color
+### --mbx-form-text
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -106,11 +106,11 @@ Fallback value for `and`
 
 <br>
 
-### --mbx-form-text-color-light
+### --mbx-form-text-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
-| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-text-color](#-mbx-form-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                  |
+| ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-text](#-mbx-form-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div> |
 
 <br>
 
@@ -120,11 +120,11 @@ Form text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/
 
 <br>
 
-### --mbx-form-text-color-dark
+### --mbx-form-text-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
-| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-text-color](#-mbx-form-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                |
+| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-text](#-mbx-form-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div> |
 
 <br>
 
@@ -176,7 +176,7 @@ Form submit button background when [dark mode](https://cianciarusocataldo.github
 
 <br>
 
-### --mbx-form-submit-text-color
+### --mbx-form-submit-text
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -184,17 +184,17 @@ Form submit button background when [dark mode](https://cianciarusocataldo.github
 
 <br>
 
-Fallback value for `--mbx-form-submit-text-color-light` and `--mbx-form-submit-text-color-dark`
+Fallback value for `--mbx-form-submit-text-light` and `--mbx-form-submit-text-dark`
 
 <br>
 
 <br>
 
-### --mbx-form-submit-text-color-light
+### --mbx-form-submit-text-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-submit-text-color](#-mbx-form-submit-text-color)</div> | <div style='text-align:center;margin:auto;'>[mbx-button-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Button/css-vars/#mbx-button-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                              |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-submit-text](#-mbx-form-submit-text)</div> | <div style='text-align:center;margin:auto;'>[mbx-button-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Button/css-vars/#mbx-button-text-light)</div> |
 
 <br>
 
@@ -204,11 +204,11 @@ Form submit button text color when [dark mode](https://cianciarusocataldo.github
 
 <br>
 
-### --mbx-form-submit-text-color-dark
+### --mbx-form-submit-text-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                        |
-| -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-submit-text-color](#-mbx-form-submit-text-color)</div> | <div style='text-align:center;margin:auto;'>[mbx-button-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Button/css-vars/#mbx-button-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                            |
+| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-submit-text](#-mbx-form-submit-text)</div> | <div style='text-align:center;margin:auto;'>[mbx-button-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Button/css-vars/#mbx-button-text-dark)</div> |
 
 <br>
 
@@ -260,7 +260,7 @@ Extended from [FormField](../../molecules/FormField/index.md) - FormField backgr
 
 <br>
 
-### --mbx-form-formfield-text-color
+### --mbx-form-formfield-text
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -268,17 +268,17 @@ Extended from [FormField](../../molecules/FormField/index.md) - FormField backgr
 
 <br>
 
-Extended from [FormField](../../molecules/FormField/index.md) - Fallback value for `--mbx-form-formfield-text-color-light` and `--mbx-form-formfield-text-color-dark`
+Extended from [FormField](../../molecules/FormField/index.md) - Fallback value for `--mbx-form-formfield-text-light` and `--mbx-form-formfield-text-dark`
 
 <br>
 
 <br>
 
-### --mbx-form-formfield-text-color-light
+### --mbx-form-formfield-text-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-color](#-mbx-form-formfield-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text](#-mbx-form-formfield-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-light)</div> |
 
 <br>
 
@@ -288,11 +288,11 @@ Extended from [FormField](../../molecules/FormField/index.md) - FormField text c
 
 <br>
 
-### --mbx-form-formfield-text-color-dark
+### --mbx-form-formfield-text-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                        |
-| -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-color](#-mbx-form-formfield-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                            |
+| -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text](#-mbx-form-formfield-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-dark)</div> |
 
 <br>
 
@@ -344,7 +344,7 @@ Extended from [FormField](../../molecules/FormField/index.md) - FormField backgr
 
 <br>
 
-### --mbx-form-formfield-text-color-hover
+### --mbx-form-formfield-text-hover
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -352,17 +352,17 @@ Extended from [FormField](../../molecules/FormField/index.md) - FormField backgr
 
 <br>
 
-Extended from [FormField](../../molecules/FormField/index.md) - Fallback value for `--mbx-form-formfield-text-color-hover-light` and `--mbx-form-formfield-text-color-hover-dark`
+Extended from [FormField](../../molecules/FormField/index.md) - Fallback value for `--mbx-form-formfield-text-hover-light` and `--mbx-form-formfield-text-hover-dark`
 
 <br>
 
 <br>
 
-### --mbx-form-formfield-text-color-hover-light
+### --mbx-form-formfield-text-hover-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                      |
-| -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-color-hover](#-mbx-form-formfield-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-color-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-hover](#-mbx-form-formfield-text-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-hover-light)</div> |
 
 <br>
 
@@ -372,11 +372,11 @@ Extended from [FormField](../../molecules/FormField/index.md) - FormField text c
 
 <br>
 
-### --mbx-form-formfield-text-color-hover-dark
+### --mbx-form-formfield-text-hover-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                    |
-| -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-color-hover](#-mbx-form-formfield-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-color-hover-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-form-formfield-text-hover](#-mbx-form-formfield-text-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-formfield-text-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/FormField/css-vars/#-mbx-formfield-text-hover-dark)</div> |
 
 <br>
 

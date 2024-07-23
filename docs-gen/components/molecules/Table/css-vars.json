@@ -12,17 +12,17 @@
     "fallback": "--mbx-table-background",
     "description": "Table background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   },
-  "--mbx-table-text-color": {
-    "description": "Fallback value for `--mbx-table-text-color-light` and `--mbx-table-text-color-dark`"
+  "--mbx-table-text": {
+    "description": "Fallback value for `--mbx-table-text-light` and `--mbx-table-text-dark`"
   },
-  "--mbx-table-text-color-light": {
-    "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-table-text-color",
+  "--mbx-table-text-light": {
+    "defaultGlobal": "--mbx-text-light",
+    "fallback": "--mbx-table-text",
     "description": "Table text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'"
   },
-  "--mbx-table-text-color-dark": {
-    "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-table-text-color",
+  "--mbx-table-text-dark": {
+    "defaultGlobal": "--mbx-text-dark",
+    "fallback": "--mbx-table-text",
     "description": "Table text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   },
   "--mbx-table-header-background": {
@@ -38,17 +38,17 @@
     "fallback": "--mbx-table-header-background",
     "description": "Table header background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   },
-  "--mbx-table-header-text-color": {
-    "description": "Fallback value for `--mbx-table-header-text-color-light` and `--mbx-table-header-text-color-dark`"
+  "--mbx-table-header-text": {
+    "description": "Fallback value for `--mbx-table-header-text-light` and `--mbx-table-header-text-dark`"
   },
-  "--mbx-table-header-text-color-light": {
+  "--mbx-table-header-text-light": {
     "defaultColor": "whitesmoke",
-    "fallback": "--mbx-table-header-text-color",
+    "fallback": "--mbx-table-header-text",
     "description": "Table header text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'"
   },
-  "--mbx-table-header-text-color-dark": {
+  "--mbx-table-header-text-dark": {
     "defaultColor": "rgb(255, 255, 255)",
-    "fallback": "--mbx-table-header-text-color",
+    "fallback": "--mbx-table-header-text",
     "description": "Table header text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   },
   "--mbx-table-border-color": {

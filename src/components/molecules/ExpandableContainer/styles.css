@@ -6,16 +6,16 @@
     var(--mbx-expandablecontainer-background)
   );
   --mbx-txt-l: var(
-    --mbx-expandablecontainer-text-color-light,
-    var(--mbx-expandablecontainer-text-color)
+    --mbx-expandablecontainer-text-light,
+    var(--mbx-expandablecontainer-text)
   );
   --mbx-bg-d: var(
     --mbx-expandablecontainer-background-dark,
     var(--mbx-expandablecontainer-background)
   );
   --mbx-txt-d: var(
-    --mbx-expandablecontainer-text-color-dark,
-    var(--mbx-expandablecontainer-text-color)
+    --mbx-expandablecontainer-text-dark,
+    var(--mbx-expandablecontainer-text)
   );
 }
 

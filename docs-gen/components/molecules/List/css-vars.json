@@ -1,28 +1,28 @@
 {
-  "--mbx-list-text-color": {
-    "description": "Fallback value for `--mbx-list-text-color-light` and `--mbx-list-text-color-dark`"
+  "--mbx-list-text": {
+    "description": "Fallback value for `--mbx-list-text-light` and `--mbx-list-text-dark`"
   },
-  "--mbx-list-text-color-light": {
+  "--mbx-list-text-light": {
     "description": "List element text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
-    "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-list-text-color"
+    "defaultGlobal": "--mbx-text-light",
+    "fallback": "--mbx-list-text"
   },
-  "--mbx-list-text-color-dark": {
+  "--mbx-list-text-dark": {
     "description": "List element text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
-    "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-list-text-color"
+    "defaultGlobal": "--mbx-text-dark",
+    "fallback": "--mbx-list-text"
   },
-  "--mbx-list-text-color-hover": {
-    "description": "Fallback value for `--mbx-list-text-color-hover-light` and `--mbx-list-text-color-hover-dark`"
+  "--mbx-list-text-hover": {
+    "description": "Fallback value for `--mbx-list-text-hover-light` and `--mbx-list-text-hover-dark`"
   },
-  "--mbx-list-text-color-hover-light": {
+  "--mbx-list-text-hover-light": {
     "description": "List element text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
-    "defaultGlobal": "--mbx-text-color-hover-light",
-    "fallback": "--mbx-list-text-color-hover"
+    "defaultGlobal": "--mbx-text-hover-light",
+    "fallback": "--mbx-list-text-hover"
   },
-  "--mbx-list-text-color-hover-dark": {
+  "--mbx-list-text-hover-dark": {
     "description": "List element text color when [dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
-    "defaultGlobal": "--mbx-text-color-hover-dark",
-    "fallback": "--mbx-list-text-color-hover"
+    "defaultGlobal": "--mbx-text-hover-dark",
+    "fallback": "--mbx-list-text-hover"
   }
 }

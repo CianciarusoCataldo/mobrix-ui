@@ -2,9 +2,9 @@
 
 [data-mbx-id="drw"] {
   --mbx-bg-l: var(--mbx-drawer-background-light, var(--mbx-drawer-background));
-  --mbx-txt-l: var(--mbx-drawer-text-color-light, var(--mbx-drawer-text-color));
+  --mbx-txt-l: var(--mbx-drawer-text-light, var(--mbx-drawer-text));
   --mbx-bg-d: var(--mbx-drawer-background-dark, var(--mbx-drawer-background));
-  --mbx-txt-d: var(--mbx-drawer-text-color-dark, var(--mbx-drawer-text-color));
+  --mbx-txt-d: var(--mbx-drawer-text-dark, var(--mbx-drawer-text));
   animation: var(--mbx-drw-an);
   -moz-animation: var(--mbx-drw-an);
   -ms-animation: var(--mbx-drw-an);

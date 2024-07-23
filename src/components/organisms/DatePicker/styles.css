@@ -4,24 +4,24 @@
     var(--mbx-datepicker-background)
   );
   --mbx-txt-l: var(
-    --mbx-datepicker-text-color-light,
-    var(--mbx-datepicker-text-color)
+    --mbx-datepicker-text-light,
+    var(--mbx-datepicker-text)
   );
   --mbx-bg-d: var(
     --mbx-datepicker-background-dark,
     var(--mbx-datepicker-background)
   );
   --mbx-txt-d: var(
-    --mbx-datepicker-text-color-dark,
-    var(--mbx-datepicker-text-color)
+    --mbx-datepicker-text-dark,
+    var(--mbx-datepicker-text)
   );
   --mbx-calendar-background-light: var(
     --mbx-datepicker-calendar-background-light,
     var(--mbx-datepicker-calendar-background)
   );
-  --mbx-calendar-text-color-light: var(
-    --mbx-datepicker-calendar-text-color-light,
-    var(--mbx-datepicker-text-color)
+  --mbx-calendar-text-light: var(
+    --mbx-datepicker-calendar-text-light,
+    var(--mbx-datepicker-text)
   );
   --mbx-calendar-arrow-light: var(
     --mbx-datepicker-calendar-arrow-light,
@@ -31,9 +31,9 @@
     --mbx-datepicker-calendar-background-hover-light,
     var(--mbx-datepicker-calendar-background-hover)
   );
-  --mbx-calendar-text-color-hover-light: var(
-    --mbx-datepicker-calendar-text-color-hover-light,
-    var(--mbx-datepicker-calendar-text-color-hover)
+  --mbx-calendar-text-hover-light: var(
+    --mbx-datepicker-calendar-text-hover-light,
+    var(--mbx-datepicker-calendar-text-hover)
   );
   --mbx-calendar-arrow-hover-light: var(
     --mbx-datepicker-calendar-arrow-hover-light,
@@ -43,9 +43,9 @@
     --mbx-datepicker-calendar-background-selected-light,
     var(--mbx-datepicker-calendar-background-selected)
   );
-  --mbx-calendar-selected-text-color-light: var(
-    --mbx-datepicker-calendar-text-color-selected-light,
-    var(--mbx-datepicker-calendar-text-color-selected)
+  --mbx-calendar-selected-text-light: var(
+    --mbx-datepicker-calendar-text-selected-light,
+    var(--mbx-datepicker-calendar-text-selected)
   );
   --mbx-modal-background-light: var(
     --mbx-datepicker-modal-background-light,
@@ -67,9 +67,9 @@
     --mbx-datepicker-calendar-background-dark,
     var(--mbx-datepicker-calendar-background)
   );
-  --mbx-calendar-text-color-dark: var(
-    --mbx-datepicker-calendar-text-color-dark,
-    var(--mbx-datepicker-text-color)
+  --mbx-calendar-text-dark: var(
+    --mbx-datepicker-calendar-text-dark,
+    var(--mbx-datepicker-text)
   );
   --mbx-calendar-arrow-dark: var(
     --mbx-datepicker-calendar-arrow-dark,
@@ -83,9 +83,9 @@
     --mbx-datepicker-calendar-background-selected-dark,
     var(--mbx-datepicker-calendar-background-selected)
   );
-  --mbx-calendar-selected-text-color-dark: var(
-    --mbx-datepicker-calendar-text-color-selected-dark,
-    var(--mbx-datepicker-calendar-text-color-selected)
+  --mbx-calendar-selected-text-dark: var(
+    --mbx-datepicker-calendar-text-selected-dark,
+    var(--mbx-datepicker-calendar-text-selected)
   );
   --mbx-modal-background-dark: var(
     --mbx-datepicker-modal-background-dark,
@@ -103,9 +103,9 @@
     --mbx-datepicker-calendar-background-hover-dark,
     var(--mbx-datepicker-calendar-background-hover)
   );
-  --mbx-calendar-text-color-hover-dark: var(
-    --mbx-datepicker-calendar-text-color-hover-dark,
-    var(--mbx-datepicker-calendar-text-color-hover)
+  --mbx-calendar-text-hover-dark: var(
+    --mbx-datepicker-calendar-text-hover-dark,
+    var(--mbx-datepicker-calendar-text-hover)
   );
   --mbx-calendar-today-dark: var(
     --mbx-datepicker-calendar-today-dark,
@@ -152,7 +152,7 @@
   vertical-align: middle;
   display: inline-block;
   margin-right: 0.3rem;
-  --mbx-label-text-color: var(--mbx-dttxt);
+  --mbx-label-text: var(--mbx-dttxt);
 }
 
 @media (max-width: 600px) {

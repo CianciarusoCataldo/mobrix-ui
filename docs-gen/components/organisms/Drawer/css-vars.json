@@ -12,30 +12,30 @@
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-drawer-background"
   },
-  "--mbx-drawer-text-color": {
-    "description": "Fallback value for `--mbx-drawer-text-color-light` and `--mbx-drawer-text-color-dark`"
+  "--mbx-drawer-text": {
+    "description": "Fallback value for `--mbx-drawer-text-light` and `--mbx-drawer-text-dark`"
   },
-  "--mbx-drawer-text-color-light": {
+  "--mbx-drawer-text-light": {
     "description": "Drawer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
-    "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-drawer-text-color"
+    "defaultGlobal": "--mbx-text-light",
+    "fallback": "--mbx-drawer-text"
   },
-  "--mbx-drawer-text-color-dark": {
+  "--mbx-drawer-text-dark": {
     "description": "Drawer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
-    "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-drawer-text-color"
+    "defaultGlobal": "--mbx-text-dark",
+    "fallback": "--mbx-drawer-text"
   },
   "--mbx-drawer-arrow": {
     "description": "Fallback value for `--mbx-drawer-arrow-light` and `--mbx-drawer-arrow-dark`"
   },
   "--mbx-drawer-arrow-light": {
     "description": "Drawer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
-    "defaultInternal": "--mbx-drawer-text-color-light",
+    "defaultInternal": "--mbx-drawer-text-light",
     "fallback": "--mbx-drawer-arrow"
   },
   "--mbx-drawer-arrow-dark": {
     "description": "Drawer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
-    "defaultInternal": "--mbx-drawer-text-color-dark",
+    "defaultInternal": "--mbx-drawer-text-dark",
     "fallback": "--mbx-drawer-arrow"
   },
   "--mbx-drawer-arrow-hover": {

@@ -4,6 +4,6 @@
 }
 
 [data-mbx-id="label"] {
-  --mbx-txt-l: var(--mbx-label-text-color-light, var(--mbx-label-text-color));
-  --mbx-txt-d: var(--mbx-label-text-color-dark, var(--mbx-label-text-color));
+  --mbx-txt-l: var(--mbx-label-text-light, var(--mbx-label-text));
+  --mbx-txt-d: var(--mbx-label-text-dark, var(--mbx-label-text));
 }

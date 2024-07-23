@@ -10,13 +10,13 @@
     var(--mbx-codebox-background)
   );
   --mbx-txt-l: var(
-    --mbx-codebox-text-color-light,
-    var(--mbx-codebox-text-color)
+    --mbx-codebox-text-light,
+    var(--mbx-codebox-text)
   );
   --mbx-bg-d: var(--mbx-codebox-background-dark, var(--mbx-codebox-background));
   --mbx-txt-d: var(
-    --mbx-codebox-text-color-dark,
-    var(--mbx-codebox-text-color)
+    --mbx-codebox-text-dark,
+    var(--mbx-codebox-text)
   );
 }
 

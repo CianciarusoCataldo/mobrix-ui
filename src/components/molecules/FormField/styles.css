@@ -7,16 +7,16 @@
     var(--mbx-formfield-background)
   );
   --mbx-fld-txt: var(
-    --mbx-formfield-text-color-light,
-    var(--mbx-formfield-text-color)
+    --mbx-formfield-text-light,
+    var(--mbx-formfield-text)
   );
   --mbx-fld-bg-h: var(
     --mbx-formfield-background-hover-light,
     var(--mbx-formfield-background-hover)
   );
   --mbx-fld-txt-h: var(
-    --mbx-formfield-text-color-hover-light,
-    var(--mbx-formfield-text-color-hover)
+    --mbx-formfield-text-hover-light,
+    var(--mbx-formfield-text-hover)
   );
   --mbx-fld-err-b: var(
     --mbx-formfield-error-border-light,
@@ -27,19 +27,19 @@
     var(--mbx-formfield-error-text, red)
   );
   --mbx-counterbox-background: var(--mbx-fld-bg);
-  --mbx-counterbox-text-color: var(--mbx-fld-txt);
+  --mbx-counterbox-text: var(--mbx-fld-txt);
   --mbx-counterbox-background-hover: var(--mbx-fld-bg-h);
-  --mbx-counterbox-text-color-hover: var(--mbx-fld-txt-h);
+  --mbx-counterbox-text-hover: var(--mbx-fld-txt-h);
 
   --mbx-checkbox-background: var(--mbx-fld-bg);
-  --mbx-checkbox-text-color: var(--mbx-fld-txt);
+  --mbx-checkbox-text: var(--mbx-fld-txt);
   --mbx-checkbox-background-hover: var(--mbx-fld-bg-h);
-  --mbx-checkbox-text-color-hover: var(--mbx-fld-txt-h);
+  --mbx-checkbox-text-hover: var(--mbx-fld-txt-h);
 
   --mbx-inputbox-background: var(--mbx-fld-bg);
-  --mbx-inputbox-text-color: var(--mbx-fld-txt);
+  --mbx-inputbox-text: var(--mbx-fld-txt);
   --mbx-inputbox-background-hover: var(--mbx-fld-bg-h);
-  --mbx-inputbox-text-color-hover: var(--mbx-fld-txt-h);
+  --mbx-inputbox-text-hover: var(--mbx-fld-txt-h);
 
   --mbx-radio-background: var(--mbx-fld-bg);
   --mbx-radio-background-hover: var(--mbx-fld-bg-h);
@@ -49,8 +49,8 @@
 
   --mbx-password-background: var(--mbx-fld-bg);
   --mbx-password-background-hover: var(--mbx-fld-bg-h);
-  --mbx-password-text-color: var(--mbx-fld-txt);
-  --mbx-password-text-color-hover: var(--mbx-fld-txt-h);
+  --mbx-password-text: var(--mbx-fld-txt);
+  --mbx-password-text-hover: var(--mbx-fld-txt-h);
 
   --mbx-slider-background: var(--mbx-fld-bg);
 
@@ -63,16 +63,16 @@
     var(--mbx-formfield-background)
   );
   --mbx-fld-txt: var(
-    --mbx-formfield-text-color-dark,
-    var(--mbx-formfield-text-color)
+    --mbx-formfield-text-dark,
+    var(--mbx-formfield-text)
   );
   --mbx-fld-bg-h: var(
     --mbx-formfield-background-hover-dark,
     var(--mbx-formfield-background-hover)
   );
   --mbx-fld-txt-h: var(
-    --mbx-formfield-text-color-hover-dark,
-    var(--mbx-formfield-text-color-hover)
+    --mbx-formfield-text-hover-dark,
+    var(--mbx-formfield-text-hover)
   );
   --mbx-fld-err-b: var(
     --mbx-formfield-error-border-dark,
@@ -88,11 +88,11 @@
   font-weight: 600;
   margin: 0 0 0.2rem;
   width: 100%;
-  --mbx-label-text-color: var(--mbx-fld-txt);
+  --mbx-label-text: var(--mbx-fld-txt);
 }
 
 [data-mbx-id="field"] > [data-mbx-id="cont"] {
-  --mbx-container-text-color: var(--mbx-fld-err-txt);
+  --mbx-container-text: var(--mbx-fld-err-txt);
   transition: all 0.3s ease-out;
   padding-top: 0.2rem;
 }

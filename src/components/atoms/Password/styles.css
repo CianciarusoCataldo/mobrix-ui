@@ -4,16 +4,16 @@
   width: fit-content;
   border-radius: 5px;
   --mbx-txt-l: var(
-    --mbx-password-text-color-light,
-    var(--mbx-password-text-color)
+    --mbx-password-text-light,
+    var(--mbx-password-text)
   );
   --mbx-bg-l: var(
     --mbx-password-background-light,
     var(--mbx-password-background)
   );
   --mbx-txt-d: var(
-    --mbx-password-text-color-dark,
-    var(--mbx-password-text-color)
+    --mbx-password-text-dark,
+    var(--mbx-password-text)
   );
   --mbx-bg-d: var(
     --mbx-password-background-dark,
@@ -24,7 +24,7 @@
 [data-mbx-id="psw"] > [data-mbx-id="inp"] {
   border-bottom-right-radius: 0%;
   border-top-right-radius: 0%;
-  --mbx-inputbox-text-color: var(--mbx-psw-txt);
+  --mbx-inputbox-text: var(--mbx-psw-txt);
   --mbx-inputbox-background: var(--mbx-psw-bg);
   --mbx-inputbox-background-hover-light: var(
     --mbx-password-background-hover-light,

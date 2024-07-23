@@ -16,9 +16,9 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-codebox-background](#-mbx-codebox-background)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                    | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                    |
 | <div style='text-align:center;margin:auto;'>[--mbx-codebox-background-light](#-mbx-codebox-background-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-codebox-background](#-mbx-codebox-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-codebox-background-dark](#-mbx-codebox-background-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-codebox-background](#-mbx-codebox-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-codebox-text-color](#-mbx-codebox-text-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                    | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-codebox-text-color-light](#-mbx-codebox-text-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-codebox-text-color](#-mbx-codebox-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-codebox-text-color-dark](#-mbx-codebox-text-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-codebox-text-color](#-mbx-codebox-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-codebox-text](#-mbx-codebox-text)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                    | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                    |
+| <div style='text-align:center;margin:auto;'>[--mbx-codebox-text-light](#-mbx-codebox-text-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-codebox-text](#-mbx-codebox-text)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div>             |
+| <div style='text-align:center;margin:auto;'>[--mbx-codebox-text-dark](#-mbx-codebox-text-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-codebox-text](#-mbx-codebox-text)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div>               |
 
 ## CSS Variables list
 
@@ -68,7 +68,7 @@ CodeBox background when [dark mode](https://cianciarusocataldo.github.io/mobrix-
 
 <br>
 
-### --mbx-codebox-text-color
+### --mbx-codebox-text
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -76,34 +76,34 @@ CodeBox background when [dark mode](https://cianciarusocataldo.github.io/mobrix-
 
 <br>
 
-Fallback value for `mbx-codebox-text-color-light` and `mbx-codebox-text-color-dark`
+Fallback value for `mbx-codebox-text-light` and `mbx-codebox-text-dark`
 
 <br>
 
 <br>
 
-### --mbx-codebox-text-color-light
+### --mbx-codebox-text-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
-| ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-codebox-text-color](#-mbx-codebox-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
-
-<br>
-
-CodeBox text-color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                  |
+| ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-codebox-text](#-mbx-codebox-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div> |
 
 <br>
 
-<br>
-
-### --mbx-codebox-text-color-dark
-
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
-| ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-codebox-text-color](#-mbx-codebox-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div> |
+CodeBox text when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`
 
 <br>
 
-CodeBox text-color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
+<br>
+
+### --mbx-codebox-text-dark
+
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-codebox-text](#-mbx-codebox-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div> |
+
+<br>
+
+CodeBox text when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
 
 <br>

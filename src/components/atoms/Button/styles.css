@@ -10,24 +10,24 @@
   line-height: 1.25rem;
   --mbx-btn-scale: none;
   --mbx-bg-l: var(--mbx-button-background-light, var(--mbx-button-background));
-  --mbx-txt-l: var(--mbx-button-text-color-light, var(--mbx-button-text-color));
+  --mbx-txt-l: var(--mbx-button-text-light, var(--mbx-button-text));
   --mbx-bg-d: var(--mbx-button-background-dark, var(--mbx-button-background));
-  --mbx-txt-d: var(--mbx-button-text-color-dark, var(--mbx-button-text-color));
+  --mbx-txt-d: var(--mbx-button-text-dark, var(--mbx-button-text));
   --mbx-bg-h-l: var(
     --mbx-button-background-hover-light,
     var(--mbx-button-background-hover)
   );
   --mbx-txt-h-l: var(
-    --mbx-button-text-color-hover-light,
-    var(--mbx-button-text-color-hover)
+    --mbx-button-text-hover-light,
+    var(--mbx-button-text-hover)
   );
   --mbx-bg-h-d: var(
     --mbx-button-background-hover-dark,
     var(--mbx-button-background-hover)
   );
   --mbx-txt-h-d: var(
-    --mbx-button-text-color-hover-dark,
-    var(--mbx-button-text-color-hover)
+    --mbx-button-text-hover-dark,
+    var(--mbx-button-text-hover)
   );
 }
 

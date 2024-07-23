@@ -12,18 +12,18 @@
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-button-background"
   },
-  "--mbx-button-text-color": {
-    "description": "Fallback value for `mbx-button-text-color-light` and `mbx-button-text-color-dark`"
+  "--mbx-button-text": {
+    "description": "Fallback value for `mbx-button-text-light` and `mbx-button-text-dark`"
   },
-  "--mbx-button-text-color-light": {
+  "--mbx-button-text-light": {
     "description": "Button text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is off",
-    "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-button-text-color"
+    "defaultGlobal": "--mbx-text-light",
+    "fallback": "--mbx-button-text"
   },
-  "--mbx-button-text-color-dark": {
+  "--mbx-button-text-dark": {
     "description": "Button text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
-    "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-button-text-color"
+    "defaultGlobal": "--mbx-text-dark",
+    "fallback": "--mbx-button-text"
   },
   "--mbx-button-background-hover": {
     "description": "Fallback value for `mbx-button-background-hover-light` and `mbx-button-background-hover-dark`"
@@ -38,17 +38,17 @@
     "defaultGlobal": "--mbx-background-hover-dark",
     "fallback": "--mbx-button-background-hover"
   },
-  "--mbx-button-text-color-hover": {
-    "description": "Fallback value for `mbx-button-text-color-hover-light` and `mbx-button-text-color-hover-dark`"
+  "--mbx-button-text-hover": {
+    "description": "Fallback value for `mbx-button-text-hover-light` and `mbx-button-text-hover-dark`"
   },
-  "--mbx-button-text-color-hover-light": {
+  "--mbx-button-text-hover-light": {
     "description": "Button text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is off, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
-    "defaultGlobal": "--mbx-text-color-hover-light",
-    "fallback": "--mbx-button-text-color-hover"
+    "defaultGlobal": "--mbx-text-hover-light",
+    "fallback": "--mbx-button-text-hover"
   },
-  "--mbx-button-text-color-hover-dark": {
+  "--mbx-button-text-hover-dark": {
     "description": "Button text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
-    "defaultGlobal": "--mbx-text-color-hover-dark",
-    "fallback": "--mbx-button-text-color-hover"
+    "defaultGlobal": "--mbx-text-hover-dark",
+    "fallback": "--mbx-button-text-hover"
   }
 }

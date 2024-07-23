@@ -7,16 +7,16 @@
     var(--mbx-radiogroup-background)
   );
   --mbx-txt-l: var(
-    --mbx-radiogroup-text-color-light,
-    var(--mbx-radiogroup-text-color)
+    --mbx-radiogroup-text-light,
+    var(--mbx-radiogroup-text)
   );
   --mbx-bg-d: var(
     --mbx-radiogroup-background-dark,
     var(--mbx-radiogroup-background)
   );
   --mbx-txt-d: var(
-    --mbx-radiogroup-text-color-dark,
-    var(--mbx-radiogroup-text-color)
+    --mbx-radiogroup-text-dark,
+    var(--mbx-radiogroup-text)
   );
 }
 

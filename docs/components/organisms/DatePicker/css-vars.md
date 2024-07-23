@@ -16,27 +16,27 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-background](#-mbx-datepicker-background)</div>                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-background-light](#-mbx-datepicker-background-light)</div>                                     | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-background](#-mbx-datepicker-background)</div>                                     | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div>                                                                        |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-background-dark](#-mbx-datepicker-background-dark)</div>                                       | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-background](#-mbx-datepicker-background)</div>                                     | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div>                                                                          |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color](#-mbx-datepicker-text-color)</div>                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color-light](#-mbx-datepicker-text-color-light)</div>                                     | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color](#-mbx-datepicker-text-color)</div>                                     | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div>                                                                        |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color-dark](#-mbx-datepicker-text-color-dark)</div>                                       | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color](#-mbx-datepicker-text-color)</div>                                     | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div>                                                                          |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text](#-mbx-datepicker-text)</div>                                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-light](#-mbx-datepicker-text-light)</div>                                                 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text](#-mbx-datepicker-text)</div>                                                 | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div>                                                                                    |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-dark](#-mbx-datepicker-text-dark)</div>                                                   | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text](#-mbx-datepicker-text)</div>                                                 | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div>                                                                                      |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon](#-mbx-datepicker-icon)</div>                                                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-light](#-mbx-datepicker-icon-light)</div>                                                 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon](#-mbx-datepicker-icon)</div>                                                 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color-light](#-mbx-datepicker-text-color-light)</div>                                                                                                                      |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-dark](#-mbx-datepicker-icon-dark)</div>                                                   | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon](#-mbx-datepicker-icon)</div>                                                 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color-dark](#-mbx-datepicker-text-color-dark)</div>                                                                                                                        |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-light](#-mbx-datepicker-icon-light)</div>                                                 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon](#-mbx-datepicker-icon)</div>                                                 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-light](#-mbx-datepicker-text-light)</div>                                                                                                                                  |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-dark](#-mbx-datepicker-icon-dark)</div>                                                   | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon](#-mbx-datepicker-icon)</div>                                                 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-dark](#-mbx-datepicker-text-dark)</div>                                                                                                                                    |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-hover](#-mbx-datepicker-icon-hover)</div>                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-hover-light](#-mbx-datepicker-icon-hover-light)</div>                                     | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-hover](#-mbx-datepicker-icon-hover)</div>                                     | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>blue</div><div style='text-align:center;margin-auto;'><div style='background:blue;margin:auto; width:15px; height:15px;'/></div></div></div>     |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-hover-dark](#-mbx-datepicker-icon-hover-dark)</div>                                       | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon-hover](#-mbx-datepicker-icon-hover)</div>                                     | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>orange</div><div style='text-align:center;margin-auto;'><div style='background:orange;margin:auto; width:15px; height:15px;'/></div></div></div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background](#-mbx-datepicker-calendar-background)</div>                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-light](#-mbx-datepicker-calendar-background-light)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background](#-mbx-datepicker-calendar-background)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-background-light)</div>                               |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-dark](#-mbx-datepicker-calendar-background-dark)</div>                     | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background](#-mbx-datepicker-calendar-background)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-background-dark)</div>                                 |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color](#-mbx-datepicker-calendar-text-color)</div>                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-light](#-mbx-datepicker-calendar-text-color-light)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color](#-mbx-datepicker-calendar-text-color)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-color-light)</div>                               |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-dark](#-mbx-datepicker-calendar-text-color-dark)</div>                     | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color](#-mbx-datepicker-calendar-text-color)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-color-dark)</div>                                 |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text](#-mbx-datepicker-calendar-text)</div>                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-light](#-mbx-datepicker-calendar-text-light)</div>                               | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text](#-mbx-datepicker-calendar-text)</div>                               | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-light)</div>                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-dark](#-mbx-datepicker-calendar-text-dark)</div>                                 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text](#-mbx-datepicker-calendar-text)</div>                               | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-dark)</div>                                             |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-hover](#-mbx-datepicker-calendar-background-hover)</div>                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-hover-light](#-mbx-datepicker-calendar-background-hover-light)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-hover](#-mbx-datepicker-calendar-background-hover)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-background-hover-light)</div>                   |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-hover-dark](#-mbx-datepicker-calendar-background-hover-dark)</div>         | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-background-hover](#-mbx-datepicker-calendar-background-hover)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-calendar-background-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-background-hover-dark)</div>                     |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-hover](#-mbx-datepicker-calendar-text-color-hover)</div>                   | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-hover-light](#-mbx-datepicker-calendar-text-color-hover-light)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-hover](#-mbx-datepicker-calendar-text-color-hover)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-color-hover-light)</div>                   |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-hover-dark](#-mbx-datepicker-calendar-text-color-hover-dark)</div>         | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-hover](#-mbx-datepicker-calendar-text-color-hover)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-color-hover-dark)</div>                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-hover](#-mbx-datepicker-calendar-text-hover)</div>                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-hover-light](#-mbx-datepicker-calendar-text-hover-light)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-hover](#-mbx-datepicker-calendar-text-hover)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-hover-light)</div>                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-hover-dark](#-mbx-datepicker-calendar-text-hover-dark)</div>                     | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-hover](#-mbx-datepicker-calendar-text-hover)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-hover-dark)</div>                                 |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow](#-mbx-datepicker-calendar-arrow)</div>                                         | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow-light](#-mbx-datepicker-calendar-arrow-light)</div>                             | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow](#-mbx-datepicker-calendar-arrow)</div>                             | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-arrow-light)</div>                                         |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow-dark](#-mbx-datepicker-calendar-arrow-dark)</div>                               | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-arrow](#-mbx-datepicker-calendar-arrow)</div>                             | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-arrow-dark)</div>                                           |
@@ -46,9 +46,9 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-background](#-mbx-datepicker-calendar-selected-background)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-background-light](#-mbx-datepicker-calendar-selected-background-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-background](#-mbx-datepicker-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-selected-background-light)</div>             |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-background-dark](#-mbx-datepicker-calendar-selected-background-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-background](#-mbx-datepicker-calendar-selected-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-selected-background-dark)</div>               |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-color](#-mbx-datepicker-calendar-selected-text-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-color-light](#-mbx-datepicker-calendar-selected-text-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-color](#-mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-selected-text-color-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-color-dark](#-mbx-datepicker-calendar-selected-text-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-color](#-mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-selected-text-color-dark)</div>               |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text](#-mbx-datepicker-calendar-selected-text)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-light](#-mbx-datepicker-calendar-selected-text-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text](#-mbx-datepicker-calendar-selected-text)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-selected-text-light)</div>                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-dark](#-mbx-datepicker-calendar-selected-text-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text](#-mbx-datepicker-calendar-selected-text)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-selected-text-dark)</div>                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-today-color](#-mbx-datepicker-calendar-today-color)</div>                             | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-today-color-light](#-mbx-datepicker-calendar-today-color-light)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-today-color](#-mbx-datepicker-calendar-today-color)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-today-color-light)</div>                             |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-today-color-dark](#-mbx-datepicker-calendar-today-color-dark)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-today-color](#-mbx-datepicker-calendar-today-color)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-today-color-dark)</div>                               |
@@ -110,7 +110,7 @@ DatePicker background when [dark mode](https://cianciarusocataldo.github.io/mobr
 
 <br>
 
-### --mbx-datepicker-text-color
+### --mbx-datepicker-text
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -118,17 +118,17 @@ DatePicker background when [dark mode](https://cianciarusocataldo.github.io/mobr
 
 <br>
 
-Fallback value for `--mbx-datepicker-text-color-light` and `--mbx-datepicker-text-color-dark`
+Fallback value for `--mbx-datepicker-text-light` and `--mbx-datepicker-text-dark`
 
 <br>
 
 <br>
 
-### --mbx-datepicker-text-color-light
+### --mbx-datepicker-text-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color](#-mbx-datepicker-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                  |
+| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text](#-mbx-datepicker-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div> |
 
 <br>
 
@@ -138,11 +138,11 @@ DatePicker text color when [dark mode](https://cianciarusocataldo.github.io/mobr
 
 <br>
 
-### --mbx-datepicker-text-color-dark
+### --mbx-datepicker-text-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color](#-mbx-datepicker-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text](#-mbx-datepicker-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div> |
 
 <br>
 
@@ -168,9 +168,9 @@ Fallback value for `--mbx-datepicker-icon-light` and `--mbx-datepicker-icon-dark
 
 ### --mbx-datepicker-icon-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon](#-mbx-datepicker-icon)</div> | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color-light](#-mbx-datepicker-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                    |
+| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon](#-mbx-datepicker-icon)</div> | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-light](#-mbx-datepicker-text-light)</div> |
 
 <br>
 
@@ -182,9 +182,9 @@ DatePicker calendar icon color when [dark mode](https://cianciarusocataldo.githu
 
 ### --mbx-datepicker-icon-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                              |
-| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon](#-mbx-datepicker-icon)</div> | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-color-dark](#-mbx-datepicker-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                  |
+| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-icon](#-mbx-datepicker-icon)</div> | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-text-dark](#-mbx-datepicker-text-dark)</div> |
 
 <br>
 
@@ -278,7 +278,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar backgroun
 
 <br>
 
-### --mbx-datepicker-calendar-text-color
+### --mbx-datepicker-calendar-text
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -286,17 +286,17 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar backgroun
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-text-color-light` and `--mbx-datepicker-calendar-text-color-dark`
+Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-text-light` and `--mbx-datepicker-calendar-text-dark`
 
 <br>
 
 <br>
 
-### --mbx-datepicker-calendar-text-color-light
+### --mbx-datepicker-calendar-text-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color](#-mbx-datepicker-calendar-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text](#-mbx-datepicker-calendar-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-light)</div> |
 
 <br>
 
@@ -306,11 +306,11 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text colo
 
 <br>
 
-### --mbx-datepicker-calendar-text-color-dark
+### --mbx-datepicker-calendar-text-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                     |
-| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color](#-mbx-datepicker-calendar-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text](#-mbx-datepicker-calendar-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-dark)</div> |
 
 <br>
 
@@ -362,7 +362,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar backgroun
 
 <br>
 
-### --mbx-datepicker-calendar-text-color-hover
+### --mbx-datepicker-calendar-text-hover
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -370,17 +370,17 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar backgroun
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-text-color-hover-light` and `--mbx-datepicker-calendar-text-color-hover-dark`
+Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-text-hover-light` and `--mbx-datepicker-calendar-text-hover-dark`
 
 <br>
 
 <br>
 
-### --mbx-datepicker-calendar-text-color-hover-light
+### --mbx-datepicker-calendar-text-hover-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                   |
-| ------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-hover](#-mbx-datepicker-calendar-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-color-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-hover](#-mbx-datepicker-calendar-text-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-hover-light)</div> |
 
 <br>
 
@@ -390,11 +390,11 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar text colo
 
 <br>
 
-### --mbx-datepicker-calendar-text-color-hover-dark
+### --mbx-datepicker-calendar-text-hover-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                 |
-| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-color-hover](#-mbx-datepicker-calendar-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-color-hover-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-text-hover](#-mbx-datepicker-calendar-text-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-text-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-text-hover-dark)</div> |
 
 <br>
 
@@ -530,7 +530,7 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected 
 
 <br>
 
-### --mbx-datepicker-calendar-selected-text-color
+### --mbx-datepicker-calendar-selected-text
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -538,17 +538,17 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected 
 
 <br>
 
-Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-selected-text-color-light` and `--mbx-datepicker-calendar-selected-text-color-dark`
+Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-selected-text-light` and `--mbx-datepicker-calendar-selected-text-dark`
 
 <br>
 
 <br>
 
-### --mbx-datepicker-calendar-selected-text-color-light
+### --mbx-datepicker-calendar-selected-text-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                         |
-| ------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-color](#-mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-selected-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text](#-mbx-datepicker-calendar-selected-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-selected-text-light)</div> |
 
 <br>
 
@@ -558,11 +558,11 @@ Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar selected 
 
 <br>
 
-### --mbx-datepicker-calendar-selected-text-color-dark
+### --mbx-datepicker-calendar-selected-text-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text-color](#-mbx-datepicker-calendar-selected-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-selected-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-calendar-selected-text](#-mbx-datepicker-calendar-selected-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-calendar-selected-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/organisms/Calendar/css-vars/#-mbx-calendar-selected-text-dark)</div> |
 
 <br>
 

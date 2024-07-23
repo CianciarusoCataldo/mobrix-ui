@@ -9,8 +9,8 @@
     var(--mbx-container-background, var(--mbx-c-bg))
   );
   --mbx-con-txt: var(
-    --mbx-container-text-color-light,
-    var(--mbx-container-text-color, var(--mbx-c-txt))
+    --mbx-container-text-light,
+    var(--mbx-container-text, var(--mbx-c-txt))
   );
 }
 
@@ -20,8 +20,8 @@
     var(--mbx-container-background, var(--mbx-c-bg))
   );
   --mbx-con-txt: var(
-    --mbx-container-text-color-dark,
-    var(--mbx-container-text-color, var(--mbx-c-txt))
+    --mbx-container-text-dark,
+    var(--mbx-container-text, var(--mbx-c-txt))
   );
 }
 

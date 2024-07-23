@@ -16,9 +16,9 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-popup-background](#-mbx-popup-background)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                    |
 | <div style='text-align:center;margin:auto;'>[--mbx-popup-background-light](#-mbx-popup-background-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-popup-background](#-mbx-popup-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-popup-background-dark](#-mbx-popup-background-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-popup-background](#-mbx-popup-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-popup-text-color](#-mbx-popup-text-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-popup-text-color-light](#-mbx-popup-text-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-popup-text-color](#-mbx-popup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-popup-text-color-dark](#-mbx-popup-text-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-popup-text-color](#-mbx-popup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-popup-text](#-mbx-popup-text)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                    |
+| <div style='text-align:center;margin:auto;'>[--mbx-popup-text-light](#-mbx-popup-text-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-popup-text](#-mbx-popup-text)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div>             |
+| <div style='text-align:center;margin:auto;'>[--mbx-popup-text-dark](#-mbx-popup-text-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-popup-text](#-mbx-popup-text)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div>               |
 
 ## CSS Variables list
 
@@ -68,7 +68,7 @@ Popup background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui
 
 <br>
 
-### --mbx-popup-text-color
+### --mbx-popup-text
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -82,11 +82,11 @@ Fallback value for `and`
 
 <br>
 
-### --mbx-popup-text-color-light
+### --mbx-popup-text-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
-| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-popup-text-color](#-mbx-popup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                  |
+| -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-popup-text](#-mbx-popup-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div> |
 
 <br>
 
@@ -96,11 +96,11 @@ Popup text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui
 
 <br>
 
-### --mbx-popup-text-color-dark
+### --mbx-popup-text-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
-| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-popup-text-color](#-mbx-popup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-popup-text](#-mbx-popup-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div> |
 
 <br>
 

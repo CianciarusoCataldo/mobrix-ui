@@ -9,7 +9,7 @@
     var(--mbx-background, linear-gradient(to right, #2d3748, #1d232e))
   );
 
-  --mbx-c-txt-l: var(--mbx-text-color-light, var(--mbx-text-color, #1b1b1b));
+  --mbx-c-txt-l: var(--mbx-text-light, var(--mbx-text, #1b1b1b));
 
-  --mbx-c-txt-d: var(--mbx-text-color-dark, var(--mbx-text-color, white));
+  --mbx-c-txt-d: var(--mbx-text-dark, var(--mbx-text, white));
 }

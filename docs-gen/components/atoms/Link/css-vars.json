@@ -4,12 +4,12 @@
   },
   "--mbx-link-color-light": {
     "description": "Link text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
-    "defaultGlobal": "--mbx-text-color-light",
+    "defaultGlobal": "--mbx-text-light",
     "fallback": "--mbx-link-color"
   },
   "--mbx-link-color-dark": {
     "description": "Link text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
-    "defaultGlobal": "--mbx-text-color-dark",
+    "defaultGlobal": "--mbx-text-dark",
     "fallback": "--mbx-link-color"
   },
   "--mbx-link-color-hover": {

@@ -19,8 +19,8 @@
   );
   --mbx-c-txt: var(--mbx-c-txt-l);
   --mbx-c-txt-h: var(
-    --mbx-text-color-hover-light,
-    var(--mbx-text-color-hover, #413c5c)
+    --mbx-text-hover-light,
+    var(--mbx-text-hover, #413c5c)
   );
   --mbx-c-fc: var(--mbx-focus-color-light, var(--mbx-focus-color, #7785ff));
   --mbx-c-sh: var(--mbx-shadow-light, var(--mbx-shadow, #464545));
@@ -42,8 +42,8 @@
   );
   --mbx-c-txt: var(--mbx-c-txt-d);
   --mbx-c-txt-h: var(
-    --mbx-text-color-hover-dark,
-    var(--mbx-text-color-hover, #dfeaf8)
+    --mbx-text-hover-dark,
+    var(--mbx-text-hover, #dfeaf8)
   );
   --mbx-c-fc: var(--mbx-focus-color-dark, var(--mbx-focus-color, #fb7a10));
   --mbx-c-sh: var(--mbx-shadow-dark, var(--mbx-shadow, #464545));

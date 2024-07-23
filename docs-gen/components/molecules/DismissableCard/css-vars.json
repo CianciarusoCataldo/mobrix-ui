@@ -20,38 +20,38 @@
     },
     "fallback": "--mbx-dismissablecard-background"
   },
-  "--mbx-dismissablecard-text-color": {
-    "description": "Fallback value for `--mbx-dismissablecard-text-color-light` and `--mbx-dismissablecard-text-color-dark`"
+  "--mbx-dismissablecard-text": {
+    "description": "Fallback value for `--mbx-dismissablecard-text-light` and `--mbx-dismissablecard-text-dark`"
   },
-  "--mbx-dismissablecard-text-color-light": {
+  "--mbx-dismissablecard-text-light": {
     "description": "DismissableCard text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultExternal": {
       "type": "molecules",
       "component": "Card",
-      "prop": "--mbx-card-text-color-light"
+      "prop": "--mbx-card-text-light"
     },
-    "fallback": "--mbx-dismissablecard-text-color"
+    "fallback": "--mbx-dismissablecard-text"
   },
-  "--mbx-dismissablecard-text-color-dark": {
+  "--mbx-dismissablecard-text-dark": {
     "description": "DismissableCard text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultExternal": {
       "type": "molecules",
-      "prop": "--mbx-card-text-color-dark",
+      "prop": "--mbx-card-text-dark",
       "component": "Card"
     },
-    "fallback": "--mbx-dismissablecard-text-color"
+    "fallback": "--mbx-dismissablecard-text"
   },
   "--mbx-dismissablecard-x-color": {
     "description": "Fallback value for `--mbx-dismissablecard-x-color-light` and `--mbx-dismissablecard-x-color-dark`"
   },
   "--mbx-dismissablecard-x-color-light": {
     "description": "DismissableCard x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
-    "defaultInternal": "--mbx-dismissablecard-text-color-light",
+    "defaultInternal": "--mbx-dismissablecard-text-light",
     "fallback": "--mbx-dismissablecard-x-color"
   },
   "--mbx-dismissablecard-x-color-dark": {
     "description": "DismissableCard x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
-    "defaultInternal": "--mbx-dismissablecard-text-color-dark",
+    "defaultInternal": "--mbx-dismissablecard-text-dark",
     "fallback": "--mbx-dismissablecard-x-color"
   },
   "--mbx-dismissablecard-x-color-hover": {

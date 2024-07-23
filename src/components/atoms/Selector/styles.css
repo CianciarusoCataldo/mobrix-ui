@@ -4,32 +4,32 @@
     var(--mbx-selector-background)
   );
   --mbx-txt-l: var(
-    --mbx-selector-text-color-light,
-    var(--mbx-selector-text-color)
+    --mbx-selector-text-light,
+    var(--mbx-selector-text)
   );
   --mbx-bg-d: var(
     --mbx-selector-background-dark,
     var(--mbx-selector-background)
   );
   --mbx-txt-d: var(
-    --mbx-selector-text-color-dark,
-    var(--mbx-selector-text-color)
+    --mbx-selector-text-dark,
+    var(--mbx-selector-text)
   );
   --mbx-bg-h-l: var(
     --mbx-selector-background-hover-light,
     var(--mbx-selector-background-hover)
   );
   --mbx-txt-h-l: var(
-    --mbx-selector-text-color-hover-light,
-    var(--mbx-selector-text-color-hover)
+    --mbx-selector-text-hover-light,
+    var(--mbx-selector-text-hover)
   );
   --mbx-bg-h-d: var(
     --mbx-selector-background-hover-dark,
     var(--mbx-selector-background-hover)
   );
   --mbx-txt-h-d: var(
-    --mbx-selector-text-color-hover-dark,
-    var(--mbx-selector-text-color-hover)
+    --mbx-selector-text-hover-dark,
+    var(--mbx-selector-text-hover)
   );
   border: 0;
   border-radius: 6px;

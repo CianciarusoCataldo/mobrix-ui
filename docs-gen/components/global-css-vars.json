@@ -51,30 +51,30 @@
     "fallback": "--mbx-background-hover",
     "defaultColor": "linear-gradient(to right, #364257, #252d3b)"
   },
-  "--mbx-text-color": {
-    "description": "Fallback value for `--mbx-text-color-light` and `--mbx-text-color-dark` variables"
+  "--mbx-text": {
+    "description": "Fallback value for `--mbx-text-light` and `--mbx-text-dark` variables"
   },
-  "--mbx-text-color-light": {
+  "--mbx-text-light": {
     "description": "Global MoBrix-ui text color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
-    "fallback": "--mbx-text-color",
+    "fallback": "--mbx-text",
     "defaultColor": "#1b1b1b"
   },
-  "--mbx-text-color-dark": {
+  "--mbx-text-dark": {
     "description": "Global MoBrix-ui text color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
-    "fallback": "--mbx-text-color",
+    "fallback": "--mbx-text",
     "defaultColor": "white"
   },
-  "--mbx-text-color-hover": {
-    "description": "Fallback value for `--mbx-text-color-hover-light` and `--mbx-text-color-hover-dark` variables"
+  "--mbx-text-hover": {
+    "description": "Fallback value for `--mbx-text-hover-light` and `--mbx-text-hover-dark` variables"
   },
-  "--mbx-text-color-hover-light": {
+  "--mbx-text-hover-light": {
     "description": "Global MoBrix-ui text color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
-    "fallback": "--mbx-text-color-hover",
+    "fallback": "--mbx-text-hover",
     "defaultColor": "#413c5c"
   },
-  "--mbx-text-color-hover-dark": {
+  "--mbx-text-hover-dark": {
     "description": "Global MoBrix-ui text color, when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
-    "fallback": "--mbx-text-color-hover",
+    "fallback": "--mbx-text-hover",
     "defaultColor": "#dfeaf8"
   },
   "--mbx-shadow": {

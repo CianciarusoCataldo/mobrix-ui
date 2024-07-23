@@ -16,12 +16,12 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-background](#-mbx-dismissablecard-background)</div>                   | <div style='text-align:center;margin:auto;'>/</div>                                                                          | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                     |
 | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-background-light](#-mbx-dismissablecard-background-light)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-background](#-mbx-dismissablecard-background)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-card-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Card/css-vars/#-mbx-card-background-light)</div>                                     |
 | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-background-dark](#-mbx-dismissablecard-background-dark)</div>         | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-background](#-mbx-dismissablecard-background)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-card-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Card/css-vars/#-mbx-card-background-dark)</div>                                       |
-| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-color](#-mbx-dismissablecard-text-color)</div>                   | <div style='text-align:center;margin:auto;'>/</div>                                                                          | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                     |
-| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-color-light](#-mbx-dismissablecard-text-color-light)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-color](#-mbx-dismissablecard-text-color)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-card-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Card/css-vars/#-mbx-card-text-color-light)</div>                                     |
-| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-color-dark](#-mbx-dismissablecard-text-color-dark)</div>         | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-color](#-mbx-dismissablecard-text-color)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-card-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Card/css-vars/#-mbx-card-text-color-dark)</div>                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text](#-mbx-dismissablecard-text)</div>                               | <div style='text-align:center;margin:auto;'>/</div>                                                                          | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-light](#-mbx-dismissablecard-text-light)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text](#-mbx-dismissablecard-text)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-card-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Card/css-vars/#-mbx-card-text-light)</div>                                                 |
+| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-dark](#-mbx-dismissablecard-text-dark)</div>                     | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text](#-mbx-dismissablecard-text)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-card-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Card/css-vars/#-mbx-card-text-dark)</div>                                                   |
 | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color](#-mbx-dismissablecard-x-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                          | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                     |
-| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color-light](#-mbx-dismissablecard-x-color-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color](#-mbx-dismissablecard-x-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-color-light](#-mbx-dismissablecard-text-color-light)</div>                                                                                                      |
-| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color-dark](#-mbx-dismissablecard-x-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color](#-mbx-dismissablecard-x-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-color-dark](#-mbx-dismissablecard-text-color-dark)</div>                                                                                                        |
+| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color-light](#-mbx-dismissablecard-x-color-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color](#-mbx-dismissablecard-x-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-light](#-mbx-dismissablecard-text-light)</div>                                                                                                                  |
+| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color-dark](#-mbx-dismissablecard-x-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color](#-mbx-dismissablecard-x-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-dark](#-mbx-dismissablecard-text-dark)</div>                                                                                                                    |
 | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color-hover](#-mbx-dismissablecard-x-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                          | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                     |
 | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color-hover-light](#-mbx-dismissablecard-x-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color-hover](#-mbx-dismissablecard-x-color-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color-hover-dark](#-mbx-dismissablecard-x-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color-hover](#-mbx-dismissablecard-x-color-hover)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
@@ -74,7 +74,7 @@ DismissableCard background when [dark mode](https://cianciarusocataldo.github.io
 
 <br>
 
-### --mbx-dismissablecard-text-color
+### --mbx-dismissablecard-text
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -82,17 +82,17 @@ DismissableCard background when [dark mode](https://cianciarusocataldo.github.io
 
 <br>
 
-Fallback value for `--mbx-dismissablecard-text-color-light` and `--mbx-dismissablecard-text-color-dark`
+Fallback value for `--mbx-dismissablecard-text-light` and `--mbx-dismissablecard-text-dark`
 
 <br>
 
 <br>
 
-### --mbx-dismissablecard-text-color-light
+### --mbx-dismissablecard-text-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                           |
-| ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-color](#-mbx-dismissablecard-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-card-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Card/css-vars/#-mbx-card-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                               |
+| ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text](#-mbx-dismissablecard-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-card-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Card/css-vars/#-mbx-card-text-light)</div> |
 
 <br>
 
@@ -102,11 +102,11 @@ DismissableCard text color when [dark mode](https://cianciarusocataldo.github.io
 
 <br>
 
-### --mbx-dismissablecard-text-color-dark
+### --mbx-dismissablecard-text-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                         |
-| ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-color](#-mbx-dismissablecard-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-card-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Card/css-vars/#-mbx-card-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                             |
+| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text](#-mbx-dismissablecard-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-card-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Card/css-vars/#-mbx-card-text-dark)</div> |
 
 <br>
 
@@ -132,9 +132,9 @@ Fallback value for `--mbx-dismissablecard-x-color-light` and `--mbx-dismissablec
 
 ### --mbx-dismissablecard-x-color-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                          |
-| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color](#-mbx-dismissablecard-x-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-color-light](#-mbx-dismissablecard-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                              |
+| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color](#-mbx-dismissablecard-x-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-light](#-mbx-dismissablecard-text-light)</div> |
 
 <br>
 
@@ -146,9 +146,9 @@ DismissableCard x icon color when [dark mode](https://cianciarusocataldo.github.
 
 ### --mbx-dismissablecard-x-color-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                        |
-| ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color](#-mbx-dismissablecard-x-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-color-dark](#-mbx-dismissablecard-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                            |
+| ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-x-color](#-mbx-dismissablecard-x-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-dismissablecard-text-dark](#-mbx-dismissablecard-text-dark)</div> |
 
 <br>
 

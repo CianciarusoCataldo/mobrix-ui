@@ -16,21 +16,21 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-password-background](#-mbx-password-background)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                            |
 | <div style='text-align:center;margin:auto;'>[--mbx-password-background-light](#-mbx-password-background-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-password-background](#-mbx-password-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-color-light)</div>             |
 | <div style='text-align:center;margin:auto;'>[--mbx-password-background-dark](#-mbx-password-background-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-password-background](#-mbx-password-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-color-dark)</div>               |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-text-color](#-mbx-password-text-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-light](#-mbx-password-text-color-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-password-text-color](#-mbx-password-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div>                         |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-dark](#-mbx-password-text-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-password-text-color](#-mbx-password-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div>                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-text](#-mbx-password-text)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                            |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-text-light](#-mbx-password-text-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-password-text](#-mbx-password-text)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div>                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-text-dark](#-mbx-password-text-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-password-text](#-mbx-password-text)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div>                                       |
 | <div style='text-align:center;margin:auto;'>[--mbx-password-background-hover](#-mbx-password-background-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                            |
 | <div style='text-align:center;margin:auto;'>[--mbx-password-background-hover-light](#-mbx-password-background-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-password-background-hover](#-mbx-password-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-color-hover-light)</div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-password-background-hover-dark](#-mbx-password-background-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-password-background-hover](#-mbx-password-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-color-hover-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-hover](#-mbx-password-text-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-hover-light](#-mbx-password-text-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-hover](#-mbx-password-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-hover-dark](#-mbx-password-text-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-hover](#-mbx-password-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-dark)</div>               |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-text-hover](#-mbx-password-text-hover)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                            |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-text-hover-light](#-mbx-password-text-hover-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-password-text-hover](#-mbx-password-text-hover)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-hover-light)</div>                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-text-hover-dark](#-mbx-password-text-hover-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-password-text-hover](#-mbx-password-text-hover)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-hover-dark)</div>                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-password-icon](#-mbx-password-icon)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-icon-light](#-mbx-password-icon-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-password-icon](#-mbx-password-icon)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-light](#-mbx-password-text-color-light)</div>                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-icon-dark](#-mbx-password-icon-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-password-icon](#-mbx-password-icon)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-dark](#-mbx-password-text-color-dark)</div>                                                                             |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-icon-light](#-mbx-password-icon-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-password-icon](#-mbx-password-icon)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-password-text-light](#-mbx-password-text-light)</div>                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-icon-dark](#-mbx-password-icon-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-password-icon](#-mbx-password-icon)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-password-text-dark](#-mbx-password-text-dark)</div>                                                                                         |
 | <div style='text-align:center;margin:auto;'>[--mbx-password-icon-hover](#-mbx-password-icon-hover)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-icon-hover-light](#-mbx-password-icon-hover-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-password-icon-hover](#-mbx-password-icon-hover)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-light](#-mbx-password-text-color-light)</div>                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-icon-hover-dark](#-mbx-password-icon-hover-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-password-icon-hover](#-mbx-password-icon-hover)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-dark](#-mbx-password-text-color-dark)</div>                                                                             |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-icon-hover-light](#-mbx-password-icon-hover-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-password-icon-hover](#-mbx-password-icon-hover)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-password-text-light](#-mbx-password-text-light)</div>                                                                                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-icon-hover-dark](#-mbx-password-icon-hover-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-password-icon-hover](#-mbx-password-icon-hover)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-password-text-dark](#-mbx-password-text-dark)</div>                                                                                         |
 
 ## CSS Variables list
 
@@ -80,7 +80,7 @@ Password background when [dark mode](https://cianciarusocataldo.github.io/mobrix
 
 <br>
 
-### --mbx-password-text-color
+### --mbx-password-text
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -88,17 +88,17 @@ Password background when [dark mode](https://cianciarusocataldo.github.io/mobrix
 
 <br>
 
-Fallback value for `mbx-password-text-color-light` and `mbx-password-text-color-dark`
+Fallback value for `mbx-password-text-light` and `mbx-password-text-dark`
 
 <br>
 
 <br>
 
-### --mbx-password-text-color-light
+### --mbx-password-text-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
-| -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-text-color](#-mbx-password-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                  |
+| -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-text](#-mbx-password-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div> |
 
 <br>
 
@@ -108,11 +108,11 @@ Password text color when [dark mode](https://cianciarusocataldo.github.io/mobrix
 
 <br>
 
-### --mbx-password-text-color-dark
+### --mbx-password-text-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
-| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-text-color](#-mbx-password-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-text](#-mbx-password-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div> |
 
 <br>
 
@@ -164,7 +164,7 @@ Password background when [dark mode](https://cianciarusocataldo.github.io/mobrix
 
 <br>
 
-### --mbx-password-text-color-hover
+### --mbx-password-text-hover
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -172,17 +172,17 @@ Password background when [dark mode](https://cianciarusocataldo.github.io/mobrix
 
 <br>
 
-Fallback value for `mbx-password-text-color-hover-light` and `mbx-password-text-color-hover-dark`
+Fallback value for `mbx-password-text-hover-light` and `mbx-password-text-hover-dark`
 
 <br>
 
 <br>
 
-### --mbx-password-text-color-hover-light
+### --mbx-password-text-hover-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-hover](#-mbx-password-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-text-hover](#-mbx-password-text-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-hover-light)</div> |
 
 <br>
 
@@ -192,11 +192,11 @@ Password text color when [dark mode](https://cianciarusocataldo.github.io/mobrix
 
 <br>
 
-### --mbx-password-text-color-hover-dark
+### --mbx-password-text-hover-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                        |
-| -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-hover](#-mbx-password-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-text-hover](#-mbx-password-text-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-hover-dark)</div> |
 
 <br>
 
@@ -222,9 +222,9 @@ Fallback value for `--mbx-password-icon-light` and `--mbx-password-icon-dark`
 
 ### --mbx-password-icon-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                            |
-| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-icon](#-mbx-password-icon)</div> | <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-light](#-mbx-password-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-icon](#-mbx-password-icon)</div> | <div style='text-align:center;margin:auto;'>[--mbx-password-text-light](#-mbx-password-text-light)</div> |
 
 <br>
 
@@ -236,9 +236,9 @@ Password eye icon color when [dark mode](https://cianciarusocataldo.github.io/mo
 
 ### --mbx-password-icon-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                          |
-| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-icon](#-mbx-password-icon)</div> | <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-dark](#-mbx-password-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                              |
+| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-icon](#-mbx-password-icon)</div> | <div style='text-align:center;margin:auto;'>[--mbx-password-text-dark](#-mbx-password-text-dark)</div> |
 
 <br>
 
@@ -264,9 +264,9 @@ Fallback value for `--mbx-password-icon-hover-light` and `--mbx-password-icon-ho
 
 ### --mbx-password-icon-hover-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                            |
-| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-icon-hover](#-mbx-password-icon-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-light](#-mbx-password-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-icon-hover](#-mbx-password-icon-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-password-text-light](#-mbx-password-text-light)</div> |
 
 <br>
 
@@ -278,9 +278,9 @@ Password eye icon color when [dark mode](https://cianciarusocataldo.github.io/mo
 
 ### --mbx-password-icon-hover-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                          |
-| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-password-icon-hover](#-mbx-password-icon-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-password-text-color-dark](#-mbx-password-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                              |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[--mbx-password-icon-hover](#-mbx-password-icon-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-password-text-dark](#-mbx-password-text-dark)</div> |
 
 <br>
 

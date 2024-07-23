@@ -12,17 +12,17 @@
     "fallback": "--mbx-tabviewer-background",
     "description": "TabViewer background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   },
-  "--mbx-tabviewer-text-color": {
-    "description": "Fallback value for `--mbx-tabviewer-text-color-light` and `--mbx-tabviewer-text-color-dark`"
+  "--mbx-tabviewer-text": {
+    "description": "Fallback value for `--mbx-tabviewer-text-light` and `--mbx-tabviewer-text-dark`"
   },
-  "--mbx-tabviewer-text-color-light": {
-    "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-tabviewer-text-color",
+  "--mbx-tabviewer-text-light": {
+    "defaultGlobal": "--mbx-text-light",
+    "fallback": "--mbx-tabviewer-text",
     "description": "TabViewer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'"
   },
-  "--mbx-tabviewer-text-color-dark": {
-    "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-tabviewer-text-color",
+  "--mbx-tabviewer-text-dark": {
+    "defaultGlobal": "--mbx-text-dark",
+    "fallback": "--mbx-tabviewer-text",
     "description": "TabViewer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   },
   "--mbx-tabviewer-inactive-background": {
@@ -38,17 +38,17 @@
     "fallback": "--mbx-tabviewer-inactive-background",
     "description": "TabViewer inactive tab background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   },
-  "--mbx-tabviewer-inactive-text-color": {
-    "description": "Fallback value for `--mbx-tabviewer-inactive-text-color-light` and `--mbx-tabviewer-inactive-text-color-dark`"
+  "--mbx-tabviewer-inactive-text": {
+    "description": "Fallback value for `--mbx-tabviewer-inactive-text-light` and `--mbx-tabviewer-inactive-text-dark`"
   },
-  "--mbx-tabviewer-inactive-text-color-light": {
+  "--mbx-tabviewer-inactive-text-light": {
     "defaultColor": "#c2c2c2",
-    "fallback": "--mbx-tabviewer-inactive-text-color",
+    "fallback": "--mbx-tabviewer-inactive-text",
     "description": "TabViewer inactive tab text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'"
   },
-  "--mbx-tabviewer-inactive-text-color-dark": {
+  "--mbx-tabviewer-inactive-text-dark": {
     "defaultColor": "#c2c2c2",
-    "fallback": "--mbx-tabviewer-inactive-text-color",
+    "fallback": "--mbx-tabviewer-inactive-text",
     "description": "TabViewer inactive tab text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   },
   "--mbx-tabviewer-inactive-background-hover": {
@@ -64,17 +64,17 @@
     "fallback": "--mbx-tabviewer-inactive-background-hover",
     "description": "TabViewer inactive tab background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)"
   },
-  "--mbx-tabviewer-inactive-text-color-hover": {
-    "description": "Fallback value for `--mbx-tabviewer-inactive-text-color-hover-light` and `--mbx-tabviewer-inactive-text-color-hover-dark`"
+  "--mbx-tabviewer-inactive-text-hover": {
+    "description": "Fallback value for `--mbx-tabviewer-inactive-text-hover-light` and `--mbx-tabviewer-inactive-text-hover-dark`"
   },
-  "--mbx-tabviewer-inactive-text-color-hover-light": {
-    "defaultGlobal": "--mbx-text-color-hover-light",
-    "fallback": "--mbx-tabviewer-inactive-text-color-hover",
+  "--mbx-tabviewer-inactive-text-hover-light": {
+    "defaultGlobal": "--mbx-text-hover-light",
+    "fallback": "--mbx-tabviewer-inactive-text-hover",
     "description": "TabViewer inactive tab text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)"
   },
-  "--mbx-tabviewer-inactive-text-color-hover-dark": {
-    "defaultGlobal": "--mbx-text-color-hover-dark",
-    "fallback": "--mbx-tabviewer-inactive-text-color-hover",
+  "--mbx-tabviewer-inactive-text-hover-dark": {
+    "defaultGlobal": "--mbx-text-hover-dark",
+    "fallback": "--mbx-tabviewer-inactive-text-hover",
     "description": "TabViewer inactive tab text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)"
   }
 }

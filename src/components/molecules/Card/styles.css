@@ -10,16 +10,16 @@
       linear-gradient(to right, #fff, #ededee, #e6e7e7)
     )
   );
-  --mbx-txt-l: var(--mbx-card-text-color-light, var(--mbx-card-text-color));
+  --mbx-txt-l: var(--mbx-card-text-light, var(--mbx-card-text));
   --mbx-bg-d: var(
     --mbx-card-background-dark,
     var(--mbx-card-background, linear-gradient(to right, #2d3748, #1d232e))
   );
   --mbx-txt-d: var(
-    --mbx-card-text-color-dark,
-    var(--mbx-card-text-color, var(--mbx-c-txt))
+    --mbx-card-text-dark,
+    var(--mbx-card-text, var(--mbx-c-txt))
   );
-  --mbx-container-text-color: var(--mbx-txt);
+  --mbx-container-text: var(--mbx-txt);
 }
 
 [data-mbx-id*="card"] > [data-mbx-id*="cont"] {

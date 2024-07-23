@@ -1,8 +1,8 @@
 [data-mbx-id="form"] {
   --mbx-bg-l: var(--mbx-form-background-light, var(--mbx-form-background));
-  --mbx-txt-l: var(--mbx-form-text-color-light, var(--mbx-form-text-color));
+  --mbx-txt-l: var(--mbx-form-text-light, var(--mbx-form-text));
   --mbx-bg-d: var(--mbx-form-background-dark, var(--mbx-form-background));
-  --mbx-txt-d: var(--mbx-form-text-color-dark, var(--mbx-form-text-color));
+  --mbx-txt-d: var(--mbx-form-text-dark, var(--mbx-form-text));
   padding: 0.75rem;
   border-radius: 0.7rem;
   display: flex;
@@ -20,13 +20,13 @@
     --mbx-form-formfield-background-dark,
     var(--mbx-form-formfield-background)
   );
-  --mbx-formfield-text-color-light: var(
-    --mbx-form-formfield-text-color-light,
-    var(--mbx-form-formfield-text-color, var(--mbx-dttxt))
+  --mbx-formfield-text-light: var(
+    --mbx-form-formfield-text-light,
+    var(--mbx-form-formfield-text, var(--mbx-dttxt))
   );
-  --mbx-formfield-text-color-dark: var(
-    --mbx-form-formfield-text-color-dark,
-    var(--mbx-form-formfield-text-color, var(--mbx-dttxt))
+  --mbx-formfield-text-dark: var(
+    --mbx-form-formfield-text-dark,
+    var(--mbx-form-formfield-text, var(--mbx-dttxt))
   );
   --mbx-formfield-background-hover-light: var(
     --mbx-form-formfield-background-hover-light,
@@ -36,13 +36,13 @@
     --mbx-form-formfield-background-hover-dark,
     var(--mbx-form-formfield-background-hover)
   );
-  --mbx-formfield-text-color-hover-light: var(
-    --mbx-form-formfield-text-color-hover-light,
-    var(--mbx-form-formfield-text-color-hover)
+  --mbx-formfield-text-hover-light: var(
+    --mbx-form-formfield-text-hover-light,
+    var(--mbx-form-formfield-text-hover)
   );
-  --mbx-formfield-text-color-hover-dark: var(
-    --mbx-form-formfield-text-color-hover-dark,
-    var(--mbx-form-formfield-text-color-hover)
+  --mbx-formfield-text-hover-dark: var(
+    --mbx-form-formfield-text-hover-dark,
+    var(--mbx-form-formfield-text-hover)
   );
   margin: 0.7rem 0;
 }
@@ -51,7 +51,7 @@
   margin-bottom: 0.9rem;
   font-size: 1.35rem;
   line-height: 1.75rem;
-  --mbx-label-text-color: var(--mbx-dttxt);
+  --mbx-label-text: var(--mbx-dttxt);
 }
 
 [data-mbx-id="form"] > [data-mbx-sbt] {
@@ -60,18 +60,18 @@
     --mbx-form-submit-background-light,
     var(--mbx-form-submit-background)
   );
-  --mbx-button-text-color-light: var(
-    --mbx-form-submit-text-color-light,
-    var(--mbx-form-submit-text-color)
+  --mbx-button-text-light: var(
+    --mbx-form-submit-text-light,
+    var(--mbx-form-submit-text)
   );
 
   --mbx-button-background-dark: var(
     --mbx-form-submit-background-dark,
     var(--mbx-form-submit-background)
   );
-  --mbx-button-text-color-dark: var(
-    --mbx-form-submit-text-color-dark,
-    var(--mbx-form-submit-text-color)
+  --mbx-button-text-dark: var(
+    --mbx-form-submit-text-dark,
+    var(--mbx-form-submit-text)
   );
 }
 

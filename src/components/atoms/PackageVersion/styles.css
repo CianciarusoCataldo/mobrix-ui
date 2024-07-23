@@ -1,10 +1,10 @@
 [data-mbx-id="pkgv-label"] {
   --mbx-txt-light: var(
-    --mbx-packageversion-text-color-light,
-    var(--mbx-packageversion-text-color)
+    --mbx-packageversion-text-light,
+    var(--mbx-packageversion-text)
   );
   --mbx-txt-d: var(
-    --mbx-packageversion-text-color-dark,
-    var(--mbx-packageversion-text-color)
+    --mbx-packageversion-text-dark,
+    var(--mbx-packageversion-text)
   );
 }

@@ -1,9 +1,9 @@
 [data-mbx-id="rev"] {
   padding: 0.6rem;
   --mbx-bg-l: var(--mbx-review-background-light, var(--mbx-review-background));
-  --mbx-txt-l: var(--mbx-review-text-color-light, var(--mbx-review-text-color));
+  --mbx-txt-l: var(--mbx-review-text-light, var(--mbx-review-text));
   --mbx-bg-d: var(--mbx-review-background-dark, var(--mbx-review-background));
-  --mbx-txt-d: var(--mbx-review-text-color-dark, var(--mbx-review-text-color));
+  --mbx-txt-d: var(--mbx-review-text-dark, var(--mbx-review-text));
   border-radius: 3px;
   display: flex;
   flex-direction: column;

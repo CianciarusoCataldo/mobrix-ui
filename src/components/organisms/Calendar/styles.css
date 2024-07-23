@@ -4,16 +4,16 @@
     var(--mbx-calendar-background, var(--mbx-c-bg-l))
   );
   --mbx-cal-txt-l: var(
-    --mbx-calendar-text-color-light,
-    var(--mbx-calendar-text-color, var(--mbx-c-txt-l))
+    --mbx-calendar-text-light,
+    var(--mbx-calendar-text, var(--mbx-c-txt-l))
   );
   --mbx-cal-bg-d: var(
     --mbx-calendar-background-dark,
     var(--mbx-calendar-background, var(--mbx-c-bg-d))
   );
   --mbx-cal-txt-d: var(
-    --mbx-calendar-text-color-dark,
-    var(--mbx-calendar-text-color, var(--mbx-c-txt-d))
+    --mbx-calendar-text-dark,
+    var(--mbx-calendar-text, var(--mbx-c-txt-d))
   );
   --mbx-cal-bg: var(--mbx-cal-bg-l);
   --mbx-cal-txt: var(--mbx-cal-txt-l);
@@ -22,23 +22,23 @@
     var(--mbx-calendar-selected-background, var(--mbx-cal-bg-d))
   );
   --mbx-cal-txt-s: var(
-    --mbx-calendar-selected-text-color-light,
-    var(--mbx-calendar-selected-text-color, var(--mbx-cal-txt-d))
+    --mbx-calendar-selected-text-light,
+    var(--mbx-calendar-selected-text, var(--mbx-cal-txt-d))
   );
   --mbx-cal-bg-h: var(
     --mbx-calendar-background-hover-light,
     var(--mbx-calendar-background-hover, var(--mbx-cal-bg-s))
   );
   --mbx-cal-txt-h: var(
-    --mbx-calendar-text-color-hover-light,
-    var(--mbx-calendar-text-color-hover, var(--mbx-cal-txt-s))
+    --mbx-calendar-text-hover-light,
+    var(--mbx-calendar-text-hover, var(--mbx-cal-txt-s))
   );
   --mbx-cal-t: var(
     --mbx-calendar-today-color-light,
     var(--mbx-calendar-today-color, red)
   );
   --mbx-table-background: var(--mbx-cal-bg);
-  --mbx-table-text-color: var(--mbx-cal-txt);
+  --mbx-table-text: var(--mbx-cal-txt);
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -53,16 +53,16 @@
     var(--mbx-calendar-selected-background, var(--mbx-cal-bg-l))
   );
   --mbx-cal-txt-s: var(
-    --mbx-calendar-selected-text-color-dark,
-    var(--mbx-calendar-selected-text-color, var(--mbx-cal-txt-l))
+    --mbx-calendar-selected-text-dark,
+    var(--mbx-calendar-selected-text, var(--mbx-cal-txt-l))
   );
   --mbx-cal-bg-h: var(
     --mbx-calendar-background-hover-dark,
     var(--mbx-calendar-background-hover, var(--mbx-cal-bg-s))
   );
   --mbx-cal-txt-h: var(
-    --mbx-calendar-text-color-hover-dark,
-    var(--mbx-calendar-text-color-hover, var(--mbx-cal-txt-s))
+    --mbx-calendar-text-hover-dark,
+    var(--mbx-calendar-text-hover, var(--mbx-cal-txt-s))
   );
   --mbx-cal-t: var(
     --mbx-calendar-today-color-dark,

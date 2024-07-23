@@ -14,16 +14,16 @@
     --mbx-popup-background-light,
     var(--mbx-popup-background)
   );
-  --mbx-container-text-color-light: var(
-    --mbx-popup-text-color-light,
-    var(--mbx-popup-text-color)
+  --mbx-container-text-light: var(
+    --mbx-popup-text-light,
+    var(--mbx-popup-text)
   );
   --mbx-container-background-dark: var(
     --mbx-popup-background-dark,
     var(--mbx-popup-background)
   );
-  --mbx-container-text-color-dark: var(
-    --mbx-popup-text-color-dark,
-    var(--mbx-popup-text-color)
+  --mbx-container-text-dark: var(
+    --mbx-popup-text-dark,
+    var(--mbx-popup-text)
   );
 }

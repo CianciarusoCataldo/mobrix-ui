@@ -12,18 +12,18 @@
     "fallback": "--mbx-inputbox-background",
     "defaultGlobal": "--mbx-background-color-dark"
   },
-  "--mbx-inputbox-text-color": {
-    "description": "Fallback value for `mbx-inputbox-text-color-light` and `mbx-inputbox-text-color-dark`"
+  "--mbx-inputbox-text": {
+    "description": "Fallback value for `mbx-inputbox-text-light` and `mbx-inputbox-text-dark`"
   },
-  "--mbx-inputbox-text-color-light": {
+  "--mbx-inputbox-text-light": {
     "description": "Input text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
-    "fallback": "--mbx-inputbox-text-color",
-    "defaultGlobal": "--mbx-text-color-light"
+    "fallback": "--mbx-inputbox-text",
+    "defaultGlobal": "--mbx-text-light"
   },
-  "--mbx-inputbox-text-color-dark": {
+  "--mbx-inputbox-text-dark": {
     "description": "Input text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
-    "fallback": "--mbx-inputbox-text-color",
-    "defaultGlobal": "--mbx-text-color-dark"
+    "fallback": "--mbx-inputbox-text",
+    "defaultGlobal": "--mbx-text-dark"
   },
   "--mbx-inputbox-background-hover": {
     "description": "Fallback value for `mbx-inputbox-background-hover-light` and `mbx-inputbox-background-hover-dark`"
@@ -38,17 +38,17 @@
     "fallback": "--mbx-inputbox-background-hover",
     "defaultGlobal": "--mbx-background-color-hover-dark"
   },
-  "--mbx-inputbox-text-color-hover": {
-    "description": "Fallback value for `mbx-inputbox-text-color-hover-light` and `mbx-inputbox-text-color-hover-dark`"
+  "--mbx-inputbox-text-hover": {
+    "description": "Fallback value for `mbx-inputbox-text-hover-light` and `mbx-inputbox-text-hover-dark`"
   },
-  "--mbx-inputbox-text-color-hover-light": {
+  "--mbx-inputbox-text-hover-light": {
     "description": "Input text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
-    "defaultGlobal": "--mbx-text-color-hover-light",
-    "fallback": "--mbx-inputbox-text-color-hover"
+    "defaultGlobal": "--mbx-text-hover-light",
+    "fallback": "--mbx-inputbox-text-hover"
   },
-  "--mbx-inputbox-text-color-hover-dark": {
+  "--mbx-inputbox-text-hover-dark": {
     "description": "Input text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
-    "defaultGlobal": "--mbx-text-color-hover-dark",
-    "fallback": "--mbx-inputbox-text-color-hover"
+    "defaultGlobal": "--mbx-text-hover-dark",
+    "fallback": "--mbx-inputbox-text-hover"
   }
 }

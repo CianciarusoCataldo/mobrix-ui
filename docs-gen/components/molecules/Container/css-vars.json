@@ -12,17 +12,17 @@
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-container-background"
   },
-  "--mbx-container-text-color": {
-    "description": "Fallback value for `--mbx-container-text-color-light` and `--mbx-container-text-color-dark`"
+  "--mbx-container-text": {
+    "description": "Fallback value for `--mbx-container-text-light` and `--mbx-container-text-dark`"
   },
-  "--mbx-container-text-color-light": {
+  "--mbx-container-text-light": {
     "description": "Container text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
-    "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-container-text-color"
+    "defaultGlobal": "--mbx-text-light",
+    "fallback": "--mbx-container-text"
   },
-  "--mbx-container-text-color-dark": {
+  "--mbx-container-text-dark": {
     "description": "Container text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
-    "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-container-text-color"
+    "defaultGlobal": "--mbx-text-dark",
+    "fallback": "--mbx-container-text"
   }
 }

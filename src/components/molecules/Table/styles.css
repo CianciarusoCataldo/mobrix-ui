@@ -1,9 +1,9 @@
 [data-mbx-id="tbl"] {
   table-layout: fixed;
   --mbx-bg-l: var(--mbx-table-background-light, var(--mbx-table-background));
-  --mbx-txt-l: var(--mbx-table-text-color-light, var(--mbx-table-text-color));
+  --mbx-txt-l: var(--mbx-table-text-light, var(--mbx-table-text));
   --mbx-bg-d: var(--mbx-table-background-dark, var(--mbx-table-background));
-  --mbx-txt-d: var(--mbx-table-text-color-dark, var(--mbx-table-text-color));
+  --mbx-txt-d: var(--mbx-table-text-dark, var(--mbx-table-text));
   --mbx-tbl-bord: var(
     --mbx-table-border-color-light,
     var(--mbx-table-border-color, darkslategrey)
@@ -16,8 +16,8 @@
     )
   );
   --mbx-tblh-txt: var(
-    --mbx-table-header-text-color-light,
-    var(--mbx-table-header-text-color, whitesmoke)
+    --mbx-table-header-text-light,
+    var(--mbx-table-header-text, whitesmoke)
   );
 }
 
@@ -30,8 +30,8 @@
     )
   );
   --mbx-tblh-txt: var(
-    --mbx-table-header-text-color-dark,
-    var(--mbx-table-header-text-color, rgb(255, 255, 255))
+    --mbx-table-header-text-dark,
+    var(--mbx-table-header-text, rgb(255, 255, 255))
   );
   --mbx-tbl-bord: var(
     --mbx-table-border-color-dark,

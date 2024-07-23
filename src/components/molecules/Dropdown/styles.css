@@ -7,8 +7,8 @@
     var(--mbx-dropdown-background)
   );
   --mbx-dd-txt: var(
-    --mbx-dropdown-text-color-light,
-    var(--mbx-dropdown-text-color)
+    --mbx-dropdown-text-light,
+    var(--mbx-dropdown-text)
   );
   background: var(--mbx-dd-bg, var(--mbx-c-bg));
   color: var(--mbx-dd-txt, var(--mbx-c-txt));
@@ -17,8 +17,8 @@
 
 [data-mbx-id="dd"][data-mbx-dk] {
   --mbx-dd-txt: var(
-    --mbx-dropdown-text-color-dark,
-    var(--mbx-dropdown-text-color)
+    --mbx-dropdown-text-dark,
+    var(--mbx-dropdown-text)
   );
   --mbx-dd-bg: var(
     --mbx-dropdown-background-dark,
@@ -41,7 +41,7 @@
   flex-direction: column;
   width: 100%;
   --mbx-align: center;
-  --mbx-popup-text-color: var(--mbx-dd-txt);
+  --mbx-popup-text: var(--mbx-dd-txt);
   --mbx-popup-background: var(--mbx-dd-bg);
 }
 
@@ -115,8 +115,8 @@
     var(--mbx-dropdown-background-hover, var(--mbx-c-bg-h))
   );
   --mbx-dd-txt-h: var(
-    --mbx-dropdown-text-color-hover-light,
-    var(--mbx-dropdown-text-color-hover, var(--mbx-c-txt-h))
+    --mbx-dropdown-text-hover-light,
+    var(--mbx-dropdown-text-hover, var(--mbx-c-txt-h))
   );
 }
 
@@ -126,8 +126,8 @@
     var(--mbx-dropdown-background-hover, var(--mbx-c-bg-h))
   );
   --mbx-dd-txt-h: var(
-    --mbx-dropdown-text-color-hover-dark,
-    var(--mbx-dropdown-text-color-hover, var(--mbx-c-txt-h))
+    --mbx-dropdown-text-hover-dark,
+    var(--mbx-dropdown-text-hover, var(--mbx-c-txt-h))
   );
 }
 
@@ -135,8 +135,8 @@
   > [data-mbx-id="pp"]
   > [data-mbx-id="cont"]
   > [data-mbx-id="btn"] {
-  --mbx-button-text-color: var(--mbx-dd-txt);
-  --mbx-button-text-color-hover: var(--mbx-dd-txt-h);
+  --mbx-button-text: var(--mbx-dd-txt);
+  --mbx-button-text-hover: var(--mbx-dd-txt-h);
   --mbx-button-background-hover: var(--mbx-dd-bg-h);
   --mbx-button-background: transparent;
   padding: 0.25rem;

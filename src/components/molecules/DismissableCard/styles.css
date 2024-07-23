@@ -9,18 +9,18 @@
     var(--mbx-dismissablecard-background)
   );
   --mbx-crd-txt: var(
-    --mbx-dismissablecard-text-color-light,
-    var(--mbx-dismissablecard-text-color)
+    --mbx-dismissablecard-text-light,
+    var(--mbx-dismissablecard-text)
   );
-  --mbx-card-text-color: var(--mbx-crd-txt);
+  --mbx-card-text: var(--mbx-crd-txt);
   background: var(--mbx-bg);
   color: var(--mbx-txt);
 }
 
 [data-mbx-id="dis-card"][data-mbx-dk] {
   --mbx-crd-txt: var(
-    --mbx-dismissablecard-text-color-dark,
-    var(--mbx-dismissablecard-text-color)
+    --mbx-dismissablecard-text-dark,
+    var(--mbx-dismissablecard-text)
   );
 }
 

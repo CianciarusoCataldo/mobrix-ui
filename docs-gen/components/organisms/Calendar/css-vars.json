@@ -12,17 +12,17 @@
     "fallback": "--mbx-calendar-background",
     "description": "Calendar background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   },
-  "--mbx-calendar-text-color": {
-    "description": "Fallback value for `--mbx-calendar-text-color-light` and `--mbx-calendar-text-color-dark`"
+  "--mbx-calendar-text": {
+    "description": "Fallback value for `--mbx-calendar-text-light` and `--mbx-calendar-text-dark`"
   },
-  "--mbx-calendar-text-color-light": {
-    "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-calendar-text-color",
+  "--mbx-calendar-text-light": {
+    "defaultGlobal": "--mbx-text-light",
+    "fallback": "--mbx-calendar-text",
     "description": "Calendar text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'"
   },
-  "--mbx-calendar-text-color-dark": {
-    "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-calendar-text-color",
+  "--mbx-calendar-text-dark": {
+    "defaultGlobal": "--mbx-text-dark",
+    "fallback": "--mbx-calendar-text",
     "description": "Calendar text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   },
   "--mbx-calendar-selected-background": {
@@ -38,17 +38,17 @@
     "defaultInternal": "--mbx-calendar-background-light",
     "description": "Calendar selected cell background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   },
-  "--mbx-calendar-selected-text-color": {
-    "description": "Fallback value for `--mbx-calendar-selected-text-color-light` and `--mbx-calendar-selected-text-color-dark`"
+  "--mbx-calendar-selected-text": {
+    "description": "Fallback value for `--mbx-calendar-selected-text-light` and `--mbx-calendar-selected-text-dark`"
   },
-  "--mbx-calendar-selected-text-color-light": {
-    "fallback": "--mbx-calendar-selected-text-color",
-    "defaultInternal": "--mbx-calendar-text-color-dark",
+  "--mbx-calendar-selected-text-light": {
+    "fallback": "--mbx-calendar-selected-text",
+    "defaultInternal": "--mbx-calendar-text-dark",
     "description": "Calendar selected cell text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'"
   },
-  "--mbx-calendar-selected-text-color-dark": {
-    "fallback": "--mbx-calendar-selected-text-color",
-    "defaultInternal": "--mbx-calendar-text-color-light",
+  "--mbx-calendar-selected-text-dark": {
+    "fallback": "--mbx-calendar-selected-text",
+    "defaultInternal": "--mbx-calendar-text-light",
     "description": "Calendar selected cell text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   },
   "--mbx-calendar-background-hover": {
@@ -64,17 +64,17 @@
     "defaultInternal": "--mbx-calendar-selected-background-dark",
     "description": "Calendar background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)"
   },
-  "--mbx-calendar-text-color-hover": {
-    "description": "Fallback value for `--mbx-calendar-text-color-hover-light` and `--mbx-calendar-text-color-hover-dark`"
+  "--mbx-calendar-text-hover": {
+    "description": "Fallback value for `--mbx-calendar-text-hover-light` and `--mbx-calendar-text-hover-dark`"
   },
-  "--mbx-calendar-text-color-hover-light": {
-    "fallback": "--mbx-calendar-text-color-hover",
-    "defaultInternal": "--mbx-calendar-selected-text-color-light",
+  "--mbx-calendar-text-hover-light": {
+    "fallback": "--mbx-calendar-text-hover",
+    "defaultInternal": "--mbx-calendar-selected-text-light",
     "description": "Calendar text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)"
   },
-  "--mbx-calendar-text-color-hover-dark": {
-    "fallback": "--mbx-calendar-text-color-hover",
-    "defaultInternal": "--mbx-calendar-selected-text-color-dark",
+  "--mbx-calendar-text-hover-dark": {
+    "fallback": "--mbx-calendar-text-hover",
+    "defaultInternal": "--mbx-calendar-selected-text-dark",
     "description": "Calendar text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)"
   },
   "--mbx-calendar-arrow": {
@@ -82,24 +82,24 @@
   },
   "--mbx-calendar-arrow-light": {
     "fallback": "--mbx-calendar-arrow",
-    "defaultInternal": "--mbx-calendar-text-color-light",
+    "defaultInternal": "--mbx-calendar-text-light",
     "description": "Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'"
   },
   "--mbx-calendar-arrow-dark": {
     "fallback": "--mbx-calendar-arrow",
-    "defaultInternal": "--mbx-calendar-text-color-dark",
+    "defaultInternal": "--mbx-calendar-text-dark",
     "description": "Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   },
   "--mbx-calendar-arrow-hover": {
     "description": "Fallback value for `--mbx-calendar-arrow-hover-light` and `--mbx-calendar-arrow-hover-dark`"
   },
   "--mbx-calendar-arrow-hover-light": {
-    "defaultGlobal": "--mbx-text-color-light",
+    "defaultGlobal": "--mbx-text-light",
     "fallback": "--mbx-calendar-arrow-hover",
     "description": "Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)"
   },
   "--mbx-calendar-arrow-hover-dark": {
-    "defaultGlobal": "--mbx-text-color-dark",
+    "defaultGlobal": "--mbx-text-dark",
     "fallback": "--mbx-calendar-arrow-hover",
     "description": "Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)"
   },

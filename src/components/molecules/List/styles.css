@@ -21,19 +21,19 @@
 
 [data-mbx-id="list"] > [data-mbx-id="cont"] {
   --mbx-txt-l: var(
-    --mbx-list-text-color-light,
-    var(--mbx-list-text-color, var(--mbx-c-txt))
+    --mbx-list-text-light,
+    var(--mbx-list-text, var(--mbx-c-txt))
   );
   --mbx-txt-h-d: var(
-    --mbx-list-text-color-hover-dark,
-    var(--mbx-list-text-color-hover)
+    --mbx-list-text-hover-dark,
+    var(--mbx-list-text-hover)
   );
   --mbx-h-l: var(
-    --mbx-list-text-color-hover-light,
-    var(--mbx-list-text-color-hover, var(--mbx-lst-txt))
+    --mbx-list-text-hover-light,
+    var(--mbx-list-text-hover, var(--mbx-lst-txt))
   );
   --mbx-txt-d: var(
-    --mbx-list-text-color-dark,
-    var(--mbx-list-text-color, var(--mbx-c-txt))
+    --mbx-list-text-dark,
+    var(--mbx-list-text, var(--mbx-c-txt))
   );
 }
