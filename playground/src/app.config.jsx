@@ -15,6 +15,7 @@ const drawerPlugin = createMoBrixDesignerPlugin("custom-drawer", () => ({
 
 const appConfig = {
   plugins: [pageRouterPlugin, drawerPlugin],
+  preloader: () => <div className="preloader" />,
   pageRouter: {
     render: (route) => React.lazy(() => import(`./pages/${route}`)),
   },
