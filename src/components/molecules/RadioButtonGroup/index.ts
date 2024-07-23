@@ -61,11 +61,13 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
     name: "rgr",
     defaultValue: -1,
     inputValue,
-    cssBg: ["radg-bg"],
+    features: {
+      wBgCl: true,
+    },
     styles: {
       flexDirection: horizontal ? "row" : "column",
     },
-    addProps: { ...(horizontal && { "data-mbx-rdgh": "" }) },
+    addProps: { "data-mbx-rgh": horizontal },
     mbxProps: { ...mbxProps, active: false },
     Component: ({ value, setValue }) =>
       component({

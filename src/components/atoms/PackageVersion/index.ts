@@ -59,6 +59,7 @@ const PackageVersion: PackageVersionComponent = ({
     features: {
       colFc: true,
       noShFc: true,
+      wCl: true,
     },
     mbxProps,
   }));

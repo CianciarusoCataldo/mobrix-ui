@@ -1,52 +1,34 @@
 [data-mbx-id="inp"] {
-  --mbx-inp-bg: var(
+  --mbx-bg-l: var(
     --mbx-inputbox-background-light,
     var(--mbx-inputbox-background)
   );
-  --mbx-inp-txt: var(
+  --mbx-txt-l: var(
     --mbx-inputbox-text-color-light,
     var(--mbx-inputbox-text-color)
   );
-  background-color: var(--mbx-inp-bg, var(--mbx-c-bgc));
-  color: var(--mbx-inp-txt, var(--mbx-c-txt));
-}
-
-[data-mbx-id="inp"][data-mbx-dk] {
-  --mbx-inp-bg: var(
+  --mbx-bg-d: var(
     --mbx-inputbox-background-dark,
     var(--mbx-inputbox-background)
   );
-  --mbx-inp-txt: var(
+  --mbx-txt-d: var(
     --mbx-inputbox-text-color-dark,
     var(--mbx-inputbox-text-color)
   );
-}
-
-[data-mbx-id="inp"][data-mbx-hv] {
-  --mbx-inp-bg-h: var(
+  --mbx-bg-h-l: var(
     --mbx-inputbox-background-hover-light,
     var(--mbx-inputbox-background-hover, var(--mbx-c-bgc-h))
   );
-  --mbx-inp-txt-h: var(
+  --mbx-txt-h-l: var(
     --mbx-inputbox-text-color-hover-light,
     var(--mbx-inputbox-text-color-hover, var(--mbx-c-txt-h))
   );
-}
-
-[data-mbx-id="inp"][data-mbx-dk][data-mbx-hv] {
-  --mbx-inp-bg-h: var(
+  --mbx-bg-h-d: var(
     --mbx-inputbox-background-hover-dark,
     var(--mbx-inputbox-background-hover, var(--mbx-c-bgc-h))
   );
-  --mbx-inp-txt-h: var(
+  --mbx-txt-h-d: var(
     --mbx-inputbox-text-color-hover-dark,
     var(--mbx-inputbox-text-color-hover, var(--mbx-c-txt-h))
   );
-}
-
-@media (hover) {
-  [data-mbx-id="inp"]:hover {
-    background-color: var(--mbx-inp-bg-h, var(--mbx-inp-bg, var(--mbx-c-bgc)));
-    color: var(--mbx-inp-txt-h, var(--mbx-inp-txt, var(--mbx-c-txt)));
-  }
 }

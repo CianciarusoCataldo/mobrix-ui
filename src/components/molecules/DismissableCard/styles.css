@@ -4,7 +4,6 @@
     --mbx-dismissablecard-background-light,
     var(--mbx-dismissablecard-background)
   );
-
   --mbx-card-background-dark: var(
     --mbx-dismissablecard-background-dark,
     var(--mbx-dismissablecard-background)
@@ -14,6 +13,8 @@
     var(--mbx-dismissablecard-text-color)
   );
   --mbx-card-text-color: var(--mbx-crd-txt);
+  background: var(--mbx-bg);
+  color: var(--mbx-txt);
 }
 
 [data-mbx-id="dis-card"][data-mbx-dk] {

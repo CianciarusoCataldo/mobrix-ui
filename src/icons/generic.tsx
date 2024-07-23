@@ -137,8 +137,8 @@ export const CalendarIcon: MbxIcon = ({
   </BasicIcon>
 );
 
-export const CheckIcon: MbxIcon = ({ fill = "inherit", ...iprops }) => (
-  <BasicIcon props={{ fill, ...iprops }}>
+export const CheckIcon: MbxIcon = (iprops) => (
+  <BasicIcon props={iprops}>
     {(props) => (
       <svg
         version="1.0"
@@ -165,12 +165,8 @@ export const CheckIcon: MbxIcon = ({ fill = "inherit", ...iprops }) => (
   </BasicIcon>
 );
 
-export const CopyIcon: MbxIcon = ({
-  width = "25px",
-  height = "25px",
-  ...iprops
-}) => (
-  <BasicIcon props={{ height, width, ...iprops }}>
+export const CopyIcon: MbxIcon = (iprops) => (
+  <BasicIcon props={{ height: "25px", width: "25px", ...iprops }}>
     {(props) => (
       <svg
         xmlns="http://www.w3.org/2000/svg"

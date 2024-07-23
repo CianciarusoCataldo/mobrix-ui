@@ -57,8 +57,8 @@ const Input: InputComponent = ({
     wrapper: "input",
     features: {
       opHov: true,
+      wAllc: true,
     },
-    cssBg: ["inp-bg", "inp-bg-h"],
     styles: {
       ...(autoresizable && { width: "fit-content" }),
     },

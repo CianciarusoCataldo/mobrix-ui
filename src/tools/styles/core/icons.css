@@ -1,13 +1,15 @@
 [data-mbx-img] {
+  --mbx-def-ic: var(--mbx-c-txt);
+  --mbx-def-ich: var(--mbx-c-txt-h);
   --mbx-icc: var(--mbx-icon-light, var(--mbx-icon));
-  --mbx-ic-c: var(--mbx-icc, var(--mbx-c-txt));
+  --mbx-ic-c: var(--mbx-icc, var(--mbx-def-ic));
   --mbx-ic-ch: var(--mbx-icon-hover-light, var(--mbx-icon-hover));
   --mbx-ic-op: 1;
   opacity: var(--mbx-ic-op);
 }
 
 [data-mbx-id][data-mbx-dk] > [data-mbx-img] {
-  --mbx-icc: var(--mbx-icon-dark, var(--mbx-icon, var(--mbx-c-txt)));
+  --mbx-icc: var(--mbx-icon-dark, var(--mbx-icon));
   --mbx-ic-ch: var(--mbx-icon-hover-dark, var(--mbx-icon-hover));
 }
 
@@ -33,6 +35,6 @@
 
 @media (hover: hover) {
   [data-mbx-id][data-mbx-hv]:hover > [data-mbx-img] {
-    --mbx-ic-c: var(--mbx-ic-h, var(--mbx-icc, var(--mbx-c-txt)));
+    --mbx-ic-c: var(--mbx-ic-h, var(--mbx-icc, var(--mbx-def-ich)));
   }
 }

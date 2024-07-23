@@ -65,14 +65,13 @@ const Calendar: CalendarComponent = ({
 
   return buildMbxReactive<DeepPartial<CalendarDate>>(props, (mbxProps) => ({
     name: "cal",
-    mbxProps: { ...mbxProps, shadow: false },
+    mbxProps: { ...mbxProps, shadow: false, active: false },
     inputValue,
     defaultValue: {
       year: tday.year,
       month: tday.month,
       day: tday.dayOfTheMonth,
     },
-    cssBg: ["cal-bg"],
     Component: ({ value, setValue }) =>
       component({
         today: tday,

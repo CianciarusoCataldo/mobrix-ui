@@ -48,7 +48,6 @@ const Divider: DividerComponent = ({ unstyled, size = "2px", ...props }) =>
       styles: {
         height: size,
       },
-      cssBg: ["dvd-bg"],
       mbxProps,
     }),
   );

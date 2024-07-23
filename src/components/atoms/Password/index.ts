@@ -13,7 +13,7 @@ import { PasswordComponent } from "../../../types/components/atoms/psw";
  * @param {string} placeholder label showed when no value is set - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input Input}
  * @param {boolean} readOnly if true, component value can only be set with `value` parameter - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input Input}
  * @param {(newValue: string) => void} onChange Callback triggered when Input component input value is changed by the user - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input Input}
- * @param {boolean} show Show/hide the password (the same effect when the eye icon is clicked)
+ * @param {boolean} show Show/hide the password
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode
@@ -50,11 +50,11 @@ const Psw: PasswordComponent = ({ active = true, value, ...props }) =>
   buildMbxReactive<string | undefined>(props, (mbxProps) => ({
     name: "psw",
     inputValue: value,
+    features: { wBg: true },
     defaultValue: "",
     Component: ({ value, setValue }) =>
       PswC({ ...props, ...mbxProps, value, setValue, active }),
     mbxProps,
-    cssBg: ["psw-bg"],
   }));
 
 export default Psw;

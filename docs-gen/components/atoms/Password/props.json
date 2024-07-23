@@ -23,7 +23,7 @@
   },
   "show": {
     "type": "boolean",
-    "description": "Show/hide the password (the same effect when the eye icon is clicked)",
+    "description": "Show/hide the password",
     "default": "false"
   }
 }

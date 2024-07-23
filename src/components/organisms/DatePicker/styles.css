@@ -1,11 +1,19 @@
 [data-mbx-id="dpick"] {
-  --mbx-dtp-bg: var(
+  --mbx-bg-l: var(
     --mbx-datepicker-background-light,
-    var(--mbx-datepicker-background, var(--mbx-c-bg))
+    var(--mbx-datepicker-background)
   );
-  --mbx-dtp-txt: var(
+  --mbx-txt-l: var(
     --mbx-datepicker-text-color-light,
-    var(--mbx-datepicker-text-color, var(--mbx-c-txt))
+    var(--mbx-datepicker-text-color)
+  );
+  --mbx-bg-d: var(
+    --mbx-datepicker-background-dark,
+    var(--mbx-datepicker-background)
+  );
+  --mbx-txt-d: var(
+    --mbx-datepicker-text-color-dark,
+    var(--mbx-datepicker-text-color)
   );
   --mbx-calendar-background-light: var(
     --mbx-datepicker-calendar-background-light,
@@ -108,19 +116,7 @@
   width: max-content;
   display: flex;
   flex-direction: row;
-  background: var(--mbx-dtp-bg);
-  color: var(--mbx-dtp-txt);
-}
-
-[data-mbx-id="dpick"][data-mbx-dk] {
-  --mbx-dtp-bg: var(
-    --mbx-datepicker-background-dark,
-    var(--mbx-datepicker-background, var(--mbx-c-bg))
-  );
-  --mbx-dtp-txt: var(
-    --mbx-datepicker-text-color-dark,
-    var(--mbx-datepicker-text-color, var(--mbx-c-txt))
-  );
+  --mbx-dttxt: var(--mbx-txt);
 }
 
 [data-mbx-id="dpick"] > [data-mbx-date-s] {
@@ -156,7 +152,7 @@
   vertical-align: middle;
   display: inline-block;
   margin-right: 0.3rem;
-  --mbx-label-text-color: var(--mbx-dtp-txt);
+  --mbx-label-text-color: var(--mbx-dttxt);
 }
 
 @media (max-width: 600px) {

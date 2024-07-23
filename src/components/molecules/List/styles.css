@@ -3,18 +3,6 @@
   padding: 0.6rem;
   display: flex;
   flex-direction: column;
-  --mbx-lst-txt: var(
-    --mbx-list-text-color-light,
-    var(--mbx-list-text-color, var(--mbx-c-txt))
-  );
-  color: var(--mbx-lst-txt);
-}
-
-[data-mbx-id="list"][data-mbx-dk][data-mbx-hv] {
-  --mbx-lst-h: var(
-    --mbx-list-text-color-hover-dark,
-    var(--mbx-list-text-color-hover)
-  );
 }
 
 [data-mbx-id="list"] > [data-mbx-id="cont"] {
@@ -31,22 +19,21 @@
   fill: var(--mbx-lst-txt);
 }
 
-[data-mbx-id="list"][data-mbx-hv] {
-  --mbx-lst-h: var(
+[data-mbx-id="list"] > [data-mbx-id="cont"] {
+  --mbx-txt-l: var(
+    --mbx-list-text-color-light,
+    var(--mbx-list-text-color, var(--mbx-c-txt))
+  );
+  --mbx-txt-h-d: var(
+    --mbx-list-text-color-hover-dark,
+    var(--mbx-list-text-color-hover)
+  );
+  --mbx-h-l: var(
     --mbx-list-text-color-hover-light,
     var(--mbx-list-text-color-hover, var(--mbx-lst-txt))
   );
-}
-
-[data-mbx-id="list"][data-mbx-dk] {
-  --mbx-lst-txt: var(
+  --mbx-txt-d: var(
     --mbx-list-text-color-dark,
     var(--mbx-list-text-color, var(--mbx-c-txt))
   );
-}
-
-@media (hover) {
-  [data-mbx-id="list"] > [data-mbx-id="cont"]:hover {
-    color: var(--mbx-lst-h, var(--mbx-lst-txt));
-  }
 }

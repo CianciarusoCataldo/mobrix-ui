@@ -94,7 +94,6 @@ const Drawer: DrawerComponent = ({
 
   return buildMbxStandard(props, (sProps) => ({
     name: "drw",
-    cssBg: ["draw-bg"],
     addProps: {
       "data-mbx-drw-lc": location,
     },
@@ -110,6 +109,7 @@ const Drawer: DrawerComponent = ({
           : `var(--mbx-drw-an-${value.length === 0 ? "in" : value})`,
       }),
     },
+    features: { wBgCl: true },
     Component: component({
       children,
       hide,

@@ -1,56 +1,43 @@
 [data-mbx-id="selt"] {
-  padding: 0.2rem;
-  --mbx-sel-bg: var(
+  --mbx-bg-l: var(
+    --mbx-selector-background-light,
+    var(--mbx-selector-background)
+  );
+  --mbx-txt-l: var(
+    --mbx-selector-text-color-light,
+    var(--mbx-selector-text-color)
+  );
+  --mbx-bg-d: var(
     --mbx-selector-background-dark,
-    var(--mbx-selector-background, var(--mbx-c-bgc))
+    var(--mbx-selector-background)
   );
-  --mbx-sel-txt: var(
+  --mbx-txt-d: var(
     --mbx-selector-text-color-dark,
-    var(--mbx-selector-text-color, var(--mbx-c-txt))
+    var(--mbx-selector-text-color)
   );
-  --mbx-sel-bg-h: var(
+  --mbx-bg-h-l: var(
     --mbx-selector-background-hover-light,
     var(--mbx-selector-background-hover)
   );
-  --mbx-sel-txt-h: var(
+  --mbx-txt-h-l: var(
     --mbx-selector-text-color-hover-light,
     var(--mbx-selector-text-color-hover)
   );
-  background: var(--mbx-sel-bg);
-  color: var(--mbx-sel-txt);
-  border: 0;
-  border-radius: 6px;
-}
-
-[data-mbx-id="selt"][data-mbx-dk] {
-  --mbx-sel-bg: var(
-    --mbx-selector-background-light,
-    var(--mbx-selector-background, var(--mbx-c-bgc))
-  );
-  --mbx-sel-txt: var(
-    --mbx-selector-text-color-light,
-    var(--mbx-selector-text-color, var(--mbx-c-txt))
-  );
-  --mbx-sel-bg-h: var(
+  --mbx-bg-h-d: var(
     --mbx-selector-background-hover-dark,
     var(--mbx-selector-background-hover)
   );
-  --mbx-sel-txt-h: var(
+  --mbx-txt-h-d: var(
     --mbx-selector-text-color-hover-dark,
     var(--mbx-selector-text-color-hover)
   );
+  border: 0;
+  border-radius: 6px;
+  padding: 0.2rem;
 }
 
 [data-mbx-id="selt"] > option {
-  background-color: var(--mbx-sel-bg);
-  color: var(--mbx-sel-txt);
+  background-color: var(--mbx-bg);
+  color: var(--mbx-txt);
   padding: 1rem;
-}
-
-@media (hover) {
-  [data-mbx-id="selt"][data-mbx-hv]:hover,
-  [data-mbx-id="selt"][data-mbx-hv] > option:hover {
-    background: var(--mbx-sel-bg-h, var(--mbx-sel-bg));
-    color: var(--mbx-sel-txt-h, var(--mbx-sel-txt));
-  }
 }

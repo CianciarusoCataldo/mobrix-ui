@@ -97,6 +97,7 @@ const DpickComponent: MbxUiReactiveComponent<
     >
       <Calendar
         {...cProps}
+        dark={false}
         active={active}
         shadow={shadow}
         days={customDays}

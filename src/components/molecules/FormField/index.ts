@@ -74,7 +74,6 @@ const FormField: FormFieldComponent = ({
       shadow: false,
       tabIndex: -1,
     },
-    cssBg: ["field-bg"],
     Component: ({ value, setValue }) =>
       component({
         value,

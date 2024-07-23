@@ -51,11 +51,11 @@ const Component: MbxUiReactiveComponent<number, CarouselProps> = ({
     dots.push(
       <IconButton
         style={
-          (isSel && {
-            background: "var(--mbx-car-dot-f",
-          }) as React.CSSProperties
+          isSel && {
+            background: "var(--mbx-bgh",
+          }
         }
-        features={{ opFc: !isSel }}
+        features={{ opFc: !isSel, wAll: !isSel }}
         hover={hover && !isSel}
         active={active && !isSel}
         className={dotCl}

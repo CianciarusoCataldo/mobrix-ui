@@ -24,3 +24,7 @@
     var(--mbx-container-text-color, var(--mbx-c-txt))
   );
 }
+
+[data-mbx-id*="cont"][data-mbx-trn] {
+  --mbx-con-bg: transparent;
+}

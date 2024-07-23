@@ -97,6 +97,6 @@ Callback triggered when Input component input value is changed by the user - ext
 
 <br>
 
-Show/hide the password (the same effect when the eye icon is clicked)
+Show/hide the password
 
 <br>

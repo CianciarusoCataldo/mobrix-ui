@@ -1,4 +1,4 @@
-@import url("constants/computed.css");
+@import url("computed.css");
 
 [data-mbx-id] {
   --mbx-c-bgc: var(

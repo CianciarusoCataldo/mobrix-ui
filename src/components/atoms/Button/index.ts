@@ -58,8 +58,8 @@ const Button: ButtonComponent = ({
       wrapper: "button",
       features: {
         opHov: true,
+        wAll: true,
       },
-      cssBg: ["btn-bg", "btn-b-h"],
       styles: {
         ...(animated && {
           "--mbx-btn-scale": "scaleX(1.15) scaleY(1.1)",

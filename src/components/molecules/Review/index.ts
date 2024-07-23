@@ -54,7 +54,7 @@ const Review: ReviewComponent = (props) =>
   buildMbxStandard(props, (mbxProps) => ({
     name: "rev",
     mbxProps,
-    cssBg: ["rev-bg"],
+    features: { wBgCl: true },
     Component: component({
       ...props,
       ...mbxProps,

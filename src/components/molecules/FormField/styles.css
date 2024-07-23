@@ -92,7 +92,7 @@
 }
 
 [data-mbx-id="field"] > [data-mbx-id="cont"] {
-  color: var(--mbx-fld-err-txt);
+  --mbx-container-text-color: var(--mbx-fld-err-txt);
   transition: all 0.3s ease-out;
   padding-top: 0.2rem;
 }

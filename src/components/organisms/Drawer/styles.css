@@ -1,16 +1,10 @@
 @import url("positions.css");
 
 [data-mbx-id="drw"] {
-  --mbx-draw-bg: var(
-    --mbx-drawer-background-light,
-    var(--mbx-drawer-background, var(--mbx-c-bg))
-  );
-  --mbx-draw-txt: var(
-    --mbx-drawer-text-color-light,
-    var(--mbx-drawer-text-color, var(--mbx-c-txt))
-  );
-  background: var(--mbx-draw-bg);
-  color: var(--mbx-draw-txt);
+  --mbx-bg-l: var(--mbx-drawer-background-light, var(--mbx-drawer-background));
+  --mbx-txt-l: var(--mbx-drawer-text-color-light, var(--mbx-drawer-text-color));
+  --mbx-bg-d: var(--mbx-drawer-background-dark, var(--mbx-drawer-background));
+  --mbx-txt-d: var(--mbx-drawer-text-color-dark, var(--mbx-drawer-text-color));
   animation: var(--mbx-drw-an);
   -moz-animation: var(--mbx-drw-an);
   -ms-animation: var(--mbx-drw-an);
@@ -20,17 +14,6 @@
   padding: 0;
   --mbx-drw-rt: 0deg;
   display: flex;
-}
-
-[data-mbx-id="drw"][data-mbx-dk] {
-  --mbx-draw-bg: var(
-    --mbx-drawer-background-dark,
-    var(--mbx-drawer-background, var(--mbx-c-bg))
-  );
-  --mbx-draw-txt: var(
-    --mbx-drawer-text-color-dark,
-    var(--mbx-drawer-text-color, var(--mbx-c-txt))
-  );
 }
 
 [data-mbx-id="drw"] > div::-webkit-scrollbar {

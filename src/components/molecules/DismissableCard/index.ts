@@ -84,7 +84,6 @@ const DismissableCard: DismissableCardComponent = ({
           "data-mbx-dchead": "",
         },
       }),
-    cssBg: ["dismissablecard-background"],
     props: (value, s) => ({
       mbxProps: {
         ...sProps,

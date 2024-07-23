@@ -60,8 +60,8 @@ const Counter: CounterComponent = ({
     name: "count",
     features: {
       opHov: true,
+      wAllc: true,
     },
-    cssBg: ["cnt-bg", "cnt-bg-h"],
     inputValue,
     defaultValue: 0,
     props: (value, setValue) => ({

@@ -5,12 +5,6 @@ const size = {
   height: "30px",
 };
 
-/** Icons dictionary
- *
- * @author Cataldo Cianciaruso <https://github.com/CianciarusoCataldo>
- *
- * @copyright 2024 Cataldo Cianciaruso
- */
 export const ICONS = {
   star: {
     FULL: (

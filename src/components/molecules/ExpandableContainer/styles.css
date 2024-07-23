@@ -1,24 +1,21 @@
 [data-mbx-id="econt"] {
-  --mbx-econt-bg: var(
+  --mbx-def-bg: var(--mbx-con-bg);
+  --mbx-def-txt: var(--mbx-con-txt);
+  --mbx-bg-l: var(
     --mbx-expandablecontainer-background-light,
-    var(--mbx-expandablecontainer-background, var(--mbx-con-bg))
+    var(--mbx-expandablecontainer-background)
   );
-  --mbx-econt-txt: var(
+  --mbx-txt-l: var(
     --mbx-expandablecontainer-text-color-light,
-    var(--mbx-expandablecontainer-text-color, var(--mbx-con-txt))
+    var(--mbx-expandablecontainer-text-color)
   );
-  background: var(--mbx-econt-bg);
-  color: var(--mbx-econt-txt);
-}
-
-[data-mbx-id="econt"][data-mbx-dk] {
-  --mbx-econt-bg: var(
+  --mbx-bg-d: var(
     --mbx-expandablecontainer-background-dark,
-    var(--mbx-expandablecontainer-background, var(--mbx-con-bg))
+    var(--mbx-expandablecontainer-background)
   );
-  --mbx-econt-txt: var(
+  --mbx-txt-d: var(
     --mbx-expandablecontainer-text-color-dark,
-    var(--mbx-expandablecontainer-text-color, var(--mbx-con-txt))
+    var(--mbx-expandablecontainer-text-color)
   );
 }
 
@@ -33,7 +30,7 @@
   padding-top: 0.2rem;
   --mbx-icon-light: var(
     --mbx-expandablecontainer-arrow-color-light,
-    var(--mbx-expandablecontainer-arrow-color, var(--mbx-econ-txt))
+    var(--mbx-expandablecontainer-arrow-color, var(--mbx-txt))
   );
   --mbx-icon-hover-light: var(
     --mbx-expandablecontainer-arrow-color-hover-light,
@@ -41,7 +38,7 @@
   );
   --mbx-icon-dark: var(
     --mbx-expandablecontainer-arrow-color-dark,
-    var(--mbx-expandablecontainer-arrow-color, var(--mbx-econ-txt))
+    var(--mbx-expandablecontainer-arrow-color, var(--mbx-txt))
   );
   --mbx-icon-hover-dark: var(
     --mbx-expandablecontainer-arrow-color-hover-dark,

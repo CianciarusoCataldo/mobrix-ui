@@ -57,7 +57,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
     defaultValue: false,
     wrapper,
     inputValue: compact,
-    cssBg: ["econt-bg"],
+    features: { wBgCl: true },
     Component: ({ value, setValue }) =>
       component({
         value,

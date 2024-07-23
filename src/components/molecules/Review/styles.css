@@ -1,31 +1,13 @@
 [data-mbx-id="rev"] {
   padding: 0.6rem;
-  /** Review **/
-  --mbx-rev-bg: var(
-    --mbx-review-background-light,
-    var(--mbx-review-background, var(--mbx-c-bg))
-  );
-  --mbx-rev-txt: var(
-    --mbx-review-text-color-light,
-    var(--mbx-review-text-color, var(--mbx-c-txt))
-  );
+  --mbx-bg-l: var(--mbx-review-background-light, var(--mbx-review-background));
+  --mbx-txt-l: var(--mbx-review-text-color-light, var(--mbx-review-text-color));
+  --mbx-bg-d: var(--mbx-review-background-dark, var(--mbx-review-background));
+  --mbx-txt-d: var(--mbx-review-text-color-dark, var(--mbx-review-text-color));
   border-radius: 3px;
   display: flex;
   flex-direction: column;
   width: fit-content;
-  background: var(--mbx-rev-bg);
-  color: var(--mbx-rev-txt);
-}
-
-[data-mbx-id="rev"][data-mbx-dk] {
-  --mbx-rev-bg: var(
-    --mbx-review-background-dark,
-    var(--mbx-review-background, var(--mbx-c-bg))
-  );
-  --mbx-rev-txt: var(
-    --mbx-review-text-color-dark,
-    var(--mbx-review-text-color, var(--mbx-c-txt))
-  );
 }
 
 [data-mbx-id="rev"] > [data-mbx-id="link"] {

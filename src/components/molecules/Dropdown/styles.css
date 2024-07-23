@@ -26,6 +26,11 @@
   );
 }
 
+[data-mbx-id="dd"][data-mbx-trn] {
+  --mbx-dd-bg: transparent;
+  --mbx-dd-bg-h: transparent;
+}
+
 [data-mbx-id="dd"] > [data-mbx-id="pp"] {
   font-size: 1rem;
   line-height: 1.5rem;

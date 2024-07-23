@@ -11,8 +11,10 @@ const lComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
   disabled,
   active,
   a11y,
-}) =>
-  elements.map((element, index) => (
+}) => {
+  const cond = onClick !== undefined;
+
+  return elements.map((element, index) => (
     <Container
       a11y={a11y}
       background={false}
@@ -20,7 +22,7 @@ const lComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
       dark={dark}
       hover={hover}
       key={`el_${index}`}
-      {...(onClick !== undefined && {
+      {...(cond && {
         active: active,
         props: { onClick: () => onClick(index) },
         style: {
@@ -34,8 +36,9 @@ const lComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
       })}
       features={{
         colFc: true,
-        opHov: onClick !== undefined,
+        opHov: cond,
         noShFc: true,
+        wClH: cond,
       }}
       disabled={disabled}
     >
@@ -45,5 +48,6 @@ const lComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
       <div key={"l_el_" + index}>{element}</div>
     </Container>
   ));
+};
 
 export default lComponent;

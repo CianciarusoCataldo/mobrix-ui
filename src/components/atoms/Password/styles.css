@@ -3,24 +3,19 @@
   flex-direction: row;
   width: fit-content;
   border-radius: 5px;
-  --mbx-psw-txt: var(
+  --mbx-txt-l: var(
     --mbx-password-text-color-light,
     var(--mbx-password-text-color)
   );
-  --mbx-psw-bg: var(
+  --mbx-bg-l: var(
     --mbx-password-background-light,
     var(--mbx-password-background)
   );
-  color: var(--mbx-psw-bg, var(--mbx-c-txt));
-  background: var(--mbx-psw-bg, var(--mbx-c-bg));
-}
-
-[data-mbx-id="psw"][data-mbx-dk] {
-  --mbx-psw-txt: var(
+  --mbx-txt-d: var(
     --mbx-password-text-color-dark,
     var(--mbx-password-text-color)
   );
-  --mbx-psw-bg: var(
+  --mbx-bg-d: var(
     --mbx-password-background-dark,
     var(--mbx-password-background)
   );

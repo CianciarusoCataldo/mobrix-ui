@@ -242,6 +242,18 @@ export interface Features {
 
   /** If `true`, reduce component opacity when component is focused */
   opFc?: boolean;
+
+  wBg?: boolean;
+
+  wCl?: boolean;
+
+  wClH?: boolean;
+
+  wAll?: boolean;
+
+  wAllc?: boolean;
+
+  wBgCl?: boolean;
 }
 
 /**
@@ -271,15 +283,11 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
 
   features?: Features;
 
-  cssBg?: string[];
-
   /** Component extra css styles */
   styles?: Record<string, any>;
 
   /** Custom additional properties, applied to the component */
   addProps?: Record<string, any>;
-
-  withBg?: boolean;
 };
 
 /**

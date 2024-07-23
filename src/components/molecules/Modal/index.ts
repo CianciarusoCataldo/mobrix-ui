@@ -84,6 +84,7 @@ const Modal: ModalComponent = ({
       ...mbxProps,
       hide: value.length === 0 && hide,
     },
+    features: { wBgCl: true },
   }));
 };
 

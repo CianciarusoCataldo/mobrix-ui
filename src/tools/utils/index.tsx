@@ -12,19 +12,17 @@ import {
 import { D_PROPS } from "./constants";
 
 const parseFts: (
-  props: MbxSharedProps & { cssBg: string[] }
+  props: MbxSharedProps
 ) => Record<keyof Features & MbxSharedProps, any> | undefined = ({
-  cssBg,
   a11y,
   a11yLabel,
   hover,
   hide,
-  background,
   tabIndex,
   active,
   animated,
   animation,
-  style,
+  background,
   onFocus,
   onKeyDown,
   shadow,
@@ -39,7 +37,7 @@ const parseFts: (
   },
   hide: hide && { styles: { display: "none" } },
   background: !background && {
-    styles: cssBg.reduce((o, key) => ({ ...o, [key]: "transparent" }), {}),
+    props: { "data-mbx-trn": "" },
   },
   shadow: !shadow && { styles: { "--mbx-sh": "none" } },
   a11y: a11y && {
@@ -68,6 +66,12 @@ const parseFts: (
   dark: dark && { props: { "data-mbx-dk": "" } },
   onFocus: onFocus && { props: { onFocus } },
   onKeyDown: onKeyDown && { props: { onKeyDown } },
+  wBgCl: { props: { "data-mbx-wbc": "" } },
+  wBg: { props: { "data-mbx-wb": "" } },
+  wCl: { props: { "data-mbx-wc": "" } },
+  wClH: hover && { props: { "data-mbx-wch": "" } },
+  wAll: { props: { "data-mbx-wall": "" } },
+  wAllc: { props: { "data-mbx-wallc": "" } },
 });
 
 /* istanbul ignore next */
@@ -107,7 +111,18 @@ export const parseProps = (props: MbxSharedProps): MbxSharedProps => {
     res["datas"] = {};
   }
 
-  const riserved = ["id", "dk", "cfc", "hv"].map((ris) => `data-mbx-${ris}`);
+  const riserved = [
+    "id",
+    "dk",
+    "cfc",
+    "hv",
+    "wbc",
+    "wb",
+    "wc",
+    "wch",
+    "wall",
+    "wallc",
+  ].map((ris) => `data-mbx-${ris}`);
 
   Object.keys(props)
     .filter((prop) => prop.startsWith("data-") && !riserved.includes(prop))
@@ -120,18 +135,17 @@ export const parseProps = (props: MbxSharedProps): MbxSharedProps => {
 
 const getMbxFts: (
   props: MbxSharedProps & {
-    cssBg: string[];
     feats: Features;
   }
 ) => {
   parS: Record<string, any>;
   parP: Record<string, any>;
-} = ({ feats, features: ftrs = {}, cssBg, ...props }) => {
+} = ({ feats, features: ftrs = {}, ...props }) => {
   const sFts = { ...feats, ...ftrs, ...props };
   let parS = {};
   let parP = {};
   const fProps = Object.keys(sFts).filter((feature) => sFts[feature]);
-  const mbxfts = parseFts({ ...props, cssBg });
+  const mbxfts = parseFts(props);
   [...fProps, ...Object.keys(props)]
     .filter((ft, i) => mbxfts[ft])
     .forEach((ft, i) => {
@@ -150,13 +164,11 @@ const getMbxUiStandard = ({
   mbxProps: cprops = {},
   wrapper: Wrapper = "div",
   features = {},
-  cssBg = [],
   styles = {},
   addProps = {},
 }: BuilderProps) => {
   const { parP, parS } = getMbxFts({
     ...cprops,
-    cssBg: ["c-bg", "c-bgc", ...cssBg].map((css) => `--mbx-${css}`),
     feats: features,
   });
   const props: MbxSharedProps & Record<string, any> = {
@@ -215,7 +227,7 @@ const getMbxUiReactive = <T=any>({
 }: BuilderPropsReactive<T>) => {
   const [value, setValue] = React.useState<T>(inputValue || defaultValue);
 
-  const processed = props ? props(value, setValue) : {};
+  const parsed = props ? props(value, setValue) : {};
 
   /* istanbul ignore next */
   React.useEffect(() => {
@@ -231,7 +243,7 @@ const getMbxUiReactive = <T=any>({
   return getMbxUiStandard({
     Component: Component && Component({ value, setValue }),
     ...bprops,
-    ...processed,
+    ...parsed,
   });
 };
 

@@ -4,52 +4,13 @@
   flex-direction: column;
   width: fit-content;
   --mbx-align: center;
-  --mbx-car-bg: var(
+  --mbx-bg-l: var(
     --mbx-carousel-background-light,
-    var(--mbx-carousel-background, var(--mbx-c-bg))
+    var(--mbx-carousel-background)
   );
-  --mbx-car-dde: radial-gradient(
-    #000000,
-    #181818,
-    #282828,
-    #3a3a3a,
-    #4c4c4c,
-    #6b6a6a,
-    #858383
-  );
-  --mbx-car-ddf: linear-gradient(
-    to top,
-    #ff8007,
-    #fd8616,
-    #fd9b3f,
-    #fd9c40,
-    #fcbb7f,
-    #fad6b4
-  );
-  --mbx-car-dot-f: var(
-    --mbx-carousel-dot-full-background-light,
-    var(--mbx-carousel-dot-full-background, var(--mbx-car-ddf))
-  );
-  --mbx-car-dot-e: var(
-    --mbx-carousel-dot-empty-background-light,
-    var(--mbx-carousel-dot-empty-background, var(--mbx-car-dde))
-  );
-  background: var(--mbx-car-bg);
-}
-
-[data-mbx-id="crsel"][data-mbx-dk] {
-  --mbx-car-bg: var(
+  --mbx-bg-d: var(
     --mbx-carousel-background-dark,
-    var(--mbx-carousel-background, var(--mbx-c-bg))
-  );
-
-  --mbx-car-dot-f: var(
-    --mbx-carousel-dot-full-background-dark,
-    var(--mbx-carousel-dot-full-background, var(--mbx-car-ddf))
-  );
-  --mbx-car-dot-e: var(
-    --mbx-carousel-dot-empty-background-dark,
-    var(--mbx-carousel-dot-empty-background, var(--mbx-car-dde))
+    var(--mbx-carousel-background)
   );
 }
 
@@ -93,18 +54,43 @@
 }
 
 [data-mbx-id="crsel"] > [data-mbx-cdots] > [data-mbx-id="icb"] {
-  background: var(--mbx-car-dot-e);
+  --mbx-def-bg: radial-gradient(
+    #000000,
+    #181818,
+    #282828,
+    #3a3a3a,
+    #4c4c4c,
+    #6b6a6a,
+    #858383
+  );
+  --mbx-def-bgh: linear-gradient(
+    to top,
+    #ff8007,
+    #fd8616,
+    #fd9b3f,
+    #fd9c40,
+    #fcbb7f,
+    #fad6b4
+  );
+  --mbx-bgh-d: var(
+    --mbx-carousel-dot-full-background-dark,
+    var(--mbx-carousel-dot-full-background)
+  );
+  --mbx-bg-d: var(
+    --mbx-carousel-dot-empty-background-dark,
+    var(--mbx-carousel-dot-empty-background)
+  );
+  --mbx-bgh-l: var(
+    --mbx-carousel-dot-full-background-light,
+    var(--mbx-carousel-dot-full-background)
+  );
+  --mbx-bg-l: var(
+    --mbx-carousel-dot-empty-background-light,
+    var(--mbx-carousel-dot-empty-background)
+  );
   margin: 0 0.3rem;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border-color: transparent;
-}
-
-@media (hover) {
-  [data-mbx-id="crsel"]
-    > [data-mbx-cdots]
-    > [data-mbx-id="icb"][data-mbx-hv]:hover {
-    background: var(--mbx-car-dot-f);
-  }
 }

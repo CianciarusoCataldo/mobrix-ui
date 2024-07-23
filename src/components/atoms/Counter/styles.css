@@ -1,52 +1,34 @@
 [data-mbx-id="count"] {
-  --mbx-cnt-bg: var(
+  --mbx-bg-l: var(
     --mbx-counterbox-background-light,
     var(--mbx-counterbox-background)
   );
-  --mbx-cnt-txt: var(
+  --mbx-txt-l: var(
     --mbx-counterbox-text-color-light,
     var(--mbx-counterbox-text-color)
   );
-  background-color: var(--mbx-cnt-bg, var(--mbx-c-bgc));
-  color: var(--mbx-cnt-txt, var(--mbx-c-txt));
-}
-
-[data-mbx-id="count"][data-mbx-dk] {
-  --mbx-cnt-bg: var(
+  --mbx-bg-d: var(
     --mbx-counterbox-background-dark,
     var(--mbx-counterbox-background)
   );
-  --mbx-cnt-txt: var(
+  --mbx-txt-d: var(
     --mbx-counterbox-text-color-dark,
     var(--mbx-counterbox-text-color)
   );
-}
-
-[data-mbx-id="count"][data-mbx-hv] {
-  --mbx-cnt-bg-h: var(
+  --mbx-bg-h-l: var(
     --mbx-counterbox-background-hover-light,
     var(--mbx-counterbox-background-hover, var(--mbx-c-bgc-h))
   );
-  --mbx-cnt-txt-h: var(
+  --mbx-txt-h-l: var(
     --mbx-counterbox-text-color-hover-light,
     var(--mbx-counterbox-text-color-hover, var(--mbx-c-txt-h))
   );
-}
-
-[data-mbx-id="count"][data-mbx-dk][data-mbx-hv] {
-  --mbx-cnt-bg-h: var(
+  --mbx-bg-h-d: var(
     --mbx-counterbox-background-hover-dark,
     var(--mbx-counterbox-background-hover, var(--mbx-c-bgc-h))
   );
-  --mbx-cnt-txt-h: var(
+  --mbx-txt-h-d: var(
     --mbx-counterbox-text-color-hover-dark,
     var(--mbx-counterbox-text-color-hover, var(--mbx-c-txt-h))
   );
-}
-
-@media (hover) {
-  [data-mbx-id="count"]:hover {
-    background-color: var(--mbx-cnt-bg-h, var(--mbx-cnt-bg, var(--mbx-c-bgc)));
-    color: var(--mbx-cnt-txt-h, var(--mbx-cnt-txt, var(--mbx-c-txt)));
-  }
 }

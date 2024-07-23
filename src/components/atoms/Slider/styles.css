@@ -3,23 +3,25 @@
   border-radius: 12px;
   -webkit-appearance: none;
   width: fit-content;
-  --mbx-sld-bg: var(
-    --mbx-slider-background-light,
-    var(--mbx-slider-background, var(--mbx-c-bg))
+  --mbx-bg-l: var(--mbx-slider-background-light, var(--mbx-slider-background));
+  --mbx-bg-d: var(--mbx-slider-background-dark, var(--mbx-slider-background));
+  --mbx-bg-h-l: var(
+    --mbx-slider-background-hover-light,
+    var(--mbx-slider-background-hover)
+  );
+  --mbx-bg-h-d: var(
+    --mbx-slider-background-hover-dark,
+    var(--mbx-slider-background-hover)
   );
   --mbx-sld-tb: var(
     --mbx-slider-thumb-color-light,
     var(--mbx-slider-thumb-color, radial-gradient(#2d3748, #1d232e))
   );
-  background: var(--mbx-sld-bg);
+  --mbx-def-bgh: var(--mbx-bg);
   --mbx-sld-op-act: 0.4;
 }
 
 [data-mbx-id="sld"][data-mbx-dk] {
-  --mbx-sld-bg: var(
-    --mbx-slider-background-dark,
-    var(--mbx-slider-background, var(--mbx-c-bg))
-  );
   --mbx-sld-tb: var(
     --mbx-slider-thumb-color-dark,
     var(--mbx-slider-thumb-color, radial-gradient(#e3e4e9, #9b9999))
@@ -64,10 +66,6 @@
 
 [data-mbx-id="sld"][data-mbx-hv] {
   --mbx-sld-op-hov: 0.6;
-  --mbx-sld-bg-h: var(
-    --mbx-slider-background-hover-light,
-    var(--mbx-slider-background-hover, var(--mbx-sld-bg))
-  );
   --mbx-sld-tb-h: var(
     --mbx-slider-thumb-color-hover-light,
     var(--mbx-slider-thumb-color-hover, var(--mbx-sld-tb))
@@ -75,10 +73,6 @@
 }
 
 [data-mbx-id="sld"][data-mbx-hv][data-mbx-dk] {
-  --mbx-sld-bg-h: var(
-    --mbx-slider-background-hover-light,
-    var(--mbx-slider-background-hover, var(--mbx-sld-bg))
-  );
   --mbx-sld-tb-h: var(
     --mbx-slider-thumb-color-hover-dark,
     var(--mbx-slider-thumb-color-hover, var(--mbx-sld-tb))

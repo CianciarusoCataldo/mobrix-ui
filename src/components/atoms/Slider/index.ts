@@ -59,7 +59,6 @@ const Slider: SliderComponent = ({
     inputValue,
     defaultValue: 0,
     wrapper: "input",
-    cssBg: ["sld-bg", "sld-bg-h"],
     styles: {
       ...((disabled || readOnly || !sProps.active) && {
         "--mbx-sld-op-act": "var(--mbx-sld-op-hov)",
@@ -84,6 +83,9 @@ const Slider: SliderComponent = ({
           value: String(value),
           onChange: callback,
           onInput: callback,
+        },
+        features: {
+          wAllc: true,
         },
         mbxProps: {
           ...sProps,

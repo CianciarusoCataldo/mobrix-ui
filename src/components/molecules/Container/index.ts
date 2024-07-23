@@ -47,7 +47,6 @@ const Container: ContainerComponent = (props) =>
     Component: props.children,
     mbxProps,
     wrapper: props.wrapper,
-    cssBg: ["con-bg"],
   }));
 
 export default Container;

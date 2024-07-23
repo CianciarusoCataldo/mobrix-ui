@@ -54,7 +54,7 @@ const Form: FormComponent = (props) =>
       ...props,
       ...mbxProps,
     }),
-    cssBg: ["form-bg"],
+    features: { wBgCl: true },
     mbxProps,
   }));
 

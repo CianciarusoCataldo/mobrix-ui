@@ -7,7 +7,7 @@ const component: MbxUiReactiveComponent<number | undefined, SelectorProps> = ({
   optionClassName,
 }) =>
   elements.map((el, index) => (
-    <option key={"sel_opt_" + index} value={index} className={optionClassName}>
+    <option key={"opt_" + index} value={index} className={optionClassName}>
       {el}
     </option>
   ));

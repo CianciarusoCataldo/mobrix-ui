@@ -5,7 +5,7 @@ import {
   StringProp,
 } from "@cianciarusocataldo/demo-ui";
 
-import { demoProps } from "constants/demo-props";
+import { demoProps, demoRows } from "constants/demo-props";
 
 import { FormField } from "mobrix-ui-preview";
 import { ComponentPage } from "components/ComponentPage";
@@ -42,16 +42,13 @@ const FormPage = () => (
             required: BooleanProp(true),
             header: StringProp("header"),
             errorLabel: StringProp(""),
-            dark: BooleanProp(false),
-            animated: BooleanProp(true),
-            shadow: BooleanProp(true),
-            className: StringProp(""),
+            ...demoProps,
           }}
           header="FormField"
           rows={[
             ["value"],
             ["type", "required", "header", "errorLabel"],
-            ["dark", "animated", "shadow", "className"],
+            ...demoRows,
           ]}
           children={(props: any, setProps: any) => (
             <FormField

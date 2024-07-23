@@ -2,26 +2,21 @@
   padding: 0.3rem;
   width: fit-content;
   display: flex;
-  --mbx-rgr-bg: var(
+  --mbx-bg-l: var(
     --mbx-radiogroup-background-light,
-    var(--mbx-radiogroup-background, var(--mbx-c-bg))
+    var(--mbx-radiogroup-background)
   );
-  --mbx-rgr-txt: var(
+  --mbx-txt-l: var(
     --mbx-radiogroup-text-color-light,
-    var(--mbx-radiogroup-text-color, var(--mbx-c-txt))
+    var(--mbx-radiogroup-text-color)
   );
-  background: var(--mbx-rgr-bg);
-  color: var(--mbx-rgr-txt);
-}
-
-[data-mbx-id="rgr"][data-mbx-dk] {
-  --mbx-rgr-bg: var(
+  --mbx-bg-d: var(
     --mbx-radiogroup-background-dark,
-    var(--mbx-radiogroup-background, var(--mbx-c-bg))
+    var(--mbx-radiogroup-background)
   );
-  --mbx-rgr-txt: var(
+  --mbx-txt-d: var(
     --mbx-radiogroup-text-color-dark,
-    var(--mbx-radiogroup-text-color, var(--mbx-c-txt))
+    var(--mbx-radiogroup-text-color)
   );
 }
 
@@ -33,7 +28,7 @@
   margin: 1rem 0.3rem;
 }
 
-[data-mbx-id="rgr"][data-mbx-rdgh] > div {
+[data-mbx-id="rgr"][data-mbx-rgh="true"] > div {
   margin: 0.3rem 1rem;
 }
 

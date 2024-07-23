@@ -56,8 +56,8 @@ const Checkbox: CheckBoxComponent = ({
     Component: ({ value }) => (value ? icon || CheckIcon({ disabled }) : ""),
     features: {
       opHov: true,
+      wAll: true,
     },
-    cssBg: ["chk-bg", "chk-bg-h"],
     props: (actualValue, setValue) => {
       const func = () => {
         onChange(!actualValue);

@@ -1,53 +1,35 @@
 [data-mbx-id="tbl"] {
-  border-width: 3px;
-  border-style: solid;
-  border-collapse: collapse;
   table-layout: fixed;
-  --mbx-tbl-bg: var(
-    --mbx-table-background-light,
-    var(--mbx-table-background, var(--mbx-c-bg))
-  );
-  --mbx-tbl-txt: var(
-    --mbx-table-text-color-light,
-    var(--mbx-table-text-color, var(--mbx-c-txt))
-  );
+  --mbx-bg-l: var(--mbx-table-background-light, var(--mbx-table-background));
+  --mbx-txt-l: var(--mbx-table-text-color-light, var(--mbx-table-text-color));
+  --mbx-bg-d: var(--mbx-table-background-dark, var(--mbx-table-background));
+  --mbx-txt-d: var(--mbx-table-text-color-dark, var(--mbx-table-text-color));
   --mbx-tbl-bord: var(
     --mbx-table-border-color-light,
     var(--mbx-table-border-color, darkslategrey)
   );
-  --mbx-tbl-head-bg: var(
+  --mbx-tblh-bg: var(
     --mbx-table-header-background-light,
     var(
       --mbx-table-header-background,
       linear-gradient(to right, #354155, #2b3546)
     )
   );
-  --mbx-tbl-head-txt: var(
+  --mbx-tblh-txt: var(
     --mbx-table-header-text-color-light,
     var(--mbx-table-header-text-color, whitesmoke)
   );
-  color: var(--mbx-tbl-txt);
-  border-color: var(--mbx-tbl-bord);
-  background: var(--mbx-tbl-bg);
 }
 
 [data-mbx-id="tbl"][data-mbx-dk] {
-  --mbx-tbl-bg: var(
-    --mbx-table-background-dark,
-    var(--mbx-table-background, var(--mbx-c-bg))
-  );
-  --mbx-tbl-txt: var(
-    --mbx-table-text-color-dark,
-    var(--mbx-table-text-color, var(--mbx-c-txt))
-  );
-  --mbx-tbl-head-bg: var(
+  --mbx-tblh-bg: var(
     --mbx-table-header-background-dark,
     var(
       --mbx-table-header-background,
       linear-gradient(to right, #4b5b77, #3e4c64)
     )
   );
-  --mbx-tbl-head-txt: var(
+  --mbx-tblh-txt: var(
     --mbx-table-header-text-color-dark,
     var(--mbx-table-header-text-color, rgb(255, 255, 255))
   );
@@ -55,6 +37,10 @@
     --mbx-table-border-color-dark,
     var(--mbx-table-border-color, rgb(219, 219, 219))
   );
+}
+
+[data-mbx-id="tbl"][data-mbx-trn] {
+  --mbx-tblh-bg: transparent !important;
 }
 
 [data-mbx-id="tbl"] tr {
@@ -67,11 +53,11 @@
   border-collapse: collapse;
   padding: 0.4rem;
   border-color: var(--mbx-tbl-bord);
-  color: var(--mbx-tbl-txt);
+  color: var(--mbx-txt);
 }
 
 [data-mbx-id="tbl"] th[data-mbx-tcell] {
   font-size: large;
-  background: var(--mbx-tbl-head-bg);
-  color: var(--mbx-tbl-head-txt);
+  background: var(--mbx-tblh-bg);
+  color: var(--mbx-tblh-txt);
 }

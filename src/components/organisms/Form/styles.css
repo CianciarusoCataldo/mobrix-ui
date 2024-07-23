@@ -1,24 +1,14 @@
 [data-mbx-id="form"] {
-  --mbx-form-bg: var(
-    --mbx-form-background-light,
-    var(--mbx-form-background, var(--mbx-c-bg))
-  );
-  --mbx-form-txt: var(--mbx-form-text-color-light, var(--mbx-form-text-color));
-  background: var(--mbx-form-bg);
-  color: var(--mbx-form-txt);
+  --mbx-bg-l: var(--mbx-form-background-light, var(--mbx-form-background));
+  --mbx-txt-l: var(--mbx-form-text-color-light, var(--mbx-form-text-color));
+  --mbx-bg-d: var(--mbx-form-background-dark, var(--mbx-form-background));
+  --mbx-txt-d: var(--mbx-form-text-color-dark, var(--mbx-form-text-color));
   padding: 0.75rem;
   border-radius: 0.7rem;
   display: flex;
   flex-direction: column;
   border-color: transparent;
-}
-
-[data-mbx-id="form"][data-mbx-dk] {
-  --mbx-form-bg: var(
-    --mbx-form-background-dark,
-    var(--mbx-form-background, var(--mbx-c-bg))
-  );
-  --mbx-form-txt: var(--mbx-form-text-color-dark, var(--mbx-form-text-color));
+  --mbx-dttxt: var(--mbx-txt);
 }
 
 [data-mbx-id="form"] > div {
@@ -32,11 +22,11 @@
   );
   --mbx-formfield-text-color-light: var(
     --mbx-form-formfield-text-color-light,
-    var(--mbx-form-formfield-text-color)
+    var(--mbx-form-formfield-text-color, var(--mbx-dttxt))
   );
   --mbx-formfield-text-color-dark: var(
     --mbx-form-formfield-text-color-dark,
-    var(--mbx-form-formfield-text-color)
+    var(--mbx-form-formfield-text-color, var(--mbx-dttxt))
   );
   --mbx-formfield-background-hover-light: var(
     --mbx-form-formfield-background-hover-light,
@@ -61,7 +51,7 @@
   margin-bottom: 0.9rem;
   font-size: 1.35rem;
   line-height: 1.75rem;
-  --mbx-label-text-color: var(--mbx-form-txt);
+  --mbx-label-text-color: var(--mbx-dttxt);
 }
 
 [data-mbx-id="form"] > [data-mbx-sbt] {

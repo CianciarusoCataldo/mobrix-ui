@@ -57,6 +57,7 @@ const Link: LinkComponent = ({
       opHov: true,
       colFc: true,
       noShFc: true,
+      wClH: true,
     },
     Component: children,
     styles: {

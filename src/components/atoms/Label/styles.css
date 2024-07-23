@@ -1,16 +1,9 @@
 [data-mbx-id*="label"] {
-  --mbx-lab: var(
-    --mbx-label-text-color-light,
-    var(--mbx-label-text-color, var(--mbx-c-txt))
-  );
-  color: var(--mbx-lab);
   background: transparent;
   width: fit-content;
 }
 
-[data-mbx-id*="label"][data-mbx-dk] {
-  --mbx-lab: var(
-    --mbx-label-text-color-dark,
-    var(--mbx-label-text-color, var(--mbx-c-txt))
-  );
+[data-mbx-id="label"] {
+  --mbx-txt-l: var(--mbx-label-text-color-light, var(--mbx-label-text-color));
+  --mbx-txt-d: var(--mbx-label-text-color-dark, var(--mbx-label-text-color));
 }

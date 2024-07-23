@@ -56,7 +56,6 @@ import component from "./component";
 const TabViewer: TabViewerComponent = ({ active = true, ...props }) =>
   buildMbxReactive(props, (mbxProps) => ({
     name: "tview",
-    cssBg: ["tabv-bg", "tabv-off-bg", "tabv-off-bg-h"],
     mbxProps: {
       ...mbxProps,
       shadow: false,

@@ -1,9 +1,9 @@
 [data-mbx-id="pkgv-label"] {
-  --mbx-label-text-color-light: var(
+  --mbx-txt-light: var(
     --mbx-packageversion-text-color-light,
     var(--mbx-packageversion-text-color)
   );
-  --mbx-label-text-color-dark: var(
+  --mbx-txt-d: var(
     --mbx-packageversion-text-color-dark,
     var(--mbx-packageversion-text-color)
   );

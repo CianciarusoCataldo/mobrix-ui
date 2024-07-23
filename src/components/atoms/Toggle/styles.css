@@ -1,10 +1,8 @@
 [data-mbx-id="tgl"] {
   width: 65px;
   height: 30px;
-  --mbx-tog-bg: var(
-    --mbx-toggle-background-light,
-    var(--mbx-toggle-background, var(--mbx-c-bg))
-  );
+  --mbx-bg-l: var(--mbx-toggle-background-light, var(--mbx-toggle-background));
+  --mbx-bg-d: var(--mbx-toggle-background-dark, var(--mbx-toggle-background));
   --mbx-tog-ic-on-int: var(
     --mbx-toggle-icon-on-internal-color-light,
     var(--mbx-toggle-icon-on-internal-color, #ffffff)
@@ -30,10 +28,6 @@
 }
 
 [data-mbx-id="tgl"][data-mbx-dk] {
-  --mbx-tog-bg: var(
-    --mbx-toggle-background-dark,
-    var(--mbx-toggle-background, var(--mbx-c-bg))
-  );
   --mbx-tog-ic-off-int: var(
     --mbx-toggle-icon-off-internal-color-dark,
     var(--mbx-toggle-icon-off-internal-color, #636363)

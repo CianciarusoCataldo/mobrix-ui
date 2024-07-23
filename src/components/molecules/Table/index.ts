@@ -57,9 +57,9 @@ const Table: TableComponent = (props) =>
       ...props,
       ...mbxProps,
     }),
-    cssBg: ["tbl-bg", "tbl-head-bg"],
     mbxProps,
     wrapper: "table",
+    features: { wAll: true },
   }));
 
 export default Table;

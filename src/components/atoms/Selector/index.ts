@@ -57,7 +57,6 @@ const Selector: SelectorComponent = ({
     name: "selt",
     defaultValue: undefined,
     inputValue,
-    cssBg: ["sel-bg", "sel-bg-h"],
     props: (value, setValue) => ({
       addProps: {
         disabled: mbxProps.disabled,
@@ -73,6 +72,7 @@ const Selector: SelectorComponent = ({
       sComponent({ elements, value, setValue, optionClassName }),
     features: {
       opHov: true,
+      wAllc: true,
     },
   }));
 

@@ -6,28 +6,19 @@
   display: flex;
   flex-direction: column;
   --mbx-trdur: 0.1s;
-  --mbx-chk-bg: var(
+  --mbx-bg-l: var(
     --mbx-checkbox-background-light,
     var(--mbx-checkbox-background)
   );
-  background: var(--mbx-chk-bg, var(--mbx-c-bg));
-}
-
-[data-mbx-id="check"][data-mbx-dk] {
-  --mbx-chk-bg: var(
+  --mbx-bg-d: var(
     --mbx-checkbox-background-dark,
     var(--mbx-checkbox-background)
   );
-}
-
-[data-mbx-id="check"][data-mbx-hv] {
-  --mbx-chk-bg-h: var(
+  --mbx-bg-h-l: var(
     --mbx-checkbox-background-hover-light,
     var(--mbx-checkbox-background-hover, var(--mbx-c-bg-h))
   );
-}
-[data-mbx-id="check"][data-mbx-dk][data-mbx-hv] {
-  --mbx-chk-bg-h: var(
+  --mbx-bg-h-d: var(
     --mbx-checkbox-background-hover-dark,
     var(--mbx-checkbox-background-hover, var(--mbx-c-bg-h))
   );
@@ -42,10 +33,4 @@
     --mbx-checkbox-tick-color-dark,
     var(--mbx-checkbox-tick-color, white)
   );
-}
-
-@media (hover) {
-  [data-mbx-id="check"]:hover {
-    background: var(--mbx-chk-bg-h, var(--mbx-chk-bg, var(--mbx-c-bg)));
-  }
 }

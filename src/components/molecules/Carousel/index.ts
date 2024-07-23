@@ -52,7 +52,7 @@ const Carousel: CarouselComponent = ({ active = true, ...props }) => {
     mbxProps,
     defaultValue: 0,
     inputValue: props.value,
-    cssBg: ["car-bg"],
+    features: { wBgCl: true },
     Component: ({ value, setValue }) =>
       component({
         ...props,

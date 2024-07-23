@@ -59,8 +59,8 @@ const RadioButton: RadioButtonComponent = ({
     inputValue,
     features: {
       opHov: true,
+      wAll: true,
     },
-    cssBg: ["rd-bg", "rd-bg-h"],
     props: (value, setValue) => {
       const callBack = () => {
         if (!value || deselectable) {

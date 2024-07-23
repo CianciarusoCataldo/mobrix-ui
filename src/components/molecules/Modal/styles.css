@@ -4,10 +4,6 @@
   top: 0;
   left: 0;
   height: 100%;
-  --mbx-mod-bg: var(
-    --mbx-modal-background-light,
-    var(--mbx-modal-background, rgba(0, 0, 0, 0.8))
-  );
   padding: 0.1rem;
   display: flex;
   flex-direction: column;
@@ -18,14 +14,9 @@
   -moz-animation: var(--mbx-md-an);
   -ms-animation: var(--mbx-md-an);
   -o-animation: var(--mbx-md-an);
-  background-color: var(--mbx-mod-bg);
-}
-
-[data-mbx-id="mod"][data-mbx-dk] {
-  --mbx-mod-bg: var(
-    --mbx-modal-background-dark,
-    var(--mbx-modal-background, rgba(0, 0, 0, 0.8))
-  );
+  --mbx-def-bg: rgba(0, 0, 0, 0.8);
+  --mbx-bg-l: var(--mbx-modal-background-light, var(--mbx-modal-background));
+  --mbx-bg-d: var(--mbx-modal-background-dark, var(--mbx-modal-background));
 }
 
 [data-mbx-id="mod"] > [data-mbx-id="dis-card"] > [data-mbx-cbody] {
@@ -36,9 +27,10 @@
 }
 
 [data-mbx-id="mod"] > [data-mbx-id="dis-card"] > [data-mbx-dchead] {
+  --mbx-def-modx: white;
   --mbx-dismissablecard-x-color-light: var(
     --mbx-modal-x-color-light,
-    var(--mbx-modal-x-color, white)
+    var(--mbx-modal-x-color, var(--mbx-def-modx))
   );
   --mbx-dismissablecard-x-color-hover-light: var(
     --mbx-modal-x-color-hover-light,
@@ -46,7 +38,7 @@
   );
   --mbx-dismissablecard-x-color-dark: var(
     --mbx-modal-x-color-dark,
-    var(--mbx-modal-x-color, white)
+    var(--mbx-modal-x-color, var(--mbx-def-modx))
   );
   --mbx-dismissablecard-x-color-hover-dark: var(
     --mbx-modal-x-color-hover-dark,

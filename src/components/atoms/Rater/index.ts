@@ -65,9 +65,11 @@ const Rater: RaterComponent = ({
         ...props,
         ...mbxProps,
       }),
-    cssBg: ["rat-bg"],
     styles: {
       flexDirection: vertical ? "column" : "row",
+    },
+    features: {
+      wBg: true,
     },
     mbxProps: { ...mbxProps, active: false },
   }));

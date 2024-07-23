@@ -16,7 +16,6 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
   dark,
   disabled,
   hover,
-  shadow,
   background,
   a11y,
   animated,
@@ -34,9 +33,9 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
   const [values, setValues] =
     React.useState<Record<string, string | boolean | number>>(d_fields);
 
-  const cProps = { a11y, dark, hover, disabled };
-  const cmps = [
-    <Label key="frm_tl" data-mbx-ftitle {...cProps}>
+  const cProps = { a11y, hover, disabled };
+  return [
+    <Label dark={dark} key="frm_tl" data-mbx-ftitle {...cProps}>
       {title}
     </Label>,
     ...Object.keys(d_fields).map((field, index) => {
@@ -47,7 +46,6 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
           <FormField
             {...cProps}
             animated={animated}
-            shadow={shadow}
             background={background}
             value={values[field]}
             header={header}
@@ -60,15 +58,10 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
         </div>
       );
     }),
-  ];
-
-  children && cmps.push(children);
-
-  cmps.push(
+    children,
     <Button
       {...cProps}
       animated={false}
-      shadow={shadow}
       key="form_s_bt"
       dark={!dark}
       onClick={() => {
@@ -78,9 +71,7 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
     >
       {submitLabel}
     </Button>,
-  );
-
-  return cmps;
+  ];
 };
 
 export default Component;

@@ -49,7 +49,6 @@ const Dropdown: DropdownComponent = ({ active, ...props }) =>
     name: "dd",
     defaultValue: 0,
     inputValue: props.value,
-    cssBg: ["dd-bg", "dd-bg-h"],
     mbxProps,
     props: (value, setValue) =>
       component({
