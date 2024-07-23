@@ -42,6 +42,10 @@
 - `Review` logo now can be customized, wihout choosing a predefined type (`logo` property now accept a standard JSX.Element)
 - UI re-designed for all components
 - New `Password` component, a modern password field
+- Css vars naming changed, to simplify overall dev experience and to optimize bundle size and to avoid redundancy:
+  - `arrow` instead of `arrow-color`
+  - `icon` instead of `icon-color`
+  - `text` instead of `text-color`
 
 <br>
 
