@@ -14,7 +14,9 @@ const radioButtonGroupTest = () => {
           elementClassName="test"
           radioProps={{}}
           defaultPosition="right"
-          buttons={[{ text: "Test radio button" }]}
+          buttons={[
+            { text: "Test radio button", props: {}, textPosition: "top" },
+          ]}
         />
       );
       wrapper.find('[data-mbx-id="radio"]').at(0).simulate("click");

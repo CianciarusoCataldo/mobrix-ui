@@ -10,7 +10,14 @@ const formFieldTest = () => {
 
       expect(wrapper);
 
-      wrapper = mount(<FormField animated required />);
+      wrapper = mount(
+        <FormField
+          // @ts-ignore
+          type="invalid"
+          animated
+          required
+        />
+      );
 
       // @ts-ignore
       wrapper.find("input").simulate("change", "32");

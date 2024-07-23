@@ -32,22 +32,13 @@ export default () =>
           disabled
           width="20px"
           height="20px"
-          transform="scaleX(1)"
           fill="none"
           hide
         />
       );
       expect(wrapper);
       wrapper = mount(
-        <Xicon
-          animated
-          disabled
-          width="20px"
-          height="20px"
-          transform="scaleX(1)"
-          fill="none"
-          hide
-        />
+        <Xicon animated disabled width="20px" height="20px" fill="none" hide />
       );
       expect(wrapper);
       wrapper = mount(
@@ -56,7 +47,6 @@ export default () =>
           disabled
           width="20px"
           height="20px"
-          transform="scaleX(1)"
           fill="none"
           hide
         />
@@ -64,14 +54,7 @@ export default () =>
       expect(wrapper);
 
       wrapper = mount(
-        <CheckIcon
-          animated
-          disabled
-          width="20px"
-          height="20px"
-          transform="scaleX(1)"
-          hide
-        />
+        <CheckIcon animated disabled width="20px" height="20px" hide />
       );
       expect(wrapper);
 
@@ -81,7 +64,6 @@ export default () =>
           disabled
           width="20px"
           height="20px"
-          transform="scaleX(1)"
           hide
           dark
           fill="none"
@@ -95,7 +77,6 @@ export default () =>
           disabled
           width="20px"
           height="20px"
-          transform="scaleX(1)"
           hide
           dark
           fill="none"
@@ -109,7 +90,6 @@ export default () =>
           disabled: true,
           width: "20x",
           height: "2px",
-          transform: "scaleX(1)",
           hide: true,
           dark: true,
           fill: "none",

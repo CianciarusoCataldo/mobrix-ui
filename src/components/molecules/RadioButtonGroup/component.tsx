@@ -12,10 +12,10 @@ const cssC = {
   right: { dir: "row-reverse", rev: "left" },
 } as const;
 
-const parse = (inp) => inp.replace(/\b\w/g, (l) => l.toUpperCase());
+const parse = (inp: string) => inp.replace(/\b\w/g, (l) => l.toUpperCase());
 const getMargins = (position: string) => ({
   [`margin${parse(position)}`]: 0,
-  [`margin${parse(cssC[position])}`]: "0.7rem",
+  [`margin${parse(cssC[position].rev)}`]: "0.7rem",
 });
 
 const component: MbxUiReactiveComponent<number, RadioButtonGroupProps> = ({
@@ -37,7 +37,7 @@ const component: MbxUiReactiveComponent<number, RadioButtonGroupProps> = ({
   return buttons.map(
     (
       { textPosition = defaultPosition, text, component, props = {} },
-      index,
+      index
     ) => (
       <div
         className={elementClassName}
@@ -72,7 +72,7 @@ const component: MbxUiReactiveComponent<number, RadioButtonGroupProps> = ({
           {...props}
         />
       </div>
-    ),
+    )
   );
 };
 

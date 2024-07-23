@@ -39,9 +39,9 @@ const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
     }
   }, [required]);
 
-  const FieldComponent: MbxUiReactiveComponent = (
-    formatters[type] || formatters.text
-  ).component;
+  const frmt = formatters[type] || formatters.text;
+
+  const FieldComponent: MbxUiReactiveComponent = frmt.component;
 
   const sProps = { dark, disabled, animated, hover, background, a11y };
   return [
@@ -56,7 +56,7 @@ const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
       })}
       key="f_comp"
       className={className}
-      value={formatters[type].format(value)}
+      value={frmt.format(value)}
       shadow={shadow}
       onKeyDown={(e) => {
         /* istanbul ignore next */
@@ -68,7 +68,7 @@ const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
         }
       }}
       onChange={(newValue) => {
-        const fValue = formatters[type].format(newValue);
+        const fValue = frmt.format(newValue);
 
         if (!validate(fValue) || (required && !newValue)) {
           setError(true);

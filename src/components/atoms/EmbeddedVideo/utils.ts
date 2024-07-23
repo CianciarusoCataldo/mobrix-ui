@@ -44,5 +44,5 @@ export const parseUrl: (url: string) => {
 } = (url) => {
   const res = vdSource.find((el) => url.startsWith(el.filter));
 
-  return res ? { ...res, link: res?.parse(url) } : {};
+  return res ? { ...res, link: res.parse(url) } : {};
 };
