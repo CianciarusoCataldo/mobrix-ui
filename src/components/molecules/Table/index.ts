@@ -52,7 +52,7 @@ import component from "./component";
  */
 const Table: TableComponent = (props) =>
   buildMbxStandard(props, (mbxProps) => ({
-    name: "table",
+    name: "tbl",
     Component: component({
       ...props,
       ...mbxProps,

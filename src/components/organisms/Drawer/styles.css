@@ -1,5 +1,4 @@
 @import url("positions.css");
-@import url("close-button.css");
 
 [data-mbx-id="drw"] {
   --mbx-draw-bg: var(
@@ -19,6 +18,8 @@
   position: fixed;
   z-index: 10;
   padding: 0;
+  --mbx-drw-rt: 0deg;
+  display: flex;
 }
 
 [data-mbx-id="drw"][data-mbx-dk] {

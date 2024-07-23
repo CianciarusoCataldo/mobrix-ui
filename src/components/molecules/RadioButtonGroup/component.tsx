@@ -5,12 +5,18 @@ import { MbxUiReactiveComponent, RadioButtonGroupProps } from "../../../types";
 import Label from "../../atoms/Label";
 import RadioButton from "../../atoms/RadioButton";
 
-const cssClasses = {
+const cssC = {
   top: { dir: "column", rev: "bottom" },
   bottom: { dir: "column-reverse", rev: "top" },
   left: { dir: "row", rev: "right" },
   right: { dir: "row-reverse", rev: "left" },
 } as const;
+
+const parse = (inp) => inp.replace(/\b\w/g, (l) => l.toUpperCase());
+const getMargins = (position: string) => ({
+  [`margin${parse(position)}`]: 0,
+  [`margin${parse(cssC[position])}`]: "0.7rem",
+});
 
 const component: MbxUiReactiveComponent<number, RadioButtonGroupProps> = ({
   value,
@@ -24,42 +30,36 @@ const component: MbxUiReactiveComponent<number, RadioButtonGroupProps> = ({
   disabled,
   active,
   hover,
+  a11y,
 }) => {
-  const getMargins = (position: string) => ({
-    [`margin${position.replace(/\b\w/g, (l) => l.toUpperCase())}`]: 0,
-    [`margin${cssClasses[position].rev.replace(/\b\w/g, (l) =>
-      l.toUpperCase(),
-    )}`]: "0.7rem",
-  });
+  const sProps = { disabled, dark, hover, a11y };
 
-  return buttons.map((element, index) => {
-    const txtPosition = element.textPosition || defaultPosition;
-
-    return (
+  return buttons.map(
+    (
+      { textPosition = defaultPosition, text, component, props = {} },
+      index,
+    ) => (
       <div
         className={elementClassName}
         key={"rgr_el_" + index}
-        data-mbx-rdgp={txtPosition}
+        data-mbx-rdgp={textPosition}
         style={{
-          flexDirection: cssClasses[txtPosition].dir,
+          flexDirection: cssC[textPosition].dir,
         }}
       >
         <Label
-          hide={!element.text}
-          disabled={disabled}
+          hide={!text}
           key="rd_txt"
-          dark={dark}
           style={{
-            ...getMargins(txtPosition),
+            ...getMargins(textPosition),
           }}
+          {...sProps}
         >
-          {element.text}
+          {text}
         </Label>
-        {element.component}
+        {component}
         <RadioButton
-          hover={hover}
           active={active}
-          disabled={disabled}
           deselectable={false}
           key={`rd_cm_${index}`}
           value={value === index}
@@ -67,12 +67,13 @@ const component: MbxUiReactiveComponent<number, RadioButtonGroupProps> = ({
             onChange(index);
             setValue(index);
           }}
+          {...sProps}
           {...radioProps}
-          {...(element.props || {})}
+          {...props}
         />
       </div>
-    );
-  });
+    ),
+  );
 };
 
 export default component;

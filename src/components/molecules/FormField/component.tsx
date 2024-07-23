@@ -23,6 +23,8 @@ const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
   shadow,
   animated,
   disabled,
+  hover,
+  a11y,
   headerProps = {},
 }) => {
   const isError = (required && !value) || !validate(value);
@@ -37,30 +39,25 @@ const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
     }
   }, [required]);
 
-  const FieldComponent: MbxUiReactiveComponent = formatters[type].component;
+  const FieldComponent: MbxUiReactiveComponent = (
+    formatters[type] || formatters.text
+  ).component;
 
+  const sProps = { dark, disabled, animated, hover, background, a11y };
   return [
-    <Label hide={!header} unstyled key="fld_h_b" dark={dark} {...headerProps}>
+    <Label hide={!header} unstyled key="f_h_b" {...headerProps} {...sProps}>
       {header}
     </Label>,
     <FieldComponent
+      {...sProps}
+      animation={anim && "shake"}
+      {...(error && {
+        "data-mbx-fld-e": error,
+      })}
+      key="f_comp"
       className={className}
-      disabled={disabled}
-      animated={animated}
-      /* istanbul ignore next */
-      {...{
-        ...(anim && {
-          animation: "shake",
-        }),
-        ...(error && {
-          "data-mbx-fld-e": error,
-        }),
-      }}
-      key="fld_comp"
       value={formatters[type].format(value)}
       shadow={shadow}
-      dark={dark}
-      background={background}
       onKeyDown={(e) => {
         /* istanbul ignore next */
         if (e.code === "Enter" && error) {
@@ -71,24 +68,23 @@ const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
         }
       }}
       onChange={(newValue) => {
-        const formattedValue = formatters[type].format(newValue);
+        const fValue = formatters[type].format(newValue);
 
-        if (!validate(formattedValue) || (required && !newValue)) {
+        if (!validate(fValue) || (required && !newValue)) {
           setError(true);
         } else {
           setError(false);
         }
-        onChange(formattedValue);
-        setValue(formattedValue);
+        onChange(fValue);
+        setValue(fValue);
       }}
     />,
     <Container
-      animated={animated}
+      {...sProps}
       animation="fade-in"
-      dark={dark}
       hide={!error}
       background={false}
-      key="fld_eb"
+      key="f_eb"
       shadow={false}
     >
       {errorLabel}

@@ -32,6 +32,10 @@
   margin-left: auto;
 }
 
+[data-mbx-id="rev"] > [data-mbx-id="rat"] {
+  margin: 0 auto;
+}
+
 [data-mbx-id="rev"] > div {
   margin-bottom: 0.4rem;
   display: flex;

@@ -3,29 +3,35 @@ import { MbxIcon, MbxIconProps } from "../types/global/global";
 
 const BasicIcon: (properties: {
   props: MbxIconProps;
-  Icon: MbxIcon;
-}) => JSX.Element = ({ props, Icon }) => {
+  children: MbxIcon;
+}) => JSX.Element = ({
+  props: { height, width, hide, style, reverseX, disabled },
+  children: Cmp,
+}) => {
   return (
-    <Icon
-      height={props.height}
-      width={props.width}
+    <Cmp
+      height={height}
+      width={width}
       style={
         {
-          ...props.style,
-          ...(props.hide && {
+          ...style,
+          ...(hide && {
             "--mbx-ic-c": "none",
+          }),
+          ...(reverseX && {
+            WebkitTransform: "scaleX(-1)",
+            transform: "scaleX(-1)",
           }),
         } as React.CSSProperties
       }
-      {...(props.transform && { transform: props.transform })}
+      {...(disabled && { "data-mbx-dsb": "" })}
     />
   );
 };
 
 export const link: MbxIcon = (props) => (
-  <BasicIcon
-    props={props}
-    Icon={(props) => (
+  <BasicIcon props={props}>
+    {(props) => (
       <svg
         viewBox="0 0 457.03 457.03"
         xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +42,7 @@ export const link: MbxIcon = (props) => (
         <path d="m421.512 207.074-85.795 85.767c-47.352 47.38-124.169 47.38-171.529 0-7.46-7.439-13.296-15.821-18.421-24.465l39.864-39.861c1.895-1.911 4.235-3.006 6.471-4.296 2.756 9.416 7.567 18.33 14.972 25.736 23.648 23.667 62.128 23.634 85.762 0l85.768-85.765c23.666-23.664 23.666-62.135 0-85.781-23.635-23.646-62.105-23.646-85.768 0l-30.499 30.532c-24.75-9.637-51.415-12.228-77.373-8.424l64.991-64.989c47.38-47.371 124.177-47.371 171.557 0 47.357 47.369 47.357 124.178 0 171.546zm-226.804 141.03-30.521 30.532c-23.646 23.634-62.128 23.634-85.778 0-23.648-23.667-23.648-62.138 0-85.795l85.778-85.767c23.665-23.662 62.121-23.662 85.767 0 7.388 7.39 12.204 16.302 14.986 25.706 2.249-1.307 4.56-2.369 6.454-4.266l39.861-39.845c-5.092-8.678-10.958-17.03-18.421-24.477-47.348-47.371-124.172-47.371-171.543 0L35.526 249.96c-47.366 47.385-47.366 124.172 0 171.553 47.371 47.356 124.177 47.356 171.547 0l65.008-65.003c-25.972 3.826-52.644 1.213-77.373-8.406z" />
       </svg>
     )}
-  />
+  </BasicIcon>
 );
 
 export const Xicon: MbxIcon = ({
@@ -50,7 +56,8 @@ export const Xicon: MbxIcon = ({
       height,
       ...iprops,
     }}
-    Icon={(props) => (
+  >
+    {(props) => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 400 400"
@@ -64,7 +71,7 @@ export const Xicon: MbxIcon = ({
         />
       </svg>
     )}
-  />
+  </BasicIcon>
 );
 
 export const ArrowIcon: MbxIcon = ({
@@ -78,7 +85,8 @@ export const ArrowIcon: MbxIcon = ({
       height,
       ...icprops,
     }}
-    Icon={(props) => (
+  >
+    {(props) => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 11 18"
@@ -89,7 +97,7 @@ export const ArrowIcon: MbxIcon = ({
         <path d="M10.8032656 15.0470656l-2.1213 2.1213-8.4852-8.4852 2.1213-2.1213z" />
       </svg>
     )}
-  />
+  </BasicIcon>
 );
 
 export const CalendarIcon: MbxIcon = ({
@@ -103,7 +111,8 @@ export const CalendarIcon: MbxIcon = ({
       height,
       ...iprops,
     }}
-    Icon={({ fill, ...props }) => (
+  >
+    {({ fill, ...props }) => (
       <svg
         data-mbx-img="cal"
         viewBox="0 -256 1850 1850"
@@ -116,13 +125,12 @@ export const CalendarIcon: MbxIcon = ({
         />
       </svg>
     )}
-  />
+  </BasicIcon>
 );
 
 export const CheckIcon: MbxIcon = ({ fill = "inherit", ...iprops }) => (
-  <BasicIcon
-    props={{ fill, ...iprops }}
-    Icon={(props) => (
+  <BasicIcon props={{ fill, ...iprops }}>
+    {(props) => (
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +153,7 @@ export const CheckIcon: MbxIcon = ({ fill = "inherit", ...iprops }) => (
         </g>
       </svg>
     )}
-  />
+  </BasicIcon>
 );
 
 export const CopyIcon: MbxIcon = ({
@@ -153,9 +161,8 @@ export const CopyIcon: MbxIcon = ({
   height = "25px",
   ...iprops
 }) => (
-  <BasicIcon
-    props={{ height, width, ...iprops }}
-    Icon={(props) => (
+  <BasicIcon props={{ height, width, ...iprops }}>
+    {(props) => (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 60 60"
@@ -197,5 +204,5 @@ export const CopyIcon: MbxIcon = ({
         />
       </svg>
     )}
-  />
+  </BasicIcon>
 );

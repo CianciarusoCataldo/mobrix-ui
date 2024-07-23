@@ -25,8 +25,8 @@
   border-radius: 40px;
   border-width: 0;
   --mbx-tgl-tr: 35px;
-  --svginternalcolor: var(--mbx-tog-ic-off-int);
-  --svgexternalcolor: var(--mbx-tog-ic-off-ext);
+  --mbx-tgin: var(--mbx-tog-ic-off-int);
+  --mbx-tgex: var(--mbx-tog-ic-off-ext);
 }
 
 [data-mbx-id="tgl"][data-mbx-dk] {

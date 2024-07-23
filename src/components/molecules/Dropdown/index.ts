@@ -2,8 +2,8 @@ import "./styles.css";
 
 import { DropdownComponent } from "../../../types";
 
-import dropdownComponent from "./component";
 import { buildMbxReactive } from "../../../tools";
+import component from "./component";
 
 /**
  * Show a list of elements in a dropdown menu (with fade-in and out effects). Can be easily customized and every element style and behaviour (with a callback) can be customized too.
@@ -52,7 +52,7 @@ const Dropdown: DropdownComponent = ({ active, ...props }) =>
     cssBg: ["dd-bg", "dd-bg-h"],
     mbxProps,
     props: (value, setValue) =>
-      dropdownComponent({
+      component({
         ...mbxProps,
         ...props,
         active,

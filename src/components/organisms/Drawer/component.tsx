@@ -32,7 +32,7 @@ const DrwComponent: MbxUiComponent<DrawerProps, BuilderComponent[]> = ({
       dark={dark}
       a11yLabel="drawer-close-button"
     >
-      <ArrowIcon />
+      <ArrowIcon disabled={disabled} />
     </IconButton>,
     <div key="drw_cont">{children}</div>,
   ];

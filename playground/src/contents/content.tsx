@@ -9,9 +9,11 @@ const AppContent = () => {
 
   return (
     <Button
-      animated={false}
-      scl="myauto"
-      className="p-0 py-2 absolute top-[50%] -left-2 opacity-60 hover:-left-1"
+      className="p-0 py-2 absolute top-[50%] left-0 opacity-60 my-auto"
+      style={{
+        borderTopLeftRadius: "0%",
+        borderBottomLeftRadius: "0%",
+      }}
       onClick={() => {
         dispatch(openDrawer());
       }}

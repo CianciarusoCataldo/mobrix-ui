@@ -60,8 +60,8 @@ const Toggle: ToggleComponent = ({
     props: (status, setStatus) => ({
       styles: {
         ...(status && {
-          "--svginternalcolor": "var(--mbx-tog-ic-on-int)",
-          "--svgexternalcolor": "var(--mbx-tog-ic-on-ext)",
+          "--mbx-tgin": "var(--mbx-tog-ic-on-int)",
+          "--mbx-tgex": "var(--mbx-tog-ic-on-ext)",
           "--mbx-tgl-tr": " 0%",
         }),
       },

@@ -2,21 +2,21 @@
   height: 30px;
   width: 30px;
   padding: 0.2rem;
-  align-items: center;
-  text-align: center;
+  --mbx-align: center;
   display: flex;
   flex-direction: column;
+  --mbx-trdur: 0.1s;
   --mbx-chk-bg: var(
     --mbx-checkbox-background-light,
-    var(--mbx-checkbox-background, var(--mbx-c-bg))
+    var(--mbx-checkbox-background)
   );
-  background: var(--mbx-chk-bg);
+  background: var(--mbx-chk-bg, var(--mbx-c-bg));
 }
 
 [data-mbx-id="check"][data-mbx-dk] {
   --mbx-chk-bg: var(
     --mbx-checkbox-background-dark,
-    var(--mbx-checkbox-background, var(--mbx-c-bg))
+    var(--mbx-checkbox-background)
   );
 }
 
@@ -33,7 +33,7 @@
   );
 }
 
-[data-mbx-id="check"] > [data-mbx-img="tick"] {
+[data-mbx-id="check"] > [data-mbx-img] {
   --mbx-icon-light: var(
     --mbx-checkbox-tick-color-light,
     var(--mbx-checkbox-tick-color, rgb(37, 99, 235))
@@ -46,6 +46,6 @@
 
 @media (hover) {
   [data-mbx-id="check"]:hover {
-    background: var(--mbx-chk-bg-h, var(--mbx-chk-bg));
+    background: var(--mbx-chk-bg-h, var(--mbx-chk-bg, var(--mbx-c-bg)));
   }
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 import { MbxUiComponent, TableProps } from "../../../types";
 
-const parseClassName = (className: string) => (className ? { className } : {});
+const parse = (className: string) => (className ? { className } : {});
 
 const tComponent: MbxUiComponent<TableProps, JSX.Element> = ({
   headers,
@@ -18,50 +18,46 @@ const tComponent: MbxUiComponent<TableProps, JSX.Element> = ({
   disabled,
 }) => {
   const props = {
-    row: { ...parseClassName(rowClassName), ...rowProps },
+    row: { ...parse(rowClassName), ...rowProps },
     cell: {
-      ...parseClassName(cellClassName),
+      ...parse(cellClassName),
       ...cellProps,
       tabIndex: disabled ? -1 : 0,
     },
-    head: { ...parseClassName(headerClassName), ...headersProps, tabIndex: -1 },
+    head: { ...parse(headerClassName), ...headersProps, tabIndex: -1 },
   };
 
-  let wrappers: {
-    wrapper: "td" | "th";
-    cellProps: Record<string, any>;
-    rowProps: Record<string, any>;
-  }[] = rows.map((row) => ({
-    wrapper: "td",
-    cellProps: props.cell,
-    rowProps: props.row,
+  let wrp: any[] = rows.map((row) => ({
+    wrp: "td",
+    cPrp: props.cell,
+    rPrp: props.row,
   }));
 
   if (headers && rows.length > 0) {
-    wrappers[0].wrapper = "th";
-    wrappers[0].cellProps = {
+    wrp[0].wrp = "th";
+    wrp[0].cPrp = {
+      ...wrp[0].cPrp,
       ...props.head,
-      ...wrappers[0].cellProps,
     };
   }
 
   return (
     <tbody key="tbl_b">
-      {rows.map((row, rowIndex) => (
-        <tr key={`row_${rowIndex}`} {...wrappers[rowIndex].rowProps}>
-          {row.map((element, index) => {
-            const Wrapper = wrappers[rowIndex].wrapper;
+      {rows.map((row, rInd) => (
+        <tr key={`row_${rInd}`} {...wrp[rInd].rPrp}>
+          {row.map((el, index) => {
+            const Wrapper = wrp[rInd].wrp;
 
             return (
               <Wrapper
                 data-mbx-tcell=""
-                key={`el_${rowIndex}_${index}`}
+                key={`el_${rInd}_${index}`}
                 align="center"
-                onClick={() => onClick(rowIndex, index)}
-                {...wrappers[rowIndex].cellProps}
-                {...propsCallback(rowIndex, index)}
+                onClick={() => onClick(rInd, index)}
+                {...wrp[rInd].cPrp}
+                {...propsCallback(rInd, index)}
               >
-                {element}
+                {el}
               </Wrapper>
             );
           })}

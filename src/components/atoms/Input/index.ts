@@ -52,7 +52,7 @@ const Input: InputComponent = ({
   autoresizable,
   ...props
 }) =>
-  buildMbxReactive<string | undefined>(props, (sPrps) => ({
+  buildMbxReactive<string | undefined>(props, ({ disabled, ...sPrps }) => ({
     name: "inp",
     wrapper: "input",
     features: {
@@ -70,10 +70,10 @@ const Input: InputComponent = ({
         type: "text",
         value,
         placeholder,
-        disabled: sPrps.disabled,
-        readOnly: readOnly || sPrps.disabled,
+        disabled,
+        readOnly: readOnly || disabled,
         onChange: (e) => {
-          if (!readOnly && !sPrps.disabled) {
+          if (!readOnly && !disabled) {
             const newValue = e.target.value ? e.target.value : "";
             onChange(newValue);
             setValue(newValue);
@@ -82,6 +82,7 @@ const Input: InputComponent = ({
       },
       mbxProps: {
         ...sPrps,
+        disabled,
         hover: sPrps.hover && !readOnly,
       },
     }),

@@ -1,8 +1,7 @@
 [data-mbx-id="radio"] {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  --mbx-align: center;
   border-color: transparent;
   width: 30px;
   height: 30px;
@@ -27,10 +26,6 @@
       radial-gradient(circle at 23px 23px, #2d3748, #191f29)
     )
   );
-  --mbx-rd-bg-h: var(
-    --mbx-radio-background-hover-light,
-    var(--mbx-radio-background-hover)
-  );
   background: var(--mbx-rd-bg);
 }
 
@@ -48,16 +43,26 @@
       )
     )
   );
-  --mbx-rd-bg-h: var(
-    --mbx-radio-background-hover-dark,
-    var(--mbx-radio-background-hover)
-  );
   --mbx-rd-ic: var(
     --mbx-radio-icon-background-dark,
     var(
       --mbx-radio-icon-background,
       radial-gradient(circle at 23px 23px, #dbe0e6, #949494)
     )
+  );
+}
+
+[data-mbx-id="radio"][data-mbx-hv] {
+  --mbx-rd-bg-h: var(
+    --mbx-radio-background-hover-light,
+    var(--mbx-radio-background-hover)
+  );
+}
+
+[data-mbx-id="radio"][data-mbx-hv][data-mbx-dk] {
+  --mbx-rd-bg-h: var(
+    --mbx-radio-background-hover-dark,
+    var(--mbx-radio-background-hover)
   );
 }
 
@@ -73,7 +78,7 @@
 }
 
 @media (hover) {
-  [data-mbx-id="radio"][data-mbx-hv]:hover {
+  [data-mbx-id="radio"]:hover {
     background: var(--mbx-rd-bg-h, var(--mbx-rd-bg));
   }
 }

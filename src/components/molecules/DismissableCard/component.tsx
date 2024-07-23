@@ -15,12 +15,15 @@ const Component: MbxUiComponent<DismissableCardProps, BuilderComponent[]> = ({
   disabled,
   active,
   hover,
+  a11y,
   ...props
 }) =>
   card({
     ...props,
+    a11y,
     header: [
       <IconButton
+        a11y={a11y}
         dark={dark}
         hover={hover}
         disabled={disabled}

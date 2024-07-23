@@ -390,7 +390,7 @@ export type MbxBuildReactiveProps<T = any> = BuilderProps<
 
 export type MbxIconProps = Omit<MbxSharedProps, "tabIndex"> & {
   fill?: string;
-  transform?: string;
+  reverseX?: boolean;
   width?: string;
   height?: string;
   style?: Record<string, any>;

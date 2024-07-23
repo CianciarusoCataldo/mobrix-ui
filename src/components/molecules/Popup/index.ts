@@ -45,7 +45,7 @@ import component from "./component";
  */
 const Popup: PopupComponent = ({ children, className, ...props }) =>
   buildMbxStandard(props, (mbxProps) => ({
-    name: "popup",
+    name: "pp",
     mbxProps,
     Component: component({ ...mbxProps, className, children }),
   }));

@@ -25,8 +25,9 @@ Smart React components for every app, easily customizable for every purpose.
 
 > ## Note for older MoBrix-ui version
 >
-> MoBrix-ui v3 introduces some breaking changes that makes it not compatible with older MoBrix verions (using different lib versions in parallel is possible, but can cause some unexpected errors). If you are using MoBrix 2.X.X or lower, upgrade it to v3.X.X if possible!
-> Please read the [old versions guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/old-guides) if you want to use older MoBrix-ui versions.
+> If you still want to use older MoBrix-ui versions, read the [old versions guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/old-guides) .
+>
+> (Upgrade it to v4.X.X if possible!)
 >
 > <br>
 

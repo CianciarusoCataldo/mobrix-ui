@@ -68,7 +68,6 @@ const RadioButton: RadioButtonComponent = ({
           setValue(!value);
         }
       };
-
       return {
         addProps: {
           ...(!sProps.disabled && {

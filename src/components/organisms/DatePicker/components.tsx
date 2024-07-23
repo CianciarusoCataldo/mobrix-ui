@@ -8,7 +8,7 @@ import {
 
 import { defaultDays, defaultMonths } from "../Calendar/constants";
 
-import { getMonthsDuration } from "../Calendar/utils";
+import { durations } from "../Calendar/utils";
 
 import { CalendarIcon } from "../../../icons/generic";
 
@@ -52,7 +52,7 @@ const DpickComponent: MbxUiReactiveComponent<
       ? value.month
       : todayDate.month;
 
-  const mDuration = getMonthsDuration(year);
+  const mDuration = durations(year);
 
   const day =
     value.dayOfTheMonth &&
@@ -67,46 +67,42 @@ const DpickComponent: MbxUiReactiveComponent<
     setVisible(false);
   };
 
+  const cProps = { a11y, disabled, dark, hover };
   return [
     <div key="dpk_sels" data-mbx-date-s>
-      <Label a11y={a11y} disabled={disabled} key="day">
+      <Label {...cProps} key="day">
         {String(day)}
       </Label>
-      <Label a11y={a11y} disabled={disabled} key="month">
+      <Label {...cProps} key="month">
         {String(customMonths[month])}
       </Label>
-      <Label a11y={a11y} disabled={disabled} key="year">
+      <Label {...cProps} key="year">
         {String(year)}
       </Label>
     </div>,
     <IconButton
-      disabled={disabled}
+      {...cProps}
       onClick={() => setVisible(true)}
       key="dpk_cal_bt"
       active={active}
-      hover={hover}
-      dark={dark}
-      a11y={a11y}
     >
-      <CalendarIcon />
+      <CalendarIcon {...cProps} />
     </IconButton>,
     <Modal
-      disabled={disabled}
+      {...cProps}
       hide={!isVisible}
       key="dpk_mod"
-      a11y={a11y}
       animated={animated}
       onClose={onCloseCallback}
     >
       <Calendar
-        a11y={a11y}
+        {...cProps}
         active={active}
         shadow={shadow}
         days={customDays}
         months={customMonths}
         startMonth={startMonth}
         startYear={startYear}
-        disabled={disabled}
         hideArrows={hideArrows}
         fromToday={fromToday}
         onViewChange={onViewChange}
@@ -116,7 +112,6 @@ const DpickComponent: MbxUiReactiveComponent<
           onChange(date);
           setValue(date);
         }}
-        dark={dark}
         labelProps={{ dark: true }}
         {...calendarProps}
       />

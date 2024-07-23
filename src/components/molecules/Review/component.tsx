@@ -24,48 +24,48 @@ const component: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
   dark,
   active,
   a11y,
-}) => [
-  <Link
-    a11y={a11y}
-    key="rev_link"
-    dark={dark}
-    hover={hover && !disabled}
-    newTab
-    to={url}
-    disabled={disabled}
-    features={{ opFc: true }}
-    active={active}
-    hide={!url}
-  >
-    {logo}
-  </Link>,
-  <div key="info">
-    <div key="topc">
-      <div key="ph">{icon}</div>
-      {user && (
-        <Label a11y={a11y} key="user" disabled={disabled} dark={dark}>
-          {user}
+}) => {
+  const cProps = { dark, disabled, a11y, hover };
+  return [
+    <Link
+      key="rev_link"
+      newTab
+      to={url}
+      features={{ opFc: true }}
+      active={active}
+      hide={!url}
+      {...cProps}
+    >
+      {logo}
+    </Link>,
+    <div key="info">
+      <div key="topc">
+        <div key="ph">{icon}</div>
+        {user && (
+          <Label {...cProps} key="user">
+            {user}
+          </Label>
+        )}
+      </div>
+      {description && (
+        <Label key="desc" {...cProps}>
+          {description}
         </Label>
       )}
-    </div>
-    {description && (
-      <Label key="desc" disabled={disabled} dark={dark}>
-        {description}
-      </Label>
-    )}
-  </div>,
-  <Rater
-    disabled={disabled}
-    key="rate"
-    hide={!rate}
-    type={rateType}
-    background={false}
-    shadow={false}
-    readonly
-    value={rate}
-    a11y={a11y}
-    max={max}
-  />,
-];
+    </div>,
+    <Rater
+      key="rate"
+      hide={!rate}
+      type={rateType}
+      background={false}
+      shadow={false}
+      readonly
+      value={rate}
+      max={max}
+      active={active}
+      {...cProps}
+    />,
+  ];
+};
 
 export default component;

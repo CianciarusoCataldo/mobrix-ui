@@ -22,12 +22,10 @@
   );
 }
 
-[data-mbx-id="econt"] > [data-mbx-id="icb"] {
+[data-mbx-id="econt"] > [data-mbx-rt] {
   display: flex;
   flex-direction: column;
   margin: auto;
-  rotate: -90deg;
-  --mbx-trdur: 0.1s;
 }
 
 [data-mbx-id="econt"] > [data-mbx-id="icb"] > [data-mbx-img="arr"] {

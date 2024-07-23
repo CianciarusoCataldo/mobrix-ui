@@ -21,12 +21,14 @@ const cdbComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   disabled,
   hover,
   active,
+  a11y,
 }) => {
   const parse: (inp: string, env: SupportedEnvironment) => CodeBlock[] =
     value.length > 0 ? getCode : (inp, e) => [{ value: inp }];
 
   return [
     <IconButton
+      a11y={a11y}
       key="cd_cp"
       onClick={() => value && navigator.clipboard.writeText(value)}
       hide={!copyButton}
@@ -34,7 +36,7 @@ const cdbComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
       hover={hover}
       active={active}
     >
-      <CopyIcon />
+      <CopyIcon disabled={disabled} />
     </IconButton>,
     <div key="cd_cd">
       {value.split("\n").map((codl, lIndex) => (
@@ -49,7 +51,7 @@ const cdbComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
               >
                 {cBlock.code}
               </span>
-            ),
+            )
           )}
         </p>
       ))}

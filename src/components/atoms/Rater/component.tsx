@@ -45,7 +45,7 @@ const Component: MbxUiReactiveComponent<number, RaterProps> = ({
         dark={dark}
         a11y={a11y && !readonly}
         disabled={disabled}
-        hover={hover}
+        hover={hover && !readonly}
         {...(readonly && {
           style: { cursor: "unset" },
         })}
@@ -55,12 +55,14 @@ const Component: MbxUiReactiveComponent<number, RaterProps> = ({
             setValue(newVote);
             onChange(i + 1);
           },
-          onMouseEnter: () => {
-            setHov(i);
-          },
-          onMouseLeave: () => {
-            setHov(null);
-          },
+          ...(hover && {
+            onMouseEnter: () => {
+              setHov(i);
+            },
+            onMouseLeave: () => {
+              setHov(null);
+            },
+          }),
         })}
       >
         {ICONS[type][icon]}

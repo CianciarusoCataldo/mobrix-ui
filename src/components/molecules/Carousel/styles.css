@@ -3,8 +3,7 @@
   display: flex;
   flex-direction: column;
   width: fit-content;
-  align-items: center;
-  text-align: center;
+  --mbx-align: center;
   --mbx-car-bg: var(
     --mbx-carousel-background-light,
     var(--mbx-carousel-background, var(--mbx-c-bg))

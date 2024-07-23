@@ -58,7 +58,7 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
   ...props
 }) =>
   buildMbxReactive<number>(props, (mbxProps) => ({
-    name: "rgroup",
+    name: "rgr",
     defaultValue: -1,
     inputValue,
     cssBg: ["radg-bg"],

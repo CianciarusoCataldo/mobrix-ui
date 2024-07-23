@@ -1,8 +1,8 @@
-[data-mbx-id="popup"] {
+[data-mbx-id="pp"] {
   position: relative;
 }
 
-[data-mbx-id="popup"] > [data-mbx-id="cont"] {
+[data-mbx-id="pp"] > [data-mbx-id="cont"] {
   position: absolute;
   scroll-behavior: smooth;
   animation-duration: 0.2s;

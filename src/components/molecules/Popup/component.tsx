@@ -11,8 +11,10 @@ const ppComponent: PopupComponent = ({
   dark,
   hover,
   shadow,
+  a11y,
 }) => (
   <Container
+    a11y={a11y}
     animated={animated}
     animation="fade-in"
     className={className}

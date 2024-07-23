@@ -42,8 +42,7 @@
   display: flex;
   flex-direction: column;
   width: fit-content;
-  align-items: center;
-  text-align: center;
+  --mbx-align: center;
 }
 
 [data-mbx-id="cal"][data-mbx-dk] {
@@ -89,33 +88,29 @@
 
 [data-mbx-id="cal"] > div > [data-mbx-id="icb"] {
   height: fit-content;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto 0;
   transition: 0.3s;
 }
 
-[data-mbx-id="cal"] > [data-mbx-id="table"] {
+[data-mbx-id="cal"] > [data-mbx-id="tbl"] {
   margin: auto;
   width: 100%;
   margin-top: 1rem;
 }
 
 [data-mbx-id="cal"] [data-mbx-tcell] {
-  font-size: medium;
   font-weight: 700;
 }
 
 [data-mbx-id="cal"] td[data-mbx-tcell] {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
   font-size: larger;
   transition: 0.3s;
+  padding: 1.5rem 0;
 }
 
 [data-mbx-id="cal"] th[data-mbx-tcell] {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   font-size: x-large;
+  padding: 0.8rem 0;
 }
 
 [data-mbx-id="cal"] [data-mbx-scal] {
@@ -125,7 +120,7 @@
 }
 
 [data-mbx-id="cal"] td[data-mbx-dsb] {
-  opacity: 0.4;
+  opacity: 0.4 !important;
 }
 
 [data-mbx-id="cal"] > div > [data-mbx-id="icb"] > [data-mbx-img] {
@@ -172,10 +167,8 @@
 @media (max-width: 500px) {
   [data-mbx-id="cal"] th[data-mbx-tcell] {
     margin: 0;
-    font-size: larger;
-    padding: 0.3rem;
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
+    font-size: large;
+    padding: 0.4rem 0.3rem;
   }
 
   [data-mbx-id="cal"] td[data-mbx-tcell] {
@@ -192,13 +185,23 @@
   }
 }
 
+@media (max-width: 470px) {
+  [data-mbx-id="cal"] th[data-mbx-tcell] {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 450px) {
+  [data-mbx-id="cal"] th[data-mbx-tcell] {
+    font-size: small;
+  }
+}
+
 @media (max-width: 400px) {
   [data-mbx-id="cal"] th[data-mbx-tcell] {
     margin: 0;
-    font-size: large;
-    padding: 0.2rem;
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
+    font-size: small;
+    padding: 0.4rem 0.2rem;
   }
 
   [data-mbx-id="cal"] > div > [data-mbx-id="label"] {
@@ -208,11 +211,8 @@
 
 @media (max-width: 340px) {
   [data-mbx-id="cal"] th[data-mbx-tcell] {
-    padding: 0.1rem;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
+    padding: 0.2rem 0.1rem;
     margin: 0;
-    font-size: medium;
   }
 
   [data-mbx-id="cal"] > div > [data-mbx-id="label"] {

@@ -20,6 +20,8 @@
   -moz-animation: var(--mbx-an) var(--mbx-andur);
   -ms-animation: var(--mbx-an) var(--mbx-andur);
   -o-animation: var(--mbx-an) var(--mbx-andur);
+  align-items: var(--mbx-align);
+  text-align: var(--mbx-align);
 }
 
 [data-mbx-img][data-mbx-dsb],
@@ -67,4 +69,12 @@
 
 [data-mbx-id]:active {
   opacity: var(--mbx-op-act, var(--mbx-op-hov, var(--mbx-op)));
+}
+
+[data-mbx-id][data-mbx-rt] {
+  rotate: -90deg;
+  --mbx-trdur: 0.1s;
+}
+[data-mbx-id][data-mbx-rt="true"] {
+  transform: rotate(180deg);
 }

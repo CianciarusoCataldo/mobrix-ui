@@ -10,9 +10,11 @@ const lComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
   onClick,
   disabled,
   active,
+  a11y,
 }) =>
   elements.map((element, index) => (
     <Container
+      a11y={a11y}
       background={false}
       shadow={false}
       dark={dark}
@@ -23,7 +25,7 @@ const lComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
         props: { onClick: () => onClick(index) },
         style: {
           cursor: "pointer",
-        } as React.CSSProperties,
+        },
         onKeyDown: (e) => {
           if (e.code === "Enter") {
             onClick(index);
@@ -37,10 +39,10 @@ const lComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
       }}
       disabled={disabled}
     >
-      <svg viewBox="0 0 9 9" key="lst_dot">
+      <svg viewBox="0 0 9 9" key="l_dot">
         <circle cx={4.5} cy={4.5} r={3.5} />
       </svg>
-      <div key={"lst_el_" + index}>{element}</div>
+      <div key={"l_el_" + index}>{element}</div>
     </Container>
   ));
 

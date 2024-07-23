@@ -7,11 +7,8 @@
   border-radius: 8px;
   padding: 0.4rem;
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
   width: fit-content;
-  align-items: center;
-  text-align: center;
+  --mbx-align: center;
 }
 [data-mbx-id="rat"][data-mbx-dk] {
   --mbx-rat-bg: var(

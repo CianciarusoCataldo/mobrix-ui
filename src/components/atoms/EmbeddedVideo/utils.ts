@@ -1,8 +1,8 @@
-const SUPPORTED_VIDEO_PLATFORMS = [
+const vdSource = [
   /** Youtube */
   {
-    startsWith: "https://www.youtube.com/watch?v=",
-    extraProps: { frameBorder: "0", allowFullScreen: "" },
+    filter: "https://www.youtube.com/watch?v=",
+    eProps: { frameBorder: "0", allowFullScreen: "" },
     features:
       "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
     parse: (url: string) =>
@@ -13,8 +13,8 @@ const SUPPORTED_VIDEO_PLATFORMS = [
   },
   /** DailyMotion */
   {
-    startsWith: "https://www.dailymotion.com/video/",
-    extraProps: { frameBorder: "0", allowFullScreen: true },
+    filter: "https://www.dailymotion.com/video/",
+    eProps: { frameBorder: "0", allowFullScreen: true },
     features:
       "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
     parse: (url: string) =>
@@ -25,8 +25,8 @@ const SUPPORTED_VIDEO_PLATFORMS = [
   },
   /** Facebook Watch */
   {
-    startsWith: "https://www.facebook.com/watch/?v=",
-    extraProps: { frameBorder: "0", allowFullScreen: true },
+    filter: "https://www.facebook.com/watch/?v=",
+    eProps: { frameBorder: "0", allowFullScreen: true },
     features:
       "accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
     parse: (url: string) =>
@@ -37,14 +37,12 @@ const SUPPORTED_VIDEO_PLATFORMS = [
   },
 ];
 
-export const parseEmbedUrl: (url: string) => {
-  extraProps?: Record<string, any>;
+export const parseUrl: (url: string) => {
+  eProps?: Record<string, any>;
   link?: string;
   features?: string;
 } = (url) => {
-  const platform = SUPPORTED_VIDEO_PLATFORMS.find((el) =>
-    url.startsWith(el.startsWith),
-  );
+  const res = vdSource.find((el) => url.startsWith(el.filter));
 
-  return { ...platform, link: platform?.parse(url) };
+  return res ? { ...res, link: res?.parse(url) } : {};
 };

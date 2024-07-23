@@ -18,6 +18,7 @@ const component: MbxUiReactiveComponent<boolean, ExpandableContainerProps> = ({
   disabled,
   hover,
   active,
+  a11y,
 }) => [
   children,
   <div
@@ -31,15 +32,14 @@ const component: MbxUiReactiveComponent<boolean, ExpandableContainerProps> = ({
     {expanded}
   </div>,
   <IconButton
+    a11y={a11y}
     disabled={disabled}
     onClick={() => {
       onChange(!value);
       setValue(!value);
     }}
-    key="arr_bt"
-    style={{
-      transform: `rotate(${value ? "0" : "180"}deg)`,
-    }}
+    key="ar_bt"
+    data-mbx-rt={!value}
     hover={hover}
     dark={dark}
     active={active}

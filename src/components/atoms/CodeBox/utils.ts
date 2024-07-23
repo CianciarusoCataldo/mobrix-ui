@@ -1,7 +1,7 @@
 import { SupportedEnvironment } from "../../../types";
 import { C_LANGS } from "./languages";
 
-export const getCode = (code: string, environment: SupportedEnvironment) => {
+export const getCode = (code: string, env: SupportedEnvironment) => {
   let parts = [];
   code.split(/(\".+?\")/g).forEach((codeBlock, index) => {
     if (index % 2 !== 0) {
@@ -17,7 +17,7 @@ export const getCode = (code: string, environment: SupportedEnvironment) => {
           inBlock.split(" ").forEach((part, piInd) => {
             parts.push({
               code: part,
-              color: C_LANGS[environment][part],
+              color: C_LANGS[env][part],
             });
 
             parts.push({

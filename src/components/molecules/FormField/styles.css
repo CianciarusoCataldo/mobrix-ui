@@ -81,8 +81,7 @@
 
 [data-mbx-id="field"] > [data-mbx-id="label"] {
   font-weight: 600;
-  margin-bottom: 0.2rem;
-  margin-top: 0;
+  margin: 0 0 0.2rem;
   width: 100%;
   --mbx-label-text-color: var(--mbx-fld-txt);
 }
@@ -109,6 +108,5 @@
 [data-mbx-id="field"][data-mbx-ftype="rater"],
 [data-mbx-id="field"][data-mbx-ftype="slider"],
 [data-mbx-id="field"][data-mbx-ftype="toggle"] {
-  align-items: center;
-  text-align: center;
+  --mbx-align: center;
 }

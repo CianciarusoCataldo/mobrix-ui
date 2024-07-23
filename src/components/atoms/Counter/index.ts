@@ -55,7 +55,7 @@ const Counter: CounterComponent = ({
   min,
   ...props
 }) =>
-  buildMbxReactive<number | undefined>(props, (mProps) => ({
+  buildMbxReactive<number | undefined>(props, ({ disabled, ...mProps }) => ({
     wrapper: "input",
     name: "count",
     features: {
@@ -66,7 +66,7 @@ const Counter: CounterComponent = ({
     defaultValue: 0,
     props: (value, setValue) => ({
       addProps: {
-        disabled: mProps.disabled,
+        disabled: disabled,
         type: "number",
         value: value,
         placeholder,
@@ -74,7 +74,7 @@ const Counter: CounterComponent = ({
         max,
         min,
         onChange: (e) => {
-          if (!readOnly && !mProps.disabled) {
+          if (!readOnly && !disabled) {
             onChange(e.target.value);
             setValue(e.target.value);
           }
@@ -82,6 +82,7 @@ const Counter: CounterComponent = ({
       },
       mbxProps: {
         ...mProps,
+        disabled,
         hover: mProps.hover && !readOnly,
       },
     }),

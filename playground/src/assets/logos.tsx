@@ -17,7 +17,6 @@ const BasicIcon: (properties: {
           }),
         } as React.CSSProperties
       }
-      {...(props.transform && { transform: props.transform })}
     />
   );
 };

@@ -1,7 +1,6 @@
 [data-mbx-id="btn"] {
   width: fit-content;
-  align-items: center;
-  text-align: center;
+  --mbx-align: center;
   border: 0;
   font-weight: 800;
   padding: 0.5rem 1rem;
@@ -56,6 +55,9 @@
   [data-mbx-id="btn"]:hover {
     background: var(--mbx-btn-b-h, var(--mbx-btn-bg, var(--mbx-c-bg)));
     color: var(--mbx-btn-txt-h, var(--mbx-btn-txt, var(--mbx-c-txt)));
+  }
+
+  [data-mbx-id="btn"][data-mbx-hv]:hover {
     transform: var(--mbx-btn-scale);
   }
 }

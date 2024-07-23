@@ -16,6 +16,7 @@ const Component: MbxUiReactiveComponent<number, CarouselProps> = ({
   dotClassName: dotCl,
   hover,
   active,
+  a11y,
 }) => {
   const [anim, setAnim] = React.useState("");
   let dots: JSX.Element[] = [];
@@ -25,50 +26,48 @@ const Component: MbxUiReactiveComponent<number, CarouselProps> = ({
     onChange(newItem);
     setValue(newItem);
   };
+  const sProps = { a11y, dark, disabled };
 
-  if (elements.length > 0) {
-    elements.forEach((element, index) => {
-      const isSel = index === item;
+  elements.forEach((element, index) => {
+    const isSel = index === item;
 
-      res.push(
-        <Container
-          unstyled
-          dark={dark}
-          key={`car_el_${index}`}
-          hide={!isSel}
-          style={
-            isSel && anim.length > 0
-              ? ({
-                  "--mbx-car-an": anim,
-                } as React.CSSProperties)
-              : undefined
-          }
-        >
-          {element}
-        </Container>,
-      );
-      dots.push(
-        <IconButton
-          dark={dark}
-          style={
-            (isSel && {
-              background: "var(--mbx-car-dot-f",
-            }) as React.CSSProperties
-          }
-          features={{ opFc: !isSel }}
-          hover={hover && !isSel}
-          active={active && !isSel}
-          className={dotCl}
-          disabled={disabled}
-          key={`dot_${index}`}
-          onClick={() => {
-            setAnim(index > item ? "slide-in-right" : "slide-in-left");
-            setItem(index);
-          }}
-        />,
-      );
-    });
-  }
+    res.push(
+      <Container
+        unstyled
+        key={`cr_el_${index}`}
+        hide={!isSel}
+        style={
+          isSel && anim.length > 0
+            ? ({
+                "--mbx-car-an": `slide-in-${anim}`,
+              } as React.CSSProperties)
+            : undefined
+        }
+        {...sProps}
+      >
+        {element}
+      </Container>,
+    );
+    dots.push(
+      <IconButton
+        style={
+          (isSel && {
+            background: "var(--mbx-car-dot-f",
+          }) as React.CSSProperties
+        }
+        features={{ opFc: !isSel }}
+        hover={hover && !isSel}
+        active={active && !isSel}
+        className={dotCl}
+        key={`dot_${index}`}
+        onClick={() => {
+          setAnim(index > item ? "right" : "left");
+          setItem(index);
+        }}
+        {...sProps}
+      />,
+    );
+  });
 
   const Arrow = ({
     cond = item === 0,
@@ -76,21 +75,21 @@ const Component: MbxUiReactiveComponent<number, CarouselProps> = ({
     onClick = () => {
       setItem(item - 1);
     },
-    arrStyle = {},
+    revX = false,
   }) => (
     <IconButton
       key={`${dir}-arr`}
+      {...sProps}
       disabled={disabled || cond}
       active={active}
       className={arrCl}
       hover={hover}
-      dark={dark}
       onClick={() => {
-        setAnim(`slide-in-${dir}`);
+        setAnim(dir);
         onClick();
       }}
     >
-      <ArrowIcon style={{ ...arrStyle, ...(cond && { fill: "none" }) }} />
+      <ArrowIcon reverseX={revX} style={{ ...(cond && { fill: "none" }) }} />
     </IconButton>
   );
 
@@ -104,10 +103,7 @@ const Component: MbxUiReactiveComponent<number, CarouselProps> = ({
         onClick={() => {
           setItem(item + 1);
         }}
-        arrStyle={{
-          WebkitTransform: "scaleX(-1)",
-          transform: "scaleX(-1)",
-        }}
+        revX
       />
     </div>,
     <div key="car_dots" data-mbx-cdots="">

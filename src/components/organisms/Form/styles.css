@@ -54,8 +54,7 @@
     --mbx-form-formfield-text-color-hover-dark,
     var(--mbx-form-formfield-text-color-hover)
   );
-  margin-top: 0.4rem;
-  margin-bottom: 0.4rem;
+  margin: 0.7rem 0;
 }
 
 [data-mbx-id="form"] > [data-mbx-ftitle] {
@@ -63,14 +62,10 @@
   font-size: 1.35rem;
   line-height: 1.75rem;
   --mbx-label-text-color: var(--mbx-form-txt);
-  margin-left: auto;
-  margin-right: auto;
 }
 
-[data-mbx-id="form"] [data-mbx-sbt] {
+[data-mbx-id="form"] > [data-mbx-sbt] {
   margin-top: 0.9rem;
-  margin-left: auto;
-  margin-right: auto;
   --mbx-button-background-light: var(
     --mbx-form-submit-background-light,
     var(--mbx-form-submit-background)
@@ -90,11 +85,12 @@
   );
 }
 
-[data-mbx-id="form"] [data-mbx-id="field"][data-mbx-ftype="boolean"],
-[data-mbx-id="form"] [data-mbx-id="field"][data-mbx-ftype="checkbox"],
-[data-mbx-id="form"] [data-mbx-id="field"][data-mbx-ftype="radio"] {
-  margin-left: auto;
-  margin-right: auto;
+[data-mbx-id="form"] > [data-mbx-ftitle],
+[data-mbx-id="form"] > [data-mbx-sbt],
+[data-mbx-id="form"] > div > [data-mbx-id="field"][data-mbx-ftype="boolean"],
+[data-mbx-id="form"] > div > [data-mbx-id="field"][data-mbx-ftype="checkbox"],
+[data-mbx-id="form"] > div > [data-mbx-id="field"][data-mbx-ftype="radio"] {
+  margin: 0 auto;
 }
 
 @media (max-width: 330px) {

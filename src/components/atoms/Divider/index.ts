@@ -40,14 +40,17 @@ import { buildMbxStandard } from "../../../tools";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const Divider: DividerComponent = ({ size = "2px", ...props }) =>
-  buildMbxStandard({ a11y: false, unstyled: false, ...props }, (mbxProps) => ({
-    name: "dvd",
-    styles: {
-      height: size,
-    },
-    cssBg: ["dvd-bg"],
-    mbxProps,
-  }));
+const Divider: DividerComponent = ({ unstyled, size = "2px", ...props }) =>
+  buildMbxStandard(
+    { active: false, a11y: false, unstyled: false, ...props },
+    (mbxProps) => ({
+      name: "dvd",
+      styles: {
+        height: size,
+      },
+      cssBg: ["dvd-bg"],
+      mbxProps,
+    }),
+  );
 
 export default Divider;

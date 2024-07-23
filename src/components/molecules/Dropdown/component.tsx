@@ -20,6 +20,7 @@ const Component: MbxUiReactiveComponentBuilder<number, DropdownProps> = ({
   hover,
   active,
   shadow,
+  a11y,
   elements = [],
   ...props
 }) => {
@@ -36,6 +37,7 @@ const Component: MbxUiReactiveComponentBuilder<number, DropdownProps> = ({
     background,
     disabled,
     hover,
+    a11y,
   };
 
   /* istanbul ignore next */
@@ -43,6 +45,8 @@ const Component: MbxUiReactiveComponentBuilder<number, DropdownProps> = ({
     onFocusLost();
     keyDown(false);
   };
+
+  const invert = () => keyDown(!vis);
 
   return {
     mbxProps: {
@@ -104,6 +108,7 @@ const Component: MbxUiReactiveComponentBuilder<number, DropdownProps> = ({
 
         actual !== sel && selEl(actual);
       },
+      a11y,
       ...props,
     },
     Component: [
@@ -114,14 +119,7 @@ const Component: MbxUiReactiveComponentBuilder<number, DropdownProps> = ({
         background={false}
         shadow={false}
       >
-        <IconButton
-          onClick={() => {
-            keyDown(!vis);
-          }}
-          key="opts-m"
-          a11y={false}
-          {...cProps}
-        >
+        <IconButton onClick={invert} key="opts-m" {...cProps} a11y={false}>
           <div tabIndex={-1} key="drop_s_e_b">
             {elements[value] || <div />}
           </div>
@@ -129,19 +127,11 @@ const Component: MbxUiReactiveComponentBuilder<number, DropdownProps> = ({
         <IconButton
           active={active}
           {...cProps}
-          onClick={() => {
-            keyDown(!vis);
-          }}
-          style={
-            {
-              transform: `rotate(${vis ? "180" : "0"}deg)`,
-              rotate: "-90deg",
-              "--mbx-trdur": "0.1s",
-            } as React.CSSProperties
-          }
-          key="arr-ic"
+          onClick={invert}
+          data-mbx-rt={vis}
+          key="ar-ic"
         >
-          <ArrowIcon width="15" height="12" />
+          <ArrowIcon {...cProps} width="15" height="12" />
         </IconButton>
       </Container>,
       <Popup key="opts" shadow={shadow} hide={!vis} a11y={false} {...cProps}>
@@ -159,7 +149,7 @@ const Component: MbxUiReactiveComponentBuilder<number, DropdownProps> = ({
               keyDown(false);
             }}
             features={{ noShFc: true, colFc: true }}
-            key={`item_${index}`}
+            key={`it_${index}`}
             {...cProps}
           >
             {item}

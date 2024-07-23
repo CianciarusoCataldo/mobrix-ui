@@ -1,19 +1,19 @@
 [data-mbx-id="drw"][data-mbx-drw-lc^="bottom"] {
   top: auto;
   bottom: 0;
-  display: flex;
   flex-direction: column;
   --mbx-drw-an-in: slide-in-bottom 0.3s forwards;
   --mbx-drw-an-out: slide-out-bottom 0.3s forwards;
+  --mbx-drw-rt: -90deg;
 }
 
 [data-mbx-id="drw"][data-mbx-drw-lc^="top"] {
   bottom: auto;
   top: 0;
-  display: flex;
   flex-direction: column-reverse;
   --mbx-drw-an-in: slide-in-top 0.3s forwards;
   --mbx-drw-an-out: slide-out-top 0.3s forwards;
+  --mbx-drw-rt: 90deg;
 }
 
 [data-mbx-id="drw"][data-mbx-drw-lc^="top"],
@@ -38,15 +38,14 @@
 [data-mbx-id="drw"][data-mbx-drw-lc="left"] {
   --mbx-drw-an-in: slide-in-left 0.3s forwards;
   --mbx-drw-an-out: slide-out-left 0.3s forwards;
-  display: flex;
   flex-direction: row-reverse;
 }
 
 [data-mbx-id="drw"][data-mbx-drw-lc="right"] {
   --mbx-drw-an-in: slide-in-right 0.3s forwards;
   --mbx-drw-an-out: slide-out-right 0.3s forwards;
-  display: flex;
   flex-direction: row;
+  --mbx-drw-rt: 180deg;
 }
 
 [data-mbx-id="drw"][data-mbx-drw-lc*="left"] {
@@ -57,4 +56,19 @@
 [data-mbx-id="drw"][data-mbx-drw-lc*="right"] {
   left: auto;
   right: 0;
+}
+
+[data-mbx-id="drw"][data-mbx-drw-lc^="top"] > [data-mbx-id="icb"],
+[data-mbx-id="drw"][data-mbx-drw-lc^="bottom"] > [data-mbx-id="icb"] {
+  margin: 0 auto;
+}
+
+[data-mbx-id="drw"][data-mbx-drw-lc="right"] > [data-mbx-id="icb"],
+[data-mbx-id="drw"][data-mbx-drw-lc="left"] > [data-mbx-id="icb"] {
+  height: fit-content;
+  margin: auto 0;
+}
+
+[data-mbx-id="drw"] > [data-mbx-id="icb"] svg {
+  transform: rotate(var(--mbx-drw-rt));
 }

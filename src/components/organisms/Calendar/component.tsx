@@ -9,7 +9,7 @@ import {
 
 import { defaultDays, defaultMonths } from "./constants";
 
-import { getMonthsDuration, getDateMatrix } from "./utils";
+import { durations, dMatrix } from "./utils";
 
 import { IconButton, Label } from "../../atoms";
 import { Table } from "../../molecules";
@@ -68,14 +68,13 @@ const Component: MbxUiReactiveComponent<
             : todayDt.month,
         year: startYear && startYear > 0 ? startYear : todayDt.year,
       }),
-    [startMonth, startYear],
+    [startMonth, startYear]
   );
 
-  const months = getMonthsDuration(scrDate.year);
+  const months = durations(scrDate.year);
+  const dMat = dMatrix({ ...scrDate, day: 1 }, months);
 
-  const dMat = getDateMatrix({ ...scrDate, day: 1 }, months);
-
-  const arrAct: Record<"left" | "right", () => void> = {
+  const arrAct: Record<string, () => void> = {
     left: () =>
       scrDate.month > 0
         ? show({
@@ -92,55 +91,47 @@ const Component: MbxUiReactiveComponent<
         : show({ year: scrDate.year + 1, month: 0 }),
   };
 
-  const getArrow = (direction: "left" | "right") => (
+  const sProps = { disabled, dark, hover, a11y };
+
+  const Arrow = (dir = "left") => (
     <IconButton
-      disabled={disabled}
       onClick={() => {
-        arrAct[direction]();
+        arrAct[dir]();
         onViewChange({ ...scrDate, day: 1 });
       }}
-      dark={dark}
       hide={hideArrows || !dayLabel}
-      hover={hover}
       active={active}
-      key={"arrow_" + direction}
-      a11y={a11y}
+      key={"arr_" + dir}
+      {...sProps}
       {...cprops}
-      {...(direction === "right" && {
-        style: {
-          WebkitTransform: "scaleX(-1)",
-          transform: "scaleX(-1)",
-        },
-      })}
     >
-      <ArrowIcon width="3rem" height="3rem" />
+      <ArrowIcon
+        reverseX={dir === "right"}
+        width="3rem"
+        height="3rem"
+        {...sProps}
+      />
     </IconButton>
   );
 
   return [
     <div key="t_sel">
-      {getArrow("left")}
-      <Label
-        a11y={a11y}
-        hide={!dayLabel}
-        disabled={disabled}
-        dark={dark}
-        {...cprops}
-      >{`${customMonths[scrDate.month]} ${scrDate.year}`}</Label>
-      {getArrow("right")}
+      {Arrow()}
+      <Label hide={!dayLabel} {...sProps} {...cprops}>{`${
+        customMonths[scrDate.month]
+      } ${scrDate.year}`}</Label>
+      {Arrow("right")}
     </div>,
     <Table
-      a11y={a11y}
-      disabled={disabled}
+      {...sProps}
       key="cal_tb"
       background={background}
       shadow={shadow}
-      dark={dark}
       headers
       rows={[
         days.map((dayName) => dayName.slice(0, 3)),
         ...dMat.map((row) =>
-          row.map((element) => (element > 0 ? String(element) : "")),
+          row.map((element) => (element > 0 ? String(element) : ""))
         ),
       ]}
       propsCallback={(row, column) => {

@@ -61,12 +61,11 @@ const Button: ButtonComponent = ({
       },
       cssBg: ["btn-bg", "btn-b-h"],
       styles: {
-        ...(hover &&
-          animated && {
-            "--mbx-btn-scale": "scaleX(1.15) scaleY(1.1)",
-            transitionDuration: "0.1s",
-            transitionProperty: "transform",
-          }),
+        ...(animated && {
+          "--mbx-btn-scale": "scaleX(1.15) scaleY(1.1)",
+          transitionDuration: "0.1s",
+          transitionProperty: "transform",
+        }),
       },
       addProps: {
         disabled,
