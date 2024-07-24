@@ -64,7 +64,7 @@ const TabViewer: TabViewerComponent = ({
       ...mbxProps,
       shadow: false,
     },
-    defaultValue: 0,
+    defV: 0,
     inputValue: props.selected,
     Component: ({ value, setValue }) =>
       component({

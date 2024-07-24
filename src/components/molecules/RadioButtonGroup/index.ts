@@ -60,7 +60,7 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
 }) =>
   buildMbxReactive<number>(props, (mbxProps) => ({
     name: "rgr",
-    defaultValue: -1,
+    defV: -1,
     inputValue,
     features: {
       wBgCl: true,

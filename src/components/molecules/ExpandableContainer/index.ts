@@ -54,7 +54,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
 }) => {
   return buildMbxReactive(props, (mbxProps) => ({
     name: "econt",
-    defaultValue: false,
+    defV: false,
     wrapper,
     inputValue: compact,
     features: { wBgCl: true },

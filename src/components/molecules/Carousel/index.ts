@@ -50,7 +50,7 @@ const Carousel: CarouselComponent = ({ active = true, ...props }) => {
   return buildMbxReactive<number>(props, (mbxProps) => ({
     name: "crsel",
     mbxProps,
-    defaultValue: 0,
+    defV: 0,
     inputValue: props.value,
     features: { wBgCl: true },
     Component: ({ value, setValue }) =>

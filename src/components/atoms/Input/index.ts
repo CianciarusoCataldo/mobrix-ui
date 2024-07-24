@@ -88,7 +88,7 @@ const Input: InputComponent = ({
       },
     }),
     inputValue: value,
-    defaultValue: "",
+    defV: "",
   }));
 
 export default Input;

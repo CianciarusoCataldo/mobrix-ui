@@ -34,10 +34,11 @@
 
 ### 4.0.0
 
+- New building system, to better handle final bundle size, and with a reduced library size
 - Css totally re-defined and cleaned up, with more efficent rules and with less data as possible, to keep a smooth dev experience
 - Refactoring
-- Bundle size reduced
 - New `underline` prop for `Link` component
+- `CodeBox` component updated, with a more efficent color system
 - `highlight` property removed from `CodeBox` component
 - `Review` logo now can be customized, wihout choosing a predefined type (`logo` property now accept a standard JSX.Element)
 - UI re-designed for all components

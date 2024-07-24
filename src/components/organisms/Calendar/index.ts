@@ -67,7 +67,7 @@ const Calendar: CalendarComponent = ({
     name: "cal",
     mbxProps: { ...mbxProps, shadow: false, active: false },
     inputValue,
-    defaultValue: {
+    defV: {
       year: tday.year,
       month: tday.month,
       day: tday.dayOfTheMonth,

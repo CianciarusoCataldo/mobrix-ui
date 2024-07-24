@@ -68,7 +68,7 @@ const DismissableCard: DismissableCardComponent = ({
   buildMbxReactive(props, (sProps) => ({
     name: "dis-card",
     inputValue: sProps.hide,
-    defaultValue: false,
+    defV: false,
     Component: ({ setValue }) =>
       component({
         ...props,

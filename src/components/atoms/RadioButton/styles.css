@@ -56,9 +56,9 @@
       --mbx-radio-icon-background,
       radial-gradient(
         circle,
-        rgb(171, 171, 177) 0%,
-        rgb(102, 102, 107) 89%,
-        rgb(113, 113, 119) 100%
+        rgb(73, 73, 73) 0%,
+        rgb(81, 81, 85) 89%,
+        rgb(82, 82, 87) 100%
       )
     )
   );

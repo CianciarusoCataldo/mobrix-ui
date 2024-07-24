@@ -82,7 +82,7 @@ const Checkbox: CheckBoxComponent = ({
       };
     },
     inputValue: value,
-    defaultValue: false,
+    defV: false,
   }));
 
 export default Checkbox;

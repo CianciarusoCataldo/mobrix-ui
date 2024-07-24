@@ -55,7 +55,7 @@ const Selector: SelectorComponent = ({
   buildMbxReactive<number | undefined>(props, (mbxProps) => ({
     wrapper: "select",
     name: "selt",
-    defaultValue: undefined,
+    defV: undefined,
     inputValue,
     props: (value, setVal) => ({
       addProps: {

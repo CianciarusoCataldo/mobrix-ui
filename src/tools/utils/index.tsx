@@ -219,13 +219,13 @@ const getMbxUiStandard = ({
 
 // prettier-ignore
 const getMbxUiReactive = <T=any>({
-  defaultValue,
+  defV,
   inputValue,
   props,
   Component,
   ...bprops
 }: BuilderPropsReactive<T>) => {
-  const [value, setValue] = React.useState<T>(inputValue || defaultValue);
+  const [value, setValue] = React.useState<T>(inputValue || defV);
 
   const parsed = props ? props(value, setValue) : {};
 

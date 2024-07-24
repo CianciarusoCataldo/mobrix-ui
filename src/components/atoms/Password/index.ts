@@ -51,7 +51,7 @@ const Psw: PasswordComponent = ({ active = true, value, ...props }) =>
     name: "psw",
     inputValue: value,
     features: { wBg: true },
-    defaultValue: "",
+    defV: "",
     Component: ({ value, setValue }) =>
       PswC({ ...props, ...mbxProps, value, setValue, active }),
     mbxProps,

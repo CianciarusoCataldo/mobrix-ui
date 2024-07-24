@@ -82,7 +82,7 @@ const Toggle: ToggleComponent = ({
       mbxProps,
     }),
     Component: (prp) => (prp.value === true ? onIcon || icon : offIcon || icon),
-    defaultValue: true,
+    defV: true,
     inputValue,
   }));
 

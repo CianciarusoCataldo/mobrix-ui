@@ -83,7 +83,7 @@ const FormField: FormFieldComponent = ({
         ...mbxProps,
       }),
     inputValue,
-    defaultValue: null,
+    defV: null,
     features: { noShFc: true },
   }));
 };

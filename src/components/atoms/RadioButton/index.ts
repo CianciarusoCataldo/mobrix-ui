@@ -55,7 +55,7 @@ const RadioButton: RadioButtonComponent = ({
   buildMbxReactive<boolean>({ active, ...props }, (sProps) => ({
     name: "radio",
     Component: (prp) => (prp.value ? component : ""),
-    defaultValue: false,
+    defV: false,
     inputValue: value,
     features: {
       opHov: true,

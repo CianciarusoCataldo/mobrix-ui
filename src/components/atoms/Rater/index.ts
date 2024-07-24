@@ -57,7 +57,7 @@ const Rater: RaterComponent = ({
   buildMbxReactive<number>(props, (mbxProps) => ({
     name: "rat",
     inputValue,
-    defaultValue: 0,
+    defV: 0,
     Component: ({ value, setValue }) =>
       raterComponent({
         onChange: (n: number) => {

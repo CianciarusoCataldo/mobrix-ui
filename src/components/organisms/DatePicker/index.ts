@@ -81,7 +81,7 @@ const DatePicker: DatePickerComponent = ({
         },
       }),
     inputValue: props.value,
-    defaultValue: todayDate,
+    defV: todayDate,
   }));
 };
 
