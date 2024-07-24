@@ -46,10 +46,13 @@
   - `arrow` instead of `arrow-color`
   - `icon` instead of `icon-color`
   - `text` instead of `text-color`
-  - `link-text` instead of `link-color`
-  - `x` instead of `x-color`
-  - `thumb` instead of `thumb-color`
-  - `tick` instead of `tick-color`
+  - `link-text` instead of `link-color` (for `Link` component)
+  - `x` instead of `x-color` (for `DismissableCard` and `Modal` components)
+  - `thumb` instead of `thumb-color` (for `Slider` component)
+  - `tick` instead of `tick-color` (for `CheckBox` component)
+  - `error` instead of `error-color` (for `Spinner` component)
+  - `loading` instead of `loading-color` (for `Spinner` component)
+  - `success` instead of `success-color` (for `Spinner` component)
 
 <br>
 
