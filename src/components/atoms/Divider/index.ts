@@ -42,7 +42,7 @@ import { buildMbxStandard } from "../../../tools/utils";
  */
 const Divider: DividerComponent = ({ unstyled, size = "2px", ...props }) =>
   buildMbxStandard(
-    { active: false, a11y: false, unstyled: false, ...props },
+    { ...props, active: false, a11y: false, unstyled: false, hover: false },
     (mbxProps) => ({
       name: "dvd",
       styles: {

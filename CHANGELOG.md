@@ -55,6 +55,7 @@
   - `success` instead of `success-color` (for `Spinner` component)
   - `today` instead of `today-color` (for `Calendar` and `DatePicker` components)
   - `border` instead of `border-color` (for `Table` component)
+  - `field` instead of `formfield` (for `FormField` and `Form` components)
 
 <br>
 

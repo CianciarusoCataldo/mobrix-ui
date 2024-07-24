@@ -3,28 +3,28 @@
   flex-direction: column;
   width: fit-content;
   --mbx-fld-bg: var(
-    --mbx-formfield-background-light,
-    var(--mbx-formfield-background)
+    --mbx-field-background-light,
+    var(--mbx-field-background)
   );
   --mbx-fld-txt: var(
-    --mbx-formfield-text-light,
-    var(--mbx-formfield-text)
+    --mbx-field-text-light,
+    var(--mbx-field-text)
   );
   --mbx-fld-bg-h: var(
-    --mbx-formfield-background-hover-light,
-    var(--mbx-formfield-background-hover)
+    --mbx-field-background-hover-light,
+    var(--mbx-field-background-hover)
   );
   --mbx-fld-txt-h: var(
-    --mbx-formfield-text-hover-light,
-    var(--mbx-formfield-text-hover)
+    --mbx-field-text-hover-light,
+    var(--mbx-field-text-hover)
   );
   --mbx-fld-err-b: var(
-    --mbx-formfield-error-border-light,
-    var(--mbx-formfield-error-border, red)
+    --mbx-field-error-border-light,
+    var(--mbx-field-error-border, red)
   );
   --mbx-fld-err-txt: var(
-    --mbx-formfield-error-text-light,
-    var(--mbx-formfield-error-text, red)
+    --mbx-field-error-text-light,
+    var(--mbx-field-error-text, red)
   );
   --mbx-counterbox-background: var(--mbx-fld-bg);
   --mbx-counterbox-text: var(--mbx-fld-txt);
@@ -59,28 +59,28 @@
 
 [data-mbx-id="field"][data-mbx-dk] {
   --mbx-fld-bg: var(
-    --mbx-formfield-background-dark,
-    var(--mbx-formfield-background)
+    --mbx-field-background-dark,
+    var(--mbx-field-background)
   );
   --mbx-fld-txt: var(
-    --mbx-formfield-text-dark,
-    var(--mbx-formfield-text)
+    --mbx-field-text-dark,
+    var(--mbx-field-text)
   );
   --mbx-fld-bg-h: var(
-    --mbx-formfield-background-hover-dark,
-    var(--mbx-formfield-background-hover)
+    --mbx-field-background-hover-dark,
+    var(--mbx-field-background-hover)
   );
   --mbx-fld-txt-h: var(
-    --mbx-formfield-text-hover-dark,
-    var(--mbx-formfield-text-hover)
+    --mbx-field-text-hover-dark,
+    var(--mbx-field-text-hover)
   );
   --mbx-fld-err-b: var(
-    --mbx-formfield-error-border-dark,
-    var(--mbx-formfield-error-border, red)
+    --mbx-field-error-border-dark,
+    var(--mbx-field-error-border, red)
   );
   --mbx-fld-err-txt: var(
-    --mbx-formfield-error-text-dark,
-    var(--mbx-formfield-error-text, red)
+    --mbx-field-error-text-dark,
+    var(--mbx-field-error-text, red)
   );
 }
 
