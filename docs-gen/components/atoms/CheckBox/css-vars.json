@@ -25,17 +25,17 @@
     "fallback": "--mbx-checkbox-background-hover",
     "defaultGlobal": "--mbx-background-hover-dark"
   },
-  "--mbx-checkbox-tick-color": {
-    "description": "Fallback value for `mbx-checkbox-tick-color-light` and `mbx-checkbox-tick-color-dark`"
+  "--mbx-checkbox-tick": {
+    "description": "Fallback value for `mbx-checkbox-tick-light` and `mbx-checkbox-tick-dark`"
   },
-  "--mbx-checkbox-tick-color-light": {
+  "--mbx-checkbox-tick-light": {
     "description": "CheckBox tick color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
-    "fallback": "--mbx-checkbox-tick-color",
+    "fallback": "--mbx-checkbox-tick",
     "defaultColor": "rgb(37, 99, 235)"
   },
-  "--mbx-checkbox-tick-color-dark": {
+  "--mbx-checkbox-tick-dark": {
     "description": "CheckBox tick color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
-    "fallback": "--mbx-checkbox-tick-color",
+    "fallback": "--mbx-checkbox-tick",
     "defaultColor": "white"
   }
 }

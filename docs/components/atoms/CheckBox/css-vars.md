@@ -19,9 +19,9 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-checkbox-background-hover](#-mbx-checkbox-background-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                               |
 | <div style='text-align:center;margin:auto;'>[--mbx-checkbox-background-hover-light](#-mbx-checkbox-background-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-checkbox-background-hover](#-mbx-checkbox-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-hover-light)</div>                                                                                |
 | <div style='text-align:center;margin:auto;'>[--mbx-checkbox-background-hover-dark](#-mbx-checkbox-background-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-checkbox-background-hover](#-mbx-checkbox-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-hover-dark)</div>                                                                                  |
-| <div style='text-align:center;margin:auto;'>[--mbx-checkbox-tick-color](#-mbx-checkbox-tick-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                               |
-| <div style='text-align:center;margin:auto;'>[--mbx-checkbox-tick-color-light](#-mbx-checkbox-tick-color-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-checkbox-tick-color](#-mbx-checkbox-tick-color)</div>             | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>rgb(37, 99, 235)</div><div style='text-align:center;margin-auto;'><div style='background:rgb(37, 99, 235);margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-checkbox-tick-color-dark](#-mbx-checkbox-tick-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-checkbox-tick-color](#-mbx-checkbox-tick-color)</div>             | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>white</div><div style='text-align:center;margin-auto;'><div style='background:white;margin:auto; width:15px; height:15px;'/></div></div></div>                       |
+| <div style='text-align:center;margin:auto;'>[--mbx-checkbox-tick](#-mbx-checkbox-tick)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                               |
+| <div style='text-align:center;margin:auto;'>[--mbx-checkbox-tick-light](#-mbx-checkbox-tick-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-checkbox-tick](#-mbx-checkbox-tick)</div>                         | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>rgb(37, 99, 235)</div><div style='text-align:center;margin-auto;'><div style='background:rgb(37, 99, 235);margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-checkbox-tick-dark](#-mbx-checkbox-tick-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-checkbox-tick](#-mbx-checkbox-tick)</div>                         | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>white</div><div style='text-align:center;margin-auto;'><div style='background:white;margin:auto; width:15px; height:15px;'/></div></div></div>                       |
 
 ## CSS Variables list
 
@@ -113,7 +113,7 @@ CheckBox background when [dark mode](https://cianciarusocataldo.github.io/mobrix
 
 <br>
 
-### --mbx-checkbox-tick-color
+### --mbx-checkbox-tick
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -121,17 +121,17 @@ CheckBox background when [dark mode](https://cianciarusocataldo.github.io/mobrix
 
 <br>
 
-Fallback value for `mbx-checkbox-tick-color-light` and `mbx-checkbox-tick-color-dark`
+Fallback value for `mbx-checkbox-tick-light` and `mbx-checkbox-tick-dark`
 
 <br>
 
 <br>
 
-### --mbx-checkbox-tick-color-light
+### --mbx-checkbox-tick-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                         |
-| -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-checkbox-tick-color](#-mbx-checkbox-tick-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>rgb(37, 99, 235)</div><div style='text-align:center;margin-auto;'><div style='background:rgb(37, 99, 235);margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                         |
+| -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-checkbox-tick](#-mbx-checkbox-tick)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>rgb(37, 99, 235)</div><div style='text-align:center;margin-auto;'><div style='background:rgb(37, 99, 235);margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
@@ -141,11 +141,11 @@ CheckBox tick color when [dark mode](https://cianciarusocataldo.github.io/mobrix
 
 <br>
 
-### --mbx-checkbox-tick-color-dark
+### --mbx-checkbox-tick-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                   |
-| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-checkbox-tick-color](#-mbx-checkbox-tick-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>white</div><div style='text-align:center;margin-auto;'><div style='background:white;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                   |
+| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-checkbox-tick](#-mbx-checkbox-tick)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>white</div><div style='text-align:center;margin-auto;'><div style='background:white;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
