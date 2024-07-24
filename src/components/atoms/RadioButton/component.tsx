@@ -1,5 +1,5 @@
 import React from "react";
 
-const component = <div />;
+const comp = <div />;
 
-export default component;
+export default comp;

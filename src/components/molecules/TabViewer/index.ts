@@ -53,7 +53,11 @@ import component from "./component";
 *
 * @copyright 2024 Cataldo Cianciaruso
 */
-const TabViewer: TabViewerComponent = ({ active = true, ...props }) =>
+const TabViewer: TabViewerComponent = ({
+  active = true,
+  onChange = () => {},
+  ...props
+}) =>
   buildMbxReactive(props, (mbxProps) => ({
     name: "tview",
     mbxProps: {
@@ -64,8 +68,11 @@ const TabViewer: TabViewerComponent = ({ active = true, ...props }) =>
     inputValue: props.selected,
     Component: ({ value, setValue }) =>
       component({
-        setValue,
         value: Number(value),
+        onChange: (i) => {
+          onChange(i);
+          setValue(i);
+        },
         ...props,
         ...mbxProps,
         active,

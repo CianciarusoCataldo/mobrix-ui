@@ -44,19 +44,26 @@ import component from "./component";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const Dropdown: DropdownComponent = ({ active, ...props }) =>
+const Dropdown: DropdownComponent = ({
+  active,
+  onChange = () => {},
+  ...props
+}) =>
   buildMbxReactive(props, (mbxProps) => ({
     name: "dd",
     defaultValue: 0,
     inputValue: props.value,
     mbxProps,
-    props: (value, setValue) =>
+    props: (value, setV) =>
       component({
         ...mbxProps,
         ...props,
+        onChange: (el) => {
+          onChange(el);
+          setV(el);
+        },
         active,
         value,
-        setValue,
       }),
   }));
 

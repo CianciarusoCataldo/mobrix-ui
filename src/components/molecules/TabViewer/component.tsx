@@ -1,14 +1,20 @@
 import React, { Suspense } from "react";
 
-import { MbxUiReactiveComponent, TabViewerProps } from "../../../types";
+import {
+  BuilderComponent,
+  MbxUiComponent,
+  TabViewerProps,
+} from "../../../types";
 
 import Container from "../Container";
 import Button from "../../atoms/Button";
 
-const tabVComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
+const tabVComponent: MbxUiComponent<
+  TabViewerProps & { value: number },
+  BuilderComponent[]
+> = ({
   dark,
-  onChange = () => {},
-  setValue,
+  onChange,
   tabClassName = "",
   tabSelectedClassName = "",
   tabUnselectedClassName = "",
@@ -42,7 +48,6 @@ const tabVComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
             }`}
             key={`tab_${index}`}
             onClick={() => {
-              setValue(index);
               onChange(index);
             }}
           >

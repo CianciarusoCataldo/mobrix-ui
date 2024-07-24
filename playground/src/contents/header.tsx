@@ -87,6 +87,7 @@ const HeaderContent = () => {
               shadow
               dark={dark}
               value={!dark}
+              hover={false}
               onChange={() => {
                 dispatch(setDarkMode(!dark));
               }}

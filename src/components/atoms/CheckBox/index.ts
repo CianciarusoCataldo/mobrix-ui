@@ -45,7 +45,7 @@ import { CheckIcon } from "../../../icons/generic";
  * @copyright 2024 Cataldo Cianciaruso
  */
 const Checkbox: CheckBoxComponent = ({
-  value: inputValue,
+  value,
   onChange = () => {},
   icon,
   onKeyDown = () => {},
@@ -58,10 +58,10 @@ const Checkbox: CheckBoxComponent = ({
       opHov: true,
       wAll: true,
     },
-    props: (actualValue, setValue) => {
+    props: (val, setVal) => {
       const func = () => {
-        onChange(!actualValue);
-        setValue(!actualValue);
+        onChange(!val);
+        setVal(!val);
       };
       return {
         addProps: !disabled && { onClick: func },
@@ -81,7 +81,7 @@ const Checkbox: CheckBoxComponent = ({
         },
       };
     },
-    inputValue,
+    inputValue: value,
     defaultValue: false,
   }));
 

@@ -49,7 +49,8 @@ import raterComponent from "./component";
  */
 const Rater: RaterComponent = ({
   value: inputValue,
-  onChange,
+  /* istanbul ignore next */
+  onChange = () => {},
   vertical = false,
   ...props
 }) =>
@@ -59,9 +60,11 @@ const Rater: RaterComponent = ({
     defaultValue: 0,
     Component: ({ value, setValue }) =>
       raterComponent({
-        onChange,
+        onChange: (n: number) => {
+          onChange(n);
+          setValue(n);
+        },
         value,
-        setValue,
         ...props,
         ...mbxProps,
       }),

@@ -1,9 +1,10 @@
 import React from "react";
 
 import {
+  BuilderComponent,
   CalendarDate,
   DatePickerProps,
-  MbxUiReactiveComponent,
+  MbxUiComponent,
 } from "../../../types";
 
 import { defaultDays, defaultMonths } from "../Calendar/constants";
@@ -17,11 +18,10 @@ import Calendar from "../Calendar";
 import IconButton from "../../atoms/IconButton";
 import Label from "../../atoms/Label";
 
-const DpickComponent: MbxUiReactiveComponent<
-  CalendarDate,
-  DatePickerProps & { today: CalendarDate & { dayOfTheMonth: number } }
+const Component: MbxUiComponent<
+  DatePickerProps & { today: CalendarDate & { dayOfTheMonth: number } },
+  BuilderComponent[]
 > = ({
-  setValue,
   today: todayDate,
   value,
   months: customMonths = defaultMonths,
@@ -37,15 +37,14 @@ const DpickComponent: MbxUiReactiveComponent<
   active,
   calendarProps,
   shadow,
-  /* istanbul ignore next */
-  onChange = () => {},
+  onChange,
   /* istanbul ignore next */
   onClose = () => {},
   a11y,
   dark,
   hover,
 }) => {
-  const [isVisible, setVisible] = React.useState<boolean>(false);
+  const [vis, setVis] = React.useState<boolean>(false);
   const year = value.year && value.year > 0 ? value.year : todayDate.year;
   const month =
     value.month !== undefined && value.month >= 0 && value.month <= 11
@@ -64,7 +63,7 @@ const DpickComponent: MbxUiReactiveComponent<
   /* istanbul ignore next */
   const onCloseCallback = () => {
     onClose();
-    setVisible(false);
+    setVis(false);
   };
 
   const cProps = { a11y, disabled, dark, hover };
@@ -82,7 +81,7 @@ const DpickComponent: MbxUiReactiveComponent<
     </div>,
     <IconButton
       {...cProps}
-      onClick={() => setVisible(true)}
+      onClick={() => setVis(true)}
       key="dpk_cal_bt"
       active={active}
     >
@@ -90,7 +89,7 @@ const DpickComponent: MbxUiReactiveComponent<
     </IconButton>,
     <Modal
       {...cProps}
-      hide={!isVisible}
+      hide={!vis}
       key="dpk_mod"
       animated={animated}
       onClose={onCloseCallback}
@@ -109,10 +108,7 @@ const DpickComponent: MbxUiReactiveComponent<
         onViewChange={onViewChange}
         dayLabel={dayLabel}
         value={{ day, month, year }}
-        onChange={(date) => {
-          onChange(date);
-          setValue(date);
-        }}
+        onChange={onChange}
         labelProps={{ dark: true }}
         {...calendarProps}
       />
@@ -120,4 +116,4 @@ const DpickComponent: MbxUiReactiveComponent<
   ];
 };
 
-export default DpickComponent;
+export default Component;

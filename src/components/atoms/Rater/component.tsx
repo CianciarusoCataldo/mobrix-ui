@@ -1,18 +1,16 @@
 import React from "react";
 
-import { MbxUiReactiveComponent, RaterProps } from "../../../types";
+import { BuilderComponent, MbxUiComponent, RaterProps } from "../../../types";
 
 import { ICONS } from "./icons";
 import IconButton from "../IconButton";
 
-const Component: MbxUiReactiveComponent<number, RaterProps> = ({
+const Component: MbxUiComponent<RaterProps, BuilderComponent[]> = ({
   type = "star",
   max,
   readonly,
-  /* istanbul ignore next */
-  onChange = () => {},
+  onChange,
   value,
-  setValue,
   disabled,
   a11y,
   dark,
@@ -38,21 +36,21 @@ const Component: MbxUiReactiveComponent<number, RaterProps> = ({
       icon = i + 1 <= value ? "FULL" : "EMPTY";
     }
 
+    const isSel = i + 1 === value;
+
     return (
       <IconButton
-        active={active}
+        active={active && !isSel}
         key={`vote_${i}`}
         dark={dark}
         a11y={a11y && !readonly}
         disabled={disabled}
-        hover={hover && !readonly}
+        hover={hover && !isSel && !readonly}
         {...(readonly && {
           style: { cursor: "unset" },
         })}
         {...(!(readonly || disabled) && {
           onClick: () => {
-            let newVote: number = i + 1;
-            setValue(newVote);
             onChange(i + 1);
           },
           ...(hover && {

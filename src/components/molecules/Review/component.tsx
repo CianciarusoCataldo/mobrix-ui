@@ -14,10 +14,7 @@ const component: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
   max,
   icon,
   url,
-  logo = link({
-    height: "30px",
-    width: "30px",
-  }),
+  logo,
   rateType,
   disabled,
   hover,
@@ -36,7 +33,11 @@ const component: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
       hide={!url}
       {...cProps}
     >
-      {logo}
+      {logo ||
+        link({
+          height: "30px",
+          width: "30px",
+        })}
     </Link>,
     <div key="info">
       <div key="topc">

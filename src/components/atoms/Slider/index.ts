@@ -47,7 +47,7 @@ import { buildMbxReactive } from "../../../tools";
 const Slider: SliderComponent = ({
   /* istanbul ignore next */
   onChange = () => {},
-  value: inputValue,
+  value,
   min,
   max,
   readOnly = false,
@@ -56,7 +56,7 @@ const Slider: SliderComponent = ({
 }) =>
   buildMbxReactive<number>({ active, ...props }, ({ disabled, ...sProps }) => ({
     name: "sld",
-    inputValue,
+    inputValue: value,
     defaultValue: 0,
     wrapper: "input",
     styles: {
@@ -64,12 +64,12 @@ const Slider: SliderComponent = ({
         "--mbx-sld-op-act": "var(--mbx-sld-op-hov)",
       }),
     },
-    props: (value, setValue) => {
-      const callback =
+    props: (val, setV) => {
+      const func =
         !disabled && !readOnly
           ? (e: any) => {
               onChange(e.target.value);
-              setValue(e.target.value);
+              setV(e.target.value);
             }
           : () => {};
 
@@ -80,9 +80,9 @@ const Slider: SliderComponent = ({
           max,
           readOnly,
           disabled,
-          value: String(value),
-          onChange: callback,
-          onInput: callback,
+          value: String(val),
+          onChange: func,
+          onInput: func,
         },
         features: {
           wAllc: true,

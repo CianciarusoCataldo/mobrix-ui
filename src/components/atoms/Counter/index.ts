@@ -48,7 +48,7 @@ import { buildMbxReactive } from "../../../tools";
 const Counter: CounterComponent = ({
   /* istanbul ignore next */
   onChange = () => {},
-  value: inputValue,
+  value,
   placeholder,
   readOnly,
   max,
@@ -62,13 +62,13 @@ const Counter: CounterComponent = ({
       opHov: true,
       wAllc: true,
     },
-    inputValue,
+    inputValue: value,
     defaultValue: 0,
-    props: (value, setValue) => ({
+    props: (val, setV) => ({
       addProps: {
-        disabled: disabled,
+        disabled,
         type: "number",
-        value: value,
+        value: val,
         placeholder,
         readOnly,
         max,
@@ -76,7 +76,7 @@ const Counter: CounterComponent = ({
         onChange: (e) => {
           if (!readOnly && !disabled) {
             onChange(e.target.value);
-            setValue(e.target.value);
+            setV(e.target.value);
           }
         },
       },

@@ -57,7 +57,11 @@ import datePickerComponent from "./components";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const DatePicker: DatePickerComponent = ({ active, ...props }) => {
+const DatePicker: DatePickerComponent = ({
+  active /* istanbul ignore next */,
+  onChange = () => {},
+  ...props
+}) => {
   const todayDate = today();
 
   return buildMbxReactive<CalendarDate>(props, (mbxProps) => ({
@@ -67,11 +71,14 @@ const DatePicker: DatePickerComponent = ({ active, ...props }) => {
     Component: ({ value, setValue }) =>
       datePickerComponent({
         today: todayDate,
-        setValue,
         value,
         ...props,
         ...mbxProps,
         active,
+        onChange: (date) => {
+          onChange(date);
+          setValue(date);
+        },
       }),
     inputValue: props.value,
     defaultValue: todayDate,

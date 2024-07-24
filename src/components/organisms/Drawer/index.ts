@@ -95,7 +95,7 @@ const Drawer: DrawerComponent = ({
   return buildMbxStandard(props, (sProps) => ({
     name: "drw",
     addProps: {
-      "data-mbx-drw-lc": location,
+      "data-mbx-drwlc": location,
     },
     mbxProps: {
       ...sProps,

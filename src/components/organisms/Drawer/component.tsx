@@ -16,26 +16,24 @@ const DrwComponent: MbxUiComponent<DrawerProps, BuilderComponent[]> = ({
   children,
   onClose,
   a11y,
-}) => {
-  return [
-    <IconButton
-      a11y={a11y}
-      className={arrowClassName}
-      disabled={disabled}
-      animated={animated}
-      active={active}
-      key="drw_bts_p"
-      onClick={() => {
-        onClose!();
-      }}
-      hover={hover}
-      dark={dark}
-      a11yLabel="drawer-close-button"
-    >
-      <ArrowIcon disabled={disabled} />
-    </IconButton>,
-    <div key="drw_cont">{children}</div>,
-  ];
-};
+}) => [
+  <IconButton
+    a11y={a11y}
+    className={arrowClassName}
+    disabled={disabled}
+    animated={animated}
+    active={active}
+    key="drw_bts_p"
+    onClick={() => {
+      onClose!();
+    }}
+    hover={hover}
+    dark={dark}
+    a11yLabel="drawer-close-button"
+  >
+    <ArrowIcon disabled={disabled} />
+  </IconButton>,
+  <div key="drw_cont">{children}</div>,
+];
 
 export default DrwComponent;

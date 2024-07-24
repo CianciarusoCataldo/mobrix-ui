@@ -26,11 +26,11 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
           ...o,
           [key]: undefined,
         }),
-        {},
+        {}
       )
     : {};
 
-  const [values, setValues] =
+  const [vals, setVs] =
     React.useState<Record<string, string | boolean | number>>(d_fields);
 
   const cProps = { a11y, hover, disabled };
@@ -47,11 +47,11 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
             {...cProps}
             animated={animated}
             background={background}
-            value={values[field]}
+            value={vals[field]}
             header={header}
             type={type}
             onChange={(vl: any) => {
-              setValues({ ...values, [field]: vl });
+              setVs({ ...vals, [field]: vl });
             }}
             headerProps={{ dark }}
           />
@@ -65,7 +65,7 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
       key="form_s_bt"
       dark={!dark}
       onClick={() => {
-        onSubmit && onSubmit(values);
+        onSubmit && onSubmit(vals);
       }}
       data-mbx-sbt=""
     >

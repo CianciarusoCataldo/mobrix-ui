@@ -1,6 +1,6 @@
 import React from "react";
 
-import { DropdownProps, MbxUiReactiveComponentBuilder } from "../../../types";
+import { BuilderProps, DropdownProps, MbxUiComponent } from "../../../types";
 
 import Popup from "../Popup";
 import { ArrowIcon } from "../../../icons";
@@ -8,10 +8,9 @@ import Container from "../Container";
 import IconButton from "../../atoms/IconButton";
 import Button from "../../atoms/Button";
 
-const Component: MbxUiReactiveComponentBuilder<number, DropdownProps> = ({
+const Component: MbxUiComponent<DropdownProps, Omit<BuilderProps, "name">> = ({
   value,
-  setValue,
-  onChange = () => {},
+  onChange,
   /* istanbul ignore next */
   onFocusLost = () => {},
   dark,
@@ -48,6 +47,11 @@ const Component: MbxUiReactiveComponentBuilder<number, DropdownProps> = ({
 
   const invert = () => keyDown(!vis);
 
+  const chFunc = () => {
+    onChange(sel);
+    keyDown(false);
+  };
+
   return {
     mbxProps: {
       ...cProps,
@@ -68,9 +72,7 @@ const Component: MbxUiReactiveComponentBuilder<number, DropdownProps> = ({
           }
           case "Enter": {
             if (sel > -1) {
-              onChange(sel);
-              setValue(sel);
-              keyDown(false);
+              chFunc();
               return;
             } else {
               setVis(!vis);
@@ -144,9 +146,7 @@ const Component: MbxUiReactiveComponentBuilder<number, DropdownProps> = ({
               selEl(index);
             }}
             onClick={() => {
-              onChange(index);
-              setValue(index);
-              keyDown(false);
+              chFunc();
             }}
             features={{ noShFc: true, colFc: true }}
             key={`it_${index}`}

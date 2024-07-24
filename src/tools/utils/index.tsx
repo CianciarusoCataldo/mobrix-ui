@@ -89,7 +89,7 @@ const useOutAlert = (ref: any, callback: () => void) => {
   });
 };
 
-export const parseProps = (props: MbxSharedProps): MbxSharedProps => {
+const parseProps = (props: MbxSharedProps): MbxSharedProps => {
   let res = {
     ...D_PROPS,
     ...props,
@@ -247,7 +247,7 @@ const getMbxUiReactive = <T=any>({
   });
 };
 
-export const parse = (
+const parse = (
   /* istanbul ignore next */
   props,
   callback

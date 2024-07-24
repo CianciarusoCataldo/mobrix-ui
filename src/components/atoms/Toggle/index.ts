@@ -57,9 +57,9 @@ const Toggle: ToggleComponent = ({
   buildMbxReactive<boolean>(props, (mbxProps) => ({
     name: "tgl",
     features: { wAll: true },
-    props: (status, setStatus) => ({
+    props: (val, setVal) => ({
       styles: {
-        ...(status && {
+        ...(val && {
           "--mbx-tgin": "var(--mbx-tog-ic-on-int)",
           "--mbx-tgex": "var(--mbx-tog-ic-on-ext)",
           "--mbx-tgl-tr": " 0%",
@@ -68,25 +68,20 @@ const Toggle: ToggleComponent = ({
       addProps: {
         ...(!mbxProps.disabled && {
           onClick: () => {
-            onChange(!status);
-            setStatus(!status);
+            onChange(!val);
+            setVal(!val);
           },
           onKeyDown: (e) => {
             if (e.code === "Enter") {
-              onChange(!status);
-              setStatus(!status);
+              onChange(!val);
+              setVal(!val);
             }
           },
         }),
       },
       mbxProps,
     }),
-    Component: ({ value }) => {
-      const iconOn = onIcon || icon;
-      const iconOff = offIcon || icon;
-
-      return value === true ? iconOn : iconOff;
-    },
+    Component: (prp) => (prp.value === true ? onIcon || icon : offIcon || icon),
     defaultValue: true,
     inputValue,
   }));

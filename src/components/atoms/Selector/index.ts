@@ -57,13 +57,13 @@ const Selector: SelectorComponent = ({
     name: "selt",
     defaultValue: undefined,
     inputValue,
-    props: (value, setValue) => ({
+    props: (value, setVal) => ({
       addProps: {
         disabled: mbxProps.disabled,
         value,
         onChange: (e) => {
           onChange(e.target.value);
-          setValue(e.target.value);
+          setVal(e.target.value);
         },
       },
     }),

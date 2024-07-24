@@ -55,6 +55,7 @@ import component from "./component";
 const RadioButtonGroup: RadioButtonGroupComponent = ({
   value: inputValue,
   horizontal,
+  onChange = () => {},
   ...props
 }) =>
   buildMbxReactive<number>(props, (mbxProps) => ({
@@ -72,8 +73,11 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
     Component: ({ value, setValue }) =>
       component({
         value,
-        setValue,
         horizontal,
+        onChange: (i) => {
+          onChange(i);
+          setValue(i);
+        },
         ...props,
         ...mbxProps,
       }),

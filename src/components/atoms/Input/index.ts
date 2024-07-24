@@ -46,7 +46,7 @@ import { buildMbxReactive } from "../../../tools";
 const Input: InputComponent = ({
   /* istanbul ignore next */
   onChange = () => {},
-  value: inputValue,
+  value,
   placeholder,
   readOnly,
   autoresizable,
@@ -62,20 +62,20 @@ const Input: InputComponent = ({
     styles: {
       ...(autoresizable && { width: "fit-content" }),
     },
-    props: (value, setValue) => ({
+    props: (val, setValue) => ({
       addProps: {
         type: "text",
         ...sPrps.props,
         ...(autoresizable && {
-          size: Math.ceil(value.length / 2) + (value.length > 0 ? 0 : 1),
+          size: Math.ceil(val.length / 2) + (val.length > 0 ? 0 : 1),
         }),
-        value,
+        value: val,
         placeholder,
         disabled,
         readOnly: readOnly || disabled,
         onChange: (e) => {
           if (!readOnly && !disabled) {
-            const newValue = e.target.value ? e.target.value : "";
+            const newValue = e.target.value || "";
             onChange(newValue);
             setValue(newValue);
           }
@@ -87,7 +87,7 @@ const Input: InputComponent = ({
         hover: sPrps.hover && !readOnly,
       },
     }),
-    inputValue,
+    inputValue: value,
     defaultValue: "",
   }));
 

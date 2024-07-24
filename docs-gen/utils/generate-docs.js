@@ -77,17 +77,17 @@ try {
             cssVar
           ].fallback.replace("--mbx", "-mbx")})`
         : "/";
-      let defaultValue = "/";
+      let def = "/";
 
       if (componentCssVars[cssVar].defaultInternal) {
         const defaultInternal = componentCssVars[cssVar].defaultInternal;
-        defaultValue = `[${defaultInternal}](#${defaultInternal.replace(
+        def = `[${defaultInternal}](#${defaultInternal.replace(
           "--mbx",
           "-mbx"
         )})`;
       } else if (componentCssVars[cssVar].defaultGlobal) {
         const defaultGlobal = componentCssVars[cssVar].defaultGlobal;
-        defaultValue = `[${defaultGlobal}](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#${defaultGlobal.replace(
+        def = `[${defaultGlobal}](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#${defaultGlobal.replace(
           "--mbx",
           "-mbx"
         )})`;
@@ -98,7 +98,7 @@ try {
           "</div><div style='text-align:center;margin-auto;'><div style='background:" +
           componentCssVars[cssVar].defaultColor +
           ";margin:auto; width:15px; height:15px;'/></div></div>";
-        defaultValue = defaultColor;
+        def = defaultColor;
       } else if (
         componentCssVars[cssVar].defaultExternal &&
         componentCssVars[cssVar].defaultExternal.component &&
@@ -108,28 +108,25 @@ try {
         const externalComponent =
           componentCssVars[cssVar].defaultExternal.component;
         const propName = componentCssVars[cssVar].defaultExternal.prop;
-        defaultValue = `[${propName}](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/${
+        def = `[${propName}](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/${
           componentCssVars[cssVar].defaultExternal.type
-        }/${externalComponent}/css-vars/#${propName.replace(
-          "--mbx",
-          "-mbx"
-        )})`;
+        }/${externalComponent}/css-vars/#${propName.replace("--mbx", "-mbx")})`;
       } else if (componentCssVars[cssVar].default) {
-        defaultValue = componentCssVars[cssVar].default;
+        def = componentCssVars[cssVar].default;
       }
 
       outputCssTable += `${CSS_TABLE_ROW.replace("PROP_NAME", propName)
         .replace("FALLBACK", fallback)
-        .replace("DEFAULT", defaultValue)}`;
+        .replace("DEFAULT", def)}`;
       readmeCssTable += `${CSS_TABLE_ROW.replace("PROP_NAME", readmePropName)
         .replace("FALLBACK", readmeFallback)
-        .replace("DEFAULT", defaultValue)}`;
+        .replace("DEFAULT", def)}`;
       outputCssList += `\n\n\<br>\n\n### ${cssVar}\n\n`;
       outputCssList += `${CSS_TEMPLATE_TABLE_HEADER_MINI}`;
       outputCssList += `${CSS_TEMPLATE_TABLE_ROW_MINI.replace(
         "FALLBACK",
         fallback
-      ).replace("DEFAULT", defaultValue)}\n\n<br>\n\n`;
+      ).replace("DEFAULT", def)}\n\n<br>\n\n`;
       outputCssList += `${componentCssVars[cssVar].description}\n\n<br>\n\n`;
     });
 

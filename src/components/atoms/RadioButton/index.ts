@@ -45,7 +45,7 @@ import component from "./component";
  * @copyright 2024 Cataldo Cianciaruso
  */
 const RadioButton: RadioButtonComponent = ({
-  value: inputValue,
+  value,
   onChange = () => {},
   deselectable = true,
   onKeyDown = () => {},
@@ -54,18 +54,18 @@ const RadioButton: RadioButtonComponent = ({
 }) =>
   buildMbxReactive<boolean>({ active, ...props }, (sProps) => ({
     name: "radio",
-    Component: ({ value }) => (value ? component : ""),
+    Component: (prp) => (prp.value ? component : ""),
     defaultValue: false,
-    inputValue,
+    inputValue: value,
     features: {
       opHov: true,
       wAll: true,
     },
-    props: (value, setValue) => {
+    props: (val, setVal) => {
       const callBack = () => {
-        if (!value || deselectable) {
-          onChange(!value);
-          setValue(!value);
+        if (!val || deselectable) {
+          onChange(!val);
+          setVal(!val);
         }
       };
       return {
