@@ -41,30 +41,30 @@
     },
     "fallback": "--mbx-dismissablecard-text"
   },
-  "--mbx-dismissablecard-x-color": {
-    "description": "Fallback value for `--mbx-dismissablecard-x-color-light` and `--mbx-dismissablecard-x-color-dark`"
+  "--mbx-dismissablecard-x": {
+    "description": "Fallback value for `--mbx-dismissablecard-x-light` and `--mbx-dismissablecard-x-dark`"
   },
-  "--mbx-dismissablecard-x-color-light": {
+  "--mbx-dismissablecard-x-light": {
     "description": "DismissableCard x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultInternal": "--mbx-dismissablecard-text-light",
-    "fallback": "--mbx-dismissablecard-x-color"
+    "fallback": "--mbx-dismissablecard-x"
   },
-  "--mbx-dismissablecard-x-color-dark": {
+  "--mbx-dismissablecard-x-dark": {
     "description": "DismissableCard x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultInternal": "--mbx-dismissablecard-text-dark",
-    "fallback": "--mbx-dismissablecard-x-color"
+    "fallback": "--mbx-dismissablecard-x"
   },
-  "--mbx-dismissablecard-x-color-hover": {
-    "description": "Fallback value for `--mbx-dismissablecard-x-color-hover-light` and `--mbx-dismissablecard-x-color-hover-dark`"
+  "--mbx-dismissablecard-x-hover": {
+    "description": "Fallback value for `--mbx-dismissablecard-x-hover-light` and `--mbx-dismissablecard-x-hover-dark`"
   },
-  "--mbx-dismissablecard-x-color-hover-light": {
+  "--mbx-dismissablecard-x-hover-light": {
     "description": "DismissableCard x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultColor": "red",
-    "fallback": "--mbx-dismissablecard-x-color-hover"
+    "fallback": "--mbx-dismissablecard-x-hover"
   },
-  "--mbx-dismissablecard-x-color-hover-dark": {
+  "--mbx-dismissablecard-x-hover-dark": {
     "description": "DismissableCard x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "defaultColor": "red",
-    "fallback": "--mbx-dismissablecard-x-color-hover"
+    "fallback": "--mbx-dismissablecard-x-hover"
   }
 }

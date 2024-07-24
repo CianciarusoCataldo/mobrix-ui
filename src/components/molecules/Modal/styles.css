@@ -28,21 +28,21 @@
 
 [data-mbx-id="mod"] > [data-mbx-id="dis-card"] > [data-mbx-dchead] {
   --mbx-def-modx: white;
-  --mbx-dismissablecard-x-color-light: var(
-    --mbx-modal-x-color-light,
-    var(--mbx-modal-x-color, var(--mbx-def-modx))
+  --mbx-dismissablecard-x-light: var(
+    --mbx-modal-x-light,
+    var(--mbx-modal-x, var(--mbx-def-modx))
   );
-  --mbx-dismissablecard-x-color-hover-light: var(
-    --mbx-modal-x-color-hover-light,
-    var(--mbx-modal-x-color-hover)
+  --mbx-dismissablecard-x-hover-light: var(
+    --mbx-modal-x-hover-light,
+    var(--mbx-modal-x-hover)
   );
-  --mbx-dismissablecard-x-color-dark: var(
-    --mbx-modal-x-color-dark,
-    var(--mbx-modal-x-color, var(--mbx-def-modx))
+  --mbx-dismissablecard-x-dark: var(
+    --mbx-modal-x-dark,
+    var(--mbx-modal-x, var(--mbx-def-modx))
   );
-  --mbx-dismissablecard-x-color-hover-dark: var(
-    --mbx-modal-x-color-hover-dark,
-    var(--mbx-modal-x-color-hover)
+  --mbx-dismissablecard-x-hover-dark: var(
+    --mbx-modal-x-hover-dark,
+    var(--mbx-modal-x-hover)
   );
 }
 

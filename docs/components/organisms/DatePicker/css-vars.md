@@ -55,12 +55,12 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-background](#-mbx-datepicker-modal-background)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-background-light](#-mbx-datepicker-modal-background-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-background](#-mbx-datepicker-modal-background)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-modal-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-background-light)</div>                                        |
 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-background-dark](#-mbx-datepicker-modal-background-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-background](#-mbx-datepicker-modal-background)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-modal-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-background-dark)</div>                                          |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-color](#-mbx-datepicker-modal-x-color)</div>                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-color-light](#-mbx-datepicker-modal-x-color-light)</div>                               | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-color](#-mbx-datepicker-modal-x-color)</div>                               | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-color-light)</div>                                              |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-color-dark](#-mbx-datepicker-modal-x-color-dark)</div>                                 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-color](#-mbx-datepicker-modal-x-color)</div>                               | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-color-dark)</div>                                                |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-color-hover](#-mbx-datepicker-modal-x-color-hover)</div>                               | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-color-hover-light](#-mbx-datepicker-modal-x-color-hover-light)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-color-hover](#-mbx-datepicker-modal-x-color-hover)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-color-hover-light)</div>                                  |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-color-hover-dark](#-mbx-datepicker-modal-x-color-hover-dark)</div>                     | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-color-hover](#-mbx-datepicker-modal-x-color-hover)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-color-hover-dark)</div>                                    |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x](#-mbx-datepicker-modal-x)</div>                                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-light](#-mbx-datepicker-modal-x-light)</div>                                           | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x](#-mbx-datepicker-modal-x)</div>                                           | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-light)</div>                                                          |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-dark](#-mbx-datepicker-modal-x-dark)</div>                                             | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x](#-mbx-datepicker-modal-x)</div>                                           | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-dark)</div>                                                            |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-hover](#-mbx-datepicker-modal-x-hover)</div>                                           | <div style='text-align:center;margin:auto;'>/</div>                                                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-hover-light](#-mbx-datepicker-modal-x-hover-light)</div>                               | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-hover](#-mbx-datepicker-modal-x-hover)</div>                               | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-hover-light)</div>                                              |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-hover-dark](#-mbx-datepicker-modal-x-hover-dark)</div>                                 | <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-hover](#-mbx-datepicker-modal-x-hover)</div>                               | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-hover-dark)</div>                                                |
 
 ## CSS Variables list
 
@@ -656,7 +656,7 @@ Extended from [Modal](../../molecules/Modal/index.md) - Modal background when [d
 
 <br>
 
-### --mbx-datepicker-modal-x-color
+### --mbx-datepicker-modal-x
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -664,17 +664,17 @@ Extended from [Modal](../../molecules/Modal/index.md) - Modal background when [d
 
 <br>
 
-Extended from [Modal](../../molecules/Modal/index.md) - Fallback value for `--mbx-datepicker-modal-x-color-light` and `--mbx-datepicker-modal-x-color-dark`
+Extended from [Modal](../../molecules/Modal/index.md) - Fallback value for `--mbx-datepicker-modal-x-light` and `--mbx-datepicker-modal-x-dark`
 
 <br>
 
 <br>
 
-### --mbx-datepicker-modal-x-color-light
+### --mbx-datepicker-modal-x-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-color](#-mbx-datepicker-modal-x-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                            |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x](#-mbx-datepicker-modal-x)</div> | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-light)</div> |
 
 <br>
 
@@ -684,11 +684,11 @@ Extended from [Modal](../../molecules/Modal/index.md) - Modal x icon color when 
 
 <br>
 
-### --mbx-datepicker-modal-x-color-dark
+### --mbx-datepicker-modal-x-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-color](#-mbx-datepicker-modal-x-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x](#-mbx-datepicker-modal-x)</div> | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-dark)</div> |
 
 <br>
 
@@ -698,7 +698,7 @@ Extended from [Modal](../../molecules/Modal/index.md) - Modal x icon color when 
 
 <br>
 
-### --mbx-datepicker-modal-x-color-hover
+### --mbx-datepicker-modal-x-hover
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -706,17 +706,17 @@ Extended from [Modal](../../molecules/Modal/index.md) - Modal x icon color when 
 
 <br>
 
-Extended from [Modal](../../molecules/Modal/index.md) - Fallback value for `--mbx-datepicker-modal-x-color-hover-light` and `--mbx-datepicker-modal-x-color-hover-dark`
+Extended from [Modal](../../molecules/Modal/index.md) - Fallback value for `--mbx-datepicker-modal-x-hover-light` and `--mbx-datepicker-modal-x-hover-dark`
 
 <br>
 
 <br>
 
-### --mbx-datepicker-modal-x-color-hover-light
+### --mbx-datepicker-modal-x-hover-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-color-hover](#-mbx-datepicker-modal-x-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-color-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-hover](#-mbx-datepicker-modal-x-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-hover-light)</div> |
 
 <br>
 
@@ -726,11 +726,11 @@ Extended from [Modal](../../molecules/Modal/index.md) - Modal x icon color when 
 
 <br>
 
-### --mbx-datepicker-modal-x-color-hover-dark
+### --mbx-datepicker-modal-x-hover-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-color-hover](#-mbx-datepicker-modal-x-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-color-hover-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-datepicker-modal-x-hover](#-mbx-datepicker-modal-x-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-modal-x-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/molecules/Modal/css-vars/#-mbx-modal-x-hover-dark)</div> |
 
 <br>
 

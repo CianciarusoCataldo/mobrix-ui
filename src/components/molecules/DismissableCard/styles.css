@@ -39,19 +39,19 @@
   flex-direction: row-reverse;
   width: fit-content;
   --mbx-icon-light: var(
-    --mbx-dismissablecard-x-color-light,
-    var(--mbx-dismissablecard-x-color, var(--mbx-crd-txt))
+    --mbx-dismissablecard-x-light,
+    var(--mbx-dismissablecard-x, var(--mbx-crd-txt))
   );
   --mbx-icon-hover-light: var(
-    --mbx-dismissablecard-x-color-hover-light,
-    var(--mbx-dismissablecard-x-color-hover, red)
+    --mbx-dismissablecard-x-hover-light,
+    var(--mbx-dismissablecard-x-hover, red)
   );
   --mbx-icon-dark: var(
-    --mbx-dismissablecard-x-color-dark,
-    var(--mbx-dismissablecard-x-color, var(--mbx-crd-txt))
+    --mbx-dismissablecard-x-dark,
+    var(--mbx-dismissablecard-x, var(--mbx-crd-txt))
   );
   --mbx-icon-hover-dark: var(
-    --mbx-dismissablecard-x-color-hover-dark,
-    var(--mbx-dismissablecard-x-color-hover, red)
+    --mbx-dismissablecard-x-hover-dark,
+    var(--mbx-dismissablecard-x-hover, red)
   );
 }

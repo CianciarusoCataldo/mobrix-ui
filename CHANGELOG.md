@@ -47,6 +47,7 @@
   - `icon` instead of `icon-color`
   - `text` instead of `text-color`
   - `link-text` instead of `link-color`
+  - `x` instead of `x-color`
 
 <br>
 
