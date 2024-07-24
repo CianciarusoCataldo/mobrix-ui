@@ -48,6 +48,7 @@
   - `text` instead of `text-color`
   - `link-text` instead of `link-color`
   - `x` instead of `x-color`
+  - `thumb` instead of `thumb-color`
 
 <br>
 

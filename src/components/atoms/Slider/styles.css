@@ -14,8 +14,8 @@
     var(--mbx-slider-background-hover)
   );
   --mbx-sld-tb: var(
-    --mbx-slider-thumb-color-light,
-    var(--mbx-slider-thumb-color, radial-gradient(#2d3748, #1d232e))
+    --mbx-slider-thumb-light,
+    var(--mbx-slider-thumb, radial-gradient(#2d3748, #1d232e))
   );
   --mbx-def-bgh: var(--mbx-bg);
   --mbx-sld-op-act: 0.4;
@@ -23,8 +23,8 @@
 
 [data-mbx-id="sld"][data-mbx-dk] {
   --mbx-sld-tb: var(
-    --mbx-slider-thumb-color-dark,
-    var(--mbx-slider-thumb-color, radial-gradient(#e3e4e9, #9b9999))
+    --mbx-slider-thumb-dark,
+    var(--mbx-slider-thumb, radial-gradient(#e3e4e9, #9b9999))
   );
 }
 
@@ -67,15 +67,15 @@
 [data-mbx-id="sld"][data-mbx-hv] {
   --mbx-sld-op-hov: 0.6;
   --mbx-sld-tb-h: var(
-    --mbx-slider-thumb-color-hover-light,
-    var(--mbx-slider-thumb-color-hover, var(--mbx-sld-tb))
+    --mbx-slider-thumb-hover-light,
+    var(--mbx-slider-thumb-hover, var(--mbx-sld-tb))
   );
 }
 
 [data-mbx-id="sld"][data-mbx-hv][data-mbx-dk] {
   --mbx-sld-tb-h: var(
-    --mbx-slider-thumb-color-hover-dark,
-    var(--mbx-slider-thumb-color-hover, var(--mbx-sld-tb))
+    --mbx-slider-thumb-hover-dark,
+    var(--mbx-slider-thumb-hover, var(--mbx-sld-tb))
   );
 }
 

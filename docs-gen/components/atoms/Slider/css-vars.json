@@ -12,30 +12,30 @@
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-slider-background"
   },
-  "--mbx-slider-thumb-color": {
-    "description": "Fallback value for `mbx-slider-thumb-color-light` and `mbx-slider-thumb-color-dark`"
+  "--mbx-slider-thumb": {
+    "description": "Fallback value for `mbx-slider-thumb-light` and `mbx-slider-thumb-dark`"
   },
-  "--mbx-slider-thumb-color-light": {
+  "--mbx-slider-thumb-light": {
     "description": "Slider thumb color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "default": "radial-gradient(#2d3748, #1d232e)",
-    "fallback": "--mbx-slider-thumb-color"
+    "fallback": "--mbx-slider-thumb"
   },
-  "--mbx-slider-thumb-color-dark": {
+  "--mbx-slider-thumb-dark": {
     "description": "Slider thumb color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "default": "radial-gradient(#e3e4e9, #9b9999)",
-    "fallback": "--mbx-slider-thumb-color"
+    "fallback": "--mbx-slider-thumb"
   },
-  "--mbx-slider-thumb-color-hover": {
-    "description": "Fallback value for `mbx-slider-thumb-color-hover-light` and `mbx-slider-thumb-color-hover-dark`"
+  "--mbx-slider-thumb-hover": {
+    "description": "Fallback value for `mbx-slider-thumb-hover-light` and `mbx-slider-thumb-hover-dark`"
   },
-  "--mbx-slider-thumb-color-hover-light": {
+  "--mbx-slider-thumb-hover-light": {
     "description": "Slider thumb color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
-    "defaultInternal": "--mbx-slider-thumb-color-light",
-    "fallback": "--mbx-slider-thumb-color-hover"
+    "defaultInternal": "--mbx-slider-thumb-light",
+    "fallback": "--mbx-slider-thumb-hover"
   },
-  "--mbx-slider-thumb-color-hover-dark": {
+  "--mbx-slider-thumb-hover-dark": {
     "description": "Slider thumb color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
-    "defaultInternal": "--mbx-slider-thumb-color-dark",
-    "fallback": "--mbx-slider-thumb-color-hover"
+    "defaultInternal": "--mbx-slider-thumb-dark",
+    "fallback": "--mbx-slider-thumb-hover"
   }
 }
