@@ -56,7 +56,7 @@ const Slider: SliderComponent = ({
 }) =>
   buildMbxReactive<number>({ active, ...props }, ({ disabled, ...sProps }) => ({
     name: "sld",
-    inputValue: value,
+    inpV: value,
     defV: 0,
     wrapper: "input",
     styles: {

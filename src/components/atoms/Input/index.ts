@@ -87,7 +87,7 @@ const Input: InputComponent = ({
         hover: sPrps.hover && !readOnly,
       },
     }),
-    inputValue: value,
+    inpV: value,
     defV: "",
   }));
 

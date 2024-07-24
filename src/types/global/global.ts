@@ -370,7 +370,7 @@ export type BuilderPropsReactive<T = BuilderComponent | BuilderComponent[]> =
       setValue: React.Dispatch<React.SetStateAction<T>>;
     }) => BuilderProps["Component"]
   > & {
-    inputValue?: T;
+    inpV?: T;
     defV: T;
     render?: (
       value: T,
@@ -388,7 +388,7 @@ export type MbxBuildReactiveProps<T = any> = BuilderProps<
     setValue: React.Dispatch<React.SetStateAction<T>>;
   }) => BuilderProps["Component"]
 > & {
-  inputValue?: T;
+  inpV?: T;
   defV: T;
   props?: (
     value: T,

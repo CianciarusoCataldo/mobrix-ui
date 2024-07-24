@@ -47,7 +47,7 @@ import sComponent from "./component";
  */
 const Selector: SelectorComponent = ({
   elements,
-  value: inputValue,
+  value: inpV,
   onChange = () => {},
   optionClassName,
   ...props
@@ -56,7 +56,7 @@ const Selector: SelectorComponent = ({
     wrapper: "select",
     name: "selt",
     defV: undefined,
-    inputValue,
+    inpV,
     props: (value, setVal) => ({
       addProps: {
         disabled: mbxProps.disabled,

@@ -65,7 +65,7 @@ const TabViewer: TabViewerComponent = ({
       shadow: false,
     },
     defV: 0,
-    inputValue: props.selected,
+    inpV: props.selected,
     Component: ({ value, setValue }) =>
       component({
         value: Number(value),

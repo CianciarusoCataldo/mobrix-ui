@@ -52,7 +52,7 @@ const Dropdown: DropdownComponent = ({
   buildMbxReactive(props, (mbxProps) => ({
     name: "dd",
     defV: 0,
-    inputValue: props.value,
+    inpV: props.value,
     mbxProps,
     props: (value, setV) =>
       component({

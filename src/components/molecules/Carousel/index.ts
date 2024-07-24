@@ -51,7 +51,7 @@ const Carousel: CarouselComponent = ({ active = true, ...props }) => {
     name: "crsel",
     mbxProps,
     defV: 0,
-    inputValue: props.value,
+    inpV: props.value,
     features: { wBgCl: true },
     Component: ({ value, setValue }) =>
       component({

@@ -62,7 +62,7 @@ const Counter: CounterComponent = ({
       opHov: true,
       wAllc: true,
     },
-    inputValue: value,
+    inpV: value,
     defV: 0,
     props: (val, setV) => ({
       addProps: {

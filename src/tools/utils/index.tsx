@@ -220,25 +220,25 @@ const getMbxUiStandard = ({
 // prettier-ignore
 const getMbxUiReactive = <T=any>({
   defV,
-  inputValue,
+  inpV,
   props,
   Component,
   ...bprops
 }: BuilderPropsReactive<T>) => {
-  const [value, setValue] = React.useState<T>(inputValue || defV);
+  const [value, setValue] = React.useState<T>(inpV || defV);
 
   const parsed = props ? props(value, setValue) : {};
 
   /* istanbul ignore next */
   React.useEffect(() => {
     if (
-      inputValue !== undefined &&
-      inputValue !== null &&
-      value !== inputValue
+      inpV !== undefined &&
+      inpV !== null &&
+      value !== inpV
     ) {
-      setValue(inputValue);
+      setValue(inpV);
     }
-  }, [JSON.stringify(inputValue)]);
+  }, [JSON.stringify(inpV)]);
 
   return getMbxUiStandard({
     Component: Component && Component({ value, setValue }),

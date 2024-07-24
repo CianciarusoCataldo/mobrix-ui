@@ -48,7 +48,7 @@ import raterComponent from "./component";
  * @copyright 2024 Cataldo Cianciaruso
  */
 const Rater: RaterComponent = ({
-  value: inputValue,
+  value: inpV,
   /* istanbul ignore next */
   onChange = () => {},
   vertical = false,
@@ -56,7 +56,7 @@ const Rater: RaterComponent = ({
 }) =>
   buildMbxReactive<number>(props, (mbxProps) => ({
     name: "rat",
-    inputValue,
+    inpV,
     defV: 0,
     Component: ({ value, setValue }) =>
       raterComponent({

@@ -49,7 +49,7 @@ import { PasswordComponent } from "../../../types/components/atoms/psw";
 const Psw: PasswordComponent = ({ active = true, value, ...props }) =>
   buildMbxReactive<string | undefined>(props, (mbxProps) => ({
     name: "psw",
-    inputValue: value,
+    inpV: value,
     features: { wBg: true },
     defV: "",
     Component: ({ value, setValue }) =>

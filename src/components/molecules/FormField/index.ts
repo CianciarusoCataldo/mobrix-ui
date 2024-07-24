@@ -60,7 +60,7 @@ import component from "./component";
 * @copyright 2024 Cataldo Cianciaruso
 */
 const FormField: FormFieldComponent = ({
-  value: inputValue,
+  value: inpV,
   type = "text",
   ...props
 }) => {
@@ -82,7 +82,7 @@ const FormField: FormFieldComponent = ({
         ...props,
         ...mbxProps,
       }),
-    inputValue,
+    inpV,
     defV: null,
     features: { noShFc: true },
   }));

@@ -47,7 +47,7 @@ import { defaultIcon } from "./icons";
  * @copyright 2024 Cataldo Cianciaruso
  */
 const Toggle: ToggleComponent = ({
-  value: inputValue,
+  value: inpV,
   icon = defaultIcon,
   offIcon,
   onIcon,
@@ -83,7 +83,7 @@ const Toggle: ToggleComponent = ({
     }),
     Component: (prp) => (prp.value === true ? onIcon || icon : offIcon || icon),
     defV: true,
-    inputValue,
+    inpV,
   }));
 
 export default Toggle;

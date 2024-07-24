@@ -56,7 +56,7 @@ const RadioButton: RadioButtonComponent = ({
     name: "radio",
     Component: (prp) => (prp.value ? component : ""),
     defV: false,
-    inputValue: value,
+    inpV: value,
     features: {
       opHov: true,
       wAll: true,

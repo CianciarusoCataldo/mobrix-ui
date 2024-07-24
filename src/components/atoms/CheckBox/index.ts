@@ -81,7 +81,7 @@ const Checkbox: CheckBoxComponent = ({
         },
       };
     },
-    inputValue: value,
+    inpV: value,
     defV: false,
   }));
 

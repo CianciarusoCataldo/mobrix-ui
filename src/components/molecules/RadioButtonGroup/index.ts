@@ -53,7 +53,7 @@ import component from "./component";
  * @copyright 2024 Cataldo Cianciaruso
  */
 const RadioButtonGroup: RadioButtonGroupComponent = ({
-  value: inputValue,
+  value: inpV,
   horizontal,
   onChange = () => {},
   ...props
@@ -61,7 +61,7 @@ const RadioButtonGroup: RadioButtonGroupComponent = ({
   buildMbxReactive<number>(props, (mbxProps) => ({
     name: "rgr",
     defV: -1,
-    inputValue,
+    inpV,
     features: {
       wBgCl: true,
     },

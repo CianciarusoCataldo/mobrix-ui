@@ -57,7 +57,7 @@ import component from "./component";
  * @copyright 2024 Cataldo Cianciaruso
  */
 const Calendar: CalendarComponent = ({
-  value: inputValue,
+  value: inpV,
   active = true,
   ...props
 }) => {
@@ -66,7 +66,7 @@ const Calendar: CalendarComponent = ({
   return buildMbxReactive<DeepPartial<CalendarDate>>(props, (mbxProps) => ({
     name: "cal",
     mbxProps: { ...mbxProps, shadow: false, active: false },
-    inputValue,
+    inpV,
     defV: {
       year: tday.year,
       month: tday.month,
