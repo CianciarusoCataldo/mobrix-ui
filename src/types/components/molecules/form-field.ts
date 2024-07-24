@@ -41,7 +41,7 @@ export type FormFieldProps<T = any> = ComponentWithValue &
       | "boolean"
       | "text"
       | "numeric"
-      | "radio"
+      | "rd"
       | "checkbox"
       | "toggle"
       | "rater"

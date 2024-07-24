@@ -1,4 +1,4 @@
-[data-mbx-id="econt"] {
+[data-mbx-id="ecn"] {
   --mbx-def-bg: var(--mbx-con-bg);
   --mbx-def-txt: var(--mbx-con-txt);
   --mbx-bg-l: var(
@@ -19,13 +19,13 @@
   );
 }
 
-[data-mbx-id="econt"] > [data-mbx-rt] {
+[data-mbx-id="ecn"] > [data-mbx-rt] {
   display: flex;
   flex-direction: column;
   margin: auto;
 }
 
-[data-mbx-id="econt"] > [data-mbx-id="icb"] > [data-mbx-img="arr"] {
+[data-mbx-id="ecn"] > [data-mbx-id="icb"] > [data-mbx-img="arr"] {
   margin-bottom: 0.3rem;
   padding-top: 0.2rem;
   --mbx-icon-light: var(

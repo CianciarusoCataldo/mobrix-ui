@@ -22,7 +22,7 @@
   --mbx-container-text: var(--mbx-txt);
 }
 
-[data-mbx-id*="card"] > [data-mbx-id="cont"] {
+[data-mbx-id*="card"] > [data-mbx-id="cn"] {
   padding: 0.5rem 0.3rem;
   word-wrap: break-word;
   word-break: break-word;

@@ -43,7 +43,7 @@ import { buildMbxStandard } from "../../../tools/utils";
  */
 const Container: ContainerComponent = (props) =>
   buildMbxStandard(props, (mbxProps) => ({
-    name: "cont",
+    name: "cn",
     Component: props.children,
     mbxProps,
     wrapper: props.wrapper,

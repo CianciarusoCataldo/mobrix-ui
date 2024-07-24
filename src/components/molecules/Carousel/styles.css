@@ -14,7 +14,7 @@
   );
 }
 
-[data-mbx-id="crsel"] > [data-mbx-car-els] > [data-mbx-id="cont"] {
+[data-mbx-id="crsel"] > [data-mbx-car-els] > [data-mbx-id="cn"] {
   position: relative;
   -webkit-animation: var(--mbx-car-an) 0.3s forwards;
   animation: var(--mbx-car-an) 0.3s forwards;

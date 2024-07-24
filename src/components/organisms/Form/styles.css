@@ -76,9 +76,9 @@
 
 [data-mbx-id="form"] > [data-mbx-ftitle],
 [data-mbx-id="form"] > [data-mbx-sbt],
-[data-mbx-id="form"] > div > [data-mbx-id="field"][data-mbx-ftype="boolean"],
-[data-mbx-id="form"] > div > [data-mbx-id="field"][data-mbx-ftype="checkbox"],
-[data-mbx-id="form"] > div > [data-mbx-id="field"][data-mbx-ftype="radio"] {
+[data-mbx-id="form"] > div > [data-mbx-id="fld"][data-mbx-ftype="boolean"],
+[data-mbx-id="form"] > div > [data-mbx-id="fld"][data-mbx-ftype="checkbox"],
+[data-mbx-id="form"] > div > [data-mbx-id="fld"][data-mbx-ftype="rd"] {
   margin: 0 auto;
 }
 

@@ -27,7 +27,7 @@
   border-radius: 6px 6px 0 0;
 }
 
-[data-mbx-id="tview"] > [data-mbx-id="cont"] {
+[data-mbx-id="tview"] > [data-mbx-id="cn"] {
   padding: 0.7rem 1rem;
   --mbx-container-background: var(--mbx-tabv-bg);
   --mbx-container-text: var(--mbx-tabv-txt);

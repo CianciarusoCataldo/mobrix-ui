@@ -24,7 +24,7 @@ const cardTest = () => {
       const wrapper = mount(<DismissableCard onClose={onCloseStub} />);
 
       wrapper
-        .find('[data-mbx-id="cont"]')
+        .find('[data-mbx-id="cn"]')
         .at(0)
         .find('[data-mbx-id="icb"]')
         .simulate("click");

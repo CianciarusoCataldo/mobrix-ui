@@ -53,7 +53,7 @@ const RadioButton: RadioButtonComponent = ({
   ...props
 }) =>
   buildMbxReactive<boolean>({ active, ...props }, (sProps) => ({
-    name: "radio",
+    name: "rd",
     Component: (prp) => (prp.value ? component : ""),
     defV: false,
     inpV: value,

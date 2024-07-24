@@ -19,7 +19,7 @@ const radioButtonGroupTest = () => {
           ]}
         />
       );
-      wrapper.find('[data-mbx-id="radio"]').at(0).simulate("click");
+      wrapper.find('[data-mbx-id="rd"]').at(0).simulate("click");
       expect(wrapper);
     });
 
@@ -34,7 +34,7 @@ const radioButtonGroupTest = () => {
           ]}
         />
       );
-      wrapper.find('[data-mbx-id="radio"]').at(0).simulate("click");
+      wrapper.find('[data-mbx-id="rd"]').at(0).simulate("click");
       expect(onChangeStub).toBeCalledWith(0);
     });
   });

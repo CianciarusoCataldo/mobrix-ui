@@ -53,7 +53,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
   ...props
 }) => {
   return buildMbxReactive(props, (mbxProps) => ({
-    name: "econt",
+    name: "ecn",
     defV: false,
     wrapper,
     inpV: compact,

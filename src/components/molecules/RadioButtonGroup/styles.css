@@ -32,7 +32,7 @@
   margin: 0.3rem 1rem;
 }
 
-[data-mbx-id="rgr"] [data-mbx-id="radio"] {
+[data-mbx-id="rgr"] [data-mbx-id="rd"] {
   --mbx-radio-background-light: var(
     --mbx-radiogroup-radio-background-light,
     var(--mbx-radiogroup-radio-background)

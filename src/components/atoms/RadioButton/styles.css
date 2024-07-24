@@ -1,4 +1,4 @@
-[data-mbx-id="radio"] {
+[data-mbx-id="rd"] {
   display: flex;
   flex-direction: column;
   --mbx-align: center;
@@ -64,7 +64,7 @@
   );
 }
 
-[data-mbx-id="radio"][data-mbx-dk] {
+[data-mbx-id="rd"][data-mbx-dk] {
   --mbx-rd-ic: var(
     --mbx-radio-icon-background-dark,
     var(
@@ -74,7 +74,7 @@
   );
 }
 
-[data-mbx-id="radio"] > div {
+[data-mbx-id="rd"] > div {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;

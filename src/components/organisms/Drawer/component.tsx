@@ -29,7 +29,6 @@ const DrwComponent: MbxUiComponent<DrawerProps, BuilderComponent[]> = ({
     }}
     hover={hover}
     dark={dark}
-    a11yLabel="drawer-close-button"
   >
     <ArrowIcon disabled={disabled} />
   </IconButton>,

@@ -1,9 +1,9 @@
-[data-mbx-id="cont"] {
+[data-mbx-id="cn"] {
   background: var(--mbx-con-bg);
   color: var(--mbx-con-txt);
 }
 
-[data-mbx-id*="cont"] {
+[data-mbx-id*="cn"] {
   --mbx-con-bg: var(
     --mbx-container-background-light,
     var(--mbx-container-background, var(--mbx-c-bg))
@@ -14,7 +14,7 @@
   );
 }
 
-[data-mbx-id*="cont"][data-mbx-dk] {
+[data-mbx-id*="cn"][data-mbx-dk] {
   --mbx-con-bg: var(
     --mbx-container-background-dark,
     var(--mbx-container-background, var(--mbx-c-bg))
@@ -25,6 +25,6 @@
   );
 }
 
-[data-mbx-id*="cont"][data-mbx-trn] {
+[data-mbx-id*="cn"][data-mbx-trn] {
   --mbx-con-bg: transparent;
 }

@@ -5,13 +5,13 @@
   flex-direction: column;
 }
 
-[data-mbx-id="list"] > [data-mbx-id="cont"] {
+[data-mbx-id="list"] > [data-mbx-id="cn"] {
   margin-top: 0.2rem;
   display: flex;
   flex-direction: row;
 }
 
-[data-mbx-id="list"] > [data-mbx-id="cont"] > svg {
+[data-mbx-id="list"] > [data-mbx-id="cn"] > svg {
   display: block;
   margin: auto 0.3rem auto 0;
   width: 6px;
@@ -19,7 +19,7 @@
   fill: var(--mbx-lst-txt);
 }
 
-[data-mbx-id="list"] > [data-mbx-id="cont"] {
+[data-mbx-id="list"] > [data-mbx-id="cn"] {
   --mbx-txt-l: var(--mbx-list-text-light, var(--mbx-list-text));
   --mbx-txt-h-d: var(--mbx-list-text-hover-dark, var(--mbx-list-text-hover));
   --mbx-txt-h-l: var(--mbx-list-text-hover-light, var(--mbx-list-text-hover));

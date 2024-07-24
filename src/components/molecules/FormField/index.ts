@@ -65,7 +65,7 @@ const FormField: FormFieldComponent = ({
   ...props
 }) => {
   return buildMbxReactive(props, (mbxProps) => ({
-    name: "field",
+    name: "fld",
     addProps: {
       "data-mbx-ftype": type,
     },

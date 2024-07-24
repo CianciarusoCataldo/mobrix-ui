@@ -20,7 +20,7 @@ const formTest = () => {
         </Form>
       );
       wrapper
-        .find('div [data-mbx-id="field"]')
+        .find('div [data-mbx-id="fld"]')
         .at(2)
         .simulate("change", "new test text");
       expect(wrapper);

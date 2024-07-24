@@ -2,7 +2,7 @@
   position: relative;
 }
 
-[data-mbx-id="pp"] > [data-mbx-id="cont"] {
+[data-mbx-id="pp"] > [data-mbx-id="cn"] {
   position: absolute;
   scroll-behavior: smooth;
   animation-duration: 0.2s;

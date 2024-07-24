@@ -1,4 +1,4 @@
-[data-mbx-id="field"] {
+[data-mbx-id="fld"] {
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -57,7 +57,7 @@
   --mbx-toggle-background: var(--mbx-fld-bg);
 }
 
-[data-mbx-id="field"][data-mbx-dk] {
+[data-mbx-id="fld"][data-mbx-dk] {
   --mbx-fld-bg: var(
     --mbx-field-background-dark,
     var(--mbx-field-background)
@@ -84,34 +84,34 @@
   );
 }
 
-[data-mbx-id="field"] > [data-mbx-id="label"] {
+[data-mbx-id="fld"] > [data-mbx-id="label"] {
   font-weight: 600;
   margin: 0 0 0.2rem;
   width: 100%;
   --mbx-label-text: var(--mbx-fld-txt);
 }
 
-[data-mbx-id="field"] > [data-mbx-id="cont"] {
+[data-mbx-id="fld"] > [data-mbx-id="cn"] {
   --mbx-container-text: var(--mbx-fld-err-txt);
   transition: all 0.3s ease-out;
   padding-top: 0.2rem;
 }
 
-[data-mbx-id="field"] [data-mbx-fld-e] {
+[data-mbx-id="fld"] [data-mbx-fld-e] {
   border-width: 2px;
   border-style: ridge;
   border-color: transparent;
 }
 
-[data-mbx-id="field"] [data-mbx-fld-e="true"] {
+[data-mbx-id="fld"] [data-mbx-fld-e="true"] {
   border-color: var(--mbx-fld-err-b);
 }
 
-[data-mbx-id="field"][data-mbx-ftype="checkbox"],
-[data-mbx-id="field"][data-mbx-ftype="boolean"],
-[data-mbx-id="field"][data-mbx-ftype="radio"],
-[data-mbx-id="field"][data-mbx-ftype="rater"],
-[data-mbx-id="field"][data-mbx-ftype="slider"],
-[data-mbx-id="field"][data-mbx-ftype="toggle"] {
+[data-mbx-id="fld"][data-mbx-ftype="checkbox"],
+[data-mbx-id="fld"][data-mbx-ftype="boolean"],
+[data-mbx-id="fld"][data-mbx-ftype="rd"],
+[data-mbx-id="fld"][data-mbx-ftype="rater"],
+[data-mbx-id="fld"][data-mbx-ftype="slider"],
+[data-mbx-id="fld"][data-mbx-ftype="toggle"] {
   --mbx-align: center;
 }
