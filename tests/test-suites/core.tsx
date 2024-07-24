@@ -1,5 +1,5 @@
 import React from "react";
-import { buildMbxStandard } from "../../src/tools";
+import { buildMbxStandard } from "../../src/tools/utils";
 import { MbxUiProps } from "../../src";
 import { mount } from "enzyme";
 import {
