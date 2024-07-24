@@ -48,6 +48,11 @@ const FormPage = () => (
                     header: t("props_field", { context: "numeric" }),
                   },
                   field4: {
+                    placeholder: "",
+                    type: "password",
+                    header: t("props_field", { context: "password" }),
+                  },
+                  field5: {
                     placeholder: "placeholder",
                     type: "radio",
                     header: t("props_field", { context: "radio" }),

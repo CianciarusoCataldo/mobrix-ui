@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { CounterComponent } from "../../../types";
 
-import { buildMbxReactive } from "../../../tools";
+import { buildMbxReactive } from "../../../tools/utils";
 
 /**
  * A flexible numeric input element

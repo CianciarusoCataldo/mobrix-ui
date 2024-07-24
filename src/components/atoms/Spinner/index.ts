@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { SpinnerComponent } from "../../../types";
 
-import { buildMbxStandard } from "../../../tools";
+import { buildMbxStandard } from "../../../tools/utils";
 
 import defaultIcons from "./icons";
 

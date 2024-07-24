@@ -4,7 +4,7 @@ import { CalendarComponent, CalendarDate, DeepPartial } from "../../../types";
 
 import { today } from "./utils";
 
-import { buildMbxReactive } from "../../../tools";
+import { buildMbxReactive } from "../../../tools/utils";
 
 import component from "./component";
 

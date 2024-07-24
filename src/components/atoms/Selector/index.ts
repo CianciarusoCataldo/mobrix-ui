@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { SelectorComponent } from "../../../types";
 
-import { buildMbxReactive } from "../../../tools";
+import { buildMbxReactive } from "../../../tools/utils";
 
 import sComponent from "./component";
 

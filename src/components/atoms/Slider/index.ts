@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { SliderComponent } from "../../../types";
 
-import { buildMbxReactive } from "../../../tools";
+import { buildMbxReactive } from "../../../tools/utils";
 
 /**
  * A modern `range` input component, to control a value using a simple slider

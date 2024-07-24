@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { DividerComponent } from "../../../types";
 
-import { buildMbxStandard } from "../../../tools";
+import { buildMbxStandard } from "../../../tools/utils";
 
 /**
  * A simple divider, useful to separate sections and paragraphs

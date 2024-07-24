@@ -1,6 +1,6 @@
 import { CardComponent } from "../../../types";
 
-import { buildMbxStandard } from "../../../tools";
+import { buildMbxStandard } from "../../../tools/utils";
 import "./styles.css";
 
 import component from "./component";

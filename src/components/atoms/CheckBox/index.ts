@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { CheckBoxComponent } from "../../../types";
 
-import { buildMbxReactive } from "../../../tools";
+import { buildMbxReactive } from "../../../tools/utils";
 
 import { CheckIcon } from "../../../icons/generic";
 

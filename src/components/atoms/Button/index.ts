@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { ButtonComponent } from "../../../types";
 
-import { buildMbxStandard } from "../../../tools";
+import { buildMbxStandard } from "../../../tools/utils";
 
 /**
  * A tiny and smart button component.

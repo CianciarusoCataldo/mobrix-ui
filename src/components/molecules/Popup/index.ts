@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { PopupComponent } from "../../../types";
 
-import { buildMbxStandard } from "../../../tools";
+import { buildMbxStandard } from "../../../tools/utils";
 
 import component from "./component";
 

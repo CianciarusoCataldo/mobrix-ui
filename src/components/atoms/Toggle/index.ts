@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { ToggleComponent } from "../../../types";
 
-import { buildMbxReactive } from "../../../tools";
+import { buildMbxReactive } from "../../../tools/utils";
 
 import { defaultIcon } from "./icons";
 

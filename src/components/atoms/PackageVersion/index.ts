@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { PackageVersionComponent } from "../../../types/components/atoms/package-version";
 
-import { buildMbxStandard } from "../../../tools";
+import { buildMbxStandard } from "../../../tools/utils";
 import component from "./component";
 
 /**

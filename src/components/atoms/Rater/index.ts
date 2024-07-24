@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { RaterComponent } from "../../../types";
 
-import { buildMbxReactive } from "../../../tools";
+import { buildMbxReactive } from "../../../tools/utils";
 
 import raterComponent from "./component";
 

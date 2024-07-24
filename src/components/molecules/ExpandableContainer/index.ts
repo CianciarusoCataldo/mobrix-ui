@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { ExpandableContainerComponent } from "../../../types";
 
-import { buildMbxReactive } from "../../../tools";
+import { buildMbxReactive } from "../../../tools/utils";
 
 import component from "./component";
 

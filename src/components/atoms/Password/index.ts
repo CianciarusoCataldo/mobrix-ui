@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { InputComponent } from "../../../types";
 
-import { buildMbxReactive } from "../../../tools";
+import { buildMbxReactive } from "../../../tools/utils";
 import PswC from "./component";
 import { PasswordComponent } from "../../../types/components/atoms/psw";
 

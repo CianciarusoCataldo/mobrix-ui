@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { LabelComponent } from "../../../types";
 
-import { buildMbxStandard } from "../../../tools";
+import { buildMbxStandard } from "../../../tools/utils";
 
 /**
  * A text wrapper, with many options to customize its content

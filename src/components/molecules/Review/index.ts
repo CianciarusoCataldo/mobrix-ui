@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { ReviewComponent } from "../../../types";
 
-import { buildMbxStandard } from "../../../tools";
+import { buildMbxStandard } from "../../../tools/utils";
 
 import component from "./component";
 

@@ -1,5 +1,5 @@
 import { ImageComponent } from "../../../types/components/atoms/image";
-import { buildMbxStandard } from "../../../tools";
+import { buildMbxStandard } from "../../../tools/utils";
 
 /**
  * An Image component, enhanced by MoBrix-ui system

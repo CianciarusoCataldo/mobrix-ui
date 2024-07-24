@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { InputComponent } from "../../../types";
 
-import { buildMbxReactive } from "../../../tools";
+import { buildMbxReactive } from "../../../tools/utils";
 
 /**
  * A flexible text input element

@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { ContainerComponent } from "../../../types";
 
-import { buildMbxStandard } from "../../../tools";
+import { buildMbxStandard } from "../../../tools/utils";
 
 /**
  * A simple but smart container, enhanced with MoBrix-ui common props

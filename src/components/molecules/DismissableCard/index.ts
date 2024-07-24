@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { DismissableCardComponent } from "../../../types";
 
-import { buildMbxReactive } from "../../../tools";
+import { buildMbxReactive } from "../../../tools/utils";
 
 import component from "./component";
 
