@@ -26,7 +26,7 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
           ...o,
           [key]: undefined,
         }),
-        {}
+        {},
       )
     : {};
 
