@@ -25,9 +25,9 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-table-header-text](#-mbx-table-header-text)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                     |
 | <div style='text-align:center;margin:auto;'>[--mbx-table-header-text-light](#-mbx-table-header-text-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-table-header-text](#-mbx-table-header-text)</div>             | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>whitesmoke</div><div style='text-align:center;margin-auto;'><div style='background:whitesmoke;margin:auto; width:15px; height:15px;'/></div></div></div>                                                                   |
 | <div style='text-align:center;margin:auto;'>[--mbx-table-header-text-dark](#-mbx-table-header-text-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-table-header-text](#-mbx-table-header-text)</div>             | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>rgb(255, 255, 255)</div><div style='text-align:center;margin-auto;'><div style='background:rgb(255, 255, 255);margin:auto; width:15px; height:15px;'/></div></div></div>                                                   |
-| <div style='text-align:center;margin:auto;'>[--mbx-table-border-color](#-mbx-table-border-color)</div>                       | <div style='text-align:center;margin:auto;'>/</div>                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                     |
-| <div style='text-align:center;margin:auto;'>[--mbx-table-border-color-light](#-mbx-table-border-color-light)</div>           | <div style='text-align:center;margin:auto;'>[--mbx-table-border-color](#-mbx-table-border-color)</div>           | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>darkslategrey</div><div style='text-align:center;margin-auto;'><div style='background:darkslategrey;margin:auto; width:15px; height:15px;'/></div></div></div>                                                             |
-| <div style='text-align:center;margin:auto;'>[--mbx-table-border-color-dark](#-mbx-table-border-color-dark)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-table-border-color](#-mbx-table-border-color)</div>           | <div style='text-align:center;margin:auto;'>rgb(219, 219, 219)</div>                                                                                                                                                                                                                                                    |
+| <div style='text-align:center;margin:auto;'>[--mbx-table-border](#-mbx-table-border)</div>                                   | <div style='text-align:center;margin:auto;'>/</div>                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                                                                                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-table-border-light](#-mbx-table-border-light)</div>                       | <div style='text-align:center;margin:auto;'>[--mbx-table-border](#-mbx-table-border)</div>                       | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>darkslategrey</div><div style='text-align:center;margin-auto;'><div style='background:darkslategrey;margin:auto; width:15px; height:15px;'/></div></div></div>                                                             |
+| <div style='text-align:center;margin:auto;'>[--mbx-table-border-dark](#-mbx-table-border-dark)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-table-border](#-mbx-table-border)</div>                       | <div style='text-align:center;margin:auto;'>rgb(219, 219, 219)</div>                                                                                                                                                                                                                                                    |
 
 ## CSS Variables list
 
@@ -203,7 +203,7 @@ Table header text color when [dark mode](https://cianciarusocataldo.github.io/mo
 
 <br>
 
-### --mbx-table-border-color
+### --mbx-table-border
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -211,17 +211,17 @@ Table header text color when [dark mode](https://cianciarusocataldo.github.io/mo
 
 <br>
 
-Fallback value for `--mbx-table-border-color-light` and `--mbx-table-border-color-dark`
+Fallback value for `--mbx-table-border-light` and `--mbx-table-border-dark`
 
 <br>
 
 <br>
 
-### --mbx-table-border-color-light
+### --mbx-table-border-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                             | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                   |
-| ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-table-border-color](#-mbx-table-border-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>darkslategrey</div><div style='text-align:center;margin-auto;'><div style='background:darkslategrey;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                                   |
+| ------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-table-border](#-mbx-table-border)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>darkslategrey</div><div style='text-align:center;margin-auto;'><div style='background:darkslategrey;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
@@ -231,11 +231,11 @@ Table border color when [dark mode](https://cianciarusocataldo.github.io/mobrix-
 
 <br>
 
-### --mbx-table-border-color-dark
+### --mbx-table-border-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                             | <div style='text-align:center;margin:auto;'>Default</div>            |
-| ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-table-border-color](#-mbx-table-border-color)</div> | <div style='text-align:center;margin:auto;'>rgb(219, 219, 219)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                 | <div style='text-align:center;margin:auto;'>Default</div>            |
+| ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-table-border](#-mbx-table-border)</div> | <div style='text-align:center;margin:auto;'>rgb(219, 219, 219)</div> |
 
 <br>
 

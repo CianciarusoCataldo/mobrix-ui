@@ -51,17 +51,17 @@
     "fallback": "--mbx-table-header-text",
     "description": "Table header text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   },
-  "--mbx-table-border-color": {
-    "description": "Fallback value for `--mbx-table-border-color-light` and `--mbx-table-border-color-dark`"
+  "--mbx-table-border": {
+    "description": "Fallback value for `--mbx-table-border-light` and `--mbx-table-border-dark`"
   },
-  "--mbx-table-border-color-light": {
+  "--mbx-table-border-light": {
     "defaultColor": "darkslategrey",
-    "fallback": "--mbx-table-border-color",
+    "fallback": "--mbx-table-border",
     "description": "Table border color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'"
   },
-  "--mbx-table-border-color-dark": {
+  "--mbx-table-border-dark": {
     "default": "rgb(219, 219, 219)",
-    "fallback": "--mbx-table-border-color",
+    "fallback": "--mbx-table-border",
     "description": "Table border color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   }
 }

@@ -5,8 +5,8 @@
   --mbx-bg-d: var(--mbx-table-background-dark, var(--mbx-table-background));
   --mbx-txt-d: var(--mbx-table-text-dark, var(--mbx-table-text));
   --mbx-tbl-bord: var(
-    --mbx-table-border-color-light,
-    var(--mbx-table-border-color, darkslategrey)
+    --mbx-table-border-light,
+    var(--mbx-table-border, darkslategrey)
   );
   --mbx-tblh-bg: var(
     --mbx-table-header-background-light,
@@ -34,8 +34,8 @@
     var(--mbx-table-header-text, rgb(255, 255, 255))
   );
   --mbx-tbl-bord: var(
-    --mbx-table-border-color-dark,
-    var(--mbx-table-border-color, rgb(219, 219, 219))
+    --mbx-table-border-dark,
+    var(--mbx-table-border, rgb(219, 219, 219))
   );
 }
 

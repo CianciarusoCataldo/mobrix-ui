@@ -54,6 +54,7 @@
   - `loading` instead of `loading-color` (for `Spinner` component)
   - `success` instead of `success-color` (for `Spinner` component)
   - `today` instead of `today-color` (for `Calendar` and `DatePicker` components)
+  - `border` instead of `border-color` (for `Table` component)
 
 <br>
 
