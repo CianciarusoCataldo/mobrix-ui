@@ -72,7 +72,7 @@
 [data-mbx-id][data-mbx-wbc],
 [data-mbx-id][data-mbx-wch],
 [data-mbx-id][data-mbx-wc] {
-  color: var(--mbx-txt-l, var(--mbx-def-txt));
+  color: var(--mbx-txt, var(--mbx-def-txt));
 }
 
 [data-mbx-id][data-mbx-rt] {
