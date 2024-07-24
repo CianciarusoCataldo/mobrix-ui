@@ -64,7 +64,6 @@
     --mbx-form-submit-text-light,
     var(--mbx-form-submit-text)
   );
-
   --mbx-button-background-dark: var(
     --mbx-form-submit-background-dark,
     var(--mbx-form-submit-background)

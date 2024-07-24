@@ -1,5 +1,4 @@
 import { MbxSharedProps } from "../../types";
-import { Features } from "../../types/global/global";
 
 export const D_PROPS: MbxSharedProps = {
   background: true,
