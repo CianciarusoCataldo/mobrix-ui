@@ -37,9 +37,9 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-hover](#-mbx-calendar-arrow-hover)</div>                             | <div style='text-align:center;margin:auto;'>/</div>                                                                        | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                     |
 | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-hover-light](#-mbx-calendar-arrow-hover-light)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-hover](#-mbx-calendar-arrow-hover)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div>                                                                              |
 | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-hover-dark](#-mbx-calendar-arrow-hover-dark)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-calendar-arrow-hover](#-mbx-calendar-arrow-hover)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div>                                                                                |
-| <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color](#-mbx-calendar-today-color)</div>                             | <div style='text-align:center;margin:auto;'>/</div>                                                                        | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                     |
-| <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color-light](#-mbx-calendar-today-color-light)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color](#-mbx-calendar-today-color)</div>                 | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color-dark](#-mbx-calendar-today-color-dark)</div>                   | <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color](#-mbx-calendar-today-color)</div>                 | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-calendar-today](#-mbx-calendar-today)</div>                                         | <div style='text-align:center;margin:auto;'>/</div>                                                                        | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-light](#-mbx-calendar-today-light)</div>                             | <div style='text-align:center;margin:auto;'>[--mbx-calendar-today](#-mbx-calendar-today)</div>                             | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-dark](#-mbx-calendar-today-dark)</div>                               | <div style='text-align:center;margin:auto;'>[--mbx-calendar-today](#-mbx-calendar-today)</div>                             | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 ## CSS Variables list
 
@@ -383,7 +383,7 @@ Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobri
 
 <br>
 
-### --mbx-calendar-today-color
+### --mbx-calendar-today
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -391,17 +391,17 @@ Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobri
 
 <br>
 
-Fallback value for `--mbx-calendar-today-color-light` and `--mbx-calendar-today-color-dark`
+Fallback value for `--mbx-calendar-today-light` and `--mbx-calendar-today-dark`
 
 <br>
 
 <br>
 
-### --mbx-calendar-today-color-light
+### --mbx-calendar-today-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                               |
-| ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color](#-mbx-calendar-today-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                               |
+| ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-calendar-today](#-mbx-calendar-today)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
@@ -411,11 +411,11 @@ Calendar today color when [dark mode](https://cianciarusocataldo.github.io/mobri
 
 <br>
 
-### --mbx-calendar-today-color-dark
+### --mbx-calendar-today-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                 | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                               |
-| ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-calendar-today-color](#-mbx-calendar-today-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                               |
+| ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-calendar-today](#-mbx-calendar-today)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>red</div><div style='text-align:center;margin-auto;'><div style='background:red;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 

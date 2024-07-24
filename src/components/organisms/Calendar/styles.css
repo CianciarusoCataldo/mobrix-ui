@@ -34,8 +34,8 @@
     var(--mbx-calendar-text-hover, var(--mbx-cal-txt-s))
   );
   --mbx-cal-t: var(
-    --mbx-calendar-today-color-light,
-    var(--mbx-calendar-today-color, red)
+    --mbx-calendar-today-light,
+    var(--mbx-calendar-today, red)
   );
   --mbx-table-background: var(--mbx-cal-bg);
   --mbx-table-text: var(--mbx-cal-txt);
@@ -65,8 +65,8 @@
     var(--mbx-calendar-text-hover, var(--mbx-cal-txt-s))
   );
   --mbx-cal-t: var(
-    --mbx-calendar-today-color-dark,
-    var(--mbx-calendar-today-color, red)
+    --mbx-calendar-today-dark,
+    var(--mbx-calendar-today, red)
   );
 }
 

@@ -219,24 +219,24 @@
       "component": "Calendar"
     }
   },
-  "--mbx-datepicker-calendar-today-color": {
-    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-today-color-light` and `--mbx-datepicker-calendar-today-color-dark`"
+  "--mbx-datepicker-calendar-today": {
+    "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Fallback value for `--mbx-datepicker-calendar-today-light` and `--mbx-datepicker-calendar-today-dark`"
   },
-  "--mbx-datepicker-calendar-today-color-light": {
+  "--mbx-datepicker-calendar-today-light": {
     "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar today color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'",
-    "fallback": "--mbx-datepicker-calendar-today-color",
+    "fallback": "--mbx-datepicker-calendar-today",
     "defaultExternal": {
       "type": "organisms",
-      "prop": "--mbx-calendar-today-color-light",
+      "prop": "--mbx-calendar-today-light",
       "component": "Calendar"
     }
   },
-  "--mbx-datepicker-calendar-today-color-dark": {
+  "--mbx-datepicker-calendar-today-dark": {
     "description": "Extended from [Calendar](../../organisms/Calendar/index.md) - Calendar today color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'",
-    "fallback": "--mbx-datepicker-calendar-today-color",
+    "fallback": "--mbx-datepicker-calendar-today",
     "defaultExternal": {
       "type": "organisms",
-      "prop": "--mbx-calendar-today-color-dark",
+      "prop": "--mbx-calendar-today-dark",
       "component": "Calendar"
     }
   },

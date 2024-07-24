@@ -103,17 +103,17 @@
     "fallback": "--mbx-calendar-arrow-hover",
     "description": "Calendar arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on', on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)"
   },
-  "--mbx-calendar-today-color": {
-    "description": "Fallback value for `--mbx-calendar-today-color-light` and `--mbx-calendar-today-color-dark`"
+  "--mbx-calendar-today": {
+    "description": "Fallback value for `--mbx-calendar-today-light` and `--mbx-calendar-today-dark`"
   },
-  "--mbx-calendar-today-color-light": {
+  "--mbx-calendar-today-light": {
     "defaultColor": "red",
-    "fallback": "--mbx-calendar-today-color",
+    "fallback": "--mbx-calendar-today",
     "description": "Calendar today color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off'"
   },
-  "--mbx-calendar-today-color-dark": {
+  "--mbx-calendar-today-dark": {
     "defaultColor": "red",
-    "fallback": "--mbx-calendar-today-color",
+    "fallback": "--mbx-calendar-today",
     "description": "Calendar today color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on'"
   }
 }
