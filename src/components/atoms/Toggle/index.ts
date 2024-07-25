@@ -57,30 +57,31 @@ const Toggle: ToggleComponent = ({
   buildMbxReactive<boolean>(props, (mbxProps) => ({
     name: "tgl",
     features: { wAll: true },
-    props: (val, setVal) => ({
-      styles: {
-        ...(val && {
-          "--mbx-tgin": "var(--mbx-tog-ic-on-int)",
-          "--mbx-tgex": "var(--mbx-tog-ic-on-ext)",
-          "--mbx-tgl-tr": " 0%",
-        }),
-      },
-      addProps: {
-        ...(!mbxProps.disabled && {
-          onClick: () => {
-            onChange(!val);
-            setVal(!val);
-          },
-          onKeyDown: (e) => {
-            if (e.code === "Enter") {
+    props: (val, setVal) => {
+      const st = val ? "on" : "off";
+      return {
+        styles: {
+          "--mbx-tgin": `var(--mbx-tg${st}-i)`,
+          "--mbx-tgex": `var(--mbx-tg${st}-e)`,
+          "--mbx-tgl-tr": val ? "0%" : "35px",
+        },
+        addProps: {
+          ...(!mbxProps.disabled && {
+            onClick: () => {
               onChange(!val);
               setVal(!val);
-            }
-          },
-        }),
-      },
-      mbxProps,
-    }),
+            },
+            onKeyDown: (e) => {
+              if (e.code === "Enter") {
+                onChange(!val);
+                setVal(!val);
+              }
+            },
+          }),
+        },
+        mbxProps,
+      };
+    },
     Component: (prp) => (prp.value === true ? onIcon || icon : offIcon || icon),
     defV: true,
     inpV,

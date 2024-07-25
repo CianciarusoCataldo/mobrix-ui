@@ -3,46 +3,42 @@
   height: 30px;
   --mbx-bg-l: var(--mbx-toggle-background-light, var(--mbx-toggle-background));
   --mbx-bg-d: var(--mbx-toggle-background-dark, var(--mbx-toggle-background));
-  --mbx-tog-ic-on-int: var(
-    --mbx-toggle-icon-on-internal-color-light,
-    var(--mbx-toggle-icon-on-internal-color, #ffffff)
+  --mbx-tgon-i: var(
+    --mbx-toggle-on-icon-internal-light,
+    var(--mbx-toggle-on-icon-internal, #ffffff)
   );
-  --mbx-tog-ic-on-ext: var(
-    --mbx-toggle-icon-on-external-color-light,
-    var(--mbx-toggle-icon-on-external-color, #adadad)
+  --mbx-tgon-e: var(
+    --mbx-toggle-on-icon-external-light,
+    var(--mbx-toggle-on-icon-external, #adadad)
   );
-  --mbx-tog-ic-off-int: var(
-    --mbx-toggle-icon-off-internal-color-light,
-    var(--mbx-toggle-icon-off-internal-color, #a5a5a5)
+  --mbx-tgoff-i: var(
+    --mbx-toggle-off-icon-internal-light,
+    var(--mbx-toggle-off-icon-internal, #a5a5a5)
   );
-  --mbx-tog-ic-off-ext: var(
-    --mbx-toggle-icon-off-external-color-light,
-    var(--mbx-toggle-icon-off-external-color, #7a7878)
+  --mbx-tgoff-e: var(
+    --mbx-toggle-off-icon-external-light,
+    var(--mbx-toggle-off-icon-external, #7a7878)
   );
-  background: var(--mbx-tog-bg);
   border-radius: 40px;
   border-width: 0;
-  --mbx-tgl-tr: 35px;
-  --mbx-tgin: var(--mbx-tog-ic-off-int);
-  --mbx-tgex: var(--mbx-tog-ic-off-ext);
 }
 
 [data-mbx-id="tgl"][data-mbx-dk] {
-  --mbx-tog-ic-off-int: var(
-    --mbx-toggle-icon-off-internal-color-dark,
-    var(--mbx-toggle-icon-off-internal-color, #636363)
+  --mbx-tgoff-i: var(
+    --mbx-toggle-off-icon-internal-dark,
+    var(--mbx-toggle-off-icon-internal, #636363)
   );
-  --mbx-tog-ic-off-ext: var(
-    --mbx-toggle-icon-off-external-color-dark,
-    var(--mbx-toggle-icon-off-external-color, #a7a3a3)
+  --mbx-tgoff-e: var(
+    --mbx-toggle-off-icon-external-dark,
+    var(--mbx-toggle-off-icon-external, #a7a3a3)
   );
-  --mbx-tog-ic-on-int: var(
-    --mbx-toggle-icon-on-internal-color-dark,
-    var(--mbx-toggle-icon-on-internal-color, #ffffff)
+  --mbx-tgon-i: var(
+    --mbx-toggle-on-icon-internal-dark,
+    var(--mbx-toggle-on-icon-internal, #ffffff)
   );
-  --mbx-tog-ic-on-ext: var(
-    --mbx-toggle-icon-on-external-color-dark,
-    var(--mbx-toggle-icon-on-external-color, #adadad)
+  --mbx-tgon-e: var(
+    --mbx-toggle-on-icon-external-dark,
+    var(--mbx-toggle-on-icon-external, #adadad)
   );
 }
 

@@ -57,6 +57,10 @@
   - `today` instead of `today-color` (for `Calendar` and `DatePicker` components)
   - `border` instead of `border-color` (for `Table` component)
   - `field` instead of `formfield` (for `FormField` and `Form` components)
+  - `external` instead of `external-color` (for `Toggle` component)
+  - `internal` instead of `internal-color` (for `Toggle` component)
+  - `on-icon` instead of `icon-on` (for `Toggle` component)
+  - `off-icon` instead of `icon-off` (for `Toggle` component)
 
 <br>
 

@@ -11,23 +11,23 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Css variable</div>                                                                             | <div style='text-align:center;margin:auto;'>Fallback</div>                                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background](#-mbx-toggle-background)</div>                                       | <div style='text-align:center;margin:auto;'>/</div>                                                                            | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-light](#-mbx-toggle-background-light)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background](#-mbx-toggle-background)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div>                                                                          |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-dark](#-mbx-toggle-background-dark)</div>                             | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background](#-mbx-toggle-background)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div>                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-internal-color](#-mbx-toggle-icon-on-internal-color)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                            | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-internal-color-light](#-mbx-toggle-icon-on-internal-color-light)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-internal-color](#-mbx-toggle-icon-on-internal-color)</div>   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ffffff</div><div style='text-align:center;margin-auto;'><div style='background:#ffffff;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-internal-color-dark](#-mbx-toggle-icon-on-internal-color-dark)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-internal-color](#-mbx-toggle-icon-on-internal-color)</div>   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ffffff</div><div style='text-align:center;margin-auto;'><div style='background:#ffffff;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-external-color](#-mbx-toggle-icon-on-external-color)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                            | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-external-color-light](#-mbx-toggle-icon-on-external-color-light)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-external-color](#-mbx-toggle-icon-on-external-color)</div>   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#adadad</div><div style='text-align:center;margin-auto;'><div style='background:#adadad;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-external-color-dark](#-mbx-toggle-icon-on-external-color-dark)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-external-color](#-mbx-toggle-icon-on-external-color)</div>   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#adadad</div><div style='text-align:center;margin-auto;'><div style='background:#adadad;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-off-internal-color](#-mbx-toggle-icon-off-internal-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                            | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-off-internal-color-light](#-mbx-toggle-icon-off-internal-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-off-internal-color](#-mbx-toggle-icon-off-internal-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a5a5a5</div><div style='text-align:center;margin-auto;'><div style='background:#a5a5a5;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-off-internal-color-dark](#-mbx-toggle-icon-off-internal-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-off-internal-color](#-mbx-toggle-icon-off-internal-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a5a5a5</div><div style='text-align:center;margin-auto;'><div style='background:#a5a5a5;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-off-external-color](#-mbx-toggle-icon-off-external-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                            | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-off-external-color-light](#-mbx-toggle-icon-off-external-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-off-external-color](#-mbx-toggle-icon-off-external-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a7a3a3</div><div style='text-align:center;margin-auto;'><div style='background:#a7a3a3;margin:auto; width:15px; height:15px;'/></div></div></div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-off-external-color-dark](#-mbx-toggle-icon-off-external-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-off-external-color](#-mbx-toggle-icon-off-external-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a7a3a3</div><div style='text-align:center;margin-auto;'><div style='background:#a7a3a3;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Css variable</div>                                                                 | <div style='text-align:center;margin:auto;'>Fallback</div>                                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background](#-mbx-toggle-background)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-light](#-mbx-toggle-background-light)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background](#-mbx-toggle-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div>                                                                          |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-dark](#-mbx-toggle-background-dark)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background](#-mbx-toggle-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div>                                                                            |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-internal](#-mbx-toggle-on-icon-internal)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-internal-light](#-mbx-toggle-on-icon-internal-light)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-internal](#-mbx-toggle-on-icon-internal)</div>   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ffffff</div><div style='text-align:center;margin-auto;'><div style='background:#ffffff;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-internal-dark](#-mbx-toggle-on-icon-internal-dark)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-internal](#-mbx-toggle-on-icon-internal)</div>   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ffffff</div><div style='text-align:center;margin-auto;'><div style='background:#ffffff;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-external](#-mbx-toggle-on-icon-external)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-external-light](#-mbx-toggle-on-icon-external-light)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-external](#-mbx-toggle-on-icon-external)</div>   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#adadad</div><div style='text-align:center;margin-auto;'><div style='background:#adadad;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-external-dark](#-mbx-toggle-on-icon-external-dark)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-external](#-mbx-toggle-on-icon-external)</div>   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#adadad</div><div style='text-align:center;margin-auto;'><div style='background:#adadad;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-off-icon-internal](#-mbx-toggle-off-icon-internal)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-off-icon-internal-light](#-mbx-toggle-off-icon-internal-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-toggle-off-icon-internal](#-mbx-toggle-off-icon-internal)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a5a5a5</div><div style='text-align:center;margin-auto;'><div style='background:#a5a5a5;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-off-icon-internal-dark](#-mbx-toggle-off-icon-internal-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-toggle-off-icon-internal](#-mbx-toggle-off-icon-internal)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a5a5a5</div><div style='text-align:center;margin-auto;'><div style='background:#a5a5a5;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-off-icon-external](#-mbx-toggle-off-icon-external)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-off-icon-external-light](#-mbx-toggle-off-icon-external-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-toggle-off-icon-external](#-mbx-toggle-off-icon-external)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a7a3a3</div><div style='text-align:center;margin-auto;'><div style='background:#a7a3a3;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-off-icon-external-dark](#-mbx-toggle-off-icon-external-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-toggle-off-icon-external](#-mbx-toggle-off-icon-external)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a7a3a3</div><div style='text-align:center;margin-auto;'><div style='background:#a7a3a3;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 ## CSS Variables list
 
@@ -77,7 +77,7 @@ Toggle background when [dark mode](https://cianciarusocataldo.github.io/mobrix-u
 
 <br>
 
-### --mbx-toggle-icon-on-internal-color
+### --mbx-toggle-on-icon-internal
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -85,17 +85,17 @@ Toggle background when [dark mode](https://cianciarusocataldo.github.io/mobrix-u
 
 <br>
 
-Fallback value for `--mbx-toggle-icon-on-internal-color-light` and `--mbx-toggle-icon-on-internal-color-dark`
+Fallback value for `--mbx-toggle-on-icon-internal-light` and `--mbx-toggle-on-icon-internal-dark`
 
 <br>
 
 <br>
 
-### --mbx-toggle-icon-on-internal-color-light
+### --mbx-toggle-on-icon-internal-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-internal-color](#-mbx-toggle-icon-on-internal-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ffffff</div><div style='text-align:center;margin-auto;'><div style='background:#ffffff;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-internal](#-mbx-toggle-on-icon-internal)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ffffff</div><div style='text-align:center;margin-auto;'><div style='background:#ffffff;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
@@ -105,11 +105,11 @@ Toggle icon internal color, when [dark mode](https://cianciarusocataldo.github.i
 
 <br>
 
-### --mbx-toggle-icon-on-internal-color-dark
+### --mbx-toggle-on-icon-internal-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-internal-color](#-mbx-toggle-icon-on-internal-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ffffff</div><div style='text-align:center;margin-auto;'><div style='background:#ffffff;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-internal](#-mbx-toggle-on-icon-internal)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ffffff</div><div style='text-align:center;margin-auto;'><div style='background:#ffffff;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
@@ -119,7 +119,7 @@ Toggle icon internal color, when [dark mode](https://cianciarusocataldo.github.i
 
 <br>
 
-### --mbx-toggle-icon-on-external-color
+### --mbx-toggle-on-icon-external
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -127,17 +127,17 @@ Toggle icon internal color, when [dark mode](https://cianciarusocataldo.github.i
 
 <br>
 
-Fallback value for `--mbx-toggle-icon-on-external-color-light` and `--mbx-toggle-icon-on-external-color-dark`
+Fallback value for `--mbx-toggle-on-icon-external-light` and `--mbx-toggle-on-icon-external-dark`
 
 <br>
 
 <br>
 
-### --mbx-toggle-icon-on-external-color-light
+### --mbx-toggle-on-icon-external-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-external-color](#-mbx-toggle-icon-on-external-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#adadad</div><div style='text-align:center;margin-auto;'><div style='background:#adadad;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-external](#-mbx-toggle-on-icon-external)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#adadad</div><div style='text-align:center;margin-auto;'><div style='background:#adadad;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
@@ -147,11 +147,11 @@ Toggle icon external color, when [dark mode](https://cianciarusocataldo.github.i
 
 <br>
 
-### --mbx-toggle-icon-on-external-color-dark
+### --mbx-toggle-on-icon-external-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-on-external-color](#-mbx-toggle-icon-on-external-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#adadad</div><div style='text-align:center;margin-auto;'><div style='background:#adadad;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-external](#-mbx-toggle-on-icon-external)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#adadad</div><div style='text-align:center;margin-auto;'><div style='background:#adadad;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
@@ -161,7 +161,7 @@ Toggle icon external color, when [dark mode](https://cianciarusocataldo.github.i
 
 <br>
 
-### --mbx-toggle-icon-off-internal-color
+### --mbx-toggle-off-icon-internal
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -169,17 +169,17 @@ Toggle icon external color, when [dark mode](https://cianciarusocataldo.github.i
 
 <br>
 
-Fallback value for `--mbx-toggle-icon-off-internal-color-light` and `--mbx-toggle-icon-off-internal-color-dark`
+Fallback value for `--mbx-toggle-off-icon-internal-light` and `--mbx-toggle-off-icon-internal-dark`
 
 <br>
 
 <br>
 
-### --mbx-toggle-icon-off-internal-color-light
+### --mbx-toggle-off-icon-internal-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-off-internal-color](#-mbx-toggle-icon-off-internal-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a5a5a5</div><div style='text-align:center;margin-auto;'><div style='background:#a5a5a5;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-off-icon-internal](#-mbx-toggle-off-icon-internal)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a5a5a5</div><div style='text-align:center;margin-auto;'><div style='background:#a5a5a5;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
@@ -189,11 +189,11 @@ Toggle icon internal color, when [dark mode](https://cianciarusocataldo.github.i
 
 <br>
 
-### --mbx-toggle-icon-off-internal-color-dark
+### --mbx-toggle-off-icon-internal-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-off-internal-color](#-mbx-toggle-icon-off-internal-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a5a5a5</div><div style='text-align:center;margin-auto;'><div style='background:#a5a5a5;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-off-icon-internal](#-mbx-toggle-off-icon-internal)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a5a5a5</div><div style='text-align:center;margin-auto;'><div style='background:#a5a5a5;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
@@ -203,7 +203,7 @@ Toggle icon internal color, when [dark mode](https://cianciarusocataldo.github.i
 
 <br>
 
-### --mbx-toggle-icon-off-external-color
+### --mbx-toggle-off-icon-external
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -211,17 +211,17 @@ Toggle icon internal color, when [dark mode](https://cianciarusocataldo.github.i
 
 <br>
 
-Fallback value for `--mbx-toggle-icon-off-external-color-light` and `--mbx-toggle-icon-off-external-color-dark`
+Fallback value for `--mbx-toggle-off-icon-external-light` and `--mbx-toggle-off-icon-external-dark`
 
 <br>
 
 <br>
 
-### --mbx-toggle-icon-off-external-color-light
+### --mbx-toggle-off-icon-external-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-off-external-color](#-mbx-toggle-icon-off-external-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a7a3a3</div><div style='text-align:center;margin-auto;'><div style='background:#a7a3a3;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-off-icon-external](#-mbx-toggle-off-icon-external)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a7a3a3</div><div style='text-align:center;margin-auto;'><div style='background:#a7a3a3;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
@@ -231,11 +231,11 @@ Toggle icon external color, when [dark mode](https://cianciarusocataldo.github.i
 
 <br>
 
-### --mbx-toggle-icon-off-external-color-dark
+### --mbx-toggle-off-icon-external-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                                     | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-toggle-icon-off-external-color](#-mbx-toggle-icon-off-external-color)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a7a3a3</div><div style='text-align:center;margin-auto;'><div style='background:#a7a3a3;margin:auto; width:15px; height:15px;'/></div></div></div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                                         | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-off-icon-external](#-mbx-toggle-off-icon-external)</div> | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#a7a3a3</div><div style='text-align:center;margin-auto;'><div style='background:#a7a3a3;margin:auto; width:15px; height:15px;'/></div></div></div> |
 
 <br>
 
