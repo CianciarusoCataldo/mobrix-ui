@@ -13,3 +13,15 @@ export const D_PROPS: MbxSharedProps = {
   features: {},
   active: false,
 };
+
+export const restricted = [
+  "dk",
+  "cfc",
+  "hv",
+  "wbc",
+  "wb",
+  "wc",
+  "wch",
+  "wall",
+  "wallc",
+];

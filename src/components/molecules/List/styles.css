@@ -3,6 +3,7 @@
   padding: 0.6rem;
   display: flex;
   flex-direction: column;
+  width: fit-content;
 }
 
 [data-mbx-id="list"] > [data-mbx-id="cn"] {

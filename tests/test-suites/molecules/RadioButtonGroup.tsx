@@ -29,7 +29,11 @@ const radioButtonGroupTest = () => {
         <RadioButtonGroup
           onChange={onChangeStub}
           buttons={[
-            { text: "Test radio button 1" },
+            {
+              text: "Test radio button 1",
+              //@ts-ignore
+              textPosition: "wrong",
+            },
             { text: "Test radio button 2" },
           ]}
         />

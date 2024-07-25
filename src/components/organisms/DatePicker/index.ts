@@ -58,7 +58,8 @@ import datePickerComponent from "./components";
  * @copyright 2024 Cataldo Cianciaruso
  */
 const DatePicker: DatePickerComponent = ({
-  active /* istanbul ignore next */,
+  active,
+  /* istanbul ignore next */
   onChange = () => {},
   ...props
 }) => {
