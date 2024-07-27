@@ -3,32 +3,26 @@
     --mbx-counterbox-background-light,
     var(--mbx-counterbox-background)
   );
-  --mbx-txt-l: var(
-    --mbx-counterbox-text-light,
-    var(--mbx-counterbox-text)
-  );
+  --mbx-txt-l: var(--mbx-counterbox-text-light, var(--mbx-counterbox-text));
   --mbx-bg-d: var(
     --mbx-counterbox-background-dark,
     var(--mbx-counterbox-background)
   );
-  --mbx-txt-d: var(
-    --mbx-counterbox-text-dark,
-    var(--mbx-counterbox-text)
-  );
+  --mbx-txt-d: var(--mbx-counterbox-text-dark, var(--mbx-counterbox-text));
   --mbx-bg-h-l: var(
     --mbx-counterbox-background-hover-light,
-    var(--mbx-counterbox-background-hover, var(--mbx-c-bgc-h))
+    var(--mbx-counterbox-background-hover)
   );
   --mbx-txt-h-l: var(
     --mbx-counterbox-text-hover-light,
-    var(--mbx-counterbox-text-hover, var(--mbx-c-txt-h))
+    var(--mbx-counterbox-text-hover)
   );
   --mbx-bg-h-d: var(
     --mbx-counterbox-background-hover-dark,
-    var(--mbx-counterbox-background-hover, var(--mbx-c-bgc-h))
+    var(--mbx-counterbox-background-hover)
   );
   --mbx-txt-h-d: var(
     --mbx-counterbox-text-hover-dark,
-    var(--mbx-counterbox-text-hover, var(--mbx-c-txt-h))
+    var(--mbx-counterbox-text-hover)
   );
 }

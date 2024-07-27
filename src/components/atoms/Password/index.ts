@@ -46,15 +46,18 @@ import { PasswordComponent } from "../../../types/components/atoms/psw";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-const Psw: PasswordComponent = ({ active = true, value, ...props }) =>
-  buildMbxReactive<string | undefined>(props, (mbxProps) => ({
-    name: "psw",
-    inpV: value,
-    features: { wBg: true },
-    defV: "",
-    Component: ({ value, setValue }) =>
-      PswC({ ...props, ...mbxProps, value, setValue, active }),
-    mbxProps,
-  }));
+const Psw: PasswordComponent = ({ active = true, hover, value, ...props }) =>
+  buildMbxReactive<string | undefined>(
+    { ...props, hover: false },
+    (mbxProps) => ({
+      name: "psw",
+      inpV: value,
+      features: { wAllc: true },
+      defV: "",
+      Component: ({ value, setValue }) =>
+        PswC({ ...props, ...mbxProps, value, setValue, active, hover }),
+      mbxProps,
+    }),
+  );
 
 export default Psw;

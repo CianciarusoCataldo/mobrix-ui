@@ -27,10 +27,10 @@
 [data-mbx-id="check"] > [data-mbx-img] {
   --mbx-icon-light: var(
     --mbx-checkbox-tick-light,
-    var(--mbx-checkbox-tick, rgb(37, 99, 235))
+    var(--mbx-checkbox-tick)
   );
   --mbx-icon-dark: var(
     --mbx-checkbox-tick-dark,
-    var(--mbx-checkbox-tick, white)
+    var(--mbx-checkbox-tick)
   );
 }

@@ -3,29 +3,26 @@
   flex-direction: row;
   width: fit-content;
   border-radius: 5px;
-  --mbx-txt-l: var(
-    --mbx-password-text-light,
-    var(--mbx-password-text)
-  );
+  --mbx-txt-l: var(--mbx-password-text-light, var(--mbx-password-text));
   --mbx-bg-l: var(
     --mbx-password-background-light,
     var(--mbx-password-background)
   );
-  --mbx-txt-d: var(
-    --mbx-password-text-dark,
-    var(--mbx-password-text)
-  );
+  --mbx-txt-d: var(--mbx-password-text-dark, var(--mbx-password-text));
   --mbx-bg-d: var(
     --mbx-password-background-dark,
     var(--mbx-password-background)
   );
+  --mbx-pswt: var(--mbx-txt);
+  --mbx-pswbg: var(--mbx-bg);
 }
 
 [data-mbx-id="psw"] > [data-mbx-id="inp"] {
   border-bottom-right-radius: 0%;
   border-top-right-radius: 0%;
-  --mbx-inputbox-text: var(--mbx-psw-txt);
-  --mbx-inputbox-background: var(--mbx-psw-bg);
+  --mbx-def-txth: var(--mbx-pswt);
+  --mbx-inputbox-text: var(--mbx-pswt);
+  --mbx-inputbox-background: var(--mbx-pswbg);
   --mbx-inputbox-background-hover-light: var(
     --mbx-password-background-hover-light,
     var(--mbx-password-background-hover)
@@ -40,20 +37,19 @@
   margin: auto 0.5rem;
   --mbx-trdur: 0.1s;
   width: fit-content;
-  --mbx-icon-light: var(
-    --mbx-password-icon-light,
-    var(--mbx-password-icon, var(--mbx-psw-txt))
-  );
-  --mbx-icon-dark: var(
-    --mbx-password-icon-dark,
-    var(--mbx-password-icon, var(--mbx-psw-txt))
-  );
+}
+
+[data-mbx-id="psw"] > [data-mbx-id="icb"] > [data-mbx-img] {
+  --mbx-def-ic: var(--mbx-pswt);
+  --mbx-def-ich: var(--mbx-pswt);
+  --mbx-icon-light: var(--mbx-password-icon-light, var(--mbx-password-icon));
+  --mbx-icon-dark: var(--mbx-password-icon-dark, var(--mbx-password-icon));
   --mbx-icon-hover-light: var(
     --mbx-password-icon-hover-light,
-    var(--mbx-password-icon-hover, var(--mbx-psw-txt))
+    var(--mbx-password-icon-hover)
   );
   --mbx-icon-hover-dark: var(
     --mbx-password-icon-hover-dark,
-    var(--mbx-password-icon-hover, var(--mbx-psw-txt))
+    var(--mbx-password-icon-hover)
   );
 }

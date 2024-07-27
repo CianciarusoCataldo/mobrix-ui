@@ -3,32 +3,26 @@
     --mbx-inputbox-background-light,
     var(--mbx-inputbox-background)
   );
-  --mbx-txt-l: var(
-    --mbx-inputbox-text-light,
-    var(--mbx-inputbox-text)
-  );
+  --mbx-txt-l: var(--mbx-inputbox-text-light, var(--mbx-inputbox-text));
   --mbx-bg-d: var(
     --mbx-inputbox-background-dark,
     var(--mbx-inputbox-background)
   );
-  --mbx-txt-d: var(
-    --mbx-inputbox-text-dark,
-    var(--mbx-inputbox-text)
-  );
+  --mbx-txt-d: var(--mbx-inputbox-text-dark, var(--mbx-inputbox-text));
   --mbx-bg-h-l: var(
     --mbx-inputbox-background-hover-light,
-    var(--mbx-inputbox-background-hover, var(--mbx-c-bgc-h))
+    var(--mbx-inputbox-background-hover)
   );
   --mbx-txt-h-l: var(
     --mbx-inputbox-text-hover-light,
-    var(--mbx-inputbox-text-hover, var(--mbx-c-txt-h))
+    var(--mbx-inputbox-text-hover)
   );
   --mbx-bg-h-d: var(
     --mbx-inputbox-background-hover-dark,
-    var(--mbx-inputbox-background-hover, var(--mbx-c-bgc-h))
+    var(--mbx-inputbox-background-hover)
   );
   --mbx-txt-h-d: var(
     --mbx-inputbox-text-hover-dark,
-    var(--mbx-inputbox-text-hover, var(--mbx-c-txt-h))
+    var(--mbx-inputbox-text-hover)
   );
 }

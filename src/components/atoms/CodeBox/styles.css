@@ -1,7 +1,6 @@
 [data-mbx-id="code"] {
   padding: 0.1rem;
   justify-content: center;
-
   display: flex;
   flex-direction: column;
   overflow: hidden;
