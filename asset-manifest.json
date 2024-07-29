@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/main.1f0f7d01.js",
+    "main.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/main.ec95f452.js",
     "static/js/6776.338fb4e0.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/6776.338fb4e0.chunk.js",
     "static/js/8440.fa2ea96f.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/8440.fa2ea96f.chunk.js",
     "static/js/5636.92a454d7.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/5636.92a454d7.chunk.js",
-    "static/css/5078.d3ddf901.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/5078.d3ddf901.chunk.css",
-    "static/js/5078.149d46b4.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/5078.149d46b4.chunk.js",
+    "static/css/5078.cd0dda30.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/5078.cd0dda30.chunk.css",
+    "static/js/5078.34903f95.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/5078.34903f95.chunk.js",
     "static/js/7119.b28c701e.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/7119.b28c701e.chunk.js",
     "static/css/5261.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/5261.a9f99d37.chunk.css",
     "static/js/5261.ff6e25a7.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/5261.ff6e25a7.chunk.js",
@@ -41,16 +41,16 @@
     "static/css/8026.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/8026.a9f99d37.chunk.css",
     "static/js/8026.d3b2481c.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/8026.d3b2481c.chunk.js",
     "static/css/6267.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/6267.a9f99d37.chunk.css",
-    "static/js/6267.045c99ce.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/6267.045c99ce.chunk.js",
+    "static/js/6267.77d302c4.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/6267.77d302c4.chunk.js",
     "static/css/9861.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/9861.a9f99d37.chunk.css",
-    "static/js/9861.1f404c5f.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/9861.1f404c5f.chunk.js",
+    "static/js/9861.fc3ab3ef.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/9861.fc3ab3ef.chunk.js",
     "static/js/5594.2194d306.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/5594.2194d306.chunk.js",
     "static/css/6258.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/6258.a9f99d37.chunk.css",
     "static/js/6258.c97073cf.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/6258.c97073cf.chunk.js",
     "static/css/3824.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/3824.a9f99d37.chunk.css",
     "static/js/3824.6ccf1a17.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/3824.6ccf1a17.chunk.js",
     "static/css/4339.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/4339.a9f99d37.chunk.css",
-    "static/js/4339.964269dc.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/4339.964269dc.chunk.js",
+    "static/js/4339.95350970.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/4339.95350970.chunk.js",
     "static/css/7941.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/7941.a9f99d37.chunk.css",
     "static/js/7941.a50fb3ca.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/7941.a50fb3ca.chunk.js",
     "static/css/1129.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/1129.a9f99d37.chunk.css",
@@ -62,7 +62,7 @@
     "static/css/6549.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/6549.a9f99d37.chunk.css",
     "static/js/6549.6204df41.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/6549.6204df41.chunk.js",
     "static/css/4538.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/4538.a9f99d37.chunk.css",
-    "static/js/4538.df32a21a.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/4538.df32a21a.chunk.js",
+    "static/js/4538.38c2e7f5.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/4538.38c2e7f5.chunk.js",
     "static/css/9774.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/9774.a9f99d37.chunk.css",
     "static/js/9774.5c90c026.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/9774.5c90c026.chunk.js",
     "static/css/4539.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/4539.a9f99d37.chunk.css",
@@ -84,7 +84,7 @@
     "static/css/4511.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/4511.a9f99d37.chunk.css",
     "static/js/4511.7d471a4a.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/4511.7d471a4a.chunk.js",
     "static/css/7682.a9f99d37.chunk.css": "https://cianciarusocataldo.github.io/mobrix-ui/static/css/7682.a9f99d37.chunk.css",
-    "static/js/7682.8db15d84.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/7682.8db15d84.chunk.js",
+    "static/js/7682.cf433220.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/7682.cf433220.chunk.js",
     "static/js/3881.1c927083.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/3881.1c927083.chunk.js",
     "static/js/4517.7f2c9606.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/4517.7f2c9606.chunk.js",
     "static/js/9137.9a2a2d0a.chunk.js": "https://cianciarusocataldo.github.io/mobrix-ui/static/js/9137.9a2a2d0a.chunk.js",
@@ -110,6 +110,6 @@
     "static/media/it.svg": "https://cianciarusocataldo.github.io/mobrix-ui/static/media/it.7ee7a27e030791474f5325883a3a0b5d.svg"
   },
   "entrypoints": [
-    "static/js/main.1f0f7d01.js"
+    "static/js/main.ec95f452.js"
   ]
 }
