@@ -54,6 +54,7 @@ const Dropdown: DropdownComponent = ({
     defV: 0,
     inpV: props.value,
     mbxProps,
+    features: { wAll: true },
     props: (value, setV) =>
       component({
         ...mbxProps,

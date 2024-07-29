@@ -3,21 +3,16 @@
   border-radius: 12px;
   -webkit-appearance: none;
   width: fit-content;
-  --mbx-bg-l: var(--mbx-slider-background-light, var(--mbx-slider-background));
-  --mbx-bg-d: var(--mbx-slider-background-dark, var(--mbx-slider-background));
-  --mbx-bg-h-l: var(
-    --mbx-slider-background-hover-light,
-    var(--mbx-slider-background-hover)
-  );
-  --mbx-bg-h-d: var(
-    --mbx-slider-background-hover-dark,
-    var(--mbx-slider-background-hover)
-  );
+  --mbx-defbg: var(--mbx-slider-background);
+  --mbx-defbgh: var(--mbx-slider-background-hover);
+  --mbx-bg-l: var(--mbx-slider-background-light);
+  --mbx-bg-d: var(--mbx-slider-background-dark);
+  --mbx-bg-h-l: var(--mbx-slider-background-hover-light);
+  --mbx-bg-h-d: var(--mbx-slider-background-hover-dark);
   --mbx-sld-tb: var(
     --mbx-slider-thumb-light,
     var(--mbx-slider-thumb, radial-gradient(#2d3748, #1d232e))
   );
-  --mbx-def-bgh: var(--mbx-bg);
   --mbx-sld-op-act: 0.4;
 }
 

@@ -1,25 +1,17 @@
 [data-mbx-id="tview"] {
   display: flex;
   flex-direction: column;
-  --mbx-tabv-bg: var(
-    --mbx-tabviewer-background-light,
-    var(--mbx-tabviewer-background, linear-gradient(to right, #cccccc, #c7c7c7))
-  );
-  --mbx-tabv-txt: var(
-    --mbx-tabviewer-text-light,
-    var(--mbx-tabviewer-text, var(--mbx-c-txt))
-  );
+  --mbx-deftvbgc: linear-gradient(to right, #cccccc, #c7c7c7);
+  --mbx-deftvbg: var(--mbx-tabviewer-background, var(--mbx-deftvbgc));
+  --mbx-deftvtxt: var(--mbx-tabviewer-text, var(--mbx-c-txt));
+  --mbx-tabv-bg: var(--mbx-tabviewer-background-light, var(--mbx-deftvbg));
+  --mbx-tabv-txt: var(--mbx-tabviewer-text-light, var(--mbx-deftvtxt));
 }
 
 [data-mbx-id="tview"][data-mbx-dk] {
-  --mbx-tabv-bg: var(
-    --mbx-tabviewer-background-dark,
-    var(--mbx-tabviewer-background, linear-gradient(to right, #2d3748, #1d232e))
-  );
-  --mbx-tabv-txt: var(
-    --mbx-tabviewer-text-dark,
-    var(--mbx-tabviewer-text, var(--mbx-c-txt))
-  );
+  --mbx-deftvbgc: linear-gradient(to right, #2d3748, #1d232e);
+  --mbx-tabv-bg: var(--mbx-tabviewer-background-dark, var(--mbx-deftvbg));
+  --mbx-tabv-txt: var(--mbx-tabviewer-text-dark, var(--mbx-deftvtxt));
 }
 
 [data-mbx-id="tview"] > div > [data-mbx-id="btn"] {
@@ -29,8 +21,10 @@
 
 [data-mbx-id="tview"] > [data-mbx-id="cn"] {
   padding: 0.7rem 1rem;
-  --mbx-container-background: var(--mbx-tabv-bg);
-  --mbx-container-text: var(--mbx-tabv-txt);
+  --mbx-container-background-light: var(--mbx-tabv-bg);
+  --mbx-container-text-light: var(--mbx-tabv-txt);
+  --mbx-container-background-dark: var(--mbx-tabv-bg);
+  --mbx-container-text-dark: var(--mbx-tabv-txt);
 }
 
 [data-mbx-id="tview"] > [data-mbx-tbls] {
@@ -39,53 +33,48 @@
 }
 
 [data-mbx-id="tview"] [data-mbx-tbvsel="true"] {
-  --mbx-button-background: var(--mbx-tabv-bg);
-  --mbx-button-text: var(--mbx-tabv-txt);
+  --mbx-button-background-light: var(--mbx-tabv-bg);
+  --mbx-button-background-dark: var(--mbx-tabv-bg);
+  --mbx-button-text-light: var(--mbx-tabv-txt);
+  --mbx-button-text-dark: var(--mbx-tabv-txt);
 }
 
 [data-mbx-id="tview"] [data-mbx-tbvsel="false"] {
+  --mbx-tv-ib: var(--mbx-tabviewer-inactive-background);
+  --mbx-tv-ibh: var(--mbx-tabviewer-inactive-background-hover);
+  --mbx-tv-it: var(--mbx-tabviewer-inactive-text);
+  --mbx-tv-ith: var(--mbx-tabviewer-inactive-text-hover);
+
   --mbx-button-background-light: var(
     --mbx-tabviewer-inactive-background-light,
-    var(
-      --mbx-tabviewer-inactive-background,
-      linear-gradient(to right, #a1a0a0, #797979)
-    )
+    var(--mbx-tv-ib, linear-gradient(to right, #a1a0a0, #797979))
   );
   --mbx-button-background-hover-light: var(
     --mbx-tabviewer-inactive-background-hover-light,
-    var(
-      --mbx-tabviewer-inactive-background-hover,
-      linear-gradient(to right, #b6b4b4, #999797)
-    )
+    var(--mbx-tv-ibh, linear-gradient(to right, #b6b4b4, #999797))
   );
   --mbx-button-text-light: var(
     --mbx-tabviewer-inactive-text-light,
-    var(--mbx-tabviewer-inactive-text, #c2c2c2)
+    var(--mbx-tv-it, #c2c2c2)
   );
   --mbx-button-text-hover-light: var(
     --mbx-tabviewer-inactive-text-hover-light,
-    var(--mbx-tabviewer-inactive-text-hover, var(--mbx-c-txt-h))
+    var(--mbx-tv-ith)
   );
   --mbx-button-background-dark: var(
     --mbx-tabviewer-inactive-background-dark,
-    var(
-      --mbx-tabviewer-inactive-background,
-      linear-gradient(to right, #3e4b63, #3f4858)
-    )
+    var(--mbx-tv-ib, linear-gradient(to right, #3e4b63, #3f4858))
   );
   --mbx-button-background-hover-dark: var(
     --mbx-tabviewer-inactive-background-hover-dark,
-    var(
-      --mbx-tabviewer-inactive-background-hover,
-      linear-gradient(to right, #566888, #3c465a)
-    )
+    var(--mbx-tv-ib, linear-gradient(to right, #566888, #3c465a))
   );
   --mbx-button-text-dark: var(
     --mbx-tabviewer-inactive-text-dark,
-    var(--mbx-tabviewer-inactive-text, #c2c2c2)
+    var(--mbx-tv-it, #c2c2c2)
   );
   --mbx-button-text-hover-dark: var(
     --mbx-tabviewer-inactive-text-hover-dark,
-    var(--mbx-tabviewer-inactive-text-hover, var(--mbx-c-txt-h))
+    var(--mbx-tv-ith)
   );
 }

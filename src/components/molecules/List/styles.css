@@ -21,8 +21,10 @@
 }
 
 [data-mbx-id="list"] > [data-mbx-id="cn"] {
-  --mbx-txt-l: var(--mbx-list-text-light, var(--mbx-list-text));
-  --mbx-txt-h-d: var(--mbx-list-text-hover-dark, var(--mbx-list-text-hover));
-  --mbx-txt-h-l: var(--mbx-list-text-hover-light, var(--mbx-list-text-hover));
-  --mbx-txt-d: var(--mbx-list-text-dark, var(--mbx-list-text));
+  --mbx-deftxt: var(--mbx-list-text);
+  --mbx-deftxth: var(--mbx-list-text-hover, var(--mbx-list-text-hover));
+  --mbx-txt-l: var(--mbx-list-text-light);
+  --mbx-txt-h-d: var(--mbx-list-text-hover-dark);
+  --mbx-txt-h-l: var(--mbx-list-text-hover-light);
+  --mbx-txt-d: var(--mbx-list-text-dark);
 }

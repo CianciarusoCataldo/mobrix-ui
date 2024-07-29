@@ -1,9 +1,11 @@
 [data-mbx-id="rev"] {
   padding: 0.6rem;
-  --mbx-bg-l: var(--mbx-review-background-light, var(--mbx-review-background));
-  --mbx-txt-l: var(--mbx-review-text-light, var(--mbx-review-text));
-  --mbx-bg-d: var(--mbx-review-background-dark, var(--mbx-review-background));
-  --mbx-txt-d: var(--mbx-review-text-dark, var(--mbx-review-text));
+  --mbx-defbg: var(--mbx-review-background);
+  --mbx-deftxt: var(--mbx-review-text);
+  --mbx-bg-l: var(--mbx-review-background-light);
+  --mbx-txt-l: var(--mbx-review-text-light);
+  --mbx-bg-d: var(--mbx-review-background-dark);
+  --mbx-txt-d: var(--mbx-review-text-dark);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -54,8 +56,5 @@
     --mbx-review-icon-light,
     var(--mbx-review-icon, #615f5f)
   );
-  --mbx-icon-dark: var(
-    --mbx-review-icon-dark,
-    var(--mbx-review-icon, white)
-  );
+  --mbx-icon-dark: var(--mbx-review-icon-dark, var(--mbx-review-icon, white));
 }

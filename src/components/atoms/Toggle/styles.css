@@ -1,23 +1,28 @@
 [data-mbx-id="tgl"] {
   width: 65px;
   height: 30px;
-  --mbx-bg-l: var(--mbx-toggle-background-light, var(--mbx-toggle-background));
-  --mbx-bg-d: var(--mbx-toggle-background-dark, var(--mbx-toggle-background));
+  --mbx-defbg: var(--mbx-toggle-background);
+  --mbx-bg-l: var(--mbx-toggle-background-light);
+  --mbx-bg-d: var(--mbx-toggle-background-dark);
+  --mbx-dtgoni: var(--mbx-toggle-on-icon-internal);
+  --mbx-dtgoffi: var(--mbx-toggle-off-icon-internal);
+  --mbx-dtgone: var(--mbx-toggle-on-icon-external);
+  --mbx-dtgoffe: var(--mbx-toggle-off-icon-external);
   --mbx-tgon-i: var(
     --mbx-toggle-on-icon-internal-light,
-    var(--mbx-toggle-on-icon-internal, #ffffff)
+    var(--mbx-dtgoni, #ffffff)
   );
   --mbx-tgon-e: var(
     --mbx-toggle-on-icon-external-light,
-    var(--mbx-toggle-on-icon-external, #adadad)
+    var(--mbx-dtgone, #adadad)
   );
   --mbx-tgoff-i: var(
     --mbx-toggle-off-icon-internal-light,
-    var(--mbx-toggle-off-icon-internal, #a5a5a5)
+    var(--mbx-dtgoffi, #a5a5a5)
   );
   --mbx-tgoff-e: var(
     --mbx-toggle-off-icon-external-light,
-    var(--mbx-toggle-off-icon-external, #7a7878)
+    var(--mbx-dtgoffe, #7a7878)
   );
   border-radius: 40px;
   border-width: 0;
@@ -26,19 +31,19 @@
 [data-mbx-id="tgl"][data-mbx-dk] {
   --mbx-tgoff-i: var(
     --mbx-toggle-off-icon-internal-dark,
-    var(--mbx-toggle-off-icon-internal, #636363)
+    var(--mbx-dtgoffi, #636363)
   );
   --mbx-tgoff-e: var(
     --mbx-toggle-off-icon-external-dark,
-    var(--mbx-toggle-off-icon-external, #a7a3a3)
+    var(--mbx-dtgoffe, #a7a3a3)
   );
   --mbx-tgon-i: var(
     --mbx-toggle-on-icon-internal-dark,
-    var(--mbx-toggle-on-icon-internal, #ffffff)
+    var(--mbx-dtgoni, #ffffff)
   );
   --mbx-tgon-e: var(
     --mbx-toggle-on-icon-external-dark,
-    var(--mbx-toggle-on-icon-external, #adadad)
+    var(--mbx-dtgone, #adadad)
   );
 }
 

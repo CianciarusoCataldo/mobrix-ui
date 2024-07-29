@@ -1,41 +1,39 @@
 [data-mbx-id="tbl"] {
   table-layout: fixed;
-  --mbx-bg-l: var(--mbx-table-background-light, var(--mbx-table-background));
-  --mbx-txt-l: var(--mbx-table-text-light, var(--mbx-table-text));
-  --mbx-bg-d: var(--mbx-table-background-dark, var(--mbx-table-background));
-  --mbx-txt-d: var(--mbx-table-text-dark, var(--mbx-table-text));
+  --mbx-defbg: var(--mbx-table-background);
+  --mbx-deftxt: var(--mbx-table-text);
+  --mbx-deftbhbg: var(--mbx-table-header-background);
+  --mbx-deftbhtxt: var(--mbx-table-header-text);
+  --mbx-bg-l: var(--mbx-table-background-light);
+  --mbx-txt-l: var(--mbx-table-text-light);
+  --mbx-bg-d: var(--mbx-table-background-dark);
+  --mbx-txt-d: var(--mbx-table-text-dark);
   --mbx-tbl-bord: var(
     --mbx-table-border-light,
     var(--mbx-table-border, darkslategrey)
   );
   --mbx-tblh-bg: var(
     --mbx-table-header-background-light,
-    var(
-      --mbx-table-header-background,
-      linear-gradient(to right, #354155, #2b3546)
-    )
+    var(--mbx-deftbhbg, linear-gradient(to right, #354155, #2b3546))
   );
   --mbx-tblh-txt: var(
     --mbx-table-header-text-light,
-    var(--mbx-table-header-text, whitesmoke)
+    var(--mbx-deftbhtxt, whitesmoke)
   );
 }
 
 [data-mbx-id="tbl"][data-mbx-dk] {
   --mbx-tblh-bg: var(
     --mbx-table-header-background-dark,
-    var(
-      --mbx-table-header-background,
-      linear-gradient(to right, #4b5b77, #3e4c64)
-    )
+    var(--mbx-deftbhbg, linear-gradient(to right, #4b5b77, #3e4c64))
   );
   --mbx-tblh-txt: var(
     --mbx-table-header-text-dark,
-    var(--mbx-table-header-text, rgb(255, 255, 255))
+    var(--mbx-deftbhtxt, #ffffff)
   );
   --mbx-tbl-bord: var(
     --mbx-table-border-dark,
-    var(--mbx-table-border, rgb(219, 219, 219))
+    var(--mbx-table-border, #dbdbdb)
   );
 }
 

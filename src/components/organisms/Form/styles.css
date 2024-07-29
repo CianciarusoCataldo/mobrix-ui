@@ -12,38 +12,18 @@
 }
 
 [data-mbx-id="form"] > div {
-  --mbx-field-background-light: var(
-    --mbx-form-field-background-light,
-    var(--mbx-form-field-background)
-  );
-  --mbx-field-background-dark: var(
-    --mbx-form-field-background-dark,
-    var(--mbx-form-field-background)
-  );
-  --mbx-field-text-light: var(
-    --mbx-form-field-text-light,
-    var(--mbx-form-field-text, var(--mbx-dttxt))
-  );
-  --mbx-field-text-dark: var(
-    --mbx-form-field-text-dark,
-    var(--mbx-form-field-text, var(--mbx-dttxt))
-  );
-  --mbx-field-background-hover-light: var(
-    --mbx-form-field-background-hover-light,
-    var(--mbx-form-field-background-hover)
-  );
-  --mbx-field-background-hover-dark: var(
-    --mbx-form-field-background-hover-dark,
-    var(--mbx-form-field-background-hover)
-  );
-  --mbx-field-text-hover-light: var(
-    --mbx-form-field-text-hover-light,
-    var(--mbx-form-field-text-hover)
-  );
-  --mbx-field-text-hover-dark: var(
-    --mbx-form-field-text-hover-dark,
-    var(--mbx-form-field-text-hover)
-  );
+  --mbx-ovfldtxt: var(--mbx-form-field-text, var(--mbx-dttxt));
+  --mbx-ovfldtxth: var(--mbx-form-field-text-hover);
+  --mbx-ovfldbg: var(--mbx-form-field-background);
+  --mbx-ovfldbgh: var(--mbx-form-field-background-hover);
+  --mbx-ovfldbgl: var(--mbx-form-field-background-light);
+  --mbx-ovfldbgd: var(--mbx-form-field-background-dark);
+  --mbx-ovfldtxtl: var(--mbx-form-field-text-light);
+  --mbx-ovfldtxtd: var(--mbx-form-field-text-dark);
+  --mbx-ovfldbghl: var(--mbx-form-field-background-hover-light);
+  --mbx-ovfldbghd: var(--mbx-form-field-background-hover-dark);
+  --mbx-ovfldtxthl: var(--mbx-form-field-text-hover-light);
+  --mbx-ovfldtxthd: var(--mbx-form-field-text-hover-dark);
   margin: 0.7rem 0;
 }
 

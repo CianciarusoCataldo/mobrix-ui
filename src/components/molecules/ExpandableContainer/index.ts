@@ -57,7 +57,6 @@ const ExpandableContainer: ExpandableContainerComponent = ({
     defV: false,
     wrapper,
     inpV: compact,
-    features: { wBgCl: true },
     Component: ({ value, setValue }) =>
       component({
         value,

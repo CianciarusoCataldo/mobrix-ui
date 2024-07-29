@@ -2,22 +2,12 @@
   padding: 0.3rem;
   width: fit-content;
   display: flex;
-  --mbx-bg-l: var(
-    --mbx-radiogroup-background-light,
-    var(--mbx-radiogroup-background)
-  );
-  --mbx-txt-l: var(
-    --mbx-radiogroup-text-light,
-    var(--mbx-radiogroup-text)
-  );
-  --mbx-bg-d: var(
-    --mbx-radiogroup-background-dark,
-    var(--mbx-radiogroup-background)
-  );
-  --mbx-txt-d: var(
-    --mbx-radiogroup-text-dark,
-    var(--mbx-radiogroup-text)
-  );
+  --mbx-defbg: var(--mbx-radiogroup-background);
+  --mbx-deftxt: var(--mbx-radiogroup-text);
+  --mbx-bg-l: var(--mbx-radiogroup-background-light);
+  --mbx-txt-l: var(--mbx-radiogroup-text-light);
+  --mbx-bg-d: var(--mbx-radiogroup-background-dark);
+  --mbx-txt-d: var(--mbx-radiogroup-text-dark);
 }
 
 [data-mbx-id="rgr"] > div {
@@ -28,35 +18,20 @@
   margin: 1rem 0.3rem;
 }
 
-[data-mbx-id="rgr"][data-mbx-rgh="true"] > div {
-  margin: 0.3rem 1rem;
+[data-mbx-id="rgr"] > div > [data-mbx-id="rd"] {
+  --mbx-ovbg: var(--mbx-radiogroup-radio-background);
+  --mbx-ovbgh: var(--mbx-radiogroup-radio-background-hover);
+  --mbx-radio-icon-background: var(--mbx-radiogroup-radio-icon-background);
+  --mbx-ovbgl: var(--mbx-radiogroup-radio-background-light);
+  --mbx-ovghl: var(--mbx-radiogroup-radio-background-hover-light);
+  --mbx-ovricl: var(--mbx-radiogroup-radio-icon-background-light);
+  --mbx-ovbgd: var(--mbx-radiogroup-radio-background-dark);
+  --mbx-ovbghd: var(--mbx-radiogroup-radio-background-hover-dark);
+  --mbx-ovricd: var(--mbx-radiogroup-radio-icon-background-dark);
 }
 
-[data-mbx-id="rgr"] [data-mbx-id="rd"] {
-  --mbx-radio-background-light: var(
-    --mbx-radiogroup-radio-background-light,
-    var(--mbx-radiogroup-radio-background)
-  );
-  --mbx-radio-background-hover-light: var(
-    --mbx-radiogroup-radio-background-hover-light,
-    var(--mbx-radiogroup-radio-background-hover)
-  );
-  --mbx-radio-icon-background-light: var(
-    --mbx-radiogroup-radio-icon-background-light,
-    var(--mbx-radiogroup-radio-icon-background)
-  );
-  --mbx-radio-background-dark: var(
-    --mbx-radiogroup-radio-background-dark,
-    var(--mbx-radiogroup-radio-background)
-  );
-  --mbx-radio-background-hover-dark: var(
-    --mbx-radiogroup-radio-background-hover-dark,
-    var(--mbx-radiogroup-radio-background-hover)
-  );
-  --mbx-radio-icon-background-dark: var(
-    --mbx-radiogroup-radio-icon-background-dark,
-    var(--mbx-radiogroup-radio-icon-background)
-  );
+[data-mbx-id="rgr"][data-mbx-rgh="true"] > div {
+  margin: 0.3rem 1rem;
 }
 
 @media (max-width: 600px) {

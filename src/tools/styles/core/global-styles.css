@@ -23,14 +23,14 @@
   -o-animation: var(--mbx-an) var(--mbx-andur);
   align-items: var(--mbx-align);
   text-align: var(--mbx-align);
-  --mbx-def-bg: var(--mbx-c-bg);
-  --mbx-def-txt: var(--mbx-c-txt);
-  --mbx-def-bgh: var(--mbx-c-bg-h);
-  --mbx-def-txth: var(--mbx-c-txt-h);
-  --mbx-bgh: var(--mbx-bg-h-l, var(--mbx-def-bgh));
-  --mbx-txth: var(--mbx-txt-h-l, var(--mbx-def-txth));
-  --mbx-bg: var(--mbx-bg-l, var(--mbx-def-bg));
-  --mbx-txt: var(--mbx-txt-l, var(--mbx-def-txt));
+  --mbx-def-bg: var(--mbx-ovbg, var(--mbx-defbg, var(--mbx-c-bg)));
+  --mbx-def-txt: var(--mbx-ovtxt, var(--mbx-deftxt, var(--mbx-c-txt)));
+  --mbx-def-bgh: var(--mbx-ovbgh, var(--mbx-defbgh, var(--mbx-c-bg-h)));
+  --mbx-def-txth: var(--mbx-ovtxth, var(--mbx-deftxth, var(--mbx-c-txt-h)));
+  --mbx-bgh: var(--mbx-ovbghl, var(--mbx-bg-h-l, var(--mbx-def-bgh)));
+  --mbx-txth: var(--mbx-ovtxthl, var(--mbx-txt-h-l, var(--mbx-def-txth)));
+  --mbx-bg: var(--mbx-ovbgl, var(--mbx-bg-l, var(--mbx-def-bg)));
+  --mbx-txt: var(--mbx-ovtxtl, var(--mbx-txt-l, var(--mbx-def-txt)));
 }
 
 [data-mbx-id][data-mbx-trn] {
@@ -49,10 +49,10 @@
 }
 
 [data-mbx-id][data-mbx-dk] {
-  --mbx-bg: var(--mbx-bg-d, var(--mbx-def-bg));
-  --mbx-txt: var(--mbx-txt-d, var(--mbx-def-txt));
-  --mbx-bgh: var(--mbx-bg-h-d, var(--mbx-def-bgh));
-  --mbx-txth: var(--mbx-txt-h-d, var(--mbx-def-txt));
+  --mbx-bg: var(--mbx-ovbgd, var(--mbx-bg-d, var(--mbx-def-bg)));
+  --mbx-txt: var(--mbx-ovtxtd, var(--mbx-txt-d, var(--mbx-def-txt)));
+  --mbx-bgh: var(--mbx-ovbghd, var(--mbx-bg-h-d, var(--mbx-def-bgh)));
+  --mbx-txth: var(--mbx-ovtxthd, var(--mbx-txt-h-d, var(--mbx-def-txt)));
 }
 
 [data-mbx-id][data-mbx-wall],
@@ -62,8 +62,8 @@
 }
 
 [data-mbx-id][data-mbx-wallc] {
-  --mbx-def-bg: var(--mbx-c-bgc);
-  --mbx-def-bgh: var(--mbx-c-bgc-h);
+  --mbx-def-bg: var(--mbx-ovbg, var(--mbx-defbg, var(--mbx-c-bgc)));
+  --mbx-def-bgh: var(--mbx-ovbgh, var(--mbx-defbgh, var(--mbx-c-bgc-h)));
   background-color: var(--mbx-bg);
 }
 

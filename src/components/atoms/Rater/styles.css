@@ -1,6 +1,7 @@
 [data-mbx-id="rat"] {
-  --mbx-bg-l: var(--mbx-rater-background-light, var(--mbx-rater-background));
-  --mbx-bg-d: var(--mbx-rater-background-dark, var(--mbx-rater-background));
+  --mbx-defbg: var(--mbx-rater-background);
+  --mbx-bg-l: var(--mbx-rater-background-light);
+  --mbx-bg-d: var(--mbx-rater-background-dark);
   border-radius: 8px;
   padding: 0.4rem;
   display: flex;

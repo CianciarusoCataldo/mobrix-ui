@@ -3,23 +3,36 @@
   flex-direction: column;
   padding: 0 0.1rem;
   background-color: transparent;
-  --mbx-bg-l: var(
-    --mbx-card-background-light,
-    var(
-      --mbx-card-background,
-      linear-gradient(to right, #fff, #ededee, #e6e7e7)
-    )
+  --mbx-crdbgc: linear-gradient(to right, #fff, #ededee, #e6e7e7);
+  --mbx-crdbgdef: var(
+    --mbx-ovcrdbg,
+    var(--mbx-card-background, var(--mbx-crdbgc))
   );
-  --mbx-txt-l: var(--mbx-card-text-light, var(--mbx-card-text));
-  --mbx-bg-d: var(
-    --mbx-card-background-dark,
-    var(--mbx-card-background, linear-gradient(to right, #2d3748, #1d232e))
+  --mbx-crdtxtdef: var(--mbx-ovcrdtxt, var(--mbx-card-text, var(--mbx-c-txt)));
+  --mbx-crdbg: var(
+    --mbx-ovcrdbgl,
+    var(--mbx-card-background-light, var(--mbx-crdbgdef))
   );
-  --mbx-txt-d: var(
-    --mbx-card-text-dark,
-    var(--mbx-card-text, var(--mbx-c-txt))
+  --mbx-crdtxt: var(
+    --mbx-ovcrdtxtl,
+    var(--mbx-card-text-light, var(--mbx-crdtxtdef))
   );
-  --mbx-container-text: var(--mbx-txt);
+  --mbx-container-text-light: var(--mbx-crdtxt);
+  background: var(--mbx-crdbg);
+  color: var(--mbx-crdtxt);
+}
+
+[data-mbx-id*="card"][data-mbx-dk] {
+  --mbx-crdbgc: linear-gradient(to right, #2d3748, #1d232e);
+  --mbx-crdbg: var(
+    --mbx-ovcrdbgd,
+    var(--mbx-card-background-dark, var(--mbx-crdbgdef))
+  );
+  --mbx-crdtxt: var(
+    --mbx-ovcrdtxtd,
+    var(--mbx-card-text-dark, var(--mbx-crdtxtdef))
+  );
+  --mbx-container-text-dark: var(--mbx-crdtxt);
 }
 
 [data-mbx-id*="card"] > [data-mbx-id="cn"] {

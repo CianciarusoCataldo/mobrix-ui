@@ -1,22 +1,10 @@
 [data-mbx-id="ecn"] {
-  --mbx-def-bg: var(--mbx-con-bg);
-  --mbx-def-txt: var(--mbx-con-txt);
-  --mbx-bg-l: var(
-    --mbx-expandablecontainer-background-light,
-    var(--mbx-expandablecontainer-background)
-  );
-  --mbx-txt-l: var(
-    --mbx-expandablecontainer-text-light,
-    var(--mbx-expandablecontainer-text)
-  );
-  --mbx-bg-d: var(
-    --mbx-expandablecontainer-background-dark,
-    var(--mbx-expandablecontainer-background)
-  );
-  --mbx-txt-d: var(
-    --mbx-expandablecontainer-text-dark,
-    var(--mbx-expandablecontainer-text)
-  );
+  --mbx-ovconbg: var(--mbx-expandablecontainer-background);
+  --mbx-ovcontxt: var(--mbx-expandablecontainer-text);
+  --mbx-ovconbgl: var(--mbx-expandablecontainer-background-light);
+  --mbx-ovcontxtl: var(--mbx-expandablecontainer-text-light);
+  --mbx-ovconbgd: var(--mbx-expandablecontainer-background-dark);
+  --mbx-ovcontxtd: var(--mbx-expandablecontainer-text-dark);
 }
 
 [data-mbx-id="ecn"] > [data-mbx-rt] {
@@ -28,20 +16,10 @@
 [data-mbx-id="ecn"] > [data-mbx-id="icb"] > [data-mbx-img="arr"] {
   margin-bottom: 0.3rem;
   padding-top: 0.2rem;
-  --mbx-icon-light: var(
-    --mbx-expandablecontainer-arrow-light,
-    var(--mbx-expandablecontainer-arrow, var(--mbx-txt))
-  );
-  --mbx-icon-hover-light: var(
-    --mbx-expandablecontainer-arrow-hover-light,
-    var(--mbx-expandablecontainer-arrow-hover)
-  );
-  --mbx-icon-dark: var(
-    --mbx-expandablecontainer-arrow-dark,
-    var(--mbx-expandablecontainer-arrow, var(--mbx-txt))
-  );
-  --mbx-icon-hover-dark: var(
-    --mbx-expandablecontainer-arrow-hover-dark,
-    var(--mbx-expandablecontainer-arrow-hover)
-  );
+  --mbx-defic: var(--mbx-expandablecontainer-arrow, var(--mbx-con-txt));
+  --mbx-defich: var(--mbx-expandablecontainer-arrow-hover, var(--mbx-con-txt));
+  --mbx-icon-light: var(--mbx-expandablecontainer-arrow-light);
+  --mbx-icon-hover-light: var(--mbx-expandablecontainer-arrow-hover-light);
+  --mbx-icon-dark: var(--mbx-expandablecontainer-arrow-dark);
+  --mbx-icon-hover-dark: var(--mbx-expandablecontainer-arrow-hover-dark);
 }

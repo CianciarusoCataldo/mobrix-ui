@@ -2,21 +2,25 @@
   display: flex;
   flex-direction: column;
   width: fit-content;
+  --mbx-dfldbg: var(--mbx-ovfldbg, var(--mbx-field-background));
+  --mbx-dfldbgh: var(--mbx-ovfldbgh, var(--mbx-field-background-hover));
+  --mbx-dfldtxt: var(--mbx-ovfldtxt, var(--mbx-field-text));
+  --mbx-dfldtxth: var(--mbx-ovfldtxth, var(--mbx-field-text-hover));
   --mbx-fld-bg: var(
-    --mbx-field-background-light,
-    var(--mbx-field-background)
+    --mbx-ovfldbgl,
+    var(--mbx-field-background-light, var(--mbx-dfldbg))
   );
   --mbx-fld-txt: var(
-    --mbx-field-text-light,
-    var(--mbx-field-text)
+    --mbx-ovfldtxtl,
+    var(--mbx-field-text-light, var(--mbx-dfldtxt))
   );
   --mbx-fld-bg-h: var(
-    --mbx-field-background-hover-light,
-    var(--mbx-field-background-hover)
+    --mbx-ovfldbghl,
+    var(--mbx-field-background-hover-light, var(--mbx-dfldbgh))
   );
   --mbx-fld-txt-h: var(
-    --mbx-field-text-hover-light,
-    var(--mbx-field-text-hover)
+    --mbx-ovfldtxthl,
+    var(--mbx-field-text-hover-light, var(--mbx-dfldtxth))
   );
   --mbx-fld-err-b: var(
     --mbx-field-error-border-light,
@@ -26,53 +30,24 @@
     --mbx-field-error-text-light,
     var(--mbx-field-error-text, red)
   );
-  --mbx-counterbox-background: var(--mbx-fld-bg);
-  --mbx-counterbox-text: var(--mbx-fld-txt);
-  --mbx-counterbox-background-hover: var(--mbx-fld-bg-h);
-  --mbx-counterbox-text-hover: var(--mbx-fld-txt-h);
-
-  --mbx-checkbox-background: var(--mbx-fld-bg);
-  --mbx-checkbox-text: var(--mbx-fld-txt);
-  --mbx-checkbox-background-hover: var(--mbx-fld-bg-h);
-  --mbx-checkbox-text-hover: var(--mbx-fld-txt-h);
-
-  --mbx-inputbox-background: var(--mbx-fld-bg);
-  --mbx-inputbox-text: var(--mbx-fld-txt);
-  --mbx-inputbox-background-hover: var(--mbx-fld-bg-h);
-  --mbx-inputbox-text-hover: var(--mbx-fld-txt-h);
-
-  --mbx-radio-background: var(--mbx-fld-bg);
-  --mbx-radio-background-hover: var(--mbx-fld-bg-h);
-
-  --mbx-rater-background: var(--mbx-fld-bg);
-  --mbx-rater-background-hover: var(--mbx-fld-bg-h);
-
-  --mbx-password-background: var(--mbx-fld-bg);
-  --mbx-password-background-hover: var(--mbx-fld-bg-h);
-  --mbx-password-text: var(--mbx-fld-txt);
-  --mbx-password-text-hover: var(--mbx-fld-txt-h);
-
-  --mbx-slider-background: var(--mbx-fld-bg);
-
-  --mbx-toggle-background: var(--mbx-fld-bg);
 }
 
 [data-mbx-id="fld"][data-mbx-dk] {
   --mbx-fld-bg: var(
-    --mbx-field-background-dark,
-    var(--mbx-field-background)
+    --mbx-ovflfbgd,
+    var(--mbx-field-background-dark, var(--mbx-dfldbg))
   );
   --mbx-fld-txt: var(
-    --mbx-field-text-dark,
-    var(--mbx-field-text)
+    --mbx-ovfldtxtd,
+    var(--mbx-field-text-dark, var(--mbx-dfldtxt))
   );
   --mbx-fld-bg-h: var(
-    --mbx-field-background-hover-dark,
-    var(--mbx-field-background-hover)
+    --mbx-ovfldbghd,
+    var(--mbx-field-background-hover-dark, var(--mbx-dfldbgh))
   );
   --mbx-fld-txt-h: var(
-    --mbx-field-text-hover-dark,
-    var(--mbx-field-text-hover)
+    --mbx-ovfldtxthd,
+    var(--mbx-field-text-hover-dark, var(--mbx-dfldtxth))
   );
   --mbx-fld-err-b: var(
     --mbx-field-error-border-dark,
@@ -82,6 +57,17 @@
     --mbx-field-error-text-dark,
     var(--mbx-field-error-text, red)
   );
+}
+
+[data-mbx-id="fld"] > [data-mbx-fld] {
+  --mbx-ovbgl: var(--mbx-fld-bg);
+  --mbx-ovbgd: var(--mbx-fld-bg);
+  --mbx-ovtxtl: var(--mbx-fld-txt);
+  --mbx-ovtxtd: var(--mbx-fld-txt);
+  --mbx-ovbghl: var(--mbx-fld-bg-h);
+  --mbx-ovbghd: var(--mbx-fld-bg-h);
+  --mbx-ovtxthl: var(--mbx-fld-txt-h);
+  --mbx-ovtxthd: var(--mbx-fld-txt-h);
 }
 
 [data-mbx-id="fld"] > [data-mbx-id="label"] {

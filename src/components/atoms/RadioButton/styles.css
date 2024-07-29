@@ -12,64 +12,60 @@
   border-radius: 50%;
   padding: 0.1rem;
   border-style: hidden;
-  --mbx-bg-l: var(
-    --mbx-radio-background-light,
-    var(
-      --mbx-radio-background,
-      radial-gradient(#f1f1f1 20%, #e4e4e4 30%, #bebebe 55%, #f0f0f0 20%)
-    )
+  --mbx-rdbgc: radial-gradient(
+    #f1f1f1 20%,
+    #e4e4e4 30%,
+    #bebebe 55%,
+    #f0f0f0 20%
   );
-  --mbx-bg-d: var(
-    --mbx-radio-background-dark,
-    var(
-      --mbx-radio-background,
-      radial-gradient(
-        closest-side,
-        #2d3748 20%,
-        #232b38 30%,
-        #1d1f44 55%,
-        #191f29 20%
-      )
-    )
+  --mbx-rdbgch: radial-gradient(
+    #d1cfcf 20%,
+    #e4e4e4 30%,
+    #b6b3b3 55%,
+    #d1cfcf 20%
   );
-  --mbx-bg-h-l: var(
-    --mbx-radio-background-hover-light,
-    var(
-      --mbx-radio-background-hover,
-      radial-gradient(#d1cfcf 20%, #e4e4e4 30%, #b6b3b3 55%, #d1cfcf 20%)
-    )
-  );
-  --mbx-bg-h-d: var(
-    --mbx-radio-background-hover-dark,
-    var(
-      --mbx-radio-background-hover,
-      radial-gradient(
-        rgba(2, 0, 36, 1) 0%,
-        rgba(102, 102, 122, 1) 32%,
-        rgba(45, 43, 87, 1) 100%
-      )
-    )
-  );
+  --mbx-defbg: var(--mbx-radio-background, var(--mbx-rdbgc));
+  --mbx-defbgh: var(--mbx-radio-background-hover, var(--mbx-rdbgch));
+  --mbx-bg-l: var(--mbx-radio-background-light);
+  --mbx-bg-d: var(--mbx-radio-background-dark);
+  --mbx-bg-h-l: var(--mbx-radio-background-hover-light);
+  --mbx-bg-h-d: var(--mbx-radio-background-hover-dark);
+  --mbx-rdicdef: var(--mbx-radio-icon-background);
   --mbx-rd-ic: var(
-    --mbx-radio-icon-background-light,
+    --mbx-ovrdicl,
     var(
-      --mbx-radio-icon-background,
-      radial-gradient(
-        circle,
-        rgb(73, 73, 73) 0%,
-        rgb(81, 81, 85) 89%,
-        rgb(82, 82, 87) 100%
+      --mbx-radio-icon-background-light,
+      var(
+        --mbx-rdicdef,
+        radial-gradient(
+          circle,
+          rgb(73, 73, 73) 0%,
+          rgb(81, 81, 85) 89%,
+          rgb(82, 82, 87) 100%
+        )
       )
     )
   );
 }
 
 [data-mbx-id="rd"][data-mbx-dk] {
+  --mbx-rdbgc: radial-gradient(
+    closest-side,
+    #2d3748 20%,
+    #232b38 30%,
+    #1d1f44 55%,
+    #191f29 20%
+  );
+  --mbx-rdbgch: radial-gradient(
+    rgba(2, 0, 36, 1) 0%,
+    rgba(102, 102, 122, 1) 32%,
+    rgba(45, 43, 87, 1) 100%
+  );
   --mbx-rd-ic: var(
-    --mbx-radio-icon-background-dark,
+    --mbx-ovricd,
     var(
-      --mbx-radio-icon-background,
-      radial-gradient(circle at 23px 23px, #dbe0e6, #949494)
+      --mbx-radio-icon-background-dark,
+      var(--mbx-rdicdef, radial-gradient(circle at 23px 23px, #dbe0e6, #949494))
     )
   );
 }

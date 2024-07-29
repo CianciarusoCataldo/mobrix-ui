@@ -1,36 +1,16 @@
 [data-mbx-id="selt"] {
-  --mbx-bg-l: var(
-    --mbx-selector-background-light,
-    var(--mbx-selector-background)
-  );
-  --mbx-txt-l: var(
-    --mbx-selector-text-light,
-    var(--mbx-selector-text)
-  );
-  --mbx-bg-d: var(
-    --mbx-selector-background-dark,
-    var(--mbx-selector-background)
-  );
-  --mbx-txt-d: var(
-    --mbx-selector-text-dark,
-    var(--mbx-selector-text)
-  );
-  --mbx-bg-h-l: var(
-    --mbx-selector-background-hover-light,
-    var(--mbx-selector-background-hover)
-  );
-  --mbx-txt-h-l: var(
-    --mbx-selector-text-hover-light,
-    var(--mbx-selector-text-hover)
-  );
-  --mbx-bg-h-d: var(
-    --mbx-selector-background-hover-dark,
-    var(--mbx-selector-background-hover)
-  );
-  --mbx-txt-h-d: var(
-    --mbx-selector-text-hover-dark,
-    var(--mbx-selector-text-hover)
-  );
+  --mbx-defbg: var(--mbx-selector-background);
+  --mbx-defbgh: var(--mbx-selector-background-hover);
+  --mbx-deftxt: var(--mbx-selector-text);
+  --mbx-deftxth: var(--mbx-selector-text-hover);
+  --mbx-bg-l: var(--mbx-selector-background-light);
+  --mbx-txt-l: var(--mbx-selector-text-light);
+  --mbx-bg-d: var(--mbx-selector-background-dark);
+  --mbx-txt-d: var(--mbx-selector-text-dark);
+  --mbx-bg-h-l: var(--mbx-selector-background-hover-light);
+  --mbx-txt-h-l: var(--mbx-selector-text-hover-light);
+  --mbx-bg-h-d: var(--mbx-selector-background-hover-dark);
+  --mbx-txt-h-d: var(--mbx-selector-text-hover-dark);
   border: 0;
   border-radius: 6px;
   padding: 0.2rem;

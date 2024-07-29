@@ -1,10 +1,12 @@
 @import url("positions.css");
 
 [data-mbx-id="drw"] {
-  --mbx-bg-l: var(--mbx-drawer-background-light, var(--mbx-drawer-background));
-  --mbx-txt-l: var(--mbx-drawer-text-light, var(--mbx-drawer-text));
-  --mbx-bg-d: var(--mbx-drawer-background-dark, var(--mbx-drawer-background));
-  --mbx-txt-d: var(--mbx-drawer-text-dark, var(--mbx-drawer-text));
+  --mbx-defbg: var(--mbx-drawer-background);
+  --mbx-deftxt: var(--mbx-drawer-text);
+  --mbx-bg-l: var(--mbx-drawer-background-light);
+  --mbx-txt-l: var(--mbx-drawer-text-light);
+  --mbx-bg-d: var(--mbx-drawer-background-dark);
+  --mbx-txt-d: var(--mbx-drawer-text-dark);
   animation: var(--mbx-drw-an);
   -moz-animation: var(--mbx-drw-an);
   -ms-animation: var(--mbx-drw-an);
@@ -27,20 +29,10 @@
 }
 
 [data-mbx-id="drw"] > [data-mbx-id="icb"] > [data-mbx-img] {
-  --mbx-icon-light: var(
-    --mbx-drawer-arrow-light,
-    var(--mbx-drawer-arrow, var(--mbx-draw-txt))
-  );
-  --mbx-icon-hover-light: var(
-    --mbx-drawer-arrow-hover-light,
-    var(--mbx-drawer-arrow-hover)
-  );
-  --mbx-icon-dark: var(
-    --mbx-drawer-arrow-dark,
-    var(--mbx-drawer-arrow, var(--mbx-draw-txt))
-  );
-  --mbx-icon-hover-dark: var(
-    --mbx-drawer-arrow-hover-dark,
-    var(--mbx-drawer-arrow-hover)
-  );
+  --mbx-defic: var(--mbx-drawer-arrow, var(--mbx-draw-txt));
+  --mbx-defich: var(--mbx-drawer-arrow-hover);
+  --mbx-icon-light: var(--mbx-drawer-arrow-light);
+  --mbx-icon-hover-light: var(--mbx-drawer-arrow-hover-light);
+  --mbx-icon-dark: var(--mbx-drawer-arrow-dark);
+  --mbx-icon-hover-dark: var(--mbx-drawer-arrow-hover-dark);
 }

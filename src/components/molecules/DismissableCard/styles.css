@@ -1,27 +1,15 @@
 [data-mbx-id="dis-card"] {
   padding-top: 0;
-  --mbx-card-background-light: var(
-    --mbx-dismissablecard-background-light,
-    var(--mbx-dismissablecard-background)
-  );
-  --mbx-card-background-dark: var(
-    --mbx-dismissablecard-background-dark,
-    var(--mbx-dismissablecard-background)
-  );
-  --mbx-crd-txt: var(
-    --mbx-dismissablecard-text-light,
-    var(--mbx-dismissablecard-text)
-  );
-  --mbx-card-text: var(--mbx-crd-txt);
-  background: var(--mbx-bg);
-  color: var(--mbx-txt);
+  --mbx-ovcrdbg: var(--mbx-dismissablecard-background);
+  --mbx-ovcrdtxt: var(--mbx-dismissablecard-text);
+  --mbx-ovcrdbgl: var(--mbx-dismissablecard-background-light);
+  --mbx-ovcrdtxtl: var(--mbx-dismissablecard-text-light);
+  --mbx-ovcrdbgd: var(--mbx-dismissablecard-background-dark);
+  --mbx-ovcrdtxtd: var(--mbx-dismissablecard-text-dark);
 }
 
-[data-mbx-id="dis-card"][data-mbx-dk] {
-  --mbx-crd-txt: var(
-    --mbx-dismissablecard-text-dark,
-    var(--mbx-dismissablecard-text)
-  );
+[data-mbx-id="dis-card"][data-mbx-trn] {
+  --mbx-dcrd-bg: transparent !important;
 }
 
 [data-mbx-id="dis-card"] > [data-mbx-dchead] {
@@ -38,20 +26,10 @@
   display: flex;
   flex-direction: row-reverse;
   width: fit-content;
-  --mbx-icon-light: var(
-    --mbx-dismissablecard-x-light,
-    var(--mbx-dismissablecard-x, var(--mbx-crd-txt))
-  );
-  --mbx-icon-hover-light: var(
-    --mbx-dismissablecard-x-hover-light,
-    var(--mbx-dismissablecard-x-hover, red)
-  );
-  --mbx-icon-dark: var(
-    --mbx-dismissablecard-x-dark,
-    var(--mbx-dismissablecard-x, var(--mbx-crd-txt))
-  );
-  --mbx-icon-hover-dark: var(
-    --mbx-dismissablecard-x-hover-dark,
-    var(--mbx-dismissablecard-x-hover, red)
-  );
+  --mbx-defic: var(--mbx-dismissablecard-x, var(--mbx-dcrd-txt));
+  --mbx-defich: var(--mbx-dismissablecard-x-hover, red);
+  --mbx-icon-light: var(--mbx-dismissablecard-x-light);
+  --mbx-icon-hover-light: var(--mbx-dismissablecard-x-hover-light);
+  --mbx-icon-dark: var(--mbx-dismissablecard-x-dark);
+  --mbx-icon-hover-dark: var(--mbx-dismissablecard-x-hover-dark);
 }

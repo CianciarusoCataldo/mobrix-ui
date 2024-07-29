@@ -10,20 +10,10 @@
   border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
-  --mbx-container-background-light: var(
-    --mbx-popup-background-light,
-    var(--mbx-popup-background)
-  );
-  --mbx-container-text-light: var(
-    --mbx-popup-text-light,
-    var(--mbx-popup-text)
-  );
-  --mbx-container-background-dark: var(
-    --mbx-popup-background-dark,
-    var(--mbx-popup-background)
-  );
-  --mbx-container-text-dark: var(
-    --mbx-popup-text-dark,
-    var(--mbx-popup-text)
-  );
+  --mbx-container-text: var(--mbx-popup-text);
+  --mbx-container-background: var(--mbx-popup-background);
+  --mbx-container-background-light: var(--mbx-popup-background-light);
+  --mbx-container-background-dark: var(--mbx-popup-background-dark);
+  --mbx-container-text-light: var(--mbx-popup-text-light);
+  --mbx-container-text-dark: var(--mbx-popup-text-dark);
 }

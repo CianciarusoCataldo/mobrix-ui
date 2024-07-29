@@ -9,26 +9,18 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   --mbx-btn-scale: none;
-  --mbx-bg-l: var(--mbx-button-background-light, var(--mbx-button-background));
-  --mbx-txt-l: var(--mbx-button-text-light, var(--mbx-button-text));
-  --mbx-bg-d: var(--mbx-button-background-dark, var(--mbx-button-background));
-  --mbx-txt-d: var(--mbx-button-text-dark, var(--mbx-button-text));
-  --mbx-bg-h-l: var(
-    --mbx-button-background-hover-light,
-    var(--mbx-button-background-hover)
-  );
-  --mbx-txt-h-l: var(
-    --mbx-button-text-hover-light,
-    var(--mbx-button-text-hover)
-  );
-  --mbx-bg-h-d: var(
-    --mbx-button-background-hover-dark,
-    var(--mbx-button-background-hover)
-  );
-  --mbx-txt-h-d: var(
-    --mbx-button-text-hover-dark,
-    var(--mbx-button-text-hover)
-  );
+  --mbx-defbg: var(--mbx-button-background);
+  --mbx-defbgh: var(--mbx-button-background-hover);
+  --mbx-deftxt: var(--mbx-button-text);
+  --mbx-deftxth: var(--mbx-button-text-hover);
+  --mbx-bg-l: var(--mbx-button-background-light);
+  --mbx-txt-l: var(--mbx-button-text-light);
+  --mbx-bg-d: var(--mbx-button-background-dark);
+  --mbx-txt-d: var(--mbx-button-text-dark);
+  --mbx-bg-h-l: var(--mbx-button-background-hover-light);
+  --mbx-txt-h-l: var(--mbx-button-text-hover-light);
+  --mbx-bg-h-d: var(--mbx-button-background-hover-dark);
+  --mbx-txt-h-d: var(--mbx-button-text-hover-dark);
 }
 
 @media (hover) {

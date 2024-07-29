@@ -6,31 +6,15 @@
   display: flex;
   flex-direction: column;
   --mbx-trdur: 0.1s;
-  --mbx-bg-l: var(
-    --mbx-checkbox-background-light,
-    var(--mbx-checkbox-background)
-  );
-  --mbx-bg-d: var(
-    --mbx-checkbox-background-dark,
-    var(--mbx-checkbox-background)
-  );
-  --mbx-bg-h-l: var(
-    --mbx-checkbox-background-hover-light,
-    var(--mbx-checkbox-background-hover, var(--mbx-c-bg-h))
-  );
-  --mbx-bg-h-d: var(
-    --mbx-checkbox-background-hover-dark,
-    var(--mbx-checkbox-background-hover, var(--mbx-c-bg-h))
-  );
+  --mbx-defbg: var(--mbx-checkbox-background);
+  --mbx-defbgh: var(--mbx-checkbox-background-hover);
+  --mbx-bg-l: var(--mbx-checkbox-background-light);
+  --mbx-bg-d: var(--mbx-checkbox-background-dark);
+  --mbx-bg-h-l: var(--mbx-checkbox-background-hover-light);
+  --mbx-bg-h-d: var(--mbx-checkbox-background-hover-dark);
 }
 
 [data-mbx-id="check"] > [data-mbx-img] {
-  --mbx-icon-light: var(
-    --mbx-checkbox-tick-light,
-    var(--mbx-checkbox-tick)
-  );
-  --mbx-icon-dark: var(
-    --mbx-checkbox-tick-dark,
-    var(--mbx-checkbox-tick)
-  );
+  --mbx-icon-light: var(--mbx-checkbox-tick-light, var(--mbx-checkbox-tick));
+  --mbx-icon-dark: var(--mbx-checkbox-tick-dark, var(--mbx-checkbox-tick));
 }

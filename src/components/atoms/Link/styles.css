@@ -1,8 +1,10 @@
 [data-mbx-id="link"] {
   font-size: 1rem;
   line-height: 1.5rem;
-  --mbx-txt-l: var(--mbx-link-text-light, var(--mbx-link-text));
-  --mbx-txt-d: var(--mbx-link-text-dark, var(--mbx-link-text));
-  --mbx-txt-h-l: var(--mbx-link-text-hover-light, var(--mbx-link-text-hover));
-  --mbx-txt-h-d: var(--mbx-link-text-hover-dark, var(--mbx-link-text-hover));
+  --mbx-deftxt: var(--mbx-link-text);
+  --mbx-deftxth: var(--mbx-link-text);
+  --mbx-txt-l: var(--mbx-link-text-light);
+  --mbx-txt-d: var(--mbx-link-text-dark);
+  --mbx-txt-h-l: var(--mbx-link-text-hover-light);
+  --mbx-txt-h-d: var(--mbx-link-text-hover-dark);
 }

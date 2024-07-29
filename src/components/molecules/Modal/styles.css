@@ -14,9 +14,9 @@
   -moz-animation: var(--mbx-md-an);
   -ms-animation: var(--mbx-md-an);
   -o-animation: var(--mbx-md-an);
-  --mbx-def-bg: rgba(0, 0, 0, 0.8);
-  --mbx-bg-l: var(--mbx-modal-background-light, var(--mbx-modal-background));
-  --mbx-bg-d: var(--mbx-modal-background-dark, var(--mbx-modal-background));
+  --mbx-defbg: var(--mbx-modal-background, rgba(0, 0, 0, 0.8));
+  --mbx-bg-l: var(--mbx-modal-background-light);
+  --mbx-bg-d: var(--mbx-modal-background-dark);
 }
 
 [data-mbx-id="mod"] > [data-mbx-id="dis-card"] > [data-mbx-cbody] {
@@ -26,24 +26,14 @@
   flex-direction: column;
 }
 
-[data-mbx-id="mod"] > [data-mbx-id="dis-card"] > [data-mbx-dchead] {
+[data-mbx-id="mod"] > [data-mbx-id="dis-card"] {
   --mbx-def-modx: white;
-  --mbx-dismissablecard-x-light: var(
-    --mbx-modal-x-light,
-    var(--mbx-modal-x, var(--mbx-def-modx))
-  );
-  --mbx-dismissablecard-x-hover-light: var(
-    --mbx-modal-x-hover-light,
-    var(--mbx-modal-x-hover)
-  );
-  --mbx-dismissablecard-x-dark: var(
-    --mbx-modal-x-dark,
-    var(--mbx-modal-x, var(--mbx-def-modx))
-  );
-  --mbx-dismissablecard-x-hover-dark: var(
-    --mbx-modal-x-hover-dark,
-    var(--mbx-modal-x-hover)
-  );
+  --mbx-dismissablecard-x: var(--mbx-modal-x, var(--mbx-def-modx));
+  --mbx-dismissablecard-x-hover: var(--mbx-modal-x-hover);
+  --mbx-dismissablecard-x-light: var(--mbx-modal-x-light);
+  --mbx-dismissablecard-x-hover-light: var(--mbx-modal-x-hover-light);
+  --mbx-dismissablecard-x-dark: var(--mbx-modal-x-dark);
+  --mbx-dismissablecard-x-hover-dark: var(--mbx-modal-x-hover-dark);
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {

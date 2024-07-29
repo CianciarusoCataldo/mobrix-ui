@@ -59,7 +59,7 @@ const Table: TableComponent = (props) =>
     }),
     mbxProps,
     wrapper: "table",
-    features: { wAll: true },
+    features: { wBg: true },
   }));
 
 export default Table;

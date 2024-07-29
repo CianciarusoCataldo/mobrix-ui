@@ -15,8 +15,10 @@ const mdComponent: MbxUiComponent<ModalProps, BuilderComponent> = ({
   closeOutside,
   onClose,
   animated,
+  hover,
 }) => (
   <DismissableCard
+    hover={hover}
     disabled={disabled}
     alwaysVisible
     noTopDivider

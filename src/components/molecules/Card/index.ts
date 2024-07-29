@@ -62,7 +62,6 @@ const Card: CardComponent = (props) =>
       ...mbxProps,
     }),
     mbxProps,
-    features: { wBg: true },
   }));
 
 export default Card;

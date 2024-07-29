@@ -4,19 +4,12 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  --mbx-bg-l: var(
-    --mbx-codebox-background-light,
-    var(--mbx-codebox-background)
-  );
-  --mbx-txt-l: var(
-    --mbx-codebox-text-light,
-    var(--mbx-codebox-text)
-  );
-  --mbx-bg-d: var(--mbx-codebox-background-dark, var(--mbx-codebox-background));
-  --mbx-txt-d: var(
-    --mbx-codebox-text-dark,
-    var(--mbx-codebox-text)
-  );
+  --mbx-defbg: var(--mbx-codebox-background);
+  --mbx-deftxt: var(--mbx-codebox-text);
+  --mbx-bg-l: var(--mbx-codebox-background-light);
+  --mbx-txt-l: var(--mbx-codebox-text-light);
+  --mbx-bg-d: var(--mbx-codebox-background-dark);
+  --mbx-txt-d: var(--mbx-codebox-text-dark);
 }
 
 [data-mbx-id="code"] > div {

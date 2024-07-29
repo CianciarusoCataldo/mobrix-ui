@@ -54,6 +54,7 @@ const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
       {...(error && {
         "data-mbx-fld-e": error,
       })}
+      data-mbx-fld
       key="f_comp"
       className={className}
       value={frmt.format(value)}

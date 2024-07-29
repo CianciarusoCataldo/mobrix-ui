@@ -108,7 +108,8 @@ const parseProps = (
   datas: Object.keys(props)
     .filter(
       (prop) =>
-        prop.startsWith("data-") && !restricted.includes(`data-mbx-${prop}`)
+        prop.startsWith("data-") &&
+        !restricted.includes(prop.replace("data-mbx-", ""))
     )
     .reduce(
       (pre, key) => ({
@@ -146,13 +147,13 @@ const getMbxUiStandard = ({
   });
   const props: MbxSharedProps & Record<string, any> = {
     ...cprops["datas"],
-    "data-mbx-id": name,
-    id: cprops.id,
-    className: cprops.className,
     tabIndex: "-1",
     ...cprops.props,
     ...addProps,
     ...parP,
+    "data-mbx-id": name,
+    className: cprops.className,
+    id: cprops.id,
   };
 
   const cstyles = {

@@ -1,27 +1,32 @@
-[data-mbx-id="cn"] {
+[data-mbx-id*="cn"] {
+  --mbx-deconb: var(
+    --mbx-ovconbg,
+    var(--mbx-container-background, var(--mbx-c-bg))
+  );
+  --mbx-decont: var(
+    --mbx-ovcontxt,
+    var(--mbx-container-text, var(--mbx-c-txt))
+  );
+  --mbx-con-bg: var(
+    --mbx-ovconbgl,
+    var(--mbx-container-background-light, var(--mbx-deconb))
+  );
+  --mbx-con-txt: var(
+    --mbx-ovcontxtl,
+    var(--mbx-container-text-light, var(--mbx-decont))
+  );
   background: var(--mbx-con-bg);
   color: var(--mbx-con-txt);
 }
 
-[data-mbx-id*="cn"] {
-  --mbx-con-bg: var(
-    --mbx-container-background-light,
-    var(--mbx-container-background, var(--mbx-c-bg))
-  );
-  --mbx-con-txt: var(
-    --mbx-container-text-light,
-    var(--mbx-container-text, var(--mbx-c-txt))
-  );
-}
-
 [data-mbx-id*="cn"][data-mbx-dk] {
   --mbx-con-bg: var(
-    --mbx-container-background-dark,
-    var(--mbx-container-background, var(--mbx-c-bg))
+    --mbx-ovconbgd,
+    var(--mbx-container-background-dark, var(--mbx-deconb))
   );
   --mbx-con-txt: var(
-    --mbx-container-text-dark,
-    var(--mbx-container-text, var(--mbx-c-txt))
+    --mbx-ovcontxtd,
+    var(--mbx-container-text-dark, var(--mbx-decont))
   );
 }
 

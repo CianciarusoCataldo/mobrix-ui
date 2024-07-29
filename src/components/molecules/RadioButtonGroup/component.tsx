@@ -31,12 +31,12 @@ const component: MbxUiComponent<RadioButtonGroupProps, BuilderComponent[]> = ({
   hover,
   a11y,
 }) => {
-  const sProps = { disabled, dark, hover, a11y };
+  const sProps = { disabled, hover, a11y };
 
   return buttons.map(
     (
       { textPosition = defaultPosition, text, component, props = {} },
-      index,
+      index
     ) => {
       const pos = Object.keys(cssC).includes(textPosition)
         ? textPosition
@@ -57,6 +57,7 @@ const component: MbxUiComponent<RadioButtonGroupProps, BuilderComponent[]> = ({
               [`margin${parse(pos)}`]: 0,
               [`margin${parse(cssC[pos].rev)}`]: "0.7rem",
             }}
+            dark={dark}
             {...sProps}
           >
             {text}
@@ -76,7 +77,7 @@ const component: MbxUiComponent<RadioButtonGroupProps, BuilderComponent[]> = ({
           />
         </div>
       );
-    },
+    }
   );
 };
 
