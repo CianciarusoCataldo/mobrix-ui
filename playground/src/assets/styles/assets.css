@@ -30,24 +30,6 @@ body #preview {
   width: 2rem;
 }
 
-body {
-  overflow: hidden;
-  --mbx-button-background-dark: green;
-  --mbx-button-background-light: red;
-  --mbx-button-text-dark: yellow;
-  --mbx-button-text-light: orange;
-  --mbx-button-background-hover-dark: green;
-  --mbx-button-background-hover-light: red;
-  --mbx-button-text-hover-dark: yellow;
-  --mbx-button-text-hover-light: orange;
-
-  --mbx-popup-background-dark: green;
-  --mbx-popup-background-light: red;
-  --mbx-popup-text-dark: yellow;
-  --mbx-popup-text-light: orange;
-  --mbx-radio-background-light: blue;
-}
-
 @media (max-width: 400px) {
   body .previewer-container {
     margin: 0.3rem;
