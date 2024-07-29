@@ -36,7 +36,7 @@ const component: MbxUiComponent<RadioButtonGroupProps, BuilderComponent[]> = ({
   return buttons.map(
     (
       { textPosition = defaultPosition, text, component, props = {} },
-      index
+      index,
     ) => {
       const pos = Object.keys(cssC).includes(textPosition)
         ? textPosition
@@ -77,7 +77,7 @@ const component: MbxUiComponent<RadioButtonGroupProps, BuilderComponent[]> = ({
           />
         </div>
       );
-    }
+    },
   );
 };
 

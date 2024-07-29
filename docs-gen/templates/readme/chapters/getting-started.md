@@ -52,6 +52,8 @@ If you want to customize the UI globally, initialize the dedicated [CSS variable
 * {
   --mbx-text: #f5f5f5;
   --mbx-background-color: #1b1b1b;
+  --mbx-container-background: green;
+  --mbx-card-background: orange;
 }
 ```
 

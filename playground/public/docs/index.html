@@ -9331,7 +9331,7 @@
 <li>Small library size, to not impact on final app bundle size</li>
 <li>Few dependencies, to not introduce a bunch of additional packages (that could also introduce bugs or version conflicts with pre-existent packages)</li>
 <li>Let the user customize every part as desired, but with default values set otherwise, to make every component ready to be used without so many parameters</li>
-<li>Every component should be integrable into every react app, so their behaviour must be customizable too (with callbacks, for example)</li>
+<li>Every component should be integrable into every react app, so their behaviour must be easily customizable too</li>
 </ul>
 <p>The same concepts are also the base of another project I maintain, <a href="https://github.com/CianciarusoCataldo/mobrix-engine">MoBrix-engine</a> (check it out, it is also the base of <a href="https://cianciarusocataldo.github.io/mobrix-ui/">MoBrix-ui guide page</a> !)</p>
 <p><br></p>
@@ -9666,6 +9666,8 @@ render(
 <pre><code class="language-css">* {
   --mbx-text: #f5f5f5;
   --mbx-background-color: #1b1b1b;
+  --mbx-container-background: green;
+  --mbx-card-background: orange;
 }
 </code></pre>
 <p><br></p>
