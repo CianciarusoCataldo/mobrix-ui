@@ -5,17 +5,33 @@
   --mbx-ovcontxtl: var(--mbx-expandablecontainer-text-light);
   --mbx-ovconbgd: var(--mbx-expandablecontainer-background-dark);
   --mbx-ovcontxtd: var(--mbx-expandablecontainer-text-dark);
+  --mbx-expmrg: 0.2rem auto auto auto;
+  flex-direction: column;
+  display: flex;
+}
+
+[data-mbx-id="ecn"][data-mbx-exparr="top"] {
+  flex-direction: column-reverse;
+  --mbx-expmrg: auto auto 0.2rem auto;
+}
+
+[data-mbx-id="ecn"][data-mbx-exparr="left"] {
+  flex-direction: row-reverse;
+  --mbx-expmrg: auto 0.8rem auto 0.4rem;
+}
+
+[data-mbx-id="ecn"][data-mbx-exparr="right"] {
+  flex-direction: row;
+  --mbx-expmrg: auto 0.4rem auto 0.8rem;
 }
 
 [data-mbx-id="ecn"] > [data-mbx-rt] {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: var(--mbx-expmrg);
 }
 
 [data-mbx-id="ecn"] > [data-mbx-id="icb"] > [data-mbx-img="arr"] {
-  margin-bottom: 0.3rem;
-  padding-top: 0.2rem;
   --mbx-defic: var(--mbx-expandablecontainer-arrow, var(--mbx-con-txt));
   --mbx-defich: var(--mbx-expandablecontainer-arrow-hover, var(--mbx-con-txt));
   --mbx-icon-light: var(--mbx-expandablecontainer-arrow-light);

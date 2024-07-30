@@ -8,10 +8,6 @@
   --mbx-ovcrdtxtd: var(--mbx-dismissablecard-text-dark);
 }
 
-[data-mbx-id="dis-card"][data-mbx-trn] {
-  --mbx-dcrd-bg: transparent !important;
-}
-
 [data-mbx-id="dis-card"] > [data-mbx-dchead] {
   padding: 0;
 }

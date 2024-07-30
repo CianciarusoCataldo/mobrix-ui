@@ -6,13 +6,16 @@ import { buildMbxReactive } from "../../../tools/utils";
 
 import component from "./component";
 
+const dirs = ["left", "top", "right", "bottom"] as const;
+
 /**
  * An exapandable container, to hide/show some content on demand.
  *
  * @param {any} children content to render inside Container - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Container Container}
  * @param {'div' | 'header' | 'footer'} wrapper component wrapper type - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/molecules/Container Container}
- * @param {boolean} expanded Extra content showed only when container is expanded (`compact` === `true`)
+ * @param {boolean} expanded Extra content displayed only when container is expanded (`compact` === `true`)
  * @param {boolean} compact if true, shows the whole container content
+ * @param {'right' | 'left' | 'top' | 'bottom'} arrowPosition Arrow icon position
  * @param {(newValue: boolean) => void} onChange Callback triggered when ExpandableContainer component input value is changed by the user
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
@@ -50,13 +53,19 @@ const ExpandableContainer: ExpandableContainerComponent = ({
   compact,
   wrapper,
   active,
+  arrowPosition = "bottom",
   ...props
-}) => {
-  return buildMbxReactive(props, (mbxProps) => ({
+}) =>
+  buildMbxReactive(props, (mbxProps) => ({
     name: "ecn",
     defV: false,
     wrapper,
     inpV: compact,
+    addProps: {
+      "data-mbx-exparr": dirs.includes(arrowPosition)
+        ? arrowPosition
+        : "bottom",
+    },
     Component: ({ value, setValue }) =>
       component({
         value,
@@ -67,6 +76,5 @@ const ExpandableContainer: ExpandableContainerComponent = ({
       }),
     mbxProps,
   }));
-};
 
 export default ExpandableContainer;

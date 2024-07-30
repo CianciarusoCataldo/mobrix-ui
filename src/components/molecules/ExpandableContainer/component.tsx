@@ -20,16 +20,18 @@ const component: MbxUiReactiveComponent<boolean, ExpandableContainerProps> = ({
   active,
   a11y,
 }) => [
-  children,
-  <div
-    key="exp_a"
-    style={{
-      overflow: "hidden",
-      maxHeight: value ? "0" : "100vh",
-      transition: `max-height 0.3s ease-${value ? "out" : "in"}`,
-    }}
-  >
-    {expanded}
+  <div key="cont">
+    {children}
+    <div
+      key="exp_a"
+      style={{
+        overflow: "hidden",
+        maxHeight: value ? "0" : "100vh",
+        transition: `max-height 0.3s ease-${value ? "out" : "in"}`,
+      }}
+    >
+      {expanded}
+    </div>
   </div>,
   <IconButton
     a11y={a11y}

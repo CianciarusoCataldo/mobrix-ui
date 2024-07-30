@@ -6,6 +6,8 @@
   --mbx-dfldbgh: var(--mbx-ovfldbgh, var(--mbx-field-background-hover));
   --mbx-dfldtxt: var(--mbx-ovfldtxt, var(--mbx-field-text));
   --mbx-dfldtxth: var(--mbx-ovfldtxth, var(--mbx-field-text-hover));
+  --mbx-dflder: var(--mbx-field-error-text, red);
+  --mbx-dflderb: var(--mbx-field-error-border, red);
   --mbx-fld-bg: var(
     --mbx-ovfldbgl,
     var(--mbx-field-background-light, var(--mbx-dfldbg))
@@ -22,14 +24,8 @@
     --mbx-ovfldtxthl,
     var(--mbx-field-text-hover-light, var(--mbx-dfldtxth))
   );
-  --mbx-fld-err-b: var(
-    --mbx-field-error-border-light,
-    var(--mbx-field-error-border, red)
-  );
-  --mbx-fld-err-txt: var(
-    --mbx-field-error-text-light,
-    var(--mbx-field-error-text, red)
-  );
+  --mbx-fld-err-b: var(--mbx-field-error-border-light, var(--mbx-dflderb));
+  --mbx-fld-err-txt: var(--mbx-field-error-text-light, var(--dflder));
 }
 
 [data-mbx-id="fld"][data-mbx-dk] {
@@ -49,14 +45,8 @@
     --mbx-ovfldtxthd,
     var(--mbx-field-text-hover-dark, var(--mbx-dfldtxth))
   );
-  --mbx-fld-err-b: var(
-    --mbx-field-error-border-dark,
-    var(--mbx-field-error-border, red)
-  );
-  --mbx-fld-err-txt: var(
-    --mbx-field-error-text-dark,
-    var(--mbx-field-error-text, red)
-  );
+  --mbx-fld-err-b: var(--mbx-field-error-border-dark, var(--mbx-dflderb));
+  --mbx-fld-err-txt: var(--mbx-field-error-text-dark, var(--mbx-dflder));
 }
 
 [data-mbx-id="fld"] > [data-mbx-fld] {

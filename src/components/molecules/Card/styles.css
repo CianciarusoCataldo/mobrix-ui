@@ -35,6 +35,10 @@
   --mbx-container-text-dark: var(--mbx-crdtxt);
 }
 
+[data-mbx-id*="card"][data-mbx-trn] {
+  --mbx-crdbg: transparent;
+}
+
 [data-mbx-id*="card"] > [data-mbx-id="cn"] {
   padding: 0.5rem 0.3rem;
   word-wrap: break-word;

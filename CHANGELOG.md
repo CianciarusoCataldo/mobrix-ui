@@ -38,6 +38,7 @@
 - Css totally re-defined and cleaned up, with more efficent rules and with less data as possible, to keep a smooth dev experience
 - Refactoring
 - New `underline` prop for `Link` component
+- New `arrowPosition` prop for `ExpandableContainer` component
 - `CodeBox` component updated, with a more efficent color system
 - `highlight` property removed from `CodeBox` component
 - `Review` logo now can be customized, wihout choosing a predefined type (`logo` property now accept a standard JSX.Element)

@@ -14,6 +14,7 @@
     var(--mbx-slider-thumb, radial-gradient(#2d3748, #1d232e))
   );
   --mbx-sld-op-act: 0.4;
+  --mbx-defsldtbh: var(--mbx-slider-thumb-hover, var(--mbx-sld-tb));
 }
 
 [data-mbx-id="sld"][data-mbx-dk] {
@@ -61,17 +62,11 @@
 
 [data-mbx-id="sld"][data-mbx-hv] {
   --mbx-sld-op-hov: 0.6;
-  --mbx-sld-tb-h: var(
-    --mbx-slider-thumb-hover-light,
-    var(--mbx-slider-thumb-hover, var(--mbx-sld-tb))
-  );
+  --mbx-sld-tb-h: var(--mbx-slider-thumb-hover-light, var(--mbx-defsldtbh));
 }
 
 [data-mbx-id="sld"][data-mbx-hv][data-mbx-dk] {
-  --mbx-sld-tb-h: var(
-    --mbx-slider-thumb-hover-dark,
-    var(--mbx-slider-thumb-hover, var(--mbx-sld-tb))
-  );
+  --mbx-sld-tb-h: var(--mbx-slider-thumb-hover-dark, var(--mbx-defsldtbh));
 }
 
 @media (hover) {

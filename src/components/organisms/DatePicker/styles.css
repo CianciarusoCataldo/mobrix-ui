@@ -88,7 +88,8 @@
   vertical-align: middle;
   display: inline-block;
   margin-right: 0.3rem;
-  --mbx-label-text: var(--mbx-dttxt);
+  --mbx-label-text-light: var(--mbx-dttxt);
+  --mbx-label-text-dark: var(--mbx-dttxt);
 }
 
 @media (max-width: 600px) {
