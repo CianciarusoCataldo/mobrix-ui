@@ -6,7 +6,20 @@ const expandableContainerTest = () => {
   describe("ExpandableContainer", () => {
     test("Rendering test", () => {
       let wrapper = mount(
-        <ExpandableContainer>Test Container</ExpandableContainer>
+        <ExpandableContainer arrowPosition="top">
+          Test Container
+        </ExpandableContainer>
+      );
+      wrapper.find('[data-mbx-id="icb"]').simulate("click");
+      expect(wrapper);
+
+      wrapper = mount(
+        <ExpandableContainer
+          //@ts-ignore
+          arrowPosition="wrong"
+        >
+          Test Container
+        </ExpandableContainer>
       );
       wrapper.find('[data-mbx-id="icb"]').simulate("click");
       expect(wrapper);
