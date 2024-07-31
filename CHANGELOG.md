@@ -37,6 +37,7 @@
 - New building system, to better handle final bundle size, and with a reduced library size
 - Css totally re-defined and cleaned up, with more efficent rules and with less data as possible, to keep a smooth dev experience
 - Refactoring
+- New `hover` css variables for `Container` and `ExpandableContainer` components
 - New `underline` prop for `Link` component
 - New `arrowPosition` prop for `ExpandableContainer` component
 - `CodeBox` component updated, with a more efficent color system

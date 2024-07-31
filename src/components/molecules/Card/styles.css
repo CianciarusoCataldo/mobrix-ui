@@ -36,7 +36,7 @@
 }
 
 [data-mbx-id*="card"][data-mbx-trn] {
-  --mbx-crdbg: transparent;
+  --mbx-crdbg: transparent !important;
 }
 
 [data-mbx-id*="card"] > [data-mbx-id="cn"] {

@@ -12,8 +12,8 @@ const Component: MbxUiReactiveComponent<number, CarouselProps> = ({
   elements = [],
   dark,
   disabled,
-  arrowClassName: arrCl,
-  dotClassName: dotCl,
+  arrowClassName,
+  dotClassName,
   hover,
   active,
   a11y,
@@ -58,7 +58,7 @@ const Component: MbxUiReactiveComponent<number, CarouselProps> = ({
         features={{ opFc: !isSel, wAll: !isSel }}
         hover={hover && !isSel}
         active={active && !isSel}
-        className={dotCl}
+        className={dotClassName}
         key={`dot_${index}`}
         onClick={() => {
           setAnim(index > item ? "right" : "left");
@@ -82,7 +82,7 @@ const Component: MbxUiReactiveComponent<number, CarouselProps> = ({
       {...sProps}
       disabled={disabled || cond}
       active={active}
-      className={arrCl}
+      className={arrowClassName}
       hover={hover}
       onClick={() => {
         setAnim(dir);

@@ -41,6 +41,32 @@
     },
     "fallback": "--mbx-expandablecontainer-text"
   },
+  "--mbx-expandablecontainer-background-hover": {
+    "description": "Fallback value for `--mbx-expandablecontainer-background-hover-light` and `--mbx-expandablecontainer-background-hover-dark`"
+  },
+  "--mbx-expandablecontainer-background-hover-light": {
+    "description": "ExpandableContainer background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
+    "defaultInternal": "--mbx-expandablecontainer-background-hover",
+    "fallback": "--mbx-expandablecontainer-background-hover"
+  },
+  "--mbx-expandablecontainer-background-hover-dark": {
+    "description": "ExpandableContainer background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
+    "defaultInternal": "--mbx-expandablecontainer-background-hover",
+    "fallback": "--mbx-expandablecontainer-background-hover"
+  },
+  "--mbx-expandablecontainer-text-hover": {
+    "description": "Fallback value for `--mbx-expandablecontainer-text-hover-light` and `--mbx-expandablecontainer-text-hover-dark`"
+  },
+  "--mbx-expandablecontainer-text-hover-light": {
+    "description": "ExpandableContainer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
+    "defaultInternal": "--mbx-expandablecontainer-text-light",
+    "fallback": "--mbx-expandablecontainer-text-hover"
+  },
+  "--mbx-expandablecontainer-text-hover-dark": {
+    "description": "ExpandableContainer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
+    "defaultInternal": "--mbx-expandablecontainer-text-hover-dark",
+    "fallback": "--mbx-expandablecontainer-text-hover"
+  },
   "--mbx-expandablecontainer-arrow": {
     "description": "Fallback value for `--mbx-expandablecontainer-arrow-light` and `--mbx-expandablecontainer-arrow-dark`"
   },

@@ -10,8 +10,8 @@ import {
 } from "../../atoms";
 
 /* istanbul ignore next */
-export const vFormat = {
-  text: (value: any) => {
+export const vFuncs = {
+  txt: (value: any) => {
     const result = value ? String(value) : "";
     if (result.length < 1) {
       return "";
@@ -19,54 +19,21 @@ export const vFormat = {
       return result;
     }
   },
-  number: (value: any) => value as number,
-  boolean: (value: any) => value as boolean,
-};
+  nmb: (value: any) => value as number,
+  bol: (value: any) => value as boolean,
+} as const;
 
 /* istanbul ignore next */
-export const formatters = {
-  text: {
-    component: Input,
-    format: vFormat.text,
-  },
-  numeric: {
-    component: Counter,
-    format: vFormat.number,
-  },
-  boolean: {
-    component: CheckBox,
-    format: vFormat.boolean,
-  },
-  checkbox: {
-    component: CheckBox,
-    format: vFormat.boolean,
-  },
-  radio: {
-    component: RadioButton,
-    format: vFormat.boolean,
-  },
-  toggle: {
-    component: Toggle,
-    format: vFormat.boolean,
-  },
-  rater: {
-    component: Rater,
-    format: vFormat.number,
-  },
-  slider: {
-    component: Slider,
-    format: vFormat.number,
-  },
-  counter: {
-    component: Counter,
-    format: vFormat.number,
-  },
-  input: {
-    component: Input,
-    format: vFormat.text,
-  },
-  password: {
-    component: Password,
-    format: vFormat.text,
-  },
+export const fldfn = {
+  text: [Input, "txt"],
+  numeric: [Counter, "nmb"],
+  boolean: [CheckBox, "bol"],
+  checkbox: [CheckBox, "bol"],
+  radio: [RadioButton, "bol"],
+  toggle: [Toggle, "bol"],
+  rater: [Rater, "nmb"],
+  slider: [Slider, "nmb"],
+  counter: [Counter, "nmb"],
+  input: [Input, "txt"],
+  password: [Password, "txt"],
 } as const;

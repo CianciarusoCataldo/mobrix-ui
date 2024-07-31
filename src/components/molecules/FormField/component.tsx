@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { FormFieldProps, MbxUiReactiveComponent } from "../../../types";
 
-import { formatters } from "./utils";
+import { fldfn, vFuncs } from "./utils";
 
 import Container from "../Container";
 import { Label } from "../../atoms";
@@ -39,16 +39,16 @@ const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
     }
   }, [required]);
 
-  const frmt = formatters[type] || formatters.text;
-
-  const FieldC: MbxUiReactiveComponent = frmt.component;
+  const frmt = fldfn[type] || fldfn.text;
+  const fFunc = vFuncs[frmt[1]];
+  const Cmp = frmt[0];
 
   const sProps = { dark, disabled, animated, hover, background, a11y };
   return [
     <Label hide={!header} unstyled key="f_h_b" {...headerProps} {...sProps}>
       {header}
     </Label>,
-    <FieldC
+    <Cmp
       {...sProps}
       animation={anim && "shake"}
       {...(error && {
@@ -57,7 +57,7 @@ const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
       data-mbx-fld
       key="f_comp"
       className={className}
-      value={frmt.format(value)}
+      value={fFunc(value)}
       shadow={shadow}
       onKeyDown={(e) => {
         /* istanbul ignore next */
@@ -69,7 +69,7 @@ const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
         }
       }}
       onChange={(newValue) => {
-        const fValue = frmt.format(newValue);
+        const fValue = fFunc(newValue);
 
         if (!validate(fValue) || (required && !newValue)) {
           setError(true);

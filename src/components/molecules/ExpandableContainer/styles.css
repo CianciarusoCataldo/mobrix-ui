@@ -5,6 +5,12 @@
   --mbx-ovcontxtl: var(--mbx-expandablecontainer-text-light);
   --mbx-ovconbgd: var(--mbx-expandablecontainer-background-dark);
   --mbx-ovcontxtd: var(--mbx-expandablecontainer-text-dark);
+  --mbx-ovconbgh: var(--mbx-expandablecontainer-background-hover);
+  --mbx-ovcontxth: var(--mbx-expandablecontainer-text-hover);
+  --mbx-ovconbghl: var(--mbx-expandablecontainer-background-hover-light);
+  --mbx-ovcontxthl: var(--mbx-expandablecontainer-text-hover-light);
+  --mbx-ovconbghd: var(--mbx-expandablecontainer-background-hover-dark);
+  --mbx-ovcontxthd: var(--mbx-expandablecontainer-text-hover-dark);
   --mbx-expmrg: 0.2rem auto auto auto;
   flex-direction: column;
   display: flex;

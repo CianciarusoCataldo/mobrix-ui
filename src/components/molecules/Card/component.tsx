@@ -8,9 +8,9 @@ import Container from "../Container";
 const component: MbxUiComponent<CardProps, BuilderComponent[]> = ({
   children,
   dark,
-  headerProps = {},
-  bodyProps = {},
-  footerProps = {},
+  headerProps,
+  bodyProps,
+  footerProps,
   dividerSize = "1px",
   header,
   headerClassName,

@@ -17,6 +17,22 @@
   );
   background: var(--mbx-con-bg);
   color: var(--mbx-con-txt);
+  --mbx-deconbh: var(
+    --mbx-ovconbgh,
+    var(--mbx-container-background-hover, var(--mbx-con-bg))
+  );
+  --mbx-deconth: var(
+    --mbx-ovcontxth,
+    var(--mbx-container-text-hover, var(--mbx-con-txt))
+  );
+  --mbx-con-bgh: var(
+    --mbx-ovconbghl,
+    var(--mbx-container-background-hover-light, var(--mbx-deconbh))
+  );
+  --mbx-con-txth: var(
+    --mbx-ovcontxthl,
+    var(--mbx-container-text-hover-light, var(--mbx-deconth))
+  );
 }
 
 [data-mbx-id*="cn"][data-mbx-dk] {
@@ -28,8 +44,23 @@
     --mbx-ovcontxtd,
     var(--mbx-container-text-dark, var(--mbx-decont))
   );
+  --mbx-con-bgh: var(
+    --mbx-ovconbghd,
+    var(--mbx-container-background-hover-dark, var(--mbx-deconbh))
+  );
+  --mbx-con-txth: var(
+    --mbx-ovcontxthd,
+    var(--mbx-container-text-hover-dark, var(--mbx-deconth))
+  );
 }
 
 [data-mbx-id*="cn"][data-mbx-trn] {
   --mbx-con-bg: transparent;
+}
+
+@media (hover) {
+  [data-mbx-id*="cn"][data-mbx-hv]:hover {
+    background: var(--mbx-con-bgh);
+    color: var(--mbx-con-txth);
+  }
 }

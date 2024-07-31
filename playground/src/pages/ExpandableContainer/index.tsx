@@ -25,10 +25,10 @@ const ExpandableContainerPage = () => (
             compact: BooleanProp(true),
             expanded: HiddenProp(<div className="h-[90px]">Expanded area</div>),
             arrowPosition: SelectProp({
+              bottom: "bottom",
               left: "left",
               top: "top",
               right: "right",
-              bottom: "bottom",
             }),
             ...demoProps,
           }}

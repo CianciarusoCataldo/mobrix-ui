@@ -1,6 +1,5 @@
 [data-mbx-id="list"] {
   background: transparent;
-  padding: 0.6rem;
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -17,14 +16,14 @@
   margin: auto 0.3rem auto 0;
   width: 6px;
   height: 6px;
-  fill: var(--mbx-lst-txt);
+  fill: var(--mbx-con-txt);
 }
 
 [data-mbx-id="list"] > [data-mbx-id="cn"] {
-  --mbx-deftxt: var(--mbx-list-text);
-  --mbx-deftxth: var(--mbx-list-text-hover, var(--mbx-list-text-hover));
-  --mbx-txt-l: var(--mbx-list-text-light);
-  --mbx-txt-h-d: var(--mbx-list-text-hover-dark);
-  --mbx-txt-h-l: var(--mbx-list-text-hover-light);
-  --mbx-txt-d: var(--mbx-list-text-dark);
+  --mbx-ovcontxt: var(--mbx-list-text);
+  --mbx-ovcontxth: var(--mbx-list-text-hover);
+  --mbx-ovcontxtl: var(--mbx-list-text-light);
+  --mbx-ovcontxthd: var(--mbx-list-text-hover-dark);
+  --mbx-ovcontxthl: var(--mbx-list-text-hover-light);
+  --mbx-ovcontxtd: var(--mbx-list-text-dark);
 }

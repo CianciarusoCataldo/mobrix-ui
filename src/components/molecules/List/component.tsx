@@ -20,7 +20,7 @@ const lComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
       background={false}
       shadow={false}
       dark={dark}
-      hover={hover}
+      hover={cond && hover}
       key={`el_${index}`}
       {...(cond && {
         active: active,
@@ -38,7 +38,6 @@ const lComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
         colFc: true,
         opHov: cond,
         noShFc: true,
-        wClH: cond,
       }}
       disabled={disabled}
     >

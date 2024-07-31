@@ -17,10 +17,8 @@
 }
 
 [data-mbx-id="dis-card"] > [data-mbx-dchead] > [data-mbx-id="icb"] {
-  padding: 0;
   margin-left: auto;
   display: flex;
-  flex-direction: row-reverse;
   width: fit-content;
   --mbx-defic: var(--mbx-dismissablecard-x, var(--mbx-dcrd-txt));
   --mbx-defich: var(--mbx-dismissablecard-x-hover, red);
