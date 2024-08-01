@@ -47,7 +47,6 @@ const Label: LabelComponent = ({ children, shadow = false, ...props }) =>
     wrapper: "p",
     features: {
       colFc: true,
-      noShFc: true,
     },
     mbxProps,
   }));

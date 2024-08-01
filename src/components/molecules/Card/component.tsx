@@ -23,7 +23,7 @@ const component: MbxUiComponent<CardProps, BuilderComponent[]> = ({
   footerClassName,
   a11y,
 }) => {
-  const sPrp = { dark, unstyled: true, a11y };
+  const sPrp = { dark, unstyled: true, a11y: false };
   return [
     <Container
       {...sPrp}

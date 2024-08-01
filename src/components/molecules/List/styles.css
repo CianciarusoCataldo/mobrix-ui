@@ -9,6 +9,13 @@
   margin-top: 0.2rem;
   display: flex;
   flex-direction: row;
+  --mbx-ovcontxt: var(--mbx-list-text);
+  --mbx-ovcontxth: var(--mbx-list-text-hover);
+  --mbx-ovcontxtl: var(--mbx-list-text-light);
+  --mbx-ovcontxthd: var(--mbx-list-text-hover-dark);
+  --mbx-ovcontxthl: var(--mbx-list-text-hover-light);
+  --mbx-ovcontxtd: var(--mbx-list-text-dark);
+  --mbx-sh-def: none;
 }
 
 [data-mbx-id="list"] > [data-mbx-id="cn"] > svg {
@@ -17,13 +24,4 @@
   width: 6px;
   height: 6px;
   fill: var(--mbx-con-txt);
-}
-
-[data-mbx-id="list"] > [data-mbx-id="cn"] {
-  --mbx-ovcontxt: var(--mbx-list-text);
-  --mbx-ovcontxth: var(--mbx-list-text-hover);
-  --mbx-ovcontxtl: var(--mbx-list-text-light);
-  --mbx-ovcontxthd: var(--mbx-list-text-hover-dark);
-  --mbx-ovcontxthl: var(--mbx-list-text-hover-light);
-  --mbx-ovcontxtd: var(--mbx-list-text-dark);
 }

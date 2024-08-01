@@ -41,7 +41,6 @@ const parseFts: (props: MbxSharedProps & Features) => {
   disabled,
   opHov,
   colFc,
-  noShFc,
   opFc,
   wBg,
   wCl,
@@ -53,13 +52,13 @@ const parseFts: (props: MbxSharedProps & Features) => {
   parS: filter(
     [
       [hide, "display", "none", true],
-      [animation === "shake", "animationIterationCount", 1, "", true],
+      [animation === "shake", "animationIterationCount", 1, true],
       [active, "op-act", 0.4],
       [!shadow, "sh", "none"],
       [a11y && opFc, "op-f", 0.4],
       [opHov, "op-hov", hover ? 0.7 : 1],
-      [noShFc, "sh-def", "none"],
       [animation, "an", animation],
+      [a11y, "sh-fc", "var(--mbx-c-fc)"],
     ],
     "--mbx-"
   ),

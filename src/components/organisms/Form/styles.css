@@ -12,18 +12,6 @@
 }
 
 [data-mbx-id="form"] > div {
-  --mbx-ovfldtxt: var(--mbx-form-field-text, var(--mbx-dttxt));
-  --mbx-ovfldtxth: var(--mbx-form-field-text-hover);
-  --mbx-ovfldbg: var(--mbx-form-field-background);
-  --mbx-ovfldbgh: var(--mbx-form-field-background-hover);
-  --mbx-ovfldbgl: var(--mbx-form-field-background-light);
-  --mbx-ovfldbgd: var(--mbx-form-field-background-dark);
-  --mbx-ovfldtxtl: var(--mbx-form-field-text-light);
-  --mbx-ovfldtxtd: var(--mbx-form-field-text-dark);
-  --mbx-ovfldbghl: var(--mbx-form-field-background-hover-light);
-  --mbx-ovfldbghd: var(--mbx-form-field-background-hover-dark);
-  --mbx-ovfldtxthl: var(--mbx-form-field-text-hover-light);
-  --mbx-ovfldtxthd: var(--mbx-form-field-text-hover-dark);
   margin: 0.7rem 0;
 }
 
@@ -54,11 +42,28 @@
   );
 }
 
+[data-mbx-id="form"] > div > [data-mbx-id="fld"] {
+  width: 100%;
+  --mbx-ovfldlab: var(--mbx-dttxt);
+  --mbx-ovfldtxt: var(--mbx-form-field-text);
+  --mbx-ovfldtxth: var(--mbx-form-field-text-hover);
+  --mbx-ovfldbg: var(--mbx-form-field-background);
+  --mbx-ovfldbgh: var(--mbx-form-field-background-hover);
+  --mbx-ovfldbgl: var(--mbx-form-field-background-light);
+  --mbx-ovfldbgd: var(--mbx-form-field-background-dark);
+  --mbx-ovfldtxtl: var(--mbx-form-field-text-light);
+  --mbx-ovfldtxtd: var(--mbx-form-field-text-dark);
+  --mbx-ovfldbghl: var(--mbx-form-field-background-hover-light);
+  --mbx-ovfldbghd: var(--mbx-form-field-background-hover-dark);
+  --mbx-ovfldtxthl: var(--mbx-form-field-text-hover-light);
+  --mbx-ovfldtxthd: var(--mbx-form-field-text-hover-dark);
+}
+
 [data-mbx-id="form"] > [data-mbx-ftitle],
 [data-mbx-id="form"] > [data-mbx-sbt],
 [data-mbx-id="form"] > div > [data-mbx-id="fld"][data-mbx-ftype="boolean"],
 [data-mbx-id="form"] > div > [data-mbx-id="fld"][data-mbx-ftype="checkbox"],
-[data-mbx-id="form"] > div > [data-mbx-id="fld"][data-mbx-ftype="rd"] {
+[data-mbx-id="form"] > div > [data-mbx-id="fld"][data-mbx-ftype="radio"] {
   margin: 0 auto;
 }
 

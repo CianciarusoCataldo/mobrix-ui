@@ -56,7 +56,6 @@ const Link: LinkComponent = ({
     features: {
       opHov: true,
       colFc: true,
-      noShFc: true,
       wClH: true,
     },
     Component: children,

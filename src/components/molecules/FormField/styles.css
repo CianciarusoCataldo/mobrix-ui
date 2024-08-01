@@ -25,7 +25,7 @@
     var(--mbx-field-text-hover-light, var(--mbx-dfldtxth))
   );
   --mbx-fld-err-b: var(--mbx-field-error-border-light, var(--mbx-dflderb));
-  --mbx-fld-err-txt: var(--mbx-field-error-text-light, var(--dflder));
+  --mbx-fld-err-txt: var(--mbx-field-error-text-light, var(--mbx-dflder));
 }
 
 [data-mbx-id="fld"][data-mbx-dk] {
@@ -64,7 +64,9 @@
   font-weight: 600;
   margin: 0 0 0.2rem;
   width: 100%;
-  --mbx-label-text: var(--mbx-fld-txt);
+  --mbx-fldlab: var(--mbx-ovfldlab, var(--mbx-fld-txt));
+  --mbx-ovlbtxtl: var(--mbx-fldlab);
+  --mbx-ovlbtxtd: var(--mbx-fldlab);
 }
 
 [data-mbx-id="fld"] > [data-mbx-id="cn"] {
@@ -85,7 +87,7 @@
 
 [data-mbx-id="fld"][data-mbx-ftype="checkbox"],
 [data-mbx-id="fld"][data-mbx-ftype="boolean"],
-[data-mbx-id="fld"][data-mbx-ftype="rd"],
+[data-mbx-id="fld"][data-mbx-ftype="radio"],
 [data-mbx-id="fld"][data-mbx-ftype="rater"],
 [data-mbx-id="fld"][data-mbx-ftype="slider"],
 [data-mbx-id="fld"][data-mbx-ftype="toggle"] {

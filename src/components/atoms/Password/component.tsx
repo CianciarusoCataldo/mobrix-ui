@@ -37,7 +37,6 @@ const PswC: MbxUiReactiveComponent<string, PasswordProps> = ({
       placeholder={placeholder}
       {...sProps}
       key="psw_in"
-      features={{ noShFc: true }}
       props={{ type: hidden ? "password" : "text" }}
       shadow={false}
     />,

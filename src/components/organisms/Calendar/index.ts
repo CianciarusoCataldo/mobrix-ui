@@ -65,7 +65,7 @@ const Calendar: CalendarComponent = ({
 
   return buildMbxReactive<DeepPartial<CalendarDate>>(props, (mbxProps) => ({
     name: "cal",
-    mbxProps: { ...mbxProps, shadow: false, active: false },
+    mbxProps: { ...mbxProps, a11y: false, shadow: false, active: false },
     inpV,
     defV: {
       year: tday.year,

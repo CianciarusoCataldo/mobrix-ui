@@ -30,7 +30,7 @@
   --mbx-bg-d: var(--mbx-radio-background-dark);
   --mbx-bg-h-l: var(--mbx-radio-background-hover-light);
   --mbx-bg-h-d: var(--mbx-radio-background-hover-dark);
-  --mbx-rdicdef: var(--mbx-radio-icon-background);
+  --mbx-rdicdef: var(--mbx-ovrdic, var(--mbx-radio-icon-background));
   --mbx-rd-ic: var(
     --mbx-ovrdicl,
     var(
@@ -62,7 +62,7 @@
     rgba(45, 43, 87, 1) 100%
   );
   --mbx-rd-ic: var(
-    --mbx-ovricd,
+    --mbx-ovrdicd,
     var(
       --mbx-radio-icon-background-dark,
       var(--mbx-rdicdef, radial-gradient(circle at 23px 23px, #dbe0e6, #949494))

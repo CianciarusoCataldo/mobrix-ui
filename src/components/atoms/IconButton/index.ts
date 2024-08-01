@@ -57,7 +57,6 @@ const IconButton: IconButtonComponent = ({
     ...(!sProps.unstyled && {
       features: {
         opHov: hover,
-        noShFc: true,
       },
     }),
     Component: children,

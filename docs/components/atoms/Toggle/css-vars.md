@@ -16,6 +16,9 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background](#-mbx-toggle-background)</div>                           | <div style='text-align:center;margin:auto;'>/</div>                                                                | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
 | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-light](#-mbx-toggle-background-light)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background](#-mbx-toggle-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div>                                                                          |
 | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-dark](#-mbx-toggle-background-dark)</div>                 | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background](#-mbx-toggle-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div>                                                                            |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-hover](#-mbx-toggle-background-hover)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-hover-light](#-mbx-toggle-background-hover-light)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background](#-mbx-toggle-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-light](#-mbx-toggle-background-light)</div>                                                                                                                                |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-hover-dark](#-mbx-toggle-background-hover-dark)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background](#-mbx-toggle-background)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-dark](#-mbx-toggle-background-dark)</div>                                                                                                                                  |
 | <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-internal](#-mbx-toggle-on-icon-internal)</div>               | <div style='text-align:center;margin:auto;'>/</div>                                                                | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                                             |
 | <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-internal-light](#-mbx-toggle-on-icon-internal-light)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-internal](#-mbx-toggle-on-icon-internal)</div>   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ffffff</div><div style='text-align:center;margin-auto;'><div style='background:#ffffff;margin:auto; width:15px; height:15px;'/></div></div></div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-internal-dark](#-mbx-toggle-on-icon-internal-dark)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-toggle-on-icon-internal](#-mbx-toggle-on-icon-internal)</div>   | <div style='text-align:center;margin:auto;'><div><div style='text-align:center;margin-auto;'>#ffffff</div><div style='text-align:center;margin-auto;'><div style='background:#ffffff;margin:auto; width:15px; height:15px;'/></div></div></div> |
@@ -72,6 +75,48 @@ Toggle background when [dark mode](https://cianciarusocataldo.github.io/mobrix-u
 <br>
 
 Toggle background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`
+
+<br>
+
+<br>
+
+### --mbx-toggle-background-hover
+
+| <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>/</div>        | <div style='text-align:center;margin:auto;'>/</div>       |
+
+<br>
+
+Fallback value for `--mbx-toggle-background-hover-light` and `--mbx-toggle-background-hover-dark`
+
+<br>
+
+<br>
+
+### --mbx-toggle-background-hover-light
+
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                        |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background](#-mbx-toggle-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-light](#-mbx-toggle-background-light)</div> |
+
+<br>
+
+Toggle background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/#hover)
+
+<br>
+
+<br>
+
+### --mbx-toggle-background-hover-dark
+
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                      |
+| ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-toggle-background](#-mbx-toggle-background)</div> | <div style='text-align:center;margin:auto;'>[--mbx-toggle-background-dark](#-mbx-toggle-background-dark)</div> |
+
+<br>
+
+Toggle background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/#hover)
 
 <br>
 

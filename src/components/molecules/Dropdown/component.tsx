@@ -136,7 +136,7 @@ const Component: MbxUiComponent<DropdownProps, Omit<BuilderProps, "name">> = ({
           <ArrowIcon {...cProps} width="15" height="12" />
         </IconButton>
       </Container>,
-      <Popup key="opts" shadow={shadow} hide={!vis} a11y={false} {...cProps}>
+      <Popup key="opts" {...cProps} shadow={shadow} hide={!vis} a11y={false}>
         {elements.map((item, index) => (
           <Button
             animated={false}
@@ -148,9 +148,10 @@ const Component: MbxUiComponent<DropdownProps, Omit<BuilderProps, "name">> = ({
             onClick={() => {
               chFunc();
             }}
-            features={{ noShFc: true, colFc: true }}
+            features={{ colFc: true }}
             key={`it_${index}`}
             {...cProps}
+            disabled={index === value || disabled}
           >
             {item}
           </Button>

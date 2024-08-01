@@ -12,6 +12,19 @@
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-toggle-background"
   },
+  "--mbx-toggle-background-hover": {
+    "description": "Fallback value for `--mbx-toggle-background-hover-light` and `--mbx-toggle-background-hover-dark`"
+  },
+  "--mbx-toggle-background-hover-light": {
+    "description": "Toggle background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/#hover)",
+    "defaultInternal": "--mbx-toggle-background-light",
+    "fallback": "--mbx-toggle-background"
+  },
+  "--mbx-toggle-background-hover-dark": {
+    "description": "Toggle background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/#hover)",
+    "defaultInternal": "--mbx-toggle-background-dark",
+    "fallback": "--mbx-toggle-background"
+  },
   "--mbx-toggle-on-icon-internal": {
     "description": "Fallback value for `--mbx-toggle-on-icon-internal-light` and `--mbx-toggle-on-icon-internal-dark`"
   },

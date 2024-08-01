@@ -16,6 +16,7 @@
 [data-mbx-id="psw"] > [data-mbx-id="inp"] {
   border-bottom-right-radius: 0%;
   border-top-right-radius: 0%;
+  --mbx-sh-def: none;
   --mbx-deftxth: var(--mbx-pswt);
   --mbx-defbgh: var(--mbx-password-background-hover);
   --mbx-inputbox-text-light: var(--mbx-pswt);

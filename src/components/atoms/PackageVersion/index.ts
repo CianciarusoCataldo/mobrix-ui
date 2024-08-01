@@ -58,7 +58,6 @@ const PackageVersion: PackageVersionComponent = ({
     Component: component({ ...mbxProps, name, source, user, branch }),
     features: {
       colFc: true,
-      noShFc: true,
     },
     mbxProps,
   }));

@@ -21,13 +21,13 @@
 [data-mbx-id="rgr"] > div > [data-mbx-id="rd"] {
   --mbx-ovbg: var(--mbx-radiogroup-radio-background);
   --mbx-ovbgh: var(--mbx-radiogroup-radio-background-hover);
-  --mbx-radio-icon-background: var(--mbx-radiogroup-radio-icon-background);
+  --mbx-ovrdic: var(--mbx-radiogroup-radio-icon-background);
   --mbx-ovbgl: var(--mbx-radiogroup-radio-background-light);
-  --mbx-ovghl: var(--mbx-radiogroup-radio-background-hover-light);
-  --mbx-ovricl: var(--mbx-radiogroup-radio-icon-background-light);
+  --mbx-ovbghl: var(--mbx-radiogroup-radio-background-hover-light);
+  --mbx-ovrdicl: var(--mbx-radiogroup-radio-icon-background-light);
   --mbx-ovbgd: var(--mbx-radiogroup-radio-background-dark);
   --mbx-ovbghd: var(--mbx-radiogroup-radio-background-hover-dark);
-  --mbx-ovricd: var(--mbx-radiogroup-radio-icon-background-dark);
+  --mbx-ovrdicd: var(--mbx-radiogroup-radio-icon-background-dark);
 }
 
 [data-mbx-id="rgr"][data-mbx-rgh="true"] > div {

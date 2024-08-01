@@ -115,7 +115,6 @@ const HeaderContent = () => {
             }}
             a11y={false}
             className="my-auto overflow-auto ml-1"
-            features={{ noShFc: true }}
             hide={hideHomeButton}
           >
             <ArrowIcon className="arrow" />

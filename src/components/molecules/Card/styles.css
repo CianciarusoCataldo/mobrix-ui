@@ -17,7 +17,6 @@
     --mbx-ovcrdtxtl,
     var(--mbx-card-text-light, var(--mbx-crdtxtdef))
   );
-  --mbx-container-text-light: var(--mbx-crdtxt);
   background: var(--mbx-crdbg);
   color: var(--mbx-crdtxt);
 }
@@ -32,7 +31,6 @@
     --mbx-ovcrdtxtd,
     var(--mbx-card-text-dark, var(--mbx-crdtxtdef))
   );
-  --mbx-container-text-dark: var(--mbx-crdtxt);
 }
 
 [data-mbx-id*="card"][data-mbx-trn] {
@@ -43,6 +41,8 @@
   padding: 0.5rem 0.3rem;
   word-wrap: break-word;
   word-break: break-word;
+  --ovcontxtl: var(--mbx-crdtxt);
+  --ovcontxtd: var(--mbx-crdtxt);
 }
 
 [data-mbx-id*="card"] > [data-mbx-cbody] {

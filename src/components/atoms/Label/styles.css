@@ -6,6 +6,7 @@
     --mbx-lbtxt,
     var(--mbx-ovlbtxt, var(--mbx-label-text, var(--mbx-c-txt)))
   );
+  --mbx-sh-def: none;
 }
 
 [data-mbx-id*="label"][data-mbx-dk] {

@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 
-import { FormFieldProps, MbxUiReactiveComponent } from "../../../types";
+import {
+  ComponentWithValue,
+  FormFieldProps,
+  MbxUiReactiveComponent,
+} from "../../../types";
 
 import { fldfn, vFuncs } from "./utils";
 
@@ -40,8 +44,8 @@ const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
   }, [required]);
 
   const frmt = fldfn[type] || fldfn.text;
-  const fFunc = vFuncs[frmt[1]];
-  const Cmp = frmt[0];
+  const fFunc: any = vFuncs[frmt[1]];
+  const Cmp: (props: any) => React.JSX.Element = frmt[0];
 
   const sProps = { dark, disabled, animated, hover, background, a11y };
   return [
@@ -50,7 +54,7 @@ const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
     </Label>,
     <Cmp
       {...sProps}
-      animation={anim && "shake"}
+      {...(anim && { animation: "shake" })}
       {...(error && {
         "data-mbx-fld-e": error,
       })}
@@ -61,7 +65,7 @@ const FrmComponent: MbxUiReactiveComponent<any, FormFieldProps> = ({
       shadow={shadow}
       onKeyDown={(e) => {
         /* istanbul ignore next */
-        if (e.code === "Enter" && error) {
+        if (e.code === "Enter" && error && !anim) {
           setAnim(true);
           setTimeout(() => {
             setAnim(false);

@@ -72,7 +72,7 @@ const FormField: FormFieldComponent = ({
     mbxProps: {
       ...mbxProps,
       shadow: false,
-      tabIndex: -1,
+      a11y: false,
     },
     Component: ({ value, setValue }) =>
       component({
@@ -84,7 +84,6 @@ const FormField: FormFieldComponent = ({
       }),
     inpV,
     defV: null,
-    features: { noShFc: true },
   }));
 };
 

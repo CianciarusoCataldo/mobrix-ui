@@ -4,4 +4,5 @@
   background: transparent;
   -webkit-tap-highlight-color: transparent;
   width: fit-content;
+  --mbx-sh-def: none;
 }

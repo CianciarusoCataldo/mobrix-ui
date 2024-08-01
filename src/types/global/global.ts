@@ -237,9 +237,6 @@ export interface Features {
   /** If `true`, when focused, the component text color will change instead of the box shadow (that will be transparent) */
   colFc?: boolean;
 
-  /** If `true`, when focused, the component box shadow will be transparent */
-  noShFc?: boolean;
-
   /** If `true`, reduce component opacity when component is focused */
   opFc?: boolean;
 

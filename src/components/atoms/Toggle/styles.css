@@ -4,6 +4,9 @@
   --mbx-defbg: var(--mbx-toggle-background);
   --mbx-bg-l: var(--mbx-toggle-background-light);
   --mbx-bg-d: var(--mbx-toggle-background-dark);
+  --mbx-defbgh: var(--mbx-toggle-background-hover, var(--mbx-bg));
+  --mbx-bg-h-d: var(--mbx-toggle-background-hover-dark);
+  --mbx-bg-h-l: var(--mbx-toggle-background-hover-light);
   --mbx-dtgoni: var(--mbx-toggle-on-icon-internal);
   --mbx-dtgoffi: var(--mbx-toggle-off-icon-internal);
   --mbx-dtgone: var(--mbx-toggle-on-icon-external);

@@ -37,7 +37,6 @@ const lComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
       features={{
         colFc: true,
         opHov: cond,
-        noShFc: true,
       }}
       disabled={disabled}
     >
