@@ -11,13 +11,9 @@
   --mbx-txt-h-l: var(--mbx-selector-text-hover-light);
   --mbx-bg-h-d: var(--mbx-selector-background-hover-dark);
   --mbx-txt-h-d: var(--mbx-selector-text-hover-dark);
-  border: 0;
-  border-radius: 6px;
-  padding: 0.2rem;
 }
 
 [data-mbx-id="selt"] > option {
   background-color: var(--mbx-bg);
   color: var(--mbx-txt);
-  padding: 1rem;
 }

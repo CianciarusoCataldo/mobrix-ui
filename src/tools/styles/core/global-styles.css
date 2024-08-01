@@ -52,7 +52,7 @@
   --mbx-bg: var(--mbx-ovbgd, var(--mbx-bg-d, var(--mbx-def-bg)));
   --mbx-txt: var(--mbx-ovtxtd, var(--mbx-txt-d, var(--mbx-def-txt)));
   --mbx-bgh: var(--mbx-ovbghd, var(--mbx-bg-h-d, var(--mbx-def-bgh)));
-  --mbx-txth: var(--mbx-ovtxthd, var(--mbx-txt-h-d, var(--mbx-def-txt)));
+  --mbx-txth: var(--mbx-ovtxthd, var(--mbx-txt-h-d, var(--mbx-def-txth)));
 }
 
 [data-mbx-id][data-mbx-wall],

@@ -9,7 +9,7 @@ const AppContent = () => {
 
   return (
     <Button
-      className="p-0 py-2 absolute top-[50%] left-0 opacity-60 my-auto"
+      className="p-0 py-2 absolute top-[50%] left-0 opacity-50 my-auto"
       style={{
         borderTopLeftRadius: "0%",
         borderBottomLeftRadius: "0%",

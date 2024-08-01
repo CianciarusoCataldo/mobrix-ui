@@ -16,6 +16,9 @@
 
 [data-mbx-id="check"] > [data-mbx-img] {
   --mbx-defic: var(--mbx-checkbox-tick);
+  --mbx-defich: var(--mbx-checkbox-tick-hover);
   --mbx-icon-light: var(--mbx-checkbox-tick-light);
   --mbx-icon-dark: var(--mbx-checkbox-tick-dark);
+  --mbx-icon-hover-light: var(--mbx-checkbox-tick-hover-light);
+  --mbx-icon-hover-dark: var(--mbx-checkbox-tick-hover-dark);
 }
