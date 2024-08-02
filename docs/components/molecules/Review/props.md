@@ -22,7 +22,8 @@
 | <div style='text-align:center;margin:auto;'>[max](#max)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>5</div> |
 | <div style='text-align:center;margin:auto;'>[vertical](#vertical)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
 | <div style='text-align:center;margin:auto;'>[rate](#rate)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>0</div> |
-| <div style='text-align:center;margin:auto;'>[rateType](#ratetype)</div> | <div style='text-align:center;margin:auto;'>`star`&#124;`circle`</div> | <div style='text-align:center;margin:auto;'>'star'</div> |
+| <div style='text-align:center;margin:auto;'>[emptyIcon](#emptyicon)</div> | <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[fullIcon](#fullicon)</div> | <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -152,15 +153,30 @@ actual vote - extended from [Rater component](../../atoms/Rater/props.md#rate)
 
 <br>
 
-### rateType
+### emptyIcon
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>`star`&#124;`circle`</div> | <div style='text-align:center;margin:auto;'>'star'</div> |
+| <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
-vote icons type - extended from [Rater component](../../atoms/Rater/props.md#rateType)
+Empty rate icon, used to render the rate value. If not set, a standard unfilled star icon is used - extended from [Rater component](../../atoms/Rater/props.md#emptyIcon)
+
+<br>
+
+<br>
+
+### fullIcon
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+<br>
+
+Full rate icon, used to render the rate value. If not set, a standard filled star icon is used - extended from [Rater component](../../atoms/Rater/props.md#fullIcon)
 
 <br>

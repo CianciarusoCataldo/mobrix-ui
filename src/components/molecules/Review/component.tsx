@@ -15,7 +15,6 @@ const component: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
   icon,
   url,
   logo,
-  rateType,
   disabled,
   hover,
   dark,
@@ -57,7 +56,6 @@ const component: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
     <Rater
       key="rate"
       hide={!rate}
-      type={rateType}
       background={false}
       shadow={false}
       readonly

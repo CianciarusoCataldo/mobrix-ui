@@ -1,6 +1,6 @@
 import { ComponentWithIcon, MbxUiComponent } from "../../../types/global";
 
-import { RaterProps } from "./rater";
+import { RaterProps } from "../atoms/rater";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Review component props
@@ -29,9 +29,6 @@ export type ReviewProps = ComponentWithIcon & {
 
   /** review vote, showed at the bottom of the review */
   rate?: number;
-
-  /** review vote icon type, to choose which icon will be used to show the review rate (allowed icons type are `stars` and `circle`) */
-  rateType?: RaterProps["type"];
 };
 
 /**

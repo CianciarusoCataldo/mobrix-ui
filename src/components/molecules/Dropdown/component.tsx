@@ -2,8 +2,9 @@ import React from "react";
 
 import { BuilderProps, DropdownProps, MbxUiComponent } from "../../../types";
 
-import Popup from "../Popup";
 import { ArrowIcon } from "../../../icons";
+
+import Popup from "../Popup";
 import Container from "../Container";
 import IconButton from "../../atoms/IconButton";
 import Button from "../../atoms/Button";
@@ -24,32 +25,26 @@ const Component: MbxUiComponent<DropdownProps, Omit<BuilderProps, "name">> = ({
   ...props
 }) => {
   const [vis, setVis] = React.useState(false);
-  const [sel, selEl] = React.useState<number>(-2);
-
-  const keyDown = (v: boolean) => {
-    vis !== v && setVis(v);
-    selEl(-1);
-  };
 
   const cProps = {
     dark,
     background,
     disabled,
     hover,
-    a11y,
+    a11y: false,
   };
 
   /* istanbul ignore next */
   const fcFunc = () => {
     onFocusLost();
-    keyDown(false);
+    setVis(false);
   };
 
-  const invert = () => keyDown(!vis);
+  const invert = () => setVis(!vis);
 
-  const chFunc = () => {
-    onChange(sel);
-    keyDown(false);
+  const chFunc = (ind) => {
+    onChange(ind);
+    setVis(false);
   };
 
   return {
@@ -58,57 +53,17 @@ const Component: MbxUiComponent<DropdownProps, Omit<BuilderProps, "name">> = ({
       shadow,
       onFocusLost: fcFunc,
       onKeyDown: (e) => {
-        let actual = sel;
         switch (e.code) {
-          /* istanbul ignore next */
-          case "Tab": {
-            if (
-              (e.shiftKey && actual === 0) ||
-              actual === elements.length - 1
-            ) {
-              keyDown(false);
-            }
-            break;
-          }
           case "Enter": {
-            if (sel > -1) {
-              chFunc();
-              return;
-            } else {
-              setVis(!vis);
-            }
-            e.preventDefault();
-            break;
-          }
-
-          case "Escape": {
-            keyDown(false);
+            invert();
             return;
           }
 
-          case "ArrowUp": {
-            if (actual === 0) {
-              keyDown(false);
-              return;
-            }
-            actual -= 1;
-            break;
-          }
-
-          case "ArrowDown": {
-            if (actual === elements.length - 1) {
-              keyDown(false);
-              return;
-            }
-            if (!vis) {
-              setVis(true);
-            }
-            actual += 1;
-            break;
+          case "Escape": {
+            setVis(false);
+            return;
           }
         }
-
-        actual !== sel && selEl(actual);
       },
       a11y,
       ...props,
@@ -120,6 +75,7 @@ const Component: MbxUiComponent<DropdownProps, Omit<BuilderProps, "name">> = ({
         dark={dark}
         background={false}
         shadow={false}
+        a11y={false}
       >
         <IconButton onClick={invert} key="opts-m" {...cProps} a11y={false}>
           <div tabIndex={-1} key="drop_s_e_b">
@@ -136,22 +92,20 @@ const Component: MbxUiComponent<DropdownProps, Omit<BuilderProps, "name">> = ({
           <ArrowIcon {...cProps} width="15" height="12" />
         </IconButton>
       </Container>,
-      <Popup key="opts" {...cProps} shadow={shadow} hide={!vis} a11y={false}>
+      <Popup key="opts" {...cProps} shadow={shadow} hide={!vis}>
         {elements.map((item, index) => (
           <Button
             animated={false}
             shadow={false}
             active={active}
-            onFocus={() => {
-              selEl(index);
-            }}
             onClick={() => {
-              chFunc();
+              chFunc(index);
             }}
             features={{ colFc: true }}
             key={`it_${index}`}
             {...cProps}
             disabled={index === value || disabled}
+            a11y={a11y}
           >
             {item}
           </Button>

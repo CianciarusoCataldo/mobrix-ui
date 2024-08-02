@@ -2,12 +2,11 @@ import React from "react";
 
 import { BuilderComponent, MbxUiComponent, RaterProps } from "../../../types";
 
-import { ICONS } from "./icons";
+import { defIcE, defIcF } from "./icons";
 import IconButton from "../IconButton";
 
 const Component: MbxUiComponent<RaterProps, BuilderComponent[]> = ({
-  type = "star",
-  max,
+  max = 5,
   readonly,
   onChange,
   value,
@@ -16,24 +15,23 @@ const Component: MbxUiComponent<RaterProps, BuilderComponent[]> = ({
   dark,
   hover,
   active,
+  fullIcon = defIcF,
+  emptyIcon = defIcE,
 }) => {
-  let start = max || 5;
   const [hovEl, setHov] = React.useState<number | null>(null);
-  const [mVal, setMax] = React.useState<number>(start);
+  const [mVal, setMax] = React.useState<number>(max);
 
   React.useEffect(() => {
-    if (max) {
-      setMax(Number.parseInt(String(max)));
-    }
+    setMax(Number.parseInt(String(max)));
   }, [max]);
 
   return new Array(mVal).fill("").map((e, i) => {
-    let icon: "FULL" | "EMPTY" = "EMPTY";
+    let icon = emptyIcon;
 
     if (hovEl || hovEl === 0) {
-      icon = hovEl >= i ? "FULL" : "EMPTY";
+      icon = hovEl >= i ? fullIcon : emptyIcon;
     } else {
-      icon = i + 1 <= value ? "FULL" : "EMPTY";
+      icon = i + 1 <= value ? fullIcon : emptyIcon;
     }
 
     const isSel = i + 1 === value;
@@ -63,7 +61,7 @@ const Component: MbxUiComponent<RaterProps, BuilderComponent[]> = ({
           }),
         })}
       >
-        {ICONS[type][icon]}
+        {icon}
       </IconButton>
     );
   });

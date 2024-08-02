@@ -12,7 +12,8 @@ import raterComponent from "./component";
  * @param {number} value actual vote
  * @param {number} max max vote (max number of icons displayed)
  * @param {boolean} readOnly if `true`, the rate can't be changed by clicking on the icons
- * @param {'star'|'circle'} type vote icons type
+ * @param {JSX.Element} emptyIcon Empty rate icon, used to render the rate value. If not set, a standard unfilled star icon is used
+ * @param {JSX.Element} fullIcon Full rate icon, used to render the rate value. If not set, a standard filled star icon is used
  * @param {boolean} vertical if `true`, rate icons will be displayed vertically
  * @param {(newValue: number) => void} onChange callback triggered when user select a vote
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)

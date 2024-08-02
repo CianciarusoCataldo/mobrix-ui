@@ -40,6 +40,7 @@
 - New `hover` css variables for `CheckBox`, `Toggle`, `Container`, `ExpandableContainer` components
 - New `underline` prop for `Link` component
 - New `arrowPosition` prop for `ExpandableContainer` component
+- New `emptyIcon` and `fullIcon` props for `Rater` and `Review` component, to customize rate icons (`type` and `rateType` props removed)
 - `CodeBox` component updated, with a more efficent color system
 - `highlight` property removed from `CodeBox` component
 - `Review` logo now can be customized, wihout choosing a predefined type (`logo` property now accept a standard JSX.Element)

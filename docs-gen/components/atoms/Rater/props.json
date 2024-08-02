@@ -10,10 +10,13 @@
     "description": "if `true`, the rate can't be changed by clicking on the icons",
     "type": "boolean"
   },
-  "type": {
-    "default": "'star'",
-    "description": "vote icons type",
-    "type": "'star'|'circle'"
+  "emptyIcon": {
+    "description": "Empty rate icon, used to render the rate value. If not set, a standard unfilled star icon is used",
+    "type": "JSX.Element"
+  },
+  "fullIcon": {
+    "description": "Full rate icon, used to render the rate value. If not set, a standard filled star icon is used",
+    "type": "JSX.Element"
   },
   "vertical": {
     "default": "false",

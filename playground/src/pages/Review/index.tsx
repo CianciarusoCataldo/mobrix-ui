@@ -3,7 +3,6 @@ import { demoRows, demoProps } from "constants/demo-props";
 import {
   BooleanProp,
   NumberProp,
-  SelectProp,
   StringProp,
 } from "@cianciarusocataldo/demo-ui";
 
@@ -64,11 +63,6 @@ const RaterPage = () => (
           rate: NumberProp(5),
           url: StringProp("https://www.example.com/"),
           "Custom logo": BooleanProp(false),
-          rateType: SelectProp({
-            "Not set": undefined,
-            star: "star",
-            circle: "circle",
-          }),
           ...demoProps,
         }}
         parseProps={(props) => {
@@ -97,7 +91,7 @@ const RaterPage = () => (
         }}
         rows={[
           ["description", "user", "rate"],
-          ["max", "url", "Custom logo", "rateType"],
+          ["max", "url", "Custom logo"],
           ...demoRows,
         ]}
       >

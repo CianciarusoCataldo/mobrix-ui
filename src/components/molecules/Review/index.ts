@@ -17,7 +17,8 @@ import component from "./component";
  * @param {number} max max vote (max number of icons displayed) - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
  * @param {boolean} vertical if `true`, rate icons will be displayed vertically - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
  * @param {number} rate actual vote - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
- * @param {'star'|'circle'} rateType vote icons type - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
+ * @param {JSX.Element} emptyIcon Empty rate icon, used to render the rate value. If not set, a standard unfilled star icon is used - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
+ * @param {JSX.Element} fullIcon Full rate icon, used to render the rate value. If not set, a standard filled star icon is used - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode

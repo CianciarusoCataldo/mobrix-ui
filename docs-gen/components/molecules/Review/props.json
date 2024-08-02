@@ -37,10 +37,14 @@
     "type": "number",
     "comment": "actual vote - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}"
   },
-  "rateType": {
-    "default": "'star'",
-    "description": "vote icons type - extended from [Rater component](../../atoms/Rater/props.md#rateType)",
-    "type": "'star'|'circle'",
-    "comment": "vote icons type - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}"
+  "emptyIcon": {
+    "description": "Empty rate icon, used to render the rate value. If not set, a standard unfilled star icon is used - extended from [Rater component](../../atoms/Rater/props.md#emptyIcon)",
+    "type": "JSX.Element",
+    "comment": "Empty rate icon, used to render the rate value. If not set, a standard unfilled star icon is used - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}"
+  },
+  "fullIcon": {
+    "description": "Full rate icon, used to render the rate value. If not set, a standard filled star icon is used - extended from [Rater component](../../atoms/Rater/props.md#fullIcon)",
+    "type": "JSX.Element",
+    "comment": "Full rate icon, used to render the rate value. If not set, a standard filled star icon is used - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Rater Rater}"
   }
 }

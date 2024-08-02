@@ -2,7 +2,7 @@ import {
   ComponentWithCallback,
   ComponentWithValue,
   MbxUiComponent,
-} from "../../../types/global";
+} from "../../global";
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Rater component props
@@ -26,6 +26,12 @@ export type RaterProps = ComponentWithValue<number> &
 
     /** if true, the rate can't be changed by clicking on the icons */
     readonly?: boolean;
+
+    /** Empty rate icon, used to render the rate value. If not set, a standard unfilled star icon is used */
+    emptyIcon?: React.JSX.Element;
+
+    /** Full rate icon, used to render the rate value. If not set, a standard filled star icon is used */
+    fullIcon?: React.JSX.Element;
   };
 
 /**

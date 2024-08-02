@@ -25,11 +25,7 @@
   --mbx-icon-dark: var(--mbx-carousel-arrow-dark);
   --mbx-icon-hover-light: var(--mbx-carousel-arrow-hover-light);
   --mbx-icon-hover-dark: var(--mbx-carousel-arrow-hover-dark);
-  --mbx-defich: var(--mbx-carousel-arrow-hover, #287dfd);
-}
-
-[data-mbx-id="crsel"][data-mbx-dk] > [data-mbx-car-els] > [data-mbx-id="icb"] {
-  --mbx-defich: var(--mbx-carousel-arrow-hover, #ff8007);
+  --mbx-defich: var(--mbx-carousel-arrow-hover, var(--mbx-c-fc));
 }
 
 [data-mbx-id="crsel"] > div {
