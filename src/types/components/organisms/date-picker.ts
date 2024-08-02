@@ -1,6 +1,6 @@
 import {
   ClosableComponent,
-  CommonProps,
+  MbxSharedProps,
   ComponentWithCallback,
   ComponentWithValue,
   MbxUiComponent,
@@ -22,7 +22,7 @@ export type DatePickerProps = ComponentWithCallback<CalendarDate> &
   ClosableComponent &
   CalendarProps & {
     /** MoBrix-ui sharedProps applied on the internal calendar */
-    calendarProps?: CommonProps;
+    calendarProps?: MbxSharedProps;
   };
 
 /**

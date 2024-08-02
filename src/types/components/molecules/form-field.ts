@@ -1,6 +1,6 @@
 import {
   BuilderComponent,
-  CommonProps,
+  MbxSharedProps,
   ComponentWithCallback,
   ComponentWithValue,
   MbxUiComponent,
@@ -34,6 +34,8 @@ export type FormFieldProps<T = any> = ComponentWithValue &
      * - `slider` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Slider Slider})
      * - `input` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input Input})
      * - `counter` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Counter Counter})
+     * - `password` (rendered as a {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Password Counter})
+
      */
     type?:
       | "boolean"
@@ -45,7 +47,8 @@ export type FormFieldProps<T = any> = ComponentWithValue &
       | "rater"
       | "slider"
       | "input"
-      | "counter";
+      | "counter"
+      | "password";
 
     /** Placeholder value showed when the input field is empty */
     placeholder?: string;
@@ -53,14 +56,14 @@ export type FormFieldProps<T = any> = ComponentWithValue &
     /** If `true`, the submit button will be disabled when this field is empty */
     required?: boolean;
 
-    /** Custom validation function called on submit. I */
+    /** Custom validation function called on submit. */
     validate?: (fieldValue: T) => boolean;
 
     /** Custom classname applied on every header element */
     headerClassName?: string;
 
     /** Custom props applied on every header element (including MoBrix-ui shared props) */
-    headerProps?: Record<string, any> & CommonProps;
+    headerProps?: Record<string, any> & MbxSharedProps;
 
     /** Custom error box content, displayed when FormField is in error state */
     errorLabel?: BuilderComponent;

@@ -11,11 +11,11 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Css variable</div>                                           | <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
-| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                          | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                    |
-| <div style='text-align:center;margin:auto;'>[--mbx-divider-color-light](#-mbx-divider-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-divider-color-dark](#-mbx-divider-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>Css variable</div>                                           | <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                  |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                          | <div style='text-align:center;margin:auto;'>/</div>                                                                                                        |
+| <div style='text-align:center;margin:auto;'>[--mbx-divider-color-light](#-mbx-divider-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-divider-color-dark](#-mbx-divider-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div>   |
 
 ## CSS Variables list
 
@@ -39,9 +39,9 @@ Fallback value for `--mbx-divider-color-light` and `--mbx-divider-color-dark`
 
 ### --mbx-divider-color-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
-| -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                  |
+| -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div> |
 
 <br>
 
@@ -53,9 +53,9 @@ Divider color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/do
 
 ### --mbx-divider-color-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
-| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-divider-color](#-mbx-divider-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div> |
 
 <br>
 

@@ -12,13 +12,18 @@
   },
   "expanded": {
     "type": "boolean",
-    "description": "Extra content showed only when container is expanded (`compact` === `true`)",
+    "description": "Extra content displayed only when container is expanded (`compact` === `true`)",
     "default": false
   },
   "compact": {
     "description": "if true, shows the whole container content",
     "type": "boolean",
     "default": false
+  },
+  "arrowPosition": {
+    "description": "Arrow icon position",
+    "type": "'right' | 'left' | 'top' | 'bottom'",
+    "default": "bottom"
   },
   "onChange": {
     "type": "(newValue: boolean) => void",

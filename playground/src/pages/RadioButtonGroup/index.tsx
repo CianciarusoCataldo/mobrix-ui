@@ -1,4 +1,5 @@
 import {
+  BooleanProp,
   HiddenProp,
   NumberProp,
   StringProp,
@@ -11,9 +12,11 @@ import { RadioButtonGroup } from "mobrix-ui-preview";
 const RadioButtonsPage = () => (
   <ComponentPage name="RadioButtonGroup">
     <DemoComponent
+      label="RadioButtonGroup"
       props={{
         value: NumberProp(-1),
         elementClassName: StringProp(""),
+        horizontal: BooleanProp(false),
         buttons: HiddenProp([
           { text: "textPosition = left", textPosition: "left" },
           { text: "textPosition = top", textPosition: "top" },
@@ -22,7 +25,7 @@ const RadioButtonsPage = () => (
         ]),
         ...demoProps,
       }}
-      rows={[["value", "elementClassName"], ...demoRows]}
+      rows={[["value", "elementClassName", "horizontal"], ...demoRows]}
       children={RadioButtonGroup}
     />
   </ComponentPage>

@@ -1,22 +1,23 @@
-[data-mbx-id="codebox"] {
-  overflow: hidden;
+[data-mbx-id="code"] {
   padding: 0.1rem;
   justify-content: center;
-  background: var(--mbx-c-cdb-bg);
-  color: var(--mbx-c-cdb-txt);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  --mbx-defbg: var(--mbx-codebox-background);
+  --mbx-deftxt: var(--mbx-codebox-text);
+  --mbx-bg-l: var(--mbx-codebox-background-light);
+  --mbx-txt-l: var(--mbx-codebox-text-light);
+  --mbx-bg-d: var(--mbx-codebox-background-dark);
+  --mbx-txt-d: var(--mbx-codebox-text-dark);
 }
 
-[data-mbx-id="codebox"] [data-mbx-scl*="cd-cp"] {
-  align-items: flex-end;
-}
-
-[data-mbx-id="codebox"] [data-mbx-scl*="cd-cd"] {
+[data-mbx-id="code"] > div {
   padding: 1rem;
   line-height: 1.5rem;
   overflow: auto;
 }
 
-[data-mbx-id="codebox"] [data-mbx-scl*="cd-cd"] [data-mbx-scl*="cdl"] {
-  margin-top: 0;
-  margin-bottom: 0;
+[data-mbx-id="code"] > [data-mbx-id="icb"] {
+  margin-left: auto;
 }

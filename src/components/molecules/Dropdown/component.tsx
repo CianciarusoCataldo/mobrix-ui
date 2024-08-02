@@ -1,195 +1,115 @@
 import React from "react";
 
-import { DropdownProps, MbxUiReactiveComponentBuilder } from "../../../types";
+import { BuilderProps, DropdownProps, MbxUiComponent } from "../../../types";
 
-import { Button } from "../../atoms";
+import { ArrowIcon } from "../../../icons";
+
 import Popup from "../Popup";
 import Container from "../Container";
+import IconButton from "../../atoms/IconButton";
+import Button from "../../atoms/Button";
 
-const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
-  number,
-  DropdownProps
-> = ({
-  elements = [],
-  onChange = () => {},
+const Component: MbxUiComponent<DropdownProps, Omit<BuilderProps, "name">> = ({
   value,
-  hideArrow,
-  dark,
-  disabled,
-  setValue,
-  shadow,
+  onChange,
   /* istanbul ignore next */
   onFocusLost = () => {},
-  ...commonProps
+  dark,
+  background,
+  disabled,
+  hover,
+  active,
+  shadow,
+  a11y,
+  elements = [],
+  hideArrow,
+  ...props
 }) => {
-  const [isVisible, setVisible] = React.useState(false);
-  const [selected, selectItem] = React.useState<number>(-2);
-  const selectedItem = elements[value] || <div />;
+  const [vis, setVis] = React.useState(false);
 
-  const keyDownCallback = (visibility: boolean) => {
-    isVisible !== visibility && setVisible(visibility);
-    selectItem(-1);
+  const cProps = {
+    dark,
+    background,
+    disabled,
+    hover,
+    a11y: false,
   };
 
   /* istanbul ignore next */
-  const onFocusLostCallback = () => {
+  const fcFunc = () => {
     onFocusLost();
-    keyDownCallback(false);
+    setVis(false);
+  };
+
+  const invert = () => setVis(!vis);
+
+  const chFunc = (ind) => {
+    onChange(ind);
+    setVis(false);
   };
 
   return {
-    commonProps: {
-      ...commonProps,
-      dark,
+    mbxProps: {
+      ...cProps,
       shadow,
-      onFocusLost: onFocusLostCallback,
+      onFocusLost: fcFunc,
       onKeyDown: (e) => {
-        let actualSelected = selected;
         switch (e.code) {
-          /* istanbul ignore next */
-          case "Tab": {
-            if (
-              (e.shiftKey && actualSelected === 0) ||
-              actualSelected === elements.length - 1
-            ) {
-              keyDownCallback(false);
-            }
-            break;
-          }
           case "Enter": {
-            if (selected > -1) {
-              onChange(selected);
-              setValue(selected);
-              keyDownCallback(false);
-              return;
-            } else {
-              setVisible(!isVisible);
-            }
-            e.preventDefault();
-            break;
-          }
-
-          case "Escape": {
-            keyDownCallback(false);
+            invert();
             return;
           }
 
-          case "ArrowUp": {
-            if (actualSelected === 0) {
-              keyDownCallback(false);
-              return;
-            }
-            actualSelected -= 1;
-            break;
-          }
-
-          case "ArrowDown": {
-            if (actualSelected === elements.length - 1) {
-              keyDownCallback(false);
-              return;
-            }
-            if (!isVisible) {
-              setVisible(true);
-            }
-            actualSelected += 1;
-            break;
+          case "Escape": {
+            setVis(false);
+            return;
           }
         }
-
-        actualSelected !== selected && selectItem(actualSelected);
       },
+      a11y,
+      ...props,
     },
     Component: [
-      <Button
-        animated={false}
+      <Container
+        active={active}
+        key="t-bt"
+        dark={dark}
+        background={false}
         shadow={false}
-        background={commonProps.background}
-        disabled={disabled}
-        onClick={() => {
-          keyDownCallback(!isVisible);
-        }}
-        dark={dark}
-        debug={{
-          scl: "drop-bt;nout",
-        }}
-        key="options-menu"
         a11y={false}
       >
-        <div
-          tabIndex={-1}
-          key="drop_sel_el_lb"
-          data-mbx-scl="flxr;drop-sel-el;mauto;nout"
-        >
-          {selectedItem}
-        </div>
-        <Container
-          background={false}
-          animated={false}
-          shadow={false}
+        <IconButton onClick={invert} key="opts-m" {...cProps} a11y={false}>
+          <div tabIndex={-1} key="drop_s_e_b">
+            {elements[value] || <div />}
+          </div>
+        </IconButton>
+        <IconButton
+          active={active}
+          {...cProps}
+          onClick={invert}
+          data-mbx-rt={vis}
+          key="ar-ic"
           hide={hideArrow}
-          dark={dark}
-          key="icon"
-          disabled={disabled}
-          a11y={false}
-          debug={{
-            scl: `ic;nout;rot-${isVisible}`,
-          }}
         >
-          <p tabIndex={-1}>
-            <i
-              data-mbx-scl="arr-ic;nout"
-              {...(disabled && {
-                "data-mbx-atts": "disabled",
-              })}
-            ></i>
-          </p>
-        </Container>
-      </Button>,
-      <Popup
-        background={commonProps.background}
-        key="options"
-        shadow={shadow}
-        disabled={disabled}
-        dark={dark}
-        hide={!isVisible}
-        a11y={false}
-        debug={{
-          scl: "flxc;opts",
-        }}
-      >
+          <ArrowIcon {...cProps} width="15" height="12" />
+        </IconButton>
+      </Container>,
+      <Popup key="opts" {...cProps} shadow={shadow} hide={!vis}>
         {elements.map((item, index) => (
           <Button
             animated={false}
             shadow={false}
-            background={false}
-            disabled={disabled}
-            onFocus={() => {
-              selectItem(index);
-            }}
+            active={active}
             onClick={() => {
-              onChange(index);
-              setValue(index);
-              keyDownCallback(false);
+              chFunc(index);
             }}
-            key={`item_${index}`}
-            debug={{
-              scl: `flxc;reg;${selected === index ? "selected" : ""}`,
-            }}
-            additionalProps={{
-              "data-mbx-first": index === 0,
-              "data-mbx-last": index === elements.length - 1,
-              "data-mbx-fts": "noShFc;colFc;",
-            }}
+            features={{ colFc: true }}
+            key={`it_${index}`}
+            {...cProps}
+            disabled={index === value || disabled}
+            a11y={a11y}
           >
-            <Container
-              a11y={false}
-              background={false}
-              shadow={false}
-              dark={dark}
-              debug={{ scl: "flxr;drop-el;" }}
-            >
-              {item}
-            </Container>
+            {item}
           </Button>
         ))}
       </Popup>,
@@ -197,4 +117,4 @@ const DropdownInternalComponent: MbxUiReactiveComponentBuilder<
   };
 };
 
-export default DropdownInternalComponent;
+export default Component;

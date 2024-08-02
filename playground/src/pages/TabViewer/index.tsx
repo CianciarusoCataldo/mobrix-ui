@@ -49,7 +49,7 @@ const TabViewerPage = () => (
                       fields={{
                         field_1: { header: "Example field", type: "boolean" },
                       }}
-                      submitLabel={"Submit"}
+                      submitContent={"Submit"}
                     />
                   </div>
                 ),

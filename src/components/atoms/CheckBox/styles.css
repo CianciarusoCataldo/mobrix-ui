@@ -1,10 +1,24 @@
 [data-mbx-id="check"] {
   height: 30px;
   width: 30px;
-  background: var(--mbx-c-chk-bg);
   padding: 0.2rem;
+  --mbx-align: center;
+  display: flex;
+  flex-direction: column;
+  --mbx-trdur: 0.1s;
+  --mbx-defbg: var(--mbx-checkbox-background);
+  --mbx-defbgh: var(--mbx-checkbox-background-hover);
+  --mbx-bg-l: var(--mbx-checkbox-background-light);
+  --mbx-bg-d: var(--mbx-checkbox-background-dark);
+  --mbx-bg-h-l: var(--mbx-checkbox-background-hover-light);
+  --mbx-bg-h-d: var(--mbx-checkbox-background-hover-dark);
 }
 
-[data-mbx-id="check"] > *:first-child {
-  fill: var(--mbx-c-chk-tk);
+[data-mbx-id="check"] > [data-mbx-img] {
+  --mbx-defic: var(--mbx-checkbox-tick);
+  --mbx-defich: var(--mbx-checkbox-tick-hover);
+  --mbx-icn-l: var(--mbx-checkbox-tick-light);
+  --mbx-icn-d: var(--mbx-checkbox-tick-dark);
+  --mbx-icn-hv-l: var(--mbx-checkbox-tick-hover-light);
+  --mbx-icn-hv-d: var(--mbx-checkbox-tick-hover-dark);
 }

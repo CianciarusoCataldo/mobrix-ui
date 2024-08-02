@@ -1,4 +1,12 @@
-[data-mbx-id="divider"] {
+[data-mbx-id="dvd"] {
+  --mbx-dvd-bg: var(--mbx-divider-color-light);
+  background-color: var(
+    --mbx-dvd-bg,
+    var(--mbx-divider-color, var(--mbx-c-txt))
+  );
   width: 100%;
-  background-color: var(--mbx-c-dv-bgc);
+}
+
+[data-mbx-id="dvd"][data-mbx-dk] {
+  --mbx-dvd-bg: var(--mbx-divider-color-dark);
 }

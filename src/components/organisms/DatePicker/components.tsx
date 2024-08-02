@@ -1,27 +1,27 @@
 import React from "react";
 
 import {
+  BuilderComponent,
   CalendarDate,
   DatePickerProps,
-  MbxUiReactiveComponent,
+  MbxUiComponent,
 } from "../../../types";
 
 import { defaultDays, defaultMonths } from "../Calendar/constants";
 
-import { getMonthsDuration } from "../Calendar/utils";
+import { durations } from "../Calendar/utils";
 
-import { CalendarIcon } from "./icons";
+import { CalendarIcon } from "../../../icons/generic";
 
 import Modal from "../../molecules/Modal";
 import Calendar from "../Calendar";
 import IconButton from "../../atoms/IconButton";
 import Label from "../../atoms/Label";
 
-const DatePickerInternalComponent: MbxUiReactiveComponent<
-  CalendarDate,
-  DatePickerProps & { today: CalendarDate & { dayOfTheMonth: number } }
+const Component: MbxUiComponent<
+  DatePickerProps & { today: CalendarDate & { dayOfTheMonth: number } },
+  BuilderComponent[]
 > = ({
-  setValue,
   today: todayDate,
   value,
   months: customMonths = defaultMonths,
@@ -34,88 +34,82 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
   onViewChange,
   animated,
   disabled,
+  active,
   calendarProps,
-  /* istanbul ignore next */
-  onChange = () => {},
+  shadow,
+  onChange,
   /* istanbul ignore next */
   onClose = () => {},
-  ...commonProps
+  a11y,
+  dark,
+  hover,
 }) => {
-  const [isVisible, setVisible] = React.useState<boolean>(false);
+  const [vis, setVis] = React.useState<boolean>(false);
   const year = value.year && value.year > 0 ? value.year : todayDate.year;
   const month =
     value.month !== undefined && value.month >= 0 && value.month <= 11
       ? value.month
       : todayDate.month;
 
-  const monthsDuration = getMonthsDuration(year);
+  const mDuration = durations(year);
 
   const day =
     value.dayOfTheMonth &&
     value.dayOfTheMonth > 0 &&
-    value.dayOfTheMonth <= monthsDuration[month]
+    value.dayOfTheMonth <= mDuration[month]
       ? value.dayOfTheMonth
       : todayDate.dayOfTheMonth;
 
   /* istanbul ignore next */
   const onCloseCallback = () => {
     onClose();
-    setVisible(false);
+    setVis(false);
   };
 
-  const DateLabel = ({ children }) => (
-    <Label
-      debug={{
-        scl: "dpick-el",
-      }}
-      dark={commonProps.dark}
-    >
-      {children}
+  const cProps = { a11y, disabled, dark, hover };
+
+  const dlabel = (val, key) => (
+    <Label key={key} {...cProps}>
+      {String(val)}
     </Label>
   );
 
   return [
-    <div key="d-pick_sels" data-mbx-scl="flxr;date-s">
-      <DateLabel>{String(day)}</DateLabel>
-      <DateLabel>{String(customMonths[month])}</DateLabel>
-      <DateLabel>{String(year)}</DateLabel>
+    <div key="dpk_sels" data-mbx-date-s>
+      {dlabel(day, "day")}
+      {dlabel(customMonths[month], "month")}
+      {dlabel(year, "year")}
     </div>,
     <IconButton
-      disabled={disabled}
-      dark={commonProps.dark}
-      onClick={() => setVisible(true)}
-      key="d-pick_cal_bt"
+      {...cProps}
+      onClick={() => setVis(true)}
+      key="dpk_cal_bt"
+      active={active}
     >
-      {CalendarIcon}
+      <CalendarIcon />
     </IconButton>,
     <Modal
-      disabled={disabled}
-      hide={!isVisible}
-      key="d-pick_mod"
+      {...cProps}
+      hide={!vis}
+      key="dpk_mod"
       animated={animated}
       onClose={onCloseCallback}
-      debug={{
-        scl: "dpick-mod",
-      }}
     >
       <Calendar
-        debug={{ scl: "mauto" }}
-        shadow={false}
+        {...cProps}
+        dark={false}
+        active={active}
+        shadow={shadow}
         days={customDays}
         months={customMonths}
         startMonth={startMonth}
         startYear={startYear}
-        disabled={disabled}
         hideArrows={hideArrows}
         fromToday={fromToday}
         onViewChange={onViewChange}
         dayLabel={dayLabel}
         value={{ day, month, year }}
-        onChange={(date) => {
-          onChange(date);
-          setValue(date);
-        }}
-        dark={commonProps.dark}
+        onChange={onChange}
         labelProps={{ dark: true }}
         {...calendarProps}
       />
@@ -123,4 +117,4 @@ const DatePickerInternalComponent: MbxUiReactiveComponent<
   ];
 };
 
-export default DatePickerInternalComponent;
+export default Component;

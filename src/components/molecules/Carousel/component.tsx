@@ -1,112 +1,115 @@
 import React from "react";
 import { CarouselProps, MbxUiReactiveComponent } from "../../../types";
 
-import { arrowIcon } from "./icons";
-
 import { IconButton } from "../../atoms";
+import { ArrowIcon } from "../../../icons";
+import Container from "../Container";
 
-const CarouselComponent: MbxUiReactiveComponent<number, CarouselProps> = ({
-  value: selectedItem,
-  setValue: setItem,
+const Component: MbxUiReactiveComponent<number, CarouselProps> = ({
+  value,
+  setValue,
   onChange = () => {},
   elements = [],
   dark,
   disabled,
   arrowClassName,
   dotClassName,
+  hover,
+  active,
+  a11y,
 }) => {
-  const [activeClassName, setActiveClassname] = React.useState("");
-  const [hoveredDot, setHoveredDot] = React.useState<number | null>(null);
-
+  const [anim, setAnim] = React.useState("");
   let dots: JSX.Element[] = [];
-  let elementsArray: JSX.Element[] = [];
-  const item =
-    Number(selectedItem) < elements.length ? Number(selectedItem) : 0;
-  const updateItem = (newItem: number) => {
+  let res: JSX.Element[] = [];
+  const item = Number(value) < elements.length ? Number(value) : 0;
+  const setItem = (newItem: number) => {
     onChange(newItem);
-    setItem(newItem);
+    setValue(newItem);
   };
+  const sProps = { a11y, dark, disabled };
 
-  if (elements.length > 0) {
-    elements.forEach((element, index) => {
-      elementsArray.push(
-        <div
-          key={`car_el_${index}`}
-          {...(index !== item && {
-            "data-mbx-atts": "hide;",
-          })}
-          data-mbx-scl="el"
-          data-mbx-animation={index === item ? activeClassName : ""}
-        >
-          {element}
-        </div>,
-      );
+  elements.forEach((element, index) => {
+    const isSel = index === item;
 
-      dots.push(
-        <IconButton
-          data-mbx-scl={`dot;full-${
-            index === item || (hoveredDot != null && index === hoveredDot)
-          }`}
-          className={dotClassName}
-          disabled={disabled}
-          key={`dot_${index}`}
-          onMouseEnter={() => setHoveredDot(index)}
-          onMouseLeave={() => setHoveredDot(null)}
-          onClick={() => {
-            setActiveClassname(index > item ? "from-right" : "from-left");
-            updateItem(index);
-          }}
-        />,
-      );
-    });
-  }
+    res.push(
+      <Container
+        unstyled
+        key={`cr_el_${index}`}
+        hide={!isSel}
+        style={
+          isSel && anim.length > 0
+            ? ({
+                "--mbx-car-an": `slide-in-${anim}`,
+              } as React.CSSProperties)
+            : undefined
+        }
+        {...sProps}
+      >
+        {element}
+      </Container>,
+    );
+    dots.push(
+      <IconButton
+        style={
+          isSel && {
+            background: "var(--mbx-bgh",
+          }
+        }
+        features={{ opFc: !isSel, wAll: !isSel }}
+        hover={hover && !isSel}
+        active={active && !isSel}
+        className={dotClassName}
+        key={`dot_${index}`}
+        onClick={() => {
+          setAnim(index > item ? "right" : "left");
+          setItem(index);
+        }}
+        {...sProps}
+      />,
+    );
+  });
+
+  const Arrow = ({
+    cond = item === 0,
+    dir = "left",
+    onClick = () => {
+      setItem(item - 1);
+    },
+    revX = false,
+  }) => (
+    <IconButton
+      key={`${dir}-arr`}
+      {...sProps}
+      disabled={disabled || cond}
+      active={active}
+      className={arrowClassName}
+      hover={hover}
+      onClick={() => {
+        setAnim(dir);
+        onClick();
+      }}
+    >
+      <ArrowIcon reverseX={revX} style={{ ...(cond && { fill: "none" }) }} />
+    </IconButton>
+  );
 
   return [
-    <div key="car_els" data-mbx-scl="flxr;car-els">
-      <IconButton
-        key="prev-ar"
-        hover
-        dark={dark}
-        additionalProps={{
-          "data-mbx-arrow": "prev",
-        }}
-        debug={{
-          features: { noShadowOnFocus: true, fillOnFocus: true },
-        }}
-        disabled={item === 0 || disabled}
-        className={arrowClassName}
+    <div key="car_els" data-mbx-car-els="">
+      <Arrow />
+      {res}
+      <Arrow
+        dir="right"
+        cond={item === elements.length - 1}
         onClick={() => {
-          setActiveClassname("from-left");
-          updateItem(item - 1);
+          setItem(item + 1);
         }}
-      >
-        {arrowIcon}
-      </IconButton>
-      {elementsArray}
-      <IconButton
-        hover
-        key="next-ar"
-        dark={dark}
-        additionalProps={{
-          "data-mbx-arrow": "next",
-        }}
-        debug={{
-          features: { noShadowOnFocus: true, fillOnFocus: true },
-        }}
-        className={arrowClassName}
-        disabled={item === elements.length - 1 || disabled}
-        onClick={() => {
-          setActiveClassname("from-right");
-          updateItem(item + 1);
-        }}
-      >
-        {arrowIcon}
-      </IconButton>
+        revX
+      />
     </div>,
-    <div key="car_dots" data-mbx-scl="flxr;dots;">
+    <div key="car_dots" data-mbx-cdots="">
       {dots}
     </div>,
   ];
 };
 
-export default CarouselComponent;
+export default Component;

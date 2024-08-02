@@ -2,7 +2,7 @@ import "./styles.css";
 
 import { InputComponent } from "../../../types";
 
-import { buildMbxReactiveComponent } from "../../../tools";
+import { buildMbxReactive } from "../../../tools/utils";
 
 /**
  * A flexible text input element
@@ -23,11 +23,12 @@ import { buildMbxReactiveComponent } from "../../../tools";
  * @param {'fade-in' | 'slide-in-left' | 'slide-in-right' | 'slide-in-top' | 'shake'} animation - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If `animated`=`true`, this parameter specifies which animation is used when component is rendered
  * @param {boolean} background - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component background
  * @param {boolean} hover - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component hover standard styles
+ * @param {boolean} active - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component click standard styles
  * @param {boolean} disabled - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If true, disable the component. The effect may vary depending on the component type
  * @param {(keyEvent : any) => void} onKeyDown - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when a key is pressed while using the component (for example, when writing text inside an `Input` component).
  * @param {() => void} onFocus - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when the component get the focus (for example, through tab key)
  * @param {() => void} onFocusLost - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when the component lose the focus (for example, when user clicks outside it)
- * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
+ * @param {Record<string, any>} props - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
  * @param {boolean} a11y - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable accessibility features
  * @param {string} a11yLabel - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If `a11y` = `true`, is used as [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) accessibility parameter
  * @param {number | string} tabIndex - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Regular [tabIndex a11y parameter](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex). If `a11y` = `true`, this parameter is passed as `tabIndex` prop to the component (if not set, its value will be `0`). If `a11y` = `false`, it is set to `-1` (so the component is not focusable through `tab` key`)
@@ -45,45 +46,49 @@ import { buildMbxReactiveComponent } from "../../../tools";
 const Input: InputComponent = ({
   /* istanbul ignore next */
   onChange = () => {},
-  value: inputValue,
+  value,
   placeholder,
   readOnly,
   autoresizable,
-  ...commonProps
+  ...props
 }) =>
-  buildMbxReactiveComponent<string | undefined>(commonProps, (sharedProps) => ({
-    name: "inputbox",
+  buildMbxReactive<string | undefined>(props, ({ disabled, ...sPrps }) => ({
+    name: "inp",
     wrapper: "input",
     features: {
       opHov: true,
+      wAllc: true,
     },
-    sharedCssClasses: autoresizable && "wfit",
-    props: (value, setValue) => ({
-      commonProps: {
-        ...sharedProps,
-        hover: sharedProps.hover && !readOnly,
-        additionalProps: {
-          ...sharedProps.additionalProps,
-          ...(autoresizable && {
-            size: Math.ceil(value.length / 2) + (value.length > 0 ? 0 : 1),
-          }),
-          type: "text",
-          value,
-          placeholder,
-          disabled: sharedProps.disabled,
-          readOnly: readOnly || sharedProps.disabled,
-          onChange: (e) => {
-            if (!readOnly && !sharedProps.disabled) {
-              const newValue = e.target.value ? e.target.value : "";
-              onChange(newValue);
-              setValue(newValue);
-            }
-          },
+    styles: {
+      ...(autoresizable && { width: "fit-content" }),
+    },
+    props: (val, setValue) => ({
+      addProps: {
+        type: "text",
+        ...sPrps.props,
+        ...(autoresizable && {
+          size: Math.ceil(val.length / 2) + (val.length > 0 ? 0 : 1),
+        }),
+        value: val,
+        placeholder,
+        disabled,
+        readOnly: readOnly || disabled,
+        onChange: (e) => {
+          if (!readOnly && !disabled) {
+            const newValue = e.target.value || "";
+            onChange(newValue);
+            setValue(newValue);
+          }
         },
       },
+      mbxProps: {
+        ...sPrps,
+        disabled,
+        hover: sPrps.hover && !readOnly,
+      },
     }),
-    inputValue,
-    defaultValue: "",
+    inpV: value,
+    defV: "",
   }));
 
 export default Input;

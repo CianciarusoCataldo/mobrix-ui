@@ -1,14 +1,20 @@
-import React from "react";
+import React, { Suspense } from "react";
 
-import { MbxUiReactiveComponent, TabViewerProps } from "../../../types";
+import {
+  BuilderComponent,
+  MbxUiComponent,
+  TabViewerProps,
+} from "../../../types";
 
 import Container from "../Container";
 import Button from "../../atoms/Button";
 
-const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
+const tabVComponent: MbxUiComponent<
+  TabViewerProps & { value: number },
+  BuilderComponent[]
+> = ({
   dark,
-  onChange = () => {},
-  setValue,
+  onChange,
   tabClassName = "",
   tabSelectedClassName = "",
   tabUnselectedClassName = "",
@@ -17,44 +23,56 @@ const tabViewerComponent: MbxUiReactiveComponent<number, TabViewerProps> = ({
   shadow,
   value,
   disabled,
-}) => [
-  <div key="tabs_list" data-mbx-scl="flxr;">
-    {tabs.map((tab, index) => (
-      <Button
-        shadow={shadow}
-        hover={!(index === value)}
-        animated={false}
-        disabled={disabled}
-        dark={dark}
-        debug={{
-          scl: `tab;${index === value ? "sel;" : ""}`,
-        }}
-        className={`${tabClassName} ${
-          index === value ? tabSelectedClassName : tabUnselectedClassName
-        }`}
-        key={`tab_${index}`}
-        onClick={() => {
-          setValue(index);
-          onChange(index);
-        }}
-      >
-        {tab.label}
-      </Button>
-    ))}
-  </div>,
-  <Container
-    debug={{
-      scl: "tb-v",
-    }}
-    className={tabViewClassName}
-    dark={dark}
-    key="tabs_view"
-    shadow={shadow}
-    background={false}
-    disabled={disabled}
-  >
-    {tabs.length > 0 && tabs.length > value ? tabs[value].content : <div />}
-  </Container>,
-];
+  hover,
+  active,
+  background,
+  a11y,
+}) => {
+  const Render = tabs[value]?.lazy || (() => <div />);
+  const sProps = { a11y, dark, background, disabled };
+  return [
+    <div {...(!a11y && { tabIndex: -1 })} key="t_l" data-mbx-tbls="">
+      {tabs.map((tab, index) => {
+        const isTabSel = index === value;
+        return (
+          <Button
+            {...sProps}
+            shadow={false}
+            hover={!isTabSel && hover}
+            animated={false}
+            active={!isTabSel && active}
+            features={{ opHov: !isTabSel, colFc: true }}
+            data-mbx-tbvsel={isTabSel}
+            className={`${tabClassName} ${
+              index === value ? tabSelectedClassName : tabUnselectedClassName
+            }`}
+            key={`tab_${index}`}
+            onClick={() => {
+              onChange(index);
+            }}
+          >
+            {tab.label}
+          </Button>
+        );
+      })}
+    </div>,
+    <Container
+      {...sProps}
+      key="t_vw"
+      className={tabViewClassName}
+      shadow={shadow}
+    >
+      {tabs.length > 0 && tabs.length > value ? (
+        tabs[value]?.content || (
+          <Suspense fallback={<div />}>
+            <Render />
+          </Suspense>
+        )
+      ) : (
+        <div />
+      )}
+    </Container>,
+  ];
+};
 
-export default tabViewerComponent;
+export default tabVComponent;

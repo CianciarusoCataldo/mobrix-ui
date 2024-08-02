@@ -16,15 +16,15 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-button-background](#-mbx-button-background)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
 | <div style='text-align:center;margin:auto;'>[--mbx-button-background-light](#-mbx-button-background-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-button-background](#-mbx-button-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div>             |
 | <div style='text-align:center;margin:auto;'>[--mbx-button-background-dark](#-mbx-button-background-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-button-background](#-mbx-button-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div>               |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#-mbx-button-text-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-light](#-mbx-button-text-color-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#-mbx-button-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-dark](#-mbx-button-text-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#-mbx-button-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div>               |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text](#-mbx-button-text)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-light](#-mbx-button-text-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-button-text](#-mbx-button-text)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div>                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-dark](#-mbx-button-text-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-button-text](#-mbx-button-text)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div>                           |
 | <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover](#-mbx-button-background-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
 | <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover-light](#-mbx-button-background-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover](#-mbx-button-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-hover-light)</div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover-dark](#-mbx-button-background-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-button-background-hover](#-mbx-button-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-hover-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#-mbx-button-text-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover-light](#-mbx-button-text-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#-mbx-button-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover-dark](#-mbx-button-text-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#-mbx-button-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-hover](#-mbx-button-text-hover)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                              | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-hover-light](#-mbx-button-text-hover-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-button-text-hover](#-mbx-button-text-hover)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-hover-light)</div>             |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-hover-dark](#-mbx-button-text-hover-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-button-text-hover](#-mbx-button-text-hover)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-hover-dark)</div>               |
 
 ## CSS Variables list
 
@@ -74,7 +74,7 @@ Button background when [dark mode](https://cianciarusocataldo.github.io/mobrix-u
 
 <br>
 
-### --mbx-button-text-color
+### --mbx-button-text
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -82,17 +82,17 @@ Button background when [dark mode](https://cianciarusocataldo.github.io/mobrix-u
 
 <br>
 
-Fallback value for `mbx-button-text-color-light` and `mbx-button-text-color-dark`
+Fallback value for `mbx-button-text-light` and `mbx-button-text-dark`
 
 <br>
 
 <br>
 
-### --mbx-button-text-color-light
+### --mbx-button-text-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#-mbx-button-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                  |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text](#-mbx-button-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div> |
 
 <br>
 
@@ -102,11 +102,11 @@ Button text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-u
 
 <br>
 
-### --mbx-button-text-color-dark
+### --mbx-button-text-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
-| ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color](#-mbx-button-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                |
+| ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text](#-mbx-button-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div> |
 
 <br>
 
@@ -158,7 +158,7 @@ Button background when [dark mode](https://cianciarusocataldo.github.io/mobrix-u
 
 <br>
 
-### --mbx-button-text-color-hover
+### --mbx-button-text-hover
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -166,17 +166,17 @@ Button background when [dark mode](https://cianciarusocataldo.github.io/mobrix-u
 
 <br>
 
-Fallback value for `mbx-button-text-color-hover-light` and `mbx-button-text-color-hover-dark`
+Fallback value for `mbx-button-text-hover-light` and `mbx-button-text-hover-dark`
 
 <br>
 
 <br>
 
-### --mbx-button-text-color-hover-light
+### --mbx-button-text-hover-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                          |
-| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#-mbx-button-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-hover](#-mbx-button-text-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-hover-light)</div> |
 
 <br>
 
@@ -186,11 +186,11 @@ Button text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-u
 
 <br>
 
-### --mbx-button-text-color-hover-dark
+### --mbx-button-text-hover-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                        |
-| ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-button-text-color-hover](#-mbx-button-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
+| ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-button-text-hover](#-mbx-button-text-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-hover-dark)</div> |
 
 <br>
 

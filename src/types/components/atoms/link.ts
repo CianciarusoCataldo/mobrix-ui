@@ -17,8 +17,11 @@ export type LinkProps = ComponentWithChildren<BuilderComponent> & {
   /** Link URL */
   to: string;
 
-  /**if true, the link will be opened in a new tab */
+  /** if true, the link will be opened in a new tab */
   newTab?: boolean;
+
+  /** if true, the link will be displayed underlined (default=`true`) */
+  underline?: boolean;
 };
 
 /**

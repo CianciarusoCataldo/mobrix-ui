@@ -66,7 +66,7 @@ selector options array, every element must be a string
 
 <br>
 
-className applied on every options inside the selector
+className applied on every option inside the selector
 
 <br>
 

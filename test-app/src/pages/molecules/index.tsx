@@ -103,6 +103,7 @@ const MoleculesPage = () => {
       shadow={false}
       background={false}
       className="App"
+      a11y={false}
       style={{ height: "110%" }}
     >
       <ComponentDemo
@@ -186,7 +187,11 @@ const MoleculesPage = () => {
             <div style={{ marginTop: "20px" }} />{" "}
             <DismissableCard header="header" body="body" footer="footer" />
             <div style={{ marginTop: "20px" }} />
-            <DismissableCard header="loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong header" body="body" footer="footer" />
+            <DismissableCard
+              header="loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong header"
+              body="body"
+              footer="footer"
+            />
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
               alwaysVisible
@@ -266,14 +271,14 @@ const MoleculesPage = () => {
             />
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
-              header="header"
+              header="no bg"
               body="body"
               footer="footer"
               background={false}
             />
             <div style={{ marginTop: "20px" }} />
             <DismissableCard
-              header="header"
+              header="no bg"
               body="body"
               footer="footer"
               background={false}
@@ -319,7 +324,7 @@ const MoleculesPage = () => {
                 <img alt="" src={Elem2} width="250px" height="250px" />,
               ]}
             />
-
+            <p>No hover</p>
             <Carousel
               hover={false}
               elements={[
@@ -337,7 +342,7 @@ const MoleculesPage = () => {
                 <img alt="" src={Elem2} width="250px" height="250px" />,
               ]}
             />
-
+            <p>No Background</p>
             <Carousel
               background={false}
               elements={[
@@ -418,18 +423,18 @@ const MoleculesPage = () => {
               dark
               expanded={
                 <div>
-                  <p>Expanded area</p>
-                  <p>Expanded area</p>
-                  <p>Expanded area</p>
-                  <p>Expanded area</p>
+                  <Label dark>Expanded area</Label>
+                  <Label dark>Expanded area</Label>
+                  <Label dark>Expanded area</Label>
+                  <Label dark>Expanded area</Label>
                 </div>
               }
             >
               <div>
-                <p>Content</p>
-                <p>Content</p>
-                <p>Content</p>
-                <p>Content</p>
+                <Label dark>Expanded area</Label>
+                <Label dark>Expanded area</Label>
+                <Label dark>Expanded area</Label>
+                <Label dark>Expanded area</Label>
               </div>
             </ExpandableContainer>
 
@@ -592,7 +597,7 @@ const MoleculesPage = () => {
             <button onClick={() => setPopupVisible(!isPopupVisible)}>
               toggle popups
             </button>
-            <Popup hide={!isPopupVisible}>
+            <Popup hide={!isPopupVisible} background={false}>
               <div>Content</div>
             </Popup>
           </div>
@@ -883,6 +888,33 @@ const MoleculesPage = () => {
               <div style={{ marginTop: "20px" }} />
               <Table
                 background={false}
+                dark
+                headers
+                rows={[
+                  ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                ]}
+              />
+              <div style={{ marginTop: "20px" }} />
+              <Table
+                disabled
+                headers
+                rows={[
+                  ["h1", "h2", "h3", "h3", "h4", "h6", "h7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                  ["el1", "el2", "el3", "el4", "el5", "el6", "el7"],
+                ]}
+              />
+              <div style={{ marginTop: "20px" }} />
+              <Table
+                disabled
                 dark
                 headers
                 rows={[

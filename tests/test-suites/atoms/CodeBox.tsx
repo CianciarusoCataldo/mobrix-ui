@@ -22,15 +22,12 @@ const codeBoxTest = () => {
       const copyStub = jest.fn();
       const wrapper = mount(
         <CodeBox
-          highlight={false}
           copyButton={false}
           value={`npm i 'mobrix-ui' "mobrix-engine"`}
         />
       );
       navigator.clipboard.writeText = copyStub;
-      wrapper
-        .find('[data-mbx-scl*="cd-cp"] [data-mbx-id="icon-button"]')
-        .simulate("click");
+      wrapper.find('[data-mbx-id="icb"]').simulate("click");
       expect(copyStub).toBeCalled;
     });
   });

@@ -26,14 +26,10 @@ export const ModalPage = () => {
               title: StringProp("title"),
               children: StringProp("children"),
               [closeButtonLabel]: BooleanProp(true),
-              closeOutside: BooleanProp(true),
               ...demoProps,
               hide: HiddenProp(true),
             }}
-            rows={[
-              ["title", "children", "closeOutside", closeButtonLabel],
-              ...demoRows,
-            ]}
+            rows={[["title", "children", closeButtonLabel], ...demoRows]}
           >
             {(props: any, setProps: (props: any) => any) => {
               let modalProps = { ...props };

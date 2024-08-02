@@ -1,28 +1,61 @@
-[data-mbx-id="table"] {
-  border-width: 3px;
-  border-style: solid;
-  border-collapse: collapse;
+[data-mbx-id="tbl"] {
   table-layout: fixed;
-  color: var(--mbx-c-table-txt);
-  border-color: var(--mbx-c-table-bord);
-  background: var(--mbx-c-table-bg);
+  --mbx-defbg: var(--mbx-table-background);
+  --mbx-deftxt: var(--mbx-table-text);
+  --mbx-deftbhbg: var(--mbx-table-header-background);
+  --mbx-deftbhtxt: var(--mbx-table-header-text);
+  --mbx-bg-l: var(--mbx-table-background-light);
+  --mbx-txt-l: var(--mbx-table-text-light);
+  --mbx-bg-d: var(--mbx-table-background-dark);
+  --mbx-txt-d: var(--mbx-table-text-dark);
+  --mbx-tbl-bord: var(
+    --mbx-table-border-light,
+    var(--mbx-table-border, darkslategrey)
+  );
+  --mbx-tblh-bg: var(
+    --mbx-table-header-background-light,
+    var(--mbx-deftbhbg, linear-gradient(to right, #354155, #2b3546))
+  );
+  --mbx-tblh-txt: var(
+    --mbx-table-header-text-light,
+    var(--mbx-deftbhtxt, whitesmoke)
+  );
 }
 
-[data-mbx-id="table"] tr {
+[data-mbx-id="tbl"][data-mbx-dk] {
+  --mbx-tblh-bg: var(
+    --mbx-table-header-background-dark,
+    var(--mbx-deftbhbg, linear-gradient(to right, #4b5b77, #3e4c64))
+  );
+  --mbx-tblh-txt: var(
+    --mbx-table-header-text-dark,
+    var(--mbx-deftbhtxt, #ffffff)
+  );
+  --mbx-tbl-bord: var(
+    --mbx-table-border-dark,
+    var(--mbx-table-border, #dbdbdb)
+  );
+}
+
+[data-mbx-id="tbl"][data-mbx-trn] {
+  --mbx-tblh-bg: transparent !important;
+}
+
+[data-mbx-id="tbl"] tr {
   border-collapse: collapse;
 }
 
-[data-mbx-id="table"] [data-mbx-tcell="true"] {
+[data-mbx-id="tbl"] [data-mbx-tcell] {
   border-width: 2px;
   border-style: solid;
   border-collapse: collapse;
   padding: 0.4rem;
-  border-color: var(--mbx-c-table-bord);
-  color: var(--mbx-c-table-txt);
+  border-color: var(--mbx-tbl-bord);
+  color: var(--mbx-txt);
 }
 
-[data-mbx-id="table"] th[data-mbx-tcell="true"] {
+[data-mbx-id="tbl"] th[data-mbx-tcell] {
   font-size: large;
-  background: var(--mbx-c-table-head-bg);
-  color: var(--mbx-c-table-head-txt);
+  background: var(--mbx-tblh-bg);
+  color: var(--mbx-tblh-txt);
 }

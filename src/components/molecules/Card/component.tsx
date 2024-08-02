@@ -3,68 +3,69 @@ import React from "react";
 import { MbxUiComponent, CardProps, BuilderComponent } from "../../../types";
 
 import { Divider } from "../../atoms";
+import Container from "../Container";
 
-const cardComponent: MbxUiComponent<CardProps, BuilderComponent[]> = ({
-  header,
-  body,
+const component: MbxUiComponent<CardProps, BuilderComponent[]> = ({
   children,
-  footer,
   dark,
-  noDividers,
-  noBottomDivider,
-  noTopDivider,
+  headerProps,
+  bodyProps,
+  footerProps,
+  dividerSize = "1px",
+  header,
   headerClassName,
+  noBottomDivider,
+  noDividers,
+  noTopDivider,
+  body,
   bodyClassName,
+  footer,
   footerClassName,
-  headerProps = {},
-  bodyProps = {},
-  footerProps = {},
-}) => [
-  <div
-    className={headerClassName}
-    key="card_h"
-    data-mbx-scl="cardc-head"
-    {...(!header && { "data-mbx-atts": "hide" })}
-    {...headerProps}
-  >
-    {header}
-  </div>,
-  <Divider
-    hide={!header || noDividers || noTopDivider}
-    size="1px"
-    key="card_t_d"
-    dark={dark}
-    debug={{
-      scl: "top-divider",
-    }}
-  />,
-  <div
-    className={bodyClassName}
-    data-mbx-scl="cardc-body"
-    key="card_b"
-    {...bodyProps}
-  >
-    {body}
-  </div>,
-  children,
-  <Divider
-    size="1px"
-    key="card_b_d"
-    dark={dark}
-    hide={!footer || noDividers || noBottomDivider}
-    debug={{
-      scl: "bottom-divider",
-    }}
-  />,
-  <div
-    className={footerClassName}
-    key="card_f"
-    data-mbx-scl="cardc-footer"
-    {...(!footer && { "data-mbx-atts": "hide" })}
-    {...footerProps}
-  >
-    {footer}
-  </div>,
-];
+  a11y,
+}) => {
+  const sPrp = { dark, unstyled: true, a11y: false };
+  return [
+    <Container
+      {...sPrp}
+      className={headerClassName}
+      key="c_h"
+      hide={!header}
+      props={headerProps}
+    >
+      {header}
+    </Container>,
+    <Divider
+      hide={!header || noDividers || noTopDivider}
+      size={dividerSize}
+      key="c_t_d"
+      dark={dark}
+    />,
+    <Container
+      {...sPrp}
+      className={bodyClassName}
+      data-mbx-cbody=""
+      key="c_b"
+      props={bodyProps}
+    >
+      {body}
+    </Container>,
+    children,
+    <Divider
+      size={dividerSize}
+      key="c_b_d"
+      dark={dark}
+      hide={!footer || noDividers || noBottomDivider}
+    />,
+    <Container
+      {...sPrp}
+      className={footerClassName}
+      key="c_f"
+      hide={!footer}
+      props={footerProps}
+    >
+      {footer}
+    </Container>,
+  ];
+};
 
-export default cardComponent;
+export default component;

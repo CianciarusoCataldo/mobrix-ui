@@ -5,16 +5,12 @@ import { Card } from "../../../src";
 const cardTest = () => {
   describe("Card", () => {
     test("Rendering test", () => {
-      let wrapper = mount(
-        <Card
-        >
-          Test label
-        </Card>
-      );
+      let wrapper = mount(<Card>Test label</Card>);
       expect(wrapper);
 
       wrapper = mount(
         <Card
+          dividerSize="2px"
           headerProps={{}}
           bodyProps={{}}
           footerProps={{}}

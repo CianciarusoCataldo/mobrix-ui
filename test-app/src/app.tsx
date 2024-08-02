@@ -6,14 +6,9 @@ import {
   Button,
   PackageVersion,
   Input,
+  Password,
 } from "./mobrix-ui-preview";
-import AtomsPage from "./pages/atoms";
-import MoleculesPage from "./pages/molecules";
-import OrganismsPage from "./pages/organisms";
 
-const Atoms = <AtomsPage />;
-const Molecules = <MoleculesPage />;
-const Organisms = <OrganismsPage />;
 const tabs = (
   <TabViewer
     animated
@@ -25,16 +20,16 @@ const tabs = (
     tabs={[
       {
         label: "Atoms",
-        content: Atoms,
+        lazy: React.lazy(() => import("./pages/atoms")),
         dismissable: true,
       },
       {
         label: "Molecules",
-        content: Molecules,
+        lazy: React.lazy(() => import("./pages/molecules")),
       },
       {
         label: "Organisms",
-        content: Organisms,
+        lazy: React.lazy(() => import("./pages/organisms")),
       },
     ]}
   />
@@ -77,13 +72,30 @@ const App = () => {
           onClick={() => {
             setVisible(!isVisible);
           }}
+          data-mbx-t="2"
         >
           Toggle drawer
         </Button>
-        <Input autoresizable />
+        <Password
+          onChange={(e) => {
+            console.log(e);
+          }}
+        />
+        <Password
+          dark
+          onChange={(e) => {
+            console.log(e);
+          }}
+        />
         <div style={{ marginTop: "20px" }} />
         <Input value="text" onChange={(value) => console.log(value)} />
         <PackageVersion
+          name="mobrix-ui"
+          user="CianciarusoCataldo"
+          source="github-release"
+        />
+        <PackageVersion
+          dark
           name="mobrix-ui"
           user="CianciarusoCataldo"
           source="github-release"

@@ -15,7 +15,8 @@ import { AutoResizableComponent } from "../../global/global";
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-export type InputProps = GenericInputComponent & AutoResizableComponent &
+export type InputProps = GenericInputComponent &
+  AutoResizableComponent &
   ComponentWithValue<string> &
   ComponentWithCallback;
 

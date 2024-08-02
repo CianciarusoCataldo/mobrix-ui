@@ -8,56 +8,50 @@ import {
   SupportedEnvironment,
 } from "../../../types";
 
-import { parseCode } from "./utils";
+import { getCode } from "./utils";
 
-import { CopyIcon } from "./icons";
+import { CopyIcon } from "../../../icons/generic";
 
 import IconButton from "../IconButton";
 
-const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
-  disabled,
-  hover,
-  value: code = "",
-  highlight = true,
+const cdbComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
+  value = "",
   environment = "terminal",
   copyButton = true,
+  disabled,
+  hover,
+  active,
+  a11y,
 }) => {
-  let parseCodeLineFunction: (
-    inputCode: string,
-    environment: SupportedEnvironment,
-  ) => CodeBlock[] =
-    highlight && code.length > 0
-      ? parseCode
-      : (inputCode, environment) => [{ code: inputCode }];
+  const parse: (inp: string, env: SupportedEnvironment) => CodeBlock[] =
+    value.length > 0 ? getCode : (inp, e) => [{ value: inp }];
 
   return [
-    <div key="cd_cp" data-mbx-scl="flxc;cd-cp">
-      <IconButton
-        onClick={() => code && navigator.clipboard.writeText(code)}
-        hide={!copyButton}
-        disabled={disabled}
-        hover={hover}
-      >
-        {CopyIcon}
-      </IconButton>
-    </div>,
-    <div key="cd_cd" data-mbx-scl="cd-cd">
-      {code.split("\n").map((codeLine, lineIndex) => (
-        <p data-mbx-scl="cdl" key={`codeline_${lineIndex}`}>
-          {parseCodeLineFunction(codeLine, environment).map(
-            (codeBlock, blockIndex) =>
-              codeBlock.code === " " ? (
-                ` `
-              ) : (
-                <span
-                  key={`codeblock_${blockIndex}`}
-                  {...(codeBlock.color && {
-                    style: { color: codeBlock.color },
-                  })}
-                >
-                  {codeBlock.code}
-                </span>
-              ),
+    <IconButton
+      a11y={a11y}
+      key="cd_cp"
+      onClick={() => value && navigator.clipboard.writeText(value)}
+      hide={!copyButton}
+      disabled={disabled}
+      hover={hover}
+      active={active}
+    >
+      <CopyIcon disabled={disabled} />
+    </IconButton>,
+    <div key="cd_cd">
+      {value.split("\n").map((codl, lIndex) => (
+        <p style={{ margin: 0 }} key={`cd_l_${lIndex}`}>
+          {parse(codl, environment).map((cBlock, bIndex) =>
+            cBlock.code === " " ? (
+              ` `
+            ) : (
+              <span
+                key={`cdb_bl_${bIndex}`}
+                style={{ color: cBlock.color || "inherit" }}
+              >
+                {cBlock.code}
+              </span>
+            ),
           )}
         </p>
       ))}
@@ -65,4 +59,4 @@ const codeboxComponent: MbxUiComponent<CodeBoxProps, BuilderComponent[]> = ({
   ];
 };
 
-export default codeboxComponent;
+export default cdbComponent;

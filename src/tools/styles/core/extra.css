@@ -1,0 +1,8 @@
+[data-mbx-id="count"],
+[data-mbx-id="inp"],
+[data-mbx-id="selt"] {
+  border-color: transparent;
+  border-radius: 6px;
+  padding: 0.5rem;
+  --mbx-trdur: 0.1s !important;
+}

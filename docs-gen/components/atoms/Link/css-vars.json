@@ -1,28 +1,28 @@
 {
-  "--mbx-link-color": {
-    "description": "Fallback value for `mbx-link-color-light` and `mbx-link-color-dark`"
+  "--mbx-link-text": {
+    "description": "Fallback value for `mbx-link-text-light` and `mbx-link-text-dark`"
   },
-  "--mbx-link-color-light": {
+  "--mbx-link-text-light": {
     "description": "Link text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
-    "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-link-color"
+    "defaultGlobal": "--mbx-text-light",
+    "fallback": "--mbx-link-text"
   },
-  "--mbx-link-color-dark": {
+  "--mbx-link-text-dark": {
     "description": "Link text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
-    "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-link-color"
+    "defaultGlobal": "--mbx-text-dark",
+    "fallback": "--mbx-link-text"
   },
-  "--mbx-link-color-hover": {
-    "description": "Fallback value for `mbx-link-color-hover-light` and `mbx-link-color-hover-dark`"
+  "--mbx-link-text-hover": {
+    "description": "Fallback value for `mbx-link-text-hover-light` and `mbx-link-text-hover-dark`"
   },
-  "--mbx-link-color-hover-light": {
+  "--mbx-link-text-hover-light": {
     "description": "Link text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
-    "defaultInternal": "--mbx-link-color-light",
-    "fallback": "--mbx-link-color-hover"
+    "defaultInternal": "--mbx-link-text-light",
+    "fallback": "--mbx-link-text-hover"
   },
-  "--mbx-link-color-hover-dark": {
+  "--mbx-link-text-hover-dark": {
     "description": "Link text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
-    "defaultInternal": "--mbx-link-color-dark",
-    "fallback": "--mbx-link-color-hover"
+    "defaultInternal": "--mbx-link-text-dark",
+    "fallback": "--mbx-link-text-hover"
   }
 }

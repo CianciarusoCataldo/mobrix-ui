@@ -12,18 +12,18 @@
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-codebox-background"
   },
-  "--mbx-codebox-text-color": {
-    "description": "Fallback value for `mbx-codebox-text-color-light` and `mbx-codebox-text-color-dark`",
+  "--mbx-codebox-text": {
+    "description": "Fallback value for `mbx-codebox-text-light` and `mbx-codebox-text-dark`",
     "isFallback": true
   },
-  "--mbx-codebox-text-color-light": {
-    "description": "CodeBox text-color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
-    "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-codebox-text-color"
+  "--mbx-codebox-text-light": {
+    "description": "CodeBox text when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
+    "defaultGlobal": "--mbx-text-light",
+    "fallback": "--mbx-codebox-text"
   },
-  "--mbx-codebox-text-color-dark": {
-    "description": "CodeBox text-color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
-    "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-codebox-text-color"
+  "--mbx-codebox-text-dark": {
+    "description": "CodeBox text when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
+    "defaultGlobal": "--mbx-text-dark",
+    "fallback": "--mbx-codebox-text"
   }
 }

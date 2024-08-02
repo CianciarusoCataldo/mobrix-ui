@@ -1,41 +1,41 @@
 {
-  "--mbx-spinner-success-color": {
-    "description": "Fallback value for `--mbx-spinner-success-color-light` and `--mbx-spinner-success-color-dark`"
+  "--mbx-spinner-success": {
+    "description": "Fallback value for `--mbx-spinner-success-light` and `--mbx-spinner-success-dark`"
   },
-  "--mbx-spinner-success-color-light": {
+  "--mbx-spinner-success-light": {
     "description": "Spinner success color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "default": "#05bc29",
-    "fallback": "--mbx-spinner-success-color"
+    "fallback": "--mbx-spinner-success"
   },
-  "--mbx-spinner-success-color-dark": {
+  "--mbx-spinner-success-dark": {
     "description": "Spinner success color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "default": "#05bc29",
-    "fallback": "--mbx-spinner-success-color"
+    "fallback": "--mbx-spinner-success"
   },
-  "--mbx-spinner-error-color": {
-    "description": "Fallback value for `--mbx-spinner-error-color-light` and `--mbx-spinner-error-color-dark`"
+  "--mbx-spinner-error": {
+    "description": "Fallback value for `--mbx-spinner-error-light` and `--mbx-spinner-error-dark`"
   },
-  "--mbx-spinner-error-color-light": {
+  "--mbx-spinner-error-light": {
     "description": "Spinner error color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "default": "#ff0000",
-    "fallback": "--mbx-spinner-error-color"
+    "fallback": "--mbx-spinner-error"
   },
-  "--mbx-spinner-error-color-dark": {
+  "--mbx-spinner-error-dark": {
     "description": "Spinner error color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "default": "#ff0000",
-    "fallback": "--mbx-spinner-error-color"
+    "fallback": "--mbx-spinner-error"
   },
-  "--mbx-spinner-loading-color": {
-    "description": "Fallback value for `--mbx-spinner-loading-color-light` and `--mbx-spinner-loading-color-dark`"
+  "--mbx-spinner-loading": {
+    "description": "Fallback value for `--mbx-spinner-loading-light` and `--mbx-spinner-loading-dark`"
   },
-  "--mbx-spinner-loading-color-light": {
+  "--mbx-spinner-loading-light": {
     "description": "Spinner loading color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "default": "#202020",
-    "fallback": "--mbx-spinner-loading-color"
+    "fallback": "--mbx-spinner-loading"
   },
-  "--mbx-spinner-loading-color-dark": {
+  "--mbx-spinner-loading-dark": {
     "description": "Spinner loading color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "default": "#202020",
-    "fallback": "--mbx-spinner-loading-color"
+    "fallback": "--mbx-spinner-loading"
   }
 }

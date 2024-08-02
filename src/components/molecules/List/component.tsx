@@ -1,36 +1,51 @@
 import React from "react";
 
 import { BuilderComponent, ListProps, MbxUiComponent } from "../../../types";
+import Container from "../Container";
 
-const listComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
+const lComponent: MbxUiComponent<ListProps, BuilderComponent[]> = ({
   elements = [],
-  onClick,
+  dark,
   hover,
+  onClick,
   disabled,
+  active,
+  a11y,
 }) => {
-  let features = "";
-
-  if (!disabled) {
-    features += "colFc;";
-    if (onClick && hover) {
-      features += "opHov;";
-    }
-  }
+  const cond = onClick !== undefined;
 
   return elements.map((element, index) => (
-    <div
+    <Container
+      a11y={a11y}
+      background={false}
+      shadow={false}
+      dark={dark}
+      hover={cond && hover}
       key={`el_${index}`}
-      onClick={onClick && (() => onClick(index))}
-      data-mbx-fts={features}
-      data-mbx-scl={`flxr;nout;lis-el;${onClick ? "click;" : ""}`}
-      tabIndex={0}
+      {...(cond && {
+        active: active,
+        props: { onClick: () => onClick(index) },
+        style: {
+          cursor: "pointer",
+        },
+        onKeyDown: (e) => {
+          if (e.code === "Enter") {
+            onClick(index);
+          }
+        },
+      })}
+      features={{
+        colFc: true,
+        opHov: cond,
+      }}
+      disabled={disabled}
     >
-      <svg viewBox="0 0 9 9" key="lst_dot" data-mbx-scl="dot">
+      <svg viewBox="0 0 9 9" key="l_dot">
         <circle cx={4.5} cy={4.5} r={3.5} />
       </svg>
-      <div key={"lst_el_" + index}>{element}</div>
-    </div>
+      <div key={"l_el_" + index}>{element}</div>
+    </Container>
   ));
 };
 
-export default listComponent;
+export default lComponent;

@@ -1,0 +1,7 @@
+{
+  "since": "4.0.0",
+  "description": "A modern password input field",
+  "see": [],
+  "examples": [],
+  "extend": { "component": { "type": "atoms", "name": "Input" } }
+}

@@ -1,75 +1,99 @@
-[data-mbx-id="slider"] {
+[data-mbx-id="sld"] {
   appearance: none;
   border-radius: 12px;
-  background: var(--mbx-c-sld-bg);
   -webkit-appearance: none;
+  width: fit-content;
+  --mbx-defbg: var(--mbx-slider-background);
+  --mbx-defbgh: var(--mbx-slider-background-hover);
+  --mbx-bg-l: var(--mbx-slider-background-light);
+  --mbx-bg-d: var(--mbx-slider-background-dark);
+  --mbx-bg-h-l: var(--mbx-slider-background-hover-light);
+  --mbx-bg-h-d: var(--mbx-slider-background-hover-dark);
+  --mbx-sld-tb: var(
+    --mbx-slider-thumb-light,
+    var(--mbx-slider-thumb, radial-gradient(#2d3748, #1d232e))
+  );
+  --mbx-sld-op-act: 0.4;
+  --mbx-defsldtbh: var(--mbx-slider-thumb-hover, var(--mbx-sld-tb));
 }
 
-[data-mbx-id="slider"]::-webkit-slider-thumb {
+[data-mbx-id="sld"][data-mbx-dk] {
+  --mbx-sld-tb: var(
+    --mbx-slider-thumb-dark,
+    var(--mbx-slider-thumb, radial-gradient(#e3e4e9, #9b9999))
+  );
+}
+
+[data-mbx-id="sld"]::-webkit-slider-thumb {
   border-radius: 50%;
   appearance: none;
   width: 30px;
   height: 30px;
-  background: var(--mbx-c-sld-tb);
+  box-shadow: var(--mbx-sh);
+  background: var(--mbx-sld-tb);
   -webkit-appearance: none;
+  opacity: var(--mbx-op);
 }
 
-[data-mbx-id="slider"]::-ms-track {
-  width: 100%;
-  background: var(--mbx-c-sld-tb);
-  border-color: transparent;
-  color: transparent;
-}
-
-[data-mbx-id="slider"]::-moz-range-thumb {
+[data-mbx-id="sld"]::-moz-range-thumb {
   border-color: transparent;
   color: transparent;
   border-radius: 50%;
+  box-shadow: var(--mbx-sh);
   appearance: none;
   width: 30px;
   height: 30px;
-  background: var(--mbx-c-sld-tb);
+  background: var(--mbx-sld-tb);
+  opacity: var(--mbx-op);
 }
 
-[data-mbx-id="slider"][data-mbx-atts*="sh"]::-webkit-slider-thumb {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+[data-mbx-id="sld"]::-webkit-slider-thumb {
+  box-shadow: var(--mbx-sh);
+  opacity: var(--mbx-op);
+}
+
+[data-mbx-id="sld"]::-ms-thumb {
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: var(--mbx-sld-tb);
+}
+
+[data-mbx-id="sld"][data-mbx-hv] {
+  --mbx-sld-op-hov: 0.6;
+  --mbx-sld-tb-h: var(--mbx-slider-thumb-hover-light, var(--mbx-defsldtbh));
+}
+
+[data-mbx-id="sld"][data-mbx-hv][data-mbx-dk] {
+  --mbx-sld-tb-h: var(--mbx-slider-thumb-hover-dark, var(--mbx-defsldtbh));
 }
 
 @media (hover) {
-  [data-mbx-id="slider"][data-mbx-atts*="hv"]::-ms-track:hover {
-    width: 100%;
-    background: var(--mbx-c-sld-tb-h);
-    border-color: transparent;
-    color: transparent;
-    opacity: 0.8;
+  [data-mbx-id="sld"]::-moz-range-thumb:hover {
+    opacity: var(--mbx-sld-op-hov, var(--mbx-op));
+    background: var(--mbx-sld-tb-h, var(--mbx-sld-tb));
   }
 
-  [data-mbx-id="slider"][data-mbx-atts*="hv"]::-moz-range-thumb:hover {
-    border-color: transparent;
-    color: transparent;
-    border-radius: 50%;
-    appearance: none;
-    width: 30px;
-    height: 30px;
-    opacity: 0.8;
-    background: var(--mbx-c-sld-tb-h);
+  [data-mbx-id="sld"]::-webkit-slider-thumb:hover {
+    background: var(--mbx-sld-tb-h, var(--mbx-sld-tb));
+    opacity: var(--mbx-sld-op-hov, var(--mbx-op));
   }
 
-  [data-mbx-id="slider"][data-mbx-atts*="hv"]::-webkit-slider-thumb:hover {
-    border-radius: 50%;
-    appearance: none;
-    width: 30px;
-    height: 30px;
-    background: var(--mbx-c-sld-tb-h);
-    -webkit-appearance: none;
-    opacity: 0.8;
+  [data-mbx-id="sld"]::-ms-thumb:hover {
+    background: var(--mbx-sld-tb-h, var(--mbx-sld-tb));
+    opacity: var(--mbx-sld-op-hov, var(--mbx-op));
   }
 }
 
-[data-mbx-id="slider"][data-mbx-atts*="hv"]::-moz-range-thumb:active {
-  opacity: 0.6;
+[data-mbx-id="sld"]::-moz-range-thumb:active {
+  opacity: var(--mbx-sld-op-act, var(--mbx-op));
 }
 
-[data-mbx-id="slider"][data-mbx-atts*="hv"]::-webkit-slider-thumb:active {
-  opacity: 0.6;
+[data-mbx-id="sld"]::-webkit-slider-thumb:active {
+  opacity: var(--mbx-sld-op-act, var(--mbx-op));
+}
+
+[data-mbx-id="sld"]::-ms-thumb:active {
+  opacity: var(--mbx-sld-op-act, var(--mbx-op));
 }

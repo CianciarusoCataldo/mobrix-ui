@@ -1,13 +1,11 @@
 [data-mbx-id="link"] {
   font-size: 1rem;
   line-height: 1.5rem;
-  color: var(--mbx-c-link-txt);
-}
-
-[data-mbx-id="link"]:not([data-mbx-atts*="dsb"]):active {
-  font-weight: 700;
-}
-
-[data-mbx-id="link"][data-mbx-atts*="dsb"] {
-  text-decoration: underline;
+  --mbx-sh-def: none;
+  --mbx-deftxt: var(--mbx-link-text);
+  --mbx-deftxth: var(--mbx-link-text-hover);
+  --mbx-txt-l: var(--mbx-link-text-light);
+  --mbx-txt-d: var(--mbx-link-text-dark);
+  --mbx-txt-h-l: var(--mbx-link-text-hover-light);
+  --mbx-txt-h-d: var(--mbx-link-text-hover-dark);
 }

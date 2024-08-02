@@ -1,49 +1,45 @@
-[data-mbx-id="radio-group"] {
+[data-mbx-id="rgr"] {
   padding: 0.3rem;
+  width: fit-content;
+  display: flex;
+  --mbx-defbg: var(--mbx-radiogroup-background);
+  --mbx-deftxt: var(--mbx-radiogroup-text);
+  --mbx-bg-l: var(--mbx-radiogroup-background-light);
+  --mbx-txt-l: var(--mbx-radiogroup-text-light);
+  --mbx-bg-d: var(--mbx-radiogroup-background-dark);
+  --mbx-txt-d: var(--mbx-radiogroup-text-dark);
 }
 
-[data-mbx-id="radio-group"][data-mbx-atts*="bg"] {
-  background: var(--mbx-c-radg-bg);
-  color: var(--mbx-c-radg-txt);
-}
-
-[data-mbx-id="radio-group"] [data-mbx-scl*="rdg-el"] {
+[data-mbx-id="rgr"] > div {
   justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0.3rem;
 }
 
-[data-mbx-id="radio-group"][data-mbx-scl*="or-h"] [data-mbx-scl*="rdg-el"] {
-  margin: 0.3rem 1rem 0.3rem 1rem;
+[data-mbx-id="rgr"] > div > [data-mbx-id="rd"] {
+  --mbx-ovbg: var(--mbx-radiogroup-radio-background);
+  --mbx-ovbgh: var(--mbx-radiogroup-radio-background-hover);
+  --mbx-ovrdic: var(--mbx-radiogroup-radio-icon-background);
+  --mbx-ovbgl: var(--mbx-radiogroup-radio-background-light);
+  --mbx-ovbghl: var(--mbx-radiogroup-radio-background-hover-light);
+  --mbx-ovrdicl: var(--mbx-radiogroup-radio-icon-background-light);
+  --mbx-ovbgd: var(--mbx-radiogroup-radio-background-dark);
+  --mbx-ovbghd: var(--mbx-radiogroup-radio-background-hover-dark);
+  --mbx-ovrdicd: var(--mbx-radiogroup-radio-icon-background-dark);
 }
 
-[data-mbx-id="radio-group"]:not([data-mbx-scl*="or-h"])
-  [data-mbx-scl*="rdg-el"] {
-  margin: 1rem 0.3rem 1rem 0.3rem;
-}
-
-[data-mbx-id="radio-group"] [data-mbx-scl*="t-left"] > [data-mbx-id="label"] {
-  margin-right: 0.7rem;
-}
-
-[data-mbx-id="radio-group"] [data-mbx-scl*="t-right"] > [data-mbx-id="label"] {
-  margin-left: 0.7rem;
-}
-
-[data-mbx-id="radio-group"] [data-mbx-scl*="t-top"] > [data-mbx-id="label"] {
-  margin-bottom: 0.7rem;
-  margin-top: 0;
-}
-
-[data-mbx-id="radio-group"] [data-mbx-scl*="t-bottom"] > [data-mbx-id="label"] {
-  margin-top: 0.7rem;
-  margin-bottom: 0;
+[data-mbx-id="rgr"][data-mbx-rgh="true"] > div {
+  margin: 0.3rem 1rem;
 }
 
 @media (max-width: 600px) {
-  [data-mbx-id="radio-group"][data-mbx-scl*="or-h"] {
-    flex-direction: column;
+  [data-mbx-id="rgr"] {
+    flex-direction: column !important;
   }
 
-  [data-mbx-id="radio-group"][data-mbx-scl*="or-h"] [data-mbx-scl*="rdg-el"] {
-    margin: 1rem 0.3rem 1rem 0.3rem;
+  [data-mbx-id="rgr"] > div {
+    margin: 1rem 0.3rem !important;
   }
 }

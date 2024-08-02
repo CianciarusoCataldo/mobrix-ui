@@ -1,0 +1,29 @@
+{
+  "value": {
+    "type": "string",
+    "description": "text input value - extended from [Input component](../../atoms/Input/props.md#value)",
+    "comment": "text input value - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input Input}"
+  },
+  "placeholder": {
+    "type": "string",
+    "description": "label showed when no value is set - extended from [Input component](../../atoms/Input/props.md#placeholder)",
+    "comment": "label showed when no value is set - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input Input}"
+  },
+  "readOnly": {
+    "type": "boolean",
+    "description": "if true, component value can only be set with `value` parameter - extended from [Input component](../../atoms/Input/props.md#readOnly)",
+    "default": "false",
+    "comment": "if true, component value can only be set with `value` parameter - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input Input}"
+  },
+  "onChange": {
+    "type": "(newValue: string) => void",
+    "default": "() => {}",
+    "description": "Callback triggered when Input component input value is changed by the user - extended from [Input component](../../atoms/Input/props.md#onChange)",
+    "comment": "Callback triggered when Input component input value is changed by the user - extended from {@link https://cianciarusocataldo.github.io/mobrix-ui/components/atoms/Input Input}"
+  },
+  "show": {
+    "type": "boolean",
+    "description": "Show/hide the password",
+    "default": "false"
+  }
+}

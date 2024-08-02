@@ -9,7 +9,10 @@ const embeddedVideoTest = () => {
       expect(wrapper);
 
       wrapper = mount(
-        <EmbeddedVideo url="https://www.youtube.com/watch?v=O5PuFu3_iy0" />
+        <EmbeddedVideo
+          a11y={false}
+          url="https://www.youtube.com/watch?v=O5PuFu3_iy0"
+        />
       );
       expect(wrapper);
 

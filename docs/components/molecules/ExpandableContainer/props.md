@@ -18,6 +18,7 @@
 | <div style='text-align:center;margin:auto;'>[wrapper](#wrapper)</div> | <div style='text-align:center;margin:auto;'>`div` &#124; `header` &#124; `footer`</div> | <div style='text-align:center;margin:auto;'>div</div> |
 | <div style='text-align:center;margin:auto;'>[expanded](#expanded)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[compact](#compact)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[arrowPosition](#arrowposition)</div> | <div style='text-align:center;margin:auto;'>`right` &#124; `left` &#124; `top` &#124; `bottom`</div> | <div style='text-align:center;margin:auto;'>bottom</div> |
 | <div style='text-align:center;margin:auto;'>[onChange](#onchange)</div> | <div style='text-align:center;margin:auto;'>(newValue: boolean) => void</div> | <div style='text-align:center;margin:auto;'>() => {}</div> |
 
 <br>
@@ -67,7 +68,7 @@ component wrapper type - extended from [Container component](../../molecules/Con
 
 <br>
 
-Extra content showed only when container is expanded (`compact` === `true`)
+Extra content displayed only when container is expanded (`compact` === `true`)
 
 <br>
 
@@ -83,6 +84,21 @@ Extra content showed only when container is expanded (`compact` === `true`)
 <br>
 
 if true, shows the whole container content
+
+<br>
+
+<br>
+
+### arrowPosition
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>`right` &#124; `left` &#124; `top` &#124; `bottom`</div> | <div style='text-align:center;margin:auto;'>bottom</div> |
+
+<br>
+
+Arrow icon position
 
 <br>
 

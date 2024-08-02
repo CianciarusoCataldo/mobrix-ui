@@ -1,4 +1,4 @@
-import { demoProps } from "constants/demo-props";
+import { demoProps, demoRows } from "constants/demo-props";
 
 import OnIcon from "./on.svg";
 import OffIcon from "./off.svg";
@@ -24,10 +24,7 @@ const TogglePage = () => (
             [iconLabel]: BooleanProp(false),
             ...demoProps,
           }}
-          rows={[
-            ["value", iconLabel, "dark"],
-            ["className", "shadow", "unstyled", "hide"],
-          ]}
+          rows={[["value", iconLabel], ...demoRows]}
         >
           {(props: any, setProps: (props: any) => void) => {
             let actualProps = { ...props };

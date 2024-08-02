@@ -5,8 +5,10 @@ import { Drawer } from "../../../src";
 const drawerTest = () => {
   describe("Drawer", () => {
     test("Rendering test", () => {
-      let wrapper = mount(<Drawer position="left" closeOnClickOutside />);
-      wrapper.find('[data-mbx-scl*="drw-close"]').simulate("click");
+      let wrapper = mount(
+        <Drawer animated hide position="left" closeOnClickOutside />
+      );
+      wrapper.find('[data-mbx-id="icb"]').simulate("click");
       expect(wrapper);
     });
 
@@ -21,7 +23,7 @@ const drawerTest = () => {
           <p>Test drawer content</p>
         </Drawer>
       );
-      wrapper.find('[data-mbx-scl*="drw-close"]').simulate("click");
+      wrapper.find('[data-mbx-id="icb"]').simulate("click");
       expect(onCloseStub).toBeCalled;
 
       wrapper = mount(
@@ -29,7 +31,7 @@ const drawerTest = () => {
           unstyled
           // @ts-ignore
           position="fhgdjhsl"
-          additionalProps={{}}
+          props={{}}
           onClose={onCloseStub}
         >
           <p>Test drawer content</p>

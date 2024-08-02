@@ -11,17 +11,17 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Css variable</div>                                                           | <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div> |
-| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-color](#-mbx-spinner-success-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                          | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-color-light](#-mbx-spinner-success-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-color](#-mbx-spinner-success-color)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-color-dark](#-mbx-spinner-success-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-color](#-mbx-spinner-success-color)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-error-color](#-mbx-spinner-error-color)</div>                 | <div style='text-align:center;margin:auto;'>/</div>                                                          | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-error-color-light](#-mbx-spinner-error-color-light)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-spinner-error-color](#-mbx-spinner-error-color)</div>     | <div style='text-align:center;margin:auto;'>#ff0000</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-error-color-dark](#-mbx-spinner-error-color-dark)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-spinner-error-color](#-mbx-spinner-error-color)</div>     | <div style='text-align:center;margin:auto;'>#ff0000</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading-color](#-mbx-spinner-loading-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                          | <div style='text-align:center;margin:auto;'>/</div>       |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading-color-light](#-mbx-spinner-loading-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading-color](#-mbx-spinner-loading-color)</div> | <div style='text-align:center;margin:auto;'>#202020</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading-color-dark](#-mbx-spinner-loading-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading-color](#-mbx-spinner-loading-color)</div> | <div style='text-align:center;margin:auto;'>#202020</div> |
+| <div style='text-align:center;margin:auto;'>Css variable</div>                                               | <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div> |
+| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-success](#-mbx-spinner-success)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                              | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-light](#-mbx-spinner-success-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-spinner-success](#-mbx-spinner-success)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-dark](#-mbx-spinner-success-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-spinner-success](#-mbx-spinner-success)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-error](#-mbx-spinner-error)</div>                 | <div style='text-align:center;margin:auto;'>/</div>                                              | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-error-light](#-mbx-spinner-error-light)</div>     | <div style='text-align:center;margin:auto;'>[--mbx-spinner-error](#-mbx-spinner-error)</div>     | <div style='text-align:center;margin:auto;'>#ff0000</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-error-dark](#-mbx-spinner-error-dark)</div>       | <div style='text-align:center;margin:auto;'>[--mbx-spinner-error](#-mbx-spinner-error)</div>     | <div style='text-align:center;margin:auto;'>#ff0000</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading](#-mbx-spinner-loading)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                              | <div style='text-align:center;margin:auto;'>/</div>       |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading-light](#-mbx-spinner-loading-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading](#-mbx-spinner-loading)</div> | <div style='text-align:center;margin:auto;'>#202020</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading-dark](#-mbx-spinner-loading-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading](#-mbx-spinner-loading)</div> | <div style='text-align:center;margin:auto;'>#202020</div> |
 
 ## CSS Variables list
 
@@ -29,7 +29,7 @@
 
 <br>
 
-### --mbx-spinner-success-color
+### --mbx-spinner-success
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -37,17 +37,17 @@
 
 <br>
 
-Fallback value for `--mbx-spinner-success-color-light` and `--mbx-spinner-success-color-dark`
+Fallback value for `--mbx-spinner-success-light` and `--mbx-spinner-success-dark`
 
 <br>
 
 <br>
 
-### --mbx-spinner-success-color-light
+### --mbx-spinner-success-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div> |
-| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-color](#-mbx-spinner-success-color)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div> |
+| ------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-success](#-mbx-spinner-success)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |
 
 <br>
 
@@ -57,11 +57,11 @@ Spinner success color when [dark mode](https://cianciarusocataldo.github.io/mobr
 
 <br>
 
-### --mbx-spinner-success-color-dark
+### --mbx-spinner-success-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div> |
-| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-success-color](#-mbx-spinner-success-color)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div> |
+| ------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-success](#-mbx-spinner-success)</div> | <div style='text-align:center;margin:auto;'>#05bc29</div> |
 
 <br>
 
@@ -71,7 +71,7 @@ Spinner success color when [dark mode](https://cianciarusocataldo.github.io/mobr
 
 <br>
 
-### --mbx-spinner-error-color
+### --mbx-spinner-error
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -79,17 +79,17 @@ Spinner success color when [dark mode](https://cianciarusocataldo.github.io/mobr
 
 <br>
 
-Fallback value for `--mbx-spinner-error-color-light` and `--mbx-spinner-error-color-dark`
+Fallback value for `--mbx-spinner-error-light` and `--mbx-spinner-error-dark`
 
 <br>
 
 <br>
 
-### --mbx-spinner-error-color-light
+### --mbx-spinner-error-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div> |
-| -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-error-color](#-mbx-spinner-error-color)</div> | <div style='text-align:center;margin:auto;'>#ff0000</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div> |
+| -------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-error](#-mbx-spinner-error)</div> | <div style='text-align:center;margin:auto;'>#ff0000</div> |
 
 <br>
 
@@ -99,11 +99,11 @@ Spinner error color when [dark mode](https://cianciarusocataldo.github.io/mobrix
 
 <br>
 
-### --mbx-spinner-error-color-dark
+### --mbx-spinner-error-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div> |
-| -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-error-color](#-mbx-spinner-error-color)</div> | <div style='text-align:center;margin:auto;'>#ff0000</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div> |
+| -------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-error](#-mbx-spinner-error)</div> | <div style='text-align:center;margin:auto;'>#ff0000</div> |
 
 <br>
 
@@ -113,7 +113,7 @@ Spinner error color when [dark mode](https://cianciarusocataldo.github.io/mobrix
 
 <br>
 
-### --mbx-spinner-loading-color
+### --mbx-spinner-loading
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -121,17 +121,17 @@ Spinner error color when [dark mode](https://cianciarusocataldo.github.io/mobrix
 
 <br>
 
-Fallback value for `--mbx-spinner-loading-color-light` and `--mbx-spinner-loading-color-dark`
+Fallback value for `--mbx-spinner-loading-light` and `--mbx-spinner-loading-dark`
 
 <br>
 
 <br>
 
-### --mbx-spinner-loading-color-light
+### --mbx-spinner-loading-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div> |
-| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading-color](#-mbx-spinner-loading-color)</div> | <div style='text-align:center;margin:auto;'>#202020</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div> |
+| ------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading](#-mbx-spinner-loading)</div> | <div style='text-align:center;margin:auto;'>#202020</div> |
 
 <br>
 
@@ -141,11 +141,11 @@ Spinner loading color when [dark mode](https://cianciarusocataldo.github.io/mobr
 
 <br>
 
-### --mbx-spinner-loading-color-dark
+### --mbx-spinner-loading-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div> |
-| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading-color](#-mbx-spinner-loading-color)</div> | <div style='text-align:center;margin:auto;'>#202020</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div> |
+| ------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-spinner-loading](#-mbx-spinner-loading)</div> | <div style='text-align:center;margin:auto;'>#202020</div> |
 
 <br>
 

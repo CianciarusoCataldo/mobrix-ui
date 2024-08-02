@@ -2,45 +2,35 @@ import React from "react";
 
 import { BuilderComponent, MbxUiComponent, ModalProps } from "../../../types";
 
+import Card from "../Card";
 import DismissableCard from "../DismissableCard";
 
-const modalComponent: MbxUiComponent<ModalProps, BuilderComponent> = ({
+const mdComponent: MbxUiComponent<ModalProps, BuilderComponent> = ({
   children,
+  disabled,
   className,
   dark,
-  hide,
   onClose,
-  closeOutside,
   animated,
-  disabled,
-  /* istanbul ignore next */
-  onFocusLost = () => {},
+  hover,
 }) => {
-  /* istanbul ignore next */
-  const onFocusLostCallback = () => {
-    if (!hide) {
-      onFocusLost();
-      closeOutside && onClose();
-    }
+  const cProps = {
+    hover,
+    disabled,
+    noDividers: true,
+    className,
+    dark: dark,
+    hide: false,
+    background: false,
+    shadow: false,
+    animated,
+    body: children,
   };
-
-  return (
-    <DismissableCard
-      disabled={disabled}
-      alwaysVisible
-      noTopDivider
-      className={className}
-      dark={dark}
-      hide={false}
-      onFocusLost={onFocusLostCallback}
-      background={false}
-      shadow={false}
-      onClose={onClose}
-      animated={animated}
-      body={children}
-      debug={{ scl: "flxc" }}
-    />
+  return onClose ? (
+    <DismissableCard alwaysVisible onClose={onClose} {...cProps} />
+  ) : (
+    <Card {...cProps} />
   );
 };
 
-export default modalComponent;
+export default mdComponent;

@@ -1,8 +1,0 @@
-[data-mbx-id] {
-  /* Calendar */
-  --mbx-d-cal-tod: red;
-
-  /** DatePicker **/
-  --mbx-d-dtp-ic-h-l: blue;
-  --mbx-d-dtp-ic-h-d: orange;
-}

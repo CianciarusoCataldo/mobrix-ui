@@ -16,9 +16,9 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background](#-mbx-radiogroup-background)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                  |
 | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background-light](#-mbx-radiogroup-background-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background](#-mbx-radiogroup-background)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-light)</div>                                               |
 | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background-dark](#-mbx-radiogroup-background-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-background](#-mbx-radiogroup-background)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-dark)</div>                                                 |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#-mbx-radiogroup-text-color)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                  |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color-light](#-mbx-radiogroup-text-color-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#-mbx-radiogroup-text-color)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div>                                               |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color-dark](#-mbx-radiogroup-text-color-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#-mbx-radiogroup-text-color)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div>                                                 |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text](#-mbx-radiogroup-text)</div>                                                 | <div style='text-align:center;margin:auto;'>/</div>                                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                  |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-light](#-mbx-radiogroup-text-light)</div>                                     | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text](#-mbx-radiogroup-text)</div>                                     | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div>                                                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-dark](#-mbx-radiogroup-text-dark)</div>                                       | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text](#-mbx-radiogroup-text)</div>                                     | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div>                                                             |
 | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background](#-mbx-radiogroup-radio-background)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                                  |
 | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-light](#-mbx-radiogroup-radio-background-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background](#-mbx-radiogroup-radio-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/RadioButton/css-vars/#-mbx-radio-background-light)</div>             |
 | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background-dark](#-mbx-radiogroup-radio-background-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-radio-background](#-mbx-radiogroup-radio-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-radio-background-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/RadioButton/css-vars/#-mbx-radio-background-dark)</div>               |
@@ -77,7 +77,7 @@ RadioGroup background when [dark mode](https://cianciarusocataldo.github.io/mobr
 
 <br>
 
-### --mbx-radiogroup-text-color
+### --mbx-radiogroup-text
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -85,17 +85,17 @@ RadioGroup background when [dark mode](https://cianciarusocataldo.github.io/mobr
 
 <br>
 
-Fallback value for `--mbx-radiogroup-text-color-light` and `--mbx-radiogroup-text-color-dark`
+Fallback value for `--mbx-radiogroup-text-light` and `--mbx-radiogroup-text-dark`
 
 <br>
 
 <br>
 
-### --mbx-radiogroup-text-color-light
+### --mbx-radiogroup-text-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#-mbx-radiogroup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                  |
+| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text](#-mbx-radiogroup-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div> |
 
 <br>
 
@@ -105,11 +105,11 @@ RadioGroup text color when [dark mode](https://cianciarusocataldo.github.io/mobr
 
 <br>
 
-### --mbx-radiogroup-text-color-dark
+### --mbx-radiogroup-text-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text-color](#-mbx-radiogroup-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                       | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-radiogroup-text](#-mbx-radiogroup-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div> |
 
 <br>
 

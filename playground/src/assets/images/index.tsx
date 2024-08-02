@@ -23,104 +23,13 @@ export const LogoIcon = (
 
 export const DocsIcon = <img alt="" src={Docs} width={30} height={30} />;
 
-export const BurgerIcon = (
-  <svg
-    viewBox="0 0 50 50"
-    className="fill-[white] w-12 h-12 hover:fill-[#aaaaaa] active:fill-[#5f5f5f] short:w-8 short:h-8 xsm:w-16 xsm:h-16"
-  >
-    <defs>
-      <clipPath id="prefix__b">
-        <path d="M0 0h50v50H0z" />
-      </clipPath>
-      <clipPath id="prefix__c">
-        <path d="M0 0h50v50H0z" />
-      </clipPath>
-      <clipPath id="prefix__d">
-        <path d="M0 0h50v50H0z" />
-      </clipPath>
-      <mask id="prefix__g">
-        <g filter="url(#prefix__a)">
-          <path fillOpacity={0.302} d="M0 0h50v50H0z" />
-        </g>
-      </mask>
-      <mask id="prefix__i">
-        <g filter="url(#prefix__a)">
-          <path fillOpacity={0.302} d="M0 0h50v50H0z" />
-        </g>
-      </mask>
-      <mask id="prefix__k">
-        <g filter="url(#prefix__a)">
-          <path fillOpacity={0.302} d="M0 0h50v50H0z" />
-        </g>
-      </mask>
-      <g id="prefix__h" clipPath="url(#prefix__b)">
-        <path d="M14.063 37.5v-4.71H37.5v4.71zm0 0" />
-      </g>
-      <g id="prefix__j" clipPath="url(#prefix__c)">
-        <path d="M14.063 28.137v-4.711H37.5v4.71zm0 0" />
-      </g>
-      <g id="prefix__l" clipPath="url(#prefix__d)">
-        <path d="M14.063 18.773v-4.71H37.5v4.71zm0 0" />
-      </g>
-      <linearGradient
-        id="prefix__e"
-        x1={0}
-        x2={512}
-        y1={256}
-        y2={256}
-        gradientTransform="scale(.09766)"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset={0} stopColor="#f67950" />
-        <stop offset={1} stopColor="#f15a29" />
-      </linearGradient>
-      <linearGradient
-        id="prefix__f"
-        x1={42.667}
-        x2={469.333}
-        y1={256.001}
-        y2={256.001}
-        gradientTransform="scale(.09766)"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop offset={0} stopColor="#f15a29" />
-        <stop offset={1} stopColor="#f67950" />
-      </linearGradient>
-      <filter
-        id="prefix__a"
-        width="100%"
-        height="100%"
-        x="0%"
-        y="0%"
-        filterUnits="objectBoundingBox"
-      >
-        <feColorMatrix
-          in="SourceGraphic"
-          values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"
-        />
-      </filter>
-    </defs>
-    <path
-      fill="url(#prefix__e)"
-      d="M50 25c0 13.809-11.191 25-25 25S0 38.809 0 25 11.191 0 25 0s25 11.191 25 25zm0 0"
-    />
-    <path
-      fill="url(#prefix__f)"
-      d="M25 45.832C13.512 45.832 4.168 36.488 4.168 25S13.512 4.168 25 4.168 45.832 13.512 45.832 25 36.488 45.832 25 45.832zm0 0"
-    />
-    <use mask="url(#prefix__g)" xlinkHref="#prefix__h" />
-    <use mask="url(#prefix__i)" xlinkHref="#prefix__j" />
-    <use mask="url(#prefix__k)" xlinkHref="#prefix__l" />
-    <path
-      fill="inherit"
-      d="M13.281 36.719v-4.711H36.72v4.71zm0-9.364v-4.71H36.72v4.71zm0-9.363v-4.71H36.72v4.71zm0 0"
-    />
-  </svg>
+export const DarkModeIcon = (
+  <img data-mbx-scl="nosel" alt="" src={DarkMode} width={30} />
 );
 
-export const DarkModeIcon = <img alt="" src={DarkMode} width={30} />;
-
-export const LightModeIcon = <img alt="" src={LightMode} width={30} />;
+export const LightModeIcon = (
+  <img data-mbx-scl="nosel" alt="" src={LightMode} width={30} />
+);
 
 export const LANGUAGES_ICONS: Record<string, JSX.Element> = {
   it: <img className="mr-2" alt="" width={15} height={15} src={IT_FLAG} />,
@@ -128,4 +37,88 @@ export const LANGUAGES_ICONS: Record<string, JSX.Element> = {
   fr: <img className="mr-2" alt="" width={15} height={15} src={FR_FLAG} />,
   es: <img className="mr-2" alt="" width={15} height={15} src={ES_FLAG} />,
   en: <img className="mr-2" alt="" width={15} height={15} src={EN_FLAG} />,
+};
+
+export const ArrowIcon = ({ className = "" }: { className?: string }) => (
+  <svg
+    tabIndex={0}
+    className={`w-8 h-10 hover:fill-[#ff9f51] active:fill-[#fb7a10] focus-visible:fill-[#fb7a10] focus:outline-none ${className}`}
+    viewBox="0 0 11 18"
+  >
+    <path d="M8.681.196l2.121 2.12-8.484 8.487-2.12-2.12z" />
+    <path d="M10.803 15.047l-2.121 2.121L.197 8.683l2.121-2.121z" />
+  </svg>
+);
+
+const size = {
+  width: "30px",
+  height: "30px",
+};
+
+export const ICONS = {
+  FULL: (
+    <svg viewBox="0 0 640 480" {...size}>
+      <defs>
+        <linearGradient id="prefix__a">
+          <stop stopColor="#fff" offset={0} />
+          <stop stopColor="#fff" stopOpacity={0} offset={1} />
+        </linearGradient>
+        <linearGradient
+          y2={0.892}
+          x2={0.5}
+          y1={0}
+          x1={0.5}
+          id="prefix__b"
+          xlinkHref="#prefix__a"
+        />
+      </defs>
+      <g fill="#fff">
+        <path d="M223.68 193.958h225.4V389h-225.4z" />
+        <path d="M178.596 215.074s156.274-108.026 156.35-109.797c.075-1.772 151.033 106.496 151.033 106.496l-307.383 3.301z" />
+      </g>
+      <circle fill="#ff7f00" cx={330} cy={242} r={230} />
+      <path
+        opacity={0.75}
+        fill="url(#prefix__b)"
+        fillRule="evenodd"
+        d="M527.64 189.227a196.774 157.93 0 11-393.549 0 196.774 157.93 0 11393.55 0z"
+      />
+    </svg>
+  ),
+  EMPTY: (
+    <svg viewBox="0 0 400 400" {...size}>
+      <path
+        d="M349.417 199.627c0 82.844-67.16 150.003-150.004 150.003S49.41 282.471 49.41 199.627 116.57 49.624 199.413 49.624s150.004 67.158 150.004 150.003z"
+        fill="#999"
+      />
+      <path
+        transform="matrix(2.7878 0 0 2.7878 -647.405 -765.254)"
+        d="M356.79 346.11c0 29.291-23.745 53.036-53.036 53.036s-53.036-23.745-53.036-53.036 23.745-53.036 53.036-53.036 53.036 23.745 53.036 53.036z"
+        fill="#999"
+      />
+      <path
+        transform="matrix(2.53784 0 0 2.53784 -571.472 -678.737)"
+        d="M356.79 346.11c0 29.291-23.745 53.036-53.036 53.036s-53.036-23.745-53.036-53.036 23.745-53.036 53.036-53.036 53.036 23.745 53.036 53.036z"
+        fill="#999"
+        filter="url(#prefix__c)"
+      />
+      <path
+        transform="translate(-540.441 -643.38) scale(2.43566)"
+        d="M356.79 346.11c0 29.291-23.745 53.036-53.036 53.036s-53.036-23.745-53.036-53.036 23.745-53.036 53.036-53.036 53.036 23.745 53.036 53.036z"
+        fill="#999"
+        filter="url(#prefix__c)"
+      />
+      <path
+        transform="matrix(2.34121 0 0 2.34121 -511.747 -610.697)"
+        d="M356.79 346.11c0 29.291-23.745 53.036-53.036 53.036s-53.036-23.745-53.036-53.036 23.745-53.036 53.036-53.036 53.036 23.745 53.036 53.036z"
+        fill="#999"
+      />
+      <path
+        d="M193.79 862.76c-13.331.3-26.186 7.358-33.336 19.742-7.69 13.32-6.714 29.266 1.155 41.331.853-26.532 21.132-46.515 46.324-45.054 8.258.48 16.054 3.2 22.859 7.59a39.222 39.222 0 00-16.394-18.326 39.368 39.368 0 00-20.608-5.282z"
+        fill="#970"
+        opacity={0.318}
+        transform="translate(-366.51 -2423.6) scale(2.9052)"
+      />
+    </svg>
+  ),
 };

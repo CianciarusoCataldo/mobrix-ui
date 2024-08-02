@@ -9,8 +9,7 @@
       "name": "Rater",
       "exclude": ["onChange", "readOnly"],
       "map": {
-        "value": "rate",
-        "type": "rateType"
+        "value": "rate"
       }
     }
   }

@@ -7,16 +7,15 @@ export const leapYear = (year: number) => {
 export const today = () => {
   const dateobj = new Date();
 
-  const todayDate = {
+  return {
     year: dateobj.getFullYear(),
     month: dateobj.getMonth(),
     dayOfTheMonth: dateobj.getDate(),
     day: dateobj.getDay(),
   };
-  return todayDate;
 };
 
-export const getMonthsDuration = (year: number) => [
+export const durations = (year: number) => [
   31,
   leapYear(year) ? 29 : 28,
   31,
@@ -31,7 +30,7 @@ export const getMonthsDuration = (year: number) => [
   31,
 ];
 
-export const getDateMatrix = (onScreenDate: CalendarDate, months: number[]) => {
+export const dMatrix = (onScreenDate: CalendarDate, months: number[]) => {
   const offset = new Date(onScreenDate.year, onScreenDate.month, 1).getDay();
 
   let matrix = [

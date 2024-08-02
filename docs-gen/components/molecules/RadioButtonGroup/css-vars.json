@@ -12,17 +12,17 @@
     "fallback": "--mbx-radiogroup-background",
     "description": "RadioGroup background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`"
   },
-  "--mbx-radiogroup-text-color": {
-    "description": "Fallback value for `--mbx-radiogroup-text-color-light` and `--mbx-radiogroup-text-color-dark`"
+  "--mbx-radiogroup-text": {
+    "description": "Fallback value for `--mbx-radiogroup-text-light` and `--mbx-radiogroup-text-dark`"
   },
-  "--mbx-radiogroup-text-color-light": {
-    "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-radiogroup-text-color",
+  "--mbx-radiogroup-text-light": {
+    "defaultGlobal": "--mbx-text-light",
+    "fallback": "--mbx-radiogroup-text",
     "description": "RadioGroup text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark)  is `off`"
   },
-  "--mbx-radiogroup-text-color-dark": {
-    "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-radiogroup-text-color",
+  "--mbx-radiogroup-text-dark": {
+    "defaultGlobal": "--mbx-text-dark",
+    "fallback": "--mbx-radiogroup-text",
     "description": "RadioGroup text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark)  is `on`"
   },
   "--mbx-radiogroup-radio-background": {

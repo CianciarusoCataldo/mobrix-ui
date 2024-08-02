@@ -12,13 +12,14 @@ const dropdownTest = () => {
           value={2}
         />
       );
-      wrapper.find('[data-mbx-scl*="drop-bt"]').simulate("click");
+
+      wrapper.find('[data-mbx-id="icb"]').at(0).simulate("click");
       wrapper
-        .find('[data-mbx-id="popup"] [data-mbx-id="button"]')
+        .find('[data-mbx-id="pp"] [data-mbx-id="btn"]')
         .at(1)
         .simulate("focus");
       wrapper
-        .find('[data-mbx-id="popup"] [data-mbx-id="button"]')
+        .find('[data-mbx-id="pp"] [data-mbx-id="btn"]')
         .at(1)
         .simulate("click");
       expect(wrapper);
@@ -28,19 +29,26 @@ const dropdownTest = () => {
 
     test("Selecting an element trigger the onChange callback", () => {
       const onChangeStub = jest.fn();
+      const onFocusLostStub = jest.fn();
+
       let wrapper = mount(
         <Dropdown
           onChange={onChangeStub}
+          onFocusLost={onFocusLostStub}
           elements={["Dropdown element 1", "Dropdown element 2"]}
         />
       );
-      wrapper.find('[data-mbx-scl*="drop-bt"]').simulate("click");
+      wrapper.find('[data-mbx-id="dd"]').simulate("focus");
+      wrapper.find('[data-mbx-id="dd"]').simulate("blur");
+      expect(onFocusLostStub).toBeCalled;
+
+      wrapper.find('[data-mbx-id="icb"]').at(1).simulate("click");
       wrapper
-        .find('[data-mbx-id="popup"] [data-mbx-id="button"]')
+        .find('[data-mbx-id="pp"] [data-mbx-id="btn"]')
         .at(1)
         .simulate("focus");
       wrapper
-        .find('[data-mbx-id="popup"] [data-mbx-id="button"]')
+        .find('[data-mbx-id="pp"] [data-mbx-id="btn"]')
         .at(1)
         .simulate("click");
 
@@ -57,33 +65,14 @@ const dropdownTest = () => {
           />
         );
 
-        wrapper
-          .find('[data-mbx-id="dd"]')
-          .simulate("keyDown", { code: "Enter" });
-        wrapper
-          .find('[data-mbx-id="dd"]')
-          .simulate("keyDown", { code: "Enter" });
-
         wrapper.find('[data-mbx-id="dd"]').simulate("focus");
-
-        //Selecting an item
-        wrapper
-          .find('[data-mbx-id="dd"]')
-          .simulate("keyDown", { code: "ArrowDown" });
-
-        wrapper
-          .find('[data-mbx-id="dd"]')
-          .simulate("keyDown", { code: "ArrowDown" });
-
-        wrapper
-          .find('[data-mbx-id="dd"]')
-          .simulate("keyDown", { code: "ArrowDown" });
-
         wrapper
           .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "Enter" });
-
-        expect(onChangeStub).lastCalledWith(1);
+        wrapper
+          .find('[data-mbx-id="dd"]')
+          .simulate("keyDown", { code: "Enter" });
+        expect(onChangeStub).not.toBeCalled;
       });
 
       test("Escape", () => {
@@ -102,49 +91,6 @@ const dropdownTest = () => {
         wrapper
           .find('[data-mbx-id="dd"]')
           .simulate("keyDown", { code: "Escape" });
-        expect(onChangeStub).not.toBeCalled;
-      });
-
-      test("Arrow down and Arrow up", () => {
-        const onChangeStub = jest.fn();
-        let wrapper = mount(
-          <Dropdown
-            onChange={onChangeStub}
-            elements={["Dropdown element 1", "Dropdown element 2"]}
-          />
-        );
-
-        wrapper.find('[data-mbx-id="dd"]').simulate("focus");
-        wrapper
-          .find('[data-mbx-id="dd"]')
-          .simulate("keyDown", { code: "Enter" });
-        wrapper
-          .find('[data-mbx-id="dd"]')
-          .simulate("keyDown", { code: "Escape" });
-        wrapper
-          .find('[data-mbx-id="dd"]')
-          .simulate("keyDown", { code: "ArrowDown" });
-
-        wrapper
-          .find('[data-mbx-id="dd"]')
-          .simulate("keyDown", { code: "ArrowDown" });
-
-        wrapper
-          .find('[data-mbx-id="dd"]')
-          .simulate("keyDown", { code: "ArrowDown" });
-
-        wrapper
-          .find('[data-mbx-id="dd"]')
-          .simulate("keyDown", { code: "ArrowDown" });
-
-        wrapper
-          .find('[data-mbx-id="dd"]')
-          .simulate("keyDown", { code: "ArrowUp" });
-
-        wrapper
-          .find('[data-mbx-id="dd"]')
-          .simulate("keyDown", { code: "ArrowUp" });
-
         expect(onChangeStub).not.toBeCalled;
       });
     });

@@ -1,27 +1,60 @@
 [data-mbx-id="form"] {
-  border-color: transparent;
+  --mbx-bg-l: var(--mbx-form-background-light, var(--mbx-form-background));
+  --mbx-txt-l: var(--mbx-form-text-light, var(--mbx-form-text));
+  --mbx-bg-d: var(--mbx-form-background-dark, var(--mbx-form-background));
+  --mbx-txt-d: var(--mbx-form-text-dark, var(--mbx-form-text));
   padding: 0.75rem;
   border-radius: 0.7rem;
-  background: var(--mbx-c-form-bg);
-  color: var(--mbx-c-form-txt);
+  display: flex;
+  flex-direction: column;
+  border-color: transparent;
+  --mbx-dttxt: var(--mbx-txt);
 }
 
-[data-mbx-id="form"] [data-mbx-scl*="title"] {
-  text-align: center;
+[data-mbx-id="form"] > div {
+  margin: 0.7rem 0;
+}
+
+[data-mbx-id="form"] > [data-mbx-ftitle] {
   margin-bottom: 0.9rem;
   font-size: 1.35rem;
   line-height: 1.75rem;
-  --mbx-label-text-color: var(--mbx-c-form-txt);
+  --mbx-label-text: var(--mbx-dttxt);
 }
 
-[data-mbx-id="form"] [data-mbx-scl*="frbox"] {
-  margin-left: auto;
-  margin-right: auto;
+[data-mbx-id="form"] > [data-mbx-sbt] {
+  margin-top: 0.9rem;
+  --mbx-ovbg: var(--mbx-form-submit-background);
+  --mbx-ovtxt: var(--mbx-form-submit-text);
+  --mbx-ovbgl: var(--mbx-form-submit-background-dark);
+  --mbx-ovtxtl: var(--mbx-form-submit-text-dark);
+  --mbx-ovbgd: var(--mbx-form-submit-background-light);
+  --mbx-ovtxtd: var(--mbx-form-submit-text-light);
 }
 
-[data-mbx-id="form"] [data-mbx-scl*="f-field"] {
-  margin-top: 0.4rem;
-  margin-bottom: 0.4rem;
+[data-mbx-id="form"] > div > [data-mbx-id="fld"] {
+  width: 100%;
+  --mbx-ovfldlab: var(--mbx-dttxt);
+  --mbx-ovfldtxt: var(--mbx-form-field-text);
+  --mbx-ovfldtxth: var(--mbx-form-field-text-hover);
+  --mbx-ovfldbg: var(--mbx-form-field-background);
+  --mbx-ovfldbgh: var(--mbx-form-field-background-hover);
+  --mbx-ovfldbgl: var(--mbx-form-field-background-light);
+  --mbx-ovfldbgd: var(--mbx-form-field-background-dark);
+  --mbx-ovfldtxtl: var(--mbx-form-field-text-light);
+  --mbx-ovfldtxtd: var(--mbx-form-field-text-dark);
+  --mbx-ovfldbghl: var(--mbx-form-field-background-hover-light);
+  --mbx-ovfldbghd: var(--mbx-form-field-background-hover-dark);
+  --mbx-ovfldtxthl: var(--mbx-form-field-text-hover-light);
+  --mbx-ovfldtxthd: var(--mbx-form-field-text-hover-dark);
+}
+
+[data-mbx-id="form"] > [data-mbx-ftitle],
+[data-mbx-id="form"] > [data-mbx-sbt],
+[data-mbx-id="form"] > div > [data-mbx-id="fld"][data-mbx-ftype="boolean"],
+[data-mbx-id="form"] > div > [data-mbx-id="fld"][data-mbx-ftype="checkbox"],
+[data-mbx-id="form"] > div > [data-mbx-id="fld"][data-mbx-ftype="radio"] {
+  margin: 0 auto;
 }
 
 @media (max-width: 330px) {
@@ -41,15 +74,7 @@
     min-width: 3%;
   }
 
-  [data-mbx-id="form"] [data-mbx-scl*="f-field"] {
+  [data-mbx-id="form"] > div {
     max-width: 65%;
   }
-}
-
-[data-mbx-id="form"] [data-mbx-scl*="s-bt"] {
-  margin-top: 0.9rem;
-  margin-left: auto;
-  margin-right: auto;
-  --mbx-button-text-color: var(--mbx-c-form-sub-txt);
-  --mbx-button-background: var(--mbx-c-form-sub-bg);
 }

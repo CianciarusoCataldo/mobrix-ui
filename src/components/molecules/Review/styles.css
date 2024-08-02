@@ -1,52 +1,60 @@
-[data-mbx-id="review"] {
+[data-mbx-id="rev"] {
   padding: 0.6rem;
-  background: var(--mbx-c-rev-bg);
-  color: var(--mbx-c-rev-txt);
+  --mbx-defbg: var(--mbx-review-background);
+  --mbx-deftxt: var(--mbx-review-text);
+  --mbx-bg-l: var(--mbx-review-background-light);
+  --mbx-txt-l: var(--mbx-review-text-light);
+  --mbx-bg-d: var(--mbx-review-background-dark);
+  --mbx-txt-d: var(--mbx-review-text-dark);
   border-radius: 3px;
-}
-
-[data-mbx-id="review"] [data-mbx-scl*="rev-ph"],
-[data-mbx-id="review"] [data-mbx-scl*="rev-ph"] img {
-  border-radius: 9999px;
-}
-
-[data-mbx-id="review"] [data-mbx-scl*="rev-url-c"] {
-  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  width: fit-content;
 }
 
-[data-mbx-id="review"] [data-mbx-scl*="rev-inf-b"] {
+[data-mbx-id="rev"] > [data-mbx-id="link"] {
+  margin-left: auto;
+}
+
+[data-mbx-id="rev"] > [data-mbx-id="rat"] {
+  margin: 0 auto;
+}
+
+[data-mbx-id="rev"] > div {
   margin-bottom: 0.4rem;
+  display: flex;
+  flex-direction: column;
 }
 
-[data-mbx-id="review"]
-  [data-mbx-scl*="rev-inf-b"]
-  [data-mbx-scl*="rev-us-name"] {
-  margin-left: 0.5rem;
+[data-mbx-id="rev"] > div > [data-mbx-id="label"] {
+  margin-top: 1rem;
+  overflow-wrap: break-word;
+  padding: 0 0.3rem;
+  width: 100%;
+}
+
+[data-mbx-id="rev"] > div > div {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+[data-mbx-id="rev"] > div > div > [data-mbx-id="label"] {
+  margin: auto 0 auto 0.5rem;
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.75rem;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
-[data-mbx-id="review"] [data-mbx-scl*="rev-inf-b"] [data-mbx-scl*="rev-ds"] {
-  margin-top: 1rem;
-  overflow-wrap: break-word;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
-  width: 100%;
+[data-mbx-id="rev"] div > div > div,
+[data-mbx-id="rev"] div > div > div img {
+  border-radius: 9999px;
 }
 
-[data-mbx-id="review"]
-  [data-mbx-scl*="rev-url-c"]
-  [data-mbx-class="default-icon"] {
-  fill: var(--mbx-c-rev-link);
-}
-
-[data-mbx-id="review"]
-  [data-mbx-scl*="rev-url-c"]
-  [data-mbx-class="github-icon"] {
-  fill: var(--mbx-c-rev-gh);
+[data-mbx-id="rev"] [data-mbx-img] {
+  --mbx-icn-l: var(
+    --mbx-review-icon-light,
+    var(--mbx-review-icon, #615f5f)
+  );
+  --mbx-icn-d: var(--mbx-review-icon-dark, var(--mbx-review-icon, white));
 }

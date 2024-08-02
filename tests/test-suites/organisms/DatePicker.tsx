@@ -27,10 +27,11 @@ const datePickerTest = () => {
         />
       );
 
-      wrapper.find('[data-mbx-id="icon-button"]').at(0).simulate("click");
+      wrapper.find('[data-mbx-id="icb"]').at(0).simulate("click");
       wrapper
-        .find('[data-mbx-id="calendar"]')
-        .find(`[data-mbx-calendar-day=4]`)
+        .find('[data-mbx-id="cal"]')
+        .find("td:not([data-mbx-dsb])")
+        .at(3)
         .simulate("click");
 
       expect(onChangeStub).toBeCalled;
@@ -42,9 +43,9 @@ const datePickerTest = () => {
         <DatePicker onClose={onCloseStub} fromToday={false} />
       );
 
-      wrapper.find('[data-mbx-id="icon-button"]').at(0).simulate("click");
+      wrapper.find('[data-mbx-id="icb"]').at(0).simulate("click");
 
-      wrapper.find('[data-mbx-scl*="dis-bt"]').simulate("click");
+      wrapper.find("[data-mbx-dchead]").simulate("click");
 
       expect(onCloseStub).toBeCalled;
     });

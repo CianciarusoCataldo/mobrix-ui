@@ -1,15 +1,48 @@
-[data-mbx-id]:not([data-mbx-atts*="dk"]) {
-  --mbx-c-bgc: var(--mbx-c-bgc-l);
-  --mbx-c-bg: var(--mbx-c-bg-l);
-  --mbx-c-txt: var(--mbx-c-txt-l);
-  --mbx-c-fc: var(--mbx-c-fc-l);
-  --mbx-c-sh: var(--mbx-c-sh-l);
+[data-mbx-id] {
+  --mbx-c-bgc: var(
+    --mbx-background-color-light,
+    var(--mbx-background-color, #e9e9e9)
+  );
+  --mbx-c-bgc-h: var(
+    --mbx-background-color-hover-light,
+    var(--mbx-background-color-hover, #dfeaf8)
+  );
+  --mbx-c-bg: var(
+    --mbx-background-light,
+    var(--mbx-background, linear-gradient(to right, #fff, #ededee, #e6e7e7))
+  );
+  --mbx-c-bg-h: var(
+    --mbx-background-hover-light,
+    var(
+      --mbx-background-hover,
+      linear-gradient(to right, #ececec, #e1e1e6, #dbdddd)
+    )
+  );
+  --mbx-c-txt: var(--mbx-text-light, var(--mbx-text, #1b1b1b));
+  --mbx-c-txt-h: var(--mbx-text-hover-light, var(--mbx-text-hover, #413c5c));
+  --mbx-c-fc: var(--mbx-focus-color-light, var(--mbx-focus-color, #7785ff));
+  --mbx-c-sh: var(--mbx-shadow-light, var(--mbx-shadow, #464545));
 }
 
-[data-mbx-id][data-mbx-atts*="dk"] {
-  --mbx-c-bgc: var(--mbx-c-bgc-d);
-  --mbx-c-bg: var(--mbx-c-bg-d);
-  --mbx-c-txt: var(--mbx-c-txt-d);
-  --mbx-c-fc: var(--mbx-c-fc-d);
-  --mbx-c-sh: var(--mbx-c-sh-d);
+[data-mbx-id][data-mbx-dk] {
+  --mbx-c-bgc: var(
+    --mbx-background-color-dark,
+    var(--mbx-background-color, #1d232e)
+  );
+  --mbx-c-bgc-h: var(
+    --mbx-background-color-hover-dark,
+    var(--mbx-background-color-hover, #3a3552)
+  );
+  --mbx-c-bg: var(
+    --mbx-background-dark,
+    var(--mbx-background, linear-gradient(to right, #2d3748, #1d232e))
+  );
+  --mbx-c-bg-h: var(
+    --mbx-background-hover-dark,
+    var(--mbx-background-hover, linear-gradient(to right, #414f68, #313b4d))
+  );
+  --mbx-c-txt: var(--mbx-text-dark, var(--mbx-text, white));
+  --mbx-c-txt-h: var(--mbx-text-hover-dark, var(--mbx-text-hover, #dfeaf8));
+  --mbx-c-fc: var(--mbx-focus-color-dark, var(--mbx-focus-color, #fb7a10));
+  --mbx-c-sh: var(--mbx-shadow-dark, var(--mbx-shadow, #464545));
 }

@@ -11,7 +11,8 @@ const linkTest = () => {
         <Link
           to="www.example.com"
           newTab
-          additionalProps={{ "mbx-test-class": "test" }}
+          underline
+          props={{ "mbx-test-class": "test" }}
         >
           Test link with that open a new tab
         </Link>

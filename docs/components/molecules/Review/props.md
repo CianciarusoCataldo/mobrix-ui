@@ -18,11 +18,12 @@
 | <div style='text-align:center;margin:auto;'>[description](#description)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[icon](#icon)</div> | <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[url](#url)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[logo](#logo)</div> | <div style='text-align:center;margin:auto;'>`default` &#124; `link` &#124; `facebook` &#124; `twitter` &#124; `google` &#124; `linkedin` &#124; `github`</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[logo](#logo)</div> | <div style='text-align:center;margin:auto;'>JSX.Element &#124; string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[max](#max)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>5</div> |
 | <div style='text-align:center;margin:auto;'>[vertical](#vertical)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
 | <div style='text-align:center;margin:auto;'>[rate](#rate)</div> | <div style='text-align:center;margin:auto;'>number</div> | <div style='text-align:center;margin:auto;'>0</div> |
-| <div style='text-align:center;margin:auto;'>[rateType](#ratetype)</div> | <div style='text-align:center;margin:auto;'>`star`&#124;`circle`</div> | <div style='text-align:center;margin:auto;'>'star'</div> |
+| <div style='text-align:center;margin:auto;'>[emptyIcon](#emptyicon)</div> | <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[fullIcon](#fullicon)</div> | <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
@@ -71,7 +72,7 @@ Review description displayed below the review username, at the top of the rate
 
 <br>
 
-Icon showed inside the component
+Icon displayed inside the component
 
 <br>
 
@@ -86,7 +87,7 @@ Icon showed inside the component
 
 <br>
 
-Review external url. If set, an icon will be showed at the top right of the review
+Review external url. If set, an icon will be displayed at the top right of the review
 
 <br>
 
@@ -97,11 +98,11 @@ Review external url. If set, an icon will be showed at the top right of the revi
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>`default` &#124; `link` &#124; `facebook` &#124; `twitter` &#124; `google` &#124; `linkedin` &#124; `github`</div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>JSX.Element &#124; string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
-Social icon type, showed at the top right of the container. Supports popular web services like Facebook, Twitter, Google and so on. Proviced icon list will grow up time by time and will be updated with the latest web services, to keep it usable for the future.
+Top icon, displayed at the top right of the container. If not provided, a default icon is displayed (if an url is provided too)
 
 <br>
 
@@ -131,7 +132,7 @@ max vote (max number of icons displayed) - extended from [Rater component](../..
 
 <br>
 
-if `true`, rate icons will be showed vertically - extended from [Rater component](../../atoms/Rater/props.md#vertical)
+if `true`, rate icons will be displayed vertically - extended from [Rater component](../../atoms/Rater/props.md#vertical)
 
 <br>
 
@@ -152,15 +153,30 @@ actual vote - extended from [Rater component](../../atoms/Rater/props.md#rate)
 
 <br>
 
-### rateType
+### emptyIcon
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>`star`&#124;`circle`</div> | <div style='text-align:center;margin:auto;'>'star'</div> |
+| <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>/</div> |
 
 <br>
 
-vote icons type - extended from [Rater component](../../atoms/Rater/props.md#rateType)
+Empty rate icon, used to render the rate value. If not set, a standard unfilled star icon is used - extended from [Rater component](../../atoms/Rater/props.md#emptyIcon)
+
+<br>
+
+<br>
+
+### fullIcon
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>JSX.Element</div> | <div style='text-align:center;margin:auto;'>/</div> |
+
+<br>
+
+Full rate icon, used to render the rate value. If not set, a standard filled star icon is used - extended from [Rater component](../../atoms/Rater/props.md#fullIcon)
 
 <br>

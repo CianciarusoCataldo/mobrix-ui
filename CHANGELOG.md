@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [4.0.0](#400)
 - [3.14.0](#3140)
 - [3.13.0](#3130)
 - [3.12.0](#3120)
@@ -28,6 +29,41 @@
 ---
 
 ## Changes
+
+<br>
+
+### 4.0.0
+
+- New building system, to better handle final bundle size, and with a reduced library size
+- Css totally re-defined and cleaned up, with more efficent rules and with less data as possible, to keep a smooth dev experience
+- Refactoring
+- New `hover` css variables for `CheckBox`, `Toggle`, `Container`, `ExpandableContainer` components
+- New `underline` prop for `Link` component
+- New `arrowPosition` prop for `ExpandableContainer` component
+- New `emptyIcon` and `fullIcon` props for `Rater` and `Review` component, to customize rate icons (`type` and `rateType` props removed)
+- `CodeBox` component updated, with a more efficent color system
+- `highlight` property removed from `CodeBox` component
+- `Review` logo now can be customized, wihout choosing a predefined type (`logo` property now accept a standard JSX.Element)
+- UI re-designed for all components
+- New `Password` component, a modern password field
+- Css vars naming changed, to simplify overall experience, to optimize bundle size and to avoid redundancy:
+  - `arrow` instead of `arrow-color`
+  - `icon` instead of `icon-color`
+  - `text` instead of `text-color`
+  - `link-text` instead of `link-color` (for `Link` component)
+  - `x` instead of `x-color` (for `DismissableCard` and `Modal` components)
+  - `thumb` instead of `thumb-color` (for `Slider` component)
+  - `tick` instead of `tick-color` (for `CheckBox` component)
+  - `error` instead of `error-color` (for `Spinner` component)
+  - `loading` instead of `loading-color` (for `Spinner` component)
+  - `success` instead of `success-color` (for `Spinner` component)
+  - `today` instead of `today-color` (for `Calendar` and `DatePicker` components)
+  - `border` instead of `border-color` (for `Table` component)
+  - `field` instead of `formfield` (for `FormField` and `Form` components)
+  - `external` instead of `external-color` (for `Toggle` component)
+  - `internal` instead of `internal-color` (for `Toggle` component)
+  - `on-icon` instead of `icon-on` (for `Toggle` component)
+  - `off-icon` instead of `icon-off` (for `Toggle` component)
 
 <br>
 

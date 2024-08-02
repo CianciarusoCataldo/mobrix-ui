@@ -2,9 +2,9 @@ import "./styles.css";
 
 import { RadioButtonGroupComponent } from "../../../types";
 
-import { buildMbxReactiveComponent } from "../../../tools";
+import { buildMbxReactive } from "../../../tools/utils";
 
-import radioButtonGroupComponent from "./component";
+import component from "./component";
 
 /**
  * A flexible and fully customizable radio buttons group
@@ -32,11 +32,12 @@ import radioButtonGroupComponent from "./component";
  * @param {'fade-in' | 'slide-in-left' | 'slide-in-right' | 'slide-in-top' | 'shake'} animation - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If `animated`=`true`, this parameter specifies which animation is used when component is rendered
  * @param {boolean} background - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component background
  * @param {boolean} hover - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component hover standard styles
+ * @param {boolean} active - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component click standard styles
  * @param {boolean} disabled - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If true, disable the component. The effect may vary depending on the component type
  * @param {(keyEvent : any) => void} onKeyDown - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when a key is pressed while using the component (for example, when writing text inside an `Input` component).
  * @param {() => void} onFocus - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when the component get the focus (for example, through tab key)
  * @param {() => void} onFocusLost - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when the component lose the focus (for example, when user clicks outside it)
- * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
+ * @param {Record<string, any>} props - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
  * @param {boolean} a11y - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable accessibility features
  * @param {string} a11yLabel - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If `a11y` = `true`, is used as [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) accessibility parameter
  * @param {number | string} tabIndex - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Regular [tabIndex a11y parameter](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex). If `a11y` = `true`, this parameter is passed as `tabIndex` prop to the component (if not set, its value will be `0`). If `a11y` = `false`, it is set to `-1` (so the component is not focusable through `tab` key`)
@@ -52,23 +53,33 @@ import radioButtonGroupComponent from "./component";
  * @copyright 2024 Cataldo Cianciaruso
  */
 const RadioButtonGroup: RadioButtonGroupComponent = ({
-  value: inputValue,
+  value: inpV,
   horizontal,
+  onChange = () => {},
   ...props
 }) =>
-  buildMbxReactiveComponent<number>(props, (sharedProps) => ({
-    name: "radio-group",
-    defaultValue: -1,
-    inputValue,
-    sharedCssClasses: `wfit;${horizontal ? "or-h;flxr;" : "flxc;"}`,
-    commonProps: sharedProps,
+  buildMbxReactive<number>(props, (mbxProps) => ({
+    name: "rgr",
+    defV: -1,
+    inpV,
+    features: {
+      wBgCl: true,
+    },
+    styles: {
+      flexDirection: horizontal ? "row" : "column",
+    },
+    addProps: { "data-mbx-rgh": horizontal },
+    mbxProps: { ...mbxProps, active: false },
     Component: ({ value, setValue }) =>
-      radioButtonGroupComponent({
+      component({
         value,
-        setValue,
         horizontal,
+        onChange: (i) => {
+          onChange(i);
+          setValue(i);
+        },
         ...props,
-        ...sharedProps,
+        ...mbxProps,
       }),
   }));
 

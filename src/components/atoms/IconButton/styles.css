@@ -1,6 +1,8 @@
-[data-mbx-id="icon-button"] {
+[data-mbx-id="icb"] {
   align-items: center;
   border: 0;
   background: transparent;
   -webkit-tap-highlight-color: transparent;
+  width: fit-content;
+  --mbx-sh-def: none;
 }

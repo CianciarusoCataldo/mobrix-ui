@@ -17,9 +17,14 @@ import { ContainerProps } from "./container";
  */
 export type ExpandableContainerProps = ContainerProps &
   ComponentWithCallback<boolean> & {
-    /** if true, the full container is showed (if false, the expanded area is hidden) */
+    /** if true, the full container is displayed (if false, the expanded area is hidden) */
     compact?: boolean;
+
+    /** Expanded area */
     expanded?: BuilderComponent | BuilderComponent[];
+
+    /** Arrow icon position */
+    arrowPosition?: "right" | "left" | "top" | "bottom";
   };
 
 /**

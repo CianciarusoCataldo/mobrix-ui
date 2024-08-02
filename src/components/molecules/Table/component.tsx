@@ -2,9 +2,9 @@ import React from "react";
 
 import { MbxUiComponent, TableProps } from "../../../types";
 
-const parseClassName = (className: string) => (className ? { className } : {});
+const parse = (className: string) => (className ? { className } : {});
 
-const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
+const tComponent: MbxUiComponent<TableProps, JSX.Element> = ({
   headers,
   rows = [],
   cellClassName,
@@ -15,52 +15,49 @@ const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
   headersProps = {},
   onClick = () => {},
   propsCallback = () => ({}),
+  disabled,
 }) => {
   const props = {
-    row: { ...parseClassName(rowClassName), ...rowProps },
-    cell: { ...parseClassName(cellClassName), ...cellProps, tabIndex: 0 },
+    row: { ...parse(rowClassName), ...rowProps },
+    cell: {
+      ...parse(cellClassName),
+      ...cellProps,
+      tabIndex: disabled ? -1 : 0,
+    },
+    head: { ...parse(headerClassName), ...headersProps, tabIndex: -1 },
   };
 
-  let wrappers: {
-    wrapper: "td" | "th";
-    cellProps: Record<string, any>;
-    rowProps: Record<string, any>;
-  }[] = rows.map((row) => ({
-    wrapper: "td",
-    cellProps: props.cell,
-    rowProps: props.row,
+  let wrp: any[] = rows.map((row) => ({
+    wrp: "td",
+    cPrp: props.cell,
+    rPrp: props.row,
   }));
 
   if (headers && rows.length > 0) {
-    wrappers[0].wrapper = "th";
-    wrappers[0].cellProps = {
-      ...parseClassName(headerClassName),
-      ...headersProps,
-      ...wrappers[0].cellProps,
-      tabIndex: -1,
+    wrp[0].wrp = "th";
+    wrp[0].cPrp = {
+      ...wrp[0].cPrp,
+      ...props.head,
     };
   }
 
   return (
-    <tbody key="table_body">
-      {rows.map((row, rowIndex) => (
-        <tr key={`row_${rowIndex}`} {...rowProps}>
-          {row.map((element, index) => {
-            const Wrapper = wrappers[rowIndex].wrapper;
+    <tbody key="tbl_b">
+      {rows.map((row, rInd) => (
+        <tr key={`row_${rInd}`} {...wrp[rInd].rPrp}>
+          {row.map((el, index) => {
+            const Wrapper = wrp[rInd].wrp;
 
             return (
               <Wrapper
-                data-mbx-tcell="true"
-                key={`element_${rowIndex}_${index}`}
+                data-mbx-tcell=""
+                key={`el_${rInd}_${index}`}
                 align="center"
-                onClick={() => onClick(rowIndex, index)}
-                {...{
-                  "data-mbx-test": `cell_${rowIndex}_${index}`,
-                }}
-                {...wrappers[rowIndex].cellProps}
-                {...propsCallback(rowIndex, index)}
+                onClick={() => onClick(rInd, index)}
+                {...wrp[rInd].cPrp}
+                {...propsCallback(rInd, index)}
               >
-                {element}
+                {el}
               </Wrapper>
             );
           })}
@@ -70,4 +67,4 @@ const tableComponent: MbxUiComponent<TableProps, JSX.Element> = ({
   );
 };
 
-export default tableComponent;
+export default tComponent;

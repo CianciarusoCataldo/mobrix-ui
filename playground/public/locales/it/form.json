@@ -4,8 +4,9 @@
   "props_field_checkbox": "Campo booleano/checkbox",
   "props_field_radio": "Campo radio",
   "props_field_text": "Campo testuale",
+  "props_field_password": "Campo testuale per password",
   "props_field_custom": "Campo personalizzato",
-  "props_submitLabel": "Contenuto del pulsante",
+  "props_submitContent": "Contenuto del pulsante",
   "props_title": "Titolo",
   "props_children": "Contenuto personalizzato"
 }

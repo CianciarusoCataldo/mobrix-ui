@@ -6,7 +6,10 @@ const toggleTest = () => {
   describe("Toggle", () => {
     test("Rendering test", () => {
       let wrapper = mount(<Toggle />);
-      wrapper.find('[data-mbx-id="toggle"]').simulate("click");
+      wrapper.find('[data-mbx-id="tgl"]').simulate("click");
+      wrapper
+        .find('[data-mbx-id="tgl"]')
+        .simulate("keyDown", { keyCode: 13, code: "Enter" });
       expect(wrapper);
       wrapper = mount(<Toggle disabled />);
       expect(wrapper);
@@ -16,11 +19,11 @@ const toggleTest = () => {
       const onChangeStub = jest.fn();
       let wrapper = mount(
         <Toggle
-          additionalProps={{ "data-mbx-test-class": "test" }}
+          props={{ "data-mbx-test-class": "test" }}
           onChange={onChangeStub}
         />
       );
-      wrapper.find('[data-mbx-id="toggle"]').simulate("click");
+      wrapper.find('[data-mbx-id="tgl"]').simulate("click");
       expect(onChangeStub).toBeCalled;
     });
 
@@ -31,7 +34,7 @@ const toggleTest = () => {
       );
 
       wrapper
-        .find('[data-mbx-id="toggle"]')
+        .find('[data-mbx-id="tgl"]')
         .simulate("keyDown", { keyCode: 13, code: "Enter" });
 
       expect(onChangeStub).toBeCalled;

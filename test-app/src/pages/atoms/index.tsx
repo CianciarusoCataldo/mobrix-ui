@@ -93,7 +93,7 @@ const AtomsPage = () => {
                 width="30px"
                 height="30px"
               >
-                <circle cx={32} cy={32} r={32} fill="var(--svgexternalcolor)" />
+                <circle cx={32} cy={32} r={32} fill="var(--mbx-tgex)" />
                 <g className="wrapper">
                   <path
                     className="external"
@@ -162,7 +162,6 @@ const AtomsPage = () => {
             <CodeBox copyButton={false} value="npm i mobrix ui" />
             <div style={{ marginTop: "20px" }} />
             <CodeBox
-              highlight
               value={`npm i mobrix ui
 "string" 'kkk'"string"'
 npx
@@ -173,7 +172,6 @@ npx`}
             />
             <div style={{ marginTop: "20px" }} />
             <CodeBox
-              highlight
               value={`npm i mobrix ui\n "string" 'kkk'"string"' npx apt update apt-get install aws s3 sync npx`}
             />
             <div style={{ marginTop: "20px" }} />
@@ -181,11 +179,11 @@ npx`}
             <div style={{ marginTop: "20px" }} />
             <CodeBox dark copyButton={false} value="npm i mobrix ui" />
             <div style={{ marginTop: "20px" }} />
-            <CodeBox highlight dark value="npm i mobrix ui" />
+            <CodeBox dark value="npm i mobrix ui" />
             <div style={{ marginTop: "20px" }} />
-            <CodeBox highlight disabled value="npm i mobrix ui" />
+            <CodeBox disabled value="npm i mobrix ui" />
             <div style={{ marginTop: "20px" }} />
-            <CodeBox highlight disabled dark value="npm i mobrix ui" />
+            <CodeBox disabled dark value="npm i mobrix ui" />
             <div style={{ marginTop: "20px" }} />
             <CodeBox
               copyButton={false}
@@ -194,7 +192,7 @@ npx`}
               value="npm i mobrix ui"
             />
             <div style={{ marginTop: "20px" }} />
-            <CodeBox highlight background={false} value="npm i mobrix ui" />
+            <CodeBox background={false} value="npm i mobrix ui" />
           </div>
         }
         name="CodeBox"
@@ -336,6 +334,12 @@ npx`}
           <div style={{ display: "flex", flexDirection: "column" }}>
             <Rater />
             <div style={{ marginTop: "20px" }} />
+            <Rater dark />
+            <div style={{ marginTop: "20px" }} />
+            <Rater type="circle" />
+            <div style={{ marginTop: "20px" }} />
+            <Rater type="circle" dark />
+            <div style={{ marginTop: "20px" }} />
             <Rater dark value={4} readonly />
             <div style={{ marginTop: "20px" }} />
             <Rater vertical />
@@ -376,7 +380,9 @@ npx`}
             <div style={{ marginTop: "20px" }} />
             <Slider dark />
             <div style={{ marginTop: "20px" }} />
-            <Slider dark value={32} />
+            <Slider readOnly value={32} />
+            <div style={{ marginTop: "20px" }} />
+            <Slider readOnly dark />
             <div style={{ marginTop: "20px" }} />
             <Slider disabled value={32} />
             <div style={{ marginTop: "20px" }} />

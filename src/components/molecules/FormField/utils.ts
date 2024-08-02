@@ -2,6 +2,7 @@ import {
   CheckBox,
   Counter,
   Input,
+  Password,
   RadioButton,
   Rater,
   Slider,
@@ -9,8 +10,8 @@ import {
 } from "../../atoms";
 
 /* istanbul ignore next */
-export const valueFormatters = {
-  text: (value: any) => {
+export const vFuncs = {
+  txt: (value: any) => {
     const result = value ? String(value) : "";
     if (result.length < 1) {
       return "";
@@ -18,61 +19,21 @@ export const valueFormatters = {
       return result;
     }
   },
-  number: (value: any) => value as number,
-
-  boolean: (value: any) => value as boolean,
-};
+  nmb: (value: any) => value as number,
+  bol: (value: any) => value as boolean,
+} as const;
 
 /* istanbul ignore next */
-export const fieldFormatters = {
-  text: {
-    component: Input,
-    format: valueFormatters.text,
-    scl: { fld: "", frm: "" },
-  },
-  numeric: {
-    component: Counter,
-    format: valueFormatters.number,
-    scl: { fld: "", frm: "" },
-  },
-  boolean: {
-    component: CheckBox,
-    format: valueFormatters.boolean,
-    scl: { fld: "fbox", frm: "frbox" },
-  },
-  checkbox: {
-    component: CheckBox,
-    format: valueFormatters.boolean,
-    scl: { fld: "fbox", frm: "frbox" },
-  },
-  radio: {
-    component: RadioButton,
-    format: valueFormatters.boolean,
-    scl: { fld: "fbox", frm: "frbox" },
-  },
-  toggle: {
-    component: Toggle,
-    format: valueFormatters.boolean,
-    scl: { fld: "fbox", frm: "" },
-  },
-  rater: {
-    component: Rater,
-    format: valueFormatters.number,
-    scl: { fld: "", frm: "" },
-  },
-  slider: {
-    component: Slider,
-    format: valueFormatters.number,
-    scl: { fld: "", frm: "" },
-  },
-  counter: {
-    component: Counter,
-    format: valueFormatters.number,
-    scl: { fld: "", frm: "" },
-  },
-  input: {
-    component: Input,
-    format: valueFormatters.text,
-    scl: { fld: "", frm: "" },
-  },
+export const fldfn = {
+  text: [Input, "txt"],
+  numeric: [Counter, "nmb"],
+  boolean: [CheckBox, "bol"],
+  checkbox: [CheckBox, "bol"],
+  radio: [RadioButton, "bol"],
+  toggle: [Toggle, "bol"],
+  rater: [Rater, "nmb"],
+  slider: [Slider, "nmb"],
+  counter: [Counter, "nmb"],
+  input: [Input, "txt"],
+  password: [Password, "txt"],
 } as const;

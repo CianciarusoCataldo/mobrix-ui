@@ -1,13 +1,19 @@
-[data-mbx-id="selector"] {
-  padding: 0.2rem;
-  background: var(--mbx-c-sel-bg);
-  color: var(--mbx-c-sel-txt);
-  border: 0;
-  border-radius: 6px;
+[data-mbx-id="selt"] {
+  --mbx-defbg: var(--mbx-selector-background);
+  --mbx-defbgh: var(--mbx-selector-background-hover);
+  --mbx-deftxt: var(--mbx-selector-text);
+  --mbx-deftxth: var(--mbx-selector-text-hover);
+  --mbx-bg-l: var(--mbx-selector-background-light);
+  --mbx-txt-l: var(--mbx-selector-text-light);
+  --mbx-bg-d: var(--mbx-selector-background-dark);
+  --mbx-txt-d: var(--mbx-selector-text-dark);
+  --mbx-bg-h-l: var(--mbx-selector-background-hover-light);
+  --mbx-txt-h-l: var(--mbx-selector-text-hover-light);
+  --mbx-bg-h-d: var(--mbx-selector-background-hover-dark);
+  --mbx-txt-h-d: var(--mbx-selector-text-hover-dark);
 }
 
-[data-mbx-id="selector"] > option {
-  background-color: var(--mbx-c-sel-bg);
-  color: var(--mbx-c-sel-txt);
-  padding: 1rem;
+[data-mbx-id="selt"] > option {
+  background-color: var(--mbx-bg);
+  color: var(--mbx-txt);
 }

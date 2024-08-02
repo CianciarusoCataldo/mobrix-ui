@@ -1,6 +1,7 @@
 import {
   BooleanProp,
   HiddenProp,
+  SelectProp,
   StringProp,
 } from "@cianciarusocataldo/demo-ui";
 
@@ -22,10 +23,20 @@ const ExpandableContainerPage = () => (
           props={{
             children: StringProp(childrenText),
             compact: BooleanProp(true),
-            expanded: HiddenProp(<div>Expanded area</div>),
+            expanded: HiddenProp(<div className="h-[90px]">Expanded area</div>),
+            arrowPosition: SelectProp({
+              bottom: "bottom",
+              left: "left",
+              top: "top",
+              right: "right",
+            }),
             ...demoProps,
           }}
-          rows={[["children", "compact", "expanded"], ...demoRows]}
+          rows={[
+            ["children", "compact"],
+            ["expanded", "arrowPosition"],
+            ...demoRows,
+          ]}
         >
           {ExpandableContainer}
         </DemoComponent>

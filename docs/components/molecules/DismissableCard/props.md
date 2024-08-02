@@ -29,6 +29,7 @@
 | <div style='text-align:center;margin:auto;'>[headerProps](#headerprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[bodyProps](#bodyprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[footerProps](#footerprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[dividerSize](#dividersize)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>1px</div> |
 
 <br>
 
@@ -258,5 +259,20 @@ Custom props applied on the Card body - extended from [Card component](../../mol
 <br>
 
 Custom props applied on the Card footer - extended from [Card component](../../molecules/Card/props.md#footerProps)
+
+<br>
+
+<br>
+
+### dividerSize
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>1px</div> |
+
+<br>
+
+Set the size of the top and the bottom divider - extended from [Card component](../../molecules/Card/props.md#dividerSize)
 
 <br>

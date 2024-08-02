@@ -11,11 +11,11 @@
 
 <br>
 
-| <div style='text-align:center;margin:auto;'>Css variable</div>                                                                   | <div style='text-align:center;margin:auto;'>Fallback</div>                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-packageversion-text-color](#-mbx-packageversion-text-color)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                                |
-| <div style='text-align:center;margin:auto;'>[--mbx-packageversion-text-color-light](#-mbx-packageversion-text-color-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-packageversion-text-color](#-mbx-packageversion-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-label-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Label/css-vars/#-mbx-label-text-color-light)</div> |
-| <div style='text-align:center;margin:auto;'>[--mbx-packageversion-text-color-dark](#-mbx-packageversion-text-color-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-packageversion-text-color](#-mbx-packageversion-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-label-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Label/css-vars/#-mbx-label-text-color-dark)</div>   |
+| <div style='text-align:center;margin:auto;'>Css variable</div>                                                       | <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                              |
+| -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-packageversion-text](#-mbx-packageversion-text)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                      | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                    |
+| <div style='text-align:center;margin:auto;'>[--mbx-packageversion-text-light](#-mbx-packageversion-text-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-packageversion-text](#-mbx-packageversion-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-label-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Label/css-vars/#-mbx-label-text-light)</div> |
+| <div style='text-align:center;margin:auto;'>[--mbx-packageversion-text-dark](#-mbx-packageversion-text-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-packageversion-text](#-mbx-packageversion-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-label-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Label/css-vars/#-mbx-label-text-dark)</div>   |
 
 ## CSS Variables list
 
@@ -23,7 +23,7 @@
 
 <br>
 
-### --mbx-packageversion-text-color
+### --mbx-packageversion-text
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -31,17 +31,17 @@
 
 <br>
 
-Fallback value for `mbx-packageversion-text-color-light` and `mbx-packageversion-text-color-dark`
+Fallback value for `mbx-packageversion-text-light` and `mbx-packageversion-text-dark`
 
 <br>
 
 <br>
 
-### --mbx-packageversion-text-color-light
+### --mbx-packageversion-text-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-packageversion-text-color](#-mbx-packageversion-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-label-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Label/css-vars/#-mbx-label-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-packageversion-text](#-mbx-packageversion-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-label-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Label/css-vars/#-mbx-label-text-light)</div> |
 
 <br>
 
@@ -51,11 +51,11 @@ PackageVersion text color when [dark mode](https://cianciarusocataldo.github.io/
 
 <br>
 
-### --mbx-packageversion-text-color-dark
+### --mbx-packageversion-text-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                                        |
-| -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style='text-align:center;margin:auto;'>[--mbx-packageversion-text-color](#-mbx-packageversion-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-label-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Label/css-vars/#-mbx-label-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                            |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <div style='text-align:center;margin:auto;'>[--mbx-packageversion-text](#-mbx-packageversion-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-label-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Label/css-vars/#-mbx-label-text-dark)</div> |
 
 <br>
 

@@ -1,25 +1,80 @@
-[data-mbx-id="tab-viewer"] [data-mbx-scl*="tab"] {
+[data-mbx-id="tview"] {
+  display: flex;
+  flex-direction: column;
+  --mbx-deftvbgc: linear-gradient(to right, #cccccc, #c7c7c7);
+  --mbx-deftvbg: var(--mbx-tabviewer-background, var(--mbx-deftvbgc));
+  --mbx-deftvtxt: var(--mbx-tabviewer-text, var(--mbx-c-txt));
+  --mbx-tabv-bg: var(--mbx-tabviewer-background-light, var(--mbx-deftvbg));
+  --mbx-tabv-txt: var(--mbx-tabviewer-text-light, var(--mbx-deftvtxt));
+}
+
+[data-mbx-id="tview"][data-mbx-dk] {
+  --mbx-deftvbgc: linear-gradient(to right, #2d3748, #1d232e);
+  --mbx-tabv-bg: var(--mbx-tabviewer-background-dark, var(--mbx-deftvbg));
+  --mbx-tabv-txt: var(--mbx-tabviewer-text-dark, var(--mbx-deftvtxt));
+}
+
+[data-mbx-id="tview"] > div > [data-mbx-id="btn"] {
   padding: 0.7rem 1rem;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  color: var(--mbx-c-tabv-txt);
+  border-radius: 6px 6px 0 0;
 }
 
-[data-mbx-id="tab-viewer"] [data-mbx-scl*="tab"][data-mbx-scl*="sel"] {
-  --mbx-button-background: var(--mbx-c-tabv-bg);
-  --mbx-button-text-color: var(--mbx-c-tabv-txt);
-}
-
-[data-mbx-id="tab-viewer"] [data-mbx-scl*="tab"]:not([data-mbx-scl*="sel"]) {
-  --mbx-button-background: var(--mbx-c-tabv-off-bg);
-  --mbx-button-text-color: var(--mbx-c-tabv-off-txt);
-  --mbx-button-background-hover: var(--mbx-c-tabv-off-bg-h);
-  --mbx-button-text-color-hover: var(--mbx-c-tabv-off-txt-h);
-}
-
-[data-mbx-id="tab-viewer"] [data-mbx-scl*="tb-v"] {
+[data-mbx-id="tview"] > [data-mbx-id="cn"] {
   padding: 0.7rem 1rem;
-  background: var(--mbx-c-tabv-bg);
+  --mbx-ovconbgl: var(--mbx-tabv-bg);
+  --mbx-ovcontxtl: var(--mbx-tabv-txt);
+  --mbx-ovconbgd: var(--mbx-tabv-bg);
+  --mbx-ovcontxtd: var(--mbx-tabv-txt);
+}
+
+[data-mbx-id="tview"] > [data-mbx-tbls] {
+  display: flex;
+  flex-direction: row;
+}
+
+[data-mbx-id="tview"] [data-mbx-tbvsel="true"] {
+  --mbx-ovbgl: var(--mbx-tabv-bg);
+  --mbx-ovbgd: var(--mbx-tabv-bg);
+  --mbx-ovtxtl: var(--mbx-tabv-txt);
+  --mbx-ovtxtd: var(--mbx-tabv-txt);
+}
+
+[data-mbx-id="tview"] [data-mbx-tbvsel="false"] {
+  --mbx-tv-ib: var(--mbx-tabviewer-inactive-background);
+  --mbx-tv-ibh: var(--mbx-tabviewer-inactive-background-hover);
+  --mbx-tv-it: var(--mbx-tabviewer-inactive-text);
+  --mbx-tv-ith: var(--mbx-tabviewer-inactive-text-hover);
+
+  --mbx-ovbgl: var(
+    --mbx-tabviewer-inactive-background-light,
+    var(--mbx-tv-ib, linear-gradient(to right, #a1a0a0, #797979))
+  );
+  --mbx-ovbghl: var(
+    --mbx-tabviewer-inactive-background-hover-light,
+    var(--mbx-tv-ibh, linear-gradient(to right, #b6b4b4, #999797))
+  );
+  --mbx-ovtxtl: var(
+    --mbx-tabviewer-inactive-text-light,
+    var(--mbx-tv-it, #c2c2c2)
+  );
+  --mbx-ovtxthl: var(
+    --mbx-tabviewer-inactive-text-hover-light,
+    var(--mbx-tv-ith)
+  );
+  --mbx-ovbgd: var(
+    --mbx-tabviewer-inactive-background-dark,
+    var(--mbx-tv-ib, linear-gradient(to right, #3e4b63, #3f4858))
+  );
+  --mbx-ovbghd: var(
+    --mbx-tabviewer-inactive-background-hover-dark,
+    var(--mbx-tv-ib, linear-gradient(to right, #566888, #3c465a))
+  );
+  --mbx-ovtxtd: var(
+    --mbx-tabviewer-inactive-text-dark,
+    var(--mbx-tv-it, #c2c2c2)
+  );
+  --mbx-ovtxthd: var(
+    --mbx-tabviewer-inactive-text-hover-dark,
+    var(--mbx-tv-ith)
+  );
 }

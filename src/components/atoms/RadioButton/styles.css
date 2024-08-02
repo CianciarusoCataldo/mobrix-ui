@@ -1,4 +1,8 @@
-[data-mbx-id="radio"] {
+[data-mbx-id="rd"] {
+  display: flex;
+  flex-direction: column;
+  --mbx-align: center;
+  border-color: transparent;
   width: 30px;
   height: 30px;
   min-width: 30px;
@@ -7,17 +11,72 @@
   -webkit-border-radius: 50%;
   border-radius: 50%;
   padding: 0.1rem;
-  border-color: transparent;
   border-style: hidden;
-  background: var(--mbx-c-rad-bg);
+  --mbx-rdbgc: radial-gradient(
+    #f1f1f1 20%,
+    #e4e4e4 30%,
+    #bebebe 55%,
+    #f0f0f0 20%
+  );
+  --mbx-rdbgch: radial-gradient(
+    #d1cfcf 20%,
+    #e4e4e4 30%,
+    #b6b3b3 55%,
+    #d1cfcf 20%
+  );
+  --mbx-defbg: var(--mbx-radio-background, var(--mbx-rdbgc));
+  --mbx-defbgh: var(--mbx-radio-background-hover, var(--mbx-rdbgch));
+  --mbx-bg-l: var(--mbx-radio-background-light);
+  --mbx-bg-d: var(--mbx-radio-background-dark);
+  --mbx-bg-h-l: var(--mbx-radio-background-hover-light);
+  --mbx-bg-h-d: var(--mbx-radio-background-hover-dark);
+  --mbx-rdicdef: var(--mbx-ovrdic, var(--mbx-radio-icon-background));
+  --mbx-rd-ic: var(
+    --mbx-ovrdicl,
+    var(
+      --mbx-radio-icon-background-light,
+      var(
+        --mbx-rdicdef,
+        radial-gradient(
+          circle,
+          rgb(73, 73, 73) 0%,
+          rgb(81, 81, 85) 89%,
+          rgb(82, 82, 87) 100%
+        )
+      )
+    )
+  );
 }
 
-[data-mbx-id="radio"] [data-mbx-scl*="ic"] {
+[data-mbx-id="rd"][data-mbx-dk] {
+  --mbx-rdbgc: radial-gradient(
+    closest-side,
+    #2d3748 20%,
+    #232b38 30%,
+    #1d1f44 55%,
+    #191f29 20%
+  );
+  --mbx-rdbgch: radial-gradient(
+    rgba(2, 0, 36, 1) 0%,
+    rgba(102, 102, 122, 1) 32%,
+    rgba(45, 43, 87, 1) 100%
+  );
+  --mbx-rd-ic: var(
+    --mbx-ovrdicd,
+    var(
+      --mbx-radio-icon-background-dark,
+      var(--mbx-rdicdef, radial-gradient(circle at 23px 23px, #dbe0e6, #949494))
+    )
+  );
+}
+
+[data-mbx-id="rd"] > div {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border-color: transparent;
   width: 22px;
   height: 22px;
-  background: var(--mbx-c-rad-ic-bg);
+  background: var(--mbx-rd-ic);
+  margin: auto;
+  border-color: transparent;
 }

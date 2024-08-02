@@ -26,11 +26,12 @@
 | <div style='text-align:center;margin:auto;'>[animation](#animation)</div> | <div style='text-align:center;margin:auto;'>`fade-in` &#124; `slide-in-left` &#124; `slide-in-right` &#124; `slide-in-top` &#124; `shake`</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[background](#background)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
 | <div style='text-align:center;margin:auto;'>[hover](#hover)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
+| <div style='text-align:center;margin:auto;'>[active](#active)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
 | <div style='text-align:center;margin:auto;'>[disabled](#disabled)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
 | <div style='text-align:center;margin:auto;'>[onKeyDown](#onkeydown)</div> | <div style='text-align:center;margin:auto;'>(keyEvent : any) => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[onFocus](#onfocus)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[onFocusLost](#onfocuslost)</div> | <div style='text-align:center;margin:auto;'>() => void</div> | <div style='text-align:center;margin:auto;'>/</div> |
-| <div style='text-align:center;margin:auto;'>[additionalProps](#additionalprops)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
+| <div style='text-align:center;margin:auto;'>[props](#props)</div> | <div style='text-align:center;margin:auto;'>Record<string, any></div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[a11y](#a11y)</div> | <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>true</div> |
 | <div style='text-align:center;margin:auto;'>[a11yLabel](#a11ylabel)</div> | <div style='text-align:center;margin:auto;'>string</div> | <div style='text-align:center;margin:auto;'>/</div> |
 | <div style='text-align:center;margin:auto;'>[tabIndex](#tabindex)</div> | <div style='text-align:center;margin:auto;'>number &#124; string</div> | <div style='text-align:center;margin:auto;'>/</div> |
@@ -223,6 +224,21 @@ Enable/disable component hover standard styles
 
 <br>
 
+### active
+
+<!-- prettier-ignore -->
+| <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |
+| ---------------------------------------------------------- | --------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>boolean</div> | <div style='text-align:center;margin:auto;'>false</div> |
+
+<br>
+
+Enable/disable component click standard styles
+
+<br>
+
+<br>
+
 ### disabled
 
 <!-- prettier-ignore -->
@@ -283,7 +299,7 @@ Custom callback triggered when the component lose the focus (for example, when u
 
 <br>
 
-### additionalProps
+### props
 
 <!-- prettier-ignore -->
 | <div style='text-align:center;margin:auto;'>Type</div> | <div style='text-align:center;margin:auto;'>Default</div> |

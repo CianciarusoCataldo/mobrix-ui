@@ -1,61 +1,124 @@
-[data-mbx-id="date-picker"] {
+[data-mbx-id="dpick"] {
+  --mbx-defbg: var(--mbx-datepicker-background);
+  --mbx-deftxt: var(--mbx-datepicker-text);
+  --mbx-bg-l: var(--mbx-datepicker-background-light);
+  --mbx-txt-l: var(--mbx-datepicker-text-light);
+  --mbx-bg-d: var(--mbx-datepicker-background-dark);
+  --mbx-txt-d: var(--mbx-datepicker-text-dark);
+  --mbx-dtcmb: var(--mbx-datepicker-modal-background);
+  --mbx-dtcmx: var(--mbx-datepicker-modal-x);
+  --mbx-dtcmxh: var(--mbx-datepicker-modal-x-hover);
+  --mbx-modal-background-light: var(
+    --mbx-datepicker-modal-background-light,
+    var(--mbx-dtcmb)
+  );
+  --mbx-modal-x-light: var(--mbx-datepicker-modal-x-light, var(--mbx-dtcmx));
+  --mbx-modal-x-hover-light: var(
+    --mbx-datepicker-modal-x-hover-light,
+    var(--mbx-dtcmxh)
+  );
+  --mbx-modal-background-dark: var(
+    --mbx-datepicker-modal-background-dark,
+    var(--mbx-dtcmb)
+  );
+  --mbx-modal-x-dark: var(--mbx-datepicker-modal-x-dark, var(--mbx-dtcmx));
+  --mbx-modal-x-hover-dark: var(
+    --mbx-datepicker-modal-x-hover-dark,
+    var(--mbx-dtcmxh)
+  );
   border-radius: 0.375rem;
-  color: var(--mbx-text-color);
   padding: 0.3rem 0.5rem;
   width: max-content;
-  background: var(--mbx-c-dtp-bg);
-  color: var(--mbx-c-dtp-txt);
+  display: flex;
+  flex-direction: row;
+  --mbx-dttxt: var(--mbx-txt);
 }
 
-[data-mbx-id="date-picker"] [data-mbx-id="calendar"] {
+[data-mbx-id="dpick"] > [data-mbx-date-s] {
+  display: flex;
+  flex-direction: row;
+}
+
+[data-mbx-id="dpick"] > [data-mbx-id="icb"] {
+  --mbx-defic: var(--mbx-datepicker-icon, var(--mbx-dtp-txt));
+  --mbx-defich: var(--mbx-datepicker-icon-hover, var(--mbx-c-fc));
+  --mbx-icn-l: var(--mbx-datepicker-icon-light);
+  --mbx-icn-hv-l: var(--mbx-datepicker-icon-hover-light);
+  --mbx-icn-d: var(--mbx-datepicker-icon-dark);
+  --mbx-icn-hv-d: var(--mbx-datepicker-icon-hover-dark);
+}
+
+[data-mbx-id="dpick"]
+  > [data-mbx-id="mod"]
+  > [data-mbx-id="dis-card"]
+  > [data-mbx-id="cn"]
+  > [data-mbx-id="cal"] {
   max-width: 80%;
+  margin: auto;
+  --mbx-ovcalbg: var(--mbx-datepicker-calendar-background);
+  --mbx-ovcaltxt: var(--mbx-datepicker-calendar-text);
+  --mbx-ovcalbgl: var(--mbx-datepicker-calendar-background-light);
+  --mbx-ovcaltxtl: var(--mbx-datepicker-calendar-text-light);
+  --mbx-ovcalbgh: var(--mbx-datepicker-calendar-background-hover);
+  --mbx-ovcaltxth: var(--mbx-datepicker-calendar-text-hover);
+  --mbx-ovcalselbg: var(--mbx-datepicker-calendar-selected-background);
+  --mbx-ovcalseltxt: var(--mbx-datepicker-calendar-selected-text);
+  --mbx-ovcaltd: var(--mbx-datepicker-calendar-today);
+  --mbx-ovcalbghl: var(--mbx-datepicker-calendar-background-hover-light);
+  --mbx-ovcaltxthl: var(--mbx-datepicker-calendar-text-hover-light);
+  --mbx-ovcalselbgl: var(--mbx-datepicker-calendar-selected-background-light);
+  --mbx-ovcalseltxtl: var(--mbx-datepicker-calendar-selected-text-light);
+  --mbx-ovcaltdl: var(--mbx-datepicker-calendar-today-light);
+  --mbx-ovcalbgd: var(--mbx-datepicker-calendar-background-dark);
+  --mbx-ovcaltxtd: var(--mbx-datepicker-calendar-text-dark);
+  --mbx-ovcalselbgd: var(--mbx-datepicker-calendar-selected-background-dark);
+  --mbx-ovcalseltxtd: var(--mbx-datepicker-calendar-selected-text-dark);
+  --mbx-ovcalbghd: var(--mbx-datepicker-calendar-background-hover-dark);
+  --mbx-ovcaltxthd: var(--mbx-datepicker-calendar-text-hover-dark);
+  --mbx-ovcaltdd: var(--mbx-datepicker-calendar-today-dark);
+  --mbx-ovcalic: var(--mbx-datepicker-calendar-arrow, white);
+  --mbx-ovcalich: var(--mbx-datepicker-calendar-arrow-hover);
+  --mbx-ovcalicl: var(--mbx-datepicker-calendar-arrow-light);
+  --mbx-ovcalichl: var(--mbx-datepicker-calendar-arrow-hover-light);
+  --mbx-ovcalicd: var(--mbx-datepicker-calendar-arrow-dark);
+  --mbx-ovcalichd: var(--mbx-datepicker-calendar-arrow-hover-dark);
 }
 
-[data-mbx-id="date-picker"] [data-mbx-scl*="dpick-el"] {
+[data-mbx-id="dpick"] > [data-mbx-date-s] > [data-mbx-id="label"] {
   vertical-align: middle;
   display: inline-block;
   margin-right: 0.3rem;
-}
-
-[data-mbx-id="date-picker"] [data-mbx-class="calendar-icon"] path {
-  fill: var(--mbx-c-dtp-ic);
-}
-
-@media (hover) {
-  [data-mbx-id="date-picker"]:not([data-mbx-atts*="dsb"])
-    [data-mbx-class="calendar-icon"]:hover
-    path {
-    fill: var(--mbx-c-dtp-ic-h);
-  }
+  --mbx-label-text-light: var(--mbx-dttxt);
+  --mbx-label-text-dark: var(--mbx-dttxt);
 }
 
 @media (max-width: 600px) {
-  [data-mbx-id="date-picker"] [data-mbx-id="calendar"] {
+  [data-mbx-id="dpick"] [data-mbx-id="cal"] {
     max-width: 90%;
   }
 }
 
 @media (max-width: 500px) {
-  [data-mbx-id="date-picker"] [data-mbx-id="calendar"] {
+  [data-mbx-id="dpick"] [data-mbx-id="cal"] {
     max-width: 95%;
   }
 }
 
 @media (max-width: 400px) {
-  [data-mbx-id="date-picker"] [data-mbx-id="calendar"] {
+  [data-mbx-id="dpick"] [data-mbx-id="cal"] {
     max-width: 100%;
   }
 }
 
 @media (max-width: 300px) {
-  [data-mbx-id="date-picker"] {
+  [data-mbx-id="dpick"] {
     flex-direction: column;
     align-items: center;
   }
 }
 
 @media (max-width: 260px) {
-  [data-mbx-id="date-picker"] [data-mbx-scl*="date-s"] {
+  [data-mbx-id="dpick"] > [data-mbx-date-s] {
     flex-direction: column;
     align-items: center;
   }

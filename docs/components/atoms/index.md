@@ -14,6 +14,7 @@
 - [Label](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Label/)
 - [Link](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Link/)
 - [PackageVersion](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/PackageVersion/)
+- [Password](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Password/)
 - [RadioButton](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/RadioButton/)
 - [Rater](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Rater/)
 - [Selector](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Selector/)

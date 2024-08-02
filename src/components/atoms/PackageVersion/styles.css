@@ -1,0 +1,5 @@
+[data-mbx-id="pkgv-label"] {
+  --mbx-ovlbtxt: var(--mbx-packageversion-text);
+  --mbx-ovlbtxtl: var(--mbx-packageversion-text-light);
+  --mbx-ovlbtxtd: var(--mbx-packageversion-text-dark);
+}

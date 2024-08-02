@@ -10,16 +10,16 @@ const radioButtonGroupTest = () => {
       wrapper = mount(
         <RadioButtonGroup
           horizontal
-          additionalProps={{ "data-mbx-test-class": "test" }}
+          props={{ "data-mbx-test-class": "test" }}
           elementClassName="test"
           radioProps={{}}
           defaultPosition="right"
-          buttons={[{ text: "Test radio button" }]}
+          buttons={[
+            { text: "Test radio button", props: {}, textPosition: "top" },
+          ]}
         />
       );
-      wrapper
-        .find('[data-mbx-scl*="rdg-el-0"] [data-mbx-id="radio"]')
-        .simulate("click");
+      wrapper.find('[data-mbx-id="rd"]').at(0).simulate("click");
       expect(wrapper);
     });
 
@@ -29,14 +29,16 @@ const radioButtonGroupTest = () => {
         <RadioButtonGroup
           onChange={onChangeStub}
           buttons={[
-            { text: "Test radio button 1" },
+            {
+              text: "Test radio button 1",
+              //@ts-ignore
+              textPosition: "wrong",
+            },
             { text: "Test radio button 2" },
           ]}
         />
       );
-      wrapper
-        .find('[data-mbx-scl*="rdg-el-0"] [data-mbx-id="radio"]')
-        .simulate("click");
+      wrapper.find('[data-mbx-id="rd"]').at(0).simulate("click");
       expect(onChangeStub).toBeCalledWith(0);
     });
   });

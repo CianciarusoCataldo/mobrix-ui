@@ -23,6 +23,7 @@ const SliderPage = () => (
             "Custom thumb": BooleanProp(false),
             thumbColor: ColorProp(),
             ...demoProps,
+            active: BooleanProp(true),
           }}
           parseProps={(props, setProps) => {
             let newProps = { ...props };

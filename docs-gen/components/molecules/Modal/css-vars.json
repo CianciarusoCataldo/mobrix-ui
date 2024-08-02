@@ -12,39 +12,39 @@
     "fallback": "--mbx-modal-background",
     "description": "Modal background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`"
   },
-  "--mbx-modal-x-color": {
-    "description": "Fallback value for `--mbx-modal-x-color-light` and `--mbx-modal-x-color-dark`"
+  "--mbx-modal-x": {
+    "description": "Fallback value for `--mbx-modal-x-light` and `--mbx-modal-x-dark`"
   },
-  "--mbx-modal-x-color-light": {
+  "--mbx-modal-x-light": {
     "default": "white",
-    "fallback": "--mbx-modal-x-color",
+    "fallback": "--mbx-modal-x",
     "description": "Modal x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark)  is `off`"
   },
-  "--mbx-modal-x-color-dark": {
+  "--mbx-modal-x-dark": {
     "default": "white",
-    "fallback": "--mbx-modal-x-color",
+    "fallback": "--mbx-modal-x",
     "description": "Modal x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark)  is `on`"
   },
-  "--mbx-modal-x-color-hover": {
-    "description": "Fallback value for `--mbx-modal-x-color-hover-light` and `--mbx-modal-x-color-hover-dark`"
+  "--mbx-modal-x-hover": {
+    "description": "Fallback value for `--mbx-modal-x-hover-light` and `--mbx-modal-x-hover-dark`"
   },
-  "--mbx-modal-x-color-hover-light": {
+  "--mbx-modal-x-hover-light": {
     "defaultExternal": {
-      "prop": "--mbx-dismissablecard-x-color-hover-light",
+      "prop": "--mbx-dismissablecard-x-hover-light",
       "type": "molecules",
       "component": "DismissableCard"
     },
-    "fallback": "--mbx-modal-x-color-hover",
+    "fallback": "--mbx-modal-x-hover",
     "description": "Modal x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark)  is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "mode": "hover"
   },
-  "--mbx-modal-x-color-hover-dark": {
+  "--mbx-modal-x-hover-dark": {
     "defaultExternal": {
-      "prop": "--mbx-dismissablecard-x-color-hover-dark",
+      "prop": "--mbx-dismissablecard-x-hover-dark",
       "type": "molecules",
       "component": "DismissableCard"
     },
-    "fallback": "--mbx-modal-x-color-hover",
+    "fallback": "--mbx-modal-x-hover",
     "description": "Modal x icon color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark)  is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
     "mode": "hover"
   }

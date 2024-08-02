@@ -2,13 +2,12 @@ import React from "react";
 
 import { BuilderComponent, MbxUiComponent, ReviewProps } from "../../../types";
 
-import { icons } from "./icons";
 import Link from "../../atoms/Link";
 import Rater from "../../atoms/Rater";
+import { Label } from "../../atoms";
+import { link } from "../../../icons";
 
-const allowedLogoTypes = Object.keys(icons);
-
-const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
+const component: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
   user,
   description,
   rate,
@@ -16,45 +15,60 @@ const reviewComponent: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
   icon,
   url,
   logo,
-  rateType,
   disabled,
   hover,
   dark,
+  active,
+  a11y,
+  emptyIcon,
+  fullIcon,
 }) => {
-  const selectedLogo =
-    logo && allowedLogoTypes.includes(logo) ? logo : "default";
-
+  const cProps = { dark, disabled, a11y, hover };
   return [
-    <div key="url" data-mbx-scl="rev-url-c">
-      <Link
-        dark={dark}
-        hover={hover && !disabled}
-        newTab
-        to={url}
-        disabled={disabled}
-      >
-        {icons[selectedLogo]}
-      </Link>
-    </div>,
-    <div data-mbx-scl="rev-inf-b;flxc;" key="info">
-      <div data-mbx-scl="flxr;mauto">
-        <div data-mbx-scl="rev-ph">{icon}</div>
-        {user && <span data-mbx-scl="rev-us-name">{user}</span>}
+    <Link
+      key="rev_link"
+      newTab
+      to={url}
+      features={{ opFc: true }}
+      active={active}
+      hide={!url}
+      {...cProps}
+    >
+      {logo ||
+        link({
+          height: "30px",
+          width: "30px",
+        })}
+    </Link>,
+    <div key="info">
+      <div key="topc">
+        <div key="ph">{icon}</div>
+        {user && (
+          <Label {...cProps} key="user">
+            {user}
+          </Label>
+        )}
       </div>
-      {description && <span data-mbx-scl="rev-ds">{description}</span>}
+      {description && (
+        <Label key="desc" {...cProps}>
+          {description}
+        </Label>
+      )}
     </div>,
     <Rater
-      disabled={disabled}
       key="rate"
       hide={!rate}
-      type={rateType}
       background={false}
       shadow={false}
       readonly
       value={rate}
       max={max}
+      active={active}
+      emptyIcon={emptyIcon}
+      fullIcon={fullIcon}
+      {...cProps}
     />,
   ];
 };
 
-export default reviewComponent;
+export default component;

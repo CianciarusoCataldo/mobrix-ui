@@ -4,11 +4,11 @@ import "./styles.css";
 
 import { DrawerComponent } from "../../../types";
 
-import { buildMbxStandardComponent } from "../../../tools/utils";
+import { buildMbxStandard } from "../../../tools/utils";
 
-import drawerComponent from "./component";
+import component from "./component";
 
-const ALLOWED_POSITIONS = [
+const positions = [
   "right",
   "left",
   "top",
@@ -39,11 +39,12 @@ const ALLOWED_POSITIONS = [
  * @param {'fade-in' | 'slide-in-left' | 'slide-in-right' | 'slide-in-top' | 'shake'} animation - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If `animated`=`true`, this parameter specifies which animation is used when component is rendered
  * @param {boolean} background - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component background
  * @param {boolean} hover - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component hover standard styles
+ * @param {boolean} active - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable component click standard styles
  * @param {boolean} disabled - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If true, disable the component. The effect may vary depending on the component type
  * @param {(keyEvent : any) => void} onKeyDown - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when a key is pressed while using the component (for example, when writing text inside an `Input` component).
  * @param {() => void} onFocus - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when the component get the focus (for example, through tab key)
  * @param {() => void} onFocusLost - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom callback triggered when the component lose the focus (for example, when user clicks outside it)
- * @param {Record<string, any>} additionalProps - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
+ * @param {Record<string, any>} props - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Custom additional properties, applied to the component
  * @param {boolean} a11y - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable accessibility features
  * @param {string} a11yLabel - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - If `a11y` = `true`, is used as [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) accessibility parameter
  * @param {number | string} tabIndex - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Regular [tabIndex a11y parameter](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex). If `a11y` = `true`, this parameter is passed as `tabIndex` prop to the component (if not set, its value will be `0`). If `a11y` = `false`, it is set to `-1` (so the component is not focusable through `tab` key`)
@@ -59,7 +60,7 @@ const ALLOWED_POSITIONS = [
  * @copyright 2024 Cataldo Cianciaruso
  */
 const Drawer: DrawerComponent = ({
-  position,
+  position = "left",
   hide,
   children,
   /* istanbul ignore next */
@@ -68,51 +69,55 @@ const Drawer: DrawerComponent = ({
   onFocusLost = () => {},
   closeOnClickOutside = true,
   arrowClassName,
-  ...commonProps
+  active,
+  ...props
 }) => {
-  const drawerLocation =
-    position && ALLOWED_POSITIONS.includes(position) ? position : "left";
+  const location = positions.includes(position) ? position : "left";
 
   const [value, setValue] = React.useState("");
 
   /* istanbul ignore next */
-  const onCloseCallback = () => {
-    setValue("ease-out");
+  const callback = () => {
+    setValue("out");
     setTimeout(() => {
       setValue("");
       onClose();
     }, 200);
   };
-
   /* istanbul ignore next */
-  const customProps = {
-    onFocusLost: () => {
-      if (!hide) {
-        onFocusLost();
-        closeOnClickOutside && onCloseCallback();
-      }
-    },
-    animation: value.length === 0 ? (hide ? "" : "ease-in") : value,
+  const fcFunc = () => {
+    if (!hide) {
+      onFocusLost();
+      closeOnClickOutside && callback();
+    }
   };
 
-  return buildMbxStandardComponent(commonProps, (sharedProps) => ({
-    name: "drawer",
-    commonProps: {
-      ...sharedProps,
-      additionalProps: {
-        ...commonProps.additionalProps,
-        "data-mbx-drw-lc": drawerLocation,
-        "data-mbx-drw-an": customProps.animation,
-      },
-      hide: value.length === 0 && hide,
-      onFocusLost: customProps.onFocusLost,
+  return buildMbxStandard(props, (sProps) => ({
+    name: "drw",
+    addProps: {
+      "data-mbx-drwlc": location,
     },
-    Component: drawerComponent({
+    mbxProps: {
+      ...sProps,
+      hide: value.length === 0 && hide,
+      onFocusLost: fcFunc,
+    },
+    styles: {
+      ...(sProps.animated && {
+        "--mbx-drw-an": hide
+          ? "none"
+          : `var(--mbx-drw-an-${value.length === 0 ? "in" : value})`,
+      }),
+    },
+    features: { wBgCl: true },
+    Component: component({
       children,
       hide,
-      onClose: onCloseCallback,
+      onClose: callback,
       arrowClassName,
-      ...sharedProps,
+      position: location,
+      ...sProps,
+      active,
     }),
   }));
 };

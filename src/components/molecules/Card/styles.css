@@ -1,13 +1,50 @@
 [data-mbx-id*="card"] {
+  display: flex;
+  flex-direction: column;
   padding: 0 0.1rem;
+  background-color: transparent;
+  --mbx-crdbgc: linear-gradient(to right, #fff, #ededee, #e6e7e7);
+  --mbx-crdbgdef: var(
+    --mbx-ovcrdbg,
+    var(--mbx-card-background, var(--mbx-crdbgc))
+  );
+  --mbx-crdtxtdef: var(--mbx-ovcrdtxt, var(--mbx-card-text, var(--mbx-c-txt)));
+  --mbx-crdbg: var(
+    --mbx-ovcrdbgl,
+    var(--mbx-card-background-light, var(--mbx-crdbgdef))
+  );
+  --mbx-crdtxt: var(
+    --mbx-ovcrdtxtl,
+    var(--mbx-card-text-light, var(--mbx-crdtxtdef))
+  );
+  background: var(--mbx-crdbg);
+  color: var(--mbx-crdtxt);
 }
 
-[data-mbx-id*="card"] [data-mbx-scl*="cardc-"] {
+[data-mbx-id*="card"][data-mbx-dk] {
+  --mbx-crdbgc: linear-gradient(to right, #2d3748, #1d232e);
+  --mbx-crdbg: var(
+    --mbx-ovcrdbgd,
+    var(--mbx-card-background-dark, var(--mbx-crdbgdef))
+  );
+  --mbx-crdtxt: var(
+    --mbx-ovcrdtxtd,
+    var(--mbx-card-text-dark, var(--mbx-crdtxtdef))
+  );
+}
+
+[data-mbx-id*="card"][data-mbx-trn] {
+  --mbx-crdbg: transparent !important;
+}
+
+[data-mbx-id*="card"] > [data-mbx-id="cn"] {
   padding: 0.5rem 0.3rem;
   word-wrap: break-word;
   word-break: break-word;
+  --ovcontxtl: var(--mbx-crdtxt);
+  --ovcontxtd: var(--mbx-crdtxt);
 }
 
-[data-mbx-id*="card"] [data-mbx-scl*="cardc-body"] {
+[data-mbx-id*="card"] > [data-mbx-cbody] {
   padding: 0.7rem 0.3rem;
 }

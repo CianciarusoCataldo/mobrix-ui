@@ -20,51 +20,77 @@
     },
     "fallback": "--mbx-expandablecontainer-background"
   },
-  "--mbx-expandablecontainer-text-color": {
-    "description": "Fallback value for `--mbx-expandablecontainer-text-color-light` and `--mbx-expandablecontainer-text-color-dark`"
+  "--mbx-expandablecontainer-text": {
+    "description": "Fallback value for `--mbx-expandablecontainer-text-light` and `--mbx-expandablecontainer-text-dark`"
   },
-  "--mbx-expandablecontainer-text-color-light": {
+  "--mbx-expandablecontainer-text-light": {
     "description": "ExpandableContainer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
     "defaultExternal": {
       "type": "molecules",
       "component": "container",
-      "prop": "mbx-container-text-color-light"
+      "prop": "mbx-container-text-light"
     },
-    "fallback": "--mbx-expandablecontainer-text-color"
+    "fallback": "--mbx-expandablecontainer-text"
   },
-  "--mbx-expandablecontainer-text-color-dark": {
+  "--mbx-expandablecontainer-text-dark": {
     "description": "ExpandableContainer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
     "defaultExternal": {
       "type": "molecules",
       "component": "container",
-      "prop": "mbx-container-text-color-dark"
+      "prop": "mbx-container-text-dark"
     },
-    "fallback": "--mbx-expandablecontainer-text-color"
+    "fallback": "--mbx-expandablecontainer-text"
   },
-  "--mbx-expandablecontainer-arrow-color": {
-    "description": "Fallback value for `--mbx-expandablecontainer-arrow-color-light` and `--mbx-expandablecontainer-arrow-color-dark`"
+  "--mbx-expandablecontainer-background-hover": {
+    "description": "Fallback value for `--mbx-expandablecontainer-background-hover-light` and `--mbx-expandablecontainer-background-hover-dark`"
   },
-  "--mbx-expandablecontainer-arrow-color-light": {
-    "defaultInternal": "--mbx-expandablecontainer-text-color-light",
-    "fallback": "--mbx-expandablecontainer-arrow-color",
+  "--mbx-expandablecontainer-background-hover-light": {
+    "description": "ExpandableContainer background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
+    "defaultInternal": "--mbx-expandablecontainer-background-hover",
+    "fallback": "--mbx-expandablecontainer-background-hover"
+  },
+  "--mbx-expandablecontainer-background-hover-dark": {
+    "description": "ExpandableContainer background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
+    "defaultInternal": "--mbx-expandablecontainer-background-hover",
+    "fallback": "--mbx-expandablecontainer-background-hover"
+  },
+  "--mbx-expandablecontainer-text-hover": {
+    "description": "Fallback value for `--mbx-expandablecontainer-text-hover-light` and `--mbx-expandablecontainer-text-hover-dark`"
+  },
+  "--mbx-expandablecontainer-text-hover-light": {
+    "description": "ExpandableContainer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
+    "defaultInternal": "--mbx-expandablecontainer-text-light",
+    "fallback": "--mbx-expandablecontainer-text-hover"
+  },
+  "--mbx-expandablecontainer-text-hover-dark": {
+    "description": "ExpandableContainer text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
+    "defaultInternal": "--mbx-expandablecontainer-text-hover-dark",
+    "fallback": "--mbx-expandablecontainer-text-hover"
+  },
+  "--mbx-expandablecontainer-arrow": {
+    "description": "Fallback value for `--mbx-expandablecontainer-arrow-light` and `--mbx-expandablecontainer-arrow-dark`"
+  },
+  "--mbx-expandablecontainer-arrow-light": {
+    "defaultInternal": "--mbx-expandablecontainer-text-light",
+    "fallback": "--mbx-expandablecontainer-arrow",
     "description": "ExpandableContainer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`"
   },
-  "--mbx-expandablecontainer-arrow-color-dark": {
-    "defaultInternal": "--mbx-expandablecontainer-text-color-dark",
-    "fallback": "--mbx-expandablecontainer-arrow-color",
+  "--mbx-expandablecontainer-arrow-dark": {
+    "defaultInternal": "--mbx-expandablecontainer-text-dark",
+    "fallback": "--mbx-expandablecontainer-arrow",
     "description": "ExpandableContainer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`"
   },
-  "--mbx-expandablecontainer-arrow-color-hover": {
-    "description": "Fallback value for `--mbx-expandablecontainer-arrow-color-hover-light` and `--mbx-expandablecontainer-arrow-color-hover-dark`"
+  "--mbx-expandablecontainer-arrow-hover": {
+    "description": "Fallback value for `--mbx-expandablecontainer-arrow-hover-light` and `--mbx-expandablecontainer-arrow-hover-dark`"
   },
-  "--mbx-expandablecontainer-arrow-color-hover-light": {
-    "defaultInternal": "--mbx-expandablecontainer-arrow-color-lrrowight",
-    "fallback": "--mbx-expandablecontainer-arrow-color-hover",
+  "--mbx-expandablecontainer-arrow-hover-light": {
+    "defaultInternal": "--mbx-expandablecontainer-arrow-lrrowight",
+    "fallback": "--mbx-expandablecontainer-arrow-hover",
     "description": "ExpandableContainer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)"
   },
-  "--mbx-expandablecontainer-arrow-color-hover-dark": {
+  "--mbx-expandablecontainer-arrow-hover-dark": {
     "defaultInternal": "--mbx-expandablecontainer-a-color-dark",
-    "fallback": "--mbx-expandablecontainer-arrow-color-hover",
+    "fallback": "--mbx-expandablecontainer-arrow-hover",
     "description": "ExpandableContainer arrow color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)"
   }
 }

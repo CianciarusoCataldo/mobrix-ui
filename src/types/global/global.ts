@@ -1,6 +1,6 @@
 import { CSSProperties } from "react";
 
-export type MobBrixAnimation = "fadeIn" | "fadeOut" | "slideIn" | "slideOut";
+export type MobBrixAnimation = "fadeIn" | "fade-out" | "slideIn" | "slideOut";
 
 export type MbxAttributes = {
   /** Enable/disable dark mode (default `false`) */
@@ -21,6 +21,8 @@ export type MbxAttributes = {
   /** If `false`, disable component hover standard styles (default `true`) */
   hover?: boolean;
 
+  active?: boolean;
+
   /** If true, disable the component. The effect may vary depending on the component type */
   disabled?: boolean;
 
@@ -33,7 +35,7 @@ export type MbxAttributes = {
  *
  * @see https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=components-building-process
  * */
-export type CommonProps = MbxAttributes & {
+export type MbxSharedProps = MbxAttributes & {
   /** React key, the standard {@link https://reactjs.org/docs/lists-and-keys.html key parameter} */
   key?: string;
 
@@ -52,13 +54,14 @@ export type CommonProps = MbxAttributes & {
   /** If `animated`=`true`, this parameter specifies which animation is used when component is rendered */
   animation?:
     | "fade-in"
+    | "fade-out"
     | "slide-in-left"
     | "slide-in-right"
     | "slide-in-top"
     | "shake";
 
   /** Custom additional properties, applied to the component */
-  additionalProps?: Record<string, any>;
+  props?: Record<string, any>;
 
   /** if the `a11y` parameter is `true`, this parameter is used as {@link https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label aria-label} ARIA parameter */
   a11yLabel?: string;
@@ -75,10 +78,7 @@ export type CommonProps = MbxAttributes & {
   /** callback called when a key is pressed when inside the component */
   onKeyDown?: (keyEvent: any) => void;
 
-  debug?: {
-    scl?: string;
-    features?: Features;
-  };
+  features?: Features;
 };
 
 /**
@@ -234,15 +234,23 @@ export interface Features {
   /** If `true`, reduce component opacity when component is hovered (and `hover` = `true`) */
   opHov?: boolean;
 
-  /** If `true`, reduce component opacity when component is clicked */
-  opacityOnActive?: boolean;
+  /** If `true`, when focused, the component text color will change instead of the box shadow (that will be transparent) */
+  colFc?: boolean;
 
-  /** If `true`, when focused, the component text-color will change instead of the box shadow (that will be transparent) */
-  textcolorOnFocus?: boolean;
+  /** If `true`, reduce component opacity when component is focused */
+  opFc?: boolean;
 
-  noShadowOnFocus?: boolean;
+  wBg?: boolean;
 
-  fillOnFocus?: boolean;
+  wCl?: boolean;
+
+  wClH?: boolean;
+
+  wAll?: boolean;
+
+  wAllc?: boolean;
+
+  wBgCl?: boolean;
 }
 
 /**
@@ -262,14 +270,21 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
   Component?: T;
 
   /** Shared {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/?id=ui-properties MoBrix-ui props} */
-  commonProps?: CommonProps;
+  commonProps?: MbxSharedProps;
+
+  /** Shared {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/?id=ui-properties MoBrix-ui properties} */
+  mbxProps?: MbxSharedProps;
 
   /** Component wrapper (default `div`) */
   wrapper?: Wrappers;
 
   features?: Features;
 
-  sharedCssClasses?: string;
+  /** Component extra css styles */
+  styles?: Record<string, any>;
+
+  /** Custom additional properties, applied to the component */
+  addProps?: Record<string, any>;
 };
 
 /**
@@ -282,7 +297,9 @@ export type BuilderProps<T = BuilderComponent | BuilderComponent[]> = {
  * @copyright 2024 Cataldo Cianciaruso
  */
 export type MbxUiComponent<T = any, K = JSX.Element> = (
-  props: MbxUiProps<T>
+  props: MbxUiProps<T> & {
+    [key: `data-${string}`]: unknown;
+  }
 ) => K;
 
 /**
@@ -294,7 +311,7 @@ export type MbxUiComponent<T = any, K = JSX.Element> = (
  *
  * @copyright 2024 Cataldo Cianciaruso
  */
-export type MbxUiProps<T = any> = T & CommonProps;
+export type MbxUiProps<T = any> = T & MbxSharedProps;
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix.ui MoBrix-ui} reactive component props
@@ -350,8 +367,8 @@ export type BuilderPropsReactive<T = BuilderComponent | BuilderComponent[]> =
       setValue: React.Dispatch<React.SetStateAction<T>>;
     }) => BuilderProps["Component"]
   > & {
-    inputValue?: T;
-    defaultValue: T;
+    inpV?: T;
+    defV: T;
     render?: (
       value: T,
       setValue: React.Dispatch<React.SetStateAction<T>>
@@ -361,3 +378,27 @@ export type BuilderPropsReactive<T = BuilderComponent | BuilderComponent[]> =
       setValue: React.Dispatch<React.SetStateAction<T>>
     ) => Omit<BuilderProps, "name">;
   };
+
+export type MbxBuildReactiveProps<T = any> = BuilderProps<
+  (props: {
+    value: T;
+    setValue: React.Dispatch<React.SetStateAction<T>>;
+  }) => BuilderProps["Component"]
+> & {
+  inpV?: T;
+  defV: T;
+  props?: (
+    value: T,
+    setValue: React.Dispatch<React.SetStateAction<T>>
+  ) => Omit<BuilderProps, "name">;
+};
+
+export type MbxIconProps = Omit<MbxSharedProps, "tabIndex"> & {
+  fill?: string;
+  reverseX?: boolean;
+  width?: string;
+  height?: string;
+  style?: Record<string, any>;
+};
+
+export type MbxIcon<T = any> = (props: MbxIconProps & T) => React.JSX.Element;

@@ -16,15 +16,15 @@
 | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background](#-mbx-inputbox-background)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                            |
 | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-light](#-mbx-inputbox-background-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background](#-mbx-inputbox-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-color-light)</div>             |
 | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-dark](#-mbx-inputbox-background-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background](#-mbx-inputbox-background)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-background-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-color-dark)</div>               |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color](#-mbx-inputbox-text-color)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-light](#-mbx-inputbox-text-color-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color](#-mbx-inputbox-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div>                         |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-dark](#-mbx-inputbox-text-color-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color](#-mbx-inputbox-text-color)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div>                           |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text](#-mbx-inputbox-text)</div>                                     | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                            |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-light](#-mbx-inputbox-text-light)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text](#-mbx-inputbox-text)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div>                                     |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-dark](#-mbx-inputbox-text-dark)</div>                           | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text](#-mbx-inputbox-text)</div>                         | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div>                                       |
 | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-hover](#-mbx-inputbox-background-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                            |
 | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-hover-light](#-mbx-inputbox-background-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-hover](#-mbx-inputbox-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-color-hover-light)</div> |
 | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-hover-dark](#-mbx-inputbox-background-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-background-hover](#-mbx-inputbox-background-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-background-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-background-color-hover-dark)</div>   |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-hover](#-mbx-inputbox-text-color-hover)</div>             | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                            |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-hover-light](#-mbx-inputbox-text-color-hover-light)</div> | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-hover](#-mbx-inputbox-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-light)</div>             |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-hover-dark](#-mbx-inputbox-text-color-hover-dark)</div>   | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-hover](#-mbx-inputbox-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-dark)</div>               |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-hover](#-mbx-inputbox-text-hover)</div>                         | <div style='text-align:center;margin:auto;'>/</div>                                                                  | <div style='text-align:center;margin:auto;'>/</div>                                                                                                                                            |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-hover-light](#-mbx-inputbox-text-hover-light)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-hover](#-mbx-inputbox-text-hover)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-hover-light)</div>                         |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-hover-dark](#-mbx-inputbox-text-hover-dark)</div>               | <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-hover](#-mbx-inputbox-text-hover)</div>             | <div style='text-align:center;margin:auto;'>[--mbx-text-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-hover-dark)</div>                           |
 
 ## CSS Variables list
 
@@ -74,7 +74,7 @@ Input background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui
 
 <br>
 
-### --mbx-inputbox-text-color
+### --mbx-inputbox-text
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -82,17 +82,17 @@ Input background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui
 
 <br>
 
-Fallback value for `mbx-inputbox-text-color-light` and `mbx-inputbox-text-color-dark`
+Fallback value for `mbx-inputbox-text-light` and `mbx-inputbox-text-dark`
 
 <br>
 
 <br>
 
-### --mbx-inputbox-text-color-light
+### --mbx-inputbox-text-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
-| -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color](#-mbx-inputbox-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                  |
+| -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text](#-mbx-inputbox-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-light)</div> |
 
 <br>
 
@@ -102,11 +102,11 @@ Input text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui
 
 <br>
 
-### --mbx-inputbox-text-color-dark
+### --mbx-inputbox-text-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
-| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color](#-mbx-inputbox-text-color)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                   | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                |
+| -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text](#-mbx-inputbox-text)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-dark)</div> |
 
 <br>
 
@@ -158,7 +158,7 @@ Input background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui
 
 <br>
 
-### --mbx-inputbox-text-color-hover
+### --mbx-inputbox-text-hover
 
 | <div style='text-align:center;margin:auto;'>Fallback</div> | <div style='text-align:center;margin:auto;'>Default</div> |
 | ---------------------------------------------------------- | --------------------------------------------------------- |
@@ -166,17 +166,17 @@ Input background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui
 
 <br>
 
-Fallback value for `mbx-inputbox-text-color-hover-light` and `mbx-inputbox-text-color-hover-dark`
+Fallback value for `mbx-inputbox-text-hover-light` and `mbx-inputbox-text-hover-dark`
 
 <br>
 
 <br>
 
-### --mbx-inputbox-text-color-hover-light
+### --mbx-inputbox-text-hover-light
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-hover](#-mbx-inputbox-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-light)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-hover](#-mbx-inputbox-text-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-hover-light](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-hover-light)</div> |
 
 <br>
 
@@ -186,11 +186,11 @@ Input text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui
 
 <br>
 
-### --mbx-inputbox-text-color-hover-dark
+### --mbx-inputbox-text-hover-dark
 
-| <div style='text-align:center;margin:auto;'>Fallback</div>                                                           | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                                        |
-| -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-color-hover](#-mbx-inputbox-text-color-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-color-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-color-hover-dark)</div> |
+| <div style='text-align:center;margin:auto;'>Fallback</div>                                               | <div style='text-align:center;margin:auto;'>Default</div>                                                                                                            |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <div style='text-align:center;margin:auto;'>[--mbx-inputbox-text-hover](#-mbx-inputbox-text-hover)</div> | <div style='text-align:center;margin:auto;'>[--mbx-text-hover-dark](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/css-vars/#-mbx-text-hover-dark)</div> |
 
 <br>
 

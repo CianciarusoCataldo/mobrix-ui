@@ -1,67 +1,70 @@
 import React from "react";
 
-import { MbxUiReactiveComponent, RaterProps } from "../../../types";
+import { BuilderComponent, MbxUiComponent, RaterProps } from "../../../types";
 
-import { ICONS } from "./icons";
+import { defIcE, defIcF } from "./icons";
 import IconButton from "../IconButton";
 
-const RaterComponent: MbxUiReactiveComponent<number, RaterProps> = ({
-  type = "star",
-  max,
+const Component: MbxUiComponent<RaterProps, BuilderComponent[]> = ({
+  max = 5,
   readonly,
-  /* istanbul ignore next */
-  onChange = () => {},
-  value: actualValue,
-  setValue,
+  onChange,
+  value,
   disabled,
+  a11y,
+  dark,
+  hover,
+  active,
+  fullIcon = defIcF,
+  emptyIcon = defIcE,
 }) => {
-  let startMax = max || 5;
-
-  const [hoveredElement, setHover] = React.useState<number | null>(null);
-  const [maxValue, setMax] = React.useState<number>(startMax);
+  const [hovEl, setHov] = React.useState<number | null>(null);
+  const [mVal, setMax] = React.useState<number>(max);
 
   React.useEffect(() => {
-    if (max) {
-      setMax(Number.parseInt(String(max)));
-    }
+    setMax(Number.parseInt(String(max)));
   }, [max]);
 
-  let iconArray: JSX.Element[] = [];
+  return new Array(mVal).fill("").map((e, i) => {
+    let icon = emptyIcon;
 
-  for (let i: number = 0; i < maxValue; ++i) {
-    let iconToShow: "FULL" | "EMPTY" = "EMPTY";
-
-    if (hoveredElement || hoveredElement === 0) {
-      iconToShow = hoveredElement >= i ? "FULL" : "EMPTY";
+    if (hovEl || hovEl === 0) {
+      icon = hovEl >= i ? fullIcon : emptyIcon;
     } else {
-      iconToShow = i + 1 <= actualValue ? "FULL" : "EMPTY";
+      icon = i + 1 <= value ? fullIcon : emptyIcon;
     }
 
-    iconArray.push(
+    const isSel = i + 1 === value;
+
+    return (
       <IconButton
+        active={active && !isSel}
         key={`vote_${i}`}
-        unstyled
+        dark={dark}
+        a11y={a11y && !readonly}
         disabled={disabled}
+        hover={hover && !isSel && !readonly}
+        {...(readonly && {
+          style: { cursor: "unset" },
+        })}
         {...(!(readonly || disabled) && {
           onClick: () => {
-            let newVote: number = i + 1;
-            setValue(newVote);
             onChange(i + 1);
           },
-          onMouseEnter: () => {
-            setHover(i);
-          },
-          onMouseLeave: () => {
-            setHover(null);
-          },
+          ...(hover && {
+            onMouseEnter: () => {
+              setHov(i);
+            },
+            onMouseLeave: () => {
+              setHov(null);
+            },
+          }),
         })}
       >
-        {ICONS[type][iconToShow]}
-      </IconButton>,
+        {icon}
+      </IconButton>
     );
-  }
-
-  return iconArray;
+  });
 };
 
-export default RaterComponent;
+export default Component;

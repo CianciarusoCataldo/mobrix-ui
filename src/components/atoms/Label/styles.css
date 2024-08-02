@@ -1,4 +1,14 @@
 [data-mbx-id*="label"] {
-  color: var(--mbx-c-lab-txt);
   background: transparent;
+  width: fit-content;
+  --mbx-lbtxt: var(--mbx-ovlbtxtl, var(--mbx-label-text-light));
+  color: var(
+    --mbx-lbtxt,
+    var(--mbx-ovlbtxt, var(--mbx-label-text, var(--mbx-c-txt)))
+  );
+  --mbx-sh-def: none;
+}
+
+[data-mbx-id*="label"][data-mbx-dk] {
+  --mbx-lbtxt: var(--mbx-ovlbtxtd, var(--mbx-label-text-dark));
 }

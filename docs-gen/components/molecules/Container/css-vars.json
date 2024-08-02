@@ -12,17 +12,43 @@
     "defaultGlobal": "--mbx-background-dark",
     "fallback": "--mbx-container-background"
   },
-  "--mbx-container-text-color": {
-    "description": "Fallback value for `--mbx-container-text-color-light` and `--mbx-container-text-color-dark`"
+  "--mbx-container-text": {
+    "description": "Fallback value for `--mbx-container-text-light` and `--mbx-container-text-dark`"
   },
-  "--mbx-container-text-color-light": {
+  "--mbx-container-text-light": {
     "description": "Container text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
-    "defaultGlobal": "--mbx-text-color-light",
-    "fallback": "--mbx-container-text-color"
+    "defaultGlobal": "--mbx-text-light",
+    "fallback": "--mbx-container-text"
   },
-  "--mbx-container-text-color-dark": {
+  "--mbx-container-text-dark": {
     "description": "Container text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
-    "defaultGlobal": "--mbx-text-color-dark",
-    "fallback": "--mbx-container-text-color"
+    "defaultGlobal": "--mbx-text-dark",
+    "fallback": "--mbx-container-text"
+  },
+  "--mbx-container-background-hover": {
+    "description": "Fallback value for `--mbx-container-background-hover-light` and `--mbx-container-background-hover-dark`"
+  },
+  "--mbx-container-background-hover-light": {
+    "description": "Container background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
+    "defaultInternal": "--mbx-container-background-background-light",
+    "fallback": "--mbx-container-background-hover"
+  },
+  "--mbx-container-background-hover-dark": {
+    "description": "Container background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
+    "defaultInternal": "--mbx-container-background-hover-dark",
+    "fallback": "--mbx-container-background-hover"
+  },
+  "--mbx-container-text-hover": {
+    "description": "Fallback value for `--mbx-container-text-hover-light` and `--mbx-container-text-hover-dark`"
+  },
+  "--mbx-container-text-hover-light": {
+    "description": "Container text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
+    "defaultInternal": "--mbx-container-text-light",
+    "fallback": "--mbx-container-text-hover"
+  },
+  "--mbx-container-text-hover-dark": {
+    "description": "Container text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#hover)",
+    "defaultInternal": "--mbx-container-text-hover-dark",
+    "fallback": "--mbx-container-text-hover"
   }
 }

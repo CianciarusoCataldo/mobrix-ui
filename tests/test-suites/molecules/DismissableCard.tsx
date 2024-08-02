@@ -23,7 +23,11 @@ const cardTest = () => {
 
       const wrapper = mount(<DismissableCard onClose={onCloseStub} />);
 
-      wrapper.find('[data-mbx-scl*="dis-bt"]').at(0).simulate("click");
+      wrapper
+        .find('[data-mbx-id="cn"]')
+        .at(0)
+        .find('[data-mbx-id="icb"]')
+        .simulate("click");
       expect(onCloseStub).toBeCalled;
     });
   });

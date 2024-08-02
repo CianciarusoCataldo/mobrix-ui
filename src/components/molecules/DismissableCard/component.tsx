@@ -4,34 +4,37 @@ import { DismissableCardProps } from "../../../types/components";
 import { BuilderComponent, MbxUiComponent } from "../../../types/global";
 
 import { IconButton } from "../../atoms";
-import { x_icon } from "../../../icons";
+import { Xicon } from "../../../icons";
 
-import cardComponent from "../Card/component";
+import card from "../Card/component";
 
-const DismissableCardInternalComponent: MbxUiComponent<
-  DismissableCardProps,
-  BuilderComponent[]
-> = ({ onClose, header, ...props }) =>
-  cardComponent({
+const Component: MbxUiComponent<DismissableCardProps, BuilderComponent[]> = ({
+  onClose,
+  header,
+  dark,
+  disabled,
+  active,
+  hover,
+  a11y,
+  ...props
+}) =>
+  card({
     ...props,
+    a11y,
     header: [
-      <div data-mbx-scl="dis-cn;flxrr;" key="dis-x">
-        <IconButton
-          dark={props.dark}
-          debug={{
-            scl: "dis-bt;flxrr;wfit",
-            features: { fillOnFocus: true },
-          }}
-          disabled={props.disabled}
-          onClick={onClose}
-        >
-          {x_icon}
-        </IconButton>
-      </div>,
-      <div data-mbx-scl="cardc-head" key="dis-h">
-        {header}
-      </div>,
+      <IconButton
+        a11y={a11y}
+        dark={dark}
+        hover={hover}
+        disabled={disabled}
+        active={active}
+        onClick={onClose}
+        key="dis-x"
+      >
+        <Xicon />
+      </IconButton>,
+      <div key="dis-h">{header}</div>,
     ],
   });
 
-export default DismissableCardInternalComponent;
+export default Component;

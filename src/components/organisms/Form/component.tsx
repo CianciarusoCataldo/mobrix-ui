@@ -5,21 +5,22 @@ import { BuilderComponent, FormProps, MbxUiComponent } from "../../../types";
 import Button from "../../atoms/Button";
 import FormField from "../../molecules/FormField";
 import { Label } from "../../atoms";
-import { fieldFormatters } from "../../molecules/FormField/utils";
 
-const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
+const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
   title,
   fields,
   onSubmit,
-  submitLabel,
+  submitContent,
   children,
   fieldClassName = "",
   dark,
   disabled,
   hover,
-  shadow,
+  background,
+  a11y,
+  animated,
 }) => {
-  const dropdownFields: Record<string, string | boolean | number> = fields
+  const d_fields: Record<string, string | boolean | number> = fields
     ? Object.keys(fields).reduce(
         (o, key) => ({
           ...o,
@@ -29,71 +30,48 @@ const formComponent: MbxUiComponent<FormProps, BuilderComponent[]> = ({
       )
     : {};
 
-  const [values, setValues] =
-    React.useState<Record<string, string | boolean | number>>(dropdownFields);
+  const [vals, setVs] =
+    React.useState<Record<string, string | boolean | number>>(d_fields);
 
-  const components = [
-    <Label
-      disabled={disabled}
-      key="form_title"
-      dark={dark}
-      debug={{ scl: "title" }}
-    >
+  const cProps = { a11y, hover, disabled };
+  return [
+    <Label dark={dark} key="frm_tl" data-mbx-ftitle {...cProps}>
       {title}
     </Label>,
-    ...Object.keys(dropdownFields).map((field, index) => {
-      const fieldSettings = fields![field];
-
-      const type = fieldSettings.type || "text";
-
-      const callBack = (newValue: any) => {
-        setValues({ ...values, [field]: newValue });
-      };
+    ...Object.keys(d_fields).map((field, index) => {
+      const { type = "text", header } = fields![field];
 
       return (
-        <div
-          data-mbx-scl={`${type};f-field`}
-          className={fieldClassName}
-          key={`f_field_${index}`}
-        >
+        <div className={fieldClassName} key={`f_fld_${index}`}>
           <FormField
-            shadow={shadow}
-            disabled={disabled}
-            value={values[field]}
-            header={fieldSettings.header}
+            {...cProps}
+            animated={animated}
+            background={background}
+            value={vals[field]}
+            header={header}
             type={type}
-            onChange={callBack}
-            hover={hover}
-            headerProps={{ dark }}
-            debug={{
-              scl: fieldFormatters[type].scl.frm,
+            onChange={(vl: any) => {
+              setVs({ ...vals, [field]: vl });
             }}
+            headerProps={{ dark }}
           />
         </div>
       );
     }),
-  ];
-
-  children && components.push(children);
-
-  components.push(
+    children,
     <Button
-      disabled={disabled}
+      {...cProps}
       animated={false}
-      hover={hover}
-      shadow={shadow}
       key="form_s_bt"
       dark={!dark}
       onClick={() => {
-        onSubmit && onSubmit(values);
+        onSubmit && onSubmit(vals);
       }}
-      debug={{ scl: "s-bt" }}
+      data-mbx-sbt=""
     >
-      {submitLabel}
+      {submitContent}
     </Button>,
-  );
-
-  return components;
+  ];
 };
 
-export default formComponent;
+export default Component;

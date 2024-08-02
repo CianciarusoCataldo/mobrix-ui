@@ -1,4 +1,14 @@
-[data-mbx-id="counterbox"] {
-  background-color: var(--mbx-c-cnt-bg);
-  color: var(--mbx-c-cnt-txt);
+[data-mbx-id="count"] {
+  --mbx-defbg: var(--mbx-counterbox-background);
+  --mbx-deftxt: var(--mbx-counterbox-text);
+  --mbx-defbgh: var(--mbx-counterbox-background-hover);
+  --mbx-deftxth: var(--mbx-counterbox-text-hover);
+  --mbx-bg-l: var(--mbx-counterbox-background-light);
+  --mbx-txt-l: var(--mbx-counterbox-text-light);
+  --mbx-bg-d: var(--mbx-counterbox-background-dark);
+  --mbx-txt-d: var(--mbx-counterbox-text-dark);
+  --mbx-bg-h-l: var(--mbx-counterbox-background-hover-light);
+  --mbx-txt-h-l: var(--mbx-counterbox-text-hover-light);
+  --mbx-bg-h-d: var(--mbx-counterbox-background-hover-dark);
+  --mbx-txt-h-d: var(--mbx-counterbox-text-hover-dark);
 }

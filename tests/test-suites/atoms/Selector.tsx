@@ -8,7 +8,7 @@ const selectorTest = () => {
       let wrapper = mount(
         <Selector
           optionClassName="test-class"
-          additionalProps={{ "data-mbx-test-prop": true }}
+          props={{ "data-mbx-test-prop": true }}
         />
       );
       wrapper.find("select").simulate("change", { value: 1 });
