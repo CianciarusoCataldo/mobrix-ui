@@ -1,24 +1,3 @@
-body {
-  --mbx-field-background: red;
-  --mbx-inputbox-background-light: blue;
-  --mbx-toggle-background-dark: green;
-  --mbx-toggle-background-hover: pink;
-  --mbx-toggle-background-hover-light: brown;
-  --mbx-toggle-background-hover-dark: gray;
-  --mbx-toggle-on-icon-internal: yellow;
-  --mbx-toggle-off-icon-internal: orange;
-  --mbx-toggle-on-icon-external: purple;
-  --mbx-toggle-off-icon-external: rgb(0, 255, 200);
-  --mbx-slider-thumb-hover-light: rgb(255, 0, 170);
-  --mbx-slider-thumb-hover-dark: rgb(187, 255, 123);
-  --mbx-radio-icon: rgb(118, 163, 118);
-  --mbx-radio-icon-light: rgb(247, 185, 185);
-  --mbx-password-icon-dark: rgb(74, 112, 52);
-  --mbx-password-icon-hover: rgb(97, 83, 114);
-  --mbx-password-icon-hover-light: rgb(82, 0, 0);
-  --mbx-password-icon-hover-dark: rgb(0, 66, 61);
-}
-
 body.light .arrow {
   fill: rgb(77, 77, 77);
 }

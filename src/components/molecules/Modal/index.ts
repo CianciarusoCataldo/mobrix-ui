@@ -47,29 +47,31 @@ import component from "./component";
  */
 const Modal: ModalComponent = ({
   children,
-  closeOutside,
   /* istanbul ignore next */
-  onClose = () => {},
+  onClose,
+  /* istanbul ignore next */
+  onKeyDown = () => {},
   hide,
   ...props
 }) => {
   const [value, setValue] = React.useState("");
 
-  const onCloseCallback = () => {
-    setValue("out");
-    /* istanbul ignore next */
-    setTimeout(() => {
-      setValue("");
-      onClose();
-    }, 200);
-  };
+  const extFn =
+    onClose &&
+    (() => {
+      setValue("out");
+      /* istanbul ignore next */
+      setTimeout(() => {
+        setValue("");
+        onClose();
+      }, 200);
+    });
 
   return buildMbxStandard(props, (mbxProps) => ({
     name: "mod",
     Component: component({
       children,
-      closeOutside,
-      onClose: onCloseCallback,
+      onClose: extFn,
       hide,
       ...mbxProps,
     }),
@@ -80,8 +82,17 @@ const Modal: ModalComponent = ({
         })`,
       }),
     },
+    addProps: { autoFocus: !hide },
     mbxProps: {
       ...mbxProps,
+      onKeyDown: extFn
+        ? (e) => {
+            if (e.code === "Escape") {
+              extFn();
+            }
+            onKeyDown(e);
+          }
+        : onKeyDown,
       hide: value.length === 0 && hide,
     },
     features: { wBgCl: true },

@@ -48,6 +48,8 @@ const parseFts: (props: MbxSharedProps & Features) => {
   wAll,
   wAllc,
   wBgCl,
+  className,
+  id,
 }) => ({
   parS: filter(
     [
@@ -79,6 +81,8 @@ const parseFts: (props: MbxSharedProps & Features) => {
       [!!onFocus, "onFocus", onFocus, true],
       [a11y && a11yLabel, "a11yLabel", a11yLabel, true],
       [a11y, "tabIndex", String(tabIndex || 0), true],
+      [!!className, "className", className, true],
+      [!!id, "id", id, true],
     ],
     "data-mbx-"
   ),
@@ -151,8 +155,6 @@ const getMbxUiStandard = ({
     ...addProps,
     ...parP,
     "data-mbx-id": name,
-    className: cprops.className,
-    id: cprops.id,
   };
 
   const cstyles = {

@@ -21,10 +21,10 @@
 
 [data-mbx-id="tview"] > [data-mbx-id="cn"] {
   padding: 0.7rem 1rem;
-  --mbx-container-background-light: var(--mbx-tabv-bg);
-  --mbx-container-text-light: var(--mbx-tabv-txt);
-  --mbx-container-background-dark: var(--mbx-tabv-bg);
-  --mbx-container-text-dark: var(--mbx-tabv-txt);
+  --mbx-ovconbgl: var(--mbx-tabv-bg);
+  --mbx-ovcontxtl: var(--mbx-tabv-txt);
+  --mbx-ovconbgd: var(--mbx-tabv-bg);
+  --mbx-ovcontxtd: var(--mbx-tabv-txt);
 }
 
 [data-mbx-id="tview"] > [data-mbx-tbls] {
@@ -33,10 +33,10 @@
 }
 
 [data-mbx-id="tview"] [data-mbx-tbvsel="true"] {
-  --mbx-button-background-light: var(--mbx-tabv-bg);
-  --mbx-button-background-dark: var(--mbx-tabv-bg);
-  --mbx-button-text-light: var(--mbx-tabv-txt);
-  --mbx-button-text-dark: var(--mbx-tabv-txt);
+  --mbx-ovbgl: var(--mbx-tabv-bg);
+  --mbx-ovbgd: var(--mbx-tabv-bg);
+  --mbx-ovtxtl: var(--mbx-tabv-txt);
+  --mbx-ovtxtd: var(--mbx-tabv-txt);
 }
 
 [data-mbx-id="tview"] [data-mbx-tbvsel="false"] {
@@ -45,35 +45,35 @@
   --mbx-tv-it: var(--mbx-tabviewer-inactive-text);
   --mbx-tv-ith: var(--mbx-tabviewer-inactive-text-hover);
 
-  --mbx-button-background-light: var(
+  --mbx-ovbgl: var(
     --mbx-tabviewer-inactive-background-light,
     var(--mbx-tv-ib, linear-gradient(to right, #a1a0a0, #797979))
   );
-  --mbx-button-background-hover-light: var(
+  --mbx-ovbghl: var(
     --mbx-tabviewer-inactive-background-hover-light,
     var(--mbx-tv-ibh, linear-gradient(to right, #b6b4b4, #999797))
   );
-  --mbx-button-text-light: var(
+  --mbx-ovtxtl: var(
     --mbx-tabviewer-inactive-text-light,
     var(--mbx-tv-it, #c2c2c2)
   );
-  --mbx-button-text-hover-light: var(
+  --mbx-ovtxthl: var(
     --mbx-tabviewer-inactive-text-hover-light,
     var(--mbx-tv-ith)
   );
-  --mbx-button-background-dark: var(
+  --mbx-ovbgd: var(
     --mbx-tabviewer-inactive-background-dark,
     var(--mbx-tv-ib, linear-gradient(to right, #3e4b63, #3f4858))
   );
-  --mbx-button-background-hover-dark: var(
+  --mbx-ovbghd: var(
     --mbx-tabviewer-inactive-background-hover-dark,
     var(--mbx-tv-ib, linear-gradient(to right, #566888, #3c465a))
   );
-  --mbx-button-text-dark: var(
+  --mbx-ovtxtd: var(
     --mbx-tabviewer-inactive-text-dark,
     var(--mbx-tv-it, #c2c2c2)
   );
-  --mbx-button-text-hover-dark: var(
+  --mbx-ovtxthd: var(
     --mbx-tabviewer-inactive-text-hover-dark,
     var(--mbx-tv-ith)
   );

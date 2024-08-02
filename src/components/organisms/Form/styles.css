@@ -24,22 +24,12 @@
 
 [data-mbx-id="form"] > [data-mbx-sbt] {
   margin-top: 0.9rem;
-  --mbx-button-background-light: var(
-    --mbx-form-submit-background-light,
-    var(--mbx-form-submit-background)
-  );
-  --mbx-button-text-light: var(
-    --mbx-form-submit-text-light,
-    var(--mbx-form-submit-text)
-  );
-  --mbx-button-background-dark: var(
-    --mbx-form-submit-background-dark,
-    var(--mbx-form-submit-background)
-  );
-  --mbx-button-text-dark: var(
-    --mbx-form-submit-text-dark,
-    var(--mbx-form-submit-text)
-  );
+  --mbx-ovbg: var(--mbx-form-submit-background);
+  --mbx-ovtxt: var(--mbx-form-submit-text);
+  --mbx-ovbgl: var(--mbx-form-submit-background-dark);
+  --mbx-ovtxtl: var(--mbx-form-submit-text-dark);
+  --mbx-ovbgd: var(--mbx-form-submit-background-light);
+  --mbx-ovtxtd: var(--mbx-form-submit-text-light);
 }
 
 [data-mbx-id="form"] > div > [data-mbx-id="fld"] {

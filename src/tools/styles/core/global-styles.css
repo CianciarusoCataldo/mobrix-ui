@@ -29,7 +29,9 @@
   --mbx-def-txth: var(--mbx-ovtxth, var(--mbx-deftxth, var(--mbx-c-txt-h)));
   --mbx-bgh: var(--mbx-ovbghl, var(--mbx-bg-h-l, var(--mbx-def-bgh)));
   --mbx-txth: var(--mbx-ovtxthl, var(--mbx-txt-h-l, var(--mbx-def-txth)));
-  --mbx-bg: var(--mbx-ovbgl, var(--mbx-bg-l, var(--mbx-def-bg)));
+  --mbx-bgd: var(--mbx-ovbgd, var(--mbx-bg-d, var(--mbx-def-bg)));
+  --mbx-bgl: var(--mbx-ovbgl, var(--mbx-bg-l, var(--mbx-def-bg)));
+  --mbx-bg: var(--mbx-bgl);
   --mbx-txt: var(--mbx-ovtxtl, var(--mbx-txt-l, var(--mbx-def-txt)));
 }
 
@@ -49,7 +51,8 @@
 }
 
 [data-mbx-id][data-mbx-dk] {
-  --mbx-bg: var(--mbx-ovbgd, var(--mbx-bg-d, var(--mbx-def-bg)));
+  --mbx-bg: var(--mbx-bgd);
+  --mbx-rvrbg: var(--mbx-bgl);
   --mbx-txt: var(--mbx-ovtxtd, var(--mbx-txt-d, var(--mbx-def-txt)));
   --mbx-bgh: var(--mbx-ovbghd, var(--mbx-bg-h-d, var(--mbx-def-bgh)));
   --mbx-txth: var(--mbx-ovtxthd, var(--mbx-txt-h-d, var(--mbx-def-txth)));

@@ -67,17 +67,18 @@ const Component: MbxUiComponent<
   };
 
   const cProps = { a11y, disabled, dark, hover };
+
+  const dlabel = (val, key) => (
+    <Label key={key} {...cProps}>
+      {String(val)}
+    </Label>
+  );
+
   return [
     <div key="dpk_sels" data-mbx-date-s>
-      <Label {...cProps} key="day">
-        {String(day)}
-      </Label>
-      <Label {...cProps} key="month">
-        {String(customMonths[month])}
-      </Label>
-      <Label {...cProps} key="year">
-        {String(year)}
-      </Label>
+      {dlabel(day, "day")}
+      {dlabel(customMonths[month], "month")}
+      {dlabel(year, "year")}
     </div>,
     <IconButton
       {...cProps}
@@ -85,7 +86,7 @@ const Component: MbxUiComponent<
       key="dpk_cal_bt"
       active={active}
     >
-      <CalendarIcon {...cProps} />
+      <CalendarIcon />
     </IconButton>,
     <Modal
       {...cProps}

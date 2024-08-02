@@ -65,8 +65,6 @@
     --mbx-ovcaltdl,
     var(--mbx-calendar-today-light, var(--mbx-defcaltd))
   );
-  --mbx-table-background: var(--mbx-cal-bg);
-  --mbx-table-text: var(--mbx-cal-txt);
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -136,6 +134,11 @@
   margin: auto;
   width: 100%;
   margin-top: 1rem;
+  --mbx-ovbgl: var(--mbx-cal-bg);
+  --mbx-ovtxtl: var(--mbx-cal-txt);
+  --mbx-ovbgd: var(--mbx-cal-bg);
+  --mbx-ovtxtd: var(--mbx-cal-txt);
+
 }
 
 [data-mbx-id="cal"] [data-mbx-tcell] {

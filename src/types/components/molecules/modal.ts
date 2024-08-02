@@ -15,10 +15,7 @@ import {
  * @copyright 2024 Cataldo Cianciaruso
  */
 export type ModalProps = ComponentWithChildren<BuilderComponent> &
-  ClosableComponent & {
-    /** if `true`, and if `unstyled`===`false`, the modal can be closed by clicking outside it */
-    closeOutside?: boolean;
-  };
+  ClosableComponent;
 
 /**
  * {@link https://cianciarusocataldo.github.io/mobrix-ui MoBrix-ui} Modal component
