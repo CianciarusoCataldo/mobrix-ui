@@ -30,12 +30,12 @@
   height: 100%;
   width: 100%;
   --mbx-def-modx: white;
-  --mbx-dismissablecard-x: var(--mbx-modal-x, var(--mbx-def-modx));
-  --mbx-dismissablecard-x-hover: var(--mbx-modal-x-hover);
-  --mbx-dismissablecard-x-light: var(--mbx-modal-x-light);
-  --mbx-dismissablecard-x-hover-light: var(--mbx-modal-x-hover-light);
-  --mbx-dismissablecard-x-dark: var(--mbx-modal-x-dark);
-  --mbx-dismissablecard-x-hover-dark: var(--mbx-modal-x-hover-dark);
+  --mbx-ovdcrdx: var(--mbx-modal-x, var(--mbx-def-modx));
+  --mbx-ovdcrdxh: var(--mbx-modal-x-hover);
+  --mbx-ovdcrdxl: var(--mbx-modal-x-light);
+  --mbx-ovdcrdxhl: var(--mbx-modal-x-hover-light);
+  --mbx-ovdcrdxd: var(--mbx-modal-x-dark);
+  --mbx-ovdcrdxhd: var(--mbx-modal-x-hover-dark);
   --mbx-sh-def: none;
 }
 

@@ -17,18 +17,16 @@
   border-bottom-right-radius: 0%;
   border-top-right-radius: 0%;
   --mbx-sh-def: none;
-  --mbx-deftxth: var(--mbx-pswt);
+  --mbx-deftxth: var(--mbx-password-text-hover, var(--mbx-pswt));
   --mbx-defbgh: var(--mbx-password-background-hover);
-  --mbx-inputbox-text-light: var(--mbx-pswt);
-  --mbx-inputbox-text-dark: var(--mbx-pswt);
-  --mbx-inputbox-background-light: var(--mbx-pswbg);
-  --mbx-inputbox-background-dark: var(--mbx-pswbg);
-  --mbx-inputbox-background-hover-light: var(
-    --mbx-password-background-hover-light
-  );
-  --mbx-inputbox-background-hover-dark: var(
-    --mbx-password-background-hover-dark
-  );
+  --mbx-ovtxtl: var(--mbx-pswt);
+  --mbx-ovtxtd: var(--mbx-pswt);
+  --mbx-ovbgl: var(--mbx-pswbg);
+  --mbx-ovbgd: var(--mbx-pswbg);
+  --mbx-ovbghl: var(--mbx-password-background-hover-light);
+  --mbx-ovbghd: var(--mbx-password-background-hover-dark);
+  --mbx-ovtxthl: var(--mbx-password-text-hover-light);
+  --mbx-ovtxthd: var(--mbx-password-text-hover-dark);
 }
 
 [data-mbx-id="psw"] > [data-mbx-id="icb"] {

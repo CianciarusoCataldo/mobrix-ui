@@ -70,7 +70,8 @@
 }
 
 [data-mbx-id="fld"] > [data-mbx-id="cn"] {
-  --mbx-container-text: var(--mbx-fld-err-txt);
+  --mbx-ovcontxtl: var(--mbx-fld-err-txt);
+  --mbx-ovcontxtd: var(--mbx-fld-err-txt);
   transition: all 0.3s ease-out;
   padding-top: 0.2rem;
 }

@@ -20,10 +20,13 @@
   margin-left: auto;
   display: flex;
   width: fit-content;
-  --mbx-defic: var(--mbx-dismissablecard-x, var(--mbx-dcrd-txt));
-  --mbx-defich: var(--mbx-dismissablecard-x-hover, red);
-  --mbx-icn-l: var(--mbx-dismissablecard-x-light);
-  --mbx-icn-hv-l: var(--mbx-dismissablecard-x-hover-light);
-  --mbx-icn-d: var(--mbx-dismissablecard-x-dark);
-  --mbx-icn-hv-d: var(--mbx-dismissablecard-x-hover-dark);
+  --mbx-defic: var(
+    --mbx-ovdcrdx,
+    var(--mbx-dismissablecard-x, var(--mbx-dcrd-txt))
+  );
+  --mbx-defich: var(--mbx-ovdcrdxh, var(--mbx-dismissablecard-x-hover, red));
+  --mbx-icn-l: var(--mbx-ovcrdxl, var(--mbx-dismissablecard-x-light));
+  --mbx-icn-hv-l: var(--mbx-ovcrdxhl, var(--mbx-dismissablecard-x-hover-light));
+  --mbx-icn-d: var(--mbx-ovcrdxd, var(--mbx-dismissablecard-x-dark));
+  --mbx-icn-hv-d: var(--mbx-ovcrdxhd, var(--mbx-dismissablecard-x-hover-dark));
 }

@@ -10,10 +10,10 @@
   border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
-  --mbx-container-text: var(--mbx-popup-text);
-  --mbx-container-background: var(--mbx-popup-background);
-  --mbx-container-background-light: var(--mbx-popup-background-light);
-  --mbx-container-background-dark: var(--mbx-popup-background-dark);
-  --mbx-container-text-light: var(--mbx-popup-text-light);
-  --mbx-container-text-dark: var(--mbx-popup-text-dark);
+  --mbx-ovcontxt: var(--mbx-popup-text);
+  --mbx-ovconbg: var(--mbx-popup-background);
+  --mbx-ovconbgl: var(--mbx-popup-background-light);
+  --mbx-ovconbgd: var(--mbx-popup-background-dark);
+  --mbx-ovcontxtl: var(--mbx-popup-text-light);
+  --mbx-ovcontxtd: var(--mbx-popup-text-dark);
 }
