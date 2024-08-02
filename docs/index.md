@@ -25,7 +25,7 @@ Smart React components for every app, easily customizable for every purpose.
 
 > ## Note for older MoBrix-ui version
 >
-> If you still want to use older MoBrix-ui versions, read the [old versions guide](https://cianciarusocataldo.github.io/mobrix-ui/docs/old-guides) .
+> If you still want to use older MoBrix-ui versions, check [older MoBrix-ui versions guides](https://cianciarusocataldo.github.io/mobrix-ui/docs/old-guides) .
 >
 > (Upgrade it to v4.X.X if possible!)
 >
