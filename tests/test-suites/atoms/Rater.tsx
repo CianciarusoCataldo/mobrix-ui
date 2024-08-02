@@ -9,7 +9,8 @@ const raterTest = () => {
       expect(wrapper);
       wrapper = mount(
         <Rater
-          type="circle"
+          emptyIcon={<div/>}
+          fullIcon={<div/>}
           vertical
           props={{ "data-mbx-test-class": "test" }}
           value={2}

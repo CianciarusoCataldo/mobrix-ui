@@ -20,6 +20,8 @@ const component: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
   dark,
   active,
   a11y,
+  emptyIcon,
+  fullIcon,
 }) => {
   const cProps = { dark, disabled, a11y, hover };
   return [
@@ -62,6 +64,8 @@ const component: MbxUiComponent<ReviewProps, BuilderComponent[]> = ({
       value={rate}
       max={max}
       active={active}
+      emptyIcon={emptyIcon}
+      fullIcon={fullIcon}
       {...cProps}
     />,
   ];

@@ -16,11 +16,6 @@
   --mbx-drw-rt: 90deg;
 }
 
-[data-mbx-id="drw"][data-mbx-drwlc^="top"],
-[data-mbx-id="drw"][data-mbx-drwlc^="bottom"] {
-  max-height: 95%;
-}
-
 [data-mbx-id="drw"][data-mbx-drwlc="top"],
 [data-mbx-id="drw"][data-mbx-drwlc="bottom"] {
   left: 0;
@@ -28,11 +23,18 @@
   width: 100%;
 }
 
+[data-mbx-id="drw"][data-mbx-drwlc^="top"],
+[data-mbx-id="drw"][data-mbx-drwlc^="bottom"] {
+  --mbx-drwmrg: 0 auto;
+  max-height: 95%;
+}
+
 [data-mbx-id="drw"][data-mbx-drwlc="left"],
 [data-mbx-id="drw"][data-mbx-drwlc="right"] {
   top: 0;
   bottom: 0;
   height: 100%;
+  --mbx-drwmrg: auto 0;
 }
 
 [data-mbx-id="drw"][data-mbx-drwlc="left"] {
@@ -48,27 +50,20 @@
   --mbx-drw-rt: 180deg;
 }
 
-[data-mbx-id="drw"][data-mbx-drwlc*="left"] {
+[data-mbx-id="drw"][data-mbx-drwlc$="left"] {
   right: auto;
   left: 0;
 }
 
-[data-mbx-id="drw"][data-mbx-drwlc*="right"] {
+[data-mbx-id="drw"][data-mbx-drwlc$="right"] {
   left: auto;
   right: 0;
 }
 
-[data-mbx-id="drw"][data-mbx-drwlc^="top"] > [data-mbx-id="icb"],
-[data-mbx-id="drw"][data-mbx-drwlc^="bottom"] > [data-mbx-id="icb"] {
-  margin: 0 auto;
+[data-mbx-id="drw"] > [data-mbx-id="icb"] {
+  margin: var(--mbx-drwmrg);
 }
 
-[data-mbx-id="drw"][data-mbx-drwlc="right"] > [data-mbx-id="icb"],
-[data-mbx-id="drw"][data-mbx-drwlc="left"] > [data-mbx-id="icb"] {
-  height: fit-content;
-  margin: auto 0;
-}
-
-[data-mbx-id="drw"] > [data-mbx-id="icb"] svg {
+[data-mbx-id="drw"] > [data-mbx-id="icb"] > svg {
   transform: rotate(var(--mbx-drw-rt));
 }

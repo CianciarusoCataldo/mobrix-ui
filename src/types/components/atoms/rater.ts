@@ -21,9 +21,6 @@ export type RaterProps = ComponentWithValue<number> &
     /** max vote (max number of icons showed) */
     max?: number;
 
-    /** vote icons type */
-    type?: "star" | "circle";
-
     /** if true, the rate can't be changed by clicking on the icons */
     readonly?: boolean;
 
