@@ -1,22 +1,3 @@
-body {
-  --mbx-password-background: red;
-  --mbx-password-background-light: rgb(181, 170, 228);
-  --mbx-password-background-dark: rgb(255, 114, 59);
-  --mbx-password-text: rgb(153, 152, 82);
-  --mbx-password-text-light: blue;
-  --mbx-password-text-dark: green;
-  --mbx-password-background-hover: pink;
-  --mbx-password-background-hover-light: brown;
-  --mbx-password-background-hover-dark: gray;
-  --mbx-password-text-hover: rgb(118, 163, 118);
-  --mbx-password-text-hover-light: rgb(118, 163, 118);
-  --mbx-password-text-hover-dark: rgb(255, 187, 0);
-  --mbx-password-icon-dark: rgb(74, 112, 52);
-  --mbx-password-icon-hover: rgb(97, 83, 114);
-  --mbx-password-icon-hover-light: rgb(82, 0, 0);
-  --mbx-password-icon-hover-dark: rgb(0, 66, 61);
-}
-
 body.light .arrow {
   fill: rgb(77, 77, 77);
 }
