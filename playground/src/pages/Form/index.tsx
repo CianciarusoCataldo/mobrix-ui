@@ -11,7 +11,7 @@ const FormPage = () => (
     translations
     render={(t, componentLabel) => {
       let props: Record<string, any> = { ...demoProps };
-      ["title", "children", "submitLabel"].forEach(
+      ["title", "children", "submitContent"].forEach(
         (el) => (props[el] = StringProp(t("props", { context: el })))
       );
 
@@ -23,7 +23,7 @@ const FormPage = () => (
           startColor="#A19B9B"
           props={props}
           rows={[
-            ["title", "submitLabel"],
+            ["title", "submitContent"],
             ["children", "fieldClassName"],
             ...demoRows,
           ]}

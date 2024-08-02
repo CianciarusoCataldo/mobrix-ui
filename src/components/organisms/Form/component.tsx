@@ -10,7 +10,7 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
   title,
   fields,
   onSubmit,
-  submitLabel,
+  submitContent,
   children,
   fieldClassName = "",
   dark,
@@ -69,7 +69,7 @@ const Component: MbxUiComponent<FormProps, BuilderComponent[]> = ({
       }}
       data-mbx-sbt=""
     >
-      {submitLabel}
+      {submitContent}
     </Button>,
   ];
 };

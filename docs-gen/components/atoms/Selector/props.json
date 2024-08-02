@@ -12,7 +12,7 @@
   "optionClassName": {
     "default": "",
     "type": "string",
-    "description": "className applied on every options inside the selector"
+    "description": "className applied on every option inside the selector"
   },
   "onChange": {
     "type": "(newValue: number) => void",

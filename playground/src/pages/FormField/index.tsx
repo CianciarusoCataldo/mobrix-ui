@@ -16,7 +16,7 @@ const FormPage = () => (
     translations
     render={(t, componentLabel) => {
       let props: Record<string, any> = { ...demoProps };
-      ["title", "children", "submitLabel"].forEach(
+      ["title", "children", "submitContent"].forEach(
         (el) => (props[el] = StringProp(t("props", { context: el })))
       );
 

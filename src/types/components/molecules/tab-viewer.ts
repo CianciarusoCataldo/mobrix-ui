@@ -21,9 +21,8 @@ export type Tab = {
   /** Tab content */
   content?: JSX.Element;
 
+  /** Tab content that will be lazy loaded */
   lazy?: LazyExoticComponent<() => JSX.Element>;
-
-  dismissable?: boolean;
 };
 
 /**

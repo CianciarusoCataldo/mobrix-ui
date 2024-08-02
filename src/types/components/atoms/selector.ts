@@ -15,10 +15,11 @@ import {
  */
 export type SelectorProps = ComponentWithValue<number> &
   ComponentWithCallback<number> & {
-    /** selector options, every element must be a string */
+    /** Selector options, every element must be a string */
     elements?: string[];
 
-    optionClassName?: string
+    /** ClassName applied on every option inside the selector */
+    optionClassName?: string;
   };
 
 /**

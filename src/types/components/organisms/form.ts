@@ -1,7 +1,4 @@
-import {
-  ComponentWithChildren,
-  MbxUiComponent,
-} from "../../global";
+import { ComponentWithChildren, MbxUiComponent } from "../../global";
 
 import { FormFieldProps } from "../molecules/form-field";
 
@@ -29,14 +26,16 @@ export type FormProps = ComponentWithChildren<JSX.Element> & {
     }
   >;
 
-  /** Custom submit button label */
-  submitLabel?: JSX.Element | string;
+  /** Custom submit button content */
+  submitContent?: JSX.Element | string;
 
   /** Custom className applied on every single field component */
   fieldClassName?: string;
 
+  /** Custom validation callback. Must return an object with every field associated with a boolean value (if `false`, the field will be in error state) */
   validate?: (fieldValues: Record<string, any>) => Record<string, boolean>;
 
+  /** Custom callback, called on submit */
   onSubmit?: (values: Record<string, any>) => void;
 };
 

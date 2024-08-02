@@ -56,7 +56,7 @@ export type FormFieldProps<T = any> = ComponentWithValue &
     /** If `true`, the submit button will be disabled when this field is empty */
     required?: boolean;
 
-    /** Custom validation function called on submit. I */
+    /** Custom validation function called on submit. */
     validate?: (fieldValue: T) => boolean;
 
     /** Custom classname applied on every header element */

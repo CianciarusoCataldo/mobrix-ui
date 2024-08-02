@@ -6,7 +6,7 @@
   "props_field_password": "Text password field",
   "props_field_text": "Text field",
   "props_field_custom": "Custom field",
-  "props_submitLabel": "Button content",
+  "props_submitContent": "Button content",
   "props_title": "Title",
   "props_children": "Custom content"
 }

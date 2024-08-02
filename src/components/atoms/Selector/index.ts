@@ -11,7 +11,7 @@ import sComponent from "./component";
  *
  * @param {number} value option index actually displayed
  * @param {string[]} elements selector options array, every element must be a string
- * @param {string} optionClassName className applied on every options inside the selector
+ * @param {string} optionClassName className applied on every option inside the selector
  * @param {(newValue: number) => void} onChange Callback triggered when Selector component input value is changed by the user
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container

@@ -22,6 +22,7 @@ const Component: MbxUiComponent<DropdownProps, Omit<BuilderProps, "name">> = ({
   shadow,
   a11y,
   elements = [],
+  hideArrow,
   ...props
 }) => {
   const [vis, setVis] = React.useState(false);
@@ -88,6 +89,7 @@ const Component: MbxUiComponent<DropdownProps, Omit<BuilderProps, "name">> = ({
           onClick={invert}
           data-mbx-rt={vis}
           key="ar-ic"
+          hide={hideArrow}
         >
           <ArrowIcon {...cProps} width="15" height="12" />
         </IconButton>
