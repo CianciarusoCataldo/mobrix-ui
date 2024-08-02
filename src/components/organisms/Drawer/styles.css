@@ -31,8 +31,8 @@
 [data-mbx-id="drw"] > [data-mbx-id="icb"] > [data-mbx-img] {
   --mbx-defic: var(--mbx-drawer-arrow, var(--mbx-draw-txt));
   --mbx-defich: var(--mbx-drawer-arrow-hover);
-  --mbx-icon-light: var(--mbx-drawer-arrow-light);
-  --mbx-icon-hover-light: var(--mbx-drawer-arrow-hover-light);
-  --mbx-icon-dark: var(--mbx-drawer-arrow-dark);
-  --mbx-icon-hover-dark: var(--mbx-drawer-arrow-hover-dark);
+  --mbx-icn-l: var(--mbx-drawer-arrow-light);
+  --mbx-icn-hv-l: var(--mbx-drawer-arrow-hover-light);
+  --mbx-icn-d: var(--mbx-drawer-arrow-dark);
+  --mbx-icn-hv-d: var(--mbx-drawer-arrow-hover-dark);
 }

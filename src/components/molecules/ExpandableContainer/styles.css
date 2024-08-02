@@ -40,8 +40,8 @@
 [data-mbx-id="ecn"] > [data-mbx-id="icb"] > [data-mbx-img="arr"] {
   --mbx-defic: var(--mbx-expandablecontainer-arrow, var(--mbx-con-txt));
   --mbx-defich: var(--mbx-expandablecontainer-arrow-hover, var(--mbx-con-txt));
-  --mbx-icon-light: var(--mbx-expandablecontainer-arrow-light);
-  --mbx-icon-hover-light: var(--mbx-expandablecontainer-arrow-hover-light);
-  --mbx-icon-dark: var(--mbx-expandablecontainer-arrow-dark);
-  --mbx-icon-hover-dark: var(--mbx-expandablecontainer-arrow-hover-dark);
+  --mbx-icn-l: var(--mbx-expandablecontainer-arrow-light);
+  --mbx-icn-hv-l: var(--mbx-expandablecontainer-arrow-hover-light);
+  --mbx-icn-d: var(--mbx-expandablecontainer-arrow-dark);
+  --mbx-icn-hv-d: var(--mbx-expandablecontainer-arrow-hover-dark);
 }

@@ -88,27 +88,27 @@
   > [data-mbx-id="icb"]
   > [data-mbx-img="arr"] {
   margin: auto 0.15rem;
-  --mbx-icon: var(--mbx-dropdown-arrow, var(--mbx-dd-txt));
-  --mbx-icon-hover: var(--mbx-dropdown-arrow-hover);
-  --mbx-icon-light: var(--mbx-dropdown-arrow-light);
-  --mbx-icon-dark: var(--mbx-dropdown-arrow-dark);
-  --mbx-icon-hover-light: var(--mbx-dropdown-arrow-hover-light);
-  --mbx-icon-hover-dark: var(--mbx-dropdown-arrow-hover-dark);
+  --mbx-icn: var(--mbx-dropdown-arrow, var(--mbx-dd-txt));
+  --mbx-icn-hv: var(--mbx-dropdown-arrow-hover);
+  --mbx-icn-l: var(--mbx-dropdown-arrow-light);
+  --mbx-icn-d: var(--mbx-dropdown-arrow-dark);
+  --mbx-icn-hv-l: var(--mbx-dropdown-arrow-hover-light);
+  --mbx-icn-hv-d: var(--mbx-dropdown-arrow-hover-dark);
 }
 
 [data-mbx-id="dd"]
   > [data-mbx-id="pp"]
   > [data-mbx-id="cn"]
   > [data-mbx-id="btn"] {
-    --mbx-sh-def: none;
-  --mbx-button-text-light: var(--mbx-dd-txt);
-  --mbx-button-text-hover-light: var(--mbx-dd-txth);
-  --mbx-button-background-hover-light: var(--mbx-dd-bgh);
-  --mbx-button-text-dark: var(--mbx-dd-txt);
-  --mbx-button-text-hover-dark: var(--mbx-dd-txth);
-  --mbx-button-background-hover-dark: var(--mbx-dd-bgh);
-  --mbx-button-background-light: transparent;
-  --mbx-button-background-dark: transparent;
+  --mbx-sh-def: none;
+  --mbx-ovtxtl: var(--mbx-dd-txt);
+  --mbx-ovtxthl: var(--mbx-dd-txth);
+  --mbx-ovbghl: var(--mbx-dd-bgh);
+  --mbx-ovtxtd: var(--mbx-dd-txt);
+  --mbx-ovtxthd: var(--mbx-dd-txth);
+  --mbx-ovbghd: var(--mbx-dd-bgh);
+  --mbx-ovbgl: transparent;
+  --mbx-ovbgd: transparent;
   padding: 0.25rem;
   display: flex;
   flex-direction: column;

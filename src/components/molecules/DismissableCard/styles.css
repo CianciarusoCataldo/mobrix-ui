@@ -22,8 +22,8 @@
   width: fit-content;
   --mbx-defic: var(--mbx-dismissablecard-x, var(--mbx-dcrd-txt));
   --mbx-defich: var(--mbx-dismissablecard-x-hover, red);
-  --mbx-icon-light: var(--mbx-dismissablecard-x-light);
-  --mbx-icon-hover-light: var(--mbx-dismissablecard-x-hover-light);
-  --mbx-icon-dark: var(--mbx-dismissablecard-x-dark);
-  --mbx-icon-hover-dark: var(--mbx-dismissablecard-x-hover-dark);
+  --mbx-icn-l: var(--mbx-dismissablecard-x-light);
+  --mbx-icn-hv-l: var(--mbx-dismissablecard-x-hover-light);
+  --mbx-icn-d: var(--mbx-dismissablecard-x-dark);
+  --mbx-icn-hv-d: var(--mbx-dismissablecard-x-hover-dark);
 }

@@ -172,13 +172,13 @@
     var(--mbx-calendar-arrow, var(--mbx-cal-txt))
   );
   --mbx-defich: var(--mbx-ovcalich, var(--mbx-calendar-arrow-hover));
-  --mbx-icon-light: var(--mbx-ovcalicl, var(--mbx-calendar-arrow-light));
-  --mbx-icon-hover-light: var(
+  --mbx-icn-l: var(--mbx-ovcalicl, var(--mbx-calendar-arrow-light));
+  --mbx-icn-hv-l: var(
     --mbx-ovcalichl,
     var(--mbx-calendar-arrow-hover-light)
   );
-  --mbx-icon-dark: var(--mbx-ovcalicd, var(--mbx-calendar-arrow-dark));
-  --mbx-icon-hover-dark: var(
+  --mbx-icn-d: var(--mbx-ovcalicd, var(--mbx-calendar-arrow-dark));
+  --mbx-icn-hv-d: var(
     --mbx-ovcalichd,
     var(--mbx-calendar-arrow-hover-dark)
   );

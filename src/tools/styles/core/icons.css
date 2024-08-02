@@ -1,21 +1,21 @@
 [data-mbx-img] {
   --mbx-def-ic: var(--mbx-defic, var(--mbx-c-txt));
   --mbx-def-ich: var(--mbx-defich, var(--mbx-c-txt-h));
-  --mbx-icc: var(--mbx-icon-light, var(--mbx-icon));
+  --mbx-icc: var(--mbx-icn-l, var(--mbx-icn));
   --mbx-ic-c: var(--mbx-icc, var(--mbx-def-ic));
   --mbx-ic-ch: var(
-    --mbx-icon-hover-light,
-    var(--mbx-icon-hover, var(--mbx-defich))
+    --mbx-icn-hv-l,
+    var(--mbx-icn-hv, var(--mbx-defich))
   );
   --mbx-ic-op: 1;
   opacity: var(--mbx-ic-op);
 }
 
 [data-mbx-id][data-mbx-dk] > [data-mbx-img] {
-  --mbx-icc: var(--mbx-icon-dark, var(--mbx-icon));
+  --mbx-icc: var(--mbx-icn-d, var(--mbx-icn));
   --mbx-ic-ch: var(
-    --mbx-icon-hover-dark,
-    var(--mbx-icon-hover, var(--mbx-defich))
+    --mbx-icn-hv-d,
+    var(--mbx-icn-hv, var(--mbx-defich))
   );
 }
 

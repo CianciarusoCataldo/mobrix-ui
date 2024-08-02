@@ -40,8 +40,8 @@
 [data-mbx-id="psw"] > [data-mbx-id="icb"] > [data-mbx-img] {
   --mbx-defic: var(--mbx-password-icon, var(--mbx-pswt));
   --mbx-defich: var(--mbx-password-icon-hover, var(--mbx-pswt));
-  --mbx-icon-light: var(--mbx-password-icon-light);
-  --mbx-icon-dark: var(--mbx-password-icon-dark);
-  --mbx-icon-hover-light: var(--mbx-password-icon-hover-light);
-  --mbx-icon-hover-dark: var(--mbx-password-icon-hover-dark);
+  --mbx-icn-l: var(--mbx-password-icon-light);
+  --mbx-icn-d: var(--mbx-password-icon-dark);
+  --mbx-icn-hv-l: var(--mbx-password-icon-hover-light);
+  --mbx-icn-hv-d: var(--mbx-password-icon-hover-dark);
 }

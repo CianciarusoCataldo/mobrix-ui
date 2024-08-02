@@ -21,10 +21,10 @@
 [data-mbx-id="crsel"] > [data-mbx-car-els] > [data-mbx-id="icb"] {
   margin: auto 0.6rem;
   --mbx-defic: var(--mbx-carousel-arrow);
-  --mbx-icon-light: var(--mbx-carousel-arrow-light);
-  --mbx-icon-dark: var(--mbx-carousel-arrow-dark);
-  --mbx-icon-hover-light: var(--mbx-carousel-arrow-hover-light);
-  --mbx-icon-hover-dark: var(--mbx-carousel-arrow-hover-dark);
+  --mbx-icn-l: var(--mbx-carousel-arrow-light);
+  --mbx-icn-d: var(--mbx-carousel-arrow-dark);
+  --mbx-icn-hv-l: var(--mbx-carousel-arrow-hover-light);
+  --mbx-icn-hv-d: var(--mbx-carousel-arrow-hover-dark);
   --mbx-defich: var(--mbx-carousel-arrow-hover, var(--mbx-c-fc));
 }
 

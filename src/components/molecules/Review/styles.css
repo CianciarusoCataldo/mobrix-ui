@@ -52,9 +52,9 @@
 }
 
 [data-mbx-id="rev"] [data-mbx-img] {
-  --mbx-icon-light: var(
+  --mbx-icn-l: var(
     --mbx-review-icon-light,
     var(--mbx-review-icon, #615f5f)
   );
-  --mbx-icon-dark: var(--mbx-review-icon-dark, var(--mbx-review-icon, white));
+  --mbx-icn-d: var(--mbx-review-icon-dark, var(--mbx-review-icon, white));
 }

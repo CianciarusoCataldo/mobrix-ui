@@ -42,10 +42,10 @@
 [data-mbx-id="dpick"] > [data-mbx-id="icb"] {
   --mbx-defic: var(--mbx-datepicker-icon, var(--mbx-dtp-txt));
   --mbx-defich: var(--mbx-datepicker-icon-hover, var(--mbx-c-fc));
-  --mbx-icon-light: var(--mbx-datepicker-icon-light);
-  --mbx-icon-hover-light: var(--mbx-datepicker-icon-hover-light);
-  --mbx-icon-dark: var(--mbx-datepicker-icon-dark);
-  --mbx-icon-hover-dark: var(--mbx-datepicker-icon-hover-dark);
+  --mbx-icn-l: var(--mbx-datepicker-icon-light);
+  --mbx-icn-hv-l: var(--mbx-datepicker-icon-hover-light);
+  --mbx-icn-d: var(--mbx-datepicker-icon-dark);
+  --mbx-icn-hv-d: var(--mbx-datepicker-icon-hover-dark);
 }
 
 [data-mbx-id="dpick"]

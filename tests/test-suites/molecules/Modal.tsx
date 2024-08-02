@@ -8,11 +8,10 @@ const modalTest = () => {
       const onCloseStub = jest.fn();
 
       let wrapper = mount(
-        <Modal>
+        <Modal onKeyDown={onCloseStub}>
           <p>Modal content</p>
         </Modal>
       );
-      wrapper.find('[data-mbx-id="icb"]').simulate("click");
       expect(wrapper);
 
       wrapper = mount(
@@ -22,17 +21,21 @@ const modalTest = () => {
       );
       wrapper.find('[data-mbx-id="icb"]').simulate("click");
       expect(onCloseStub).toBeCalled;
+      wrapper
+        .find('[data-mbx-id="mod"]')
+        .simulate("keyDown", { code: "Escape" });
+      expect(onCloseStub).toBeCalled;
     });
 
     test("Focus lost test", () => {
       const onCloseStub = jest.fn();
 
       let wrapper = mount(
-        <Modal onClose={onCloseStub} closeOutside>
+        <Modal onClose={onCloseStub}>
           <p>Modal content</p>
         </Modal>
       );
-      wrapper.find('[data-mbx-dchead]').simulate("click");
+      wrapper.find("[data-mbx-dchead]").simulate("click");
       expect(wrapper);
     });
   });
