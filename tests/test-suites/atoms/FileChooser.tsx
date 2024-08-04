@@ -9,7 +9,11 @@ const fileChooserTest = () => {
       wrapper.find("[data-mbx-id='btn']").simulate("click");
       wrapper.simulate("keyDown", { code: "Enter" });
       expect(wrapper);
-      wrapper = mount(<FileChooser onChange={jest.fn()} namePosition="left" />);
+      wrapper = mount(
+        <FileChooser onChange={jest.fn()} namePosition="left">
+          Test
+        </FileChooser>
+      );
     });
   });
 };

@@ -23,6 +23,7 @@ const FileChooserPage = () => (
             console.log(f);
           }),
           ...demoProps,
+          children: StringProp("Choose a file"),
           hideFileName: BooleanProp(false),
           namePosition: SelectProp({
             right: "right",
@@ -31,7 +32,7 @@ const FileChooserPage = () => (
             top: "top",
           }),
         }}
-        rows={[["hideFileName", "namePosition"], ...demoRows]}
+        rows={[["hideFileName", "namePosition", "children"], ...demoRows]}
       >
         {FileChooser}
       </DemoComponent>

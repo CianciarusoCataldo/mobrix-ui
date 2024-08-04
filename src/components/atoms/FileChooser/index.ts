@@ -10,6 +10,7 @@ import Component from "./component";
  * @param {'top' | 'bottom' | 'left' | 'right'} namePosition File name position (hidden when no file is actually selected
  * @param {boolean} hideFileName Hide/show filename, when a file is selected
  * @param {(newValue: File) => void} onChange Callback triggered when a file is selected by the user. It accept a single `File` type argument
+ * @param {JSX.Element | string} children FileChooser button content. If not set, a predefined label will be used
  * @param {string} key - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - React key, the standard [key parameter](https://reactjs.org/docs/lists-and-keys.html)
  * @param {string} className - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - custom className applied on main container
  * @param {boolean} dark - {@link https://cianciarusocataldo.github.io/mobrix-ui/docs/#/guide?id=shared-properties shared MoBrix-ui property} - Enable/disable dark mode

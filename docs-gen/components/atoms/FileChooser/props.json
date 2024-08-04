@@ -13,5 +13,10 @@
     "type": "(newValue: File) => void",
     "default": "() => {}",
     "description": "Callback triggered when a file is selected by the user. It accept a single `File` type argument"
+  },
+  "children": {
+    "type": "JSX.Element | string",
+    "description": "FileChooser button content. If not set, a predefined label will be used",
+    "default": "`Select file`"
   }
 }
