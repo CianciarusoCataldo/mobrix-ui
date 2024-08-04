@@ -10,6 +10,8 @@ export { default as Divider } from "./Divider";
 
 export { default as EmbeddedVideo } from "./EmbeddedVideo";
 
+export { default as FileChooser } from "./FileChooser";
+
 export { default as IconButton } from "./IconButton";
 
 export { default as Image } from "./Image";

@@ -86,6 +86,23 @@
   transform: rotate(180deg);
 }
 
+[data-mbx-id][data-mbx-dir] {
+  display: flex;
+  flex-direction: row;
+}
+
+[data-mbx-id][data-mbx-dir="right"] {
+  flex-direction: row-reverse;
+}
+
+[data-mbx-id][data-mbx-dir="top"] {
+  flex-direction: column;
+}
+
+[data-mbx-id][data-mbx-dir="bottom"] {
+  flex-direction: column-reverse;
+}
+
 [data-mbx-id],
 [data-mbx-id]:hover,
 [data-mbx-id]:active {

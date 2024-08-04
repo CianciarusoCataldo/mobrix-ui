@@ -20,19 +20,6 @@ const component: MbxUiReactiveComponent<boolean, ExpandableContainerProps> = ({
   active,
   a11y,
 }) => [
-  <div key="cont">
-    {children}
-    <div
-      key="exp_a"
-      style={{
-        overflow: "hidden",
-        maxHeight: value ? "0" : "100vh",
-        transition: `max-height 0.3s ease-${value ? "out" : "in"}`,
-      }}
-    >
-      {expanded}
-    </div>
-  </div>,
   <IconButton
     a11y={a11y}
     disabled={disabled}
@@ -46,8 +33,21 @@ const component: MbxUiReactiveComponent<boolean, ExpandableContainerProps> = ({
     dark={dark}
     active={active}
   >
-    <ArrowIcon disabled={disabled} />
+    <ArrowIcon width="25" height="32" disabled={disabled} />
   </IconButton>,
+  <div key="cont">
+    {children}
+    <div
+      key="exp_a"
+      style={{
+        overflow: "hidden",
+        maxHeight: value ? "0" : "100vh",
+        transition: `max-height 0.3s ease-${value ? "out" : "in"}`,
+      }}
+    >
+      {expanded}
+    </div>
+  </div>,
 ];
 
 export default component;

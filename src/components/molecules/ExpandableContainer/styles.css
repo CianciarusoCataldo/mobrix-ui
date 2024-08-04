@@ -12,22 +12,17 @@
   --mbx-ovconbghd: var(--mbx-expandablecontainer-background-hover-dark);
   --mbx-ovcontxthd: var(--mbx-expandablecontainer-text-hover-dark);
   --mbx-expmrg: 0.2rem auto auto auto;
-  flex-direction: column;
-  display: flex;
 }
 
-[data-mbx-id="ecn"][data-mbx-exparr="top"] {
-  flex-direction: column-reverse;
+[data-mbx-id="ecn"][data-mbx-dir="top"] {
   --mbx-expmrg: auto auto 0.2rem auto;
 }
 
-[data-mbx-id="ecn"][data-mbx-exparr="left"] {
-  flex-direction: row-reverse;
+[data-mbx-id="ecn"][data-mbx-dir="left"] {
   --mbx-expmrg: auto 0.8rem auto 0.4rem;
 }
 
-[data-mbx-id="ecn"][data-mbx-exparr="right"] {
-  flex-direction: row;
+[data-mbx-id="ecn"][data-mbx-dir="right"] {
   --mbx-expmrg: auto 0.4rem auto 0.8rem;
 }
 
