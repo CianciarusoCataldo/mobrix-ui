@@ -4,6 +4,7 @@ export * from "./code-box";
 export * from "./counter";
 export * from "./divider";
 export * from "./embedded-video";
+export * from "./file-chooser";
 export * from "./input";
 export * from "./label";
 export * from "./link";

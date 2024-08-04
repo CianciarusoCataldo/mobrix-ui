@@ -16,6 +16,8 @@
 
 - [EmbeddedVideo](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/EmbeddedVideo/)
 
+- [FileChooser](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/FileChooser/)
+
 - [IconButton](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/IconButton/)
 
 - [Image](https://cianciarusocataldo.github.io/mobrix-ui/docs/components/atoms/Image/)

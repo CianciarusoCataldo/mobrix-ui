@@ -43,6 +43,7 @@ const engineConfig = {
       Dropdown: "/components/molecules/Dropdown",
       EmbeddedVideo: "/components/atoms/EmbeddedVideo",
       ExpandableContainer: "/components/molecules/ExpandableContainer",
+      FileChooser: "/components/atoms/FileChooser",
       Form: "/components/organisms/Form",
       FormField: "/components/molecules/FormField",
       IconButton: "/components/atoms/IconButton",

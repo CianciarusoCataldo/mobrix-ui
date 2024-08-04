@@ -2,6 +2,7 @@
 
 ## Versions
 
+- [4.1.0](#410)
 - [4.0.0](#400)
 - [3.14.0](#3140)
 - [3.13.0](#3130)
@@ -29,6 +30,14 @@
 ---
 
 ## Changes
+
+<br>
+
+### 4.1.0
+
+- `FileChooser` component
+- Clean-up
+- Refactoring
 
 <br>
 

@@ -1,0 +1,17 @@
+{
+  "namePosition": {
+    "type": "'top' | 'bottom' | 'left' | 'right'",
+    "default": "`right`",
+    "description": "File name position (hidden when no file is actually selected"
+  },
+  "hideFileName": {
+    "type": "boolean",
+    "default": "`false`",
+    "description": "Hide/show filename, when a file is selected"
+  },
+  "onChange": {
+    "type": "(newValue: File) => void",
+    "default": "() => {}",
+    "description": "Callback triggered when a file is selected by the user. It accept a single `File` type argument"
+  }
+}

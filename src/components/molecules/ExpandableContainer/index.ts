@@ -6,8 +6,6 @@ import { buildMbxReactive } from "../../../tools/utils";
 
 import component from "./component";
 
-const dirs = ["left", "top", "right", "bottom"] as const;
-
 /**
  * An exapandable container, to hide/show some content on demand.
  *
@@ -62,9 +60,7 @@ const ExpandableContainer: ExpandableContainerComponent = ({
     wrapper,
     inpV: compact,
     addProps: {
-      "data-mbx-exparr": dirs.includes(arrowPosition)
-        ? arrowPosition
-        : "bottom",
+      "data-mbx-dir": arrowPosition,
     },
     Component: ({ value, setValue }) =>
       component({

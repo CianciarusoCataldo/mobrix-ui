@@ -1,0 +1,54 @@
+{
+  "--mbx-filechooser-background": {
+    "description": "Fallback value for `mbx-filechooser-background-light` and `mbx-filechooser-background-dark`"
+  },
+  "--mbx-filechooser-background-light": {
+    "description": "FileChooser background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
+    "fallback": "--mbx-filechooser-background",
+    "defaultGlobal": "--mbx-background-color-light"
+  },
+  "--mbx-filechooser-background-dark": {
+    "description": "FileChooser background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
+    "fallback": "--mbx-filechooser-background",
+    "defaultGlobal": "--mbx-background-color-dark"
+  },
+  "--mbx-filechooser-text": {
+    "description": "Fallback value for `mbx-filechooser-text-light` and `mbx-filechooser-text-dark`"
+  },
+  "--mbx-filechooser-text-light": {
+    "description": "FileChooser text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`",
+    "fallback": "--mbx-filechooser-text",
+    "defaultGlobal": "--mbx-text-light"
+  },
+  "--mbx-filechooser-text-dark": {
+    "description": "FileChooser text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`",
+    "fallback": "--mbx-filechooser-text",
+    "defaultGlobal": "--mbx-text-dark"
+  },
+  "--mbx-filechooser-background-hover": {
+    "description": "Fallback value for `mbx-filechooser-background-hover-light` and `mbx-filechooser-background-hover-dark`"
+  },
+  "--mbx-filechooser-background-hover-light": {
+    "description": "FileChooser background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/#hover)",
+    "fallback": "--mbx-filechooser-background-hover",
+    "defaultGlobal": "--mbx-background-color-hover-light"
+  },
+  "--mbx-filechooser-background-hover-dark": {
+    "description": "FileChooser background when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/#hover)",
+    "fallback": "--mbx-filechooser-background-hover",
+    "defaultGlobal": "--mbx-background-color-hover-dark"
+  },
+  "--mbx-filechooser-text-hover": {
+    "description": "Fallback value for `mbx-filechooser-text-hover-light` and `mbx-filechooser-text-hover-dark`"
+  },
+  "--mbx-filechooser-text-hover-light": {
+    "description": "FileChooser text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `off`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/#hover)",
+    "defaultGlobal": "--mbx-text-hover-light",
+    "fallback": "--mbx-filechooser-text-hover"
+  },
+  "--mbx-filechooser-text-hover-dark": {
+    "description": "FileChooser text color when [dark mode](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/props/#dark) is `on`, on [hover](https://cianciarusocataldo.github.io/mobrix-ui/docs/shared/#hover)",
+    "defaultGlobal": "--mbx-text-hover-dark",
+    "fallback": "--mbx-filechooser-text-hover"
+  }
+}
