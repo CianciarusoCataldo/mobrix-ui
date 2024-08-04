@@ -22,7 +22,7 @@ const Component: MbxUiComponent<FileChooserProps, BuilderComponent[]> = ({
   children = "Select file",
 }) => {
   const [file, setFile] = React.useState<File>();
-  const inputFile = React.useRef<HTMLInputElement | null>(null);
+  const inRef = React.useRef<HTMLInputElement | null>(null);
   const cProps = { dark, hover, disabled, a11y, animated };
 
   return [
@@ -40,7 +40,7 @@ const Component: MbxUiComponent<FileChooserProps, BuilderComponent[]> = ({
       shadow={shadow}
       onClick={() => {
         /* istanbul ignore next */
-        inputFile?.current?.click();
+        inRef?.current?.click();
       }}
       key="fc-b"
     >
@@ -48,7 +48,7 @@ const Component: MbxUiComponent<FileChooserProps, BuilderComponent[]> = ({
     </Button>,
     <input
       key="fc-in"
-      ref={inputFile}
+      ref={inRef}
       style={{ display: "none" }}
       type="file"
       onChange={

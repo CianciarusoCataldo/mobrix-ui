@@ -1,32 +1,32 @@
 [data-mbx-id="file"] {
   align-items: center;
-  --mbx-file-txtl: var(--mbx-filechooser-text-light);
-  --mbx-file-txtd: var(--mbx-filechooser-text-dark);
-  --mbx-dfile-txt: var(--mbx-filechooser-text);
-  --mbx-ovtxt: var(--mbx-dfile-txt);
-  --mbx-ovtxtl: var(--mbx-file-txtl);
-  --mbx-ovtxtd: var(--mbx-file-txtd);
-  --mbx-ovbg: var(--mbx-filechooser-background);
-  --mbx-ovbgl: var(--mbx-filechooser-background-dark);
-  --mbx-ovbgd: var(--mbx-filechooser-background-light);
-  --mbx-ovbgh: var(--mbx-filechooser-background-hover);
-  --mbx-ovbghl: var(--mbx-filechooser-background-hover-dark);
-  --mbx-ovbghd: var(--mbx-filechooser-background-hover-light);
-  --mbx-ovtxt: var(--mbx-dfile-txt);
-  --mbx-ovtxtl: var(--mbx-file-txtl);
-  --mbx-ovtxtd: var(--mbx-file-txtd);
-  --mbx-ovtxth: var(--mbx-filechooser-text-hover);
-  --mbx-ovtxthl: var(--mbx-filechooser-text-hover-dark);
-  --mbx-ovtxthd: var(--mbx-filechooser-text-hover-light);
-  --mbx-ovlbtxt: var(--mbx-dfile-txt);
-  --mbx-ovlbtxtl: var(--mbx-file-txtl);
-  --mbx-ovlbtxtd: var(--mbx-file-txtd);
+  --mbx-dfltl: var(--mbx-filechooser-text-light);
+  --mbx-dfltd: var(--mbx-filechooser-text-dark);
+  --mbx-dflt: var(--mbx-filechooser-text);
 }
 
 [data-mbx-id="file"] > [data-mbx-id="label"] {
   margin: auto 0.7rem;
+  --mbx-ovlbtxt: var(---mbx-dflt);
+  --mbx-ovlbtxtl: var(---mbx-dfltl);
+  --mbx-ovlbtxtd: var(---mbx-dfltd);
 }
 
 [data-mbx-id="file"] > [data-mbx-id="btn"] {
   margin: auto;
+  --mbx-ovtxt: var(---mbx-dflt);
+  --mbx-ovtxtl: var(---mbx-dfltl);
+  --mbx-ovtxtd: var(---mbx-dfltd);
+  --mbx-ovbg: var(--mbx-filechooser-background);
+  --mbx-ovbgd: var(--mbx-filechooser-background-dark);
+  --mbx-ovbgl: var(--mbx-filechooser-background-light);
+  --mbx-ovbgh: var(--mbx-filechooser-background-hover);
+  --mbx-ovbghd: var(--mbx-filechooser-background-hover-dark);
+  --mbx-ovbghl: var(--mbx-filechooser-background-hover-light);
+  --mbx-ovtxt: var(---mbx-dflt);
+  --mbx-ovtxtl: var(---mbx-dfltl);
+  --mbx-ovtxtd: var(---mbx-dfltd);
+  --mbx-ovtxth: var(--mbx-filechooser-text-hover);
+  --mbx-ovtxthd: var(--mbx-filechooser-text-hover-dark);
+  --mbx-ovtxthl: var(--mbx-filechooser-text-hover-light);
 }
