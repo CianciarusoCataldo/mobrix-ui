@@ -23,13 +23,9 @@ export const LogoIcon = (
 
 export const DocsIcon = <img alt="" src={Docs} width={30} height={30} />;
 
-export const DarkModeIcon = (
-  <img data-mbx-scl="nosel" alt="" src={DarkMode} width={30} />
-);
+export const DarkModeIcon = <img alt="" src={DarkMode} width={30} />;
 
-export const LightModeIcon = (
-  <img data-mbx-scl="nosel" alt="" src={LightMode} width={30} />
-);
+export const LightModeIcon = <img alt="" src={LightMode} width={30} />;
 
 export const LANGUAGES_ICONS: Record<string, JSX.Element> = {
   it: <img alt="" width={20} height={20} src={IT_FLAG} />,
