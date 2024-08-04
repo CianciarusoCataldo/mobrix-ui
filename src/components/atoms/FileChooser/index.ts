@@ -47,9 +47,9 @@ const FileChooser: FileChooserComponent = ({
   namePosition = "right",
   ...props
 }) =>
-  buildMbxStandard({ ...props, shadow: false }, (mbxProps) => ({
+  buildMbxStandard(props, (mbxProps) => ({
     name: "file",
-    mbxProps,
+    mbxProps: { ...mbxProps, shadow: false, a11y: false },
     addProps: { "data-mbx-dir": namePosition },
     Component: Component({ ...props, ...mbxProps, namePosition }),
   }));

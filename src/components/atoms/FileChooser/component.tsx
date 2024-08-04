@@ -23,7 +23,7 @@ const Component: MbxUiComponent<FileChooserProps, BuilderComponent[]> = ({
 }) => {
   const [file, setFile] = React.useState<File>();
   const inputFile = React.useRef<HTMLInputElement | null>(null);
-  const cProps = { dark, hover, disabled, shadow, a11y, animated };
+  const cProps = { dark, hover, disabled, a11y, animated };
 
   return [
     <Label
@@ -37,6 +37,7 @@ const Component: MbxUiComponent<FileChooserProps, BuilderComponent[]> = ({
     </Label>,
     <Button
       {...cProps}
+      shadow={shadow}
       onClick={() => {
         /* istanbul ignore next */
         inputFile?.current?.click();

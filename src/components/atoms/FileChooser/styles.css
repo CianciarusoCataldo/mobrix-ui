@@ -1,5 +1,5 @@
 [data-mbx-id="file"] {
-  display: flex;
+  align-items: center;
   --mbx-file-txtl: var(--mbx-filechooser-text-light);
   --mbx-file-txtd: var(--mbx-filechooser-text-dark);
   --mbx-dfile-txt: var(--mbx-filechooser-text);
@@ -25,7 +25,6 @@
 
 [data-mbx-id="file"] > [data-mbx-id="label"] {
   margin: auto 0.7rem;
-  
 }
 
 [data-mbx-id="file"] > [data-mbx-id="btn"] {
