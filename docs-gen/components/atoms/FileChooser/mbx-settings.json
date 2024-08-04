@@ -1,6 +1,6 @@
 {
   "since": "4.1.0",
-  "description": "An intuitive button to choose and select a file.",
+  "description": "An intuitive file chooser",
   "see": [],
   "examples": []
 }

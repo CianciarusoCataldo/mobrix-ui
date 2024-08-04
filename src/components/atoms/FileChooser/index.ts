@@ -5,7 +5,7 @@ import { FileChooserComponent } from "../../../types";
 import Component from "./component";
 
 /**
- * An intuitive button to choose and select a file.
+ * An intuitive file chooser
  *
  * @param {'top' | 'bottom' | 'left' | 'right'} namePosition File name position (hidden when no file is actually selected
  * @param {boolean} hideFileName Hide/show filename, when a file is selected
