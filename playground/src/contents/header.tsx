@@ -75,9 +75,9 @@ const HeaderContent = () => {
                 dispatch(changeLanguage(LANGUAGES[lang]));
               }}
               elements={Object.keys(LANGUAGES_ICONS).map((lang) => (
-                <div className="flex flex-row">
+                <div className="flex flex-row w-full">
                   {LANGUAGES_ICONS[lang]}
-                  {` ${lang}`}
+                  <div className="ml-2 mr-auto">{` ${lang}`}</div>
                 </div>
               ))}
             />
