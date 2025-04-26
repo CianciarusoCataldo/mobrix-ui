@@ -9,7 +9,7 @@ import {
   Features,
 } from "../../types/global";
 
-import { D_PROPS, restricted } from "./constants";
+import { DEFAULT_PROPS, restricted } from "./constants";
 
 const filter = (obj: any[], prf) =>
   obj
@@ -91,7 +91,7 @@ const parseFts: (props: MbxSharedProps & Features) => {
 const parseProps = (
   props: MbxSharedProps
 ): MbxSharedProps & { datas: Record<string, any> } => ({
-  ...D_PROPS,
+  ...DEFAULT_PROPS,
   ...props,
   ...(props.unstyled && {
     shadow: false,

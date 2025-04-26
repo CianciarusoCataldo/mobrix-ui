@@ -1,6 +1,6 @@
 import { MbxSharedProps } from "../../types";
 
-export const D_PROPS: MbxSharedProps = {
+export const DEFAULT_PROPS: MbxSharedProps = {
   background: true,
   hover: true,
   disabled: false,
